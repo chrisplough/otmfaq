@@ -1,0 +1,566 @@
+INFO | 2013/04/02 19:55:02 | Starting Launched Process...
+INFO | 2013/04/02 19:55:02 | java version "1.6.0_33"
+INFO | 2013/04/02 19:55:02 | Java(TM) SE Runtime Environment (build 1.6.0_33-b03)
+INFO | 2013/04/02 19:55:02 | Oracle JRockit(R) (build R28.2.4-14-151097-1.6.0_33-20120618-1634-linux-x86_64, compiled mode)
+INFO | 2013/04/02 19:55:02 | Argument #0 : /home/drvmounts/db1_400g/oracle/otm/jdk/bin/java
+INFO | 2013/04/02 19:55:02 | Argument #1 : -Xms2048m
+INFO | 2013/04/02 19:55:02 | Argument #2 : -Xmx2048m
+INFO | 2013/04/02 19:55:02 | Argument #3 : -jrockit
+INFO | 2013/04/02 19:55:02 | Argument #4 : -Xgc:throughput
+INFO | 2013/04/02 19:55:02 | Argument #5 : -Xverbose:memory
+INFO | 2013/04/02 19:55:02 | Argument #6 : -Dglog.home=/home/drvmounts/db1_400g/oracle/otm/glog/config
+INFO | 2013/04/02 19:55:02 | Argument #7 : -Duser.home=/home/drvmounts/db1_400g/oracle/otm/glog/config
+INFO | 2013/04/02 19:55:02 | Argument #8 : -Djava.io.tmpdir=/home/drvmounts/db1_400g/oracle/otm/temp
+INFO | 2013/04/02 19:55:02 | Argument #9 : -Djava.awt.headless=true
+INFO | 2013/04/02 19:55:02 | Argument #10 : -Djava.security.auth.login.config=/home/drvmounts/db1_400g/oracle/otm/glog/config/otm_jaas.config
+INFO | 2013/04/02 19:55:02 | Argument #11 : -Xss256k
+INFO | 2013/04/02 19:55:02 | Argument #12 : -Dweblogic.Name=gc3-erptitlilnx
+INFO | 2013/04/02 19:55:02 | Argument #13 : -Dbea.home=/home/drvmounts/db1_400g/oracle/Middleware
+INFO | 2013/04/02 19:55:02 | Argument #14 : -Dweblogic.home=/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server
+INFO | 2013/04/02 19:55:02 | Argument #15 : -Dweblogic.management.username=system
+INFO | 2013/04/02 19:55:02 | Argument #16 : -Dweblogic.management.password=CHANGEME
+INFO | 2013/04/02 19:55:02 | Argument #17 : -Dweblogic.ProductionModeEnabled=true
+INFO | 2013/04/02 19:55:02 | Argument #18 : -Dweblogic.management.discover=false
+INFO | 2013/04/02 19:55:02 | Argument #19 : -Djava.security.policy=/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/weblogic.policy
+INFO | 2013/04/02 19:55:02 | Argument #20 : -Dwli.home=/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/integration
+INFO | 2013/04/02 19:55:02 | Argument #21 : -Dwls.home=/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server
+INFO | 2013/04/02 19:55:02 | Argument #22 : -Dweblogic.RootDirectory=/home/drvmounts/db1_400g/oracle/otm/weblogic/domains/otm
+INFO | 2013/04/02 19:55:02 | Argument #23 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2013/04/02 19:55:02 | Argument #24 : -Djavax.xml.soap.SOAPFactory=weblogic.xml.saaj.SOAPFactoryImpl
+INFO | 2013/04/02 19:55:02 | Argument #25 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2013/04/02 19:55:02 | Argument #26 : -DpropertyProtection=mask
+INFO | 2013/04/02 19:55:02 | Argument #27 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2013/04/02 19:55:02 | Argument #28 : -Djavax.xml.soap.MessageFactory=weblogic.xml.saaj.MessageFactoryImpl
+INFO | 2013/04/02 19:55:02 | Argument #29 : -Djavax.management.builder.initial=weblogic.management.jmx.mbeanserver.WLSMBeanServerBuilder
+INFO | 2013/04/02 19:55:02 | Argument #30 : -Dweblogic.wsee.policy.LoadFromClassPathEnabled=true
+INFO | 2013/04/02 19:55:02 | Argument #31 : -classpath
+INFO | 2013/04/02 19:55:02 | Argument #32 : /home/drvmounts/db1_400g/oracle/otm/jdk/lib/tools.jar:/home/drvmounts/db1_400g/oracle/otm/glog/glog_resources/custom:/home/drvmounts/db1_400g/oracle/otm/glog/glog_resources:/home/drvmounts/db1_400g/oracle/otm/glog/config:/home/drvmounts/db1_400g/oracle/otm/glog/gc3webapp/WEB-INF/classes:/home/drvmounts/db1_400g/oracle/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/ojdbc6.jar:/home/drvmounts/db1_400g/oracle/otm/dash/lib/xprb.jar:/home/drvmounts/db1_400g/oracle/otm/dash/lib/xprm.jar:/home/drvmounts/db1_400g/oracle/otm/dash/lib/xprs.jar:/home/drvmounts/db1_400g/oracle/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar:/home/drvmounts/db1_400g/oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/weblogic.jar:/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/webservices.jar:/home/drvmounts/db1_400g/oracle/Middleware/modules/features/weblogic.server.modules.sca_10.3.6.0.jar
+INFO | 2013/04/02 19:55:02 | Argument #33 : weblogic.Server
+INFO | 2013/04/02 19:55:02 | Argument #34 : start
+INFO | 2013/04/02 19:55:02 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2013/04/02 19:55:02 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, strategy: Generational Parallel Mark & Sweep.
+INFO | 2013/04/02 19:55:02 | [INFO ][memory ] Heap size: 2097152KB, maximal heap size: 2097152KB, nursery size: 1048576KB.
+INFO | 2013/04/02 19:55:02 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2013/04/02 19:55:02 | [INFO ][memory ] <start>  - start time of collection (seconds since jvm start).
+INFO | 2013/04/02 19:55:02 | [INFO ][memory ] <type>   - OC (old collection) or YC (young collection).
+INFO | 2013/04/02 19:55:02 | [INFO ][memory ] <end>    - end time of collection (seconds since jvm start).
+INFO | 2013/04/02 19:55:02 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2013/04/02 19:55:02 | [INFO ][memory ] <after>  - memory used by objects after collection (KB).
+INFO | 2013/04/02 19:55:02 | [INFO ][memory ] <heap>   - size of heap after collection (KB).
+INFO | 2013/04/02 19:55:02 | [INFO ][memory ] <time>   - total time of collection (milliseconds).
+INFO | 2013/04/02 19:55:02 | [INFO ][memory ] <pause>  - total sum of pauses during collection (milliseconds).
+INFO | 2013/04/02 19:55:02 | [INFO ][memory ]            Run with -Xverbose:gcpause to see individual phases.
+INFO | 2013/04/02 19:55:03 | <Apr 2, 2013 7:55:02 PM EDT> <Info> <Security> <BEA-090905> <Disabling CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true> 
+INFO | 2013/04/02 19:55:03 | <Apr 2, 2013 7:55:03 PM EDT> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true> 
+INFO | 2013/04/02 19:55:03 | <Apr 2, 2013 7:55:03 PM EDT> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Oracle JRockit(R) Version R28.2.4-14-151097-1.6.0_33-20120618-1634-linux-x86_64 from Oracle Corporation> 
+INFO | 2013/04/02 19:55:03 | <Apr 2, 2013 7:55:03 PM EDT> <Info> <Management> <BEA-141107> <Version: WebLogic Server 10.3.6.0  Tue Nov 15 08:52:36 PST 2011 1441050 > 
+INFO | 2013/04/02 19:55:03 | <Apr 2, 2013 7:55:03 PM EDT> <Warning> <Management> <BEA-141274> <Production mode has specified at the command line via the weblogic.ProductionModeEnabled system property. This system property overrides the development mode setting contained in config.xml. However, the console and WLST show the attribute values and defaults that correspond to the development mode specified in config.xml.> 
+INFO | 2013/04/02 19:55:05 | <Apr 2, 2013 7:55:05 PM EDT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2013/04/02 19:55:05 | <Apr 2, 2013 7:55:05 PM EDT> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+INFO | 2013/04/02 19:55:05 | <Apr 2, 2013 7:55:05 PM EDT> <Notice> <LoggingService> <BEA-320400> <The log file /home/drvmounts/db1_400g/oracle/otm/logs/weblogic/weblogic.log will be rotated. Reopen the log file if tailing has stopped. This can happen on some platforms like Windows.> 
+INFO | 2013/04/02 19:55:05 | <Apr 2, 2013 7:55:05 PM EDT> <Notice> <LoggingService> <BEA-320401> <The log file has been rotated to /home/drvmounts/db1_400g/oracle/otm/logs/weblogic/weblogic.log00001. Log messages will continue to be logged in /home/drvmounts/db1_400g/oracle/otm/logs/weblogic/weblogic.log.> 
+INFO | 2013/04/02 19:55:05 | <Apr 2, 2013 7:55:05 PM EDT> <Notice> <Log Management> <BEA-170019> <The server log file /home/drvmounts/db1_400g/oracle/otm/logs/weblogic/weblogic.log is opened. All server side log events will be written to this file.> 
+INFO | 2013/04/02 19:55:08 | GC3 realm initializing <-----------
+INFO | 2013/04/02 19:55:11 | -----------> GC3 realm initialized
+INFO | 2013/04/02 19:55:13 | <Apr 2, 2013 7:55:13 PM EDT> <Notice> <Security> <BEA-090082> <Security initializing using security realm otmrealm.> 
+INFO | 2013/04/02 19:55:14 | [INFO ][memory ] [YC#1] 12.002-12.054: YC 1073779KB->358965KB (2097152KB), 0.052 s, sum of pauses 51.976 ms, longest pause 51.976 ms.
+INFO | 2013/04/02 19:55:15 | <Apr 2, 2013 7:55:15 PM EDT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STANDBY> 
+INFO | 2013/04/02 19:55:15 | <Apr 2, 2013 7:55:15 PM EDT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2013/04/02 19:55:17 | -- OTM Event: preDeploy
+INFO | 2013/04/02 19:55:20 | [INFO ][memory ] [YC#2] 18.213-18.240: YC 1173005KB->431887KB (2097152KB), 0.028 s, sum of pauses 27.469 ms, longest pause 27.469 ms.
+INFO | 2013/04/02 19:55:23 | [INFO ][memory ] [YC#3] 21.570-21.597: YC 1242597KB->512185KB (2097152KB), 0.027 s, sum of pauses 26.627 ms, longest pause 26.627 ms.
+INFO | 2013/04/02 19:55:27 | [INFO ][memory ] [YC#4] 24.838-24.862: YC 1323227KB->582685KB (2097152KB), 0.024 s, sum of pauses 24.071 ms, longest pause 24.071 ms.
+INFO | 2013/04/02 19:55:30 | [INFO ][memory ] [YC#5] 28.561-28.589: YC 1392391KB->661486KB (2097152KB), 0.028 s, sum of pauses 28.026 ms, longest pause 28.026 ms.
+INFO | 2013/04/02 19:55:35 | [INFO ][memory ] [YC#6] 32.902-32.929: YC 1470375KB->744041KB (2097152KB), 0.028 s, sum of pauses 27.507 ms, longest pause 27.507 ms.
+INFO | 2013/04/02 19:55:44 | [INFO ][memory ] [YC#7] 41.880-41.933: YC 1569303KB->862792KB (2097152KB), 0.052 s, sum of pauses 52.255 ms, longest pause 52.255 ms.
+INFO | 2013/04/02 19:55:45 | -- OTM Event: initContext
+INFO | 2013/04/02 19:55:45 | -- OTM Event: startupServlet
+INFO | 2013/04/02 19:55:45 | -- OTM Startup: loading startup classes
+INFO | 2013/04/02 19:55:45 | --
+INFO | 2013/04/02 19:55:52 | [INFO ][memory ] [YC#8] 50.393-50.470: YC 1677961KB->955611KB (2097152KB), 0.077 s, sum of pauses 77.000 ms, longest pause 77.000 ms.
+INFO | 2013/04/02 19:56:01 |  : ERROR : 0
+INFO | 2013/04/02 19:56:03 | en : ERROR : 504588
+INFO | 2013/04/02 19:56:03 | en_US : ERROR : 0
+INFO | 2013/04/02 19:56:05 |  : QUERYRESOURCES : 0
+INFO | 2013/04/02 19:56:06 | en : QUERYRESOURCES : 918315
+INFO | 2013/04/02 19:56:06 | en_US : QUERYRESOURCES : 0
+INFO | 2013/04/02 19:56:07 | -- OTM Event: postLoad
+INFO | 2013/04/02 19:56:07 | -- OTM Event: activateThread
+INFO | 2013/04/02 19:56:07 | -- OTM Startup: activating startup classes
+INFO | 2013/04/02 19:56:07 | -- OTM Event: postDeploy
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Notice> <Log Management> <BEA-170027> <The Server has established connection with the Domain level Diagnostic Service successfully.> 
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to ADMIN> 
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RESUMING> 
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Notice> <Security> <BEA-090171> <Loading the identity certificate and private key stored under the alias DemoIdentity from the jks keystore file /home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/DemoIdentity.jks.> 
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Notice> <Security> <BEA-090169> <Loading trusted certificates from the jks keystore file /home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/DemoTrust.jks.> 
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Notice> <Security> <BEA-090169> <Loading trusted certificates from the jks keystore file /home/drvmounts/db1_400g/oracle/otm/jdk/jre/lib/security/cacerts.> 
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Alert> <Security> <BEA-090152> <Demo trusted CA certificate is being used in production mode: [
+INFO | 2013/04/02 19:56:07 | [
+INFO | 2013/04/02 19:56:07 |   Version: V3
+INFO | 2013/04/02 19:56:07 |   Subject: CN=CACERT, OU=FOR TESTING ONLY, O=MyOrganization, L=MyTown, ST=MyState, C=US
+INFO | 2013/04/02 19:56:07 |   Signature Algorithm: MD5withRSA, OID = 1.2.840.113549.1.1.4
+INFO | 2013/04/02 19:56:07 | 
+INFO | 2013/04/02 19:56:07 |   Key:  Sun RSA public key, 512 bits
+INFO | 2013/04/02 19:56:07 |   modulus: 9550192877869244258838480703390456015046425375252278279190673063544122510925482179963329236052146047356415957587628011282484772458983977898996276815440753
+INFO | 2013/04/02 19:56:07 |   public exponent: 65537
+INFO | 2013/04/02 19:56:07 |   Validity: [From: Thu Mar 21 15:12:27 EST 2002,
+INFO | 2013/04/02 19:56:07 |                To: Tue Mar 22 16:12:27 EDT 2022]
+INFO | 2013/04/02 19:56:07 |   Issuer: CN=CACERT, OU=FOR TESTING ONLY, O=MyOrganization, L=MyTown, ST=MyState, C=US
+INFO | 2013/04/02 19:56:07 |   SerialNumber: [    33f10648 fcde0deb 4199921f d64537f4]
+INFO | 2013/04/02 19:56:07 | 
+INFO | 2013/04/02 19:56:07 | Certificate Extensions: 1
+INFO | 2013/04/02 19:56:07 | [1]: ObjectId: 2.5.29.15 Criticality=true
+INFO | 2013/04/02 19:56:07 | KeyUsage [
+INFO | 2013/04/02 19:56:07 |   Key_CertSign
+INFO | 2013/04/02 19:56:07 | ]
+INFO | 2013/04/02 19:56:07 | 
+INFO | 2013/04/02 19:56:07 | ]
+INFO | 2013/04/02 19:56:07 |   Algorithm: [MD5withRSA]
+INFO | 2013/04/02 19:56:07 |   Signature:
+INFO | 2013/04/02 19:56:07 | 0000: 9D 26 4C 29 C8 91 C3 A7   06 C3 24 6F AE B4 F8 82  .&L)......$o....
+INFO | 2013/04/02 19:56:07 | 0010: 80 4D AA CB 7C 79 46 84   81 C4 66 95 F4 1E D8 C4  .M...yF...f.....
+INFO | 2013/04/02 19:56:07 | 0020: E9 B7 D9 7C E2 23 33 A4   B7 21 E0 AA 54 2B 4A FF  .....#3..!..T+J.
+INFO | 2013/04/02 19:56:07 | 0030: CB 21 20 88 81 21 DB AC   90 54 D8 7D 79 63 23 3C  .! ..!...T..yc#<
+INFO | 2013/04/02 19:56:07 | 
+INFO | 2013/04/02 19:56:07 | ] The system is vulnerable to security attacks, since it trusts certificates signed by the demo trusted CA.> 
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=Entrust Root Certification Authority - G2,OU=(c) 2009 Entrust\, Inc. - for authorized use only,OU=See www.entrust.net/legal-terms,O=Entrust\, Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=thawte Primary Root CA - G3,OU=(c) 2008 thawte\, Inc. - For authorized use only,OU=Certification Services Division,O=thawte\, Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=T-TeleSec GlobalRoot Class 3,OU=T-Systems Trust Center,O=T-Systems Enterprise Services GmbH,C=DE". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=T-TeleSec GlobalRoot Class 2,OU=T-Systems Trust Center,O=T-Systems Enterprise Services GmbH,C=DE". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=GlobalSign,O=GlobalSign,OU=GlobalSign Root CA - R3". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "OU=Security Communication RootCA2,O=SECOM Trust Systems CO.\,LTD.,C=JP". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=VeriSign Universal Root Certification Authority,OU=(c) 2008 VeriSign\, Inc. - For authorized use only,OU=VeriSign Trust Network,O=VeriSign\, Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=KEYNECTIS ROOT CA,OU=ROOT,O=KEYNECTIS,C=FR". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=GeoTrust Primary Certification Authority - G3,OU=(c) 2008 GeoTrust Inc. - For authorized use only,O=GeoTrust Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure" is now listening on 192.168.0.44:7002 for protocols iiops, t3s, ldaps, https.> 
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Notice> <Server> <BEA-002613> <Channel "Default" is now listening on 192.168.0.44:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2013/04/02 19:56:07 | <Apr 2, 2013 7:56:07 PM EDT> <Notice> <WebLogicServer> <BEA-000329> <Started WebLogic Admin Server "gc3-erptitlilnx" for domain "Otmv630" running in Production Mode> 
+INFO | 2013/04/02 19:56:08 | <Apr 2, 2013 7:56:08 PM EDT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RUNNING> 
+INFO | 2013/04/02 19:56:08 | <Apr 2, 2013 7:56:08 PM EDT> <Notice> <WebLogicServer> <BEA-000360> <Server started in RUNNING mode> 
+INFO | 2013/04/02 19:56:15 | -- OTM Event: serverReady
+INFO | 2013/04/02 19:56:50 | <Apr 2, 2013 7:56:50 PM EDT> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 192.168.0.44:45,974 during the configured idle timeout of 5 secs> 
+INFO | 2013/04/02 19:57:27 | <Local Deploy: ejb.PreferenceValue>
+INFO | 2013/04/02 19:57:28 | <Local Deploy: ejb.UserMenuLayout>
+INFO | 2013/04/02 20:12:30 | [INFO ][memory ] [YC#9] 1047.834-1047.913: YC 1796434KB->1086839KB (2097152KB), 0.078 s, sum of pauses 78.361 ms, longest pause 78.361 ms.
+INFO | 2013/04/02 21:15:41 | <Apr 2, 2013 9:15:41 PM EDT> <Alert> <WebLogicServer> <BEA-000396> <Server shutdown has been requested by system> 
+INFO | 2013/04/02 21:15:41 | <Apr 2, 2013 9:15:41 PM EDT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to SUSPENDING> 
+INFO | 2013/04/02 21:15:41 | <Apr 2, 2013 9:15:41 PM EDT> <Notice> <HTTP> <BEA-101278> <There are no active sessions. The Web service is ready to suspend.> 
+WARNING | 2013/04/02 21:17:39 | Launched Process Forcibly Killed.
+INFO | 2013/04/02 21:17:39 | Stopped Launched Process...
+INFO | 2013/04/03 01:26:58 | Starting Launched Process...
+INFO | 2013/04/03 01:26:58 | java version "1.6.0_33"
+INFO | 2013/04/03 01:26:58 | Java(TM) SE Runtime Environment (build 1.6.0_33-b03)
+INFO | 2013/04/03 01:26:58 | Oracle JRockit(R) (build R28.2.4-14-151097-1.6.0_33-20120618-1634-linux-x86_64, compiled mode)
+INFO | 2013/04/03 01:26:58 | Argument #0 : /home/drvmounts/db1_400g/oracle/otm/jdk/bin/java
+INFO | 2013/04/03 01:26:58 | Argument #1 : -Xms2048m
+INFO | 2013/04/03 01:26:58 | Argument #2 : -Xmx2048m
+INFO | 2013/04/03 01:26:58 | Argument #3 : -jrockit
+INFO | 2013/04/03 01:26:58 | Argument #4 : -Xgc:throughput
+INFO | 2013/04/03 01:26:58 | Argument #5 : -Xverbose:memory
+INFO | 2013/04/03 01:26:58 | Argument #6 : -Dglog.home=/home/drvmounts/db1_400g/oracle/otm/glog/config
+INFO | 2013/04/03 01:26:58 | Argument #7 : -Duser.home=/home/drvmounts/db1_400g/oracle/otm/glog/config
+INFO | 2013/04/03 01:26:58 | Argument #8 : -Djava.io.tmpdir=/home/drvmounts/db1_400g/oracle/otm/temp
+INFO | 2013/04/03 01:26:58 | Argument #9 : -Djava.awt.headless=true
+INFO | 2013/04/03 01:26:58 | Argument #10 : -Djava.security.auth.login.config=/home/drvmounts/db1_400g/oracle/otm/glog/config/otm_jaas.config
+INFO | 2013/04/03 01:26:58 | Argument #11 : -Xss256k
+INFO | 2013/04/03 01:26:58 | Argument #12 : -Dweblogic.Name=gc3-erptitlilnx
+INFO | 2013/04/03 01:26:58 | Argument #13 : -Dbea.home=/home/drvmounts/db1_400g/oracle/Middleware
+INFO | 2013/04/03 01:26:58 | Argument #14 : -Dweblogic.home=/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server
+INFO | 2013/04/03 01:26:58 | Argument #15 : -Dweblogic.management.username=system
+INFO | 2013/04/03 01:26:58 | Argument #16 : -Dweblogic.management.password=CHANGEME
+INFO | 2013/04/03 01:26:58 | Argument #17 : -Dweblogic.ProductionModeEnabled=true
+INFO | 2013/04/03 01:26:58 | Argument #18 : -Dweblogic.management.discover=false
+INFO | 2013/04/03 01:26:58 | Argument #19 : -Djava.security.policy=/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/weblogic.policy
+INFO | 2013/04/03 01:26:58 | Argument #20 : -Dwli.home=/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/integration
+INFO | 2013/04/03 01:26:58 | Argument #21 : -Dwls.home=/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server
+INFO | 2013/04/03 01:26:58 | Argument #22 : -Dweblogic.RootDirectory=/home/drvmounts/db1_400g/oracle/otm/weblogic/domains/otm
+INFO | 2013/04/03 01:26:58 | Argument #23 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2013/04/03 01:26:58 | Argument #24 : -Djavax.xml.soap.SOAPFactory=weblogic.xml.saaj.SOAPFactoryImpl
+INFO | 2013/04/03 01:26:58 | Argument #25 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2013/04/03 01:26:58 | Argument #26 : -DpropertyProtection=mask
+INFO | 2013/04/03 01:26:58 | Argument #27 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2013/04/03 01:26:58 | Argument #28 : -Djavax.xml.soap.MessageFactory=weblogic.xml.saaj.MessageFactoryImpl
+INFO | 2013/04/03 01:26:58 | Argument #29 : -Djavax.management.builder.initial=weblogic.management.jmx.mbeanserver.WLSMBeanServerBuilder
+INFO | 2013/04/03 01:26:58 | Argument #30 : -Dweblogic.wsee.policy.LoadFromClassPathEnabled=true
+INFO | 2013/04/03 01:26:58 | Argument #31 : -classpath
+INFO | 2013/04/03 01:26:58 | Argument #32 : /home/drvmounts/db1_400g/oracle/otm/jdk/lib/tools.jar:/home/drvmounts/db1_400g/oracle/otm/glog/glog_resources/custom:/home/drvmounts/db1_400g/oracle/otm/glog/glog_resources:/home/drvmounts/db1_400g/oracle/otm/glog/config:/home/drvmounts/db1_400g/oracle/otm/glog/gc3webapp/WEB-INF/classes:/home/drvmounts/db1_400g/oracle/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/ojdbc6.jar:/home/drvmounts/db1_400g/oracle/otm/dash/lib/xprb.jar:/home/drvmounts/db1_400g/oracle/otm/dash/lib/xprm.jar:/home/drvmounts/db1_400g/oracle/otm/dash/lib/xprs.jar:/home/drvmounts/db1_400g/oracle/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar:/home/drvmounts/db1_400g/oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/weblogic.jar:/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/webservices.jar:/home/drvmounts/db1_400g/oracle/Middleware/modules/features/weblogic.server.modules.sca_10.3.6.0.jar
+INFO | 2013/04/03 01:26:58 | Argument #33 : weblogic.Server
+INFO | 2013/04/03 01:26:58 | Argument #34 : start
+INFO | 2013/04/03 01:26:58 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2013/04/03 01:26:58 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, strategy: Generational Parallel Mark & Sweep.
+INFO | 2013/04/03 01:26:58 | [INFO ][memory ] Heap size: 2097152KB, maximal heap size: 2097152KB, nursery size: 1048576KB.
+INFO | 2013/04/03 01:26:58 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2013/04/03 01:26:58 | [INFO ][memory ] <start>  - start time of collection (seconds since jvm start).
+INFO | 2013/04/03 01:26:58 | [INFO ][memory ] <type>   - OC (old collection) or YC (young collection).
+INFO | 2013/04/03 01:26:58 | [INFO ][memory ] <end>    - end time of collection (seconds since jvm start).
+INFO | 2013/04/03 01:26:58 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2013/04/03 01:26:58 | [INFO ][memory ] <after>  - memory used by objects after collection (KB).
+INFO | 2013/04/03 01:26:58 | [INFO ][memory ] <heap>   - size of heap after collection (KB).
+INFO | 2013/04/03 01:26:58 | [INFO ][memory ] <time>   - total time of collection (milliseconds).
+INFO | 2013/04/03 01:26:58 | [INFO ][memory ] <pause>  - total sum of pauses during collection (milliseconds).
+INFO | 2013/04/03 01:26:58 | [INFO ][memory ]            Run with -Xverbose:gcpause to see individual phases.
+INFO | 2013/04/03 01:26:59 | <Apr 3, 2013 1:26:58 AM EDT> <Info> <Security> <BEA-090905> <Disabling CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true> 
+INFO | 2013/04/03 01:26:59 | <Apr 3, 2013 1:26:59 AM EDT> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true> 
+INFO | 2013/04/03 01:26:59 | <Apr 3, 2013 1:26:59 AM EDT> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Oracle JRockit(R) Version R28.2.4-14-151097-1.6.0_33-20120618-1634-linux-x86_64 from Oracle Corporation> 
+INFO | 2013/04/03 01:26:59 | <Apr 3, 2013 1:26:59 AM EDT> <Info> <Management> <BEA-141107> <Version: WebLogic Server 10.3.6.0  Tue Nov 15 08:52:36 PST 2011 1441050 > 
+INFO | 2013/04/03 01:26:59 | <Apr 3, 2013 1:26:59 AM EDT> <Warning> <Management> <BEA-141274> <Production mode has specified at the command line via the weblogic.ProductionModeEnabled system property. This system property overrides the development mode setting contained in config.xml. However, the console and WLST show the attribute values and defaults that correspond to the development mode specified in config.xml.> 
+INFO | 2013/04/03 01:27:01 | <Apr 3, 2013 1:27:01 AM EDT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2013/04/03 01:27:01 | <Apr 3, 2013 1:27:01 AM EDT> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+INFO | 2013/04/03 01:27:02 | <Apr 3, 2013 1:27:02 AM EDT> <Notice> <LoggingService> <BEA-320400> <The log file /home/drvmounts/db1_400g/oracle/otm/logs/weblogic/weblogic.log will be rotated. Reopen the log file if tailing has stopped. This can happen on some platforms like Windows.> 
+INFO | 2013/04/03 01:27:02 | <Apr 3, 2013 1:27:02 AM EDT> <Notice> <LoggingService> <BEA-320401> <The log file has been rotated to /home/drvmounts/db1_400g/oracle/otm/logs/weblogic/weblogic.log00002. Log messages will continue to be logged in /home/drvmounts/db1_400g/oracle/otm/logs/weblogic/weblogic.log.> 
+INFO | 2013/04/03 01:27:02 | <Apr 3, 2013 1:27:02 AM EDT> <Notice> <Log Management> <BEA-170019> <The server log file /home/drvmounts/db1_400g/oracle/otm/logs/weblogic/weblogic.log is opened. All server side log events will be written to this file.> 
+INFO | 2013/04/03 01:27:04 | GC3 realm initializing <-----------
+INFO | 2013/04/03 01:27:12 | -----------> GC3 realm initialized
+INFO | 2013/04/03 01:27:14 | <Apr 3, 2013 1:27:14 AM EDT> <Notice> <Security> <BEA-090082> <Security initializing using security realm otmrealm.> 
+INFO | 2013/04/03 01:27:15 | [INFO ][memory ] [YC#1] 16.703-16.748: YC 1072453KB->358215KB (2097152KB), 0.045 s, sum of pauses 44.570 ms, longest pause 44.570 ms.
+INFO | 2013/04/03 01:27:17 | <Apr 3, 2013 1:27:17 AM EDT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STANDBY> 
+INFO | 2013/04/03 01:27:17 | <Apr 3, 2013 1:27:17 AM EDT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2013/04/03 01:27:19 | -- OTM Event: preDeploy
+INFO | 2013/04/03 01:27:21 | [INFO ][memory ] [YC#2] 23.186-23.217: YC 1173780KB->430294KB (2097152KB), 0.032 s, sum of pauses 31.557 ms, longest pause 31.557 ms.
+INFO | 2013/04/03 01:27:25 | [INFO ][memory ] [YC#3] 26.932-26.958: YC 1237633KB->507889KB (2097152KB), 0.026 s, sum of pauses 25.489 ms, longest pause 25.489 ms.
+INFO | 2013/04/03 01:27:29 | [INFO ][memory ] [YC#4] 30.986-31.011: YC 1318914KB->582276KB (2097152KB), 0.025 s, sum of pauses 25.157 ms, longest pause 25.157 ms.
+INFO | 2013/04/03 01:27:32 | [INFO ][memory ] [YC#5] 34.049-34.075: YC 1391491KB->660300KB (2097152KB), 0.026 s, sum of pauses 25.509 ms, longest pause 25.509 ms.
+INFO | 2013/04/03 01:27:36 | [INFO ][memory ] [YC#6] 38.171-38.198: YC 1468848KB->742108KB (2097152KB), 0.027 s, sum of pauses 26.888 ms, longest pause 26.888 ms.
+INFO | 2013/04/03 01:27:46 | [INFO ][memory ] [YC#7] 47.363-47.411: YC 1567860KB->860496KB (2097152KB), 0.048 s, sum of pauses 47.817 ms, longest pause 47.817 ms.
+INFO | 2013/04/03 01:27:47 | -- OTM Event: initContext
+INFO | 2013/04/03 01:27:47 | -- OTM Event: startupServlet
+INFO | 2013/04/03 01:27:47 | -- OTM Startup: loading startup classes
+INFO | 2013/04/03 01:27:47 | --
+INFO | 2013/04/03 01:27:54 | [INFO ][memory ] [YC#8] 55.282-55.349: YC 1672887KB->949480KB (2097152KB), 0.066 s, sum of pauses 66.310 ms, longest pause 66.310 ms.
+INFO | 2013/04/03 01:28:03 |  : ERROR : 0
+INFO | 2013/04/03 01:28:03 | en : ERROR : 504588
+INFO | 2013/04/03 01:28:04 | en_US : ERROR : 0
+INFO | 2013/04/03 01:28:05 |  : QUERYRESOURCES : 0
+INFO | 2013/04/03 01:28:06 | en : QUERYRESOURCES : 918315
+INFO | 2013/04/03 01:28:06 | en_US : QUERYRESOURCES : 0
+INFO | 2013/04/03 01:28:07 | -- OTM Event: postLoad
+INFO | 2013/04/03 01:28:07 | -- OTM Event: activateThread
+INFO | 2013/04/03 01:28:07 | -- OTM Startup: activating startup classes
+INFO | 2013/04/03 01:28:07 | -- OTM Event: postDeploy
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Notice> <Log Management> <BEA-170027> <The Server has established connection with the Domain level Diagnostic Service successfully.> 
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to ADMIN> 
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RESUMING> 
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Notice> <Security> <BEA-090171> <Loading the identity certificate and private key stored under the alias DemoIdentity from the jks keystore file /home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/DemoIdentity.jks.> 
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Notice> <Security> <BEA-090169> <Loading trusted certificates from the jks keystore file /home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/DemoTrust.jks.> 
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Notice> <Security> <BEA-090169> <Loading trusted certificates from the jks keystore file /home/drvmounts/db1_400g/oracle/otm/jdk/jre/lib/security/cacerts.> 
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Alert> <Security> <BEA-090152> <Demo trusted CA certificate is being used in production mode: [
+INFO | 2013/04/03 01:28:07 | [
+INFO | 2013/04/03 01:28:07 |   Version: V3
+INFO | 2013/04/03 01:28:07 |   Subject: CN=CACERT, OU=FOR TESTING ONLY, O=MyOrganization, L=MyTown, ST=MyState, C=US
+INFO | 2013/04/03 01:28:07 |   Signature Algorithm: MD5withRSA, OID = 1.2.840.113549.1.1.4
+INFO | 2013/04/03 01:28:07 | 
+INFO | 2013/04/03 01:28:07 |   Key:  Sun RSA public key, 512 bits
+INFO | 2013/04/03 01:28:07 |   modulus: 9550192877869244258838480703390456015046425375252278279190673063544122510925482179963329236052146047356415957587628011282484772458983977898996276815440753
+INFO | 2013/04/03 01:28:07 |   public exponent: 65537
+INFO | 2013/04/03 01:28:07 |   Validity: [From: Thu Mar 21 15:12:27 EST 2002,
+INFO | 2013/04/03 01:28:07 |                To: Tue Mar 22 16:12:27 EDT 2022]
+INFO | 2013/04/03 01:28:07 |   Issuer: CN=CACERT, OU=FOR TESTING ONLY, O=MyOrganization, L=MyTown, ST=MyState, C=US
+INFO | 2013/04/03 01:28:07 |   SerialNumber: [    33f10648 fcde0deb 4199921f d64537f4]
+INFO | 2013/04/03 01:28:07 | 
+INFO | 2013/04/03 01:28:07 | Certificate Extensions: 1
+INFO | 2013/04/03 01:28:07 | [1]: ObjectId: 2.5.29.15 Criticality=true
+INFO | 2013/04/03 01:28:07 | KeyUsage [
+INFO | 2013/04/03 01:28:07 |   Key_CertSign
+INFO | 2013/04/03 01:28:07 | ]
+INFO | 2013/04/03 01:28:07 | 
+INFO | 2013/04/03 01:28:07 | ]
+INFO | 2013/04/03 01:28:07 |   Algorithm: [MD5withRSA]
+INFO | 2013/04/03 01:28:07 |   Signature:
+INFO | 2013/04/03 01:28:07 | 0000: 9D 26 4C 29 C8 91 C3 A7   06 C3 24 6F AE B4 F8 82  .&L)......$o....
+INFO | 2013/04/03 01:28:07 | 0010: 80 4D AA CB 7C 79 46 84   81 C4 66 95 F4 1E D8 C4  .M...yF...f.....
+INFO | 2013/04/03 01:28:07 | 0020: E9 B7 D9 7C E2 23 33 A4   B7 21 E0 AA 54 2B 4A FF  .....#3..!..T+J.
+INFO | 2013/04/03 01:28:07 | 0030: CB 21 20 88 81 21 DB AC   90 54 D8 7D 79 63 23 3C  .! ..!...T..yc#<
+INFO | 2013/04/03 01:28:07 | 
+INFO | 2013/04/03 01:28:07 | ] The system is vulnerable to security attacks, since it trusts certificates signed by the demo trusted CA.> 
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=Entrust Root Certification Authority - G2,OU=(c) 2009 Entrust\, Inc. - for authorized use only,OU=See www.entrust.net/legal-terms,O=Entrust\, Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=thawte Primary Root CA - G3,OU=(c) 2008 thawte\, Inc. - For authorized use only,OU=Certification Services Division,O=thawte\, Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=T-TeleSec GlobalRoot Class 3,OU=T-Systems Trust Center,O=T-Systems Enterprise Services GmbH,C=DE". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=T-TeleSec GlobalRoot Class 2,OU=T-Systems Trust Center,O=T-Systems Enterprise Services GmbH,C=DE". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=GlobalSign,O=GlobalSign,OU=GlobalSign Root CA - R3". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "OU=Security Communication RootCA2,O=SECOM Trust Systems CO.\,LTD.,C=JP". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=VeriSign Universal Root Certification Authority,OU=(c) 2008 VeriSign\, Inc. - For authorized use only,OU=VeriSign Trust Network,O=VeriSign\, Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=KEYNECTIS ROOT CA,OU=ROOT,O=KEYNECTIS,C=FR". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=GeoTrust Primary Certification Authority - G3,OU=(c) 2008 GeoTrust Inc. - For authorized use only,O=GeoTrust Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure" is now listening on 192.168.0.44:7002 for protocols iiops, t3s, ldaps, https.> 
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Notice> <Server> <BEA-002613> <Channel "Default" is now listening on 192.168.0.44:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2013/04/03 01:28:07 | <Apr 3, 2013 1:28:07 AM EDT> <Notice> <WebLogicServer> <BEA-000329> <Started WebLogic Admin Server "gc3-erptitlilnx" for domain "Otmv630" running in Production Mode> 
+INFO | 2013/04/03 01:28:08 | <Apr 3, 2013 1:28:08 AM EDT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RUNNING> 
+INFO | 2013/04/03 01:28:08 | <Apr 3, 2013 1:28:08 AM EDT> <Notice> <WebLogicServer> <BEA-000360> <Server started in RUNNING mode> 
+INFO | 2013/04/03 01:28:14 | -- OTM Event: serverReady
+INFO | 2013/04/03 01:38:40 | [INFO ][memory ] [YC#9] 701.670-701.744: YC 1775634KB->1058345KB (2097152KB), 0.074 s, sum of pauses 73.595 ms, longest pause 73.595 ms.
+INFO | 2013/04/03 01:45:42 | <Apr 3, 2013 1:45:42 AM EDT> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 192.168.0.44:52,125 during the configured idle timeout of 5 secs> 
+INFO | 2013/04/03 01:47:53 | <Local Deploy: ejb.PreferenceValue>
+INFO | 2013/04/03 01:47:54 | <Local Deploy: ejb.UserMenuLayout>
+INFO | 2013/04/03 13:09:51 | [INFO ][memory ] [YC#10] 42172.705-42172.748: YC 1866750KB->1122268KB (2097152KB), 0.043 s, sum of pauses 43.385 ms, longest pause 43.385 ms.
+INFO | 2013/04/04 02:16:19 | [INFO ][memory ] [YC#11] 89359.931-89359.960: YC 1911398KB->1132648KB (2097152KB), 0.029 s, sum of pauses 28.651 ms, longest pause 28.651 ms.
+INFO | 2013/04/04 03:10:07 | <Apr 4, 2013 3:10:07 AM EDT> <Error> <WebLogicServer> <BEA-000337> <[STUCK] ExecuteThread: '2' for queue: 'weblogic.kernel.Default (self-tuning)' has been busy for "639" seconds working on the request "Workmanager: weblogic.kernel.Default, Version: 0, Scheduled=false, Started=true, Started time: 639633 ms
+INFO | 2013/04/04 03:10:07 | ", which is more than the configured time (StuckThreadMaxTime) of "600" seconds. Stack trace:
+INFO | 2013/04/04 03:10:07 | Thread-40 "[STUCK] ExecuteThread: '2' for queue: 'weblogic.kernel.Default (self-tuning)'" <alive, in native, suspended, priority=1, DAEMON> {
+INFO | 2013/04/04 03:10:07 |     jrockit.net.SocketNativeIO.readBytesPinned(SocketNativeIO.java:???)
+INFO | 2013/04/04 03:10:07 |     jrockit.net.SocketNativeIO.socketRead(SocketNativeIO.java:24)
+INFO | 2013/04/04 03:10:07 |     java.net.SocketInputStream.socketRead0(SocketInputStream.java:???)
+INFO | 2013/04/04 03:10:07 |     java.net.SocketInputStream.read(SocketInputStream.java:107)
+INFO | 2013/04/04 03:10:07 |     oracle.net.ns.Packet.receive(Packet.java:241)
+INFO | 2013/04/04 03:10:07 |     oracle.net.ns.DataPacket.receive(DataPacket.java:106)
+INFO | 2013/04/04 03:10:07 |     oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:307)
+INFO | 2013/04/04 03:10:07 |     oracle.net.ns.NetInputStream.read(NetInputStream.java:252)
+INFO | 2013/04/04 03:10:07 |     oracle.net.ns.NetInputStream.read(NetInputStream.java:185)
+INFO | 2013/04/04 03:10:07 |     oracle.net.ns.NetInputStream.read(NetInputStream.java:90)
+INFO | 2013/04/04 03:10:07 |     oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:120)
+INFO | 2013/04/04 03:10:07 |     oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:75)
+INFO | 2013/04/04 03:10:07 |     oracle.jdbc.driver.T4CMAREngine.unmarshalUB1(T4CMAREngine.java:1132)
+INFO | 2013/04/04 03:10:07 |     oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:281)
+INFO | 2013/04/04 03:10:07 |     oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:176)
+INFO | 2013/04/04 03:10:07 |     oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:381)
+INFO | 2013/04/04 03:10:07 |     oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:67)
+INFO | 2013/04/04 03:10:07 |     oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:982)
+INFO | 2013/04/04 03:10:07 |     oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1132)
+INFO | 2013/04/04 03:10:07 |     oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1246)
+INFO | 2013/04/04 03:10:07 |     oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3559)
+INFO | 2013/04/04 03:10:07 |     oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3678)
+INFO | 2013/04/04 03:10:07 |     ^-- Holding lock: oracle.jdbc.driver.T4CConnection@1796c481[thin lock]
+INFO | 2013/04/04 03:10:07 |     oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+INFO | 2013/04/04 03:10:07 |     weblogic.jdbc.common.internal.ConnectionEnv.testInternal(ConnectionEnv.java:906)
+INFO | 2013/04/04 03:10:07 |     weblogic.jdbc.common.internal.ConnectionEnv.test(ConnectionEnv.java:883)
+INFO | 2013/04/04 03:10:07 |     weblogic.jdbc.common.internal.ConnectionEnv.test(ConnectionEnv.java:598)
+INFO | 2013/04/04 03:10:07 |     weblogic.common.resourcepool.ResourcePoolImpl.testResource(ResourcePoolImpl.java:2258)
+INFO | 2013/04/04 03:10:07 |     weblogic.common.resourcepool.ResourcePoolImpl.checkResource(ResourcePoolImpl.java:1727)
+INFO | 2013/04/04 03:10:07 |     weblogic.common.resourcepool.ResourcePoolImpl.checkAndReturnResource(ResourcePoolImpl.java:1643)
+INFO | 2013/04/04 03:10:07 |     weblogic.common.resourcepool.ResourcePoolImpl.checkAndReturnResource(ResourcePoolImpl.java:1636)
+INFO | 2013/04/04 03:10:07 |     weblogic.common.resourcepool.ResourcePoolImpl.testUnusedResources(ResourcePoolImpl.java:2060)
+INFO | 2013/04/04 03:10:07 |     weblogic.common.resourcepool.ResourcePoolImpl.access$1600(ResourcePoolImpl.java:41)
+INFO | 2013/04/04 03:10:07 |     weblogic.common.resourcepool.ResourcePoolImpl$ResourcePoolMaintanenceTask.timerExpired(ResourcePoolImpl.java:2730)
+INFO | 2013/04/04 03:10:07 |     weblogic.timers.internal.TimerImpl.run(TimerImpl.java:253)
+INFO | 2013/04/04 03:10:07 |     weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:545)
+INFO | 2013/04/04 03:10:07 |     weblogic.work.ExecuteThread.execute(ExecuteThread.java:250)
+INFO | 2013/04/04 03:10:07 |     weblogic.work.ExecuteThread.run(ExecuteThread.java:213)
+INFO | 2013/04/04 03:10:07 | }
+INFO | 2013/04/04 03:10:07 | 
+INFO | 2013/04/04 03:10:07 | > 
+INFO | 2013/04/04 03:11:07 | <Apr 4, 2013 3:11:07 AM EDT> <Error> <WebLogicServer> <BEA-000337> <[STUCK] ExecuteThread: '2' for queue: 'weblogic.kernel.Default (self-tuning)' has been busy for "699" seconds working on the request "Workmanager: weblogic.kernel.Default, Version: 0, Scheduled=false, Started=true, Started time: 699651 ms
+INFO | 2013/04/04 03:11:07 | ", which is more than the configured time (StuckThreadMaxTime) of "600" seconds. Stack trace:
+INFO | 2013/04/04 03:11:07 | Thread-40 "[STUCK] ExecuteThread: '2' for queue: 'weblogic.kernel.Default (self-tuning)'" <alive, in native, suspended, priority=1, DAEMON> {
+INFO | 2013/04/04 03:11:07 |     jrockit.net.SocketNativeIO.readBytesPinned(SocketNativeIO.java:???)
+INFO | 2013/04/04 03:11:07 |     jrockit.net.SocketNativeIO.socketRead(SocketNativeIO.java:24)
+INFO | 2013/04/04 03:11:07 |     java.net.SocketInputStream.socketRead0(SocketInputStream.java:???)
+INFO | 2013/04/04 03:11:07 |     java.net.SocketInputStream.read(SocketInputStream.java:107)
+INFO | 2013/04/04 03:11:07 |     oracle.net.ns.Packet.receive(Packet.java:241)
+INFO | 2013/04/04 03:11:07 |     oracle.net.ns.DataPacket.receive(DataPacket.java:106)
+INFO | 2013/04/04 03:11:07 |     oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:307)
+INFO | 2013/04/04 03:11:07 |     oracle.net.ns.NetInputStream.read(NetInputStream.java:252)
+INFO | 2013/04/04 03:11:07 |     oracle.net.ns.NetInputStream.read(NetInputStream.java:185)
+INFO | 2013/04/04 03:11:07 |     oracle.net.ns.NetInputStream.read(NetInputStream.java:90)
+INFO | 2013/04/04 03:11:07 |     oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:120)
+INFO | 2013/04/04 03:11:07 |     oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:75)
+INFO | 2013/04/04 03:11:07 |     oracle.jdbc.driver.T4CMAREngine.unmarshalUB1(T4CMAREngine.java:1132)
+INFO | 2013/04/04 03:11:07 |     oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:281)
+INFO | 2013/04/04 03:11:07 |     oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:176)
+INFO | 2013/04/04 03:11:07 |     oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:381)
+INFO | 2013/04/04 03:11:07 |     oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:67)
+INFO | 2013/04/04 03:11:07 |     oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:982)
+INFO | 2013/04/04 03:11:07 |     oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1132)
+INFO | 2013/04/04 03:11:07 |     oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1246)
+INFO | 2013/04/04 03:11:07 |     oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3559)
+INFO | 2013/04/04 03:11:07 |     oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3678)
+INFO | 2013/04/04 03:11:07 |     ^-- Holding lock: oracle.jdbc.driver.T4CConnection@1796c481[thin lock]
+INFO | 2013/04/04 03:11:07 |     oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+INFO | 2013/04/04 03:11:07 |     weblogic.jdbc.common.internal.ConnectionEnv.testInternal(ConnectionEnv.java:906)
+INFO | 2013/04/04 03:11:07 |     weblogic.jdbc.common.internal.ConnectionEnv.test(ConnectionEnv.java:883)
+INFO | 2013/04/04 03:11:07 |     weblogic.jdbc.common.internal.ConnectionEnv.test(ConnectionEnv.java:598)
+INFO | 2013/04/04 03:11:07 |     weblogic.common.resourcepool.ResourcePoolImpl.testResource(ResourcePoolImpl.java:2258)
+INFO | 2013/04/04 03:11:07 |     weblogic.common.resourcepool.ResourcePoolImpl.checkResource(ResourcePoolImpl.java:1727)
+INFO | 2013/04/04 03:11:07 |     weblogic.common.resourcepool.ResourcePoolImpl.checkAndReturnResource(ResourcePoolImpl.java:1643)
+INFO | 2013/04/04 03:11:07 |     weblogic.common.resourcepool.ResourcePoolImpl.checkAndReturnResource(ResourcePoolImpl.java:1636)
+INFO | 2013/04/04 03:11:07 |     weblogic.common.resourcepool.ResourcePoolImpl.testUnusedResources(ResourcePoolImpl.java:2060)
+INFO | 2013/04/04 03:11:07 |     weblogic.common.resourcepool.ResourcePoolImpl.access$1600(ResourcePoolImpl.java:41)
+INFO | 2013/04/04 03:11:07 |     weblogic.common.resourcepool.ResourcePoolImpl$ResourcePoolMaintanenceTask.timerExpired(ResourcePoolImpl.java:2730)
+INFO | 2013/04/04 03:11:07 |     weblogic.timers.internal.TimerImpl.run(TimerImpl.java:253)
+INFO | 2013/04/04 03:11:07 |     weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:545)
+INFO | 2013/04/04 03:11:07 |     weblogic.work.ExecuteThread.execute(ExecuteThread.java:250)
+INFO | 2013/04/04 03:11:07 |     weblogic.work.ExecuteThread.run(ExecuteThread.java:213)
+INFO | 2013/04/04 03:11:07 | }
+INFO | 2013/04/04 03:11:07 | 
+INFO | 2013/04/04 03:11:07 | > 
+INFO | 2013/04/04 03:16:24 | <Apr 4, 2013 3:16:24 AM EDT> <Error> <JDBC> <BEA-001112> <Test "select count(*) from dual" set up for pool "PRIMARY_JTS" failed with exception: "java.sql.SQLRecoverableException: IO Error: Read failed: No route to host".> 
+INFO | 2013/04/04 03:16:25 | <Apr 4, 2013 3:16:25 AM EDT> <Warning> <JDBC> <BEA-001129> <Received exception while creating connection for pool "PRIMARY_JTS": IO Error: The Network Adapter could not establish the connection.> 
+INFO | 2013/04/04 03:30:11 | <Apr 4, 2013 3:30:11 AM EDT> <Error> <JTA> <BEA-110412> <Name=[EJB glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(glog.server.workflow.WorkflowFactory,glog.server.workflow.Trigger,glog.server.workflow.Topic)],Xid=BEA1-06147FEF22741DAF4BF5(281222845),Status=Rolled back. [Reason=weblogic.transaction.internal.AppSetRollbackOnlyException: setRollbackOnly called on transaction],HeuristicErrorCode=XA_HEURHAZ,numRepliesOwedMe=0,numRepliesOwedOthers=0,seconds since begin=1870,seconds left=60,activeThread=Thread[timer - 1,5,Pooled Threads],XAServerResourceInfo[PRIMARY_JTS_Otmv630]=(ServerResourceInfo[PRIMARY_JTS_Otmv630]=(state=rolledback,assigned=gc3-erptitlilnx),xar=weblogic.jdbc.wrapper.JTSEmulateXAResourceImpl@10c00a98,re-Registered = false),SCInfo[Otmv630+gc3-erptitlilnx]=(state=rolledback),properties=({weblogic.transaction.name=[EJB glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(glog.server.workflow.WorkflowFactory,glog.server.workflow.Trigger,glog.server.workflow.Topic)], ISOLATION LEVEL=2, weblogic.jdbc.remote.PRIMARY_JTS=t3://192.168.0.44:7001}),OwnerTransactionManager=ServerTM[ServerCoordinatorDescriptor=(CoordinatorURL=gc3-erptitlilnx+192.168.0.44:7001+Otmv630+t3+, XAResources={WLStore_Otmv630__WLS_gc3-erptitlilnx, WSATGatewayRM_gc3-erptitlilnx_Otmv630, PRIMARY_JTS_Otmv630},NonXAResources={})],CoordinatorURL=gc3-erptitlilnx+192.168.0.44:7001+Otmv630+t3+) completed heuristically: (PRIMARY_JTS_Otmv630, HeuristicHazard, (javax.transaction.xa.XAException: Two rollbacks failed. The first one threw Closed Connection. The second one threw Closed Connection)) > 
+INFO | 2013/04/04 03:30:11 | <Apr 4, 2013 3:30:11 AM EDT> <Error> <EJB> <BEA-010025> <Exception occurred during rollback of transaction Name=[EJB glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(glog.server.workflow.WorkflowFactory,glog.server.workflow.Trigger,glog.server.workflow.Topic)],Xid=BEA1-06147FEF22741DAF4BF5(281222845),Status=Rolled back. [Reason=weblogic.transaction.internal.AppSetRollbackOnlyException: setRollbackOnly called on transaction],HeuristicErrorCode=XA_HEURHAZ,numRepliesOwedMe=0,numRepliesOwedOthers=0,seconds since begin=1870,seconds left=60,XAServerResourceInfo[PRIMARY_JTS_Otmv630]=(ServerResourceInfo[PRIMARY_JTS_Otmv630]=(state=rolledback,assigned=gc3-erptitlilnx),xar=weblogic.jdbc.wrapper.JTSEmulateXAResourceImpl@10c00a98,re-Registered = false),SCInfo[Otmv630+gc3-erptitlilnx]=(state=rolledback),properties=({weblogic.transaction.name=[EJB glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(glog.server.workflow.WorkflowFactory,glog.server.workflow.Trigger,glog.server.workflow.Topic)], ISOLATION LEVEL=2, weblogic.jdbc.remote.PRIMARY_JTS=t3://192.168.0.44:7001}),OwnerTransactionManager=ServerTM[ServerCoordinatorDescriptor=(CoordinatorURL=gc3-erptitlilnx+192.168.0.44:7001+Otmv630+t3+, XAResources={WLStore_Otmv630__WLS_gc3-erptitlilnx, WSATGatewayRM_gc3-erptitlilnx_Otmv630, PRIMARY_JTS_Otmv630},NonXAResources={})],CoordinatorURL=gc3-erptitlilnx+192.168.0.44:7001+Otmv630+t3+): javax.transaction.SystemException: Heuristic hazard: (PRIMARY_JTS_Otmv630, HeuristicHazard, (javax.transaction.xa.XAException: Two rollbacks failed. The first one threw Closed Connection. The second one threw Closed Connection)) 
+INFO | 2013/04/04 03:30:11 | 	at weblogic.transaction.internal.ServerTransactionImpl.internalRollback(ServerTransactionImpl.java:455)
+INFO | 2013/04/04 03:30:11 | 	at weblogic.transaction.internal.ServerTransactionImpl.rollback(ServerTransactionImpl.java:421)
+INFO | 2013/04/04 03:30:11 | 	at weblogic.ejb.container.internal.BaseRemoteObject.postInvoke1(BaseRemoteObject.java:574)
+INFO | 2013/04/04 03:30:11 | 	at weblogic.ejb.container.internal.StatelessRemoteObject.postInvoke1(StatelessRemoteObject.java:49)
+INFO | 2013/04/04 03:30:11 | 	at weblogic.ejb.container.internal.BaseRemoteObject.__WL_postInvokeTxRetry(BaseRemoteObject.java:444)
+INFO | 2013/04/04 03:30:11 | 	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:53)
+INFO | 2013/04/04 03:30:11 | 	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.execute(Unknown Source)
+INFO | 2013/04/04 03:30:11 | 	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:352)
+INFO | 2013/04/04 03:30:11 | 	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+INFO | 2013/04/04 03:30:11 | 	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:146)
+INFO | 2013/04/04 03:30:11 | 	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:100)
+INFO | 2013/04/04 03:30:11 | 	at glog.util.event.EventThread.run(EventThread.java:87)
+INFO | 2013/04/04 03:30:11 | 	at java.lang.Thread.run(Thread.java:662)
+INFO | 2013/04/04 03:30:11 | > 
+INFO | 2013/04/04 03:32:03 | <Apr 4, 2013 3:32:03 AM EDT> <Error> <JDBC> <BEA-001112> <Test "select count(*) from dual" set up for pool "PRIMARY_JTS" failed with exception: "java.sql.SQLRecoverableException: IO Error: Read failed: No route to host".> 
+INFO | 2013/04/04 03:32:06 | <Apr 4, 2013 3:32:06 AM EDT> <Warning> <JDBC> <BEA-001129> <Received exception while creating connection for pool "PRIMARY_JTS": IO Error: The Network Adapter could not establish the connection.> 
+INFO | 2013/04/04 03:32:06 | <Apr 4, 2013 3:32:06 AM EDT> <Error> <JTA> <BEA-110412> <Name=[EJB glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(glog.server.workflow.WorkflowFactory,glog.server.workflow.Trigger,glog.server.workflow.Topic)],Xid=BEA1-06157FEF22741DAF4BF5(281233528),Status=Rolled back. [Reason=weblogic.transaction.internal.AppSetRollbackOnlyException: setRollbackOnly called on transaction],HeuristicErrorCode=XA_HEURHAZ,numRepliesOwedMe=0,numRepliesOwedOthers=0,seconds since begin=114,seconds left=60,activeThread=Thread[timer - 1,5,Pooled Threads],XAServerResourceInfo[PRIMARY_JTS_Otmv630]=(ServerResourceInfo[PRIMARY_JTS_Otmv630]=(state=rolledback,assigned=gc3-erptitlilnx),xar=weblogic.jdbc.wrapper.JTSEmulateXAResourceImpl@10c35b82,re-Registered = false),SCInfo[Otmv630+gc3-erptitlilnx]=(state=rolledback),properties=({weblogic.transaction.name=[EJB glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(glog.server.workflow.WorkflowFactory,glog.server.workflow.Trigger,glog.server.workflow.Topic)], ISOLATION LEVEL=2, weblogic.jdbc.remote.PRIMARY_JTS=t3://192.168.0.44:7001}),OwnerTransactionManager=ServerTM[ServerCoordinatorDescriptor=(CoordinatorURL=gc3-erptitlilnx+192.168.0.44:7001+Otmv630+t3+, XAResources={WLStore_Otmv630__WLS_gc3-erptitlilnx, WSATGatewayRM_gc3-erptitlilnx_Otmv630, PRIMARY_JTS_Otmv630},NonXAResources={})],CoordinatorURL=gc3-erptitlilnx+192.168.0.44:7001+Otmv630+t3+) completed heuristically: (PRIMARY_JTS_Otmv630, HeuristicHazard, (javax.transaction.xa.XAException: Two rollbacks failed. The first one threw Closed Connection. The second one threw Closed Connection)) > 
+INFO | 2013/04/04 03:32:06 | <Apr 4, 2013 3:32:06 AM EDT> <Error> <EJB> <BEA-010025> <Exception occurred during rollback of transaction Name=[EJB glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(glog.server.workflow.WorkflowFactory,glog.server.workflow.Trigger,glog.server.workflow.Topic)],Xid=BEA1-06157FEF22741DAF4BF5(281233528),Status=Rolled back. [Reason=weblogic.transaction.internal.AppSetRollbackOnlyException: setRollbackOnly called on transaction],HeuristicErrorCode=XA_HEURHAZ,numRepliesOwedMe=0,numRepliesOwedOthers=0,seconds since begin=114,seconds left=60,XAServerResourceInfo[PRIMARY_JTS_Otmv630]=(ServerResourceInfo[PRIMARY_JTS_Otmv630]=(state=rolledback,assigned=gc3-erptitlilnx),xar=weblogic.jdbc.wrapper.JTSEmulateXAResourceImpl@10c35b82,re-Registered = false),SCInfo[Otmv630+gc3-erptitlilnx]=(state=rolledback),properties=({weblogic.transaction.name=[EJB glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(glog.server.workflow.WorkflowFactory,glog.server.workflow.Trigger,glog.server.workflow.Topic)], ISOLATION LEVEL=2, weblogic.jdbc.remote.PRIMARY_JTS=t3://192.168.0.44:7001}),OwnerTransactionManager=ServerTM[ServerCoordinatorDescriptor=(CoordinatorURL=gc3-erptitlilnx+192.168.0.44:7001+Otmv630+t3+, XAResources={WLStore_Otmv630__WLS_gc3-erptitlilnx, WSATGatewayRM_gc3-erptitlilnx_Otmv630, PRIMARY_JTS_Otmv630},NonXAResources={})],CoordinatorURL=gc3-erptitlilnx+192.168.0.44:7001+Otmv630+t3+): javax.transaction.SystemException: Heuristic hazard: (PRIMARY_JTS_Otmv630, HeuristicHazard, (javax.transaction.xa.XAException: Two rollbacks failed. The first one threw Closed Connection. The second one threw Closed Connection)) 
+INFO | 2013/04/04 03:32:06 | 	at weblogic.transaction.internal.ServerTransactionImpl.internalRollback(ServerTransactionImpl.java:455)
+INFO | 2013/04/04 03:32:06 | 	at weblogic.transaction.internal.ServerTransactionImpl.rollback(ServerTransactionImpl.java:421)
+INFO | 2013/04/04 03:32:06 | 	at weblogic.ejb.container.internal.BaseRemoteObject.postInvoke1(BaseRemoteObject.java:574)
+INFO | 2013/04/04 03:32:06 | 	at weblogic.ejb.container.internal.StatelessRemoteObject.postInvoke1(StatelessRemoteObject.java:49)
+INFO | 2013/04/04 03:32:06 | 	at weblogic.ejb.container.internal.BaseRemoteObject.__WL_postInvokeTxRetry(BaseRemoteObject.java:444)
+INFO | 2013/04/04 03:32:06 | 	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:53)
+INFO | 2013/04/04 03:32:06 | 	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.execute(Unknown Source)
+INFO | 2013/04/04 03:32:06 | 	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:352)
+INFO | 2013/04/04 03:32:06 | 	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+INFO | 2013/04/04 03:32:06 | 	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:146)
+INFO | 2013/04/04 03:32:06 | 	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:100)
+INFO | 2013/04/04 03:32:06 | 	at glog.util.event.EventThread.run(EventThread.java:87)
+INFO | 2013/04/04 03:32:06 | 	at java.lang.Thread.run(Thread.java:662)
+INFO | 2013/04/04 03:32:06 | > 
+INFO | 2013/04/04 04:48:07 | <Apr 4, 2013 4:48:07 AM EDT> <Error> <WebLogicServer> <BEA-000337> <[STUCK] ExecuteThread: '2' for queue: 'weblogic.kernel.Default (self-tuning)' has been busy for "603" seconds working on the request "glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl", which is more than the configured time (StuckThreadMaxTime) of "600" seconds. Stack trace:
+INFO | 2013/04/04 04:48:07 | Thread-40 "[STUCK] ExecuteThread: '2' for queue: 'weblogic.kernel.Default (self-tuning)'" <alive, suspended, blocked, priority=1, DAEMON> {
+INFO | 2013/04/04 04:48:07 |     -- Blocked trying to get lock: glog.util.datasource.LocalServerConnectionPoolInstance@1cb1642a[fat lock]
+INFO | 2013/04/04 04:48:07 |     glog.util.datasource.GC3ConnectionPoolInstance.reserve(GC3ConnectionPoolInstance.java:46)
+INFO | 2013/04/04 04:48:07 |     glog.util.datasource.LocalServerConnectionPoolInstance.reserve(LocalServerConnectionPoolInstance.java:18)
+INFO | 2013/04/04 04:48:07 |     glog.util.datasource.GC3ConnectionPool.reserve(GC3ConnectionPool.java:30)
+INFO | 2013/04/04 04:48:07 |     glog.util.datasource.DataSource.reserve(DataSource.java:148)
+INFO | 2013/04/04 04:48:07 |     glog.util.datasource.DataSource.reserve(DataSource.java:143)
+INFO | 2013/04/04 04:48:07 |     glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:418)
+INFO | 2013/04/04 04:48:07 |     glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:413)
+INFO | 2013/04/04 04:48:07 |     glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:66)
+INFO | 2013/04/04 04:48:07 |     glog.server.useraccess.UserAccessSessionBean.getUserAccess(UserAccessSessionBean.java:150)
+INFO | 2013/04/04 04:48:07 |     glog.server.useraccess.UserAccessSessionServerSideEJBWrapper.getUserAccess(UserAccessSessionServerSideEJBWrapper.java:81)
+INFO | 2013/04/04 04:48:07 |     glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl.__WL_invoke(Unknown Source)
+INFO | 2013/04/04 04:48:07 |     weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:21)
+INFO | 2013/04/04 04:48:07 |     glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl.getUserAccess(Unknown Source)
+INFO | 2013/04/04 04:48:07 |     glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl_WLSkel.invoke(Unknown Source)
+INFO | 2013/04/04 04:48:07 |     weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:645)
+INFO | 2013/04/04 04:48:07 |     weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:216)
+INFO | 2013/04/04 04:48:07 |     weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:522)
+INFO | 2013/04/04 04:48:07 |     weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:350)
+INFO | 2013/04/04 04:48:07 |     weblogic.security.service.SecurityManager.runAs(SecurityManager.java:142)
+INFO | 2013/04/04 04:48:07 |     weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:470)
+INFO | 2013/04/04 04:48:07 |     weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:117)
+INFO | 2013/04/04 04:48:07 |     weblogic.work.ExecuteThread.execute(ExecuteThread.java:250)
+INFO | 2013/04/04 04:48:07 |     weblogic.work.ExecuteThread.run(ExecuteThread.java:213)
+INFO | 2013/04/04 04:48:07 | }
+INFO | 2013/04/04 04:48:07 | 
+INFO | 2013/04/04 04:48:07 | > 
+INFO | 2013/04/04 04:49:07 | <Apr 4, 2013 4:49:07 AM EDT> <Error> <WebLogicServer> <BEA-000337> <[STUCK] ExecuteThread: '2' for queue: 'weblogic.kernel.Default (self-tuning)' has been busy for "663" seconds working on the request "glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl", which is more than the configured time (StuckThreadMaxTime) of "600" seconds. Stack trace:
+INFO | 2013/04/04 04:49:07 | Thread-40 "[STUCK] ExecuteThread: '2' for queue: 'weblogic.kernel.Default (self-tuning)'" <alive, suspended, blocked, priority=1, DAEMON> {
+INFO | 2013/04/04 04:49:07 |     -- Blocked trying to get lock: glog.util.datasource.LocalServerConnectionPoolInstance@1cb1642a[fat lock]
+INFO | 2013/04/04 04:49:07 |     glog.util.datasource.GC3ConnectionPoolInstance.reserve(GC3ConnectionPoolInstance.java:46)
+INFO | 2013/04/04 04:49:07 |     glog.util.datasource.LocalServerConnectionPoolInstance.reserve(LocalServerConnectionPoolInstance.java:18)
+INFO | 2013/04/04 04:49:07 |     glog.util.datasource.GC3ConnectionPool.reserve(GC3ConnectionPool.java:30)
+INFO | 2013/04/04 04:49:07 |     glog.util.datasource.DataSource.reserve(DataSource.java:148)
+INFO | 2013/04/04 04:49:07 |     glog.util.datasource.DataSource.reserve(DataSource.java:143)
+INFO | 2013/04/04 04:49:07 |     glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:418)
+INFO | 2013/04/04 04:49:07 |     glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:413)
+INFO | 2013/04/04 04:49:07 |     glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:66)
+INFO | 2013/04/04 04:49:07 |     glog.server.useraccess.UserAccessSessionBean.getUserAccess(UserAccessSessionBean.java:150)
+INFO | 2013/04/04 04:49:07 |     glog.server.useraccess.UserAccessSessionServerSideEJBWrapper.getUserAccess(UserAccessSessionServerSideEJBWrapper.java:81)
+INFO | 2013/04/04 04:49:07 |     glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl.__WL_invoke(Unknown Source)
+INFO | 2013/04/04 04:49:07 |     weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:21)
+INFO | 2013/04/04 04:49:07 |     glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl.getUserAccess(Unknown Source)
+INFO | 2013/04/04 04:49:07 |     glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl_WLSkel.invoke(Unknown Source)
+INFO | 2013/04/04 04:49:07 |     weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:645)
+INFO | 2013/04/04 04:49:07 |     weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:216)
+INFO | 2013/04/04 04:49:07 |     weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:522)
+INFO | 2013/04/04 04:49:07 |     weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:350)
+INFO | 2013/04/04 04:49:07 |     weblogic.security.service.SecurityManager.runAs(SecurityManager.java:142)
+INFO | 2013/04/04 04:49:07 |     weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:470)
+INFO | 2013/04/04 04:49:07 |     weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:117)
+INFO | 2013/04/04 04:49:07 |     weblogic.work.ExecuteThread.execute(ExecuteThread.java:250)
+INFO | 2013/04/04 04:49:07 |     weblogic.work.ExecuteThread.run(ExecuteThread.java:213)
+INFO | 2013/04/04 04:49:07 | }
+INFO | 2013/04/04 04:49:07 | 
+INFO | 2013/04/04 04:49:07 | > 
+INFO | 2013/04/05 04:00:08 | <Apr 5, 2013 4:00:08 AM EDT> <Error> <WebLogicServer> <BEA-000337> <[STUCK] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)' has been busy for "635" seconds working on the request "Workmanager: weblogic.kernel.Default, Version: 0, Scheduled=false, Started=true, Started time: 635208 ms
+INFO | 2013/04/05 04:00:08 | ", which is more than the configured time (StuckThreadMaxTime) of "600" seconds. Stack trace:
+INFO | 2013/04/05 04:00:08 | Thread-15 "[STUCK] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'" <alive, in native, suspended, priority=1, DAEMON> {
+INFO | 2013/04/05 04:00:08 |     jrockit.net.SocketNativeIO.readBytesPinned(SocketNativeIO.java:???)
+INFO | 2013/04/05 04:00:08 |     jrockit.net.SocketNativeIO.socketRead(SocketNativeIO.java:24)
+INFO | 2013/04/05 04:00:08 |     java.net.SocketInputStream.socketRead0(SocketInputStream.java:???)
+INFO | 2013/04/05 04:00:08 |     java.net.SocketInputStream.read(SocketInputStream.java:107)
+INFO | 2013/04/05 04:00:08 |     oracle.net.ns.Packet.receive(Packet.java:241)
+INFO | 2013/04/05 04:00:08 |     oracle.net.ns.DataPacket.receive(DataPacket.java:106)
+INFO | 2013/04/05 04:00:08 |     oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:307)
+INFO | 2013/04/05 04:00:08 |     oracle.net.ns.NetInputStream.read(NetInputStream.java:252)
+INFO | 2013/04/05 04:00:08 |     oracle.net.ns.NetInputStream.read(NetInputStream.java:185)
+INFO | 2013/04/05 04:00:08 |     oracle.net.ns.NetInputStream.read(NetInputStream.java:90)
+INFO | 2013/04/05 04:00:08 |     oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:120)
+INFO | 2013/04/05 04:00:08 |     oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:75)
+INFO | 2013/04/05 04:00:08 |     oracle.jdbc.driver.T4CMAREngine.unmarshalUB1(T4CMAREngine.java:1132)
+INFO | 2013/04/05 04:00:08 |     oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:281)
+INFO | 2013/04/05 04:00:08 |     oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:176)
+INFO | 2013/04/05 04:00:08 |     oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:381)
+INFO | 2013/04/05 04:00:08 |     oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:67)
+INFO | 2013/04/05 04:00:08 |     oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:982)
+INFO | 2013/04/05 04:00:08 |     oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1132)
+INFO | 2013/04/05 04:00:08 |     oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1246)
+INFO | 2013/04/05 04:00:08 |     oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3559)
+INFO | 2013/04/05 04:00:08 |     oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3678)
+INFO | 2013/04/05 04:00:08 |     ^-- Holding lock: oracle.jdbc.driver.T4CConnection@11608034[thin lock]
+INFO | 2013/04/05 04:00:08 |     oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+INFO | 2013/04/05 04:00:08 |     weblogic.jdbc.common.internal.ConnectionEnv.testInternal(ConnectionEnv.java:906)
+INFO | 2013/04/05 04:00:08 |     weblogic.jdbc.common.internal.ConnectionEnv.test(ConnectionEnv.java:883)
+INFO | 2013/04/05 04:00:08 |     weblogic.jdbc.common.internal.ConnectionEnv.test(ConnectionEnv.java:598)
+INFO | 2013/04/05 04:00:08 |     weblogic.common.resourcepool.ResourcePoolImpl.testResource(ResourcePoolImpl.java:2258)
+INFO | 2013/04/05 04:00:08 |     weblogic.common.resourcepool.ResourcePoolImpl.checkResource(ResourcePoolImpl.java:1727)
+INFO | 2013/04/05 04:00:08 |     weblogic.common.resourcepool.ResourcePoolImpl.checkAndReturnResource(ResourcePoolImpl.java:1643)
+INFO | 2013/04/05 04:00:08 |     weblogic.common.resourcepool.ResourcePoolImpl.checkAndReturnResource(ResourcePoolImpl.java:1636)
+INFO | 2013/04/05 04:00:08 |     weblogic.common.resourcepool.ResourcePoolImpl.testUnusedResources(ResourcePoolImpl.java:2060)
+INFO | 2013/04/05 04:00:08 |     weblogic.common.resourcepool.ResourcePoolImpl.access$1600(ResourcePoolImpl.java:41)
+INFO | 2013/04/05 04:00:08 |     weblogic.common.resourcepool.ResourcePoolImpl$ResourcePoolMaintanenceTask.timerExpired(ResourcePoolImpl.java:2730)
+INFO | 2013/04/05 04:00:08 |     weblogic.timers.internal.TimerImpl.run(TimerImpl.java:253)
+INFO | 2013/04/05 04:00:08 |     weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:545)
+INFO | 2013/04/05 04:00:08 |     weblogic.work.ExecuteThread.execute(ExecuteThread.java:250)
+INFO | 2013/04/05 04:00:08 |     weblogic.work.ExecuteThread.run(ExecuteThread.java:213)
+INFO | 2013/04/05 04:00:08 | }
+INFO | 2013/04/05 04:00:08 | 
+INFO | 2013/04/05 04:00:08 | > 
+INFO | 2013/04/05 04:01:08 | <Apr 5, 2013 4:01:08 AM EDT> <Error> <WebLogicServer> <BEA-000337> <[STUCK] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)' has been busy for "695" seconds working on the request "Workmanager: weblogic.kernel.Default, Version: 0, Scheduled=false, Started=true, Started time: 695210 ms
+INFO | 2013/04/05 04:01:08 | ", which is more than the configured time (StuckThreadMaxTime) of "600" seconds. Stack trace:
+INFO | 2013/04/05 04:01:08 | Thread-15 "[STUCK] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'" <alive, in native, suspended, priority=1, DAEMON> {
+INFO | 2013/04/05 04:01:08 |     jrockit.net.SocketNativeIO.readBytesPinned(SocketNativeIO.java:???)
+INFO | 2013/04/05 04:01:08 |     jrockit.net.SocketNativeIO.socketRead(SocketNativeIO.java:24)
+INFO | 2013/04/05 04:01:08 |     java.net.SocketInputStream.socketRead0(SocketInputStream.java:???)
+INFO | 2013/04/05 04:01:08 |     java.net.SocketInputStream.read(SocketInputStream.java:107)
+INFO | 2013/04/05 04:01:08 |     oracle.net.ns.Packet.receive(Packet.java:241)
+INFO | 2013/04/05 04:01:08 |     oracle.net.ns.DataPacket.receive(DataPacket.java:106)
+INFO | 2013/04/05 04:01:08 |     oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:307)
+INFO | 2013/04/05 04:01:08 |     oracle.net.ns.NetInputStream.read(NetInputStream.java:252)
+INFO | 2013/04/05 04:01:08 |     oracle.net.ns.NetInputStream.read(NetInputStream.java:185)
+INFO | 2013/04/05 04:01:08 |     oracle.net.ns.NetInputStream.read(NetInputStream.java:90)
+INFO | 2013/04/05 04:01:08 |     oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:120)
+INFO | 2013/04/05 04:01:08 |     oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:75)
+INFO | 2013/04/05 04:01:08 |     oracle.jdbc.driver.T4CMAREngine.unmarshalUB1(T4CMAREngine.java:1132)
+INFO | 2013/04/05 04:01:08 |     oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:281)
+INFO | 2013/04/05 04:01:08 |     oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:176)
+INFO | 2013/04/05 04:01:08 |     oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:381)
+INFO | 2013/04/05 04:01:08 |     oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:67)
+INFO | 2013/04/05 04:01:08 |     oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:982)
+INFO | 2013/04/05 04:01:08 |     oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1132)
+INFO | 2013/04/05 04:01:08 |     oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1246)
+INFO | 2013/04/05 04:01:08 |     oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3559)
+INFO | 2013/04/05 04:01:08 |     oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3678)
+INFO | 2013/04/05 04:01:08 |     ^-- Holding lock: oracle.jdbc.driver.T4CConnection@11608034[thin lock]
+INFO | 2013/04/05 04:01:08 |     oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+INFO | 2013/04/05 04:01:08 |     weblogic.jdbc.common.internal.ConnectionEnv.testInternal(ConnectionEnv.java:906)
+INFO | 2013/04/05 04:01:08 |     weblogic.jdbc.common.internal.ConnectionEnv.test(ConnectionEnv.java:883)
+INFO | 2013/04/05 04:01:08 |     weblogic.jdbc.common.internal.ConnectionEnv.test(ConnectionEnv.java:598)
+INFO | 2013/04/05 04:01:08 |     weblogic.common.resourcepool.ResourcePoolImpl.testResource(ResourcePoolImpl.java:2258)
+INFO | 2013/04/05 04:01:08 |     weblogic.common.resourcepool.ResourcePoolImpl.checkResource(ResourcePoolImpl.java:1727)
+INFO | 2013/04/05 04:01:08 |     weblogic.common.resourcepool.ResourcePoolImpl.checkAndReturnResource(ResourcePoolImpl.java:1643)
+INFO | 2013/04/05 04:01:08 |     weblogic.common.resourcepool.ResourcePoolImpl.checkAndReturnResource(ResourcePoolImpl.java:1636)
+INFO | 2013/04/05 04:01:08 |     weblogic.common.resourcepool.ResourcePoolImpl.testUnusedResources(ResourcePoolImpl.java:2060)
+INFO | 2013/04/05 04:01:08 |     weblogic.common.resourcepool.ResourcePoolImpl.access$1600(ResourcePoolImpl.java:41)
+INFO | 2013/04/05 04:01:08 |     weblogic.common.resourcepool.ResourcePoolImpl$ResourcePoolMaintanenceTask.timerExpired(ResourcePoolImpl.java:2730)
+INFO | 2013/04/05 04:01:08 |     weblogic.timers.internal.TimerImpl.run(TimerImpl.java:253)
+INFO | 2013/04/05 04:01:08 |     weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:545)
+INFO | 2013/04/05 04:01:08 |     weblogic.work.ExecuteThread.execute(ExecuteThread.java:250)
+INFO | 2013/04/05 04:01:08 |     weblogic.work.ExecuteThread.run(ExecuteThread.java:213)
+INFO | 2013/04/05 04:01:08 | }
+INFO | 2013/04/05 04:01:08 | 
+INFO | 2013/04/05 04:01:08 | > 
+INFO | 2013/04/05 04:05:02 | <Apr 5, 2013 4:05:02 AM EDT> <Error> <JDBC> <BEA-001112> <Test "select count(*) from dual" set up for pool "PRIMARY_JTS" failed with exception: "java.sql.SQLRecoverableException: IO Error: Read failed: No route to host".> 

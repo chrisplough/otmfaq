@@ -1,0 +1,57 @@
+package glog.webserver.gtl.fields;
+
+import glog.webserver.gtl.ThemeSupport;
+import glog.webserver.i18n.Translator;
+import glog.webserver.util.MiscellaneousHelper;
+import glog.webserver.util.UOMHelper;
+import glog.webserver.util.Util;
+
+import java.io.IOException;
+
+import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.JspWriter;
+
+public class FieldDateTimeJsTag extends FieldDateBase
+{
+
+	private static final long serialVersionUID = 1L;
+
+	public FieldDateTimeJsTag()
+    {
+        fieldType = "fieldDateTime";
+        hasTime = true;
+        size = 22;
+    }
+
+    public void init()
+    {
+        super.init();
+        size = 22;
+    }
+    
+    protected void doReadWrite(JspWriter out)
+    throws JspException, IOException
+    {
+    String sizeStr = " size=\"" + size + "\" ";
+    out.print("<input type=\"text\" id=\"" + name + "::content\" name=\"" + name + "\" " + sizeStr);
+    if("btwcurr".equals(operatorValue) || "rd".equals(operatorValue))
+        out.print("value=\"" + value + "\" ");
+    else
+        out.print("value=\"" + UOMHelper.convertDateForDisplay(value) + "\" ");
+    out.print(" onkeydown=\"javascript:fieldDateTimeHandler(event, '" + form + "', '" + name + "','true','" + query + "');\" onChange=\"" + onChangeAdd + "\"/>");
+    out.print("<input type=\"hidden\" name=\"is_date_" + name + "\" value=\"joe\"/>");
+    out.print("<script language=\"javascript\">");
+    if(hasTime)
+        out.print("new TimeField('" + form + "', '" + name + "', '" + MiscellaneousHelper.escapeStringForJavaScript(translatedLabel) + "', '" + grid + "', '" + UOMHelper.getUserPreference("DATE_FORMAT") + "', '" + allowVars + "');");
+    else
+        out.print("new DateField('" + form + "', '" + name + "', '" + MiscellaneousHelper.escapeStringForJavaScript(translatedLabel) + "', '" + grid + "', '" + UOMHelper.getUserPreference("DATE_FORMAT") + "', '" + allowVars + "');");
+    out.print("TMPage.PAGE.addComponent(new TMUIInputDateComponent('" + name + "',{'displayTime':" + Boolean.toString(hasTime) + ", 'displayTimeCheckbox':" + Boolean.toString(query) + "}));");
+    out.print("TMPage.PAGE.addComponent(new TMUIChooseDateComponent('" + name + "::popChooseDate',{'displayTime':" + Boolean.toString(hasTime) + ", 'displayTimeCheckbox':" + Boolean.toString(query) + "}));");
+    out.print("</script>");
+    out.print("<a style=\"vertical-align: bottom\" href=\"View Calendar\" id=\"" + name + "::glyph\">");
+    out.print("<img src=\"" + Util.getUrlPrefix() + ThemeSupport.getThemeVar("date_img") + "\" border=\"0\" alt=\"" + Translator.getTranslatedValue("label.Calendar") + "\"/>");
+    out.print("</a>");
+    if(query)
+        doDateQuery(out);
+    }
+}

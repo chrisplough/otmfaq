@@ -1,0 +1,372 @@
+INFO | 2010/01/15 19:34:52 | Starting Launched Process...
+INFO | 2010/01/15 19:34:52 | Argument #0 : E:/OTM/jdk/bin/java
+INFO | 2010/01/15 19:34:52 | Argument #1 : -jrockit
+INFO | 2010/01/15 19:34:52 | Argument #2 : -Xms1600m
+INFO | 2010/01/15 19:34:52 | Argument #3 : -Xmx1600m
+INFO | 2010/01/15 19:34:52 | Argument #4 : -Xgcprio:throughput
+INFO | 2010/01/15 19:34:52 | Argument #5 : -Xverbose:memory
+INFO | 2010/01/15 19:34:52 | Argument #6 : -Xnoclassgc
+INFO | 2010/01/15 19:34:52 | Argument #7 : -Dglog.home=E:/OTM/glog/config
+INFO | 2010/01/15 19:34:52 | Argument #8 : -Duser.home=E:/OTM/glog/config
+INFO | 2010/01/15 19:34:52 | Argument #9 : -Djava.io.tmpdir=E:/OTM/temp
+INFO | 2010/01/15 19:34:52 | Argument #10 : -Djava.awt.headless=true
+INFO | 2010/01/15 19:34:52 | Argument #11 : -Djava.security.auth.login.config=E:/OTM/glog/config/otm_jaas.config
+INFO | 2010/01/15 19:34:52 | Argument #12 : -Xss256k
+INFO | 2010/01/15 19:34:52 | Argument #13 : -Dweblogic.Name=gc3-w2bztr1j01
+INFO | 2010/01/15 19:34:52 | Argument #14 : -Dbea.home=E:/Product
+INFO | 2010/01/15 19:34:52 | Argument #15 : -Dweblogic.home=E:/Product/weblogic92/server
+INFO | 2010/01/15 19:34:52 | Argument #16 : -Dweblogic.management.username=system
+INFO | 2010/01/15 19:34:52 | Argument #17 : -Dweblogic.management.password=CHANGEME
+INFO | 2010/01/15 19:34:52 | Argument #18 : -Dweblogic.ProductionModeEnabled=true
+INFO | 2010/01/15 19:34:52 | Argument #19 : -Dweblogic.management.discover=false
+INFO | 2010/01/15 19:34:52 | Argument #20 : -Djava.security.policy=E:/Product/weblogic92/server/lib/weblogic.policy
+INFO | 2010/01/15 19:34:52 | Argument #21 : -Doracle.jdbc.V8Compatible=true
+INFO | 2010/01/15 19:34:52 | Argument #22 : -Dwli.home=E:/Product/weblogic92/integration
+INFO | 2010/01/15 19:34:52 | Argument #23 : -Dwls.home=E:/Product/weblogic92/server
+INFO | 2010/01/15 19:34:52 | Argument #24 : -Dweblogic.RootDirectory=E:/OTM/weblogic/domains/otm
+INFO | 2010/01/15 19:34:52 | Argument #25 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2010/01/15 19:34:52 | Argument #26 : -Djavax.xml.soap.SOAPFactory=weblogic.webservice.core.soap.SOAPFactoryImpl
+INFO | 2010/01/15 19:34:52 | Argument #27 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2010/01/15 19:34:52 | Argument #28 : -DpropertyProtection=mask
+INFO | 2010/01/15 19:34:52 | Argument #29 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2010/01/15 19:34:52 | Argument #30 : -classpath
+INFO | 2010/01/15 19:34:52 | Argument #31 : E:/OTM/jdk/lib/tools.jar;E:/OTM/glog/glog_resources;E:/OTM/glog/config;E:/OTM/glog/gc3webapp/WEB-INF/classes;E:/OTM/glog/gc3webapp/WEB-INF/lib/3rdparty/CR346535_923.jar;E:/OTM/dash/lib/xprb.jar;E:/OTM/dash/lib/xprm.jar;E:/OTM/dash/lib/xprs.jar;E:/Product/weblogic92/server/lib/weblogic.jar;E:/Product/weblogic92/server/lib/webservices.jar;E:/OTM/glog/gc3webapp/WEB-INF/lib/glogserver.jar;E:\OTM\glog\gc3webapp\WEB-INF\lib\external\otm-samples.jar
+INFO | 2010/01/15 19:34:52 | Argument #32 : weblogic.Server
+INFO | 2010/01/15 19:34:52 | Argument #33 : start
+INFO | 2010/01/15 19:34:53 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2010/01/15 19:34:53 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, initial strategy: Generational Parallel Mark & Sweep
+INFO | 2010/01/15 19:34:53 | [INFO ][memory ] heap size: 1638400K, maximal heap size: 1638400K, nursery size: 819200K
+INFO | 2010/01/15 19:34:53 | [INFO ][memory ] <s>-<end>: GC <before>K-><after>K (<heap>K), <pause> ms
+INFO | 2010/01/15 19:34:53 | [INFO ][memory ] <s/start> - start time of collection (seconds since jvm start)
+INFO | 2010/01/15 19:34:53 | [INFO ][memory ] <end>     - end time of collection (seconds since jvm start)
+INFO | 2010/01/15 19:34:53 | [INFO ][memory ] <before>  - memory used by objects before collection (KB)
+INFO | 2010/01/15 19:34:53 | [INFO ][memory ] <after>   - memory used by objects after collection (KB)
+INFO | 2010/01/15 19:34:53 | [INFO ][memory ] <heap>    - size of heap after collection (KB)
+INFO | 2010/01/15 19:34:53 | [INFO ][memory ] <pause>   - total sum of pauses during collection (milliseconds)
+INFO | 2010/01/15 19:34:53 | [INFO ][memory ]             run with -Xverbose:gcpause to see individual pauses
+INFO | 2010/01/15 19:34:57 | <Jan 15, 2010 7:34:53 PM IST> <Notice> <WebLogicServer> <BEA-000395> <Following extensions directory contents added to the end of the classpath:
+E:\Product\weblogic92\platform\lib\p13n\p13n-schemas.jar;E:\Product\weblogic92\platform\lib\p13n\p13n_common.jar;E:\Product\weblogic92\platform\lib\p13n\p13n_system.jar;E:\Product\weblogic92\platform\lib\wlp\netuix_common.jar;E:\Product\weblogic92\platform\lib\wlp\netuix_schemas.jar;E:\Product\weblogic92\platform\lib\wlp\netuix_system.jar;E:\Product\weblogic92\platform\lib\wlp\wsrp-common.jar> 
+INFO | 2010/01/15 19:34:57 | <Jan 15, 2010 7:34:57 PM IST> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with BEA JRockit(R) Version R27.5.0-110_o_CR366951-99572-1.5.0_14-20080529-1719-windows-x86_64 from BEA Systems, Inc.> 
+INFO | 2010/01/15 19:35:00 | <Jan 15, 2010 7:35:00 PM IST> <Info> <Management> <BEA-141107> <Version: WebLogic Server Temporary Patch for CR346535 Wed Jun 11 11:49:26 PDT 2008
+WebLogic Server 9.2 MP3  Mon Mar 10 08:28:41 EDT 2008 1096261 
+WebLogic Server 9.2 MP3  Mon Mar 10 08:28:41 EDT 2008 1096261 > 
+INFO | 2010/01/15 19:35:04 | <Jan 15, 2010 7:35:04 PM IST> <Info> <WebLogicServer> <BEA-000215> <Loaded License : E:\Product\license.bea> 
+INFO | 2010/01/15 19:35:04 | <Jan 15, 2010 7:35:04 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2010/01/15 19:35:04 | <Jan 15, 2010 7:35:04 PM IST> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+INFO | 2010/01/15 19:35:05 | <Jan 15, 2010 7:35:05 PM IST> <Notice> <Log Management> <BEA-170019> <The server log file E:\OTM\logs\weblogic\weblogic.log is opened. All server side log events will be written to this file.> 
+INFO | 2010/01/15 19:35:05 | <Jan 15, 2010 7:35:05 PM IST> <Error> <Socket> <BEA-000438> <Unable to load performance pack. Using Java I/O instead. Please ensure that wlntio.dll is in: 'E:\OTM\jdk\bin;.;C:\WINDOWS\system32;C:\WINDOWS;E:\OTM\jdk\jre\bin;E:\app\bztr1j\product\11.1.0\db_1\lib;E:\OTM\jdk\bin;E:\app\bztr1j\product\11.1.0\db_1\bin;E:\OTM\python\bin;E:\OTM\jdk\bin;E:\OTM\python\bin;E:\app\bztr1j\product\11.1.0\db_1\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\app\bztr1j\product\11.1.0\db_1\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;C:\Program Files\Support Tools\;c:\Program Files (x86)\Windows Resource Kits\Tools\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem'
+> 
+INFO | 2010/01/15 19:35:12 | -----------> GC3 realm initialized
+INFO | 2010/01/15 19:35:12 | <Jan 15, 2010 7:35:12 PM IST> <Notice> <Security> <BEA-090082> <Security initializing using security realm otmrealm.> 
+INFO | 2010/01/15 19:35:13 | <Jan 15, 2010 7:35:13 PM IST> <Critical> <Security> <BEA-090403> <Authentication for user system denied> 
+INFO | 2010/01/15 19:35:13 | <Jan 15, 2010 7:35:13 PM IST> <Critical> <WebLogicServer> <BEA-000386> <Server subsystem failed. Reason: weblogic.security.SecurityInitializationException: Authentication for user system denied
+INFO | 2010/01/15 19:35:13 | weblogic.security.SecurityInitializationException: Authentication for user system denied
+INFO | 2010/01/15 19:35:13 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.doBootAuthorization(CommonSecurityServiceManagerDelegateImpl.java:947)
+INFO | 2010/01/15 19:35:13 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1029)
+INFO | 2010/01/15 19:35:13 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:854)
+INFO | 2010/01/15 19:35:13 | 	at weblogic.security.SecurityService.start(SecurityService.java:141)
+INFO | 2010/01/15 19:35:13 | 	at weblogic.t3.srvr.SubsystemRequest.run(SubsystemRequest.java:64)
+INFO | 2010/01/15 19:35:13 | 	Truncated. see log file for complete stacktrace
+INFO | 2010/01/15 19:35:13 | > 
+INFO | 2010/01/15 19:35:13 | <Jan 15, 2010 7:35:13 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FAILED> 
+INFO | 2010/01/15 19:35:13 | <Jan 15, 2010 7:35:13 PM IST> <Error> <WebLogicServer> <BEA-000383> <A critical service failed. The server will shut itself down> 
+INFO | 2010/01/15 19:35:13 | <Jan 15, 2010 7:35:13 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FORCE_SHUTTING_DOWN> 
+INFO | 2010/01/15 19:35:13 | Stopped Launched Process...
+INFO | 2010/01/15 19:51:42 | Starting Launched Process...
+INFO | 2010/01/15 19:51:42 | Argument #0 : E:/OTM/jdk/bin/java
+INFO | 2010/01/15 19:51:42 | Argument #1 : -jrockit
+INFO | 2010/01/15 19:51:42 | Argument #2 : -Xms1600m
+INFO | 2010/01/15 19:51:42 | Argument #3 : -Xmx1600m
+INFO | 2010/01/15 19:51:42 | Argument #4 : -Xgcprio:throughput
+INFO | 2010/01/15 19:51:42 | Argument #5 : -Xverbose:memory
+INFO | 2010/01/15 19:51:42 | Argument #6 : -Xnoclassgc
+INFO | 2010/01/15 19:51:42 | Argument #7 : -DGC3EncodedPassword=Q0hBTkdFTUU=
+INFO | 2010/01/15 19:51:42 | Argument #8 : -Dglog.home=E:/OTM/glog/config
+INFO | 2010/01/15 19:51:42 | Argument #9 : -Duser.home=E:/OTM/glog/config
+INFO | 2010/01/15 19:51:42 | Argument #10 : -Djava.io.tmpdir=E:/OTM/temp
+INFO | 2010/01/15 19:51:42 | Argument #11 : -Djava.awt.headless=true
+INFO | 2010/01/15 19:51:42 | Argument #12 : -Djava.security.auth.login.config=E:/OTM/glog/config/otm_jaas.config
+INFO | 2010/01/15 19:51:42 | Argument #13 : -Xss256k
+INFO | 2010/01/15 19:51:42 | Argument #14 : -Dweblogic.Name=gc3-w2bztr1j01
+INFO | 2010/01/15 19:51:42 | Argument #15 : -Dbea.home=E:/Product
+INFO | 2010/01/15 19:51:42 | Argument #16 : -Dweblogic.home=E:/Product/weblogic92/server
+INFO | 2010/01/15 19:51:42 | Argument #17 : -Dweblogic.management.username=system
+INFO | 2010/01/15 19:51:42 | Argument #18 : -Dweblogic.management.password=CHANGEME
+INFO | 2010/01/15 19:51:42 | Argument #19 : -Dweblogic.ProductionModeEnabled=true
+INFO | 2010/01/15 19:51:42 | Argument #20 : -Dweblogic.management.discover=false
+INFO | 2010/01/15 19:51:42 | Argument #21 : -Djava.security.policy=E:/Product/weblogic92/server/lib/weblogic.policy
+INFO | 2010/01/15 19:51:42 | Argument #22 : -Doracle.jdbc.V8Compatible=true
+INFO | 2010/01/15 19:51:42 | Argument #23 : -Dwli.home=E:/Product/weblogic92/integration
+INFO | 2010/01/15 19:51:42 | Argument #24 : -Dwls.home=E:/Product/weblogic92/server
+INFO | 2010/01/15 19:51:42 | Argument #25 : -Dweblogic.RootDirectory=E:/OTM/weblogic/domains/otm
+INFO | 2010/01/15 19:51:42 | Argument #26 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2010/01/15 19:51:42 | Argument #27 : -Djavax.xml.soap.SOAPFactory=weblogic.webservice.core.soap.SOAPFactoryImpl
+INFO | 2010/01/15 19:51:42 | Argument #28 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2010/01/15 19:51:42 | Argument #29 : -DpropertyProtection=mask
+INFO | 2010/01/15 19:51:42 | Argument #30 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2010/01/15 19:51:42 | Argument #31 : -classpath
+INFO | 2010/01/15 19:51:42 | Argument #32 : E:/OTM/jdk/lib/tools.jar;E:/OTM/glog/glog_resources;E:/OTM/glog/config;E:/OTM/glog/gc3webapp/WEB-INF/classes;E:/OTM/glog/gc3webapp/WEB-INF/lib/3rdparty/CR346535_923.jar;E:/OTM/dash/lib/xprb.jar;E:/OTM/dash/lib/xprm.jar;E:/OTM/dash/lib/xprs.jar;E:/Product/weblogic92/server/lib/weblogic.jar;E:/Product/weblogic92/server/lib/webservices.jar;E:/OTM/glog/gc3webapp/WEB-INF/lib/glogserver.jar;E:\OTM\glog\gc3webapp\WEB-INF\lib\external\otm-samples.jar
+INFO | 2010/01/15 19:51:42 | Argument #33 : weblogic.Server
+INFO | 2010/01/15 19:51:42 | Argument #34 : start
+INFO | 2010/01/15 19:51:42 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2010/01/15 19:51:42 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, initial strategy: Generational Parallel Mark & Sweep
+INFO | 2010/01/15 19:51:42 | [INFO ][memory ] heap size: 1638400K, maximal heap size: 1638400K, nursery size: 819200K
+INFO | 2010/01/15 19:51:42 | [INFO ][memory ] <s>-<end>: GC <before>K-><after>K (<heap>K), <pause> ms
+INFO | 2010/01/15 19:51:42 | [INFO ][memory ] <s/start> - start time of collection (seconds since jvm start)
+INFO | 2010/01/15 19:51:42 | [INFO ][memory ] <end>     - end time of collection (seconds since jvm start)
+INFO | 2010/01/15 19:51:42 | [INFO ][memory ] <before>  - memory used by objects before collection (KB)
+INFO | 2010/01/15 19:51:42 | [INFO ][memory ] <after>   - memory used by objects after collection (KB)
+INFO | 2010/01/15 19:51:42 | [INFO ][memory ] <heap>    - size of heap after collection (KB)
+INFO | 2010/01/15 19:51:42 | [INFO ][memory ] <pause>   - total sum of pauses during collection (milliseconds)
+INFO | 2010/01/15 19:51:42 | [INFO ][memory ]             run with -Xverbose:gcpause to see individual pauses
+INFO | 2010/01/15 19:51:43 | <Jan 15, 2010 7:51:43 PM IST> <Notice> <WebLogicServer> <BEA-000395> <Following extensions directory contents added to the end of the classpath:
+E:\Product\weblogic92\platform\lib\p13n\p13n-schemas.jar;E:\Product\weblogic92\platform\lib\p13n\p13n_common.jar;E:\Product\weblogic92\platform\lib\p13n\p13n_system.jar;E:\Product\weblogic92\platform\lib\wlp\netuix_common.jar;E:\Product\weblogic92\platform\lib\wlp\netuix_schemas.jar;E:\Product\weblogic92\platform\lib\wlp\netuix_system.jar;E:\Product\weblogic92\platform\lib\wlp\wsrp-common.jar> 
+INFO | 2010/01/15 19:51:43 | <Jan 15, 2010 7:51:43 PM IST> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with BEA JRockit(R) Version R27.5.0-110_o_CR366951-99572-1.5.0_14-20080529-1719-windows-x86_64 from BEA Systems, Inc.> 
+INFO | 2010/01/15 19:51:45 | <Jan 15, 2010 7:51:45 PM IST> <Info> <Management> <BEA-141107> <Version: WebLogic Server Temporary Patch for CR346535 Wed Jun 11 11:49:26 PDT 2008
+WebLogic Server 9.2 MP3  Mon Mar 10 08:28:41 EDT 2008 1096261 
+WebLogic Server 9.2 MP3  Mon Mar 10 08:28:41 EDT 2008 1096261 > 
+INFO | 2010/01/15 19:51:47 | <Jan 15, 2010 7:51:47 PM IST> <Info> <WebLogicServer> <BEA-000215> <Loaded License : E:\Product\license.bea> 
+INFO | 2010/01/15 19:51:47 | <Jan 15, 2010 7:51:47 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2010/01/15 19:51:47 | <Jan 15, 2010 7:51:47 PM IST> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+INFO | 2010/01/15 19:51:47 | <Jan 15, 2010 7:51:47 PM IST> <Notice> <Log Management> <BEA-170019> <The server log file E:\OTM\logs\weblogic\weblogic.log is opened. All server side log events will be written to this file.> 
+INFO | 2010/01/15 19:51:48 | <Jan 15, 2010 7:51:48 PM IST> <Error> <Socket> <BEA-000438> <Unable to load performance pack. Using Java I/O instead. Please ensure that wlntio.dll is in: 'E:\OTM\jdk\bin;.;C:\WINDOWS\system32;C:\WINDOWS;E:\OTM\jdk\jre\bin;E:\app\bztr1j\product\11.1.0\db_1\lib;E:\OTM\jdk\bin;E:\app\bztr1j\product\11.1.0\db_1\bin;E:\OTM\python\bin;E:\app\bztr1j\product\11.1.0\db_1\lib;E:\OTM\jdk\bin;E:\app\bztr1j\product\11.1.0\db_1\bin;E:\OTM\python\bin;E:\OTM\jdk\bin;E:\OTM\python\bin;E:\app\bztr1j\product\11.1.0\db_1\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\app\bztr1j\product\11.1.0\db_1\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;C:\Program Files\Support Tools\;c:\Program Files (x86)\Windows Resource Kits\Tools\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem'
+> 
+INFO | 2010/01/15 19:51:51 | -----------> GC3 realm initialized
+INFO | 2010/01/15 19:51:51 | <Jan 15, 2010 7:51:51 PM IST> <Notice> <Security> <BEA-090082> <Security initializing using security realm otmrealm.> 
+INFO | 2010/01/15 19:51:52 | <Jan 15, 2010 7:51:52 PM IST> <Critical> <Security> <BEA-090403> <Authentication for user system denied> 
+INFO | 2010/01/15 19:51:52 | <Jan 15, 2010 7:51:52 PM IST> <Critical> <WebLogicServer> <BEA-000386> <Server subsystem failed. Reason: weblogic.security.SecurityInitializationException: Authentication for user system denied
+INFO | 2010/01/15 19:51:52 | weblogic.security.SecurityInitializationException: Authentication for user system denied
+INFO | 2010/01/15 19:51:52 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.doBootAuthorization(CommonSecurityServiceManagerDelegateImpl.java:947)
+INFO | 2010/01/15 19:51:52 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1029)
+INFO | 2010/01/15 19:51:52 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:854)
+INFO | 2010/01/15 19:51:52 | 	at weblogic.security.SecurityService.start(SecurityService.java:141)
+INFO | 2010/01/15 19:51:52 | 	at weblogic.t3.srvr.SubsystemRequest.run(SubsystemRequest.java:64)
+INFO | 2010/01/15 19:51:52 | 	Truncated. see log file for complete stacktrace
+INFO | 2010/01/15 19:51:52 | > 
+INFO | 2010/01/15 19:51:52 | <Jan 15, 2010 7:51:52 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FAILED> 
+INFO | 2010/01/15 19:51:52 | <Jan 15, 2010 7:51:52 PM IST> <Error> <WebLogicServer> <BEA-000383> <A critical service failed. The server will shut itself down> 
+INFO | 2010/01/15 19:51:52 | <Jan 15, 2010 7:51:52 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FORCE_SHUTTING_DOWN> 
+INFO | 2010/01/15 19:51:52 | Stopped Launched Process...
+INFO | 2010/01/15 20:10:09 | Starting Launched Process...
+INFO | 2010/01/15 20:10:09 | Argument #0 : E:/OTM/jdk/bin/java
+INFO | 2010/01/15 20:10:09 | Argument #1 : -jrockit
+INFO | 2010/01/15 20:10:09 | Argument #2 : -Xms1600m
+INFO | 2010/01/15 20:10:09 | Argument #3 : -Xmx1600m
+INFO | 2010/01/15 20:10:09 | Argument #4 : -Xgcprio:throughput
+INFO | 2010/01/15 20:10:09 | Argument #5 : -Xverbose:memory
+INFO | 2010/01/15 20:10:09 | Argument #6 : -Xnoclassgc
+INFO | 2010/01/15 20:10:09 | Argument #7 : -Dglog.home=E:/OTM/glog/config
+INFO | 2010/01/15 20:10:09 | Argument #8 : -Duser.home=E:/OTM/glog/config
+INFO | 2010/01/15 20:10:09 | Argument #9 : -Djava.io.tmpdir=E:/OTM/temp
+INFO | 2010/01/15 20:10:09 | Argument #10 : -Djava.awt.headless=true
+INFO | 2010/01/15 20:10:09 | Argument #11 : -Djava.security.auth.login.config=E:/OTM/glog/config/otm_jaas.config
+INFO | 2010/01/15 20:10:09 | Argument #12 : -Xss256k
+INFO | 2010/01/15 20:10:09 | Argument #13 : -Dweblogic.Name=gc3-w2bztr1j01
+INFO | 2010/01/15 20:10:09 | Argument #14 : -Dbea.home=E:/Product
+INFO | 2010/01/15 20:10:09 | Argument #15 : -Dweblogic.home=E:/Product/weblogic92/server
+INFO | 2010/01/15 20:10:09 | Argument #16 : -Dweblogic.management.username=system
+INFO | 2010/01/15 20:10:09 | Argument #17 : -Dweblogic.management.password=CHANGEME
+INFO | 2010/01/15 20:10:09 | Argument #18 : -Dweblogic.ProductionModeEnabled=true
+INFO | 2010/01/15 20:10:09 | Argument #19 : -Dweblogic.management.discover=false
+INFO | 2010/01/15 20:10:09 | Argument #20 : -Djava.security.policy=E:/Product/weblogic92/server/lib/weblogic.policy
+INFO | 2010/01/15 20:10:09 | Argument #21 : -Doracle.jdbc.V8Compatible=true
+INFO | 2010/01/15 20:10:09 | Argument #22 : -Dwli.home=E:/Product/weblogic92/integration
+INFO | 2010/01/15 20:10:09 | Argument #23 : -Dwls.home=E:/Product/weblogic92/server
+INFO | 2010/01/15 20:10:09 | Argument #24 : -Dweblogic.RootDirectory=E:/OTM/weblogic/domains/otm
+INFO | 2010/01/15 20:10:09 | Argument #25 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2010/01/15 20:10:09 | Argument #26 : -Djavax.xml.soap.SOAPFactory=weblogic.webservice.core.soap.SOAPFactoryImpl
+INFO | 2010/01/15 20:10:09 | Argument #27 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2010/01/15 20:10:09 | Argument #28 : -DpropertyProtection=mask
+INFO | 2010/01/15 20:10:09 | Argument #29 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2010/01/15 20:10:09 | Argument #30 : -classpath
+INFO | 2010/01/15 20:10:09 | Argument #31 : E:/OTM/jdk/lib/tools.jar;E:/OTM/glog/glog_resources;E:/OTM/glog/config;E:/OTM/glog/gc3webapp/WEB-INF/classes;E:/OTM/glog/gc3webapp/WEB-INF/lib/3rdparty/CR346535_923.jar;E:/OTM/dash/lib/xprb.jar;E:/OTM/dash/lib/xprm.jar;E:/OTM/dash/lib/xprs.jar;E:/Product/weblogic92/server/lib/weblogic.jar;E:/Product/weblogic92/server/lib/webservices.jar;E:/OTM/glog/gc3webapp/WEB-INF/lib/glogserver.jar;E:\OTM\glog\gc3webapp\WEB-INF\lib\external\otm-samples.jar
+INFO | 2010/01/15 20:10:09 | Argument #32 : weblogic.Server
+INFO | 2010/01/15 20:10:09 | Argument #33 : start
+INFO | 2010/01/15 20:10:09 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2010/01/15 20:10:09 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, initial strategy: Generational Parallel Mark & Sweep
+INFO | 2010/01/15 20:10:09 | [INFO ][memory ] heap size: 1638400K, maximal heap size: 1638400K, nursery size: 819200K
+INFO | 2010/01/15 20:10:09 | [INFO ][memory ] <s>-<end>: GC <before>K-><after>K (<heap>K), <pause> ms
+INFO | 2010/01/15 20:10:09 | [INFO ][memory ] <s/start> - start time of collection (seconds since jvm start)
+INFO | 2010/01/15 20:10:09 | [INFO ][memory ] <end>     - end time of collection (seconds since jvm start)
+INFO | 2010/01/15 20:10:09 | [INFO ][memory ] <before>  - memory used by objects before collection (KB)
+INFO | 2010/01/15 20:10:09 | [INFO ][memory ] <after>   - memory used by objects after collection (KB)
+INFO | 2010/01/15 20:10:09 | [INFO ][memory ] <heap>    - size of heap after collection (KB)
+INFO | 2010/01/15 20:10:09 | [INFO ][memory ] <pause>   - total sum of pauses during collection (milliseconds)
+INFO | 2010/01/15 20:10:09 | [INFO ][memory ]             run with -Xverbose:gcpause to see individual pauses
+INFO | 2010/01/15 20:10:11 | <Jan 15, 2010 8:10:10 PM IST> <Notice> <WebLogicServer> <BEA-000395> <Following extensions directory contents added to the end of the classpath:
+E:\Product\weblogic92\platform\lib\p13n\p13n-schemas.jar;E:\Product\weblogic92\platform\lib\p13n\p13n_common.jar;E:\Product\weblogic92\platform\lib\p13n\p13n_system.jar;E:\Product\weblogic92\platform\lib\wlp\netuix_common.jar;E:\Product\weblogic92\platform\lib\wlp\netuix_schemas.jar;E:\Product\weblogic92\platform\lib\wlp\netuix_system.jar;E:\Product\weblogic92\platform\lib\wlp\wsrp-common.jar> 
+INFO | 2010/01/15 20:10:11 | <Jan 15, 2010 8:10:11 PM IST> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with BEA JRockit(R) Version R27.5.0-110_o_CR366951-99572-1.5.0_14-20080529-1719-windows-x86_64 from BEA Systems, Inc.> 
+INFO | 2010/01/15 20:10:12 | <Jan 15, 2010 8:10:12 PM IST> <Info> <Management> <BEA-141107> <Version: WebLogic Server Temporary Patch for CR346535 Wed Jun 11 11:49:26 PDT 2008
+WebLogic Server 9.2 MP3  Mon Mar 10 08:28:41 EDT 2008 1096261 
+WebLogic Server 9.2 MP3  Mon Mar 10 08:28:41 EDT 2008 1096261 > 
+INFO | 2010/01/15 20:10:14 | <Jan 15, 2010 8:10:14 PM IST> <Info> <WebLogicServer> <BEA-000215> <Loaded License : E:\Product\license.bea> 
+INFO | 2010/01/15 20:10:14 | <Jan 15, 2010 8:10:14 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2010/01/15 20:10:14 | <Jan 15, 2010 8:10:14 PM IST> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+INFO | 2010/01/15 20:10:15 | <Jan 15, 2010 8:10:15 PM IST> <Notice> <Log Management> <BEA-170019> <The server log file E:\OTM\logs\weblogic\weblogic.log is opened. All server side log events will be written to this file.> 
+INFO | 2010/01/15 20:10:15 | <Jan 15, 2010 8:10:15 PM IST> <Error> <Socket> <BEA-000438> <Unable to load performance pack. Using Java I/O instead. Please ensure that wlntio.dll is in: 'E:\OTM\jdk\bin;.;C:\WINDOWS\system32;C:\WINDOWS;E:\OTM\jdk\jre\bin;E:\app\bztr1j\product\11.1.0\db_1\lib;E:\OTM\jdk\bin;E:\app\bztr1j\product\11.1.0\db_1\bin;E:\OTM\python\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\app\bztr1j\product\11.1.0\db_1\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;C:\Program Files\Support Tools\;c:\Program Files (x86)\Windows Resource Kits\Tools\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem'
+> 
+INFO | 2010/01/15 20:10:19 | -----------> GC3 realm initialized
+INFO | 2010/01/15 20:10:19 | <Jan 15, 2010 8:10:19 PM IST> <Notice> <Security> <BEA-090082> <Security initializing using security realm otmrealm.> 
+INFO | 2010/01/15 20:10:19 | <Jan 15, 2010 8:10:19 PM IST> <Critical> <Security> <BEA-090403> <Authentication for user system denied> 
+INFO | 2010/01/15 20:10:19 | <Jan 15, 2010 8:10:19 PM IST> <Critical> <WebLogicServer> <BEA-000386> <Server subsystem failed. Reason: weblogic.security.SecurityInitializationException: Authentication for user system denied
+INFO | 2010/01/15 20:10:19 | weblogic.security.SecurityInitializationException: Authentication for user system denied
+INFO | 2010/01/15 20:10:19 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.doBootAuthorization(CommonSecurityServiceManagerDelegateImpl.java:947)
+INFO | 2010/01/15 20:10:19 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1029)
+INFO | 2010/01/15 20:10:19 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:854)
+INFO | 2010/01/15 20:10:19 | 	at weblogic.security.SecurityService.start(SecurityService.java:141)
+INFO | 2010/01/15 20:10:19 | 	at weblogic.t3.srvr.SubsystemRequest.run(SubsystemRequest.java:64)
+INFO | 2010/01/15 20:10:19 | 	Truncated. see log file for complete stacktrace
+INFO | 2010/01/15 20:10:19 | > 
+INFO | 2010/01/15 20:10:19 | <Jan 15, 2010 8:10:19 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FAILED> 
+INFO | 2010/01/15 20:10:19 | <Jan 15, 2010 8:10:19 PM IST> <Error> <WebLogicServer> <BEA-000383> <A critical service failed. The server will shut itself down> 
+INFO | 2010/01/15 20:10:19 | <Jan 15, 2010 8:10:19 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FORCE_SHUTTING_DOWN> 
+INFO | 2010/01/15 20:10:19 | Stopped Launched Process...
+INFO | 2010/01/15 20:34:16 | Starting Launched Process...
+INFO | 2010/01/15 20:34:16 | Argument #0 : E:/OTM/jdk/bin/java
+INFO | 2010/01/15 20:34:16 | Argument #1 : -jrockit
+INFO | 2010/01/15 20:34:16 | Argument #2 : -Xms1600m
+INFO | 2010/01/15 20:34:16 | Argument #3 : -Xmx1600m
+INFO | 2010/01/15 20:34:16 | Argument #4 : -Xgcprio:throughput
+INFO | 2010/01/15 20:34:16 | Argument #5 : -Xverbose:memory
+INFO | 2010/01/15 20:34:16 | Argument #6 : -Xnoclassgc
+INFO | 2010/01/15 20:34:16 | Argument #7 : -Dglog.home=E:/OTM/glog/config
+INFO | 2010/01/15 20:34:16 | Argument #8 : -Duser.home=E:/OTM/glog/config
+INFO | 2010/01/15 20:34:16 | Argument #9 : -Djava.io.tmpdir=E:/OTM/temp
+INFO | 2010/01/15 20:34:16 | Argument #10 : -Djava.awt.headless=true
+INFO | 2010/01/15 20:34:16 | Argument #11 : -Djava.security.auth.login.config=E:/OTM/glog/config/otm_jaas.config
+INFO | 2010/01/15 20:34:16 | Argument #12 : -Xss256k
+INFO | 2010/01/15 20:34:16 | Argument #13 : -Dweblogic.Name=gc3-w2bztr1j01
+INFO | 2010/01/15 20:34:16 | Argument #14 : -Dbea.home=E:/Product
+INFO | 2010/01/15 20:34:16 | Argument #15 : -Dweblogic.home=E:/Product/weblogic92/server
+INFO | 2010/01/15 20:34:16 | Argument #16 : -Dweblogic.management.username=system
+INFO | 2010/01/15 20:34:16 | Argument #17 : -Dweblogic.management.password=CHANGEME
+INFO | 2010/01/15 20:34:16 | Argument #18 : -Dweblogic.ProductionModeEnabled=true
+INFO | 2010/01/15 20:34:16 | Argument #19 : -Dweblogic.management.discover=false
+INFO | 2010/01/15 20:34:16 | Argument #20 : -Djava.security.policy=E:/Product/weblogic92/server/lib/weblogic.policy
+INFO | 2010/01/15 20:34:16 | Argument #21 : -Doracle.jdbc.V8Compatible=true
+INFO | 2010/01/15 20:34:16 | Argument #22 : -Dwli.home=E:/Product/weblogic92/integration
+INFO | 2010/01/15 20:34:16 | Argument #23 : -Dwls.home=E:/Product/weblogic92/server
+INFO | 2010/01/15 20:34:16 | Argument #24 : -Dweblogic.RootDirectory=E:/OTM/weblogic/domains/otm
+INFO | 2010/01/15 20:34:16 | Argument #25 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2010/01/15 20:34:16 | Argument #26 : -Djavax.xml.soap.SOAPFactory=weblogic.webservice.core.soap.SOAPFactoryImpl
+INFO | 2010/01/15 20:34:16 | Argument #27 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2010/01/15 20:34:16 | Argument #28 : -DpropertyProtection=mask
+INFO | 2010/01/15 20:34:16 | Argument #29 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2010/01/15 20:34:16 | Argument #30 : -classpath
+INFO | 2010/01/15 20:34:16 | Argument #31 : E:/OTM/jdk/lib/tools.jar;E:/OTM/glog/glog_resources;E:/OTM/glog/config;E:/OTM/glog/gc3webapp/WEB-INF/classes;E:/OTM/glog/gc3webapp/WEB-INF/lib/3rdparty/CR346535_923.jar;E:/OTM/dash/lib/xprb.jar;E:/OTM/dash/lib/xprm.jar;E:/OTM/dash/lib/xprs.jar;E:/Product/weblogic92/server/lib/weblogic.jar;E:/Product/weblogic92/server/lib/webservices.jar;E:/OTM/glog/gc3webapp/WEB-INF/lib/glogserver.jar;E:\OTM\glog\gc3webapp\WEB-INF\lib\external\otm-samples.jar
+INFO | 2010/01/15 20:34:16 | Argument #32 : weblogic.Server
+INFO | 2010/01/15 20:34:16 | Argument #33 : start
+INFO | 2010/01/15 20:34:16 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2010/01/15 20:34:16 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, initial strategy: Generational Parallel Mark & Sweep
+INFO | 2010/01/15 20:34:16 | [INFO ][memory ] heap size: 1638400K, maximal heap size: 1638400K, nursery size: 819200K
+INFO | 2010/01/15 20:34:16 | [INFO ][memory ] <s>-<end>: GC <before>K-><after>K (<heap>K), <pause> ms
+INFO | 2010/01/15 20:34:16 | [INFO ][memory ] <s/start> - start time of collection (seconds since jvm start)
+INFO | 2010/01/15 20:34:16 | [INFO ][memory ] <end>     - end time of collection (seconds since jvm start)
+INFO | 2010/01/15 20:34:16 | [INFO ][memory ] <before>  - memory used by objects before collection (KB)
+INFO | 2010/01/15 20:34:16 | [INFO ][memory ] <after>   - memory used by objects after collection (KB)
+INFO | 2010/01/15 20:34:16 | [INFO ][memory ] <heap>    - size of heap after collection (KB)
+INFO | 2010/01/15 20:34:16 | [INFO ][memory ] <pause>   - total sum of pauses during collection (milliseconds)
+INFO | 2010/01/15 20:34:16 | [INFO ][memory ]             run with -Xverbose:gcpause to see individual pauses
+INFO | 2010/01/15 20:34:21 | <Jan 15, 2010 8:34:17 PM IST> <Notice> <WebLogicServer> <BEA-000395> <Following extensions directory contents added to the end of the classpath:
+E:\Product\weblogic92\platform\lib\p13n\p13n-schemas.jar;E:\Product\weblogic92\platform\lib\p13n\p13n_common.jar;E:\Product\weblogic92\platform\lib\p13n\p13n_system.jar;E:\Product\weblogic92\platform\lib\wlp\netuix_common.jar;E:\Product\weblogic92\platform\lib\wlp\netuix_schemas.jar;E:\Product\weblogic92\platform\lib\wlp\netuix_system.jar;E:\Product\weblogic92\platform\lib\wlp\wsrp-common.jar> 
+INFO | 2010/01/15 20:34:21 | <Jan 15, 2010 8:34:21 PM IST> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with BEA JRockit(R) Version R27.5.0-110_o_CR366951-99572-1.5.0_14-20080529-1719-windows-x86_64 from BEA Systems, Inc.> 
+INFO | 2010/01/15 20:34:24 | <Jan 15, 2010 8:34:24 PM IST> <Info> <Management> <BEA-141107> <Version: WebLogic Server Temporary Patch for CR346535 Wed Jun 11 11:49:26 PDT 2008
+WebLogic Server 9.2 MP3  Mon Mar 10 08:28:41 EDT 2008 1096261 
+WebLogic Server 9.2 MP3  Mon Mar 10 08:28:41 EDT 2008 1096261 > 
+INFO | 2010/01/15 20:34:27 | <Jan 15, 2010 8:34:27 PM IST> <Info> <WebLogicServer> <BEA-000215> <Loaded License : E:\Product\license.bea> 
+INFO | 2010/01/15 20:34:27 | <Jan 15, 2010 8:34:27 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2010/01/15 20:34:27 | <Jan 15, 2010 8:34:27 PM IST> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+INFO | 2010/01/15 20:34:28 | <Jan 15, 2010 8:34:28 PM IST> <Notice> <Log Management> <BEA-170019> <The server log file E:\OTM\logs\weblogic\weblogic.log is opened. All server side log events will be written to this file.> 
+INFO | 2010/01/15 20:34:29 | <Jan 15, 2010 8:34:29 PM IST> <Error> <Socket> <BEA-000438> <Unable to load performance pack. Using Java I/O instead. Please ensure that wlntio.dll is in: 'E:\OTM\jdk\bin;.;C:\WINDOWS\system32;C:\WINDOWS;E:\OTM\jdk\jre\bin;E:\app\bztr1j\product\11.1.0\db_1\lib;E:\OTM\jdk\bin;E:\app\bztr1j\product\11.1.0\db_1\bin;E:\OTM\python\bin;E:\app\bztr1j\product\11.1.0\db_1\lib;E:\OTM\jdk\bin;E:\app\bztr1j\product\11.1.0\db_1\bin;E:\OTM\python\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\app\bztr1j\product\11.1.0\db_1\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;C:\Program Files\Support Tools\;c:\Program Files (x86)\Windows Resource Kits\Tools\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem'
+> 
+INFO | 2010/01/15 20:34:37 | -----------> GC3 realm initialized
+INFO | 2010/01/15 20:34:38 | <Jan 15, 2010 8:34:38 PM IST> <Notice> <Security> <BEA-090082> <Security initializing using security realm otmrealm.> 
+INFO | 2010/01/15 20:34:38 | <Jan 15, 2010 8:34:38 PM IST> <Critical> <Security> <BEA-090403> <Authentication for user system denied> 
+INFO | 2010/01/15 20:34:38 | <Jan 15, 2010 8:34:38 PM IST> <Critical> <WebLogicServer> <BEA-000386> <Server subsystem failed. Reason: weblogic.security.SecurityInitializationException: Authentication for user system denied
+INFO | 2010/01/15 20:34:38 | weblogic.security.SecurityInitializationException: Authentication for user system denied
+INFO | 2010/01/15 20:34:38 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.doBootAuthorization(CommonSecurityServiceManagerDelegateImpl.java:947)
+INFO | 2010/01/15 20:34:38 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1029)
+INFO | 2010/01/15 20:34:38 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:854)
+INFO | 2010/01/15 20:34:38 | 	at weblogic.security.SecurityService.start(SecurityService.java:141)
+INFO | 2010/01/15 20:34:38 | 	at weblogic.t3.srvr.SubsystemRequest.run(SubsystemRequest.java:64)
+INFO | 2010/01/15 20:34:38 | 	Truncated. see log file for complete stacktrace
+INFO | 2010/01/15 20:34:38 | > 
+INFO | 2010/01/15 20:34:38 | <Jan 15, 2010 8:34:38 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FAILED> 
+INFO | 2010/01/15 20:34:38 | <Jan 15, 2010 8:34:38 PM IST> <Error> <WebLogicServer> <BEA-000383> <A critical service failed. The server will shut itself down> 
+INFO | 2010/01/15 20:34:38 | <Jan 15, 2010 8:34:38 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FORCE_SHUTTING_DOWN> 
+INFO | 2010/01/15 20:34:38 | Stopped Launched Process...
+INFO | 2010/01/15 20:40:07 | Starting Launched Process...
+INFO | 2010/01/15 20:40:07 | Argument #0 : E:/OTM/jdk/bin/java
+INFO | 2010/01/15 20:40:07 | Argument #1 : -jrockit
+INFO | 2010/01/15 20:40:07 | Argument #2 : -Xms1600m
+INFO | 2010/01/15 20:40:07 | Argument #3 : -Xmx1600m
+INFO | 2010/01/15 20:40:07 | Argument #4 : -Xgcprio:throughput
+INFO | 2010/01/15 20:40:07 | Argument #5 : -Xverbose:memory
+INFO | 2010/01/15 20:40:07 | Argument #6 : -Xnoclassgc
+INFO | 2010/01/15 20:40:07 | Argument #7 : -DGC3EncodedPassword=Q0hBTkdFTUU=
+INFO | 2010/01/15 20:40:07 | Argument #8 : -Dglog.home=E:/OTM/glog/config
+INFO | 2010/01/15 20:40:07 | Argument #9 : -Duser.home=E:/OTM/glog/config
+INFO | 2010/01/15 20:40:07 | Argument #10 : -Djava.io.tmpdir=E:/OTM/temp
+INFO | 2010/01/15 20:40:07 | Argument #11 : -Djava.awt.headless=true
+INFO | 2010/01/15 20:40:07 | Argument #12 : -Djava.security.auth.login.config=E:/OTM/glog/config/otm_jaas.config
+INFO | 2010/01/15 20:40:07 | Argument #13 : -Xss256k
+INFO | 2010/01/15 20:40:07 | Argument #14 : -Dweblogic.Name=gc3-w2bztr1j01
+INFO | 2010/01/15 20:40:07 | Argument #15 : -Dbea.home=E:/Product
+INFO | 2010/01/15 20:40:07 | Argument #16 : -Dweblogic.home=E:/Product/weblogic92/server
+INFO | 2010/01/15 20:40:07 | Argument #17 : -Dweblogic.management.username=system
+INFO | 2010/01/15 20:40:07 | Argument #18 : -Dweblogic.management.password=CHANGEME
+INFO | 2010/01/15 20:40:07 | Argument #19 : -Dweblogic.ProductionModeEnabled=true
+INFO | 2010/01/15 20:40:07 | Argument #20 : -Dweblogic.management.discover=false
+INFO | 2010/01/15 20:40:07 | Argument #21 : -Djava.security.policy=E:/Product/weblogic92/server/lib/weblogic.policy
+INFO | 2010/01/15 20:40:07 | Argument #22 : -Doracle.jdbc.V8Compatible=true
+INFO | 2010/01/15 20:40:07 | Argument #23 : -Dwli.home=E:/Product/weblogic92/integration
+INFO | 2010/01/15 20:40:07 | Argument #24 : -Dwls.home=E:/Product/weblogic92/server
+INFO | 2010/01/15 20:40:07 | Argument #25 : -Dweblogic.RootDirectory=E:/OTM/weblogic/domains/otm
+INFO | 2010/01/15 20:40:07 | Argument #26 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2010/01/15 20:40:07 | Argument #27 : -Djavax.xml.soap.SOAPFactory=weblogic.webservice.core.soap.SOAPFactoryImpl
+INFO | 2010/01/15 20:40:07 | Argument #28 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2010/01/15 20:40:07 | Argument #29 : -DpropertyProtection=mask
+INFO | 2010/01/15 20:40:07 | Argument #30 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2010/01/15 20:40:07 | Argument #31 : -classpath
+INFO | 2010/01/15 20:40:07 | Argument #32 : E:/OTM/jdk/lib/tools.jar;E:/OTM/glog/glog_resources;E:/OTM/glog/config;E:/OTM/glog/gc3webapp/WEB-INF/classes;E:/OTM/glog/gc3webapp/WEB-INF/lib/3rdparty/CR346535_923.jar;E:/OTM/dash/lib/xprb.jar;E:/OTM/dash/lib/xprm.jar;E:/OTM/dash/lib/xprs.jar;E:/Product/weblogic92/server/lib/weblogic.jar;E:/Product/weblogic92/server/lib/webservices.jar;E:/OTM/glog/gc3webapp/WEB-INF/lib/glogserver.jar;E:\OTM\glog\gc3webapp\WEB-INF\lib\external\otm-samples.jar
+INFO | 2010/01/15 20:40:07 | Argument #33 : weblogic.Server
+INFO | 2010/01/15 20:40:07 | Argument #34 : start
+INFO | 2010/01/15 20:40:07 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2010/01/15 20:40:07 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, initial strategy: Generational Parallel Mark & Sweep
+INFO | 2010/01/15 20:40:07 | [INFO ][memory ] heap size: 1638400K, maximal heap size: 1638400K, nursery size: 819200K
+INFO | 2010/01/15 20:40:07 | [INFO ][memory ] <s>-<end>: GC <before>K-><after>K (<heap>K), <pause> ms
+INFO | 2010/01/15 20:40:07 | [INFO ][memory ] <s/start> - start time of collection (seconds since jvm start)
+INFO | 2010/01/15 20:40:07 | [INFO ][memory ] <end>     - end time of collection (seconds since jvm start)
+INFO | 2010/01/15 20:40:07 | [INFO ][memory ] <before>  - memory used by objects before collection (KB)
+INFO | 2010/01/15 20:40:07 | [INFO ][memory ] <after>   - memory used by objects after collection (KB)
+INFO | 2010/01/15 20:40:07 | [INFO ][memory ] <heap>    - size of heap after collection (KB)
+INFO | 2010/01/15 20:40:07 | [INFO ][memory ] <pause>   - total sum of pauses during collection (milliseconds)
+INFO | 2010/01/15 20:40:07 | [INFO ][memory ]             run with -Xverbose:gcpause to see individual pauses
+INFO | 2010/01/15 20:40:08 | <Jan 15, 2010 8:40:08 PM IST> <Notice> <WebLogicServer> <BEA-000395> <Following extensions directory contents added to the end of the classpath:
+E:\Product\weblogic92\platform\lib\p13n\p13n-schemas.jar;E:\Product\weblogic92\platform\lib\p13n\p13n_common.jar;E:\Product\weblogic92\platform\lib\p13n\p13n_system.jar;E:\Product\weblogic92\platform\lib\wlp\netuix_common.jar;E:\Product\weblogic92\platform\lib\wlp\netuix_schemas.jar;E:\Product\weblogic92\platform\lib\wlp\netuix_system.jar;E:\Product\weblogic92\platform\lib\wlp\wsrp-common.jar> 
+INFO | 2010/01/15 20:40:09 | <Jan 15, 2010 8:40:09 PM IST> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with BEA JRockit(R) Version R27.5.0-110_o_CR366951-99572-1.5.0_14-20080529-1719-windows-x86_64 from BEA Systems, Inc.> 
+INFO | 2010/01/15 20:40:10 | <Jan 15, 2010 8:40:10 PM IST> <Info> <Management> <BEA-141107> <Version: WebLogic Server Temporary Patch for CR346535 Wed Jun 11 11:49:26 PDT 2008
+WebLogic Server 9.2 MP3  Mon Mar 10 08:28:41 EDT 2008 1096261 
+WebLogic Server 9.2 MP3  Mon Mar 10 08:28:41 EDT 2008 1096261 > 
+INFO | 2010/01/15 20:40:12 | <Jan 15, 2010 8:40:12 PM IST> <Info> <WebLogicServer> <BEA-000215> <Loaded License : E:\Product\license.bea> 
+INFO | 2010/01/15 20:40:12 | <Jan 15, 2010 8:40:12 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2010/01/15 20:40:12 | <Jan 15, 2010 8:40:12 PM IST> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+INFO | 2010/01/15 20:40:12 | <Jan 15, 2010 8:40:12 PM IST> <Notice> <Log Management> <BEA-170019> <The server log file E:\OTM\logs\weblogic\weblogic.log is opened. All server side log events will be written to this file.> 
+INFO | 2010/01/15 20:40:13 | <Jan 15, 2010 8:40:13 PM IST> <Error> <Socket> <BEA-000438> <Unable to load performance pack. Using Java I/O instead. Please ensure that wlntio.dll is in: 'E:\OTM\jdk\bin;.;C:\WINDOWS\system32;C:\WINDOWS;E:\OTM\jdk\jre\bin;E:\app\bztr1j\product\11.1.0\db_1\lib;E:\OTM\jdk\bin;E:\app\bztr1j\product\11.1.0\db_1\bin;E:\OTM\python\bin;E:\app\bztr1j\product\11.1.0\db_1\lib;E:\OTM\jdk\bin;E:\app\bztr1j\product\11.1.0\db_1\bin;E:\OTM\python\bin;E:\app\bztr1j\product\11.1.0\db_1\lib;E:\OTM\jdk\bin;E:\app\bztr1j\product\11.1.0\db_1\bin;E:\OTM\python\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\app\bztr1j\product\11.1.0\db_1\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;E:\OTM\jdk\bin;E:\OTM\dash\bin;E:\OTM\apache\openssl\bin;C:\Program Files\Support Tools\;c:\Program Files (x86)\Windows Resource Kits\Tools\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem'
+> 
+INFO | 2010/01/15 20:40:17 | -----------> GC3 realm initialized
+INFO | 2010/01/15 20:40:17 | <Jan 15, 2010 8:40:17 PM IST> <Notice> <Security> <BEA-090082> <Security initializing using security realm otmrealm.> 
+INFO | 2010/01/15 20:40:17 | <Jan 15, 2010 8:40:17 PM IST> <Critical> <Security> <BEA-090403> <Authentication for user system denied> 
+INFO | 2010/01/15 20:40:17 | <Jan 15, 2010 8:40:17 PM IST> <Critical> <WebLogicServer> <BEA-000386> <Server subsystem failed. Reason: weblogic.security.SecurityInitializationException: Authentication for user system denied
+INFO | 2010/01/15 20:40:17 | weblogic.security.SecurityInitializationException: Authentication for user system denied
+INFO | 2010/01/15 20:40:17 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.doBootAuthorization(CommonSecurityServiceManagerDelegateImpl.java:947)
+INFO | 2010/01/15 20:40:17 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1029)
+INFO | 2010/01/15 20:40:17 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:854)
+INFO | 2010/01/15 20:40:17 | 	at weblogic.security.SecurityService.start(SecurityService.java:141)
+INFO | 2010/01/15 20:40:17 | 	at weblogic.t3.srvr.SubsystemRequest.run(SubsystemRequest.java:64)
+INFO | 2010/01/15 20:40:17 | 	Truncated. see log file for complete stacktrace
+INFO | 2010/01/15 20:40:17 | > 
+INFO | 2010/01/15 20:40:17 | <Jan 15, 2010 8:40:17 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FAILED> 
+INFO | 2010/01/15 20:40:17 | <Jan 15, 2010 8:40:17 PM IST> <Error> <WebLogicServer> <BEA-000383> <A critical service failed. The server will shut itself down> 
+INFO | 2010/01/15 20:40:17 | <Jan 15, 2010 8:40:17 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FORCE_SHUTTING_DOWN> 
+INFO | 2010/01/15 20:40:17 | Stopped Launched Process...

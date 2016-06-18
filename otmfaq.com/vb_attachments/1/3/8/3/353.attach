@@ -1,0 +1,11 @@
+CSV data is as below
+
+USER_ROLE,,,,,
+USER_ROLE_GID,USER_ROLE_XID,GL_LEVEL,DATA_SOURCE_PROFILE_GID,VPD_PROFILE_GID,DOMAIN_NAME
+EXEC SQL ALTER SESSION SET NLS_DATE_FORMAT = 'YYYYMMDDHH24MISS',,,,,
+SUPPLIER.KENSINGTON_ENTERPRISE,KENSINGTON_ENTERPRISE,DEFAULT,DEFAULT,SUPPLIER.KENSINGTON_ENTERPRISE,SUPPLIER
+
+
+Command use is 
+
+java glog.database.admin.CSVUtil -Djava.security.auth.login.config=/u01/otm/OTM6.0/glog/config/otm_jaas.config -command i -connectionId codegen -dataDir /u01/otm/OTM6.0/xxse/upload/ -dataFileName OTM_DEFINE_VPD_ROLE.CSV -XMLCSVOutput=true

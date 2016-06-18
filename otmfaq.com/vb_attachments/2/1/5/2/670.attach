@@ -1,0 +1,254 @@
+procedure set_invoice_satuts(v_gid varchar2) is
+		v_cnt number;
+	begin
+		/*
+    DRAFT  ->  REJECTED ->  WAIT_FOR_ACLEVEL1_REVIEW  ->  WAIT_FOR_ACLEVEL2_REVIEW  
+    ->  WAIT_FOR_L_SPECIALIST_REVIEW  ->  WAIT_FOR_L_MANAGER_REVIEW  ->  WAIT_FOR_LSP_FIN_REVIEW  
+    ->  CONSOLIDATION --> SUBMIT_FOR_PAYMENT(child only)  ->  WAIT_FOR_AP_REVIEW  ->  WAIT_FOR_AP_APPROVE -> AP_APPROVED
+    */
+		select count(*)
+			into v_cnt
+			from invoice ivc
+		 where exists (select 'x'
+							from invoice_status invs
+						 where invs.status_type_gid = 'HTM.DEBIT_NOTE'
+							 and invs.status_value_gid = 'HTM.DEBIT_NOTE_NEW'
+							 and invs.invoice_gid = ivc.invoice_gid)
+			 and exists (select 'x'
+							from invoice_status invs
+						 where invs.status_type_gid = 'HTM.MATCH'
+							 and invs.status_value_gid = 'HTM.MATCH_NOT_MATCHED'
+							 and invs.invoice_gid = ivc.invoice_gid)
+			 and ivc.invoice_gid = v_gid;
+		if v_cnt > 0 then
+			update invoice ivc set ivc.user_defined1_icon_gid = 'HTM.DRAFT' where ivc.invoice_gid = v_gid;
+			return;
+		end if;
+	
+		select count(*)
+			into v_cnt
+			from invoice ivc
+		 where exists (select 'x'
+							from invoice_status invs
+						 where invs.status_type_gid = 'HTM.DEBIT_NOTE'
+							 and invs.status_value_gid = 'HTM.DEBIT_NOTE_REJECTED'
+							 and invs.invoice_gid = ivc.invoice_gid)
+			 and ivc.invoice_gid = v_gid;
+		if v_cnt > 0 then
+			update invoice ivc set ivc.user_defined1_icon_gid = 'HTM.REJECTED' where ivc.invoice_gid = v_gid;
+			return;
+		end if;
+	
+		select count(*)
+			into v_cnt
+			from invoice ivc
+		 where exists (select 'x'
+							from invoice_status invs
+						 where invs.status_type_gid = 'HTM.ACLEVEL1_REVIEW'
+							 and invs.status_value_gid = 'HTM.ACLEVEL1_REVIEW_REQUIRED'
+							 and invs.invoice_gid = ivc.invoice_gid)
+			 and ivc.invoice_gid = v_gid;
+		if v_cnt > 0 then
+			update invoice ivc set ivc.user_defined1_icon_gid = 'HTM.WAIT_FOR_ACLEVEL1_REVIEW' where ivc.invoice_gid = v_gid;
+			return;
+		end if;
+	
+		select count(*)
+			into v_cnt
+			from invoice ivc
+		 where exists (select 'x'
+							from invoice_status invs
+						 where invs.status_type_gid = 'HTM.ACLEVEL2_REVIEW'
+							 and invs.status_value_gid = 'HTM.ACLEVEL2_REVIEW_REQUIRED'
+							 and invs.invoice_gid = ivc.invoice_gid)
+			 and ivc.invoice_gid = v_gid;
+		if v_cnt > 0 then
+			update invoice ivc set ivc.user_defined1_icon_gid = 'HTM.WAIT_FOR_ACLEVEL2_REVIEW' where ivc.invoice_gid = v_gid;
+			return;
+		end if;
+	
+		select count(*)
+			into v_cnt
+			from invoice ivc
+		 where exists (select 'x'
+							from invoice_status invs
+						 where invs.status_type_gid = 'HTM.L_SPECIALIST_REVIEW'
+							 and invs.status_value_gid = 'HTM.L_SPECIALIST_REVIEW_REQUIRED'
+							 and invs.invoice_gid = ivc.invoice_gid)
+			 and ivc.invoice_gid = v_gid;
+		if v_cnt > 0 then
+			update invoice ivc
+				 set ivc.user_defined1_icon_gid = 'HTM.WAIT_FOR_L_SPECIALIST_REVIEW'
+			 where ivc.invoice_gid = v_gid;
+			return;
+		end if;
+	
+		select count(*)
+			into v_cnt
+			from invoice ivc
+		 where exists (select 'x'
+							from invoice_status invs
+						 where invs.status_type_gid = 'HTM.L_MANAGER_REVIEW'
+							 and invs.status_value_gid = 'HTM.L_MANAGER_REVIEW_REQUIRED'
+							 and invs.invoice_gid = ivc.invoice_gid)
+			 and ivc.invoice_gid = v_gid;
+		if v_cnt > 0 then
+			update invoice ivc
+				 set ivc.user_defined1_icon_gid = 'HTM.WAIT_FOR_L_MANAGER_REVIEW'
+			 where ivc.invoice_gid = v_gid;
+			return;
+		end if;
+	
+		select count(*)
+			into v_cnt
+			from invoice ivc
+		 where exists (select 'x'
+							from invoice_status invs
+						 where invs.status_type_gid = 'HTM.DEBIT_NOTE'
+							 and invs.status_value_gid = 'HTM.DEBIT_NOTE_NEW'
+							 and invs.invoice_gid = ivc.invoice_gid)
+			 and exists (select 'x'
+							from invoice_status invs
+						 where invs.status_type_gid = 'HTM.MATCH'
+							 and invs.status_value_gid = 'HTM.MATCH_MATCHED_AUTO'
+							 and invs.invoice_gid = ivc.invoice_gid)
+			 and ivc.invoice_gid = v_gid;
+		if v_cnt > 0 then
+			update invoice ivc set ivc.user_defined1_icon_gid = 'HTM.WAIT_FOR_LSP_FIN_REVIEW' where ivc.invoice_gid = v_gid;
+			return;
+		end if;
+	
+		select count(*)
+			into v_cnt
+			from invoice ivc
+		 where ivc.invoice_gid = v_gid
+			 and ivc.consolidation_type = 'PARENT';
+		--dbms_output.put_line('check if PARENT');
+		if v_cnt > 0 then
+			--dbms_output.put_line('begin loop child invoice');
+			for r_child in (select invoice_gid from invoice where parent_invoice_gid = v_gid)
+			loop
+				--dbms_output.put_line('begin invoice:' || r_child.invoice_gid);
+				select count(*)
+					into v_cnt
+					from invoice ivc
+				 where exists (select 'x'
+									from invoice_status invs
+								 where invs.status_type_gid = 'HTM.DEBIT_NOTE'
+									 and invs.status_value_gid = 'HTM.DEBIT_NOTE_REVIEWED'
+									 and invs.invoice_gid = ivc.invoice_gid)
+					 and exists (select 'x'
+									from invoice_status invs
+								 where invs.status_type_gid = 'HTM.TAX_INVOICE'
+									 and invs.status_value_gid in ('HTM.TAX_INVOICE_NEW', 'HTM.TAX_INVOICE_REJECTED')
+									 and invs.invoice_gid = ivc.invoice_gid)
+					 and ivc.invoice_gid = r_child.invoice_gid;
+				if v_cnt > 0 then
+					--dbms_output.put_line('status:CONSOLIDATION');
+					update invoice ivc
+						 set ivc.user_defined1_icon_gid = 'HTM.CONSOLIDATION'
+					 where ivc.invoice_gid = r_child.invoice_gid;
+				end if;
+			
+				select count(*)
+					into v_cnt
+					from invoice ivc
+				 where exists (select 'x'
+									from invoice_status invs
+								 where invs.status_type_gid = 'HTM.AP_APPROVAL'
+									 and invs.status_value_gid = 'HTM.AP_APPROVAL_NOT'
+									 and invs.invoice_gid = ivc.invoice_gid)
+					 and exists (select 'x'
+									from invoice_status invs
+								 where invs.status_type_gid = 'HTM.AP_REVIEW'
+									 and invs.status_value_gid = 'HTM.AP_REVIEW_REQUIRED'
+									 and invs.invoice_gid = v_gid)
+					 and ivc.invoice_gid = r_child.invoice_gid;
+				if v_cnt > 0 then
+					--dbms_output.put_line('status:SUBMIT_FOR_PAYMENT');
+					update invoice ivc
+						 set ivc.user_defined1_icon_gid = 'HTM.SUBMIT_FOR_PAYMENT'
+					 where ivc.invoice_gid = r_child.invoice_gid;
+				end if;
+			
+				select count(*)
+					into v_cnt
+					from invoice ivc
+				 where exists (select 'x'
+									from invoice_status invs
+								 where invs.status_type_gid = 'HTM.AP_APPROVAL'
+									 and invs.status_value_gid = 'HTM.AP_APPROVAL_APPROVED'
+									 and invs.invoice_gid = ivc.invoice_gid)
+					 and ivc.invoice_gid = r_child.invoice_gid;
+				if v_cnt > 0 then
+					--dbms_output.put_line('status:AP_APPROVED');
+					update invoice ivc
+						 set ivc.user_defined1_icon_gid = 'HTM.AP_APPROVED'
+					 where ivc.invoice_gid = r_child.invoice_gid;
+				end if;
+			
+			end loop;
+		end if;
+	
+		select count(*)
+			into v_cnt
+			from invoice ivc
+		 where exists (select 'x'
+							from invoice_status invs
+						 where invs.status_type_gid = 'HTM.DEBIT_NOTE'
+							 and invs.status_value_gid = 'HTM.DEBIT_NOTE_REVIEWED'
+							 and invs.invoice_gid = ivc.invoice_gid)
+			 and exists (select 'x'
+							from invoice_status invs
+						 where invs.status_type_gid = 'HTM.TAX_INVOICE'
+							 and invs.status_value_gid in ('HTM.TAX_INVOICE_NEW', 'HTM.TAX_INVOICE_REJECTED')
+							 and invs.invoice_gid = ivc.invoice_gid)
+			 and ivc.invoice_gid = v_gid;
+		if v_cnt > 0 then
+			update invoice ivc set ivc.user_defined1_icon_gid = 'HTM.CONSOLIDATION' where ivc.invoice_gid = v_gid;
+			return;
+		end if;
+	
+		select count(*)
+			into v_cnt
+			from invoice ivc
+		 where exists (select 'x'
+							from invoice_status invs
+						 where invs.status_type_gid = 'HTM.AP_REVIEW'
+							 and invs.status_value_gid = 'HTM.AP_REVIEW_REQUIRED'
+							 and invs.invoice_gid = ivc.invoice_gid)
+			 and ivc.invoice_gid = v_gid;
+		if v_cnt > 0 then
+			update invoice ivc set ivc.user_defined1_icon_gid = 'HTM.WAIT_FOR_AP_REVIEW' where ivc.invoice_gid = v_gid;
+			return;
+		end if;
+	
+		select count(*)
+			into v_cnt
+			from invoice ivc
+		 where exists (select 'x'
+							from invoice_status invs
+						 where invs.status_type_gid = 'HTM.AP_APPROVAL'
+							 and invs.status_value_gid = 'HTM.AP_APPROVAL_REQUIRED'
+							 and invs.invoice_gid = ivc.invoice_gid)
+			 and ivc.invoice_gid = v_gid;
+		if v_cnt > 0 then
+			update invoice ivc set ivc.user_defined1_icon_gid = 'HTM.WAIT_FOR_AP_APPROVE' where ivc.invoice_gid = v_gid;
+			return;
+		end if;
+	
+		select count(*)
+			into v_cnt
+			from invoice ivc
+		 where exists (select 'x'
+							from invoice_status invs
+						 where invs.status_type_gid = 'HTM.AP_APPROVAL'
+							 and invs.status_value_gid = 'HTM.AP_APPROVAL_APPROVED'
+							 and invs.invoice_gid = ivc.invoice_gid)
+			 and ivc.invoice_gid = v_gid;
+		if v_cnt > 0 then
+			update invoice ivc set ivc.user_defined1_icon_gid = 'HTM.AP_APPROVED' where ivc.invoice_gid = v_gid;
+			return;
+		end if;
+	
+	end set_invoice_satuts;

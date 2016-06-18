@@ -1,0 +1,137 @@
+ 
+
+Following is the OAS (application server Log )
+
+
+/san09/devtm/otmprod/logs/oas/console.log
+
+STATUS | wrapper | 2009/01/21 13:02:46 | --> Wrapper Started as Daemon
+
+STATUS | wrapper | 2009/01/21 13:02:47 | Launching a JVM...
+
+INFO | jvm 1 | 2009/01/21 13:02:47 | Wrapper (Version 3.1.2) Java Service Wrapper - Download Java Service Wrapper
+
+INFO | jvm 1 | 2009/01/21 13:02:47 |
+
+INFO | jvm 1 | 2009/01/21 13:02:52 | WARNING: Code-source /san09/devtm/otmprod/glog/gc3webapp/WEB-INF/lib/3rdparty/xprm.jar (from manifest of /san09/devtm/otmprod/glog/gc3webapp/WEB-INF/lib/glogserver.jar) has the same filename but is not identical to /san09/devtm/otmprod/dash/lib/xprm.jar (from <init-library> in /san09/devtm/otmprod/oas/j2ee/home/config/server.xml). If it contains different versions of the same classes, it will be masked as the latter is already visible in the search path of loader init.libraries:0.0.0.
+
+INFO | jvm 1 | 2009/01/21 13:02:52 | WARNING: Code-source /san09/devtm/otmprod/glog/gc3webapp/WEB-INF/lib/3rdparty/xprs.jar (from manifest of /san09/devtm/otmprod/glog/gc3webapp/WEB-INF/lib/glogserver.jar) has the same filename but is not identical to /san09/devtm/otmprod/dash/lib/xprs.jar (from <init-library> in /san09/devtm/otmprod/oas/j2ee/home/config/server.xml). If it contains different versions of the same classes, it will be masked as the latter is already visible in the search path of loader init.libraries:0.0.0.
+
+INFO | jvm 1 | 2009/01/21 13:02:52 | WARNING: Code-source /san09/devtm/otmprod/glog/gc3webapp/WEB-INF/lib/3rdparty/xprb.jar (from manifest of /san09/devtm/otmprod/glog/gc3webapp/WEB-INF/lib/glogserver.jar) has the same filename but is not identical to /san09/devtm/otmprod/dash/lib/xprb.jar (from <init-library> in /san09/devtm/otmprod/oas/j2ee/home/config/server.xml). If it contains different versions of the same classes, it will be masked as the latter is already visible in the search path of loader init.libraries:0.0.0.
+
+INFO | jvm 1 | 2009/01/21 13:02:52 | 2009-01-21 13:02:52.747 NOTIFICATION JMSServer[]: OC4J JMS server recovering transactions (commit 0) (rollback 0) (prepared 0).
+
+INFO | jvm 1 | 2009/01/21 13:02:52 | 2009-01-21 13:02:52.760 NOTIFICATION JMSServer[]: OC4J JMS server recovering local transactions Queue[jms/Oc4jJmsExceptionQueue].
+
+INFO | jvm 1 | 2009/01/21 13:02:52 | 2009-01-21 13:02:52.770 ERROR Failed to set the internal configuration of the OC4J JMS Server with: XMLJMSServerConfig[file:/san09/devtm/otmprod/oas/j2ee/home/config/jms.xml]
+
+INFO | jvm 1 | 2009/01/21 13:02:52 | 09/01/21 13:02:52 *** (SEVERE) Failed to set the internal configuration of the OC4J JMS Server with: XMLJMSServerConfig[file:/san09/devtm/otmprod/oas/j2ee/home/config/jms.xml]
+
+INFO | jvm 1 | 2009/01/21 13:02:52 | 2009-01-21 13:02:52.772 ERROR J2EE OJR-00011 Exception starting JMS server: Failed to set the internal configuration of the OC4J JMS Server with: XMLJMSServerConfig[file:/san09/devtm/otmprod/oas/j2ee/home/config/jms.xml]
+
+INFO | jvm 1 | 2009/01/21 13:02:55 | 09/01/21 13:02:55 -- OTM Startup: preDeploy
+
+INFO | jvm 1 | 2009/01/21 13:02:55 | 09/01/21 13:02:55 -- OTM Startup: initializing realm
+
+INFO | jvm 1 | 2009/01/21 13:02:57 | 09/01/21 13:02:57 -----------> GC3 realm initialized
+
+INFO | jvm 1 | 2009/01/21 13:02:57 | [Full GC
+
+INFO | jvm 1 | 2009/01/21 13:02:58 | 152237K->21164K(1041920K), 0.3699709 secs]
+
+INFO | jvm 1 | 2009/01/21 13:02:59 | [Full GC
+
+INFO | jvm 1 | 2009/01/21 13:03:00 | 65676K->22542K(1041920K), 0.2646770 secs]
+
+:
+
+:
+
+secs]
+
+INFO | jvm 1 | 2009/01/21 13:04:28 | [Full GC
+
+INFO | jvm 1 | 2009/01/21 13:04:29 | 117637K->99487K(1041920K), 1.3780624 secs]
+
+INFO | jvm 1 | 2009/01/21 13:04:30 | 09/01/21 13:04:30 -- OTM Startup: postDeploy
+
+INFO | jvm 1 | 2009/01/21 13:04:30 | WARNING: Code-source /san09/devtm/otmprod/oas/j2ee/home/default-web-app/WEB-INF/lib/standard.jar (from WEB-INF/lib/ directory in /san09/devtm/otmprod/oas/j2ee/home/default-web-app/WEB-INF/lib) has the same filename but is not identical to /san09/devtm/otmprod/glog/gc3webapp/WEB-INF/lib/3rdparty/standard.jar (from manifest of /san09/devtm/otmprod/glog/gc3webapp/WEB-INF/lib/glogserver.jar). If it contains different versions of the same classes, it will be masked as the latter is already visible in the search path of loader default.web.defaultWebApp:0.0.0.
+
+INFO | jvm 1 | 2009/01/21 13:04:31 | [Full GC
+
+INFO | jvm 1 | 2009/01/21 13:04:32 | 128543K->102354K(1041920K), 1.2918071 secs]
+
+INFO | jvm 1 | 2009/01/21 13:04:34 | [Full GC
+
+INFO | jvm 1 | 2009/01/21 13:04:35 | 133372K->103476K(1041920K), 1.3468470 secs]
+
+INFO | jvm 1 | 2009/01/21 13:04:49 | 09/01/21 13:04:49 -- OTM Startup: initServlet
+
+INFO | jvm 1 | 2009/01/21 13:04:49 | 09/01/21 13:04:49 -- OTM Startup: activateThread
+
+INFO | jvm 1 | 2009/01/21 13:04:49 | 09/01/21 13:04:49 -- OTM Startup: loading startup classes
+
+INFO | jvm 1 | 2009/01/21 13:04:49 | 09/01/21 13:04:49 Oracle Containers for J2EE 10g (10.1.3.3.0) initialized
+
+INFO | jvm 1 | 2009/01/21 13:04:49 | 09/01/21 13:04:49 --
+
+INFO | jvm 1 | 2009/01/21 13:04:51 | 09/01/21 13:04:50 Drop DataSource begin
+
+INFO | jvm 1 | 2009/01/21 13:04:51 | 09/01/21 13:04:51 Drop DataSource end
+
+INFO | jvm 1 | 2009/01/21 13:04:51 | 09/01/21 13:04:51 Drop connection pool begin
+
+INFO | jvm 1 | 2009/01/21 13:04:51 | 09/01/21 13:04:51 Connection Pool PRIMARY_JTSPool Removed
+
+INFO | jvm 1 | 2009/01/21 13:04:51 | 09/01/21 13:04:51 DS Created
+
+INFO | jvm 1 | 2009/01/21 13:04:51 | [Full GC
+
+INFO | jvm 1 | 2009/01/21 13:04:53 | 158633K->105458K(1041920K), 1.3957224 secs]
+
+INFO | jvm 1 | 2009/01/21 13:05:00 | [Full GC
+
+INFO | jvm 1 | 2009/01/21 13:05:01 | 238658K->108669K(1041920K), 1.7608460 secs]
+
+INFO | jvm 1 | 2009/01/21 13:05:09 | [Full GC
+
+INFO | jvm 1 | 2009/01/21 13:05:11 | 251582K->113946K(1041920K), 1.5925038 secs]
+
+INFO | jvm 1 | 2009/01/21 13:05:22 | [Full GC
+
+INFO | jvm 1 | 2009/01/21 13:05:23 | 291530K->122875K(1041920K), 1.7376547 secs]
+
+INFO | jvm 1 | 2009/01/21 13:05:28 | [Full GC
+
+INFO | jvm 1 | 2009/01/21 13:05:30 | 275515K->123501K(1041920K), 1.7312387 secs]
+
+INFO | jvm 1 | 2009/01/21 13:05:36 | [Full GC
+
+INFO | jvm 1 | 2009/01/21 13:05:38 | 240341K->123302K(1041920K), 1.9786896 secs]
+
+INFO | jvm 1 | 2009/01/21 13:05:45 | [GC
+
+INFO | jvm 1 | 2009/01/21 13:05:46 | 370086K->123998K(1041920K), 0.2169766 secs]
+
+INFO | jvm 1 | 2009/01/21 13:05:49 | 09/01/21 13:05:49 : ERROR : 0
+
+INFO | jvm 1 | 2009/01/21 13:05:49 | 09/01/21 13:05:49 en : ERROR : 363374
+
+INFO | jvm 1 | 2009/01/21 13:05:50 | 09/01/21 13:05:50 en_US : ERROR : 0
+
+INFO | jvm 1 | 2009/01/21 13:05:55 | [Full GC
+
+INFO | jvm 1 | 2009/01/21 13:05:57 | 369941K->129837K(1041920K), 1.8737563 secs]
+
+INFO | jvm 1 | 2009/01/21 13:05:58 | 09/01/21 13:05:58 : EXPLANATION : 0
+
+INFO | jvm 1 | 2009/01/21 13:05:59 | 09/01/21 13:05:59 en : EXPLANATION : 63849
+
+INFO | jvm 1 | 2009/01/21 13:05:59 | 09/01/21 13:05:59 en_US : EXPLANATION : 0
+
+INFO | jvm 1 | 2009/01/21 13:06:00 | 09/01/21 13:06:00 -- OTM Startup: serverReady
+
+INFO | jvm 1 | 2009/01/21 13:06:00 | 09/01/21 13:06:00 -- OTM Startup: activating startup classes
+
+==========
+

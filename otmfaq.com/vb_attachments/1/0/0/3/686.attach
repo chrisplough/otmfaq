@@ -1,0 +1,51 @@
+ <?xml version="1.0" encoding="UTF-8" ?> 
+- <CSVUtilServletHelper>
+- <StackTrace>
+- <!-- 
+ 
+Unable to open the database connection
+
+Unable to open the database connection
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at glog.util.exception.GLException.factory(GLException.java:434)
+	at glog.util.exception.GLException.factory(GLException.java:410)
+	at glog.util.exception.GLException.factory(GLException.java:406)
+	at glog.util.exception.GLException.factory(GLException.java:402)
+	at glog.integration.servlet.CSVUtilServletHelper.processCSV(CSVUtilServletHelper.java:89)
+	at glog.integration.servlet.CSVUtilServletHelper.process(CSVUtilServletHelper.java:247)
+	at glog.integration.servlet.CSVUtilServlet.process(CSVUtilServlet.java:26)
+	at glog.webserver.util.BaseServlet.service(BaseServlet.java:705)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at glog.webserver.session.ParameterValidation.doFilter(ParameterValidation.java:29)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at glog.webserver.screenlayout.ClientSessionTracker.doFilter(ClientSessionTracker.java:59)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at glog.webserver.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:286)
+	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:190)
+	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:767)
+	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:697)
+	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:889)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:690)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+  --> 
+  </StackTrace>
+  </CSVUtilServletHelper>

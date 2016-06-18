@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet xmlns:miscHelper="http://www.jclark.com/xt/java/glog.webserver.util.MiscellaneousHelper" xmlns:translator="http://www.jclark.com/xt/java/glog.webserver.i18n.Translator" xmlns:util="http://www.jclark.com/xt/java/glog.webserver.util.Util" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xt="http://www.jclark.com/xt" exclude-result-prefixes="translator util xt" version="1.0">
+
+  <xsl:import href="file:comm/otm/Fields.xsl"/>
+  <xsl:import href="file:comm/otm/Header.xsl"/>
+  <xsl:import href="file:comm/otm/StdWidgets.xsl"/>
+  <xsl:import href="file:themes/themes.xsl"/>
+
+  <xsl:output method="html"/>
+
+  <xsl:template match="/">
+    <html>
+      <head><xsl:call-template name="set_url_prefix"/>
+        <xsl:call-template name="setPageTitle"/>
+              <script language="javascript" type="text/javascript" src="{util:format-url('glog.webserver.util.JSTranslatorServlet')}"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/finder/find.js"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/validation/validation.js"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/comm/fields.js"/>
+        <script>
+          var numberOfCosts = <xsl:number value="count(shipment/shipment_costs/shipment_cost)"/>;
+          var adjustmentTypes = new Array();
+
+          function PopupWin(url){
+            PopupWindow(url,"","width=750,height=500");
+          }
+
+          function canDoAdjust(id, position){
+            var Main = document.management_main;
+            var adjustmentType = Main.elements['adjustment_type'+position].value;
+
+            if ((adjustmentType == '') &amp;&amp; (id.indexOf('new.') == -1) ) {
+              //alert('You must first pick an Adjustment Type.');
+              alert("<xsl:value-of select="miscHelper:get-escaped-translated-value-for-java-script('alertmessage.pickAdjustmentType')"/>");
+
+              return false;
+            }
+
+            Main.adjustment_type.value = adjustmentType;
+
+            return true;
+          }
+
+          function canSubmit() {
+            var Main = document.management_main;
+
+            for (var i = 1; i &lt; (numberOfCosts+1); i++) {
+              if (Main.elements['adjustment_type'+i].value != adjustmentTypes[i]) {
+               // alert('If you select an Adjustment Type you must also Adjust the Cost.');
+                alert("<xsl:value-of select="miscHelper:get-escaped-translated-value-for-java-script('alertmessage.ifAdjustmentTypeAlsoCost')"/>");
+
+                return false
+              }
+            }
+
+            return true;
+          }
+        </script>
+        
+        <xsl:call-template name="css"/>
+      </head>
+
+      <body class="{$mBodyClass}">
+        <xsl:call-template name="manageheader"/>
+        <xsl:call-template name="help">
+            <xsl:with-param name="help_id">helpManage</xsl:with-param>
+            <xsl:with-param name="help_url">/html/help/webhelp/planning/shipment_manager/adjust_shipment_costs.htm</xsl:with-param>
+        </xsl:call-template>
+
+        <form name="management_main" method="post" action="{util:format-url('glog.webserver.util.QueryResponseServlet?state=adjust')}" onSubmit="return checkData('management_main');">
+          <input type="hidden" name="document_name" value="adjust_shipment_costs_document"/>
+          <input type="hidden" name="adjustment_type" value=""/>
+
+          <xsl:apply-templates select="shipment"/>
+          <xsl:call-template name="management_footer"/>
+        </form>
+      </body>
+    </html>
+  </xsl:template>
+
+  <xsl:template name="footer_content">
+    <table class="{$buttonsContClass}">
+        <tr>
+            <td>
+              <xsl:call-template name="button">
+                <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('button.ok')"/></xsl:with-param>
+                <xsl:with-param name="href">javascript:if(canSubmit())document.management_main.submit();</xsl:with-param>
+                <xsl:with-param name="id">ok</xsl:with-param>
+              </xsl:call-template>
+            </td>
+         </tr>
+     </table>
+  </xsl:template>
+
+  <xsl:template match="shipment">
+    <xsl:call-template name="action_management_folder"/>
+  </xsl:template>
+
+  <xsl:template name="invoke_sections">
+    <xsl:call-template name="section1">
+      <xsl:with-param name="tableId">table_shipment_cost_grid</xsl:with-param>
+      <xsl:with-param name="sectionType">grid</xsl:with-param>
+      <xsl:with-param name="hasFooter">true</xsl:with-param>
+    </xsl:call-template>
+  </xsl:template>
+
+  <xsl:template name="content1header">
+    <tr>
+        <xsl:call-template name="managementgridheadercell">
+            <xsl:with-param name="label" select="translator:get-translated-value('label.CostType')"/>
+        </xsl:call-template>
+        <xsl:call-template name="managementgridheadercell">
+            <xsl:with-param name="label" select="translator:get-translated-value('field.shipment_cost/cost')"/>
+        </xsl:call-template>
+        <xsl:call-template name="managementgridheadercell">
+            <xsl:with-param name="label" select="translator:get-translated-value('label.AccessorialCode')"/>
+        </xsl:call-template>
+        <xsl:call-template name="managementgridheadercell">
+            <xsl:with-param name="label" select="translator:get-translated-value('label.GeneralLedgerCode')"/>
+        </xsl:call-template>
+        <xsl:call-template name="managementgridheadercell">
+            <xsl:with-param name="label" select="translator:get-translated-value('label.PayMethodCode')"/>
+        </xsl:call-template>
+        <xsl:call-template name="managementgridheadercell">
+            <xsl:with-param name="label" select="translator:get-translated-value('label.SpecialServiceCode')"/>
+        </xsl:call-template>
+        <xsl:call-template name="managementgridheadercell">
+            <xsl:with-param name="label" select="translator:get-translated-value('field.shipment_cost/is_cost_fixed')"/>
+        </xsl:call-template>
+        <xsl:call-template name="managementgridheadercell">
+            <xsl:with-param name="label" select="translator:get-translated-value('field.shipment_cost/adjustment_reason/xid')"/>
+        </xsl:call-template>
+        <xsl:call-template name="managementgridheadercell">
+            <xsl:with-param name="label" select="translator:get-translated-value('label.CostID')"/>
+        </xsl:call-template>
+        <xsl:call-template name="managementgridheadercell">
+            <xsl:with-param name="label" select="translator:get-translated-value('label.AdjustmentType')"/>
+        </xsl:call-template>
+        <xsl:call-template name="managementgridheadercell"/>
+    </tr>
+  </xsl:template>
+
+  <xsl:template name="content1">
+    <xsl:for-each select="shipment_costs/shipment_cost">
+      <xsl:variable name="className"><xsl:call-template name="getMGridRowBGClass"><xsl:with-param name="position" select="position()"/></xsl:call-template></xsl:variable>
+
+      <tr class="{$className}">
+        <xsl:variable name="cellClassName">
+          <xsl:call-template name="getMGridRowCellClass">
+            <xsl:with-param name="rowNum" select="position()"/>
+          </xsl:call-template>
+        </xsl:variable>
+        <td class="{$cellClassName}" style="white-space: nowrap">
+          <input type="hidden" value="{cost_type}" name="shipment_cost/cost_type{position()}"/>
+          <xsl:variable name="costText">
+            <xsl:choose>
+                <xsl:when test="((cost_type = 'A') and (special_service/desc != ''))">
+                    <xsl:value-of select="special_service/desc"/>
+                </xsl:when>
+                <xsl:when test="((cost_type = 'A') and (special_service/desc = '') and (accessorial_cost/desc != ''))">
+                    <xsl:value-of select="accessorial_cost/desc"/>
+                </xsl:when>
+                <xsl:when test="((cost_type = 'A') and (special_service/xid = '') and (accessorial_code/desc != ''))">
+                    <xsl:value-of select="accessorial_code/desc"/>
+                </xsl:when>
+                <xsl:when test="((cost_type = 'A') and (special_service/xid = '') and (accessorial_code/desc = '') and (accessorial_cost/desc = ''))">
+                    <xsl:value-of select="translator:get-translated-value('label.Accessorial')"/>
+                </xsl:when>
+				
+				<!--
+                <xsl:when test="((cost_type = 'B') and (rate_geo_cost_group/rate_geo_costs/rate_geo_cost/description != ''))">
+                    <xsl:value-of select="rate_geo_cost_group/rate_geo_costs/rate_geo_cost/description"/>
+                    <xsl:value-of select="string(' (')"/><xsl:value-of select="translator:get-translated-value('label.BaseCost')"/><xsl:value-of select="string(')')"/>
+                </xsl:when>
+                <xsl:when test="cost_type = 'B'"><xsl:value-of select="translator:get-translated-value('label.BaseCost')"/></xsl:when>
+				-->
+				
+                <xsl:when test="cost_type = 'S'"><xsl:value-of select="translator:get-translated-value('label.StopOffCharge')"/></xsl:when>
+                <xsl:when test="((cost_type = 'D') and (rate_geo_cost_group/rate_geo_costs/rate_geo_cost/description != ''))">
+                    <xsl:value-of select="rate_geo_cost_group/rate_geo_costs/rate_geo_cost/description"/>
+                    <xsl:value-of select="string(' (')"/><xsl:value-of select="translator:get-translated-value('label.Discount')"/><xsl:value-of select="string(')')"/>
+                </xsl:when>
+                <xsl:when test="cost_type = 'D'"><xsl:value-of select="translator:get-translated-value('label.Discount')"/></xsl:when>
+                <xsl:when test="cost_type = 'O'"><xsl:value-of select="translator:get-translated-value('label.Other')"/></xsl:when>
+                <xsl:when test="cost_type = 'C'"><xsl:value-of select="translator:get-translated-value('label.Circuity')"/></xsl:when>
+                <xsl:when test="cost_type = 'L'"><xsl:value-of select="translator:get-translated-value('label.Delta')"/></xsl:when>
+            </xsl:choose>
+          </xsl:variable>
+
+          <xsl:choose>
+            <xsl:when test="rate_geo_cost_group/xid != ''">
+              <a>
+                <xsl:attribute name="href">javascript:PopupWin(formatUrl('glog.webserver.rate.RateGeoCostGroupLinkServlet?rate_geo_cost_group_gid=<xsl:value-of select="util:escape-u-r-l(string(rate_geo_cost_group/xid/@ID))"/>'));</xsl:attribute>
+                <xsl:value-of select="$costText"/>
+              </a>
+            </xsl:when>
+            <xsl:when test="accessorial_cost/xid/@ID != ''">
+              <a>
+                <xsl:attribute name="href">javascript:PopupWin(formatUrl('glog.webserver.accessorialcost.AccessorialCostManagementServlet?management_action=view&amp;pk=<xsl:value-of select="util:escape-u-r-l(string(accessorial_cost/xid/@ID))"/>'));</xsl:attribute>
+                <xsl:value-of select="$costText"/>
+              </a>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="$costText"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </td>
+
+        <xsl:call-template name="managementgridbodycurrencycell">
+          <xsl:with-param name="value" select="cost"/>
+          <xsl:with-param name="href">javascript:PopupWin(formatUrl('glog.webserver.shipment.ShipmentCostDetailServlet?pk=<xsl:value-of select="util:escape-u-r-l(string(@ID))"/>'));</xsl:with-param>
+        </xsl:call-template>
+        <xsl:call-template name="managementgridbodycell">
+          <xsl:with-param name="value" select="accessorial_code/xid"/>
+        </xsl:call-template>
+        <xsl:call-template name="managementgridbodycell">
+          <xsl:with-param name="value" select="general_ledger_code/xid"/>
+        </xsl:call-template>
+        <xsl:call-template name="managementgridbodycell">
+          <xsl:with-param name="value" select="payment_method_code"/>
+        </xsl:call-template>
+        <xsl:call-template name="managementgridbodycell">
+          <xsl:with-param name="value" select="special_service_xid"/>
+        </xsl:call-template>
+        <xsl:call-template name="managementgridbodycheckcell">
+          <xsl:with-param name="value" select="is_cost_fixed"/>
+        </xsl:call-template>
+        <xsl:call-template name="managementgridbodycell">
+          <xsl:with-param name="value" select="adjustment_reason/xid"/>
+        </xsl:call-template>
+        <xsl:call-template name="managementgridbodynumbercell">
+          <xsl:with-param name="value" select="seqno"/>
+        </xsl:call-template>
+
+        <td class="{$cellClassName}">
+          <xsl:call-template name="fieldFixedDropList">
+            <xsl:with-param name="name">adjustment_type<xsl:value-of select="position()"/></xsl:with-param>
+            <xsl:with-param name="hidelabel">true</xsl:with-param>
+            <xsl:with-param name="form">management_main</xsl:with-param>
+            <xsl:with-param name="query">false</xsl:with-param>
+            <xsl:with-param name="options">
+              <options>
+                <option value=""/>
+                <option value="REVERSE_ONLY" name="Reverse Only"/>
+                <option value="REVERSE_AND_ADJUST" name="Reverse and Adjust"/>
+                <option value="ADJUST_ONLY" name="Adjust Only"/>
+              </options>
+            </xsl:with-param>
+            <xsl:with-param name="value"><xsl:value-of select="adjustment_type"/></xsl:with-param>
+            <xsl:with-param name="readonly">
+              <xsl:choose>
+                <xsl:when test="((starts-with(./@ID,'new.')) or (./@ID = ''))">true</xsl:when>
+                <xsl:when test="not(adjustment_type)">false</xsl:when>
+                <xsl:when test="adjustment_type = ''">false</xsl:when>
+                <xsl:otherwise>true</xsl:otherwise>
+              </xsl:choose>
+            </xsl:with-param>
+          </xsl:call-template>
+        </td>
+
+        <td class="{$mGridBodyButtonsCellClass}">
+          <table class="{$mGridButtonsContClass}">
+            <tr>
+              <td>
+                <xsl:call-template name="button">
+                  <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('button.Adjust')"/></xsl:with-param>
+                  <xsl:with-param name="href">javascript:document.management_main.action='<xsl:value-of select="util:format-url(concat('glog.webserver.uic.shipment.GetAdjustShipmentCost?ID=',util:escape-u-r-l(string(@ID)),'&amp;shipment_gid=',util:escape-u-r-l(string(../../@ID))))"/>';document.management_main.submit();</xsl:with-param>
+                  <xsl:with-param name="onClick">return canDoAdjust('<xsl:value-of select='util:escape-u-r-l(string(@ID))'/>', '<xsl:value-of select='position()'/>');</xsl:with-param>
+                </xsl:call-template>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <script language="javascript">
+        adjustmentTypes[<xsl:value-of select="position()"/>] = '<xsl:value-of select="adjustment_type"/>';
+      </script>
+    </xsl:for-each>
+  </xsl:template>
+
+  <xsl:template name="content1footer">
+    <tr>
+      <td class="{$mGridFooterContClass}" colspan="11">
+        <xsl:call-template name="button">
+          <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('button.NewShipmentCost')"/></xsl:with-param>
+          <xsl:with-param name="href">javascript:if(checkData('management_main')) {document.management_main.action='<xsl:value-of select="util:format-url(concat('glog.webserver.uic.shipment.GetAdjustShipmentCost?shipment_gid=',util:escape-u-r-l(string(@ID)),'&amp;new=y'))"/>';document.management_main.submit();}</xsl:with-param>
+        </xsl:call-template>
+      </td>
+    </tr>
+  </xsl:template>
+
+</xsl:stylesheet>

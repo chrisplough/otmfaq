@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'ISO-8859-1'?>
+<!DOCTYPE server PUBLIC "-//Oracle Corp.//DTD Reports Server Configuration //EN" "file:/opt/otmv55/app/OracleAS/reports/dtd/rwserverconf.dtd">
+<server version="10.1.2.0.2">
+   <cache class="oracle.reports.cache.RWCache">
+      <property name="cacheSize" value="60"/>
+      <!--property name="cacheDir" value="your cache directory"/-->
+      <!--property name="maxCacheFileNumber" value="max number of cache files"/-->
+      <!--property name="ignoreParameters" value="parameter names to be ignored in constructing cache key, separated by comma ','"/-->
+   </cache>
+   <!--Please do not change the id for reports engine.-->
+   <!--The class specifies below is subclass of _EngineClassImplBase and implements EngineInterface.-->
+   <engine id="rwEng" class="oracle.reports.engine.EngineImpl" initEngine="5" maxEngine="16" minEngine="5" engLife="5" maxIdle="5" callbackTimeOut="43200">
+      <property name="sourceDir" value="/opt/otmv55/prod/glog/reports"/>
+      <!--property name="tempDir" value="your reports temp directory"/-->
+      <!--property name="keepConnection" value="yes"/-->
+   </engine>
+   <engine id="rwURLEng" class="oracle.reports.urlengine.URLEngineImpl" initEngine="1" maxEngine="1" minEngine="0" engLife="50" maxIdle="30" callbackTimeOut="60000"/>
+   <!--security id="rwSec" class="oracle.reports.server.RWSecurity">
+      <property name="securityUserid" value="%PORTAL_DB_USERNAME%/%PORTAL_DB_PASSWORD%@%PORTAL_DB_TNSNAME%" confidential="yes" encrypted="no"/>
+      <property name="oidEntity" value="%REPORTS_OID_ENTITY%"/>
+   </security-->
+   <!--destination destype="oraclePortal" class="oracle.reports.server.DesOraclePortal">
+      <property name="portalUserid" value="%PORTAL_DB_USERNAME%/%PORTAL_DB_PASSWORD%@%PORTAL_DB_TNSNAME%" confidential="yes" encrypted="no"/>
+   </destination-->
+   <destination destype="ftp" class="oracle.reports.plugin.destination.ftp.DesFTP">
+      <!--property name="proxy" value="proxyinfo.xml"/-->
+   </destination>
+   <destination destype="WebDav" class="oracle.reports.plugin.destination.webdav.DesWebDAV">
+      <!--property name="proxy" value="proxyinfo.xml"/-->
+   </destination>
+   <!-- By default server will use rwnetwork.conf as network config file
+        Use this element to override the same  -->
+   <!--networkConfig file="rwnetwork.conf"></networkConfig-->
+   <job jobType="report" engineId="rwEng"/>
+   <job jobType="rwurl" engineId="rwURLEng"/>
+   <notification id="mailNotify" class="oracle.reports.server.MailNotify">
+      <property name="succnotefile" value="succnote.txt"/>
+      <property name="failnotefile" value="failnote.txt"/>
+   </notification>
+   <!--notification id="wfNotify" class="oracle.reports.server.WorkflowNotify">
+      <property name="connStr" value="%WF_DB_USERNAME%/%WF_DB_PASSWORD%@%WF_DB_TNSNAME%" confidential="yes" encrypted="no"/>
+   </notification-->
+   <log option="noJob"/>
+   <!--jobStatusRepository class="oracle.reports.server.JobRepositoryDB">
+      <property name="repositoryConn" value="repo_db_username/repo_db_password@repo_db_tnsname" confidential="yes" encrypted="no"/>
+   </jobStatusRepository-->
+   <!--trace traceOpts="trace_all"/-->
+   <connection maxConnect="60" idleTimeOut="50">
+      <orbClient id="RWClient" publicKeyFile="clientpub.key"/>
+   </connection>
+   <queue maxQueueSize="1000"/>
+   <!--jobRecovery auxDatFiles="yes"/-->
+   <!--
+      The value of the 'identifier' element is encrypted and is of the form SERVERACCESSKEY_USER/SERVERACCESSKEY_PASSWORD
+
+      SERVERACCESSKEY_USER and SERVERACCESSKEY_PASSWORD in <server>.conf and targets.xml
+      file should match for Reports EM pages to display data correctly.
+
+      Corresponding entries of username and password in targets.xml:
+      <Property NAME="Password" VALUE="SERVERACCESSKEY_PASSWORD" ENCRYPTED="FALSE"/>
+      <Property NAME="UserName" VALUE="SERVERACCESSKEY_USER" ENCRYPTED="FALSE"/>
+   -->
+   <identifier confidential="yes" encrypted="yes">ZgZCDkywAUaHwMnb+A6YTg0SUH18o+dlLJ64PIFyOXetqqLobslDJsbmlpgdIC/TgxEMKPxVWzQN/PnPoAkWqv/FwQUlony40YRPDGsqdcS271JDLJoioXADBmsD8yKOEFIX5A91oDOnZZjUvsouUfadFU0C+vQ6e4wLn+7OLfe8ukCsF1RZTnZmtjEM/UHbe67XX8wsNkHDGUmQryq/b4yrUB9Xlms1WnHh4oDITUiPyL2Edte3TG38+G1JLJQXGj83QHQCJ8Wn6dJB6iDmrZaqFRdlfAVj9HHazrJz+VnyDpT/hMwT4twjbtxXao6vBk8NPNBefbmLxCIPH6ki+VWBqj8YIXXKUm2PVwMI7AZXvFR0FA0FXtyWCJknnky4zz8Mnk1YpaHZMcwAqDiHa5RrGQ2YEHryogSy1/SZf0fjOCtgsfCY8I3U5d2YlTrpUGxiE1AW</identifier>
+   <!--pluginParam name="mailServer">%MAILSERVER_NAME%</pluginParam-->
+   <!--pluginParam name="proxy" type="file">proxyinfo.xml</pluginParam-->
+   <pluginParam name="xmlpds" type="file">xmlpds.conf</pluginParam>
+   <pluginParam name="jdbcpds" type="file">jdbcpds.conf</pluginParam>
+   <pluginParam name="textpds" type="file">textpds.conf</pluginParam>

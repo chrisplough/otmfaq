@@ -1,0 +1,293 @@
+#####################################################################
+# G-Log Properties File for Both Web and App Server
+#
+# This property file holds the configurable settings for the
+# G-Log Web and App Servers (running on the same box). These
+# settings will override any settings in glog.webserver.properties,
+# glog.appserver.properties, glog.common.properties, and
+# glog.base.properties.  These properties are initially set
+# by the install scripts, but can be modified to work with
+# your specific server. All G-Log property changes should be
+# made to this file, rather than the webserver, appserver,
+# common, or base property files.
+#####################################################################
+# !!!!!!!!!!!!!!!!!!!!!!!!!!! IMPORTANT !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#-------------------------------------------------------------------
+# Place all thread settings changes in the Custom Thread Properties
+# section at the end of this file.
+#-------------------------------------------------------------------
+# Place all other changes, new properties, and custom properties in
+# the Custom Properties section near the end of this file.
+#-------------------------------------------------------------------
+# These sections will be used by future installers during upgrades.
+# Properties that are outside this section will not be migrated.
+#####################################################################
+
+#--------------------------------------------------------------------
+# Base Install Settings
+#--------------------------------------------------------------------
+
+# GC3 version
+glog.software.version=OTMv554
+glog.software.patch.version=OTMv55-CU04
+glog.software.installtype=WebAppServer
+
+# installation paths
+gc3.dir=E:/OTM55
+gc3.config.dir=$gc3.dir$/glog/config
+temp.dir=$gc3.dir$/temp
+
+# application server URL and port
+appserver=hydhtc137458d.domainName
+appserver.port=7001
+
+# application server type
+glog.app.server.name=weblogic
+appserver.protocol=t3://
+
+# web server URL and port
+webserver=hydhtc137458d.domainName
+webserver.port=80
+
+# web URL prefix - should be blank unless web server is behind a reverse-proxy server
+glog.webserver.urlprefix=
+
+# web server URL (may differ from server name)
+glog.webserver.URL=http://hydhtc137458d.domainName:80$glog.webserver.urlprefix$
+
+# db server URL and information
+dbserver=ipAddress
+glog.database.sid=glogdemo
+glog.database.connectstring=glogdemo
+glog.database.port=1521
+glog.database.schema=glogowner
+
+# db users and passwords
+glog.database.user=glogdba
+glog.database.password=glogdba
+glog.database.load.user=glogload
+glog.database.load.password=glogload
+
+# oracle driver type should be "Oracle" for thin drivers or "weblogic" for oci drivers
+glog.database.default.poolDriver=Oracle
+
+# default password storage setting (Encrypt/Text) - Note, changing this option also requires db changes
+glog.crypto.password.mode=Encrypt
+
+#--------------------------------------------------------------------
+# Log Settings
+#--------------------------------------------------------------------
+
+# turn logging on or off
+glog.log.on=false
+
+# path to log file(s)
+glog.log.dir=$gc3.dir$/logs
+glog.log.file.defaultLog.filepath=$gc3.dir$/logs/glog.default.log
+
+# maximum size of log files (bytes)
+glog.log.maxsize=10000000
+
+# maximum number of log backup files
+glog.log.backups=10
+
+#--------------------------------------------------------------------
+# Web Server Settings
+#--------------------------------------------------------------------
+
+document.root=$gc3.dir$/apache/htdocs
+
+# maximum number of results returned by port/airport finder, optional
+glog.webserver.portresults.count=100
+
+# maximum number of results returned by giv, optional
+glog.webserver.givresults.count=100
+
+## external Oracle Reports Server - optional
+#report_feature=true
+#p_reports_server=rep_otmrpt
+#p_reports_out_dir=d:/otm/rptapache/htdocs
+#reports_server_fqdn=http://ipAddress:7777/reports/rwservlet
+#report_server_url=http://ipAddress:81
+#discoverer_url=
+
+## Fusion Transportation Intelligence (formerly Advanced Analytics) - optional
+#aa_webserver=otmfti.domainName:8081
+#ALLOW_ADVANCED_ANALYTICS=true
+
+## Replicated Operational Database (ROD) - optional
+#ods_feature=true
+#glog.ods.dbserver=otmodsdb.domainName
+#glog.database.ods.sid=otmodsdb
+#glog.ods.connectstring=otmodsdb
+#glog.ods.database.port=1521
+#glog.database.ods.schema=glogowner
+
+## URLStreamHandler Class for Outbound HTTPS - uncomment for AIX or WebSphere
+#glog.integration.https.urlStreamHandlerClass=com.ibm.net.ssl.www.protocol.https.Handler
+
+#--------------------------------------------------------------------
+# App Server Settings
+#--------------------------------------------------------------------
+
+# scalability settings
+glog.scalability.on=false
+glog.log.ID.JMS.on=false
+glog.log.ID.Scalability.on=false
+glog.scalability.thisTarget=gc3-glog
+glog.scalability.thisMachine=DEFAULT
+glog.scalability.thisMachineURL=$appserver.protocol$$appserver$:$appserver.port$
+glog.scalability.defaultServer=DEFAULT
+glog.scalability.defaultMachineURL=$appserver.protocol$$appserver$:$appserver.port$
+
+# list of avaliable app servers to poll for network topology - used only by web server.  one per line.
+!remove glog.scalability.topologyMachineURL
+glog.scalability.topologyMachineURL=$appserver.protocol$$appserver$:$appserver.port$
+#glog.scalability.topologyMachineURL=<additional app server>
+
+# list of avaliable web servers - used only by app server.  one per line.
+!remove glog.scalability.topologyWebserverURL
+glog.scalability.topologyWebserverURL=http://$webserver$:$webserver.port$
+#glog.scalability.topologyWebserverURL=<additional web server>
+
+# uncomment for scalability under OAS
+#glog.jms.singleSessionPerConnection=true
+#glog.jms.useAsynchronousMessaging=false
+#glog.jms.useAsynchronousMessaging=false
+#glog.jms.jmsserver=
+#glog.jms.jmsfactory=jms/TopicConnectionFactory
+#glog.jms.authenticateOnMessage=true
+
+# mail settings
+glog.mail.smtp.host=mail.domainName
+glog.workflow.notify.defaultSmtphost=mail.domainName
+glog.mail.images=$glog.webserver.URL$/images/mail
+
+# workflow settings
+glog.workflow.notify.advisor.name=G-Log Advisor
+glog.workflow.notify.advisor.email=durga_goli@abcd.com
+glog.workflow.notify.advisor.fax=555-555-1212
+
+## FaxMaker Settings - optional
+#glog.workflow.notify.faxmaker.email=fax@domainName
+
+## RightFax Settings - optional
+#glog.fax.defaultHandler.routingMode=to
+#glog.fax.defaultHandler.routingPicture=/name={lastName},{firstName}/fax={rawPhone}/
+#glog.fax.email=fax@domainName
+
+## external integration settings
+#glog.integration.URLtoSendBills=http://<server_name>/servlets/<ClassNameOfServletThatReceivesFinancialRelatedXML>
+#glog.integration.URLtoSendVouchers=http://<server_name>/servlets/<ClassNameOfServletThatReceivesFinancialRelatedXML>
+
+## external SMC Rateware - optional
+#glog.RatingEngine.Rateware.URL=rateware.domainName
+#glog.RatingEngine.Rateware.Port=23700
+
+## external SMC RateWare Version 1.2.325 (or later) or SMC Carrier Connect
+#glog.RatingEngine.Rateware.NewAPI=true 
+
+## external PCMiler - optional
+#pcmiler.host=pcmiler.domainName
+#pcmiler.port=8145
+
+## external Rand McNally - optional
+#intelliroute.host=ipAddress
+#intelliroute.port=1998
+#intelliroute.user=otm
+#intelliroute.password=changeme
+#intelliroute.location=company
+
+## external MileMaker - optional
+#milemaker.host=milemaker.domainName
+#milemaker.port=1031
+
+## external PTV Map and Guide - optional
+#mapandguide.host=ptvmg.domainName
+#mapandguide.port=2000
+
+#--------------------------------------------------------------------
+# Transmission Error properties -- can help in debugging inbound
+# transmission errors
+#--------------------------------------------------------------------
+
+# This property specifies if the response is a StackTrace or TransmissionAck
+#glog.integration.servlet.TransmissionStageError.elementName = StackTrace
+
+# This property indicates if the full Transmission is sent back
+#glog.integration.servlet.TransmissionStageError.includeTransmissionText = false
+
+# This controls how the elements are formatted [comment|CDATA|normal]
+#glog.integration.schema.element.StackTrace = comment
+#glog.integration.schema.element.TransmissionText = comment
+
+# The following properties specify if an email should be sent and to whom
+#glog.integration.servlet.TransmissionStageError.sendErrorEmail = false
+#glog.integration.servlet.TransmissionStageError.errorEmailTo =
+#glog.integration.servlet.TransmissionStageError.errorEmailFrom =
+#glog.integration.servlet.TransmissionStageError.errorEmailSubject = Transmission XML Stage Error
+#glog.integration.servlet.TransmissionStageError.errorEmailSmtpHost =
+
+#--------------------------------------------------------------------
+# Custom Properties - Beginning
+#--------------------------------------------------------------------
+# Place all changes, new properties, and custom properties here.
+# This section will be used during GC3 Upgrades
+#--------------------------------------------------------------------
+
+#--------------------------------------------------------------------
+# Custom Properties - End
+#--------------------------------------------------------------------
+
+#--------------------------------------------------------------------
+# Default EBS Properties
+#--------------------------------------------------------------------
+
+#!include ebs.properties
+
+#--------------------------------------------------------------------
+# Default E1 Intergration Properties
+#--------------------------------------------------------------------
+
+#glog.integration.enableCaseChange=true
+#glog.integration.printXmlDeclaration=true
+#glog.workflow.topic.OrderLatestEstDeliveryDateSync.suppresslifetime=false
+
+#--------------------------------------------------------------------
+# Default Web Server Properties
+#--------------------------------------------------------------------
+
+!include glog.webserver.properties
+
+#--------------------------------------------------------------------
+# Default App Server Properties
+#--------------------------------------------------------------------
+
+!include glog.appserver.properties
+
+#--------------------------------------------------------------------
+# Turn off Workflow persistence
+#--------------------------------------------------------------------
+glog.workflow.persistent.reboot=false
+!remove glog.workflow.persistent.classes
+
+#--------------------------------------------------------------------
+# Thread model (should only be set to 'on' for WebSphere installs)
+#--------------------------------------------------------------------
+glog.util.commonj.threadModel.appServer=off
+
+#--------------------------------------------------------------------
+# compensate for WebSphere issues
+#--------------------------------------------------------------------
+#glog.vpd.cacheMode.profileTagging=pool
+
+#--------------------------------------------------------------------
+# Custom Thread Properties - Beginning
+#--------------------------------------------------------------------
+# Place all thread changes and properties here.
+# This section will be used during GC3 Upgrades
+#--------------------------------------------------------------------
+
+#--------------------------------------------------------------------
+# Custom Thread Properties - End
+#--------------------------------------------------------------------

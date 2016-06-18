@@ -1,0 +1,45 @@
+2009-09-15 15:56:59.342 701928 Debug Workflow Starting workflow Send Integration Workflow (30327677) in response to SendIntegration: queryType=LOCATION,savedQuery=NEW LOCATIONS, savedCondition=null, sendOnNoData=true,createNewProcess=false, notifyType=SERVICE,externalSystem=MAPFRE.JGC-TEST-SIST-EXT-HELLO, sendSummaryOnly=false,remark=null, guaranteedDelivery=false [http - 1]
+2009-09-15 15:56:59.614 701928 Debug Workflow Completing workflow Send Integration Workflow (30327677) [http - 1]
+2009-09-15 15:56:59.626 701928 Debug Workflow Starting workflow Service Notify (27928299) in response to ServiceTopic: persistXML=true,guaranteedDelivery=false, externalSystem=MAPFRE.JGC-TEST-SIST-EXT-HELLO,context=Location MAPFRE.SP-NEW, contextClass=null [service - 1]
+2009-09-15 15:57:01.512 701928 Debug Workflow Completing workflow Service Notify(27928299) [service - 1]
+2009-09-15 15:57:01.538 701928 Debug Workflow Starting workflow Simple Workflow (30949145) in response to Service Transport: transmissionNumber=2481,domainName=null [service - 1]
+2009-09-15 15:57:01.763 701928 Debug Workflow Completing workflow Simple Workflow (30949145) [service - 1]
+2009-09-15 15:57:01.766 701928 Debug Workflow Starting workflow Simple Workflow (29000709) in response to ServiceCallTopic: AsistenciaWSService - actualizaEstadoOrden, transmissionId=2481 [transport - Services - 2]
+2009-09-15 15:57:02.255 701928 Error Exception java.lang.NullPointerException
+
+java.lang.NullPointerException
+at glog.integration.notification.TransactionBuilder.toXML(TransactionBuilder.java:629)
+at glog.server.webservice.WebServiceBinder.generateIntegrationXml(WebServiceBinder.java:238)
+at glog.server.webservice.WebServiceBinder.bindDocument(WebServiceBinder.java:155)
+at glog.server.webservice.WebServiceBinder.bindParameter(WebServiceBinder.java:135)
+at glog.server.webservice.WebServiceBinder.bind(WebServiceBinder.java:52)
+at glog.server.webservice.WebServiceCall.call(WebServiceCall.java:104)
+at glog.server.workflow.webservice.ServiceTransmission.execute(ServiceTransmission.java:97)
+at glog.server.workflow.webservice.ServiceCall.executeWithReturn(ServiceCall.java:31)
+at glog.server.workflow.webservice.ServiceCallTopic.execute(ServiceCallTopic.java:20)
+at glog.server.workflow.SimpleWorkflow.execute(SimpleWorkflow.java:23)
+at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:64)
+at sun.reflect.GeneratedMethodAccessor290.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+at java.lang.reflect.Method.invoke(Method.java:324)
+at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationCont extImpl.java:119)
+at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+at workflow_WorkflowSession_NonTransactional_RemoteProxy_mkgm02.execute(UnknownSource)
+at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:341)
+at glog.server.workflow.Trigger.trigger(Trigger.java:123)
+at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:141)
+at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:96)
+at glog.util.event.EventThread.run(EventThread.java:83)
+at java.lang.Thread.run(Thread.java:534)[transport - Services - 2] java.lang.NullPointerException
+
+2009-09-15 15:57:02.626 701928 Debug Workflow Completing workflow SimpleWorkflow (29000709) [transport - Services - 2]

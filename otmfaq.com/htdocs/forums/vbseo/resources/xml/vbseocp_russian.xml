@@ -1,0 +1,3193 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- vbseocp_russian.xml, charset windows-1251, vBSEO 3.6.0, translation VD v1.02 2010/04/06 -->
+<translations>
+	<message>
+		<name>adm_cp</name>
+		<value>Ïàíåëü óïðàâëåíèÿ</value>
+	</message>
+	<message>
+		<name>cphome</name>
+		<value>Ïàíåëü óïðàâëåíèÿ vBSEO</value>
+	</message>
+	<message>
+		<name>back_to</name>
+		<value>Âåðíóòüñÿ íà ôîðóì</value>
+	</message>
+	<message>
+		<name>logout</name>
+		<value>Âûéòè</value>
+	</message>
+	<message>
+		<name>linkbacks</name>
+		<value>LinkBacks (Ping/Track/Refbacks)</value>
+	</message>
+	<message>
+		<name>in_linkbacks</name>
+		<value>Âõîäÿùèå LinkBacks</value>
+	</message>
+	<message>
+		<name>out_linkbacks</name>
+		<value>Èñõîäÿùèå LinkBacks</value>
+	</message>
+	<message>
+		<name>permalinks</name>
+		<value>Ïîñòîÿííûå ññûëêè</value>
+	</message>
+	<message>
+		<name>patent_pending</name>
+		<value>Ïàòåíò îæèäàåòñÿ</value>
+	</message>
+	<message>
+		<name>cookies_cleared</name>
+		<value>Êóêè î÷èùåíû</value>
+	</message>
+	<message>
+		<name>click_redirect</name>
+		<value>Êëèêíèòå çäåñü, åñëè Âàø áðàóçåð íå áóäåò ïåðåíàïðàâëåí àâòîìàòè÷åñêè.</value>
+	</message>
+	<message>
+		<name>error</name>
+		<value>Îøèáêà</value>
+	</message>
+	<message>
+		<name>pass_notsame</name>
+		<value>Ââåäåííûå ïàðîëè íå ñîâïàäàþò</value>
+	</message>
+	<message>
+		<name>pass_empty</name>
+		<value>Ïàðîëü íå ìîæåò áûòü ïóñòûì</value>
+	</message>
+	<message>
+		<name>pass_defined</name>
+		<value>Ïàðîëü àäìèíèñòðàòîðà óæå áûë îïðåäåëåí</value>
+	</message>
+	<message>
+		<name>config_readonly</name>
+		<value>Ôàéë êîíôèãóðàöèè íå ìîæåò áûòü ïåðåçàïèñàí</value>
+	</message>
+	<message>
+		<name>pass_select</name>
+		<value>Ïîæàëóéñòà, çàäàéòå ïàðîëü</value>
+	</message>
+	<message>
+		<name>password</name>
+		<value>Ïàðîëü</value>
+	</message>
+	<message>
+		<name>confirm</name>
+		<value>Ïîäòâåðæäåíèå</value>
+	</message>
+	<message>
+		<name>login</name>
+		<value>Âõîä</value>
+	</message>
+	<message>
+		<name>note_config</name>
+		<value>&lt;strong&gt;ÂÍÈÌÀÍÈÅ:&lt;/strong&gt; Âàø ôàéë vB-root/vbseo/resources/xml/config.xml äîëæåí èìåòü ðàçðåøåíèå íà çàïèñü. Ïîæàëóéñòà, èçìåíèòå ïðàâà äîñòóïà ê ôàéëó ñîîòâåòñòâåííî.</value>
+	</message>
+	<message>
+		<name>login_failed</name>
+		<value>Ïàðîëü íåâåðåí</value>
+	</message>
+	<message>
+		<name>area_protected</name>
+		<value>Ýòà ñòðàíèöà çàùèùåíà ïàðîëåì</value>
+	</message>
+	<message>
+		<name>warn_readonly</name>
+		<value>ÂÍÈÌÀÍÈÅ: Âàø ôàéë config.xml íå èìååò ðàçðåøåíèÿ íà çàïèñü. Íàñòðîéêè íå áóäóò ñîõðàíåíû.</value>
+	</message>
+	<message>
+		<name>saved_ok</name>
+		<value>Âàøè íàñòðîéêè óñïåøíî ñîõðàíåíû.</value>
+	</message>
+	<message>
+		<name>quick_jump</name>
+		<value>Áûñòðûé ïåðåõîä</value>
+	</message>
+	<message>
+		<name>gen_set</name>
+		<value>Îñíîâíûå íàñòðîéêè</value>
+	</message>
+	<message>
+		<name>vbseo_opt</name>
+		<value>Îïöèè vBSEO</value>
+	</message>
+	<message>
+		<name>log_opt</name>
+		<value>Îïöèè ñòàòèñòèêè</value>
+	</message>
+	<message>
+		<name>arc_opt</name>
+		<value>Îïöèè àðõèâà vB</value>
+	</message>
+	<message>
+		<name>url_opt</name>
+		<value>Íàñòðîéêè URL ôîðìàòîâ</value>
+	</message>
+	<message>
+		<name>gen_opt</name>
+		<value>Îáùèå îïöèè</value>
+	</message>
+	<message>
+		<name>gen_opt_description</name>
+		<value>&lt;b&gt;Âûáåðèòå îáùèé URL ôîðìàò äëÿ âàøåãî ôîðóìà&lt;/b&gt;&lt;br /&gt;
+Èçìåíåíèå URL ôîðìàòà íå òîëüêî ïîçâîëÿåò âêëþ÷èòü ðåëåâàíòíûå êëþ÷åâûå ñëîâà â ññûëêè íà âàøåì ôîðóìå, íî è êîíñîëèäèðóåò ìíîæåñòâî (ðàçëè÷íûõ) ññûëîê â ÎÄÍÓ ññûëêó äëÿ êàæäîé óíèêàëüíîé ñòðàíèöû. Ýòî ïðåèìóùåñòâî óëó÷øàåò ñòðóêòóðó âíóòðåííèõ ññûëîê, ñîçäàâàÿ ñåòü îäíîçíà÷íûõ ññûëîê, ÷òî ïîçâîëÿåò ïîèñêîâûì ñèñòåìàì ñîîòâåòñòâóþùèì îáðàçîì íàõîäèòü è èíäåêñèðîâàòü óíèêàëüíûé êîíòåíò íà âàøåì ñàéòå. Òàêàÿ ñèñòåìà ññûëîê òàêæå îáåñïå÷èâàåò ñèòóàöèþ, êîãäà ÂÑÅ âõîäÿùèå ññûëêè ïðèíîñÿò ìàêñèìàëüíóþ ïîëüçó, óêàçûâàÿ íà ãëàâíóþ ññûëêó, à íå íà âòîðîñòåïåííûå èëè äóáëèðóþùèå ññûëêè, ÷òî â ñâîþ î÷åðåäü óëó÷øàåò ðåëåâàíòíîñòü âàøåãî êîíòåíòà.
+
+&lt;p style=&quot;color:#f00&quot;&gt;&lt;b&gt;ÂÀÆÍÎ:&lt;/b&gt; Ðàññìàòðèâàéòå ýòè íàñòðîéêè ïî ïðèíöèïó &lt;em&gt;ÓÑÒÀÍÎÂÈË-È-ÇÀÁÛË!&lt;/em&gt;. Ïîñëå òîãî êàê URL ôîðìàò ññûëîê çäåñü îïðåäåëåí, ìû ÍÀÑÒÎßÒÅËÜÍÎ ðåêîìåíäóåì ÍÅ èçìåíÿòü èõ âïîñëåäñòâèè ñíîâà, ò.ê. ýòî îêàæåò ïðÿìîå íåãàòèâíîå âîçäåéñòâèå íà &quot;ñòàáèëüíîñòü&quot; âàøèõ ññûëîê, ÷òî ïðèâåäåò ê ïîòåðå öåííûõ âõîäÿùèõ ññûëîê è ïðîèíäåêñèðîâàííûõ ñòðàíèö â ïîèñêîâûõ ñèñòåìàõ.&lt;/p&gt; &lt;p&gt; &lt;b&gt;Èíñòðóêöèè:&lt;/b&gt;&lt;br /&gt; Âûáåðèòå ïðåäóñòàíîâëåííûé íàáîð URL ôîðìàòîâ ññûëîê èç âûïàäàþùåãî ñïèñêà âíèçó è êëèêíèòå êíîïêó &quot;Çàãðóçèòü&quot;. Âû òàêæå ìîæåòå íàñòðîèòü URL ñòðóêòóðó ññûëîê âðó÷íóþ, ðàçâåðíóâ ñåêöèþ &quot;Ðàñøèðåííûå íàñòðîéêè&quot; (äëÿ ýòîãî êëèêíèòå íà çàêëàäêó Ðàñøèðåííûå íàñòðîéêè).
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_forum</name>
+		<value>URL Ôîðóìîâ</value>
+	</message>
+	<message>
+		<name>urls_ann</name>
+		<value>URL Àíîíñîâ</value>
+	</message>
+	<message>
+		<name>urls_thread</name>
+		<value>URL Òåì</value>
+	</message>
+	<message>
+		<name>urls_prnthread</name>
+		<value>URL Ïå÷àòè Òåì</value>
+	</message>
+	<message>
+		<name>urls_post</name>
+		<value>URL Ïðîñìîòðà Ñîîáùåíèÿ</value>
+	</message>
+	<message>
+		<name>urls_polls</name>
+		<value>URL Îïðîñîâ</value>
+	</message>
+	<message>
+		<name>urls_member</name>
+		<value>URL Ïðîôèëåé</value>
+	</message>
+	<message>
+		<name>urls_mlist</name>
+		<value>URL Ñïèñêà Ïîëüçîâàòåëåé</value>
+	</message>
+	<message>
+		<name>urls_avatar</name>
+		<value>URL Àâàòàðîâ</value>
+	</message>
+	<message>
+		<name>urls_navbul</name>
+		<value>URL äëÿ íàâèãàöèîííîé èêîíêè</value>
+	</message>
+	<message>
+		<name>urls_attach</name>
+		<value>URL Âëîæåíèé</value>
+	</message>
+	<message>
+		<name>crrs</name>
+		<value>Ñîáñòâåííûå ïðàâèëà ïåðåçàïèñè URL</value>
+	</message>
+	<message>
+		<name>seo_func</name>
+		<value>Ôóíêöèè SEO</value>
+	</message>
+	<message>
+		<name>dyn_metas</name>
+		<value>Äèíàìè÷åñêèå META òýãè</value>
+	</message>
+	<message>
+		<name>dir_links</name>
+		<value>Ïðÿìûå ññûëêè</value>
+	</message>
+	<message>
+		<name>add_ttitle</name>
+		<value>Äîáàâëÿòü çàãîëîâêè òåì</value>
+	</message>
+	<message>
+		<name>add_extttitle</name>
+		<value>Äîáàâëÿòü çàãîëîâêè äëÿ âíåøíèõ ññûëîê</value>
+	</message>
+	<message>
+		<name>stopwords</name>
+		<value>Ñòîï-ëèñò ñëîâ</value>
+	</message>
+	<message>
+		<name>acronym</name>
+		<value>Àêðîíèì ðàñøèðåíèå</value>
+	</message>
+	<message>
+		<name>rel_replacements</name>
+		<value>Ðåëåâàíòíûå çàìåíû</value>
+	</message>
+	<message>
+		<name>hp_set</name>
+		<value>Íàñòðîéêè ãëàâíîé ñòðàíèöû</value>
+	</message>
+	<message>
+		<name>int_rel</name>
+		<value>Âíóòðåííèå rel=&quot;nofollow&quot;s</value>
+	</message>
+	<message>
+		<name>ext_rel</name>
+		<value>Âíåøíèå rel=&quot;nofollow&quot;s</value>
+	</message>
+	<message>
+		<name>oth_enh</name>
+		<value>Äðóãèå óëó÷øåíèÿ</value>
+	</message>
+	<message>
+		<name>cleanup_html</name>
+		<value>Îïòèìèçèðîâàòü HTML-êîä</value>
+	</message>
+	<message>
+		<name>remove_prev</name>
+		<value>Óáèðàòü ïðåäïðîñìîòð òåì</value>
+	</message>
+	<message>
+		<name>guests_only</name>
+		<value>Óëó÷øåíèÿ òîëüêî äëÿ ãîñòåâûõ ïîñåòèòåëåé</value>
+	</message>
+	<message>
+		<name>img_size</name>
+		<value>Àòðèáóòû ðàçìåðîâ èçîáðàæåíèé</value>
+	</message>
+	<message>
+		<name>dl_backup</name>
+		<value>Ñêà÷àòü/ñîõðàíèòü êîïèþ âàøèõ íàñòðîåê</value>
+	</message>
+	<message>
+		<name>download</name>
+		<value>Ñêà÷àòü</value>
+	</message>
+	<message>
+		<name>filename</name>
+		<value>Èìÿ ôàéëà</value>
+	</message>
+	<message>
+		<name>description</name>
+		<value>Îïèñàíèå</value>
+	</message>
+	<message>
+		<name>backup_all</name>
+		<value>&lt;b&gt;Ñîõðàíèòü êîïèþ ÂÑÅÕ íàñòðîåê vBSEO&lt;/b&gt;&lt;br /&gt;
+            Ñîõðàíèòü êîïèþ âñåõ çàäàííûõ îïöèé.</value>
+	</message>
+	<message>
+		<name>save_set_all</name>
+		<value>Ñîõðàíèòü âñå íàñòðîéêè</value>
+	</message>
+	<message>
+		<name>backup_urls</name>
+		<value>&lt;b&gt;Ñîõðàíèòü êîïèþ ÒÎËÜÊÎ íàñòðîåê ôîðìàòîâ ññûëîê&lt;/b&gt;&lt;br /&gt;
+            Ñîõðàíèòü êîïèþ íàñòðîåê ôîðìàòîâ ññûëîê</value>
+	</message>
+	<message>
+		<name>upload_set</name>
+		<value>Çàêà÷àòü ôàéë íàñòðîåê (.xml)</value>
+	</message>
+	<message>
+		<name>choose_file</name>
+		<value>Ïîæàëóéñòà âûáåðèòå xml ôàéë!</value>
+	</message>
+	<message>
+		<name>note_upcrr</name>
+		<value>&lt;b&gt;Âíèìàíèå:&lt;/b&gt; Ïðè çàêà÷êå XML ôàéëà 'Íàñòðîéêè URL Ïåðåçàïèñè' (vbseo_urls.xml) ÍÅ ÁÓÄÓÒ îòìåíåíû äðóãèå ïàðàìåòðû, òàêèå êàê 'Îáùèå Íàñòðîéêè' èëè 'SEO Ôóíêöèè'.</value>
+	</message>
+	<message>
+		<name>upload</name>
+		<value>Çàêà÷àòü</value>
+	</message>
+	<message>
+		<name>import_set</name>
+		<value>Èìïîðòèðîâàòü íàñòðîéêè</value>
+	</message>
+	<message>
+		<name>language_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;ßçûê èíòåðôåéñà ïàíåëè óïðàâëåíèÿ vBSEO&lt;br&gt;
+                              &lt;/strong&gt;Âûáåðèòå ÿçûê äëÿ ïàíåëè óïðàâëåíèÿ vBSEO. Âàø ÿçûêîâîé ìîäóëü äëÿ ýòîãî äîëæåí áûòü ïîìåùåí â ïàïêó 'vB-root/vbseo/resources/xml/'.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>activate_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Àêòèâèðîâàòü ìîä?&lt;/b&gt;&lt;br /&gt;
+    Âûáåðèòå 'Äà' äëÿ àêòèâàöèè ñòàòè÷åñêèõ URL àäðåñîâ vBSEO (CRUs) è äðóãèõ SEO ôóíêöèé.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>yes</name>
+		<value>Äà</value>
+	</message>
+	<message>
+		<name>no</name>
+		<value>Íåò</value>
+	</message>
+	<message>
+		<name>license_desc</name>
+		<value>&lt;b&gt;Âàø ëèöåíçèîííûé êëþ÷ vBSEO&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>key_config</name>
+		<value>Âàø ëèöåíçèîííûé êëþ÷ èçìåíÿåòñÿ ñ 1) óñòàíîâêîé íîâîé âåðñèè vBSEO èëè 2) èçìåíåíèåì URL àäðåñà ôîðóìà. Ñîõðàíèòå âàø òåêóùèé êëþ÷ (îòîáðàæåí êðàñíûì öâåòîì íèæå) â êîíôèãóðàöèîííîì ôàéëå. Ïîñëå ýòîãî ëèöåíçèîííûé êëþ÷ áóäåò îòîáðàæåí çåëåíûì öâåòîì, îçíà÷àÿ êîððåêòíîñòü ëèöåíçèè</value>
+	</message>
+	<message>
+		<name>current_ver</name>
+		<value>Òåêóùàÿ âåðñèÿ</value>
+	</message>
+	<message>
+		<name>forums_root</name>
+		<value>Âàø àäðåñ ôîðóìà</value>
+	</message>
+	<message>
+		<name>current_key</name>
+		<value>Âàø òåêóùèé êëþ÷</value>
+	</message>
+	<message>
+		<name>contact_license</name>
+		<value>Contact &lt;a href&quot;mailto:licenses@crawlability.com&quot;&gt;licenses@crawlability.com&lt;/a&gt;</value>
+	</message>
+	<message>
+		<name>cannot_retrieve_license</name>
+		<value>vBSEO íå ñìîã çàãðóçèòü 'Äåéñòâèòåëüíûé êëþ÷' äëÿ âàøåãî ñàéòà. Ýòî ïðîèñõîäèò, åñëè vBSEO íå áûë ëèöåíçèðîâàí äëÿ âàøåãî äîìåíà èëè, åñëè ñèñòåìå íå óäàëîñü óñòàíîâèòü ñåòåâîå ñîåäèíåíèå, ÷òîáû ïîëó÷èòü êëþ÷. Ïîæàëóéñòà, ñâÿæèòåñü ñ &lt;a href=&quot;mailto:licenses@crawlability.com&quot;&gt;licenses@crawlability.com&lt;/a&gt;, ëèáî îòêðîéòå ñòðàíèöó ïîääåðæêè &lt;a href=&quot;http://www.vbseo.com/support/&quot;&gt;http://www.vbseo.com/support/&lt;/a&gt; ÷òîáû ïîëó÷èòü ëèöåíçèîííûé êëþ÷.</value>
+	</message>
+	<message>
+		<name>unauth_upgrade</name>
+		<value>Âû ïûòàåòåñü óñòàíîâèòü íå ëèöåíçèðîâàííûé âåðñèþ ïðîäóêò vBSEO äëÿ âàøåãî äîìåíà. Ïîñåòèòå &lt;a href&quot;https://www.vbseo.com/downloads/&quot;&gt;îáëàñòü çàãðóçêè&lt;/a&gt; ÷òîáû ïðîäëèòü ëèöåíçèþ, ëèáî âåðíóòüñÿ ê ïðåäûäóùåé âåðñèè vBSEO äåéñòâèòåëüíîé äëÿ Âàøåãî äîìåíà.</value>
+	</message>
+	<message>
+		<name>redir_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïåðåíàïðàâëÿòü (301) îðèãèíàëüíûå ññûëêè&lt;/b&gt;&lt;br /&gt;
+'301 ðåäèðåêò' ýòî ðåêîìåíäîâàííûé Google ñïîñîá ïåðåíîñà ññûëîê. Âêëþ÷èòå ýòó îïöèþ äëÿ ïåðåíàïðàâëåíèÿ âñåõ ñòàðûõ äèíàìè÷åñêèõ ññûëîê íà ñîîòâåòñòâóþùèå íîâûå ñòàòè÷íûå ññûëêè. 
+Ýòà îïöèÿ òàêæå ïîçâîëÿåò ñîõðàíèòü 'Page Ranking' îò ñòàðûõ âõîäÿùèõ âíåøíèõ ññûëîê.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>domname_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Âêëþ÷àòü äîìåííîå èìÿ â URL?&lt;/b&gt;&lt;br /&gt;
+Ïðåäïîëàãàåòñÿ, ÷òî ïîèñêîâûå ñèñòåìû ñ áÎëüøèì ïðåäïî÷òåíèåì ñëåäóþò àáñîëþòíûì ññûëêàì (www.yourdomain.com/this_page.html). Âêëþ÷èòå ýòó îïöèþ äëÿ òîãî ÷òîáû âêëþ÷èòü äîìåííîå èìÿ â ññûëêè íà âàøåì ôîðóìå, ïðåîáðàçóÿ ññûëêè èç îòíîñèòåëüíûõ â àáñîëþòíûå.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>noneng_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Çàìåíÿòü &quot;íå-àíãëèéñêèå&quot; ñèìâîëû â URL àäðåñàõ?&lt;/b&gt;&lt;br /&gt;
+Âûáåðèòå &quot;Äà&quot; äëÿ çàìåíû íå-àíãëèéñêèõ ñèìâîëîâ íà ñîîòâåòñòâóþùèé àíãëèéñêèé ýêâèâàëåíò. Âêëþ÷èòå ýòó îïöèþ, åñëè ÿçûê âàøåãî ôîðóìà íå àíãëèéñêèé èëè åñëè ëþáûå íåàíãëèéñêèå ñèìâîëû èñïîëüçóþòñÿ íà ôîðóìå (íàïð. Caf&amp;eacute;)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>redirext_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Ðåäèðåêò äëÿ &lt;i&gt;ÂÑÅÕ&lt;/i&gt; Âíåøíèõ ññûëîê èç Ïðèâàòíûõ ïîäôîðóìîâ&lt;/b&gt;&lt;br /&gt;
+Âêëþ÷èòå ýòó îïöèþ äëÿ ðåäèðåêòà ÷åðåç âíóòðåííèé ñêðèïò âñåõ âíåøíèõ ññûëîê èç ïðèâàòíûõ ïîäôîðóìîâ. Ýòî ïîçâîëèò ñêðûòü àäðåñ âàøåãî ñàéòà èç ëîãîâ âíåøíèõ ñåðâåðîâ, çàùèùàÿ âàøó ïðèâàòíîñòü.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: ññûëêè áóäóò âûãëÿäåòü êàê 'http://www.yourdormain.com/forums/redirect-to/?redirect=http://www.externaldomain.com'</value>
+	</message>
+	<message>
+		<name>email_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Èçìåíÿòü URL â ñèñòåìíûõ Email?&lt;/b&gt;&lt;br /&gt;
+Âêëþ÷èòå ýòó îïöèþ äëÿ òîãî ÷òîáû vBSEO àâòîìàòè÷åñêè èçìåíÿë URL àäðåñà â ïèñüìàõ îïîâåùåíèÿ. &lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ â vB 3.5.x èëè âûøå&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>link_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Îáðàòíàÿ ññûëêà íà Ïàíåëü Óïðàâëåíèÿ vBSEO?&lt;/b&gt;&lt;br /&gt;
+Ýòà îïöèÿ äîáàâëÿåò âðåìåííóþ ññûëêó íà ïàíåëü óïðàâëåíèÿ vBSEO ââåðõó âñåõ ñòðàíèö íà ôîðóìå è ïîçâîëÿåò ñ áîëüøèì óäîáñòâîì óñòàíàâëèâàòü è ïðîâåðÿòü ôîðìàòû ññûëîê. Âíèìàíèå: ýòà ññûëêà áóäåò âèäíà òîëüêî àäìèíèñòðàòîðàì (Usergroup 6).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>fnf_desc</name>
+		<value>&lt;p&gt;
+                                          &lt;b&gt;Îáðàáîòêà çàïðîñîâ &quot;Ôàéë íå íàéäåí&quot;?&lt;/b&gt;&lt;br /&gt;
+      Âûáåðèòå, êàêèì îáðàçîì áóäóò îáðàáîòàíû çàïðîñû ñ ðåçóëüòàòîì 'Ôàéë íå íàéäåí&quot;: &lt;br /&gt;
+      - Ðåäèðåêò íà ãëàâíóþ ñòðàíèöó&lt;br /&gt;
+      - Ïîñëàòü êîä HTTP 404 è âûâåñòè ñîîáùåíèå 'Page not found' &lt;br /&gt;
+      - Âêëþ÷èòü ñîáñòâåííóþ ñòðàíèöó îøèáêè. Âíèìàíèå: èìÿ ôàéëà äîëæíî âêëþ÷àòü ïîëíûé ïóòü (íàïð.: &lt;i&gt;/home/user/public_html/error.php&lt;/i&gt;)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>redire_hp</name>
+		<value>Ðåäèðåêò íà ãëàâíóþ ñòðàíèöó</value>
+	</message>
+	<message>
+		<name>send_404</name>
+		<value>Ïîñëàòü êîä HTTP 404</value>
+	</message>
+	<message>
+		<name>inc_custom</name>
+		<value>Âêëþ÷èòü ñîáñòâåííûé ñêðèïò</value>
+	</message>
+	<message>
+		<name>exclpages_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Èñêëþ÷èòü ñòðàíèöû?&lt;/b&gt;&lt;br /&gt;
+Èñïîëüçóéòå ðåãóëÿðíûå âûðàæåíèÿ äëÿ çàäàíèÿ èñêëþ÷åíèé èç îáðàáîòêè vBSEO. Äàíàÿ îïöèÿ ñîîáùàåò, ÷òî ýòè ñòðàíèöû íå äîëæíû áûòü îáðàáîòàíû vBSEO è ñòðîêà êîïèðàéòà íå áóäåò âêëþ÷åíà íà íèõ.&lt;/p&gt;
+&lt;p&gt;Ïðèìåð: (ðàçäåëÿéòå ýëåìåíòû ïåðåâîäàìè ñòðîêè)&lt;br /&gt;
+^index\.php\?do=feature&lt;br /&gt;
+VBGooglemap.php&lt;br /&gt;
+geek-gallery-popup.php&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>botact_desc</name>
+		<value>&lt;b&gt;Ñëåäèòü çà àêòèâíîñòüþ áîòîâ ïîèñêîâûõ ñèñòåì íà ôîðóìå?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ â &quot;Äà&quot; äëÿ òîãî ÷òîáû ñëåäèòü çà àêòèâíîñòüþ ïîèñêîâûõ áîòîâ  íà âàøåì ôîðóìå. Ýòà îïöèÿ &lt;b&gt;òðåáóåò&lt;/b&gt; íàëè÷èå óñòàíîâëåííîãî &lt;a href=&quot;http://www.vbulletin.org/forum/showthread.php?t=100435&quot; target=&quot;_blank&quot;&gt;vBSEO Google / Yahoo Sitemap Generator&lt;/a&gt;.&lt;/p&gt;
+Âíèìàíèå: äîñòóï ê ëîãàì îñóùåñòâëÿåòñÿ ÷åðåç èíòåðôåéñ vBSEO Sitemap Generator.</value>
+	</message>
+	<message>
+		<name>analytics_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Äîáàâèòü êîä Google Analytics íà ñòðàíèöû ôîðóìà?&lt;/b&gt;&lt;br /&gt;
+Âûáåðèòå &quot;Äà&quot; äëÿ òîãî, ÷òîáû äîáàâèòü êîä Google Analytics íà âñå ñòðàíèöû âàøåãî ôîðóìà. &lt;a href=&quot;http://www.google.com/analytics/&quot; target=&quot;_blank&quot;&gt;Google Analytics&lt;/a&gt; ïîçâîëÿåò â óäîáíîé ôîðìå ñëåäèòü çà ñòàòèñòêîé ïîñåùåíèé, à òàêæå çà òåì êàê ìíîãî ïîñåòèòåëåé ïîëó÷àåò âàø ôîðóì îò ïîèñêîâûõ ñèñòåì.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_code_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Ââåäèòå âàø êîä Google Analytics&lt;/b&gt;&lt;br /&gt;
+Ââåäèòå âàø êîä Google Analytics â ñëåäóþùåì ôîðìàòå: UA-9999-1&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_track_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Äîáàâëÿòü ñïåöèàëüíûé êîä Google Analytics äëÿ ñëåæåíèÿ çà êëèêàìè ïî âíåøíèì ññûëêàì?&lt;/b&gt; &lt;br /&gt;
+Âûáåðèòå &quot;Äà&quot; äëÿ òîãî ÷òîáû äîáàâëÿòü ñïåöèàëüíûé êîä Google Analytics äëÿ 
+&lt;a href=&quot;http://www.google.com/support/analytics/bin/answer.py?hl=en&amp;answer=55594&quot; target=&quot;_blank&quot;&gt; ñëåæåíèÿ çà êëèêàìè ïî âíåøíèì ññûëêàì&lt;/a&gt;.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_format_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Çàäàéòå URL ôîðìàò âíåøíèõ ññûëîê äëÿ Google Analytics&lt;/b&gt;&lt;br /&gt;
+Ââåäèòå URL ôîðìàò äëÿ ñëåæåíèÿ çà âíåøíèìè ññûëêàìè ÷åðåç Google Analytics&lt;br /&gt;
+Ïðèìåð: /outgoing/&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>funnel_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Âêëþ÷èòü Google Analytics Funnel äëÿ ðåãèñòðàöèè ïîëüçîâàòåëåé?&lt;/b&gt;&lt;br /&gt;
+Âûáåðèòå &quot;Äà&quot; äëÿ òîãî ÷òîáû äîáàâèòü êîä Google Analytics íà âñå ñòðàíèöû âî âðåìÿ ïðîöåññà ðåãèñòðàöèè íîâîãî ïîëüçîâàòåëÿ. &lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: âû äîëæíû ñîçäàòü íîâóþ &quot;Öåëü&quot; â âàøåì àêêàóíòå Analytics äëÿ âàøåãî ôîðóìà è âåñòè ñëåäóþùèå øàãè äëÿ íå
+(êîëè÷åñòâî øàãîâ çàâèñèò îò òîãî, âêëþ÷åíà ëè ó âàñ îïöèÿ &quot;Use COPPA Registration System&quot; â ñâîéñòâàõ vBulletin): &lt;br /&gt;
+/google-funnel/coppaform.html &lt;i&gt;(åñëè íàäî)&lt;/i&gt; &lt;br /&gt;
+/google-funnel/enter-birthday.html &lt;i&gt;(åñëè íàäî)&lt;/i&gt; &lt;br /&gt;
+/google-funnel/agreement.html &lt;br /&gt;
+/google-funnel/regform-show.html &lt;br /&gt;
+/google-funnel/regform-submit.html &lt;br /&gt;
+/google-funnel/registration-complete.html
+  
+&lt;p&gt;&lt;a href=&quot;http://www.google.com/support/analytics/bin/answer.py?hl=en&amp;answer=55515&quot; target=&quot;_blank&quot;&gt;×òî òàêîå funnel?&lt;/a&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>adsense_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Âêëþ÷èòü Adsense òàðãåòèíã? &lt;/b&gt; &lt;br&gt; Âûáåðèòå &quot;Äà&quot; äëÿ äîáàâëåíèÿ òýãîâ ñåêöèé Google AdSense â ðåëåâàíòíûõ ìåñòàõ íà ñòðàíèöàõ forumhome, forumdisplay and showthread. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>arcopt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&lt;i&gt;Îïöèè àðõèâà vB:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;301 ðåäèðåêò äëÿ ñòðàíèö àðõèâà vB&lt;/b&gt;&lt;br /&gt;
+'301 ðåäèðåêò' ýòî ðåêîìåíäîâàííûé Google ïóòü äëÿ èçìåíåíèÿ ññûëîê. Âûáåðèòå ýòó îïöèþ äëÿ ñîõðàíåíèÿ âàøåãî 'Page Ranking', ïåðåíàïðàâëÿÿ ñòàðûå ññûëêè íà íîâûå äëÿ áîòîâ è îáû÷íûõ ïîñåòèòåëåé.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Èçìåíÿòü ñòðàíèöû òåì â àðõèâå vB&lt;/b&gt;&lt;br /&gt;
+Ýòà îïöèÿ èçìåíÿåò ññûëêè òàêèì îáðàçîì, ÷òî ïîëíàÿ âåðñèÿ òåìû èñïîëüçóåòñÿ â àðõèâå, ñîçäàâàÿ òàêèì îáðàçîì ïðåêðàñíóþ &quot;êàðòó ñàéòà&quot;.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Èçìåíÿòü + 301 ðåäèðåêò äëÿ ñòðàíèö àðõèâà&lt;/b&gt;&lt;br /&gt;
+Ýòî êîìáèíàöèÿ ïóíêòîâ 1 è 2 (âûøå). &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Ñîõðàíÿòü îáû÷íûå ïàðàìåòðû àðõèâà vB&lt;/b&gt;&lt;br /&gt;
+Ñîõðàíÿòü îáû÷íóþ ôóíêöèîíàëüíîñòü àðõèâà.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>sel_one</name>
+		<value>Âûáåðèòå</value>
+	</message>
+	<message>
+		<name>arc_redir_301</name>
+		<value>301 ðåäèðåêò äëÿ àðõèâà</value>
+	</message>
+	<message>
+		<name>arc_rewr_vbarc</name>
+		<value>Èçìåíÿòü ññûëêè â àðõèâå</value>
+	</message>
+	<message>
+		<name>arc_redir_rewr</name>
+		<value>Èçìåíÿòü + 301 ðåäèðåêò äëÿ àðõèâà</value>
+	</message>
+	<message>
+		<name>arc_keep</name>
+		<value>Ñîõðàíÿòü îáû÷íûå ïàðàìåòðû àðõèâà</value>
+	</message>
+	<message>
+		<name>arcroot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíÿòü ïàïêó àðõèâà:&lt;br /&gt;
+&lt;/b&gt;Èñïîëüçóéòå ýòó îïöèþ äëÿ èçìåíåíèÿ ïàïêè àðõèâà ïî óìîë÷àíèþ '/archive/index.php/' íà áîëå äðóæåñòâåííóþ âåðñèþ.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: Ñòàðûå ññûëêè áóäóò ïåðåíàïðàâëåíû íà íîâûå ñòðàíèöû, ñ òåì, ÷òîáû ïðîèíäåêñèðîâàííûå ïðåæäå ñòðàíèöû ðàáîòàëè êîððåêòíî
+&lt;/p&gt; &lt;p&gt;Ïðèìåðû:&lt;br /&gt;
+/hello/google/ or /sitemap/ or /archive/ etc. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>custom</name>
+		<value>Ñîáñòâåííûé</value>
+	</message>
+	<message>
+		<name>save_set</name>
+		<value>Ñîõðàíèòü íàñòðîéêè</value>
+	</message>
+	<message>
+		<name>reset</name>
+		<value>Ñáðîñèòü</value>
+	</message>
+	<message>
+		<name>url_set_forum</name>
+		<value>Ôîðóìû vBSEO 'Íàñòðîéêè Ïåðåçàïèñè URL'</value>
+	</message>
+	<message>
+		<name>sep_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Çàäàéòå ðàçäåëèòåëü äëÿ ÷àñòåé URL&lt;/b&gt;&lt;br /&gt;
+Ýòîò ñèìâîë áóäåò ðàçäåëÿòü ñëîâà â èçìåíåííûõ URL àäðåñàõ. Ìû ðåêîìåíäóåì èñïîëüçîâàòü [ - ] . &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>limurl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Îãðàíè÷èòü äëèíó URL àäðåñà&lt;br /&gt;
+&lt;/b&gt;Íåêîòîðûå ïîëüçîâàòåëè ïðåäïî÷èòàþò îãðàíè÷èâàòü äëèíó URL àäðåñà. Ýòà îïöèÿ &quot;îòðåçàåò&quot; ÷àñòè URL (òàêèå êàê [forum_title] è [thread_title]) äî çàäàííîãî ÷èñëà ñëîâ.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: óñòàíîâèòå ýòîò ïàðàìåòð â (0) äëÿ ñíÿòèÿ îãðàíè÷åíèÿ.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pathbits_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Çàäàéòå ýëåìåíòû &quot;Ïóòè íàçâàíèé ðàçäåëîâ&quot;&lt;/b&gt;&lt;br /&gt;
+Çàäàéòå, êàêèå ÷àñòè ôîðóìà áóäóò âêëþ÷åíû â URL àäðåñà ïðè èñïîëüçîâàíèè &lt;i&gt;[forum_path]&lt;/i&gt; â URL ôîðìàòàõ íèæå&lt;/p&gt;
+
+&lt;p&gt;Âíèìàíèå: Èñïîëüçóéòå [forum_id] èëè [forum_title] (èëè îáà ýëåìåíòà) - â ðåäêèõ ñëó÷àÿõ, åñëè ó Âàñ åñòü äâà ïîäôîðóìà ñ îäèíàêîâûìè çàãîëîâêàìè, Âû äîëæíû áóäåòå âêëþ÷èòü [forum_id] âî èçáåæàíèå êîíôëèêòà. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; f[forum_id]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_forum_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíÿòü URL ðàçäåëîâ?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ &quot;Äà&quot; äëÿ èçìåíåíèÿ URL àäðåñîâ ðàçäåëîâ.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò ññûëîê ðàçäåëîâ&lt;/b&gt;&lt;br /&gt;
+Ñîçäàéòå âèðòóàëüíûé ìíîãîóðîâíåâûé ïóòü ðàçäåëà, èñïîëüçóÿ [forum_path], èëè îòîáðàæàéòå òîëüêî íàçâàíèå ðàçäåëà (èëè åãî id) èñïîëüçóÿ ïåðåìåííûå [forum_title] èëè [forum_id]&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: â ðåäêèõ ñëó÷àÿõ ó Âàñ ìîæåò áûòü äâà ïîäôîðóìà ñ îäèíàêîâûì çàãîëîâêîì, è Âû äîëæíû áóäåòå âêëþ÷èòü ïåðåìåííóþ [forum_id] âî èçáåæàíèå êîíôëèêòà. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+f[forum_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL ñòðàíèö ïîäôîðóìîâ&lt;/b&gt;&lt;br /&gt;
+Çàäàéòå, êàêèì îáðàçîì áóäóò âûãëÿäåòü URL àäðåñà íà ìíîãîñòðàíè÷íûå ïîäôîðóìû.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: â ðåäêèõ ñëó÷àÿõ ó âàñ ìîæåò áûòü äâà ïîäôîðóìà ñ îäèíàêîâûì çàãîëîâêîì, è Âû äîëæíû áóäåòå âêëþ÷èòü ïåðåìåííóþ [forum_id] âî èçáåæàíèå êîíôëèêòà. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+f[forum_id]-[forum_page].html&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_ann_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíÿòü URL Àíîíñîâ?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ &quot;Äà&quot; äëÿ èçìåíåíèÿ URL àäðåñîâ àíîíñîâ.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>ann_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL äëÿ îòäåëüíûõ àíîíñîâ&lt;/b&gt;&lt;br /&gt;
+Âûáåðèòå URL ôîðìàò àíîíñîâ èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: òàê êàê àíîíñû ñîçäàþòñÿ àäìèíèñòðàòîðàìè èëè ìîäåðàòîðàìè, ðèñê ñîçäàíèÿ àíîíñîâ ñ îäèíàêîâûì çàãîëîâêîì íåâåëèê. Ïîýòîìó, ÷àñòî ìîæíî íå èñïîëüçîâàòü [announcement_id] äëÿ ýòîé îïöèè.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: òàê êàê àíîíñû ïðèâÿçàíû ê ïîäôîðóìó, âû ÄÎËÆÍÛ âêëþ÷èòü èäåíòèôèêàòîð ôîðóìà, òàêîé êàê [forum_id] èëè [forum_title]. Âû òàêæå ÄÎËÆÍÛ âêëþ÷èòü [announcement_id] ÈËÈ [announcement_title]. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+f[forum_id]-announcement[announcement_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>ann_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL äëÿ  ãðóïïîâûõ àíîíñîâ&lt;/b&gt;&lt;br /&gt;
+Âûáåðèòå URL ôîðìàò äëÿ ñòðàíèöû 'Ïðîñìîòð Âñåõ Àíîíñîâ' èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: òàê êàê àíîíñû ïðèâÿçàíû ê ïîäôîðóìó, âû ÄÎËÆÍÛ âêëþ÷èòü èäåíòèôèêàòîð ôîðóìà, òàêîé êàê [forum_id] èëè [forum_title]. Âû òàêæå ÄÎËÆÍÛ âêëþ÷èòü [announcement_id] ÈËÈ [announcement_title]. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+f[forum_id]-announcements.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_thread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíÿòü URL òåì?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ &quot;Äà&quot; äëÿ èçìåíåíèÿ URL àäðåñîâ òåì.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL òåì&lt;/b&gt;&lt;br /&gt;
+Âûáåðèòå URL ôîðìàò òåì èç ñïèñêà èëè çàäàéòå ñîáñòâåííûé, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: Âû âñåãäà äîëæíû âêëþ÷àòü [thread_id] â äàííîì URL ôîðìàòå ññûëîê, ò.ê. òåìû ÷àñòî èìåþò îäèíàêîâûå çàãîëîâêè. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+t[thread_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL ñòðàíèö òåì&lt;/b&gt;&lt;br /&gt;
+Âûáåðèòå URL ôîðìàò ñòðàíèö òåì èç ñïèñêà èëè çàäàéòå ñîáñòâåííûé, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: Âû âñåãäà äîëæíû âêëþ÷àòü [thread_id] â äàííîì  URL ôîðìàòå ññûëîê, ò.ê. òåìû ÷àñòî èìåþò îäèíàêîâûå çàãîëîâêè. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+t[thread_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL GARS Article View (garpg)&lt;/b&gt;&lt;br /&gt;
+
+Óêàæèòå URL ôîðìàò ññûëîê &lt;a href=&quot;http://www.thevbgeek.com/&quot;&gt;GARS&lt;/a&gt; Article View  èç ñïèñêà èëè çàäàéòå ñîáñòâåííûé, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: âû âñåãäà äîëæíû âêëþ÷àòü [thread_id] â äàííîì URL ôîðìàòå ññûëîê, ò.ê. òåìû ÷àñòî èìåþò îäèíàêîâûå çàãîëîâêè. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; t[thread_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_lpformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL 'Ïîñëåäíåå ñîîáùåíèå â òåìå'&lt;br /&gt;
+&lt;/b&gt;
+Óêàæèòå URL ôîðìàò 'Ïîñëåäíåå ñîîáùåíèå â òåìå' èëè çàäàéòå ñîáñòâåííûé.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: Âñòðîåííàÿ ôóíêöèÿ ðåäèðåêòà èñïîëüçóåòñÿ äëÿ ïåðåíàïðàâëåíèÿ ïîñåòèòåëÿ íà ñîîòâåòñòâóþùóé URL àäðåñ âíóòðè òåìû (êàê thead_title.html#post-xxxx)&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; t[thread_id]-last-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gpformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL 'Ïåðåéòè ê ñîîáùåíèþ â òåìå'&lt;br /&gt;
+&lt;/b&gt;
+Óêàæèòå URL ôîðìàò 'Ïåðåéòè ê ñîîáùåíèþ â òåìå' èëè çàäàéòå ñîáñòâåííûé.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: âñòðîåííàÿ ôóíêöèÿ ðåäèðåêòà èñïîëüçóåòñÿ äëÿ ïåðåíàïðàâëåíèÿ ïîñåòèòåëÿ íà ñîîòâåòñòâóþùóþ ññûëêó âíóòðè òåìû (êàê thead_title.html#post-xxxx)&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; t[thread_id]-post[post_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gppformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL 'Ïåðåéòè ê ñîîáùåíèþ â òåìå íà ñòðàíèöå'&lt;br /&gt;
+&lt;/b&gt;
+Óêàæèòå URL ôîðìàò ññûëîê 'Ïåðåéòè ê ñîîáùåíèþ â òåìå íà ñòðàíèöå' èç ñïèñêà èëè çàäàéòå ñîáñòâåííûé.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: âñòðîåííàÿ ôóíêöèÿ ðåäèðåêòà èñïîëüçóåòñÿ äëÿ ïåðåíàïðàâëåíèÿ ïîñåòèòåëÿ íà ñîîòâåòñòâóþùóþ ññûëêó âíóòðè òåìû (êàê thead_title.html#post-xxxx)&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; t[thread_id]-post[post_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_ptformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL 'Ïðåäûäóùàÿ òåìà'&lt;br /&gt;
+&lt;/b&gt;Çàäàéòå, êàêèì îáðàçîì áóäóò âûãëÿäåòü URL àäðåñ 'ïðåäûäóùàÿ òåìà'. Ýòè ññûëêè îòîáðàæàþòñÿ âíèçó ñòðàíèö ïðîñìîòðà òåì.&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+t[thread_id]-prev-thread.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_ntformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL 'Ñëåäóþùàÿ òåìà'&lt;br /&gt;
+&lt;/b&gt;Çàäàéòå, êàêèì îáðàçîì áóäóò âûãëÿäåòü ññûëêè íà 'ñëåäóþùóþ òåìó'. Ýòè ññûëêè îòîáðàæàþòñÿ âíèçó ñòðàíèö ïðîñìîòðà òåì.&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+t[thread_id]-next-thread.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_pthread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïåðåïèñàòü Printthread URL àäðåñà?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ â &quot;Äà&quot; äëÿ ñîçäàíèÿ (printthread.php) â ïåðåçàïèñè URL àäðåñîâ.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_rel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Äîáàâëÿòü rel=&quot;nofollow&quot; äëÿ URL àäðåñà ïå÷àòè?&lt;/b&gt;&lt;br /&gt;
+Âêëþ÷èòå ýòó îïöèþ äëÿ òîãî ÷òîáû èçáåæàòü ñëåäîâàíèÿ ïî ññûëêàì ïå÷àòè ñòðàíèöû ïîèñêîâûìè ñèñòåìàìè. Ïðåäïîëàãàåòñÿ, ÷òî &quot;âåðñèè äëÿ ïå÷àòè&quot;  (printthread.php) ìîãóò áûòü ðàñöåíåíû ïîèñêîâûìè ñèñòåìàìè êàê &quot;äóáëèðóþùèé êîíòåíò&quot;.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL 'Ïå÷àòü òåìû'&lt;br /&gt;
+&lt;/b&gt;Çàäàéòå, êàêèì îáðàçîì áóäóò âûãëÿäåòü URL àäðåñà 'âåðñèé äëÿ ïå÷àòè òåìû'.&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+t[thread_id]-print.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL 'Ïå÷àòü ñòðàíèö òåìû'&lt;br /&gt;
+&lt;/b&gt;Çàäàéòå, êàêèì îáðàçîì áóäóò âûãëÿäåòü URL àäðåñà 'âåðñèé äëÿ ïå÷àòè ñòðàíèö òåìû'.&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+t[thread_id]-print-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_post_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíÿòü URL Showpost?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ â &quot;Äà&quot; äëÿ òîãî ÷òîáû èçìåíÿòü ññûëêè íà îòäåëüíûå ñîîáùåíèÿ (showpost.php).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>post_rel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Äîáàâëÿòü rel=&quot;nofollow&quot; äëÿ URL àäðåñà Showpost?&lt;/b&gt;&lt;br /&gt;
+Âêëþ÷èòå ýòó îïöèþ äëÿ òîãî ÷òîáû ïîèñêîâûå ðîáîòû íå ñëåäîâàëè ïî ññûëêàì íà îòäåëüíûå ñîîáùåíèÿ (showpost.php). Â íåêîòîðûõ ñëó÷àÿõ ýòè ñòðàíèöû ìîãóò áûòü ðàññìîòðåíû êàê &quot;äóáëèðóþùèé êîíòåíò&quot;.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Óìíûé rel=&quot;nofollow&quot; äëÿ ññûëîê Showpost?&lt;/b&gt;&lt;br /&gt;
+Âêëþ÷èòå ýòó îïöèþ äëÿ òîãî ÷òîáû ïîèñêîâûå ðîáîòû íå ñëåäîâàëè ïî ññûëêàì íà îòäåëüíûå ñîîáùåíèÿ (showpost.php) ïðè íåêîòîðûõ óñëîâèÿõ. Åñëè íà ñòðàíèöå åñòü òîëüêî îäíî ñîîáùåíèå, rel=&quot;nofollow&quot; áóäåò äîáàâëåí ê ññûëêàì showpost. Åñëè åñòü 2 èëè áîëå ñîîáùåíèÿ, rel=&quot;nofollow&quot; ÍÅ áóäåò äîáàâëåí.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>smart</name>
+		<value>Óìíûé</value>
+	</message>
+	<message>
+		<name>post_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL 'Showpost'&lt;br /&gt;
+&lt;/b&gt;Çàäàéòå, êàêèì îáðàçîì áóäóò âûãëÿäåòü URL àäðåñ íà îòäåëüíûå ñîîáùåíèÿ.&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+[post_id]-[post_count]-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_poll</name>
+		<value>Ññûëêè îïðîñîâ</value>
+	</message>
+	<message>
+		<name>rw_poll_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíÿòü URL Îïðîñîâ?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ &quot;Äà&quot; äëÿ òîãî ÷òîáû èçìåíÿòü URL àäðåñà îïðîñîâ.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>poll_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL Îïðîñîâ&lt;/b&gt;&lt;br /&gt;
+Âûáåðèòå URL ôîðìàò îïðîñîâ èç ñïèñêà èëè çàäàéòå ñîáñòâåííûé.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: ìû ðåêîìåíäóåì âñåãäà âêëþ÷àòü [poll_id] â ôîðìàò ññûëîê &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+p[poll_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_memb_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíÿòü URL íà ïðîôèëè ïîëüçîâàòåëåé?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ &quot;Äà&quot; äëÿ òîãî ÷òîáû èçìåíÿòü URL àäðåñà ïðîôèëåé.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL ïðîôèëåé ïîëüçîâàòåëåé&lt;/b&gt;&lt;br /&gt;
+Âûáåðèòå URL ôîðìàò ïðîôèëåé ïîëüçîâàòåëåé èç ñïèñêà èëè çàäàéòå ñîáñòâåííûé.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: ò.ê. vBulletin íå ïîçâîëÿåò ñîçäàâàòü îäèíàêîâûå èìåíà ïîëüçîâàòåëåé, äàííûé ôîðìàò îáû÷íî ìîæíî îñòàâèòü áåç ïåðåìåíîé [user_id].&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_mlist_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíÿòü URL ñïèñêà ïîëüçîâàòåëåé?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ &quot;Äà&quot; äëÿ òîãî ÷òîáû èçìåíÿòü URL àäðåñà ñïèñêà ïîëüçîâàòåëåé.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL ñïèñêà ïîëüçîâàòåëåé&lt;/b&gt;&lt;br /&gt;
+Âûáåðèòå URL ôîðìàò ñïèñêà ïîëüçîâàòåëåé èç ñïèñêà èëè çàäàéòå ñîáñòâåííûé.&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+users.html&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL íà ñòðàíèöû ñïèñêà ïîëüçîâàòåëåé&lt;/b&gt;&lt;br /&gt;
+Âûáåðèòå URL ôîðìàò íà ñòðàíèöû ñïèñêà ïîëüçîâàòåëåé èç ñïèñêà èëè çàäàéòå ñîáñòâåííûé.&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+users-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_lformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL ñïèñêà ïîëüçîâàòåëåé ïî áóêâàì&lt;/b&gt;&lt;br /&gt;
+Âûáåðèòå URL ôîðìàò ñïèñêà ïîëüçîâàòåëåé  ïî áóêâàì èç ñïèñêà èëè çàäàéòå ñîáñòâåííûé.&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+users-[letter][page].html&lt;br /&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_avatar_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíÿòü URL ïîëüçîâàòåëüñêèõ àâàòàð?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ &quot;Äà&quot; äëÿ òîãî ÷òîáû èçìåíÿòü URL àäðåñà ïîëüçîâàòåëüñêèõ àâàòàð.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>avatar_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL íà àâàòàðû&lt;/b&gt;&lt;br /&gt;
+Çàäàéòå, êàêèì îáðàçîì áóäóò âûãëÿäåòü URL àäðåñà íà àâàòàðû (êàðòèíêè).&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: &lt;b&gt;'avatars/'&lt;/b&gt; áóäåò äîáàâëåí àâòîìàòè÷åñêè ê URL àäðåñó äëÿ òîãî, ÷òîáû èçáåæàòü êîíôëèêòîâ ññûëîê.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: ò.ê. vBulletin íå ïîçâîëÿåò ñîçäàâàòü îäèíàêîâûå èìåíà ïîëüçîâàòåëåé, äàííûé ôîðìàò îáû÷íî ìîæíî îñòàâèòü áåç ïåðåìåíîé [user_id].&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_navbul_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíÿòü URL íàâèãàöèîííûõ èêîíîê?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ &quot;Äà&quot; äëÿ èçìåíåíèÿ URL àäðåñà íàâèãàöèîííûõ èêîíîê.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>navbul_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL íàâèãàöèîííûõ èêîíîê â ðàçäåëàõ&lt;/b&gt;&lt;br /&gt;
+Çàäàéòå, êàêèì îáðàçîì áóäóò âûãëÿäåòü URL àäðåñà íàâèãàöèîííóþ èêîíêó â ðàçäåëàõ.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: &lt;b&gt;'images/'&lt;/b&gt; áóäåò äîáàâëåí àâòîìàòè÷åñêè ê URL àäðåñó äëÿ òîãî, ÷òîáû èçáåæàòü êîíôëèêòîâ ññûëîê.&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+f[forum_id].gif&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>navbul_tformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL íà íàâèãàöèîííóþ èêîíêó â òåìàõ&lt;/b&gt;&lt;br /&gt;
+Çàäàéòå, êàêèì îáðàçîì áóäóò âûãëÿäåòü ññûëêè íà íàâèãàöèîííóþ èêîíêó  â òåìàõ.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: &lt;b&gt;'images/'&lt;/b&gt; áóäåò äîáàâëåí àâòîìàòè÷åñêè ê ññûëêàì äëÿ òîãî, ÷òîáû èçáåæàòü êîíôëèêòîâ ññûëîê.&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+t[thread_id].gif&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_attach_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíÿòü URL âëîæåíèé?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ â &quot;Äà&quot; äëÿ èçìåíåíèÿ ññûëîê âëîæåíèé.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attach_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL âëîæåíèé&lt;/b&gt;&lt;br /&gt;
+Google è äðóãèå ïîèñêîâûå ñèñòåìû èíäåêñèðóþò èçîáðàæåíèÿ (.gif, .jpg, .png, è äð.) è äðóãèå òèïû ôàéëîâ, òàêèå êàê äîêóìåíòû Word (.doc) è Adobe PDF (.pdf). Ñïåöèàëüíàÿ ïåðåìåííàÿ [original_filename] ìîæåò áûòü èñïîëüçîâàíà äëÿ âêëþ÷åíèÿ èñõîäíîãî èìåíè ôàéëà â ðåçóëüòèðóþùóþ ññûëêó.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: &lt;b&gt;'attachments/'&lt;/b&gt; áóäåò äîáàâëåí àâòîìàòè÷åñêè ê ññûëêàì äëÿ òîãî, ÷òîáû èçáåæàòü êîíôëèêòîâ ññûëîê.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: ìû ðåêîìåíäóåì âñåãäà èñïîëüçîâàòü [attachment_id] â ôîðìàòå ññûëîê, ò.ê. ÷àñòî èñõîäíîå èìÿ ôàéëà ìîæåò ïîâòîðÿòüñÿ.&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+[attachment_id]-[original_filename]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>crrs_forum</name>
+		<value>Ôîðóì vBSEO 'Ñîáñòâåííûå ïðàâèëà ññûëîê'</value>
+	</message>
+	<message>
+		<name>crrs_def</name>
+		<value>&lt;b&gt;Çàäàéòå Ñîáñòâåííûå Ïðàâèëà Ññûëîê&lt;/b&gt;&lt;span class=&quot;beta&quot;&gt;BETA&lt;/span&gt;&lt;br&gt; Âû ìîæåòå ïðèìåíÿòü vBSEO äëÿ URL, íå èçìåíÿåìûõ ïî óìîë÷àíèþ. Çàäàéòå âàøè ñîáñòâåííûå ïðàâèëà, èñïîëüçóÿ ôîðìàò ðåãóëÿðíûõ âûðàæåíèé:</value>
+	</message>
+	<message>
+		<name>crrs_desc</name>
+		<value>Îáå ÷àñòè (ëåâàÿ è ïðàâàÿ) ÿâëÿþòñÿ ðåãóëÿðíûìè âûðàæåíèÿìè: ïåðâàÿ ÷àñòü - ýòî &lt;b&gt;îðèãèíàëüíàÿ&lt;/b&gt; ññûëêà, â òî âðåìÿ êàê âòîðàÿ ÷àñòü - ýòî &lt;b&gt;èçìåíåííàÿ&lt;/b&gt; ññûëêà, ñîçäàííàÿ ñ èñïîëüçîâàíèåì øàáëîíîâ ñîâïàäåíèé ïåðâîé ÷àñòè. 
+&lt;p&gt;Âíèìàíèå: Êîìàíäà vBSEO ÍÅ ïðåäîñòàâëÿåò &quot;îôèöèàëüíîé&quot; ïîääåðæêè, ñâÿçàííîé ñ ðåãóëÿðíûìè âûðàæåíèÿìè, êîòîðûå âû çàäàåòå â ýòîé îïöèè. Ïîæàëóéñòà, èñïîëüçóéòå ýòó îïöèþ ÒÎËÜÊÎ â ñëó÷àå, åñëè âû çíàåòå, ÷òî äåëàåòå. Äëÿ äàëüíåéøåé èíôîðìàöèè îáðàòèòåñü íà ôîðóì vBSEO &lt;a href=&quot;http://www.vbseo.com&quot; target=&quot;_blank&quot;&gt;http://www.vbseo.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: ñòðîêè ìîãóò áûòü çàêîììåíòèðîâàíû äîáàâëåíèåì äâóõ ñèìâîëîâ ñëýøà â íà÷àëå ñòðîêè (//). Åñëè êàêèå-òî ñòðîêè ñîäåðæàò îøèáêè, îíè áóäóò àâòîìàòè÷åñêè çàêîììåíòèðîâàíû ïîñëå íàæàòèÿ êíîïêè 'Ñîõðàíèòü íàñòðîéêè'.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Ïðèìåðû:&lt;/b&gt;&lt;br /&gt;
+'article\.php\?id=(\d+)'=&gt;'showarticle-$1.html'&lt;br /&gt;
+'browse\.php\?page=(\d+)'=&gt;'listing-$1.htm' &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metakw_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Çàìåíÿòü ñîäåðæèìîå 'META KEYWORDS' &lt;/b&gt;?&lt;br /&gt;
+Äèíàìè÷åñêè çàìåíÿòü 'META KEYWORDS' êîíòåíòîì, ðåëåâàíòíûì îòîáðàæàåìîé ñòðàíèöå. Äåéñòâóåò íà ñòðàíèöàõ ðàçäåëîâ, òåì, ñîîáùåíèé è ïðîôèëåé. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bookmark_threadpost</name>
+		<value>Îòîáðàæàòü èêîíêè äëÿ Òåì è äëÿ Ñîîáùåíèé</value>
+	</message>
+	<message>
+		<name>bookmark_custom</name>
+		<value>äîáàâèòü ñâîé</value>
+	</message>
+	<message>
+		<name>bookmark_services_desc</name>
+		<value>&lt;p&gt;Ââåäèòå äîïîëíèòåëüíûå URL ôîðìàòû ñåðâèñà Ñîöèàëüíûõ Çàêëàäîê íèæå:&lt;br /&gt;
+&lt;i&gt;URL Ñîöèàëüíîé Çàêëàäêè, URL èêîíêè,&quot;Òåìà Ñîöèàëüíîé Çàêëàäêè&quot; Òåêñò,&quot;Ñîáùåíèå Ñîöèàëüíîé Çàêëàäêè&quot; Text&lt;/i&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bookmark_none</name>
+		<value>Íå îòîáðàæàòü èêîíêè</value>
+	</message>
+	<message>
+		<name>bookmark_thread</name>
+		<value>Îòîáðàæàòü èêîíêè òîëüêî äëÿ òåì</value>
+	</message>
+	<message>
+		<name>metadesc_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Çàìåíÿòü ñîäåðæèìîå 'META DESCRIPTION' &lt;/b&gt;?&lt;br /&gt;
+Ýòà îïöèÿ çàìåíÿåò ñîäåðæèìîå 'META DESCRIPTION' ïåðâûìè ñëîâàìè ïåðâîãî ñîîáùåíèÿ äî îãðàíè÷åíèÿ, çàäàííîãî íèæå.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metadesc_len_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Çàäàòü ìàêñ. äëèíó 'META DESCRIPTION' &lt;/b&gt;?&lt;br /&gt;
+Òýã meta description îáû÷íî ñîñòîèò èç 150 - 200 ñèìâîëîâ èëè ìåíüøå.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>nextprev_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Çàìåíÿòü URL &quot;ñëåäóþùàÿ/ïðåäûäóùàÿ òåìà&quot;?&lt;/b&gt;&lt;br /&gt;
+Âêëþ÷èòå ýòó îïöèþ äëÿ çàìåíû URL àäðåñà &quot;ñëåäóþùàÿ/ïðåäûäóùàÿ òåìà&quot; íà ïðÿìûå ðåëåâàíòíûå ññûëêè âìåñòî ðåäèðåêòà. &lt;br /&gt;&lt;i&gt;Âíèìàíèå: ýòà îïöèÿ äîáàâëÿåò 2 sql çàïðîñà íà ñòðàíèöå.&lt;/i&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>dir_links_threads_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïðÿìûå ññûëêè íà òåìû äëÿ ãîñòåé? &lt;/b&gt;&lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Ýòà îïöèÿ çàìåíÿåò ññûëêè &quot;Ïåðâîå íåïðî÷èòàííîå ñîîáùåíèå&quot; íà ïðÿìóþ ññûëêó íà òåìó, óñòàíàâëèâàÿ ïðÿìûå ññûëêè äëÿ ãîñòåé è ïîèñêîâûõ áîòîâ.&lt;br /&gt;
+Òàêæå óäàëÿåòñÿ ôóíêöèÿ &quot;ïåðåéòè ê íîâîìó ñîîáùåíèþ&quot; èç RSS ëåíò.&lt;br /&gt;
+&lt;p&gt;Âíèìàíèå: ýòà îïöèÿ ñîêðàùàåò ôóíêöèîíàëüíîñòü äëÿ ãîñòåâûõ ïîëüçîâàòåëåé, íî ýòî ìîæåò áûòü ðàñöåíåíî êàê ïðèåìëåìàÿ óñòóïêà â ïîëüçó SEO.&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Îòîáðàæàòü èêîíêè Ñîöèàëüíûõ Çàêëàäîê&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Ñîöèàëüíûå çàêëàäêè ñòàëè î÷åíü ýôôåêòèâíûì ñïîñîáîì ïîäåëèòüñÿ èíôîðìàöèåé ñ äðóãèìè è ïðèíåñòè áîëüøå òðàôèêà äëÿ âàøåãî ôîðóìà. Âûáåðèòå èêîíêè, êîòîðûå âû õîòåëè áû îòîáðàæàòü.
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Îïöèè îòîáðàæåíèÿ èêîíîê Ñîöèàëüíûõ Çàêëàäîê:&lt;/i&gt;&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Îòîáðàæàòü èêîíêè äëÿ Òåì è äëÿ Ñîîáùåíèé&lt;/b&gt;&lt;br /&gt;
+Âûáåðèòå ýòó îïöèþ äëÿ îòîáðàæåíèÿ èêîíêè äëÿ Òåì è äëÿ Ñîîáùåíèé îäíîâðåìåííî. Èêîíêè äëÿ Ñîöèàëüíûõ Çàêëàäîê Òåì ðàñïîëàãàþòñÿ â âûïàäàþùåì ìåíþ 'LinkBack', â òî âðåìÿ êàê èêîíêè ñîîáùåíèé íàõîäÿòñÿ â ëåâîì íèæíåì óãëó êàæäîãî ñîîáùåíèÿ.
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Îòîáðàæàòü èêîíêè òîëüêî äëÿ òåì&lt;/b&gt;&lt;br /&gt;
+Âûáåðèòå ýòó îïöèþ äëÿ îòîáðàæåíèÿ èêîíêè ÒÎËÜÊÎ äëÿ Òåì. Èêîíêè äëÿ Ñîöèàëüíûõ Çàêëàäîê Òåì ðàñïîëàãàþòñÿ â âûïàäàþùåì ìåíþ 'LinkBack'.
+&lt;/p&gt;
+
+&lt;p&gt;* Ââåäèòå &amp;lt;!--VBSEO_BOOKMARKS--&amp;gt; â øàáëîíå postbit (èëè postbit_legacy) åñëè âû õîòèòå çàäàòü ðàñïîëîæåíèå èêîíîê. 
+&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark_thread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Îòîáðàæàòü èêîíêè Ñîöèàëüíûõ Çàêëàäîê äëÿ òåì&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Âûáåðèòå &quot;Äà&quot; äëÿ îòîáðàæåíèÿ èêîíîê Ñîöèàëüíûõ Çàêëàäîê äëÿ òåì.
+&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark_post_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Îòîáðàæàòü èêîíêè Ñîöèàëüíûõ Çàêëàäîê äëÿ ñîîáùåíèé&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Âûáåðèòå &quot;Äà&quot; äëÿ îòîáðàæåíèÿ èêîíîê Ñîöèàëüíûõ Çàêëàäîê äëÿ ñîîáùåíèé.
+&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark</name>
+		<value>Ñîöèàëüíûå Çàêëàäêè</value>
+	</message>
+	<message>
+		<name>flinks_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Çàìåíÿòü 'Ññûëêè Ôîðóìà(ðàçäåëû)' ñ ïðÿìûìè ññûëêàìè íà URL àäðåñ íàçíà÷åíèÿ? &lt;/b&gt;&lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Âêëþ÷èòå ýòó îïöèþ äëÿ çàìåíû 'Ññûëêè Ôîðóìà(ðàçäåëû)' ñ ïðÿìûìè ññûëêàìè íà URL àäðåñ íàçíà÷åíèÿ. &lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: ïî óìîë÷àíèþ vBulletin ïåðåíàïðàâëÿåò ýòè ðàçäåëû-ññûëêè íà URL àäðåñ íàçíà÷åíèÿ.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>addttl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Äîáàâëÿòü Íàçâàíèå òåì â ññûëêè ôèêñèðîâàííîãî òåêñòà Showthread?&lt;/b&gt;&lt;br /&gt;
+Âêëþ÷èòå ýòó îïöèþ äëÿ ñîçäàíèÿ ññûëîê ñ êëþ÷åâûìè ñëîâàìè ïóòåì äîáàâëåíèÿ íàçâàíèÿ òåì ê URL àäðåñó íà äàííûõ òåì.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèåé vB 3.5.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Ôóíêöèè äîáàâëåíèÿ Íàçâàíèÿ Òåì::&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;ÍÅ äîáàâëÿòü Íàçâàíèå Òåìû&lt;/b&gt;&lt;br /&gt;
+Îñòàâèòü îðèãèíàëüíûå ôóíêöèè vB. Ññûëêè óêàçûâàþùèå íà òåìû/ñîîáùåíèÿ íå áóäóò èçìåíåíû.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Äîáàâèòü Íàçâàíèå Òåìû êàê &quot;âñïëûâàþùèé òåêñò&quot;&lt;/b&gt;&lt;br /&gt;
+Ýòà îïöèÿ äîáàâëÿåò Íàçâàíèå Òåìû â òåã 'title' äëÿ êàæäîé ññûëêè íà ýòó òåìó, óêàçûâàþùóþ íà showthread ñòðàíèöû.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Äîáàâëÿòü Íàçâàíèå Òåìû êàê &quot;îðèãèíàëüíûé òåêñò (çàãîëîâîê òåìû)&quot;&lt;/b&gt;&lt;br /&gt;
+Ýòî ñî÷åòàíèå âàðèàíòîâ 1 è 2 (ñì. âûøå). Ïåðâîíà÷àëüíàÿ ññûëêà (òåêñò) îñòàåòñÿ íåòðîíóòîé â òî âðåìÿ êàê 'Íàçâàíèå Òåìû' äîáàâëÿåòñÿ (â ñêîáêàõ) ñðàçó ïîñëå òåêñòà ññûëêè.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Çàìåíà îðèãèíàëüíîãî òåêñòà ññûëêè&lt;/b&gt;&lt;br /&gt;
+Ýòà îïöèÿ çàìåíÿåò îðèãèíàëüíûé òåêñò ññûëêè óêàçûâàþùåé íà òåìó, íà çàãîëîâîê äàííîé òåìû.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;*&lt;/i&gt;&lt;/b&gt;&lt;i&gt;Ññûëêè, óêàçûâàþùèå íà ÷àñòíûå ðàçäåëû íå áóäóò çàìåíåíû, ÷òîáû ïðåäîòâðàòèòü íàðóøåíèå êîíôèäåíöèàëüíîñòè (ò.å. ëþäè, îïðåäåëèâøèå íàçâàíèÿ ÷àñòíîé òåìû ôîðóìà â íàïèñàíèè ñëó÷àéíûé âèä 'showthread.php?t=xxxx' â ñîîáùåíèÿõ)&lt;/i&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>addttlext_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Äîáàâëÿòü Íàçâàíèå Ñòðàíèö ê âíåøíèì ññûëêàì?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt; Âêëþ÷èòå ýòó îïöèþ äëÿ ñîçäàíèÿ ññûëîê ñ êëþ÷åâûìè ñëîâàìè ïóòåì äîáàâëåíèÿ çàãîëîâêîâ ñòðàíèö ê âíåøíèì ññûëêàì. vBSEO áóäåò ïîäêëþ÷àòüñÿ ê âíåøíèì ñåðâåðàì äëÿ òîãî ÷òîáû èçâëå÷ü çàãîëîâîê ñòðàíèöû.&lt;/p&gt;&lt;p&gt;Ïðèìå÷àíèå: ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ vB 3.5.x èëè âûøå&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attl_1</name>
+		<value>ÍÅ äîáàâëÿòü Íàçâàíèå Òåìû</value>
+	</message>
+	<message>
+		<name>attl_2</name>
+		<value>Äîáàâëÿòü Íàçâàíèå Òåìû êàê &quot;âñïëûâàþùèé òåêñò&quot;</value>
+	</message>
+	<message>
+		<name>attl_3</name>
+		<value>Äîáàâëÿòü Íàçâàíèå Òåìû êàê &quot;îðèãèíàëüíûé òåêñò (çàãîëîâîê òåìû)&quot;</value>
+	</message>
+	<message>
+		<name>attl_4</name>
+		<value>Çàìåíÿòü îðèãèíàëüíûé òåêñò ññûëêè</value>
+	</message>
+	<message>
+		<name>addttlp_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Äîáàâëÿòü Íàçâàíèå Òåìû ê ññûëêàì Showpost?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;Òàêàÿ æå îïöèÿ, êàê è îïèñàííàÿ âûøå, íî ïðèìåíèìî ê URL àäðåñàì íà ñîîáùåíèÿ (showpost).&lt;/p&gt;&lt;/p&gt;</value> 
+	</message>
+	<message>
+		<name>remstop_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Óäàëÿòü ñòîï-ñëîâà èç URL?&lt;/b&gt;&lt;br /&gt;
+Óäàëåíèå &quot;ñòîï-ñëîâ&quot; èç URL ìîæåò óëó÷øèòü ðåëåâàíòíîñòü ò.ê. íåêîòîðûå ïîèñêîâûå ñèñòåìû ôèëüòðóþò ýòè îáùèå ñëîâà êîãäà ëþäè èñïîëüçóþò èõ â ïîèñêîâîì çàïðîñå.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Óìíîå óäàëåíèå ñòîï-ñëîâ èç ññûëîê?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Âêëþ÷èòå ýòó îïöèþ äëÿ óäàëåíèÿ &quot;ñòîï-ñëîâ&quot; èç ññûëîê &lt;b&gt;ÒÎËÜÊÎ&lt;/b&gt; êîãäà äëèíà çàãîëîâêà áîëüøå çàäàííîãî çíà÷åíèÿ â îïöèè '&lt;a href=&quot;#url_general&quot;&gt;Îãðàíè÷èòü äëèíó ññûëîê&gt;'.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>stopdef_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Çàäàòü ñòîï-ñëîâà&lt;/b&gt;&lt;br /&gt;
+Êîãäà ïðåäûäóùàÿ îïöèÿ âêëþ÷åíà, ýòè ñëîâà áóäóò èñêëþ÷åíû èç ññûëîê.&lt;/p&gt;
+&lt;p&gt;Ïîäñêàçêà: íåêîòîðûå îáùèå ñòîï-ñëîâà äëÿ ðàçíûõ ÿçûêîâ ìîæíî íàéòè çäåñü: &lt;a href=&quot;http://www.ranks.nl/resources/stopwords.html&quot; target=&quot;_blank&quot;&gt;http://www.ranks.nl/stopwords/&lt;/a&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acronym_def_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Çàäàòü àêðîíèìû&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;ÎÁÍÎÂËÅÍÎ!&lt;/span&gt; &lt;br /&gt; 
+Çàäàéòå àêðîíèìû (ïî 1 íà ñòðîêó). 
+Àêðîíèì ðàñøèðåíèå áóäóò ïðèìåíåíû ê ýòèì ñëîâàì ñîãëàñíî âûáðàííîé âûøå îïöèè. 
+&lt;p&gt;Âíèìàíèå: àêðîíèìû íå ðåãèñòðî-çàâèñèìû.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåðû:&lt;br /&gt; 
+'seo'=&gt;'Search Engine Optimization'&lt;br /&gt; 'pr'=&gt;'Page Ranking'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acronym_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Àêðîíèì ðàñøèðåíèå&lt;/b&gt; &lt;br /&gt;
+Ýòà îïöèÿ ïîçâîëÿåò óëó÷øèòü ïîèñêîâóþ SE ðåëåâàíòíîñòü. Îíà çàìåíÿåò ÷àñòûå ñîêðàùåíèÿ íà ïîëíûå ôðàçû, ñîîòâåòñòâóþùèå èì. &lt;/p&gt;
+&lt;p&gt;Ïðàâèëüíîå îïðåäåëåíèå ñîêðàùåíèé òàêæå óëó÷øàåò äîñòóïíîñòü è ïîìîãàåò â ñîçäàíèè óñëîâèé äëÿ ðåëåâàíòíîñòè ÷àñòî îïóñêàåòñÿ èç-çà ñîêðàùåííîãî èñïîëüçîâàíèÿ. 
+Ýòî òàêæå óâåëè÷èâàåò ñìûñëîâîå çíà÷åíèå ïðè ñîçäàíèè ïîëüçîâàòåëüñêîãî êîíòåíòà è îäíîâðåìåííî óëó÷øàåò þçàáèëèòè (ò.å. - ñäåëàéòå ñâîé ñàéò áîëåå óäîáíûì äëÿ èñïîëüçîâàíèÿ), âñå ýòè ïðåèìóùåñòâà, èäóò ðóêà îá ðóêó ñ óëó÷øåíèåì SEO.
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Ôóíêöèè ðàñøèðåíèé Àêðîíèìîâ:&lt;/i&gt;&lt;/b&gt;&lt;br /&gt;
+&lt;p&gt;&lt;b&gt;Íå äîáàâëÿéòü Àêðîíèì ðàñøèðåíèå&lt;/b&gt;&lt;br /&gt;
+Ñîêðàùåíèÿ íå áóäóò èçìåíåíû.
+&lt;p&gt;&lt;b&gt;ÇÀÌÅÍÀ òåêñòà ñîêðàùåííûõ ðàñøèðåíèé&lt;/b&gt;&lt;br /&gt;
+Ýòà ôóíêöèÿ ïåðåâîäèò ñîîòâåòñòâóþùèå ñîêðàùåíèÿ â ñîîòâåòñòâóþùåì òåêñòå êàê ýòî îïðåäåëåíî â ïîëå íèæå.
+&lt;p&gt;&lt;b&gt;ÄÎÁÀÂÈÒÜ html òåã 'acronym' â ñîêðàùåíèÿ&lt;/b&gt;&lt;br /&gt;
+Ýòà îïöèÿ çàêëþ÷àåò êàæäîå ñîêðàùåííèå html òåãîì ñ ñîîòâåòñòâóþùèì òåêñòîì &lt;a href=&quot;http://www.w3.org/TR/html401/struct/text.html#edef-ACRONYM&quot; target=&quot;_blank&quot;&gt;'acronym' html òåã&lt;/a&gt; â ñîîòâåòñòâóþùèé òåêñò â êà÷åñòâå èìåíè àòðèáóòà.
+&lt;p&gt;&lt;b&gt;ÄÎÁÀÂÈÒÜ html òåã 'abbr' â ñîêðàùåíèÿ&lt;/b&gt;&lt;br /&gt;
+Òî æå, ÷òî è âûøå, íî ñ èñïîëüçîâàíèåì &lt;a href=&quot;http://www.w3.org/TR/html4/struct/text.html#edef-ABBR&quot; target=&quot;_blank&quot;&gt;'abbr' html òåãà&lt;/a&gt;, â îòëè÷èå îò html òåãà 'acronym'.</value>
+	</message>
+	<message>
+		<name>acro_opt1</name>
+		<value>ÍÅ ïðèìåíÿòü àêðîíèìû</value>
+	</message>
+	<message>
+		<name>acro_opt2</name>
+		<value>Çàìåíÿòü àêðîíèìû çàäàííûì òåêñòîì</value>
+	</message>
+	<message>
+		<name>acro_opt3</name>
+		<value>Äîáàâëÿòü HTML òýã 'acronym'</value>
+	</message>
+	<message>
+		<name>acro_opt4</name>
+		<value>Äîáàâëÿòü HTML òýã 'abbr'</value>
+	</message>
+	<message>
+		<name>acro_url_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïðèìåíÿòü Àêðîíèì ðàñøèðåíèÿ â ññûëêàõ?&lt;/b&gt;&lt;br /&gt;
+Âûáåðèòå &quot;Äà&quot; åñëè âû õîòèòå çàìåíÿòü êëþ÷åâûå ñëîâà â ññûëêàõ.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_content_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïðèìåíÿòü Àêðîíèì ðàñøèðåíèå òîëüêî ê &quot;êîíòåíòó&quot; ?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt; Âûáåðèòå &quot;Äà&quot; äëÿ çàìåíû êëþ÷åâûõ ñëîâ â ñîîáùåíèÿõ íà ôîðóìå, â áëîãàõ è êîììåíòàðèÿõ. 
+Â ïðîòèâíîì ñëó÷àå çàìåíà áóäåò ïðîèçâîäèòüñÿ âåçäå: íàçâàíèÿõ òåì, â ññûëêàõ íàâèãàöèè, â ñïèñêàõ òåì è ò.ä.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_guests_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïðèìåíÿòü Àêðîíèì ðàñøèðåíèå äëÿ òîëüêî &quot;Ãîñòåé&quot; only?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Âûáåðèòå &quot;Äà&quot; ÷òîáû çàìåíèòü êëþ÷åâûå ñëîâà ÒÎËÊÎ äëÿ íåçàðåãèñòðèðîâàííûõ ïîñåòèòåëåé. Â ïðîòèâíîì ñëó÷àå êëþ÷åâîå ñëîâî áóäåò çàìåíåíî äëÿ âñåõ ïîñåòèòåëåé.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_text_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïðèìåíÿòü Àêðîíèì ðàñøèðåíèå â òåêñòå?&lt;/b&gt;&lt;br /&gt;
+Âûáåðèòå &quot;Äà&quot; åñëè âû õîòèòå çàìåíÿòü êëþ÷åâûå ñëîâà âî âñåì òåêñòå ñòðàíèöû.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>will_replace</name>
+		<value>áóäåò çàìåíåíî íà</value>
+	</message>
+	<message>
+		<name>forceroot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Çàäàòü êîðåíü äèðåêòîðèè äîìàøíåé ñòðàíèöû?&lt;/b&gt;&lt;br /&gt;
+Âêëþ÷èòå ýòó îïöèÿ äëÿ òîãî ÷òîáû ññûëêè íà äîìàøíþþ ñòðàíèöó óêàçûâàëè íà 'vbroot/', à íå íà èìÿ ñêðèïòà (íàïð. forum.php) êàê çàäàíî â íàñòðîéêàõ vBulletin. Ýòî ïîçâîëÿåò óëó÷øèòü PageRank äëÿ ãëàâíîé ñòðàíèöû.&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>hpalias_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Çàäàòü ñèíîíèìû äîìàøíåé ñòðàíèöû&lt;/b&gt;&lt;br /&gt;
+      Ýòà îïöèÿ ïîìîãàåò êîíñîëèäèðîâàòü PR (Google PageRank) íà âàøåé äîìàøíåé ñòðàíèöå ôîðóìà. Ìíîãèå ôîðóìû ðàçäåëÿþò PR ìåæäó íåñêîëüêèìè ñòðàíèöàìè (îáû÷íî äî òðåõ), êàê íàïðèìåð:&lt;br /&gt;
+      &lt;br /&gt;
+      www.yoursite.com/forums/ (PR = A)&lt;br /&gt;
+      www.yoursite.com/forums/index.php (PR = B)&lt;br /&gt;
+      www.yoursite.com/forums/index.php? (PR = C)
+                                            &lt;p&gt;Ýòî òèïè÷íûé ñëó÷àé &quot;óòå÷êè PageRank&quot; è ïîòåíöèàëüíî òàêæå ìîæåò ïðèâåñòè ê ïðîáëåìå äóáëèðóþùåãî êîíòåíòà.
+                                            &lt;p&gt;Ââåäåííûå çäåñü ññûëêè áóäóò àâòîìàòè÷åñêè 301-ïåðåíàïðàâëåíû íà âàøó ãëàâíóþ äîìàøíþþ ñòðàíèöó. Ââåäèòå îäíî (1) èìÿ ôàéëà â ñòðîêå.
+                                            &lt;p&gt;Ïðèìåð:&lt;br /&gt;
+      index.php &lt;br /&gt;
+      index.php?&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>intrel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Äîáàâëÿòü rel=&quot;nofollow&quot; ê &lt;i&gt; ÂÑÅÌ&lt;/i&gt; ññûëêàì ñîðòèðîâêè&lt;/b&gt;&lt;br /&gt;
+Âêëþ÷èòå ýòó îïöèþ äëÿ òîãî ÷òîáû ïîèñêîâûå ñèñòåìû íå ñëåäîâàëè ïî ññûëêàì íà òó æå ñòðàíèöó, íî ðàçíûìè ïàðàìåòðàìè ñîðòèðîâêè. Ýòî ïîçâîëÿåò èçáåæàòü ïðîáëåìû &quot;äóáëèðóþùåãî êîíòåíòà&quot;.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>reldyn_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Äîáàâëÿòü rel=&quot;nofollow&quot; êî &lt;i&gt; ÂÑÅÌ&lt;/i&gt; äèíàìè÷åñêèì ññûëêàì &lt;/b&gt;&lt;br /&gt;
+Âêëþ÷èòå ýòó îïöèþ äëÿ òîãî ÷òîáû ïîèñêîâûå ñèñòåìû íå ñëåäîâàëè ïî ÂÑÅÌ äèíàìè÷åñêèì ññûëêàì. Íåêîòîðûå ïðèìåðû: &quot;Îòâåòèòü íà òåìó&quot;, &quot;Öèòèðîâàòü&quot;, &quot;Ïîèñê&quot;, &quot;Ñîçäàòü òåìó&quot; è äðóãèå ññûëêè. Îáû÷íî ýòè ññûëêè ñîäåðæàò íå-ðåëåâàíòíûé êîíòåíò (&quot;øóì&quot;) è íå äîëæíû áûòü ïðîèíäåêñèðîâàíû ïîèñêîâûìè ñèñòåìàìè.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>relmemb_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Äîáàâëÿòü rel=&quot;nofollow&quot; ê ññûëêàì &lt;i&gt; ÍÀ&lt;/i&gt; ïðîôèëè ïîëüçîâàòåëåé &lt;i&gt;ÈÇ&lt;/i&gt; ñîîáùåíèé&lt;/b&gt;&lt;br /&gt;
+Âêëþ÷èòå ýòó îïöèþ äëÿ òîãî ÷òîáû ïîèñêîâûå ñèñòåìû íå ñëåäîâàëè ïî ññûëêàì íà ïðîôèëè ïîëüçîâàòåëåé èç ñîîáùåíèé.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>relmemb_home_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Äîáàâëÿòü rel=&quot;nofollow&quot; ê ññûëêàì &lt;i&gt; ÍÀ&lt;/i&gt; ïðîôèëè ïîëüçîâàòåëåé &lt;i&gt;Ñ&lt;/i&gt; äîìàøíåé ñòðàíèöû&lt;/b&gt;&lt;br /&gt;
+Âêëþ÷èòå ýòó îïöèþ äëÿ òîãî ÷òîáû ïîèñêîâûå ñèñòåìû íå ñëåäîâàëè ïî ññûëêàì íà ïðîôèëè ïîëüçîâàòåëåé ñ äîìàøíåé ñòðàíèöû.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>extrel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Äîáàâëÿòü rel=&quot;nofollow&quot; êî &lt;i&gt; ÂÑÅÌ&lt;/i&gt; âíåøíèì ññûëêàì &lt;/b&gt;&lt;br /&gt;
+Âêëþ÷èòå ýòó îïöèþ äëÿ òîãî ÷òîáû ïîèñêîâûå ñèñòåìû íå ñëåäîâàëè ïî ÂÑÅÌ âíåøíèì ññûëêàì (óêàçûâàþùèì íà äðóãèå äîìåíû).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>extwhite_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&quot;Áåëûé ñïèñîê&quot; âíåøíèõ äîìåíîâ&lt;/b&gt;&lt;br /&gt;
+Ââåäèòå ñïèñîê äîìåíîâ äëÿ èñêëþ÷åíèÿ èç îïöèè, çàäàííîé âûøå. Rel='nofollow' ÍÅ áóäåò äîáàâëåí ê ññûëêàì íà äàííûå äîìåíû. Âíèìàíèå: ýòî ìîæåò áûòü èñïîëüçîâàíî äëÿ ïîîùðåíèÿ íåêîòîðûõ ïàðòíåðñêèõ ñàéòîâ èëè äîìàøíèõ ñòðàíèö ïîëüçîâàòåëåé (ññûëîê èç ïîäïèñåé).&lt;/p&gt;
+&lt;p&gt;Ïðèìåðû:&lt;br /&gt;
+google.com (no 'http://www' required) &lt;br /&gt;
+groups.google.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>clean_html_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Îïòèìèçèðîâàòü HTML-êîä?&lt;/b&gt;&lt;br /&gt;
+Âûáåðèòå 'Äà' äëÿ òîãî ÷òîáû óáðàòü íåíóæíûå ïðîáåëüíûå ñèìâîëû è êîììåíòàðèè èç èñõîäíîãî êîäà âàøèõ ñòðàíèö. Ýòî óëó÷øàåò ñîîòíîøåíèå C2C (Content to Code) è óìåíüøàåò ðàçìåð ñòðàíèö, ÷òî ïðèâîäèò ê áîëåå áûñòðîé çàãðóçêå è ýêîíîìèè òðàôèêà.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: åñëè HTML êîììåíòàðèè íà âàøèõ ñòðàíèöàõ íå çàêðûòû êîððåêòíî, ýòà îïöèÿ ìîæåò ïðèâåñòè ê òîìó, ÷òî ñòðàíèöû áóäóò îòîáðàæàòüñÿ íåïðàâèëüíî. Óáåäèòåñü, ÷òî âàøè ñòðàíèöû íå ñîäåðæàò òàêèõ îøèáîê â html-êîäå.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rem_prev_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Óäàëÿòü ïðåäïðîñìîòð òåìû äëÿ ãîñòåé?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Çàãîëîâêè òåì íà ñòðàíèöàõ ðàçäåëîâ ÷àñòî ñîäåðæàò äîïîëíèòåëüíûå êëþ÷åâûå ñëîâà, ñâÿçàííûå ñ ðàçäåëîì. Óäàëåíèå òåêñòà &quot;ïðåäïðîñìîòðà òåìû&quot; ïîçâîëÿåò óëó÷øèòü ñîîòíîøåíèå êëþ÷åâûõ ñëîâ äëÿ ãîñòåé è ïîèñêîâûõ ðîáîòîâ.&lt;/p&gt;&lt;p&gt;Âíèìàíèå: &quot;òåêñò ïðåäïðîñìîòðà òåìû&quot; - ýòî òåêñò, ïîÿâëÿþùèéñÿ ïðè íàâåäåíèè êóðñîðà íà ññûëêè òåì íà ñòðàíèöàõ ðàçäåëîâ.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_size_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Âêëþ÷èòü àòðèáóòû ðàçìåðîâ èçîáðàæåíèé?&lt;/b&gt;&lt;br /&gt;
+Âûáåðèòå &quot;Äà&quot; äëÿ âêëþ÷åíèÿ àòðèáóòîâ ðàçìåðîâ èçîáðàæåíèé.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_def_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Çàäàéòå àòðèáóòû ðàçìåðîâ èçîáðàæåíèé&lt;/b&gt;&lt;br /&gt;
+Îáû÷íî øàáëîíû vB íå âêëþ÷àþò àòðèáóòû &quot;width&quot; è &quot;height&quot; äëÿ êàðòèíîê. Äîáàâëåíèå ýòèõ àòðèáóòîâ äëÿ âñåõ èçîáðàæåíèé íà âàøåì ôîðóìà îáû÷íî óñêîðÿåò &quot;ðåíäåðèíã&quot; ñòðàíèö â áîëüøèíñòâå áðàóçåðîâ. Âêëþ÷åíèå èõ òàêæå ïîòåíöèàëüíî ïîçâîëÿåò ïîèñêîâûì ñèñòåìàì îöåíèâàòü ñîîòíîøåíèå êàðòèíîê è îêðóæàþùåãî òåêñòà ïðè âû÷èñëåíèè ðåëåâàíòíîñòè êëþ÷åâûõ ñëîâ äëÿ ñòðàíèöû.&lt;/p&gt;
+&lt;p&gt;Ïðèìåðû:&lt;br /&gt;
+'thread.gif'=&gt;'20x20'&lt;br /&gt;
+'icon12.gif'=&gt;'16x16'&lt;/p&gt;
+&lt;p&gt;Ïðèìåðû (âêëþ÷àÿ äèðåêòîðèè äëÿ ðàçäåëåíèÿ èçîáðàæåíèé ñ îäèíàêîâûìè èìåíàìè ôàéëîâ):&lt;br /&gt;
+'buttons/quote.gif' =&gt; '70x22'&lt;br /&gt;
+'editor/quote.gif' =&gt; '21x20'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_note</name>
+		<value>Âíèìàíèå: åñëè âû èçìåíÿëè èçîáðàæåíèÿ ïî óìîë÷àíèþ, âû ÄÎËÆÍÛ îáíîâèòü ðàçìåðû, ïðåäñòàâëåííûå âûøå, ïåðåä òåì êàê âêëþ÷àòü ýòó îïöèþ. Èíà÷å, íåñîîòâåòñòâóþùèå èçîáðàæåíèÿ áóäóò îòîáðàæàòüñÿ íåêîððåêòíî.</value>
+	</message>
+	<message>
+		<name>max_chars</name>
+		<value>ìàêñ. 150 - 200 ñèìâîëîâ ðåêîìåíäîâàíî</value>
+	</message>
+	<message>
+		<name>rights_reserved</name>
+		<value>Âñå ïðàâà çàùèùåíû</value>
+	</message>
+	<message>
+		<name>rr_forumdisplay</name>
+		<value>íà ñòðàíèöàõ ðàçäåëîâ (è)</value>
+	</message>
+	<message>
+		<name>rr_showthread</name>
+		<value>íà ñòðàíèöàõ òåì</value>
+	</message>
+	<message>
+		<name>rr_blog</name>
+		<value>íà ñòðàíèöàõ áëîãà</value>
+	</message>
+	<message>
+		<name>save_key</name>
+		<value>Ñîõðàíèòü êëþ÷</value>
+	</message>
+	<message>
+		<name>rrs_def</name>
+		<value>&lt;b&gt;Çàäàéòå ðåëåâàíòíûå çàìåíû&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;ÎÁÍÎÂËÅÍÎ!&lt;/span&gt;&lt;br /&gt;
+Ïîñòðîéòå äèíàìè÷åñêèå ôðàçû, êîòîðûå âñòàâëÿþòñÿ íà ñòðàíèöû ïðîñòûì âêëþ÷åíèåì òýãîâ (äî òðåõ) â âàøèõ øàáëîíàõ ôîðóìà.</value>
+	</message>
+	<message>
+		<name>rrs_desc</name>
+		<value>Äëÿ êàæäîãî íàáîðà, ïåðâàÿ ôðàçà áóäåò îòîáðàæåíà ÒÎËÜÊÎ íà ñòðàíèöàõ ðàçäåëîâ è âòîðàÿ ôðàçà - ÒÎËÜÊÎ íà ñòðàíèöàõ òåì.
+&lt;p&gt;&lt;strong&gt;Âû ìîæåòå èñïîëüçîâàòü ëþáûå ïåðåìåííûå, çàäàííûå íèæå äëÿ ñîçäàíèÿ âàøèõ ôðàç:&lt;/strong&gt;&lt;br&gt;
+&lt;i&gt;[bb_title]&lt;/i&gt; - Îñíîâíîå íàçâàíèå ôîðóìà&lt;br&gt;
+&lt;i&gt;[default_keywords]&lt;/i&gt; - Êëþ÷åâûå ñëîâà, çàäàííûå â vB's admincp&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;[forum_title]&lt;/i&gt; - Çàãîëîâîê òåêóùåãî ðàçäåëà&lt;br&gt;
+&lt;i&gt;[forum_description]&lt;/i&gt; - &quot;Îïèñàíèå&quot; òåêóùåãî ðàçäåëà&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;[parent_forum_title]&lt;/i&gt; - Çàãîëîâîê ðîäèòåëüñêîãî ðàçäåëà&lt;br&gt;
+&lt;i&gt;[parent_forum_description]&lt;/i&gt; - &quot;Îïèñàíèå&quot; ðîäèòåëüñêîãî ðàçäåëà&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;[thread_title]&lt;/i&gt; - Çàãîëîâîê òåêóùåé òåìû (èñïîëüçóéòå ÒÎËÜÊÎ äëÿ ñòðàíèö òåì)&lt;br&gt;
+&lt;I&gt;[first_post_X_words]&lt;/I&gt; - Ïåðâûå X ñëîâ èç ïåðâîãî ñîîáùåíèÿ íà ñòðàíèöó (èñïîëüçóéòå ÒÎËÜÊÎ äëÿ ñòðàíèö òåì)&lt;/p&gt;
+&lt;I&gt;[thread_X_tags]&lt;/I&gt; - Ïåðâûå X òåãîâ íàçíà÷åííûå íà òåìó (èñïîëüçóéòå ÒÎËÜÊÎ äëÿ ñòðàíèö òåì)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[thread_page]&lt;/em&gt; - Íîìåð ñòðàíèöû òåìû&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ïðèìåðû ðåëåâàíòíûõ ôðàç:&lt;/strong&gt;&lt;br&gt;
+îáñóæäåíèå [Forum_title] â ðàçäåëå [parent_forum_title] íà [bb_title] (íà ñòðàíèöàõ ðàçäåëîâ)&lt;br&gt;
+Îáñóæäåíèå [thread_title] â ðàçäåëå [forum_title] íà [bb_title]; &amp;lt;em&amp;gt;[first_post_15_words]...&amp;lt;/em&amp;gt; (íà ñòðàíèöàõ òåì)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>catlinks</name>
+		<value>Ïðÿìûå ññûëêè íà êàòåãîðèè</value>
+	</message>
+	<message>
+		<name>catlinks_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïðÿìûå ññûëêè íà êàòåãîðèè?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ â &quot;Äà&quot; äëÿ òîãî ÷òîáû âêëþ÷èòü &quot;ÿêîðíûå&quot; ññûëêè íà êàòåãîðèè ôîðóìà.
+&lt;br /&gt;&lt;br /&gt;Âíèìàíèå: ññûëêè íà êàòåãîðèè áóäóò âûãëÿäåòü êàê &quot;http://yourforumsroot/#category_title&quot;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rrs_forum</name>
+		<value>Ôîðóì vBSEO 'Ðåëåâàíòíûå çàìåíû'</value>
+	</message>
+	<message>
+		<name>extblack_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&quot;×åðíûé ñïèñîê&quot; âíåøíèõ äîìåíîâ&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Äëÿ ñëåäóþùèõ äîìåíîâ ÂÑÅÃÄÀ áóäóò äîáàâëåíû rel='nofollow' âíå çàâèñèìîñòè îò äðóãèõ íàñòðîåê.
+&lt;/p&gt;&lt;p&gt;Ïðèìåðû:&lt;br /&gt;google.com (no 'http://www' required)&lt;br /&gt;
+groups.google.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>linkback_black_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&quot;×åðíûé ñïèñîê&quot; äëÿ LinkBack  &quot;Blacklist&quot;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+LinkBacks èç ýòèõ äîìåíîâ áóäóò ÂÑÅÃÄÀ èãíîðèðîâàíû.
+&lt;/p&gt;&lt;p&gt;Ïðèìåðû:&lt;br /&gt;spamsite.com (no 'http://www' required)&lt;br /&gt;
+subdomain.spamsite.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_npformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL 'Íîâîå ñîîáùåíèå â òåìå' &lt;br&gt;
+&lt;/b&gt;Çàäàéòå êàê áóäóò âûãëÿäåòü URL àäðåñ 'Íîâîå ñîîáùåíèå â òåìå'.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: âñòðîåííàÿ ôóíêöèÿ ðåäèðåêòà èñïîëüçóåòñÿ äëÿ ïåðåíàïðàâëåíèÿ ïîñåòèòåëÿ íà ñîîòâåòñòâóþùóþ ññûëêó âíóòðè òåìû (êàê thead_title.html#post-xxxx)&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br&gt;
+t[thread_id]-new-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metadesc_members_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Meta Description äëÿ ïðîôèëåé ïîëüçîâàòåëåé&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;UPDATED!&lt;/span&gt;&lt;br&gt;
+Çàäàéòå ñîáñòâåííûé ôîðìàò äëÿ òýãà meta description íà ñòðàíèöàõ ïðîôèëåé ïîëüçîâàòåëåé. Âû ìîæåòå èñïîëüçîâàòü ñëåäóþùèå ïåðåìåííûå äëÿ àâòî-çàìåíû:&lt;/p&gt;
+&lt;p&gt;&lt;I&gt;[username]&lt;/I&gt; - èìÿ ïîëüçîâàòåëÿ&lt;br&gt;
+&lt;i&gt;[usertitle]&lt;/i&gt; - Çàãîëîâîê ãðóïïû ïîëüçîâàòåëÿ (&amp;quot;Moderator&amp;quot;, &amp;quot;Registered Member&amp;quot;, è ò.ä.)&lt;br&gt;
+&lt;i&gt;[bb_title]&lt;/i&gt; -  Îñíîâíîå íàçâàíèå ôîðóìà&lt;br&gt;
+&lt;em&gt;[user_field_1], [user_field_2], etc.&lt;/em&gt; - íåñòàíäàðòíûå ïîëÿ ïðîôèëÿ ïîëüçîâàòåëÿ çàäàííûå â vB Admin CP&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ïðèìåð ôðàçû äëÿ Meta Description:&lt;/strong&gt;&lt;br&gt;
+[username] - [usertitle] íà [bb_title]. Ïðîñìîòð ïðîôèëÿ [username]. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>select_preset</name>
+		<value>Âûáåðèòå ïðåäóñòàíîâêó</value>
+	</message>
+	<message>
+		<name>current_preset</name>
+		<value>Òåêóùàÿ ïðåäóñòàíîâêà</value>
+	</message>
+	<message>
+		<name>preset_set</name>
+		<value>Çàãðóçèòü ïðåäóñòàíîâêó ôîðìàòîâ ññûëîê</value>
+	</message>
+	<message>
+		<name>custom_settings</name>
+		<value>Íåñòàíäàðòíûå íàñòðîéêè</value>
+	</message>
+	<message>
+		<name>load_preset</name>
+		<value>Çàãðóçèòü</value>
+	</message>
+	<message>
+		<name>load_preset_warn</name>
+		<value>Åñëè ýòî ÍÅ ïåðâûé ðàç, êîãäà âû íàñòðàèâàåòå vBSEO, ìû íàñòîÿòåëüíî ðåêîìåíäóåì ÍÅ èçìåíÿòü ñòðóêòóðû ôîðìàòîâ ññûëîê. Êëèêíèòå 'OK' ÷òîáû ïðîäîëæèòü èëè 'Îòìåíà' ÷òîáû âåðíóòüñÿ.</value>
+	</message>
+	<message>
+		<name>adv_settings</name>
+		<value>Ðàñøèðåííûå íàñòðîéêè</value>
+	</message>
+	<message>
+		<name>adv_settings_warn</name>
+		<value>Ìû íàñòîÿòåëüíî ðåêîìåíäóåì èñïîëüçîâàòü ïðåäóñòàíîâêè ôîðìàòîâ ññûëîê èç âûïàäàþùåãî ñïèñêà âìåñòî èçìåíåíèÿ èõ âðó÷íóþ, ò.ê. ýòî ìîæåò ïðèâåñòè ê êîíôëèêòóþùèì ññûëêàì.</value>
+	</message>
+	<message>
+		<name>note_preset</name>
+		<value>Âíèìàíèå: ïðåäóñòàíîâêà ñîäåðæèò òîëüêî 'Ôîðìàòû ññûëîê' è íå èçìåíÿåò äðóãèõ îïöèÿ vBSEO.</value>
+	</message>
+	<message>
+		<name>rw_archive_foot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&lt;i&gt;Àðõèâíûå ññûëêè âíèçó ñòðàíèöû:&lt;/i&gt;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;/p&gt;
+                                          &lt;p&gt;&lt;b&gt;Äîáàâëÿòü ññûëêè íà îñíîâíûå àðõèâíûå ðàçäåëû âíèçó ñòðàíèöû&lt;/b&gt;&lt;br /&gt;
+                                            Âûáåðèòå ýòó îïöèþ ÷òîáû äîáàâèòü ññûëêè íà îñíîâíûå àðõèâíûå ðàçäåëû âíèçó âñåõ ñòðàíèö íà ôîðóìå.&lt;/p&gt;
+                                          &lt;p&gt;&lt;b&gt;Äîáàâëÿòü ññûëêè íà ÂÑÅ àðõèâíûå ðàçäåëû âíèçó ñòðàíèöû&lt;/b&gt;&lt;br /&gt;
+                                            Âûáåðèòå ýòó îïöèþ ÷òîáû äîáàâèòü ññûëêè íà ÂÑÅ àðõèâíûå ðàçäåëû âíèçó âñåõ ñòðàíèö íà ôîðóìå.&lt;/p&gt;                                          &lt;p&gt;&lt;b&gt;ÍÅ äîáàâëÿòü ññûëêè íà àðõèâíûå ðàçäåëû&lt;/b&gt;&lt;br /&gt;
+                                            Âûáåðèòå ýòó îïöèþ ÷òîáû îñòàâèòü ñòðàíèöû áåç èçìåíåíèé. &lt;/p&gt;
+                                          &lt;p&gt;Âíèìàíèå: Âñòàâüòå &amp;lt;!--VBSEO_ARCHIVE_LINKS--&amp;gt; â øàáëîíå footer, 
+÷òîáû çàäàòü ïîçèöèþ äëÿ àðõèâíûõ ññûëîê, ïî óìîë÷àíèþ îíè áóäóò äîáàâëåíû â ñàìîì íèçó ñòðàíèöû. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>footer_arc</name>
+		<value>Àðõèâíûå ññûëêè âíèçó ñòðàíèöû</value>
+	</message>
+	<message>
+		<name>arc_opt1</name>
+		<value>Äîáàâëÿòü ññûëêè íà îñíîâíûå àðõèâíûå ðàçäåëû âíèçó ñòðàíèöû</value>
+	</message>
+	<message>
+		<name>arc_opt2</name>
+		<value>Äîáàâëÿòü ññûëêè íà ÂÑÅ àðõèâíûå ðàçäåëû âíèçó ñòðàíèöû</value>
+	</message>
+	<message>
+		<name>arc_opt3</name>
+		<value>Äîáàâëÿòü ññûëêè íà îñíîâíûå àðõèâíûå ðàçäåëû âíèçó ñòðàíèöû (òîëüêî äëÿ ãîñòåé)</value>
+	</message>
+	<message>
+		<name>arc_opt4</name>
+		<value>Äîáàâëÿòü ññûëêè íà ÂÑÅ àðõèâíûå ðàçäåëû âíèçó ñòðàíèöû (òîëüêî äëÿ ãîñòåé)</value>
+	</message>
+	<message>
+		<name>arc_opt0</name>
+		<value>ÍÅ äîáàâëÿòü ññûëêè íà àðõèâíûå ðàçäåëû</value>
+	</message>
+	<message>
+		<name>as_anchors</name>
+		<value>Êàê ÿêîðè</value>
+	</message>
+	<message>
+		<name>avail_pro_only</name>
+		<value>&lt;b&gt;Äîñòóïíî òîëüêî â âåðñèè vBSEO Pro&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>addttl_black_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&quot;×åðíûé ñïèñîê&quot; äîìåíîâ äëÿ äîáàâëåíèÿ çàãîëîâêîâ&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Ââåäèòå ñïèñîê äîìåíîâ, äëÿ êîòîðûõ ÍÅ áóäåò ïðèìåíÿòüñÿ îïöèÿ &quot;Äîáàâëÿòü çàãîëîâêè äëÿ âíåøíèõ ññûëîê&quot;.&lt;/p&gt;&lt;p&gt;Ïðèìåðû:&lt;br /&gt;example.com&lt;br /&gt;
+site.com&lt;br /&gt;
+abc.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Âêëþ÷èòü èñõîäÿùèå Pingbacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Âûáåðèòå &quot;Äà&quot; ÷òîáû ñëàòü èñõîäÿùèå &quot;pingbacks&quot; êîãäà â ñîîáùåíèè âêëþ÷åíû âíåøíèå ññûëêè.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_notify_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Îïîâåùåíèÿ ïî email î âõîäÿùèõ LinkBacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Âûáåðèòå &quot;Äà&quot; ÷òîáû îïîâåùàòü ó÷àñòíèêîâ òåìû, êîãäà ðåãèñòðèðóåòñÿ âõîäÿùèé LinkBack (Ping/Track/Refbacks).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>trackback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Âêëþ÷èòü Èñõîäÿùèå Trackbacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Âûáåðèòå &quot;Äà&quot; ÷òîáû âêëþ÷èòü èñõîäÿùèå &quot;trackbacks&quot; äëÿ íîâûõ òåì.&lt;/p&gt;&lt;p&gt;Âíèìàíèå: ïîëå âîäå trackback îòîáðàæàåòñÿ âî âðåìÿ ñîçäàíèÿ íîâîé òåìû (ðàñøèðåííàÿ ôîðìà).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_trackback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Âêëþ÷èòü Âõîäÿùèå Trackbacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Âûáåðèòå &quot;Äà&quot; ÷òîáû âêëþ÷èòü âõîäÿùèå trackbacks äëÿ äèñêóññèé.&lt;/p&gt;&lt;p&gt;Âíèìàíèå: Ìîäåðàöèÿ âõîäÿùèì trackback äëÿ èíäèâèäóàëüíîãî ôîðóìà ïðîèçâîäèòñÿ ÷åðåç Ïåíåëü Àäìèíèñòðàòîðà vBulletin â: &lt;em&gt;Ðàçäåëû è Ìîäåðàòîðû &amp;gt; Óïðàâëåíèå ðàçäåëàìè &amp;gt; Ðåäàêòèðîâàòü ôîðóì&lt;/em&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_refback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Âêëþ÷èòü âõîäÿùèå Refbacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Âûáåðèòå &quot;Äà&quot; ÷òîáû âêëþ÷èòü àâòîìàòè÷åñêèå îáðàòíûå ññûëêè äëÿ ññûëàþùèõñÿ ñòðàíèö.&lt;/p&gt;&lt;p&gt;Âíèìàíèå: ìîäåðèðîâàíèå âõîäÿùèõ Refback íàñòðàèâàåòñÿ äëÿ êàæäîãî ðàçäåëà â âàøåé vBulletin Admin CP&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Âêëþ÷èòü âõîäÿùèå Pingbacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Âûáåðèòå &quot;Äà&quot; ÷òîáû âêëþ÷èòü âõîäÿùèå Pingbacks äëÿ òåì ôîðóìà.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: ìîäåðèðîâàíèå âõîäÿùèõ Refback íàñòðàèâàåòñÿ äëÿ êàæäîãî ðàçäåëà â âàøåé vBulletin Admin CP&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>postbit_pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Âêëþ÷èòü èíäèêàòîð &quot;Ïîñòîÿííàÿ ññûëêà&quot; (Permalink) â ñîîáùåíèÿõ &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+&quot;Ïîñòîÿííûå ññûëêè&quot; - ýòî ññûëêè, óêàçûâàþùèå íà ñîîáùåíèå â òåìå, ïîçâîëÿþùèå èñïîëüçîâàòü èõ äëÿ âõîäÿùèõ LinkBacks.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Îïöèè: &lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Îòîáðàæàòü ïîñòîÿííóþ ññûëêó â òåëå ñîîáùåíèÿ&lt;/b&gt;
+&lt;br /&gt;
+Ññûëêà áóäåò äîáàâëåíà â òåêñòå ñîîáùåíèÿ, â îáëàñòè çàãîëîâêà.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Îòîáðàæàòü ïîñòîÿííóþ ññûëêó çà ññûëêîé showpost&lt;/b&gt;
+&lt;br /&gt;
+Ññûëêà áóäåò äîáàâëåíà ñïðàâà îò ññûëêè showpost.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Çàìåíÿòü íîìåð ñîîáùåíèÿ ïîñòîÿííîé ññûëêîé&lt;/b&gt;
+&lt;br /&gt;
+Áóäåò çàìåíÿòü èíäèâèäóàëüíûå ññûëêè showpost íà &quot;ïîñòîÿííûå ññûëêè&quot;. Âíèìàíèå: ñîîáùåíèÿ ïîñëå ýòîãî íå ìîãóò áûòü ïðîñìîòðåíû ïî îòäåëüíîñòè.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;ÍÅ äîáàâëÿòü ïîñòîÿííóþ ññûëêó&lt;/b&gt;
+&lt;br /&gt;
+Íå ðåêîìåíäóåòñÿ, åñëè LinkBacks èñïîëüçóþòñÿ íà âàøåì ôîðóìå.
+&lt;/p&gt;
+
+&lt;p&gt;* Âû ìîæåòå äîáàâèòü &amp;lt;!--PERMALINK_INFO--&amp;gt; â øàáëîí postbit (posbit_legacy) äëÿ çàäàíèÿ ïîçèöèè äëÿ &quot;ïîñòîÿííîé ññûëêè&quot;.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>vbseo_affid</name>
+		<value>&lt;p&gt;&lt;b&gt;Âàø vBSEO Affiliate ID&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;HOT!&lt;/span&gt;&lt;br /&gt;
+Çàðàáîòàéòå ñåáå îáðàòíî ñòîèìîñòü ëèöåíçèè vBSEO è áîëå òîãî! Ââåäèòå âàø vBSEO affiliate ID äëÿ òîãî ÷òîáû çàìåíÿòü ññûëêó êîïèðàéòà íà âàøó ëè÷íóþ affiliate ññûëêó.&lt;/p&gt;&lt;p&gt;Áîëüøå: &lt;a href=&quot;http://www.vbseo.com/aff/&quot; target=&quot;_blank&quot;&gt;http://www.vbseo.com/aff/&lt;/a&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>custom301</name>
+		<value>Ñîáñòâåííûå ðåäèðåêòû</value>
+	</message>
+	<message>
+		<name>custom301_def</name>
+		<value>&lt;b&gt;Çàäàéòå ñîáñòâåííûå 301 ðåäèðåêòû&lt;/b&gt;&lt;span class=&quot;beta&quot;&gt;BETA&lt;/span&gt;&lt;br&gt;
+Âû ìîæåòå çàäàòü çäåñü ñîáñòâåííûå ïðàâèëà ðåäèðåêòîâ. Ýòà îïöèÿ ìîæåò áûòü óäîáíà, åñëè âû èçìåíèëè ññûëêó êàêîãî-ëèáî äîêóìåíòà íà ñåðâåðå.</value>
+	</message>
+	<message>
+		<name>custom301_desc</name>
+		<value>Îáå ÷àñòè (ëåâàÿ è ïðàâàÿ) ÿâëÿþòñÿ ðåãóëÿðíûìè âûðàæåíèÿìè: ïåðâàÿ ÷àñòü - ýòî èñõîäíàÿ ññûëêà, òîãäà êàê âòîðàÿ ÷àñòü ÿâëÿåòñÿ ðåçóëüòèðóþùåé ññûëêîé, ñîçäàííîé èñïîëüçóÿ ñîâïàäåíèÿ èç ïåðâîé ÷àñòè. 
+&lt;p&gt;Âíèìàíèå: êîìàíäà vBSEO ÍÅ ïðåäîñòàâëÿåò &quot;îôèöèàëüíîé&quot; ïîääåðæêè ñâÿçàííîé ñ ðåãóëÿðíûìè âûðàæåíèÿìè, êîòîðûå âû çàäàåòå â ýòîé îïöèè. Ïîæàëóéñòà, èñïîëüçóéòå ýòó îïöèþ ÒÎËÜÊÎ â ñëó÷àå, åñëè âû çíàåòå, ÷òî äåëàåòå. Äëÿ äàëüíåéøåé èíôîðìàöèè îáðàòèòåñü íà ôîðóì vBSEO &lt;a href=&quot;http://www.vbseo.com&quot; target=&quot;_blank&quot;&gt;http://www.vbseo.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: ñòðîêè ìîãóò áûòü çàêîììåíòèðîâàíû äîáàâëåíèåì äâóõ ñèìâîëîâ ñëýøà â íà÷àëå ñòðîêè (//). Åñëè êàêèå-òî ñòðîêè ñîäåðæàò îøèáêè, îíè áóäóò àâòîìàòè÷åñêè çàêîììåíòèðîâàíû ïîñëå íàæàòèÿ êíîïêè 'Ñîõðàíèòü íàñòðîéêè'.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Ïðèìåðû:&lt;/b&gt;&lt;br /&gt;'article-(\d+)\.html'=&gt;'articles/entry-$1.html'&lt;br /&gt;
+'forum(\d+)\.html'=&gt;'f$1/'&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_attach_alt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíÿòü àòðèáóòû Alt äëÿ âëîæåíèé?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ â &quot;Äà&quot; ÷òîáû èçìåíèòü ïðèâÿçêó àòðèáóòà &quot;alt&quot; äëÿ âëîæåíèÿ.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attach_alt_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò àòðèáóòà Alt äëÿ âëîæåíèé&lt;/b&gt;&lt;br /&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+[thread_title]-[original_filename]&lt;br /&gt;
+[original_filename]
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>supportsystem</name>
+		<value>Ñëóæáà ïîääåðæêè</value>
+	</message>
+	<message>
+		<name>affiliates</name>
+		<value>Ôèëèàëû</value>
+	</message>
+	<message>
+		<name>contact</name>
+		<value>Êîíòàêò</value>
+	</message>
+	<message>
+		<name>forums</name>
+		<value>Ôîðóì</value>
+	</message>
+	<message>
+		<name>ping_postbit_1</name>
+		<value>Îòîáðàæàòü ïîñòîÿííóþ ññûëêó â òåëå ñîîáùåíèÿ </value>
+	</message>
+	<message>
+		<name>ping_postbit_3</name>
+		<value>Îòîáðàæàòü ïîñòîÿííóþ ññûëêó çà ññûëêîé showpost </value>
+	</message>
+	<message>
+		<name>ping_postbit_2</name>
+		<value>Çàìåíÿòü íîìåð ñîîáùåíèÿ ïîñòîÿííîé ññûëêîé </value>
+	</message>
+	<message>
+		<name>ping_postbit_0</name>
+		<value>Íå äîáàâëÿòü ïîñòîÿííóþ ññûëêó </value>
+	</message>
+	<message>
+		<name>pingback_notify_bcc_desc</name>
+		<value>Ïîñûëàòü êîïèþ îïîâåùåíèÿ î âõîäÿùåì LinkBack:</value>
+	</message>
+	<message>
+		<name>pingback_notify_bcc_desc2</name>
+		<value>(ðàçäåëÿéòå àäðåñà email ïðîáåëàìè)</value>
+	</message>
+	<message>
+		<name>pingback_service_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Îïîâåùàòü ñåðâèñû&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+vBSEO ìîæåò îïîâåùàòü âíåøíèå ñåðâèñû, êîãäà íà âàøåì ôîðóìå ïóáëèêóþòñÿ íîâûå òåìû è ñîîáùåíèÿ. Ýòè ñåðâèñû ðàáîòàþò êàê ïîèñêîâûå ñèñòåìû äëÿ &quot;áëîãîñôåðû&quot; è ïîÿâëÿþùåéñÿ &quot;ôîðóìîñôåðû&quot;.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_stopwords_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èãíîð-ëèñò êëþ÷åâûõ ñëîâ äëÿ âõîäÿùèõ LinkBack&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+LinkBack, êîòîðûé ñîäåðæèò ñëîâà èç ýòîãî ñïèñêà, áóäåò ïðîèãíîðèðîâàí (îòêëîíåí) äëÿ ìèíèìèçàöèè ÑÏÀÌà.&lt;/p&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_jump_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Óáèðàòü âûïàäàþùèé ñïèñîê ðàçäåëîâ äëÿ ãîñòåé&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Âûïàäàþùèé ñïèñîê ðàçäåëîâ ãåíåðèðóåò äîïîëíèòåëüíûé html-êîä, ÷àñòî íåðåëåâàíòíûé âàøèì ñòðàíèöàì, îñîáåííî äëÿ áîëüøèõ ôîðóìîâ ñ áîëüøèì êîëè÷åñòâîì ðàçäåëîâ. Âûêëþ÷èòå åãî äëÿ ãîñòåé (è ïîèñêîâûõ ðîáîòîâ) äëÿ óëó÷øåíèÿ êîíòåíòà äëÿ èíäåêñèðîâàíèÿ. Ýòî óâåëè÷èò ñîîòíîøåíèå content to code, ÷òî áëàãîïðèÿòíî ñêàçûâàåòñÿ íà SEO.&lt;/p&gt;
+
+&lt;p&gt;Âíèìàíèå: âûïàäàþùèé ñïèñîê ðàçäåëîâ ïîÿâëÿåòñÿ âíèçó ñòðàíèö òåì è ðàçäåëîâ. Â ïàíåëè óïðàâëåíèÿ vBulletin åñòü òàêæå îïöèÿ, ÷òîáû ïîëíîñòüþ åãî îòêëþ÷èòü.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>htmlcharset</name>
+		<value>windows-1251</value>
+	</message>
+	<message>
+		<name>lang_dir</name>
+		<value>ltr</value>
+	</message>
+	<message>
+		<name>preset_1</name>
+		<value>Èåðàðõè÷åñêèå ññûëêè html-òèïà ñ ðåëåâàíòíûì êîíòåíòîì äëÿ ôîðóìîâ è òåì (Ïî óìîë÷àíèþ)</value>
+	</message>
+	<message>
+		<name>preset_2</name>
+		<value>Èåðàðõè÷åñêèå ññûëêè ïîääèðåêòîðèè-òèïà ñ ðåëåâàíòíûì êîíòåíòîì äëÿ òåì (èñïîëüçóåòñÿ íà vbseo.com)</value>
+	</message>
+	<message>
+		<name>preset_3</name>
+		<value>Èåðàðõè÷åñêèå ññûëêè htm-òèïà ñ ðåëåâàíòíûì êîíòåíòîì äëÿ ôîðóìîâ (èñïîëüçóåòñÿ íà www.WebmasterWorld.com)</value>
+	</message>
+	<message>
+		<name>preset_4</name>
+		<value>ÍÅ-èåðàðõè÷åñêèå ññûëêè html-òèïà ñ èñïîëüçîâàíèåì èäåíòèôèêàòîðîâ (èñïîëüçóåòñÿ íà www.DaniWeb.com)</value>
+	</message>
+	<message>
+		<name>preset_5</name>
+		<value>ÍÅ-èåðàðõè÷åñêèå ññûëêè ïîääèðåêòîðèè-òèïà ñ èñïîëüçîâàíèåì èäåíòèôèêàòîðîâ (èñïîëüçóåòñÿ íà www.MustangEvolution.com)</value>
+	</message>
+	<message>
+		<name>arcorder_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èíâåðòèðîâàòü ïîðÿäîê îòîáðàæåíèÿ òåì â àðõèâå:&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt; 
+Ïî óìîë÷àíèþ, òåìû â àðõèâå (èëè êàðòå ñàéòà) îòîáðàæàþòñÿ îò ñòàðûõ ê íîâûì. Âêëþ÷èòå ýòó îïöèþ äëÿ òîãî ÷òîáû èíâåðòèðîâàòü ýòîò ïîðÿäîê (íà÷èíàÿ ñ íîâûõ, ê ñòàðûì), ò.ê. ññûëêè íà áîëåå íîâûå òåìû ôîðóìà îáû÷íî ÿâëÿþòñÿ áîëåå âàæíûì êîíòåíòîì.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_links</name>
+		<value>Óáðàòü ññûëêè íà ïîñëåäíåå ñîîáùåíèÿ äëÿ ãîñòåé</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_column</name>
+		<value>Óáðàòü êîëîíêó ïîñëåäíåãî ñîîáùåíèÿ äëÿ ãîñòåé</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_none</name>
+		<value>Ñîõðàíèòü èñõîäíîå ñîñòîÿíèå</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_desc</name>
+		<value>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Óäàëÿòü ññûëêè íà ïîñëåäíåå ñîîáùåíèå:&lt;/strong&gt;&lt;/em&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;Óáðàòü ññûëêè íà ïîñëåäíåå ñîîáùåíèÿ äëÿ ãîñòåé&lt;/strong&gt;&lt;br /&gt; 
+Ýòà îïöèÿ óáåðåò ññûëêè íà &lt;em&gt;ãëàâíîå ñòðàíèöå ôîðóìà&lt;/em&gt; è  &lt;em&gt;ñïèñêàõ òåì&lt;/em&gt; äëÿ ãîñòåé. Ýòè ññûëêè ñîäåðæàò ðåäèðåêòû (ïåðåàäðåñàöèþ), ÷òî ëó÷øå ñîäåðæàòü íà ìèíèìàëíîì óðîâíå.&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;Óáðàòü êîëîíêó ïîñëåäíåãî ñîîáùåíèÿ äëÿ ãîñòåé&lt;/strong&gt;&lt;br /&gt; 
+Âûáåðèòå ýòó îïöèþ, ÷òîáû ïîëíîñòüþ óäàëèòü êîëîíêó ïîñëåäíåãî ñîîáùåíèÿ íà ãëàâíîé ñòðàíèöå ôîðóìà äëÿ ãîñòåâûõ ïîëüçîâàòåëåé. Â äîïîëíåíèå ê óäàëåíèþ ïîñëåäíåé ññûëêè íà îòïðàâêó (îïöèÿ âûøå), ýòîò âûáîð ïðèâåäåò ê óâåëè÷åíèþ ñîäåðæàíèÿ â êîäå ñîîòíîøåíèÿ ïðè îäíîâðåìåííîì ñíèæåíèè ïîòðåáëÿåìîé ïðîïóñêíîé ñïîñîáíîñòüþ ãëàâíîé ñòðàíèöû Âàøåãî ôîðóìà. &lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;Ñîõðàíèòü èñõîäíîå ñîñòîÿíèå&lt;/strong&gt;&lt;br /&gt; 
+&lt;/p&gt; 
+&lt;p&gt;Âíèìàíèå: ýòà îïöèÿ ñîêðàùàåò ôóíêöèîíàëüíîñòü äëÿ ãîñòåâûõ ïîëüçîâàòåëåé, íî ýòî ìîæåò áûòü ðàñöåíåíî êàê ïðèåìëåìàÿ óñòóïêà â ïîëüçó SEO.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rem_member_dropdown_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;Óäàëèòü âûïàäàþùèå DHTML ìåíþ ïðîôèëåé äëÿ ãîñòåé?&lt;/strong&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt; 
+Âûáåðèòå ýòó îïöèþ, ÷òîáû óäàëèòü DHTML âñïëûâàþùåãî îêíà äëÿ ãîñòåâûõ ïîñåòèòåëåé. Ýòà îïöèÿ óáåðåò íåðåëåâàíòíûé êîíòåíò íà ñòðàíèöû ïðîñìîòðà òåì äëÿ ãîñòåé (è ïîèñêîâûõ ðîáîòîâ), óëó÷øàÿ ñîîòíîøåíèå &quot;êîíòåíò ê êîäó&quot;. &lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: ýòà îïöèÿ ñîêðàùàåò ôóíêöèîíàëüíîñòü äëÿ ãîñòåâûõ ïîëüçîâàòåëåé, íî ýòî ìîæåò áûòü ðàñöåíåíî êàê ïðèåìëåìàÿ óñòóïêà â ïîëüçó SEO.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog</name>
+		<value>Ññûëêè áëîãà</value>
+	</message>
+	<message>
+		<name>rw_blog_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíÿòü ññûëêè áëîãà?&lt;/b&gt;&lt;br /&gt; 
+Óñòàíîâèòå ýòó îïöèþ â &quot;Äà&quot; äëÿ èçìåíåíèÿ URL áëîãà.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogind_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL ïîñòîâ áëîãà&lt;/b&gt;&lt;br /&gt; 
+Âûáåðèòå ôîðìàò URL ïîñòîâ áëîãà èëè çàäàéòå ñîáñòâåííûé ôîðìàò.&lt;/p&gt; 
+&lt;p&gt;Âíèìàíèå: âû âñåãäà äîëæíû âêëþ÷àòü [blog_id] â ôîðìàòå URL ò.ê. ÷àñòî ïîñòû áóäóò èìåòü îäèíàêîâûé çàãîëîâîê. &lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/b[blog_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloguser_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL áëîãà&lt;/b&gt;&lt;br /&gt; 
+Âûáåðèòå ôîðìàò URL áëîãà èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëÿ.&lt;/p&gt;
+&lt;p&gt;ÏÐÈÌÅ×ÀÍÈÅ: Â VBulletin íå äîïóñêàåò äóáëèêàòîâ èìåí ïîëüçîâàòåëåé, ýòî íå áåçîïàñíî èñïîëüçîâàòü [user_id] ïðè èñïîëüçîâàíèè ïåðåìåííîé [user_name].&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogcat_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò ññûëîê êàòåãîðèé áëîãà&lt;/b&gt;&lt;br /&gt; Âûáåðèòå ôîðìàò ññûëîê êàòåãîðèé áëîãà èëè çàäàéòå ñîáñòâåííûé ôîðìàò èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëÿ.&lt;/p&gt;
+&lt;p&gt;ÏÐÈÌÅ×ÀÍÈÅ: Äóáëèêàò êàòåãîðèé äëÿ îäíîãî ïîëüçîâàòåëÿ ÿâëÿåòñÿ ìàëîâåðîÿòíûì ñöåíàðèåì, òàê ÷òî Âû ìîæåòå ïðîïóñòèòü ïåðåìåííóþ [category_id] äëÿ ýòîãî ïàðàìåòðà, ÷òîáû èìåòü &amp;quot;÷èñòûå URL&amp;quot;.&lt;/p&gt;		
+&lt;p&gt;Âíèìàíèå: Ïîñêîëüêó êàòåãîðèè ñâÿçàííû ñ ïîëüçîâàòåëÿìè, âû ÄÎËÆÍÛ âêëþ÷àòü èäåíòèôèêàòîð ïîëüçîâàòåëÿ, íàïðèìåð [user_id] èëè [user_name] â ôîðìàòå ññûëîê. 
+Âû ÄÎËÆÍÛ òàêæå âêëþ÷àòü ëèáî [category_id] èëè ïåðåìåííóþ [category_title] â ôîðìàòå URL.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/u[user_id]-c[category_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogglobcat_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;Îáùàÿ Êàòåãîðèÿ Áëîãà&lt;/strong&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Âûáåðèòå ôîðìàò URL äëÿ Îáùåé Êàòåãîðèè Áëîãà èëè ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.
+&lt;br /&gt;&lt;br /&gt;
+ÏÐÈÌÅ×ÀÍÈÅ: Äóáëèêàò ãëîáàëüíûõ êàòåãîðèé ÿâëÿåòñÿ ìàëîâåðîÿòíûì ñöåíàðèåì ïîñêîëüêó ýòè óñòàíîâëåíî àäìèíèñòðàòîðîì, òàê ÷òî âû ìîæåòå ïðîïóñòèòü ïåðåìåííóþ [category_id] äëÿ ýòîãî ïàðàìåòðà, ÷òîáû èìåòü &quot;÷èñòûå URL&quot;.
+
+&lt;br /&gt;&lt;br /&gt;Ïðèìåð:&lt;br /&gt;
+blogs/c[category_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ñïèñîê &quot;Ïîñëåäíèå çàïèñè áëîãà&quot;&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò ñïèñêà &quot;ïîñëåäíèå çàïèñè áëîãà&quot; 
+èëè çàäàéòå ñîáñòâåííûé ôîðìàò.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/recent-entries.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blognext_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïåðåàäðåñàöèÿ &quot;Ñëåäóþùåå ñîîáùåíèå áëîãà&quot;&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò &quot;Ñëåäóþùåå ñîîáùåíèå áëîãà&quot; èëè çàäàéòå ñîáñòâåííûé ôîðìàò. Ýòè ññûëêè â âåðõíåé ÷àñòè ñòðàíèöû çàïèñè áëîãà.&lt;/p&gt; 
+&lt;p&gt;ÏÐÈÌÅ×ÀÍÈÅ: Âû äîëæíû âñåãäà âêëþ÷àòü [blog_id] â Âàø URL ôîðìàò ïîñêîëüêó áëîãè ÷àñòî èìåþò îäèíàêîâûå íàçâàíèÿ. &lt;/p&gt;		
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/b[blog_id]-next.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogprev_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïåðåàäðåñàöèÿ &quot;Ïðåäûäóùàÿ çàïèñü â áëîãå&quot;&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò &quot;Ïðåäûäóùåå ñîîáùåíèå áëîãà&quot; èëè çàäàéòå ñîáñòâåííûé ôîðìàò. Ýòè ññûëêè â âåðõíåé ÷àñòè ñòðàíèöû çàïèñè áëîãà.&lt;/p&gt; 
+&lt;p&gt;ÏÐÈÌÅ×ÀÍÈÅ: Âû äîëæíû âñåãäà âêëþ÷àòü [blog_id] â Âàø URL ôîðìàò ïîñêîëüêó áëîãè ÷àñòî èìåþò îäèíàêîâûå íàçâàíèÿ. &lt;/p&gt;		
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/b[blog_id]-prev.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogfeed_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò &quot;RSS ëåíòà áëîãà&quot; (îáùèé)&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò &quot;ãëîáàëüíàÿ RSS ëåíòà  áëîãà&quot; èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/feed.rss&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogfeeduser_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò &quot;RSS ëåíòà áëîãà&quot; (ïîëüçîâàòåëü)&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò &quot;RSS ëåíòà ïîëüçîâàòåëüñêîãî áëîãà&quot; èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/feed[user_id].rss&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogmonth_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò &quot;Ñïèñîê áëîãîâ çà ìåñÿö&quot; (îáùèé)&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò &quot;Îáùèé ñïèñîê áëîãîâ çà ìåñÿö&quot; èëè çàäàéòå ñîáñòâåííûé ôîðìàò.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/[year]-[month].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogday_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò &quot;Ñïèñîê áëîãîâ çà äåíü&quot; (îáùèé)&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò &quot;Îáùèé ñïèñîê áëîãîâ çà äåíü&quot; èëè çàäàéòå ñîáñòâåííûé ôîðìàò.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/[year]-[month]-[day].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogatt_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò Âëîæåííûõ ôàéëîâ â áëîãàõ&lt;/b&gt;&lt;br /&gt; 
+Google è äðóãèå ïîèñêîâûå ñèñòåìû èíäåêñèðóþò èçîáðàæåíèÿ (.gif, .jpg, .png, è äð.) è äðóãèå òèïû ôàëîâ, òàêèå êàê äîêóìåíòû Word (.doc) è Adobe PDF (.pdf). Ñïåöèàëüíàÿ ïåðåìåííàÿ [original_filename] èñïîëüçóåòñÿ äëÿ ñîõðàíåíèÿ îðèãèíàëüíîãî èìåíè ôàéëà ñ åãî ðàñøèðåíèåì â URL àäðåñå.&lt;/p&gt; 
+&lt;p&gt;ÏÐÈÌÅ×ÀÍÈÅ: Ìû ðåêîìåíäóåì èñïîëüçîâàòü [attachment_id] â Âàø ôîðìàò URL, òàê êàê åñòü âåðîÿòíîñòü òîãî, ÷òî ïîëüçîâàòåëè áóäóò èñïîëüçîâàòü âëîæåíèÿ ñ 'îðèãèíàëüíûì èìåíåì ôàéëà'.&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;  
+blogs/[attachment_id]-[original_filename]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestentry_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò &quot;Ëó÷øèå ñîîáùåíèÿ áëîãà&quot;&lt;/b&gt;&lt;br /&gt;  
+Óêàæèòå URL ôîðìàò &quot;Ëó÷øèå ñîîáùåíèÿ áëîãà&quot; èëè çàäàéòå ñîáñòâåííûé ôîðìàò.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+ blogs/best-entries.html
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestblogs_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò &quot;Ëó÷øèå áëîãè&quot;&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò &quot;Ëó÷øèå áëîãè&quot; èëè çàäàéòå ñîáñòâåííûé ôîðìàò.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+  blogs/best-blogs.html&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>noneng_repl</name>
+		<value>Çàìåíÿòü &quot;íå-àíãëèéñêèå&quot; ñèìâîëû â ññûëêàõ</value>
+	</message>
+	<message>
+		<name>noneng_rem</name>
+		<value>Óäàëÿòü &quot;íå-àíãëèéñêèå&quot; ñèìâîëû èç ññûëîê</value>
+	</message>
+	<message>
+		<name>noneng_keep</name>
+		<value>Ñîõðàíÿòü &quot;íå-àíãëèéñêèå&quot; ñèìâîëû â ññûëêàõ</value>
+	</message>
+	<message>
+		<name>blogblist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò &quot;Âñå ñîîáùåíèÿ áëîãà&quot;&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò &quot;Âñå ñîîáùåíèÿ áëîãà&quot; èëè çàäàéòå ñîáñòâåííûé ôîðìàò.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/all.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogblistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò &quot;Âñå ñîîáùåíèÿ áëîãà&quot; (ìíîãîñòðàíè÷íûé)&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò &quot;Âñå ñîîáùåíèÿ áëîãà&quot; (ìíîãîñòðàíè÷íûé) èëè çàäàéòå ñîáñòâåííûé ôîðìàò.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/all-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloguday_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò &quot;Ñïèñîê áëîãîâ çà äåíü&quot; (ïîëüçîâàòåëüñêèé)&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò &quot;ïîëüçîâàòåëüñêèé ñïèñîê áëîãîâ çà äåíü&quot; äëÿ îòîáðàæåíèÿ êàæäîìó ïîëüçîâàòåëþ èëè çàäàéòå ñîáñòâåííûé ôîðìàò.&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;  
+blogs/u[user_id]-[year]-[month]-[day].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogumonth_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò &quot;Ñïèñîê áëîãîâ çà ìåñÿö&quot; (ïîëüçîâàòåëüñêèé)&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò &quot;Ïîëüçîâàòåëüñêèé ñïèñîê áëîãîâ çà ìåñÿö&quot; èëè çàäàéòå ñîáñòâåííûé ôîðìàò.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/u[user_id]-[year]-[month].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cache_opt</name>
+		<value>Îïöèè êýøèðîâàíèÿ</value>
+	</message>
+	<message>
+		<name>blogclist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò &quot;Êîììåíòàðèåâ áëîãà&quot; ñïèñîê&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò &quot;Êîììåíòàðèåâ áëîãà&quot; èëè çàäàéòå ñîáñòâåííûé ôîðìàò.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+blogs/comments.html&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogclistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò &quot;Êîììåíòàðèåâ áëîãà&quot; (ìíîãîñòðàíè÷íûé)&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò &quot;Êîììåíòàðèåâ áëîãà&quot; (ìíîãîñòðàíè÷íûé) èëè çàäàéòå ñîáñòâåííûé ôîðìàò.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+blogs/comments-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò &quot;Ïîñëåäíèå ñîîáùåíèÿ áëîãà&quot; (ìíîãîñòðàíè÷íûé)&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò &quot;Ïîñëåäíèå ñîîáùåíèÿ áëîãà&quot; (ìíîãîñòðàíè÷íûé) èëè çàäàéòå ñîáñòâåííûé ôîðìàò.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/recent-entries-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestentpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò &quot;Ëó÷øèå ñîîáùåíèÿ áëîãà&quot; (ìíîãîñòðàíè÷íûé)&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò &quot;Ëó÷øèå ñîîáùåíèÿ áëîãà&quot; (ìíîãîñòðàíè÷íûé) èëè çàäàéòå ñîáñòâåííûé ôîðìàò.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/best-entries-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestblogspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò &quot;Ëó÷øèå áëîãè&quot; (ìíîãîñòðàíè÷íûé)&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò &quot;Ëó÷øèå áëîãè&quot; (ìíîãîñòðàíè÷íûé) èëè çàäàéòå ñîáñòâåííûé ôîðìàò.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/best-blogs-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cachetype_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Òèï êýøà&lt;/b&gt; &lt;br /&gt; 
+Âûáåðèòå òèï ñèñòåìû êýøèðîâàíèÿ èç ñïèñêà. Óáåäèòåñü, ÷òî âàø ñåðâåð ïîääåðæèâàåò âûáðàííûé òèï êýøà.&lt;/p&gt; 
+&lt;p&gt; 
+&lt;em&gt;memcached&lt;/em&gt;&lt;br /&gt; 
+&lt;em&gt;APC Cache&lt;/em&gt;&lt;br /&gt; 
+&lt;em&gt;XCache&lt;/em&gt;&lt;br /&gt; 
+&lt;em&gt;eAccelerator&lt;/em&gt;&lt;br /&gt; 
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>none</name>
+		<value>Íåò</value>
+	</message>
+	<message>
+		<name>supported</name>
+		<value>&lt;b style=&quot;color:green&quot;&gt;Ïîääåðæèâàåòñÿ&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>unsupported</name>
+		<value>&lt;b style=&quot;color:red&quot;&gt;Íå ïîääåðæèâàåòñÿ&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>memcacheopt_desc</name>
+		<value>&lt;h4&gt;Ïàðàìåòðû ñîåäèíåíèÿ memcached &lt;/h4&gt; 
+&lt;p&gt;
+Çàäàéòå ïàðàìåòðû memcached:
+&lt;br /&gt;Ñïèñîê ñåðâåðîâ â ôîðìàòå 'host:port,weight'
+&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;Ïðèìåð:&lt;/b&gt;
+&lt;br /&gt;localhost:11211,5
+&lt;br /&gt;196.1.12.2:11211,2
+&lt;br /&gt;
+&lt;br /&gt;&quot;âðåìÿ æèçíè&quot; äëÿ ñîõðàíåííûõ äàííûõ
+&lt;br /&gt;Ïîñòîÿííîå ñîåäèíåíèå
+&lt;br /&gt;Òàéìàóò (â ñåêóíäàõ)
+&lt;br /&gt;Èíòåðâàë ïîâòîðà (â ñåêóíäàõ)
+&lt;br /&gt;Àâòîìàòè÷åñêîå ñæàòèå áîëüøèõ îáúåêòîâ
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mc_ttl</name>
+		<value>&quot;Âðåìÿ æèçíè&quot;</value>
+	</message>
+	<message>
+		<name>mc_retry</name>
+		<value>Èíòåðâàë ïîâòîðà</value>
+	</message>
+	<message>
+		<name>mc_compress</name>
+		<value>Ìèíèìàëüíûé ðàçìåð îáúåêòà äëÿ ñæàòèÿ</value>
+	</message>
+	<message>
+		<name>mc_hosts</name>
+		<value>Ñïèñîê ñåðâåðîâ</value>
+	</message>
+	<message>
+		<name>mc_timeout</name>
+		<value>Òàéìàóò ñîåäèíåíèÿ</value>
+	</message>
+	<message>
+		<name>mc_pers</name>
+		<value>Èñïîëüçîâàòü ïîñòîÿííîå ñîåäèíåíèå</value>
+	</message>
+	<message>
+		<name>mc_vbulletin</name>
+		<value>Íàñòðîéêè vBulletin</value>
+	</message>
+	<message>
+		<name>blogdaypage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò &quot;Ñïèñîê áëîãîâ çà äåíü&quot; (îáùèé, ìíîãîñòðàíè÷íûé)&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò &quot;îáùèé ñïèñîê áëîãîâ çà äåíü&quot; (ìíîãîñòðàíè÷íûé) èëè çàäàéòå ñîáñòâåííûé ôîðìàò.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/[year]-[month]-[day]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogmonthpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò &quot;Ñïèñîê áëîãîâ çà ìåñÿö&quot; (îáùèé, ìíîãîñòðàíè÷íûé)&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò &quot;îáùèé ñïèñîê áëîãîâ çà ìåñÿö&quot; (ìíîãîñòðàíè÷íûé) èëè çàäàéòå ñîáñòâåííûé ôîðìàò.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/[year]-[month]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_bookm_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïîêàçûâàòü èêîíêè çàêëàäîê äëÿ áëîãà?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Òå æå èêîíêè çàêëàäîê ìîãóò áûòü ïðèìåíåíû è äëÿ áëîãà. 
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Ïàðàìåòðû îòîáðàæåíèÿ èêîíîê ñîöèàëüíûõ çàêëàäîê áëîãà:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Ïîêàçûâàòü èêîíêè ÂÍÓÒÐÈ ñîîáùåíèÿ áëîãà&lt;/b&gt;
+&lt;br /&gt;
+Âûáåðèòå ýòó îïöèþ äëÿ îòîáðàæåíèÿ èêîíîê ñîöèàëüíûõ çàêëàäîê â âåðõíåé ïðàâîé ÷àñòè çàïèñè áëîãà.
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Ïîêàçûâàòü èêîíêè ÍÈÆÅ ñîîáùåíèÿ áëîãà&lt;/b&gt;
+&lt;br/&gt;
+Âûáåðèòå ýòó îïöèþ äëÿ îòîáðàæåíèÿ èêîíîê ñîöèàëüíûå çàêëàäêè ïðÿìî ïîä êàæäîé çàïèñüþ áëîãà.
+&lt;/p&gt;
+&lt;p&gt;* Âû ìîæåòå âñòàâèòü &amp;lt;!--VBSEO_BOOKMARKS--&amp;gt; â øàáëîí &quot;blog_show_entry&quot; åñëè âû õîòèòå çàäàòü äðóãîå ìåñòî äëÿ îòîáðàæåíèÿ èêîíîê. Ïî óìîë÷àíèþ, èêîíêè çàêëàäîê ïîÿâëÿþòñÿ â íèæíåì ëåâîì óãëó êàæäîé çàïèñè áëîãà.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogcatpage_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;Ôîðìàò êàòåãîðèé áëîãà (ìíîãîñòðàíè÷íûé)&lt;/strong&gt;&lt;br /&gt;
+Âûáåðèòå ôîðìàò URL Êàòåãîðèÿ áëîãà äëÿ ïîëüçîâàòåëÿ èëè ñîçäàéòå ñâîé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;ÏÐÈÌÅ×ÀÍÈÅ: Äóáëèêàò êàòåãîðèé äëÿ îäíîãî ïîëüçîâàòåëÿ ÿâëÿåòñÿ ìàëîâåðîÿòíûì ñöåíàðèåì, òàê ÷òî âû ìîæåòå ïðîïóñòèòü ïåðåìåííóþ [category_id] äëÿ ýòîãî ïàðàìåòðà, ÷òîáû èìåòü &amp;quot;÷èñòûå URL&amp;quot;.&lt;/p&gt;
+&lt;p&gt;ÏÐÈÌÅ×ÀÍÈÅ: Ïîñêîëüêó êàòåãîðèè ñâÿçàííû ñ ïîëüçîâ??ò??ëÿìè, Âû äîëæíû âêëþ÷àòü èäåíòèôèêàòîð ïîëüçîâàòåëÿ, íàïðèìåð [user_id] èëè [user_name]. Âû òàêæå ÄÎËÆÍÛ âêëþ÷àòü ëèáî ïåðåìåííóþ [category_id] èëè [category_title] â ôîðìàòå URL. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+blogs/u[user_id]-c[category_id]-page[page].html&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>blogglobcatpage_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;Ôîðìàò Îáùèå êàòåãîðèè áëîãà (ìíîãîñòðàíè÷íûé)&lt;/strong&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò îáùåé êàòåãîðèè áëîãà èëè ñîçäàéòå ñâîé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëÿ.
+&lt;br /&gt;&lt;br /&gt;ÏÐÈÌÅ×ÀÍÈÅ: Äóáëèêàò îáùèõ êàòåãîðèé ÿâëÿåòñÿ ìàëîâåðîÿòíûì ñöåíàðèåì ïîñêîëüêó ýòî óñòàíîâëåíî àäìèíèñòðàòîðîì, òàê ÷òî âû ìîæåòå ïðîïóñòèòü ïåðåìåííóþ [category_id] ïåðåìåííóþ äëÿ ýòîãî ïàðàìåòðà, ÷òîáû èìåòü &quot;÷èñòûå URL&quot;.
+&lt;br /&gt;&lt;br /&gt;
+Ïðèìåð:&lt;br /&gt;
+blogs/c[category_id]-page[page].html&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>blogbmark_topright</name>
+		<value>Ïîêàçûâàòü èêîíêè ÂÍÓÒÐÈ ñîîáùåíèÿ áëîãà</value>
+	</message>
+	<message>
+		<name>blogbmark_bottom</name>
+		<value>Ïîêàçûâàòü èêîíêè ÍÈÆÅ ñîîáùåíèÿ áëîãà</value>
+	</message>
+	<message>
+		<name>blogbmark_none</name>
+		<value>Íå ïîêàçûâàòü èêîíêè</value>
+	</message>
+	<message>
+		<name>blogdom_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Çàäàéòå ñîáñòâåííûé äîìåí äëÿ áëîãà?&lt;/b&gt; 
+&lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+&lt;/p&gt; 
+&lt;p&gt; 
+Îñòàâüòå ýòîò ïàðàìåòð ïóñòûì ÷òîáû èñïîëüçîâàòü ññûëêè ïî óìîë÷àíèþ. 
+&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>blogindpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò Ïîñòîâ áëîãà (ìíîãîñòðàíè÷íûé)&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå ôîðìàò ìíîãîñòðàíè÷íûõ URL ïîñòîâ áëîãà èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt; 
+&lt;p&gt;Âíèìàíèå: âû âñåãäà äîëæíû âêëþ÷àòü [blog_id] â ôîðìàòå URL ò.ê. ÷àñòî ïîñòû áóäóò èìåòü îäèíàêîâûé çàãîëîâîê. &lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/b[blog_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloguserpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò Áëîãà (ìíîãîñòðàíè÷íûé)&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå ôîðìàò ìíîãîñòðàíè÷íûõ URL áëîãà èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt; 
+&lt;p&gt;ÏÐÈÌÅ×ÀÍÈÅ: vBulletin íå äîïóñêàåò äóáëèêàòîâ èìåí ïîëüçîâàòåëåé, ýòî íå áåçîïàñíî èñïîëüçîâàòü [user_id] ïðè èñïîëüçîâàíèè ïåðìåííîé [user_name].&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/u[user_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogindredir_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò Êîììåíòàðèåâ áëîãà (ðåäèðåêò)&lt;/b&gt;&lt;br /&gt; 
+Óêàæèòå URL ôîðìàò ðåäèðåêòà êîììåíòàðèåâ áëîãà èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt; 
+&lt;p&gt;Ïðèìåð:&lt;br /&gt; 
+blogs/comment[comment_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_groups</name>
+		<value>URL Ãðóïï</value>
+	</message>
+	<message>
+		<name>rw_groups_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïåðåïèñàòü URL àäðåñà ãðóïï?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ â &quot;Äà&quot; äëÿ ïåðåçàïèñè URL àäðåñîâ ãðóïï.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè VB 3.7.x èëè âûøå&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groups_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò Ãðóïï&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò ãðóïï èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+groups/[group_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò Ãðóïï (ìíîãîñòðàíè÷íûé)&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò ìíîãîñòðàíè÷íûõ ññûëîê ãðóïï èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+groups/[group_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupmembers_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò Ïîëüçîâàòåëåé Ãðóïï&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò ïîëüçîâàòåëåé ãðóïï èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+groups/[group_id]-users.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupmemberspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò Ïîëüçîâàòåëåé Ãðóïï (ìíîãîñòðàíè÷íûé)&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò  ìíîãîñòðàíè÷íûõ ññûëîê ïîëüçîâàòåëåé ãðóïï èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+groups/[group_id]-users-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppic_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò Ñòðàíèö Èçîáðàæåíèé Ãðóïï&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò ñòðàíèö èçîáðàæåíèé ãðóïï èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+groups/[group_id]-pics.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppicpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò Ñòðàíèö Èçîáðàæåíèé Ãðóïï (ìíîãîñòðàíè÷íûé)&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò ìíîãîñòðàíè÷íûõ ñòðàíèö èçîáðàæåíèé ãðóïï èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+groups/[group_id]-pics-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>url_gen</name>
+		<value>Îñíîâíûå íàñòðîéêè</value>
+	</message>
+	<message>
+		<name>url_forum</name>
+		<value>URL àäðåñà Ôîðóìà</value>
+	</message>
+	<message>
+		<name>url_cms</name>
+		<value>URL àäðåñà CMS</value>
+	</message>
+	<message>
+		<name>cmsdom_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Îïðåäåëèòü äîìåí CMS?&lt;/b&gt; 
+&lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Îñòàâèòü ýòîò ïàðàìåòð ïóñòûì, ÷òîáû ñîõðàíèòü íàñòðîéêè ïî óìîë÷àíèþ.
+&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>cms_opt_description</name>
+		<value>&lt;h4&gt;Óêàæèòå Îáùèé URL ôîðìàò Âàøåé CMS &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;/h4&gt;
+&lt;p&gt;Âûáåðèòå URL ôîðìàò èç âûïàäàþùåãî ñïèñêà è íàæìèòå íà êíîïêó &quot;Óñòàíîâèòü çàðàíèå&quot;.&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>rw_cms_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïåðåïèñàòü URL àäðåñà CMS?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Óñòàíîâèòå äëÿ ýòîãî ïàðàìåòðà &quot;Äà&quot; äëÿ ïåðåçàïèñè URL àäðåñîâ CMS.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmscat_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Êàòåãîðèè CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Óêàæèòå URL ôîðìàò CMS êàòåãîðèé èëè ñîçäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 4.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+cmscat-[category_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmscatpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Êàòåãîðèè CMS (ìíîãîñòðàíè÷íûé)&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Óêàæèòå URL ôîðìàò ìíîãîñòðàíè÷íûõ CMS êàòåãîðèé èëè ñîçäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 4.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+cmscat-[category_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmssec_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ðàçäåëû CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ðàçäåëîâ CMS èëè ñîçäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 4.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+cmssection-[section_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsseclist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ñïèñîê ñòàòåé ðàçäåëà CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ñïèñêà ñòàòåé ðàçäåëà CMS èëè ñîçäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 4.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+cmssection-[section_id]-list.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsseclistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ñïèñîê ñòàòåé ðàçäåëà CMS (ìíîãîñòðàíè÷íûé)&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Óêàæèòå URL ôîðìàò ìíîãîñòðàíè÷íîãî Ñïèñêà ñòàòåé ðàçäåëà CMS èëè ñîçäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 4.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+cmssection-[section_id]-list[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsauthor_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Àâòîðû CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Óêàæèòå URL ôîðìàò Àâòîðà CMS èëè ñîçäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 4.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+cmsauth-[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsauthorpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Àâòîðû CMS (ìíîãîñòðàíè÷íûé)&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Óêàæèòå URL ôîðìàò ìíîãîñòðàíè÷íûé Àâòîðîâ CMS èëè ñîçäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 4.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+cmsauth-[user_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsentry_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ñòàòüè CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ñòàòåé CMS èëè ñîçäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 4.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+cmsentry-[entry_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsentrypage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ñòàòüè CMS (ìíîãîñòðàíè÷íûé)&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Óêàæèòå URL ôîðìàò ìíîãîñòðàíè÷íûé Ñòàòåé CMS èëè ñîçäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 4.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+cmsentry-[entry_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsentrycompage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Êîììåíòàðèè ê ñòàüÿì CMS (ìíîãîñòðàíè÷íûé)&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Óêàæèòå URL ôîðìàò ìíîãîñòðàíè÷íûé Êîìåíòàðèè ê ñòàòüÿì CMS èëè ñîçäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 4.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+cmsentry-[entry_id]-comments[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsattach_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Âëîæåíèÿ&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Óêàæèòå URL ôîðìàò CMS Âëîæåíèé èëè ñîçäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 4.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+content/[attachment_id]-[original_filename]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmshome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ãëàâíàÿ ñòðàíèöà CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ãëàâíîé ñòðàíèöû CMS èëè ñîçäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 4.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+content.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>url_blog</name>
+		<value>URL àäðåñà Áëîãà</value>
+	</message>
+	<message>
+		<name>forum_opt_description</name>
+		<value>&lt;b&gt;Âûáåðèòå Îáùèé Ôîðìàò URL àäðåñîâ Ôîðóìà&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;UPDATED!&lt;/span&gt;&lt;br /&gt;
+&lt;p&gt; Âûáåðèòå ïðåäóñòàíîâëåííûé íàáîð ôîðìàòîâ URL äëÿ ôîðóìà èç âûïàäàþùåãî ñïèñêà íèæå è íàæìèòå êíîïêó &quot;Çàãðóçèòü&quot;. Âû òàêæå ìîæåòå óñòàíîâèòü ñîáñòâåííûå ôîðìàòû URL, ðàñêðûâ ðàñøèðåííûé ñïèñîê îïöèé (Ðàñøèðåííûå íàñòðîéêè). &lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>path_opt</name>
+		<value>Ïóòü Ôîðóìà</value>
+	</message>
+	<message>
+		<name>blog_opt_description</name>
+		<value>&lt;b&gt;Âûáåðèòå Îáùèé Ôîðìàò URL àäðåñîâ Áëîãà&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;UPDATED!&lt;/span&gt;&lt;br /&gt; 
+&lt;p&gt; Âûáåðèòå ïðåäóñòàíîâëåííûé íàáîð ôîðìàòîâ URL äëÿ Áëîãà èç âûïàäàþùåãî ñïèñêà íèæå è íàæìèòå êíîïêó &quot;Çàãðóçèòü&quot;. Âû òàêæå ìîæåòå óñòàíîâèòü ñîáñòâåííûå ôîðìàòû URL, ðàñêðûâ ðàñøèðåííûé ñïèñîê îïöèé (Ðàñøèðåííûå íàñòðîéêè). &lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>memb_msg_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL äëÿ Ñîîáùåíèé Ïîñåòèòåëåé (ìíîãîñòðàíè÷íûé)&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå ìíîãîñòðàíè÷íûé ôîðìàò URL ñîîáùåíèé ïîñåòèòåëåé èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+u[user_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_friends_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL äëÿ Ñïèñêà Äðóçåé (ìíîãîñòðàíè÷íûé)&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå ìíîãîñòðàíè÷íûé ôîðìàò URL ñïèñêà äðóçåé èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+u[user_id]-friends[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_albums_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL äëÿ Ñïèñêà Àëüáîìîâ&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ñïèñêà Àëüáîìîâ èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+u[user_id]-albums.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_albumspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL äëÿ Ñïèñêà Àëüáîìîâ (ìíîãîñòðàíè÷íûé)&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå ìíîãîñòðàíè÷íûé ôîðìàò URL Ñïèñêà Àëüáîìîâ èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+u[user_id]-albums-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_album_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL äëÿ ïðîñìîòðà Àëüáîìà&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò ññûëîê ïðîñìîòðà àëüáîìà èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ vB3.7.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+u[user_id]-albums-[album_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_albumpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL äëÿ ïðîñìîòðà Àëüáîìà (ìíîãîñòðàíè÷íûé)&lt;/b&gt; &lt;br /&gt;
+Óêàæèòå ìíîãîñòðàíè÷íûé ôîðìàò URL äëÿ ïðîñìîòðà Àëüáîìà èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ vB3.7.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+u[user_id]-albums-[album_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_pic_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò ññûëîê äëÿ èçîáðàæåíèÿ â àëüáîìå&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Âûáåðèòå ôîðìàò ññûëîê èçîáðàæåíèÿ â àëüáîìå èëè çàäàéòå ñîáñòâåííûé ôîðìàò.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ vB3.7.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+u[user_id]-album[album_id]-pic[picture_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_entry</name>
+		<value>URL àäðåñà çàïèñåé â Áëîãå</value>
+	</message>
+	<message>
+		<name>rw_blogent_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíèòü URL àäðåñà çàïèñåé â Áëîãå?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ â &quot;Äà&quot; äëÿ èçìåíåíèÿ URL çàïèñåé â áëîãå.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_cat</name>
+		<value>URL àäðåñà Êàòåãîðèé Áëîãà</value>
+	</message>
+	<message>
+		<name>rw_blogcat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíÿòü URL àäðåñà êàòåãîðèé Áëîãà?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ â &quot;Äà&quot; äëÿ èçìåíåíèÿ URL êàòåãîðèé áëîãà.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_att</name>
+		<value>URL àäðåñà âëîæåíèé Áëîãîâ</value>
+	</message>
+	<message>
+		<name>rw_blogatt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíÿòü URL àäðåñà âëîæåíèé Áëîãîâ?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ â &quot;Äà&quot; äëÿ èçìåíåíèÿ URL âëîæåíèé áëîãîâ.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_feed</name>
+		<value>URL àäðåñà RSS ëåíò Áëîãîâ</value>
+	</message>
+	<message>
+		<name>rw_blogfeed_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíÿòü URL àäðåñà RSS ëåíò Áëîãîâ?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ â &quot;Äà&quot; äëÿ èçìåíåíèÿ URL RSS ëåíò áëîãîâ.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_list</name>
+		<value>Ññûëêè íà ñïèñêè áëîãîâ</value>
+	</message>
+	<message>
+		<name>rw_bloglist_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíÿòü URL àäðåñà Ñïèñêîâ  Áëîãîâ?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ â &quot;Äà&quot; äëÿ èçìåíåíèÿ URL ñïèñêîâ  áëîãîâ.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_forum</name>
+		<value>Ïîñòîÿííûå ññûëêè Ôîðóìà</value>
+	</message>
+	<message>
+		<name>permalink_profile</name>
+		<value>Ïîñòîÿííûå ññûëêè Ïðîôèëÿ Ïîëüçîâàòåëåé</value>
+	</message>
+	<message>
+		<name>permalink_blog</name>
+		<value>Ïîñòîÿííûå ññûëêè Áëîãà</value>
+	</message>
+	<message>
+		<name>permalink_cms</name>
+		<value>Ïîñòîÿííûå ññûëêè CMS</value>
+	</message>
+	<message>
+		<name>permalink_profile_desc</name>
+		<value>&lt;p&gt;&lt;b&gt; Âêëþ÷èòü èíäèêàòîð &quot;Ïîñòîÿííàÿ ññûëêà&quot; (Permalink) â ñîîáùåíèÿõ ïîñåòèòåëåé ïðîôèëÿ&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+&quot;Ïîñòîÿííûå ññûëêè&quot; - ýòî ññûëêè, óêàçûâàþùèå íà ñîîáùåíèÿ, ïîìåùåííûå ïîñåòèòåëÿìè â ïðîôèëå ïîëüçîâàòåëÿ, ïîçâîëÿþùèå ññûëàòüñÿ íåïîñðåäñòâåííî íà òî èëè èíîå ñîîáùåíèå (ÿêîðü).&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt; Permalink îïöèè: &lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt; Îòîáðàæàòü ïîñòîÿííóþ ññûëêó ïîñëå äàòû/âðåìåíè ñîîáùåíèÿ &lt;/b&gt;
+&lt;br /&gt;
+Ññûëêà áóäåò äîáàâëåíà ñïðàâà îò äàòû.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt; Çàìåíÿòü äàòó/âðåìÿ íà ïîñòîÿííóþ ññûëêó &lt;/b&gt;
+&lt;br /&gt;
+Ññûëêà áóäåò äîáàâëåíà íåïîñðåäñòâåííî ê äàòå/âðåìåíè êàæäîãî ñîîáùåíèÿ.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;b&gt; Íå äîáàâëÿòü ïîñòîÿííóþ ññûëêó â ñîîáùåíèÿõ ïîñåòèòåëåé &lt;/b&gt;
+&lt;br /&gt;
+Íå äîáàâëÿòü &quot;ïîñòîÿííûå ññûëêè&quot; â ñîîáùåíèÿõ ïîñåòèòåëåé ïðîôèëÿ.
+&lt;/p&gt;
+
+&lt;p&gt;* Âû ìîæåòå äîáàâèòü &amp;lt;!--PERMALINK_INFO--&amp;gt; â øàáëîí &lt;em&gt;memberinfo_visitormessage&lt;/em&gt; äëÿ çàäàíèÿ ïîçèöèè äëÿ &quot;Ïîñòîÿííîé Ññûëêè&quot;.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_blog_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Âêëþ÷èòü èíäèêàòîð &quot;Ïîñòîÿííàÿ ññûëêà&quot; (Permalink) â êîììåíòàðèÿõ áëîãà&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+&quot;Ïîñòîÿííûå ññûëêè&quot; - ýòî ññûëêè, óêàçûâàþùèå íà êîììåíòàðèè, ïîìåùåííûå ïîñåòèòåëÿìè â áëîãàõ, ïîçâîëÿþùèå ññûëàòüñÿ íåïîñðåäñòâåííî íà òî èëè èíîå ñîîáùåíèå (ÿêîðü).&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Permalink îïöèè: &lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt; Îòîáðàæàòü ïîñòîÿííóþ ññûëêó â âèäå íåáîëüøîé Èêîíêè ßêîðÿ â ïðàâîì íèæíåì óãëó êàæäîãî êîììåíòàðèÿ áëîãà &lt;/b&gt;
+&lt;br /&gt;
+Äîáàâèòü èêîíêó &quot;Ïîñòîÿííàÿ ññûëêà&quot; â ïðàâîì íèæíåì óãëó êàæäîãî êîììåíòàðèÿ.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt; Ïîñòîÿííàÿ ññûëêà íà äàòó êîììåíòàðèÿ &lt;/b&gt;
+&lt;br /&gt;
+Áóäóò ëè çàìåíåíû îòäåëüíûå äàòû êîììåíòàðèåâ ñ ïîñòîÿííîé ññûëêîé.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt; Íå äîáàâëÿòü ïîñòîÿííóþ ññûëêó â êîììåíòàðèè áëîãà &lt;/b&gt;
+&lt;br /&gt;
+Íå äîáàâëÿòü &quot;ïîñòîÿííûå ññûëêè&quot; â êîììåíòàðèÿõ áëîãîâ.
+&lt;/p&gt;
+
+&lt;p&gt;* Âû ìîæåòå äîáàâèòü &amp;lt;!--PERMALINK_INFO--&amp;gt; â øàáëîí &lt;em&gt;blog_comment&lt;/em&gt; äëÿ çàäàíèÿ ïîçèöèè &quot;ïîñòîÿííîé ññûëêè&quot;.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_cms_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Âêëþ÷èòü èíäèêàòîð &quot;Ïîñòîÿííàÿ ññûëêà&quot; (Permalink) â êîììåíòàðèÿõ ñòàòåé CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+&quot;Ïîñòîÿííûå ññûëêè&quot; - ýòî ññûëêè, óêàçûâàþùèå íà êîììåíòàðèè, ïîìåùåííûå ïîñåòèòåëÿìè â ñòàòüÿõ, ïîçâîëÿþùèå ññûëàòüñÿ íåïîñðåäñòâåííî íà òî èëè èíîå ñîîáùåíèå (ÿêîðü).&lt;/p&gt;
+
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 4.0.x èëè âûøå&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink îïöèè:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt; Îòîáðàæàòü ïîñòîÿííóþ ññûëêó â âèäå íåáîëüøîé Èêîíêè ßêîðÿ â ïðàâîì íèæíåì óãëó êàæäîãî êîììåíòàðèÿ ñòàòüè &lt;/b&gt;
+&lt;br /&gt;
+Äîáàâèòü èêîíêó &quot;Ïîñòîÿííàÿ ññûëêà&quot; â ïðàâîì íèæíåì óãëó êàæäîãî êîììåíòàðèÿ.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt; Ïîñòîÿííàÿ ññûëêà íà äàòó êîììåíòàðèÿ  &lt;/b&gt;
+&lt;br /&gt;
+Áóäóò ëè çàìåíåíû îòäåëüíûå äàòû êîììåíòàðèåâ ñ ïîñòîÿííîé ññûëêîé.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt; Íå äîáàâëÿòü ïîñòîÿííóþ ññûëêó â êîììåíòàðèè ñòàòüè &lt;/b&gt;
+&lt;br /&gt;
+Íå äîáàâëÿòü &quot;ïîñòîÿííûå ññûëêè&quot; â êîììåíòàðèÿõ ñòàòüè.&lt;/p&gt;
+
+&lt;p&gt;* Âû ìîæåòå äîáàâèòü &amp;lt;!--PERMALINK_INFO--&amp;gt; â øàáëîí &lt;em&gt;cms_postbit&lt;/em&gt; äëÿ çàäàíèÿ ïîçèöèè &quot;ïîñòîÿííîé ññûëêè&quot;.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pl_blog_1</name>
+		<value>Îòîáðàæàòü Èêîíêó ßêîðü ïîñòîÿííîé ññûëêè â ïðàâîì íèæíåì óãëó êîììåíòàðèÿ áëîãà</value>
+	</message>
+	<message>
+		<name>pl_blog_2</name>
+		<value>Ññûëêà íà äàòó êîììåíòàðèÿ êàê ïîñòîÿííàÿ ññûëêà (Permalink)</value>
+	</message>
+	<message>
+		<name>pl_blog_0</name>
+		<value>Íå äîáàâëÿòü èíäèêàòîð ïîñòîÿííîé ññûëêè â êîììåíòàðèè áëîãà</value>
+	</message>
+	<message>
+		<name>pl_cms_1</name>
+		<value>Îòîáðàæàòü Èêîíêó ßêîðü ïîñòîÿííîé ññûëêè â ïðàâîì íèæíåì óãëó êîììåíòàðèÿ ñòàòüè</value>
+	</message>
+	<message>
+		<name>pl_cms_2</name>
+		<value>Ññûëêà íà äàòó êîììåíòàðèÿ êàê ïîñòîÿííàÿ ññûëêà (Permalink)</value>
+	</message>
+	<message>
+		<name>pl_cms_0</name>
+		<value>Íå äîáàâëÿòü èíäèêàòîð ïîñòîÿííîé ññûëêè â êîììåíòàðèè ñòàòüè</value>
+	</message>
+	<message>
+		<name>pl_profile_0</name>
+		<value>Íå äîáàâëÿòü èíäèêàòîð ïîñòîÿííîé ññûëêè â ñîîáùåíèÿ ïîñåòèòåëåé</value>
+	</message>
+	<message>
+		<name>pl_profile_1</name>
+		<value>Îòîáðàæàòü ïîñòîÿííóþ ññûëêó ïîñëå äàòû/âðåìåíè ñîîáùåíèÿ</value>
+	</message>
+	<message>
+		<name>pl_profile_2</name>
+		<value>Ïîñòîÿííàÿ ññûëêà äàòû ñîîáùåíèÿ</value>
+	</message>
+	<message>
+		<name>permalink_groups_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Âêëþ÷èòü èíäèêàòîð &quot;Ïîñòîÿííàÿ ññûëêà&quot; (Permalink) â ñîîáùåíèÿõ ãðóïï&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+&quot;Ïîñòîÿííûå ññûëêè&quot; - ýòî ññûëêè, óêàçûâàþùèå íà ñîîáùåíèå, ïîìåùåííûå ïîñåòèòåëÿìè íà ñòðàíèöàõ ãðóïï, ïîçâîëÿþùèå ññûëàòüñÿ íåïîñðåäñòâåííî íà òî èëè èíîå ñîîáùåíèå.&lt;/p&gt;
+
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Permalink îïöèè: &lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt; Îòîáðàæàòü ïîñòîÿííóþ ññûëêó ïîñëå äàòû/âðåìåíè ñîîáùåíèÿ &lt;/b&gt;
+&lt;br /&gt; 
+Ïîñòîÿííàÿ ññûëêà áóäåò äîáàâëåíà ñïðàâà îò äàòû/âðåìåíè ñîîáùåíèÿ.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Ññûëêà äàòû ñîîáùåíèÿ êàê Permalink&lt;/b&gt;
+&lt;br /&gt; 
+Çàìåíèò ññûëêó äàòû îòäåëüíîãî ñîîáùåíèÿ íà &quot;ïîñòîÿííóþ ññûëêó&quot;.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Íå äîáàâëÿòü ïîñòîÿííóþ ññûëêó â ñîîáùåíèÿ ãðóïï&lt;/b&gt;
+&lt;br /&gt;
+Íå äîáàâëÿòü &quot;ïîñòîÿííûå ññûëêè&quot; â ñîîáùåíèÿ ãðóïï.&lt;/p&gt;
+
+&lt;p&gt;* Âû ìîæåòå äîáàâèòü &amp;lt;!--PERMALINK_INFO--&amp;gt; â øàáëîí &lt;em&gt;socialgroups_message&lt;/em&gt; äëÿ çàäàíèÿ ïîçèöèè &quot;ïîñòîÿííîé ññûëêè&quot;.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_groupspic_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Âêëþ÷èòü èíäèêàòîð &quot;Ïîñòîÿííàÿ ññûëêà&quot; (Permalink) ê èêîíêå êîììåíòàðèÿ â ãðóïïàõ&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+&quot;Ïîñòîÿííûå ññûëêè&quot; - ýòî ññûëêè, óêàçûâàþùèå íà èêîíêó êîììåíòàðèÿ, ïîìåùåííûå ïîñåòèòåëÿìè íà ñòðàíèöàõ ãðóïï, ïîçâîëÿþùèå ññûëàòüñÿ íåïîñðåäñòâåííî íà òî èëè èíîå ñîîáùåíèå.
+&lt;/p&gt;
+
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink îïöèè:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Îòîáðàæàòü ïîñòîÿííóþ ññûëêó ïîñëå äàòû/âðåìåíè ñîîáùåíèÿ&lt;/b&gt;
+&lt;br /&gt;
+Ïîñòîÿííàÿ ññûëêà áóäåò äîáàâëåíà ñïðàâà îò äàòû/âðåìåíè ñîîáùåíèÿ.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Ññûëêà äàòû ñîîáùåíèÿ êàê Permalink&lt;/b&gt;
+&lt;br /&gt;
+Çàìåíèò ññûëêó äàòû îòäåëüíîãî ñîîáùåíèÿ íà &quot;ïîñòîÿííóþ ññûëêó&quot;.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Íå äîáàâëÿòü ïîñòîÿííóþ ññûëêó ê èêîíêàì êîììåíòàðèåâ ãðóïï&lt;/b&gt;
+&lt;br /&gt;
+Íå äîáàâëÿòü &quot;ïîñòîÿííûå ññûëêè&quot; ê èêîíêàì êîììåíòàðèåâ ãðóïï. &lt;/p&gt;
+
+&lt;p&gt;* Âû ìîæåòå äîáàâèòü &amp;lt;!--PERMALINK_INFO--&amp;gt; â øàáëîí &lt;em&gt;picturecomment_message&lt;/em&gt; äëÿ çàäàíèÿ ïîçèöèè &quot;ïîñòîÿííîé ññûëêè&quot;.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_groups</name>
+		<value>Ïîñòîÿííûå ññûëêè â ãðóïïàõ</value>
+	</message>
+	<message>
+		<name>permalink_groupspic</name>
+		<value>Ïîñòîÿííûå ññûëêè ê èêîíêàì êîììåíòàðèå ãðóïïàõ</value>
+	</message>
+	<message>
+		<name>pl_groups_1</name>
+		<value>Îòîáðàæàòü ïîñòîÿííóþ ññûëêó ïîñëå äàòû/âðåìåíè ñîîáùåíèÿ</value>
+	</message>
+	<message>
+		<name>pl_groups_2</name>
+		<value>Ññûëêà äàòû/âðåìÿ êàê Permalink</value>
+	</message>
+	<message>
+		<name>pl_groups_0</name>
+		<value>Íå äîáàâëÿòü ïîñòîÿííóþ ññûëêó â ñîîáùåíèÿ ïîëüçîâàòåëåé</value>
+	</message>
+	<message>
+		<name>memb_picimg_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò äëÿ ôàéëîâ èçîáðàæåíèÿ&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò ññûëîê ôàéëîâ èçîáðàæåíèÿ èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò òîëüêî ñ âåðñèè vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+u[user_id]-pic[picture_id].[original_ext]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_picpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò ññûëîê äëÿ èçîáðàæåíèÿ (ìíîãîñòðàíè÷íûé)&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò ìíîãîñòðàíè÷íûõ ññûëîê íà èçîáðàæåíèÿ èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò òîëüêî ñ âåðñèè vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+u[user_id]-pic[picture_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_pic_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Âêëþ÷èòü èíäèêàòîð &quot;Ïîñòîÿííàÿ ññûëêà&quot; (Permalink) â Àëüáîìàõ Ïîëüçîâàòåëåé&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+		
+&quot;Ïîñòîÿííûå ññûëêè&quot; - ýòî ññûëêè, óêàçûâàþùèå íà êîììåíòàðèè, ïîìåùåííûå ïîñåòèòåëÿìè íà ñòðàíèöàõ àëüáîìîâ, ïîçâîëÿþùèå ññûëàòüñÿ íåïîñðåäñòâåííî íà òî èëè èíîå ñîîáùåíèå.&lt;/p&gt;
+
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò òîëüêî ñ âåðñèè vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Îïöèè: &lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Îòîáðàæàòü ïîñòîÿííóþ ññûëêó ïîñëå äàòû/âðåìåíè ñîîáùåíèÿ&lt;/b&gt;
+&lt;br /&gt;
+Ññûëêà áóäåò äîáàâëåíà ñïðàâà îò äàòû ñîîáùåíèÿ.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Çàìåíÿòü äàòó/âðåìÿ íà ïîñòîÿííóþ ññûëêó&lt;/b&gt;
+&lt;br /&gt;
+Ññûëêà áóäåò äîáàâëåíà íåïîñðåäñòâåííî ê äàòå/âðåìåíè ñîîáùåíèÿ.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Íå äîáàâëÿòü ïîñòîÿííóþ ññûëêó â àëüáîì ïîëüçîâàòåëÿ&lt;/b&gt;
+&lt;br /&gt;
+Íå äîáàâëÿòü &quot;ïîñòîÿííûå ññûëêè&quot; â àëüáîì ïîëüçîâàòåëÿ. &lt;/p&gt;
+
+&lt;p&gt;* Âû ìîæåòå äîáàâèòü &amp;lt;!--PERMALINK_INFO--&amp;gt; â øàáëîí &lt;em&gt;picturecomment_message&lt;/em&gt; äëÿ çàäàíèÿ ïîçèöèè &quot;ïîñòîÿííîé ññûëêè&quot;.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_album</name>
+		<value>Ïîñòîÿííûå ññûëêè â Àëüáîìàõ Ïîëüçîâàòåëåé</value>
+	</message>
+	<message>
+		<name>memb_convpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò äëÿ Ïåðåïèñêè ïîñåòèòåëåé (ìíîãîñòðàíè÷íûé)&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò ìíîãîñòðàíè÷íûõ ññûëîê íà Ïåðåïèñêó ïîñåòèòåëåé  èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+conv-[user_id]-[visitor_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_conv_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò äëÿ Ïåðåïèñêè ïîñåòèòåëåé &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ïåðåïèñêè ïîñåòèòåëåé èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+conv-[user_id]-[visitor_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>ignore_linkback_dupe_desc</name>
+		<value>&lt;p&gt; &lt;b&gt;Èãíîðèðîâàòü Linkbacks ñ ïîâòîðÿþùåãîñÿ URL ñòðàíèö?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt; 
+Âûáåðèòå &quot;Äà&quot; ÷òîáû vBSEO èãíîðèðîâàëî Linkbacks ïðèøåäøèå ñ ïîâòîðÿþùèõñÿ URL ñòðàíèö.&lt;/p&gt; 
+&lt;p&gt;
+Èñïîëüçóÿ ñïåöèàëüíûõ àëãîðèòì, vBSEO ïðîáóåò îïðåäåëèòü, ÿâëÿåòñÿ ëè ñòðàíèöà äóáëèêàòîì óæå çàðåãèñòðèðîâàííîãî ðàíåå linkback'à, ïðèøåäøåãî ñ äðóãîãî URL àäðåñà. Èñòî÷íèêîì òàêèõ ïîâòîðÿþùèõñÿ Linkbacks çà÷àñòóþ ÿâëÿþòñÿ ôîðóìû èëè äðóãèå ïëàòôîðìû ñ íåêîððåêòíîé íàâèãàöèîííîé àðõèòåêòóðîé, êîòîðàÿ îòîáðàæàåò òî æå ñîäåðæàíèå, íî ÒÎËÜÊÎ ïîä ðàçíûìè URL.&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>preset_6</name>
+		<value>Èåðàðõè÷åñêèé òèï .html URL ñ ðåëåâàíòíûì êîíòåíòîì òåì (èñïîëüçóåòñÿ íà www.vBulletinSetup.com)</value>
+	</message>
+	<message>
+		<name>grouppicture_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò äëÿ Ñòðàíèöû Èçîáðàæåíèé â ãðóïïàõ&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò ñòðàíèöû èçîáðàæåíèé â ãðóïïàõ èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+groups-[group_name]-pic[picture_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppicturepage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò äëÿ Ñòðàíèöû Èçîáðàæåíèé â ãðóïïàõ (ìíîãîñòðàíè÷íûé)&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò ìíîãîñòðàíè÷íûõ ññûëîê íà èçîáðàæåíèÿ â ãðóïïàõ èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+groups-[group_name]-pic[picture_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppictureimg_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò äëÿ Ôàéëîâ èçîáðàæåíèé â ãðóïïàõ&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ôàéëîé èçîáðàæåíèÿ â ãðóïïàõ èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+groups-[group_name]-pic[picture_id].[original_ext]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupshome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò äëÿ Ãëàâíîé ñòðàíèöû ãðóïï&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ãëàâíîé ñòðàíèöû ãðóïï èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+groups.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupsallpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&quot;Ôîðìàò Âñå Ãðóïïû&quot; ñïèñîê ìíîãîñòðàíè÷íûé&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;UPDATED!&lt;/span&gt; &lt;br /&gt;
+Óêàæèòå URL ôîðìàò ìíîãîñòðàíè÷íîãî Ñïèñêà Âñåõ Ãðóïï èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+groups-all-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupsall_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&quot;Ôîðìàò Âñå Ãðóïïû&quot; ñïèñîê&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;UPDATED!&lt;/span&gt; &lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ñïèñêà Âñåõ Ãðóïï èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+groups-all.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloghome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò Ãëàâíîé ñòðàíèöû Áëîãà&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ãëàâíîé ñòðàíèöû Áëîãà èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+blogs.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>tagshome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò Ãëàâíîé ñòðàíèöû Òýãîâ&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ãëàâíîé ñòðàíèöû òýãîâ èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+tags.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>tags_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò Òýãîâ&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò ñòðàíèöû Òýãîâ èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+tags-[tag].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>tagspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò Òýãîâ (ìíîãîñòðàíè÷íûé)&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò ìíîãîñòðàíè÷íûé ôîðìàò ññûëîê Òýãîâ èëè çàäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Âíèìàíèå: ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ vB3.7.x èëè âûøå. &lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+tags-[tag]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_tags</name>
+		<value>URL àäðåñà Òýãîâ</value>
+	</message>
+	<message>
+		<name>rw_tags_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Èçìåíÿòü URL Òýãîâ?&lt;/b&gt;&lt;br /&gt;
+Óñòàíîâèòå ýòó îïöèþ â &quot;Äà&quot; äëÿ èçìåíåíèÿ URL òýãîâ.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_hits_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Îòîáðàæàòü õèòû îò Linkbacks?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Ïîêàçàòü êîëè÷åñòâî ïîñåùåíèé êàæäîãî ñîçäàííîãî Linkback (äîïîëíèòåëüíûé ñòîëáåö áóäåò îòîáðàæàòüñÿ â òàáëèöå Linkback). Ââåäèòå îäèí èëè áîëåå ID ïîëüçîâàòåëüñêèõ ãðóïï, äëÿ êîòîðîãî ýòè äàííûå áóäóò îòîáðàæàòüñÿ.
+&lt;br /&gt;&lt;br /&gt;
+Ïîäñêàçêà: Ïî óìîë÷àíèþ VBulletin ID ïîëüçîâàòåëüñêèõ ãðóïï äëÿ Íåçàðåãèñòðèðîâàííûõ - 1, Ïîëüçîâàòåëè - 2, Àäìèíèñòðàòîð - 6 è Ìîäåðàòîðû - 7 ñîîòâåòñòâåííî.
+&lt;br /&gt;&lt;br /&gt;
+Ïðèìåð:&lt;br /&gt;
+1 2 6 7
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_hits_top</name>
+		<value>Ïîêàçàòü õèòû îò LinkBack ¹ ãðóïïû: </value>
+	</message>
+	<message>
+		<name>pingback_hits_right</name>
+		<value>(Îòäåëèòü íåñêîëüêèõ ãðóïï ïîëüçîâàòåëåé ÷åðåç ïðîáåë)</value>
+	</message>
+	<message>
+		<name>urls_blog_tag_search</name>
+		<value>Ïîèñê â Áëîãå ïî òåãàì</value>
+	</message>
+	<message>
+		<name>rw_blog_tag_search_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Ïîèñêà â Áëîãå ïî òåãàì?&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Âûáåðèòå &quot;Äà&quot; äëÿ ïåðåçàïèñè URL Òýãîâ Ïîèñêà â Áëîãå.&lt;br /&gt;&lt;br /&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vBulletin Blog 2.0.x èëè âûøå &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Òåãè Áëîãà&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò Òåãîâ Áëîãà èëè ñîçäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;br /&gt;&lt;br /&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vBulletin Blog 2.0.x èëè âûøå&lt;br /&gt;&lt;br /&gt;
+
+Ïðèìåð:&lt;br /&gt;
+blogs/tags-[tag].html
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_home_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ãëàâíàÿ ñòðàíèöà Òåãîâ Áëîãà&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ãëàâíîé ñòðàíèöû Òåãîâ Áëîãà èëè ñîçäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;br /&gt;&lt;br /&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vBulletin Blog 2.0.x èëè âûøå&lt;br /&gt;&lt;br /&gt;
+
+Ïðèìåð:&lt;br /&gt;
+blogs/tags.html
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_cst_page</name>
+		<value>URL Ïîëüçîâàòåëüñêèõ ñòðàíèö Áëîãà</value>
+	</message>
+	<message>
+		<name>rw_blog_cst_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïåðåçàïèñü Ïîëüçîâàòåëüñêèõ ñòðàíèö Áëîãà &lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Âûáåðèòå îïöèþ &quot;Äà&quot; äëÿ ïåðåçàïèñè URL Ïîëüçîâàòåëüñêèõ ñòðàíèö Áëîãà.&lt;br /&gt;&lt;br /&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vBulletin Blog 2.0.x èëè âûøå &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_cst_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïîëüçîâàòåëüñêàÿ ñòðàíèöà Áëîãà &lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ïîëüçîâàòåëüñêîé ñòðàíèöû Áëîãà.&lt;br /&gt;&lt;br /&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vBulletin Blog 2.0.x èëè âûøå &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_tags</name>
+		<value>Blog Tags URLs</value>
+	</message>
+	<message>
+		<name>rw_blog_tags_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïåðåçàïèñü URL Òåãîâ Áëîãà?&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Âûáåðèòå îïöèþ &quot;Äà&quot; äëÿ ïåðåçàïèñè URL Òåãîâ Áëîãà.&lt;br /&gt;&lt;br /&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vBulletin Blog 2.0.x èëè âûøå&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_desc_page</name>
+		<value>&lt;p&gt;&lt;b&gt;Òåãè Áëîãà (ìíîãîñòðàíè÷íûå)&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Óêàæèòå URL ôîðìàò ìíîãîñòðàíè÷íîé ññûëêè Òåãîâ Áëîãà èëè ñîçäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;br /&gt;&lt;br /&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vBulletin Blog 2.0.x èëè âûøå&lt;br /&gt;&lt;br /&gt;
+
+Ïðèìåð:&lt;br /&gt;
+blogs/tags-[tag]-[page].html
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglatestentries_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Ïîñëåäíèå çàïèñè Áëîãà&amp;quot; List&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Óêàæèòå URL ôîðìàò &amp;quot;Ïîñëåäíèå çàïèñè Áëîãà&amp;quot; èõ îòîáðàæåíèå.
+&lt;br /&gt;&lt;br /&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vBulletin Blog 2.0.x èëè âûøå&lt;br /&gt;&lt;br /&gt;
+Ïðèìåð:&lt;br /&gt;
+blogs/latest-entries.html
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglatestentriespage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Ïîñëåäíèå çàïèñè Áëîãà&amp;quot; ñïèñîê ìíîãîñòðàíè÷íûé&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Óêàæèòå URL ôîðìàò &amp;quot;Ïîñëåäíèå çàïèñè Áëîãà&amp;quot; ñïèñîê ìíîãîñòðàíè÷íûõ ññûëîê.
+&lt;br /&gt;&lt;br /&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vBulletin Blog 2.0.x èëè âûøå&lt;br /&gt;&lt;br /&gt;
+Ïðèìåð:&lt;br /&gt;
+blogs/latest-entries-[page].html
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_search_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Ïîèñêà ïî Òåãàì Áëîãà &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ïîèñêà ïî Òåãàì Áëîãà.&lt;br /&gt;&lt;br /&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vBulletin Blog 2.0.x èëè âûøå &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_user_tags_serch_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Ïîèñêà ïî Òåãàì ïîëüçîâàòåëüñêîãî Áëîãà &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ïîèñêà ïî Òåãàì ïîëüçîâàòåëüñêîãî Áëîãà.&lt;br /&gt;&lt;br /&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vBulletin Blog 2.0.x èëè âûøå &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>virt_html</name>
+		<value>Âèðòóàëüíûé HTML äèñïëåé</value>
+	</message>
+	<message>
+		<name>virt_html_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïðèìåíåíèå âèðòóàëüíîãî HTML äèñïëåÿ vB Notices&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Îïòèìèçèðóéòå ðåâàëåíòíîñòü ïåðâîãî àáàçàöà êàæäîé ñòðàíèöû, óâåëè÷üòå îòíîøåíèå Ñ2C (Êîíòåíò Â Êîäå), è óñòðàíèòü íåñîîòâåòñòâóþùèå ýëåìåíòû òåêñòà è ññûëîê, èñïîëüçóÿ vBSEO äëÿ ïðåäñòàâëåíèÿ çàìåòîê vBulletin (íà âåðõó âàøèõ ñòðàíèö) èñàîëüçóÿ Javascript.&lt;br /&gt;&lt;br /&gt;
+
+Ýòîò ìîäóëü óäàëÿåò òåêóùèå Çàìåòêè vB  èç HTML êîäà, è ïîâûøàåò ðåâàëåíòíîñòü îñòàëüíîãî ñîäåðæèìîãî ñòðàíèöû, îñòàâëÿÿ åãî âèçóàëüíî íåèçìåí¸ííûì äëÿ ïîëüçîâàòåëÿ.&lt;br /&gt;&lt;br /&gt;
+
+Äîïîëíèòåëüíî, ëþáîé øàáëîííûé êîä, ðàñïîëîæåííûé ìåæäó ñëåäóþùèìè òýãàìè áóäåò òàêæå çàìåí¸í Javascript, ïîçâîëÿÿ ãèáêîñòü çàìåíû ÷àñòåé ñòðàíèöû (íèçêîêà÷åñòâåííûìè ñîäåðæàòåëüíûìè ññûëêàìè),èñïîëüçóÿ âåðñèþ JS äëÿ ìèíèìèçàöèè SEO âîçäåéñòâèÿ.&lt;br /&gt;&lt;br /&gt;
+&amp;lt;!--VBSEO_VIRTUAL_HTML--&amp;gt;&lt;br /&gt;
+êîä çäåñü&lt;br /&gt;
+&amp;lt;!--/VBSEO_VIRTUAL_HTML--&amp;gt;
+&lt;br /&gt;
+&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>canonical_link</name>
+		<value>Êàíîíè÷åñêèå URL àäðåñà</value>
+	</message>
+	<message>
+		<name>canonical_link_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Âêëþ÷èòü Êàíîíè÷åñêèå URL àäðåñà&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;Êàíîíè÷åñêèå URL ýòî &quot;Ïðåäïî÷òèòåëüíûå&quot; äëÿ ëþáîé ñòðàíèöû URL. Ó íåêîòîðûõ ñòðàíèö åñòü áîëåå îäíîãî äîñòóïíîãî URL, ñîçäàþùåãî ïðîáëåìó ñ ñîäåðäèìûì. Google è äðóãèå ïîèñêîâèêè, èùóùèå òýã META parameter rel=&quot;canonical&quot;, è èñïîëüçóþò ýòîò URL â êà÷åñòâå èíäåêñèðóåìîãî, ò.å. ïðåäïî÷òèòåëüíîãî.&lt;br /&gt;&lt;br /&gt;
+
+vBSEO ñòðîèò êîíñåíñóñ ññûëîê íà âñåõ ñòðàíèöàõ âàøåãî ôîðóìà, ÿâëÿþùèõñÿ êàíîíè÷åñêèìè, ïîêàçûâàþùèå òîëüêî ïî îäíîìó URL íà ðåñóðñ. Ðîäíûå êàíîíè÷åñêèå URL vBSEO ïðåèìóùåñòâåííî îáåñïå÷èâàþò áîëüøóþ ýôôåêòèâíîñòü ñêàíèðîâàíèÿ, îïòèìèçèðîâàííóþ ìàêñèìàëüíûìè çíà÷åíèÿìè ññûëêè. Ýòî íå ïðåäîñòàâëÿåòñÿ ïàðàìåòðîì rel=&quot;canonical&quot; â îäèíî÷êó. Ïðîãðàìíûé óðîâåíü ññûëîê vBSEO ñîãëàñîâûâàåò ññûëêè, íåîáõîäèìûå äëÿ ýòîãî.&lt;br /&gt;&lt;br /&gt;
+
+Êàê áû òî íè áûëî, êàíîíè÷åñêèå ññûëêè Google ïîëåçíû äëÿ ðåçåðâíîãî êîïèðîâàíèÿ ññûëîê, íàïðèìåð ïîëüçîâàòåëüñêè îòñîðòèðîâàííûõ ñòðàíèö. Ýòîò óðîâåíü ðåçåðâèðîâàíèÿ ãàðàíòèðóåò, ÷òî åñëè ïîèñêîâûå äâèæêè ïðè ïåðâîé ñîðòèðîâêå, áóäóò ñîçäàâàòü ñîãëàñîâàííûå URL. Îáðàçöû ñîäåðæàò ïîëüçîâàòåëüñêè ñîðòèðîâàííûå âåðñèè îòîáðàæåíèÿ ôîðóìà, äèñêóññèé ãðóïï, ñïèñêîâ ïîëüçîâàòåëüñêèõ áëîãîâ, è òàê äàëåå.&lt;br /&gt;
+&lt;/p&gt;
+        </value>
+	</message>
+	<message>
+		<name>group_search_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïîèñê Ãðóïï &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ïîèñêà Ãðóïï.&lt;br /&gt;&lt;br /&gt; Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 3.8.x èëè âûøå&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>group_subscrb_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïîäïèñêè Ãðóïï&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ïîäïèñêè Ãðóïï.&lt;br /&gt;&lt;br /&gt; Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 3.8.x èëè âûøå&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>urls_group_category_header</name>
+		<value>Ïåðåçàïèñü Êàòåãîðèé Ãðóïï</value>
+	</message>
+	<message>
+		<name>rw_group_category_urls</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïåðåçàïèñàâàòü URL àäðåñà Êàòåãîðèé Ãðóïï?&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Âûáåðèòå îïöèþ &quot;Äà&quot; äëÿ ïåðåçàïèñè URL àäðåñîâ Êàòåãîðèé Ãðóïï.&lt;br /&gt;&lt;br /&gt; Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 3.8.x or higher&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>group_category_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Êàòåãîðèè Ãðóïï&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò Êàòåãîðèé Ãðóïï.&lt;br /&gt;&lt;br /&gt; Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 3.8.x èëè âûøå&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>group_category_list_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ñïèñîê Êàòåãîðèé Ãðóïï&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ñïèñêà Êàòåãîðèé Ãðóïï.&lt;br /&gt;&lt;br /&gt; Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 3.8.x èëè âûøå&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>group_category_list_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ñïèñîê Êàòåãîðèé Ãðóïï (ìíîãîñòðàíè÷íûé)&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò ìíîãîñòðàíè÷íîãî Ñïèñêà Êàòåãîðèé Ãðóïï.&lt;br /&gt;&lt;br /&gt; Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 3.8.x èëè âûøå&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>urls_group_discussion_header</name>
+		<value>Social Group Discussion Rewrite</value>
+	</message>
+	<message>
+		<name>group_discussion_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Äèñêóññèè Ãðóïï &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò Äèñêóññèé Ãðóïï&lt;br /&gt;&lt;br /&gt; Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 3.8.x èëè âûøå.&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>group_discussion_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Äèñêóññèè Ãðóïï (ìíîãîñòðàíè÷íûé)  &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò ìíîãîñòðàíè÷íûõ ññûëîê Äèñêóññèè Ãðóïï.&lt;br /&gt;&lt;br /&gt; Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 3.8.x èëè âûøå&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>group_discussion_message_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Îòäåëüíîå ñîîáùåíèå Äèñêóññèè Ãðóïï &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò Îòäåëüíîãî ñîîáùåíèÿ Äèñêóññèé Ãðóïï.&lt;br /&gt;&lt;br /&gt; Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 3.8.x èëè âûøå&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>rw_albums_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïåðåçàïèñûâàòü URL àäðåñà Àëüáîìîâ?&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Âûáåðèòå îïöèþ &quot;Äà&quot; äëÿ ïåðåçàïèñè URL àäðåñà ãëàâíîé ñòðàíèöû Àëüáîìîâ.&lt;br /&gt;&lt;br /&gt; Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 3.8.x èëè âûøå&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>url_albums</name>
+		<value>URL àäðåñà Àëüáîìîâ</value>
+	</message>
+	<message>
+		<name>memb_albums_home_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ãëàâíàÿ ñòðàíèöà Àëüáîìîâ&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò Ãëàâíîé ñòðàíèöû Àëüáîìîâ.&lt;br /&gt;&lt;br /&gt; Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 3.8.x èëè âûøå&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>memb_albums_home_page_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ãëàâíàÿ ñòðàíèöà Àëüáîìîâ (ìíîãîñòðàíè÷íûé)&lt;/b&gt; &lt;br /&gt;
+Óêàæèòå URL ôîðìàò ìíîãîñòðàíè÷íûõ ññûëîê Ãëàâíîé ñòðàíèöû Àëüáîìîâ.&lt;br /&gt;&lt;br /&gt; Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 3.8.x èëè âûøå&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>group_category_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Êàòåãîðèè Ãðóïï (ìíîãîñòðàíè÷íûé) &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò ìíîãîñòðàíè÷íûõ ññûëîê Êàòåãîðèé Ãðóïï.&lt;br /&gt;&lt;br /&gt; Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 3.8.x èëè âûøå&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>group_discussion_last_post_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïîñëåäíåå ñîîáùåíèå Äèñêóññèè Ãðóïï &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Óêàæèòå URL ôîðìàò ïîñëåäíåãî ñîîáùåíèÿ Äèñêóññèè Ãðóïï.&lt;br /&gt;&lt;br /&gt; Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 3.8.x èëè âûøå&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>pl_groupspic_1</name>
+		<value>Ïîêàçàòü Permalink ðÿäîì ñ ñîîáùåíèåì äàòà/âðåìÿ</value>
+	</message>
+	<message>
+		<name>pl_groupspic_2</name>
+		<value>Ññûëêà ñîîáùåíèÿ äàòû êàê Permalink</value>
+	</message>
+	<message>
+		<name>pl_groupspic_0</name>
+		<value>Íå äîáàâëÿéòå èíäèêàòîð Permalink â Èêîíêå Êîììåíòàðèåâ Ãðóïïû</value>
+	</message>
+	<message>
+		<name>segmentation_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Îòñëåæèâàíèå Ñåãìåíòàöèè Google&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;Ýòî âîçìîæíîñòü äëÿ èíòåãðàöèè Google Analytics, ïðåäîñòàâëÿåòñÿ àäìèíèñòðàòîðàì ñ âîçìîæíîñòüþ ñåãìåíòà è ïðîñìàòðà ñâîåé ñòàòèñòèêó ïî ïîëüçîâàòåëüñêèì ãðóïïàì.&lt;br /&gt;&lt;br /&gt;
+
+Èñïîëüçîâàíèå âàðèàíòà &quot;Îñíîâíàÿ Ñåãìåíòàöèÿ&quot; áóäóò îòñëåæèâàòüñÿ ïîñåòèòåëè ôîðóìà ïî ñåãìåíòàì è ðàçäåëåíû íà ãðóïïû &quot;Ãîñòü&quot; è &quot;Ïîëüçîâàòåëü&quot;. Ýòî ïîçâîëÿåò ñðàâíèòü ðàçëè÷èÿ â àêòèâíîñòè ìåæäó äâóìÿ ãðóïïàìè.&lt;br /&gt;&lt;br /&gt;
+
+Èñïîëüçîâàíèå áîëåå ðàñøèðåííîãî âàðèàíòà &quot;Ðàñøèðåííàÿ Ñåãìåíòàöèÿ&quot; Âû ñìîæåòå îòñëåæèâàòü è ñåãìåíòèðîâàòü òðàôèê êàæäîé îòäåëüíîé ãðóïïû ïîëüçîâàòåëåé äîñòóïíîé íà Âàøåì ôîðóìå. Ïðîñìîòðåòü ñòàòèñòèêó ñïåöèàëüíî äëÿ âàøèõ ãîñòåé, ïîëüçîâàòåëåé, ìîäåðàòîðîâ, êëèåíòû, è ëþáîé äðóãîé îñíîâíîé ãðóïïû ïîëüçîâàòåëåé.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>segmentation_1</name>
+		<value>Îñíîâíàÿ Ñåãìåíòàöèÿ</value>
+	</message>
+	<message>
+		<name>segmentation_2</name>
+		<value>Ðàñøèðåííàÿ Ñåãìåíòàöèÿ</value>
+	</message>
+	<message>
+		<name>segmentation_0</name>
+		<value>Íèêàêîé</value>
+	</message>
+	<message>
+		<name>vhtml_opt0</name>
+		<value>Íå ïðèìåíÿòü Âèðòóàëüíûé HTML ïðîñìîòð</value>
+	</message>
+	<message>
+		<name>vhtml_opt1</name>
+		<value>Ïðèìåíÿòü Âèðòóàëüíûé HTML ïðîñìîòð</value>
+	</message>
+	<message>
+		<name>vhtml_opt2</name>
+		<value>Ïðèìåíÿòü Âèðòóàëüíûé HTML ïðîñìîòð (Òîëüêî äëÿ ãîñòåé)</value>
+	</message>
+	<message>
+		<name>twitter_user</name>
+		<value>Âàøå èìÿ ïîëüçîâàòåëÿ â Twitter</value>
+	</message>
+	<message>
+		<name>tb_opt</name>
+		<value>Îïöèè Tweetboard</value>
+	</message>
+	<message>
+		<name>vbseo_tweetboard</name>
+		<value>&lt;p&gt;&lt;b&gt;Èíòåãðàöèÿ Tweetboard&lt;/b&gt; &lt;br /&gt;
+Òâèò-áîðä ñîçäà¸ò ìãíîâåííî ìèêðîôîðóì, çàâèñèìûé îò Twitter'a íà Âàøåì ñàéòå.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Ýòî îòëè÷íîå ðåøåíèå äëÿ ïðèâëå÷åíèÿ ÷èòàòåëåé è ñòèìóëèðîâàíèÿ èõ ó÷àñòèÿ è â òî æå âðåìÿ êàê ïðèâëå÷åíèå òðàôèêà íà Âàø ñàéò.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Âêëþ÷åíèå Tweetboard ÷åðåç vBSEO ÿâëÿåòñÿ ÷ðåçâû÷àéíî ïðîñòûì è óäîáíûì. Ïðîñòî ââåäèòå çäåñü èìÿ ïîëüçîâàòåëÿ Twitter, è vBSEO ïîçàáîòèòñÿ îáî âñ¸ì îñòàëüíîì.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Åñëè ó âàñ åù¸ íåò àêêàóíòà íà Twitter, òî âû ìîæåòå ñîçäàòü åãî &lt;a href=&quot;http://twitter.com&quot; target=&quot;_blank&quot;&gt;çäåñü&lt;/a&gt;.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Ïîäðîáíåå: &lt;a href=&quot;http://tweetboard.com&quot; target=&quot;_blank&quot;&gt;http://tweetboard.com&lt;/a&gt;
+&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>forum_feeds_url</name>
+		<value>URL RSS ëåíò Ôîðóìà</value>
+	</message>
+	<message>
+		<name>rw_forum_feeds_url_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ïåðåçàïèñàòü URL RSS ëåíòó Ôîðóìà?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Âûáåðèòå îïöèþ &quot;Äà&quot; äëÿ ïåðåçàïèñè URL RSS ëåíòû ôîðóìà.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_feeds_url_general</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Îáùåé RSS ëåíòû Ôîðóìà&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Óêàæèòå URL ôîðìàò îáùåé RSS ëåíòû ôîðóìà èëè ñîçäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 4.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+rss.xml&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_feeds_url_forum</name>
+		<value>&lt;p&gt;&lt;b&gt;Ôîðìàò URL RSS ëåíòû ôîðóìà&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Óêàæèòå URL ôîðìàò RSS ëåíòû ôîðóìà èëè ñîçäàéòå ñîáñòâåííûé ôîðìàò, èñïîëüçóÿ ñîîòâåòñòâóþùèå ïîëå.&lt;/p&gt;
+&lt;p&gt;Ïðèìå÷àíèå: Ýòà îïöèÿ ðàáîòàåò ÒÎËÜÊÎ ñ âåðñèè vB 4.x èëè âûøå&lt;/p&gt;
+&lt;p&gt;Ïðèìåð:&lt;br /&gt;
+rss-{forum_title].xml&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cp_dashboard</name>
+		<value>Ïàíåëü óïðàâëåíèÿ</value>
+	</message>
+	<message>
+		<name>cp_dashboard_desc</name>
+		<value>Âàøà vBSEO ïîääåðæêà ïðîèçâîäèòåëüíîñòè ñàéòà è îñíîâíûå ïàðàìåòðû óïðàâëåíèÿ.</value>
+	</message>
+	<message>
+		<name>cp_licinfo</name>
+		<value>Èíôîðìàöèÿ î ëèöåíçèè</value>
+	</message>
+	<message>
+		<name>cp_backup_restore</name>
+		<value>Ðåçåðâíîå êîïèðîâàíèå äàííûõ &amp; Âîññòàíîâëåíèå</value>
+	</message>
+	<message>
+		<name>cp_dashboard_header</name>
+		<value>Ëèöåíçèîííûé êëþ÷ &amp; Ðåçåðâíîãî êîïèðîâàíèÿ äàííûõ</value>
+	</message>
+	<message>
+		<name>cp_validkey</name>
+		<value>Äåéñòâèòåëüíûé êëþ÷</value>
+	</message>
+	<message>
+		<name>cp_mustmatch</name>
+		<value>Ýòîò íîìåð äîëæåí ñîâïàäàòü ñ &quot;Äåéñòâèòåëüíûì êëþ÷îì&quot; óêàçàííûì âûøå</value>
+	</message>
+	<message>
+		<name>cp_invalidkey</name>
+		<value>Íåïðàâèëüíûé êëþ÷</value>
+	</message>
+	<message>
+		<name>cp_copy</name>
+		<value>êîïèÿ</value>
+	</message>
+	<message>
+		<name>cp_save</name>
+		<value>Ñîõðàíèòü</value>
+	</message>
+	<message>
+		<name>cp_gen_vbseo</name>
+		<value>Îñíîâíûå íàñòðîéêè</value>
+	</message>
+	<message>
+		<name>cp_gen_vbseo_desc</name>
+		<value>Íàñòðîéêà îñíîâíûõ vBSEO Ôóíêöèè</value>
+	</message>
+	<message>
+		<name>view_site</name>
+		<value>Ñìîòðåòü ñàéò</value>
+	</message>
+	<message>
+		<name>dashboard</name>
+		<value>Ïàíåëü óïðàâëåíèÿ</value>
+	</message>
+	<message>
+		<name>cp_login</name>
+		<value>Âõîä</value>
+	</message>
+	<message>
+		<name>cp_setpass</name>
+		<value>Îïðåäåëèòü ïàðîëü</value>
+	</message>
+	<message>
+		<name>url_opt_desc</name>
+		<value>Îïðåäåëèòü ñòðóêòóðó URL âàøåãî ñàéòà.</value>
+	</message>
+	<message>
+		<name>basic_settings</name>
+		<value>Îñíîâíûå ïàðàìåòðû</value>
+	</message>
+	<message>
+		<name>thecrrs</name>
+		<value>Ïîëüçîâàòåëüñêèå ïðàâèëà ïåðåçàïèñè</value>
+	</message>
+	<message>
+		<name>thec301</name>
+		<value>Ïîëüçîâàòåëüñêèå Ïåðåíàïðàâëåíèÿ</value>
+	</message>
+	<message>
+		<name>existing_files</name>
+		<value>Ñëåäóþùèå ôàéëû â íàñòîÿùåå âðåìÿ óñòàðåëè è äîëæíû áûòü óäàëåíû:</value>
+	</message>
+	<message>
+		<name>empty_formats</name>
+		<value>Ñëåäóþùèå URL ôîðìàòû â íàñòîÿùåå âðåìÿ ïóñòû è äîëæíû áûòü èñïðàâëåíû:</value>
+	</message>
+	<message>
+		<name>char_opt</name>
+		<value>Çàìåíà ñèìâîëîâ</value>
+	</message>
+	<message>
+		<name>utf8_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Âêëþ÷èòü ïîääåðæêó UTF-8 ?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Âûáåðèòå 'Äà' ÷òîáû èñïîëüçîâàòü íàáîð ñèìâîëîâ UTF-8 â òåêñòå ñâÿçàííûå vBSEO ôóíêöèé.&lt;br /&gt;&lt;br /&gt;Íå âêëþ÷àéòå ýòó îïöèþ, åñëè Âû íå èñïîëüçóåòå íà ôîðóìó ÿçûê â êîäèðîâêå UTF-8
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>morechars_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Âêëþ÷èòå ñïåöèàëüíûõ ñèìâîëîâ â URL ïîëüçîâàòåëåé ?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Âûáåðèòå 'Äà' ÷òîáû âêëþ÷èòü íå-àíãëèéñêèå ñèìâîëîâû â URL àäðåñàõ ïîëüçîâàòåëüñêèå ïðîôèëè.&lt;br /&gt;&lt;br /&gt;Ýòîò ïàðàìåòð òàêæå áóäåò àêòèâèðîâà äëÿ URL ïîëüçîâàòåëüñêèõ Àëüáîìîâ. Don't enable this option unless you are asked to do so by vBSEO Support Staff.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cp_charset</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Èñïîëüçîâàòü ïîëüçîâàòåëüñêèé íàáîð ñèìâîëîâ â vBSEO CP ?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+âåäèòå çäåñü ïîëüçîâàòåëüñêèå ñèìâîëû äëÿ èñïîëüçîâàíèÿ âìåñòî ñòàíäàðòíîé êîäèðîâêè.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>settings_saved</name>
+		<value>Settings Saved</value>
+	</message>
+	<message>
+		<name>settings_saved_warning</name>
+		<value>Âåðíèòåñü ñïèñêó ïðåäóïðêæäåíèé è ïðî÷èòàéòå åãî</value>
+	</message>
+	<message>
+		<name>tagfilter_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Âêëþ÷åíèå ôèëüòðà URL Òýãîâ ?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Âûáåðèòå 'Äà' äëÿ óäàëåíèÿ ñïåöèàëüíûõ ñèìâîëîâ èç URL òýãîâ.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>nourlenc_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Îòêëþ÷èòü &quot;urlencoding&quot; â URL àäðåñàõ ?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Âûáåðèòå 'Äà' äëÿ îòêëþ÷åíèÿ urlencoding (%XX) ñïåöèàëüíûìè ñèìâîëàìè âî âñåõ  URL àäðåñàõ.&lt;br /&gt;&lt;br /&gt;Íå âêëþ÷àéòå ýòó îïöèþ, ïîêà âû íå ñâÿæåòåñü ñ Òåõ. Ïîääåðæêîé vBSEO.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>char_repl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Îïðåäåëèòå ñâîþ ñîáñòâåííóþ ñèñòåìó çàìåíû ñèìâîëîâ&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Ââåäèòå çàìåíÿåìûå ñèìâîëû (1 íà ñòðîêó). Âàì íóæíî èñïîëüçîâàòü Ascii Html çíà÷åíèÿ äëÿ ñèìâîëîâ &lt;/p&gt;
+&lt;p&gt;Ïðèìåðû:&lt;br /&gt;
+'&amp;# 268;'=&gt;'c'&lt;br /&gt;
+'&amp;# 351;'=&gt;'s'&lt;br /&gt;&lt;br /&gt;
+Ñèìâîëû, çíà÷åíèå êîòîðûõ ìåíüøå 256 äîëæíû áûòü çàïèñàíû â ñëåäóþùåì ôîðìàòå ( ôàêòè÷åñêîå çíà÷åíèå ) &lt;br /&gt;
+U=&gt;'u'&lt;br /&gt;
+o=&gt;'o'&lt;br /&gt;&lt;br /&gt;
+Ïðèìå÷àíèå: ASCII ñèìâîëû èìåþò ïðîáåë ìåæäó # è çíà÷åíèåì. Âû íå äîëæíû èñïîëüçîâàòü ýòîò ïðîáåë.
+&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>vbseo_cache_var_defin</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Îïðåäåëèòå ïðåôèêñ êýøà&lt;/b&gt;  &lt;br /&gt;
+Åñëè ó Âàñ íà ñåðâåðå óñòàíîâëåíî íåñêîëüêî vBSEO, òî Âàì íóæíî óêàçàòü ïðåôèêñ êýøà äëÿ êàæäîãî ñëó÷àÿ.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>copyright_position_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Âûáåðèòå âèä vBSEO Copyright&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Ïîæàëóéñòà, âûáåðèòå âèä vBSEO Copyright äëÿ îòîáðàæåíèÿ íà Âàøèõ ñòðàíèöàõ.&lt;br /&gt;&lt;br /&gt;
+Äëÿ åãî óäàëåíèÿ, ïîñåéòèòå Ñåðâèñ Îñâîáîæäåíèÿ Îò Áðýíäà (Branding Free Service) https://www.vbseo.com/branding-removal-option.html äëÿ áîëüøåé èíôîðìàöèè.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>copyright_sel_0</name>
+		<value>Óâåäîìëåíèå îá àâòîðñêèõ ïðàâàõ ïî óìîë÷àíèþ</value>
+	</message>
+	<message>
+		<name>copyright_sel_1</name>
+		<value>Ñ ñûëêîé - Search Engine Friendly URLs by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_2</name>
+		<value>Ñ ñûëêîé - Content Relevant URLs by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_3</name>
+		<value>Ñ ñûëêîé - Search Engine Optimization by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_4</name>
+		<value>Ñ ñûëêîé - SEO by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_5</name>
+		<value>Ñ ñûëêîé - LinkBacks Enabled by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_6</name>
+		<value>Áåç ññûëêè - Search Engine Friendly URLs by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_7</name>
+		<value>Áåç ññûëêè - Content Relevant URLs by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_8</name>
+		<value>Áåç ññûëêè - Search Engine Optimization by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_9</name>
+		<value>Áåç ññûëêè - SEO by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_10</name>
+		<value>Áåç ññûëêè - LinkBacks Enabled by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>vbseo_noversion_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Ñêðûâàòü âåðñèþ vBSEO â Copyright çàïèñè&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Õîòèòå ñêðûòü âåðñèþ vBSEO êîòîðóþ Âû èñïîëüçóåòå â çàïèñè Copyright.
+&lt;/p&gt;</value>
+</message>
+<message>
+		<name>acro_auto_link_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Ñîêðàù¸ííûé ôîðìàò àâòî ññûëîê&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Îïðåäåëèòå èñïîëüçîâàíèå ôîðìàòà ñîêðàù¸ííûõ ññûëîê.
+&lt;/p&gt;</value>
+</message>
+	<message>
+		<name>loading_error</name>
+		<value>Îøèáêà çàãðóçêè.</value>
+	</message>
+	<message>
+		<name>please_wait</name>
+		<value>Ïîæàëóéñòà, ïîäîæäèòå...</value>
+	</message>
+	<message>
+		<name>invalidkey_notice</name>
+		<value>Âàø 'òåêóùèé' ëèöåíçèîííûé êëþ÷ íå ñîâïàäàåò ñ íàñòîÿùèì êëþ÷îì, ïîæàëóéñòà ëèöåíçèðóéòå ñâîþ vBSEO ïóò¸ì ñîõðàíåíèÿ íàñòîÿùåãî ëèöåíçèîííîãî êëþ÷à. </value>
+	</message>
+	<message>
+		<name>vbseo_last_modified_header_desc</name>
+		<value>&lt;b&gt;Âêëþ÷èòü çàãîëîâîê Ïîñëåäíåå èçìåíåíèå&lt;/b&gt;  &lt;span class=&quot;beta&quot;&gt;BETA!&lt;/span&gt; &lt;br /&gt;
+Æåëàåòå ëè âû âêëþ÷èòü çàãîëîâîê 'Ïîñëåäíåå èçìåíåíèå' ?</value>
+	</message>
+	<message>
+		<name>vbseo_gars_support</name>
+		<value>&lt;b&gt;Âêëþ÷èòü ïîääåðæêó GARS&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Æåëàåòå ëè âû Âêëþ÷èòü &lt;a href=&quot;http://www.thevbgeek.com/geekmart.php?do=displayproduct&amp;id=3&quot;&gt;Gars&lt;/a&gt; ïîääåðæêó íà ìíîãîâëîæåíûõ ñòðàíèöàõ Gars</value>
+	</message>
+	<message>
+		<name>vbseo_vbulletin_php_extension</name>
+		<value>&lt;b&gt;Îïðåäåëèòü VBulletin Ðàñøèðåíèå&lt;/b&gt;   &lt;br /&gt;
+Åñëè âû èñïîëüçóåòå ðàçðåøåíèå php, îòëè÷íîå îò .php, îïðåäåëèòå åãî çäåñü</value>
+	</message>
+	<message>
+		<name>vbseo_vbulletin_config_php</name>
+		<value>&lt;b&gt;Îïðåäåëèòü íàñòðîéêè vBulletin Config&lt;/b&gt;   &lt;br /&gt;
+Åñëè âû èñïîëüçóåòå ñîáñòâåííûé ôàéë config.php ïîæàëóéñòà, óêàæèòå çäåñü åãî èìÿ è ïóòü ê ôàéëó êîíôèãóðàöèè</value>
+	</message>
+	<message>
+		<name>vbseo_custom_doc_root</name>
+		<value>&lt;b&gt;Ïîëüçîâàòåëüñêèé Êîðåíü Äîêóìåíòà&lt;/b&gt;   &lt;br /&gt;
+Óêàæèòå çäåñü ïóòü ê êîðíþ äîêóìåíòà&lt;br /&gt; Ïðèìåð : /home/user/public_html</value>
+	</message>
+	<message>
+		<name>vbseo_custom_doc_relative</name>
+		<value>&lt;b&gt;Îïðåäåëèòü vBSEO ïîëüçîâàòåëüñêèé Îòíîñèòåëüíûé Êîðåíü Äîêóìåíòà&lt;/b&gt;   &lt;br /&gt;
+Îïðåäåëèòå ïîëüçîâàòåëüñêèé îòíîñèòåëüíûé ïóòü äëÿ Âàøåãî ôîðóìà. Ýòà îïöèÿ òðåáóåòñÿ, åñëè ó âàñ vBulletin óñòàíîâëåí âíóòðè ïàïêè, íàïðèìåð, forum. Åñëè ýòî òàê, òî Âû äîëæíû óêàçàòü Ïîëüçîâàòåëüñêèé Êîðåíü Äîêóìåíòà âûøå, è îïðåäåëèòü ïóòü Âàøåãî ôîðóìà çäåñü. &lt;br /&gt; Ïðèìåð : /forum/</value>
+	</message>
+	<message>
+		<name>vbseo_forum_slugs</name>
+		<value>&lt;b&gt;Îïðåäåëèòü vBSEO ôîðóìíûå Slugs&lt;/b&gt;   &lt;br /&gt;
+Îïðåäåëèòå çäåñü ñâîè ôîðóìíûå slugs</value>
+	</message>
+	<message>
+		<name>vbseo_avatar_prefix</name>
+		<value>&lt;b&gt;Îïðåäåëèòü ïðåôèêñ Àâàòàðà&lt;/b&gt;   &lt;br /&gt;
+Îïðåäåëèòü ïåðåçàïèñü ïðåôèêñà Àâàòàðà</value>
+	</message>
+	<message>
+		<name>vbseo_atttachment_prefix</name>
+		<value>&lt;b&gt;Îïðåäåëèòü ïðåôôèêñ Âëîæåíèé&lt;/b&gt;   &lt;br /&gt;
+Îïðåäåëèòü ïåðåçàïèñü ïðåôèêñà Âëîæåíèé</value>
+	</message>
+	<message>
+		<name>vbseo_icon_prefix</name>
+		<value>&lt;b&gt;Îïðåäåëèòå ïðåôèêñ Èêîíîê&lt;/b&gt;   &lt;br /&gt;
+Îïðåäåëèòü ïåðåçàïèñü ïðåôèêñà Èêîíîê</value>
+	</message>
+	<message>
+		<name>vbseo_thread_prefix_desc</name>
+		<value>&lt;b&gt;Âêëþ÷èòü ïðåôèêñ Òåìû&lt;/b&gt;   &lt;br /&gt;
+Âû õîòèòå âêëþ÷èòü ïðåôèêñ Òåì â Âàøè ïðàâèëà ïåðåçàïèñè URL</value>
+	</message>
+	<message>
+		<name>vbseo_thread_prefix_name_desc</name>
+		<value>&lt;b&gt;Âêëþ÷èòü ïðåôèêñ Èìåíè Òåìû&lt;/b&gt;   &lt;br /&gt;
+Âû õîòèòå âêëþ÷èòü ïðåôèêñ Èìåíè Òåìû â Âàøè ïðàâèëà ïåðåçàïèñè URL</value>
+	</message>
+	<message>
+		<name>vbseo_copyright_header</name>
+		<value>Îïöèè Copyright</value>
+	</message>
+	<message>
+		<name>vbseo_image_prefix_header</name>
+		<value>Îïöèè ïðåôèêñà Èçîáðàæåíèé</value>
+	</message>
+	<message>
+		<name>vbseo_advanced_custom_header</name>
+		<value>Ðàñøèðåííàÿ íàñòðîéêà ïàðàìåòðîâ</value>
+	</message>
+	<message>
+		<name>vbseo_blog_prefix_header</name>
+		<value>Ôóíêöèè ðàñøèðåííîãî Ïîñêà â Áëîãå</value>
+	</message>
+	<message>
+		<name>vbseo_blog_cat_prefix_desc</name>
+		<value>&lt;b&gt;Îïðåäåëèòü ïðåôèêñ íåîïðåäåëåííûõ êàòåãîðèé Áëîãà&lt;/b&gt;   &lt;br /&gt;
+Îïðåäåëèòü ïåðåçàïèñü ïðåôèêñà íåîïðåäåëåííûõ êàòåãîðèé Áëîãà</value>
+	</message>
+</translations>

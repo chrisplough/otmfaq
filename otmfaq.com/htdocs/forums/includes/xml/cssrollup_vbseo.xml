@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<css product="crawlability_vbseo">
+	<rollup name="main-rollup.css">
+		<template>vbseo_buttons.css</template>
+	</rollup>
+	<rollup name="showthread-rollup.css">
+		<template>vbseo_buttons_fix.css</template>
+	</rollup>
+</css>

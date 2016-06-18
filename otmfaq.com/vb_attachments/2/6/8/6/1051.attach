@@ -1,0 +1,58 @@
+2012-09-13 11:07:24.454	260437	Debug	Planning	Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ?  src:GUEST.SUNNY_MADRAS/changed:false  dest:GUEST.SUNNY_CALCUTTA/changed:false [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2012-09-13 11:07:24.52	260437	Debug	Agent	Starting agent GUEST.SUNNY_CONCATENATED_EVENT (-482306827) in response to OrderReleaseModAnyChange: release=GUEST.SUNNY_OR5, dataSource=USER, beforePersist=false, children=ORDER - DATES MODIFIED (as null) [lifetime - 1]
+2012-09-13 11:07:24.537	260437	Debug	Agent	Performing action Assign: variableName=$VAR, savedQueryGid=GUEST.SUNNY_EVENT_SQ (SUNNY_CONCATENATED_EVENT) as GUEST (-482306827); was Assign: variableName=$VAR, savedQueryGid=GUEST.SUNNY_EVENT_SQ [agentUtility - 4]
+2012-09-13 11:07:24.564	260437	Debug	Agent	Complete action Assign: variableName=$VAR, savedQueryGid=GUEST.SUNNY_EVENT_SQ (SUNNY_CONCATENATED_EVENT) (-482306827) [agentUtility - 4]
+2012-09-13 11:07:24.568	260437	Debug	Agent	Publishing topic RaiseEvent: customEvent=ABC-SUNNY-EVENT, createNewProcess=false (SUNNY_CONCATENATED_EVENT) on queue agentUtility, group null [agentUtility - 4]
+2012-09-13 11:07:24.579	260437	Debug	Agent	Performing action RaiseEvent: customEvent=ABC-SUNNY-EVENT, createNewProcess=false (SUNNY_CONCATENATED_EVENT) as GUEST (-482306827); was RaiseEvent: customEvent=$VAR-SUNNY-EVENT, createNewProcess=false [agentUtility - 1]
+2012-09-13 11:07:24.585	260437	Error	Exception	Custom Event ABC-SUNNY-EVENT is not defined
+
+	at sun.reflect.GeneratedConstructorAccessor608.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at glog.util.exception.GLException.factory(GLException.java:435)
+	at glog.util.exception.GLException.factory(GLException.java:411)
+	at glog.util.exception.GLException.factory(GLException.java:407)
+	at glog.util.exception.GLException.factory(GLException.java:403)
+	at glog.server.agent.utility.RaiseEvent.getEventTopicToRaise(RaiseEvent.java:35)
+	at glog.server.agent.utility.RaiseEvent.execute(RaiseEvent.java:28)
+	at glog.server.agent.ActionWorkflow.execute(ActionWorkflow.java:49)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:64)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(WorkflowSessionServerSideEJBWrapper.java:38)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.execute(WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.java:206)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:352)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:146)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:98)
+	at glog.util.event.EventThread.run(EventThread.java:86)
+	at java.lang.Thread.run(Thread.java:619)
+ [agentUtility - 1]
+2012-09-13 11:07:24.601	260437	Debug	Agent	Agent GUEST.SUNNY_CONCATENATED_EVENT (-482306827) received error 227654/CLOSE/Process Agent:
+Custom Event ABC-SUNNY-EVENT is not defined
+
+	at sun.reflect.GeneratedConstructorAccessor608.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at glog.util.exception.GLException.factory(GLException.java:435)
+	at glog.util.exception.GLException.factory(GLException.java:411)
+	at glog.util.exception.GLException.factory(GLException.java:407)
+	at glog.util.exception.GLException.factory(GLException.java:403)
+	at glog.server.agent.utility.RaiseEvent.getEventTopicToRaise(RaiseEvent.java:35)
+	at glog.server.agent.utility.RaiseEvent.execute(RaiseEvent.java:28)
+	at glog.server.agent.ActionWorkflow.execute(ActionWorkflow.java:49)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:64)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(WorkflowSessionServerSideEJBWrapper.java:38)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.execute(WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.java:206)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:352)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:146)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:98)
+	at glog.util.event.EventThread.run(EventThread.java:86)
+	at java.lang.Thread.run(Thread.java:619)
+ [agentUtility - 1]
+2012-09-13 11:07:24.605	260437	Error	Exception	Agent GUEST.SUNNY_CONCATENATED_EVENT failed
+ [agentUtility - 1]
+2012-09-13 11:07:24.61	260437	Debug	Agent	Agent GUEST.SUNNY_CONCATENATED_EVENT (-482306827) on error completed [agentUtility - 1]
+2012-09-13 11:07:24.873	260437	Debug	Workflow	Starting workflow Simple Workflow (-483002198) in response to MessageCenterTopic: to=GUEST.ADMIN=, subject=Order SUNNY_OR5 - Modified, severity=Informational, notify=ORDER_EVENT [utility - 2]
+2012-09-13 11:07:24.874	260437	Debug	Workflow	Starting workflow Simple Workflow (-488579116) in response to MessageCenterTopic: to=GUEST.ADMIN=, subject=Order SUNNY_OR5 - Modified, severity=Informational, notify=ORDER_EVENT [utility - 3]
+2012-09-13 11:07:24.892	260437	Debug	Workflow	Completing workflow Simple Workflow (-488579116) [utility - 3]
+2012-09-13 11:07:24.893	260437	Debug	Workflow	Completing workflow Simple Workflow (-483002198) [utility - 2]

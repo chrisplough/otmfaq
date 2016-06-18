@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Transmission>
+<TransmissionHeader>
+		<UserName>xxxxxx</UserName>
+		<Password>xxxxxx</Password>
+</TransmissionHeader>
+<TransmissionBody>
+<GLogXMLElement>
+<Quote>
+<QuoteGid>
+<Gid>
+<Xid>1</Xid>
+</Gid>
+</QuoteGid>
+<TransactionCode>IU</TransactionCode>
+<QuoteHdr>
+<RequestDate>20090710070100</RequestDate>
+<IssueDate>20090721070000</IssueDate>
+<ExpireDate>20090723070000</ExpireDate>
+<OriginLocation>
+<Type>location_code</Type>
+<QuoteLocInfo/>
+</OriginLocation>
+<DestLocation>
+<Type>location_code</Type>
+<QuoteLocInfo/>
+</DestLocation>
+<IsHazardous>N</IsHazardous>
+<Perspective>B</Perspective>
+<QuoteOption>O</QuoteOption>
+<IsCustomerRatesOnly>N</IsCustomerRatesOnly>
+</QuoteHdr>
+<InvolvedParty>
+<InvolvedPartyQualifierGid>
+<Gid>
+<Xid>BILL-TO</Xid>
+</Gid>
+</InvolvedPartyQualifierGid>
+<ContactRef>
+<Contact>
+<ContactGid>
+<Gid>
+<Xid>GLOG BTA</Xid>
+</Gid>
+</ContactGid>
+<TransactionCode>NP</TransactionCode>
+<IsPrimaryContact>N</IsPrimaryContact>
+<ConsolidatedNotifyOnly>N</ConsolidatedNotifyOnly>
+<IsNotificationOn>Y</IsNotificationOn>
+</Contact>
+</ContactRef>
+<ComMethodGid>
+<Gid>
+<Xid>BY CONTACT</Xid>
+</Gid>
+</ComMethodGid>
+</InvolvedParty>
+<InvolvedParty>
+<InvolvedPartyQualifierGid>
+<Gid>
+<Xid>CONSIGNEE</Xid>
+</Gid>
+</InvolvedPartyQualifierGid>
+<ContactRef>
+<Contact>
+<ContactGid>
+<Gid>
+<Xid>GLOG BTA</Xid>
+</Gid>
+</ContactGid>
+<TransactionCode>NP</TransactionCode>
+<IsPrimaryContact>N</IsPrimaryContact>
+<ConsolidatedNotifyOnly>N</ConsolidatedNotifyOnly>
+<IsNotificationOn>Y</IsNotificationOn>
+</Contact>
+</ContactRef>
+<ComMethodGid>
+<Gid>
+<Xid>BY CONTACT</Xid>
+</Gid>
+</ComMethodGid>
+</InvolvedParty>
+<InvolvedParty>
+<InvolvedPartyQualifierGid>
+<Gid>
+<Xid>QUOTE REQUESTER</Xid>
+</Gid>
+</InvolvedPartyQualifierGid>
+<ContactRef>
+<Contact>
+<ContactGid>
+<Gid>
+<Xid>GLOG BTA</Xid>
+</Gid>
+</ContactGid>
+<TransactionCode>NP</TransactionCode>
+<IsPrimaryContact>N</IsPrimaryContact>
+<ConsolidatedNotifyOnly>N</ConsolidatedNotifyOnly>
+<IsNotificationOn>Y</IsNotificationOn>
+</Contact>
+</ContactRef>
+<ComMethodGid>
+<Gid>
+<Xid>BY CONTACT</Xid>
+</Gid>
+</ComMethodGid>
+</InvolvedParty>
+<InvolvedParty>
+<InvolvedPartyQualifierGid>
+<Gid>
+<Xid>SHIPPER</Xid>
+</Gid>
+</InvolvedPartyQualifierGid>
+<ContactRef>
+<Contact>
+<ContactGid>
+<Gid>
+<Xid>GLOG BTA</Xid>
+</Gid>
+</ContactGid>
+<TransactionCode>NP</TransactionCode>
+<IsPrimaryContact>N</IsPrimaryContact>
+<ConsolidatedNotifyOnly>N</ConsolidatedNotifyOnly>
+<IsNotificationOn>Y</IsNotificationOn>
+</Contact>
+</ContactRef>
+<ComMethodGid>
+<Gid>
+<Xid>BY CONTACT</Xid>
+</Gid>
+</ComMethodGid>
+</InvolvedParty>
+</Quote>
+</GLogXMLElement>
+</TransmissionBody>
+</Transmission>

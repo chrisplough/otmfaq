@@ -1,0 +1,51 @@
+			<div class="content-box">
+				<div class="content-box-header">
+					<h3>{lang:cache_opt}</h3>
+				</div> 
+			<div class="content-box-body">
+				{var:options}
+<div class="column-body" id="memcache_opt" style="display:{var:memcopt_visible}">
+<div class="left">
+{lang:memcacheopt_desc}
+</div>
+<div class="right">
+<dl>
+<dd>
+{lang:mc_hosts}:<br />
+<textarea name="setting[VBSEO_MEMCACHE_HOSTS]" rows="5" cols="35">{opt:VBSEO_MEMCACHE_HOSTS}</textarea>
+</dd>
+<dd>
+{lang:mc_pers}:<br>
+<input type="radio"  name="setting[VBSEO_MEMCACHE_PERS]" value="1" {var:mc_pers1}>{lang:yes}
+<input type="radio"  name="setting[VBSEO_MEMCACHE_PERS]" value="0" {var:mc_pers0}>{lang:no}
+</dd>
+<dd>
+{lang:mc_ttl}:<br>
+<input name="setting[VBSEO_MEMCACHE_TTL]" value="{opt:VBSEO_MEMCACHE_TTL}" size="15" type="text">
+</dd>
+<dd>
+{lang:mc_retry}:<br>
+<input name="setting[VBSEO_MEMCACHE_RETRY]" value="{opt:VBSEO_MEMCACHE_RETRY}" size="15">
+</dd>
+<dd>
+{lang:mc_timeout}:<br>
+<input name="setting[VBSEO_MEMCACHE_TIMEOUT]" value="{opt:VBSEO_MEMCACHE_TIMEOUT}" size="15">
+</dd>
+<dd>
+{lang:mc_compress}:<br>
+<input name="setting[VBSEO_MEMCACHE_COMPRESS]" value="{opt:VBSEO_MEMCACHE_COMPRESS}" size="15">
+</dd>
+</dl>
+</div>
+<div class="clear"/>
+</div>
+
+                    <div class="column-body footer">
+                    <span class="input-notification success png_bg save_success" style="display:none">{lang:settings_saved}</span>
+                    <input name="setting[noreload_skip]" type="hidden" />
+                          <input class="button" name="Reset" value="{lang:reset}" type="reset" />&nbsp;
+                          <input class="button" value="{lang:save_set}" name="edit" type="submit" />
+					</div>
+           </div>
+           </div>
+           

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataTemplate name="intransit_delay_operational_report" defaultpackage="REPORTOWNER.ULF_BI_PKG">
+	<properties>
+		<property name="xml_tag_case" value="upper" />
+	</properties>
+	<parameters>
+        <parameter name="P_EQUIPMENT_GROUP" dataType="character" defaultValue="1=1"/>
+		<parameter name="P_CARRIER" dataType="character" defaultValue="1=1"/>
+		<parameter name="P_GL_USER" dataType="character" defaultValue="DBA.ADMIN" />
+	</parameters>
+	<dataQuery>
+		<sqlStatement name="Q_1"><![CDATA[ SELECT A.*
+FROM(  select distinct src.location_name "SOURCE_PLANT"
+,      src.attribute1   "SOURCE_PLANT_TYPE"
+,      src.region_name    "SOURCE_PLANT_REGION"
+,      dest.location_name "RECIEVING_PLANT"
+,      dest.attribute1    "RECIEVING_PLANT_TYPE"
+,      dest.region_name   "RECIEVING_PLANT_REGION"
+,      s.shipment_gid    "SHIPMENT_NUMBER"
+,      s.start_time      "SHIPMENT_DISPATCH_DATE"
+,      round(S.loaded_distance,2) "DISTANCE"
+,      round((select end_time-start_time from shipment sp1 where sp1.shipment_gid=S.shipment_gid ),2) "ACTUAL_LEAD_DAYS"
+,      eg.equipment_group_xid "TRUCK_TYPE"
+,      round((select (sysdate-estimated_arrival) from shipment_stop stp1 
+              where  stp1.shipment_gid = stp.shipment_gid
+              and    stp1.stop_num =(select max(stop_num) from shipment_stop stp2
+                                     where  stp2.shipment_gid=stp.shipment_gid)
+             ),2) "DELAY_AS_ON_TODAY"
+,      (select distinct(bsr.description) 
+        from bs_reason_code bsr
+        ,    ie_shipmentstatus iss
+        ,    ss_status_history ssh
+        where bsr.bs_reason_code_gid = iss.status_reason_code_gid
+        and   iss.i_transaction_no =  ssh.i_transaction_no
+        and   ssh.shipment_gid     =  S.shipment_gid) "REASON"
+from   shipment s
+,      shipment_stop stp
+,      servprov c
+,      equipment_group eg
+,      shipment_status ss
+,      ( select distinct loc.location_name 
+        ,       loc.attribute1 
+        ,       rg.region_name  
+        ,       stp2.shipment_gid         
+        from   region rg 
+        ,      region_detail rd 
+        ,      location loc
+        ,      shipment_stop stp2
+        where  rg.region_gid =rd.region_gid
+        and    rd.location_gid=loc.location_gid
+        and    loc.location_gid= stp2.location_gid
+        and    stp2.stop_num=1) src
+,      (select  distinct loc.location_name 
+        ,       loc.attribute1 
+        ,       rg.region_name  
+        ,       stp3.shipment_gid 
+        from   region rg 
+        ,       region_detail rd 
+        ,       location loc
+        ,       shipment_stop stp3
+        where   rg.region_gid   =rd.region_gid
+        and     rd.location_gid =loc.location_gid
+        and     loc.location_gid= stp3.location_gid
+        and     stp3.stop_num=(select max(stop_num) from shipment_stop stp4 where stp3.location_gid = stp4.location_gid)
+        ) dest
+where  stp.shipment_gid   = S.shipment_gid
+and    ss.shipment_gid    = S.shipment_gid
+and    ss.status_type_gid = 'ULF.ENROUTE' 
+and    src.shipment_gid = S.shipment_gid
+and    dest.shipment_gid = S.shipment_gid
+/*and    ss.status_value_gid= 'ULF.ENROUTE_DELAYED'*/
+and    S.servprov_gid=C.servprov_gid
+and    S.first_equipment_group_gid = eg.equipment_group_gid
+and    &P_EQUIPMENT_GROUP1 
+and    &P_CARRIER1 
+) A
+]]>
+   </sqlStatement>
+	</dataQuery>
+	<dataTrigger name="afterParameterFormTrigger" source="REPORTOWNER.ULF_BI_PKG.AFTERPFORM" />
+	<dataStructure>
+       	<element name="P_EQUIPMENT_GROUP1" dataType="varchar2" value="REPORTOWNER.ULF_BI_PKG.P_EQUIPMENT_GROUP"/>
+		<element name="P_CARRIER1" dataType="varchar2" value="REPORTOWNER.ULF_BI_PKG.P_CARRIER"/>
+		<group name="G_FSP" dataType="varchar2" source="Q_1">
+			<element name="SOURCE_PLANT" dataType="varchar2" value="SOURCE_PLANT" />
+			<element name="SOURCE_PLANT_TYPE" dataType="varchar2" value="SOURCE_PLANT_TYPE" />
+			<element name="SOURCE_PLANT_REGION" dataType="varchar2" value="SOURCE_PLANT_REGION" />
+			<element name="RECIEVING_PLANT" dataType="varchar2" value="RECIEVING_PLANT" />
+			<element name="RECIEVING_PLANT_TYPE" dataType="varchar2" value="RECIEVING_PLANT_TYPE" />
+			<element name="RECIEVING_PLANT_REGION" dataType="varchar2" value="RECIEVING_PLANT_REGION" />
+			<element name="SHIPMENT_NUMBER" dataType="varchar2" value="SHIPMENT_NUMBER" />
+			<element name="SHIPMENT_DISPATCH_DATE" dataType="varchar2" value="SHIPMENT_DISPATCH_DATE" />
+			<element name="DISTANCE" dataType="Number" value="DISTANCE" />
+			<element name="ACTUAL_LEAD_DAYS" dataType="varchar2" value="ACTUAL_LEAD_DAYS" />
+			<element name="TRUCK_TYPE" dataType="varchar2" value="TRUCK_TYPE" />
+			<element name="DELAY_AS_ON_TODAY" dataType="varchar2" value="DELAY_AS_ON_TODAY" />
+			<element name="REASON" dataType="varchar2" value="REASON" />
+		</group>
+	</dataStructure>
+</dataTemplate>

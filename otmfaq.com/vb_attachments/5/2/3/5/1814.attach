@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+xmlns:xs="http://xmlns.oracle.com/apps/otm"
+exclude-result-prefixes="xs">
+<xsl:output omit-xml-declaration="yes" method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
+<xsl:template match="/Transmission">
+<Transmission>
+	<TransmissionHeader>
+		<UserName>EGYTRANS.ADMIN</UserName>
+		<Password>OTMEGYTRANS</Password>
+	</TransmissionHeader>
+	<TransmissionBody>
+		<GLogXMLElement>
+		<xsl:variable name="otmShipID">
+		<xsl:value-of select="TransmissionBody/GLogXMLElement/PlannedShipment/Shipment/ShipmentHeader/ShipmentGid/Gid/Xid"/>
+		</xsl:variable>
+		<xsl:variable name="otmShipDom">
+		<xsl:value-of select="TransmissionBody/GLogXMLElement/PlannedShipment/Shipment/ShipmentHeader/ShipmentGid/Gid/DomainName"/>
+		</xsl:variable>
+		
+			<ShipmentStatus>
+				<ShipmentRefnum>
+					<ShipmentRefnumQualifierGid>
+						<Gid>
+							<Xid>GLOG</Xid>
+						</Gid>
+					</ShipmentRefnumQualifierGid>
+					<ShipmentRefnumValue><xsl:value-of select="concat($otmShipDom,concat('.',$otmShipID))"/></ShipmentRefnumValue>    
+					</ShipmentRefnum>
+				<ShipmentStatusType>Shipment</ShipmentStatusType>
+				<StatusLevel>SHIPMENT</StatusLevel>
+				<StatusCodeGid>
+					<Gid>
+						<DomainName>EGYTRANS</DomainName>
+						<Xid>OSC</Xid>
+					</Gid>
+				</StatusCodeGid>
+				<TimeZoneGid>
+					<Gid>
+						<Xid>Asia/Calcutta</Xid>
+					</Gid>
+				</TimeZoneGid>
+				<!-- EventDate><xsl:value-of select="$eventTime"/></EventDate -->
+				<EventDate>20140722000000</EventDate>
+				<SSStop>
+					<SSStopSequenceNum>1</SSStopSequenceNum>
+				</SSStop>
+				<ResponsiblePartyGid>
+					<Gid>
+						<DomainName>EGYTRANS</DomainName>
+						<Xid>TMS_TRANSPORT_PLANNER</Xid>
+					</Gid>
+				</ResponsiblePartyGid>
+			</ShipmentStatus>
+		</GLogXMLElement>
+	</TransmissionBody>
+</Transmission>
+
+
+</xsl:template>
+
+</xsl:stylesheet>

@@ -1,0 +1,3 @@
+CapacityCommitment
+capacityCommitmentGid,capacityCommitmentXid,capacityGroupGid,effectiveDate,expirationDate,xLaneGid,numberOfShipments,isCountNumberOfShipments,commitmentLaneObjectType,primaryCountType,timePeriodTypeGid,isRecurring,domainName
+NEWDOMAIN.MKP_2103-5129_05302011,MKP_2103-5129_05302011,NEWDOMAIN.MKP_CAPACITYGROUP,1/1/2011,12/31/2011,NEWDOMAIN.2103-5129,62,Y,SHIPMENT,SHIPMENT,ANNUALLY,Y,NEWDOMAIN

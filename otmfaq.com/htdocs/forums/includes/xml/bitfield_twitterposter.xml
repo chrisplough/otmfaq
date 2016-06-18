@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<bitfields product="twitterposter">
+	<bitfielddefs>
+		<group name="ugp">
+			<group name="twitterposter">
+				<bitfield name="tweetthreadsby" group="twitterposter" phrase="tweetthreadsby">1</bitfield>
+				<bitfield name="cantweetmanually" group="twitterposter" phrase="cantweetmanually">2</bitfield>
+			</group>
+		</group>
+	</bitfielddefs>
+</bitfields>

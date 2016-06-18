@@ -1,0 +1,105 @@
+
+
+
+
+
+
+ATS Ledger                                          AutoInvoice Execution Report                             Date: 12-SEP-2013 13:04
+                                                                                                             Page:       1 of      3
+             Request Id: 27153995
+
+Interface Lines:                                 Interface Distributions:
+
+                   Selected:          1                             Selected:          0
+     Successfully Processed:          0               Successfully Processed:          0
+                   Rejected:          1                             Rejected:          0
+
+Interface Salesreps:                             Interface Contingencies:
+
+                   Selected:          0                             Selected:          0
+     Successfully Processed:          0               Successfully Processed:          0
+                   Rejected:          0                             Rejected:          0
+
+
+
+Transactions Created:
+
+
+    Grand Totals:
+
+                                        Number of     Number of     Number of     Number of     Number of
+     Class                           Transactions     Lines (*) Sales Credits Distributions Contingencies      Invoice Amount
+     ------------------------------ ------------- ------------- ------------- ------------- ------------- -------------------
+                                    ------------- ------------- ------------- ------------- ------------- -------------------
+                                                                                                                         0.00
+
+
+    * Number of Lines includes Tax lines
+
+
+
+
+
+
+ATS Ledger                                          AutoInvoice Execution Report                             Date: 12-SEP-2013 13:04
+                                                                                                             Page:       2 of      3
+             Request Id: 27153995
+
+
+
+
+
+
+ATS Ledger                                          AutoInvoice Execution Report                             Date: 12-SEP-2013 13:04
+                                                                                                             Page:       3 of      3
+             Request Id: 27153995
+
+
+Summary of Receipts Processed :
+
+
+
+
+
+
+ATS Ledger                                         AutoInvoice Validation Report                             Date: 12-SEP-2013 13:04
+                                                                                                             Page:      1 of       2
+Auto Invoice Request Id 27153995
+          Batch Source: OTM_01
+
+Transaction Flexfield: OTM: DBA.CB-20130913-0001.1
+
+Type                 Bill to Customer Name                    Item Description                         Currency               Amount
+-------------------- ---------------------------------------- ---------------------------------------- ----------- -----------------
+Invoice              Savvy Co                                 FREIGHT                                  SAR                  1,111.00
+
+  Errors:   1) You must supply payment terms for your non-credit transaction
+
+
+
+
+
+Summary of Transactions Rejected:
+
+           Currency            Number of      Number of      Number of
+           Code                    Lines  Sales Credits  Distributions      Invoice Currency Amount
+           -------------- -------------- -------------- --------------  ---------------------------
+           SAR                         1              0              0                     1,111.00
+
+Summary of Transactions with Errors:
+
+           Currency            Number of      Number of      Number of
+           Code                    Lines  Sales Credits  Distributions      Invoice Currency Amount
+           -------------- -------------- -------------- --------------  ---------------------------
+           SAR                         1              0              0                     1,111.00
+
+
+
+
+
+
+ATS Ledger                                          AutoInvoice Exception Report                             Date: 12-SEP-2013 13:04
+                                                                                                             Page:      2 of       2
+Auto Invoice Request Id 27153995
+          Batch Source: OTM_01
+

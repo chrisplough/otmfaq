@@ -1,0 +1,1566 @@
+INFO | 2016/03/08 19:48:06 | Starting Launched Process...
+INFO | 2016/03/08 19:48:06 | java version "1.7.0_76"
+INFO | 2016/03/08 19:48:06 | Java(TM) SE Runtime Environment (build 1.7.0_76-b13)
+INFO | 2016/03/08 19:48:06 | Java HotSpot(TM) 64-Bit Server VM (build 24.76-b04, mixed mode)
+INFO | 2016/03/08 19:48:06 | waitFor : RUNNING
+INFO | 2016/03/08 19:48:06 | timeout : 600
+INFO | 2016/03/08 19:48:06 | Argument #0 : /U01/OTM/OTM64/jdk/bin/java
+INFO | 2016/03/08 19:48:06 | Argument #1 : -Xms8192m
+INFO | 2016/03/08 19:48:06 | Argument #2 : -Xmx8192m
+INFO | 2016/03/08 19:48:06 | Argument #3 : -XX:MaxPermSize=512m
+INFO | 2016/03/08 19:48:06 | Argument #4 : -DGC3ServletUser=OTMApp
+INFO | 2016/03/08 19:48:06 | Argument #5 : -DGC3ServletGroup=OTMAppUser
+INFO | 2016/03/08 19:48:06 | Argument #6 : -DGC3ServletEncodedPassword=Q2FwZyQzMjE=
+INFO | 2016/03/08 19:48:06 | Argument #7 : -DGC3EncodedPassword=T1RNZGVtb0AzMjE=
+INFO | 2016/03/08 19:48:06 | Argument #8 : -DGuestEncodedPassword=Q2FwZyQzMjE=
+INFO | 2016/03/08 19:48:06 | Argument #9 : -Dglog.home=/U01/OTM/OTM64/glog/config
+INFO | 2016/03/08 19:48:06 | Argument #10 : -Duser.home=/U01/OTM/OTM64/glog/config
+INFO | 2016/03/08 19:48:06 | Argument #11 : -Dmode=appserver
+INFO | 2016/03/08 19:48:06 | Argument #12 : -DpropertyProtection=mask
+INFO | 2016/03/08 19:48:06 | Argument #13 : -Djava.io.tmpdir=/U01/OTM/OTM64/temp
+INFO | 2016/03/08 19:48:06 | Argument #14 : -Djava.awt.headless=true
+INFO | 2016/03/08 19:48:06 | Argument #15 : -Djava.security.auth.login.config=/U01/OTM/OTM64/glog/config/otm_jaas.config
+INFO | 2016/03/08 19:48:06 | Argument #16 : -Xss256k
+INFO | 2016/03/08 19:48:06 | Argument #17 : -verbose:gc
+INFO | 2016/03/08 19:48:06 | Argument #18 : -Xverify:none
+INFO | 2016/03/08 19:48:06 | Argument #19 : -Djava.endorsed.dirs=/usr/lib/jvm/jdk1.7.0_80/jre/lib/endorsed:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/endorsed
+INFO | 2016/03/08 19:48:06 | Argument #20 : -da
+INFO | 2016/03/08 19:48:06 | Argument #21 : -Dwls.home=/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server
+INFO | 2016/03/08 19:48:06 | Argument #22 : -Dweblogic.home=/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server
+INFO | 2016/03/08 19:48:06 | Argument #23 : -Dweblogic.management.username=system
+INFO | 2016/03/08 19:48:06 | Argument #24 : -Dweblogic.management.password=OTMdemo@321
+INFO | 2016/03/08 19:48:06 | Argument #25 : -Dweblogic.Name=gc3app-arlotmglob
+INFO | 2016/03/08 19:48:06 | Argument #26 : -Dweblogic.RootDirectory=/U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmapp
+INFO | 2016/03/08 19:48:06 | Argument #27 : -Djava.security.policy=/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/weblogic.policy
+INFO | 2016/03/08 19:48:06 | Argument #28 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2016/03/08 19:48:06 | Argument #29 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2016/03/08 19:48:06 | Argument #30 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2016/03/08 19:48:06 | Argument #31 : -Dweblogic.wsee.policy.LoadFromClassPathEnabled=true
+INFO | 2016/03/08 19:48:06 | Argument #32 : -classpath
+INFO | 2016/03/08 19:48:06 | Argument #33 : /U01/OTM/OTM64/glog/glog_resources/custom:/U01/OTM/OTM64/glog/glog_resources:/U01/OTM/OTM64/glog/config:/U01/OTM/OTM64/dash/lib/xprb.jar:/U01/OTM/OTM64/dash/lib/xprm.jar:/U01/OTM/OTM64/dash/lib/xprs.jar:/usr/lib/jvm/jdk1.7.0_80/lib/tools.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/weblogic_sp.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/weblogic.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/net.sf.antcontrib_1.1.0.0_1-0b3/lib/ant-contrib.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/modules/features/oracle.wls.common.nodemanager_2.0.0.0.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/com.oracle.cie.config-wls-online_8.1.0.0.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/common/derby/lib/derbynet.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/common/derby/lib/derbyclient.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/common/derby/lib/derby.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/xqrl.jar:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/classes:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/lib/glogserver.jar:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/lib/3rdparty/bip.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/org.dom4j_1.6.1.jar
+INFO | 2016/03/08 19:48:06 | Argument #34 : weblogic.Server
+INFO | 2016/03/08 19:48:06 | Argument #35 : start
+INFO | 2016/03/08 19:48:07 | <Mar 8, 2016 7:48:07 PM IST> <Info> <Security> <BEA-090905> <Disabling the CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true.> 
+INFO | 2016/03/08 19:48:07 | <Mar 8, 2016 7:48:07 PM IST> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG128 to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true.> 
+INFO | 2016/03/08 19:48:07 | <Mar 8, 2016 7:48:07 PM IST> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Java HotSpot(TM) 64-Bit Server VM Version 24.76-b04 from Oracle Corporation.> 
+INFO | 2016/03/08 19:48:08 | <Mar 8, 2016 7:48:08 PM IST> <Info> <Management> <BEA-141107> <Version: WebLogic Server 12.1.3.0.0  Wed May 21 18:53:34 PDT 2014 1604337 > 
+INFO | 2016/03/08 19:48:09 | <Mar 8, 2016 7:48:09 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING.> 
+INFO | 2016/03/08 19:48:09 | <Mar 8, 2016 7:48:09 PM IST> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool.> 
+INFO | 2016/03/08 19:48:09 | <Mar 8, 2016 7:48:09 PM IST> <Info> <WorkManager> <BEA-002942> <CMM memory level becomes 0. Setting standby thread pool size to 256.> 
+INFO | 2016/03/08 19:48:09 | <Mar 8, 2016 7:48:09 PM IST> <Notice> <Log Management> <BEA-170019> <The server log file /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmapp/servers/gc3app-arlotmglob/logs/gc3app-arlotmglob.log is opened. All server side log events will be written to this file.> 
+INFO | 2016/03/08 19:48:12 | <Mar 8, 2016 7:48:12 PM IST> <Notice> <Security> <BEA-090082> <Security initializing using security realm myrealm.> 
+INFO | 2016/03/08 19:48:13 | <Mar 8, 2016 7:48:13 PM IST> <Warning> <Store> <BEA-280109> <The JVM was unable to load the native wlfileio library for the store "_WLS_gc3app-arlotmglob". File and paging stores will continue to function correctly. Specifically, file stores that are configured with a transactionally safe synchronous write policy will continue to operate safely and transactionally but may open with a different write-policy. Other store types may not be able to open.> 
+INFO | 2016/03/08 19:48:14 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO | 2016/03/08 19:48:14 | SLF4J: Found binding in [jar:file:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/modules/features/weblogic.server.merged.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO | 2016/03/08 19:48:14 | SLF4J: Found binding in [jar:file:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/lib/3rdparty/ridc/slf4j-log4j12-1.6.6.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO | 2016/03/08 19:48:14 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+INFO | 2016/03/08 19:48:15 | <Mar 8, 2016 7:48:15 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STANDBY.> 
+INFO | 2016/03/08 19:48:15 | <Mar 8, 2016 7:48:15 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING.> 
+INFO | 2016/03/08 19:48:15 | Mar 08, 2016 7:48:15 PM weblogic.wsee.WseeCoreMessages logWseeServiceStarting
+INFO | 2016/03/08 19:48:15 | INFO: The Wsee Service is starting
+INFO | 2016/03/08 19:48:21 | <Mar 8, 2016 7:48:21 PM IST> <Notice> <Log Management> <BEA-170027> <The server has successfully established a connection with the Domain level Diagnostic Service.> 
+INFO | 2016/03/08 19:48:23 | <Mar 8, 2016 7:48:23 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to ADMIN.> 
+INFO | 2016/03/08 19:48:23 | <Mar 8, 2016 7:48:23 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RESUMING.> 
+INFO | 2016/03/08 19:48:23 | <Mar 8, 2016 7:48:23 PM IST> <Notice> <Security> <BEA-090171> <Loading the identity certificate and private key stored under the alias DemoIdentity from the jks keystore file /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmapp/security/DemoIdentity.jks.> 
+INFO | 2016/03/08 19:48:23 | <Mar 8, 2016 7:48:23 PM IST> <Notice> <Security> <BEA-090169> <Loading trusted certificates from the jks keystore file /U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/DemoTrust.jks.> 
+INFO | 2016/03/08 19:48:23 | <Mar 8, 2016 7:48:23 PM IST> <Notice> <Security> <BEA-090169> <Loading trusted certificates from the jks keystore file /U01/OTM/OTM64/jdk/jre/lib/security/cacerts.> 
+INFO | 2016/03/08 19:48:23 | <Mar 8, 2016 7:48:23 PM IST> <Alert> <Security> <BEA-090152> <Demo trusted CA certificate is being used in production mode: [
+INFO | 2016/03/08 19:48:23 | [
+INFO | 2016/03/08 19:48:23 |   Version: V3
+INFO | 2016/03/08 19:48:23 |   Subject: CN=CACERT, OU=FOR TESTING ONLY, O=MyOrganization, L=MyTown, ST=MyState, C=US
+INFO | 2016/03/08 19:48:23 |   Signature Algorithm: MD5withRSA, OID = 1.2.840.113549.1.1.4
+INFO | 2016/03/08 19:48:23 | 
+INFO | 2016/03/08 19:48:23 |   Key:  Sun RSA public key, 512 bits
+INFO | 2016/03/08 19:48:23 |   modulus: 9550192877869244258838480703390456015046425375252278279190673063544122510925482179963329236052146047356415957587628011282484772458983977898996276815440753
+INFO | 2016/03/08 19:48:23 |   public exponent: 65537
+INFO | 2016/03/08 19:48:23 |   Validity: [From: Fri Mar 22 01:42:27 IST 2002,
+INFO | 2016/03/08 19:48:23 |                To: Wed Mar 23 01:42:27 IST 2022]
+INFO | 2016/03/08 19:48:23 |   Issuer: CN=CACERT, OU=FOR TESTING ONLY, O=MyOrganization, L=MyTown, ST=MyState, C=US
+INFO | 2016/03/08 19:48:23 |   SerialNumber: [    33f10648 fcde0deb 4199921f d64537f4]
+INFO | 2016/03/08 19:48:23 | 
+INFO | 2016/03/08 19:48:23 | Certificate Extensions: 1
+INFO | 2016/03/08 19:48:23 | [1]: ObjectId: 2.5.29.15 Criticality=true
+INFO | 2016/03/08 19:48:23 | KeyUsage [
+INFO | 2016/03/08 19:48:23 |   Key_CertSign
+INFO | 2016/03/08 19:48:23 | ]
+INFO | 2016/03/08 19:48:23 | 
+INFO | 2016/03/08 19:48:23 | ]
+INFO | 2016/03/08 19:48:23 |   Algorithm: [MD5withRSA]
+INFO | 2016/03/08 19:48:23 |   Signature:
+INFO | 2016/03/08 19:48:23 | 0000: 9D 26 4C 29 C8 91 C3 A7   06 C3 24 6F AE B4 F8 82  .&L)......$o....
+INFO | 2016/03/08 19:48:23 | 0010: 80 4D AA CB 7C 79 46 84   81 C4 66 95 F4 1E D8 C4  .M...yF...f.....
+INFO | 2016/03/08 19:48:23 | 0020: E9 B7 D9 7C E2 23 33 A4   B7 21 E0 AA 54 2B 4A FF  .....#3..!..T+J.
+INFO | 2016/03/08 19:48:23 | 0030: CB 21 20 88 81 21 DB AC   90 54 D8 7D 79 63 23 3C  .! ..!...T..yc#<
+INFO | 2016/03/08 19:48:23 | 
+INFO | 2016/03/08 19:48:23 | ]. The system is vulnerable to security attacks, since it trusts certificates signed by the demo trusted CA.> 
+INFO | 2016/03/08 19:48:24 | [GC 2098176K->120058K(8039936K), 0.6178590 secs]
+INFO | 2016/03/08 19:48:24 | <Mar 8, 2016 7:48:24 PM IST> <Warning> <Server> <BEA-002611> <The hostname "localhost.localdomain", maps to multiple IP addresses: 127.0.0.1, 0:0:0:0:0:0:0:1.> 
+INFO | 2016/03/08 19:48:24 | <Mar 8, 2016 7:48:24 PM IST> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure[3]" is now listening on 127.0.0.1:7002 for protocols iiops, t3s, ldaps, https.> 
+INFO | 2016/03/08 19:48:24 | <Mar 8, 2016 7:48:24 PM IST> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure[1]" is now listening on fe80:0:0:0:215:5dff:fe39:3e2b:7002 for protocols iiops, t3s, ldaps, https.> 
+INFO | 2016/03/08 19:48:24 | <Mar 8, 2016 7:48:24 PM IST> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure[2]" is now listening on 0:0:0:0:0:0:0:1:7002 for protocols iiops, t3s, ldaps, https.> 
+INFO | 2016/03/08 19:48:24 | <Mar 8, 2016 7:48:24 PM IST> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure" is now listening on 10.207.166.157:7002 for protocols iiops, t3s, ldaps, https.> 
+INFO | 2016/03/08 19:48:24 | <Mar 8, 2016 7:48:24 PM IST> <Notice> <Server> <BEA-002613> <Channel "Default[3]" is now listening on 127.0.0.1:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2016/03/08 19:48:24 | <Mar 8, 2016 7:48:24 PM IST> <Notice> <Server> <BEA-002613> <Channel "Default" is now listening on 10.207.166.157:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2016/03/08 19:48:24 | <Mar 8, 2016 7:48:24 PM IST> <Notice> <Server> <BEA-002613> <Channel "Default[2]" is now listening on 0:0:0:0:0:0:0:1:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2016/03/08 19:48:24 | <Mar 8, 2016 7:48:24 PM IST> <Notice> <Server> <BEA-002613> <Channel "Default[1]" is now listening on fe80:0:0:0:215:5dff:fe39:3e2b:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2016/03/08 19:48:24 | <Mar 8, 2016 7:48:24 PM IST> <Notice> <WebLogicServer> <BEA-000329> <Started the WebLogic Server Administration Server "gc3app-arlotmglob" for domain "otmapp" running in production mode.> 
+INFO | 2016/03/08 19:48:24 | <Mar 8, 2016 7:48:24 PM IST> <Notice> <WebLogicServer> <BEA-000360> <The server started in RUNNING mode.> 
+INFO | 2016/03/08 19:48:24 | <Mar 8, 2016 7:48:24 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RUNNING.> 
+INFO | 2016/03/08 19:49:12 | [GC 2218238K->145168K(8039936K), 0.1989150 secs]
+INFO | 2016/03/08 19:49:13 | Error loading  properties from WEB_CUSTOM (property set): Error initializing properties for WEB_CUSTOM (property set)
+INFO | 2016/03/08 19:49:13 | java.io.IOException: Error retrieving property set WEB_CUSTOM
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2234)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1997)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.load(GLProperties.java:441)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.init(GLProperties.java:266)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.<init>(GLProperties.java:227)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$NestedPropertySource.load(GLProperties.java:1599)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$NestedPropertySet.load(GLProperties.java:1726)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$Source.load(GLProperties.java:2040)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$Source.load(GLProperties.java:2003)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.load(GLProperties.java:441)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.init(GLProperties.java:266)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.<init>(GLProperties.java:185)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:149)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.get(GLProperties.java:129)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.j2ee.startup.WLStartup.<clinit>(WLStartup.java:97)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.j2ee.startup.WLStartupShutdownManager.preStart(WLStartupShutdownManager.java:9)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.flow.BaseLifecycleFlow$PreStartAction.run(BaseLifecycleFlow.java:294)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.utils.SecurityUtils$WLSSecurityProvider.invokePrivilegedAction(SecurityUtils.java:177)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.utils.SecurityUtils.invokePrivilegedAction(SecurityUtils.java:80)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.flow.BaseLifecycleFlow$LifecycleListenerAction.invoke(BaseLifecycleFlow.java:200)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.flow.BaseLifecycleFlow.preStart(BaseLifecycleFlow.java:58)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.flow.HeadLifecycleFlow.prepare(HeadLifecycleFlow.java:244)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.BaseDeployment$1.next(BaseDeployment.java:706)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.utils.StateMachineDriver.nextState(StateMachineDriver.java:42)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.BaseDeployment.prepare(BaseDeployment.java:237)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.EarDeployment.prepare(EarDeployment.java:61)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.DeploymentStateChecker.prepare(DeploymentStateChecker.java:158)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.AppContainerInvoker.prepare(AppContainerInvoker.java:61)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.operations.ActivateOperation.createAndPrepareContainer(ActivateOperation.java:208)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.operations.ActivateOperation.doPrepare(ActivateOperation.java:98)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.operations.AbstractOperation.prepare(AbstractOperation.java:233)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.DeploymentManager.handleDeploymentPrepare(DeploymentManager.java:749)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.DeploymentManager.prepareDeploymentList(DeploymentManager.java:1238)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.DeploymentManager.handlePrepare(DeploymentManager.java:252)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.DeploymentServiceDispatcher.prepare(DeploymentServiceDispatcher.java:172)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer.doPrepareCallback(DeploymentReceiverCallbackDeliverer.java:171)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer.access$000(DeploymentReceiverCallbackDeliverer.java:13)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer$1.run(DeploymentReceiverCallbackDeliverer.java:46)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:548)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263)
+INFO | 2016/03/08 19:49:13 | Caused by: java.io.IOException: Error reading property set WEB_CUSTOM
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:341)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2219)
+INFO | 2016/03/08 19:49:13 | 	... 42 more
+INFO | 2016/03/08 19:49:13 | Caused by: [000002] cause.InvalidDataConnection
+INFO | 2016/03/08 19:49:13 | 
+INFO | 2016/03/08 19:49:13 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2016/03/08 19:49:13 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+INFO | 2016/03/08 19:49:13 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO | 2016/03/08 19:49:13 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.exception.GLException.factory(GLException.java:481)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.exception.GLException.factory(GLException.java:457)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.exception.GLException.factory(GLException.java:453)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.exception.GLException.factory(GLException.java:441)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:364)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:483)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:457)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:71)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:352)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:338)
+INFO | 2016/03/08 19:49:13 | 	... 43 more
+INFO | 2016/03/08 19:49:13 | 
+INFO | 2016/03/08 19:49:13 | Error loading  properties from APP_CUSTOM (property set): Error initializing properties for APP_CUSTOM (property set)
+INFO | 2016/03/08 19:49:13 | java.io.IOException: Error retrieving property set APP_CUSTOM
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2234)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1997)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.load(GLProperties.java:441)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.init(GLProperties.java:266)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.<init>(GLProperties.java:227)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$NestedPropertySource.load(GLProperties.java:1599)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$NestedPropertySet.load(GLProperties.java:1726)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$Source.load(GLProperties.java:2040)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$Source.load(GLProperties.java:2003)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.load(GLProperties.java:441)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.init(GLProperties.java:266)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.<init>(GLProperties.java:185)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:149)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.get(GLProperties.java:129)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.j2ee.startup.WLStartup.<clinit>(WLStartup.java:97)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.j2ee.startup.WLStartupShutdownManager.preStart(WLStartupShutdownManager.java:9)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.flow.BaseLifecycleFlow$PreStartAction.run(BaseLifecycleFlow.java:294)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.utils.SecurityUtils$WLSSecurityProvider.invokePrivilegedAction(SecurityUtils.java:177)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.utils.SecurityUtils.invokePrivilegedAction(SecurityUtils.java:80)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.flow.BaseLifecycleFlow$LifecycleListenerAction.invoke(BaseLifecycleFlow.java:200)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.flow.BaseLifecycleFlow.preStart(BaseLifecycleFlow.java:58)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.flow.HeadLifecycleFlow.prepare(HeadLifecycleFlow.java:244)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.BaseDeployment$1.next(BaseDeployment.java:706)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.utils.StateMachineDriver.nextState(StateMachineDriver.java:42)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.BaseDeployment.prepare(BaseDeployment.java:237)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.EarDeployment.prepare(EarDeployment.java:61)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.DeploymentStateChecker.prepare(DeploymentStateChecker.java:158)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.AppContainerInvoker.prepare(AppContainerInvoker.java:61)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.operations.ActivateOperation.createAndPrepareContainer(ActivateOperation.java:208)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.operations.ActivateOperation.doPrepare(ActivateOperation.java:98)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.operations.AbstractOperation.prepare(AbstractOperation.java:233)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.DeploymentManager.handleDeploymentPrepare(DeploymentManager.java:749)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.DeploymentManager.prepareDeploymentList(DeploymentManager.java:1238)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.DeploymentManager.handlePrepare(DeploymentManager.java:252)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.DeploymentServiceDispatcher.prepare(DeploymentServiceDispatcher.java:172)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer.doPrepareCallback(DeploymentReceiverCallbackDeliverer.java:171)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer.access$000(DeploymentReceiverCallbackDeliverer.java:13)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer$1.run(DeploymentReceiverCallbackDeliverer.java:46)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:548)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263)
+INFO | 2016/03/08 19:49:13 | Caused by: java.io.IOException: Error reading property set APP_CUSTOM
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:341)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2219)
+INFO | 2016/03/08 19:49:13 | 	... 42 more
+INFO | 2016/03/08 19:49:13 | Caused by: [000003] cause.InvalidDataConnection
+INFO | 2016/03/08 19:49:13 | 
+INFO | 2016/03/08 19:49:13 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2016/03/08 19:49:13 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+INFO | 2016/03/08 19:49:13 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO | 2016/03/08 19:49:13 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.exception.GLException.factory(GLException.java:481)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.exception.GLException.factory(GLException.java:457)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.exception.GLException.factory(GLException.java:453)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.exception.GLException.factory(GLException.java:441)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:364)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:483)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:457)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:71)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:352)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:338)
+INFO | 2016/03/08 19:49:13 | 	... 43 more
+INFO | 2016/03/08 19:49:13 | 
+INFO | 2016/03/08 19:49:13 | Error loading  properties from APP_WORKFLOW_THREADING (property set): Error initializing properties for APP_WORKFLOW_THREADING (property set)
+INFO | 2016/03/08 19:49:13 | java.io.IOException: Error retrieving property set APP_WORKFLOW_THREADING
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2234)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1997)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.load(GLProperties.java:441)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.init(GLProperties.java:266)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.<init>(GLProperties.java:227)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$NestedPropertySource.load(GLProperties.java:1599)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$NestedPropertySet.load(GLProperties.java:1726)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$Source.load(GLProperties.java:2040)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$Source.load(GLProperties.java:2003)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.load(GLProperties.java:441)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.init(GLProperties.java:266)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.<init>(GLProperties.java:185)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:149)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.get(GLProperties.java:129)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.j2ee.startup.WLStartup.<clinit>(WLStartup.java:97)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.j2ee.startup.WLStartupShutdownManager.preStart(WLStartupShutdownManager.java:9)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.flow.BaseLifecycleFlow$PreStartAction.run(BaseLifecycleFlow.java:294)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.utils.SecurityUtils$WLSSecurityProvider.invokePrivilegedAction(SecurityUtils.java:177)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.utils.SecurityUtils.invokePrivilegedAction(SecurityUtils.java:80)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.flow.BaseLifecycleFlow$LifecycleListenerAction.invoke(BaseLifecycleFlow.java:200)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.flow.BaseLifecycleFlow.preStart(BaseLifecycleFlow.java:58)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.flow.HeadLifecycleFlow.prepare(HeadLifecycleFlow.java:244)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.BaseDeployment$1.next(BaseDeployment.java:706)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.utils.StateMachineDriver.nextState(StateMachineDriver.java:42)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.BaseDeployment.prepare(BaseDeployment.java:237)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.EarDeployment.prepare(EarDeployment.java:61)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.application.internal.DeploymentStateChecker.prepare(DeploymentStateChecker.java:158)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.AppContainerInvoker.prepare(AppContainerInvoker.java:61)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.operations.ActivateOperation.createAndPrepareContainer(ActivateOperation.java:208)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.operations.ActivateOperation.doPrepare(ActivateOperation.java:98)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.operations.AbstractOperation.prepare(AbstractOperation.java:233)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.DeploymentManager.handleDeploymentPrepare(DeploymentManager.java:749)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.DeploymentManager.prepareDeploymentList(DeploymentManager.java:1238)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.DeploymentManager.handlePrepare(DeploymentManager.java:252)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.internal.targetserver.DeploymentServiceDispatcher.prepare(DeploymentServiceDispatcher.java:172)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer.doPrepareCallback(DeploymentReceiverCallbackDeliverer.java:171)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer.access$000(DeploymentReceiverCallbackDeliverer.java:13)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer$1.run(DeploymentReceiverCallbackDeliverer.java:46)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:548)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311)
+INFO | 2016/03/08 19:49:13 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263)
+INFO | 2016/03/08 19:49:13 | Caused by: java.io.IOException: Error reading property set APP_WORKFLOW_THREADING
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:341)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2219)
+INFO | 2016/03/08 19:49:13 | 	... 42 more
+INFO | 2016/03/08 19:49:13 | Caused by: [000004] cause.InvalidDataConnection
+INFO | 2016/03/08 19:49:13 | 
+INFO | 2016/03/08 19:49:13 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2016/03/08 19:49:13 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+INFO | 2016/03/08 19:49:13 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO | 2016/03/08 19:49:13 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.exception.GLException.factory(GLException.java:481)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.exception.GLException.factory(GLException.java:457)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.exception.GLException.factory(GLException.java:453)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.exception.GLException.factory(GLException.java:441)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:364)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:483)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:457)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:71)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:352)
+INFO | 2016/03/08 19:49:13 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:338)
+INFO | 2016/03/08 19:49:13 | 	... 43 more
+INFO | 2016/03/08 19:49:13 | 
+INFO | 2016/03/08 19:49:14 | -- OTM Event: preDeploy
+INFO | 2016/03/08 19:49:16 | [GC 2243344K->147499K(8039936K), 0.0951820 secs]
+INFO | 2016/03/08 19:49:20 | [GC 2245675K->187450K(8039936K), 0.3021800 secs]
+INFO | 2016/03/08 19:49:22 | [GC 2285626K->196866K(8039936K), 0.1475230 secs]
+INFO | 2016/03/08 19:49:24 | [GC 2295042K->206340K(8137216K), 0.3297880 secs]
+INFO | 2016/03/08 19:49:26 | [GC 2532868K->221260K(8025600K), 0.4617150 secs]
+INFO | 2016/03/08 19:49:27 | [GC 2547788K->234436K(8138752K), 0.0672870 secs]
+INFO | 2016/03/08 19:49:28 | [GC 2541508K->247185K(7958016K), 0.0624750 secs]
+INFO | 2016/03/08 19:49:36 | [GC 2554257K->288196K(8137216K), 0.0723990 secs]
+INFO | 2016/03/08 19:49:49 | -- OTM Event: initContext
+INFO | 2016/03/08 19:49:49 | -- OTM Event: startupServlet
+INFO | 2016/03/08 19:49:49 | -- OTM Startup: loading startup classes
+INFO | 2016/03/08 19:49:51 | -- OTM Event: postDeploy
+INFO | 2016/03/08 19:49:54 | <Mar 8, 2016 7:49:54 PM IST> <Notice> <WebLogicServer> <BEA-000396> <Server shutdown has been requested by system.> 
+INFO | 2016/03/08 19:49:54 | <Mar 8, 2016 7:49:54 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to SUSPENDING.> 
+INFO | 2016/03/08 19:49:55 | <Mar 8, 2016 7:49:55 PM IST> <Notice> <HTTP> <BEA-101278> <There are no active sessions. The Web service is ready to suspend.> 
+INFO | 2016/03/08 19:49:55 | <Mar 8, 2016 7:49:55 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to ADMIN.> 
+INFO | 2016/03/08 19:49:55 | <Mar 8, 2016 7:49:55 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to SHUTTING_DOWN.> 
+INFO | 2016/03/08 19:49:55 | <Mar 8, 2016 7:49:55 PM IST> <Notice> <Server> <BEA-002607> <Channel "DefaultSecure[1]", listening on fe80:0:0:0:215:5dff:fe39:3e2b:7002, was shut down.> 
+INFO | 2016/03/08 19:49:55 | <Mar 8, 2016 7:49:55 PM IST> <Notice> <Server> <BEA-002607> <Channel "Default[2]", listening on 0:0:0:0:0:0:0:1:7001, was shut down.> 
+INFO | 2016/03/08 19:49:55 | <Mar 8, 2016 7:49:55 PM IST> <Notice> <Server> <BEA-002607> <Channel "DefaultSecure", listening on 10.207.166.157:7002, was shut down.> 
+INFO | 2016/03/08 19:49:55 | <Mar 8, 2016 7:49:55 PM IST> <Notice> <Server> <BEA-002607> <Channel "Default", listening on 10.207.166.157:7001, was shut down.> 
+INFO | 2016/03/08 19:49:55 | <Mar 8, 2016 7:49:55 PM IST> <Notice> <Server> <BEA-002607> <Channel "Default[1]", listening on fe80:0:0:0:215:5dff:fe39:3e2b:7001, was shut down.> 
+INFO | 2016/03/08 19:49:55 | <Mar 8, 2016 7:49:55 PM IST> <Notice> <Server> <BEA-002607> <Channel "DefaultSecure[3]", listening on 127.0.0.1:7002, was shut down.> 
+INFO | 2016/03/08 19:49:55 | <Mar 8, 2016 7:49:55 PM IST> <Notice> <Server> <BEA-002607> <Channel "DefaultSecure[2]", listening on 0:0:0:0:0:0:0:1:7002, was shut down.> 
+INFO | 2016/03/08 19:49:55 | <Mar 8, 2016 7:49:55 PM IST> <Notice> <Server> <BEA-002607> <Channel "Default[3]", listening on 127.0.0.1:7001, was shut down.> 
+INFO | 2016/03/08 19:49:55 | Mar 08, 2016 7:49:55 PM weblogic.wsee.WseeCoreMessages logWseeServiceStopping
+INFO | 2016/03/08 19:49:55 | INFO: The Wsee Service is stopping
+INFO | 2016/03/08 19:49:55 | -- OTM Event: preUndeploy
+INFO | 2016/03/08 19:49:55 | -- OTM Event: destroyContext
+INFO | 2016/03/08 19:49:56 | -- OTM Event: postUndeploy
+INFO | 2016/03/08 19:49:56 | [GC 1646242K->324017K(8137728K), 0.0896590 secs]
+INFO | 2016/03/08 19:49:58 | [Full GC 324017K->306351K(8137728K), 1.5349210 secs]
+INFO | 2016/03/08 19:49:58 | <Mar 8, 2016 7:49:58 PM IST> <Warning> <Management> <BEA-141269> <The temporary bean tree updateDeploymentContext(Tue Mar 08 19:49:00 IST 2016) was allocated for an undo, get, or activate operation, but has not been garbage collected.> 
+INFO | 2016/03/08 19:49:58 | Stopped Launched Process...
+INFO | 2016/03/08 19:50:00 | Starting Launched Process...
+INFO | 2016/03/08 19:50:00 | java version "1.7.0_76"
+INFO | 2016/03/08 19:50:00 | Java(TM) SE Runtime Environment (build 1.7.0_76-b13)
+INFO | 2016/03/08 19:50:00 | Java HotSpot(TM) 64-Bit Server VM (build 24.76-b04, mixed mode)
+INFO | 2016/03/08 19:50:00 | waitFor : RUNNING
+INFO | 2016/03/08 19:50:00 | timeout : 600
+INFO | 2016/03/08 19:50:00 | Argument #0 : /U01/OTM/OTM64/jdk/bin/java
+INFO | 2016/03/08 19:50:00 | Argument #1 : -Xms8192m
+INFO | 2016/03/08 19:50:00 | Argument #2 : -Xmx8192m
+INFO | 2016/03/08 19:50:00 | Argument #3 : -XX:MaxPermSize=512m
+INFO | 2016/03/08 19:50:00 | Argument #4 : -DGC3ServletUser=OTMApp
+INFO | 2016/03/08 19:50:00 | Argument #5 : -DGC3ServletGroup=OTMAppUser
+INFO | 2016/03/08 19:50:00 | Argument #6 : -DGC3ServletEncodedPassword=Q2FwZyQzMjE=
+INFO | 2016/03/08 19:50:00 | Argument #7 : -DGC3EncodedPassword=T1RNZGVtb0AzMjE=
+INFO | 2016/03/08 19:50:00 | Argument #8 : -DGuestEncodedPassword=Q2FwZyQzMjE=
+INFO | 2016/03/08 19:50:00 | Argument #9 : -Dglog.home=/U01/OTM/OTM64/glog/config
+INFO | 2016/03/08 19:50:00 | Argument #10 : -Duser.home=/U01/OTM/OTM64/glog/config
+INFO | 2016/03/08 19:50:00 | Argument #11 : -Dmode=appserver
+INFO | 2016/03/08 19:50:00 | Argument #12 : -DpropertyProtection=mask
+INFO | 2016/03/08 19:50:00 | Argument #13 : -Djava.io.tmpdir=/U01/OTM/OTM64/temp
+INFO | 2016/03/08 19:50:00 | Argument #14 : -Djava.awt.headless=true
+INFO | 2016/03/08 19:50:00 | Argument #15 : -Djava.security.auth.login.config=/U01/OTM/OTM64/glog/config/otm_jaas.config
+INFO | 2016/03/08 19:50:00 | Argument #16 : -Xss256k
+INFO | 2016/03/08 19:50:00 | Argument #17 : -verbose:gc
+INFO | 2016/03/08 19:50:00 | Argument #18 : -Xverify:none
+INFO | 2016/03/08 19:50:00 | Argument #19 : -Djava.endorsed.dirs=/usr/lib/jvm/jdk1.7.0_80/jre/lib/endorsed:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/endorsed
+INFO | 2016/03/08 19:50:00 | Argument #20 : -da
+INFO | 2016/03/08 19:50:00 | Argument #21 : -Dwls.home=/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server
+INFO | 2016/03/08 19:50:00 | Argument #22 : -Dweblogic.home=/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server
+INFO | 2016/03/08 19:50:00 | Argument #23 : -Dweblogic.management.username=system
+INFO | 2016/03/08 19:50:00 | Argument #24 : -Dweblogic.management.password=OTMdemo@321
+INFO | 2016/03/08 19:50:00 | Argument #25 : -Dweblogic.Name=gc3app-arlotmglob
+INFO | 2016/03/08 19:50:00 | Argument #26 : -Dweblogic.RootDirectory=/U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmapp
+INFO | 2016/03/08 19:50:00 | Argument #27 : -Djava.security.policy=/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/weblogic.policy
+INFO | 2016/03/08 19:50:00 | Argument #28 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2016/03/08 19:50:00 | Argument #29 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2016/03/08 19:50:00 | Argument #30 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2016/03/08 19:50:00 | Argument #31 : -Dweblogic.wsee.policy.LoadFromClassPathEnabled=true
+INFO | 2016/03/08 19:50:00 | Argument #32 : -classpath
+INFO | 2016/03/08 19:50:00 | Argument #33 : /U01/OTM/OTM64/glog/glog_resources/custom:/U01/OTM/OTM64/glog/glog_resources:/U01/OTM/OTM64/glog/config:/U01/OTM/OTM64/dash/lib/xprb.jar:/U01/OTM/OTM64/dash/lib/xprm.jar:/U01/OTM/OTM64/dash/lib/xprs.jar:/usr/lib/jvm/jdk1.7.0_80/lib/tools.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/weblogic_sp.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/weblogic.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/net.sf.antcontrib_1.1.0.0_1-0b3/lib/ant-contrib.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/modules/features/oracle.wls.common.nodemanager_2.0.0.0.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/com.oracle.cie.config-wls-online_8.1.0.0.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/common/derby/lib/derbynet.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/common/derby/lib/derbyclient.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/common/derby/lib/derby.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/xqrl.jar:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/classes:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/lib/glogserver.jar:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/lib/3rdparty/bip.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/org.dom4j_1.6.1.jar
+INFO | 2016/03/08 19:50:00 | Argument #34 : weblogic.Server
+INFO | 2016/03/08 19:50:00 | Argument #35 : start
+INFO | 2016/03/08 19:50:01 | <Mar 8, 2016 7:50:01 PM IST> <Info> <Security> <BEA-090905> <Disabling the CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true.> 
+INFO | 2016/03/08 19:50:01 | <Mar 8, 2016 7:50:01 PM IST> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG128 to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true.> 
+INFO | 2016/03/08 19:50:01 | <Mar 8, 2016 7:50:01 PM IST> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Java HotSpot(TM) 64-Bit Server VM Version 24.76-b04 from Oracle Corporation.> 
+INFO | 2016/03/08 19:50:02 | <Mar 8, 2016 7:50:02 PM IST> <Info> <Management> <BEA-141107> <Version: WebLogic Server 12.1.3.0.0  Wed May 21 18:53:34 PDT 2014 1604337 > 
+INFO | 2016/03/08 19:50:03 | <Mar 8, 2016 7:50:03 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING.> 
+INFO | 2016/03/08 19:50:03 | <Mar 8, 2016 7:50:03 PM IST> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool.> 
+INFO | 2016/03/08 19:50:03 | <Mar 8, 2016 7:50:03 PM IST> <Info> <WorkManager> <BEA-002942> <CMM memory level becomes 0. Setting standby thread pool size to 256.> 
+INFO | 2016/03/08 19:50:03 | <Mar 8, 2016 7:50:03 PM IST> <Notice> <Log Management> <BEA-170019> <The server log file /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmapp/servers/gc3app-arlotmglob/logs/gc3app-arlotmglob.log is opened. All server side log events will be written to this file.> 
+INFO | 2016/03/08 19:50:12 | [GC 2098176K->98283K(8039936K), 0.0635120 secs]
+INFO | 2016/03/08 19:50:15 | <Mar 8, 2016 7:50:15 PM IST> <Notice> <Security> <BEA-090082> <Security initializing using security realm myrealm.> 
+INFO | 2016/03/08 19:50:15 | <Mar 8, 2016 7:50:15 PM IST> <Warning> <Store> <BEA-280109> <The JVM was unable to load the native wlfileio library for the store "_WLS_gc3app-arlotmglob". File and paging stores will continue to function correctly. Specifically, file stores that are configured with a transactionally safe synchronous write policy will continue to operate safely and transactionally but may open with a different write-policy. Other store types may not be able to open.> 
+INFO | 2016/03/08 19:50:17 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO | 2016/03/08 19:50:17 | SLF4J: Found binding in [jar:file:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/modules/features/weblogic.server.merged.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO | 2016/03/08 19:50:17 | SLF4J: Found binding in [jar:file:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/lib/3rdparty/ridc/slf4j-log4j12-1.6.6.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO | 2016/03/08 19:50:17 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+INFO | 2016/03/08 19:50:17 | <Mar 8, 2016 7:50:17 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STANDBY.> 
+INFO | 2016/03/08 19:50:17 | <Mar 8, 2016 7:50:17 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING.> 
+INFO | 2016/03/08 19:50:17 | Mar 08, 2016 7:50:17 PM weblogic.wsee.WseeCoreMessages logWseeServiceStarting
+INFO | 2016/03/08 19:50:17 | INFO: The Wsee Service is starting
+INFO | 2016/03/08 19:50:28 | [GC 2196459K->183150K(8039936K), 0.1635450 secs]
+INFO | 2016/03/08 19:50:29 | Error loading  properties from WEB_CUSTOM (property set): Error initializing properties for WEB_CUSTOM (property set)
+INFO | 2016/03/08 19:50:29 | java.io.IOException: Error retrieving property set WEB_CUSTOM
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2234)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1997)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.load(GLProperties.java:441)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.init(GLProperties.java:266)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.<init>(GLProperties.java:227)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$NestedPropertySource.load(GLProperties.java:1599)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$NestedPropertySet.load(GLProperties.java:1726)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$Source.load(GLProperties.java:2040)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$Source.load(GLProperties.java:2003)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.load(GLProperties.java:441)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.init(GLProperties.java:266)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.<init>(GLProperties.java:185)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:149)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.get(GLProperties.java:129)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.j2ee.startup.WLStartup.<clinit>(WLStartup.java:97)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.j2ee.startup.WLStartupShutdownManager.preStart(WLStartupShutdownManager.java:9)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.flow.BaseLifecycleFlow$PreStartAction.run(BaseLifecycleFlow.java:294)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.utils.SecurityUtils$WLSSecurityProvider.invokePrivilegedAction(SecurityUtils.java:177)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.utils.SecurityUtils.invokePrivilegedAction(SecurityUtils.java:80)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.flow.BaseLifecycleFlow$LifecycleListenerAction.invoke(BaseLifecycleFlow.java:200)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.flow.BaseLifecycleFlow.preStart(BaseLifecycleFlow.java:58)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.flow.HeadLifecycleFlow.prepare(HeadLifecycleFlow.java:244)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.BaseDeployment$1.next(BaseDeployment.java:706)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.utils.StateMachineDriver.nextState(StateMachineDriver.java:42)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.BaseDeployment.prepare(BaseDeployment.java:237)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.EarDeployment.prepare(EarDeployment.java:61)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.DeploymentStateChecker.prepare(DeploymentStateChecker.java:158)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.deploy.internal.targetserver.AppContainerInvoker.prepare(AppContainerInvoker.java:61)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.deploy.internal.targetserver.AppDeployment.prepare(AppDeployment.java:155)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.DeploymentAdapter$1.doPrepare(DeploymentAdapter.java:39)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.DeploymentAdapter.prepare(DeploymentAdapter.java:191)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.AppTransition$1.transitionApp(AppTransition.java:21)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.ConfiguredDeployments.transitionApps(ConfiguredDeployments.java:240)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.ConfiguredDeployments.prepare(ConfiguredDeployments.java:165)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.ConfiguredDeployments.deploy(ConfiguredDeployments.java:122)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.DeploymentServerService.resume(DeploymentServerService.java:210)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.DeploymentServerService.start(DeploymentServerService.java:118)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.server.AbstractServerService.postConstruct(AbstractServerService.java:78)
+INFO | 2016/03/08 19:50:29 | 	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+INFO | 2016/03/08 19:50:29 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO | 2016/03/08 19:50:29 | 	at java.lang.reflect.Method.invoke(Method.java:606)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.utilities.reflection.ReflectionHelper.invoke(ReflectionHelper.java:1017)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ClazzCreator.postConstructMe(ClazzCreator.java:388)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:430)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:87)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.oneJob(CurrentTaskFuture.java:1162)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.run(CurrentTaskFuture.java:1147)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:548)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263)
+INFO | 2016/03/08 19:50:29 | Caused by: java.io.IOException: Error reading property set WEB_CUSTOM
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:341)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2219)
+INFO | 2016/03/08 19:50:29 | 	... 66 more
+INFO | 2016/03/08 19:50:29 | Caused by: [000002] cause.InvalidDataConnection
+INFO | 2016/03/08 19:50:29 | 
+INFO | 2016/03/08 19:50:29 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2016/03/08 19:50:29 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+INFO | 2016/03/08 19:50:29 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO | 2016/03/08 19:50:29 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.exception.GLException.factory(GLException.java:481)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.exception.GLException.factory(GLException.java:457)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.exception.GLException.factory(GLException.java:453)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.exception.GLException.factory(GLException.java:441)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:364)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:483)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:457)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:71)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:352)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:338)
+INFO | 2016/03/08 19:50:29 | 	... 67 more
+INFO | 2016/03/08 19:50:29 | 
+INFO | 2016/03/08 19:50:29 | Error loading  properties from APP_CUSTOM (property set): Error initializing properties for APP_CUSTOM (property set)
+INFO | 2016/03/08 19:50:29 | java.io.IOException: Error retrieving property set APP_CUSTOM
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2234)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1997)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.load(GLProperties.java:441)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.init(GLProperties.java:266)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.<init>(GLProperties.java:227)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$NestedPropertySource.load(GLProperties.java:1599)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$NestedPropertySet.load(GLProperties.java:1726)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$Source.load(GLProperties.java:2040)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$Source.load(GLProperties.java:2003)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.load(GLProperties.java:441)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.init(GLProperties.java:266)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.<init>(GLProperties.java:185)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:149)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.get(GLProperties.java:129)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.j2ee.startup.WLStartup.<clinit>(WLStartup.java:97)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.j2ee.startup.WLStartupShutdownManager.preStart(WLStartupShutdownManager.java:9)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.flow.BaseLifecycleFlow$PreStartAction.run(BaseLifecycleFlow.java:294)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.utils.SecurityUtils$WLSSecurityProvider.invokePrivilegedAction(SecurityUtils.java:177)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.utils.SecurityUtils.invokePrivilegedAction(SecurityUtils.java:80)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.flow.BaseLifecycleFlow$LifecycleListenerAction.invoke(BaseLifecycleFlow.java:200)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.flow.BaseLifecycleFlow.preStart(BaseLifecycleFlow.java:58)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.flow.HeadLifecycleFlow.prepare(HeadLifecycleFlow.java:244)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.BaseDeployment$1.next(BaseDeployment.java:706)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.utils.StateMachineDriver.nextState(StateMachineDriver.java:42)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.BaseDeployment.prepare(BaseDeployment.java:237)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.EarDeployment.prepare(EarDeployment.java:61)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.DeploymentStateChecker.prepare(DeploymentStateChecker.java:158)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.deploy.internal.targetserver.AppContainerInvoker.prepare(AppContainerInvoker.java:61)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.deploy.internal.targetserver.AppDeployment.prepare(AppDeployment.java:155)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.DeploymentAdapter$1.doPrepare(DeploymentAdapter.java:39)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.DeploymentAdapter.prepare(DeploymentAdapter.java:191)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.AppTransition$1.transitionApp(AppTransition.java:21)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.ConfiguredDeployments.transitionApps(ConfiguredDeployments.java:240)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.ConfiguredDeployments.prepare(ConfiguredDeployments.java:165)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.ConfiguredDeployments.deploy(ConfiguredDeployments.java:122)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.DeploymentServerService.resume(DeploymentServerService.java:210)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.DeploymentServerService.start(DeploymentServerService.java:118)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.server.AbstractServerService.postConstruct(AbstractServerService.java:78)
+INFO | 2016/03/08 19:50:29 | 	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+INFO | 2016/03/08 19:50:29 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO | 2016/03/08 19:50:29 | 	at java.lang.reflect.Method.invoke(Method.java:606)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.utilities.reflection.ReflectionHelper.invoke(ReflectionHelper.java:1017)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ClazzCreator.postConstructMe(ClazzCreator.java:388)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:430)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:87)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.oneJob(CurrentTaskFuture.java:1162)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.run(CurrentTaskFuture.java:1147)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:548)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263)
+INFO | 2016/03/08 19:50:29 | Caused by: java.io.IOException: Error reading property set APP_CUSTOM
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:341)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2219)
+INFO | 2016/03/08 19:50:29 | 	... 66 more
+INFO | 2016/03/08 19:50:29 | Caused by: [000003] cause.InvalidDataConnection
+INFO | 2016/03/08 19:50:29 | 
+INFO | 2016/03/08 19:50:29 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2016/03/08 19:50:29 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+INFO | 2016/03/08 19:50:29 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO | 2016/03/08 19:50:29 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.exception.GLException.factory(GLException.java:481)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.exception.GLException.factory(GLException.java:457)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.exception.GLException.factory(GLException.java:453)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.exception.GLException.factory(GLException.java:441)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:364)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:483)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:457)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:71)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:352)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:338)
+INFO | 2016/03/08 19:50:29 | 	... 67 more
+INFO | 2016/03/08 19:50:29 | 
+INFO | 2016/03/08 19:50:29 | Error loading  properties from APP_WORKFLOW_THREADING (property set): Error initializing properties for APP_WORKFLOW_THREADING (property set)
+INFO | 2016/03/08 19:50:29 | java.io.IOException: Error retrieving property set APP_WORKFLOW_THREADING
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2234)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1997)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.load(GLProperties.java:441)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.init(GLProperties.java:266)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.<init>(GLProperties.java:227)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$NestedPropertySource.load(GLProperties.java:1599)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$NestedPropertySet.load(GLProperties.java:1726)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$Source.load(GLProperties.java:2040)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$Source.load(GLProperties.java:2003)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.load(GLProperties.java:441)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.init(GLProperties.java:266)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.<init>(GLProperties.java:185)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:149)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.get(GLProperties.java:129)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.j2ee.startup.WLStartup.<clinit>(WLStartup.java:97)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.j2ee.startup.WLStartupShutdownManager.preStart(WLStartupShutdownManager.java:9)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.flow.BaseLifecycleFlow$PreStartAction.run(BaseLifecycleFlow.java:294)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.utils.SecurityUtils$WLSSecurityProvider.invokePrivilegedAction(SecurityUtils.java:177)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.utils.SecurityUtils.invokePrivilegedAction(SecurityUtils.java:80)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.flow.BaseLifecycleFlow$LifecycleListenerAction.invoke(BaseLifecycleFlow.java:200)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.flow.BaseLifecycleFlow.preStart(BaseLifecycleFlow.java:58)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.flow.HeadLifecycleFlow.prepare(HeadLifecycleFlow.java:244)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.BaseDeployment$1.next(BaseDeployment.java:706)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.utils.StateMachineDriver.nextState(StateMachineDriver.java:42)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.BaseDeployment.prepare(BaseDeployment.java:237)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.EarDeployment.prepare(EarDeployment.java:61)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.application.internal.DeploymentStateChecker.prepare(DeploymentStateChecker.java:158)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.deploy.internal.targetserver.AppContainerInvoker.prepare(AppContainerInvoker.java:61)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.deploy.internal.targetserver.AppDeployment.prepare(AppDeployment.java:155)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.DeploymentAdapter$1.doPrepare(DeploymentAdapter.java:39)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.DeploymentAdapter.prepare(DeploymentAdapter.java:191)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.AppTransition$1.transitionApp(AppTransition.java:21)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.ConfiguredDeployments.transitionApps(ConfiguredDeployments.java:240)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.ConfiguredDeployments.prepare(ConfiguredDeployments.java:165)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.ConfiguredDeployments.deploy(ConfiguredDeployments.java:122)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.DeploymentServerService.resume(DeploymentServerService.java:210)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.management.deploy.internal.DeploymentServerService.start(DeploymentServerService.java:118)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.server.AbstractServerService.postConstruct(AbstractServerService.java:78)
+INFO | 2016/03/08 19:50:29 | 	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+INFO | 2016/03/08 19:50:29 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO | 2016/03/08 19:50:29 | 	at java.lang.reflect.Method.invoke(Method.java:606)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.utilities.reflection.ReflectionHelper.invoke(ReflectionHelper.java:1017)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ClazzCreator.postConstructMe(ClazzCreator.java:388)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:430)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:50:29 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:87)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.oneJob(CurrentTaskFuture.java:1162)
+INFO | 2016/03/08 19:50:29 | 	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.run(CurrentTaskFuture.java:1147)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:548)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311)
+INFO | 2016/03/08 19:50:29 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263)
+INFO | 2016/03/08 19:50:29 | Caused by: java.io.IOException: Error reading property set APP_WORKFLOW_THREADING
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:341)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2219)
+INFO | 2016/03/08 19:50:29 | 	... 66 more
+INFO | 2016/03/08 19:50:29 | Caused by: [000004] cause.InvalidDataConnection
+INFO | 2016/03/08 19:50:29 | 
+INFO | 2016/03/08 19:50:29 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2016/03/08 19:50:29 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+INFO | 2016/03/08 19:50:29 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO | 2016/03/08 19:50:29 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.exception.GLException.factory(GLException.java:481)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.exception.GLException.factory(GLException.java:457)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.exception.GLException.factory(GLException.java:453)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.exception.GLException.factory(GLException.java:441)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:364)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:483)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:457)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:71)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:352)
+INFO | 2016/03/08 19:50:29 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:338)
+INFO | 2016/03/08 19:50:29 | 	... 67 more
+INFO | 2016/03/08 19:50:29 | 
+INFO | 2016/03/08 19:50:30 | -- OTM Event: preDeploy
+INFO | 2016/03/08 19:50:32 | [GC 2281326K->153752K(8039936K), 0.0840060 secs]
+INFO | 2016/03/08 19:50:34 | [GC 2251928K->180164K(8039936K), 0.1008230 secs]
+INFO | 2016/03/08 19:50:37 | [GC 2278340K->190869K(8039936K), 0.1339660 secs]
+INFO | 2016/03/08 19:50:39 | [GC 2289610K->201916K(8138752K), 0.1334830 secs]
+INFO | 2016/03/08 19:50:41 | [GC 2522315K->218426K(8014336K), 0.1500100 secs]
+INFO | 2016/03/08 19:50:43 | [GC 2538810K->237032K(8142336K), 0.0828980 secs]
+INFO | 2016/03/08 19:50:57 | [GC 2544104K->315874K(8144384K), 0.1059680 secs]
+INFO | 2016/03/08 19:51:02 | -- OTM Event: initContext
+INFO | 2016/03/08 19:51:02 | -- OTM Event: startupServlet
+INFO | 2016/03/08 19:51:02 | -- OTM Startup: loading startup classes
+INFO | 2016/03/08 19:51:03 | -- OTM Event: postDeploy
+INFO | 2016/03/08 19:51:03 | <Mar 8, 2016 7:51:03 PM IST> <Notice> <Log Management> <BEA-170027> <The server has successfully established a connection with the Domain level Diagnostic Service.> 
+INFO | 2016/03/08 19:51:04 | <Mar 8, 2016 7:51:04 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to ADMIN.> 
+INFO | 2016/03/08 19:51:04 | <Mar 8, 2016 7:51:04 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RESUMING.> 
+INFO | 2016/03/08 19:51:04 | <Mar 8, 2016 7:51:04 PM IST> <Notice> <Security> <BEA-090171> <Loading the identity certificate and private key stored under the alias DemoIdentity from the jks keystore file /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmapp/security/DemoIdentity.jks.> 
+INFO | 2016/03/08 19:51:04 | <Mar 8, 2016 7:51:04 PM IST> <Notice> <Security> <BEA-090169> <Loading trusted certificates from the jks keystore file /U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/DemoTrust.jks.> 
+INFO | 2016/03/08 19:51:04 | <Mar 8, 2016 7:51:04 PM IST> <Notice> <Security> <BEA-090169> <Loading trusted certificates from the jks keystore file /U01/OTM/OTM64/jdk/jre/lib/security/cacerts.> 
+INFO | 2016/03/08 19:51:04 | <Mar 8, 2016 7:51:04 PM IST> <Alert> <Security> <BEA-090152> <Demo trusted CA certificate is being used in production mode: [
+INFO | 2016/03/08 19:51:04 | [
+INFO | 2016/03/08 19:51:04 |   Version: V3
+INFO | 2016/03/08 19:51:04 |   Subject: CN=CACERT, OU=FOR TESTING ONLY, O=MyOrganization, L=MyTown, ST=MyState, C=US
+INFO | 2016/03/08 19:51:04 |   Signature Algorithm: MD5withRSA, OID = 1.2.840.113549.1.1.4
+INFO | 2016/03/08 19:51:04 | 
+INFO | 2016/03/08 19:51:04 |   Key:  Sun RSA public key, 512 bits
+INFO | 2016/03/08 19:51:04 |   modulus: 9550192877869244258838480703390456015046425375252278279190673063544122510925482179963329236052146047356415957587628011282484772458983977898996276815440753
+INFO | 2016/03/08 19:51:04 |   public exponent: 65537
+INFO | 2016/03/08 19:51:04 |   Validity: [From: Fri Mar 22 01:42:27 IST 2002,
+INFO | 2016/03/08 19:51:04 |                To: Wed Mar 23 01:42:27 IST 2022]
+INFO | 2016/03/08 19:51:04 |   Issuer: CN=CACERT, OU=FOR TESTING ONLY, O=MyOrganization, L=MyTown, ST=MyState, C=US
+INFO | 2016/03/08 19:51:04 |   SerialNumber: [    33f10648 fcde0deb 4199921f d64537f4]
+INFO | 2016/03/08 19:51:04 | 
+INFO | 2016/03/08 19:51:04 | Certificate Extensions: 1
+INFO | 2016/03/08 19:51:04 | [1]: ObjectId: 2.5.29.15 Criticality=true
+INFO | 2016/03/08 19:51:04 | KeyUsage [
+INFO | 2016/03/08 19:51:04 |   Key_CertSign
+INFO | 2016/03/08 19:51:04 | ]
+INFO | 2016/03/08 19:51:04 | 
+INFO | 2016/03/08 19:51:04 | ]
+INFO | 2016/03/08 19:51:04 |   Algorithm: [MD5withRSA]
+INFO | 2016/03/08 19:51:04 |   Signature:
+INFO | 2016/03/08 19:51:04 | 0000: 9D 26 4C 29 C8 91 C3 A7   06 C3 24 6F AE B4 F8 82  .&L)......$o....
+INFO | 2016/03/08 19:51:04 | 0010: 80 4D AA CB 7C 79 46 84   81 C4 66 95 F4 1E D8 C4  .M...yF...f.....
+INFO | 2016/03/08 19:51:04 | 0020: E9 B7 D9 7C E2 23 33 A4   B7 21 E0 AA 54 2B 4A FF  .....#3..!..T+J.
+INFO | 2016/03/08 19:51:04 | 0030: CB 21 20 88 81 21 DB AC   90 54 D8 7D 79 63 23 3C  .! ..!...T..yc#<
+INFO | 2016/03/08 19:51:04 | 
+INFO | 2016/03/08 19:51:04 | ]. The system is vulnerable to security attacks, since it trusts certificates signed by the demo trusted CA.> 
+INFO | 2016/03/08 19:51:04 | <Mar 8, 2016 7:51:04 PM IST> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure[3]" is now listening on 127.0.0.1:7002 for protocols iiops, t3s, ldaps, https.> 
+INFO | 2016/03/08 19:51:04 | <Mar 8, 2016 7:51:04 PM IST> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure[1]" is now listening on fe80:0:0:0:215:5dff:fe39:3e2b:7002 for protocols iiops, t3s, ldaps, https.> 
+INFO | 2016/03/08 19:51:04 | <Mar 8, 2016 7:51:04 PM IST> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure[2]" is now listening on 0:0:0:0:0:0:0:1:7002 for protocols iiops, t3s, ldaps, https.> 
+INFO | 2016/03/08 19:51:04 | <Mar 8, 2016 7:51:04 PM IST> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure" is now listening on 10.207.166.157:7002 for protocols iiops, t3s, ldaps, https.> 
+INFO | 2016/03/08 19:51:04 | <Mar 8, 2016 7:51:04 PM IST> <Notice> <Server> <BEA-002613> <Channel "Default[3]" is now listening on 127.0.0.1:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2016/03/08 19:51:04 | <Mar 8, 2016 7:51:04 PM IST> <Notice> <Server> <BEA-002613> <Channel "Default" is now listening on 10.207.166.157:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2016/03/08 19:51:04 | <Mar 8, 2016 7:51:04 PM IST> <Notice> <Server> <BEA-002613> <Channel "Default[2]" is now listening on 0:0:0:0:0:0:0:1:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2016/03/08 19:51:04 | <Mar 8, 2016 7:51:04 PM IST> <Notice> <Server> <BEA-002613> <Channel "Default[1]" is now listening on fe80:0:0:0:215:5dff:fe39:3e2b:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2016/03/08 19:51:04 | <Mar 8, 2016 7:51:04 PM IST> <Notice> <WebLogicServer> <BEA-000329> <Started the WebLogic Server Administration Server "gc3app-arlotmglob" for domain "otmapp" running in production mode.> 
+INFO | 2016/03/08 19:51:04 | <Mar 8, 2016 7:51:04 PM IST> <Warning> <Server> <BEA-002611> <The hostname "localhost.localdomain", maps to multiple IP addresses: 127.0.0.1, 0:0:0:0:0:0:0:1.> 
+INFO | 2016/03/08 19:51:04 | <Mar 8, 2016 7:51:04 PM IST> <Notice> <WebLogicServer> <BEA-000360> <The server started in RUNNING mode.> 
+INFO | 2016/03/08 19:51:04 | <Mar 8, 2016 7:51:04 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RUNNING.> 
+INFO | 2016/03/08 19:51:24 | <Mar 8, 2016 7:51:24 PM IST> <Warning> <Management> <BEA-141239> <The non-dynamic attribute Adjudicator on weblogic.management.security.RealmMBeanImpl@3564828f([otmapp]/SecurityConfiguration[otmapp]/Realms[myrealm]) has been changed. This may require redeploying or rebooting configured entities.> 
+INFO | 2016/03/08 19:51:24 | <Mar 8, 2016 7:51:24 PM IST> <Warning> <Management> <BEA-141238> <A non-dynamic change has been made which affects the server gc3app-arlotmglob. This server must be rebooted in order to consume this change.> 
+INFO | 2016/03/08 19:51:28 | <Mar 8, 2016 7:51:28 PM IST> <Notice> <WebLogicServer> <BEA-000396> <Server shutdown has been requested by system.> 
+INFO | 2016/03/08 19:51:28 | <Mar 8, 2016 7:51:28 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to SUSPENDING.> 
+INFO | 2016/03/08 19:51:28 | <Mar 8, 2016 7:51:28 PM IST> <Notice> <HTTP> <BEA-101278> <There are no active sessions. The Web service is ready to suspend.> 
+INFO | 2016/03/08 19:51:28 | <Mar 8, 2016 7:51:28 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to ADMIN.> 
+INFO | 2016/03/08 19:51:28 | <Mar 8, 2016 7:51:28 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to SHUTTING_DOWN.> 
+INFO | 2016/03/08 19:51:28 | <Mar 8, 2016 7:51:28 PM IST> <Notice> <Server> <BEA-002607> <Channel "DefaultSecure[3]", listening on 127.0.0.1:7002, was shut down.> 
+INFO | 2016/03/08 19:51:28 | <Mar 8, 2016 7:51:28 PM IST> <Notice> <Server> <BEA-002607> <Channel "DefaultSecure[2]", listening on 0:0:0:0:0:0:0:1:7002, was shut down.> 
+INFO | 2016/03/08 19:51:28 | <Mar 8, 2016 7:51:28 PM IST> <Notice> <Server> <BEA-002607> <Channel "Default[3]", listening on 127.0.0.1:7001, was shut down.> 
+INFO | 2016/03/08 19:51:28 | <Mar 8, 2016 7:51:28 PM IST> <Notice> <Server> <BEA-002607> <Channel "DefaultSecure", listening on 10.207.166.157:7002, was shut down.> 
+INFO | 2016/03/08 19:51:28 | <Mar 8, 2016 7:51:28 PM IST> <Notice> <Server> <BEA-002607> <Channel "Default[2]", listening on 0:0:0:0:0:0:0:1:7001, was shut down.> 
+INFO | 2016/03/08 19:51:28 | <Mar 8, 2016 7:51:28 PM IST> <Notice> <Server> <BEA-002607> <Channel "Default[1]", listening on fe80:0:0:0:215:5dff:fe39:3e2b:7001, was shut down.> 
+INFO | 2016/03/08 19:51:28 | <Mar 8, 2016 7:51:28 PM IST> <Notice> <Server> <BEA-002607> <Channel "DefaultSecure[1]", listening on fe80:0:0:0:215:5dff:fe39:3e2b:7002, was shut down.> 
+INFO | 2016/03/08 19:51:28 | <Mar 8, 2016 7:51:28 PM IST> <Notice> <Server> <BEA-002607> <Channel "Default", listening on 10.207.166.157:7001, was shut down.> 
+INFO | 2016/03/08 19:51:28 | Mar 08, 2016 7:51:28 PM weblogic.wsee.WseeCoreMessages logWseeServiceStopping
+INFO | 2016/03/08 19:51:28 | INFO: The Wsee Service is stopping
+INFO | 2016/03/08 19:51:28 | -- OTM Event: preUndeploy
+INFO | 2016/03/08 19:51:28 | -- OTM Event: destroyContext
+INFO | 2016/03/08 19:51:29 | -- OTM Event: postUndeploy
+INFO | 2016/03/08 19:51:30 | [GC 1400820K->322676K(8154624K), 0.1442500 secs]
+INFO | 2016/03/08 19:51:31 | [Full GC 322676K->301039K(8154624K), 1.1662420 secs]
+INFO | 2016/03/08 19:51:31 | <Mar 8, 2016 7:51:31 PM IST> <Warning> <Management> <BEA-141269> <The temporary bean tree updateDeploymentContext(Tue Mar 08 19:51:24 IST 2016) was allocated for an undo, get, or activate operation, but has not been garbage collected.> 
+INFO | 2016/03/08 19:51:31 | Stopped Launched Process...
+INFO | 2016/03/08 19:51:33 | Starting Launched Process...
+INFO | 2016/03/08 19:51:33 | java version "1.7.0_76"
+INFO | 2016/03/08 19:51:33 | Java(TM) SE Runtime Environment (build 1.7.0_76-b13)
+INFO | 2016/03/08 19:51:33 | Java HotSpot(TM) 64-Bit Server VM (build 24.76-b04, mixed mode)
+INFO | 2016/03/08 19:51:33 | waitFor : RUNNING
+INFO | 2016/03/08 19:51:33 | timeout : 600
+INFO | 2016/03/08 19:51:33 | Argument #0 : /U01/OTM/OTM64/jdk/bin/java
+INFO | 2016/03/08 19:51:33 | Argument #1 : -Xms8192m
+INFO | 2016/03/08 19:51:33 | Argument #2 : -Xmx8192m
+INFO | 2016/03/08 19:51:33 | Argument #3 : -XX:MaxPermSize=512m
+INFO | 2016/03/08 19:51:33 | Argument #4 : -DGC3ServletUser=OTMApp
+INFO | 2016/03/08 19:51:33 | Argument #5 : -DGC3ServletGroup=OTMAppUser
+INFO | 2016/03/08 19:51:33 | Argument #6 : -DGC3ServletEncodedPassword=Q2FwZyQzMjE=
+INFO | 2016/03/08 19:51:33 | Argument #7 : -DGC3EncodedPassword=T1RNZGVtb0AzMjE=
+INFO | 2016/03/08 19:51:33 | Argument #8 : -DGuestEncodedPassword=Q2FwZyQzMjE=
+INFO | 2016/03/08 19:51:33 | Argument #9 : -Dglog.home=/U01/OTM/OTM64/glog/config
+INFO | 2016/03/08 19:51:33 | Argument #10 : -Duser.home=/U01/OTM/OTM64/glog/config
+INFO | 2016/03/08 19:51:33 | Argument #11 : -Dmode=appserver
+INFO | 2016/03/08 19:51:33 | Argument #12 : -DpropertyProtection=mask
+INFO | 2016/03/08 19:51:33 | Argument #13 : -Djava.io.tmpdir=/U01/OTM/OTM64/temp
+INFO | 2016/03/08 19:51:33 | Argument #14 : -Djava.awt.headless=true
+INFO | 2016/03/08 19:51:33 | Argument #15 : -Djava.security.auth.login.config=/U01/OTM/OTM64/glog/config/otm_jaas.config
+INFO | 2016/03/08 19:51:33 | Argument #16 : -Xss256k
+INFO | 2016/03/08 19:51:33 | Argument #17 : -verbose:gc
+INFO | 2016/03/08 19:51:33 | Argument #18 : -Xverify:none
+INFO | 2016/03/08 19:51:33 | Argument #19 : -Djava.endorsed.dirs=/usr/lib/jvm/jdk1.7.0_80/jre/lib/endorsed:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/endorsed
+INFO | 2016/03/08 19:51:33 | Argument #20 : -da
+INFO | 2016/03/08 19:51:33 | Argument #21 : -Dwls.home=/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server
+INFO | 2016/03/08 19:51:33 | Argument #22 : -Dweblogic.home=/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server
+INFO | 2016/03/08 19:51:33 | Argument #23 : -Dweblogic.management.username=system
+INFO | 2016/03/08 19:51:33 | Argument #24 : -Dweblogic.management.password=OTMdemo@321
+INFO | 2016/03/08 19:51:33 | Argument #25 : -Dweblogic.Name=gc3app-arlotmglob
+INFO | 2016/03/08 19:51:33 | Argument #26 : -Dweblogic.RootDirectory=/U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmapp
+INFO | 2016/03/08 19:51:33 | Argument #27 : -Djava.security.policy=/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/weblogic.policy
+INFO | 2016/03/08 19:51:33 | Argument #28 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2016/03/08 19:51:33 | Argument #29 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2016/03/08 19:51:33 | Argument #30 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2016/03/08 19:51:33 | Argument #31 : -Dweblogic.wsee.policy.LoadFromClassPathEnabled=true
+INFO | 2016/03/08 19:51:33 | Argument #32 : -classpath
+INFO | 2016/03/08 19:51:33 | Argument #33 : /U01/OTM/OTM64/glog/glog_resources/custom:/U01/OTM/OTM64/glog/glog_resources:/U01/OTM/OTM64/glog/config:/U01/OTM/OTM64/dash/lib/xprb.jar:/U01/OTM/OTM64/dash/lib/xprm.jar:/U01/OTM/OTM64/dash/lib/xprs.jar:/usr/lib/jvm/jdk1.7.0_80/lib/tools.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/weblogic_sp.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/weblogic.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/net.sf.antcontrib_1.1.0.0_1-0b3/lib/ant-contrib.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/modules/features/oracle.wls.common.nodemanager_2.0.0.0.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/com.oracle.cie.config-wls-online_8.1.0.0.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/common/derby/lib/derbynet.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/common/derby/lib/derbyclient.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/common/derby/lib/derby.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/xqrl.jar:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/classes:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/lib/glogserver.jar:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/lib/3rdparty/bip.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/org.dom4j_1.6.1.jar
+INFO | 2016/03/08 19:51:33 | Argument #34 : weblogic.Server
+INFO | 2016/03/08 19:51:33 | Argument #35 : start
+INFO | 2016/03/08 19:51:33 | <Mar 8, 2016 7:51:33 PM IST> <Info> <Security> <BEA-090905> <Disabling the CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true.> 
+INFO | 2016/03/08 19:51:33 | <Mar 8, 2016 7:51:33 PM IST> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG128 to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true.> 
+INFO | 2016/03/08 19:51:34 | <Mar 8, 2016 7:51:34 PM IST> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Java HotSpot(TM) 64-Bit Server VM Version 24.76-b04 from Oracle Corporation.> 
+INFO | 2016/03/08 19:51:34 | <Mar 8, 2016 7:51:34 PM IST> <Info> <Management> <BEA-141107> <Version: WebLogic Server 12.1.3.0.0  Wed May 21 18:53:34 PDT 2014 1604337 > 
+INFO | 2016/03/08 19:51:37 | <Mar 8, 2016 7:51:37 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING.> 
+INFO | 2016/03/08 19:51:37 | <Mar 8, 2016 7:51:37 PM IST> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool.> 
+INFO | 2016/03/08 19:51:37 | <Mar 8, 2016 7:51:37 PM IST> <Info> <WorkManager> <BEA-002942> <CMM memory level becomes 0. Setting standby thread pool size to 256.> 
+INFO | 2016/03/08 19:51:37 | <Mar 8, 2016 7:51:37 PM IST> <Notice> <Log Management> <BEA-170019> <The server log file /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmapp/servers/gc3app-arlotmglob/logs/gc3app-arlotmglob.log is opened. All server side log events will be written to this file.> 
+INFO | 2016/03/08 19:51:43 | [GC 2098176K->112644K(8039936K), 0.0819690 secs]
+INFO | 2016/03/08 19:51:45 | Error loading  properties from WEB_CUSTOM (property set): Error initializing properties for WEB_CUSTOM (property set)
+INFO | 2016/03/08 19:51:45 | java.io.IOException: Error retrieving property set WEB_CUSTOM
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2234)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1997)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.load(GLProperties.java:441)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.init(GLProperties.java:266)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.<init>(GLProperties.java:227)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$NestedPropertySource.load(GLProperties.java:1599)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$NestedPropertySet.load(GLProperties.java:1726)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$Source.load(GLProperties.java:2040)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$Source.load(GLProperties.java:2003)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.load(GLProperties.java:441)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.init(GLProperties.java:266)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.<init>(GLProperties.java:185)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:149)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.get(GLProperties.java:129)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.j2ee.jaas.GC3AuthenticationProviderImpl.<init>(GC3AuthenticationProviderImpl.java:20)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO | 2016/03/08 19:51:45 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+INFO | 2016/03/08 19:51:45 | 	at java.lang.Class.newInstance(Class.java:379)
+INFO | 2016/03/08 19:51:45 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:46)
+INFO | 2016/03/08 19:51:45 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:363)
+INFO | 2016/03/08 19:51:45 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:315)
+INFO | 2016/03/08 19:51:45 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:257)
+INFO | 2016/03/08 19:51:45 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:72)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.internal.WLSIdentityServiceImpl.initialize(WLSIdentityServiceImpl.java:46)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CSSWLSDelegateImpl.initializeServiceEngine(CSSWLSDelegateImpl.java:299)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CSSWLSDelegateImpl.initialize(CSSWLSDelegateImpl.java:220)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.InitializeServiceEngine(CommonSecurityServiceManagerDelegateImpl.java:1861)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:440)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:845)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:901)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.preInitialize(CommonSecurityServiceManagerDelegateImpl.java:1100)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.SecurityServiceManager.preInitialize(SecurityServiceManager.java:925)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.PreSecurityService.start(PreSecurityService.java:139)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.server.AbstractServerService.postConstruct(AbstractServerService.java:78)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO | 2016/03/08 19:51:45 | 	at java.lang.reflect.Method.invoke(Method.java:606)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.utilities.reflection.ReflectionHelper.invoke(ReflectionHelper.java:1017)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.postConstructMe(ClazzCreator.java:388)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:430)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:87)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.oneJob(CurrentTaskFuture.java:1162)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.run(CurrentTaskFuture.java:1147)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpOneLevel.run(CurrentTaskFuture.java:753)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:548)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263)
+INFO | 2016/03/08 19:51:45 | Caused by: java.io.IOException: Error reading property set WEB_CUSTOM
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:341)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2219)
+INFO | 2016/03/08 19:51:45 | 	... 93 more
+INFO | 2016/03/08 19:51:45 | Caused by: [000002] cause.InvalidDataConnection
+INFO | 2016/03/08 19:51:45 | 
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO | 2016/03/08 19:51:45 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.exception.GLException.factory(GLException.java:481)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.exception.GLException.factory(GLException.java:457)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.exception.GLException.factory(GLException.java:453)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.exception.GLException.factory(GLException.java:441)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:364)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:483)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:457)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:71)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:352)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:338)
+INFO | 2016/03/08 19:51:45 | 	... 94 more
+INFO | 2016/03/08 19:51:45 | 
+INFO | 2016/03/08 19:51:45 | Error loading  properties from APP_CUSTOM (property set): Error initializing properties for APP_CUSTOM (property set)
+INFO | 2016/03/08 19:51:45 | java.io.IOException: Error retrieving property set APP_CUSTOM
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2234)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1997)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.load(GLProperties.java:441)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.init(GLProperties.java:266)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.<init>(GLProperties.java:227)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$NestedPropertySource.load(GLProperties.java:1599)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$NestedPropertySet.load(GLProperties.java:1726)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$Source.load(GLProperties.java:2040)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$Source.load(GLProperties.java:2003)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.load(GLProperties.java:441)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.init(GLProperties.java:266)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.<init>(GLProperties.java:185)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:149)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.get(GLProperties.java:129)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.j2ee.jaas.GC3AuthenticationProviderImpl.<init>(GC3AuthenticationProviderImpl.java:20)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO | 2016/03/08 19:51:45 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+INFO | 2016/03/08 19:51:45 | 	at java.lang.Class.newInstance(Class.java:379)
+INFO | 2016/03/08 19:51:45 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:46)
+INFO | 2016/03/08 19:51:45 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:363)
+INFO | 2016/03/08 19:51:45 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:315)
+INFO | 2016/03/08 19:51:45 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:257)
+INFO | 2016/03/08 19:51:45 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:72)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.internal.WLSIdentityServiceImpl.initialize(WLSIdentityServiceImpl.java:46)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CSSWLSDelegateImpl.initializeServiceEngine(CSSWLSDelegateImpl.java:299)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CSSWLSDelegateImpl.initialize(CSSWLSDelegateImpl.java:220)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.InitializeServiceEngine(CommonSecurityServiceManagerDelegateImpl.java:1861)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:440)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:845)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:901)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.preInitialize(CommonSecurityServiceManagerDelegateImpl.java:1100)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.SecurityServiceManager.preInitialize(SecurityServiceManager.java:925)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.PreSecurityService.start(PreSecurityService.java:139)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.server.AbstractServerService.postConstruct(AbstractServerService.java:78)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO | 2016/03/08 19:51:45 | 	at java.lang.reflect.Method.invoke(Method.java:606)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.utilities.reflection.ReflectionHelper.invoke(ReflectionHelper.java:1017)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.postConstructMe(ClazzCreator.java:388)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:430)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:87)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.oneJob(CurrentTaskFuture.java:1162)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.run(CurrentTaskFuture.java:1147)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpOneLevel.run(CurrentTaskFuture.java:753)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:548)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263)
+INFO | 2016/03/08 19:51:45 | Caused by: java.io.IOException: Error reading property set APP_CUSTOM
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:341)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2219)
+INFO | 2016/03/08 19:51:45 | 	... 93 more
+INFO | 2016/03/08 19:51:45 | Caused by: [000003] cause.InvalidDataConnection
+INFO | 2016/03/08 19:51:45 | 
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO | 2016/03/08 19:51:45 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.exception.GLException.factory(GLException.java:481)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.exception.GLException.factory(GLException.java:457)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.exception.GLException.factory(GLException.java:453)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.exception.GLException.factory(GLException.java:441)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:364)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:483)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:457)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:71)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:352)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:338)
+INFO | 2016/03/08 19:51:45 | 	... 94 more
+INFO | 2016/03/08 19:51:45 | 
+INFO | 2016/03/08 19:51:45 | Error loading  properties from APP_WORKFLOW_THREADING (property set): Error initializing properties for APP_WORKFLOW_THREADING (property set)
+INFO | 2016/03/08 19:51:45 | java.io.IOException: Error retrieving property set APP_WORKFLOW_THREADING
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2234)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1997)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.load(GLProperties.java:441)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.init(GLProperties.java:266)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.<init>(GLProperties.java:227)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$NestedPropertySource.load(GLProperties.java:1599)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$NestedPropertySet.load(GLProperties.java:1726)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$Source.load(GLProperties.java:2040)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$Source.load(GLProperties.java:2003)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.load(GLProperties.java:441)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.init(GLProperties.java:266)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.<init>(GLProperties.java:185)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:149)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.get(GLProperties.java:129)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.j2ee.jaas.GC3AuthenticationProviderImpl.<init>(GC3AuthenticationProviderImpl.java:20)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO | 2016/03/08 19:51:45 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+INFO | 2016/03/08 19:51:45 | 	at java.lang.Class.newInstance(Class.java:379)
+INFO | 2016/03/08 19:51:45 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:46)
+INFO | 2016/03/08 19:51:45 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:363)
+INFO | 2016/03/08 19:51:45 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:315)
+INFO | 2016/03/08 19:51:45 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:257)
+INFO | 2016/03/08 19:51:45 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:72)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.internal.WLSIdentityServiceImpl.initialize(WLSIdentityServiceImpl.java:46)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CSSWLSDelegateImpl.initializeServiceEngine(CSSWLSDelegateImpl.java:299)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CSSWLSDelegateImpl.initialize(CSSWLSDelegateImpl.java:220)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.InitializeServiceEngine(CommonSecurityServiceManagerDelegateImpl.java:1861)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:440)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:845)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:901)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.preInitialize(CommonSecurityServiceManagerDelegateImpl.java:1100)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.service.SecurityServiceManager.preInitialize(SecurityServiceManager.java:925)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.security.PreSecurityService.start(PreSecurityService.java:139)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.server.AbstractServerService.postConstruct(AbstractServerService.java:78)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO | 2016/03/08 19:51:45 | 	at java.lang.reflect.Method.invoke(Method.java:606)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.utilities.reflection.ReflectionHelper.invoke(ReflectionHelper.java:1017)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.postConstructMe(ClazzCreator.java:388)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:430)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:45 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:87)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.oneJob(CurrentTaskFuture.java:1162)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.run(CurrentTaskFuture.java:1147)
+INFO | 2016/03/08 19:51:45 | 	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpOneLevel.run(CurrentTaskFuture.java:753)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:548)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311)
+INFO | 2016/03/08 19:51:45 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263)
+INFO | 2016/03/08 19:51:45 | Caused by: java.io.IOException: Error reading property set APP_WORKFLOW_THREADING
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:341)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2219)
+INFO | 2016/03/08 19:51:45 | 	... 93 more
+INFO | 2016/03/08 19:51:45 | Caused by: [000004] cause.InvalidDataConnection
+INFO | 2016/03/08 19:51:45 | 
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+INFO | 2016/03/08 19:51:45 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO | 2016/03/08 19:51:45 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.exception.GLException.factory(GLException.java:481)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.exception.GLException.factory(GLException.java:457)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.exception.GLException.factory(GLException.java:453)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.exception.GLException.factory(GLException.java:441)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:364)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:483)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:457)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:71)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:352)
+INFO | 2016/03/08 19:51:45 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:338)
+INFO | 2016/03/08 19:51:45 | 	... 94 more
+INFO | 2016/03/08 19:51:45 | 
+INFO | 2016/03/08 19:51:45 | GC3 realm initializing <-----------
+INFO | 2016/03/08 19:51:46 | [000006] cause.InvalidDataConnection
+INFO | 2016/03/08 19:51:46 | 
+INFO | 2016/03/08 19:51:46 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2016/03/08 19:51:46 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+INFO | 2016/03/08 19:51:46 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO | 2016/03/08 19:51:46 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+INFO | 2016/03/08 19:51:46 | 	at glog.util.exception.GLException.factory(GLException.java:481)
+INFO | 2016/03/08 19:51:46 | 	at glog.util.exception.GLException.factory(GLException.java:457)
+INFO | 2016/03/08 19:51:46 | 	at glog.util.exception.GLException.factory(GLException.java:453)
+INFO | 2016/03/08 19:51:46 | 	at glog.util.exception.GLException.factory(GLException.java:441)
+INFO | 2016/03/08 19:51:46 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:364)
+INFO | 2016/03/08 19:51:46 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:483)
+INFO | 2016/03/08 19:51:46 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:457)
+INFO | 2016/03/08 19:51:46 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:71)
+INFO | 2016/03/08 19:51:46 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1652)
+INFO | 2016/03/08 19:51:46 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1688)
+INFO | 2016/03/08 19:51:46 | 	at glog.database.security.dbrealm.CachingRealm.readKnownGroups(CachingRealm.java:433)
+INFO | 2016/03/08 19:51:46 | 	at glog.database.security.dbrealm.CachingRealm.initCaches(CachingRealm.java:197)
+INFO | 2016/03/08 19:51:46 | 	at glog.database.security.dbrealm.CachingRealm.<init>(CachingRealm.java:147)
+INFO | 2016/03/08 19:51:46 | 	at glog.database.security.dbrealm.CachingRealm.initialize(CachingRealm.java:129)
+INFO | 2016/03/08 19:51:46 | 	at glog.util.j2ee.jaas.GC3AuthenticationProviderImpl.initialize(GC3AuthenticationProviderImpl.java:32)
+INFO | 2016/03/08 19:51:46 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:60)
+INFO | 2016/03/08 19:51:46 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:363)
+INFO | 2016/03/08 19:51:46 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:315)
+INFO | 2016/03/08 19:51:46 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:257)
+INFO | 2016/03/08 19:51:46 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:72)
+INFO | 2016/03/08 19:51:46 | 	at weblogic.security.service.internal.WLSIdentityServiceImpl.initialize(WLSIdentityServiceImpl.java:46)
+INFO | 2016/03/08 19:51:46 | 	at weblogic.security.service.CSSWLSDelegateImpl.initializeServiceEngine(CSSWLSDelegateImpl.java:299)
+INFO | 2016/03/08 19:51:46 | 	at weblogic.security.service.CSSWLSDelegateImpl.initialize(CSSWLSDelegateImpl.java:220)
+INFO | 2016/03/08 19:51:46 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.InitializeServiceEngine(CommonSecurityServiceManagerDelegateImpl.java:1861)
+INFO | 2016/03/08 19:51:46 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:440)
+INFO | 2016/03/08 19:51:46 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:845)
+INFO | 2016/03/08 19:51:46 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:901)
+INFO | 2016/03/08 19:51:46 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.preInitialize(CommonSecurityServiceManagerDelegateImpl.java:1100)
+INFO | 2016/03/08 19:51:46 | 	at weblogic.security.service.SecurityServiceManager.preInitialize(SecurityServiceManager.java:925)
+INFO | 2016/03/08 19:51:46 | 	at weblogic.security.PreSecurityService.start(PreSecurityService.java:139)
+INFO | 2016/03/08 19:51:46 | 	at weblogic.server.AbstractServerService.postConstruct(AbstractServerService.java:78)
+INFO | 2016/03/08 19:51:46 | 	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+INFO | 2016/03/08 19:51:46 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO | 2016/03/08 19:51:46 | 	at java.lang.reflect.Method.invoke(Method.java:606)
+INFO | 2016/03/08 19:51:46 | 	at org.glassfish.hk2.utilities.reflection.ReflectionHelper.invoke(ReflectionHelper.java:1017)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ClazzCreator.postConstructMe(ClazzCreator.java:388)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:430)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:46 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:46 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:46 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:46 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:46 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:46 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:46 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:46 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:606)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ThreeThirtyResolver.resolve(ThreeThirtyResolver.java:77)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ClazzCreator.resolve(ClazzCreator.java:231)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ClazzCreator.resolveAllDependencies(ClazzCreator.java:254)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:413)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:456)
+INFO | 2016/03/08 19:51:46 | 	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:225)
+INFO | 2016/03/08 19:51:46 | 	at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:82)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2488)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:98)
+INFO | 2016/03/08 19:51:46 | 	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:87)
+INFO | 2016/03/08 19:51:46 | 	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.oneJob(CurrentTaskFuture.java:1162)
+INFO | 2016/03/08 19:51:46 | 	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.run(CurrentTaskFuture.java:1147)
+INFO | 2016/03/08 19:51:46 | 	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpOneLevel.run(CurrentTaskFuture.java:753)
+INFO | 2016/03/08 19:51:46 | 	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:548)
+INFO | 2016/03/08 19:51:46 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311)
+INFO | 2016/03/08 19:51:46 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263)
+INFO | 2016/03/08 19:51:46 | Fatal Error: Realm Initialization failed!!
+INFO | 2016/03/08 19:51:46 | <Mar 8, 2016 7:51:46 PM IST> <Notice> <WebLogicServer> <BEA-000388> <JVM called the WebLogic Server shutdown hook. The server will force shutdown now.> 
+INFO | 2016/03/08 19:51:46 | <Mar 8, 2016 7:51:46 PM IST> <Notice> <WebLogicServer> <BEA-000396> <Server shutdown has been requested by <WLS Kernel>.> 
+INFO | 2016/03/08 19:51:46 | <Mar 8, 2016 7:51:46 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FORCE_SHUTTING_DOWN.> 
+INFO | 2016/03/08 19:51:57 | [GC 2210820K->81745K(8039936K), 0.0756670 secs]
+INFO | 2016/03/08 19:51:57 | Stopped Launched Process...
+INFO | 2016/03/09 15:14:10 | Starting Launched Process...
+INFO | 2016/03/09 15:14:10 | java version "1.7.0_76"
+INFO | 2016/03/09 15:14:10 | Java(TM) SE Runtime Environment (build 1.7.0_76-b13)
+INFO | 2016/03/09 15:14:10 | Java HotSpot(TM) 64-Bit Server VM (build 24.76-b04, mixed mode)
+INFO | 2016/03/09 15:14:10 | Argument #0 : /U01/OTM/OTM64/jdk/bin/java
+INFO | 2016/03/09 15:14:10 | Argument #1 : -Xms8192m
+INFO | 2016/03/09 15:14:10 | Argument #2 : -Xmx8192m
+INFO | 2016/03/09 15:14:10 | Argument #3 : -XX:MaxPermSize=512m
+INFO | 2016/03/09 15:14:10 | Argument #4 : -DGC3ServletUser=OTMApp
+INFO | 2016/03/09 15:14:10 | Argument #5 : -DGC3ServletGroup=OTMAppUser
+INFO | 2016/03/09 15:14:10 | Argument #6 : -DGC3ServletEncodedPassword=Q2FwZyQzMjE=
+INFO | 2016/03/09 15:14:10 | Argument #7 : -DGC3EncodedPassword=T1RNZGVtb0AzMjE=
+INFO | 2016/03/09 15:14:10 | Argument #8 : -DGuestEncodedPassword=Q2FwZyQzMjE=
+INFO | 2016/03/09 15:14:10 | Argument #9 : -Dglog.home=/U01/OTM/OTM64/glog/config
+INFO | 2016/03/09 15:14:10 | Argument #10 : -Duser.home=/U01/OTM/OTM64/glog/config
+INFO | 2016/03/09 15:14:10 | Argument #11 : -Dmode=appserver
+INFO | 2016/03/09 15:14:10 | Argument #12 : -DpropertyProtection=mask
+INFO | 2016/03/09 15:14:10 | Argument #13 : -Djava.io.tmpdir=/U01/OTM/OTM64/temp
+INFO | 2016/03/09 15:14:10 | Argument #14 : -Djava.awt.headless=true
+INFO | 2016/03/09 15:14:10 | Argument #15 : -Djava.security.auth.login.config=/U01/OTM/OTM64/glog/config/otm_jaas.config
+INFO | 2016/03/09 15:14:10 | Argument #16 : -Xss256k
+INFO | 2016/03/09 15:14:10 | Argument #17 : -verbose:gc
+INFO | 2016/03/09 15:14:10 | Argument #18 : -Xverify:none
+INFO | 2016/03/09 15:14:10 | Argument #19 : -Djava.endorsed.dirs=/usr/lib/jvm/jdk1.7.0_80/jre/lib/endorsed:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/endorsed
+INFO | 2016/03/09 15:14:10 | Argument #20 : -da
+INFO | 2016/03/09 15:14:10 | Argument #21 : -Dwls.home=/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server
+INFO | 2016/03/09 15:14:10 | Argument #22 : -Dweblogic.home=/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server
+INFO | 2016/03/09 15:14:10 | Argument #23 : -Dweblogic.management.username=system
+INFO | 2016/03/09 15:14:10 | Argument #24 : -Dweblogic.management.password=OTMdemo@321
+INFO | 2016/03/09 15:14:10 | Argument #25 : -Dweblogic.Name=gc3app-arlotmglob
+INFO | 2016/03/09 15:14:10 | Argument #26 : -Dweblogic.RootDirectory=/U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmapp
+INFO | 2016/03/09 15:14:10 | Argument #27 : -Djava.security.policy=/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/weblogic.policy
+INFO | 2016/03/09 15:14:10 | Argument #28 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2016/03/09 15:14:10 | Argument #29 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2016/03/09 15:14:10 | Argument #30 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2016/03/09 15:14:10 | Argument #31 : -Dweblogic.wsee.policy.LoadFromClassPathEnabled=true
+INFO | 2016/03/09 15:14:10 | Argument #32 : -classpath
+INFO | 2016/03/09 15:14:10 | Argument #33 : /U01/OTM/OTM64/glog/glog_resources/custom:/U01/OTM/OTM64/glog/glog_resources:/U01/OTM/OTM64/glog/config:/U01/OTM/OTM64/dash/lib/xprb.jar:/U01/OTM/OTM64/dash/lib/xprm.jar:/U01/OTM/OTM64/dash/lib/xprs.jar:/usr/lib/jvm/jdk1.7.0_80/lib/tools.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/weblogic_sp.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/weblogic.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/net.sf.antcontrib_1.1.0.0_1-0b3/lib/ant-contrib.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/modules/features/oracle.wls.common.nodemanager_2.0.0.0.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/com.oracle.cie.config-wls-online_8.1.0.0.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/common/derby/lib/derbynet.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/common/derby/lib/derbyclient.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/common/derby/lib/derby.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/xqrl.jar:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/classes:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/lib/glogserver.jar:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/lib/3rdparty/bip.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/org.dom4j_1.6.1.jar
+INFO | 2016/03/09 15:14:10 | Argument #34 : weblogic.Server
+INFO | 2016/03/09 15:14:10 | Argument #35 : start
+INFO | 2016/03/09 15:14:11 | <Mar 9, 2016 3:14:11 PM IST> <Info> <Security> <BEA-090905> <Disabling the CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true.> 
+INFO | 2016/03/09 15:14:11 | <Mar 9, 2016 3:14:11 PM IST> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG128 to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true.> 
+INFO | 2016/03/09 15:14:12 | <Mar 9, 2016 3:14:12 PM IST> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Java HotSpot(TM) 64-Bit Server VM Version 24.76-b04 from Oracle Corporation.> 
+INFO | 2016/03/09 15:14:12 | <Mar 9, 2016 3:14:12 PM IST> <Info> <Management> <BEA-141107> <Version: WebLogic Server 12.1.3.0.0  Wed May 21 18:53:34 PDT 2014 1604337 > 
+INFO | 2016/03/09 15:14:14 | <Mar 9, 2016 3:14:14 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING.> 
+INFO | 2016/03/09 15:14:14 | <Mar 9, 2016 3:14:14 PM IST> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool.> 
+INFO | 2016/03/09 15:14:14 | <Mar 9, 2016 3:14:14 PM IST> <Info> <WorkManager> <BEA-002942> <CMM memory level becomes 0. Setting standby thread pool size to 256.> 
+INFO | 2016/03/09 15:14:14 | <Mar 9, 2016 3:14:14 PM IST> <Notice> <Log Management> <BEA-170019> <The server log file /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmapp/servers/gc3app-arlotmglob/logs/gc3app-arlotmglob.log is opened. All server side log events will be written to this file.> 
+INFO | 2016/03/09 15:14:21 | [GC 2098176K->112645K(8039936K), 0.0974960 secs]
+INFO | 2016/03/09 15:14:23 | GC3 realm initializing <-----------
+INFO | 2016/03/09 15:14:24 | [GC 2210821K->81700K(8039936K), 0.1361270 secs]
+INFO | 2016/03/09 15:14:24 | -----------> GC3 realm initialized
+INFO | 2016/03/09 15:14:31 | <Mar 9, 2016 3:14:31 PM IST> <Notice> <Security> <BEA-090082> <Security initializing using security realm myrealm.> 
+INFO | 2016/03/09 15:14:33 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO | 2016/03/09 15:14:33 | SLF4J: Found binding in [jar:file:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/modules/features/weblogic.server.merged.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO | 2016/03/09 15:14:33 | SLF4J: Found binding in [jar:file:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/lib/3rdparty/ridc/slf4j-log4j12-1.6.6.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO | 2016/03/09 15:14:33 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+INFO | 2016/03/09 15:14:33 | <Mar 9, 2016 3:14:33 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STANDBY.> 
+INFO | 2016/03/09 15:14:33 | <Mar 9, 2016 3:14:33 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING.> 
+INFO | 2016/03/09 15:14:33 | Mar 09, 2016 3:14:33 PM weblogic.wsee.WseeCoreMessages logWseeServiceStarting
+INFO | 2016/03/09 15:14:33 | INFO: The Wsee Service is starting
+INFO | 2016/03/09 15:14:40 | -- OTM Event: preDeploy
+INFO | 2016/03/09 15:14:41 | [GC 2179876K->186084K(8039936K), 0.2040560 secs]
+INFO | 2016/03/09 15:14:47 | [GC 2284260K->176816K(8039936K), 0.2596990 secs]
+INFO | 2016/03/09 15:14:49 | [GC 2274992K->187198K(8039936K), 0.1070830 secs]
+INFO | 2016/03/09 15:14:52 | [GC 2285374K->199287K(8121344K), 0.2870320 secs]
+INFO | 2016/03/09 15:14:54 | [GC 2488951K->214942K(8135680K), 0.2305230 secs]
+INFO | 2016/03/09 15:14:56 | [GC 2504606K->228565K(8144384K), 0.1847740 secs]
+INFO | 2016/03/09 15:15:10 | [GC 2535637K->304117K(8144384K), 0.2691060 secs]
+INFO | 2016/03/09 15:15:14 | -- OTM Event: initContext
+INFO | 2016/03/09 15:15:14 | -- OTM Event: startupServlet
+INFO | 2016/03/09 15:15:14 | -- OTM Startup: loading startup classes
+INFO | 2016/03/09 15:15:14 | --
+INFO | 2016/03/09 15:15:29 | [GC 2611189K->357210K(8160256K), 0.2073990 secs]
+INFO | 2016/03/09 15:15:43 | [GC 2689370K->377893K(8153600K), 0.3055220 secs]
+INFO | 2016/03/09 15:15:44 |  : QUERYRESOURCES : 0
+INFO | 2016/03/09 15:15:45 | en : QUERYRESOURCES : 990056
+INFO | 2016/03/09 15:15:45 | en_US : QUERYRESOURCES : 0
+INFO | 2016/03/09 15:15:45 | -- OTM Event: postLoad
+INFO | 2016/03/09 15:15:45 | -- OTM Event: activateThread
+INFO | 2016/03/09 15:15:45 | -- OTM Startup: activating startup classes
+INFO | 2016/03/09 15:15:45 | -- OTM Event: postDeploy
+INFO | 2016/03/09 15:15:45 | <Mar 9, 2016 3:15:45 PM IST> <Notice> <Log Management> <BEA-170027> <The server has successfully established a connection with the Domain level Diagnostic Service.> 
+INFO | 2016/03/09 15:15:47 | <Mar 9, 2016 3:15:47 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to ADMIN.> 
+INFO | 2016/03/09 15:15:47 | <Mar 9, 2016 3:15:47 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RESUMING.> 
+INFO | 2016/03/09 15:15:47 | <Mar 9, 2016 3:15:47 PM IST> <Notice> <Security> <BEA-090171> <Loading the identity certificate and private key stored under the alias DemoIdentity from the jks keystore file /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmapp/security/DemoIdentity.jks.> 
+INFO | 2016/03/09 15:15:47 | <Mar 9, 2016 3:15:47 PM IST> <Notice> <Security> <BEA-090169> <Loading trusted certificates from the jks keystore file /U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/DemoTrust.jks.> 
+INFO | 2016/03/09 15:15:47 | <Mar 9, 2016 3:15:47 PM IST> <Notice> <Security> <BEA-090169> <Loading trusted certificates from the jks keystore file /U01/OTM/OTM64/jdk/jre/lib/security/cacerts.> 
+INFO | 2016/03/09 15:15:47 | <Mar 9, 2016 3:15:47 PM IST> <Alert> <Security> <BEA-090152> <Demo trusted CA certificate is being used in production mode: [
+INFO | 2016/03/09 15:15:47 | [
+INFO | 2016/03/09 15:15:47 |   Version: V3
+INFO | 2016/03/09 15:15:47 |   Subject: CN=CACERT, OU=FOR TESTING ONLY, O=MyOrganization, L=MyTown, ST=MyState, C=US
+INFO | 2016/03/09 15:15:47 |   Signature Algorithm: MD5withRSA, OID = 1.2.840.113549.1.1.4
+INFO | 2016/03/09 15:15:47 | 
+INFO | 2016/03/09 15:15:47 |   Key:  Sun RSA public key, 512 bits
+INFO | 2016/03/09 15:15:47 |   modulus: 9550192877869244258838480703390456015046425375252278279190673063544122510925482179963329236052146047356415957587628011282484772458983977898996276815440753
+INFO | 2016/03/09 15:15:47 |   public exponent: 65537
+INFO | 2016/03/09 15:15:47 |   Validity: [From: Fri Mar 22 01:42:27 IST 2002,
+INFO | 2016/03/09 15:15:47 |                To: Wed Mar 23 01:42:27 IST 2022]
+INFO | 2016/03/09 15:15:47 |   Issuer: CN=CACERT, OU=FOR TESTING ONLY, O=MyOrganization, L=MyTown, ST=MyState, C=US
+INFO | 2016/03/09 15:15:47 |   SerialNumber: [    33f10648 fcde0deb 4199921f d64537f4]
+INFO | 2016/03/09 15:15:47 | 
+INFO | 2016/03/09 15:15:47 | Certificate Extensions: 1
+INFO | 2016/03/09 15:15:47 | [1]: ObjectId: 2.5.29.15 Criticality=true
+INFO | 2016/03/09 15:15:47 | KeyUsage [
+INFO | 2016/03/09 15:15:47 |   Key_CertSign
+INFO | 2016/03/09 15:15:47 | ]
+INFO | 2016/03/09 15:15:47 | 
+INFO | 2016/03/09 15:15:47 | ]
+INFO | 2016/03/09 15:15:47 |   Algorithm: [MD5withRSA]
+INFO | 2016/03/09 15:15:47 |   Signature:
+INFO | 2016/03/09 15:15:47 | 0000: 9D 26 4C 29 C8 91 C3 A7   06 C3 24 6F AE B4 F8 82  .&L)......$o....
+INFO | 2016/03/09 15:15:47 | 0010: 80 4D AA CB 7C 79 46 84   81 C4 66 95 F4 1E D8 C4  .M...yF...f.....
+INFO | 2016/03/09 15:15:47 | 0020: E9 B7 D9 7C E2 23 33 A4   B7 21 E0 AA 54 2B 4A FF  .....#3..!..T+J.
+INFO | 2016/03/09 15:15:47 | 0030: CB 21 20 88 81 21 DB AC   90 54 D8 7D 79 63 23 3C  .! ..!...T..yc#<
+INFO | 2016/03/09 15:15:47 | 
+INFO | 2016/03/09 15:15:47 | ]. The system is vulnerable to security attacks, since it trusts certificates signed by the demo trusted CA.> 
+INFO | 2016/03/09 15:15:47 | <Mar 9, 2016 3:15:47 PM IST> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure[3]" is now listening on 127.0.0.1:7002 for protocols iiops, t3s, ldaps, https.> 
+INFO | 2016/03/09 15:15:47 | <Mar 9, 2016 3:15:47 PM IST> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure[1]" is now listening on fe80:0:0:0:215:5dff:fe39:3e2b:7002 for protocols iiops, t3s, ldaps, https.> 
+INFO | 2016/03/09 15:15:47 | <Mar 9, 2016 3:15:47 PM IST> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure[2]" is now listening on 0:0:0:0:0:0:0:1:7002 for protocols iiops, t3s, ldaps, https.> 
+INFO | 2016/03/09 15:15:47 | <Mar 9, 2016 3:15:47 PM IST> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure" is now listening on 10.207.166.157:7002 for protocols iiops, t3s, ldaps, https.> 
+INFO | 2016/03/09 15:15:47 | <Mar 9, 2016 3:15:47 PM IST> <Notice> <Server> <BEA-002613> <Channel "Default[3]" is now listening on 127.0.0.1:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2016/03/09 15:15:47 | <Mar 9, 2016 3:15:47 PM IST> <Notice> <Server> <BEA-002613> <Channel "Default" is now listening on 10.207.166.157:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2016/03/09 15:15:47 | <Mar 9, 2016 3:15:47 PM IST> <Notice> <Server> <BEA-002613> <Channel "Default[2]" is now listening on 0:0:0:0:0:0:0:1:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2016/03/09 15:15:47 | <Mar 9, 2016 3:15:47 PM IST> <Notice> <Server> <BEA-002613> <Channel "Default[1]" is now listening on fe80:0:0:0:215:5dff:fe39:3e2b:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2016/03/09 15:15:47 | <Mar 9, 2016 3:15:47 PM IST> <Notice> <WebLogicServer> <BEA-000329> <Started the WebLogic Server Administration Server "gc3app-arlotmglob" for domain "otmapp" running in production mode.> 
+INFO | 2016/03/09 15:15:47 | <Mar 9, 2016 3:15:47 PM IST> <Warning> <Server> <BEA-002611> <The hostname "localhost.localdomain", maps to multiple IP addresses: 127.0.0.1, 0:0:0:0:0:0:0:1.> 
+INFO | 2016/03/09 15:15:47 | <Mar 9, 2016 3:15:47 PM IST> <Notice> <WebLogicServer> <BEA-000360> <The server started in RUNNING mode.> 
+INFO | 2016/03/09 15:15:47 | <Mar 9, 2016 3:15:47 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RUNNING.> 
+INFO | 2016/03/09 15:15:53 | -- OTM Event: serverReady
+INFO | 2016/03/09 17:22:50 | <Mar 9, 2016 5:22:50 PM IST> <Notice> <WebLogicServer> <BEA-000396> <Server shutdown has been requested by system.> 
+INFO | 2016/03/09 17:22:50 | <Mar 9, 2016 5:22:50 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to SUSPENDING.> 
+INFO | 2016/03/09 17:22:50 | <Mar 9, 2016 5:22:50 PM IST> <Notice> <HTTP> <BEA-101278> <There are no active sessions. The Web service is ready to suspend.> 
+INFO | 2016/03/09 17:22:50 | <Mar 9, 2016 5:22:50 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to ADMIN.> 
+INFO | 2016/03/09 17:22:50 | <Mar 9, 2016 5:22:50 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to SHUTTING_DOWN.> 
+INFO | 2016/03/09 17:22:50 | <Mar 9, 2016 5:22:50 PM IST> <Notice> <Server> <BEA-002607> <Channel "DefaultSecure[3]", listening on 127.0.0.1:7002, was shut down.> 
+INFO | 2016/03/09 17:22:50 | <Mar 9, 2016 5:22:50 PM IST> <Notice> <Server> <BEA-002607> <Channel "Default[2]", listening on 0:0:0:0:0:0:0:1:7001, was shut down.> 
+INFO | 2016/03/09 17:22:50 | <Mar 9, 2016 5:22:50 PM IST> <Notice> <Server> <BEA-002607> <Channel "Default[3]", listening on 127.0.0.1:7001, was shut down.> 
+INFO | 2016/03/09 17:22:50 | <Mar 9, 2016 5:22:50 PM IST> <Notice> <Server> <BEA-002607> <Channel "Default", listening on 10.207.166.157:7001, was shut down.> 
+INFO | 2016/03/09 17:22:50 | <Mar 9, 2016 5:22:50 PM IST> <Notice> <Server> <BEA-002607> <Channel "Default[1]", listening on fe80:0:0:0:215:5dff:fe39:3e2b:7001, was shut down.> 
+INFO | 2016/03/09 17:22:50 | <Mar 9, 2016 5:22:50 PM IST> <Notice> <Server> <BEA-002607> <Channel "DefaultSecure[1]", listening on fe80:0:0:0:215:5dff:fe39:3e2b:7002, was shut down.> 
+INFO | 2016/03/09 17:22:50 | <Mar 9, 2016 5:22:50 PM IST> <Notice> <Server> <BEA-002607> <Channel "DefaultSecure", listening on 10.207.166.157:7002, was shut down.> 
+INFO | 2016/03/09 17:22:50 | <Mar 9, 2016 5:22:50 PM IST> <Notice> <Server> <BEA-002607> <Channel "DefaultSecure[2]", listening on 0:0:0:0:0:0:0:1:7002, was shut down.> 
+INFO | 2016/03/09 17:22:50 | Mar 09, 2016 5:22:50 PM weblogic.wsee.WseeCoreMessages logWseeServiceStopping
+INFO | 2016/03/09 17:22:50 | INFO: The Wsee Service is stopping
+INFO | 2016/03/09 17:22:50 | -- OTM Event: preUndeploy
+INFO | 2016/03/09 17:22:50 | -- OTM Event: destroyContext
+INFO | 2016/03/09 17:22:51 | -- OTM Event: postUndeploy
+INFO | 2016/03/09 17:22:52 | [GC 1815336K->405126K(8145408K), 0.0641850 secs]
+INFO | 2016/03/09 17:22:53 | [Full GC 405126K->374701K(8145408K), 1.7255180 secs]
+INFO | 2016/03/09 17:22:53 | <Mar 9, 2016 5:22:53 PM IST> <Warning> <Management> <BEA-141269> <The temporary bean tree updateDeploymentContext(Wed Mar 09 15:16:11 IST 2016) was allocated for an undo, get, or activate operation, but has not been garbage collected.> 
+INFO | 2016/03/09 17:22:54 | Stopped Launched Process...
+INFO | 2016/03/09 17:34:39 | Starting Launched Process...
+INFO | 2016/03/09 17:34:39 | java version "1.7.0_76"
+INFO | 2016/03/09 17:34:39 | Java(TM) SE Runtime Environment (build 1.7.0_76-b13)
+INFO | 2016/03/09 17:34:39 | Java HotSpot(TM) 64-Bit Server VM (build 24.76-b04, mixed mode)
+INFO | 2016/03/09 17:34:39 | Argument #0 : /U01/OTM/OTM64/jdk/bin/java
+INFO | 2016/03/09 17:34:39 | Argument #1 : -Xms8192m
+INFO | 2016/03/09 17:34:39 | Argument #2 : -Xmx8192m
+INFO | 2016/03/09 17:34:39 | Argument #3 : -XX:MaxPermSize=512m
+INFO | 2016/03/09 17:34:39 | Argument #4 : -DGC3ServletUser=OTMApp
+INFO | 2016/03/09 17:34:39 | Argument #5 : -DGC3ServletGroup=OTMAppUser
+INFO | 2016/03/09 17:34:39 | Argument #6 : -DGC3ServletEncodedPassword=Q2FwZyQzMjE=
+INFO | 2016/03/09 17:34:39 | Argument #7 : -DGC3EncodedPassword=T1RNZGVtb0AzMjE=
+INFO | 2016/03/09 17:34:39 | Argument #8 : -DGuestEncodedPassword=Q2FwZyQzMjE=
+INFO | 2016/03/09 17:34:39 | Argument #9 : -Dglog.home=/U01/OTM/OTM64/glog/config
+INFO | 2016/03/09 17:34:39 | Argument #10 : -Duser.home=/U01/OTM/OTM64/glog/config
+INFO | 2016/03/09 17:34:39 | Argument #11 : -Dmode=appserver
+INFO | 2016/03/09 17:34:39 | Argument #12 : -DpropertyProtection=mask
+INFO | 2016/03/09 17:34:39 | Argument #13 : -Djava.io.tmpdir=/U01/OTM/OTM64/temp
+INFO | 2016/03/09 17:34:39 | Argument #14 : -Djava.awt.headless=true
+INFO | 2016/03/09 17:34:39 | Argument #15 : -Djava.security.auth.login.config=/U01/OTM/OTM64/glog/config/otm_jaas.config
+INFO | 2016/03/09 17:34:39 | Argument #16 : -Xss256k
+INFO | 2016/03/09 17:34:39 | Argument #17 : -verbose:gc
+INFO | 2016/03/09 17:34:39 | Argument #18 : -Xverify:none
+INFO | 2016/03/09 17:34:39 | Argument #19 : -Djava.endorsed.dirs=/usr/lib/jvm/jdk1.7.0_80/jre/lib/endorsed:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/endorsed
+INFO | 2016/03/09 17:34:39 | Argument #20 : -da
+INFO | 2016/03/09 17:34:39 | Argument #21 : -Dwls.home=/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server
+INFO | 2016/03/09 17:34:39 | Argument #22 : -Dweblogic.home=/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server
+INFO | 2016/03/09 17:34:39 | Argument #23 : -Dweblogic.management.username=system
+INFO | 2016/03/09 17:34:39 | Argument #24 : -Dweblogic.management.password=OTMdemo@321
+INFO | 2016/03/09 17:34:39 | Argument #25 : -Dweblogic.Name=gc3app-arlotmglob
+INFO | 2016/03/09 17:34:39 | Argument #26 : -Dweblogic.RootDirectory=/U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmapp
+INFO | 2016/03/09 17:34:39 | Argument #27 : -Djava.security.policy=/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/weblogic.policy
+INFO | 2016/03/09 17:34:39 | Argument #28 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2016/03/09 17:34:39 | Argument #29 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2016/03/09 17:34:39 | Argument #30 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2016/03/09 17:34:39 | Argument #31 : -Dweblogic.wsee.policy.LoadFromClassPathEnabled=true
+INFO | 2016/03/09 17:34:39 | Argument #32 : -classpath
+INFO | 2016/03/09 17:34:39 | Argument #33 : /U01/OTM/OTM64/glog/glog_resources/custom:/U01/OTM/OTM64/glog/glog_resources:/U01/OTM/OTM64/glog/config:/U01/OTM/OTM64/dash/lib/xprb.jar:/U01/OTM/OTM64/dash/lib/xprm.jar:/U01/OTM/OTM64/dash/lib/xprs.jar:/usr/lib/jvm/jdk1.7.0_80/lib/tools.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/weblogic_sp.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/weblogic.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/net.sf.antcontrib_1.1.0.0_1-0b3/lib/ant-contrib.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/modules/features/oracle.wls.common.nodemanager_2.0.0.0.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/com.oracle.cie.config-wls-online_8.1.0.0.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/common/derby/lib/derbynet.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/common/derby/lib/derbyclient.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/common/derby/lib/derby.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/xqrl.jar:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/classes:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/lib/glogserver.jar:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/lib/3rdparty/bip.jar:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/../oracle_common/modules/org.dom4j_1.6.1.jar
+INFO | 2016/03/09 17:34:39 | Argument #34 : weblogic.Server
+INFO | 2016/03/09 17:34:39 | Argument #35 : start
+INFO | 2016/03/09 17:34:39 | <Mar 9, 2016 5:34:39 PM IST> <Info> <Security> <BEA-090905> <Disabling the CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true.> 
+INFO | 2016/03/09 17:34:39 | <Mar 9, 2016 5:34:39 PM IST> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG128 to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true.> 
+INFO | 2016/03/09 17:34:40 | <Mar 9, 2016 5:34:40 PM IST> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Java HotSpot(TM) 64-Bit Server VM Version 24.76-b04 from Oracle Corporation.> 
+INFO | 2016/03/09 17:34:41 | <Mar 9, 2016 5:34:41 PM IST> <Info> <Management> <BEA-141107> <Version: WebLogic Server 12.1.3.0.0  Wed May 21 18:53:34 PDT 2014 1604337 > 
+INFO | 2016/03/09 17:34:43 | <Mar 9, 2016 5:34:43 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING.> 
+INFO | 2016/03/09 17:34:43 | <Mar 9, 2016 5:34:43 PM IST> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool.> 
+INFO | 2016/03/09 17:34:43 | <Mar 9, 2016 5:34:43 PM IST> <Info> <WorkManager> <BEA-002942> <CMM memory level becomes 0. Setting standby thread pool size to 256.> 
+INFO | 2016/03/09 17:34:43 | <Mar 9, 2016 5:34:43 PM IST> <Notice> <Log Management> <BEA-170019> <The server log file /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmapp/servers/gc3app-arlotmglob/logs/gc3app-arlotmglob.log is opened. All server side log events will be written to this file.> 
+INFO | 2016/03/09 17:34:49 | [GC 2098176K->116662K(8039936K), 0.1212620 secs]
+INFO | 2016/03/09 17:34:51 | GC3 realm initializing <-----------
+INFO | 2016/03/09 17:34:51 | [GC 2214838K->83424K(8039936K), 0.0774240 secs]
+INFO | 2016/03/09 17:34:52 | -----------> GC3 realm initialized
+INFO | 2016/03/09 17:35:01 | <Mar 9, 2016 5:35:01 PM IST> <Notice> <Security> <BEA-090082> <Security initializing using security realm myrealm.> 
+INFO | 2016/03/09 17:35:02 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO | 2016/03/09 17:35:02 | SLF4J: Found binding in [jar:file:/U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/modules/features/weblogic.server.merged.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO | 2016/03/09 17:35:02 | SLF4J: Found binding in [jar:file:/U01/OTM/OTM64/glog/gc3webapp.ear/GC3.war/WEB-INF/lib/3rdparty/ridc/slf4j-log4j12-1.6.6.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO | 2016/03/09 17:35:02 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+INFO | 2016/03/09 17:35:03 | <Mar 9, 2016 5:35:03 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STANDBY.> 
+INFO | 2016/03/09 17:35:03 | <Mar 9, 2016 5:35:03 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING.> 
+INFO | 2016/03/09 17:35:03 | Mar 09, 2016 5:35:03 PM weblogic.wsee.WseeCoreMessages logWseeServiceStarting
+INFO | 2016/03/09 17:35:03 | INFO: The Wsee Service is starting
+INFO | 2016/03/09 17:35:13 | -- OTM Event: preDeploy
+INFO | 2016/03/09 17:35:14 | [GC 2181600K->200180K(8039936K), 0.0955990 secs]
+INFO | 2016/03/09 17:35:20 | [GC 2298356K->189682K(8039936K), 0.1423360 secs]
+INFO | 2016/03/09 17:35:23 | [GC 2287858K->201035K(8039936K), 0.1040760 secs]
+INFO | 2016/03/09 17:35:26 | [GC 2299211K->213296K(8100352K), 0.1277790 secs]
+INFO | 2016/03/09 17:35:29 | [GC 2462000K->228588K(8115200K), 0.1303310 secs]
+INFO | 2016/03/09 17:35:32 | [GC 2477292K->239851K(8123392K), 0.1023560 secs]
+INFO | 2016/03/09 17:35:41 | [GC 2506987K->298884K(8124416K), 0.0970880 secs]
+INFO | 2016/03/09 17:35:50 | -- OTM Event: initContext
+INFO | 2016/03/09 17:35:50 | -- OTM Event: startupServlet
+INFO | 2016/03/09 17:35:50 | -- OTM Startup: loading startup classes
+INFO | 2016/03/09 17:35:50 | --
+INFO | 2016/03/09 17:35:59 | [GC 2566020K->363288K(8139264K), 0.1050800 secs]
+INFO | 2016/03/09 17:36:09 | [GC 2650392K->374299K(8129536K), 0.1433890 secs]
+INFO | 2016/03/09 17:36:13 |  : QUERYRESOURCES : 0
+INFO | 2016/03/09 17:36:14 | en : QUERYRESOURCES : 990056
+INFO | 2016/03/09 17:36:14 | en_US : QUERYRESOURCES : 0
+INFO | 2016/03/09 17:36:14 | -- OTM Event: postLoad
+INFO | 2016/03/09 17:36:14 | -- OTM Event: activateThread
+INFO | 2016/03/09 17:36:14 | -- OTM Startup: activating startup classes
+INFO | 2016/03/09 17:36:14 | -- OTM Event: postDeploy
+INFO | 2016/03/09 17:36:15 | <Mar 9, 2016 5:36:15 PM IST> <Notice> <Log Management> <BEA-170027> <The server has successfully established a connection with the Domain level Diagnostic Service.> 
+INFO | 2016/03/09 17:36:17 | <Mar 9, 2016 5:36:17 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to ADMIN.> 
+INFO | 2016/03/09 17:36:17 | <Mar 9, 2016 5:36:17 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RESUMING.> 
+INFO | 2016/03/09 17:36:17 | <Mar 9, 2016 5:36:17 PM IST> <Notice> <Security> <BEA-090171> <Loading the identity certificate and private key stored under the alias DemoIdentity from the jks keystore file /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmapp/security/DemoIdentity.jks.> 
+INFO | 2016/03/09 17:36:17 | <Mar 9, 2016 5:36:17 PM IST> <Notice> <Security> <BEA-090169> <Loading trusted certificates from the jks keystore file /U01/OTM/Oracle/Middleware/Oracle_Home/wlserver/server/lib/DemoTrust.jks.> 
+INFO | 2016/03/09 17:36:17 | <Mar 9, 2016 5:36:17 PM IST> <Notice> <Security> <BEA-090169> <Loading trusted certificates from the jks keystore file /U01/OTM/OTM64/jdk/jre/lib/security/cacerts.> 
+INFO | 2016/03/09 17:36:17 | <Mar 9, 2016 5:36:17 PM IST> <Alert> <Security> <BEA-090152> <Demo trusted CA certificate is being used in production mode: [
+INFO | 2016/03/09 17:36:17 | [
+INFO | 2016/03/09 17:36:17 |   Version: V3
+INFO | 2016/03/09 17:36:17 |   Subject: CN=CACERT, OU=FOR TESTING ONLY, O=MyOrganization, L=MyTown, ST=MyState, C=US
+INFO | 2016/03/09 17:36:17 |   Signature Algorithm: MD5withRSA, OID = 1.2.840.113549.1.1.4
+INFO | 2016/03/09 17:36:17 | 
+INFO | 2016/03/09 17:36:17 |   Key:  Sun RSA public key, 512 bits
+INFO | 2016/03/09 17:36:17 |   modulus: 9550192877869244258838480703390456015046425375252278279190673063544122510925482179963329236052146047356415957587628011282484772458983977898996276815440753
+INFO | 2016/03/09 17:36:17 |   public exponent: 65537
+INFO | 2016/03/09 17:36:17 |   Validity: [From: Fri Mar 22 01:42:27 IST 2002,
+INFO | 2016/03/09 17:36:17 |                To: Wed Mar 23 01:42:27 IST 2022]
+INFO | 2016/03/09 17:36:17 |   Issuer: CN=CACERT, OU=FOR TESTING ONLY, O=MyOrganization, L=MyTown, ST=MyState, C=US
+INFO | 2016/03/09 17:36:17 |   SerialNumber: [    33f10648 fcde0deb 4199921f d64537f4]
+INFO | 2016/03/09 17:36:17 | 
+INFO | 2016/03/09 17:36:17 | Certificate Extensions: 1
+INFO | 2016/03/09 17:36:17 | [1]: ObjectId: 2.5.29.15 Criticality=true
+INFO | 2016/03/09 17:36:17 | KeyUsage [
+INFO | 2016/03/09 17:36:17 |   Key_CertSign
+INFO | 2016/03/09 17:36:17 | ]
+INFO | 2016/03/09 17:36:17 | 
+INFO | 2016/03/09 17:36:17 | ]
+INFO | 2016/03/09 17:36:17 |   Algorithm: [MD5withRSA]
+INFO | 2016/03/09 17:36:17 |   Signature:
+INFO | 2016/03/09 17:36:17 | 0000: 9D 26 4C 29 C8 91 C3 A7   06 C3 24 6F AE B4 F8 82  .&L)......$o....
+INFO | 2016/03/09 17:36:17 | 0010: 80 4D AA CB 7C 79 46 84   81 C4 66 95 F4 1E D8 C4  .M...yF...f.....
+INFO | 2016/03/09 17:36:17 | 0020: E9 B7 D9 7C E2 23 33 A4   B7 21 E0 AA 54 2B 4A FF  .....#3..!..T+J.
+INFO | 2016/03/09 17:36:17 | 0030: CB 21 20 88 81 21 DB AC   90 54 D8 7D 79 63 23 3C  .! ..!...T..yc#<
+INFO | 2016/03/09 17:36:17 | 
+INFO | 2016/03/09 17:36:17 | ]. The system is vulnerable to security attacks, since it trusts certificates signed by the demo trusted CA.> 
+INFO | 2016/03/09 17:36:17 | <Mar 9, 2016 5:36:17 PM IST> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure[3]" is now listening on 127.0.0.1:7002 for protocols iiops, t3s, ldaps, https.> 
+INFO | 2016/03/09 17:36:17 | <Mar 9, 2016 5:36:17 PM IST> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure[1]" is now listening on fe80:0:0:0:215:5dff:fe39:3e2b:7002 for protocols iiops, t3s, ldaps, https.> 
+INFO | 2016/03/09 17:36:17 | <Mar 9, 2016 5:36:17 PM IST> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure[2]" is now listening on 0:0:0:0:0:0:0:1:7002 for protocols iiops, t3s, ldaps, https.> 
+INFO | 2016/03/09 17:36:17 | <Mar 9, 2016 5:36:17 PM IST> <Warning> <Server> <BEA-002611> <The hostname "localhost.localdomain", maps to multiple IP addresses: 127.0.0.1, 0:0:0:0:0:0:0:1.> 
+INFO | 2016/03/09 17:36:17 | <Mar 9, 2016 5:36:17 PM IST> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure" is now listening on 10.207.166.157:7002 for protocols iiops, t3s, ldaps, https.> 
+INFO | 2016/03/09 17:36:17 | <Mar 9, 2016 5:36:17 PM IST> <Notice> <Server> <BEA-002613> <Channel "Default[3]" is now listening on 127.0.0.1:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2016/03/09 17:36:17 | <Mar 9, 2016 5:36:17 PM IST> <Notice> <Server> <BEA-002613> <Channel "Default" is now listening on 10.207.166.157:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2016/03/09 17:36:17 | <Mar 9, 2016 5:36:17 PM IST> <Notice> <Server> <BEA-002613> <Channel "Default[2]" is now listening on 0:0:0:0:0:0:0:1:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2016/03/09 17:36:17 | <Mar 9, 2016 5:36:17 PM IST> <Notice> <Server> <BEA-002613> <Channel "Default[1]" is now listening on fe80:0:0:0:215:5dff:fe39:3e2b:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2016/03/09 17:36:17 | <Mar 9, 2016 5:36:17 PM IST> <Notice> <WebLogicServer> <BEA-000329> <Started the WebLogic Server Administration Server "gc3app-arlotmglob" for domain "otmapp" running in production mode.> 
+INFO | 2016/03/09 17:36:17 | <Mar 9, 2016 5:36:17 PM IST> <Notice> <WebLogicServer> <BEA-000360> <The server started in RUNNING mode.> 
+INFO | 2016/03/09 17:36:17 | <Mar 9, 2016 5:36:17 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RUNNING.> 
+INFO | 2016/03/09 17:36:22 | -- OTM Event: serverReady
+INFO | 2016/03/09 18:26:14 | <Mar 9, 2016 6:26:14 PM IST> <Warning> <Socket> <BEA-000449> <Closing the socket, as no data read from it on 10.207.121.102:50,849 during the configured idle timeout of 5 seconds.> 
+INFO | 2016/03/09 18:26:14 | <Mar 9, 2016 6:26:14 PM IST> <Warning> <Socket> <BEA-000449> <Closing the socket, as no data read from it on 10.207.121.102:50,850 during the configured idle timeout of 5 seconds.> 
+INFO | 2016/03/09 18:26:14 | <Mar 9, 2016 6:26:14 PM IST> <Warning> <Socket> <BEA-000449> <Closing the socket, as no data read from it on 10.207.121.102:50,853 during the configured idle timeout of 5 seconds.> 
+INFO | 2016/03/09 18:26:14 | <Mar 9, 2016 6:26:14 PM IST> <Warning> <Socket> <BEA-000449> <Closing the socket, as no data read from it on 10.207.121.102:50,851 during the configured idle timeout of 5 seconds.> 
+INFO | 2016/03/09 18:26:14 | <Mar 9, 2016 6:26:14 PM IST> <Warning> <Socket> <BEA-000449> <Closing the socket, as no data read from it on 10.207.121.102:50,852 during the configured idle timeout of 5 seconds.> 
+INFO | 2016/03/10 01:31:28 | [GC 2661403K->418791K(8130560K), 0.1289860 secs]
+INFO | 2016/03/10 18:20:16 | [GC 2699239K->414667K(7900160K), 0.1347710 secs]
+INFO | 2016/03/11 11:15:37 | [GC 2695115K->416070K(8118272K), 0.0786610 secs]
+INFO | 2016/03/12 04:20:02 | [GC 2678086K->421371K(8121856K), 0.0517580 secs]
+INFO | 2016/03/12 21:26:21 | [GC 2683387K->426407K(8123904K), 0.0754220 secs]
+INFO | 2016/03/13 14:39:40 | [GC 2690471K->432196K(8121856K), 0.0730880 secs]
+INFO | 2016/03/14 05:30:17 | [GC 2696260K->446212K(8135680K), 0.0439810 secs]
+INFO | 2016/03/14 08:30:17 | [GC 2728708K->425305K(8128512K), 0.0322290 secs]
+INFO | 2016/03/14 11:30:16 | [GC 2707801K->427262K(8145408K), 0.0403390 secs]

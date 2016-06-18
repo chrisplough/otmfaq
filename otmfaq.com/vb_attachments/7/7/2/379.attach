@@ -1,0 +1,98 @@
+SQL> @recompile_invalid_objects
+
+ORA-24344: success with compilation error
+ORA-24344: success with compilation error
+ORA-24344: success with compilation error
+ORA-24344: success with compilation error
+
+
+List of first 50 Invalid objects after recompile.
+================================================
+CREATE_TABLE                   PACKAGE BODY
+PKG_QUEUE_MANAGEMENT           PACKAGE BODY
+PKG_PURGE                      PACKAGE BODY
+DBHEALTH                       PACKAGE BODY
+
+Errors for PACKAGE BODY CREATE_TABLE:
+55/23           PL/SQL: ORA-00942: table or view does not exist
+
+55/7            PL/SQL: SQL Statement ignored
+
+
+Errors for PACKAGE BODY DBHEALTH:
+10/14           PL/SQL: SQL Statement ignored
+
+10/32           PL/SQL: ORA-00942: table or view does not exist
+
+100/21          PL/SQL: ORA-00942: table or view does not exist
+
+106/39          PLS-00364: loop index variable 'C1REC' use is invalid
+
+120/20          PL/SQL: SQL Statement ignored
+
+120/77          PL/SQL: ORA-00942: table or view does not exist
+
+53/14           PL/SQL: SQL Statement ignored
+
+53/84           PL/SQL: ORA-00942: table or view does not exist
+
+57/39           PLS-00364: loop index variable 'C1REC' use is invalid
+
+64/14           PL/SQL: SQL Statement ignored
+
+64/56           PL/SQL: ORA-00942: table or view does not exist
+
+68/40           PLS-00364: loop index variable 'C1REC' use is invalid
+
+75/14           PL/SQL: SQL Statement ignored
+
+75/48           PL/SQL: ORA-00942: table or view does not exist
+
+79/44           PLS-00364: loop index variable 'C1REC' use is invalid
+
+98/14           PL/SQL: SQL Statement ignored
+
+
+Errors for PACKAGE BODY PKG_PURGE:
+1339/4          PL/SQL: SQL Statement ignored
+
+1339/43         PL/SQL: ORA-00942: table or view does not exist
+
+1910/29         PL/SQL: ORA-00942: table or view does not exist
+
+1910/5          PL/SQL: SQL Statement ignored
+
+1913/5          PL/SQL: SQL Statement ignored
+
+1913/61         PL/SQL: ORA-00942: table or view does not exist
+
+1921/8          PLS-00364: loop index variable 'JOB_PARAM_REC' use is invalid
+
+1938/7          PLS-00364: loop index variable 'SO_JOB_REC' use is invalid
+
+1950/15         PLS-00364: loop index variable 'SO_JOB_REC' use is invalid
+
+
+Errors for PACKAGE BODY PKG_QUEUE_MANAGEMENT:
+1032/26         PL/SQL: ORA-00942: table or view does not exist
+
+1032/5          PL/SQL: SQL Statement ignored
+
+
+
+Invalid objects before Recompile....
+
+         4
+
+Invalid objects after Recompile....
+
+         4
+
+
+
+The number of invalid objects is still the same after recompile.
+
+
+Please analyze the existing invalid objects.
+
+SQL>

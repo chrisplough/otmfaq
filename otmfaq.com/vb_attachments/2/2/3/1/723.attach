@@ -1,0 +1,67 @@
+
+ErrorErrorStack TraceStack Trace insert into shipment_infeasibility (shipment_gid,feasibility_code_gid,domain_name) values (?,?,?) at [NCI.18415, null, NCI] 
+ 
+ Cannot insert the SHIPMENT_INFEASIBILITY record. FEASIBILITY_CODE_GID must be set. 
+ 
+ java.sql.BatchUpdateException: ORA-01400: cannot insert NULL into ("GLOGOWNER"."SHIPMENT_INFEASIBILITY"."FEASIBILITY_CODE_GID")  
+ 
+ 
+ 
+
+
+View Log 
+
+At 2010-11-17 10:10:36.220 
+ 
+insert into shipment_infeasibility (shipment_gid,feasibility_code_gid,domain_name) values (?,?,?) at [NCI.18415, null, NCI]
+    Cannot insert the SHIPMENT_INFEASIBILITY record. FEASIBILITY_CODE_GID must be set.
+        java.sql.BatchUpdateException: ORA-01400: cannot insert NULL into ("GLOGOWNER"."SHIPMENT_INFEASIBILITY"."FEASIBILITY_CODE_GID")
+
+
+java.sql.BatchUpdateException: ORA-01400: cannot insert NULL into ("GLOGOWNER"."SHIPMENT_INFEASIBILITY"."FEASIBILITY_CODE_GID")
+
+	at oracle.jdbc.driver.DatabaseError.throwBatchUpdateException(DatabaseError.java:629)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeBatch(OraclePreparedStatement.java:9447)
+	at oracle.jdbc.driver.OracleStatementWrapper.executeBatch(OracleStatementWrapper.java:211)
+	at weblogic.jdbc.wrapper.PreparedStatement.executeBatch(PreparedStatement.java:191)
+	at glog.util.jdbc.SqlUpdate.processBatch(SqlUpdate.java:142)
+	at glog.util.jdbc.SqlUpdate.resetArguments(SqlUpdate.java:238)
+	at glog.util.jdbc.SqlUpdate.resetArguments(SqlUpdate.java:161)
+	at glog.util.jdbc.SqlUpdate.execute(SqlUpdate.java:90)
+	at glog.util.beandata.BeanDataInserter.insertDBBatch(BeanDataInserter.java:358)
+	at glog.util.beandata.BeanDataInserter.insertDB(BeanDataInserter.java:302)
+	at glog.util.beandata.BeanDataInserter.insert(BeanDataInserter.java:197)
+	at glog.util.beandata.BeanDataInserter.insert(BeanDataInserter.java:232)
+	at glog.business.util.EntitySaver.insert(EntitySaver.java:252)
+	at glog.business.util.Persistence.insertupdate(Persistence.java:335)
+	at glog.business.shipment.PlanningObjectCommitter.commitTShipment(PlanningObjectCommitter.java:1043)
+	at glog.business.shipment.ShipmentUpdateSessionBean.commitShipmentNode(ShipmentUpdateSessionBean.java:863)
+	at glog.business.shipment.ShipmentUpdateSessionBean.commitShipmentGraph(ShipmentUpdateSessionBean.java:1441)
+	at glog.business.shipment.ShipmentUpdateSessionServerSideEJBWrapper.commitShipmentGraph(ShipmentUpdateSessionServerSideEJBWrapper.java:320)
+	at glog.business.shipment.ShipmentUpdateSessionBean.commitShipmentGraph(ShipmentUpdateSessionBean.java:1725)
+	at glog.business.shipment.ShipmentUpdateSessionServerSideEJBWrapper.commitShipmentGraph(ShipmentUpdateSessionServerSideEJBWrapper.java:283)
+	at glog.business.shipment.ShipmentUpdateSessionHome_qj7mtr_EOImpl.commitShipmentGraph(ShipmentUpdateSessionHome_qj7mtr_EOImpl.java:1165)
+	at glog.business.action.ShipmentPlanningActionExecutor.assignSpecificServiceProviderUsingRateGeo(ShipmentPlanningActionExecutor.java:567)
+	at glog.business.session.ShipmentPlanningActionSessionBean.assignServiceProviderUsingRateGeo(ShipmentPlanningActionSessionBean.java:380)
+	at glog.business.session.ShipmentPlanningActionSessionServerSideEJBWrapper.assignServiceProviderUsingRateGeo(ShipmentPlanningActionSessionServerSideEJBWrapper.java:332)
+	at glog.business.session.ShipmentPlanningActionSessionServerSideEJBWrapper_7zfvrj_EOImpl.assignServiceProviderUsingRateGeo(ShipmentPlanningActionSessionServerSideEJBWrapper_7zfvrj_EOImpl.java:5614)
+	at glog.business.session.gen.ShipmentPlanningActionSessionSkel.assignServiceProviderUsingRateGeo(ShipmentPlanningActionSessionSkel.java:597)
+	at glog.business.session.gen.ShipmentPlanningActionSessionSkel.exec(ShipmentPlanningActionSessionSkel.java:126)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:61)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:48)
+	at glog.server.wrapper.WrapperSessionHome_a06097_EOImpl.execDispatch(WrapperSessionHome_a06097_EOImpl.java:61)
+	at glog.server.wrapper.WrapperSessionHome_a06097_EOImpl_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:589)
+	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:230)
+	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:477)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:473)
+	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:201)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:173)
+
+ 
+View Log 
+ 

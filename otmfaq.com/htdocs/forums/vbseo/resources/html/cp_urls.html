@@ -1,0 +1,36 @@
+			<div class="content-box">
+			    <div class="content-box-header">
+				<h3>{var:subheader}</h3>
+				<ul class="content-box-tabs">
+				    <li><a href="#tab1" class="default-tab">{lang:basic_settings}</a></li> 
+				    <li><a href="#tab2">{lang:adv_settings}</a></li>
+				</ul>
+				<div class="clear"></div>
+			    </div> 
+                <div class="content-box-body">
+                 <div class="tab-content default-tab" id="tab1"> 
+				    <div class="column-body">
+					<div class="single-column">
+						{var:urls_desc}
+					    <div class="present">
+						<h4>{lang:current_preset}: 
+						<span class="{var:preset_color}">{var:preset_text}</span>
+						</h4>
+						{var:presets}
+						<input id="button" class="button" name="Submit" value="{lang:load_preset}" onclick="vbseocp.load_preset('{var:ftype}', '{lang_esc:load_preset_warn}')" type="button" />
+					    </div>
+                                        </div>
+					<div class="clear"></div>
+				    </div>
+                                </div> 
+				<div class="tab-content" id="tab2">
+				{var:options}
+				    <div class="column-body footer">
+                    <span class="input-notification success png_bg save_success" style="display:none">{lang:settings_saved}</span>
+                    <span class="input-notification attention png_bg save_warning" style="display:none">(<a href="#top">{lang:settings_saved_warning}</a>)</span>
+                    <input name="setting[noreload_skip]" type="hidden" />
+                          <input class="button" name="Reset" value="{lang:reset}" type="reset" />&nbsp;
+                          <input class="button" value="{lang:save_set}" name="edit" type="submit" />
+				    </div>
+				</div>
+			</div>	

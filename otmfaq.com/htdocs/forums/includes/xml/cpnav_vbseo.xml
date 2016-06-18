@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<navgroups product="crawlability_vbseo">
+	<navgroup phrase="vbseo" displayorder="3">
+		<navoption displayorder="10">
+			<phrase>vbseo_cp</phrase>
+			<link>../vbseocp.php</link>
+		</navoption>
+	</navgroup>
+	<navgroup phrase="vbseo_linkbacks" displayorder="85">
+		<navoption displayorder="10">
+			<phrase>vbseo_moderate_linkbacks</phrase>
+			<link>../{$vbulletin->config[Misc][modcpdir]}/vbseo_moderate.php?do=linkbacks</link>
+		</navoption>
+		<navoption displayorder="20">
+			<phrase>vbseo_moderate_linkbackslist</phrase>
+			<link>../{$vbulletin->config[Misc][modcpdir]}/vbseo_moderate.php?do=linkbackslist</link>
+		</navoption>
+		<navoption displayorder="30">
+			<phrase>vbseo_moderate_linkbacksout</phrase>
+			<link>../{$vbulletin->config[Misc][modcpdir]}/vbseo_moderate.php?do=linkbacksout</link>
+		</navoption>
+		<!--
+		<navoption displayorder="30">
+			<phrase>vbseo_cleanup_linkbacks</phrase>
+			<link>../{$vbulletin->config[Misc][modcpdir]}/vbseo_moderate.php?do=cleanup</link>
+		</navoption>
+		-->
+	</navgroup>
+</navgroups>

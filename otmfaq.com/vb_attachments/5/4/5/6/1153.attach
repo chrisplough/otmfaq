@@ -1,0 +1,113 @@
+--tuiSHtaQm5SWRq6pIbFNwxwjiIeLxivwY
+Content-Disposition: form-data; name="file"; filename="file"
+Content-Type: text/xml
+Content-Transfer-Encoding: binary
+
+<Transmission>
+
+    <TransmissionHeader>
+        <UserName>SGP/TMG.ADMIN</UserName>
+        <Password>CHANGEME</Password>
+        <IsProcessInSequence>Y</IsProcessInSequence>
+        <StopProcessOnError>Y</StopProcessOnError>
+        <AckSpec>
+            <ComMethodGid>
+                <Gid>
+                    <Xid>HTTPPOST</Xid>
+                </Gid>
+            </ComMethodGid>
+            <AckOption>YES</AckOption>
+            <ContactGid>
+                <Gid>
+                    <DomainName>SGP/TMG</DomainName>
+                    <Xid>ADMIN</Xid>
+                </Gid>
+            </ContactGid>
+            <ServletURL>http://10.215.20.172:28081/transportOnlineSGDev/upload/otm-transmission-report_upload</ServletURL>
+        </AckSpec>
+    </TransmissionHeader>	
+    <TransmissionBody>
+    	    	    	
+                                    <GLogXMLElement>
+                <GenericStatusUpdate>
+                    <GenericStatusObjectType>ORDER_RELEASE</GenericStatusObjectType>
+                    <Gid>
+                    	<DomainName>SGP/TMG</DomainName>
+                        <Xid>SFM_R_17872</Xid>
+                    </Gid>
+                    <TransactionCode>U</TransactionCode>
+                    <Status>
+                        <StatusTypeGid>
+                            <Gid>
+                                <DomainName>GLOG</DomainName>
+                                                                                                	<Xid>PLANNING</Xid>
+                                                                                            </Gid>
+                        </StatusTypeGid>
+                        <StatusValueGid>
+                            <Gid>
+                                <DomainName>GLOG</DomainName>
+                                                                                                	<Xid>PLANNING_PLANNED - FINAL</Xid>
+                                                                                            </Gid>
+                        </StatusValueGid>
+                    </Status>
+                </GenericStatusUpdate>
+            </GLogXMLElement>
+                		
+                                    <GLogXMLElement>
+                <GenericStatusUpdate>
+                    <GenericStatusObjectType>ORDER_RELEASE</GenericStatusObjectType>
+                    <Gid>
+                    	<DomainName>SGP/TMG</DomainName>
+                        <Xid>SFM_R_17872</Xid>
+                    </Gid>
+                    <TransactionCode>U</TransactionCode>
+                    <Status>
+                        <StatusTypeGid>
+                            <Gid>
+                                <DomainName>GLOG</DomainName>
+                                                                                                	<Xid>PLANNING_SELL</Xid>
+                                                                                            </Gid>
+                        </StatusTypeGid>
+                        <StatusValueGid>
+                            <Gid>
+                                <DomainName>GLOG</DomainName>
+                                                                                                	<Xid>PLANNING_SELL_PLANNED - FINAL</Xid>
+                                                                                            </Gid>
+                        </StatusValueGid>
+                    </Status>
+                </GenericStatusUpdate>
+            </GLogXMLElement>
+                		                <GLogXMLElement>
+            <ActualShipment>
+                <Shipment>
+                    <ShipmentHeader>
+                        <ShipmentGid>
+                            <Gid>
+                                <DomainName>SGP/TMG</DomainName>                                
+                                <Xid>SFM_BS_11788</Xid>
+                            </Gid>
+                        </ShipmentGid>
+                        <TransactionCode>D</TransactionCode>
+                    </ShipmentHeader>
+                </Shipment>
+            </ActualShipment>
+        </GLogXMLElement>
+                                <GLogXMLElement>
+            <ActualShipment>
+                <Shipment>
+                    <ShipmentHeader>
+                        <ShipmentGid>
+                            <Gid>
+                                <DomainName>SGP/TMG</DomainName>
+                                <Xid>SFM_SS_11788</Xid>
+                            </Gid>
+                        </ShipmentGid>
+                        <TransactionCode>D</TransactionCode>
+                    </ShipmentHeader>
+                </Shipment>
+            </ActualShipment>
+        </GLogXMLElement>
+                    </TransmissionBody>
+</Transmission>
+
+--tuiSHtaQm5SWRq6pIbFNwxwjiIeLxivwY--

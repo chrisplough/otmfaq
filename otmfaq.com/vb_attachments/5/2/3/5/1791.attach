@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Transmission>
+  <TransmissionHeader>
+    <UserName>TEST.INTEGRATION</UserName>
+    <Password>******</Password>
+   </TransmissionHeader>
+  <TransmissionBody>
+    <GLogXMLElement>
+	<GenericStatusUpdate>
+	<GenericStatusObjectType>INVOICE</GenericStatusObjectType>
+	<Gid>
+	<Domain_name>TEST</Domain_name>
+	<Xid>TEST</Xid>
+	</Gid>	
+	<TransactionCode>U</TransactionCode>
+	<Status>
+	<StatusTypeGid>
+	<Gid>
+	<Domain_name>TEST</Domain_name>
+	<Xid>TEST</Xid>
+	</Gid>
+	</StatusTypeGid>
+	<StatusValueGid>
+	<Gid>
+	<Domain_name>TEST</Domain_name>
+	<Xid>TEST</Xid>
+	</Gid>
+	</StatusValueGid>	
+	</Status>
+	</GenericStatusUpdate>
+	</GLogXMLElement>
+	</TransmissionBody>
+	</Transmission>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<navgroups product="twitterposter">
+	<navgroup phrase="twitterposter" hr="true" displayorder="81">
+		<navoption>
+			<phrase>options</phrase>
+			<link>options.php?do=options&amp;dogroup=twitterposter</link>
+		</navoption>
+		<navoption>
+			<phrase>authorize</phrase>
+			<link>twitterposter.php?do=authorize</link>
+		</navoption>
+	</navgroup>
+</navgroups>

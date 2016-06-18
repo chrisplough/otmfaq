@@ -1,0 +1,271 @@
+STATUS | wrapper  | 2008/06/11 18:07:25 | --> Wrapper Started as Service
+STATUS | wrapper  | 2008/06/11 18:07:25 | Launching a JVM...
+INFO   | jvm 1    | 2008/06/11 18:07:25 | [memory ] GC strategy: System optimized over throughput (initial strategy singleparpar)
+INFO   | jvm 1    | 2008/06/11 18:07:25 | [memory ] heap size: 1049600K, maximal heap size: 1049600K
+INFO   | jvm 1    | 2008/06/11 18:07:25 | [memory ] <s>-<end>: GC <before>K-><after>K (<heap>K), <pause> ms
+INFO   | jvm 1    | 2008/06/11 18:07:25 | [memory ] <s/start> - start time of collection (seconds since jvm start)
+INFO   | jvm 1    | 2008/06/11 18:07:25 | [memory ] <end>     - end time of collection (seconds since jvm start)
+INFO   | jvm 1    | 2008/06/11 18:07:25 | [memory ] <before>  - memory used by objects before collection (KB)
+INFO   | jvm 1    | 2008/06/11 18:07:25 | [memory ] <after>   - memory used by objects after collection (KB)
+INFO   | jvm 1    | 2008/06/11 18:07:25 | [memory ] <heap>    - size of heap after collection (KB)
+INFO   | jvm 1    | 2008/06/11 18:07:25 | [memory ] <pause>   - total pause time during collection (milliseconds)
+INFO   | jvm 1    | 2008/06/11 18:07:25 | Wrapper (Version 3.1.2) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2008/06/11 18:07:25 | 
+INFO   | jvm 1    | 2008/06/11 18:07:26 | <Jun 11, 2008 6:07:26 PM GMT+05:30> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with BEA JRockit(R) Version R26.4.0-63-63688-1.4.2_11-20060626-2259-win-ia32 from BEA Systems, Inc.> 
+INFO   | jvm 1    | 2008/06/11 18:07:26 | <Jun 11, 2008 6:07:26 PM GMT+05:30> <Info> <Configuration Management> <BEA-150016> <This server is being started as the administration server.> 
+INFO   | jvm 1    | 2008/06/11 18:07:26 | <Jun 11, 2008 6:07:26 PM GMT+05:30> <Info> <Management> <BEA-141107> <Version: WebLogic XMLX Module 8.1 SP4  Mon Nov 29 16:21:29 PST 2004 471647 
+INFO   | jvm 1    | 2008/06/11 18:07:26 | WebLogic Server 8.1 SP4  Mon Nov 29 16:21:29 PST 2004 471647 > 
+INFO   | jvm 1    | 2008/06/11 18:07:27 | <Jun 11, 2008 6:07:26 PM GMT+05:30> <Notice> <Management> <BEA-140005> <Loading domain configuration from configuration repository at E:\OTM55\weblogic\config\gc3domain\.\config.xml.> 
+INFO   | jvm 1    | 2008/06/11 18:07:36 | <Jun 11, 2008 6:07:36 PM GMT+05:30> <Notice> <Log Management> <BEA-170019> <The server log file E:\OTM55\logs\weblogic\weblogic.log is opened. All server side log events will be written to this file.> 
+INFO   | jvm 1    | 2008/06/11 18:07:41 | -----------> GC3 realm initialized
+INFO   | jvm 1    | 2008/06/11 18:07:42 | <Jun 11, 2008 6:07:42 PM GMT+05:30> <Notice> <Security> <BEA-090082> <Security initializing using security realm gc3realm.> 
+INFO   | jvm 1    | 2008/06/11 18:07:43 | <Jun 11, 2008 6:07:42 PM GMT+05:30> <Notice> <WebLogicServer> <BEA-000327> <Starting WebLogic Admin Server "gc3-hydhtc137458d" for domain "gc3domain"> 
+INFO   | jvm 1    | 2008/06/11 18:07:45 | <Jun 11, 2008 6:07:45 PM GMT+05:30> <Notice> <SNMP Agent> <000000> <The SNMP trap version is 1> 
+INFO   | jvm 1    | 2008/06/11 18:07:46 | [memory ] Changing GC strategy to generational, parallel mark and parallel sweep
+INFO   | jvm 1    | 2008/06/11 18:07:46 | [memory ] 21.146-21.284: GC 1049600K->142616K (1049600K), 138.297 ms
+INFO   | jvm 1    | 2008/06/11 18:07:47 | [memory ] 21.548: parallel nursery GC 224989K->205767K (1049600K), 120.898 ms
+INFO   | jvm 1    | 2008/06/11 18:07:47 | [memory ] 21.819: parallel nursery GC 225167K->206017K (1049600K), 12.550 ms
+INFO   | jvm 1    | 2008/06/11 18:07:47 | [memory ] 22.011: parallel nursery GC 225417K->206166K (1049600K), 11.301 ms
+INFO   | jvm 1    | 2008/06/11 18:07:47 | [memory ] 22.251: parallel nursery GC 225566K->206167K (1049600K), 9.730 ms
+INFO   | jvm 1    | 2008/06/11 18:07:47 | [memory ] 22.469: parallel nursery GC 225567K->206168K (1049600K), 9.471 ms
+INFO   | jvm 1    | 2008/06/11 18:07:47 | [memory ] 22.688: parallel nursery GC 225568K->206168K (1049600K), 9.272 ms
+INFO   | jvm 1    | 2008/06/11 18:07:48 | [memory ] 22.910: parallel nursery GC 225568K->206168K (1049600K), 9.394 ms
+INFO   | jvm 1    | 2008/06/11 18:07:48 | [memory ] 23.131: parallel nursery GC 225568K->206168K (1049600K), 9.345 ms
+INFO   | jvm 1    | 2008/06/11 18:07:48 | [memory ] 23.351: parallel nursery GC 225568K->206169K (1049600K), 8.983 ms
+INFO   | jvm 1    | 2008/06/11 18:07:49 | [memory ] 23.570: parallel nursery GC 225569K->206169K (1049600K), 129.533 ms
+INFO   | jvm 1    | 2008/06/11 18:07:49 | [memory ] 23.913: parallel nursery GC 225569K->206171K (1049600K), 170.604 ms
+INFO   | jvm 1    | 2008/06/11 18:07:49 | [memory ] 24.289: parallel nursery GC 225571K->206171K (1049600K), 24.834 ms
+INFO   | jvm 1    | 2008/06/11 18:07:49 | [memory ] 24.516: parallel nursery GC 225571K->206171K (1049600K), 9.074 ms
+INFO   | jvm 1    | 2008/06/11 18:07:50 | [memory ] 24.725: parallel nursery GC 225571K->206172K (1049600K), 9.200 ms
+INFO   | jvm 1    | 2008/06/11 18:07:50 | [memory ] 24.932: parallel nursery GC 225572K->206172K (1049600K), 9.234 ms
+INFO   | jvm 1    | 2008/06/11 18:07:50 | [memory ] 25.141: parallel nursery GC 225572K->206172K (1049600K), 9.306 ms
+INFO   | jvm 1    | 2008/06/11 18:07:50 | [memory ] 25.345: parallel nursery GC 225572K->206173K (1049600K), 9.039 ms
+INFO   | jvm 1    | 2008/06/11 18:07:50 | [memory ] 25.548: parallel nursery GC 225573K->206173K (1049600K), 9.292 ms
+INFO   | jvm 1    | 2008/06/11 18:07:51 | [memory ] 25.753: parallel nursery GC 225573K->206173K (1049600K), 88.294 ms
+INFO   | jvm 1    | 2008/06/11 18:07:53 | [memory ] 27.707: parallel nursery GC 266166K->247196K (1049600K), 12.803 ms
+INFO   | jvm 1    | 2008/06/11 18:07:53 | [memory ] 28.567: parallel nursery GC 266596K->248691K (1049600K), 19.428 ms
+INFO   | jvm 1    | 2008/06/11 18:07:54 | [memory ] 29.013: parallel nursery GC 268091K->249724K (1049600K), 15.996 ms
+INFO   | jvm 1    | 2008/06/11 18:07:54 | [memory ] 29.312: parallel nursery GC 269124K->250875K (1049600K), 18.356 ms
+INFO   | jvm 1    | 2008/06/11 18:07:54 | [memory ] 29.594: parallel nursery GC 270275K->251996K (1049600K), 17.976 ms
+INFO   | jvm 1    | 2008/06/11 18:07:55 | [memory ] 29.881: parallel nursery GC 271396K->253167K (1049600K), 17.324 ms
+INFO   | jvm 1    | 2008/06/11 18:07:55 | [memory ] 30.192: parallel nursery GC 272567K->254292K (1049600K), 50.990 ms
+INFO   | jvm 1    | 2008/06/11 18:07:55 | [memory ] 30.535: parallel nursery GC 273692K->255439K (1049600K), 19.041 ms
+INFO   | jvm 1    | 2008/06/11 18:07:56 | [memory ] 30.840: parallel nursery GC 274839K->256566K (1049600K), 17.858 ms
+INFO   | jvm 1    | 2008/06/11 18:07:56 | [memory ] 31.134: parallel nursery GC 275966K->257668K (1049600K), 18.556 ms
+INFO   | jvm 1    | 2008/06/11 18:07:56 | [memory ] 31.461: parallel nursery GC 277068K->258767K (1049600K), 17.935 ms
+INFO   | jvm 1    | 2008/06/11 18:07:57 | [memory ] 31.768: parallel nursery GC 278167K->259865K (1049600K), 18.809 ms
+INFO   | jvm 1    | 2008/06/11 18:07:57 | [memory ] 32.078: parallel nursery GC 279265K->261089K (1049600K), 19.076 ms
+INFO   | jvm 1    | 2008/06/11 18:07:57 | [memory ] 32.383: parallel nursery GC 280489K->262216K (1049600K), 18.204 ms
+INFO   | jvm 1    | 2008/06/11 18:07:57 | [memory ] 32.693: parallel nursery GC 316533K->298223K (1049600K), 18.197 ms
+INFO   | jvm 1    | 2008/06/11 18:07:58 | [memory ] 32.994: parallel nursery GC 317623K->299372K (1049600K), 19.091 ms
+INFO   | jvm 1    | 2008/06/11 18:07:58 | [memory ] 33.291: parallel nursery GC 318772K->300583K (1049600K), 18.809 ms
+INFO   | jvm 1    | 2008/06/11 18:07:58 | [memory ] 33.577: parallel nursery GC 319983K->301616K (1049600K), 18.483 ms
+INFO   | jvm 1    | 2008/06/11 18:07:59 | [memory ] 33.869: parallel nursery GC 321016K->302712K (1049600K), 18.208 ms
+INFO   | jvm 1    | 2008/06/11 18:07:59 | [memory ] 34.157: parallel nursery GC 322112K->303858K (1049600K), 18.715 ms
+INFO   | jvm 1    | 2008/06/11 18:07:59 | [memory ] 34.431: parallel nursery GC 323258K->304891K (1049600K), 17.066 ms
+INFO   | jvm 1    | 2008/06/11 18:08:00 | [memory ] 34.729: parallel nursery GC 354984K->336684K (1049600K), 19.243 ms
+INFO   | jvm 1    | 2008/06/11 18:08:00 | [memory ] 35.019: parallel nursery GC 356084K->337894K (1049600K), 19.704 ms
+INFO   | jvm 1    | 2008/06/11 18:08:00 | [memory ] 35.317: parallel nursery GC 357294K->339014K (1049600K), 18.458 ms
+INFO   | jvm 1    | 2008/06/11 18:08:00 | [memory ] 35.608: parallel nursery GC 358414K->340163K (1049600K), 18.761 ms
+INFO   | jvm 1    | 2008/06/11 18:08:01 | [memory ] 35.903: parallel nursery GC 359563K->341210K (1049600K), 18.424 ms
+INFO   | jvm 1    | 2008/06/11 18:08:01 | [memory ] 36.229: parallel nursery GC 360610K->342344K (1049600K), 20.262 ms
+INFO   | jvm 1    | 2008/06/11 18:08:01 | [memory ] 36.519: parallel nursery GC 361744K->343410K (1049600K), 18.557 ms
+INFO   | jvm 1    | 2008/06/11 18:08:02 | [memory ] 36.826: parallel nursery GC 389679K->371380K (1049600K), 18.639 ms
+INFO   | jvm 1    | 2008/06/11 18:08:02 | [memory ] 37.128: parallel nursery GC 390780K->372463K (1049600K), 18.232 ms
+INFO   | jvm 1    | 2008/06/11 18:08:02 | [memory ] 37.419: parallel nursery GC 391863K->373664K (1049600K), 20.076 ms
+INFO   | jvm 1    | 2008/06/11 18:08:03 | [memory ] 37.700: parallel nursery GC 393064K->374848K (1049600K), 19.218 ms
+INFO   | jvm 1    | 2008/06/11 18:08:03 | [memory ] 37.811: parallel nursery GC 394248K->375650K (1049600K), 15.606 ms
+INFO   | jvm 1    | 2008/06/11 18:08:03 | [memory ] 38.121: parallel nursery GC 395050K->376759K (1049600K), 20.461 ms
+INFO   | jvm 1    | 2008/06/11 18:08:03 | [memory ] 38.420: parallel nursery GC 419933K->401624K (1049600K), 19.568 ms
+INFO   | jvm 1    | 2008/06/11 18:08:04 | [memory ] 38.722: parallel nursery GC 421024K->402716K (1049600K), 18.853 ms
+INFO   | jvm 1    | 2008/06/11 18:08:04 | [memory ] 39.025: parallel nursery GC 422116K->403876K (1049600K), 19.849 ms
+INFO   | jvm 1    | 2008/06/11 18:08:04 | [memory ] 39.334: parallel nursery GC 423276K->404955K (1049600K), 18.645 ms
+INFO   | jvm 1    | 2008/06/11 18:08:04 | [memory ] 39.634: parallel nursery GC 424355K->406103K (1049600K), 19.867 ms
+INFO   | jvm 1    | 2008/06/11 18:08:05 | [memory ] 39.947: parallel nursery GC 446300K->428137K (1049600K), 20.096 ms
+INFO   | jvm 1    | 2008/06/11 18:08:05 | [memory ] 40.271: parallel nursery GC 447537K->429243K (1049600K), 19.010 ms
+INFO   | jvm 1    | 2008/06/11 18:08:05 | [memory ] 40.549: parallel nursery GC 448643K->430333K (1049600K), 19.262 ms
+INFO   | jvm 1    | 2008/06/11 18:08:06 | [memory ] 40.835: parallel nursery GC 449733K->431403K (1049600K), 19.027 ms
+INFO   | jvm 1    | 2008/06/11 18:08:06 | [memory ] 41.142: parallel nursery GC 450803K->432601K (1049600K), 20.611 ms
+INFO   | jvm 1    | 2008/06/11 18:08:06 | [memory ] 41.453: parallel nursery GC 469815K->451660K (1049600K), 22.829 ms
+INFO   | jvm 1    | 2008/06/11 18:08:07 | [memory ] 41.765: parallel nursery GC 471010K->452731K (1049600K), 19.939 ms
+INFO   | jvm 1    | 2008/06/11 18:08:07 | [memory ] 42.056: parallel nursery GC 472081K->453762K (1049600K), 19.881 ms
+INFO   | jvm 1    | 2008/06/11 18:08:07 | [memory ] 42.371: parallel nursery GC 473112K->454828K (1049600K), 20.660 ms
+INFO   | jvm 1    | 2008/06/11 18:08:08 | [memory ] 42.686: parallel nursery GC 490176K->471903K (1049600K), 20.394 ms
+INFO   | jvm 1    | 2008/06/11 18:08:08 | [memory ] 43.000: parallel nursery GC 491253K->472981K (1049600K), 19.930 ms
+INFO   | jvm 1    | 2008/06/11 18:08:08 | [memory ] 43.317: parallel nursery GC 492331K->474126K (1049600K), 20.339 ms
+INFO   | jvm 1    | 2008/06/11 18:08:08 | [memory ] 43.627: parallel nursery GC 493476K->475243K (1049600K), 20.641 ms
+INFO   | jvm 1    | 2008/06/11 18:08:09 | [memory ] 43.939: parallel nursery GC 508401K->490076K (1049600K), 19.776 ms
+INFO   | jvm 1    | 2008/06/11 18:08:09 | [memory ] 44.255: parallel nursery GC 509426K->491183K (1049600K), 20.082 ms
+INFO   | jvm 1    | 2008/06/11 18:08:09 | [memory ] 44.513: parallel nursery GC 510533K->492150K (1049600K), 19.165 ms
+INFO   | jvm 1    | 2008/06/11 18:08:10 | [memory ] 44.838: parallel nursery GC 523477K->505305K (1049600K), 20.454 ms
+INFO   | jvm 1    | 2008/06/11 18:08:10 | [memory ] 45.142: parallel nursery GC 524655K->506411K (1049600K), 21.141 ms
+INFO   | jvm 1    | 2008/06/11 18:08:10 | [memory ] 45.444: parallel nursery GC 536342K->518135K (1049600K), 20.725 ms
+INFO   | jvm 1    | 2008/06/11 18:08:11 | [memory ] 45.764: parallel nursery GC 537485K->519265K (1049600K), 20.324 ms
+INFO   | jvm 1    | 2008/06/11 18:08:11 | [memory ] 46.065: parallel nursery GC 538615K->520392K (1049600K), 21.224 ms
+INFO   | jvm 1    | 2008/06/11 18:08:11 | [memory ] 46.374: parallel nursery GC 549201K->530938K (1049600K), 20.963 ms
+INFO   | jvm 1    | 2008/06/11 18:08:12 | [memory ] 46.692: parallel nursery GC 550288K->532105K (1049600K), 21.216 ms
+INFO   | jvm 1    | 2008/06/11 18:08:12 | [memory ] 47.003: parallel nursery GC 559409K->541125K (1049600K), 21.137 ms
+INFO   | jvm 1    | 2008/06/11 18:08:12 | [memory ] 47.333: parallel nursery GC 560475K->542253K (1049600K), 21.039 ms
+INFO   | jvm 1    | 2008/06/11 18:08:12 | [memory ] 47.659: parallel nursery GC 568693K->550470K (1049600K), 21.911 ms
+INFO   | jvm 1    | 2008/06/11 18:08:13 | [memory ] 47.980: parallel nursery GC 575887K->557591K (1049600K), 20.715 ms
+INFO   | jvm 1    | 2008/06/11 18:08:13 | [memory ] 48.303: parallel nursery GC 576941K->558620K (1049600K), 20.651 ms
+INFO   | jvm 1    | 2008/06/11 18:08:13 | [memory ] 48.641: parallel nursery GC 583222K->565030K (1049600K), 21.324 ms
+INFO   | jvm 1    | 2008/06/11 18:08:14 | [memory ] 48.954: parallel nursery GC 588976K->570715K (1049600K), 21.608 ms
+INFO   | jvm 1    | 2008/06/11 18:08:14 | [memory ] 49.277: parallel nursery GC 597868K->579575K (1049600K), 21.317 ms
+INFO   | jvm 1    | 2008/06/11 18:08:14 | [memory ] 49.623: parallel nursery GC 735915K->717709K (1049600K), 23.092 ms
+INFO   | jvm 1    | 2008/06/11 18:08:15 | [memory ] 49.951: parallel nursery GC 737059K->718773K (1049600K), 20.689 ms
+INFO   | jvm 1    | 2008/06/11 18:08:15 | [memory ] 50.276: parallel nursery GC 738123K->719834K (1049600K), 20.685 ms
+INFO   | jvm 1    | 2008/06/11 18:08:15 | [memory ] 50.610: parallel nursery GC 739184K->720956K (1049600K), 39.492 ms
+INFO   | jvm 1    | 2008/06/11 18:08:16 | [memory ] 50.959: parallel nursery GC 740306K->722089K (1049600K), 21.069 ms
+INFO   | jvm 1    | 2008/06/11 18:08:16 | [memory ] 51.351: parallel nursery GC 772419K->753994K (1049600K), 30.361 ms
+INFO   | jvm 1    | 2008/06/11 18:08:17 | [memory ] 51.710: parallel nursery GC 773344K->755104K (1049600K), 38.545 ms
+INFO   | jvm 1    | 2008/06/11 18:08:17 | [memory ] 52.084: parallel nursery GC 774454K->756230K (1049600K), 21.554 ms
+INFO   | jvm 1    | 2008/06/11 18:08:17 | [memory ] 52.422: parallel nursery GC 775580K->757353K (1049600K), 20.962 ms
+INFO   | jvm 1    | 2008/06/11 18:08:18 | [memory ] 52.767: parallel nursery GC 776703K->758490K (1049600K), 21.781 ms
+INFO   | jvm 1    | 2008/06/11 18:08:18 | [memory ] 53.099: parallel nursery GC 777840K->759644K (1049600K), 22.013 ms
+INFO   | jvm 1    | 2008/06/11 18:08:18 | [memory ] 53.422: parallel nursery GC 778994K->760695K (1049600K), 21.119 ms
+INFO   | jvm 1    | 2008/06/11 18:08:19 | [memory ] 53.743: parallel nursery GC 780045K->761830K (1049600K), 22.328 ms
+INFO   | jvm 1    | 2008/06/11 18:08:19 | [memory ] 54.080: parallel nursery GC 781180K->762940K (1049600K), 21.128 ms
+INFO   | jvm 1    | 2008/06/11 18:08:19 | [memory ] 54.415: parallel nursery GC 782290K->763992K (1049600K), 20.809 ms
+INFO   | jvm 1    | 2008/06/11 18:08:20 | [memory ] 54.758: parallel nursery GC 810085K->791857K (1049600K), 21.647 ms
+INFO   | jvm 1    | 2008/06/11 18:08:20 | [memory ] 55.096: parallel nursery GC 811207K->792955K (1049600K), 21.742 ms
+INFO   | jvm 1    | 2008/06/11 18:08:20 | [memory ] 55.437: parallel nursery GC 812305K->794050K (1049600K), 21.864 ms
+INFO   | jvm 1    | 2008/06/11 18:08:21 | [memory ] 55.771: parallel nursery GC 813400K->795165K (1049600K), 21.896 ms
+INFO   | jvm 1    | 2008/06/11 18:08:21 | [memory ] 56.070: parallel nursery GC 814515K->796191K (1049600K), 20.714 ms
+INFO   | jvm 1    | 2008/06/11 18:08:21 | [memory ] 56.372: parallel nursery GC 815541K->797300K (1049600K), 21.403 ms
+INFO   | jvm 1    | 2008/06/11 18:08:21 | [memory ] 56.545: parallel nursery GC 816650K->798010K (1049600K), 18.364 ms
+INFO   | jvm 1    | 2008/06/11 18:08:22 | [memory ] 56.738: parallel nursery GC 817360K->798695K (1049600K), 19.379 ms
+INFO   | jvm 1    | 2008/06/11 18:08:22 | [memory ] 57.075: parallel nursery GC 818045K->799750K (1049600K), 22.005 ms
+INFO   | jvm 1    | 2008/06/11 18:08:22 | [memory ] 57.412: parallel nursery GC 819100K->800768K (1049600K), 21.684 ms
+INFO   | jvm 1    | 2008/06/11 18:08:23 | [memory ] 57.752: parallel nursery GC 820118K->801898K (1049600K), 22.852 ms
+INFO   | jvm 1    | 2008/06/11 18:08:23 | [memory ] 58.092: parallel nursery GC 821248K->802970K (1049600K), 21.690 ms
+INFO   | jvm 1    | 2008/06/11 18:08:23 | [memory ] 58.435: parallel nursery GC 822320K->803995K (1049600K), 20.783 ms
+INFO   | jvm 1    | 2008/06/11 18:08:24 | [memory ] 58.779: parallel nursery GC 823345K->805085K (1049600K), 21.786 ms
+INFO   | jvm 1    | 2008/06/11 18:08:24 | [memory ] 59.122: parallel nursery GC 824435K->806160K (1049600K), 23.382 ms
+INFO   | jvm 1    | 2008/06/11 18:08:24 | [memory ] 59.452: parallel nursery GC 825510K->807261K (1049600K), 21.525 ms
+INFO   | jvm 1    | 2008/06/11 18:08:25 | [memory ] 59.786: parallel nursery GC 826611K->808388K (1049600K), 21.726 ms
+INFO   | jvm 1    | 2008/06/11 18:08:25 | [memory ] 59.980: parallel nursery GC 827738K->809163K (1049600K), 19.148 ms
+INFO   | jvm 1    | 2008/06/11 18:08:25 | [memory ] 60.315: parallel nursery GC 828513K->810219K (1049600K), 20.995 ms
+INFO   | jvm 1    | 2008/06/11 18:08:26 | [memory ] 60.649: parallel nursery GC 829569K->811275K (1049600K), 21.463 ms
+INFO   | jvm 1    | 2008/06/11 18:08:26 | [memory ] 60.948: parallel nursery GC 830625K->812354K (1049600K), 21.839 ms
+INFO   | jvm 1    | 2008/06/11 18:08:26 | [memory ] 61.291: parallel nursery GC 831704K->813505K (1049600K), 22.799 ms
+INFO   | jvm 1    | 2008/06/11 18:08:26 | [memory ] 61.625: parallel nursery GC 832855K->814533K (1049600K), 21.491 ms
+INFO   | jvm 1    | 2008/06/11 18:08:27 | [memory ] 61.930: parallel nursery GC 833883K->815544K (1049600K), 21.222 ms
+INFO   | jvm 1    | 2008/06/11 18:08:27 | [memory ] 62.288: parallel nursery GC 834894K->816595K (1049600K), 22.156 ms
+INFO   | jvm 1    | 2008/06/11 18:08:27 | [memory ] 62.637: parallel nursery GC 835945K->817604K (1049600K), 21.381 ms
+INFO   | jvm 1    | 2008/06/11 18:08:28 | [memory ] 62.987: parallel nursery GC 858235K->839882K (1049600K), 22.455 ms
+INFO   | jvm 1    | 2008/06/11 18:08:28 | [memory ] 63.311: parallel nursery GC 878408K->860065K (1049600K), 21.474 ms
+INFO   | jvm 1    | 2008/06/11 18:08:28 | [memory ] 63.661: parallel nursery GC 879415K->861136K (1049600K), 22.054 ms
+INFO   | jvm 1    | 2008/06/11 18:08:29 | [memory ] 63.999: parallel nursery GC 880486K->862245K (1049600K), 22.638 ms
+INFO   | jvm 1    | 2008/06/11 18:08:29 | [memory ] 64.344: parallel nursery GC 898511K->880333K (1049600K), 23.313 ms
+INFO   | jvm 1    | 2008/06/11 18:08:30 | [memory ] 64.680: parallel nursery GC 899683K->881419K (1049600K), 22.941 ms
+INFO   | jvm 1    | 2008/06/11 18:08:30 | [memory ] 65.028: parallel nursery GC 900769K->882515K (1049600K), 22.949 ms
+INFO   | jvm 1    | 2008/06/11 18:08:30 | [memory ] 65.375: parallel nursery GC 901865K->883551K (1049600K), 22.747 ms
+INFO   | jvm 1    | 2008/06/11 18:08:31 | [memory ] 65.730: parallel nursery GC 917910K->899629K (1049600K), 22.610 ms
+INFO   | jvm 1    | 2008/06/11 18:08:31 | [memory ] 66.028: parallel nursery GC 918979K->900501K (1049600K), 21.331 ms
+INFO   | jvm 1    | 2008/06/11 18:08:31 | [memory ] 66.373: parallel nursery GC 919851K->901588K (1049600K), 22.158 ms
+INFO   | jvm 1    | 2008/06/11 18:08:32 | [memory ] 66.727: parallel nursery GC 934214K->915834K (1049600K), 22.188 ms
+INFO   | jvm 1    | 2008/06/11 18:08:32 | [memory ] 66.980: parallel nursery GC 935184K->916678K (1049600K), 21.097 ms
+INFO   | jvm 1    | 2008/06/11 18:08:32 | [memory ] 67.319: parallel nursery GC 936028K->917767K (1049600K), 22.910 ms
+INFO   | jvm 1    | 2008/06/11 18:08:33 | [memory ] 67.673: parallel nursery GC 937117K->918780K (1049600K), 23.330 ms
+INFO   | jvm 1    | 2008/06/11 18:08:33 | [memory ] 68.038: parallel nursery GC 949393K->931231K (1049600K), 23.897 ms
+INFO   | jvm 1    | 2008/06/11 18:08:33 | [memory ] 68.398: parallel nursery GC 950581K->932333K (1049600K), 22.791 ms
+INFO   | jvm 1    | 2008/06/11 18:08:34 | [memory ] 68.736: parallel nursery GC 951683K->933412K (1049600K), 23.427 ms
+INFO   | jvm 1    | 2008/06/11 18:08:34 | [memory ] 68.968: parallel nursery GC 962490K->943876K (1049600K), 20.187 ms
+INFO   | jvm 1    | 2008/06/11 18:08:34 | [memory ] 69.331: parallel nursery GC 963226K->944953K (1049600K), 23.422 ms
+INFO   | jvm 1    | 2008/06/11 18:08:35 | [memory ] 69.686: parallel nursery GC 973007K->954685K (1049600K), 22.957 ms
+INFO   | jvm 1    | 2008/06/11 18:08:35 | [memory ] 70.055: parallel nursery GC 974035K->955762K (1049600K), 23.502 ms
+INFO   | jvm 1    | 2008/06/11 18:08:35 | [memory ] 70.386: parallel nursery GC 975112K->956907K (1049600K), 23.627 ms
+INFO   | jvm 1    | 2008/06/11 18:08:35 | [memory ] 70.698: parallel nursery GC 983937K->965806K (1049600K), 24.594 ms
+INFO   | jvm 1    | 2008/06/11 18:08:36 | [memory ] 71.056: parallel nursery GC 985156K->966797K (1049600K), 22.854 ms
+INFO   | jvm 1    | 2008/06/11 18:08:36 | [memory ] 71.424: parallel nursery GC 992803K->974368K (1049600K), 22.387 ms
+INFO   | jvm 1    | 2008/06/11 18:08:37 | [memory ] 71.789: parallel nursery GC 999424K->981086K (1049600K), 23.072 ms
+INFO   | jvm 1    | 2008/06/11 18:08:37 | [memory ] 72.154: parallel nursery GC 1000436K->982111K (1049600K), 23.379 ms
+INFO   | jvm 1    | 2008/06/11 18:08:37 | [memory ] 72.503: parallel nursery GC 1014519K->996179K (1049600K), 23.577 ms
+INFO   | jvm 1    | 2008/06/11 18:08:38 | [memory ] 72.850: parallel nursery GC 1022055K->1003714K (1049600K), 23.268 ms
+INFO   | jvm 1    | 2008/06/11 18:08:38 | [memory ] 73.227: parallel nursery GC 1026153K->1007863K (1049600K), 23.449 ms
+INFO   | jvm 1    | 2008/06/11 18:08:38 | [memory ] 73.593: parallel nursery GC 1036607K->1018259K (1049600K), 23.507 ms
+INFO   | jvm 1    | 2008/06/11 18:08:39 | [memory ] 73.966: parallel nursery GC 1046921K->1028600K (1049600K), 23.624 ms
+INFO   | jvm 1    | 2008/06/11 18:08:40 | [memory ] Changing GC strategy to single generation, parallel mark and parallel sweep
+INFO   | jvm 1    | 2008/06/11 18:08:40 | [memory ] 74.350-75.025: GC 1049600K->257227K (1049600K), 674.649 ms
+INFO   | jvm 1    | 2008/06/11 18:08:52 | [memory ] 86.054-86.746: GC 1049600K->358717K (1049600K), 691.353 ms
+INFO   | jvm 1    | 2008/06/11 18:09:02 | [memory ] 96.961-97.594: GC 1049600K->443959K (1049600K), 633.226 ms
+INFO   | jvm 1    | 2008/06/11 18:09:07 | --
+INFO   | jvm 1    | 2008/06/11 18:09:21 | [memory ] 115.227-116.094: GC 1049600K->503889K (1049600K), 866.599 ms
+INFO   | jvm 1    | 2008/06/11 18:09:37 | [memory ] 131.102-132.041: GC 1049600K->502815K (1049600K), 938.349 ms
+INFO   | jvm 1    | 2008/06/11 18:09:52 | <Jun 11, 2008 6:09:52 PM GMT+05:30> <Notice> <WebLogicServer> <BEA-000329> <Started WebLogic Admin Server "gc3-hydhtc137458d" for domain "gc3domain" running in Production Mode> 
+INFO   | jvm 1    | 2008/06/11 18:09:52 | <Jun 11, 2008 6:09:52 PM GMT+05:30> <Notice> <WebLogicServer> <BEA-000360> <Server started in RUNNING mode> 
+INFO   | jvm 1    | 2008/06/11 18:09:52 | <Jun 11, 2008 6:09:52 PM GMT+05:30> <Notice> <WebLogicServer> <BEA-000355> <Thread "ListenThread.Default" listening on port 7001, ip address 10.136.225.50> 
+INFO   | jvm 1    | 2008/06/11 18:10:19 |  : ERROR : 0
+INFO   | jvm 1    | 2008/06/11 18:10:21 | [memory ] 175.479-176.512: GC 917107K->501275K (1049600K), 1033.190 ms
+INFO   | jvm 1    | 2008/06/11 18:10:21 | en : ERROR : 401209
+INFO   | jvm 1    | 2008/06/11 18:10:22 | en_US : ERROR : 0
+INFO   | jvm 1    | 2008/06/11 18:12:02 |  : EXPLANATION : 0
+INFO   | jvm 1    | 2008/06/11 18:12:02 | en : EXPLANATION : 65584
+INFO   | jvm 1    | 2008/06/11 18:12:02 | en_US : EXPLANATION : 0
+INFO   | jvm 1    | 2008/06/11 18:15:25 | java.sql.SQLException: ORA-00942: table or view does not exist
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 
+INFO   | jvm 1    | 2008/06/11 18:15:25 | java.sql.SQLException: ORA-00942: table or view does not exist
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:288)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:745)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:216)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:810)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1039)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at oracle.jdbc.driver.T4CPreparedStatement.executeMaybeDescribe(T4CPreparedStatement.java:850)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1134)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3339)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3384)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at weblogic.jdbc.wrapper.PreparedStatement.executeQuery(PreparedStatement.java:124)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at glog.util.jdbc.noserver.SqlQuery.executeQuery(SqlQuery.java:146)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at glog.util.jdbc.noserver.SqlQuery.resetArguments(SqlQuery.java:124)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at glog.util.jdbc.noserver.SqlQuery.open(SqlQuery.java:94)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at glog.server.useraccess.UserAccessSessionBean.getUserAccess(UserAccessSessionBean.java:151)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at glog.server.useraccess.UserAccessSessionServerSideEJBWrapper.getUserAccess(UserAccessSessionServerSideEJBWrapper.java:70)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl.getUserAccess(UserAccessSessionHome_uzvgzz_EOImpl.java:154)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl_WLSkel.invoke(ILweblogic.rmi.spi.InboundRequest;Lweblogic.rmi.spi.OutboundResponse;Ljava.lang.Object;)Lweblogic.rmi.spi.OutboundResponse;(Unknown Source)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:477)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at weblogic.rmi.cluster.ReplicaAwareServerRef.invoke(ReplicaAwareServerRef.java:108)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:420)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:415)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at weblogic.rmi.internal.BasicExecuteRequest.execute(BasicExecuteRequest.java:30)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:219)
+INFO   | jvm 1    | 2008/06/11 18:15:25 | 	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:178)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | java.sql.SQLException: ORA-00942: table or view does not exist
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 
+INFO   | jvm 1    | 2008/06/11 18:17:17 | java.sql.SQLException: ORA-00942: table or view does not exist
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:288)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:745)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:216)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:810)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1039)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.T4CPreparedStatement.executeMaybeDescribe(T4CPreparedStatement.java:850)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1134)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3339)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3384)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.jdbc.wrapper.PreparedStatement.executeQuery(PreparedStatement.java:124)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at glog.util.jdbc.noserver.SqlQuery.executeQuery(SqlQuery.java:146)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at glog.util.jdbc.noserver.SqlQuery.resetArguments(SqlQuery.java:124)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at glog.util.jdbc.noserver.SqlQuery.open(SqlQuery.java:94)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at glog.server.useraccess.UserAccessSessionBean.getUserAccess(UserAccessSessionBean.java:151)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at glog.server.useraccess.UserAccessSessionServerSideEJBWrapper.getUserAccess(UserAccessSessionServerSideEJBWrapper.java:70)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl.getUserAccess(UserAccessSessionHome_uzvgzz_EOImpl.java:154)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl_WLSkel.invoke(ILweblogic.rmi.spi.InboundRequest;Lweblogic.rmi.spi.OutboundResponse;Ljava.lang.Object;)Lweblogic.rmi.spi.OutboundResponse;(Unknown Source)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:477)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.rmi.cluster.ReplicaAwareServerRef.invoke(ReplicaAwareServerRef.java:108)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:420)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:415)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.rmi.internal.BasicExecuteRequest.execute(BasicExecuteRequest.java:30)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:219)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:178)

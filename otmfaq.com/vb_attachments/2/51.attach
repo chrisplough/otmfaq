@@ -1,0 +1,63 @@
+NOTICE
+------
+This archive is compiled as a convenience in order to reduce issues associated with an Oracle OTM installation, since several libraries are required which are not distributed with the product.  The libraries were compiled based on the README.TXT section which is displayed at the end of the OTM installer.
+
+***
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+***
+
+The following libraries, jars and packages are included as part of the archive named "mw-otm55_extrajars.zip".  All copyright and license information is detailed within the *-LICENSE files included in this archive.  All rights remain with the original license holders.
+
+	- Apache Velocity
+		- Site: http://velocity.apache.org/ 
+		- License: VELOCITY-LICENSE
+		- Included Files:
+			- velocity-1.4.jar
+			- velocity-dep-1.4.jar
+
+	- Apache Struts
+		- Site: http://struts.apache.org/
+		- License: STRUTS-LICENSE
+		- Included Files
+			- struts.jar
+
+	- FinJ
+		- Site: http://finj.sourceforge.net/ 
+		- License: FINJ-LICENSE
+		- Included Files:
+			- finj.jar
+
+	- Jakarta Taglibs
+		- Site: http://jakarta.apache.org/taglibs/
+		- License: TAGLIBS-LICENSE
+		- Included Files:
+			- jstl.jar
+			- standard.jar
+	
+	- OpenMap
+		- Site: 
+		- License: OPENMAP-LICENSE
+		- Included Files:
+			- openmap.jar
+ 
+	- WSDL4J
+		- Site: http://sourceforge.net/projects/wsdl4j/
+		- License: WSDL4J-LICENSE
+		- Included Files:
+			- wsdl4j.jar
+
+
+LATEST VERSION
+--------------
+The latest version of this archive can be found and downloaded from the OTM FAQ Forums (http://www.otmfaq.com/).
+
+
+ISSUES / CONTACT
+----------------
+If you find any issues with this archive or if newer libraries are required, please contact Chris Plough at chris.plough@mavenwire.com or via the OTMFAQ Forums (http://www.otmfaq.com/).
+
+
+INSTALLATION
+------------
+To install these libraries, copy the mw-otm55_extrajars.zip file into your OTM installation directory and extract.
+

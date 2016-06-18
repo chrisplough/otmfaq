@@ -1,0 +1,18 @@
+<2016-03-16 14:38:53> <INFO> <OHS-0> <Domain initialized for /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb>
+<2016-03-16 14:38:54> <INFO> <OHS-4112> <Creating instance otm641>
+<2016-03-16 14:39:22> <INFO> <OHS-4114> <Updating instance otm641>
+<2016-03-16 14:58:35> <INFO> <OHS-4018> <Starting server otm641>
+<2016-03-16 14:58:35> <INFO> <OHS-0> <Running /U01/OTM/Oracle/Middleware/Oracle_Home/ohs/bin/httpd.sh httpd.worker -k start -f /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/config/fmwconfig/components/OHS/instances/otm641/httpd.conf>
+<2016-03-16 14:58:35> <INFO> <OHS-0> <Syntax error on line 1034 of /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/config/fmwconfig/components/OHS/instances/otm641/httpd.conf:>
+<2016-03-16 14:58:35> <INFO> <OHS-0> <ServerAdmin takes one argument, The email address of the server administrator>
+<2016-03-16 14:58:35> <INFO> <OHS-0> </U01/OTM/Oracle/Middleware/Oracle_Home/ohs/bin/httpd.sh httpd.worker -k start -f /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/config/fmwconfig/components/OHS/instances/otm641/httpd.conf: exit status = 1>
+<2016-03-16 14:58:35> <INFO> <OHS-4005> <Check the instance log file for more information: /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/servers/otm641/logs/otm641.log>
+<2016-03-16 14:58:35> <SEVERE> <OHS-0> <Failed to start the server otm641>
+<2016-03-16 15:24:43> <INFO> <OHS-0> <Domain initialized for /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb>
+<2016-03-16 15:26:30> <INFO> <OHS-4018> <Starting server otm641>
+<2016-03-16 15:26:30> <INFO> <OHS-0> <Running /U01/OTM/Oracle/Middleware/Oracle_Home/ohs/bin/httpd.sh httpd.worker -k start -f /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/config/fmwconfig/components/OHS/instances/otm641/httpd.conf>
+<2016-03-16 15:26:30> <INFO> <OHS-0> <Syntax error on line 1034 of /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/config/fmwconfig/components/OHS/instances/otm641/httpd.conf:>
+<2016-03-16 15:26:30> <INFO> <OHS-0> <ServerAdmin takes one argument, The email address of the server administrator>
+<2016-03-16 15:26:31> <INFO> <OHS-0> </U01/OTM/Oracle/Middleware/Oracle_Home/ohs/bin/httpd.sh httpd.worker -k start -f /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/config/fmwconfig/components/OHS/instances/otm641/httpd.conf: exit status = 1>
+<2016-03-16 15:26:31> <INFO> <OHS-4005> <Check the instance log file for more information: /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/servers/otm641/logs/otm641.log>
+<2016-03-16 15:26:31> <SEVERE> <OHS-0> <Failed to start the server otm641>

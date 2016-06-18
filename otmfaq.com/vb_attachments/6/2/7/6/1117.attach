@@ -1,0 +1,1333 @@
+2012-10-17 13:24:33.94	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.941	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.941	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:33.941	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:33.941	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:33.942	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:33.942	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:33.942	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1100] [batch - 2]
+2012-10-17 13:24:33.942	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1100] [batch - 2]
+2012-10-17 13:24:33.943	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:33.943	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:33.943	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0506] [batch - 1]
+2012-10-17 13:24:33.943	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0506] [batch - 1]
+2012-10-17 13:24:33.945	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.946	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.946	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.946	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:33.946	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.946	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:33.946	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:33.946	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:33.946	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:33.946	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:33.947	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:33.947	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:33.947	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1101] [batch - 2]
+2012-10-17 13:24:33.947	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1101] [batch - 2]
+2012-10-17 13:24:33.947	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:33.948	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:33.948	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0507] [batch - 1]
+2012-10-17 13:24:33.948	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0507] [batch - 1]
+2012-10-17 13:24:33.95	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.95	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.95	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:33.95	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:33.95	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:33.951	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.951	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.951	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:33.951	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:33.951	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:33.951	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:33.952	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:33.952	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1102] [batch - 2]
+2012-10-17 13:24:33.952	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1102] [batch - 2]
+2012-10-17 13:24:33.952	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:33.952	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:33.952	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0508] [batch - 1]
+2012-10-17 13:24:33.952	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0508] [batch - 1]
+2012-10-17 13:24:33.955	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.955	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.955	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.955	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.955	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:33.955	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:33.955	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:33.955	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:33.955	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:33.956	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:33.957	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:33.957	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:33.957	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:33.957	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1103] [batch - 2]
+2012-10-17 13:24:33.957	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:33.957	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1103] [batch - 2]
+2012-10-17 13:24:33.957	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0509] [batch - 1]
+2012-10-17 13:24:33.957	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0509] [batch - 1]
+2012-10-17 13:24:33.959	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.959	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.96	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:33.96	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:33.96	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:33.96	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.96	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.96	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:33.96	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:33.961	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:33.961	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:33.961	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:33.961	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1104] [batch - 2]
+2012-10-17 13:24:33.961	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1104] [batch - 2]
+2012-10-17 13:24:33.962	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:33.962	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:33.962	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0510] [batch - 1]
+2012-10-17 13:24:33.962	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0510] [batch - 1]
+2012-10-17 13:24:33.964	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.964	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.964	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.965	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.965	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:33.965	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:33.965	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:33.965	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:33.965	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:33.965	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:33.966	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:33.966	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:33.966	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:33.966	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1105] [batch - 2]
+2012-10-17 13:24:33.966	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:33.966	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1105] [batch - 2]
+2012-10-17 13:24:33.966	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0511] [batch - 1]
+2012-10-17 13:24:33.967	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0511] [batch - 1]
+2012-10-17 13:24:33.969	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.969	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.969	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:33.969	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:33.969	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:33.969	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.97	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.97	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:33.97	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:33.97	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:33.97	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:33.97	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:33.971	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1106] [batch - 2]
+2012-10-17 13:24:33.971	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1106] [batch - 2]
+2012-10-17 13:24:33.971	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:33.971	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:33.971	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0512] [batch - 1]
+2012-10-17 13:24:33.971	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0512] [batch - 1]
+2012-10-17 13:24:33.974	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.974	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.974	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.974	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.974	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:33.974	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:33.974	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:33.974	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:33.974	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:33.974	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:33.975	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:33.976	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:33.976	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:33.976	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1107] [batch - 2]
+2012-10-17 13:24:33.976	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:33.976	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1107] [batch - 2]
+2012-10-17 13:24:33.976	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0513] [batch - 1]
+2012-10-17 13:24:33.976	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0513] [batch - 1]
+2012-10-17 13:24:33.978	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.978	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.978	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:33.979	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:33.979	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:33.979	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.979	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.979	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:33.979	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:33.979	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:33.98	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:33.98	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:33.98	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1108] [batch - 2]
+2012-10-17 13:24:33.98	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1108] [batch - 2]
+2012-10-17 13:24:33.98	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:33.98	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:33.981	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0514] [batch - 1]
+2012-10-17 13:24:33.981	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0514] [batch - 1]
+2012-10-17 13:24:33.983	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.983	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.983	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.983	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.983	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:33.983	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:33.984	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:33.984	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:33.984	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:33.984	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:33.985	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:33.985	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:33.985	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:33.985	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:33.985	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1109] [batch - 2]
+2012-10-17 13:24:33.985	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0515] [batch - 1]
+2012-10-17 13:24:33.985	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1109] [batch - 2]
+2012-10-17 13:24:33.985	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0515] [batch - 1]
+2012-10-17 13:24:33.988	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.988	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.988	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:33.988	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:33.988	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:33.988	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.988	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.989	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:33.989	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:33.989	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:33.989	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:33.989	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:33.99	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1110] [batch - 2]
+2012-10-17 13:24:33.99	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1110] [batch - 2]
+2012-10-17 13:24:33.99	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:33.99	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:33.99	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0516] [batch - 1]
+2012-10-17 13:24:33.99	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0516] [batch - 1]
+2012-10-17 13:24:33.992	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.993	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.993	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.993	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.993	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:33.993	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:33.993	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:33.993	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:33.993	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:33.993	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:33.994	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:33.994	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:33.995	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:33.995	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:33.995	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1111] [batch - 2]
+2012-10-17 13:24:33.995	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0517] [batch - 1]
+2012-10-17 13:24:33.995	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1111] [batch - 2]
+2012-10-17 13:24:33.995	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0517] [batch - 1]
+2012-10-17 13:24:33.997	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.997	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:33.997	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:33.998	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:33.998	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:33.998	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.998	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:33.998	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:33.998	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:33.998	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:33.999	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:33.999	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:33.999	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1112] [batch - 2]
+2012-10-17 13:24:33.999	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1112] [batch - 2]
+2012-10-17 13:24:33.999	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.0	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.0	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0518] [batch - 1]
+2012-10-17 13:24:34.0	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0518] [batch - 1]
+2012-10-17 13:24:34.002	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.002	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.002	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.002	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.003	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.003	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.003	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.003	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.003	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.003	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.004	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.004	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.004	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.004	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1113] [batch - 2]
+2012-10-17 13:24:34.004	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.004	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1113] [batch - 2]
+2012-10-17 13:24:34.004	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0519] [batch - 1]
+2012-10-17 13:24:34.004	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0519] [batch - 1]
+2012-10-17 13:24:34.007	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.007	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.007	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.007	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.007	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.007	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.007	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.008	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.008	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.008	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.008	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.008	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.008	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1114] [batch - 2]
+2012-10-17 13:24:34.009	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1114] [batch - 2]
+2012-10-17 13:24:34.009	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.009	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.009	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0520] [batch - 1]
+2012-10-17 13:24:34.009	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0520] [batch - 1]
+2012-10-17 13:24:34.012	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.012	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.012	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.012	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.012	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.012	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.012	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.012	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.012	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.012	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.013	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.014	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.014	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.014	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1115] [batch - 2]
+2012-10-17 13:24:34.014	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.014	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1115] [batch - 2]
+2012-10-17 13:24:34.014	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0521] [batch - 1]
+2012-10-17 13:24:34.014	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0521] [batch - 1]
+2012-10-17 13:24:34.016	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.016	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.016	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.017	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.017	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.017	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.017	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.017	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.017	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.017	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.018	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.018	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.018	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1116] [batch - 2]
+2012-10-17 13:24:34.018	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1116] [batch - 2]
+2012-10-17 13:24:34.018	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.018	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.019	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0522] [batch - 1]
+2012-10-17 13:24:34.019	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0522] [batch - 1]
+2012-10-17 13:24:34.021	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.021	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.021	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.021	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.022	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.022	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.022	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.022	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.022	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.022	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.023	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.023	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.023	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.023	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.023	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1117] [batch - 2]
+2012-10-17 13:24:34.023	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0523] [batch - 1]
+2012-10-17 13:24:34.023	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1117] [batch - 2]
+2012-10-17 13:24:34.023	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0523] [batch - 1]
+2012-10-17 13:24:34.026	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.026	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.026	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.026	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.026	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.026	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.026	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.027	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.027	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.027	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.027	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.027	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.028	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1118] [batch - 2]
+2012-10-17 13:24:34.028	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1118] [batch - 2]
+2012-10-17 13:24:34.028	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.028	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.028	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0524] [batch - 1]
+2012-10-17 13:24:34.028	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0524] [batch - 1]
+2012-10-17 13:24:34.031	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.031	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.031	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.031	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.031	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.031	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.031	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.031	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.031	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.031	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.032	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.032	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.033	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.033	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.033	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1119] [batch - 2]
+2012-10-17 13:24:34.033	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0525] [batch - 1]
+2012-10-17 13:24:34.033	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1119] [batch - 2]
+2012-10-17 13:24:34.033	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0525] [batch - 1]
+2012-10-17 13:24:34.035	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.035	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.036	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.036	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.036	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.036	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.036	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.036	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.036	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.036	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.037	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.037	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.037	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1120] [batch - 2]
+2012-10-17 13:24:34.037	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1120] [batch - 2]
+2012-10-17 13:24:34.037	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.037	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.038	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0526] [batch - 1]
+2012-10-17 13:24:34.038	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0526] [batch - 1]
+2012-10-17 13:24:34.04	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.04	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.04	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.04	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.04	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.041	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.041	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.041	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.041	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.041	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.042	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.042	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.042	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.042	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1121] [batch - 2]
+2012-10-17 13:24:34.042	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.042	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1121] [batch - 2]
+2012-10-17 13:24:34.042	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0527] [batch - 1]
+2012-10-17 13:24:34.042	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0527] [batch - 1]
+2012-10-17 13:24:34.045	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.045	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.045	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.045	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.045	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.045	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.046	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.046	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.046	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.046	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.046	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.046	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.047	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1122] [batch - 2]
+2012-10-17 13:24:34.047	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1122] [batch - 2]
+2012-10-17 13:24:34.047	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.047	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.047	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0528] [batch - 1]
+2012-10-17 13:24:34.047	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0528] [batch - 1]
+2012-10-17 13:24:34.05	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.05	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.05	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.05	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.05	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.05	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.05	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.05	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.05	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.05	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.051	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.051	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.052	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.052	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1123] [batch - 2]
+2012-10-17 13:24:34.052	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.052	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1123] [batch - 2]
+2012-10-17 13:24:34.052	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0529] [batch - 1]
+2012-10-17 13:24:34.052	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0529] [batch - 1]
+2012-10-17 13:24:34.054	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.054	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.054	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.055	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.055	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.055	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.055	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.055	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.055	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.055	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.056	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.056	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.056	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1124] [batch - 2]
+2012-10-17 13:24:34.056	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1124] [batch - 2]
+2012-10-17 13:24:34.056	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.056	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.057	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0530] [batch - 1]
+2012-10-17 13:24:34.057	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0530] [batch - 1]
+2012-10-17 13:24:34.059	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.059	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.059	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.059	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.059	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.06	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.06	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.06	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.06	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.06	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.061	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.061	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.061	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.061	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.061	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1125] [batch - 2]
+2012-10-17 13:24:34.061	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0531] [batch - 1]
+2012-10-17 13:24:34.061	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1125] [batch - 2]
+2012-10-17 13:24:34.061	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0531] [batch - 1]
+2012-10-17 13:24:34.064	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.064	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.064	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.064	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.064	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.064	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.065	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.065	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.065	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.065	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.065	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.065	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.065	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1126] [batch - 2]
+2012-10-17 13:24:34.066	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1126] [batch - 2]
+2012-10-17 13:24:34.066	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.066	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.066	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0532] [batch - 1]
+2012-10-17 13:24:34.066	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0532] [batch - 1]
+2012-10-17 13:24:34.068	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.069	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.069	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.069	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.069	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.069	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.069	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.069	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.069	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.069	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.07	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.07	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.07	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.071	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1127] [batch - 2]
+2012-10-17 13:24:34.071	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.071	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1127] [batch - 2]
+2012-10-17 13:24:34.071	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0533] [batch - 1]
+2012-10-17 13:24:34.071	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0533] [batch - 1]
+2012-10-17 13:24:34.073	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.073	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.073	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.073	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.073	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.074	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.074	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.074	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.074	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.074	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.075	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.075	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.075	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1128] [batch - 2]
+2012-10-17 13:24:34.075	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1128] [batch - 2]
+2012-10-17 13:24:34.075	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.075	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.076	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0534] [batch - 1]
+2012-10-17 13:24:34.076	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0534] [batch - 1]
+2012-10-17 13:24:34.078	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.078	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.078	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.078	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.078	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.078	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.078	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.078	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.079	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.079	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.08	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.08	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.08	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.08	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1129] [batch - 2]
+2012-10-17 13:24:34.08	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.08	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1129] [batch - 2]
+2012-10-17 13:24:34.08	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0535] [batch - 1]
+2012-10-17 13:24:34.08	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0535] [batch - 1]
+2012-10-17 13:24:34.082	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.083	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.083	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.083	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.083	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.083	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.083	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.083	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.084	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.084	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.084	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.084	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.084	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1130] [batch - 2]
+2012-10-17 13:24:34.084	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1130] [batch - 2]
+2012-10-17 13:24:34.085	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.085	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.085	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0536] [batch - 1]
+2012-10-17 13:24:34.085	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0536] [batch - 1]
+2012-10-17 13:24:34.087	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.087	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.088	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.088	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.088	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.088	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.088	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.088	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.088	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.088	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.089	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.089	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.089	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.089	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1131] [batch - 2]
+2012-10-17 13:24:34.089	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.089	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1131] [batch - 2]
+2012-10-17 13:24:34.09	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0537] [batch - 1]
+2012-10-17 13:24:34.09	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0537] [batch - 1]
+2012-10-17 13:24:34.092	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.092	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.092	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.092	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.092	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.092	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.093	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.093	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.093	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.093	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.093	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.094	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.094	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1132] [batch - 2]
+2012-10-17 13:24:34.094	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1132] [batch - 2]
+2012-10-17 13:24:34.094	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.094	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.094	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0538] [batch - 1]
+2012-10-17 13:24:34.094	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0538] [batch - 1]
+2012-10-17 13:24:34.097	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.097	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.097	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.097	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.097	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.097	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.097	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.097	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.097	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.097	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.099	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.099	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.099	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.099	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1133] [batch - 2]
+2012-10-17 13:24:34.099	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.099	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1133] [batch - 2]
+2012-10-17 13:24:34.099	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0539] [batch - 1]
+2012-10-17 13:24:34.099	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0539] [batch - 1]
+2012-10-17 13:24:34.101	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.101	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.102	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.102	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.102	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.102	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.102	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.102	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.102	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.102	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.103	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.103	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.103	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1134] [batch - 2]
+2012-10-17 13:24:34.103	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1134] [batch - 2]
+2012-10-17 13:24:34.104	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.104	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.104	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0540] [batch - 1]
+2012-10-17 13:24:34.104	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0540] [batch - 1]
+2012-10-17 13:24:34.106	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.106	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.106	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.106	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.107	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.107	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.107	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.107	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.107	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.107	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.108	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.108	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.108	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.108	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0541] [batch - 1]
+2012-10-17 13:24:34.108	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.108	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0541] [batch - 1]
+2012-10-17 13:24:34.108	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1135] [batch - 2]
+2012-10-17 13:24:34.109	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1135] [batch - 2]
+2012-10-17 13:24:34.111	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.111	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.111	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.111	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.111	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.112	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.112	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.112	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.112	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.112	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.112	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.112	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.113	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0542] [batch - 1]
+2012-10-17 13:24:34.113	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0542] [batch - 1]
+2012-10-17 13:24:34.113	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.113	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.113	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1136] [batch - 2]
+2012-10-17 13:24:34.113	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1136] [batch - 2]
+2012-10-17 13:24:34.116	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.116	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.116	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.116	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.116	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.116	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.116	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.116	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.116	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.116	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.117	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.118	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.118	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0543] [batch - 1]
+2012-10-17 13:24:34.118	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0543] [batch - 1]
+2012-10-17 13:24:34.118	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.118	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.118	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1137] [batch - 2]
+2012-10-17 13:24:34.118	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1137] [batch - 2]
+2012-10-17 13:24:34.12	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.12	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.12	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.121	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.121	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.121	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.121	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.121	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.121	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.122	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.122	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.122	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.122	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0544] [batch - 1]
+2012-10-17 13:24:34.122	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0544] [batch - 1]
+2012-10-17 13:24:34.123	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.123	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.123	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1138] [batch - 2]
+2012-10-17 13:24:34.123	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1138] [batch - 2]
+2012-10-17 13:24:34.125	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.125	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.125	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.125	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.125	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.125	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.126	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.126	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.126	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.126	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.127	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.127	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.127	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0545] [batch - 1]
+2012-10-17 13:24:34.127	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0545] [batch - 1]
+2012-10-17 13:24:34.127	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.127	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.127	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1139] [batch - 2]
+2012-10-17 13:24:34.127	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1139] [batch - 2]
+2012-10-17 13:24:34.129	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.129	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.13	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.13	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.13	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.13	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.13	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.13	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.131	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.131	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.131	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.131	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.131	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0546] [batch - 1]
+2012-10-17 13:24:34.131	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0546] [batch - 1]
+2012-10-17 13:24:34.132	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.132	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.132	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1140] [batch - 2]
+2012-10-17 13:24:34.132	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1140] [batch - 2]
+2012-10-17 13:24:34.134	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.134	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.134	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.134	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.135	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.135	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.135	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.135	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.135	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.135	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.136	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.136	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.136	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0547] [batch - 1]
+2012-10-17 13:24:34.136	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0547] [batch - 1]
+2012-10-17 13:24:34.136	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.136	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.136	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1141] [batch - 2]
+2012-10-17 13:24:34.136	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1141] [batch - 2]
+2012-10-17 13:24:34.138	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.138	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.139	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.139	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.139	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.139	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.139	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.14	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.14	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.14	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.14	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.14	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.14	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0548] [batch - 1]
+2012-10-17 13:24:34.14	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0548] [batch - 1]
+2012-10-17 13:24:34.141	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.141	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.141	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1142] [batch - 2]
+2012-10-17 13:24:34.141	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1142] [batch - 2]
+2012-10-17 13:24:34.143	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.143	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.143	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.144	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.144	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.144	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.144	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.144	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.144	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.144	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.145	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.145	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.145	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0549] [batch - 1]
+2012-10-17 13:24:34.145	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0549] [batch - 1]
+2012-10-17 13:24:34.145	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.145	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.145	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1143] [batch - 2]
+2012-10-17 13:24:34.145	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1143] [batch - 2]
+2012-10-17 13:24:34.148	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.148	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.148	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.148	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.148	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.148	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.149	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.149	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.149	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.149	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.149	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.149	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.149	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0550] [batch - 1]
+2012-10-17 13:24:34.149	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0550] [batch - 1]
+2012-10-17 13:24:34.15	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.15	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.15	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1144] [batch - 2]
+2012-10-17 13:24:34.15	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1144] [batch - 2]
+2012-10-17 13:24:34.152	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.153	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.153	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.153	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.153	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.153	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.153	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.153	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.153	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.153	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.154	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.154	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.154	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.154	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0551] [batch - 1]
+2012-10-17 13:24:34.155	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.155	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0551] [batch - 1]
+2012-10-17 13:24:34.155	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1145] [batch - 2]
+2012-10-17 13:24:34.155	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1145] [batch - 2]
+2012-10-17 13:24:34.157	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.157	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.157	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.157	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.157	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.158	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.158	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.158	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.158	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.158	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.159	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.159	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.159	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0552] [batch - 1]
+2012-10-17 13:24:34.159	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0552] [batch - 1]
+2012-10-17 13:24:34.159	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.159	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.159	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1146] [batch - 2]
+2012-10-17 13:24:34.16	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1146] [batch - 2]
+2012-10-17 13:24:34.162	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.162	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.162	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.162	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.162	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.162	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.162	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.162	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.163	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.163	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.164	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.164	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.164	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.164	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0553] [batch - 1]
+2012-10-17 13:24:34.164	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.164	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0553] [batch - 1]
+2012-10-17 13:24:34.164	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1147] [batch - 2]
+2012-10-17 13:24:34.164	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1147] [batch - 2]
+2012-10-17 13:24:34.166	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.167	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.167	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.167	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.167	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.167	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.167	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.167	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.168	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.168	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.168	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.168	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.168	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0554] [batch - 1]
+2012-10-17 13:24:34.168	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0554] [batch - 1]
+2012-10-17 13:24:34.169	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.169	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.169	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1148] [batch - 2]
+2012-10-17 13:24:34.169	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1148] [batch - 2]
+2012-10-17 13:24:34.171	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.171	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.171	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.171	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.172	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.172	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.172	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.172	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.172	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.172	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.173	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.173	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.173	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.173	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0555] [batch - 1]
+2012-10-17 13:24:34.173	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.173	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0555] [batch - 1]
+2012-10-17 13:24:34.173	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1149] [batch - 2]
+2012-10-17 13:24:34.173	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1149] [batch - 2]
+2012-10-17 13:24:34.176	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.176	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.176	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.176	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.176	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.176	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.177	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.177	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.177	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.177	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.177	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.178	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.178	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0556] [batch - 1]
+2012-10-17 13:24:34.178	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0556] [batch - 1]
+2012-10-17 13:24:34.178	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.178	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.178	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1150] [batch - 2]
+2012-10-17 13:24:34.178	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1150] [batch - 2]
+2012-10-17 13:24:34.181	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.181	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.181	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.181	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.181	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.181	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.181	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.181	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.181	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.181	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.182	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.183	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.183	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.183	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.183	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0557] [batch - 1]
+2012-10-17 13:24:34.183	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1151] [batch - 2]
+2012-10-17 13:24:34.183	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0557] [batch - 1]
+2012-10-17 13:24:34.183	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1151] [batch - 2]
+2012-10-17 13:24:34.185	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.185	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.186	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.186	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.186	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.186	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.186	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.186	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.186	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.186	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.187	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.187	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.187	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0558] [batch - 1]
+2012-10-17 13:24:34.187	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0558] [batch - 1]
+2012-10-17 13:24:34.187	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.187	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.188	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1152] [batch - 2]
+2012-10-17 13:24:34.188	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1152] [batch - 2]
+2012-10-17 13:24:34.19	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.19	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.19	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.19	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.19	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.19	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.191	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.191	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.191	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.191	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.192	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.192	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.192	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.192	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.192	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1153] [batch - 2]
+2012-10-17 13:24:34.192	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1153] [batch - 2]
+2012-10-17 13:24:34.192	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0559] [batch - 1]
+2012-10-17 13:24:34.192	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0559] [batch - 1]
+2012-10-17 13:24:34.195	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.195	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.195	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.195	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.195	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.195	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.195	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.196	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.196	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.196	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.197	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]
+2012-10-17 13:24:34.197	120363	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 1]
+2012-10-17 13:24:34.197	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.197	120363	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0560] [batch - 1]
+2012-10-17 13:24:34.197	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.197	120363	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121002-0560] [batch - 1]
+2012-10-17 13:24:34.197	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1154] [batch - 2]
+2012-10-17 13:24:34.197	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1154] [batch - 2]
+2012-10-17 13:24:34.199	114362	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.2	114362	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 2]
+2012-10-17 13:24:34.2	114362	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 2]
+2012-10-17 13:24:34.2	114362	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825234#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1b568d24
+@458652037 [batch - 2]
+2012-10-17 13:24:34.2	114362	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 2]
+2012-10-17 13:24:34.2	120363	Debug	DataSource	Retrieving EJB connection via profile DEFAULT: source PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.2	120363	Debug	JDBC	Connecting to jdbc:weblogic:jts for Weblogic pool PRIMARY_JTS [batch - 1]
+2012-10-17 13:24:34.2	120363	Debug	JDBC	Setting initial vpd user to GUEST/POLINA.ADMIN/null/ADMIN [batch - 1]
+2012-10-17 13:24:34.2	120363	Debug	Subject	Current subject: Subject:
+	Principal: GLUserInfoImpl<GUEST/POLINA.ADMIN,GLPassword[825252#Encrypted#d2BoqpHyzqdW8KFTesfckRjd6dY=#null#ADMIN#null#mode=0, severity=0, userInfo=default, diagnostic=OFF, ntierUid=null#app]>
+	Private Credential: weblogic.security.auth.login.PasswordCredential@1cda8fbe
+@484080690 [batch - 1]
+2012-10-17 13:24:34.201	120363	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[GUEST/POLINA.ADMIN, ADMIN, null, STATIC] [batch - 1]
+2012-10-17 13:24:34.201	114362	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 2]
+2012-10-17 13:24:34.201	114362	Debug	UOM	uomFilter=select diag_log_file_gid from diag_log_file where diag_log_file_gid = ? [batch - 2]
+2012-10-17 13:24:34.201	114362	Debug	Sql	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1155] [batch - 2]
+2012-10-17 13:24:34.201	114362	Debug	SqlPreparedStatements	select diag_log_file_gid from diag_log_file where diag_log_file_gid = ?; [GUEST/POLINA.20121007-1155] [batch - 2]
+2012-10-17 13:24:34.202	120363	Debug	UOM	select=<select diag_log_file_gid from diag_log_file>, where=<where diag_log_file_gid = ?> [batch - 1]

@@ -1,0 +1,98 @@
+<?php
+
+/*** Check vB plugins for suspicious entries ***/
+define('DISABLE_HOOKS',1);
+include 'global.php';
+
+if(!($vbulletin->userinfo['permissions']['adminpermissions'] & $vbulletin->bf_ugp_adminpermissions['cancontrolpanel'])){
+	echo 'Allowed for admins only';
+	exit;
+}
+
+echo '<h3>vBSEO - Check vB instance for suspicious plugins (v4)</h3>';
+
+if(isset($_GET['resetds'])){
+	
+	require_once(DIR . '/includes/adminfunctions.php');
+	$vbulletin->db->query_first("DELETE FROM ".TABLE_PREFIX."datastore WHERE title IN ('pluginlist','pluginlistadmin')");
+	$vbulletin->pluginlist=$vbulletin->pluginlistadmin=array();
+	vBulletinHook::build_datastore($db);
+	echo 'Resetting datastore. <a href="vbseo_checkplugins.php">Click here to check again</a>';
+	$db = $vbulletin->db = null;
+	exit;
+}
+
+
+if(isset($_GET['showds'])) {
+	print_r($vbulletin->pluginlist);
+}
+$plugin_code_pattern = '#(config\.xml|shutdown->add|PluginCacheCheck|Cookie Caching|Global Thread Cache|vbplist|acpcache|assert\(|eval\s*\(\s*(base64_decode|chr)|eval\s*\(\s*\$_(GET|COOKIE|POST|REQUEST)|\$_COOKIE\[\"(vbulletin_collapse|vbcache|vbinit))#is';
+
+$plist = $vbulletin->db->query_first("SELECT data FROM ".TABLE_PREFIX."datastore WHERE title='pluginlist'");
+
+echo 'Checking datastore pluginslist: '.
+	(preg_match($plugin_code_pattern, $plist['data'], $pmatch) ? 'DETECTED: '.$pmatch[1] : 'OK');
+echo ' [<a href="vbseo_checkplugins.php?resetds=yes">Click here to reset datastore</a>]<br />';
+	
+
+$query=$vbulletin->db->query("SELECT * FROM ".TABLE_PREFIX."plugin");
+
+echo '<hr />Checking plugins code<br />';
+while ($pinfo = $vbulletin->db->fetch_array($query))
+	if(preg_match($plugin_code_pattern, $pinfo['phpcode'], $pmatch)){
+	echo 'Suspicious plugin <a href="'.$vbulletin->config['Misc']['admincpdir'].'/plugin.php?do=edit&pluginid='.$pinfo['pluginid'].'">#'.$pinfo['pluginid'].'</a>: '.$pinfo['hookname'].' hook ('.$pinfo['product'].' product) - '.$pinfo['title'].' [<b>'.$pmatch[0].'</b>]<br />';
+
+}
+
+if(isset($_GET['checkfiles'])) {
+
+$files_pattern = '#(assert\(pack|eval\s*\(\s*base64|eval\s*\(\s*gzuncompress|eval\s*\(\s*chr|eval\(\$_REQUEST|eval\(\$_COOKIE|^.*\\\\x39\\\\x3D\\\\x31.*$)#im';
+
+echo '<hr />Checking files';flush();
+function av_check_files($dn){
+	$pd = @opendir($dn);
+	if($pd){
+	while($fn=readdir($pd))
+	if(($fn!='.') && ($fn!='..'))
+	{
+		$ffn = $dn . $fn;
+		if(is_dir($ffn))
+			av_check_files($ffn.'/');
+		else {
+
+  		if($t1 = $_GET['t1']){
+  			$t2 = $_GET['t2'];
+  			$mtimediff = time()-filemtime($ffn);			
+
+  			if(($mtimediff>$t2*24*3600)&&($mtimediff<$t1*24*3600)){
+  				echo '<br />Recent file modification date: '.$ffn.' ('.date('Y-m-d H:i',filemtime($ffn)).')';
+  			}
+  		}
+
+		if(preg_match('#\.(js|php)$#', $fn)&& ($fn!='vbseo_checkplugins.php')) {
+			global $files_pattern;
+			$fc1 = file_get_contents($ffn);
+
+			if(preg_match($files_pattern, $fc1, $fm)) {
+				echo '<br />Suspicious file content: '.$ffn .' ('.$fm[1].')';
+
+				if($_GET['fix']) {
+					// attempt to fix
+					if($fc2 = str_replace($fm[1], '', $fc1)) {
+						file_put_contents($ffn, $fc2);
+						//echo $fc2;exit;
+					}
+				}
+			}
+		}
+
+		}
+	}
+	closedir($pd);
+	}
+
+}
+av_check_files('./');
+
+}
+echo '<hr />Done.';

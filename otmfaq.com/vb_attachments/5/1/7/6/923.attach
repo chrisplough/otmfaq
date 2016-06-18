@@ -1,0 +1,275 @@
+INFO | 2012/01/01 10:52:28 | Starting Launched Process...
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rem ----------------------------------------------------------------------- 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rem --- user-configurable variables 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rem ----------------------------------------------------------------------- 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set GLOG_HOME=C:\otm 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set JAVA_HOME=C:\otm\jdk 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set JAVA_CMD="C:\otm\jdk\bin\java.exe" 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set ORACLE_HOME=C:\app\Administrator\product\11.2.0\dbhome_1 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set NLS_LANG=American_America.UTF8 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set MEM_ARGS= 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rem *********************************************************************** 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rem **********     DO NOT CHANGE ANYTHING BELOW THIS LINE!       ********** 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rem *********************************************************************** 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rem ----------------------------------------------------------------------- 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rem --- program-specific variables 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rem ----------------------------------------------------------------------- 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>APP_NAME="WebLogic" 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>APP_LONG_NAME="WebLogic Application Server" 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set LAUNCHER_CONF="C:\otm\weblogic\weblogic.conf" 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set LAUNCHER_JAR_FILE="C:\otm\launcher\launcher.jar" 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set WL_HOME=C:\Oracle\Middleware\wlserver_10.3 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rem ----------------------------------------------------------------------- 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rem --- generic variables 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rem ----------------------------------------------------------------------- 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set DASH_HOME=C:\otm\dash 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set XPRESS=C:\otm\dash\bin 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set PYTHON_VERSION=2.5 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set PYTHON_HOME=C:\otm\python 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set PYTHON_LIB=C:\otm\python\lib\python2.5 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set PYTHONPATH=C:\otm\python\lib\python2.5;C:\otm\python\lib\python2.5\site-packages;C:\otm\python\lib\python2.5\site-packages\_xmlplus;C:\otm\utils\integration\python 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set PYTHONUNBUFFERED=1 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set CLASSPATH=;C:\Oracle\Middleware\wlserver_10.3\server\lib\weblogic.jar 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set PATH=C:\app\Administrator\product\11.2.0\dbhome_1\lib;C:\otm\jdk\bin;C:\app\Administrator\product\11.2.0\dbhome_1\bin;C:\otm\python\bin;C:\Oracle\Middleware\wlserver_10.3\server\native\win\x64;C:\otm\jdk\bin;C:\otm\dash\bin;C:\otm\apache\openssl\bin;C:\app\Administrator\product\11.2.0\dbhome_1\bin;C:\otm\jdk\bin;C:\otm\dash\bin;C:\otm\apache\openssl\bin;C:\app\Administrator\product\11.2.0\client_1;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\; 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>if "Windows_NT" == "Windows_NT" goto nt 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rem Find the requested command. 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>for /F %v in ('echo copyconfigtemplate|findstr "^start$ ^stop$ ^restart$ ^copyconfigtemplate$ ^status"') do call :exec set COMMAND=%v 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>call :exec set COMMAND=copyconfigtemplate 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>set COMMAND=copyconfigtemplate 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>goto :eof 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>if "copyconfigtemplate" == "" (
+INFO | 2012/01/01 10:52:28 | echo Usage: C:\otm\weblogic\weblogic.bat { start : stop : restart: status: copyconfigtemplate}  
+INFO | 2012/01/01 10:52:28 |  pause 
+INFO | 2012/01/01 10:52:28 |  goto :eof 
+INFO | 2012/01/01 10:52:28 | )  else (shift) 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rem
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rem Run the application. 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rem At runtime, the current directory will be that of Wrapper.exe 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rem
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>call :copyconfigtemplate 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>copy /y C:\otm\weblogic\domains\otm\config\config.xml.fresh C:\otm\weblogic\domains\otm\config\config.xml 
+INFO | 2012/01/01 10:52:28 |         1 file(s) copied.
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>del /q C:\otm\weblogic\domains\otm\config\jdbc\*.* 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>del /q C:\otm\weblogic\domains\otm\config\configCache\*.* 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rd /s /q C:\otm\weblogic\domains\otm\pending 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>goto :eof 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>rem if errorlevel 1 pause 
+INFO | 2012/01/01 10:52:28 | 
+INFO | 2012/01/01 10:52:28 | C:\otm\jdk\bin>goto :eof 
+INFO | 2012/01/01 10:52:29 | java version "1.6.0_20"
+INFO | 2012/01/01 10:52:29 | Java(TM) SE Runtime Environment (build 1.6.0_20-b02)
+INFO | 2012/01/01 10:52:29 | Oracle JRockit(R) (build R28.0.1-21-133393-1.6.0_20-20100512-2131-windows-x86_64, compiled mode)
+INFO | 2012/01/01 10:52:29 | Argument #0 : C:/otm/jdk/bin/java
+INFO | 2012/01/01 10:52:29 | Argument #1 : -Xms1600m
+INFO | 2012/01/01 10:52:29 | Argument #2 : -Xmx1600m
+INFO | 2012/01/01 10:52:29 | Argument #3 : -jrockit
+INFO | 2012/01/01 10:52:29 | Argument #4 : -Xgcprio:throughput
+INFO | 2012/01/01 10:52:29 | Argument #5 : -Xverbose:memory
+INFO | 2012/01/01 10:52:29 | Argument #6 : -Dglog.home=C:/otm/glog/config
+INFO | 2012/01/01 10:52:29 | Argument #7 : -Duser.home=C:/otm/glog/config
+INFO | 2012/01/01 10:52:29 | Argument #8 : -Djava.io.tmpdir=C:/otm/temp
+INFO | 2012/01/01 10:52:29 | Argument #9 : -Djava.awt.headless=true
+INFO | 2012/01/01 10:52:29 | Argument #10 : -Djava.security.auth.login.config=C:/otm/glog/config/otm_jaas.config
+INFO | 2012/01/01 10:52:29 | Argument #11 : -Xss256k
+INFO | 2012/01/01 10:52:29 | Argument #12 : -Dweblogic.Name=gc3-SysPc
+INFO | 2012/01/01 10:52:29 | Argument #13 : -Dbea.home=C:/Oracle/Middleware/wlserver_10.3
+INFO | 2012/01/01 10:52:29 | Argument #14 : -Dweblogic.home=C:/Oracle/Middleware/wlserver_10.3/server
+INFO | 2012/01/01 10:52:29 | Argument #15 : -Dweblogic.management.username=system
+INFO | 2012/01/01 10:52:29 | Argument #16 : -Dweblogic.management.password=CHANGEME
+INFO | 2012/01/01 10:52:29 | Argument #17 : -Dweblogic.ProductionModeEnabled=true
+INFO | 2012/01/01 10:52:29 | Argument #18 : -Dweblogic.management.discover=false
+INFO | 2012/01/01 10:52:29 | Argument #19 : -Djava.security.policy=C:/Oracle/Middleware/wlserver_10.3/server/lib/weblogic.policy
+INFO | 2012/01/01 10:52:29 | Argument #20 : -Dwli.home=C:/Oracle/Middleware/wlserver_10.3/integration
+INFO | 2012/01/01 10:52:29 | Argument #21 : -Dwls.home=C:/Oracle/Middleware/wlserver_10.3/server
+INFO | 2012/01/01 10:52:29 | Argument #22 : -Dweblogic.RootDirectory=C:/otm/weblogic/domains/otm
+INFO | 2012/01/01 10:52:29 | Argument #23 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2012/01/01 10:52:29 | Argument #24 : -Djavax.xml.soap.SOAPFactory=weblogic.xml.saaj.SOAPFactoryImpl
+INFO | 2012/01/01 10:52:29 | Argument #25 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2012/01/01 10:52:29 | Argument #26 : -DpropertyProtection=mask
+INFO | 2012/01/01 10:52:29 | Argument #27 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2012/01/01 10:52:29 | Argument #28 : -Djavax.xml.soap.MessageFactory=weblogic.xml.saaj.MessageFactoryImpl
+INFO | 2012/01/01 10:52:29 | Argument #29 : -Djavax.management.builder.initial=weblogic.management.jmx.mbeanserver.WLSMBeanServerBuilder
+INFO | 2012/01/01 10:52:29 | Argument #30 : -classpath
+INFO | 2012/01/01 10:52:29 | Argument #31 : C:/otm/jdk/lib/tools.jar;C:/otm/glog/glog_resources;C:/otm/glog/config;C:/otm/glog/gc3webapp/WEB-INF/classes;C:/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/ojdbc6.jar;C:/otm/dash/lib/xprb.jar;C:/otm/dash/lib/xprm.jar;C:/otm/dash/lib/xprs.jar;C:/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar;C:/Oracle/Middleware/wlserver_10.3/server/lib/weblogic.jar;C:/Oracle/Middleware/wlserver_10.3/server/lib/webservices.jar;C:\otm\glog\gc3webapp\WEB-INF\lib\external\otm-samples.jar;C:\otm\launcher\launcher.jar
+INFO | 2012/01/01 10:52:29 | Argument #32 : com.oracle.otm.Launcher
+INFO | 2012/01/01 10:52:29 | Argument #33 : C:\otm\weblogic\weblogic.conf
+INFO | 2012/01/01 10:52:29 | Argument #34 : start_svc
+INFO | 2012/01/01 10:52:29 | Argument #35 : autokill
+INFO | 2012/01/01 10:52:29 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2012/01/01 10:52:29 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, strategy: Generational Parallel Mark & Sweep.
+INFO | 2012/01/01 10:52:29 | [INFO ][memory ] Heap size: 1638400KB, maximal heap size: 1638400KB, nursery size: 819200KB.
+INFO | 2012/01/01 10:52:29 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2012/01/01 10:52:29 | [INFO ][memory ] <start>  - start time of collection (seconds since jvm start).
+INFO | 2012/01/01 10:52:29 | [INFO ][memory ] <type>   - OC (old collection) or YC (young collection).
+INFO | 2012/01/01 10:52:29 | [INFO ][memory ] <end>    - end time of collection (seconds since jvm start).
+INFO | 2012/01/01 10:52:29 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2012/01/01 10:52:29 | [INFO ][memory ] <after>  - memory used by objects after collection (KB).
+INFO | 2012/01/01 10:52:29 | [INFO ][memory ] <heap>   - size of heap after collection (KB).
+INFO | 2012/01/01 10:52:29 | [INFO ][memory ] <time>   - total time of collection (milliseconds).
+INFO | 2012/01/01 10:52:29 | [INFO ][memory ] <pause>  - total sum of pauses during collection (milliseconds).
+INFO | 2012/01/01 10:52:29 | [INFO ][memory ]            Run with -Xverbose:gcpause to see individual phases.
+INFO | 2012/01/01 10:52:29 | [INFO ][memory ] Running on hypervisor Microsoft Hyper-V 6.1.build-7601 (17514.0.17)
+INFO | 2012/01/01 10:52:30 | Start Service Argument #0 : weblogic.Server
+INFO | 2012/01/01 10:52:30 | Start Service Argument #1 : start
+INFO | 2012/01/01 10:52:31 | <01-Jan-2012 10:52:30 o'clock GMT> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Oracle JRockit(R) Version R28.0.1-21-133393-1.6.0_20-20100512-2131-windows-x86_64 from Oracle Corporation> 
+INFO | 2012/01/01 10:52:31 | <01-Jan-2012 10:52:31 o'clock GMT> <Info> <Management> <BEA-141107> <Version: WebLogic Server 10.3.3.0  Fri Apr 9 00:05:28 PDT 2010 1321401 > 
+INFO | 2012/01/01 10:52:31 | <01-Jan-2012 10:52:31 o'clock GMT> <Warning> <Management> <BEA-141274> <Production mode has specified at the command line via the weblogic.ProductionModeEnabled system property. This system property overrides the development mode setting contained in config.xml. However, the console and WLST show the attribute values and defaults that correspond to the development mode specified in config.xml.> 
+INFO | 2012/01/01 10:52:33 | <01-Jan-2012 10:52:33 o'clock GMT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2012/01/01 10:52:33 | <01-Jan-2012 10:52:33 o'clock GMT> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+INFO | 2012/01/01 10:52:33 | <01-Jan-2012 10:52:33 o'clock GMT> <Notice> <Log Management> <BEA-170019> <The server log file C:\otm\logs\weblogic\weblogic.log is opened. All server side log events will be written to this file.> 
+INFO | 2012/01/01 10:52:33 | <01-Jan-2012 10:52:33 o'clock GMT> <Error> <Socket> <BEA-000438> <Unable to load performance pack. Using Java I/O instead. Please ensure that wlntio.dll is in: 'C:\otm\jdk\bin;.;C:\Windows\system32;C:\Windows;C:\otm\jdk\bin;C:\otm\dash\bin;C:\otm\apache\openssl\bin;C:\app\Administrator\product\11.2.0\dbhome_1\bin;C:\otm\jdk\bin;C:\otm\dash\bin;C:\otm\apache\openssl\bin;C:\app\Administrator\product\11.2.0\client_1;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;'
+> 
+INFO | 2012/01/01 10:52:35 | GC3 realm initializing <-----------
+INFO | 2012/01/01 10:52:38 | java.sql.SQLException: The Network Adapter could not establish the connection
+
+INFO | 2012/01/01 10:52:38 | java.sql.SQLException: The Network Adapter could not establish the connection
+INFO | 2012/01/01 10:52:38 | 	at oracle.jdbc.driver.SQLStateMapping.newSQLException(SQLStateMapping.java:70)
+INFO | 2012/01/01 10:52:38 | 	at oracle.jdbc.driver.DatabaseError.newSQLException(DatabaseError.java:133)
+INFO | 2012/01/01 10:52:38 | 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:199)
+INFO | 2012/01/01 10:52:38 | 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:480)
+INFO | 2012/01/01 10:52:38 | 	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:413)
+INFO | 2012/01/01 10:52:38 | 	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:508)
+INFO | 2012/01/01 10:52:38 | 	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:203)
+INFO | 2012/01/01 10:52:38 | 	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:33)
+INFO | 2012/01/01 10:52:38 | 	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:510)
+INFO | 2012/01/01 10:52:38 | 	at glog.util.datasource.GC3ConnectionEstablisher.connect(GC3ConnectionEstablisher.java:36)
+INFO | 2012/01/01 10:52:38 | 	at glog.util.datasource.DataSource.reserve(DataSource.java:148)
+INFO | 2012/01/01 10:52:38 | 	at glog.util.datasource.DataSource.reserve(DataSource.java:137)
+INFO | 2012/01/01 10:52:38 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:301)
+INFO | 2012/01/01 10:52:38 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:291)
+INFO | 2012/01/01 10:52:38 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:57)
+INFO | 2012/01/01 10:52:38 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1397)
+INFO | 2012/01/01 10:52:38 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1433)
+INFO | 2012/01/01 10:52:38 | 	at glog.database.security.dbrealm.CachingRealm.readKnownGroups(CachingRealm.java:372)
+INFO | 2012/01/01 10:52:38 | 	at glog.database.security.dbrealm.CachingRealm.initCaches(CachingRealm.java:195)
+INFO | 2012/01/01 10:52:38 | 	at glog.database.security.dbrealm.CachingRealm.<init>(CachingRealm.java:149)
+INFO | 2012/01/01 10:52:38 | 	at glog.database.security.dbrealm.CachingRealm.initialize(CachingRealm.java:136)
+INFO | 2012/01/01 10:52:38 | 	at glog.util.j2ee.jaas.GC3AuthenticationProviderImpl.initialize(GC3AuthenticationProviderImpl.java:32)
+INFO | 2012/01/01 10:52:38 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:65)
+INFO | 2012/01/01 10:52:38 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:363)
+INFO | 2012/01/01 10:52:38 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:315)
+INFO | 2012/01/01 10:52:38 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:257)
+INFO | 2012/01/01 10:52:38 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:72)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.service.internal.WLSIdentityServiceImpl.initialize(WLSIdentityServiceImpl.java:47)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.service.CSSWLSDelegateImpl.initializeServiceEngine(CSSWLSDelegateImpl.java:300)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.service.CSSWLSDelegateImpl.initialize(CSSWLSDelegateImpl.java:221)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.InitializeServiceEngine(CommonSecurityServiceManagerDelegateImpl.java:1783)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:442)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:840)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:869)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1028)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:875)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.SecurityService.start(SecurityService.java:141)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.t3.srvr.SubsystemRequest.run(SubsystemRequest.java:64)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:201)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:173)
+INFO | 2012/01/01 10:52:38 | Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+INFO | 2012/01/01 10:52:38 | 	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:328)
+INFO | 2012/01/01 10:52:38 | 	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:421)
+INFO | 2012/01/01 10:52:38 | 	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:634)
+INFO | 2012/01/01 10:52:38 | 	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:208)
+INFO | 2012/01/01 10:52:38 | 	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:966)
+INFO | 2012/01/01 10:52:38 | 	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:292)
+INFO | 2012/01/01 10:52:38 | 	... 35 more
+INFO | 2012/01/01 10:52:38 | Caused by: java.net.UnknownHostException: ORCL
+INFO | 2012/01/01 10:52:38 | 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:177)
+INFO | 2012/01/01 10:52:38 | 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+INFO | 2012/01/01 10:52:38 | 	at java.net.Socket.connect(Socket.java:529)
+INFO | 2012/01/01 10:52:38 | 	at java.net.Socket.connect(Socket.java:478)
+INFO | 2012/01/01 10:52:38 | 	at java.net.Socket.<init>(Socket.java:375)
+INFO | 2012/01/01 10:52:38 | 	at java.net.Socket.<init>(Socket.java:192)
+INFO | 2012/01/01 10:52:38 | 	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:127)
+INFO | 2012/01/01 10:52:38 | 	at oracle.net.nt.ConnOption.connect(ConnOption.java:130)
+INFO | 2012/01/01 10:52:38 | 	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:306)
+INFO | 2012/01/01 10:52:38 | 	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:421)
+INFO | 2012/01/01 10:52:38 | 	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:634)
+INFO | 2012/01/01 10:52:38 | 	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:215)
+INFO | 2012/01/01 10:52:38 | 	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:976)
+INFO | 2012/01/01 10:52:38 | 	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:294)
+INFO | 2012/01/01 10:52:38 | 	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:508)
+INFO | 2012/01/01 10:52:38 | 	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:86)
+INFO | 2012/01/01 10:52:38 | 	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:33)
+INFO | 2012/01/01 10:52:38 | 	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:510)
+INFO | 2012/01/01 10:52:38 | 	at glog.util.datasource.GC3ConnectionEstablisher.connect(GC3ConnectionEstablisher.java:36)
+INFO | 2012/01/01 10:52:38 | 	at glog.util.datasource.DataSource.reserve(DataSource.java:148)
+INFO | 2012/01/01 10:52:38 | 	at glog.util.datasource.DataSource.reserve(DataSource.java:137)
+INFO | 2012/01/01 10:52:38 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:301)
+INFO | 2012/01/01 10:52:38 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:291)
+INFO | 2012/01/01 10:52:38 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:57)
+INFO | 2012/01/01 10:52:38 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1398)
+INFO | 2012/01/01 10:52:38 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1433)
+INFO | 2012/01/01 10:52:38 | 	at glog.database.security.dbrealm.CachingRealm.readKnownGroups(CachingRealm.java:372)
+INFO | 2012/01/01 10:52:38 | 	at glog.database.security.dbrealm.CachingRealm.initCaches(CachingRealm.java:195)
+INFO | 2012/01/01 10:52:38 | 	at glog.database.security.dbrealm.CachingRealm.<init>(CachingRealm.java:149)
+INFO | 2012/01/01 10:52:38 | 	at glog.database.security.dbrealm.CachingRealm.initialize(CachingRealm.java:136)
+INFO | 2012/01/01 10:52:38 | 	at glog.util.j2ee.jaas.GC3AuthenticationProviderImpl.initialize(GC3AuthenticationProviderImpl.java:32)
+INFO | 2012/01/01 10:52:38 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:65)
+INFO | 2012/01/01 10:52:38 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:363)
+INFO | 2012/01/01 10:52:38 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:315)
+INFO | 2012/01/01 10:52:38 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:257)
+INFO | 2012/01/01 10:52:38 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:72)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.service.internal.WLSIdentityServiceImpl.initialize(WLSIdentityServiceImpl.java:47)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.service.CSSWLSDelegateImpl.initializeServiceEngine(CSSWLSDelegateImpl.java:300)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.service.CSSWLSDelegateImpl.initialize(CSSWLSDelegateImpl.java:222)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.InitializeServiceEngine(CommonSecurityServiceManagerDelegateImpl.java:1784)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:445)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:840)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:870)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1030)
+INFO | 2012/01/01 10:52:38 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:881)
+INFO | 2012/01/01 10:52:38 | 	... 4 more
+INFO | 2012/01/01 10:52:38 | Fatal Error: Realm Initialization failed!!
+INFO | 2012/01/01 10:52:38 | <01-Jan-2012 10:52:38 o'clock GMT> <Notice> <WebLogicServer> <BEA-000388> <JVM called WLS shutdown hook. The server will force shutdown now> 
+INFO | 2012/01/01 10:52:38 | <01-Jan-2012 10:52:38 o'clock GMT> <Alert> <WebLogicServer> <BEA-000396> <Server shutdown has been requested by <WLS Kernel>> 
+INFO | 2012/01/01 10:52:38 | <01-Jan-2012 10:52:38 o'clock GMT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FORCE_SHUTTING_DOWN> 
+INFO | 2012/01/01 10:52:38 | Stopped Launched Process...

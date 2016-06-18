@@ -1,0 +1,306 @@
+2010-01-13 15:05:16.457	751645	Debug	Planning	Sql text: SELECT order_release_gid, otm_version FROM order_release WHERE  (order_release_gid = 'STAA.PO-566-001')  AND (otm_version IS NULL OR (otm_version <> '6.0'))  [RMICallHandler-3]
+2010-01-13 15:05:16.457	751645	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[STAA.PLANNER, DEFAULT, null, STATIC] [RMICallHandler-3]
+2010-01-13 15:05:16.458	751645	Debug	Sql	SELECT order_release_gid, otm_version FROM order_release WHERE  (order_release_gid = 'STAA.PO-566-001')  AND (otm_version IS NULL OR (otm_version <> '6.0'))  [RMICallHandler-3]
+2010-01-13 15:05:16.458	751645	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[STAA.PLANNER, DEFAULT, null, STATIC] [RMICallHandler-3]
+2010-01-13 15:05:16.46	751645	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[STAA.PLANNER, DEFAULT, null, STATIC] [RMICallHandler-3]
+2010-01-13 15:05:16.46	751645	Debug	Sql	select order_release_gid,order_release_xid,order_release_name,order_release_type_gid,is_template,order_base_gid,source_location_gid,dest_location_gid,early_pickup_date,late_pickup_date,early_delivery_date,late_delivery_date,fixed_itinerary_gid,assigned_itinerary_gid,fixed_sell_itinerary_gid,ship_unit_origin,total_weight,total_volume,total_packaging_unit_count,total_item_package_count,max_length,max_length_uom_code,max_length_base,max_width,max_width_uom_code,max_width_base,max_height,max_height_uom_code,max_height_base,plan_from_location_gid,plan_to_location_gid,assigned_sell_itinerary_gid,bulk_plan_gid,best_direct_cost_buy,best_direct_cost_sell,best_direct_rateoffer_gid_buy,best_direct_rateoffer_gid_sell,buy_general_ledger_gid,sell_general_ledger_gid,total_net_weight,total_net_volume,sell_bulk_plan_gid,total_ship_unit_count,load_point,unload_point,pickup_is_appt,delivery_is_appt,plan_from_load_point,plan_to_unload_point,user_defined1_icon_gid,user_defined2_icon_gid,user_defined3_icon_gid,user_defined4_icon_gid,user_defined5_icon_gid,external_system_id,payment_method_code_gid,inco_term_gid,term_location_text,planning_group_gid,time_window_emphasis_gid,batch_balance_order_type_gid,schedule_gid,is_known_shipper,dim_rate_factor_gid,release_method_gid,final_inco_term,final_text_location,inspection_number,inspection_schedule_date,inspection_date,survey_lay_can_date,loc_number,loc_issue_date,loc_received_date,loc_latest_shipping_date,loc_negotiated_days,loc_amount,loc_advising_number,loc_confirming_number,src_location_override_gid,dest_location_override_gid,plan_from_loc_override_gid,plan_to_loc_override_gid,secondary_t_weight,secondary_t_volume,rate_service_profile_gid,servprov_gid,servprov_profile_gid,transport_mode_gid,mode_profile_gid,equipment_group_gid,equipment_group_profile_gid,rate_offering_gid,rate_geo_gid,sell_rate_offering_gid,sell_rate_geo_gid,must_ship_direct,must_ship_thru_x_dock,must_ship_thru_pool,ship_with_group,primary_leg_source_loc_gid,prim_leg_src_loc_override_gid,port_of_load_location_gid,port_of_load_loc_override_gid,port_of_dis_location_gid,port_of_dis_loc_override_gid,primary_leg_dest_loc_gid,prim_leg_dest_override_loc_gid,import_license_required,import_license_issue_date,import_license_receive_date,import_license_expiration_date,import_license_number,loc_expiration_date,is_loc_required,inspection_required,unitization_condition_name,stuff_location_gid,destuff_location_gid,customer_unitization_request,default_stowage_mode,consolidation_type_gid,move_perspective_gid,quote_gid,commercial_payment_code_gid,is_loc_stale,ult_dest_country_code3_gid,template_type,bundling_type,is_consolidate_or_equipment,duty_paid,quote_option_number,partition_gid,total_declared_value,buy_itinerary_profile_gid,sell_itinerary_profile_gid,buffer_type,sell_servprov_gid,sell_servprov_profile_gid,is_ignore_location_calendar,rate_service_gid,ship_unit_width,ship_unit_length,ship_unit_height,ship_unit_diameter,transport_handling_unit_gid,on_rt_execution,is_splittable,pickup_routing_sequence_gid,dropoff_routing_sequence_gid,latest_est_delivery_date,otm_version,priority,latest_est_pickup_date,domain_name, total_weight_uom_code, total_volume_uom_code, best_dircost_buy_currency_gid, best_dircost_sell_currency_gid, total_net_weight_uom_code, total_net_volume_uom_code, loc_amount_currency_gid, secondary_t_weight_uom_code, secondary_t_volume_uom_code, total_declared_value_gid, ship_unit_width_uom_code, ship_unit_length_uom_code, ship_unit_height_uom_code, ship_unit_diameter_uom_code from order_release where order_release_gid = ?; [STAA.PO-566-001] [RMICallHandler-3]
+2010-01-13 15:05:16.462	751645	Debug	Sql	select status_type_gid, status_value_gid, domain_name from order_release_status where order_release_gid=?; [STAA.PO-566-001] [RMICallHandler-3]
+2010-01-13 15:05:16.463	751645	Debug	Planning	Begin build shipment process. [RMICallHandler-3]
+2010-01-13 15:05:16.463	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning CHECK LOCATION CAPACITY -> ParameterData: value = <false>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.463	751645	Debug	OrderBundling	Trying to create TOrderBundle for orderReleasePK:STAA.PO-566-001 [RMICallHandler-3]
+2010-01-13 15:05:16.463	751645	Debug	OrderBundling	Getting order release bean for orderReleasePK:STAA.PO-566-001 [RMICallHandler-3]
+2010-01-13 15:05:16.463	751645	Debug	OrderBundling	Got orderRelease and also TOrderRelease [RMICallHandler-3]
+2010-01-13 15:05:16.464	751645	Debug	OrderBundling	Trying to create Bundle for TOrderRelease. [RMICallHandler-3]
+2010-01-13 15:05:16.464	751645	Debug	OrderBundling	Begin BaseOrderBundle::constructor... [RMICallHandler-3]
+2010-01-13 15:05:16.464	751645	Debug	OrderBundling	Begin BaseOrderBundle::setup() using domain: STAA [RMICallHandler-3]
+2010-01-13 15:05:16.464	751645	Debug	OrderBundling	setup - Loading Order Release Bundling Rules [RMICallHandler-3]
+2010-01-13 15:05:16.464	751645	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[STAA.PLANNER, DEFAULT, null, STATIC] [RMICallHandler-3]
+2010-01-13 15:05:16.464	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning ORDER RELEASE BUNDLING RULE SET -> ParameterData: value = <ordbundleset1>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.464	751645	Debug	OrderBundling	setup - Loading Order Base Bundling Rules [RMICallHandler-3]
+2010-01-13 15:05:16.464	751645	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[STAA.PLANNER, DEFAULT, null, STATIC] [RMICallHandler-3]
+2010-01-13 15:05:16.465	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning ORDER BASE BUNDLING RULE SET -> ParameterData: value = <basebundleset1>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.465	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning GET TIME ZONE FROM PLANFROM AND PLANTO LOCATIONS -> ParameterData: value = <true>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.465	751645	Debug	OrderBundling	Get time zone from plan from and plan to locations is: true [RMICallHandler-3]
+2010-01-13 15:05:16.465	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning MIN BUNDLING TIME WINDOW AFTER CURRENT TIME -> ParameterData: value = <0>, uomCode = <S> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.465	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning MAXIMUM WEIGHT PER BUNDLE -> ParameterData: value = <50000.00>, uomCode = <LB> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.466	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning MAXIMUM VOLUME PER BUNDLE -> ParameterData: value = <50000.00>, uomCode = <CUFT> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.466	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning MAXIMUM NUMBER OF COMPARTMENTS PER BUNDLE -> ParameterData: value = <5>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.466	751645	Debug	OrderBundling	End BaseOrderBundle::setup()... [RMICallHandler-3]
+2010-01-13 15:05:16.466	751645	Debug	OrderBundling	End BaseOrderBundle::constructor... [RMICallHandler-3]
+2010-01-13 15:05:16.466	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning MAX BUNDLE OVERLAP TOLERANCE -> ParameterData: value = <0>, uomCode = <S> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.466	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning BUILD SECONDARY CHARGE SHIPMENTS AUTOMATICALLY -> ParameterData: value = <true>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.466	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning SHORT CIRCUIT LEG -> ParameterData: value = <false>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.466	751645	Debug	OrderBundling	Begin TOrderBundle::createBundle... [RMICallHandler-3]
+2010-01-13 15:05:16.466	751645	Debug	OrderBundling	TOrderBundle::createBundle - contains  TEMPERATURE_RULE. OrdReleasePK = STAA.PO-566-001 [RMICallHandler-3]
+2010-01-13 15:05:16.466	751645	Debug	OrderBundling	BaseOrderBundle::setTemps - tOrder: STAA.PO-566-001 [RMICallHandler-3]
+2010-01-13 15:05:16.466	751645	Debug	OrderBundling	TOrderBundle::createBundle - contains  PAYMENT_RULE. OrdReleasePK = STAA.PO-566-001 [RMICallHandler-3]
+2010-01-13 15:05:16.466	751645	Debug	OrderBundling	BaseOrderBundle.setPaymentMethodGid(): Setting bundlePaymentMethodGid to <COL> [RMICallHandler-3]
+2010-01-13 15:05:16.466	751645	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[STAA.PLANNER, DEFAULT, null, STATIC] [RMICallHandler-3]
+2010-01-13 15:05:16.466	751645	Debug	Sql	select order_base_gid,remark_sequence from ob_remark where order_base_gid = ? and remark_qual_gid = ?; [STAA.PO-566, NUMBER_OF_COMPARTMENTS] [RMICallHandler-3]
+2010-01-13 15:05:16.467	751645	Debug	OrderBundling	setNumOfCompartments no remarks found for orderbase: STAA.PO-566 [RMICallHandler-3]
+2010-01-13 15:05:16.467	751645	Debug	PlanningDetails	TLocation.getPickupRoutingSequenceGid(): returning: null [RMICallHandler-3]
+2010-01-13 15:05:16.467	751645	Debug	PlanningDetails	TLocation.getDropoffRoutingSequenceGid(): returning: null [RMICallHandler-3]
+2010-01-13 15:05:16.467	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning UPPER LIMIT FOR LOW PRIORITY RANGE -> ParameterData: value = <333>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.467	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning UPPER LIMIT FOR MEDIUM PRIORITY RANGE -> ParameterData: value = <666>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.467	751645	Debug	OrderBundling	End TOrderBundle::createBundle... [RMICallHandler-3]
+2010-01-13 15:05:16.467	751645	Debug	Planning	Find all itineries for order bundle: |STAA.PO-566-001| with prespective: B [RMICallHandler-3]
+2010-01-13 15:05:16.467	751645	Debug	Planning	From source location: STAA.SUP-708-9873 to dest location: STAA.ORG-101-11745 [RMICallHandler-3]
+2010-01-13 15:05:16.468	751645	Debug	Planning	Find Itinerary SQL: select all i.itinerary_gid from itinerary i, lane l, hname_set_member hsms, hname_set_member hsmd where hsms.hname in ('COUNTRY\AUT\', 'CITY/COUNTRY\SCHLINS\AUT\', 'POSTAL_CODE\A6824\', 'LOCATION\STAA.SUP-708-9873\') and hsmd.hname in ('COUNTRY\NLD\', 'CITY/COUNTRY\OUD-BEIJERLAND\NLD\', 'POSTAL_CODE\3261 LE\', 'LOCATION\STAA.ORG-101-11745\') and l.source_hname_set_gid = hsms.hname_set_gid and l.dest_hname_set_gid = hsmd.hname_set_gid and i.x_lane_gid = l.x_lane_gid and (i.perspective = ? or i.perspective = ?); [A, B], {1} [RMICallHandler-3]
+2010-01-13 15:05:16.468	751645	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[STAA.PLANNER, DEFAULT, null, STATIC] [RMICallHandler-3]
+2010-01-13 15:05:16.468	751645	Debug	Sql	select all i.itinerary_gid from itinerary i, lane l, hname_set_member hsms, hname_set_member hsmd where hsms.hname in ('COUNTRY\AUT\', 'CITY/COUNTRY\SCHLINS\AUT\', 'POSTAL_CODE\A6824\', 'LOCATION\STAA.SUP-708-9873\') and hsmd.hname in ('COUNTRY\NLD\', 'CITY/COUNTRY\OUD-BEIJERLAND\NLD\', 'POSTAL_CODE\3261 LE\', 'LOCATION\STAA.ORG-101-11745\') and l.source_hname_set_gid = hsms.hname_set_gid and l.dest_hname_set_gid = hsmd.hname_set_gid and i.x_lane_gid = l.x_lane_gid and (i.perspective = ? or i.perspective = ?); [A, B] [RMICallHandler-3]
+2010-01-13 15:05:16.47	751645	Debug	Planning	Detailed Find Itinerary SQL: select all i.itinerary_gid from itinerary i, lane l, hname_set_member hsms, hname_set_member hsmd where hsms.hname in ('COUNTRY\AUT\', 'CITY/COUNTRY\SCHLINS\AUT\', 'POSTAL_CODE\A6824\', 'LOCATION\STAA.SUP-708-9873\') and hsmd.hname in ('COUNTRY\NLD\', 'CITY/COUNTRY\OUD-BEIJERLAND\NLD\', 'POSTAL_CODE\3261 LE\', 'LOCATION\STAA.ORG-101-11745\') and l.source_hname_set_gid = hsms.hname_set_gid and l.dest_hname_set_gid = hsmd.hname_set_gid and i.x_lane_gid = l.x_lane_gid and (i.perspective = ? or i.perspective = ?); [A, B], database_vpd_user: {2} [RMICallHandler-3]
+2010-01-13 15:05:16.47	751645	Debug	Sql	{call vpd.clear_active_table} [RMICallHandler-3]
+2010-01-13 15:05:16.47	751645	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[STAA.PLANNER, DEFAULT, null, STATIC] [RMICallHandler-3]
+2010-01-13 15:05:16.471	751645	Debug	Sql	select itinerary_gid from itinerary where (itinerary_gid) in (  (?) ,  (?) ); [STAA.DYL_ALL_TL_ITINERARY, STAA.NEW_ITINERARY] [RMICallHandler-3]
+2010-01-13 15:05:16.471	751645	Debug	Planning	Number of itineraries found: 2 [RMICallHandler-3]
+2010-01-13 15:05:16.472	751645	Debug	Planning	Add itinerary:STAA.DYL_ALL_TL_ITINERARY to  toBeEvaluatedItineraryList. [RMICallHandler-3]
+2010-01-13 15:05:16.472	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning FIND ITINERARY RULE SET -> ParameterData: value = <itset1>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.472	751645	Debug	Planning	********************************************************************* [RMICallHandler-3]
+2010-01-13 15:05:16.472	751645	Debug	Planning	Rule Manager begin evaluating 1  entities [RMICallHandler-3]
+2010-01-13 15:05:16.472	751645	Debug	PlanningDetails	Starting rule: iwRule for STAA.DYL_ALL_TL_ITINERARY [RMICallHandler-3]
+2010-01-13 15:05:16.473	751645	Debug	PlanningDetails	Ending rule: iwRule (passed) [RMICallHandler-3]
+2010-01-13 15:05:16.473	751645	Debug	PlanningDetails	Starting rule: itRule for STAA.DYL_ALL_TL_ITINERARY [RMICallHandler-3]
+2010-01-13 15:05:16.473	751645	Debug	PlanningDetails	Ending rule: itRule (passed) [RMICallHandler-3]
+2010-01-13 15:05:16.473	751645	Debug	PlanningDetails	Starting rule: icRule for STAA.DYL_ALL_TL_ITINERARY [RMICallHandler-3]
+2010-01-13 15:05:16.473	751645	Debug	PlanningDetails	Ending rule: icRule (passed) [RMICallHandler-3]
+2010-01-13 15:05:16.473	751645	Debug	PlanningDetails	Starting rule: ivRule for STAA.DYL_ALL_TL_ITINERARY [RMICallHandler-3]
+2010-01-13 15:05:16.473	751645	Debug	PlanningDetails	Ending rule: ivRule (passed) [RMICallHandler-3]
+2010-01-13 15:05:16.473	751645	Debug	PlanningDetails	Starting rule: icoRule for STAA.DYL_ALL_TL_ITINERARY [RMICallHandler-3]
+2010-01-13 15:05:16.473	751645	Debug	PlanningDetails	Ending rule: icoRule (passed) [RMICallHandler-3]
+2010-01-13 15:05:16.473	751645	Debug	PlanningDetails	Starting rule: impRule for STAA.DYL_ALL_TL_ITINERARY [RMICallHandler-3]
+2010-01-13 15:05:16.473	751645	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[STAA.PLANNER, DEFAULT, null, STATIC] [RMICallHandler-3]
+2010-01-13 15:05:16.474	751645	Debug	Sql	select leg_gid,leg_xid,leg_name,leg_classification_gid,source_location_gid,dest_location_profile_gid,dest_location_radius,dest_radius_emphasis,create_single_shipment,is_primary,source_location_role_gid,dest_location_gid,dest_location_role_gid,servprov_profile_gid,equipment_group_profile_gid,mode_profile_gid,quality_factor_profile_gid,expected_transit_time,expected_cost,arrangement_responsibility,equipment_assignment_type,calculate_contracted_rate,calculate_service_time,rate_offering_gid,rate_geo_gid,x_dock_location_gid,hazmat_region_gid,intermediary_corporation_gid,rule_11_indicator,rail_inter_modal_plan_gid,customer_rate_code,cofc_tofc,equip_group_profile_set_gid,servprov_assignment_type,max_location_count,auto_consolidation_type,interim_point_option,rate_service_profile_gid,payment_method_code_gid,via_src_loc_profile_gid,via_dest_loc_profile_gid,via_src_loc_gid,via_dest_loc_gid,plan_to_operational_loc,is_temporary,trans_arb_search_type,load_config_profile_gid,is_use_consol,cpcty_override_lead_time,domain_name, dest_location_radius_uom_code, expected_transit_time_uom_code, expected_cost_currency_gid, cpcty_override_lead_t_uom_code from leg where leg_gid = ?; [STAA.2] [RMICallHandler-3]
+2010-01-13 15:05:16.475	751645	Debug	PlanningDetails	Ending rule: impRule (passed) [RMICallHandler-3]
+2010-01-13 15:05:16.475	751645	Debug	PlanningDetails	Starting rule: ieRule for STAA.DYL_ALL_TL_ITINERARY [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	OrderBundling	Begin getEquipmentGroupPkProfile... [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	OrderBundling	  bundleEquipmentGroupPkProfile:COMPATIBLE: [STAA.24 STRAIGHT TRUCKS, STAA.M.0.02.00.00.00.00, STAA.MM.0.01.00.00.00.00, STAA.TRUCK_48 FEET] [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	OrderBundling	Begin getCompartmentAndTemperatureCompatibleEquipmentGroupPKs with 4 EquipmentGroupPKs.  [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	OrderBundling	bundleMinTemperature: -Infinity bundleMaxTemperature:Infinity [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	OrderBundling	Returned compatible equipment list:[STAA.24 STRAIGHT TRUCKS, STAA.M.0.02.00.00.00.00, STAA.MM.0.01.00.00.00.00, STAA.TRUCK_48 FEET] [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	OrderBundling	End getCompartmentAndTemperatureCompatibleEquipmentGroupPKs with 4 compatibleEquipmentGroupPKs [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	OrderBundling	End getEquipmentGroupPkProfile... [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	PlanningDetails	Ending rule: ieRule (passed) [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	PlanningDetails	Starting rule: icomRule for STAA.DYL_ALL_TL_ITINERARY [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	PlanningDetails	Running check() inside of ItineraryCommodityRule. [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	PlanningDetails	Creating new bundleSetMap [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	PlanningDetails	Building new bundleSetMap - map of commodities on orderReleases. [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	Planning	Item will fit into the qualifer set: COMMOD [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	Planning	Adding commodity code (unclassified) to the COMMOD set [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	Planning	Creating new hashSet for: COMMOD [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	Planning	Item will fit into the qualifer set: HTS [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	Planning	Adding commodity code (unclassified) to the HTS set [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	Planning	Creating new hashSet for: HTS [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	Planning	Item will fit into the qualifer set: NMFC_CLASS [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	Planning	Adding commodity code (unclassified) to the NMFC_CLASS set [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	Planning	Creating new hashSet for: NMFC_CLASS [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	Planning	Item will fit into the qualifer set: SITC [RMICallHandler-3]
+2010-01-13 15:05:16.476	751645	Debug	Planning	Adding commodity code (unclassified) to the SITC set [RMICallHandler-3]
+2010-01-13 15:05:16.477	751645	Debug	Planning	Creating new hashSet for: SITC [RMICallHandler-3]
+2010-01-13 15:05:16.477	751645	Debug	Planning	Item will fit into the qualifer set: STCC [RMICallHandler-3]
+2010-01-13 15:05:16.477	751645	Debug	Planning	Adding commodity code (unclassified) to the STCC set [RMICallHandler-3]
+2010-01-13 15:05:16.477	751645	Debug	Planning	Creating new hashSet for: STCC [RMICallHandler-3]
+2010-01-13 15:05:16.477	751645	Debug	Planning	Item will fit into the qualifer set: USER_DEFINED_COMMODITY [RMICallHandler-3]
+2010-01-13 15:05:16.477	751645	Debug	Planning	Adding commodity code (unclassified) to the USER_DEFINED_COMMODITY set [RMICallHandler-3]
+2010-01-13 15:05:16.477	751645	Debug	Planning	Creating new hashSet for: USER_DEFINED_COMMODITY [RMICallHandler-3]
+2010-01-13 15:05:16.477	751645	Debug	PlanningDetails	Building the flex commodity map - map of commodities from itinerary. [RMICallHandler-3]
+2010-01-13 15:05:16.477	751645	Debug	PlanningDetails	There are no commodity profiles for this itinerary...returning true [RMICallHandler-3]
+2010-01-13 15:05:16.477	751645	Debug	PlanningDetails	Ending rule: icomRule (passed) [RMICallHandler-3]
+2010-01-13 15:05:16.477	751645	Debug	PlanningDetails	Starting rule: ispRule for STAA.DYL_ALL_TL_ITINERARY [RMICallHandler-3]
+2010-01-13 15:05:16.477	751645	Debug	PlanningDetails	Ending rule: ispRule (passed) [RMICallHandler-3]
+2010-01-13 15:05:16.477	751645	Debug	PlanningDetails	Starting rule: iitpRule for STAA.DYL_ALL_TL_ITINERARY [RMICallHandler-3]
+2010-01-13 15:05:16.477	751645	Debug	PlanningDetails	checking Itinerary INCO term profile rule [RMICallHandler-3]
+2010-01-13 15:05:16.477	751645	Debug	PlanningDetails	Ending rule: iitpRule (passed) [RMICallHandler-3]
+2010-01-13 15:05:16.477	751645	Debug	PlanningDetails	Starting rule: irsRule for STAA.DYL_ALL_TL_ITINERARY [RMICallHandler-3]
+2010-01-13 15:05:16.478	751645	Debug	PlanningDetails	Ending rule: irsRule (passed) [RMICallHandler-3]
+2010-01-13 15:05:16.478	751645	Debug	PlanningDetails	Starting rule: iviaRule for STAA.DYL_ALL_TL_ITINERARY [RMICallHandler-3]
+2010-01-13 15:05:16.478	751645	Debug	PlanningDetails	Ending rule: iviaRule (passed) [RMICallHandler-3]
+2010-01-13 15:05:16.478	751645	Debug	PlanningDetails	Starting rule: itineraryProfileRule for STAA.DYL_ALL_TL_ITINERARY [RMICallHandler-3]
+2010-01-13 15:05:16.478	751645	Debug	PlanningDetails	Ending rule: itineraryProfileRule (passed) [RMICallHandler-3]
+2010-01-13 15:05:16.478	751645	Debug	PlanningDetails	Starting rule: ipRule for STAA.DYL_ALL_TL_ITINERARY [RMICallHandler-3]
+2010-01-13 15:05:16.478	751645	Debug	PlanningDetails	ItineraryPaymentMethodProfileRule.check() [RMICallHandler-3]
+2010-01-13 15:05:16.478	751645	Debug	PlanningDetails	ItineraryPaymentMethodProfileRule.check(): Checking itinerary <STAA.DYL_ALL_TL_ITINERARY> [RMICallHandler-3]
+2010-01-13 15:05:16.478	751645	Debug	PlanningDetails	ItineraryPaymentMethodProfileRule.check(): No payment method code profile on itinerary, passing itinerary. [RMICallHandler-3]
+2010-01-13 15:05:16.478	751645	Debug	PlanningDetails	Ending rule: ipRule (passed) [RMICallHandler-3]
+2010-01-13 15:05:16.478	751645	Debug	Planning	Entity: STAA.DYL_ALL_TL_ITINERARY  passed [RMICallHandler-3]
+2010-01-13 15:05:16.478	751645	Debug	Planning	Rule Manager returning with 1 entities [RMICallHandler-3]
+2010-01-13 15:05:16.478	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning MULTISTOP CONFIG ID -> ParameterData: value = <MULTISTOP DEFAULT>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.478	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning MAX NUM DAYS TO TRY SERVICE TIME ESTIMATION -> ParameterData: value = <2592000>, uomCode = <S> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.478	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning ALLOW DIFFERENT RATE OFFERING FOR SPLIT ORDER -> ParameterData: value = <false>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.478	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning ALLOW DIFFERENT RATE SERVICE FOR SPLIT ORDER -> ParameterData: value = <false>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.478	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning COMPUTE SHIPMENT TIME WINDOW -> ParameterData: value = <false>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.478	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning HOLD AS LATE AS POSSIBLE -> ParameterData: value = <false>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.479	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning MINIMIZE WAIT TIME IN SERVICE TIME CALCULATION -> ParameterData: value = <false>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.479	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning CHECK LOCATION CAPACITY -> ParameterData: value = <false>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.479	751645	Debug	Planning	********** Begin buildTShipments for OrderBundle: |STAA.PO-566-001| with 1 itineraries. [RMICallHandler-3]
+2010-01-13 15:05:16.479	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning COMPUTE SHIPMENT TIME WINDOW -> ParameterData: value = <false>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.479	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning HOLD AS LATE AS POSSIBLE -> ParameterData: value = <false>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.479	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning MINIMIZE WAIT TIME IN SERVICE TIME CALCULATION -> ParameterData: value = <false>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.479	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning CHECK LOCATION CAPACITY -> ParameterData: value = <false>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.479	751645	Debug	Planning	Begin buildTShipmentGraphCollection for OrderBundle: |STAA.PO-566-001| with 1 itineraries. [RMICallHandler-3]
+2010-01-13 15:05:16.479	751645	Debug	Planning	     -> Evaluating itinerary: STAA.DYL_ALL_TL_ITINERARY [RMICallHandler-3]
+2010-01-13 15:05:16.479	751645	Debug	Planning	***** Begin building TItineraries for itineraryPK:STAA.DYL_ALL_TL_ITINERARY ***** [RMICallHandler-3]
+2010-01-13 15:05:16.479	751645	Debug	Planning	Begin building TLegHeaders for TItineraryFactory. [RMICallHandler-3]
+2010-01-13 15:05:16.479	751645	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[STAA.PLANNER, DEFAULT, null, STATIC] [RMICallHandler-3]
+2010-01-13 15:05:16.48	751645	Debug	Sql	select distinct l.leg_gid, id.sequence_no from leg l, itinerary_detail id where id.itinerary_gid = ? and l.leg_gid = id.leg_gid order by id.sequence_no; [STAA.DYL_ALL_TL_ITINERARY] [RMICallHandler-3]
+2010-01-13 15:05:16.481	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning SHORT CIRCUIT LEG -> ParameterData: value = <false>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.481	751645	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[STAA.PLANNER, DEFAULT, null, STATIC] [RMICallHandler-3]
+2010-01-13 15:05:16.481	751645	Debug	Sql	select leg_gid,repetition_schedule_gid from leg_schedule where leg_gid = ?; [STAA.2] [RMICallHandler-3]
+2010-01-13 15:05:16.482	751645	Debug	Planning	Itinerary has only 1 leg, so created only TLegHeader: TLegHeader: {
+2010-01-13 15:05:16.482	751645	Debug	PlanningDetails	PlanningParameterHelper.getPlanningParameter(): Returning MAX NUM OF ITINERARY LOCATION COMBINATIONS -> ParameterData: value = <25>, uomCode = <null> (Set = <DEFAULT>, default set = <DEFAULT> [RMICallHandler-3]
+2010-01-13 15:05:16.482	751645	Debug	Planning	****** Begin building TLegSets in TLegFactory (TLegSet is one combination of valid locations for a Leg) ****** [RMICallHandler-3]
+2010-01-13 15:05:16.482	751645	Debug	Planning	Maximum Number of TLetSets: 25 [RMICallHandler-3]
+2010-01-13 15:05:16.482	751645	Debug	Planning	Adding TLegSet:, Leg #1 {STAA.2, SourceLocationPK: STAA.SUP-708-9873, DestLocationPK: STAA.ORG-101-11745} to list of valid location combinations. [RMICallHandler-3]
+2010-01-13 15:05:16.482	751645	Debug	Planning	****** Returning 1 TLegSets from TLegFactory ****** [RMICallHandler-3]
+2010-01-13 15:05:16.482	751645	Debug	Planning	***** Returning 1 TItineraries (1 TItinerary for each different location combination)***** [RMICallHandler-3]
+2010-01-13 15:05:16.482	751645	Debug	Planning	ShipmentBuilder - makeTSShipUnits: working on TShipUnit STAA.PO-566-001-001 [RMICallHandler-3]
+2010-01-13 15:05:16.482	751645	Debug	Planning	Find best shipping option for itinerary: STAA.DYL_ALL_TL_ITINERARY with the following legs:  [RMICallHandler-3]
+2010-01-13 15:05:16.483	751645	Error	Exception	java.lang.NullPointerException
+
+java.lang.NullPointerException
+	at glog.business.shipment.ShipmentBuilder.makeLegOptions(ShipmentBuilder.java:1752)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1486)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1540)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:501)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:440)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:345)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:306)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:383)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:333)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:228)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:48)
+	at sun.reflect.GeneratedMethodAccessor109.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:595)
+ [RMICallHandler-3]
+2010-01-13 15:05:16.483	751645	Debug	Planning	Attempting to set Status of OrderRelease: STAA.PO-566-001 to PLANNED - FAILED [RMICallHandler-3]
+2010-01-13 15:05:16.484	751645	Debug	Planning	Successfully set Status of OrderRelease: STAA.PO-566-001 to PLANNED - FAILED. [RMICallHandler-3]
+2010-01-13 15:05:16.485	751645	Error	Exception	Time: 2010-01-13 14:05:16 UTC, User: STAA.PLANNER, Domain: STAA, Severity: ERROR
+	Process:
+		Type: Action, User: STAA.PLANNER, Description: BUILD BUY SHIPMENTS [STAA.PO-566-001]
+	Explanations:
+		Time: 2010-01-13 14:05:16 UTC, User: STAA.PLANNER, Domain: STAA, Severity: ERROR
+			Process:
+				Type: BUILD SHIPMENTS, User: STAA.PLANNER, Description: process.orderRelease.buildShipments_B_ForRelease [STAA.PO-566-001]
+			Issues:
+				Severity: ERROR, Error: null, Description: null
+					Diagnostic:
+						null
+						java.lang.NullPointerException
+
+java.lang.NullPointerException
+	at glog.business.shipment.ShipmentBuilder.makeLegOptions(ShipmentBuilder.java:1752)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1486)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1540)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:501)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:440)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:345)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:306)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:383)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:333)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:228)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:48)
+	at sun.reflect.GeneratedMethodAccessor109.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:595)
+
+			Explanations:
+				Time: 2010-01-13 14:05:16 UTC, User: STAA.PLANNER, Domain: STAA, Severity: INFO
+					Process:
+						Type: FIND ITINERARIES, User: STAA.PLANNER, Description: planning.process.FindValidItineraries []
+				Time: 2010-01-13 14:05:16 UTC, User: STAA.PLANNER, Domain: STAA, Severity: INFO
+					Process:
+						Type: BUILD SHIPMENTS, User: STAA.PLANNER, Description: planning.process.BuildShipmentForRoute [ [1. STAA.SUP-708-9873->STAA.ORG-101-11745] ]
+					Explanations:
+						Time: 2010-01-13 14:05:16 UTC, User: STAA.PLANNER, Domain: STAA, Severity: INFO
+							Process:
+								Type: BUILD SHIPMENTS, User: STAA.PLANNER, Description: planning.process.BuildShipmentForRoute [ [1. STAA.SUP-708-9873->STAA.ORG-101-11745] ]
+		Time: 2010-01-13 14:05:16 UTC, User: STAA.PLANNER, Domain: STAA, Severity: INFO
+			Process:
+				Type: null, User: STAA.PLANNER, Description: glog.server.workflow.lifetime.order.OrderReleaseFailedToPlan [: release=STAA.PO-566-001]
+		Time: 2010-01-13 14:05:16 UTC, User: STAA.PLANNER, Domain: STAA, Severity: INFO
+			Process:
+				Type: null, User: STAA.PLANNER, Description: glog.server.workflow.lifetime.order.OrderReleaseFailedToPlan [: release=STAA.PO-566-001] [RMICallHandler-3]

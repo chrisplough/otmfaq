@@ -1,0 +1,1502 @@
+2012-06-12 09:37:28.407	620840	Debug	Workflow	Publishing topic BuildShipmentsBuyRequest: bulkPlanXid=null, savedQuery=(pks), planningParamSetGid=null, description=null, scenarioGroup=null, shipmentsSuppressed=false, usePartition=false, partitionProfile=null on queue batch, group null [[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)']
+2012-06-12 09:37:28.408	620840	Debug	Workflow	Starting workflow Build Shipments (293217681) in response to BuildShipmentsBuyRequest: bulkPlanXid=null, savedQuery=(pks), planningParamSetGid=null, description=null, scenarioGroup=null, shipmentsSuppressed=false, usePartition=false, partitionProfile=null [batch - 2]
+2012-06-12 09:37:28.419	620840	Debug	Workflow	Publishing topic BulkPlan: PK=K113003.20120612-0007 on queue batch, group null [batch - 2]
+2012-06-12 09:37:28.419	620840	Debug	Workflow	Completing workflow Build Shipments (293217681) [batch - 2]
+2012-06-12 09:37:28.421	620840	Debug	Workflow	Starting workflow Simple Workflow (297321511) in response to BulkPlan: PK=K113003.20120612-0007 [batch - 1]
+2012-06-12 09:37:28.421	620840	Debug	Planning	Sql text: SELECT order_release_gid, otm_version FROM order_release WHERE  (order_release_gid IN (?,?))  AND (otm_version IS NULL OR (otm_version <> ?))  [batch - 1]
+2012-06-12 09:37:28.424	620840	Debug	Planning	Property glog.business.consolidation.bulkplan.batchCommitBulkPlanResult:  false [batch - 1]
+2012-06-12 09:37:28.426	620840	Debug	Planning	Sql text:  select order_release_gid from order_release  where (is_template = 'N' or is_template = 'n' )       and  (order_release_gid IN (?,?))  [batch - 1]
+2012-06-12 09:37:28.455	620840	Debug	Planning	Sql text: SELECT order_release_gid, otm_version FROM order_release WHERE  (order_release_gid IN (?,?))  AND (otm_version IS NULL OR (otm_version <> ?))  [batch - 1]
+2012-06-12 09:37:28.472	620840	Debug	Planning	Total 2 orders ready for unassigned.. [batch - 1]
+2012-06-12 09:37:28.513	620840	Debug	Planning	DatabaseLoader is loading OrderReleaseData (criteria = top_t.order_release_gid IN ('K113003.TEST_01','K113003.TEST_02')) ... [batch - 1]
+2012-06-12 09:37:28.534	620840	Debug	Allocation	Allocation - Planning Parameter Value - ALLOCATION GENERATES ACCRUALS (0 - False) : 0 [batch - 1]
+2012-06-12 09:37:28.535	620840	Debug	Allocation	Allocation - Planning Parameter Value - SETTLEMENT REVERSES ACCRUALS (0 - False) : 0 [batch - 1]
+2012-06-12 09:37:28.535	620840	Debug	Planning	OrderActionExecutor:unassignUnassignableOrders::Removing allocations for orders to be unassigned [batch - 1]
+2012-06-12 09:37:28.606	620840	Debug	Planning	No related order movements found for the gvien 2 Order Releases. [batch - 1]
+2012-06-12 09:37:28.61	620840	Debug	Planning	createSimpleGraph() for  [Lglog.ejb.shipment.db.ShipmentPK;@1260d849 [batch - 1]
+2012-06-12 09:37:28.622	620840	Debug	Planning	.. returning SimpleGraph:   [batch - 1]
+2012-06-12 09:37:28.623	620840	Debug	Planning	Simple Node: ShipmentPK = K113003.01046 OrderMovementPK = K113003.TEST_01-026
+.. SSUs:
+..   K113003.TEST_01-001-026 (1-1)
+..    ORLines:
+..        K113003.TEST_01-001
+
+.. parents: 
+.. children: 
+ [batch - 1]
+2012-06-12 09:37:28.623	620840	Debug	Planning	createSimpleGraph() for  [Lglog.ejb.shipment.db.ShipmentPK;@12614944 [batch - 1]
+2012-06-12 09:37:28.634	620840	Debug	Planning	.. returning SimpleGraph:   [batch - 1]
+2012-06-12 09:37:28.634	620840	Debug	Planning	Simple Node: ShipmentPK = K113003.01045 OrderMovementPK = K113003.TEST_02-023
+.. SSUs:
+..   K113003.TEST_02-001-023 (1-1)
+..    ORLines:
+..        K113003.TEST_02-001
+
+.. parents: 
+.. children: 
+ [batch - 1]
+2012-06-12 09:37:28.635	620840	Debug	Planning	createSimpleGraph() for  [Lglog.ejb.shipment.db.ShipmentPK;@125ab7e7 [batch - 1]
+2012-06-12 09:37:28.787	620840	Debug	Planning	.. returning SimpleGraph:   [batch - 1]
+2012-06-12 09:37:28.787	620840	Debug	Planning	Simple Node: ShipmentPK = K113003.01045 OrderMovementPK = K113003.TEST_02-023
+.. SSUs:
+..   K113003.TEST_02-001-023 (1-1)
+..    ORLines:
+..        K113003.TEST_02-001
+
+.. parents: 
+.. children: 
+ [batch - 1]
+2012-06-12 09:37:28.787	620840	Debug	Planning	Simple Node: ShipmentPK = K113003.01046 OrderMovementPK = K113003.TEST_01-026
+.. SSUs:
+..   K113003.TEST_01-001-026 (1-1)
+..    ORLines:
+..        K113003.TEST_01-001
+
+.. parents: 
+.. children: 
+ [batch - 1]
+2012-06-12 09:37:28.787	620840	Debug	Planning	begin getConnectedShipmentGraphs... [batch - 1]
+2012-06-12 09:37:28.787	620840	Debug	Planning	# roots in this graph: 2 [batch - 1]
+2012-06-12 09:37:28.788	620840	Debug	Planning	# shipments nodes in this graph: 2 [batch - 1]
+2012-06-12 09:37:28.788	620840	Debug	Planning	end getConnectedShipmentGraphs... [batch - 1]
+2012-06-12 09:37:28.788	620840	Debug	Planning	# connected graphs: 2 [batch - 1]
+2012-06-12 09:37:28.788	620840	Debug	Planning	Number of connected graphs (connected by shipment links): 2 [batch - 1]
+2012-06-12 09:37:28.794	620840	Debug	Planning	Number of connected graphs (reconnected by order): 2 [batch - 1]
+2012-06-12 09:37:28.795	620840	Debug	Planning	begin containsScheduleInstanceTShipments... [batch - 1]
+2012-06-12 09:37:28.795	620840	Debug	Planning	begin containsConsolShipments... [batch - 1]
+2012-06-12 09:37:28.796	620840	Debug	Planning	begin containsPermanentShipments... [batch - 1]
+2012-06-12 09:37:28.797	620840	Debug	Planning	A shipment graph with 1 order releases is solely related to the given orders and will be deleted completely. [batch - 1]
+2012-06-12 09:37:28.797	620840	Debug	Planning	begin containsConsolShipments... [batch - 1]
+2012-06-12 09:37:28.809	620840	Debug	Planning	Sql text: SELECT shipment_gid FROM order_movement WHERE shipment_gid IS NOT NULL AND  (order_movement_gid = ?)  [batch - 1]
+2012-06-12 09:37:28.816	620840	Debug	Planning	No related order movements found for the gvien 1 Order Releases. [batch - 1]
+2012-06-12 09:37:28.817	620840	Debug	Planning	createSimpleGraph() for  [Lglog.ejb.shipment.db.ShipmentPK;@125d3fe0 [batch - 1]
+2012-06-12 09:37:28.832	620840	Debug	Planning	.. returning SimpleGraph:   [batch - 1]
+2012-06-12 09:37:28.832	620840	Debug	Planning	Simple Node: ShipmentPK = K113003.01046 OrderMovementPK = K113003.TEST_01-026
+.. SSUs:
+..   K113003.TEST_01-001-026 (1-1)
+..    ORLines:
+..        K113003.TEST_01-001
+
+.. parents: 
+.. children: 
+ [batch - 1]
+2012-06-12 09:37:28.833	620840	Debug	Planning	createSimpleGraph() for  [Lglog.ejb.shipment.db.ShipmentPK;@126194ed [batch - 1]
+2012-06-12 09:37:28.844	620840	Debug	Planning	.. returning SimpleGraph:   [batch - 1]
+2012-06-12 09:37:28.844	620840	Debug	Planning	Simple Node: ShipmentPK = K113003.01046 OrderMovementPK = K113003.TEST_01-026
+.. SSUs:
+..   K113003.TEST_01-001-026 (1-1)
+..    ORLines:
+..        K113003.TEST_01-001
+
+.. parents: 
+.. children: 
+ [batch - 1]
+2012-06-12 09:37:28.863	620840	Debug	Planning	Sql text:  select distinct sg2.SHIP_GROUP_GID, sg2.SHIPMENT_GID  from SHIP_GROUP_D sg1, SHIP_GROUP_D sg2  where sg1.SHIP_GROUP_GID = sg2.SHIP_GROUP_GID  and  (sg1.shipment_gid = ?)  [batch - 1]
+2012-06-12 09:37:28.864	620840	Debug	Planning	# orders do not have order movements: 1 [batch - 1]
+2012-06-12 09:37:28.864	620840	Debug	Planning	# (permanent) order movements to be set on status: 1 [batch - 1]
+2012-06-12 09:37:28.865	620840	Debug	Planning	Start commitShipmentGraph in ShipmentUpdateSessionBean ... [batch - 1]
+2012-06-12 09:37:28.865	620840	Debug	Planning	Order helper object is null, return perspective:B [batch - 1]
+2012-06-12 09:37:28.865	620840	Debug	Planning	unAssignOrderFunctor - order release PK: K113003.TEST_01, perspective:B [batch - 1]
+2012-06-12 09:37:28.865	620840	Debug	Planning	Checking status of OrderRelease Bean.  CurrentStatus: PLANNING_PLANNED - FINAL [batch - 1]
+2012-06-12 09:37:28.865	620840	Debug	Planning	Persistence is deleting SEquipmentData in bulk ... [batch - 1]
+2012-06-12 09:37:28.885	620840	Debug	Planning	Persistence is deleting OrderMovementData in bulk ... [batch - 1]
+2012-06-12 09:37:28.905	620840	Debug	Planning	Persistence is deleting SShipUnitData in bulk ... [batch - 1]
+2012-06-12 09:37:28.931	620840	Debug	Planning	Persistence is inserting or updating SShipUnitData (parentPk = null) in bulk ... [batch - 1]
+2012-06-12 09:37:28.933	620840	Debug	Planning	Begin remove ShipmentLinks from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:28.934	620840	Debug	Planning	Begin remove ShipmentStops from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:28.956	620840	Debug	Planning	Remove ShipmentStops element for K113003.01046  [batch - 1]
+2012-06-12 09:37:28.976	620840	Debug	Planning	Remove ShipmentStops element for K113003.01046  [batch - 1]
+2012-06-12 09:37:28.977	620840	Debug	Planning	Begin remove ShipmentInfeasibilityCodes from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:28.978	620840	Debug	Planning	Begin remove ShipmentCosts from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:28.98	620840	Debug	Planning	Begin removeShipmentCostDetails from ShipmentCostBean - removing shipment_cost_detail for shipment cost: 99177 [batch - 1]
+2012-06-12 09:37:28.981	620840	Debug	Planning	Begin removeShipmentCostRefs from ShipmentCostBean - removing shipment_cost_refs for shipment cost: 99177 [batch - 1]
+2012-06-12 09:37:28.982	620840	Debug	Planning	Begin removeShipmentCostRemarks from ShipmentCostBean - removing shipment_cost_remarks for shipment cost: 99177 [batch - 1]
+2012-06-12 09:37:28.985	620840	Debug	Planning	Remove ShipmentCosts element for K113003.01046  [batch - 1]
+2012-06-12 09:37:28.985	620840	Debug	Planning	Begin remove ShipmentCostRefs from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:28.986	620840	Debug	Planning	Begin remove ShipmentInfCosts from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:28.987	620840	Debug	Planning	Begin remove ShipmentTexts from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:28.989	620840	Debug	Planning	Begin remove TenderCollaborations from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:28.99	620840	Debug	Planning	Begin remove ShipmentRefnums from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:28.994	620840	Debug	Planning	Remove ShipmentRefnums element for K113003.01046  [batch - 1]
+2012-06-12 09:37:28.996	620840	Debug	Planning	Remove ShipmentRefnums element for K113003.01046  [batch - 1]
+2012-06-12 09:37:28.997	620840	Debug	Planning	Begin remove SsStatusHistories from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:28.998	620840	Debug	Planning	Begin remove Allocations from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:28.999	620840	Debug	Planning	Begin remove InvoiceShipments from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:29.0	620840	Debug	Planning	Begin remove ShipmentAccessorials from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:29.001	620840	Debug	Planning	Begin remove ShipmentSpecialServicess from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:29.002	620840	Debug	Planning	Begin remove ShipmentSEquipmentJoins from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:29.003	620840	Debug	Planning	Begin remove ShipmentOrderReleaseJoins from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:29.004	620840	Debug	Planning	Begin remove ShipSpecSvcSecChargeJoin from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:29.006	620840	Debug	Planning	Begin remove ShipGroupDs from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:29.007	620840	Debug	Planning	Begin remove Secondary charge for shipments from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:29.008	620840	Debug	Planning	Begin remove Shipment Doc Print Logs from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:29.009	620840	Debug	Planning	Begin remove Om_Shipment_join for shipment from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:29.01	620840	Debug	Planning	Begin remove ContainerGroups from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:29.011	620840	Debug	Planning	Begin remove ShipCommitCountJoin from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:29.013	620840	Debug	Planning	Begin remove ShipCommitAllocJoin from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:29.014	620840	Debug	Planning	Begin remove HosDailySummary from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:29.015	620840	Debug	Planning	Begin remove GroundSchedGenD from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:29.018	620840	Debug	Planning	Begin remove ShipmentRemark from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:29.019	620840	Debug	Planning	Begin remove ShipmentInvolvedParty from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:29.02	620840	Debug	Planning	Begin remove ShipmentTrEventContact from ShipmentBean - shipment: K113003.01046 [batch - 1]
+2012-06-12 09:37:29.055	620840	Debug	Planning	begin updateOmShipmentGid.. [batch - 1]
+2012-06-12 09:37:29.055	620840	Debug	Planning	end updateOmShipmentGid.. [batch - 1]
+2012-06-12 09:37:29.056	620840	Debug	Planning	Order helper object is null, return perspective:B [batch - 1]
+2012-06-12 09:37:29.056	620840	Debug	Planning	Set Status of OrderRelease: K113003.TEST_01 to GC3_APPL_OR_UNASSIGN_ORDER. [batch - 1]
+2012-06-12 09:37:29.057	620840	Debug	Planning	Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ?  src:K113003.MUMBAI/changed:false  dest:K113003.PUNE/changed:false [batch - 1]
+2012-06-12 09:37:29.059	620840	Debug	Planning	Assign Itinerary: null to OrderRelease: K113003.TEST_01 [batch - 1]
+2012-06-12 09:37:29.059	620840	Debug	Planning	Assign bulk plan ID: null to OrderRelease: K113003.TEST_01 [batch - 1]
+2012-06-12 09:37:29.059	620840	Debug	Planning	Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ?  src:K113003.MUMBAI/changed:false  dest:K113003.PUNE/changed:false [batch - 1]
+2012-06-12 09:37:29.063	620840	Debug	Planning	Successfully set order related attributes. [batch - 1]
+2012-06-12 09:37:29.064	620840	Debug	Planning	Order helper object is null, return perspective:B [batch - 1]
+2012-06-12 09:37:29.064	620840	Debug	Planning	Successfully set order movement related attributes. [batch - 1]
+2012-06-12 09:37:29.064	620840	Debug	Planning	Order helper object is null, return perspective:B [batch - 1]
+2012-06-12 09:37:29.064	620840	Debug	Planning	Successfully set order movement related attributes. [batch - 1]
+2012-06-12 09:37:29.064	620840	Debug	Planning	Returning from shipment update session bean. [batch - 1]
+2012-06-12 09:37:29.07	620840	Debug	Workflow	Executing topic Recalculate Order Movement Totals: pk=K113003.TEST_01-026 [batch - 1]
+2012-06-12 09:37:29.071	620840	Debug	Workflow	Starting workflow Simple Workflow (309797683) in response to Recalculate Order Movement Totals: pk=K113003.TEST_01-026 [batch - 1]
+2012-06-12 09:37:29.072	620840	Debug	Workflow	Completing workflow Simple Workflow (309797683) [batch - 1]
+2012-06-12 09:37:29.072	620840	Debug	Workflow	Executing topic Recalculate Shipment Totals: pk=K113003.01046 [batch - 1]
+2012-06-12 09:37:29.073	620840	Debug	Workflow	Starting workflow Simple Workflow (309832803) in response to Recalculate Shipment Totals: pk=K113003.01046 [batch - 1]
+2012-06-12 09:37:29.074	620840	Debug	Workflow	Completing workflow Simple Workflow (309832803) [batch - 1]
+2012-06-12 09:37:29.075	620840	Debug	Workflow	Executing topic Recalculate Shipment Cost Totals: pk=K113003.01046 [batch - 1]
+2012-06-12 09:37:29.076	620840	Debug	Workflow	Starting workflow Simple Workflow (309867682) in response to Recalculate Shipment Cost Totals: pk=K113003.01046 [batch - 1]
+2012-06-12 09:37:29.077	620840	Debug	Workflow	Completing workflow Simple Workflow (309867682) [batch - 1]
+2012-06-12 09:37:29.077	620840	Debug	Workflow	Executing topic Recalculate Shipment Equipment: pk=K113003.01046 [batch - 1]
+2012-06-12 09:37:29.078	620840	Debug	Workflow	Starting workflow Simple Workflow (309901216) in response to Recalculate Shipment Equipment: pk=K113003.01046 [batch - 1]
+2012-06-12 09:37:29.079	620840	Debug	Workflow	Completing workflow Simple Workflow (309901216) [batch - 1]
+2012-06-12 09:37:29.08	620840	Debug	Workflow	Executing topic Recalculate Shipment Stop Fields: pk=K113003.01046 [batch - 1]
+2012-06-12 09:37:29.08	620840	Debug	Workflow	Starting workflow Simple Workflow (309935950) in response to Recalculate Shipment Stop Fields: pk=K113003.01046 [batch - 1]
+2012-06-12 09:37:29.082	620840	Debug	Workflow	Completing workflow Simple Workflow (309935950) [batch - 1]
+2012-06-12 09:37:29.082	620840	Debug	Workflow	Executing topic Recalculate SShipUnit Totals: pk=K113003.TEST_01-001-026 [batch - 1]
+2012-06-12 09:37:29.083	620840	Debug	Workflow	Starting workflow Simple Workflow (309977371) in response to Recalculate SShipUnit Totals: pk=K113003.TEST_01-001-026 [batch - 1]
+2012-06-12 09:37:29.084	620840	Debug	Workflow	Completing workflow Simple Workflow (309977371) [batch - 1]
+2012-06-12 09:37:29.084	620840	Debug	Workflow	Executing topic Recalculate Shipment Order Release Totals: pk=K113003.01046 [batch - 1]
+2012-06-12 09:37:29.085	620840	Debug	Workflow	Starting workflow Simple Workflow (310013267) in response to Recalculate Shipment Order Release Totals: pk=K113003.01046 [batch - 1]
+2012-06-12 09:37:29.087	620840	Debug	Workflow	Completing workflow Simple Workflow (310013267) [batch - 1]
+2012-06-12 09:37:29.087	620840	Debug	Workflow	Executing topic Remove Monitor Profiles: pk=K113003.01046 [batch - 1]
+2012-06-12 09:37:29.088	620840	Debug	Workflow	Starting workflow Simple Workflow (309728024) in response to Remove Monitor Profiles: pk=K113003.01046 [batch - 1]
+2012-06-12 09:37:29.089	620840	Debug	Workflow	Completing workflow Simple Workflow (309728024) [batch - 1]
+2012-06-12 09:37:29.091	620840	Debug	Planning	begin containsScheduleInstanceTShipments... [batch - 1]
+2012-06-12 09:37:29.093	620840	Debug	Planning	begin containsConsolShipments... [batch - 1]
+2012-06-12 09:37:29.094	620840	Debug	Planning	begin containsPermanentShipments... [batch - 1]
+2012-06-12 09:37:29.096	620840	Debug	Planning	A shipment graph with 1 order releases is solely related to the given orders and will be deleted completely. [batch - 1]
+2012-06-12 09:37:29.096	620840	Debug	Planning	begin containsConsolShipments... [batch - 1]
+2012-06-12 09:37:29.111	620840	Debug	Planning	Sql text: SELECT shipment_gid FROM order_movement WHERE shipment_gid IS NOT NULL AND  (order_movement_gid = ?)  [batch - 1]
+2012-06-12 09:37:29.118	620840	Debug	Planning	No related order movements found for the gvien 1 Order Releases. [batch - 1]
+2012-06-12 09:37:29.119	620840	Debug	Planning	createSimpleGraph() for  [Lglog.ejb.shipment.db.ShipmentPK;@11e99610 [batch - 1]
+2012-06-12 09:37:29.135	620840	Debug	Planning	.. returning SimpleGraph:   [batch - 1]
+2012-06-12 09:37:29.135	620840	Debug	Planning	Simple Node: ShipmentPK = K113003.01045 OrderMovementPK = K113003.TEST_02-023
+.. SSUs:
+..   K113003.TEST_02-001-023 (1-1)
+..    ORLines:
+..        K113003.TEST_02-001
+
+.. parents: 
+.. children: 
+ [batch - 1]
+2012-06-12 09:37:29.135	620840	Debug	Planning	createSimpleGraph() for  [Lglog.ejb.shipment.db.ShipmentPK;@1267d18e [batch - 1]
+2012-06-12 09:37:29.147	620840	Debug	Planning	.. returning SimpleGraph:   [batch - 1]
+2012-06-12 09:37:29.147	620840	Debug	Planning	Simple Node: ShipmentPK = K113003.01045 OrderMovementPK = K113003.TEST_02-023
+.. SSUs:
+..   K113003.TEST_02-001-023 (1-1)
+..    ORLines:
+..        K113003.TEST_02-001
+
+.. parents: 
+.. children: 
+ [batch - 1]
+2012-06-12 09:37:29.164	620840	Debug	Planning	Sql text:  select distinct sg2.SHIP_GROUP_GID, sg2.SHIPMENT_GID  from SHIP_GROUP_D sg1, SHIP_GROUP_D sg2  where sg1.SHIP_GROUP_GID = sg2.SHIP_GROUP_GID  and  (sg1.shipment_gid = ?)  [batch - 1]
+2012-06-12 09:37:29.165	620840	Debug	Planning	# orders do not have order movements: 1 [batch - 1]
+2012-06-12 09:37:29.165	620840	Debug	Planning	# (permanent) order movements to be set on status: 1 [batch - 1]
+2012-06-12 09:37:29.166	620840	Debug	Planning	Start commitShipmentGraph in ShipmentUpdateSessionBean ... [batch - 1]
+2012-06-12 09:37:29.166	620840	Debug	Planning	Order helper object is null, return perspective:B [batch - 1]
+2012-06-12 09:37:29.166	620840	Debug	Planning	unAssignOrderFunctor - order release PK: K113003.TEST_02, perspective:B [batch - 1]
+2012-06-12 09:37:29.166	620840	Debug	Planning	Checking status of OrderRelease Bean.  CurrentStatus: PLANNING_PLANNED - FINAL [batch - 1]
+2012-06-12 09:37:29.166	620840	Debug	Planning	Persistence is deleting SEquipmentData in bulk ... [batch - 1]
+2012-06-12 09:37:29.186	620840	Debug	Planning	Persistence is deleting OrderMovementData in bulk ... [batch - 1]
+2012-06-12 09:37:29.211	620840	Debug	Planning	Persistence is deleting SShipUnitData in bulk ... [batch - 1]
+2012-06-12 09:37:29.247	620840	Debug	Planning	Persistence is inserting or updating SShipUnitData (parentPk = null) in bulk ... [batch - 1]
+2012-06-12 09:37:29.249	620840	Debug	Planning	Begin remove ShipmentLinks from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.25	620840	Debug	Planning	Begin remove ShipmentStops from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.272	620840	Debug	Planning	Remove ShipmentStops element for K113003.01045  [batch - 1]
+2012-06-12 09:37:29.287	620840	Debug	Planning	Remove ShipmentStops element for K113003.01045  [batch - 1]
+2012-06-12 09:37:29.287	620840	Debug	Planning	Begin remove ShipmentInfeasibilityCodes from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.288	620840	Debug	Planning	Begin remove ShipmentCosts from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.29	620840	Debug	Planning	Begin removeShipmentCostDetails from ShipmentCostBean - removing shipment_cost_detail for shipment cost: 99176 [batch - 1]
+2012-06-12 09:37:29.291	620840	Debug	Planning	Begin removeShipmentCostRefs from ShipmentCostBean - removing shipment_cost_refs for shipment cost: 99176 [batch - 1]
+2012-06-12 09:37:29.292	620840	Debug	Planning	Begin removeShipmentCostRemarks from ShipmentCostBean - removing shipment_cost_remarks for shipment cost: 99176 [batch - 1]
+2012-06-12 09:37:29.294	620840	Debug	Planning	Remove ShipmentCosts element for K113003.01045  [batch - 1]
+2012-06-12 09:37:29.295	620840	Debug	Planning	Begin remove ShipmentCostRefs from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.296	620840	Debug	Planning	Begin remove ShipmentInfCosts from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.297	620840	Debug	Planning	Begin remove ShipmentTexts from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.297	620840	Debug	Planning	Begin remove TenderCollaborations from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.298	620840	Debug	Planning	Begin remove ShipmentRefnums from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.301	620840	Debug	Planning	Remove ShipmentRefnums element for K113003.01045  [batch - 1]
+2012-06-12 09:37:29.303	620840	Debug	Planning	Remove ShipmentRefnums element for K113003.01045  [batch - 1]
+2012-06-12 09:37:29.303	620840	Debug	Planning	Begin remove SsStatusHistories from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.304	620840	Debug	Planning	Begin remove Allocations from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.305	620840	Debug	Planning	Begin remove InvoiceShipments from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.305	620840	Debug	Planning	Begin remove ShipmentAccessorials from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.306	620840	Debug	Planning	Begin remove ShipmentSpecialServicess from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.307	620840	Debug	Planning	Begin remove ShipmentSEquipmentJoins from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.308	620840	Debug	Planning	Begin remove ShipmentOrderReleaseJoins from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.309	620840	Debug	Planning	Begin remove ShipSpecSvcSecChargeJoin from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.309	620840	Debug	Planning	Begin remove ShipGroupDs from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.31	620840	Debug	Planning	Begin remove Secondary charge for shipments from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.312	620840	Debug	Planning	Begin remove Shipment Doc Print Logs from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.313	620840	Debug	Planning	Begin remove Om_Shipment_join for shipment from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.364	620840	Debug	Planning	Begin remove ContainerGroups from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.365	620840	Debug	Planning	Begin remove ShipCommitCountJoin from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.366	620840	Debug	Planning	Begin remove ShipCommitAllocJoin from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.367	620840	Debug	Planning	Begin remove HosDailySummary from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.367	620840	Debug	Planning	Begin remove GroundSchedGenD from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.37	620840	Debug	Planning	Begin remove ShipmentRemark from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.37	620840	Debug	Planning	Begin remove ShipmentInvolvedParty from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.371	620840	Debug	Planning	Begin remove ShipmentTrEventContact from ShipmentBean - shipment: K113003.01045 [batch - 1]
+2012-06-12 09:37:29.402	620840	Debug	Planning	begin updateOmShipmentGid.. [batch - 1]
+2012-06-12 09:37:29.403	620840	Debug	Planning	end updateOmShipmentGid.. [batch - 1]
+2012-06-12 09:37:29.403	620840	Debug	Planning	Order helper object is null, return perspective:B [batch - 1]
+2012-06-12 09:37:29.403	620840	Debug	Planning	Set Status of OrderRelease: K113003.TEST_02 to GC3_APPL_OR_UNASSIGN_ORDER. [batch - 1]
+2012-06-12 09:37:29.403	620840	Debug	Planning	Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ?  src:K113003.PUNE/changed:false  dest:K113003.BELGAUM/changed:false [batch - 1]
+2012-06-12 09:37:29.405	620840	Debug	Planning	Assign Itinerary: null to OrderRelease: K113003.TEST_02 [batch - 1]
+2012-06-12 09:37:29.406	620840	Debug	Planning	Assign bulk plan ID: null to OrderRelease: K113003.TEST_02 [batch - 1]
+2012-06-12 09:37:29.406	620840	Debug	Planning	Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ?  src:K113003.PUNE/changed:false  dest:K113003.BELGAUM/changed:false [batch - 1]
+2012-06-12 09:37:29.411	620840	Debug	Planning	Successfully set order related attributes. [batch - 1]
+2012-06-12 09:37:29.411	620840	Debug	Planning	Order helper object is null, return perspective:B [batch - 1]
+2012-06-12 09:37:29.411	620840	Debug	Planning	Successfully set order movement related attributes. [batch - 1]
+2012-06-12 09:37:29.411	620840	Debug	Planning	Order helper object is null, return perspective:B [batch - 1]
+2012-06-12 09:37:29.411	620840	Debug	Planning	Successfully set order movement related attributes. [batch - 1]
+2012-06-12 09:37:29.411	620840	Debug	Planning	Returning from shipment update session bean. [batch - 1]
+2012-06-12 09:37:29.417	620840	Debug	Workflow	Executing topic Recalculate Order Movement Totals: pk=K113003.TEST_02-023 [batch - 1]
+2012-06-12 09:37:29.418	620840	Debug	Workflow	Starting workflow Simple Workflow (237056755) in response to Recalculate Order Movement Totals: pk=K113003.TEST_02-023 [batch - 1]
+2012-06-12 09:37:29.419	620840	Debug	Workflow	Completing workflow Simple Workflow (237056755) [batch - 1]
+2012-06-12 09:37:29.419	620840	Debug	Workflow	Executing topic Recalculate Shipment Totals: pk=K113003.01045 [batch - 1]
+2012-06-12 09:37:29.42	620840	Debug	Workflow	Starting workflow Simple Workflow (237614552) in response to Recalculate Shipment Totals: pk=K113003.01045 [batch - 1]
+2012-06-12 09:37:29.421	620840	Debug	Workflow	Completing workflow Simple Workflow (237614552) [batch - 1]
+2012-06-12 09:37:29.421	620840	Debug	Workflow	Executing topic Recalculate Shipment Cost Totals: pk=K113003.01045 [batch - 1]
+2012-06-12 09:37:29.422	620840	Debug	Workflow	Starting workflow Simple Workflow (237782319) in response to Recalculate Shipment Cost Totals: pk=K113003.01045 [batch - 1]
+2012-06-12 09:37:29.422	620840	Debug	Workflow	Completing workflow Simple Workflow (237782319) [batch - 1]
+2012-06-12 09:37:29.423	620840	Debug	Workflow	Executing topic Recalculate Shipment Equipment: pk=K113003.01045 [batch - 1]
+2012-06-12 09:37:29.423	620840	Debug	Workflow	Starting workflow Simple Workflow (233147610) in response to Recalculate Shipment Equipment: pk=K113003.01045 [batch - 1]
+2012-06-12 09:37:29.424	620840	Debug	Workflow	Completing workflow Simple Workflow (233147610) [batch - 1]
+2012-06-12 09:37:29.425	620840	Debug	Workflow	Executing topic Recalculate Shipment Stop Fields: pk=K113003.01045 [batch - 1]
+2012-06-12 09:37:29.425	620840	Debug	Workflow	Starting workflow Simple Workflow (233252681) in response to Recalculate Shipment Stop Fields: pk=K113003.01045 [batch - 1]
+2012-06-12 09:37:29.426	620840	Debug	Workflow	Completing workflow Simple Workflow (233252681) [batch - 1]
+2012-06-12 09:37:29.426	620840	Debug	Workflow	Executing topic Recalculate SShipUnit Totals: pk=K113003.TEST_02-001-023 [batch - 1]
+2012-06-12 09:37:29.427	620840	Debug	Workflow	Starting workflow Simple Workflow (233360784) in response to Recalculate SShipUnit Totals: pk=K113003.TEST_02-001-023 [batch - 1]
+2012-06-12 09:37:29.428	620840	Debug	Workflow	Completing workflow Simple Workflow (233360784) [batch - 1]
+2012-06-12 09:37:29.428	620840	Debug	Workflow	Executing topic Recalculate Shipment Order Release Totals: pk=K113003.01045 [batch - 1]
+2012-06-12 09:37:29.429	620840	Debug	Workflow	Starting workflow Simple Workflow (234433569) in response to Recalculate Shipment Order Release Totals: pk=K113003.01045 [batch - 1]
+2012-06-12 09:37:29.43	620840	Debug	Workflow	Completing workflow Simple Workflow (234433569) [batch - 1]
+2012-06-12 09:37:29.43	620840	Debug	Workflow	Executing topic Remove Monitor Profiles: pk=K113003.01045 [batch - 1]
+2012-06-12 09:37:29.431	620840	Debug	Workflow	Starting workflow Simple Workflow (234609212) in response to Remove Monitor Profiles: pk=K113003.01045 [batch - 1]
+2012-06-12 09:37:29.432	620840	Debug	Workflow	Completing workflow Simple Workflow (234609212) [batch - 1]
+2012-06-12 09:37:29.434	620840	Debug	Planning	Number of shipment graphs left to unassign orders: 0 [batch - 1]
+2012-06-12 09:37:29.448	620840	Debug	Planning	Total Total 2 orders ready for bulk planning. TBulkPlanResult:<BulkPlanResult bulk Plan Gid = K113003.20120612-0007
+<-- Order Release Statistics -->
+ Num Of Order Releases Selected = 2
+ Num Of Order Releases Unassigned = 0
+ Num Of Order Releases Planned = 0
+ Num Of Order Releases Failed To Plan = 0
+<-- Order Movement Statistics -->
+ Num Of Order Movements Selected = 0
+ Num Of Order Movements Unassigned = 0
+ Num Of Order Movements Planned = 0
+ Num Of Order Movements Failed To Plan = 0
+<-- Shipment Statistics -->
+ Num Of Shipments Built = 0
+ Start Time = 2012-06-12 09:37:28 Asia/Kolkata
+ End Time = null > [batch - 1]
+2012-06-12 09:37:29.448	620840	Debug	Planning	Planning parameter: Max Num of Replan:0; num of replan allowed:0 [batch - 1]
+2012-06-12 09:37:29.449	620840	Debug	Planning	Start to plan unassigned orders for bulk plan: K113003.20120612-0007. [batch - 1]
+2012-06-12 09:37:29.449	620840	Debug	Planning	Bulk plan run #1 [batch - 1]
+2012-06-12 09:37:29.449	620840	Debug	Planning	DatabaseLoader is loading OrderReleaseData (criteria = top_t.order_release_gid IN ('K113003.TEST_01','K113003.TEST_02')) ... [batch - 1]
+2012-06-12 09:37:29.507	620840	Debug	Planning	Load TItinerary for itineraryPK: K113003.ALL_INDIA_ITINERARY_NON-DEPOT [batch - 1]
+2012-06-12 09:37:29.515	620840	Debug	Planning	begin getMostFavorableItinerary... [batch - 1]
+2012-06-12 09:37:29.515	620840	Debug	Planning	# itineraries not empty: 1 [batch - 1]
+2012-06-12 09:37:29.516	620840	Debug	Planning	bestItinerary: K113003.ALL_INDIA_ITINERARY_NON-DEPOT [batch - 1]
+2012-06-12 09:37:29.516	620840	Debug	Planning	is multistop: true [batch - 1]
+2012-06-12 09:37:29.516	620840	Debug	Planning	# of order in this itinerary: 2 [batch - 1]
+2012-06-12 09:37:29.516	620840	Debug	Planning	total weight: 40000.0 LB [batch - 1]
+2012-06-12 09:37:29.516	620840	Debug	Planning	total volume: 0.0 CUFT [batch - 1]
+2012-06-12 09:37:29.521	620840	Debug	Planning	Planning parameters for this bulkplan:  [batch - 1]
+2012-06-12 09:37:29.521	620840	Debug	Planning	     rate distance gid: ESTIMATE [batch - 1]
+2012-06-12 09:37:29.521	620840	Debug	Planning	     preferXDockThanDirectShipmentsFlag: false [batch - 1]
+2012-06-12 09:37:29.522	620840	Debug	Planning	     minBundlingTimeWindowOverlapForXDockPool: 1.0 D [batch - 1]
+2012-06-12 09:37:29.522	620840	Debug	Planning	     optimizePoolByNumOfOrders: false [batch - 1]
+2012-06-12 09:37:29.522	620840	Debug	Planning	     planningGroupRunXDockPostLTLSplitConsolidate: Runs XDock Post LTL split cons [batch - 1]
+2012-06-12 09:37:29.522	620840	Debug	Planning	     allowSmallDirectOrderToBeSplittable: false [batch - 1]
+2012-06-12 09:37:29.522	620840	Debug	Planning	     buildDirectShipmentOption: 3 [batch - 1]
+2012-06-12 09:37:29.522	620840	Debug	Planning	     planThruPoolBeforeXDock: true [batch - 1]
+2012-06-12 09:37:29.522	620840	Debug	Planning	     performPoolSwapping: true [batch - 1]
+2012-06-12 09:37:29.522	620840	Debug	Planning	     computeShipmentTimeWindow: false [batch - 1]
+2012-06-12 09:37:29.522	620840	Debug	Planning	     minInboundUnloadTimeAtXDock: 0.0 S [batch - 1]
+2012-06-12 09:37:29.523	620840	Debug	Planning	     multistopFavorSameDownstreamShipment: false [batch - 1]
+2012-06-12 09:37:29.523	620840	Debug	Planning	     multistopPoolLinehaulShipmentWithDirect: false [batch - 1]
+2012-06-12 09:37:29.523	620840	Debug	Planning	     multistopPoolLinehaulWithDirectAllAtOnce: false [batch - 1]
+2012-06-12 09:37:29.523	620840	Debug	Planning	     multistopXDockInboundShipmentWithDirect: false [batch - 1]
+2012-06-12 09:37:29.523	620840	Debug	Planning	     performCostBasedPoolXDockSelection: false [batch - 1]
+2012-06-12 09:37:29.523	620840	Debug	Planning	     logisticsGuidePK: NO LOGISTICS GUIDE EXISTS [batch - 1]
+2012-06-12 09:37:29.524	620840	Debug	Planning	# order bundles to be planned in this itinerary is: 2 [batch - 1]
+2012-06-12 09:37:29.524	620840	Debug	Planning	Number of orderBundles: 2 [batch - 1]
+2012-06-12 09:37:29.524	620840	Debug	Planning	   Order releases on one bundle: |K113003.TEST_01| [batch - 1]
+2012-06-12 09:37:29.524	620840	Debug	Planning	   tOrderBundle early pickup: 2012-06-12 04:07:28 UTC [batch - 1]
+2012-06-12 09:37:29.524	620840	Debug	Planning	   tOrderBundle late pickup: 2012-07-12 04:07:28 UTC [batch - 1]
+2012-06-12 09:37:29.524	620840	Debug	Planning	   tOrderBundle early delivery: 2012-06-12 04:07:28 UTC [batch - 1]
+2012-06-12 09:37:29.524	620840	Debug	Planning	   tOrderBundle late delivery: 2012-07-12 04:07:28 UTC [batch - 1]
+2012-06-12 09:37:29.524	620840	Debug	Planning	   Order releases on one bundle: |K113003.TEST_02| [batch - 1]
+2012-06-12 09:37:29.525	620840	Debug	Planning	   tOrderBundle early pickup: 2012-06-12 04:07:28 UTC [batch - 1]
+2012-06-12 09:37:29.525	620840	Debug	Planning	   tOrderBundle late pickup: 2012-07-12 04:07:28 UTC [batch - 1]
+2012-06-12 09:37:29.525	620840	Debug	Planning	   tOrderBundle early delivery: 2012-06-12 04:07:28 UTC [batch - 1]
+2012-06-12 09:37:29.525	620840	Debug	Planning	   tOrderBundle late delivery: 2012-07-12 04:07:28 UTC [batch - 1]
+2012-06-12 09:37:29.525	620840	Debug	Planning	Number of orderBundles must ship thru xdock: 0 [batch - 1]
+2012-06-12 09:37:29.525	620840	Debug	Planning	Number of orderBundles must ship thru xdock but no xdock specified: 0 [batch - 1]
+2012-06-12 09:37:29.525	620840	Debug	Planning	Number of orderBundles must ship thru pool: 0 [batch - 1]
+2012-06-12 09:37:29.525	620840	Debug	Planning	allowSmallDirectOrderToBeSplittable: false [batch - 1]
+2012-06-12 09:37:29.526	620840	Debug	Planning	Check equipment capacity in equipment reference units: false [batch - 1]
+2012-06-12 09:37:29.527	620840	Debug	Planning	Check equipment capacity in equipment reference units: false [batch - 1]
+2012-06-12 09:37:29.528	620840	Debug	Planning	
+ There were 0 order bundle need to be splited [batch - 1]
+2012-06-12 09:37:29.528	620840	Debug	Planning	Begin makeDirectShipmentsForLargeBundles... [batch - 1]
+2012-06-12 09:37:29.528	620840	Debug	Planning	# of tShipments in splitOrderTShipmentCollection: 0 [batch - 1]
+2012-06-12 09:37:29.528	620840	Debug	Planning	End makeDirectShipmentsForLargeBundles. [batch - 1]
+2012-06-12 09:37:29.529	620840	Debug	Planning	Begin makeDirectShipmentsForSmallOrders... [batch - 1]
+2012-06-12 09:37:29.53	620840	Debug	Planning	Construct TShipment from TOrderBundle: |K113003.TEST_01| [batch - 1]
+2012-06-12 09:37:29.53	620840	Debug	Planning	                               weight: 20000.0 LB [batch - 1]
+2012-06-12 09:37:29.53	620840	Debug	Planning	                               volume: 0.0 CUFT [batch - 1]
+2012-06-12 09:37:29.53	620840	Debug	Planning	                    using leg: K113003.73128 [batch - 1]
+2012-06-12 09:37:29.539	620840	Debug	Planning	tShipment weight: 20000.0 LB [batch - 1]
+2012-06-12 09:37:29.539	620840	Debug	Planning	tShipment volume: 0.0 CUFT [batch - 1]
+2012-06-12 09:37:29.539	620840	Debug	Planning	tShipment first stop pickup weight: 20000.0 LB [batch - 1]
+2012-06-12 09:37:29.539	620840	Debug	Planning	tShipment first stop pickup volume: 0.0 CUFT [batch - 1]
+2012-06-12 09:37:29.54	620840	Debug	Planning	tShipment first stop dropoff weight: 0.0 LB [batch - 1]
+2012-06-12 09:37:29.54	620840	Debug	Planning	tShipment first stop dropoff volume: 0.0 CUFT [batch - 1]
+2012-06-12 09:37:29.54	620840	Debug	Planning	SQL Find LegInterimPoints by LegPK: select distinct lip.leg_gid, lip.seq_no from leg_interim_point lip where lip.leg_gid = ? order by lip.seq_no. [batch - 1]
+2012-06-12 09:37:29.542	620840	Debug	Planning	MiniShipmentBuilder::constructTShipment  [batch - 1]
+2012-06-12 09:37:29.542	620840	Debug	Planning	  orders: |K113003.TEST_01| [batch - 1]
+2012-06-12 09:37:29.542	620840	Debug	Planning	  ignoreConsolidateEarlyPickup: false [batch - 1]
+2012-06-12 09:37:29.542	620840	Debug	Planning	  ignoreConsolidateLatePickup: false [batch - 1]
+2012-06-12 09:37:29.542	620840	Debug	Planning	  ignoreConsolidateEarlyDelivery: false [batch - 1]
+2012-06-12 09:37:29.542	620840	Debug	Planning	  ignoreConsolidateLateDelivery: false [batch - 1]
+2012-06-12 09:37:29.543	620840	Debug	Planning	  first stop order bundle, location: K113003.MUMBAI [batch - 1]
+2012-06-12 09:37:29.543	620840	Debug	Planning	                           early arrival time: 2012-06-12 04:07:28 UTC [batch - 1]
+2012-06-12 09:37:29.543	620840	Debug	Planning	                           late arrival time: 2012-07-12 04:07:28 UTC [batch - 1]
+2012-06-12 09:37:29.543	620840	Debug	Planning	  second stop order bundle, location: K113003.PUNE [batch - 1]
+2012-06-12 09:37:29.543	620840	Debug	Planning	                           early arrival time: 2012-06-12 04:07:28 UTC [batch - 1]
+2012-06-12 09:37:29.543	620840	Debug	Planning	                           late arrival time: 2012-07-12 04:07:28 UTC [batch - 1]
+2012-06-12 09:37:29.543	620840	Debug	Planning	tShipment second stop pickup weight: 0.0 LB [batch - 1]
+2012-06-12 09:37:29.543	620840	Debug	Planning	tShipment second stop pickup volume: 0.0 CUFT [batch - 1]
+2012-06-12 09:37:29.544	620840	Debug	Planning	tShipment second stop dropoff weight: 20000.0 LB [batch - 1]
+2012-06-12 09:37:29.544	620840	Debug	Planning	tShipment second stop dropoff volume: 0.0 CUFT [batch - 1]
+2012-06-12 09:37:29.545	620840	Debug	Planning	No dest VIA locations on leg K113003.73128 [batch - 1]
+2012-06-12 09:37:29.546	620840	Debug	Planning	No source VIA locations on leg K113003.73128 [batch - 1]
+2012-06-12 09:37:29.546	620840	Debug	Planning	RateGeoFinderSession.findTRateGeosByAddresses() [batch - 1]
+2012-06-12 09:37:29.552	620840	Debug	Planning	RateGeoFinderSession.findPreferredByLane(): Find Preferred By Lane SQL: select all ro.rate_offering_seq, ro.transport_mode_gid, ghs.rank, ghd.rank, rp.effective_date, rp.expiration_date, ro.servprov_gid from rate_offering ro, rate_preference rp, rate_preference_detail rpd, lane l, geo_hierarchy ghd, geo_hierarchy ghs, hname_set_member hsms, hname_set_member hsmd where hsms.hname in ('COUNTRY\IND\', 'STATE/PROVINCE\MH\', 'CITY/COUNTRY\MUMBAI\IND\', 'CITY\MUMBAI\MH\IND\', 'LOCATION\K113003.MUMBAI\') and hsmd.hname in ('COUNTRY\IND\', 'STATE/PROVINCE\MH\', 'CITY/COUNTRY\PUNE\IND\', 'CITY\PUNE\MH\IND\', 'LOCATION\K113003.PUNE\') and l.source_hname_set_gid = hsms.hname_set_gid and l.dest_hname_set_gid = hsmd.hname_set_gid and rp.x_lane_gid = l.x_lane_gid and rpd.rate_preference_gid = rp.rate_preference_gid and ro.rate_offering_gid = rpd.rate_offering_gid and (ro.perspective = ? or ro.perspective = ?) and ro.is_active = 'Y' and ghs.geo_hierarchy_gid = hsms.geo_hierarchy_gid and ghd.geo_hierarchy_gid = hsmd.geo_hierarchy_gid [batch - 1]
+2012-06-12 09:37:29.662	620840	Debug	Planning	RateGeoFinderSession.findPreferredByZone(): Zone table is empty, skipping query [batch - 1]
+2012-06-12 09:37:29.665	620840	Debug	Planning	No Capacity Override are defined for Leg: K113003.73128 [batch - 1]
+2012-06-12 09:37:29.667	620840	Debug	Planning	setTSEquipmentCapacityUsageMap [batch - 1]
+2012-06-12 09:37:29.667	620840	Debug	Planning	Created a clone tShipment: 236657475 (K113003.MUMBAI->K113003.PUNE) from tShipment: 237169609 (K113003.MUMBAI->K113003.PUNE) [batch - 1]
+2012-06-12 09:37:29.667	620840	Debug	Planning	 setTSEquipment: SEquipmentGid: null, EquipmentGroup: K113003.40FT_TRAILER(236595698)   contains 1 TSShipUnits. unit: 1 237169059 created from ShipUnit: K113003.TEST_01-001 ..range = 1-1 [batch - 1]
+2012-06-12 09:37:29.667	620840	Debug	Planning	Begin assignLeastCostServiceProvider... [batch - 1]
+2012-06-12 09:37:29.706	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Begin Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:29.706	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): ShipmentGid (if any) = <null> [batch - 1]
+2012-06-12 09:37:29.706	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingPKs = <null> [batch - 1]
+2012-06-12 09:37:29.706	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingRuleSetGid = <null> [batch - 1]
+2012-06-12 09:37:29.706	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateGeoRuleSetTGid = <null> [batch - 1]
+2012-06-12 09:37:29.706	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRates = <true> [batch - 1]
+2012-06-12 09:37:29.706	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRatesOnly = <false> [batch - 1]
+2012-06-12 09:37:29.706	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): checkCmRating = <false> [batch - 1]
+2012-06-12 09:37:29.706	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): useRouteExecutionRates = <false> [batch - 1]
+2012-06-12 09:37:29.707	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Complete Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:29.707	620840	Debug	Planning	RateFinder.findShipmentCosts(): total 1 rate geo(s) returned from RateGeoFinder. [batch - 1]
+2012-06-12 09:37:29.765	620840	Debug	Planning	RateFinder.findShipmentCosts(): Total 1 rate engine result(s) returned from RateEngine. [batch - 1]
+2012-06-12 09:37:29.765	620840	Debug	Planning	assignServiceProviderUsingRateEngineResults, total 1 rate engine results are to be evaluted  [batch - 1]
+2012-06-12 09:37:29.765	620840	Debug	Planning	Evaluating rate engine result 1: rate offering: K113003.GATI_CONTIUNOUS_MOVE transport mode: TL servProv: K113003.GATI [batch - 1]
+2012-06-12 09:37:29.78	620840	Debug	Planning	Apply rateServiceResultWindow: Earliest rate service result: Feasibility:  Time feasible; Location not checked; Carrier capacity not checked.
+<ServiceTimeResult for shipment: 236657475 (K113003.MUMBAI->K113003.PUNE) feasibility: Service time feasible. startTime: 2012-06-12 09:37:29 Asia/Calcutta endTime: 2012-06-12 11:13:54 Asia/Calcutta infeasibleAmount: null # of stops: 2>
+Location Capacity Result: null
+Carrier Capacity Result: null
+Best rate service result: Feasibility:  Time feasible; Location not checked; Carrier capacity feasible.
+<ServiceTimeResult for shipment: 236657475 (K113003.MUMBAI->K113003.PUNE) feasibility: Service time feasible. startTime: 2012-06-12 09:37:29 Asia/Calcutta endTime: 2012-06-12 11:13:54 Asia/Calcutta infeasibleAmount: null # of stops: 2>
+Location Capacity Result: null
+<CapacityResult isFeasible= true isApplicable=false noSolutionInfeasible=false overlimitInfeasible= false>
+Lastest rate service result: Feasibility:  Time feasible; Location not checked; Carrier capacity not checked.
+<ServiceTimeResult for shipment: 236657475 (K113003.MUMBAI->K113003.PUNE) feasibility: Service time feasible. startTime: 2012-06-12 09:37:29 Asia/Calcutta endTime: 2012-06-12 11:13:54 Asia/Calcutta infeasibleAmount: null # of stops: 2>
+Location Capacity Result: null
+Carrier Capacity Result: null
+ to shipment: 236657475 (K113003.MUMBAI->K113003.PUNE) [batch - 1]
+2012-06-12 09:37:29.78	620840	Debug	Planning	Apply BEST ServiceTimeResult to shipment: 236657475 (K113003.MUMBAI->K113003.PUNE) [batch - 1]
+2012-06-12 09:37:29.78	620840	Debug	Planning	shipment type: TRANSPORT, start time: 2012-06-12 09:37:29 Asia/Calcutta, end time: 2012-06-12 11:13:54 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.78	620840	Debug	Planning	Applying stop service time result for stop: 1 at: K113003.MUMBAI, arrival time: 2012-06-12 09:37:29 Asia/Calcutta, departure time: 2012-06-12 09:37:29 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.781	620840	Debug	Planning	Applying stop service time result for stop: 2 at: K113003.PUNE, arrival time: 2012-06-12 11:13:54 Asia/Calcutta, departure time: 2012-06-12 11:13:54 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.781	620840	Debug	Planning	Apply depot stop service time results. [batch - 1]
+2012-06-12 09:37:29.781	620840	Debug	Planning	Is service time feasible: true [batch - 1]
+2012-06-12 09:37:29.781	620840	Debug	Planning	Apply EARLIEST ServiceTimeResult to shipment: 236657475 (K113003.MUMBAI->K113003.PUNE) [batch - 1]
+2012-06-12 09:37:29.781	620840	Debug	Planning	shipment type: TRANSPORT, start time: 2012-06-12 09:37:29 Asia/Calcutta, end time: 2012-06-12 11:13:54 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.781	620840	Debug	Planning	Apply LATEST ServiceTimeResult to shipment: 236657475 (K113003.MUMBAI->K113003.PUNE) [batch - 1]
+2012-06-12 09:37:29.781	620840	Debug	Planning	shipment type: TRANSPORT, start time: 2012-06-12 09:37:29 Asia/Calcutta, end time: 2012-06-12 11:13:54 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.781	620840	Debug	Planning	A Lesser Cost Feasible Service Provider (index 0) Found, Cost: 15000.0 USD [batch - 1]
+2012-06-12 09:37:29.781	620840	Debug	Planning	End assignLeastCostServiceProvider. [batch - 1]
+2012-06-12 09:37:29.781	620840	Debug	Planning	setTSEquipmentCapacityUsageMap [batch - 1]
+2012-06-12 09:37:29.781	620840	Debug	Planning	tSequipment: SEquipmentGid: null, EquipmentGroup: K113003.40FT_TRAILER(236595698)   contains 1 TSShipUnits. unit: 1 237169059 created from ShipUnit: K113003.TEST_01-001 ..range = 1-1 [batch - 1]
+2012-06-12 09:37:29.782	620840	Debug	Planning	Apply rateServiceResultWindow: Earliest rate service result: Feasibility:  Time feasible; Location not checked; Carrier capacity not checked.
+<ServiceTimeResult for shipment: 236657475 (K113003.MUMBAI->K113003.PUNE) feasibility: Service time feasible. startTime: 2012-06-12 09:37:29 Asia/Calcutta endTime: 2012-06-12 11:13:54 Asia/Calcutta infeasibleAmount: null # of stops: 2>
+Location Capacity Result: null
+Carrier Capacity Result: null
+Best rate service result: Feasibility:  Time feasible; Location not checked; Carrier capacity feasible.
+<ServiceTimeResult for shipment: 236657475 (K113003.MUMBAI->K113003.PUNE) feasibility: Service time feasible. startTime: 2012-06-12 09:37:29 Asia/Calcutta endTime: 2012-06-12 11:13:54 Asia/Calcutta infeasibleAmount: null # of stops: 2>
+Location Capacity Result: null
+<CapacityResult isFeasible= true isApplicable=false noSolutionInfeasible=false overlimitInfeasible= false>
+Lastest rate service result: Feasibility:  Time feasible; Location not checked; Carrier capacity not checked.
+<ServiceTimeResult for shipment: 236657475 (K113003.MUMBAI->K113003.PUNE) feasibility: Service time feasible. startTime: 2012-06-12 09:37:29 Asia/Calcutta endTime: 2012-06-12 11:13:54 Asia/Calcutta infeasibleAmount: null # of stops: 2>
+Location Capacity Result: null
+Carrier Capacity Result: null
+ to shipment: 237169609 (K113003.MUMBAI->K113003.PUNE) [batch - 1]
+2012-06-12 09:37:29.782	620840	Debug	Planning	Apply BEST ServiceTimeResult to shipment: 237169609 (K113003.MUMBAI->K113003.PUNE) [batch - 1]
+2012-06-12 09:37:29.783	620840	Debug	Planning	shipment type: TRANSPORT, start time: 2012-06-12 09:37:29 Asia/Calcutta, end time: 2012-06-12 11:13:54 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.783	620840	Debug	Planning	Applying stop service time result for stop: 1 at: K113003.MUMBAI, arrival time: 2012-06-12 09:37:29 Asia/Calcutta, departure time: 2012-06-12 09:37:29 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.783	620840	Debug	Planning	Applying stop service time result for stop: 2 at: K113003.PUNE, arrival time: 2012-06-12 11:13:54 Asia/Calcutta, departure time: 2012-06-12 11:13:54 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.783	620840	Debug	Planning	Apply depot stop service time results. [batch - 1]
+2012-06-12 09:37:29.783	620840	Debug	Planning	Is service time feasible: true [batch - 1]
+2012-06-12 09:37:29.783	620840	Debug	Planning	Apply EARLIEST ServiceTimeResult to shipment: 237169609 (K113003.MUMBAI->K113003.PUNE) [batch - 1]
+2012-06-12 09:37:29.783	620840	Debug	Planning	shipment type: TRANSPORT, start time: 2012-06-12 09:37:29 Asia/Calcutta, end time: 2012-06-12 11:13:54 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.783	620840	Debug	Planning	Apply LATEST ServiceTimeResult to shipment: 237169609 (K113003.MUMBAI->K113003.PUNE) [batch - 1]
+2012-06-12 09:37:29.783	620840	Debug	Planning	shipment type: TRANSPORT, start time: 2012-06-12 09:37:29 Asia/Calcutta, end time: 2012-06-12 11:13:54 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.783	620840	Debug	Planning	Built direct shipment for tOrderBundle, src:K113003.MUMBAI dest: K113003.PUNE [batch - 1]
+2012-06-12 09:37:29.784	620840	Debug	Planning	Construct TShipment from TOrderBundle: |K113003.TEST_02| [batch - 1]
+2012-06-12 09:37:29.784	620840	Debug	Planning	                               weight: 20000.0 LB [batch - 1]
+2012-06-12 09:37:29.784	620840	Debug	Planning	                               volume: 0.0 CUFT [batch - 1]
+2012-06-12 09:37:29.784	620840	Debug	Planning	                    using leg: K113003.73128 [batch - 1]
+2012-06-12 09:37:29.79	620840	Debug	Planning	tShipment weight: 20000.0 LB [batch - 1]
+2012-06-12 09:37:29.79	620840	Debug	Planning	tShipment volume: 0.0 CUFT [batch - 1]
+2012-06-12 09:37:29.79	620840	Debug	Planning	tShipment first stop pickup weight: 20000.0 LB [batch - 1]
+2012-06-12 09:37:29.791	620840	Debug	Planning	tShipment first stop pickup volume: 0.0 CUFT [batch - 1]
+2012-06-12 09:37:29.791	620840	Debug	Planning	tShipment first stop dropoff weight: 0.0 LB [batch - 1]
+2012-06-12 09:37:29.791	620840	Debug	Planning	tShipment first stop dropoff volume: 0.0 CUFT [batch - 1]
+2012-06-12 09:37:29.791	620840	Debug	Planning	MiniShipmentBuilder::constructTShipment  [batch - 1]
+2012-06-12 09:37:29.791	620840	Debug	Planning	  orders: |K113003.TEST_02| [batch - 1]
+2012-06-12 09:37:29.791	620840	Debug	Planning	  ignoreConsolidateEarlyPickup: false [batch - 1]
+2012-06-12 09:37:29.791	620840	Debug	Planning	  ignoreConsolidateLatePickup: false [batch - 1]
+2012-06-12 09:37:29.791	620840	Debug	Planning	  ignoreConsolidateEarlyDelivery: false [batch - 1]
+2012-06-12 09:37:29.791	620840	Debug	Planning	  ignoreConsolidateLateDelivery: false [batch - 1]
+2012-06-12 09:37:29.791	620840	Debug	Planning	  first stop order bundle, location: K113003.PUNE [batch - 1]
+2012-06-12 09:37:29.791	620840	Debug	Planning	                           early arrival time: 2012-06-12 04:07:28 UTC [batch - 1]
+2012-06-12 09:37:29.791	620840	Debug	Planning	                           late arrival time: 2012-07-12 04:07:28 UTC [batch - 1]
+2012-06-12 09:37:29.792	620840	Debug	Planning	  second stop order bundle, location: K113003.BELGAUM [batch - 1]
+2012-06-12 09:37:29.792	620840	Debug	Planning	                           early arrival time: 2012-06-12 04:07:28 UTC [batch - 1]
+2012-06-12 09:37:29.792	620840	Debug	Planning	                           late arrival time: 2012-07-12 04:07:28 UTC [batch - 1]
+2012-06-12 09:37:29.792	620840	Debug	Planning	tShipment second stop pickup weight: 0.0 LB [batch - 1]
+2012-06-12 09:37:29.792	620840	Debug	Planning	tShipment second stop pickup volume: 0.0 CUFT [batch - 1]
+2012-06-12 09:37:29.792	620840	Debug	Planning	tShipment second stop dropoff weight: 20000.0 LB [batch - 1]
+2012-06-12 09:37:29.792	620840	Debug	Planning	tShipment second stop dropoff volume: 0.0 CUFT [batch - 1]
+2012-06-12 09:37:29.793	620840	Debug	Planning	No dest VIA locations on leg K113003.73128 [batch - 1]
+2012-06-12 09:37:29.793	620840	Debug	Planning	No source VIA locations on leg K113003.73128 [batch - 1]
+2012-06-12 09:37:29.793	620840	Debug	Planning	RateGeoFinderSession.findTRateGeosByAddresses() [batch - 1]
+2012-06-12 09:37:29.794	620840	Debug	Planning	RateGeoFinderSession.findPreferredByLane(): Find Preferred By Lane SQL: select all ro.rate_offering_seq, ro.transport_mode_gid, ghs.rank, ghd.rank, rp.effective_date, rp.expiration_date, ro.servprov_gid from rate_offering ro, rate_preference rp, rate_preference_detail rpd, lane l, geo_hierarchy ghd, geo_hierarchy ghs, hname_set_member hsms, hname_set_member hsmd where hsms.hname in ('COUNTRY\IND\', 'STATE/PROVINCE\MH\', 'CITY/COUNTRY\PUNE\IND\', 'CITY\PUNE\MH\IND\', 'LOCATION\K113003.PUNE\') and hsmd.hname in ('COUNTRY\IND\', 'STATE/PROVINCE\KA\', 'CITY/COUNTRY\BELGAUM\IND\', 'CITY\BELGAUM\KA\IND\', 'LOCATION\K113003.BELGAUM\') and l.source_hname_set_gid = hsms.hname_set_gid and l.dest_hname_set_gid = hsmd.hname_set_gid and rp.x_lane_gid = l.x_lane_gid and rpd.rate_preference_gid = rp.rate_preference_gid and ro.rate_offering_gid = rpd.rate_offering_gid and (ro.perspective = ? or ro.perspective = ?) and ro.is_active = 'Y' and ghs.geo_hierarchy_gid = hsms.geo_hierarchy_gid and ghd.geo_hierarchy_gid = hsmd.geo_hierarchy_gid [batch - 1]
+2012-06-12 09:37:29.833	620840	Debug	Planning	RateGeoFinderSession.findPreferredByZone(): Zone table is empty, skipping query [batch - 1]
+2012-06-12 09:37:29.835	620840	Debug	Planning	setTSEquipmentCapacityUsageMap [batch - 1]
+2012-06-12 09:37:29.835	620840	Debug	Planning	Created a clone tShipment: 240935344 (K113003.PUNE->K113003.BELGAUM) from tShipment: 239240466 (K113003.PUNE->K113003.BELGAUM) [batch - 1]
+2012-06-12 09:37:29.835	620840	Debug	Planning	 setTSEquipment: SEquipmentGid: null, EquipmentGroup: K113003.40FT_TRAILER(240854214)   contains 1 TSShipUnits. unit: 1 239226511 created from ShipUnit: K113003.TEST_02-001 ..range = 1-1 [batch - 1]
+2012-06-12 09:37:29.835	620840	Debug	Planning	Begin assignLeastCostServiceProvider... [batch - 1]
+2012-06-12 09:37:29.838	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Begin Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:29.838	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): ShipmentGid (if any) = <null> [batch - 1]
+2012-06-12 09:37:29.838	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingPKs = <null> [batch - 1]
+2012-06-12 09:37:29.838	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingRuleSetGid = <null> [batch - 1]
+2012-06-12 09:37:29.838	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateGeoRuleSetTGid = <null> [batch - 1]
+2012-06-12 09:37:29.838	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRates = <true> [batch - 1]
+2012-06-12 09:37:29.838	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRatesOnly = <false> [batch - 1]
+2012-06-12 09:37:29.838	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): checkCmRating = <false> [batch - 1]
+2012-06-12 09:37:29.839	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): useRouteExecutionRates = <false> [batch - 1]
+2012-06-12 09:37:29.839	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Complete Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:29.839	620840	Debug	Planning	RateFinder.findShipmentCosts(): total 1 rate geo(s) returned from RateGeoFinder. [batch - 1]
+2012-06-12 09:37:29.85	620840	Debug	Planning	RateFinder.findShipmentCosts(): Total 1 rate engine result(s) returned from RateEngine. [batch - 1]
+2012-06-12 09:37:29.85	620840	Debug	Planning	assignServiceProviderUsingRateEngineResults, total 1 rate engine results are to be evaluted  [batch - 1]
+2012-06-12 09:37:29.851	620840	Debug	Planning	Evaluating rate engine result 1: rate offering: K113003.GATI_CONTIUNOUS_MOVE transport mode: TL servProv: K113003.GATI [batch - 1]
+2012-06-12 09:37:29.857	620840	Debug	Planning	Apply rateServiceResultWindow: Earliest rate service result: Feasibility:  Time feasible; Location not checked; Carrier capacity not checked.
+<ServiceTimeResult for shipment: 240935344 (K113003.PUNE->K113003.BELGAUM) feasibility: Service time feasible. startTime: 2012-06-12 09:37:29 Asia/Calcutta endTime: 2012-06-12 13:37:34 Asia/Calcutta infeasibleAmount: null # of stops: 2>
+Location Capacity Result: null
+Carrier Capacity Result: null
+Best rate service result: Feasibility:  Time feasible; Location not checked; Carrier capacity feasible.
+<ServiceTimeResult for shipment: 240935344 (K113003.PUNE->K113003.BELGAUM) feasibility: Service time feasible. startTime: 2012-06-12 09:37:29 Asia/Calcutta endTime: 2012-06-12 13:37:34 Asia/Calcutta infeasibleAmount: null # of stops: 2>
+Location Capacity Result: null
+<CapacityResult isFeasible= true isApplicable=false noSolutionInfeasible=false overlimitInfeasible= false>
+Lastest rate service result: Feasibility:  Time feasible; Location not checked; Carrier capacity not checked.
+<ServiceTimeResult for shipment: 240935344 (K113003.PUNE->K113003.BELGAUM) feasibility: Service time feasible. startTime: 2012-06-12 09:37:29 Asia/Calcutta endTime: 2012-06-12 13:37:34 Asia/Calcutta infeasibleAmount: null # of stops: 2>
+Location Capacity Result: null
+Carrier Capacity Result: null
+ to shipment: 240935344 (K113003.PUNE->K113003.BELGAUM) [batch - 1]
+2012-06-12 09:37:29.857	620840	Debug	Planning	Apply BEST ServiceTimeResult to shipment: 240935344 (K113003.PUNE->K113003.BELGAUM) [batch - 1]
+2012-06-12 09:37:29.857	620840	Debug	Planning	shipment type: TRANSPORT, start time: 2012-06-12 09:37:29 Asia/Calcutta, end time: 2012-06-12 13:37:34 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.858	620840	Debug	Planning	Applying stop service time result for stop: 1 at: K113003.PUNE, arrival time: 2012-06-12 09:37:29 Asia/Calcutta, departure time: 2012-06-12 09:37:29 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.858	620840	Debug	Planning	Applying stop service time result for stop: 2 at: K113003.BELGAUM, arrival time: 2012-06-12 13:37:34 Asia/Calcutta, departure time: 2012-06-12 13:37:34 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.858	620840	Debug	Planning	Apply depot stop service time results. [batch - 1]
+2012-06-12 09:37:29.858	620840	Debug	Planning	Is service time feasible: true [batch - 1]
+2012-06-12 09:37:29.858	620840	Debug	Planning	Apply EARLIEST ServiceTimeResult to shipment: 240935344 (K113003.PUNE->K113003.BELGAUM) [batch - 1]
+2012-06-12 09:37:29.858	620840	Debug	Planning	shipment type: TRANSPORT, start time: 2012-06-12 09:37:29 Asia/Calcutta, end time: 2012-06-12 13:37:34 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.858	620840	Debug	Planning	Apply LATEST ServiceTimeResult to shipment: 240935344 (K113003.PUNE->K113003.BELGAUM) [batch - 1]
+2012-06-12 09:37:29.859	620840	Debug	Planning	shipment type: TRANSPORT, start time: 2012-06-12 09:37:29 Asia/Calcutta, end time: 2012-06-12 13:37:34 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.859	620840	Debug	Planning	A Lesser Cost Feasible Service Provider (index 0) Found, Cost: 15000.0 USD [batch - 1]
+2012-06-12 09:37:29.859	620840	Debug	Planning	End assignLeastCostServiceProvider. [batch - 1]
+2012-06-12 09:37:29.859	620840	Debug	Planning	setTSEquipmentCapacityUsageMap [batch - 1]
+2012-06-12 09:37:29.859	620840	Debug	Planning	tSequipment: SEquipmentGid: null, EquipmentGroup: K113003.40FT_TRAILER(240854214)   contains 1 TSShipUnits. unit: 1 239226511 created from ShipUnit: K113003.TEST_02-001 ..range = 1-1 [batch - 1]
+2012-06-12 09:37:29.86	620840	Debug	Planning	Apply rateServiceResultWindow: Earliest rate service result: Feasibility:  Time feasible; Location not checked; Carrier capacity not checked.
+<ServiceTimeResult for shipment: 240935344 (K113003.PUNE->K113003.BELGAUM) feasibility: Service time feasible. startTime: 2012-06-12 09:37:29 Asia/Calcutta endTime: 2012-06-12 13:37:34 Asia/Calcutta infeasibleAmount: null # of stops: 2>
+Location Capacity Result: null
+Carrier Capacity Result: null
+Best rate service result: Feasibility:  Time feasible; Location not checked; Carrier capacity feasible.
+<ServiceTimeResult for shipment: 240935344 (K113003.PUNE->K113003.BELGAUM) feasibility: Service time feasible. startTime: 2012-06-12 09:37:29 Asia/Calcutta endTime: 2012-06-12 13:37:34 Asia/Calcutta infeasibleAmount: null # of stops: 2>
+Location Capacity Result: null
+<CapacityResult isFeasible= true isApplicable=false noSolutionInfeasible=false overlimitInfeasible= false>
+Lastest rate service result: Feasibility:  Time feasible; Location not checked; Carrier capacity not checked.
+<ServiceTimeResult for shipment: 240935344 (K113003.PUNE->K113003.BELGAUM) feasibility: Service time feasible. startTime: 2012-06-12 09:37:29 Asia/Calcutta endTime: 2012-06-12 13:37:34 Asia/Calcutta infeasibleAmount: null # of stops: 2>
+Location Capacity Result: null
+Carrier Capacity Result: null
+ to shipment: 239240466 (K113003.PUNE->K113003.BELGAUM) [batch - 1]
+2012-06-12 09:37:29.86	620840	Debug	Planning	Apply BEST ServiceTimeResult to shipment: 239240466 (K113003.PUNE->K113003.BELGAUM) [batch - 1]
+2012-06-12 09:37:29.86	620840	Debug	Planning	shipment type: TRANSPORT, start time: 2012-06-12 09:37:29 Asia/Calcutta, end time: 2012-06-12 13:37:34 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.861	620840	Debug	Planning	Applying stop service time result for stop: 1 at: K113003.PUNE, arrival time: 2012-06-12 09:37:29 Asia/Calcutta, departure time: 2012-06-12 09:37:29 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.861	620840	Debug	Planning	Applying stop service time result for stop: 2 at: K113003.BELGAUM, arrival time: 2012-06-12 13:37:34 Asia/Calcutta, departure time: 2012-06-12 13:37:34 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.861	620840	Debug	Planning	Apply depot stop service time results. [batch - 1]
+2012-06-12 09:37:29.861	620840	Debug	Planning	Is service time feasible: true [batch - 1]
+2012-06-12 09:37:29.861	620840	Debug	Planning	Apply EARLIEST ServiceTimeResult to shipment: 239240466 (K113003.PUNE->K113003.BELGAUM) [batch - 1]
+2012-06-12 09:37:29.861	620840	Debug	Planning	shipment type: TRANSPORT, start time: 2012-06-12 09:37:29 Asia/Calcutta, end time: 2012-06-12 13:37:34 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.861	620840	Debug	Planning	Apply LATEST ServiceTimeResult to shipment: 239240466 (K113003.PUNE->K113003.BELGAUM) [batch - 1]
+2012-06-12 09:37:29.862	620840	Debug	Planning	shipment type: TRANSPORT, start time: 2012-06-12 09:37:29 Asia/Calcutta, end time: 2012-06-12 13:37:34 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:29.862	620840	Debug	Planning	Built direct shipment for tOrderBundle, src:K113003.PUNE dest: K113003.BELGAUM [batch - 1]
+2012-06-12 09:37:29.862	620840	Debug	Planning	Number of orderBundleToShipmentGraphCollection Objects returns: 0 (filter = 1) [batch - 1]
+2012-06-12 09:37:29.862	620840	Debug	Planning	# of bundles that will be unbundled: 0 [batch - 1]
+2012-06-12 09:37:29.862	620840	Debug	Planning	# of single order bundles: 0 [batch - 1]
+2012-06-12 09:37:29.862	620840	Debug	Planning	Number of orderBundleToShipmentGraphCollection Objects returns: 0 (filter = 3) [batch - 1]
+2012-06-12 09:37:29.862	620840	Debug	Planning	# of bundles in remainingTOrderBundleList: 2 [batch - 1]
+2012-06-12 09:37:29.862	620840	Debug	Planning	Complete makeDirectShipmentsForSmallOrders. [batch - 1]
+2012-06-12 09:37:29.863	620840	Debug	Planning	begin filterOutSmallDirectShipments [batch - 1]
+2012-06-12 09:37:29.863	620840	Debug	Planning	maxSmallDirectWeight: null [batch - 1]
+2012-06-12 09:37:29.863	620840	Debug	Planning	weight: 20000.0 LB [batch - 1]
+2012-06-12 09:37:29.863	620840	Debug	Planning	maxSmallDirectVolume: null [batch - 1]
+2012-06-12 09:37:29.863	620840	Debug	Planning	volume: 0.0 CUFT [batch - 1]
+2012-06-12 09:37:29.863	620840	Debug	Planning	maxSmallDirectWeight: null [batch - 1]
+2012-06-12 09:37:29.863	620840	Debug	Planning	weight: 20000.0 LB [batch - 1]
+2012-06-12 09:37:29.863	620840	Debug	Planning	maxSmallDirectVolume: null [batch - 1]
+2012-06-12 09:37:29.863	620840	Debug	Planning	volume: 0.0 CUFT [batch - 1]
+2012-06-12 09:37:29.863	620840	Debug	Planning	# small bundles filtered: 0 [batch - 1]
+2012-06-12 09:37:29.864	620840	Debug	Planning	end filterOutSmallDirectShipments [batch - 1]
+2012-06-12 09:37:29.864	620840	Debug	Planning	isDirectMultistopShipmentCandidate return true for tOrderBundle: |K113003.TEST_01| [batch - 1]
+2012-06-12 09:37:29.864	620840	Debug	Planning	isDirectMultistopShipmentCandidate return true for tOrderBundle: |K113003.TEST_02| [batch - 1]
+2012-06-12 09:37:29.864	620840	Debug	Planning	# of shipments that will pass to mulistop shipment builder is : 2 [batch - 1]
+2012-06-12 09:37:29.878	620840	Debug	Planning	setTSEquipmentCapacityUsageMap [batch - 1]
+2012-06-12 09:37:29.878	620840	Debug	Planning	tSequipment: SEquipmentGid: null, EquipmentGroup: K113003.40FT_TRAILER(236595698)   contains 1 TSShipUnits. unit: 1 237169059 created from ShipUnit: K113003.TEST_01-001 ..range = 1-1 [batch - 1]
+2012-06-12 09:37:29.878	620840	Debug	Planning	Created a clone tShipment: 239859142 (K113003.MUMBAI->K113003.PUNE) from tShipment: 237169609 (K113003.MUMBAI->K113003.PUNE) [batch - 1]
+2012-06-12 09:37:29.878	620840	Debug	Planning	setTSEquipmentCapacityUsageMap [batch - 1]
+2012-06-12 09:37:29.878	620840	Debug	Planning	tSequipment: SEquipmentGid: null, EquipmentGroup: K113003.40FT_TRAILER(240854214)   contains 1 TSShipUnits. unit: 1 239226511 created from ShipUnit: K113003.TEST_02-001 ..range = 1-1 [batch - 1]
+2012-06-12 09:37:29.878	620840	Debug	Planning	Created a clone tShipment: 239878220 (K113003.PUNE->K113003.BELGAUM) from tShipment: 239240466 (K113003.PUNE->K113003.BELGAUM) [batch - 1]
+2012-06-12 09:37:29.883	620840	Debug	Planning	setTSEquipmentCapacityUsageMap [batch - 1]
+2012-06-12 09:37:29.883	620840	Debug	Planning	tSequipment: SEquipmentGid: null, EquipmentGroup: K113003.40FT_TRAILER(236595698)   contains 1 TSShipUnits. unit: 1 237169059 created from ShipUnit: K113003.TEST_01-001 ..range = 1-1 [batch - 1]
+2012-06-12 09:37:29.884	620840	Debug	Planning	Created a clone tShipment: 241380651 (K113003.MUMBAI->K113003.PUNE) from tShipment: 237169609 (K113003.MUMBAI->K113003.PUNE) [batch - 1]
+2012-06-12 09:37:29.886	620840	Debug	Planning	# of bundles in remainingTOrderBundleList: 2 [batch - 1]
+2012-06-12 09:37:29.886	620840	Debug	Planning	  tOrderBundle: 237483569 [batch - 1]
+2012-06-12 09:37:29.886	620840	Debug	Planning	  tOrderBundle: 237662693 [batch - 1]
+2012-06-12 09:37:29.886	620840	Debug	Planning	minTLWeight: null [batch - 1]
+2012-06-12 09:37:29.886	620840	Debug	Planning	shipment weight: 20000.0 LB [batch - 1]
+2012-06-12 09:37:29.886	620840	Debug	Planning	minTLVolume: null [batch - 1]
+2012-06-12 09:37:29.887	620840	Debug	Planning	shipment volume: 0.0 CUFT [batch - 1]
+2012-06-12 09:37:29.887	620840	Debug	Planning	minTLUsagePercentage: 1.0 [batch - 1]
+2012-06-12 09:37:29.887	620840	Debug	Planning	no xdock, no pools, keep the directMultistopShipment. [batch - 1]
+2012-06-12 09:37:29.887	620840	Debug	Planning	# of bundles in leafBundle of the direct shipment: 1 [batch - 1]
+2012-06-12 09:37:29.887	620840	Debug	Planning	  tOrderBundle: 237662693 [batch - 1]
+2012-06-12 09:37:29.887	620840	Debug	Planning	One multistop direct shipment was keft, # of stops: 2 [batch - 1]
+2012-06-12 09:37:29.887	620840	Debug	Planning	  Orders on this multistop: |K113003.TEST_02| [batch - 1]
+2012-06-12 09:37:29.887	620840	Debug	Planning	  Multistop source: K113003.PUNE [batch - 1]
+2012-06-12 09:37:29.887	620840	Debug	Planning	  Multistop dest: K113003.BELGAUM [batch - 1]
+2012-06-12 09:37:29.888	620840	Debug	Planning	minTLWeight: null [batch - 1]
+2012-06-12 09:37:29.888	620840	Debug	Planning	shipment weight: 20000.0 LB [batch - 1]
+2012-06-12 09:37:29.888	620840	Debug	Planning	minTLVolume: null [batch - 1]
+2012-06-12 09:37:29.888	620840	Debug	Planning	shipment volume: 0.0 CUFT [batch - 1]
+2012-06-12 09:37:29.888	620840	Debug	Planning	minTLUsagePercentage: 1.0 [batch - 1]
+2012-06-12 09:37:29.889	620840	Debug	Planning	no xdock, no pools, keep the directMultistopShipment. [batch - 1]
+2012-06-12 09:37:29.889	620840	Debug	Planning	# of bundles in leafBundle of the direct shipment: 1 [batch - 1]
+2012-06-12 09:37:29.889	620840	Debug	Planning	  tOrderBundle: 237483569 [batch - 1]
+2012-06-12 09:37:29.889	620840	Debug	Planning	One multistop direct shipment was keft, # of stops: 2 [batch - 1]
+2012-06-12 09:37:29.889	620840	Debug	Planning	  Orders on this multistop: |K113003.TEST_01| [batch - 1]
+2012-06-12 09:37:29.889	620840	Debug	Planning	  Multistop source: K113003.MUMBAI [batch - 1]
+2012-06-12 09:37:29.889	620840	Debug	Planning	  Multistop dest: K113003.PUNE [batch - 1]
+2012-06-12 09:37:29.889	620840	Debug	Planning	# tOrderBundle in remainingTOrderBundleList: 0 [batch - 1]
+2012-06-12 09:37:29.889	620840	Debug	Planning	There are 2 Direct Multi Stop Shipment Made  [batch - 1]
+2012-06-12 09:37:29.889	620840	Debug	Planning	Begin splitUnplannedLargeBundlesAndReplaceWithSplitBundles... [batch - 1]
+2012-06-12 09:37:29.889	620840	Debug	Planning	# of bundles in largeBundleToBeSplitByOrderBundleSplitter before split: 0 [batch - 1]
+2012-06-12 09:37:29.889	620840	Debug	Planning	# of bundles in mustShipThruPoolTOrderBundleList before split: 0 [batch - 1]
+2012-06-12 09:37:29.889	620840	Debug	Planning	# of bundles in mustShipThruXDockTOrderBundleList before split: 0 [batch - 1]
+2012-06-12 09:37:29.889	620840	Debug	Planning	# of bundles in remainingTOrderBundleList before split:: 0 [batch - 1]
+2012-06-12 09:37:29.889	620840	Debug	Planning	begin splitLargeBundles.. [batch - 1]
+2012-06-12 09:37:29.89	620840	Debug	Planning	end splitLargeBundles.. [batch - 1]
+2012-06-12 09:37:29.89	620840	Debug	Planning	begin splitLargeBundles.. [batch - 1]
+2012-06-12 09:37:29.89	620840	Debug	Planning	end splitLargeBundles.. [batch - 1]
+2012-06-12 09:37:29.89	620840	Debug	Planning	begin splitLargeBundles.. [batch - 1]
+2012-06-12 09:37:29.89	620840	Debug	Planning	end splitLargeBundles.. [batch - 1]
+2012-06-12 09:37:29.89	620840	Debug	Planning	# of bundles in largeBundleToBeSplitByOrderBundleSplitter after split: 0 [batch - 1]
+2012-06-12 09:37:29.89	620840	Debug	Planning	# of bundles in mustShipThruPoolTOrderBundleList after split: 0 [batch - 1]
+2012-06-12 09:37:29.89	620840	Debug	Planning	# of bundles in mustShipThruXDockTOrderBundleList after split: 0 [batch - 1]
+2012-06-12 09:37:29.89	620840	Debug	Planning	Parameter: MinimizeWaitTimeAtDeconsolPools set to true [batch - 1]
+2012-06-12 09:37:29.89	620840	Debug	Planning	# of directShipmentGraphCollectionFellFromPool is : 0 [batch - 1]
+2012-06-12 09:37:29.89	620840	Debug	Planning	# of directShipmentGraphCollectionFellFromXDock is : 0 [batch - 1]
+2012-06-12 09:37:29.891	620840	Debug	Planning	# of errorFallbackDirectShipmentGraphCollection is : 0 [batch - 1]
+2012-06-12 09:37:29.891	620840	Debug	Planning	# of shipments that will pass to mulistop shipment builder is : 0 [batch - 1]
+2012-06-12 09:37:29.891	620840	Debug	Planning	Total number shipment graphs build from PoolXDockPlanner is: 2 [batch - 1]
+2012-06-12 09:37:29.891	620840	Debug	Planning	Number of direct multistop shipments: 2 [batch - 1]
+2012-06-12 09:37:29.891	620840	Debug	Planning	   One multistop shipment: 
+
+ Graph (nodes) : 
+
+ | Shipment: 239240466 (K113003.PUNE->K113003.BELGAUM) | 
+
+ Graph (links) : 
+ [batch - 1]
+2012-06-12 09:37:29.891	620840	Debug	Planning	       order releases on it:  [batch - 1]
+2012-06-12 09:37:29.891	620840	Debug	Planning	               K113003.TEST_02 [batch - 1]
+2012-06-12 09:37:29.891	620840	Debug	Planning	   One multistop shipment: 
+
+ Graph (nodes) : 
+
+ | Shipment: 237169609 (K113003.MUMBAI->K113003.PUNE) | 
+
+ Graph (links) : 
+ [batch - 1]
+2012-06-12 09:37:29.891	620840	Debug	Planning	       order releases on it:  [batch - 1]
+2012-06-12 09:37:29.891	620840	Debug	Planning	               K113003.TEST_01 [batch - 1]
+2012-06-12 09:37:29.891	620840	Debug	Planning	Number of direct shipments fell from pool: 0 [batch - 1]
+2012-06-12 09:37:29.891	620840	Debug	Planning	Number of deconsol pool shipment graphs: 0 [batch - 1]
+2012-06-12 09:37:29.891	620840	Debug	Planning	Number of consol pool shipment graphs: 0 [batch - 1]
+2012-06-12 09:37:29.891	620840	Debug	Planning	Number of direct shipments fell from xdock: 0 [batch - 1]
+2012-06-12 09:37:29.891	620840	Debug	Planning	Number of xdock shipment graphs: 0 [batch - 1]
+2012-06-12 09:37:29.892	620840	Debug	Planning	Number of shipment graphs origin at xdock: 0 [batch - 1]
+2012-06-12 09:37:29.892	620840	Debug	Planning	Number of direct shipments from remainingDirectShipmentGraphCollection: 0 [batch - 1]
+2012-06-12 09:37:29.892	620840	Debug	Planning	Number of direct shipment graphs of split orders: 0 [batch - 1]
+2012-06-12 09:37:29.892	620840	Debug	Planning	Number of small direct shipment graphs 0 [batch - 1]
+2012-06-12 09:37:29.892	620840	Debug	Planning	Planning Parameter CONNECT_SHIPMENT_GRAPHS_FOR_SPLIT_ORDERS set to true [batch - 1]
+2012-06-12 09:37:29.892	620840	Debug	Planning	Total number shipment graphs finally build: 2 [batch - 1]
+2012-06-12 09:37:29.892	620840	Debug	Planning	   One shipment graph: 
+
+ Graph (nodes) : 
+
+ | Shipment: 239240466 (K113003.PUNE->K113003.BELGAUM) | 
+
+ Graph (links) : 
+ [batch - 1]
+2012-06-12 09:37:29.892	620840	Debug	Planning	      # order releases on it: 1 [batch - 1]
+2012-06-12 09:37:29.892	620840	Debug	Planning	      # of shipments: 1 [batch - 1]
+2012-06-12 09:37:29.892	620840	Debug	Planning	               K113003.TEST_02 [batch - 1]
+2012-06-12 09:37:29.892	620840	Debug	Planning	       shipment src: K113003.PUNE [batch - 1]
+2012-06-12 09:37:29.892	620840	Debug	Planning	       shipment dest: K113003.BELGAUM [batch - 1]
+2012-06-12 09:37:29.893	620840	Debug	Planning	       orders: |K113003.TEST_02| [batch - 1]
+2012-06-12 09:37:29.893	620840	Debug	Planning	   One shipment graph: 
+
+ Graph (nodes) : 
+
+ | Shipment: 237169609 (K113003.MUMBAI->K113003.PUNE) | 
+
+ Graph (links) : 
+ [batch - 1]
+2012-06-12 09:37:29.893	620840	Debug	Planning	      # order releases on it: 1 [batch - 1]
+2012-06-12 09:37:29.893	620840	Debug	Planning	      # of shipments: 1 [batch - 1]
+2012-06-12 09:37:29.893	620840	Debug	Planning	               K113003.TEST_01 [batch - 1]
+2012-06-12 09:37:29.893	620840	Debug	Planning	       shipment src: K113003.MUMBAI [batch - 1]
+2012-06-12 09:37:29.893	620840	Debug	Planning	       shipment dest: K113003.PUNE [batch - 1]
+2012-06-12 09:37:29.893	620840	Debug	Planning	       orders: |K113003.TEST_01| [batch - 1]
+2012-06-12 09:37:29.893	620840	Debug	Planning	ShipmentGroupBuilder - Begin createTShipmentGroups [batch - 1]
+2012-06-12 09:37:29.893	620840	Debug	Planning	ShipmentGroupBuilder - Begin findValidRules [batch - 1]
+2012-06-12 09:37:29.893	620840	Debug	Planning	Number of shipments: 1 [batch - 1]
+2012-06-12 09:37:29.903	620840	Debug	Planning	No current Shipment Group Rules found [batch - 1]
+2012-06-12 09:37:29.903	620840	Debug	Planning	Built shipment groups for one graph [batch - 1]
+2012-06-12 09:37:29.903	620840	Debug	Planning	Begin buildSecondaryChargeShipments... [batch - 1]
+2012-06-12 09:37:29.903	620840	Debug	Planning	Begin buildSecondaryChargeShipmentsForGroups... [batch - 1]
+2012-06-12 09:37:29.903	620840	Debug	Planning	Begin buildSecondaryChargeShipmentsForShipments... [batch - 1]
+2012-06-12 09:37:29.917	620840	Debug	Planning	No secondary charge rule for rule type S [batch - 1]
+2012-06-12 09:37:29.917	620840	Debug	Planning	start retrieving all secondary charge rules for itinerary: K113003.ALL_INDIA_ITINERARY_NON-DEPOT [batch - 1]
+2012-06-12 09:37:29.918	620840	Debug	Planning	# of valid secondary_charge_rules base on itinerary: 0 [batch - 1]
+2012-06-12 09:37:29.918	620840	Debug	Planning	End buildSecondaryChargeShipmentsForShipments... [batch - 1]
+2012-06-12 09:37:29.918	620840	Debug	Planning	Begin buildSecondaryChargeShipmentsForShipmentStops... [batch - 1]
+2012-06-12 09:37:29.923	620840	Debug	Planning	No secondary charge rule for the shipment stop rule, so no secondary charge will built against this rule in buildShipment process [batch - 1]
+2012-06-12 09:37:29.923	620840	Debug	Planning	End buildSecondaryChargeShipmentsForShipments... [batch - 1]
+2012-06-12 09:37:29.923	620840	Debug	Planning	Built secondary charges for shipment groups for one graph [batch - 1]
+2012-06-12 09:37:29.923	620840	Debug	Planning	ShipmentGroupBuilder - Begin createTShipmentGroups [batch - 1]
+2012-06-12 09:37:29.923	620840	Debug	Planning	ShipmentGroupBuilder - Begin findValidRules [batch - 1]
+2012-06-12 09:37:29.923	620840	Debug	Planning	Number of shipments: 1 [batch - 1]
+2012-06-12 09:37:29.93	620840	Debug	Planning	No current Shipment Group Rules found [batch - 1]
+2012-06-12 09:37:29.93	620840	Debug	Planning	Built shipment groups for one graph [batch - 1]
+2012-06-12 09:37:29.93	620840	Debug	Planning	Begin buildSecondaryChargeShipments... [batch - 1]
+2012-06-12 09:37:29.93	620840	Debug	Planning	Begin buildSecondaryChargeShipmentsForGroups... [batch - 1]
+2012-06-12 09:37:29.93	620840	Debug	Planning	Begin buildSecondaryChargeShipmentsForShipments... [batch - 1]
+2012-06-12 09:37:29.935	620840	Debug	Planning	No secondary charge rule for rule type S [batch - 1]
+2012-06-12 09:37:29.935	620840	Debug	Planning	start retrieving all secondary charge rules for itinerary: K113003.ALL_INDIA_ITINERARY_NON-DEPOT [batch - 1]
+2012-06-12 09:37:29.935	620840	Debug	Planning	# of valid secondary_charge_rules base on itinerary: 0 [batch - 1]
+2012-06-12 09:37:29.935	620840	Debug	Planning	End buildSecondaryChargeShipmentsForShipments... [batch - 1]
+2012-06-12 09:37:29.936	620840	Debug	Planning	Begin buildSecondaryChargeShipmentsForShipmentStops... [batch - 1]
+2012-06-12 09:37:29.937	620840	Debug	Planning	No secondary charge rule for the shipment stop rule, so no secondary charge will built against this rule in buildShipment process [batch - 1]
+2012-06-12 09:37:29.937	620840	Debug	Planning	End buildSecondaryChargeShipmentsForShipments... [batch - 1]
+2012-06-12 09:37:29.938	620840	Debug	Planning	Built secondary charges for shipment groups for one graph [batch - 1]
+2012-06-12 09:37:29.938	620840	Debug	Planning	
+ There were 0 order bundle not planned [batch - 1]
+2012-06-12 09:37:29.939	620840	Debug	Planning	Begin PlanningSolutionImprovement ... [batch - 1]
+2012-06-12 09:37:29.939	620840	Debug	Planning	None of the improvement steps is selected or number of iterations is 0. [batch - 1]
+2012-06-12 09:37:29.94	620840	Debug	Planning	Begin consolidateShipmentGraphs [batch - 1]
+2012-06-12 09:37:29.94	620840	Debug	Planning	Begin groupIntoSameItineraryShipmentGraphCollections [batch - 1]
+2012-06-12 09:37:29.94	620840	Debug	Planning	End groupIntoSameItineraryShipmentGraphCollections [batch - 1]
+2012-06-12 09:37:29.94	620840	Debug	Planning	End consolidateShipmentGraphs [batch - 1]
+2012-06-12 09:37:29.94	620840	Debug	Planning	TrailerBuild - Begin createTShipmentGroups [batch - 1]
+2012-06-12 09:37:29.943	620840	Debug	Planning	No Trailer Build Shipment Group Rules found [batch - 1]
+2012-06-12 09:37:29.943	620840	Debug	Planning	Begin automatic continuous move creation [batch - 1]
+2012-06-12 09:37:29.944	620840	Debug	Planning	setTSEquipmentCapacityUsageMap [batch - 1]
+2012-06-12 09:37:29.945	620840	Debug	Planning	tSequipment: SEquipmentGid: null, EquipmentGroup: K113003.40FT_TRAILER(236595698)   contains 1 TSShipUnits. unit: 1 237169059 created from ShipUnit: K113003.TEST_01-001 ..range = 1-1 [batch - 1]
+2012-06-12 09:37:29.945	620840	Debug	Planning	Created a clone tShipment: 239845606 (K113003.MUMBAI->K113003.PUNE) from tShipment: 237169609 (K113003.MUMBAI->K113003.PUNE) [batch - 1]
+2012-06-12 09:37:29.945	620840	Debug	Planning	setTSEquipmentCapacityUsageMap [batch - 1]
+2012-06-12 09:37:29.945	620840	Debug	Planning	tSequipment: SEquipmentGid: null, EquipmentGroup: K113003.40FT_TRAILER(240854214)   contains 1 TSShipUnits. unit: 1 239226511 created from ShipUnit: K113003.TEST_02-001 ..range = 1-1 [batch - 1]
+2012-06-12 09:37:29.945	620840	Debug	Planning	Created a clone tShipment: 239888284 (K113003.PUNE->K113003.BELGAUM) from tShipment: 239240466 (K113003.PUNE->K113003.BELGAUM) [batch - 1]
+2012-06-12 09:37:29.946	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Begin Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:29.946	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): ShipmentGid (if any) = <null> [batch - 1]
+2012-06-12 09:37:29.946	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingPKs = <null> [batch - 1]
+2012-06-12 09:37:29.946	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingRuleSetGid = <null> [batch - 1]
+2012-06-12 09:37:29.946	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateGeoRuleSetTGid = <null> [batch - 1]
+2012-06-12 09:37:29.946	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRates = <true> [batch - 1]
+2012-06-12 09:37:29.946	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRatesOnly = <false> [batch - 1]
+2012-06-12 09:37:29.946	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): checkCmRating = <true> [batch - 1]
+2012-06-12 09:37:29.946	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): useRouteExecutionRates = <false> [batch - 1]
+2012-06-12 09:37:29.947	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Complete Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:29.947	620840	Debug	Planning	RateFinder.findShipmentCostsInCm(): rateGeos [K113003.GATI_MH_CONTIUNOUS_MOVE] [batch - 1]
+2012-06-12 09:37:29.957	620840	Debug	Planning	SQL Find by Cm Sequence Num: select shipment_gid from shipment where cm_name = ? and cm_sequence_num = ?. [batch - 1]
+2012-06-12 09:37:29.963	620840	Debug	Planning	SQL Find by Cm Sequence Num: select shipment_gid from shipment where cm_name = ? and cm_sequence_num = ?. [batch - 1]
+2012-06-12 09:37:29.975	620840	Debug	Planning	RateFinder.findShipmentCosts(): Total 1 rate engine result(s) returned from RateEngine. [batch - 1]
+2012-06-12 09:37:29.976	620840	Debug	Planning	RateFinder.findShipmentCostsInCm(): # feasible rateEngineResults = 1 [batch - 1]
+2012-06-12 09:37:29.976	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Begin Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:29.976	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): ShipmentGid (if any) = <null> [batch - 1]
+2012-06-12 09:37:29.976	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingPKs = <null> [batch - 1]
+2012-06-12 09:37:29.977	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingRuleSetGid = <null> [batch - 1]
+2012-06-12 09:37:29.977	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateGeoRuleSetTGid = <null> [batch - 1]
+2012-06-12 09:37:29.977	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRates = <true> [batch - 1]
+2012-06-12 09:37:29.977	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRatesOnly = <false> [batch - 1]
+2012-06-12 09:37:29.977	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): checkCmRating = <true> [batch - 1]
+2012-06-12 09:37:29.977	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): useRouteExecutionRates = <false> [batch - 1]
+2012-06-12 09:37:29.978	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Complete Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:29.978	620840	Debug	Planning	RateFinder.findShipmentCostsInCm(): rateGeos [K113003.GATI_MH_CONTIUNOUS_MOVE] [batch - 1]
+2012-06-12 09:37:29.982	620840	Debug	Planning	SQL Find by Cm Sequence Num: select shipment_gid from shipment where cm_name = ? and cm_sequence_num = ?. [batch - 1]
+2012-06-12 09:37:29.989	620840	Debug	Planning	SQL Find by Cm Sequence Num: select shipment_gid from shipment where cm_name = ? and cm_sequence_num = ?. [batch - 1]
+2012-06-12 09:37:30.001	620840	Debug	Planning	RateFinder.findShipmentCosts(): Total 1 rate engine result(s) returned from RateEngine. [batch - 1]
+2012-06-12 09:37:30.001	620840	Debug	Planning	RateFinder.findShipmentCostsInCm(): # feasible rateEngineResults = 1 [batch - 1]
+2012-06-12 09:37:30.003	620840	Debug	Planning	Find Cm Ending Exclusion Region SQL: select ceer.region_gid from cm_ending_exclusion_region ceer, hname_set hs, hname_set_member hsm where ceer.rate_offering_gid = ? and ceer.region_gid = hs.region_gid and hs.hname_set_gid = hsm.hname_set_gid and hsm.hname in ('COUNTRY\IND\', 'STATE/PROVINCE\KA\', 'CITY/COUNTRY\BELGAUM\IND\', 'CITY\BELGAUM\KA\IND\', 'LOCATION\K113003.BELGAUM\') [batch - 1]
+2012-06-12 09:37:30.066	620840	Error	Exception	Not enough time to drive between the two shipments.
+
+	at sun.reflect.GeneratedConstructorAccessor755.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at glog.util.exception.GLException.factory(GLException.java:435)
+	at glog.util.exception.GLException.factory(GLException.java:411)
+	at glog.util.exception.GLException.factory(GLException.java:407)
+	at glog.util.exception.GLException.factory(GLException.java:403)
+	at glog.business.action.CMActionExecutor.checkTimeWindow(CMActionExecutor.java:1441)
+	at glog.business.action.CMActionExecutor.checkDownstreamShipmentsTime(CMActionExecutor.java:1369)
+	at glog.business.action.CMActionExecutor.checkCmRule(CMActionExecutor.java:1320)
+	at glog.business.action.CMActionExecutor.linkShipments(CMActionExecutor.java:426)
+	at glog.business.action.CMActionExecutor.autoCreateContinuousMove(CMActionExecutor.java:1221)
+	at glog.business.action.CMActionExecutor.autoCreateContinuousMove(CMActionExecutor.java:1113)
+	at glog.business.consolidation.bulkplan.OrderPlanner.bulkPlan(OrderPlanner.java:554)
+	at glog.business.action.order.OrderActions.planUnassignedOrders(OrderActions.java:907)
+	at glog.business.action.order.BulkPlanActionExecutor.planOrders(BulkPlanActionExecutor.java:287)
+	at glog.business.action.order.BulkPlanActionExecutor.planOrders(BulkPlanActionExecutor.java:117)
+	at glog.business.session.OrderActionSessionBean.planOrders(OrderActionSessionBean.java:1170)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.planOrders(OrderActionSessionServerSideEJBWrapper.java:1290)
+	at glog.business.session.OrderActionSessionHome_likuwd_EOImpl.planOrders(OrderActionSessionHome_likuwd_EOImpl.java:561)
+	at glog.server.workflow.adhoc.BulkPlan.executeOrder(BulkPlan.java:65)
+	at glog.server.workflow.adhoc.BulkPlan.execute(BulkPlan.java:49)
+	at glog.server.workflow.SimpleWorkflow.execute(SimpleWorkflow.java:23)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:64)
+	at glog.server.workflow.WorkflowSessionNonTransServerSideEJBWrapper.execute(WorkflowSessionNonTransServerSideEJBWrapper.java:38)
+	at glog.server.workflow.WorkflowSessionNonTransServerSideEJBWrapper_t6tuwu_EOImpl.execute(WorkflowSessionNonTransServerSideEJBWrapper_t6tuwu_EOImpl.java:278)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:352)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:146)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:98)
+	at glog.util.event.EventThread.run(EventThread.java:82)
+	at java.lang.Thread.run(Thread.java:619)
+ [batch - 1]
+2012-06-12 09:37:30.066	620840	Debug	Planning	Skip because failing rule: Not enough time to drive between the two shipments.
+ [batch - 1]
+2012-06-12 09:37:30.066	620840	Error	Exception	Link unsuccessful See log for details.
+
+	at sun.reflect.GeneratedConstructorAccessor755.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at glog.util.exception.GLException.factory(GLException.java:435)
+	at glog.util.exception.GLException.factory(GLException.java:411)
+	at glog.util.exception.GLException.factory(GLException.java:407)
+	at glog.util.exception.GLException.factory(GLException.java:403)
+	at glog.business.action.CMActionExecutor.linkShipments(CMActionExecutor.java:460)
+	at glog.business.action.CMActionExecutor.autoCreateContinuousMove(CMActionExecutor.java:1221)
+	at glog.business.action.CMActionExecutor.autoCreateContinuousMove(CMActionExecutor.java:1113)
+	at glog.business.consolidation.bulkplan.OrderPlanner.bulkPlan(OrderPlanner.java:554)
+	at glog.business.action.order.OrderActions.planUnassignedOrders(OrderActions.java:907)
+	at glog.business.action.order.BulkPlanActionExecutor.planOrders(BulkPlanActionExecutor.java:287)
+	at glog.business.action.order.BulkPlanActionExecutor.planOrders(BulkPlanActionExecutor.java:117)
+	at glog.business.session.OrderActionSessionBean.planOrders(OrderActionSessionBean.java:1170)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.planOrders(OrderActionSessionServerSideEJBWrapper.java:1290)
+	at glog.business.session.OrderActionSessionHome_likuwd_EOImpl.planOrders(OrderActionSessionHome_likuwd_EOImpl.java:561)
+	at glog.server.workflow.adhoc.BulkPlan.executeOrder(BulkPlan.java:65)
+	at glog.server.workflow.adhoc.BulkPlan.execute(BulkPlan.java:49)
+	at glog.server.workflow.SimpleWorkflow.execute(SimpleWorkflow.java:23)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:64)
+	at glog.server.workflow.WorkflowSessionNonTransServerSideEJBWrapper.execute(WorkflowSessionNonTransServerSideEJBWrapper.java:38)
+	at glog.server.workflow.WorkflowSessionNonTransServerSideEJBWrapper_t6tuwu_EOImpl.execute(WorkflowSessionNonTransServerSideEJBWrapper_t6tuwu_EOImpl.java:278)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:352)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:146)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:98)
+	at glog.util.event.EventThread.run(EventThread.java:82)
+	at java.lang.Thread.run(Thread.java:619)
+ [batch - 1]
+2012-06-12 09:37:30.067	620840	Debug	Planning	setTSEquipmentCapacityUsageMap [batch - 1]
+2012-06-12 09:37:30.067	620840	Debug	Planning	tSequipment: SEquipmentGid: null, EquipmentGroup: K113003.40FT_TRAILER(240854214)   contains 1 TSShipUnits. unit: 1 239226511 created from ShipUnit: K113003.TEST_02-001 ..range = 1-1 [batch - 1]
+2012-06-12 09:37:30.067	620840	Debug	Planning	Created a clone tShipment: 243519733 (K113003.PUNE->K113003.BELGAUM) from tShipment: 239240466 (K113003.PUNE->K113003.BELGAUM) [batch - 1]
+2012-06-12 09:37:30.067	620840	Debug	Planning	setTSEquipmentCapacityUsageMap [batch - 1]
+2012-06-12 09:37:30.068	620840	Debug	Planning	tSequipment: SEquipmentGid: null, EquipmentGroup: K113003.40FT_TRAILER(236595698)   contains 1 TSShipUnits. unit: 1 237169059 created from ShipUnit: K113003.TEST_01-001 ..range = 1-1 [batch - 1]
+2012-06-12 09:37:30.068	620840	Debug	Planning	Created a clone tShipment: 244097501 (K113003.MUMBAI->K113003.PUNE) from tShipment: 237169609 (K113003.MUMBAI->K113003.PUNE) [batch - 1]
+2012-06-12 09:37:30.068	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Begin Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:30.068	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): ShipmentGid (if any) = <null> [batch - 1]
+2012-06-12 09:37:30.068	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingPKs = <null> [batch - 1]
+2012-06-12 09:37:30.069	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingRuleSetGid = <null> [batch - 1]
+2012-06-12 09:37:30.069	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateGeoRuleSetTGid = <null> [batch - 1]
+2012-06-12 09:37:30.069	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRates = <true> [batch - 1]
+2012-06-12 09:37:30.069	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRatesOnly = <false> [batch - 1]
+2012-06-12 09:37:30.069	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): checkCmRating = <true> [batch - 1]
+2012-06-12 09:37:30.069	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): useRouteExecutionRates = <false> [batch - 1]
+2012-06-12 09:37:30.07	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Complete Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:30.07	620840	Debug	Planning	RateFinder.findShipmentCostsInCm(): rateGeos [K113003.GATI_MH_CONTIUNOUS_MOVE] [batch - 1]
+2012-06-12 09:37:30.074	620840	Debug	Planning	SQL Find by Cm Sequence Num: select shipment_gid from shipment where cm_name = ? and cm_sequence_num = ?. [batch - 1]
+2012-06-12 09:37:30.081	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Begin Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:30.081	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): ShipmentGid (if any) = <null> [batch - 1]
+2012-06-12 09:37:30.081	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingPKs = <[K113003.GATI_CONTIUNOUS_MOVE]> [batch - 1]
+2012-06-12 09:37:30.082	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingRuleSetGid = <null> [batch - 1]
+2012-06-12 09:37:30.082	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateGeoRuleSetTGid = <null> [batch - 1]
+2012-06-12 09:37:30.082	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRates = <true> [batch - 1]
+2012-06-12 09:37:30.082	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRatesOnly = <false> [batch - 1]
+2012-06-12 09:37:30.082	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): checkCmRating = <false> [batch - 1]
+2012-06-12 09:37:30.082	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): useRouteExecutionRates = <false> [batch - 1]
+2012-06-12 09:37:30.083	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates : <true> [batch - 1]
+2012-06-12 09:37:30.083	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates Only : <false> [batch - 1]
+2012-06-12 09:37:30.083	620840	Debug	Planning	RateGeoFinderSession.findByLane(): Find RateGeo By Lane SQL: select all rg.rate_geo_seq, ro.rate_offering_seq, ro.transport_mode_gid, ghs.rank, ghd.rank, rg.effective_date, rg.expiration_date, rv.effective_date, rv.expiration_date, ro.rate_offering_type_gid, rg.is_quote from rate_offering ro, rate_geo rg, rate_version rv, lane l, geo_hierarchy ghd, geo_hierarchy ghs, hname_set_member hsms, hname_set_member hsmd where hsms.hname in ('COUNTRY\IND\', 'STATE/PROVINCE\KA\', 'CITY/COUNTRY\BELGAUM\IND\', 'CITY\BELGAUM\KA\IND\', 'LOCATION\K113003.BELGAUM\') and hsmd.hname in ('COUNTRY\IND\', 'STATE/PROVINCE\MH\', 'CITY/COUNTRY\MUMBAI\IND\', 'CITY\MUMBAI\MH\IND\', 'LOCATION\K113003.MUMBAI\') and l.source_hname_set_gid = hsms.hname_set_gid and l.dest_hname_set_gid = hsmd.hname_set_gid and rg.x_lane_gid = l.x_lane_gid and rg.is_active = 'Y' and ro.rate_offering_gid = rg.rate_offering_gid and ro.is_active = 'Y' and (ro.perspective = ? or ro.perspective = ?) and rv.rate_version_gid = ro.rate_version_gid and ghs.geo_hierarchy_gid = hsms.geo_hierarchy_gid and ghd.geo_hierarchy_gid = hsmd.geo_hierarchy_gid [batch - 1]
+2012-06-12 09:37:30.152	620840	Debug	Planning	RateGeoFinderSession.findByZone(): Zone table is empty, skipping query [batch - 1]
+2012-06-12 09:37:30.165	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Begin looking for preferred rates... [batch - 1]
+2012-06-12 09:37:30.166	620840	Debug	Planning	RateGeoFinderSession.findPreferredByLane(): Find Preferred By Lane SQL: select all ro.rate_offering_seq, ro.transport_mode_gid, ghs.rank, ghd.rank, rp.effective_date, rp.expiration_date, ro.servprov_gid from rate_offering ro, rate_preference rp, rate_preference_detail rpd, lane l, geo_hierarchy ghd, geo_hierarchy ghs, hname_set_member hsms, hname_set_member hsmd where hsms.hname in ('COUNTRY\IND\', 'STATE/PROVINCE\KA\', 'CITY/COUNTRY\BELGAUM\IND\', 'CITY\BELGAUM\KA\IND\', 'LOCATION\K113003.BELGAUM\') and hsmd.hname in ('COUNTRY\IND\', 'STATE/PROVINCE\MH\', 'CITY/COUNTRY\MUMBAI\IND\', 'CITY\MUMBAI\MH\IND\', 'LOCATION\K113003.MUMBAI\') and l.source_hname_set_gid = hsms.hname_set_gid and l.dest_hname_set_gid = hsmd.hname_set_gid and rp.x_lane_gid = l.x_lane_gid and rpd.rate_preference_gid = rp.rate_preference_gid and ro.rate_offering_gid = rpd.rate_offering_gid and (ro.perspective = ? or ro.perspective = ?) and ro.is_active = 'Y' and ghs.geo_hierarchy_gid = hsms.geo_hierarchy_gid and ghd.geo_hierarchy_gid = hsmd.geo_hierarchy_gid [batch - 1]
+2012-06-12 09:37:30.203	620840	Debug	Planning	RateGeoFinderSession.findPreferredByZone(): Zone table is empty, skipping query [batch - 1]
+2012-06-12 09:37:30.203	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): No preferred rates are found. [batch - 1]
+2012-06-12 09:37:30.203	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): End looking for preferred rates. [batch - 1]
+2012-06-12 09:37:30.203	620840	Debug	Planning	********************************************************************* [batch - 1]
+2012-06-12 09:37:30.203	620840	Debug	Planning	Rule Manager begin evaluating 1  entities [batch - 1]
+2012-06-12 09:37:30.205	620840	Debug	Planning	RateOfferingUOMRule.check: No constraints specified, returning true. [batch - 1]
+2012-06-12 09:37:30.205	620840	Debug	Planning	Current time at first stop of time zone: Asia/Calcutta is: 2012-06-12 09:37:30 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:30.205	620840	Debug	Planning	Shipment start time: null [batch - 1]
+2012-06-12 09:37:30.205	620840	Debug	Planning	Shipment earliest possible start time: null [batch - 1]
+2012-06-12 09:37:30.205	620840	Debug	Planning	Entity: K113003.GATI_CONTIUNOUS_MOVE  passed [batch - 1]
+2012-06-12 09:37:30.205	620840	Debug	Planning	Rule Manager returning with 1 entities [batch - 1]
+2012-06-12 09:37:30.206	620840	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateOfferings(): Validating rate offering customer domain profiles against shipment/order domain names. [batch - 1]
+2012-06-12 09:37:30.206	620840	Debug	Planning	No Special Services are needed for this bundle, returning true... [batch - 1]
+2012-06-12 09:37:30.206	620840	Debug	Planning	After filtering special services for mode, no Special Services are needed for this bundle, returning true... [batch - 1]
+2012-06-12 09:37:30.206	620840	Debug	Planning	Rate Geo: K113003.GATI_MH_CONTIUNOUS_MOVE/Rate service: K113003.GATI [batch - 1]
+2012-06-12 09:37:30.207	620840	Error	Planning	RateGeoRateServiceRule did NOT get ShipmentOrderBundle from TShipment.... returning true. [batch - 1]
+2012-06-12 09:37:30.207	620840	Error	Planning	RateGeoProfileRule did NOT get ShipmentOrderBundle from TShipment.... returning true. [batch - 1]
+2012-06-12 09:37:30.207	620840	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos() [batch - 1]
+2012-06-12 09:37:30.207	620840	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos(): Returning: [batch - 1]
+2012-06-12 09:37:30.207	620840	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos(): RateGeo <RateGeoFinderResult: tRateGeo = <K113003.GATI_MH_CONTIUNOUS_MOVE>, composite = <CompositeRateGeoPK: key = <TL|11544|90330|1293868800000|1609401600000>, hashCode = <-1439331314>, rgSeq = <90330>, rgGid = <K113003.GATI_MH_CONTIUNOUS_MOVE>, roSeq = <11544>, roGid = <K113003.GATI_CONTIUNOUS_MOVE>, rank = <40>, transportModeGid = <TL>, effDate = <2011-01-01 08:00:00 UTC>, expDate = <2020-12-31 08:00:00 UTC>, servprovGid = <null>>, isPreferred = <false>> [batch - 1]
+2012-06-12 09:37:30.208	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Complete Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:30.208	620840	Debug	Planning	RateFinder.findShipmentCosts(): total 1 rate geo(s) returned from RateGeoFinder. [batch - 1]
+2012-06-12 09:37:30.21	620840	Debug	Planning	TShipment.InitAccessorials(): Shipment accessorial map is {} [batch - 1]
+2012-06-12 09:37:30.218	620840	Debug	Planning	RateFinder.findShipmentCosts(): Total 1 rate engine result(s) returned from RateEngine. [batch - 1]
+2012-06-12 09:37:30.218	620840	Debug	Planning	SQL Find by Cm Sequence Num: select shipment_gid from shipment where cm_name = ? and cm_sequence_num = ?. [batch - 1]
+2012-06-12 09:37:30.224	620840	Debug	Planning	SQL Find by Cm Sequence Num: select shipment_gid from shipment where cm_name = ? and cm_sequence_num = ?. [batch - 1]
+2012-06-12 09:37:30.228	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Begin Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:30.228	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): ShipmentGid (if any) = <null> [batch - 1]
+2012-06-12 09:37:30.228	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingPKs = <[K113003.GATI_CONTIUNOUS_MOVE]> [batch - 1]
+2012-06-12 09:37:30.228	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingRuleSetGid = <null> [batch - 1]
+2012-06-12 09:37:30.228	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateGeoRuleSetTGid = <null> [batch - 1]
+2012-06-12 09:37:30.228	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRates = <true> [batch - 1]
+2012-06-12 09:37:30.229	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRatesOnly = <false> [batch - 1]
+2012-06-12 09:37:30.229	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): checkCmRating = <false> [batch - 1]
+2012-06-12 09:37:30.229	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): useRouteExecutionRates = <false> [batch - 1]
+2012-06-12 09:37:30.229	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates : <true> [batch - 1]
+2012-06-12 09:37:30.229	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates Only : <false> [batch - 1]
+2012-06-12 09:37:30.23	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Begin looking for preferred rates... [batch - 1]
+2012-06-12 09:37:30.231	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): No preferred rates are found. [batch - 1]
+2012-06-12 09:37:30.231	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): End looking for preferred rates. [batch - 1]
+2012-06-12 09:37:30.231	620840	Debug	Planning	********************************************************************* [batch - 1]
+2012-06-12 09:37:30.231	620840	Debug	Planning	Rule Manager begin evaluating 1  entities [batch - 1]
+2012-06-12 09:37:30.233	620840	Debug	Planning	RateOfferingUOMRule.check: No constraints specified, returning true. [batch - 1]
+2012-06-12 09:37:30.233	620840	Debug	Planning	Current time at first stop of time zone: Asia/Calcutta is: 2012-06-12 09:37:30 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:30.233	620840	Debug	Planning	Shipment start time: null [batch - 1]
+2012-06-12 09:37:30.234	620840	Debug	Planning	Shipment earliest possible start time: null [batch - 1]
+2012-06-12 09:37:30.234	620840	Debug	Planning	Entity: K113003.GATI_CONTIUNOUS_MOVE  passed [batch - 1]
+2012-06-12 09:37:30.234	620840	Debug	Planning	Rule Manager returning with 1 entities [batch - 1]
+2012-06-12 09:37:30.234	620840	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateOfferings(): Validating rate offering customer domain profiles against shipment/order domain names. [batch - 1]
+2012-06-12 09:37:30.235	620840	Debug	Planning	No Special Services are needed for this bundle, returning true... [batch - 1]
+2012-06-12 09:37:30.235	620840	Debug	Planning	After filtering special services for mode, no Special Services are needed for this bundle, returning true... [batch - 1]
+2012-06-12 09:37:30.235	620840	Debug	Planning	Rate Geo: K113003.GATI_MH_CONTIUNOUS_MOVE/Rate service: K113003.GATI [batch - 1]
+2012-06-12 09:37:30.235	620840	Error	Planning	RateGeoRateServiceRule did NOT get ShipmentOrderBundle from TShipment.... returning true. [batch - 1]
+2012-06-12 09:37:30.236	620840	Error	Planning	RateGeoProfileRule did NOT get ShipmentOrderBundle from TShipment.... returning true. [batch - 1]
+2012-06-12 09:37:30.236	620840	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos() [batch - 1]
+2012-06-12 09:37:30.237	620840	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos(): Returning: [batch - 1]
+2012-06-12 09:37:30.237	620840	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos(): RateGeo <RateGeoFinderResult: tRateGeo = <K113003.GATI_MH_CONTIUNOUS_MOVE>, composite = <CompositeRateGeoPK: key = <TL|11544|90330|1293868800000|1609401600000>, hashCode = <-1439331314>, rgSeq = <90330>, rgGid = <K113003.GATI_MH_CONTIUNOUS_MOVE>, roSeq = <11544>, roGid = <K113003.GATI_CONTIUNOUS_MOVE>, rank = <40>, transportModeGid = <TL>, effDate = <2011-01-01 08:00:00 UTC>, expDate = <2020-12-31 08:00:00 UTC>, servprovGid = <null>>, isPreferred = <false>> [batch - 1]
+2012-06-12 09:37:30.237	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Complete Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:30.237	620840	Debug	Planning	RateFinder.findShipmentCosts(): total 1 rate geo(s) returned from RateGeoFinder. [batch - 1]
+2012-06-12 09:37:30.24	620840	Debug	Planning	TShipment.InitAccessorials(): Shipment accessorial map is {} [batch - 1]
+2012-06-12 09:37:30.247	620840	Debug	Planning	RateFinder.findShipmentCosts(): Total 1 rate engine result(s) returned from RateEngine. [batch - 1]
+2012-06-12 09:37:30.248	620840	Debug	Planning	SQL Find by Cm Sequence Num: select shipment_gid from shipment where cm_name = ? and cm_sequence_num = ?. [batch - 1]
+2012-06-12 09:37:30.259	620840	Debug	Planning	RateFinder.findShipmentCosts(): Total 1 rate engine result(s) returned from RateEngine. [batch - 1]
+2012-06-12 09:37:30.259	620840	Debug	Planning	RateFinder.findShipmentCostsInCm(): # feasible rateEngineResults = 1 [batch - 1]
+2012-06-12 09:37:30.259	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Begin Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:30.259	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): ShipmentGid (if any) = <null> [batch - 1]
+2012-06-12 09:37:30.259	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingPKs = <null> [batch - 1]
+2012-06-12 09:37:30.259	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingRuleSetGid = <null> [batch - 1]
+2012-06-12 09:37:30.259	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateGeoRuleSetTGid = <null> [batch - 1]
+2012-06-12 09:37:30.259	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRates = <true> [batch - 1]
+2012-06-12 09:37:30.259	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRatesOnly = <false> [batch - 1]
+2012-06-12 09:37:30.26	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): checkCmRating = <true> [batch - 1]
+2012-06-12 09:37:30.26	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): useRouteExecutionRates = <false> [batch - 1]
+2012-06-12 09:37:30.26	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Complete Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:30.26	620840	Debug	Planning	RateFinder.findShipmentCostsInCm(): rateGeos [K113003.GATI_MH_CONTIUNOUS_MOVE] [batch - 1]
+2012-06-12 09:37:30.263	620840	Debug	Planning	SQL Find by Cm Sequence Num: select shipment_gid from shipment where cm_name = ? and cm_sequence_num = ?. [batch - 1]
+2012-06-12 09:37:30.269	620840	Debug	Planning	SQL Find by Cm Sequence Num: select shipment_gid from shipment where cm_name = ? and cm_sequence_num = ?. [batch - 1]
+2012-06-12 09:37:30.274	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Begin Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:30.274	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): ShipmentGid (if any) = <null> [batch - 1]
+2012-06-12 09:37:30.275	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingPKs = <[K113003.GATI_CONTIUNOUS_MOVE]> [batch - 1]
+2012-06-12 09:37:30.275	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingRuleSetGid = <null> [batch - 1]
+2012-06-12 09:37:30.275	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateGeoRuleSetTGid = <null> [batch - 1]
+2012-06-12 09:37:30.275	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRates = <true> [batch - 1]
+2012-06-12 09:37:30.275	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRatesOnly = <false> [batch - 1]
+2012-06-12 09:37:30.275	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): checkCmRating = <false> [batch - 1]
+2012-06-12 09:37:30.275	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): useRouteExecutionRates = <false> [batch - 1]
+2012-06-12 09:37:30.276	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates : <true> [batch - 1]
+2012-06-12 09:37:30.276	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates Only : <false> [batch - 1]
+2012-06-12 09:37:30.277	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Begin looking for preferred rates... [batch - 1]
+2012-06-12 09:37:30.277	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): No preferred rates are found. [batch - 1]
+2012-06-12 09:37:30.277	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): End looking for preferred rates. [batch - 1]
+2012-06-12 09:37:30.278	620840	Debug	Planning	********************************************************************* [batch - 1]
+2012-06-12 09:37:30.278	620840	Debug	Planning	Rule Manager begin evaluating 1  entities [batch - 1]
+2012-06-12 09:37:30.28	620840	Debug	Planning	RateOfferingUOMRule.check: No constraints specified, returning true. [batch - 1]
+2012-06-12 09:37:30.28	620840	Debug	Planning	Current time at first stop of time zone: Asia/Calcutta is: 2012-06-12 09:37:30 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:30.28	620840	Debug	Planning	Shipment start time: null [batch - 1]
+2012-06-12 09:37:30.28	620840	Debug	Planning	Shipment earliest possible start time: null [batch - 1]
+2012-06-12 09:37:30.281	620840	Debug	Planning	Entity: K113003.GATI_CONTIUNOUS_MOVE  passed [batch - 1]
+2012-06-12 09:37:30.281	620840	Debug	Planning	Rule Manager returning with 1 entities [batch - 1]
+2012-06-12 09:37:30.281	620840	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateOfferings(): Validating rate offering customer domain profiles against shipment/order domain names. [batch - 1]
+2012-06-12 09:37:30.282	620840	Debug	Planning	No Special Services are needed for this bundle, returning true... [batch - 1]
+2012-06-12 09:37:30.282	620840	Debug	Planning	After filtering special services for mode, no Special Services are needed for this bundle, returning true... [batch - 1]
+2012-06-12 09:37:30.282	620840	Debug	Planning	Rate Geo: K113003.GATI_MH_CONTIUNOUS_MOVE/Rate service: K113003.GATI [batch - 1]
+2012-06-12 09:37:30.282	620840	Error	Planning	RateGeoRateServiceRule did NOT get ShipmentOrderBundle from TShipment.... returning true. [batch - 1]
+2012-06-12 09:37:30.283	620840	Error	Planning	RateGeoProfileRule did NOT get ShipmentOrderBundle from TShipment.... returning true. [batch - 1]
+2012-06-12 09:37:30.283	620840	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos() [batch - 1]
+2012-06-12 09:37:30.283	620840	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos(): Returning: [batch - 1]
+2012-06-12 09:37:30.284	620840	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos(): RateGeo <RateGeoFinderResult: tRateGeo = <K113003.GATI_MH_CONTIUNOUS_MOVE>, composite = <CompositeRateGeoPK: key = <TL|11544|90330|1293868800000|1609401600000>, hashCode = <-1439331314>, rgSeq = <90330>, rgGid = <K113003.GATI_MH_CONTIUNOUS_MOVE>, roSeq = <11544>, roGid = <K113003.GATI_CONTIUNOUS_MOVE>, rank = <40>, transportModeGid = <TL>, effDate = <2011-01-01 08:00:00 UTC>, expDate = <2020-12-31 08:00:00 UTC>, servprovGid = <null>>, isPreferred = <false>> [batch - 1]
+2012-06-12 09:37:30.284	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Complete Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:30.284	620840	Debug	Planning	RateFinder.findShipmentCosts(): total 1 rate geo(s) returned from RateGeoFinder. [batch - 1]
+2012-06-12 09:37:30.286	620840	Debug	Planning	TShipment.InitAccessorials(): Shipment accessorial map is {} [batch - 1]
+2012-06-12 09:37:30.294	620840	Debug	Planning	RateFinder.findShipmentCosts(): Total 1 rate engine result(s) returned from RateEngine. [batch - 1]
+2012-06-12 09:37:30.295	620840	Debug	Planning	SQL Find by Cm Sequence Num: select shipment_gid from shipment where cm_name = ? and cm_sequence_num = ?. [batch - 1]
+2012-06-12 09:37:30.301	620840	Debug	Planning	SQL Find by Cm Sequence Num: select shipment_gid from shipment where cm_name = ? and cm_sequence_num = ?. [batch - 1]
+2012-06-12 09:37:30.306	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Begin Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:30.306	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): ShipmentGid (if any) = <null> [batch - 1]
+2012-06-12 09:37:30.306	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingPKs = <[K113003.GATI_CONTIUNOUS_MOVE]> [batch - 1]
+2012-06-12 09:37:30.306	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingRuleSetGid = <null> [batch - 1]
+2012-06-12 09:37:30.307	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateGeoRuleSetTGid = <null> [batch - 1]
+2012-06-12 09:37:30.307	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRates = <true> [batch - 1]
+2012-06-12 09:37:30.307	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRatesOnly = <false> [batch - 1]
+2012-06-12 09:37:30.307	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): checkCmRating = <false> [batch - 1]
+2012-06-12 09:37:30.307	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): useRouteExecutionRates = <false> [batch - 1]
+2012-06-12 09:37:30.307	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates : <true> [batch - 1]
+2012-06-12 09:37:30.308	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates Only : <false> [batch - 1]
+2012-06-12 09:37:30.309	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Begin looking for preferred rates... [batch - 1]
+2012-06-12 09:37:30.309	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): No preferred rates are found. [batch - 1]
+2012-06-12 09:37:30.309	620840	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): End looking for preferred rates. [batch - 1]
+2012-06-12 09:37:30.31	620840	Debug	Planning	********************************************************************* [batch - 1]
+2012-06-12 09:37:30.31	620840	Debug	Planning	Rule Manager begin evaluating 1  entities [batch - 1]
+2012-06-12 09:37:30.311	620840	Debug	Planning	RateOfferingUOMRule.check: No constraints specified, returning true. [batch - 1]
+2012-06-12 09:37:30.312	620840	Debug	Planning	Current time at first stop of time zone: Asia/Calcutta is: 2012-06-12 09:37:30 Asia/Calcutta [batch - 1]
+2012-06-12 09:37:30.312	620840	Debug	Planning	Shipment start time: null [batch - 1]
+2012-06-12 09:37:30.312	620840	Debug	Planning	Shipment earliest possible start time: null [batch - 1]
+2012-06-12 09:37:30.312	620840	Debug	Planning	Entity: K113003.GATI_CONTIUNOUS_MOVE  passed [batch - 1]
+2012-06-12 09:37:30.312	620840	Debug	Planning	Rule Manager returning with 1 entities [batch - 1]
+2012-06-12 09:37:30.313	620840	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateOfferings(): Validating rate offering customer domain profiles against shipment/order domain names. [batch - 1]
+2012-06-12 09:37:30.314	620840	Debug	Planning	No Special Services are needed for this bundle, returning true... [batch - 1]
+2012-06-12 09:37:30.314	620840	Debug	Planning	After filtering special services for mode, no Special Services are needed for this bundle, returning true... [batch - 1]
+2012-06-12 09:37:30.314	620840	Debug	Planning	Rate Geo: K113003.GATI_MH_CONTIUNOUS_MOVE/Rate service: K113003.GATI [batch - 1]
+2012-06-12 09:37:30.314	620840	Error	Planning	RateGeoRateServiceRule did NOT get ShipmentOrderBundle from TShipment.... returning true. [batch - 1]
+2012-06-12 09:37:30.315	620840	Error	Planning	RateGeoProfileRule did NOT get ShipmentOrderBundle from TShipment.... returning true. [batch - 1]
+2012-06-12 09:37:30.315	620840	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos() [batch - 1]
+2012-06-12 09:37:30.315	620840	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos(): Returning: [batch - 1]
+2012-06-12 09:37:30.315	620840	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos(): RateGeo <RateGeoFinderResult: tRateGeo = <K113003.GATI_MH_CONTIUNOUS_MOVE>, composite = <CompositeRateGeoPK: key = <TL|11544|90330|1293868800000|1609401600000>, hashCode = <-1439331314>, rgSeq = <90330>, rgGid = <K113003.GATI_MH_CONTIUNOUS_MOVE>, roSeq = <11544>, roGid = <K113003.GATI_CONTIUNOUS_MOVE>, rank = <40>, transportModeGid = <TL>, effDate = <2011-01-01 08:00:00 UTC>, expDate = <2020-12-31 08:00:00 UTC>, servprovGid = <null>>, isPreferred = <false>> [batch - 1]
+2012-06-12 09:37:30.316	620840	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Complete Finding Valid Rate Geos ... [batch - 1]
+2012-06-12 09:37:30.316	620840	Debug	Planning	RateFinder.findShipmentCosts(): total 1 rate geo(s) returned from RateGeoFinder. [batch - 1]
+2012-06-12 09:37:30.318	620840	Debug	Planning	TShipment.InitAccessorials(): Shipment accessorial map is {} [batch - 1]
+2012-06-12 09:37:30.326	620840	Debug	Planning	RateFinder.findShipmentCosts(): Total 1 rate engine result(s) returned from RateEngine. [batch - 1]
+2012-06-12 09:37:30.333	620840	Debug	Planning	RateFinder.findShipmentCosts(): Total 1 rate engine result(s) returned from RateEngine. [batch - 1]
+2012-06-12 09:37:30.333	620840	Debug	Planning	RateFinder.findShipmentCostsInCm(): # feasible rateEngineResults = 1 [batch - 1]
+2012-06-12 09:37:30.335	620840	Debug	Planning	Find Cm Ending Exclusion Region SQL: select ceer.region_gid from cm_ending_exclusion_region ceer, hname_set hs, hname_set_member hsm where ceer.rate_offering_gid = ? and ceer.region_gid = hs.region_gid and hs.hname_set_gid = hsm.hname_set_gid and hsm.hname in ('COUNTRY\IND\', 'STATE/PROVINCE\MH\', 'CITY/COUNTRY\PUNE\IND\', 'CITY\PUNE\MH\IND\', 'LOCATION\K113003.PUNE\') [batch - 1]
+2012-06-12 09:37:30.376	620840	Error	Exception	Not enough time to drive between the two shipments.
+
+	at sun.reflect.GeneratedConstructorAccessor755.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at glog.util.exception.GLException.factory(GLException.java:435)
+	at glog.util.exception.GLException.factory(GLException.java:411)
+	at glog.util.exception.GLException.factory(GLException.java:407)
+	at glog.util.exception.GLException.factory(GLException.java:403)
+	at glog.business.action.CMActionExecutor.checkTimeWindow(CMActionExecutor.java:1441)
+	at glog.business.action.CMActionExecutor.checkDownstreamShipmentsTime(CMActionExecutor.java:1369)
+	at glog.business.action.CMActionExecutor.checkCmRule(CMActionExecutor.java:1320)
+	at glog.business.action.CMActionExecutor.linkShipments(CMActionExecutor.java:426)
+	at glog.business.action.CMActionExecutor.autoCreateContinuousMove(CMActionExecutor.java:1221)
+	at glog.business.action.CMActionExecutor.autoCreateContinuousMove(CMActionExecutor.java:1113)
+	at glog.business.consolidation.bulkplan.OrderPlanner.bulkPlan(OrderPlanner.java:554)
+	at glog.business.action.order.OrderActions.planUnassignedOrders(OrderActions.java:907)
+	at glog.business.action.order.BulkPlanActionExecutor.planOrders(BulkPlanActionExecutor.java:287)
+	at glog.business.action.order.BulkPlanActionExecutor.planOrders(BulkPlanActionExecutor.java:117)
+	at glog.business.session.OrderActionSessionBean.planOrders(OrderActionSessionBean.java:1170)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.planOrders(OrderActionSessionServerSideEJBWrapper.java:1290)
+	at glog.business.session.OrderActionSessionHome_likuwd_EOImpl.planOrders(OrderActionSessionHome_likuwd_EOImpl.java:561)
+	at glog.server.workflow.adhoc.BulkPlan.executeOrder(BulkPlan.java:65)
+	at glog.server.workflow.adhoc.BulkPlan.execute(BulkPlan.java:49)
+	at glog.server.workflow.SimpleWorkflow.execute(SimpleWorkflow.java:23)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:64)
+	at glog.server.workflow.WorkflowSessionNonTransServerSideEJBWrapper.execute(WorkflowSessionNonTransServerSideEJBWrapper.java:38)
+	at glog.server.workflow.WorkflowSessionNonTransServerSideEJBWrapper_t6tuwu_EOImpl.execute(WorkflowSessionNonTransServerSideEJBWrapper_t6tuwu_EOImpl.java:278)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:352)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:146)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:98)
+	at glog.util.event.EventThread.run(EventThread.java:82)
+	at java.lang.Thread.run(Thread.java:619)
+ [batch - 1]
+2012-06-12 09:37:30.376	620840	Debug	Planning	Skip because failing rule: Not enough time to drive between the two shipments.
+ [batch - 1]
+2012-06-12 09:37:30.376	620840	Error	Exception	Link unsuccessful See log for details.
+
+	at sun.reflect.GeneratedConstructorAccessor755.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at glog.util.exception.GLException.factory(GLException.java:435)
+	at glog.util.exception.GLException.factory(GLException.java:411)
+	at glog.util.exception.GLException.factory(GLException.java:407)
+	at glog.util.exception.GLException.factory(GLException.java:403)
+	at glog.business.action.CMActionExecutor.linkShipments(CMActionExecutor.java:460)
+	at glog.business.action.CMActionExecutor.autoCreateContinuousMove(CMActionExecutor.java:1221)
+	at glog.business.action.CMActionExecutor.autoCreateContinuousMove(CMActionExecutor.java:1113)
+	at glog.business.consolidation.bulkplan.OrderPlanner.bulkPlan(OrderPlanner.java:554)
+	at glog.business.action.order.OrderActions.planUnassignedOrders(OrderActions.java:907)
+	at glog.business.action.order.BulkPlanActionExecutor.planOrders(BulkPlanActionExecutor.java:287)
+	at glog.business.action.order.BulkPlanActionExecutor.planOrders(BulkPlanActionExecutor.java:117)
+	at glog.business.session.OrderActionSessionBean.planOrders(OrderActionSessionBean.java:1170)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.planOrders(OrderActionSessionServerSideEJBWrapper.java:1290)
+	at glog.business.session.OrderActionSessionHome_likuwd_EOImpl.planOrders(OrderActionSessionHome_likuwd_EOImpl.java:561)
+	at glog.server.workflow.adhoc.BulkPlan.executeOrder(BulkPlan.java:65)
+	at glog.server.workflow.adhoc.BulkPlan.execute(BulkPlan.java:49)
+	at glog.server.workflow.SimpleWorkflow.execute(SimpleWorkflow.java:23)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:64)
+	at glog.server.workflow.WorkflowSessionNonTransServerSideEJBWrapper.execute(WorkflowSessionNonTransServerSideEJBWrapper.java:38)
+	at glog.server.workflow.WorkflowSessionNonTransServerSideEJBWrapper_t6tuwu_EOImpl.execute(WorkflowSessionNonTransServerSideEJBWrapper_t6tuwu_EOImpl.java:278)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:352)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:146)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:98)
+	at glog.util.event.EventThread.run(EventThread.java:82)
+	at java.lang.Thread.run(Thread.java:619)
+ [batch - 1]
+2012-06-12 09:37:30.377	620840	Debug	Planning	End automatic continuous move creation [batch - 1]
+2012-06-12 09:37:30.377	620840	Debug	Planning	making order movement for shipment graph: 
+
+ Graph (nodes) : 
+
+ | Shipment: 239240466 (K113003.PUNE->K113003.BELGAUM) | 
+
+ Graph (links) : 
+ [batch - 1]
+2012-06-12 09:37:30.377	620840	Debug	Planning	marking existing OMs with null OM gid for insertion: 
+
+ Graph (nodes) : 
+
+ | Shipment: 239240466 (K113003.PUNE->K113003.BELGAUM) | 
+
+ Graph (links) : 
+ [batch - 1]
+2012-06-12 09:37:30.377	620840	Debug	Planning	processing order release: K113003.TEST_02 [batch - 1]
+2012-06-12 09:37:30.378	620840	Debug	Planning	.. on shipment: 239240466 (K113003.PUNE->K113003.BELGAUM) [batch - 1]
+2012-06-12 09:37:30.378	620840	Debug	Planning	..  itinerary:  K113003.ALL_INDIA_ITINERARY_NON-DEPOT [batch - 1]
+2012-06-12 09:37:30.378	620840	Debug	Planning	..  leg      :  K113003.73128 [batch - 1]
+2012-06-12 09:37:30.378	620840	Debug	Planning	# order movements made: 1 [batch - 1]
+2012-06-12 09:37:30.378	620840	Debug	Planning	making order movement for shipment graph: 
+
+ Graph (nodes) : 
+
+ | Shipment: 237169609 (K113003.MUMBAI->K113003.PUNE) | 
+
+ Graph (links) : 
+ [batch - 1]
+2012-06-12 09:37:30.378	620840	Debug	Planning	marking existing OMs with null OM gid for insertion: 
+
+ Graph (nodes) : 
+
+ | Shipment: 237169609 (K113003.MUMBAI->K113003.PUNE) | 
+
+ Graph (links) : 
+ [batch - 1]
+2012-06-12 09:37:30.378	620840	Debug	Planning	processing order release: K113003.TEST_01 [batch - 1]
+2012-06-12 09:37:30.378	620840	Debug	Planning	.. on shipment: 237169609 (K113003.MUMBAI->K113003.PUNE) [batch - 1]
+2012-06-12 09:37:30.378	620840	Debug	Planning	..  itinerary:  K113003.ALL_INDIA_ITINERARY_NON-DEPOT [batch - 1]
+2012-06-12 09:37:30.379	620840	Debug	Planning	..  leg      :  K113003.73128 [batch - 1]
+2012-06-12 09:37:30.379	620840	Debug	Planning	# order movements made: 1 [batch - 1]
+2012-06-12 09:37:30.379	620840	Debug	Planning	current graph to be saved contains shipments #: 1 [batch - 1]
+2012-06-12 09:37:30.379	620840	Debug	Planning	current graph to be saved contains shipments #: 1 [batch - 1]
+2012-06-12 09:37:30.381	620840	Debug	Planning	begin post processing carrier capacity optimization...  [batch - 1]
+2012-06-12 09:37:30.381	620840	Debug	Planning	end post processing carrier capacity optimization...  [batch - 1]
+2012-06-12 09:37:30.381	620840	Debug	Planning	begin shipment post processing...  [batch - 1]
+2012-06-12 09:37:30.382	620840	Debug	Planning	Start build shipment postProcessing... with the following shipments:  [batch - 1]
+2012-06-12 09:37:30.382	620840	Debug	Planning	---> tShipment: 239240466 (K113003.PUNE->K113003.BELGAUM) [batch - 1]
+2012-06-12 09:37:30.382	620840	Debug	Planning	Start setStopTypes for tShipment: 239240466 (K113003.PUNE->K113003.BELGAUM)  [batch - 1]
+2012-06-12 09:37:30.382	620840	Debug	Planning	End setStopTypes for tShipment: 239240466 (K113003.PUNE->K113003.BELGAUM)  [batch - 1]
+2012-06-12 09:37:30.382	620840	Debug	Planning	Start makeShipmentInvolvedParties... [batch - 1]
+2012-06-12 09:37:30.382	620840	Debug	Planning	Start retrieveAndSetExistingShipmentInvolvedParties... [batch - 1]
+2012-06-12 09:37:30.382	620840	Debug	Planning	End retrieveAndSetExistingShipmentInvolvedParties... [batch - 1]
+2012-06-12 09:37:30.382	620840	Debug	Planning	Start appendIntermediaryInvolvedPartyDatasToTShipments... [batch - 1]
+2012-06-12 09:37:30.382	620840	Debug	Planning	Start appendServProvInvolvedPartyDatasToTShipments... [batch - 1]
+2012-06-12 09:37:30.396	620840	Debug	Planning	No involved parties found for serv prov, BILL_FROM [batch - 1]
+2012-06-12 09:37:30.397	620840	Debug	Planning	No involved parties found for serv prov, REMIT_TO [batch - 1]
+2012-06-12 09:37:30.398	620840	Debug	Planning	End appendServProvInvolvedPartyDatasToTShipments. [batch - 1]
+2012-06-12 09:37:30.398	620840	Debug	Planning	Start appendMasterCorporationInvolvedPartyDatasToTShipments... [batch - 1]
+2012-06-12 09:37:30.407	620840	Debug	Planning	Start appendOrderReleaseInvPartyDatasToTShipment... [batch - 1]
+2012-06-12 09:37:30.422	620840	Debug	Planning	End appendOrderReleaseInvPartyDatasToTShipment. [batch - 1]
+2012-06-12 09:37:30.422	620840	Debug	Planning	Start appendLegInvolvedPartyDatasToTShipments... [batch - 1]
+2012-06-12 09:37:30.424	620840	Debug	Planning	End appendLegInvolvedPartyDatasToTShipments. [batch - 1]
+2012-06-12 09:37:30.424	620840	Debug	Planning	End makeShipmentInvolvedParties. [batch - 1]
+2012-06-12 09:37:30.438	620840	Debug	Planning	Propagating shipment remarks
+ [batch - 1]
+2012-06-12 09:37:30.438	620840	Debug	Planning	Done propagating shipment remarks for 0 costs
+ [batch - 1]
+2012-06-12 09:37:30.438	620840	Debug	Planning	Assigning shipment ports [batch - 1]
+2012-06-12 09:37:30.438	620840	Debug	Planning	Done assigning shipment ports [batch - 1]
+2012-06-12 09:37:30.438	620840	Debug	Planning	SShipUnitRecalcHelper::calculate - begin recalc for TSShipUnit [batch - 1]
+2012-06-12 09:37:30.438	620840	Debug	Planning	SShipUnitRecalcHelper::calculate(TSShipUnit) - SShipUnit:null total gross weight:20000.0 LB volume:null [batch - 1]
+2012-06-12 09:37:30.439	620840	Debug	Planning	Start makeShipmentRefnums... [batch - 1]
+2012-06-12 09:37:30.439	620840	Debug	Planning	End makeShipmentRefnums... [batch - 1]
+2012-06-12 09:37:30.439	620840	Debug	Planning	Start calculation of utilizations (weight, volume, equipment ref units) for TShipment: 239240466 (K113003.PUNE->K113003.BELGAUM) [batch - 1]
+2012-06-12 09:37:30.44	620840	Debug	Planning	Calculate equiment reference unit utilizaiton. [batch - 1]
+2012-06-12 09:37:30.44	620840	Debug	Planning	Planning parameter: CHECK EQUIPMENT CAPACITY IN REFERENCE UNITS is off, skip. [batch - 1]
+2012-06-12 09:37:30.44	620840	Debug	Planning	End build shipment postProcessing. [batch - 1]
+2012-06-12 09:37:30.44	620840	Debug	Planning	Begin postProcessingCarrierCommitments.. [batch - 1]
+2012-06-12 09:37:30.5	620840	Debug	Planning	End  postProcessingCarrierCommitments.. [batch - 1]
+2012-06-12 09:37:30.5	620840	Debug	Planning	end shipment post processing...  [batch - 1]
+2012-06-12 09:37:30.5	620840	Debug	Planning	begin save this graph...  [batch - 1]
+2012-06-12 09:37:30.5	620840	Debug	Planning	Start commitShipmentGraph in ShipmentUpdateSessionBean ... [batch - 1]
+2012-06-12 09:37:30.5	620840	Debug	Planning	Order helper object is null, return perspective:B [batch - 1]
+2012-06-12 09:37:30.501	620840	Debug	Planning	Persistence is inserting or updating SShipUnitData (parentPk = null) in bulk ... [batch - 1]
+2012-06-12 09:37:30.501	620840	Debug	Planning	Some SShipUnitData being passed are new.  Inserting ... [batch - 1]
+2012-06-12 09:37:30.526	620840	Debug	Planning	Persistence is inserting or updating SShipUnitLineData (parentPk = K113003.TEST_02-001-024) in bulk ... [batch - 1]
+2012-06-12 09:37:30.526	620840	Debug	Planning	Some SShipUnitLineData being passed are new.  Inserting ... [batch - 1]
+2012-06-12 09:37:30.564	620840	Debug	Workflow	Registering Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [K113003.TEST_02-001-024] [batch - 1]
+2012-06-12 09:37:30.565	620840	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = K113003.TEST_02-001-024 1) in bulk ... [batch - 1]
+2012-06-12 09:37:30.565	620840	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = K113003.TEST_02-001-024 1) in bulk ... [batch - 1]
+2012-06-12 09:37:30.565	620840	Debug	Planning	Persistence is inserting or updating SShipUnitRefnumData (parentPk = K113003.TEST_02-001-024) in bulk ... [batch - 1]
+2012-06-12 09:37:30.565	620840	Debug	Planning	Persistence is inserting or updating SShipUnitRemarkData (parentPk = K113003.TEST_02-001-024) in bulk ... [batch - 1]
+2012-06-12 09:37:30.565	620840	Debug	Planning	Persistence is inserting or updating SShipUnitSealData (parentPk = K113003.TEST_02-001-024) in bulk ... [batch - 1]
+2012-06-12 09:37:30.565	620840	Debug	Planning	Persistence is inserting or updating SEquipmentData (parentPk = null) ... [batch - 1]
+2012-06-12 09:37:30.565	620840	Debug	Planning	SEquipmentData being passed is new.  Inserting ... [batch - 1]
+2012-06-12 09:37:30.566	620840	Debug	Planning	Trying to populate SEquipment Data. [batch - 1]
+2012-06-12 09:37:30.567	620840	Debug	Planning	All SEquipent relevant values are null. [batch - 1]
+2012-06-12 09:37:30.587	620840	Debug	Planning	Persistence is inserting or updating SEquipmentSShipUnitJoinData (parentPk = K113003.73623889) in bulk ... [batch - 1]
+2012-06-12 09:37:30.587	620840	Debug	Planning	Some SEquipmentSShipUnitJoinData being passed are new.  Inserting ... [batch - 1]
+2012-06-12 09:37:30.59	620840	Debug	Planning	Persistence is inserting or updating SShipUnitPieceData (parentPk = null) in bulk ... [batch - 1]
+2012-06-12 09:37:30.591	620840	Debug	Planning	Persistence is inserting or updating ShipmentData (parentPk = null) ... [batch - 1]
+2012-06-12 09:37:30.592	620840	Debug	Planning	ShipmentData being passed is new.  Inserting ... [batch - 1]
+2012-06-12 09:37:30.642	620840	Debug	Planning	Shipment modified/created: K113003.01047 [batch - 1]
+2012-06-12 09:37:30.642	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopData (parentPk = K113003.01047) ... [batch - 1]
+2012-06-12 09:37:30.642	620840	Debug	Planning	ShipmentStopData being passed is new.  Inserting ... [batch - 1]
+2012-06-12 09:37:30.674	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopDData (parentPk = K113003.01047 1) in bulk ... [batch - 1]
+2012-06-12 09:37:30.674	620840	Debug	Planning	Some ShipmentStopDData being passed are new.  Inserting ... [batch - 1]
+2012-06-12 09:37:30.683	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopInvPartyData (parentPk = K113003.01047 1) in bulk ... [batch - 1]
+2012-06-12 09:37:30.683	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopRefnumData (parentPk = K113003.01047 1) in bulk ... [batch - 1]
+2012-06-12 09:37:30.683	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopRemarkData (parentPk = K113003.01047 1) in bulk ... [batch - 1]
+2012-06-12 09:37:30.691	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopData (parentPk = K113003.01047) ... [batch - 1]
+2012-06-12 09:37:30.691	620840	Debug	Planning	ShipmentStopData being passed is new.  Inserting ... [batch - 1]
+2012-06-12 09:37:30.692	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopDData (parentPk = K113003.01047 2) in bulk ... [batch - 1]
+2012-06-12 09:37:30.692	620840	Debug	Planning	Some ShipmentStopDData being passed are new.  Inserting ... [batch - 1]
+2012-06-12 09:37:30.694	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopInvPartyData (parentPk = K113003.01047 2) in bulk ... [batch - 1]
+2012-06-12 09:37:30.694	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopRefnumData (parentPk = K113003.01047 2) in bulk ... [batch - 1]
+2012-06-12 09:37:30.694	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopRemarkData (parentPk = K113003.01047 2) in bulk ... [batch - 1]
+2012-06-12 09:37:30.695	620840	Debug	Planning	Persistence is inserting or updating ShipmentSpecialServiceData (parentPk = K113003.01047) ... [batch - 1]
+2012-06-12 09:37:30.696	620840	Debug	Planning	ShipmentSpecialServiceData being passed is new.  Inserting ... [batch - 1]
+2012-06-12 09:37:30.714	620840	Debug	Planning	Persistence is inserting or updating ShipmentSpecialServiceData (parentPk = K113003.01047) ... [batch - 1]
+2012-06-12 09:37:30.714	620840	Debug	Planning	ShipmentSpecialServiceData being passed is new.  Inserting ... [batch - 1]
+2012-06-12 09:37:30.718	620840	Debug	Planning	Persistence is inserting or updating ShipmentSEquipmentJoinData (parentPk = K113003.01047) in bulk ... [batch - 1]
+2012-06-12 09:37:30.719	620840	Debug	Planning	Some ShipmentSEquipmentJoinData being passed are new.  Inserting ... [batch - 1]
+2012-06-12 09:37:30.723	620840	Debug	Planning	Persistence is inserting or updating ShipmentRefnumData (parentPk = K113003.01047) in bulk ... [batch - 1]
+2012-06-12 09:37:30.733	620840	Debug	Planning	There are 0 shipment inf cost records [batch - 1]
+2012-06-12 09:37:30.733	620840	Debug	Planning	after commiting shipment inf costs [batch - 1]
+2012-06-12 09:37:30.733	620840	Debug	Planning	before makeShipmentRefnums [batch - 1]
+2012-06-12 09:37:30.759	620840	Debug	Planning	after makeShipmentRefnums [batch - 1]
+2012-06-12 09:37:30.759	620840	Debug	Planning	before commitShipmentInvolvedParties [batch - 1]
+2012-06-12 09:37:30.759	620840	Debug	Planning	Persistence is inserting or updating ShipmentInvolvedPartyData (parentPk = K113003.01047) in bulk ... [batch - 1]
+2012-06-12 09:37:30.759	620840	Debug	Planning	after commitShipmentInvolvedParties [batch - 1]
+2012-06-12 09:37:30.759	620840	Debug	Planning	after commitShipmentInvolvedPartyAddresses [batch - 1]
+2012-06-12 09:37:30.759	620840	Debug	Planning	before committing shipment transactional event contacts [batch - 1]
+2012-06-12 09:37:30.759	620840	Debug	Planning	after committing shipment transactional event contacts [batch - 1]
+2012-06-12 09:37:30.759	620840	Debug	Planning	before commiting shipment texts [batch - 1]
+2012-06-12 09:37:30.759	620840	Debug	Planning	after commiting shipment texts [batch - 1]
+2012-06-12 09:37:30.768	620840	Debug	Planning	before commiting ship_commit_alloc_joins [batch - 1]
+2012-06-12 09:37:30.768	620840	Debug	Planning	After commiting ship_commit_alloc_joins [batch - 1]
+2012-06-12 09:37:30.768	620840	Debug	Planning	before commiting ship_commit_count_joins [batch - 1]
+2012-06-12 09:37:30.768	620840	Debug	Planning	After commiting ship_commit_count_joins [batch - 1]
+2012-06-12 09:37:30.768	620840	Debug	Planning	Performed the following recalculations: [ShipmentStopFieldsSync, ShipmentCalculatedEquipmentFieldsSync, ShipmentCalculatedOrderReleaseFieldsSync, ShipmentCalculatedCostFieldsSync, ShipmentCalculatedFieldsSync, ShipmentCalculatedEquipmentRefUnitFieldsSync, ShipmentCalculatedUtilFieldsSync] for shipmentPK: K113003.01047 [batch - 1]
+2012-06-12 09:37:30.768	620840	Debug	Planning	begin updateOmShipmentGid.. [batch - 1]
+2012-06-12 09:37:30.768	620840	Debug	Planning	end updateOmShipmentGid.. [batch - 1]
+2012-06-12 09:37:30.768	620840	Debug	Planning	start saveOrderMovements... [batch - 1]
+2012-06-12 09:37:30.768	620840	Debug	Planning	before save order_movements... [batch - 1]
+2012-06-12 09:37:30.768	620840	Debug	Planning	Begin OrderMovementSaver::saveOrderMovement... [batch - 1]
+2012-06-12 09:37:30.837	620840	Debug	Planning	End OrderMovementSaver::saveOrderMovement... [batch - 1]
+2012-06-12 09:37:30.837	620840	Debug	Planning	after save order_movements [batch - 1]
+2012-06-12 09:37:30.837	620840	Debug	Planning	before setOrderReleasesStatus... [batch - 1]
+2012-06-12 09:37:30.837	620840	Debug	Planning	Set Status of OrderRelease: K113003.TEST_02 to GC3_APPL_OR_ASSIGN_ORDER. [batch - 1]
+2012-06-12 09:37:30.838	620840	Debug	Planning	Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ?  src:K113003.PUNE/changed:false  dest:K113003.BELGAUM/changed:false [batch - 1]
+2012-06-12 09:37:30.841	620840	Debug	Planning	Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ?  src:K113003.PUNE/changed:false  dest:K113003.BELGAUM/changed:false [batch - 1]
+2012-06-12 09:37:30.847	620840	Debug	Planning	Successfully set order related attributes. [batch - 1]
+2012-06-12 09:37:30.847	620840	Debug	Planning	after setOrderReleasesStatus [batch - 1]
+2012-06-12 09:37:30.847	620840	Debug	Planning	end saveOrderMovements. [batch - 1]
+2012-06-12 09:37:30.848	620840	Debug	Planning	Order helper object is null, return perspective:B [batch - 1]
+2012-06-12 09:37:30.848	620840	Debug	Planning	Set Status of OrderRelease: K113003.TEST_02 to GC3_APPL_OR_ASSIGN_ORDER. [batch - 1]
+2012-06-12 09:37:30.848	620840	Debug	Planning	Assign Itinerary: K113003.ALL_INDIA_ITINERARY_NON-DEPOT to OrderRelease: K113003.TEST_02 [batch - 1]
+2012-06-12 09:37:30.849	620840	Debug	Planning	Assign bulk plan ID: K113003.20120612-0007 to OrderRelease: K113003.TEST_02 [batch - 1]
+2012-06-12 09:37:30.849	620840	Debug	Planning	Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ?  src:K113003.PUNE/changed:false  dest:K113003.BELGAUM/changed:false [batch - 1]
+2012-06-12 09:37:30.854	620840	Debug	Planning	Successfully set order related attributes. [batch - 1]
+2012-06-12 09:37:30.855	620840	Debug	Planning	Order helper object is null, return perspective:B [batch - 1]
+2012-06-12 09:37:30.855	620840	Debug	Planning	Successfully set order movement related attributes. [batch - 1]
+2012-06-12 09:37:30.855	620840	Debug	Planning	Order helper object is null, return perspective:B [batch - 1]
+2012-06-12 09:37:30.855	620840	Debug	Planning	Successfully set order movement related attributes. [batch - 1]
+2012-06-12 09:37:30.86	620840	Debug	Planning	PlanedShipmentCreated topic published for shipment K113003.01047 [batch - 1]
+2012-06-12 09:37:30.861	620840	Debug	Planning	Returning from shipment update session bean. [batch - 1]
+2012-06-12 09:37:30.869	620840	Debug	Workflow	Executing Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [K113003.TEST_02-001-024] [batch - 1]
+2012-06-12 09:37:30.875	620840	Debug	Workflow	Executing topic Recalculate Shipment Totals: pk=K113003.01047 [batch - 1]
+2012-06-12 09:37:30.876	620840	Debug	Workflow	Starting workflow Simple Workflow (245847531) in response to Recalculate Shipment Totals: pk=K113003.01047 [batch - 1]
+2012-06-12 09:37:30.885	620840	Debug	Workflow	Completing workflow Simple Workflow (245847531) [batch - 1]
+2012-06-12 09:37:30.889	620840	Debug	Workflow	Executing topic Recalculate Shipment Order Release Totals: pk=K113003.01047 [batch - 1]
+2012-06-12 09:37:30.89	620840	Debug	Workflow	Starting workflow Simple Workflow (245990419) in response to Recalculate Shipment Order Release Totals: pk=K113003.01047 [batch - 1]
+2012-06-12 09:37:30.895	620840	Debug	Workflow	Completing workflow Simple Workflow (245990419) [batch - 1]
+2012-06-12 09:37:30.898	620840	Debug	Workflow	Publishing topic PlannedShipmentCreated: shipment=K113003.01047, dataSource=USER on queue execution, group null [batch - 1]
+2012-06-12 09:37:30.898	620840	Debug	Planning	end save this graph...  [batch - 1]
+2012-06-12 09:37:30.898	620840	Debug	Planning	Updating tBulkPlanResult after a graph is saved. [batch - 1]
+2012-06-12 09:37:30.899	620840	Debug	Workflow	Starting workflow Plan Or Execute Shipments (237881063) in response to PlannedShipmentCreated: shipment=K113003.01047, dataSource=USER [execution - 1]
+2012-06-12 09:37:30.9	620840	Debug	Workflow	Completing workflow Plan Or Execute Shipments (237881063) [execution - 1]
+2012-06-12 09:37:30.903	620840	Debug	Planning	# of order release Pks specified: 1 [batch - 1]
+2012-06-12 09:37:30.903	620840	Debug	Planning	# of TOrderReleases found in the graph: 1 [batch - 1]
+2012-06-12 09:37:30.903	620840	Debug	Planning	get TBulkPlanByModeResult for mode: TL [batch - 1]
+2012-06-12 09:37:30.904	620840	Debug	Planning	return tBulkPlanByModeResult newly constructed: <BulkPlanByModeResult bulk Plan Gid, mode= K113003.20120612-0007 TL
+<-- Order Release Statistics -->
+ Num Of Order Releases Planned = null
+<-- Order Movement Statistics -->
+ Num Of Order Movements Planned = 0
+<-- Shipment Statistics -->
+ Num Of Shipments Built = null [batch - 1]
+2012-06-12 09:37:30.905	620840	Debug	Planning	get TBulkPlanByServprovResult for servprov: K113003.GATI [batch - 1]
+2012-06-12 09:37:30.905	620840	Debug	Planning	return tBulkPlanByServprovResult newly constructed: <BulkPlanByServprovResult bulk Plan Gid, mode= K113003.20120612-0007 K113003.GATI
+<-- Order Release Statistics -->
+ Num Of Order Releases Planned = null
+<-- Order Movement Statistics -->
+ Num Of Order Movements Planned = 0
+<-- Shipment Statistics -->
+ Num Of Shipments Built = null [batch - 1]
+2012-06-12 09:37:30.905	620840	Debug	Planning	Committing tBulkPlanResult after a graph is saved. [batch - 1]
+2012-06-12 09:37:30.937	620840	Debug	Planning	begin post processing carrier capacity optimization...  [batch - 1]
+2012-06-12 09:37:30.938	620840	Debug	Planning	end post processing carrier capacity optimization...  [batch - 1]
+2012-06-12 09:37:30.938	620840	Debug	Planning	begin shipment post processing...  [batch - 1]
+2012-06-12 09:37:30.938	620840	Debug	Planning	Start build shipment postProcessing... with the following shipments:  [batch - 1]
+2012-06-12 09:37:30.939	620840	Debug	Planning	---> tShipment: 237169609 (K113003.MUMBAI->K113003.PUNE) [batch - 1]
+2012-06-12 09:37:30.939	620840	Debug	Planning	Start setStopTypes for tShipment: 237169609 (K113003.MUMBAI->K113003.PUNE)  [batch - 1]
+2012-06-12 09:37:30.939	620840	Debug	Planning	End setStopTypes for tShipment: 237169609 (K113003.MUMBAI->K113003.PUNE)  [batch - 1]
+2012-06-12 09:37:30.939	620840	Debug	Planning	Start makeShipmentInvolvedParties... [batch - 1]
+2012-06-12 09:37:30.939	620840	Debug	Planning	Start retrieveAndSetExistingShipmentInvolvedParties... [batch - 1]
+2012-06-12 09:37:30.94	620840	Debug	Planning	End retrieveAndSetExistingShipmentInvolvedParties... [batch - 1]
+2012-06-12 09:37:30.94	620840	Debug	Planning	Start appendIntermediaryInvolvedPartyDatasToTShipments... [batch - 1]
+2012-06-12 09:37:30.94	620840	Debug	Planning	Start appendServProvInvolvedPartyDatasToTShipments... [batch - 1]
+2012-06-12 09:37:30.944	620840	Debug	Planning	No involved parties found for serv prov, BILL_FROM [batch - 1]
+2012-06-12 09:37:30.945	620840	Debug	Planning	No involved parties found for serv prov, REMIT_TO [batch - 1]
+2012-06-12 09:37:30.945	620840	Debug	Planning	End appendServProvInvolvedPartyDatasToTShipments. [batch - 1]
+2012-06-12 09:37:30.945	620840	Debug	Planning	Start appendMasterCorporationInvolvedPartyDatasToTShipments... [batch - 1]
+2012-06-12 09:37:30.949	620840	Debug	Planning	Start appendOrderReleaseInvPartyDatasToTShipment... [batch - 1]
+2012-06-12 09:37:30.958	620840	Debug	Planning	End appendOrderReleaseInvPartyDatasToTShipment. [batch - 1]
+2012-06-12 09:37:30.959	620840	Debug	Planning	Start appendLegInvolvedPartyDatasToTShipments... [batch - 1]
+2012-06-12 09:37:30.96	620840	Debug	Planning	End appendLegInvolvedPartyDatasToTShipments. [batch - 1]
+2012-06-12 09:37:30.96	620840	Debug	Planning	End makeShipmentInvolvedParties. [batch - 1]
+2012-06-12 09:37:30.966	620840	Debug	Planning	Propagating shipment remarks
+ [batch - 1]
+2012-06-12 09:37:30.966	620840	Debug	Planning	Done propagating shipment remarks for 0 costs
+ [batch - 1]
+2012-06-12 09:37:30.966	620840	Debug	Planning	Assigning shipment ports [batch - 1]
+2012-06-12 09:37:30.966	620840	Debug	Planning	Done assigning shipment ports [batch - 1]
+2012-06-12 09:37:30.966	620840	Debug	Planning	SShipUnitRecalcHelper::calculate - begin recalc for TSShipUnit [batch - 1]
+2012-06-12 09:37:30.966	620840	Debug	Planning	SShipUnitRecalcHelper::calculate(TSShipUnit) - SShipUnit:null total gross weight:20000.0 LB volume:null [batch - 1]
+2012-06-12 09:37:30.966	620840	Debug	Planning	Start makeShipmentRefnums... [batch - 1]
+2012-06-12 09:37:30.967	620840	Debug	Planning	End makeShipmentRefnums... [batch - 1]
+2012-06-12 09:37:30.967	620840	Debug	Planning	Start calculation of utilizations (weight, volume, equipment ref units) for TShipment: 237169609 (K113003.MUMBAI->K113003.PUNE) [batch - 1]
+2012-06-12 09:37:30.968	620840	Debug	Planning	Calculate equiment reference unit utilizaiton. [batch - 1]
+2012-06-12 09:37:30.968	620840	Debug	Planning	Planning parameter: CHECK EQUIPMENT CAPACITY IN REFERENCE UNITS is off, skip. [batch - 1]
+2012-06-12 09:37:30.968	620840	Debug	Planning	End build shipment postProcessing. [batch - 1]
+2012-06-12 09:37:30.968	620840	Debug	Planning	Begin postProcessingCarrierCommitments.. [batch - 1]
+2012-06-12 09:37:31.023	620840	Debug	Planning	End  postProcessingCarrierCommitments.. [batch - 1]
+2012-06-12 09:37:31.023	620840	Debug	Planning	end shipment post processing...  [batch - 1]
+2012-06-12 09:37:31.023	620840	Debug	Planning	begin save this graph...  [batch - 1]
+2012-06-12 09:37:31.023	620840	Debug	Planning	Start commitShipmentGraph in ShipmentUpdateSessionBean ... [batch - 1]
+2012-06-12 09:37:31.023	620840	Debug	Planning	Order helper object is null, return perspective:B [batch - 1]
+2012-06-12 09:37:31.024	620840	Debug	Planning	Persistence is inserting or updating SShipUnitData (parentPk = null) in bulk ... [batch - 1]
+2012-06-12 09:37:31.024	620840	Debug	Planning	Some SShipUnitData being passed are new.  Inserting ... [batch - 1]
+2012-06-12 09:37:31.031	620840	Debug	Planning	Persistence is inserting or updating SShipUnitLineData (parentPk = K113003.TEST_01-001-027) in bulk ... [batch - 1]
+2012-06-12 09:37:31.031	620840	Debug	Planning	Some SShipUnitLineData being passed are new.  Inserting ... [batch - 1]
+2012-06-12 09:37:31.034	620840	Debug	Workflow	Registering Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [K113003.TEST_01-001-027] [batch - 1]
+2012-06-12 09:37:31.035	620840	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = K113003.TEST_01-001-027 1) in bulk ... [batch - 1]
+2012-06-12 09:37:31.035	620840	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = K113003.TEST_01-001-027 1) in bulk ... [batch - 1]
+2012-06-12 09:37:31.035	620840	Debug	Planning	Persistence is inserting or updating SShipUnitRefnumData (parentPk = K113003.TEST_01-001-027) in bulk ... [batch - 1]
+2012-06-12 09:37:31.035	620840	Debug	Planning	Persistence is inserting or updating SShipUnitRemarkData (parentPk = K113003.TEST_01-001-027) in bulk ... [batch - 1]
+2012-06-12 09:37:31.035	620840	Debug	Planning	Persistence is inserting or updating SShipUnitSealData (parentPk = K113003.TEST_01-001-027) in bulk ... [batch - 1]
+2012-06-12 09:37:31.035	620840	Debug	Planning	Persistence is inserting or updating SEquipmentData (parentPk = null) ... [batch - 1]
+2012-06-12 09:37:31.035	620840	Debug	Planning	SEquipmentData being passed is new.  Inserting ... [batch - 1]
+2012-06-12 09:37:31.036	620840	Debug	Planning	Trying to populate SEquipment Data. [batch - 1]
+2012-06-12 09:37:31.036	620840	Debug	Planning	All SEquipent relevant values are null. [batch - 1]
+2012-06-12 09:37:31.039	620840	Debug	Planning	Persistence is inserting or updating SEquipmentSShipUnitJoinData (parentPk = K113003.73623890) in bulk ... [batch - 1]
+2012-06-12 09:37:31.039	620840	Debug	Planning	Some SEquipmentSShipUnitJoinData being passed are new.  Inserting ... [batch - 1]
+2012-06-12 09:37:31.04	620840	Debug	Planning	Persistence is inserting or updating SShipUnitPieceData (parentPk = null) in bulk ... [batch - 1]
+2012-06-12 09:37:31.041	620840	Debug	Planning	Persistence is inserting or updating ShipmentData (parentPk = null) ... [batch - 1]
+2012-06-12 09:37:31.041	620840	Debug	Planning	ShipmentData being passed is new.  Inserting ... [batch - 1]
+2012-06-12 09:37:31.058	620840	Debug	Planning	Shipment modified/created: K113003.01048 [batch - 1]
+2012-06-12 09:37:31.058	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopData (parentPk = K113003.01048) ... [batch - 1]
+2012-06-12 09:37:31.058	620840	Debug	Planning	ShipmentStopData being passed is new.  Inserting ... [batch - 1]
+2012-06-12 09:37:31.06	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopDData (parentPk = K113003.01048 1) in bulk ... [batch - 1]
+2012-06-12 09:37:31.06	620840	Debug	Planning	Some ShipmentStopDData being passed are new.  Inserting ... [batch - 1]
+2012-06-12 09:37:31.062	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopInvPartyData (parentPk = K113003.01048 1) in bulk ... [batch - 1]
+2012-06-12 09:37:31.062	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopRefnumData (parentPk = K113003.01048 1) in bulk ... [batch - 1]
+2012-06-12 09:37:31.063	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopRemarkData (parentPk = K113003.01048 1) in bulk ... [batch - 1]
+2012-06-12 09:37:31.064	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopData (parentPk = K113003.01048) ... [batch - 1]
+2012-06-12 09:37:31.064	620840	Debug	Planning	ShipmentStopData being passed is new.  Inserting ... [batch - 1]
+2012-06-12 09:37:31.065	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopDData (parentPk = K113003.01048 2) in bulk ... [batch - 1]
+2012-06-12 09:37:31.065	620840	Debug	Planning	Some ShipmentStopDData being passed are new.  Inserting ... [batch - 1]
+2012-06-12 09:37:31.067	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopInvPartyData (parentPk = K113003.01048 2) in bulk ... [batch - 1]
+2012-06-12 09:37:31.067	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopRefnumData (parentPk = K113003.01048 2) in bulk ... [batch - 1]
+2012-06-12 09:37:31.067	620840	Debug	Planning	Persistence is inserting or updating ShipmentStopRemarkData (parentPk = K113003.01048 2) in bulk ... [batch - 1]
+2012-06-12 09:37:31.068	620840	Debug	Planning	Persistence is inserting or updating ShipmentSpecialServiceData (parentPk = K113003.01048) ... [batch - 1]
+2012-06-12 09:37:31.068	620840	Debug	Planning	ShipmentSpecialServiceData being passed is new.  Inserting ... [batch - 1]
+2012-06-12 09:37:31.07	620840	Debug	Planning	Persistence is inserting or updating ShipmentSpecialServiceData (parentPk = K113003.01048) ... [batch - 1]
+2012-06-12 09:37:31.07	620840	Debug	Planning	ShipmentSpecialServiceData being passed is new.  Inserting ... [batch - 1]
+2012-06-12 09:37:31.072	620840	Debug	Planning	Persistence is inserting or updating ShipmentSEquipmentJoinData (parentPk = K113003.01048) in bulk ... [batch - 1]
+2012-06-12 09:37:31.073	620840	Debug	Planning	Some ShipmentSEquipmentJoinData being passed are new.  Inserting ... [batch - 1]
+2012-06-12 09:37:31.075	620840	Debug	Planning	Persistence is inserting or updating ShipmentRefnumData (parentPk = K113003.01048) in bulk ... [batch - 1]
+2012-06-12 09:37:31.078	620840	Debug	Planning	There are 0 shipment inf cost records [batch - 1]
+2012-06-12 09:37:31.078	620840	Debug	Planning	after commiting shipment inf costs [batch - 1]
+2012-06-12 09:37:31.078	620840	Debug	Planning	before makeShipmentRefnums [batch - 1]
+2012-06-12 09:37:31.102	620840	Debug	Planning	after makeShipmentRefnums [batch - 1]
+2012-06-12 09:37:31.102	620840	Debug	Planning	before commitShipmentInvolvedParties [batch - 1]
+2012-06-12 09:37:31.103	620840	Debug	Planning	Persistence is inserting or updating ShipmentInvolvedPartyData (parentPk = K113003.01048) in bulk ... [batch - 1]
+2012-06-12 09:37:31.103	620840	Debug	Planning	after commitShipmentInvolvedParties [batch - 1]
+2012-06-12 09:37:31.103	620840	Debug	Planning	after commitShipmentInvolvedPartyAddresses [batch - 1]
+2012-06-12 09:37:31.103	620840	Debug	Planning	before committing shipment transactional event contacts [batch - 1]
+2012-06-12 09:37:31.103	620840	Debug	Planning	after committing shipment transactional event contacts [batch - 1]
+2012-06-12 09:37:31.103	620840	Debug	Planning	before commiting shipment texts [batch - 1]
+2012-06-12 09:37:31.103	620840	Debug	Planning	after commiting shipment texts [batch - 1]
+2012-06-12 09:37:31.116	620840	Debug	Planning	before commiting ship_commit_alloc_joins [batch - 1]
+2012-06-12 09:37:31.116	620840	Debug	Planning	After commiting ship_commit_alloc_joins [batch - 1]
+2012-06-12 09:37:31.116	620840	Debug	Planning	before commiting ship_commit_count_joins [batch - 1]
+2012-06-12 09:37:31.116	620840	Debug	Planning	After commiting ship_commit_count_joins [batch - 1]
+2012-06-12 09:37:31.117	620840	Debug	Planning	Performed the following recalculations: [ShipmentStopFieldsSync, ShipmentCalculatedEquipmentFieldsSync, ShipmentCalculatedOrderReleaseFieldsSync, ShipmentCalculatedCostFieldsSync, ShipmentCalculatedFieldsSync, ShipmentCalculatedEquipmentRefUnitFieldsSync, ShipmentCalculatedUtilFieldsSync] for shipmentPK: K113003.01048 [batch - 1]
+2012-06-12 09:37:31.117	620840	Debug	Planning	begin updateOmShipmentGid.. [batch - 1]
+2012-06-12 09:37:31.117	620840	Debug	Planning	end updateOmShipmentGid.. [batch - 1]
+2012-06-12 09:37:31.117	620840	Debug	Planning	start saveOrderMovements... [batch - 1]
+2012-06-12 09:37:31.117	620840	Debug	Planning	before save order_movements... [batch - 1]
+2012-06-12 09:37:31.117	620840	Debug	Planning	Begin OrderMovementSaver::saveOrderMovement... [batch - 1]
+2012-06-12 09:37:31.135	620840	Debug	Planning	End OrderMovementSaver::saveOrderMovement... [batch - 1]
+2012-06-12 09:37:31.135	620840	Debug	Planning	after save order_movements [batch - 1]
+2012-06-12 09:37:31.135	620840	Debug	Planning	before setOrderReleasesStatus... [batch - 1]
+2012-06-12 09:37:31.135	620840	Debug	Planning	Set Status of OrderRelease: K113003.TEST_01 to GC3_APPL_OR_ASSIGN_ORDER. [batch - 1]
+2012-06-12 09:37:31.136	620840	Debug	Planning	Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ?  src:K113003.MUMBAI/changed:false  dest:K113003.PUNE/changed:false [batch - 1]
+2012-06-12 09:37:31.139	620840	Debug	Planning	Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ?  src:K113003.MUMBAI/changed:false  dest:K113003.PUNE/changed:false [batch - 1]
+2012-06-12 09:37:31.145	620840	Debug	Planning	Successfully set order related attributes. [batch - 1]
+2012-06-12 09:37:31.145	620840	Debug	Planning	after setOrderReleasesStatus [batch - 1]
+2012-06-12 09:37:31.145	620840	Debug	Planning	end saveOrderMovements. [batch - 1]
+2012-06-12 09:37:31.145	620840	Debug	Planning	Order helper object is null, return perspective:B [batch - 1]
+2012-06-12 09:37:31.146	620840	Debug	Planning	Set Status of OrderRelease: K113003.TEST_01 to GC3_APPL_OR_ASSIGN_ORDER. [batch - 1]
+2012-06-12 09:37:31.146	620840	Debug	Planning	Assign Itinerary: K113003.ALL_INDIA_ITINERARY_NON-DEPOT to OrderRelease: K113003.TEST_01 [batch - 1]
+2012-06-12 09:37:31.146	620840	Debug	Planning	Assign bulk plan ID: K113003.20120612-0007 to OrderRelease: K113003.TEST_01 [batch - 1]
+2012-06-12 09:37:31.146	620840	Debug	Planning	Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ?  src:K113003.MUMBAI/changed:false  dest:K113003.PUNE/changed:false [batch - 1]
+2012-06-12 09:37:31.152	620840	Debug	Planning	Successfully set order related attributes. [batch - 1]
+2012-06-12 09:37:31.152	620840	Debug	Planning	Order helper object is null, return perspective:B [batch - 1]
+2012-06-12 09:37:31.152	620840	Debug	Planning	Successfully set order movement related attributes. [batch - 1]
+2012-06-12 09:37:31.152	620840	Debug	Planning	Order helper object is null, return perspective:B [batch - 1]
+2012-06-12 09:37:31.152	620840	Debug	Planning	Successfully set order movement related attributes. [batch - 1]
+2012-06-12 09:37:31.158	620840	Debug	Planning	PlanedShipmentCreated topic published for shipment K113003.01048 [batch - 1]
+2012-06-12 09:37:31.158	620840	Debug	Planning	Returning from shipment update session bean. [batch - 1]
+2012-06-12 09:37:31.161	620840	Debug	Workflow	Executing Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [K113003.TEST_01-001-027] [batch - 1]
+2012-06-12 09:37:31.166	620840	Debug	Workflow	Executing topic Recalculate Shipment Totals: pk=K113003.01048 [batch - 1]
+2012-06-12 09:37:31.167	620840	Debug	Workflow	Starting workflow Simple Workflow (249316683) in response to Recalculate Shipment Totals: pk=K113003.01048 [batch - 1]
+2012-06-12 09:37:31.174	620840	Debug	Workflow	Completing workflow Simple Workflow (249316683) [batch - 1]
+2012-06-12 09:37:31.177	620840	Debug	Workflow	Executing topic Recalculate Shipment Order Release Totals: pk=K113003.01048 [batch - 1]
+2012-06-12 09:37:31.178	620840	Debug	Workflow	Starting workflow Simple Workflow (248744466) in response to Recalculate Shipment Order Release Totals: pk=K113003.01048 [batch - 1]
+2012-06-12 09:37:31.183	620840	Debug	Workflow	Completing workflow Simple Workflow (248744466) [batch - 1]
+2012-06-12 09:37:31.19	620840	Debug	Workflow	Publishing topic PlannedShipmentCreated: shipment=K113003.01048, dataSource=USER on queue execution, group null [batch - 1]
+2012-06-12 09:37:31.191	620840	Debug	Planning	end save this graph...  [batch - 1]
+2012-06-12 09:37:31.191	620840	Debug	Planning	Updating tBulkPlanResult after a graph is saved. [batch - 1]
+2012-06-12 09:37:31.192	620840	Debug	Workflow	Starting workflow Plan Or Execute Shipments (248283114) in response to PlannedShipmentCreated: shipment=K113003.01048, dataSource=USER [execution - 2]
+2012-06-12 09:37:31.192	620840	Debug	Workflow	Completing workflow Plan Or Execute Shipments (248283114) [execution - 2]
+2012-06-12 09:37:31.194	620840	Debug	Planning	one bulk_plan_by_mode is loaded, mode: TL [batch - 1]
+2012-06-12 09:37:31.196	620840	Debug	Planning	one bulk_plan_by_servprov is loaded, servprov: K113003.GATI [batch - 1]
+2012-06-12 09:37:31.198	620840	Debug	Planning	# of order release Pks specified: 1 [batch - 1]
+2012-06-12 09:37:31.198	620840	Debug	Planning	# of TOrderReleases found in the graph: 1 [batch - 1]
+2012-06-12 09:37:31.198	620840	Debug	Planning	get TBulkPlanByModeResult for mode: TL [batch - 1]
+2012-06-12 09:37:31.198	620840	Debug	Planning	testing tBulkPlanByModeResult, its mode: TL [batch - 1]
+2012-06-12 09:37:31.198	620840	Debug	Planning	return tBulkPlanByModeResult already exist: <BulkPlanByModeResult bulk Plan Gid, mode= K113003.20120612-0007 TL
+<-- Order Release Statistics -->
+ Num Of Order Releases Planned = 1
+<-- Order Movement Statistics -->
+ Num Of Order Movements Planned = 0
+<-- Shipment Statistics -->
+ Num Of Shipments Built = 1 [batch - 1]
+2012-06-12 09:37:31.2	620840	Debug	Planning	get TBulkPlanByServprovResult for servprov: K113003.GATI [batch - 1]
+2012-06-12 09:37:31.2	620840	Debug	Planning	testing tBulkPlanByServprovResult, its servprov: K113003.GATI [batch - 1]
+2012-06-12 09:37:31.201	620840	Debug	Planning	return tBulkPlanByServprovResult already exist: <BulkPlanByServprovResult bulk Plan Gid, mode= K113003.20120612-0007 K113003.GATI
+<-- Order Release Statistics -->
+ Num Of Order Releases Planned = 1
+<-- Order Movement Statistics -->
+ Num Of Order Movements Planned = 0
+<-- Shipment Statistics -->
+ Num Of Shipments Built = 1 [batch - 1]
+2012-06-12 09:37:31.202	620840	Debug	Planning	Committing tBulkPlanResult after a graph is saved. [batch - 1]
+2012-06-12 09:37:31.221	620840	Debug	Planning	Complete Saving Shipments to Database ... [batch - 1]
+2012-06-12 09:37:31.224	620840	Debug	Planning	one bulk_plan_by_mode is loaded, mode: TL [batch - 1]
+2012-06-12 09:37:31.226	620840	Debug	Planning	one bulk_plan_by_servprov is loaded, servprov: K113003.GATI [batch - 1]
+2012-06-12 09:37:31.226	620840	Debug	Planning	Updating bulk plan result:<BulkPlanResult bulk Plan Gid = K113003.20120612-0007
+<-- Order Release Statistics -->
+ Num Of Order Releases Selected = 2
+ Num Of Order Releases Unassigned = 2
+ Num Of Order Releases Planned = 2
+ Num Of Order Releases Failed To Plan = 0
+<-- Order Movement Statistics -->
+ Num Of Order Movements Selected = 0
+ Num Of Order Movements Unassigned = 0
+ Num Of Order Movements Planned = 0
+ Num Of Order Movements Failed To Plan = 0
+<-- Shipment Statistics -->
+ Num Of Shipments Built = 2
+ Start Time = 2012-06-12 09:37:28 Asia/Kolkata
+ End Time = 2012-06-12 09:37:31 Asia/Kolkata > ... [batch - 1]
+2012-06-12 09:37:31.237	620840	Debug	Planning	Updated bulk plan result:<BulkPlanResult bulk Plan Gid = K113003.20120612-0007
+<-- Order Release Statistics -->
+ Num Of Order Releases Selected = 2
+ Num Of Order Releases Unassigned = 2
+ Num Of Order Releases Planned = 2
+ Num Of Order Releases Failed To Plan = 0
+<-- Order Movement Statistics -->
+ Num Of Order Movements Selected = 0
+ Num Of Order Movements Unassigned = 0
+ Num Of Order Movements Planned = 0
+ Num Of Order Movements Failed To Plan = 0
+<-- Shipment Statistics -->
+ Num Of Shipments Built = 2
+ Start Time = 2012-06-12 09:37:28 Asia/Kolkata
+ End Time = 2012-06-12 09:37:31 Asia/Kolkata > has been committed. [batch - 1]
+2012-06-12 09:37:31.237	620840	Debug	Workflow	Completing workflow Simple Workflow (297321511) [batch - 1]

@@ -1,0 +1,313 @@
+INFO | 2012/01/01 10:52:16 | Starting Launched Process...
+INFO | 2012/01/01 10:52:17 | java version "1.6.0_20"
+INFO | 2012/01/01 10:52:17 | Java(TM) SE Runtime Environment (build 1.6.0_20-b02)
+INFO | 2012/01/01 10:52:17 | Oracle JRockit(R) (build R28.0.1-21-133393-1.6.0_20-20100512-2131-windows-x86_64, compiled mode)
+INFO | 2012/01/01 10:52:17 | Argument #0 : C:/otm/jdk/bin/java
+INFO | 2012/01/01 10:52:17 | Argument #1 : -Xms1600m
+INFO | 2012/01/01 10:52:17 | Argument #2 : -Xmx1600m
+INFO | 2012/01/01 10:52:17 | Argument #3 : -jrockit
+INFO | 2012/01/01 10:52:17 | Argument #4 : -Xgcprio:pausetime
+INFO | 2012/01/01 10:52:17 | Argument #5 : -Xverbose:memory
+INFO | 2012/01/01 10:52:17 | Argument #6 : -DGC3EncodedPassword=Q0hBTkdFTUU=
+INFO | 2012/01/01 10:52:17 | Argument #7 : -Dglog.properties=glog.tomcat.properties
+INFO | 2012/01/01 10:52:17 | Argument #8 : -Dglog.home=C:/otm/glog/config
+INFO | 2012/01/01 10:52:17 | Argument #9 : -Duser.home=C:/otm/glog/config
+INFO | 2012/01/01 10:52:17 | Argument #10 : -Djava.io.tmpdir=C:/otm/temp
+INFO | 2012/01/01 10:52:17 | Argument #11 : -Djava.awt.headless=true
+INFO | 2012/01/01 10:52:17 | Argument #12 : -Djava.security.auth.login.config=C:/otm/glog/config/otm_jaas.config
+INFO | 2012/01/01 10:52:17 | Argument #13 : -Dweblogic.ThreadPoolSize=15
+INFO | 2012/01/01 10:52:17 | Argument #14 : -Djava.endorsed.dirs=C:/otm/tomcat/endorsed
+INFO | 2012/01/01 10:52:17 | Argument #15 : -Dcatalina.base=C:/otm/tomcat
+INFO | 2012/01/01 10:52:17 | Argument #16 : -Dcatalina.home=C:/otm/tomcat
+INFO | 2012/01/01 10:52:17 | Argument #17 : -classpath
+INFO | 2012/01/01 10:52:17 | Argument #18 : C:/otm/tomcat/bin/bootstrap.jar;C:/otm/tomcat/bin/commons-logging-api-1.1.1.jar;C:\otm\tomcat\lib\annotations-api.jar;C:\otm\tomcat\lib\catalina-ant.jar;C:\otm\tomcat\lib\catalina-ha.jar;C:\otm\tomcat\lib\catalina-tribes.jar;C:\otm\tomcat\lib\catalina.jar;C:\otm\tomcat\lib\el-api.jar;C:\otm\tomcat\lib\jasper-el.jar;C:\otm\tomcat\lib\jasper-jdt.jar;C:\otm\tomcat\lib\jasper.jar;C:\otm\tomcat\lib\jsp-api.jar;C:\otm\tomcat\lib\servlet-api.jar;C:\otm\tomcat\lib\tomcat-coyote.jar;C:\otm\tomcat\lib\tomcat-dbcp.jar;C:\otm\tomcat\lib\tomcat-i18n-es.jar;C:\otm\tomcat\lib\tomcat-i18n-fr.jar;C:\otm\tomcat\lib\tomcat-i18n-ja.jar;C:/otm/glog/glog_resources;C:/otm/glog/config;C:/otm/glog/gc3webapp/WEB-INF/classes;C:/otm/dash/lib/xprb.jar;C:/otm/dash/lib/xprm.jar;C:/otm/dash/lib/xprs.jar;C:/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar;C:/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/wlfullclient.jar;C:\otm\launcher\launcher.jar
+INFO | 2012/01/01 10:52:17 | Argument #19 : com.oracle.otm.Launcher
+INFO | 2012/01/01 10:52:17 | Argument #20 : C:\otm\tomcat\bin\tomcat.conf
+INFO | 2012/01/01 10:52:17 | Argument #21 : start_svc
+INFO | 2012/01/01 10:52:17 | Argument #22 : autokill
+INFO | 2012/01/01 10:52:17 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2012/01/01 10:52:17 | [INFO ][memory ] GC mode: Garbage collection optimized for short pausetimes, strategy: Generational Concurrent Mark & Sweep.
+INFO | 2012/01/01 10:52:17 | [INFO ][memory ] Heap size: 1638400KB, maximal heap size: 1638400KB, nursery size: 81920KB.
+INFO | 2012/01/01 10:52:17 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2012/01/01 10:52:17 | [INFO ][memory ] <start>  - start time of collection (seconds since jvm start).
+INFO | 2012/01/01 10:52:17 | [INFO ][memory ] <type>   - OC (old collection) or YC (young collection).
+INFO | 2012/01/01 10:52:17 | [INFO ][memory ] <end>    - end time of collection (seconds since jvm start).
+INFO | 2012/01/01 10:52:17 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2012/01/01 10:52:17 | [INFO ][memory ] <after>  - memory used by objects after collection (KB).
+INFO | 2012/01/01 10:52:17 | [INFO ][memory ] <heap>   - size of heap after collection (KB).
+INFO | 2012/01/01 10:52:17 | [INFO ][memory ] <time>   - total time of collection (milliseconds).
+INFO | 2012/01/01 10:52:17 | [INFO ][memory ] <pause>  - total sum of pauses during collection (milliseconds).
+INFO | 2012/01/01 10:52:17 | [INFO ][memory ]            Run with -Xverbose:gcpause to see individual phases.
+INFO | 2012/01/01 10:52:17 | [INFO ][memory ] Running on hypervisor Microsoft Hyper-V 6.1.build-7601 (17514.0.17)
+INFO | 2012/01/01 10:52:18 | Start Service Argument #0 : org.apache.catalina.startup.Bootstrap
+INFO | 2012/01/01 10:52:18 | Start Service Argument #1 : start
+INFO | 2012/01/01 10:52:18 | 01-Jan-2012 10:52:18 org.apache.catalina.core.AprLifecycleListener init
+INFO | 2012/01/01 10:52:18 | INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\otm\jdk\bin;.;C:\Windows\system32;C:\Windows;C:\otm\jdk\bin;C:\otm\dash\bin;C:\otm\apache\openssl\bin;C:\app\Administrator\product\11.2.0\dbhome_1\bin;C:\otm\jdk\bin;C:\otm\dash\bin;C:\otm\apache\openssl\bin;C:\app\Administrator\product\11.2.0\client_1;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;
+INFO | 2012/01/01 10:52:19 | 01-Jan-2012 10:52:19 org.apache.catalina.startup.Catalina load
+INFO | 2012/01/01 10:52:19 | INFO: Initialization processed in 373 ms
+INFO | 2012/01/01 10:52:19 | 01-Jan-2012 10:52:19 org.apache.catalina.core.StandardService start
+INFO | 2012/01/01 10:52:19 | INFO: Starting service Tomcat
+INFO | 2012/01/01 10:52:19 | 01-Jan-2012 10:52:19 org.apache.catalina.core.StandardEngine start
+INFO | 2012/01/01 10:52:19 | INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+INFO | 2012/01/01 10:52:20 | [INFO ][memory ] [YC#1] 2.669-2.672: YC 90850KB->32484KB (1638400KB), 0.003 s, sum of pauses 3.292 ms, longest pause 3.292 ms.
+INFO | 2012/01/01 10:52:20 | [INFO ][memory ] [YC#2] 3.138-3.139: YC 101080KB->40602KB (1638400KB), 0.001 s, sum of pauses 1.188 ms, longest pause 1.188 ms.
+INFO | 2012/01/01 10:52:20 | [INFO ][memory ] [YC#3] 3.291-3.303: YC 103627KB->45645KB (1638400KB), 0.012 s, sum of pauses 11.740 ms, longest pause 11.740 ms.
+INFO | 2012/01/01 10:52:21 | [INFO ][memory ] [YC#4] 3.916-3.921: YC 120139KB->62413KB (1638400KB), 0.005 s, sum of pauses 4.956 ms, longest pause 4.956 ms.
+INFO | 2012/01/01 10:52:22 | 01-Jan-2012 10:52:22 org.apache.catalina.core.ApplicationContext log
+INFO | 2012/01/01 10:52:22 | INFO: Marking servlet Initialize as unavailable
+INFO | 2012/01/01 10:52:22 | 01-Jan-2012 10:52:22 org.apache.catalina.core.StandardContext loadOnStartup
+INFO | 2012/01/01 10:52:22 | SEVERE: Servlet /GC3 threw load() exception
+INFO | 2012/01/01 10:52:22 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO | 2012/01/01 10:52:22 | 	at glog.webserver.util.NTierServlet.init(NTierServlet.java:33)
+INFO | 2012/01/01 10:52:22 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1172)
+INFO | 2012/01/01 10:52:22 | 	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:992)
+INFO | 2012/01/01 10:52:22 | 	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4058)
+INFO | 2012/01/01 10:52:22 | 	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4371)
+INFO | 2012/01/01 10:52:22 | 	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1045)
+INFO | 2012/01/01 10:52:22 | 	at org.apache.catalina.core.StandardHost.start(StandardHost.java:719)
+INFO | 2012/01/01 10:52:22 | 	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1045)
+INFO | 2012/01/01 10:52:22 | 	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:445)
+INFO | 2012/01/01 10:52:22 | 	at org.apache.catalina.core.StandardService.start(StandardService.java:516)
+INFO | 2012/01/01 10:52:22 | 	at org.apache.catalina.core.StandardServer.start(StandardServer.java:710)
+INFO | 2012/01/01 10:52:22 | 	at org.apache.catalina.startup.Catalina.start(Catalina.java:578)
+INFO | 2012/01/01 10:52:22 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO | 2012/01/01 10:52:22 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO | 2012/01/01 10:52:22 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO | 2012/01/01 10:52:22 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO | 2012/01/01 10:52:22 | 	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:290)
+INFO | 2012/01/01 10:52:22 | 	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+INFO | 2012/01/01 10:52:22 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO | 2012/01/01 10:52:22 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO | 2012/01/01 10:52:22 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO | 2012/01/01 10:52:22 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO | 2012/01/01 10:52:22 | 	at com.oracle.otm.Launcher.startService(Launcher.java:591)
+INFO | 2012/01/01 10:52:22 | 	at com.oracle.otm.Launcher.main(Launcher.java:104)
+INFO | 2012/01/01 10:52:22 | [INFO ][memory ] [YC#5] 5.483-5.507: YC 131982KB->84880KB (1638400KB), 0.024 s, sum of pauses 23.636 ms, longest pause 23.636 ms.
+INFO | 2012/01/01 10:52:23 | [INFO ][memory ] [YC#6] 6.066-6.069: YC 153194KB->93676KB (1638400KB), 0.003 s, sum of pauses 2.480 ms, longest pause 2.480 ms.
+INFO | 2012/01/01 10:52:23 | 01-Jan-2012 10:52:23 org.apache.catalina.core.ApplicationContext log
+INFO | 2012/01/01 10:52:23 | INFO: ContextListener: contextInitialized()
+INFO | 2012/01/01 10:52:23 | 01-Jan-2012 10:52:23 org.apache.catalina.core.ApplicationContext log
+INFO | 2012/01/01 10:52:23 | INFO: SessionListener: contextInitialized()
+INFO | 2012/01/01 10:52:23 | [INFO ][memory ] [YC#7] 6.619-6.621: YC 169569KB->108771KB (1638400KB), 0.002 s, sum of pauses 1.656 ms, longest pause 1.656 ms.
+INFO | 2012/01/01 10:52:24 | 01-Jan-2012 10:52:24 org.apache.jk.common.ChannelSocket init
+INFO | 2012/01/01 10:52:24 | INFO: JK: ajp13 listening on /192.168.1.65:8009
+INFO | 2012/01/01 10:52:24 | 01-Jan-2012 10:52:24 org.apache.jk.server.JkMain start
+INFO | 2012/01/01 10:52:24 | INFO: Jk running ID=0 time=0/29  config=null
+INFO | 2012/01/01 10:52:24 | 01-Jan-2012 10:52:24 org.apache.catalina.startup.Catalina start
+INFO | 2012/01/01 10:52:24 | INFO: Server startup in 5244 ms
+INFO | 2012/01/01 10:56:43 | Starting Launched Process...
+INFO | 2012/01/01 10:56:44 | java version "1.6.0_20"
+INFO | 2012/01/01 10:56:44 | Java(TM) SE Runtime Environment (build 1.6.0_20-b02)
+INFO | 2012/01/01 10:56:44 | Oracle JRockit(R) (build R28.0.1-21-133393-1.6.0_20-20100512-2131-windows-x86_64, compiled mode)
+INFO | 2012/01/01 10:56:44 | Argument #0 : C:/otm/jdk/bin/java
+INFO | 2012/01/01 10:56:44 | Argument #1 : -Xms1600m
+INFO | 2012/01/01 10:56:44 | Argument #2 : -Xmx1600m
+INFO | 2012/01/01 10:56:44 | Argument #3 : -jrockit
+INFO | 2012/01/01 10:56:44 | Argument #4 : -Xgcprio:pausetime
+INFO | 2012/01/01 10:56:44 | Argument #5 : -Xverbose:memory
+INFO | 2012/01/01 10:56:44 | Argument #6 : -DGC3EncodedPassword=Q0hBTkdFTUU=
+INFO | 2012/01/01 10:56:44 | Argument #7 : -Dglog.properties=glog.tomcat.properties
+INFO | 2012/01/01 10:56:44 | Argument #8 : -Dglog.home=C:/otm/glog/config
+INFO | 2012/01/01 10:56:44 | Argument #9 : -Duser.home=C:/otm/glog/config
+INFO | 2012/01/01 10:56:44 | Argument #10 : -Djava.io.tmpdir=C:/otm/temp
+INFO | 2012/01/01 10:56:44 | Argument #11 : -Djava.awt.headless=true
+INFO | 2012/01/01 10:56:44 | Argument #12 : -Djava.security.auth.login.config=C:/otm/glog/config/otm_jaas.config
+INFO | 2012/01/01 10:56:44 | Argument #13 : -Dweblogic.ThreadPoolSize=15
+INFO | 2012/01/01 10:56:44 | Argument #14 : -Djava.endorsed.dirs=C:/otm/tomcat/endorsed
+INFO | 2012/01/01 10:56:44 | Argument #15 : -Dcatalina.base=C:/otm/tomcat
+INFO | 2012/01/01 10:56:44 | Argument #16 : -Dcatalina.home=C:/otm/tomcat
+INFO | 2012/01/01 10:56:44 | Argument #17 : -classpath
+INFO | 2012/01/01 10:56:44 | Argument #18 : C:/otm/tomcat/bin/bootstrap.jar;C:/otm/tomcat/bin/commons-logging-api-1.1.1.jar;C:\otm\tomcat\lib\annotations-api.jar;C:\otm\tomcat\lib\catalina-ant.jar;C:\otm\tomcat\lib\catalina-ha.jar;C:\otm\tomcat\lib\catalina-tribes.jar;C:\otm\tomcat\lib\catalina.jar;C:\otm\tomcat\lib\el-api.jar;C:\otm\tomcat\lib\jasper-el.jar;C:\otm\tomcat\lib\jasper-jdt.jar;C:\otm\tomcat\lib\jasper.jar;C:\otm\tomcat\lib\jsp-api.jar;C:\otm\tomcat\lib\servlet-api.jar;C:\otm\tomcat\lib\tomcat-coyote.jar;C:\otm\tomcat\lib\tomcat-dbcp.jar;C:\otm\tomcat\lib\tomcat-i18n-es.jar;C:\otm\tomcat\lib\tomcat-i18n-fr.jar;C:\otm\tomcat\lib\tomcat-i18n-ja.jar;C:/otm/glog/glog_resources;C:/otm/glog/config;C:/otm/glog/gc3webapp/WEB-INF/classes;C:/otm/dash/lib/xprb.jar;C:/otm/dash/lib/xprm.jar;C:/otm/dash/lib/xprs.jar;C:/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar;C:/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/wlfullclient.jar;C:\otm\launcher\launcher.jar
+INFO | 2012/01/01 10:56:44 | Argument #19 : com.oracle.otm.Launcher
+INFO | 2012/01/01 10:56:44 | Argument #20 : C:\otm\tomcat\bin\tomcat.conf
+INFO | 2012/01/01 10:56:44 | Argument #21 : start_svc
+INFO | 2012/01/01 10:56:44 | Argument #22 : autokill
+INFO | 2012/01/01 10:56:44 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2012/01/01 10:56:44 | [INFO ][memory ] GC mode: Garbage collection optimized for short pausetimes, strategy: Generational Concurrent Mark & Sweep.
+INFO | 2012/01/01 10:56:44 | [INFO ][memory ] Heap size: 1638400KB, maximal heap size: 1638400KB, nursery size: 81920KB.
+INFO | 2012/01/01 10:56:44 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2012/01/01 10:56:44 | [INFO ][memory ] <start>  - start time of collection (seconds since jvm start).
+INFO | 2012/01/01 10:56:44 | [INFO ][memory ] <type>   - OC (old collection) or YC (young collection).
+INFO | 2012/01/01 10:56:44 | [INFO ][memory ] <end>    - end time of collection (seconds since jvm start).
+INFO | 2012/01/01 10:56:44 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2012/01/01 10:56:44 | [INFO ][memory ] <after>  - memory used by objects after collection (KB).
+INFO | 2012/01/01 10:56:44 | [INFO ][memory ] <heap>   - size of heap after collection (KB).
+INFO | 2012/01/01 10:56:44 | [INFO ][memory ] <time>   - total time of collection (milliseconds).
+INFO | 2012/01/01 10:56:44 | [INFO ][memory ] <pause>  - total sum of pauses during collection (milliseconds).
+INFO | 2012/01/01 10:56:44 | [INFO ][memory ]            Run with -Xverbose:gcpause to see individual phases.
+INFO | 2012/01/01 10:56:44 | [INFO ][memory ] Running on hypervisor Microsoft Hyper-V 6.1.build-7601 (17514.0.17)
+INFO | 2012/01/01 10:56:45 | Start Service Argument #0 : org.apache.catalina.startup.Bootstrap
+INFO | 2012/01/01 10:56:45 | Start Service Argument #1 : start
+INFO | 2012/01/01 10:56:45 | 01-Jan-2012 10:56:45 org.apache.catalina.core.AprLifecycleListener init
+INFO | 2012/01/01 10:56:45 | INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\otm\jdk\bin;.;C:\Windows\system32;C:\Windows;C:\otm\jdk\bin;C:\otm\dash\bin;C:\otm\apache\openssl\bin;C:\app\Administrator\product\11.2.0\dbhome_1\bin;C:\otm\jdk\bin;C:\otm\dash\bin;C:\otm\apache\openssl\bin;C:\app\Administrator\product\11.2.0\client_1;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;
+INFO | 2012/01/01 10:56:45 | 01-Jan-2012 10:56:45 org.apache.catalina.startup.Catalina load
+INFO | 2012/01/01 10:56:45 | INFO: Initialization processed in 322 ms
+INFO | 2012/01/01 10:56:45 | 01-Jan-2012 10:56:45 org.apache.catalina.core.StandardService start
+INFO | 2012/01/01 10:56:45 | INFO: Starting service Tomcat
+INFO | 2012/01/01 10:56:45 | 01-Jan-2012 10:56:45 org.apache.catalina.core.StandardEngine start
+INFO | 2012/01/01 10:56:45 | INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+INFO | 2012/01/01 10:56:46 | [INFO ][memory ] [YC#1] 1.910-1.915: YC 90850KB->32612KB (1638400KB), 0.005 s, sum of pauses 4.672 ms, longest pause 4.672 ms.
+INFO | 2012/01/01 10:56:46 | [INFO ][memory ] [YC#2] 2.388-2.389: YC 101208KB->40858KB (1638400KB), 0.001 s, sum of pauses 1.215 ms, longest pause 1.215 ms.
+INFO | 2012/01/01 10:56:47 | [INFO ][memory ] [YC#3] 2.544-2.552: YC 103834KB->46044KB (1638400KB), 0.007 s, sum of pauses 7.334 ms, longest pause 7.334 ms.
+INFO | 2012/01/01 10:56:47 | [INFO ][memory ] [YC#4] 3.164-3.169: YC 120491KB->62701KB (1638400KB), 0.005 s, sum of pauses 5.250 ms, longest pause 5.250 ms.
+INFO | 2012/01/01 10:56:49 | 01-Jan-2012 10:56:49 org.apache.catalina.core.ApplicationContext log
+INFO | 2012/01/01 10:56:49 | INFO: Marking servlet Initialize as unavailable
+INFO | 2012/01/01 10:56:49 | 01-Jan-2012 10:56:49 org.apache.catalina.core.StandardContext loadOnStartup
+INFO | 2012/01/01 10:56:49 | SEVERE: Servlet /GC3 threw load() exception
+INFO | 2012/01/01 10:56:49 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO | 2012/01/01 10:56:49 | 	at glog.webserver.util.NTierServlet.init(NTierServlet.java:33)
+INFO | 2012/01/01 10:56:49 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1172)
+INFO | 2012/01/01 10:56:49 | 	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:992)
+INFO | 2012/01/01 10:56:49 | 	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4058)
+INFO | 2012/01/01 10:56:49 | 	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4371)
+INFO | 2012/01/01 10:56:49 | 	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1045)
+INFO | 2012/01/01 10:56:49 | 	at org.apache.catalina.core.StandardHost.start(StandardHost.java:719)
+INFO | 2012/01/01 10:56:49 | 	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1045)
+INFO | 2012/01/01 10:56:49 | 	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:445)
+INFO | 2012/01/01 10:56:49 | 	at org.apache.catalina.core.StandardService.start(StandardService.java:516)
+INFO | 2012/01/01 10:56:49 | 	at org.apache.catalina.core.StandardServer.start(StandardServer.java:710)
+INFO | 2012/01/01 10:56:49 | 	at org.apache.catalina.startup.Catalina.start(Catalina.java:578)
+INFO | 2012/01/01 10:56:49 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO | 2012/01/01 10:56:49 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO | 2012/01/01 10:56:49 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO | 2012/01/01 10:56:49 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO | 2012/01/01 10:56:49 | 	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:290)
+INFO | 2012/01/01 10:56:49 | 	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+INFO | 2012/01/01 10:56:49 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO | 2012/01/01 10:56:49 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO | 2012/01/01 10:56:49 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO | 2012/01/01 10:56:49 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO | 2012/01/01 10:56:49 | 	at com.oracle.otm.Launcher.startService(Launcher.java:591)
+INFO | 2012/01/01 10:56:49 | 	at com.oracle.otm.Launcher.main(Launcher.java:104)
+INFO | 2012/01/01 10:56:49 | [INFO ][memory ] [YC#5] 4.566-4.575: YC 132342KB->85240KB (1638400KB), 0.010 s, sum of pauses 9.790 ms, longest pause 9.790 ms.
+INFO | 2012/01/01 10:56:49 | [INFO ][memory ] [YC#6] 4.913-4.915: YC 153554KB->94036KB (1638400KB), 0.002 s, sum of pauses 2.176 ms, longest pause 2.176 ms.
+INFO | 2012/01/01 10:56:49 | 01-Jan-2012 10:56:49 org.apache.catalina.core.ApplicationContext log
+INFO | 2012/01/01 10:56:49 | INFO: ContextListener: contextInitialized()
+INFO | 2012/01/01 10:56:49 | 01-Jan-2012 10:56:49 org.apache.catalina.core.ApplicationContext log
+INFO | 2012/01/01 10:56:49 | INFO: SessionListener: contextInitialized()
+INFO | 2012/01/01 10:56:49 | [INFO ][memory ] [YC#7] 5.256-5.258: YC 169956KB->109350KB (1638400KB), 0.001 s, sum of pauses 1.135 ms, longest pause 1.135 ms.
+INFO | 2012/01/01 10:56:50 | 01-Jan-2012 10:56:50 org.apache.jk.common.ChannelSocket init
+INFO | 2012/01/01 10:56:50 | INFO: JK: ajp13 listening on /192.168.1.65:8009
+INFO | 2012/01/01 10:56:50 | 01-Jan-2012 10:56:50 org.apache.jk.server.JkMain start
+INFO | 2012/01/01 10:56:50 | INFO: Jk running ID=0 time=0/28  config=null
+INFO | 2012/01/01 10:56:50 | 01-Jan-2012 10:56:50 org.apache.catalina.startup.Catalina start
+INFO | 2012/01/01 10:56:50 | INFO: Server startup in 4426 ms
+INFO | 2012/01/01 11:05:57 | Starting Launched Process...
+INFO | 2012/01/01 11:05:58 | java version "1.6.0_20"
+INFO | 2012/01/01 11:05:58 | Java(TM) SE Runtime Environment (build 1.6.0_20-b02)
+INFO | 2012/01/01 11:05:58 | Oracle JRockit(R) (build R28.0.1-21-133393-1.6.0_20-20100512-2131-windows-x86_64, compiled mode)
+INFO | 2012/01/01 11:05:58 | Argument #0 : C:/otm/jdk/bin/java
+INFO | 2012/01/01 11:05:58 | Argument #1 : -Xms1600m
+INFO | 2012/01/01 11:05:58 | Argument #2 : -Xmx1600m
+INFO | 2012/01/01 11:05:58 | Argument #3 : -jrockit
+INFO | 2012/01/01 11:05:58 | Argument #4 : -Xgcprio:pausetime
+INFO | 2012/01/01 11:05:58 | Argument #5 : -Xverbose:memory
+INFO | 2012/01/01 11:05:58 | Argument #6 : -DGC3EncodedPassword=Q0hBTkdFTUU=
+INFO | 2012/01/01 11:05:58 | Argument #7 : -Dglog.properties=glog.tomcat.properties
+INFO | 2012/01/01 11:05:58 | Argument #8 : -Dglog.home=C:/otm/glog/config
+INFO | 2012/01/01 11:05:58 | Argument #9 : -Duser.home=C:/otm/glog/config
+INFO | 2012/01/01 11:05:58 | Argument #10 : -Djava.io.tmpdir=C:/otm/temp
+INFO | 2012/01/01 11:05:58 | Argument #11 : -Djava.awt.headless=true
+INFO | 2012/01/01 11:05:58 | Argument #12 : -Djava.security.auth.login.config=C:/otm/glog/config/otm_jaas.config
+INFO | 2012/01/01 11:05:58 | Argument #13 : -Dweblogic.ThreadPoolSize=15
+INFO | 2012/01/01 11:05:58 | Argument #14 : -Djava.endorsed.dirs=C:/otm/tomcat/endorsed
+INFO | 2012/01/01 11:05:58 | Argument #15 : -Dcatalina.base=C:/otm/tomcat
+INFO | 2012/01/01 11:05:58 | Argument #16 : -Dcatalina.home=C:/otm/tomcat
+INFO | 2012/01/01 11:05:58 | Argument #17 : -classpath
+INFO | 2012/01/01 11:05:58 | Argument #18 : C:/otm/tomcat/bin/bootstrap.jar;C:/otm/tomcat/bin/commons-logging-api-1.1.1.jar;C:\otm\tomcat\lib\annotations-api.jar;C:\otm\tomcat\lib\catalina-ant.jar;C:\otm\tomcat\lib\catalina-ha.jar;C:\otm\tomcat\lib\catalina-tribes.jar;C:\otm\tomcat\lib\catalina.jar;C:\otm\tomcat\lib\el-api.jar;C:\otm\tomcat\lib\jasper-el.jar;C:\otm\tomcat\lib\jasper-jdt.jar;C:\otm\tomcat\lib\jasper.jar;C:\otm\tomcat\lib\jsp-api.jar;C:\otm\tomcat\lib\servlet-api.jar;C:\otm\tomcat\lib\tomcat-coyote.jar;C:\otm\tomcat\lib\tomcat-dbcp.jar;C:\otm\tomcat\lib\tomcat-i18n-es.jar;C:\otm\tomcat\lib\tomcat-i18n-fr.jar;C:\otm\tomcat\lib\tomcat-i18n-ja.jar;C:/otm/glog/glog_resources;C:/otm/glog/config;C:/otm/glog/gc3webapp/WEB-INF/classes;C:/otm/dash/lib/xprb.jar;C:/otm/dash/lib/xprm.jar;C:/otm/dash/lib/xprs.jar;C:/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar;C:/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/wlfullclient.jar;C:\otm\launcher\launcher.jar
+INFO | 2012/01/01 11:05:58 | Argument #19 : com.oracle.otm.Launcher
+INFO | 2012/01/01 11:05:58 | Argument #20 : C:\otm\tomcat\bin\tomcat.conf
+INFO | 2012/01/01 11:05:58 | Argument #21 : start_svc
+INFO | 2012/01/01 11:05:58 | Argument #22 : autokill
+INFO | 2012/01/01 11:05:58 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2012/01/01 11:05:58 | [INFO ][memory ] GC mode: Garbage collection optimized for short pausetimes, strategy: Generational Concurrent Mark & Sweep.
+INFO | 2012/01/01 11:05:58 | [INFO ][memory ] Heap size: 1638400KB, maximal heap size: 1638400KB, nursery size: 81920KB.
+INFO | 2012/01/01 11:05:58 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2012/01/01 11:05:58 | [INFO ][memory ] <start>  - start time of collection (seconds since jvm start).
+INFO | 2012/01/01 11:05:58 | [INFO ][memory ] <type>   - OC (old collection) or YC (young collection).
+INFO | 2012/01/01 11:05:58 | [INFO ][memory ] <end>    - end time of collection (seconds since jvm start).
+INFO | 2012/01/01 11:05:58 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2012/01/01 11:05:58 | [INFO ][memory ] <after>  - memory used by objects after collection (KB).
+INFO | 2012/01/01 11:05:58 | [INFO ][memory ] <heap>   - size of heap after collection (KB).
+INFO | 2012/01/01 11:05:58 | [INFO ][memory ] <time>   - total time of collection (milliseconds).
+INFO | 2012/01/01 11:05:58 | [INFO ][memory ] <pause>  - total sum of pauses during collection (milliseconds).
+INFO | 2012/01/01 11:05:58 | [INFO ][memory ]            Run with -Xverbose:gcpause to see individual phases.
+INFO | 2012/01/01 11:05:58 | [INFO ][memory ] Running on hypervisor Microsoft Hyper-V 6.1.build-7601 (17514.0.17)
+INFO | 2012/01/01 11:05:59 | Start Service Argument #0 : org.apache.catalina.startup.Bootstrap
+INFO | 2012/01/01 11:05:59 | Start Service Argument #1 : start
+INFO | 2012/01/01 11:05:59 | 01-Jan-2012 11:05:59 org.apache.catalina.core.AprLifecycleListener init
+INFO | 2012/01/01 11:05:59 | INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\otm\jdk\bin;.;C:\Windows\system32;C:\Windows;C:\otm\jdk\bin;C:\otm\dash\bin;C:\otm\apache\openssl\bin;C:\app\Administrator\product\11.2.0\dbhome_1\bin;C:\otm\jdk\bin;C:\otm\dash\bin;C:\otm\apache\openssl\bin;C:\app\Administrator\product\11.2.0\client_1;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;
+INFO | 2012/01/01 11:05:59 | 01-Jan-2012 11:05:59 org.apache.catalina.startup.Catalina load
+INFO | 2012/01/01 11:05:59 | INFO: Initialization processed in 327 ms
+INFO | 2012/01/01 11:05:59 | 01-Jan-2012 11:05:59 org.apache.catalina.core.StandardService start
+INFO | 2012/01/01 11:05:59 | INFO: Starting service Tomcat
+INFO | 2012/01/01 11:05:59 | 01-Jan-2012 11:05:59 org.apache.catalina.core.StandardEngine start
+INFO | 2012/01/01 11:05:59 | INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+INFO | 2012/01/01 11:06:00 | [INFO ][memory ] [YC#1] 2.019-2.023: YC 90850KB->32548KB (1638400KB), 0.003 s, sum of pauses 2.995 ms, longest pause 2.995 ms.
+INFO | 2012/01/01 11:06:00 | [INFO ][memory ] [YC#2] 2.589-2.590: YC 101144KB->40666KB (1638400KB), 0.001 s, sum of pauses 1.325 ms, longest pause 1.325 ms.
+INFO | 2012/01/01 11:06:00 | [INFO ][memory ] [YC#3] 2.743-2.750: YC 103624KB->45835KB (1638400KB), 0.007 s, sum of pauses 6.924 ms, longest pause 6.924 ms.
+INFO | 2012/01/01 11:06:01 | [INFO ][memory ] [YC#4] 3.422-3.427: YC 120467KB->62741KB (1638400KB), 0.005 s, sum of pauses 5.184 ms, longest pause 5.184 ms.
+INFO | 2012/01/01 11:06:02 | 01-Jan-2012 11:06:02 org.apache.catalina.core.ApplicationContext log
+INFO | 2012/01/01 11:06:02 | INFO: Marking servlet Initialize as unavailable
+INFO | 2012/01/01 11:06:02 | 01-Jan-2012 11:06:02 org.apache.catalina.core.StandardContext loadOnStartup
+INFO | 2012/01/01 11:06:02 | SEVERE: Servlet /GC3 threw load() exception
+INFO | 2012/01/01 11:06:02 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO | 2012/01/01 11:06:02 | 	at glog.webserver.util.NTierServlet.init(NTierServlet.java:33)
+INFO | 2012/01/01 11:06:02 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1172)
+INFO | 2012/01/01 11:06:02 | 	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:992)
+INFO | 2012/01/01 11:06:02 | 	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4058)
+INFO | 2012/01/01 11:06:02 | 	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4371)
+INFO | 2012/01/01 11:06:02 | 	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1045)
+INFO | 2012/01/01 11:06:02 | 	at org.apache.catalina.core.StandardHost.start(StandardHost.java:719)
+INFO | 2012/01/01 11:06:02 | 	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1045)
+INFO | 2012/01/01 11:06:02 | 	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:445)
+INFO | 2012/01/01 11:06:02 | 	at org.apache.catalina.core.StandardService.start(StandardService.java:516)
+INFO | 2012/01/01 11:06:02 | 	at org.apache.catalina.core.StandardServer.start(StandardServer.java:710)
+INFO | 2012/01/01 11:06:02 | 	at org.apache.catalina.startup.Catalina.start(Catalina.java:578)
+INFO | 2012/01/01 11:06:02 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO | 2012/01/01 11:06:02 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO | 2012/01/01 11:06:02 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO | 2012/01/01 11:06:02 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO | 2012/01/01 11:06:02 | 	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:290)
+INFO | 2012/01/01 11:06:02 | 	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+INFO | 2012/01/01 11:06:02 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO | 2012/01/01 11:06:02 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO | 2012/01/01 11:06:02 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO | 2012/01/01 11:06:02 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO | 2012/01/01 11:06:02 | 	at com.oracle.otm.Launcher.startService(Launcher.java:591)
+INFO | 2012/01/01 11:06:02 | 	at com.oracle.otm.Launcher.main(Launcher.java:104)
+INFO | 2012/01/01 11:06:03 | [INFO ][memory ] [YC#5] 4.816-4.826: YC 132317KB->85151KB (1638400KB), 0.010 s, sum of pauses 10.111 ms, longest pause 10.111 ms.
+INFO | 2012/01/01 11:06:03 | [INFO ][memory ] [YC#6] 5.155-5.157: YC 153466KB->93948KB (1638400KB), 0.002 s, sum of pauses 1.866 ms, longest pause 1.866 ms.
+INFO | 2012/01/01 11:06:03 | 01-Jan-2012 11:06:03 org.apache.catalina.core.ApplicationContext log
+INFO | 2012/01/01 11:06:03 | INFO: ContextListener: contextInitialized()
+INFO | 2012/01/01 11:06:03 | 01-Jan-2012 11:06:03 org.apache.catalina.core.ApplicationContext log
+INFO | 2012/01/01 11:06:03 | INFO: SessionListener: contextInitialized()
+INFO | 2012/01/01 11:06:03 | [INFO ][memory ] [YC#7] 5.488-5.489: YC 169846KB->109304KB (1638400KB), 0.001 s, sum of pauses 1.071 ms, longest pause 1.071 ms.
+INFO | 2012/01/01 11:06:03 | 01-Jan-2012 11:06:03 org.apache.jk.common.ChannelSocket init
+INFO | 2012/01/01 11:06:03 | INFO: JK: ajp13 listening on /192.168.1.65:8009
+INFO | 2012/01/01 11:06:03 | 01-Jan-2012 11:06:03 org.apache.jk.server.JkMain start
+INFO | 2012/01/01 11:06:03 | INFO: Jk running ID=0 time=1/23  config=null
+INFO | 2012/01/01 11:06:03 | 01-Jan-2012 11:06:03 org.apache.catalina.startup.Catalina start
+INFO | 2012/01/01 11:06:03 | INFO: Server startup in 4492 ms
+INFO | 2012/01/01 11:13:16 | 01-Jan-2012 11:13:16 org.apache.catalina.core.ApplicationContext log
+INFO | 2012/01/01 11:13:16 | INFO: Marking servlet glog.webserver.servlet.umt.Login as unavailable
+INFO | 2012/01/01 11:13:16 | 01-Jan-2012 11:13:16 org.apache.catalina.core.StandardWrapperValve invoke
+INFO | 2012/01/01 11:13:16 | SEVERE: Allocate exception for servlet glog.webserver.servlet.umt.Login
+INFO | 2012/01/01 11:13:16 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO | 2012/01/01 11:13:16 | 	at glog.webserver.util.NTierServlet.init(NTierServlet.java:33)
+INFO | 2012/01/01 11:13:16 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1172)
+INFO | 2012/01/01 11:13:16 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:808)
+INFO | 2012/01/01 11:13:16 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:129)
+INFO | 2012/01/01 11:13:16 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+INFO | 2012/01/01 11:13:16 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128)
+INFO | 2012/01/01 11:13:16 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+INFO | 2012/01/01 11:13:16 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:111)
+INFO | 2012/01/01 11:13:16 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:286)
+INFO | 2012/01/01 11:13:16 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:190)
+INFO | 2012/01/01 11:13:16 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO | 2012/01/01 11:13:16 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:767)
+INFO | 2012/01/01 11:13:16 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:697)
+INFO | 2012/01/01 11:13:16 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:890)
+INFO | 2012/01/01 11:13:16 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:690)
+INFO | 2012/01/01 11:13:16 | 	at java.lang.Thread.run(Thread.java:619)
+INFO | 2012/01/01 11:19:20 | [INFO ][memory ] [YC#8] 801.883-801.905: YC 185898KB->125420KB (1638400KB), 0.022 s, sum of pauses 21.561 ms, longest pause 21.561 ms.

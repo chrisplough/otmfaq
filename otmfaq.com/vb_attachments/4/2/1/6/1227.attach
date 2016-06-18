@@ -1,0 +1,38 @@
+I_LOG_SEQNO	I_TRANSACTION_NO	I_TRANSMISSION_NO	WRITTEN_BY	I_MESSAGE_CLASS	I_MESSAGE_CODE	I_MESSAGE_TEXT	TIME_STAMP	PARTITION_KEY	DOMAIN_NAME	INSERT_USER	INSERT_DATE	UPDATE_USER	UPDATE_DATE	I_MESSAGE_GID	PROCESSING_ERROR_CODE_GID	
+24757184	20346113	6178636	TRANSACTION_PROCESSOR	E	TRANSACTION_EXCEPTION	CAUGHT THE FOLLOWING EXCEPTION WHILE PROCESSING TRANSACTION: java.lang.NullPointerException
+
+java.lang.NullPointerException
+	at glog.util.uom.data.Weight.&lt;init&gt;(Weight.java:40)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at glog.integration.tools.DataConverter.convertUOM(DataConverter.java:524)
+	at glog.integration.tools.DataConverter.convertWeight(DataConverter.java:604)
+	at glog.integration.application.shipment.SShipUnitWrapper.toSShipUnitData(SShipUnitWrapper.java:267)
+	at glog.integration.application.shipment.SShipUnitWrapper.mapSelf(SShipUnitWrapper.java:617)
+	at glog.integration.xmlbasewrapper.XmlBaseWrapper.map(XmlBaseWrapper.java:169)
+	at glog.integration.xmlbasewrapper.XmlBaseWrapperList.map(XmlBaseWrapperList.java:69)
+	at glog.integration.application.shipment.ShipmentWrapper.getShipUnitContainers(ShipmentWrapper.java:431)
+	at glog.integration.application.shipment.ShipmentWrapper.map(ShipmentWrapper.java:280)
+	at glog.integration.xmlbasewrapper.XmlBaseWrapper.persistViaContainer(XmlBaseWrapper.java:316)
+	at glog.integration.application.shipment.ShipmentWrapper.persistViaContainer(ShipmentWrapper.java:1115)
+	at glog.integration.application.shipment.ShipmentInterface.persistIndivXML(ShipmentInterface.java:269)
+	at glog.integration.application.shipment.ShipmentInterface.persistXML(ShipmentInterface.java:208)
+	at glog.integration.application.BaseInterface.persistXMLBase(BaseInterface.java:196)
+	at glog.integration.application.TransactionProcessor.processTransaction(TransactionProcessor.java:224)
+	at glog.integration.application.TransactionProcessor.processTransaction(TransactionProcessor.java:363)
+	at glog.server.workflow.transproc.TransProc.execute(TransProc.java:106)
+	at glog.server.workflow.SimpleWorkflow.execute(SimpleWorkflow.java:23)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:64)
+	at glog.server.workflow.WorkflowSessionNonTransServerSideEJBWrapper_t6tuwu_EOImpl.execute(WorkflowSessionNonTransServerSideEJBWrapper_t6tuwu_EOImpl.java:353)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:353)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:141)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:96)
+	at glog.util.event.EventThread.run(EventThread.java:83)
+	at java.lang.Thread.run(Thread.java:619)
+	2013-03-12 13:28:32.0	3	DBA	DBA.501932243	2013-03-12 13:28:32.0	DBA.501932243	2013-03-12 13:28:32.0	null	null	
+24757181	-1	6178636	XML_STAGE	I	TRANSMISSION_RECEIVED	Transmission 6178636 received	2013-03-12 13:28:22.0	3	DBA	DBA.501932243	2013-03-12 13:28:22.0	DBA.501932243	2013-03-12 13:28:22.0	null	null	
+24757182	20346113	6178636	ShipmentInterface	E	MISSING_REQUIRED_ELEMENT	THE REQUIRED ELEMENT Weight.WeightValue IS MISSING	2013-03-12 13:28:31.0	3	DBA	DBA.ADMIN	2013-03-12 13:28:31.0	DBA.ADMIN	2013-03-12 13:28:31.0	null	null	
+24757183	20346113	6178636	ShipmentInterface	E	MISSING_REQUIRED_ELEMENT	THE REQUIRED ELEMENT Weight.WeightValue IS MISSING	2013-03-12 13:28:32.0	3	DBA	DBA.ADMIN	2013-03-12 13:28:32.0	DBA.ADMIN	2013-03-12 13:28:32.0	null	null	

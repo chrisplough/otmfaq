@@ -1,0 +1,145 @@
+TransmissionHeader
+UserName
+Password = ******
+SenderSystemId
+GlogXMLElementName
+TransmissionBody
+GLogXMLElement
+TransmissionReport
+UserName = mapsetuser
+Password = ******
+TransmissionNo = 230
+SenderTransmissionNo = 230
+ReportStatus = ERROR
+IntegrationLogMessage
+ILogSeqNo = 514
+ITransactionNo = -1
+WrittenBy = TRANSMISSION_PROCESSOR
+IMessageClass = I
+IMessageCode = TRANSMISSION_DEBUG
+IMessageText = TRANSMISSION OUTBOUND DEBUG: HTTP for transmission ID 230 to http://172.18.59.5:8008/webservices/TransportAgentServer Started
+DateTimeStamp
+GLogDate = 20140303174618
+TZId = UTC
+TZOffset = +00:00
+DomainName = GUEST
+IntegrationLogMessage
+ILogSeqNo = 515
+ITransactionNo = -1
+WrittenBy = TRANSMISSION_PROCESSOR
+IMessageClass = I
+IMessageCode = TRANSMISSION_DEBUG
+IMessageText = TRANSMISSION OUTBOUND DEBUG: HTTP for transmission ID 230 to http://172.18.59.5:8008/webservices/TransportAgentServer Details activeMode=ENABLED; isEnableDebug=true; isLogResponseMsg=true; reattemptMode=NONE; reattemptMax=null; reattemptDelay=0 Hours 0 Minutes 0 Seconds; reattemptDeadline=0 Hours 0 Minutes 0 Seconds; maxThreads=null; ackExpected=true; httpProfileGid=EBS_HTTP_PROFILE; responseStylesheetGid=EBS_ACK_FOR_GTM_RESPONSE; useAckStatus=true; url=http://172.18.59.5:8008/webservices/TransportAgentServer; blockingOnResponse=true
+DateTimeStamp
+GLogDate = 20140303174618
+TZId = UTC
+TZOffset = +00:00
+DomainName = GUEST
+IntegrationLogMessage
+ILogSeqNo = 516
+ITransactionNo = -1
+WrittenBy = TRANSMISSION_PROCESSOR
+IMessageClass = I
+IMessageCode = TRANSMISSION_DEBUG
+IMessageText = TRANSMISSION OUTBOUND DEBUG: Transmission attempt details for transmission ID 230: retryCount=0, first attempt=null, last attempt=null
+DateTimeStamp
+GLogDate = 20140303174618
+TZId = UTC
+TZOffset = +00:00
+DomainName = GUEST
+IntegrationLogMessage
+ILogSeqNo = 517
+ITransactionNo = -1
+WrittenBy = TRANSMISSION_PROCESSOR
+IMessageClass = I
+IMessageCode = TRANSMISSION_DEBUG
+IMessageText = TRANSMISSION OUTBOUND DEBUG: HttpPost to http://172.18.59.5:8008/webservices/TransportAgentServer - HTTP connection open, prepare to send data with content-length [[B@104958e5]
+DateTimeStamp
+GLogDate = 20140303174618
+TZId = UTC
+TZOffset = +00:00
+DomainName = GUEST
+IntegrationLogMessage
+ILogSeqNo = 518
+ITransactionNo = -1
+WrittenBy = TRANSMISSION_PROCESSOR
+IMessageClass = I
+IMessageCode = TRANSMISSION_DEBUG
+IMessageText = TRANSMISSION OUTBOUND DEBUG: HttpPost to http://172.18.59.5:8008/webservices/TransportAgentServer - HTTP data sent, connection flushed, output stream closed, isBlockingOnResponse=true
+DateTimeStamp
+GLogDate = 20140303174618
+TZId = UTC
+TZOffset = +00:00
+DomainName = GUEST
+IntegrationLogMessage
+ILogSeqNo = 519
+ITransactionNo = -1
+WrittenBy = TRANSMISSION_PROCESSOR
+IMessageClass = I
+IMessageCode = TRANSMISSION_DEBUG
+IMessageText = TRANSMISSION OUTBOUND DEBUG: HttpPost to http://172.18.59.5:8008/webservices/TransportAgentServer - Start Waiting for HTTP Response Code
+DateTimeStamp
+GLogDate = 20140303174618
+TZId = UTC
+TZOffset = +00:00
+DomainName = GUEST
+IntegrationLogMessage
+ILogSeqNo = 520
+ITransactionNo = -1
+WrittenBy = TRANSMISSION_PROCESSOR
+IMessageClass = I
+IMessageCode = TRANSMISSION_DEBUG
+IMessageText = TRANSMISSION OUTBOUND DEBUG: HttpPost to http://172.18.59.5:8008/webservices/TransportAgentServer - Response Code Received 200
+DateTimeStamp
+GLogDate = 20140303174618
+TZId = UTC
+TZOffset = +00:00
+DomainName = GUEST
+IntegrationLogMessage
+ILogSeqNo = 521
+ITransactionNo = -1
+WrittenBy = TRANSMISSION_PROCESSOR
+IMessageClass = I
+IMessageCode = TRANSMISSION_DEBUG
+IMessageText = TRANSMISSION OUTBOUND DEBUG: HttpPost to http://172.18.59.5:8008/webservices/TransportAgentServer - Start retrieving response message
+DateTimeStamp
+GLogDate = 20140303174618
+TZId = UTC
+TZOffset = +00:00
+DomainName = GUEST
+IntegrationLogMessage
+ILogSeqNo = 522
+ITransactionNo = -1
+WrittenBy = TRANSMISSION_PROCESSOR
+IMessageClass = I
+IMessageCode = TRANSMISSION_DEBUG
+IMessageText = TRANSMISSION OUTBOUND DEBUG: Using responseStyelsheet EBS_ACK_FOR_GTM_RESPONSE for transmission ID 230, response <HTML><BODY><TABLE> <TR> <TD>STATUS_CODE</TD> <TD>5001</TD> </TR> <TR> <TD>STATUS_DESCRIPTION</TD> <TD>Message has NULL username value.</TD> </TR> <TR> <TD>MESSAGE_RECEIPT_ID</TD> <TD></TD> </TR> </TABLE></BODY></HTML> has been transformed to <TransmissionAck> <EchoedTransmissionHeader> <TransmissionHeader> <SenderTransmissionNo>230</SenderTransmissionNo> </TransmissionHeader> </EchoedTransmissionHeader> <TransmissionAckStatus>ERROR</TransmissionAckStatus> </TransmissionAck> 
+DateTimeStamp
+GLogDate = 20140303174618
+TZId = UTC
+TZOffset = +00:00
+DomainName = GUEST
+IntegrationLogMessage
+ILogSeqNo = 523
+ITransactionNo = -1
+WrittenBy = TRANSMISSION_PROCESSOR
+IMessageClass = I
+IMessageCode = TRANSMISSION_DEBUG
+IMessageText = TRANSMISSION OUTBOUND DEBUG: HTTP for transmission ID 230 to http://172.18.59.5:8008/webservices/TransportAgentServer Sent
+DateTimeStamp
+GLogDate = 20140303174618
+TZId = UTC
+TZOffset = +00:00
+DomainName = GUEST
+IntegrationLogMessage
+ILogSeqNo = 524
+ITransactionNo = -1
+WrittenBy = SEND_TRANSMISSION
+IMessageClass = I
+IMessageCode = TRANSMISSION_SENT
+DateTimeStamp
+GLogDate = 20140303174618
+TZId = UTC
+TZOffset = +00:00
+DomainName = GUEST
+ 

@@ -1,0 +1,49 @@
++---------------------------------------------------------------------------+
+Shipping Execution: Version : 12.0.0
+
+Copyright (c) 1979, 1999, Oracle Corporation. All rights reserved.
+
+WSHTMCAR module: Shipping-Transportation Carriers Synchronization
++---------------------------------------------------------------------------+
+
+Current system time is 05-MAY-2015 07:55:43
+
++---------------------------------------------------------------------------+
+
+Got Exception Invoking SIF event oracle.apps.sif.webservice.inline.invoke 
+
+Exception is e.getLinkedException().getMessage() 
+
+javax.xml.rpc.soap.SOAPFaultException: oracle.fabric.common.FabricInvocationException: faultName: {{http://xmlns.oracle.com/apps/wsh/outbound/ref/WshSendLocRefDataToOtm}refDataUnExpError}
+messageType: {{http://xmlns.oracle.com/apps/wsh/outbound/ref/WshSendLocRefDataToOtm}WshLocRefErrorMessage}
+parts: {{
+payload=<payload xmlns:def="http://www.w3.org/2001/XMLSchema" xsi:type="def:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>}
+
+
+Got Exception Invoking SIF event oracle.apps.sif.webservice.inline.invoke 
+
+Exception is java.lang.NullPointerException
+
+ COMP success = false
++---------------------------------------------------------------------------+
+Start of log messages from FND_FILE
++---------------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+End of log messages from FND_FILE
++---------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+Executing request completion options...
+
+Output file size: 
+369
+
+
+Finished executing request completion options.
+
++---------------------------------------------------------------------------+
+Concurrent request completed
+Current system time is 05-MAY-2015 07:55:51
+
++---------------------------------------------------------------------------+

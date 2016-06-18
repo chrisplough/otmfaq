@@ -1,0 +1,42 @@
+a:3:{s:6:"module";a:11:{s:5:"title";s:8:"vb_blogs";s:10:"identifier";s:7:"vbblogs";s:8:"filename";s:12:"forums/vb_blogs.php";s:7:"inctype";s:8:"php_file";s:12:"templatelist";s:19:"adv_portal_vb_blogs";s:6:"parent";s:0:"";s:7:"colspan";s:1:"0";s:8:"formcode";s:0:"";s:8:"useshell";s:1:"1";s:4:"link";s:10:"/forums/blog.php";s:7:"options";s:1:"0";}s:9:"templates";a:1:{s:19:"adv_portal_vb_blogs";s:63:"<tr>
+	<td class="$bgclass">
+		$spitblogs<br />
+	</td>
+</tr>";}s:4:"file";s:1297:"<?php
+//Latest Blogs
+$latestblogs = $db->query(" 
+    SELECT blogid, title, username, dateline, userid, views
+    FROM " . TABLE_PREFIX . "blog 
+    ORDER BY dateline DESC 
+    LIMIT 5 
+"); 
+while ($showblogs=$db->fetch_array($latestblogs)) 
+{ 
+    $counter++; 
+    $blog_userid = $showblogs['userid'];
+    $blogid = $showblogs['blogid'];
+    $blog_title = $showblogs['title'];
+    $blog_views = $showblogs['views'];
+    $blog_username = $showblogs['username'];
+    $blog_dateline = vbdate($vbulletin->options['dateformat'], $showblogs['dateline']);
+   
+    $spitblogs_title .= "<a href=\"forums/blog.php?b=$blogid\">$blog_title</a>";
+    $spitblogs_title .= "<br /> ";
+    $spitblogs_views .= $blog_views;
+    $spitblogs_views .= "<br /> ";
+    $spitblogs_username .= "<a href=\"forums/blog.php?u=$blog_userid\">$blog_username</a>";
+    $spitblogs_username .= "<br /> ";
+    $spitblogs_date .= $blog_dateline;
+    $spitblogs_date .= "<br /> ";
+    
+    $spitblogs .= "<a href=\"forums/blog.php?b=$blogid\">$blog_title</a> - <a href=\"forums//blog.php?u=$blog_userid\">($blog_username)<br /></a>";
+    
+    if ($counter < 5) 
+    { 
+        $spitblogs .= "<br /> "; 
+    } 
+}
+//Latest Blogs
+eval('$home["$mods[modid]"][\'content\'] = "' . fetch_template('adv_portal_vb_blogs') . '";');
+?>
+";}

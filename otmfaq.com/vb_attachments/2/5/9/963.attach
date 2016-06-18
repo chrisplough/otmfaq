@@ -1,0 +1,1290 @@
+INFO   | wrapper  | 2010/11/25 08:53:26 | User logged out.  Ignored.
+INFO   | wrapper  | 2010/11/25 08:53:29 | User logged out.  Ignored.
+STATUS | wrapper  | 2010/11/25 08:53:32 | Machine is shutting down.
+INFO   | jvm 3    | 2010/11/25 08:53:38 | 25-nov-2010 8:53:38 org.apache.catalina.core.StandardService stop
+INFO   | jvm 3    | 2010/11/25 08:53:38 | INFO: Parando servicio Catalina
+STATUS | wrapper  | 2012/04/26 10:13:22 | --> Wrapper Started as Service
+STATUS | wrapper  | 2012/04/26 10:13:22 | Launching a JVM...
+INFO   | jvm 1    | 2012/04/26 10:13:24 | Wrapper (Version 3.1.2) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2012/04/26 10:13:24 | 
+INFO   | jvm 1    | 2012/04/26 10:13:24 | Created MBeanServer with ID: 66e815:136edb639a9:-8000:OTMSERVER:1
+INFO   | jvm 1    | 2012/04/26 10:13:25 | 26-abr-2012 10:13:25 org.apache.catalina.startup.Catalina load
+INFO   | jvm 1    | 2012/04/26 10:13:25 | INFO: Initialization processed in 578 ms
+INFO   | jvm 1    | 2012/04/26 10:13:25 | 26-abr-2012 10:13:25 org.apache.catalina.core.StandardService start
+INFO   | jvm 1    | 2012/04/26 10:13:25 | INFO: Arrancando servicio Catalina
+INFO   | jvm 1    | 2012/04/26 10:13:25 | 26-abr-2012 10:13:25 org.apache.catalina.core.StandardEngine start
+INFO   | jvm 1    | 2012/04/26 10:13:25 | INFO: Starting Servlet Engine: Apache Tomcat/5.5.26
+INFO   | jvm 1    | 2012/04/26 10:13:25 | 26-abr-2012 10:13:25 org.apache.catalina.core.StandardHost start
+INFO   | jvm 1    | 2012/04/26 10:13:25 | INFO: Desactivada la validación XML
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 26-abr-2012 10:13:28 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 10:13:28 | INFO: Marcando el servlet Initialize como no disponible
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 26-abr-2012 10:13:28 org.apache.catalina.core.StandardContext loadOnStartup
+INFO   | jvm 1    | 2012/04/26 10:13:28 | GRAVE: El Servlet /GC3 lanzó excepción de load()
+INFO   | jvm 1    | 2012/04/26 10:13:28 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:966)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:3956)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4230)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1014)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at org.apache.catalina.core.StandardHost.start(StandardHost.java:736)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1014)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:443)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at org.apache.catalina.core.StandardService.start(StandardService.java:448)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at org.apache.catalina.core.StandardServer.start(StandardServer.java:700)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at org.apache.catalina.startup.Catalina.start(Catalina.java:552)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at java.lang.reflect.Method.invoke(Method.java:324)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:295)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:433)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at java.lang.reflect.Method.invoke(Method.java:324)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at org.tanukisoftware.wrapper.WrapperStartStopApp.run(WrapperStartStopApp.java:159)
+INFO   | jvm 1    | 2012/04/26 10:13:28 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 10:13:29 | [GC
+INFO   | jvm 1    | 2012/04/26 10:13:29 |  209791K->33177K(1023424K), 0.2925319 secs]
+INFO   | jvm 1    | 2012/04/26 10:13:30 | [GC
+INFO   | jvm 1    | 2012/04/26 10:13:30 |  242969K->62730K(1023424K), 0.4313389 secs]
+INFO   | jvm 1    | 2012/04/26 10:13:32 | 26-abr-2012 10:13:32 org.apache.jk.common.ChannelSocket init
+INFO   | jvm 1    | 2012/04/26 10:13:32 | INFO: JK: ajp13 listening on /10.1.20.90:8009
+INFO   | jvm 1    | 2012/04/26 10:13:32 | 26-abr-2012 10:13:32 org.apache.jk.server.JkMain start
+INFO   | jvm 1    | 2012/04/26 10:13:32 | INFO: Jk running ID=0 time=0/125  config=null
+INFO   | jvm 1    | 2012/04/26 10:13:32 | [GC
+INFO   | jvm 1    | 2012/04/26 10:13:32 |  272522K->90977K(1023424K), 0.3014349 secs]
+INFO   | jvm 1    | 2012/04/26 10:13:32 | 26-abr-2012 10:13:32 org.apache.catalina.storeconfig.StoreLoader load
+INFO   | jvm 1    | 2012/04/26 10:13:32 | INFO: Find registry server-registry.xml at classpath resource
+INFO   | jvm 1    | 2012/04/26 10:13:33 | 26-abr-2012 10:13:33 org.apache.catalina.startup.Catalina start
+INFO   | jvm 1    | 2012/04/26 10:13:33 | INFO: Server startup in 7875 ms
+INFO   | jvm 1    | 2012/04/26 10:16:43 | 26-abr-2012 10:16:43 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 10:16:43 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 10:16:43 | 26-abr-2012 10:16:43 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:16:43 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 10:16:43 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 10:16:43 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 10:16:43 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 10:16:43 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 10:16:43 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:16:43 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 10:16:43 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:16:43 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 10:16:43 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 10:16:43 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 10:16:43 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 10:16:43 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 10:16:43 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 10:16:43 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 10:16:43 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 10:16:43 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 10:16:43 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 10:16:50 | 26-abr-2012 10:16:50 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:16:50 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 10:17:35 | 26-abr-2012 10:17:35 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 10:17:35 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 10:17:35 | 26-abr-2012 10:17:35 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:17:35 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 10:17:35 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 10:17:35 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 10:17:35 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 10:17:35 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 10:17:35 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:17:35 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 10:17:35 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:17:35 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 10:17:35 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 10:17:35 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 10:17:35 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 10:17:35 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 10:17:35 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 10:17:35 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 10:17:35 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 10:17:35 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 10:17:35 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 10:17:36 | 26-abr-2012 10:17:36 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:17:36 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 10:17:54 | 26-abr-2012 10:17:54 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:17:54 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 10:17:56 | 26-abr-2012 10:17:55 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:17:56 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 10:19:11 | 26-abr-2012 10:19:11 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 10:19:11 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 10:19:11 | 26-abr-2012 10:19:11 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:19:11 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 10:19:11 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 10:19:11 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 10:19:11 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 10:19:11 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 10:19:11 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:19:11 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 10:19:11 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:19:11 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 10:19:11 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 10:19:11 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 10:19:11 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 10:19:11 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 10:19:11 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 10:19:11 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 10:19:11 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 10:19:11 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 10:19:11 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 10:19:12 | 26-abr-2012 10:19:12 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:19:12 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 10:20:07 | 26-abr-2012 10:20:07 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 10:20:07 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 10:20:07 | 26-abr-2012 10:20:07 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:20:07 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 10:20:07 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 10:20:07 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 10:20:07 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 10:20:07 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 10:20:07 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:20:07 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 10:20:07 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:20:07 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 10:20:07 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 10:20:07 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 10:20:07 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 10:20:07 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 10:20:07 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 10:20:07 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 10:20:07 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 10:20:07 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 10:20:07 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 10:20:12 | 26-abr-2012 10:20:12 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:20:12 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 10:20:24 | 26-abr-2012 10:20:24 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:20:24 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 10:20:29 | 26-abr-2012 10:20:29 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:20:29 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 10:20:50 | 26-abr-2012 10:20:50 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 10:20:50 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 10:20:50 | 26-abr-2012 10:20:50 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:20:50 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 10:20:50 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 10:20:50 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 10:20:50 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 10:20:50 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 10:20:50 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:20:50 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 10:20:50 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:20:50 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 10:20:50 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 10:20:50 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 10:20:50 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 10:20:50 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 10:20:50 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 10:20:50 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 10:20:50 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 10:20:50 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 10:20:50 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 10:20:58 | 26-abr-2012 10:20:58 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:20:58 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 10:21:05 | 26-abr-2012 10:21:05 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:21:05 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 10:21:33 | 26-abr-2012 10:21:33 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 10:21:33 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 10:21:33 | 26-abr-2012 10:21:33 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:21:33 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 10:21:33 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 10:21:33 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 10:21:33 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 10:21:33 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 10:21:33 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:21:33 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 10:21:33 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:21:33 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 10:21:33 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 10:21:33 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 10:21:33 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 10:21:33 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 10:21:33 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 10:21:33 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 10:21:33 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 10:21:33 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 10:21:33 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 10:23:40 | 26-abr-2012 10:23:40 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 10:23:40 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 10:23:40 | 26-abr-2012 10:23:40 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:23:40 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 10:23:40 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 10:23:40 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 10:23:40 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 10:23:40 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 10:23:40 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:23:40 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 10:23:40 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:23:40 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 10:23:40 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 10:23:40 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 10:23:40 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 10:23:40 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 10:23:40 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 10:23:40 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 10:23:40 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 10:23:40 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 10:23:40 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 10:23:41 | 26-abr-2012 10:23:41 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:23:41 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 10:23:42 | 26-abr-2012 10:23:42 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:23:42 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 10:24:16 | 26-abr-2012 10:24:16 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 10:24:16 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 10:24:16 | 26-abr-2012 10:24:16 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:24:16 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 10:24:16 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 10:24:16 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 10:24:16 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 10:24:16 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 10:24:16 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:24:16 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 10:24:16 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:24:16 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 10:24:16 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 10:24:16 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 10:24:16 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 10:24:16 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 10:24:16 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 10:24:16 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 10:24:16 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 10:24:16 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 10:24:16 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 10:24:24 | 26-abr-2012 10:24:24 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:24:24 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 10:26:11 | 26-abr-2012 10:26:11 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 10:26:11 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 10:26:11 | 26-abr-2012 10:26:11 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:26:11 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 10:26:11 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 10:26:11 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 10:26:11 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 10:26:11 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 10:26:11 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:26:11 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 10:26:11 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:26:11 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 10:26:11 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 10:26:11 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 10:26:11 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 10:26:11 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 10:26:11 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 10:26:11 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 10:26:11 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 10:26:11 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 10:26:11 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 10:31:13 | JVM Process has not received any CPU time for 68 seconds.  Extending timeouts.
+INFO   | wrapper  | 2012/04/26 10:31:13 | Wrapper Process has not received any CPU time for 68 seconds.  Extending timeouts.
+INFO   | jvm 1    | 2012/04/26 10:35:51 | 26-abr-2012 10:35:51 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 10:35:51 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 10:35:51 | 26-abr-2012 10:35:51 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 10:35:51 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 10:35:51 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 10:35:51 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 10:35:51 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 10:35:51 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 10:35:51 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:35:51 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 10:35:51 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 10:35:51 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 10:35:51 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 10:35:51 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 10:35:51 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 10:35:51 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 10:35:51 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 10:35:51 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 10:35:51 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 10:35:51 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 10:35:51 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 11:15:51 | 26-abr-2012 11:15:50 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 11:15:51 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 11:15:51 | 26-abr-2012 11:15:50 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:15:51 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 11:15:51 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 11:15:51 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 11:15:51 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 11:15:51 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 11:15:51 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 11:15:51 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 11:15:51 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 11:15:51 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 11:15:51 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 11:15:51 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 11:15:51 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 11:15:51 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 11:15:51 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 11:15:51 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 11:15:51 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 11:15:51 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 11:15:51 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 11:15:52 | 26-abr-2012 11:15:52 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:15:52 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 11:15:59 | 26-abr-2012 11:15:59 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:15:59 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 11:33:15 | 26-abr-2012 11:33:15 org.apache.catalina.core.StandardService stop
+INFO   | jvm 1    | 2012/04/26 11:33:15 | INFO: Parando servicio Catalina
+STATUS | wrapper  | 2012/04/26 11:33:17 | <-- Wrapper Stopped
+STATUS | wrapper  | 2012/04/26 11:37:18 | --> Wrapper Started as Service
+STATUS | wrapper  | 2012/04/26 11:37:18 | Launching a JVM...
+INFO   | jvm 1    | 2012/04/26 11:37:19 | Wrapper (Version 3.1.2) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2012/04/26 11:37:19 | 
+INFO   | jvm 1    | 2012/04/26 11:37:20 | Created MBeanServer with ID: 66e815:136ee031145:-8000:OTMSERVER:1
+INFO   | jvm 1    | 2012/04/26 11:37:21 | 26-abr-2012 11:37:21 org.apache.catalina.startup.Catalina load
+INFO   | jvm 1    | 2012/04/26 11:37:21 | INFO: Initialization processed in 671 ms
+INFO   | jvm 1    | 2012/04/26 11:37:21 | 26-abr-2012 11:37:21 org.apache.catalina.core.StandardService start
+INFO   | jvm 1    | 2012/04/26 11:37:21 | INFO: Arrancando servicio Catalina
+INFO   | jvm 1    | 2012/04/26 11:37:21 | 26-abr-2012 11:37:21 org.apache.catalina.core.StandardEngine start
+INFO   | jvm 1    | 2012/04/26 11:37:21 | INFO: Starting Servlet Engine: Apache Tomcat/5.5.26
+INFO   | jvm 1    | 2012/04/26 11:37:21 | 26-abr-2012 11:37:21 org.apache.catalina.core.StandardHost start
+INFO   | jvm 1    | 2012/04/26 11:37:21 | INFO: Desactivada la validación XML
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 26-abr-2012 11:37:24 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 11:37:24 | INFO: Marcando el servlet Initialize como no disponible
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 26-abr-2012 11:37:24 org.apache.catalina.core.StandardContext loadOnStartup
+INFO   | jvm 1    | 2012/04/26 11:37:24 | GRAVE: El Servlet /GC3 lanzó excepción de load()
+INFO   | jvm 1    | 2012/04/26 11:37:24 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:966)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:3956)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4230)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1014)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at org.apache.catalina.core.StandardHost.start(StandardHost.java:736)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1014)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:443)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at org.apache.catalina.core.StandardService.start(StandardService.java:448)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at org.apache.catalina.core.StandardServer.start(StandardServer.java:700)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at org.apache.catalina.startup.Catalina.start(Catalina.java:552)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at java.lang.reflect.Method.invoke(Method.java:324)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:295)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:433)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at java.lang.reflect.Method.invoke(Method.java:324)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at org.tanukisoftware.wrapper.WrapperStartStopApp.run(WrapperStartStopApp.java:159)
+INFO   | jvm 1    | 2012/04/26 11:37:24 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 11:37:25 | [GC 209791K->33177K(1023424K), 0.1457519 secs]
+INFO   | jvm 1    | 2012/04/26 11:37:26 | [GC
+INFO   | jvm 1    | 2012/04/26 11:37:27 |  242969K->62730K(1023424K), 0.1658231 secs]
+INFO   | jvm 1    | 2012/04/26 11:37:28 | 26-abr-2012 11:37:28 org.apache.jk.common.ChannelSocket init
+INFO   | jvm 1    | 2012/04/26 11:37:28 | INFO: JK: ajp13 listening on /10.1.20.90:8009
+INFO   | jvm 1    | 2012/04/26 11:37:28 | 26-abr-2012 11:37:28 org.apache.jk.server.JkMain start
+INFO   | jvm 1    | 2012/04/26 11:37:28 | INFO: Jk running ID=0 time=0/79  config=null
+INFO   | jvm 1    | 2012/04/26 11:37:28 | [GC
+INFO   | jvm 1    | 2012/04/26 11:37:28 |  272522K->90980K(1023424K), 0.2325334 secs]
+INFO   | jvm 1    | 2012/04/26 11:37:28 | 26-abr-2012 11:37:28 org.apache.catalina.storeconfig.StoreLoader load
+INFO   | jvm 1    | 2012/04/26 11:37:28 | INFO: Find registry server-registry.xml at classpath resource
+INFO   | jvm 1    | 2012/04/26 11:37:28 | 26-abr-2012 11:37:28 org.apache.catalina.startup.Catalina start
+INFO   | jvm 1    | 2012/04/26 11:37:28 | INFO: Server startup in 7657 ms
+INFO   | jvm 1    | 2012/04/26 11:44:59 | 26-abr-2012 11:44:59 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 11:44:59 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 11:44:59 | 26-abr-2012 11:44:59 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:44:59 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 11:44:59 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 11:44:59 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 11:44:59 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 11:44:59 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 11:44:59 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 11:44:59 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 11:44:59 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 11:44:59 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 11:44:59 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 11:44:59 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 11:44:59 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 11:44:59 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 11:44:59 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 11:44:59 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 11:44:59 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 11:44:59 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 11:44:59 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 11:45:01 | 26-abr-2012 11:45:01 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:45:01 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 11:45:02 | 26-abr-2012 11:45:02 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:45:02 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 11:45:02 | 26-abr-2012 11:45:02 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:45:02 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 11:45:21 | 26-abr-2012 11:45:21 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:45:21 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 11:45:22 | 26-abr-2012 11:45:22 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:45:22 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 11:45:22 | 26-abr-2012 11:45:22 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:45:22 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 11:45:23 | 26-abr-2012 11:45:23 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:45:23 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 11:45:23 | 26-abr-2012 11:45:23 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:45:23 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 11:45:24 | 26-abr-2012 11:45:24 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:45:24 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 11:45:32 | 26-abr-2012 11:45:32 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 11:45:32 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 11:45:32 | 26-abr-2012 11:45:32 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:45:32 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 11:45:32 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 11:45:32 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 11:45:32 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 11:45:32 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 11:45:32 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 11:45:32 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 11:45:32 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 11:45:32 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 11:45:32 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 11:45:32 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 11:45:32 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 11:45:32 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 11:45:32 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 11:45:32 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 11:45:32 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 11:45:32 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 11:45:32 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 11:46:30 | 26-abr-2012 11:46:30 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 11:46:30 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 11:46:30 | 26-abr-2012 11:46:30 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:46:30 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 11:46:30 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 11:46:30 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 11:46:30 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 11:46:30 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 11:46:30 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 11:46:30 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 11:46:30 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 11:46:30 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 11:46:30 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 11:46:30 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 11:46:30 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 11:46:30 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 11:46:30 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 11:46:30 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 11:46:30 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 11:46:30 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 11:46:30 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 11:46:31 | 26-abr-2012 11:46:31 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:46:31 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 11:46:41 | 26-abr-2012 11:46:41 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:46:41 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 11:46:42 | 26-abr-2012 11:46:42 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:46:42 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 11:46:45 | 26-abr-2012 11:46:45 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:46:45 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 11:50:16 | 26-abr-2012 11:50:16 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 11:50:16 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 11:50:16 | 26-abr-2012 11:50:16 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:50:16 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 11:50:16 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 11:50:16 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 11:50:16 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 11:50:16 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 11:50:16 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 11:50:16 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 11:50:16 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 11:50:16 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 11:50:16 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 11:50:16 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 11:50:16 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 11:50:16 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 11:50:16 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 11:50:16 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 11:50:16 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 11:50:16 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 11:50:16 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 11:50:17 | 26-abr-2012 11:50:17 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:50:17 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 11:56:41 | 26-abr-2012 11:56:40 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 11:56:41 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 11:56:41 | 26-abr-2012 11:56:40 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 11:56:41 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 11:56:41 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 11:56:41 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 11:56:41 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 11:56:41 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 11:56:41 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 11:56:41 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 11:56:41 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 11:56:41 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 11:56:41 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 11:56:41 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 11:56:41 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 11:56:41 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 11:56:41 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 11:56:41 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 11:56:41 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 11:56:41 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 11:56:41 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 12:02:15 | 26-abr-2012 12:02:14 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 12:02:15 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 12:02:15 | 26-abr-2012 12:02:14 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:02:15 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 12:02:15 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 12:02:15 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 12:02:15 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 12:02:15 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 12:02:15 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:02:15 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 12:02:15 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:02:15 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 12:02:15 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 12:02:15 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 12:02:15 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 12:02:15 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 12:02:15 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 12:02:15 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 12:02:15 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 12:02:15 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 12:02:15 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 12:02:17 | 26-abr-2012 12:02:17 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:02:17 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:02:18 | 26-abr-2012 12:02:18 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:02:18 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:02:18 | 26-abr-2012 12:02:18 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:02:18 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:02:20 | 26-abr-2012 12:02:20 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:02:20 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:02:27 | 26-abr-2012 12:02:27 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:02:27 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:02:28 | 26-abr-2012 12:02:28 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:02:28 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:07:52 | 26-abr-2012 12:07:52 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 12:07:52 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 12:07:52 | 26-abr-2012 12:07:52 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:07:52 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 12:07:52 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 12:07:52 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 12:07:52 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 12:07:52 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 12:07:52 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:07:52 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 12:07:52 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:07:52 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 12:07:52 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 12:07:52 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 12:07:52 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 12:07:52 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 12:07:52 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 12:07:52 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 12:07:52 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 12:07:52 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 12:07:52 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 12:09:22 | 26-abr-2012 12:09:22 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 12:09:22 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 12:09:22 | 26-abr-2012 12:09:22 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:09:22 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 12:09:22 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 12:09:22 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 12:09:22 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 12:09:22 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 12:09:22 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:09:22 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 12:09:22 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:09:22 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 12:09:22 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 12:09:22 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 12:09:22 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 12:09:22 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 12:09:22 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 12:09:22 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 12:09:22 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 12:09:22 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 12:09:22 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 12:12:09 | 26-abr-2012 12:12:09 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 12:12:09 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 12:12:09 | 26-abr-2012 12:12:09 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:12:09 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 12:12:09 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 12:12:09 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 12:12:09 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 12:12:09 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 12:12:09 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:12:09 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 12:12:09 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:12:09 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 12:12:09 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 12:12:09 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 12:12:09 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 12:12:09 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 12:12:09 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 12:12:09 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 12:12:09 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 12:12:09 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 12:12:09 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 12:12:12 | 26-abr-2012 12:12:11 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:12:12 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:12:12 | 26-abr-2012 12:12:12 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:12:12 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:12:13 | 26-abr-2012 12:12:13 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:12:13 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:12:20 | 26-abr-2012 12:12:20 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:12:20 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:12:22 | 26-abr-2012 12:12:22 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:12:22 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:12:22 | 26-abr-2012 12:12:22 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:12:22 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:12:23 | 26-abr-2012 12:12:23 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:12:23 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:12:23 | 26-abr-2012 12:12:23 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:12:23 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:12:44 | 26-abr-2012 12:12:44 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 12:12:44 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 12:12:44 | 26-abr-2012 12:12:44 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:12:44 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 12:12:44 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 12:12:44 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 12:12:44 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 12:12:44 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 12:12:44 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:12:44 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 12:12:44 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:12:44 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 12:12:44 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 12:12:44 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 12:12:44 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 12:12:44 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 12:12:44 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 12:12:44 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 12:12:44 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 12:12:44 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 12:12:44 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 12:12:46 | 26-abr-2012 12:12:46 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:12:46 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:12:53 | 26-abr-2012 12:12:53 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:12:53 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:12:54 | 26-abr-2012 12:12:54 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:12:54 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:12:55 | 26-abr-2012 12:12:55 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:12:55 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:12:55 | 26-abr-2012 12:12:55 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:12:55 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:12:57 | 26-abr-2012 12:12:57 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:12:57 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:13:02 | 26-abr-2012 12:13:02 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:13:02 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:13:21 | 26-abr-2012 12:13:21 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 12:13:21 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 12:13:21 | 26-abr-2012 12:13:21 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:13:21 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 12:13:21 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 12:13:21 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 12:13:21 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 12:13:21 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 12:13:21 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:13:21 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 12:13:21 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:13:21 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 12:13:21 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 12:13:21 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 12:13:21 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 12:13:21 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 12:13:21 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 12:13:21 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 12:13:21 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 12:13:21 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 12:13:21 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 12:13:23 | 26-abr-2012 12:13:23 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:13:23 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:13:24 | 26-abr-2012 12:13:23 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:13:24 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:13:24 | 26-abr-2012 12:13:24 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:13:24 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:23:17 | 26-abr-2012 12:23:17 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 12:23:17 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 12:23:17 | 26-abr-2012 12:23:17 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:23:17 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 12:23:17 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 12:23:17 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 12:23:17 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 12:23:17 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 12:23:17 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:23:17 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 12:23:17 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:23:17 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 12:23:17 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 12:23:17 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 12:23:17 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 12:23:17 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 12:23:17 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 12:23:17 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 12:23:17 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 12:23:17 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 12:23:17 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 12:25:13 | 26-abr-2012 12:25:12 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 12:25:13 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 12:25:13 | 26-abr-2012 12:25:12 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:25:13 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 12:25:13 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 12:25:13 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 12:25:13 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 12:25:13 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 12:25:13 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:25:13 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 12:25:13 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:25:13 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 12:25:13 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 12:25:13 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 12:25:13 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 12:25:13 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 12:25:13 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 12:25:13 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 12:25:13 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 12:25:13 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 12:25:13 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 12:25:14 | 26-abr-2012 12:25:14 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:25:14 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | wrapper  | 2012/04/26 12:41:41 | User logged out.  Ignored.
+INFO   | wrapper  | 2012/04/26 12:41:42 | User logged out.  Ignored.
+STATUS | wrapper  | 2012/04/26 12:41:45 | Machine is shutting down.
+INFO   | jvm 1    | 2012/04/26 12:41:47 | 26-abr-2012 12:41:47 org.apache.catalina.core.StandardService stop
+INFO   | jvm 1    | 2012/04/26 12:41:47 | INFO: Parando servicio Catalina
+STATUS | wrapper  | 2012/04/26 12:41:49 | <-- Wrapper Stopped
+STATUS | wrapper  | 2012/04/26 12:45:16 | --> Wrapper Started as Service
+STATUS | wrapper  | 2012/04/26 12:45:16 | Launching a JVM...
+INFO   | jvm 1    | 2012/04/26 12:45:17 | Wrapper (Version 3.1.2) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2012/04/26 12:45:17 | 
+INFO   | jvm 1    | 2012/04/26 12:45:18 | Created MBeanServer with ID: 66e815:136ee414a01:-8000:OTMSERVER:1
+INFO   | jvm 1    | 2012/04/26 12:45:19 | 26-abr-2012 12:45:19 org.apache.catalina.startup.Catalina load
+INFO   | jvm 1    | 2012/04/26 12:45:19 | INFO: Initialization processed in 718 ms
+INFO   | jvm 1    | 2012/04/26 12:45:19 | 26-abr-2012 12:45:19 org.apache.catalina.core.StandardService start
+INFO   | jvm 1    | 2012/04/26 12:45:19 | INFO: Arrancando servicio Catalina
+INFO   | jvm 1    | 2012/04/26 12:45:19 | 26-abr-2012 12:45:19 org.apache.catalina.core.StandardEngine start
+INFO   | jvm 1    | 2012/04/26 12:45:19 | INFO: Starting Servlet Engine: Apache Tomcat/5.5.26
+INFO   | jvm 1    | 2012/04/26 12:45:19 | 26-abr-2012 12:45:19 org.apache.catalina.core.StandardHost start
+INFO   | jvm 1    | 2012/04/26 12:45:19 | INFO: Desactivada la validación XML
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 26-abr-2012 12:45:23 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 12:45:23 | INFO: Marcando el servlet Initialize como no disponible
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 26-abr-2012 12:45:23 org.apache.catalina.core.StandardContext loadOnStartup
+INFO   | jvm 1    | 2012/04/26 12:45:23 | GRAVE: El Servlet /GC3 lanzó excepción de load()
+INFO   | jvm 1    | 2012/04/26 12:45:23 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:966)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:3956)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4230)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1014)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at org.apache.catalina.core.StandardHost.start(StandardHost.java:736)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1014)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:443)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at org.apache.catalina.core.StandardService.start(StandardService.java:448)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at org.apache.catalina.core.StandardServer.start(StandardServer.java:700)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at org.apache.catalina.startup.Catalina.start(Catalina.java:552)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at java.lang.reflect.Method.invoke(Method.java:324)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:295)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:433)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at java.lang.reflect.Method.invoke(Method.java:324)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at org.tanukisoftware.wrapper.WrapperStartStopApp.run(WrapperStartStopApp.java:159)
+INFO   | jvm 1    | 2012/04/26 12:45:23 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 12:45:24 | [GC
+INFO   | jvm 1    | 2012/04/26 12:45:24 |  209791K->33177K(1023424K), 0.1463577 secs]
+INFO   | jvm 1    | 2012/04/26 12:45:25 | [GC
+INFO   | jvm 1    | 2012/04/26 12:45:25 |  242969K->62730K(1023424K), 0.1721816 secs]
+INFO   | jvm 1    | 2012/04/26 12:45:26 | 26-abr-2012 12:45:26 org.apache.jk.common.ChannelSocket init
+INFO   | jvm 1    | 2012/04/26 12:45:26 | INFO: JK: ajp13 listening on /10.1.20.90:8009
+INFO   | jvm 1    | 2012/04/26 12:45:26 | 26-abr-2012 12:45:26 org.apache.jk.server.JkMain start
+INFO   | jvm 1    | 2012/04/26 12:45:26 | INFO: Jk running ID=0 time=0/188  config=null
+INFO   | jvm 1    | 2012/04/26 12:45:26 | [GC
+INFO   | jvm 1    | 2012/04/26 12:45:26 |  272521K->91023K(1023424K), 0.2350304 secs]
+INFO   | jvm 1    | 2012/04/26 12:45:27 | 26-abr-2012 12:45:27 org.apache.catalina.storeconfig.StoreLoader load
+INFO   | jvm 1    | 2012/04/26 12:45:27 | INFO: Find registry server-registry.xml at classpath resource
+INFO   | jvm 1    | 2012/04/26 12:45:27 | 26-abr-2012 12:45:27 org.apache.catalina.startup.Catalina start
+INFO   | jvm 1    | 2012/04/26 12:45:27 | INFO: Server startup in 8844 ms
+INFO   | jvm 1    | 2012/04/26 12:45:50 | 26-abr-2012 12:45:50 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 12:45:50 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 12:45:50 | 26-abr-2012 12:45:50 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:45:50 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 12:45:50 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 12:45:50 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 12:45:50 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 12:45:50 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 12:45:50 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:45:50 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 12:45:50 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:45:50 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 12:45:50 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 12:45:50 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 12:45:50 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 12:45:50 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 12:45:50 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 12:45:50 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 12:45:50 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 12:45:50 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 12:45:50 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 12:45:58 | 26-abr-2012 12:45:58 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:45:58 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:46:00 | 26-abr-2012 12:46:00 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:46:00 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:46:00 | 26-abr-2012 12:46:00 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:46:00 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:46:01 | 26-abr-2012 12:46:00 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:46:01 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:46:07 | 26-abr-2012 12:46:07 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:46:07 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:46:24 | 26-abr-2012 12:46:24 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 12:46:24 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 12:46:24 | 26-abr-2012 12:46:24 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:46:24 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 12:46:24 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 12:46:24 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 12:46:24 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 12:46:24 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 12:46:24 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:46:24 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 12:46:24 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:46:24 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 12:46:24 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 12:46:24 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 12:46:24 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 12:46:24 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 12:46:24 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 12:46:24 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 12:46:24 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 12:46:24 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 12:46:24 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 12:46:38 | 26-abr-2012 12:46:38 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:46:38 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:46:43 | 26-abr-2012 12:46:43 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:46:43 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:46:44 | 26-abr-2012 12:46:44 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:46:44 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:46:45 | 26-abr-2012 12:46:45 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:46:45 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:46:45 | 26-abr-2012 12:46:45 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:46:45 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:46:46 | 26-abr-2012 12:46:46 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:46:46 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:47:01 | 26-abr-2012 12:47:01 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 12:47:01 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 12:47:01 | 26-abr-2012 12:47:01 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:47:01 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 12:47:01 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 12:47:01 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 12:47:01 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 12:47:01 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 12:47:01 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:47:01 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 12:47:01 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 12:47:01 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 12:47:01 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 12:47:01 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 12:47:01 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 12:47:01 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 12:47:01 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 12:47:01 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 12:47:01 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 12:47:01 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 12:47:01 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 12:47:16 | 26-abr-2012 12:47:16 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:47:16 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:47:17 | 26-abr-2012 12:47:17 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:47:17 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 12:47:18 | 26-abr-2012 12:47:18 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 12:47:18 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 13:02:46 | 26-abr-2012 13:02:46 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 13:02:46 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 13:02:46 | 26-abr-2012 13:02:46 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 13:02:46 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 13:02:46 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 13:02:46 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 13:02:46 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 13:02:46 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 13:02:46 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 13:02:46 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 13:02:46 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 13:02:46 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 13:02:46 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 13:02:46 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 13:02:46 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 13:02:46 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 13:02:46 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 13:02:46 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 13:02:46 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 13:02:46 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 13:02:46 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 13:02:50 | 26-abr-2012 13:02:50 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 13:02:50 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 13:03:54 | 26-abr-2012 13:03:54 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 13:03:54 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 13:03:54 | 26-abr-2012 13:03:54 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 13:03:54 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 13:03:54 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 13:03:54 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 13:03:54 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 13:03:54 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 13:03:54 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 13:03:54 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 13:03:54 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 13:03:54 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 13:03:54 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 13:03:54 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 13:03:54 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 13:03:54 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 13:03:54 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 13:03:54 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 13:03:54 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 13:03:54 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 13:03:54 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 13:03:55 | 26-abr-2012 13:03:55 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 13:03:55 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 13:03:56 | 26-abr-2012 13:03:56 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 13:03:56 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 13:06:31 | 26-abr-2012 13:06:31 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 13:06:31 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 13:06:31 | 26-abr-2012 13:06:31 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 13:06:31 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 13:06:31 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 13:06:31 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 13:06:31 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 13:06:31 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 13:06:31 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 13:06:31 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 13:06:31 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 13:06:31 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 13:06:31 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 13:06:31 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 13:06:31 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 13:06:31 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 13:06:31 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 13:06:31 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 13:06:31 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 13:06:31 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 13:06:31 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 13:06:32 | 26-abr-2012 13:06:32 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 13:06:32 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 13:08:47 | 26-abr-2012 13:08:47 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 13:08:47 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 13:08:47 | 26-abr-2012 13:08:47 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 13:08:47 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 13:08:47 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 13:08:47 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 13:08:47 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 13:08:47 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 13:08:47 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 13:08:47 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 13:08:47 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 13:08:47 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 13:08:47 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 13:08:47 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 13:08:47 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 13:08:47 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 13:08:47 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 13:08:47 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 13:08:47 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 13:08:47 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 13:08:47 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 13:08:48 | 26-abr-2012 13:08:48 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 13:08:48 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 13:08:49 | 26-abr-2012 13:08:49 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 13:08:49 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 13:08:49 | 26-abr-2012 13:08:49 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 13:08:49 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 13:08:49 | 26-abr-2012 13:08:49 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 13:08:49 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 15:14:58 | [GC
+INFO   | jvm 1    | 2012/04/26 15:14:58 |  300815K->91859K(1023424K), 0.1165924 secs]
+INFO   | jvm 1    | 2012/04/26 16:34:55 | 26-abr-2012 16:34:55 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/26 16:34:55 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/26 16:34:55 | 26-abr-2012 16:34:55 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 16:34:55 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/26 16:34:55 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/26 16:34:55 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/26 16:34:55 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/26 16:34:55 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/26 16:34:55 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/26 16:34:55 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/26 16:34:55 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/26 16:34:55 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/26 16:34:55 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/26 16:34:55 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/26 16:34:55 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/26 16:34:55 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/26 16:34:55 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/26 16:34:55 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/26 16:34:55 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/26 16:34:55 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/26 16:34:55 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/26 16:34:57 | 26-abr-2012 16:34:57 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 16:34:57 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 16:34:58 | 26-abr-2012 16:34:58 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 16:34:58 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 16:35:22 | 26-abr-2012 16:35:22 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/26 16:35:22 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/26 18:48:10 | [GC 301651K->91849K(1023424K), 0.0074998 secs]
+INFO   | jvm 1    | 2012/04/26 22:21:30 | [GC 301638K->91842K(1023424K), 0.0069702 secs]
+INFO   | jvm 1    | 2012/04/27 01:54:40 | [GC 301634K->91849K(1023424K), 0.0074709 secs]
+INFO   | jvm 1    | 2012/04/27 05:28:00 | [GC 301641K->91849K(1023424K), 0.0069913 secs]
+INFO   | jvm 1    | 2012/04/27 09:01:20 | [GC 301641K->91849K(1023424K), 0.0071533 secs]
+INFO   | jvm 1    | 2012/04/27 09:48:03 | 27-abr-2012 9:48:02 org.apache.catalina.core.StandardService stop
+INFO   | jvm 1    | 2012/04/27 09:48:03 | INFO: Parando servicio Catalina
+STATUS | wrapper  | 2012/04/27 09:48:05 | <-- Wrapper Stopped
+STATUS | wrapper  | 2012/04/27 09:50:25 | --> Wrapper Started as Service
+STATUS | wrapper  | 2012/04/27 09:50:26 | Launching a JVM...
+INFO   | jvm 1    | 2012/04/27 09:50:27 | Wrapper (Version 3.1.2) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2012/04/27 09:50:27 | 
+INFO   | jvm 1    | 2012/04/27 09:50:27 | Created MBeanServer with ID: 66e815:136f2c7938c:-8000:OTMSERVER:1
+INFO   | jvm 1    | 2012/04/27 09:50:28 | 27-abr-2012 9:50:28 org.apache.catalina.startup.Catalina load
+INFO   | jvm 1    | 2012/04/27 09:50:28 | INFO: Initialization processed in 671 ms
+INFO   | jvm 1    | 2012/04/27 09:50:28 | 27-abr-2012 9:50:28 org.apache.catalina.core.StandardService start
+INFO   | jvm 1    | 2012/04/27 09:50:28 | INFO: Arrancando servicio Catalina
+INFO   | jvm 1    | 2012/04/27 09:50:28 | 27-abr-2012 9:50:28 org.apache.catalina.core.StandardEngine start
+INFO   | jvm 1    | 2012/04/27 09:50:28 | INFO: Starting Servlet Engine: Apache Tomcat/5.5.26
+INFO   | jvm 1    | 2012/04/27 09:50:28 | 27-abr-2012 9:50:28 org.apache.catalina.core.StandardHost start
+INFO   | jvm 1    | 2012/04/27 09:50:28 | INFO: Desactivada la validación XML
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 27-abr-2012 9:50:32 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/27 09:50:32 | INFO: Marcando el servlet Initialize como no disponible
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 27-abr-2012 9:50:32 org.apache.catalina.core.StandardContext loadOnStartup
+INFO   | jvm 1    | 2012/04/27 09:50:32 | GRAVE: El Servlet /GC3 lanzó excepción de load()
+INFO   | jvm 1    | 2012/04/27 09:50:32 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:966)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:3956)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4230)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1014)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at org.apache.catalina.core.StandardHost.start(StandardHost.java:736)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1014)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:443)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at org.apache.catalina.core.StandardService.start(StandardService.java:448)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at org.apache.catalina.core.StandardServer.start(StandardServer.java:700)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at org.apache.catalina.startup.Catalina.start(Catalina.java:552)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at java.lang.reflect.Method.invoke(Method.java:324)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:295)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:433)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at java.lang.reflect.Method.invoke(Method.java:324)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at org.tanukisoftware.wrapper.WrapperStartStopApp.run(WrapperStartStopApp.java:159)
+INFO   | jvm 1    | 2012/04/27 09:50:32 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/27 09:50:33 | [GC
+INFO   | jvm 1    | 2012/04/27 09:50:33 |  209791K->33177K(1023424K), 0.1417413 secs]
+INFO   | jvm 1    | 2012/04/27 09:50:34 | [GC
+INFO   | jvm 1    | 2012/04/27 09:50:34 |  242969K->62730K(1023424K), 0.2426347 secs]
+INFO   | jvm 1    | 2012/04/27 09:50:35 | 27-abr-2012 9:50:35 org.apache.jk.common.ChannelSocket init
+INFO   | jvm 1    | 2012/04/27 09:50:35 | INFO: Port busy 8009 java.net.BindException: Cannot assign requested address: JVM_Bind
+INFO   | jvm 1    | 2012/04/27 09:50:35 | 27-abr-2012 9:50:35 org.apache.jk.common.ChannelSocket init
+INFO   | jvm 1    | 2012/04/27 09:50:35 | INFO: Port busy 8010 java.net.BindException: Cannot assign requested address: JVM_Bind
+INFO   | jvm 1    | 2012/04/27 09:50:35 | 27-abr-2012 9:50:35 org.apache.jk.common.ChannelSocket init
+INFO   | jvm 1    | 2012/04/27 09:50:35 | INFO: Port busy 8011 java.net.BindException: Cannot assign requested address: JVM_Bind
+INFO   | jvm 1    | 2012/04/27 09:50:35 | 27-abr-2012 9:50:35 org.apache.jk.common.ChannelSocket init
+INFO   | jvm 1    | 2012/04/27 09:50:35 | INFO: Port busy 8012 java.net.BindException: Cannot assign requested address: JVM_Bind
+INFO   | jvm 1    | 2012/04/27 09:50:35 | 27-abr-2012 9:50:35 org.apache.jk.common.ChannelSocket init
+INFO   | jvm 1    | 2012/04/27 09:50:35 | INFO: Port busy 8013 java.net.BindException: Cannot assign requested address: JVM_Bind
+INFO   | jvm 1    | 2012/04/27 09:50:35 | 27-abr-2012 9:50:35 org.apache.jk.common.ChannelSocket init
+INFO   | jvm 1    | 2012/04/27 09:50:35 | INFO: Port busy 8014 java.net.BindException: Cannot assign requested address: JVM_Bind
+INFO   | jvm 1    | 2012/04/27 09:50:35 | 27-abr-2012 9:50:35 org.apache.jk.common.ChannelSocket init
+INFO   | jvm 1    | 2012/04/27 09:50:35 | INFO: Port busy 8015 java.net.BindException: Cannot assign requested address: JVM_Bind
+INFO   | jvm 1    | 2012/04/27 09:50:35 | 27-abr-2012 9:50:35 org.apache.jk.common.ChannelSocket init
+INFO   | jvm 1    | 2012/04/27 09:50:35 | INFO: Port busy 8016 java.net.BindException: Cannot assign requested address: JVM_Bind
+INFO   | jvm 1    | 2012/04/27 09:50:35 | 27-abr-2012 9:50:35 org.apache.jk.common.ChannelSocket init
+INFO   | jvm 1    | 2012/04/27 09:50:35 | INFO: Port busy 8017 java.net.BindException: Cannot assign requested address: JVM_Bind
+INFO   | jvm 1    | 2012/04/27 09:50:35 | 27-abr-2012 9:50:35 org.apache.jk.common.ChannelSocket init
+INFO   | jvm 1    | 2012/04/27 09:50:35 | INFO: Port busy 8018 java.net.BindException: Cannot assign requested address: JVM_Bind
+INFO   | jvm 1    | 2012/04/27 09:50:35 | 27-abr-2012 9:50:35 org.apache.jk.common.ChannelSocket init
+INFO   | jvm 1    | 2012/04/27 09:50:35 | INFO: Port busy 8019 java.net.BindException: Cannot assign requested address: JVM_Bind
+INFO   | jvm 1    | 2012/04/27 09:50:35 | 27-abr-2012 9:50:35 org.apache.jk.common.ChannelSocket init
+INFO   | jvm 1    | 2012/04/27 09:50:35 | GRAVE: Can't find free port 8009 8019
+INFO   | jvm 1    | 2012/04/27 09:50:35 | 27-abr-2012 9:50:35 org.apache.jk.server.JkMain start
+INFO   | jvm 1    | 2012/04/27 09:50:35 | INFO: Jk running ID=0 time=0/79  config=null
+INFO   | jvm 1    | 2012/04/27 09:50:35 | [GC
+INFO   | jvm 1    | 2012/04/27 09:50:36 |  272522K->90883K(1023424K), 0.2307421 secs]
+INFO   | jvm 1    | 2012/04/27 09:50:36 | 27-abr-2012 9:50:36 org.apache.catalina.storeconfig.StoreLoader load
+INFO   | jvm 1    | 2012/04/27 09:50:36 | INFO: Find registry server-registry.xml at classpath resource
+INFO   | jvm 1    | 2012/04/27 09:50:36 | 27-abr-2012 9:50:36 org.apache.catalina.startup.Catalina start
+INFO   | jvm 1    | 2012/04/27 09:50:36 | INFO: Server startup in 8141 ms
+INFO   | jvm 1    | 2012/04/27 12:29:35 | [GC
+INFO   | jvm 1    | 2012/04/27 12:29:35 |  300675K->91518K(1023424K), 0.1053506 secs]
+INFO   | jvm 1    | 2012/04/27 16:03:35 | [GC 301310K->91513K(1023424K), 0.0060735 secs]
+INFO   | jvm 1    | 2012/04/27 19:37:25 | [GC 301305K->91513K(1023424K), 0.0061955 secs]
+INFO   | jvm 1    | 2012/04/27 23:11:25 | [GC 301305K->91513K(1023424K), 0.0069829 secs]
+INFO   | jvm 1    | 2012/04/28 02:45:15 | [GC 301305K->91506K(1023424K), 0.0061506 secs]
+INFO   | jvm 1    | 2012/04/28 06:19:15 | [GC 301298K->91513K(1023424K), 0.0058934 secs]
+INFO   | jvm 1    | 2012/04/28 09:53:15 | [GC 301305K->91513K(1023424K), 0.0063107 secs]
+INFO   | jvm 1    | 2012/04/28 13:27:05 | [GC 301305K->91513K(1023424K), 0.0065213 secs]
+INFO   | jvm 1    | 2012/04/28 17:01:05 | [GC 301305K->91513K(1023424K), 0.0061566 secs]
+INFO   | jvm 1    | 2012/04/28 20:35:05 | [GC 301305K->91513K(1023424K), 0.0058416 secs]
+INFO   | jvm 1    | 2012/04/29 00:08:55 | [GC 301305K->91513K(1023424K), 0.0062866 secs]
+INFO   | jvm 1    | 2012/04/29 03:42:55 | [GC 301305K->91513K(1023424K), 0.0060207 secs]
+INFO   | jvm 1    | 2012/04/29 07:16:55 | [GC 301303K->91506K(1023424K), 0.0060498 secs]
+INFO   | jvm 1    | 2012/04/29 10:50:45 | [GC 301298K->91513K(1023424K), 0.0058466 secs]
+INFO   | jvm 1    | 2012/04/29 14:24:45 | [GC 301305K->91513K(1023424K), 0.0060621 secs]
+INFO   | jvm 1    | 2012/04/29 17:58:35 | [GC 301305K->91513K(1023424K), 0.0063356 secs]
+INFO   | jvm 1    | 2012/04/29 21:32:35 | [GC 301305K->91513K(1023424K), 0.0061765 secs]
+INFO   | jvm 1    | 2012/04/30 01:06:35 | [GC 301305K->91513K(1023424K), 0.0060502 secs]
+INFO   | jvm 1    | 2012/04/30 04:40:25 | [GC 301305K->91513K(1023424K), 0.0060046 secs]
+INFO   | jvm 1    | 2012/04/30 08:14:25 | [GC 301305K->91513K(1023424K), 0.0057565 secs]
+INFO   | jvm 1    | 2012/04/30 11:48:25 | [GC 301300K->91506K(1023424K), 0.0058642 secs]
+INFO   | wrapper  | 2012/04/30 12:23:28 | User logged out.  Ignored.
+STATUS | wrapper  | 2012/04/30 12:23:30 | Machine is shutting down.
+STATUS | wrapper  | 2012/04/30 13:17:11 | --> Wrapper Started as Service
+STATUS | wrapper  | 2012/04/30 13:17:11 | Launching a JVM...
+INFO   | jvm 1    | 2012/04/30 13:17:13 | Wrapper (Version 3.1.2) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2012/04/30 13:17:13 | 
+INFO   | jvm 1    | 2012/04/30 13:17:13 | Created MBeanServer with ID: 66e815:13702f7f36b:-8000:OTMSERVER:1
+INFO   | jvm 1    | 2012/04/30 13:17:14 | 30-abr-2012 13:17:14 org.apache.catalina.startup.Catalina load
+INFO   | jvm 1    | 2012/04/30 13:17:14 | INFO: Initialization processed in 688 ms
+INFO   | jvm 1    | 2012/04/30 13:17:14 | 30-abr-2012 13:17:14 org.apache.catalina.core.StandardService start
+INFO   | jvm 1    | 2012/04/30 13:17:14 | INFO: Arrancando servicio Catalina
+INFO   | jvm 1    | 2012/04/30 13:17:14 | 30-abr-2012 13:17:14 org.apache.catalina.core.StandardEngine start
+INFO   | jvm 1    | 2012/04/30 13:17:14 | INFO: Starting Servlet Engine: Apache Tomcat/5.5.26
+INFO   | jvm 1    | 2012/04/30 13:17:14 | 30-abr-2012 13:17:14 org.apache.catalina.core.StandardHost start
+INFO   | jvm 1    | 2012/04/30 13:17:14 | INFO: Desactivada la validación XML
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 30-abr-2012 13:17:18 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/30 13:17:18 | INFO: Marcando el servlet Initialize como no disponible
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 30-abr-2012 13:17:18 org.apache.catalina.core.StandardContext loadOnStartup
+INFO   | jvm 1    | 2012/04/30 13:17:18 | GRAVE: El Servlet /GC3 lanzó excepción de load()
+INFO   | jvm 1    | 2012/04/30 13:17:18 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:966)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:3956)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4230)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1014)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at org.apache.catalina.core.StandardHost.start(StandardHost.java:736)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1014)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:443)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at org.apache.catalina.core.StandardService.start(StandardService.java:448)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at org.apache.catalina.core.StandardServer.start(StandardServer.java:700)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at org.apache.catalina.startup.Catalina.start(Catalina.java:552)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at java.lang.reflect.Method.invoke(Method.java:324)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:295)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:433)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at java.lang.reflect.Method.invoke(Method.java:324)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at org.tanukisoftware.wrapper.WrapperStartStopApp.run(WrapperStartStopApp.java:159)
+INFO   | jvm 1    | 2012/04/30 13:17:18 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/30 13:17:19 | [GC
+INFO   | jvm 1    | 2012/04/30 13:17:19 |  209791K->33177K(1023424K), 0.1828725 secs]
+INFO   | jvm 1    | 2012/04/30 13:17:20 | [GC
+INFO   | jvm 1    | 2012/04/30 13:17:20 |  242969K->62730K(1023424K), 0.3372890 secs]
+INFO   | jvm 1    | 2012/04/30 13:17:22 | 30-abr-2012 13:17:22 org.apache.jk.common.ChannelSocket init
+INFO   | jvm 1    | 2012/04/30 13:17:22 | INFO: JK: ajp13 listening on /10.1.20.90:8009
+INFO   | jvm 1    | 2012/04/30 13:17:22 | 30-abr-2012 13:17:22 org.apache.jk.server.JkMain start
+INFO   | jvm 1    | 2012/04/30 13:17:22 | INFO: Jk running ID=0 time=0/78  config=null
+INFO   | jvm 1    | 2012/04/30 13:17:22 | [GC
+INFO   | jvm 1    | 2012/04/30 13:17:22 |  272522K->90976K(1023424K), 0.2577193 secs]
+INFO   | jvm 1    | 2012/04/30 13:17:22 | 30-abr-2012 13:17:22 org.apache.catalina.storeconfig.StoreLoader load
+INFO   | jvm 1    | 2012/04/30 13:17:22 | INFO: Find registry server-registry.xml at classpath resource
+INFO   | jvm 1    | 2012/04/30 13:17:23 | 30-abr-2012 13:17:23 org.apache.catalina.startup.Catalina start
+INFO   | jvm 1    | 2012/04/30 13:17:23 | INFO: Server startup in 8765 ms
+INFO   | jvm 1    | 2012/04/30 13:19:06 | 30-abr-2012 13:19:06 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/30 13:19:06 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/30 13:19:06 | 30-abr-2012 13:19:06 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/30 13:19:06 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/30 13:19:06 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/30 13:19:06 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/30 13:19:06 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/30 13:19:06 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/30 13:19:06 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/30 13:19:06 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/30 13:19:06 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/30 13:19:06 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/30 13:19:06 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/30 13:19:06 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/30 13:19:06 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/30 13:19:06 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/30 13:19:06 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/30 13:19:06 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/30 13:19:06 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/30 13:19:06 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/30 13:19:06 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/30 13:21:43 | 30-abr-2012 13:21:43 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/30 13:21:43 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/30 13:21:43 | 30-abr-2012 13:21:43 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/30 13:21:43 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/30 13:21:43 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/30 13:21:43 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/30 13:21:43 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/30 13:21:43 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/30 13:21:43 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/30 13:21:43 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/30 13:21:43 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/30 13:21:43 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/30 13:21:43 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/30 13:21:43 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/30 13:21:43 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/30 13:21:43 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/30 13:21:43 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/30 13:21:43 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/30 13:21:43 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/30 13:21:43 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/30 13:21:43 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/30 15:47:32 | [GC
+INFO   | jvm 1    | 2012/04/30 15:47:32 |  300768K->91857K(1023424K), 0.1049017 secs]
+INFO   | jvm 1    | 2012/04/30 16:35:50 | 30-abr-2012 16:35:50 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/30 16:35:50 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/30 16:35:50 | 30-abr-2012 16:35:50 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/30 16:35:50 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/30 16:35:50 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/30 16:35:50 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/30 16:35:50 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/30 16:35:50 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/30 16:35:50 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/30 16:35:50 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/30 16:35:50 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/30 16:35:50 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/30 16:35:50 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/30 16:35:50 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/30 16:35:50 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/30 16:35:50 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/30 16:35:50 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/30 16:35:50 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/30 16:35:50 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/30 16:35:50 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/30 16:35:50 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/30 17:54:21 | 30-abr-2012 17:54:21 org.apache.catalina.core.ApplicationContext log
+INFO   | jvm 1    | 2012/04/30 17:54:21 | INFO: Marcando el servlet glog.webserver.servlet.umt.Login como no disponible
+INFO   | jvm 1    | 2012/04/30 17:54:21 | 30-abr-2012 17:54:21 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/30 17:54:21 | GRAVE: Excepción de reserva de espacio para servlet glog.webserver.servlet.umt.Login
+INFO   | jvm 1    | 2012/04/30 17:54:21 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO   | jvm 1    | 2012/04/30 17:54:21 | 	at glog.webserver.util.BaseServlet.init(BaseServlet.java:401)
+INFO   | jvm 1    | 2012/04/30 17:54:21 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1139)
+INFO   | jvm 1    | 2012/04/30 17:54:21 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:791)
+INFO   | jvm 1    | 2012/04/30 17:54:21 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:127)
+INFO   | jvm 1    | 2012/04/30 17:54:21 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+INFO   | jvm 1    | 2012/04/30 17:54:21 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+INFO   | jvm 1    | 2012/04/30 17:54:21 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+INFO   | jvm 1    | 2012/04/30 17:54:21 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+INFO   | jvm 1    | 2012/04/30 17:54:21 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+INFO   | jvm 1    | 2012/04/30 17:54:21 | 	at org.apache.jk.server.JkCoyoteHandler.invoke(JkCoyoteHandler.java:200)
+INFO   | jvm 1    | 2012/04/30 17:54:21 | 	at org.apache.jk.common.HandlerRequest.invoke(HandlerRequest.java:283)
+INFO   | jvm 1    | 2012/04/30 17:54:21 | 	at org.apache.jk.common.ChannelSocket.invoke(ChannelSocket.java:773)
+INFO   | jvm 1    | 2012/04/30 17:54:21 | 	at org.apache.jk.common.ChannelSocket.processConnection(ChannelSocket.java:703)
+INFO   | jvm 1    | 2012/04/30 17:54:21 | 	at org.apache.jk.common.ChannelSocket$SocketConnection.runIt(ChannelSocket.java:895)
+INFO   | jvm 1    | 2012/04/30 17:54:21 | 	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+INFO   | jvm 1    | 2012/04/30 17:54:21 | 	at java.lang.Thread.run(Thread.java:534)
+INFO   | jvm 1    | 2012/04/30 17:54:30 | 30-abr-2012 17:54:30 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/30 17:54:30 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/30 17:54:34 | 30-abr-2012 17:54:34 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/30 17:54:34 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/30 17:54:35 | 30-abr-2012 17:54:35 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/30 17:54:35 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/30 17:54:35 | 30-abr-2012 17:54:35 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/30 17:54:35 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/30 17:54:35 | 30-abr-2012 17:54:35 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/30 17:54:35 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/30 17:54:35 | 30-abr-2012 17:54:35 org.apache.catalina.core.StandardWrapperValve invoke
+INFO   | jvm 1    | 2012/04/30 17:54:35 | INFO: El Servlet glog.webserver.servlet.umt.Login no está disponible en este momento
+INFO   | jvm 1    | 2012/04/30 19:20:32 | [GC 301649K->91849K(1023424K), 0.0067439 secs]
+INFO   | jvm 1    | 2012/04/30 22:53:52 | [GC 301641K->91849K(1023424K), 0.0065699 secs]
+INFO   | jvm 1    | 2012/05/01 02:27:12 | [GC 301641K->91848K(1023424K), 0.0065330 secs]
+INFO   | jvm 1    | 2012/05/01 06:00:32 | [GC 301637K->91842K(1023424K), 0.0067225 secs]
+INFO   | jvm 1    | 2012/05/01 09:33:42 | [GC 301634K->91848K(1023424K), 0.0067066 secs]
+INFO   | jvm 1    | 2012/05/01 13:07:02 | [GC 301640K->91849K(1023424K), 0.0070200 secs]
+INFO   | jvm 1    | 2012/05/01 16:40:22 | [GC 301640K->91848K(1023424K), 0.0067261 secs]
+INFO   | jvm 1    | 2012/05/01 20:13:42 | [GC 301639K->91842K(1023424K), 0.0065443 secs]
+INFO   | jvm 1    | 2012/05/01 23:46:52 | [GC 301634K->91848K(1023424K), 0.0065140 secs]
+INFO   | jvm 1    | 2012/05/02 03:20:12 | [GC 301640K->91849K(1023424K), 0.0066490 secs]
+INFO   | jvm 1    | 2012/05/02 06:53:32 | [GC 301640K->91849K(1023424K), 0.0066328 secs]

@@ -1,0 +1,140 @@
+INFO | 2010/01/04 16:28:56 | Starting Launched Process...
+INFO | 2010/01/04 16:28:56 | Argument #0 : D:/otm/jdk/bin/java
+INFO | 2010/01/04 16:28:56 | Argument #1 : -jrockit
+INFO | 2010/01/04 16:28:56 | Argument #2 : -Xms1600m
+INFO | 2010/01/04 16:28:56 | Argument #3 : -Xmx1600m
+INFO | 2010/01/04 16:28:56 | Argument #4 : -Xgcprio:throughput
+INFO | 2010/01/04 16:28:56 | Argument #5 : -Xverbose:memory
+INFO | 2010/01/04 16:28:56 | Argument #6 : -Xnoclassgc
+INFO | 2010/01/04 16:28:56 | Argument #7 : -Dglog.home=D:/otm/glog/config
+INFO | 2010/01/04 16:28:56 | Argument #8 : -Duser.home=D:/otm/glog/config
+INFO | 2010/01/04 16:28:56 | Argument #9 : -Djava.io.tmpdir=D:/otm/temp
+INFO | 2010/01/04 16:28:56 | Argument #10 : -Djava.awt.headless=true
+INFO | 2010/01/04 16:28:56 | Argument #11 : -Djava.security.auth.login.config=D:/otm/glog/config/otm_jaas.config
+INFO | 2010/01/04 16:28:56 | Argument #12 : -Xss256k
+INFO | 2010/01/04 16:28:56 | Argument #13 : -Dweblogic.Name=gc3-w2bztr1j01
+INFO | 2010/01/04 16:28:56 | Argument #14 : -Dbea.home=D:/bea
+INFO | 2010/01/04 16:28:56 | Argument #15 : -Dweblogic.home=D:/bea/weblogic92/server
+INFO | 2010/01/04 16:28:56 | Argument #16 : -Dweblogic.management.username=system
+INFO | 2010/01/04 16:28:56 | Argument #17 : -Dweblogic.management.password=CHANGEME
+INFO | 2010/01/04 16:28:56 | Argument #18 : -Dweblogic.ProductionModeEnabled=true
+INFO | 2010/01/04 16:28:56 | Argument #19 : -Dweblogic.management.discover=false
+INFO | 2010/01/04 16:28:56 | Argument #20 : -Djava.security.policy=D:/bea/weblogic92/server/lib/weblogic.policy
+INFO | 2010/01/04 16:28:56 | Argument #21 : -Doracle.jdbc.V8Compatible=true
+INFO | 2010/01/04 16:28:56 | Argument #22 : -Dwli.home=D:/bea/weblogic92/integration
+INFO | 2010/01/04 16:28:56 | Argument #23 : -Dwls.home=D:/bea/weblogic92/server
+INFO | 2010/01/04 16:28:56 | Argument #24 : -Dweblogic.RootDirectory=D:/otm/weblogic/domains/otm
+INFO | 2010/01/04 16:28:56 | Argument #25 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2010/01/04 16:28:56 | Argument #26 : -Djavax.xml.soap.SOAPFactory=weblogic.webservice.core.soap.SOAPFactoryImpl
+INFO | 2010/01/04 16:28:56 | Argument #27 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2010/01/04 16:28:56 | Argument #28 : -DpropertyProtection=mask
+INFO | 2010/01/04 16:28:56 | Argument #29 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2010/01/04 16:28:56 | Argument #30 : -classpath
+INFO | 2010/01/04 16:28:56 | Argument #31 : D:/otm/jdk/lib/tools.jar;D:/otm/glog/glog_resources;D:/otm/glog/config;D:/otm/glog/gc3webapp/WEB-INF/classes;D:/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/CR346535_923.jar;D:/otm/dash/lib/xprb.jar;D:/otm/dash/lib/xprm.jar;D:/otm/dash/lib/xprs.jar;D:/bea/weblogic92/server/lib/weblogic.jar;D:/bea/weblogic92/server/lib/webservices.jar;D:/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar;D:\otm\glog\gc3webapp\WEB-INF\lib\external\otm-samples.jar
+INFO | 2010/01/04 16:28:56 | Argument #32 : weblogic.Server
+INFO | 2010/01/04 16:28:56 | Argument #33 : start
+INFO | 2010/01/04 16:28:56 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2010/01/04 16:28:56 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, initial strategy: Generational Parallel Mark & Sweep
+INFO | 2010/01/04 16:28:56 | [INFO ][memory ] heap size: 1638400K, maximal heap size: 1638400K, nursery size: 819200K
+INFO | 2010/01/04 16:28:56 | [INFO ][memory ] <s>-<end>: GC <before>K-><after>K (<heap>K), <pause> ms
+INFO | 2010/01/04 16:28:56 | [INFO ][memory ] <s/start> - start time of collection (seconds since jvm start)
+INFO | 2010/01/04 16:28:56 | [INFO ][memory ] <end>     - end time of collection (seconds since jvm start)
+INFO | 2010/01/04 16:28:56 | [INFO ][memory ] <before>  - memory used by objects before collection (KB)
+INFO | 2010/01/04 16:28:56 | [INFO ][memory ] <after>   - memory used by objects after collection (KB)
+INFO | 2010/01/04 16:28:56 | [INFO ][memory ] <heap>    - size of heap after collection (KB)
+INFO | 2010/01/04 16:28:56 | [INFO ][memory ] <pause>   - total sum of pauses during collection (milliseconds)
+INFO | 2010/01/04 16:28:56 | [INFO ][memory ]             run with -Xverbose:gcpause to see individual pauses
+INFO | 2010/01/04 16:28:57 | <Jan 4, 2010 4:28:56 PM IST> <Notice> <WebLogicServer> <BEA-000395> <Following extensions directory contents added to the end of the classpath:
+D:\bea\weblogic92\platform\lib\p13n\p13n-schemas.jar;D:\bea\weblogic92\platform\lib\p13n\p13n_common.jar;D:\bea\weblogic92\platform\lib\p13n\p13n_system.jar;D:\bea\weblogic92\platform\lib\wlp\netuix_common.jar;D:\bea\weblogic92\platform\lib\wlp\netuix_schemas.jar;D:\bea\weblogic92\platform\lib\wlp\netuix_system.jar;D:\bea\weblogic92\platform\lib\wlp\wsrp-common.jar> 
+INFO | 2010/01/04 16:28:57 | <Jan 4, 2010 4:28:57 PM IST> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with BEA JRockit(R) Version R27.5.0-110_o_CR366951-99572-1.5.0_14-20080529-1719-windows-x86_64 from BEA Systems, Inc.> 
+INFO | 2010/01/04 16:28:59 | <Jan 4, 2010 4:28:59 PM IST> <Info> <Management> <BEA-141107> <Version: WebLogic Server Temporary Patch for CR346535 Wed Jun 11 11:49:26 PDT 2008
+WebLogic Server 9.2 MP3  Mon Mar 10 08:28:41 EDT 2008 1096261 
+WebLogic Server 9.2 MP3  Mon Mar 10 08:28:41 EDT 2008 1096261 > 
+INFO | 2010/01/04 16:29:01 | <Jan 4, 2010 4:29:01 PM IST> <Error> <Management> <BEA-141244> <Schema validation errors while parsing D:\otm\weblogic\domains\otm\config\config.xml - Expected elements 'administration-protocol@http://www.bea.com/ns/weblogic/920/domain wldf-system-resource@http://www.bea.com/ns/weblogic/920/domain jdbc-system-resource@http://www.bea.com/ns/weblogic/920/domain saf-agent@http://www.bea.com/ns/weblogic/920/domain wlec-connection-pool@http://www.bea.com/ns/weblogic/920/domain error-handling@http://www.bea.com/ns/weblogic/920/domain remote-saf-context@http://www.bea.com/ns/weblogic/920/domain migratable-rmi-service@http://www.bea.com/ns/weblogic/920/domain webservice-security@http://www.bea.com/ns/weblogic/920/domain jms-connection-consumer@http://www.bea.com/ns/weblogic/920/domain auto-deploy-for-submodules-enabled@http://www.bea.com/ns/weblogic/920/domain' instead of 'JDBCConnectionPool@http://www.bea.com/ns/weblogic/920/domain' here in element domain@http://www.bea.com/ns/weblogic/920/domain> 
+INFO | 2010/01/04 16:29:01 | <Jan 4, 2010 4:29:01 PM IST> <Info> <WebLogicServer> <BEA-000215> <Loaded License : D:\bea\license.bea> 
+INFO | 2010/01/04 16:29:01 | <Jan 4, 2010 4:29:01 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2010/01/04 16:29:01 | <Jan 4, 2010 4:29:01 PM IST> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+INFO | 2010/01/04 16:29:02 | <Jan 4, 2010 4:29:02 PM IST> <Notice> <Log Management> <BEA-170019> <The server log file D:\otm\logs\weblogic\weblogic.log is opened. All server side log events will be written to this file.> 
+INFO | 2010/01/04 16:29:05 | java.sql.SQLException: Io exception: The Network Adapter could not establish the connection
+
+INFO | 2010/01/04 16:29:05 | java.sql.SQLException: Io exception: The Network Adapter could not establish the connection
+INFO | 2010/01/04 16:29:05 | 	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:189)
+INFO | 2010/01/04 16:29:05 | 	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:231)
+INFO | 2010/01/04 16:29:05 | 	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:345)
+INFO | 2010/01/04 16:29:05 | 	at oracle.jdbc.driver.OracleConnection.<init>(OracleConnection.java:428)
+INFO | 2010/01/04 16:29:05 | 	at oracle.jdbc.driver.OracleDriver.getConnectionInstance(OracleDriver.java:515)
+INFO | 2010/01/04 16:29:05 | 	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:345)
+INFO | 2010/01/04 16:29:05 | 	at glog.util.datasource.GC3ConnectionEstablisher.connect(GC3ConnectionEstablisher.java:34)
+INFO | 2010/01/04 16:29:05 | 	at glog.util.datasource.DataSource.reserve(DataSource.java:148)
+INFO | 2010/01/04 16:29:05 | 	at glog.util.datasource.DataSource.reserve(DataSource.java:137)
+INFO | 2010/01/04 16:29:05 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:292)
+INFO | 2010/01/04 16:29:05 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:53)
+INFO | 2010/01/04 16:29:05 | 	at glog.database.security.dbrealm.RdbmsRealm.queryAll(RdbmsRealm.java:198)
+INFO | 2010/01/04 16:29:05 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1071)
+INFO | 2010/01/04 16:29:05 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1083)
+INFO | 2010/01/04 16:29:05 | 	at glog.database.security.dbrealm.CachingRealm.readKnownGroups(CachingRealm.java:318)
+INFO | 2010/01/04 16:29:05 | 	at glog.database.security.dbrealm.CachingRealm.initCaches(CachingRealm.java:185)
+INFO | 2010/01/04 16:29:05 | 	at glog.database.security.dbrealm.CachingRealm.<init>(CachingRealm.java:139)
+INFO | 2010/01/04 16:29:05 | 	at glog.database.security.dbrealm.CachingRealm.initialize(CachingRealm.java:127)
+INFO | 2010/01/04 16:29:05 | 	at glog.util.j2ee.jaas.GC3AuthorizationProviderImpl.initialize(GC3AuthorizationProviderImpl.java:64)
+INFO | 2010/01/04 16:29:05 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:53)
+INFO | 2010/01/04 16:29:05 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:340)
+INFO | 2010/01/04 16:29:05 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:292)
+INFO | 2010/01/04 16:29:05 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:263)
+INFO | 2010/01/04 16:29:05 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:71)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.security.service.SecurityServiceManager.getService(SecurityServiceManager.java:199)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.security.service.BulkAuthorizationManager.initialize(BulkAuthorizationManager.java:103)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.doBulkATZ(CommonSecurityServiceManagerDelegateImpl.java:698)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:492)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:822)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:851)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1007)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:854)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.security.SecurityService.start(SecurityService.java:141)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.t3.srvr.SubsystemRequest.run(SubsystemRequest.java:64)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:181)
+INFO | 2010/01/04 16:29:05 | java.sql.SQLException: Io exception: The Network Adapter could not establish the connection
+
+INFO | 2010/01/04 16:29:05 | java.sql.SQLException: Io exception: The Network Adapter could not establish the connection
+INFO | 2010/01/04 16:29:05 | 	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:189)
+INFO | 2010/01/04 16:29:05 | 	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:231)
+INFO | 2010/01/04 16:29:05 | 	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:345)
+INFO | 2010/01/04 16:29:05 | 	at oracle.jdbc.driver.OracleConnection.<init>(OracleConnection.java:428)
+INFO | 2010/01/04 16:29:05 | 	at oracle.jdbc.driver.OracleDriver.getConnectionInstance(OracleDriver.java:515)
+INFO | 2010/01/04 16:29:05 | 	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:345)
+INFO | 2010/01/04 16:29:05 | 	at glog.util.datasource.GC3ConnectionEstablisher.connect(GC3ConnectionEstablisher.java:34)
+INFO | 2010/01/04 16:29:05 | 	at glog.util.datasource.DataSource.reserve(DataSource.java:148)
+INFO | 2010/01/04 16:29:05 | 	at glog.util.datasource.DataSource.reserve(DataSource.java:137)
+INFO | 2010/01/04 16:29:05 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:292)
+INFO | 2010/01/04 16:29:05 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:53)
+INFO | 2010/01/04 16:29:05 | 	at glog.database.security.dbrealm.RdbmsRealm.queryAll(RdbmsRealm.java:198)
+INFO | 2010/01/04 16:29:05 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1071)
+INFO | 2010/01/04 16:29:05 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1083)
+INFO | 2010/01/04 16:29:05 | 	at glog.database.security.dbrealm.CachingRealm.readKnownGroups(CachingRealm.java:318)
+INFO | 2010/01/04 16:29:05 | 	at glog.database.security.dbrealm.CachingRealm.initCaches(CachingRealm.java:185)
+INFO | 2010/01/04 16:29:05 | 	at glog.database.security.dbrealm.CachingRealm.<init>(CachingRealm.java:139)
+INFO | 2010/01/04 16:29:05 | 	at glog.database.security.dbrealm.CachingRealm.initialize(CachingRealm.java:127)
+INFO | 2010/01/04 16:29:05 | 	at glog.util.j2ee.jaas.GC3AuthorizationProviderImpl.initialize(GC3AuthorizationProviderImpl.java:64)
+INFO | 2010/01/04 16:29:05 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:53)
+INFO | 2010/01/04 16:29:05 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:340)
+INFO | 2010/01/04 16:29:05 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:292)
+INFO | 2010/01/04 16:29:05 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:263)
+INFO | 2010/01/04 16:29:05 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:71)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.security.service.SecurityServiceManager.getService(SecurityServiceManager.java:199)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.security.service.BulkAuthorizationManager.initialize(BulkAuthorizationManager.java:103)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.doBulkATZ(CommonSecurityServiceManagerDelegateImpl.java:698)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:492)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:822)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:851)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1007)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:854)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.security.SecurityService.start(SecurityService.java:141)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.t3.srvr.SubsystemRequest.run(SubsystemRequest.java:64)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+INFO | 2010/01/04 16:29:05 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:181)
+INFO | 2010/01/04 16:29:05 | Fatal Error: Realm Initialization failed!!
+INFO | 2010/01/04 16:29:05 | <Jan 4, 2010 4:29:05 PM IST> <Notice> <WebLogicServer> <BEA-000388> <JVM called WLS shutdown hook. The server will force shutdown now> 
+INFO | 2010/01/04 16:29:05 | <Jan 4, 2010 4:29:05 PM IST> <Alert> <WebLogicServer> <BEA-000396> <Server shutdown has been requested by <WLS Kernel>> 
+INFO | 2010/01/04 16:29:05 | <Jan 4, 2010 4:29:05 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FORCE_SHUTTING_DOWN> 
+INFO | 2010/01/04 16:29:05 | Stopped Launched Process...

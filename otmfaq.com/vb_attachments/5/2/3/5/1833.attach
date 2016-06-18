@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+xmlns:otm="http://xmlns.oracle.com/apps/otm">
+
+<xsl:template match="/">
+    <Transmission>
+      <TransmissionHeader>
+        <UserName>TEST.ADMIN</UserName>
+        <Password>CHANGEME</Password>
+      </TransmissionHeader>
+      <TransmissionBody>
+        
+		
+		<GLogXMLElement>
+               <OBLine>
+                  <TransOrderLine>
+                        <TransOrderLineGid>
+                           <Gid>
+                              <DomainName>MXAUTO/VW</DomainName>
+                              <Xid>
+                                 <xsl:value-of select="otm:Transmission/otm:TransmissionBody/otm:GLogXMLElement/otm:OBLine/otm:TransOrderLine/otm:TransOrderLineGid/otm:Gid/otm:Xid"/>
+                              </Xid>
+                           </Gid>
+                        </TransOrderLineGid>
+                        <TransactionCode>U</TransactionCode>  
+						
+					 <ItemQuantity>
+					 <IsShippable>
+                      <xsl:value-of select="otm:Transmission/otm:TransmissionBody/otm:GLogXMLElement/otm:OBLine/otm:TransOrderLine/otm:ItemQuantity/otm:IsShippable"/>
+					 </IsShippable>
+				  </ItemQuantity>	
+						
+                  </TransOrderLine>
+				  </OBLine>
+            </GLogXMLElement>
+         </TransmissionBody>
+      </Transmission>
+        
+  </xsl:template>
+
+
+</xsl:stylesheet>

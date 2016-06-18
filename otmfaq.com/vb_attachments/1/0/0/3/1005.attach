@@ -1,0 +1,46 @@
+<Transmission>
+  <TransmissionHeader>
+    <UserName/>
+    <Password/>
+    <SenderSystemId/>
+    <GlogXMLElementName/>
+  </TransmissionHeader>
+  <TransmissionBody>
+    <GLogXMLElement>
+      <TransmissionReport>
+        <UserName/>
+        <TransmissionNo/>
+        <SenderTransmissionNo/>
+        <ReportStatus>PROCESSED</ReportStatus>
+        <IntegrationLogMessage>
+          <ILogSeqNo/>
+          <ITransactionNo>-1</ITransactionNo>
+          <WrittenBy>XML_STAGE</WrittenBy>
+          <IMessageClass>I</IMessageClass>
+          <IMessageCode>TRANSMISSION_RECEIVED</IMessageCode>
+          <IMessageText>Transmission 2616744 received</IMessageText>
+          <DateTimeStamp>
+            <GLogDate>20120517221341</GLogDate>
+            <TZId>UTC</TZId>
+            <TZOffset>+00:00</TZOffset>
+          </DateTimeStamp>
+          <DomainName/>
+        </IntegrationLogMessage>
+        <IntegrationLogMessage>
+          <ILogSeqNo/>
+          <ITransactionNo/>
+          <WrittenBy>TransmissionHeaderInterface</WrittenBy>
+          <IMessageClass>I</IMessageClass>
+          <IMessageCode>TRANSACTION_SUCCESS</IMessageCode>
+          <DateTimeStamp>
+            <GLogDate>20120517221457</GLogDate>
+            <TZId>UTC</TZId>
+            <TZOffset>+00:00</TZOffset>
+          </DateTimeStamp>
+          <DomainName/>
+        </IntegrationLogMessage>
+      </TransmissionReport>
+    </GLogXMLElement>
+  </TransmissionBody>
+</Transmission>
+

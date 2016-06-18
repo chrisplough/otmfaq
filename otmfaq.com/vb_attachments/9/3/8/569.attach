@@ -1,0 +1,393 @@
+###############################################################################
+#
+#  NQSConfig.INI
+#
+#  Copyright (c) 1997-2006 Oracle Corporation, All rights reserved
+#
+#  INI file parser rules are:
+#  If values are in literals, digits or _, they can be
+#  given as such. If values contain characters other than
+#  literals, digits or _, values must be given in quotes.
+#
+###############################################################################
+
+
+
+###############################################################################
+#                          ** FTI Configurations **
+###############################################################################
+# The following FTI specific configurations explained below should be added
+# in your respective NQSConfig.ini file. Please use this version of file only 
+# as a template to make the necessary changes in your version of this file.
+#
+# **FTI Config 1**: In this configuration step you will Set the default OBIEE 
+#                   Repository to the FTI RPD file advanced_analytics.rpd	  
+# **FTI Config 2**: In this configuration step you can enable / disable 
+#                   the 'Query Cache' at OBIEE Server	 
+###############################################################################
+
+
+
+###############################################################################
+#
+#  Repository Section
+#
+#  Repositories are defined as logical repository name - file name
+#  pairs.  ODBC drivers use logical repository name defined in this
+#  section.
+#
+#  All repositories must reside in OracleBI\server\Repository
+#  directory, where OracleBI is the directory in which the Oracle BI
+#  Server software is installed.
+#
+###############################################################################
+
+[ REPOSITORY ]
+# Step 1:
+# Eg: Star = advanced_analytics.rpd, DEFAULT;
+
+#Star	=	paint.rpd, DEFAULT; 
+# **FTI Config 1** : Comment the above line and set the 'advanced_analytics.rpd
+#                    as the default 'Meta data' repository file that OBIEE needs
+#                    to load. See below.   
+Star = advanced_analytics.rpd, DEFAULT;
+
+
+###############################################################################
+#
+#  Query Result Cache Section
+#
+###############################################################################
+
+[ CACHE ]
+# Step 2: 
+# Eg: ENABLE = YES;
+# **FTI Config 2** : Set the ENABLE property to 'YES' or 'NO to turn ON or OFF
+#                    the OBIEE Server 'Query Cache'.
+ENABLE	=	NO;
+// A comma separated list of <directory maxSize> pair(s)
+//   e.g. DATA_STORAGE_PATHS = "d:\OracleBIData\nQSCache" 500 MB;
+DATA_STORAGE_PATHS	=	"C:\OracleBIData\cache" 500 MB;
+MAX_ROWS_PER_CACHE_ENTRY = 100000;  // 0 is unlimited size
+MAX_CACHE_ENTRY_SIZE = 1 MB;
+MAX_CACHE_ENTRIES = 1000;
+POPULATE_AGGREGATE_ROLLUP_HITS = NO;
+USE_ADVANCED_HIT_DETECTION = NO;
+
+MAX_SUBEXPR_SEARCH_DEPTH = 7;
+
+// Cluster-aware cache
+// GLOBAL_CACHE_STORAGE_PATH = "<directory name>" SIZE;
+// MAX_GLOBAL_CACHE_ENTRIES = 1000;
+// CACHE_POLL_SECONDS = 300;
+// CLUSTER_AWARE_CACHE_LOGGING = NO;
+
+###############################################################################
+#
+#  General Section
+#
+#  Contains general server default parameters, including localization
+#  and internationalization, temporary space and memory allocation,
+#  and other default parameters used to determine how data is returned
+#  from the server to a client.
+#
+###############################################################################
+
+[ GENERAL ]
+
+// Localization/Internationalization parameters.
+LOCALE	=	"English-usa";
+SORT_ORDER_LOCALE	=	"English-usa";
+SORT_TYPE = "binary";
+
+// Case sensitivity should be set to match the remote
+// target database.
+CASE_SENSITIVE_CHARACTER_COMPARISON = OFF ;
+// SQLServer65 sorts nulls first, whereas Oracle sorts
+// nulls last. This ini file property should conform to
+// that of the remote target database, if there is a
+// single remote database. Otherwise, choose the order
+// that matches the predominant database (i.e. on the
+// basis of data volume, frequency of access, sort
+// performance, network bandwidth).
+NULL_VALUES_SORT_FIRST = OFF;
+
+
+DATE_TIME_DISPLAY_FORMAT = "yyyy/mm/dd hh:mi:ss" ;
+DATE_DISPLAY_FORMAT = "yyyy/mm/dd" ;
+TIME_DISPLAY_FORMAT = "hh:mi:ss" ;
+
+
+// Temporary space, memory, and resource allocation
+// parameters.
+// You may use KB, MB for memory size.
+
+WORK_DIRECTORY_PATHS	=	"C:\OracleBIData\tmp";
+SORT_MEMORY_SIZE = 4 MB ;
+SORT_BUFFER_INCREMENT_SIZE = 256 KB ;
+VIRTUAL_TABLE_PAGE_SIZE = 128 KB ;
+
+
+// Analytics Server will return all month and day names as three
+// letter abbreviations (e.g., "Jan", "Feb", "Sat", "Sun").
+// To use complete names, set the following values to YES.
+USE_LONG_MONTH_NAMES = NO;
+USE_LONG_DAY_NAMES = NO;
+
+UPPERCASE_USERNAME_FOR_INITBLOCK = NO ;   // default is no
+
+// Aggregate Persistence defaults
+// The prefix must be between 1 and 8 characters long
+// and should not have any special characters ('_' is allowed).
+
+AGGREGATE_PREFIX = "SA_" ;
+
+
+###############################################################################
+#
+#  Security Section
+#
+#  Legal value for DEFAULT_PRIVILEGES are:
+#    NONE READ
+#
+###############################################################################
+
+[ SECURITY ]
+
+DEFAULT_PRIVILEGES = READ;
+PROJECT_INACCESSIBLE_COLUMN_AS_NULL	=	NO;
+MINIMUM_PASSWORD_LENGTH	=	0;
+
+#SSL=NO;
+#SSL_CERTIFICATE_FILE="servercert.pem";
+#SSL_PRIVATE_KEY_FILE="serverkey.pem";
+#SSL_PK_PASSPHRASE_FILE="serverpwd.txt";
+#SSL_PK_PASSPHRASE_PROGRAM="sitepwd.exe";
+#SSL_VERIFY_PEER=NO;
+#SSL_CA_CERTIFICATE_DIR="CACertDIR";
+#SSL_CA_CERTIFICATE_FILE="CACertFile";
+#SSL_TRUSTED_PEER_DNS="";
+#SSL_CERT_VERIFICATION_DEPTH=9;
+#SSL_CIPHER_LIST="";
+
+# There are 3 types of authentication. The default is NQS
+# You can select only one of them
+#
+#----- 1 -----
+#AUTHENTICATION_TYPE = NQS;         // optional and default
+#
+#----- 2 -----
+#AUTHENTICATION_TYPE = DATABASE;
+#   [ DATABASE ]
+#        DATABASE = "some_data_base";
+#
+#----- 3 -----
+#AUTHENTICATION_TYPE = BYPASS_NQS;
+
+
+###############################################################################
+#
+#  Server Section
+#
+###############################################################################
+
+[ SERVER ]
+
+SERVER_NAME = Oracle_BI_Server ;
+READ_ONLY_MODE = NO;	// default is "NO". That is, repositories can be edited online.
+MAX_SESSION_LIMIT = 2000 ;
+MAX_REQUEST_PER_SESSION_LIMIT = 500 ;
+SERVER_THREAD_RANGE = 40-100;
+SERVER_THREAD_STACK_SIZE = 0;               // default is 256 KB, 0 for default
+DB_GATEWAY_THREAD_RANGE = 40-200;
+DB_GATEWAY_THREAD_STACK_SIZE = 0;           // default is 256 KB, 0 for default
+MAX_EXPANDED_SUBQUERY_PREDICATES = 8192;    // default is 8192
+MAX_QUERY_PLAN_CACHE_ENTRIES = 1024;        // default is 1024
+MAX_DRILLDOWN_INFO_CACHE_ENTRIES = 1024;    // default is 1024
+MAX_DRILLDOWN_QUERY_CACHE_ENTRIES = 1024;   // default is 1024
+INIT_BLOCK_CACHE_ENTRIES = 20;              // default is 20
+
+CLIENT_MGMT_THREADS_MAX = 5;                // default is 5
+
+# The port number specified with RPC_SERVICE_OR_PORT will NOT be considered if
+# a port number is specified in SERVER_HOSTNAME_OR_IP_ADDRESSES.
+
+RPC_SERVICE_OR_PORT = 9703;                 // default is 9703
+
+# If port is not specified with a host name or IP in the following option, the port
+# number specified at RPC_SERVICE_OR_PORT will be considered.
+# When port number is specified, it will override the one specified with
+# RPC_SERVICE_OR_PORT.
+
+SERVER_HOSTNAME_OR_IP_ADDRESSES = "ALLNICS"; # Example: "hostname" or "hostname":port
+# or "IP1","IP2":port or
+# "hostname":port,"IP":port2.
+# Note: When this option is active,
+# CLUSTER_PARTICIPANT should be set to NO.
+
+
+ENABLE_DB_HINTS = YES;                      // default is yes
+PREVENT_DIVIDE_BY_ZERO = YES;
+
+CLUSTER_PARTICIPANT = NO; # If this is set to "YES", comment out
+# SERVER_HOSTNAME_OR_IP_ADDRESSES. No specific NIC support
+# for the cluster participant yet.
+
+// Following required if CLUSTER_PARTICIPANT = YES
+#REPOSITORY_PUBLISHING_DIRECTORY = "<dirname>";
+#REQUIRE_PUBLISHING_DIRECTORY = YES;  // Don't join cluster if directory not accessible
+
+DISCONNECTED = NO;
+AUTOMATIC_RESTART = YES;
+
+###############################################################################
+#
+#  Dynamic Library Section
+#
+#  The dynamic libraries specified in this section
+#  are categorized by the CLI they support.
+#
+###############################################################################
+
+[ DB_DYNAMIC_LIBRARY ]
+
+ODBC200  = nqsdbgatewayodbc;
+ODBC350  = nqsdbgatewayodbc35;
+OCI7     = nqsdbgatewayoci7;
+OCI8     = nqsdbgatewayoci8;
+OCI8i    = nqsdbgatewayoci8i;
+OCI10g   = nqsdbgatewayoci10g;
+DB2CLI   = nqsdbgatewaydb2cli;
+DB2CLI35 = nqsdbgatewaydb2cli35;
+NQSXML   = nqsdbgatewayxml;
+XMLA     = nqsdbgatewayxmla;
+
+###############################################################################
+#
+#  User Log Section
+#
+#  The user log NQQuery.log is kept in the server\log directory. It logs
+#  activity about queries when enabled for a user. Entries can be
+#  viewed using a text editor or the nQLogViewer executable.
+#
+###############################################################################
+
+[ USER_LOG ]
+
+USER_LOG_FILE_SIZE = 10 MB;   // default size
+CODE_PAGE = "UTF8";           // ANSI, UTF8, 1252, etc.
+
+
+###############################################################################
+#
+#  Usage Tracking Section
+#
+#  Collect usage statistics on each logical query submitted to the
+#  server.
+#
+###############################################################################
+
+[ USAGE_TRACKING ]
+
+ENABLE                         = NO;
+
+//==============================================================================
+//  Parameters used for writing data to a flat file (i.e. DIRECT_INSERT = NO).
+//
+STORAGE_DIRECTORY              = "<full directory path>";
+CHECKPOINT_INTERVAL_MINUTES    = 5;
+FILE_ROLLOVER_INTERVAL_MINUTES = 30;
+CODE_PAGE                      = "ANSI";  // ANSI, UTF8, 1252, etc.
+//
+//==============================================================================
+
+DIRECT_INSERT                  = YES;
+
+//==============================================================================
+//  Parameters used for inserting data into a table (i.e. DIRECT_INSERT = YES).
+//
+PHYSICAL_TABLE_NAME            = "<Database>"."<Catalog>"."<Schema>"."<Table>" ;  // Or "<Database>"."<Schema>"."<Table>" ;
+CONNECTION_POOL                = "<Database>"."<Connection Pool>" ;
+BUFFER_SIZE                    = 10 MB ;
+BUFFER_TIME_LIMIT_SECONDS      = 5 ;
+NUM_INSERT_THREADS             = 5 ;
+MAX_INSERTS_PER_TRANSACTION    = 1 ;
+//
+//==============================================================================
+
+
+
+###############################################################################
+#
+#  Query Optimization Flags
+#
+###############################################################################
+
+[ OPTIMIZATION_FLAGS ]
+STRONG_DATETIME_TYPE_CHECKING = ON ;
+
+
+
+###############################################################################
+#
+#  CubeViews Section
+#
+###############################################################################
+
+[ CUBE_VIEWS ]
+DISTINCT_COUNT_SUPPORTED   = NO ;
+STATISTICAL_FUNCTIONS_SUPPORTED  = NO ;
+USE_SCHEMA_NAME         = YES ;
+USE_SCHEMA_NAME_FROM_RPD   = YES ;
+DEFAULT_SCHEMA_NAME     = "ORACLE";
+CUBE_VIEWS_SCHEMA_NAME     = "ORACLE";
+
+LOG_FAILURES         = YES ;
+LOG_SUCCESS       = NO ;
+
+LOG_FILE_NAME	=	"C:\OracleBI\server\Log\CubeViews.Log";
+
+
+
+###############################################################################
+#
+#  MDX Member Name Cache Section
+#
+#  Cache subsystem for mapping between unique name and caption of
+#  members for all SAP/BW cubes in the repository.
+#
+###############################################################################
+[ MDX_MEMBER_CACHE ]
+// The entry to indicate if the feature is enabled or not, by default it is NO since this only applies to SAP/BW cubes
+ENABLE = NO ;
+
+// The path to the location where cache will be persisted, only applied to a single location,
+// the number at the end indicates the capacity of the storage. When the feature is enabled,
+// administrator needs to replace the "<full directory path>" with a valid path,
+// e.g. DATA_STORAGE_PATH = "C:\OracleBI\server\Data\Temp\Cache" 500 MB ;
+DATA_STORAGE_PATH	=	"C:\OracleBIData\cache" 500 MB;
+
+// Maximum disk space allowed for each user;
+MAX_SIZE_PER_USER = 100 MB ;
+
+// Maximum number of members in a level will be able to be persisted to disk
+MAX_MEMBER_PER_LEVEL = 1000 ;
+
+// Maximum size for each individual cache entry size
+MAX_CACHE_SIZE = 100 MB ;
+
+
+###############################################################################
+#
+#  Oracle Dimension Export Section
+#
+###############################################################################
+
+[ ORA_DIM_EXPORT ]
+
+USE_SCHEMA_NAME_FROM_RPD   = YES ; # NO
+DEFAULT_SCHEMA_NAME     = "ORACLE";
+ORA_DIM_SCHEMA_NAME     = "ORACLE";
+
+LOGGING           = ON ; # OFF, DEBUG
+LOG_FILE_NAME	=	"C:\OracleBI\server\Log\OraDimExp.Log";

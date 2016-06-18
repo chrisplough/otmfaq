@@ -1,0 +1,83 @@
+<Transmission>
+<TransmissionHeader>
+<UserName>XXXXXXXXXXXXX</UserName>
+<Password>XXXXXXXXXXXXX</Password>
+</TransmissionHeader>
+  <TransmissionBody>
+    <GLogXMLElement>
+      <Location>
+        <TransactionCode>IU</TransactionCode>
+        <LocationGid>
+          <Gid>
+            <DomainName>XXXXXXX</DomainName>
+            <Xid>MUMBAI_TEST_1</Xid>
+          </Gid>
+        </LocationGid>
+        <LocationName>MUMBAI WAREHOUSE_1</LocationName>
+        <IsTemplate>N</IsTemplate>
+        <Address>
+          <AddressLines>
+            <SequenceNumber>1</SequenceNumber>
+            <AddressLine>TAR BAHAR FHATAK NEAR INDIAN OIL DEPOT</AddressLine>
+          </AddressLines>
+          <City>MUMBAI</City>
+          <ProvinceCode>MH</ProvinceCode>
+          <CountryCode3Gid>
+            <Gid>
+              <Xid>IND</Xid>
+            </Gid>
+          </CountryCode3Gid>
+          <Zone1>21</Zone1>
+          <TimeZoneGid>
+            <Gid>
+              <Xid>Asia/Calcutta</Xid>
+            </Gid>
+          </TimeZoneGid>
+          <Latitude>18.97</Latitude>
+          <Longitude>72.82</Longitude>
+        </Address>
+        <IsTemporary>N</IsTemporary>
+        <LocationRole>
+          <LocationRoleGid>
+            <Gid>
+              <Xid>SHIPFROM/SHIPTO</Xid>
+            </Gid>
+          </LocationRoleGid>
+          <XDockIsInboundBias>N</XDockIsInboundBias>
+          <CreatePoolHandlingShipment>N</CreatePoolHandlingShipment>
+          <CreateXDockHandlingShipment>N</CreateXDockHandlingShipment>
+        </LocationRole>
+        <IsMakeAppointmentBeforePlan>N</IsMakeAppointmentBeforePlan>
+        <ParentLocationGid>
+          <LocationGid>
+            <Gid>
+              <DomainName>XXXX</DomainName>
+              <Xid><XXXXX CORPORATION ID XXXXXXX></Xid>
+            </Gid>
+          </LocationGid>
+        </ParentLocationGid>
+        <IsShipperKnown>N</IsShipperKnown>
+        <IsAddressValid>U</IsAddressValid>
+        <IsLTLSplitable>N</IsLTLSplitable>
+        <IsMixedFreightTHUAllowed>N</IsMixedFreightTHUAllowed>
+        <ExcludeFromRouteExec>N</ExcludeFromRouteExec>
+        <Status>
+          <StatusTypeGid>
+            <Gid>
+              <DomainName>XXXXXX</DomainName>
+              <Xid>CREDIT LEVEL</Xid>
+            </Gid>
+          </StatusTypeGid>
+          <StatusValueGid>
+            <Gid>
+              <DomainName>XXXXX</DomainName>
+              <Xid>CREDIT LEVEL_UNKNOWN</Xid>
+            </Gid>
+          </StatusValueGid>
+        </Status>
+        <IsFixedAddress>N</IsFixedAddress>
+        <PrimaryAddressLineSeq>1</PrimaryAddressLineSeq>
+      </Location>
+    </GLogXMLElement>
+  </TransmissionBody>
+</Transmission>

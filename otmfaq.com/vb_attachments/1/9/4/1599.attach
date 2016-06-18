@@ -1,0 +1,505 @@
+INFO | 2014/05/09 00:47:30 | Starting Launched Process...
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rem -----------------------------------------------------------------------
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rem --- user-configurable variables
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rem -----------------------------------------------------------------------
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>set GLOG_HOME=E:\otm
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>set JAVA_HOME=E:\otm\jdk
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>set JAVA_CMD="E:\otm\jdk\bin\java.exe"
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>set ORACLE_HOME=E:\app\admin\product\11.2.0\dbhome_1
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>set NLS_LANG=American_America.UTF8
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>set MEM_ARGS=
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rem ***********************************************************************
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rem ********** DO NOT CHANGE ANYTHING BELOW THIS LINE! **********
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rem ***********************************************************************
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rem -----------------------------------------------------------------------
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rem --- program-specific variables
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rem -----------------------------------------------------------------------
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>APP_NAME="WebLogic"
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>APP_LONG_NAME="WebLogic Application Server"
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>set LAUNCHER_CONF="E:\otm\weblogic\weblogic.conf"
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>set LAUNCHER_JAR_FILE="E:\otm\launcher\launcher.jar"
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>set WL_HOME=E:\Oracle\Middleware\wlserver_10.3
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rem -----------------------------------------------------------------------
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rem --- generic variables
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rem -----------------------------------------------------------------------
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>set DASH_HOME=E:\otm\dash
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>set XPRESS=E:\otm\dash\bin
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>set CLASSPATH=;E:\Oracle\Middleware\wlserver_10.3\server\lib\weblogic.jar
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>set PATH=E:\app\admin\product\11.2.0\dbhome_1\lib;E:\otm\jdk\bin;E:\app\admin\product\11.2.0\dbhome_1\bin;E:\Oracle\Middleware\wlserver_10.3\server\native\win\x64;E:\otm\jdk\bin;E:\otm\dash\bin;E:\otm\apache\openssl\bin;E:\app\admin\product\11.2.0\dbhome_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;PATH;E:\Oracle\Middleware\Oracle_WT1\bin;E:\Oracle\Middleware\Oracle_WT1\opmn\bin;E:\Oracle\Middleware\Oracle_WT1\opmn\lib;E:\Oracle\Middleware\Oracle_WT1\perl\bin;E:\Oracle\Middleware\Oracle_WT2\bin;E:\Oracle\Middleware\Oracle_WT2\opmn\bin;E:\Oracle\Middleware\Oracle_WT2\opmn\lib;E:\Oracle\Middleware\Oracle_WT2\perl\bin;
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>if "Windows_NT" == "Windows_NT" goto nt
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rem Find the requested command.
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>for /F %v in ('echo copyconfigtemplate|findstr "^start$ ^stop$ ^restart$ ^copyconfigtemplate$ ^status"') do call :exec set COMMAND=%v
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>call :exec set COMMAND=copyconfigtemplate
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>set COMMAND=copyconfigtemplate
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>goto :eof
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>if "copyconfigtemplate" == "" (
+
+INFO | 2014/05/09 00:47:30 | echo Usage: E:\otm\weblogic\weblogic.bat { start : stop : restart: status: copyconfigtemplate}
+
+INFO | 2014/05/09 00:47:30 | pause
+
+INFO | 2014/05/09 00:47:30 | goto :eof
+
+INFO | 2014/05/09 00:47:30 | ) else (shift)
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rem
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rem Run the application.
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rem At runtime, the current directory will be that of Wrapper.exe
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rem
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>call :copyconfigtemplate
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>copy /y E:\otm\weblogic\domains\otm\config\config.xml.fresh E:\otm\weblogic\domains\otm\config\config.xml
+
+INFO | 2014/05/09 00:47:30 | 1 file(s) copied.
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>del /q E:\otm\weblogic\domains\otm\config\jdbc\PRIMARY*.*
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>del /q E:\otm\weblogic\domains\otm\config\configCache\*.*
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rd /s /q E:\otm\weblogic\domains\otm\pending
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>goto :eof
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>rem if errorlevel 1 pause
+
+INFO | 2014/05/09 00:47:30 |
+
+INFO | 2014/05/09 00:47:30 | E:\otm\jdk\bin>goto :eof
+
+INFO | 2014/05/09 00:47:31 | java version "1.6.0_33"
+
+INFO | 2014/05/09 00:47:31 | Java(TM) SE Runtime Environment (build 1.6.0_33-b03)
+
+INFO | 2014/05/09 00:47:31 | Oracle JRockit(R) (build R28.2.4-14-151097-1.6.0_33-20120618-1634-windows-x86_64, compiled mode)
+
+INFO | 2014/05/09 00:47:31 | Argument #0 : E:/otm/jdk/bin/java
+
+INFO | 2014/05/09 00:47:31 | Argument #1 : -Xms2048m
+
+INFO | 2014/05/09 00:47:31 | Argument #2 : -Xmx2048m
+
+INFO | 2014/05/09 00:47:31 | Argument #3 : -jrockit
+
+INFO | 2014/05/09 00:47:31 | Argument #4 : -Xgc:throughput
+
+INFO | 2014/05/09 00:47:31 | Argument #5 : -Xverbose:memory
+
+INFO | 2014/05/09 00:47:31 | Argument #6 : -Dglog.home=E:/otm/glog/config
+
+INFO | 2014/05/09 00:47:31 | Argument #7 : -Duser.home=E:/otm/glog/config
+
+INFO | 2014/05/09 00:47:31 | Argument #8 : -Djava.io.tmpdir=E:/otm/temp
+
+INFO | 2014/05/09 00:47:31 | Argument #9 : -Djava.awt.headless=true
+
+INFO | 2014/05/09 00:47:31 | Argument #10 : -Djava.security.auth.login.config=E:/otm/glog/config/otm_jaas.config
+
+INFO | 2014/05/09 00:47:31 | Argument #11 : -Xss256k
+
+INFO | 2014/05/09 00:47:31 | Argument #12 : -Dweblogic.Name=gc3-CCH1WTOTM3
+
+INFO | 2014/05/09 00:47:31 | Argument #13 : -Dbea.home=E:/Oracle/Middleware/wlserver_10.3
+
+INFO | 2014/05/09 00:47:31 | Argument #14 : -Dweblogic.home=E:/Oracle/Middleware/wlserver_10.3/server
+
+INFO | 2014/05/09 00:47:31 | Argument #15 : -Dweblogic.management.username=system
+
+INFO | 2014/05/09 00:47:31 | Argument #16 : -Dweblogic.management.password=CHANGEME
+
+INFO | 2014/05/09 00:47:31 | Argument #17 : -Dweblogic.ProductionModeEnabled=true
+
+INFO | 2014/05/09 00:47:31 | Argument #18 : -Dweblogic.management.discover=false
+
+INFO | 2014/05/09 00:47:31 | Argument #19 : -Djava.security.policy=E:/Oracle/Middleware/wlserver_10.3/server/lib/weblogic.policy
+
+INFO | 2014/05/09 00:47:31 | Argument #20 : -Dwli.home=E:/Oracle/Middleware/wlserver_10.3/integration
+
+INFO | 2014/05/09 00:47:31 | Argument #21 : -Dwls.home=E:/Oracle/Middleware/wlserver_10.3/server
+
+INFO | 2014/05/09 00:47:31 | Argument #22 : -Dweblogic.RootDirectory=E:/otm/weblogic/domains/otm
+
+INFO | 2014/05/09 00:47:31 | Argument #23 : -Dweblogic.configuration.schemaValidationEnabled=false
+
+INFO | 2014/05/09 00:47:31 | Argument #24 : -Djavax.xml.soap.SOAPFactory=weblogic.xml.saaj.SOAPFactoryImpl
+
+INFO | 2014/05/09 00:47:31 | Argument #25 : -Dweblogic.MaxMessageSize=100000000
+
+INFO | 2014/05/09 00:47:31 | Argument #26 : -DpropertyProtection=mask
+
+INFO | 2014/05/09 00:47:31 | Argument #27 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+
+INFO | 2014/05/09 00:47:31 | Argument #28 : -Djavax.xml.soap.MessageFactory=weblogic.xml.saaj.MessageFactoryImpl
+
+INFO | 2014/05/09 00:47:31 | Argument #29 : -Djavax.management.builder.initial=weblogic.management.jmx.mbeanserver.WLSMBeanServerBuilder
+
+INFO | 2014/05/09 00:47:31 | Argument #30 : -Dweblogic.wsee.policy.LoadFromClassPathEnabled=true
+
+INFO | 2014/05/09 00:47:31 | Argument #31 : -classpath
+
+INFO | 2014/05/09 00:47:31 | Argument #32 : E:/otm/jdk/lib/tools.jar;E:/otm/glog/glog_resources/custom;E:/otm/glog/glog_resources;E:/otm/glog/config;E:/otm/glog/gc3webapp/WEB-INF/classes;E:/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/ojdbc6.jar;E:/otm/dash/lib/xprb.jar;E:/otm/dash/lib/xprm.jar;E:/otm/dash/lib/xprs.jar;E:/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar;E:/Oracle/Middleware/wlserver_10.3/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar;E:/Oracle/Middleware/wlserver_10.3/server/lib/weblogic.jar;E:/Oracle/Middleware/wlserver_10.3/server/lib/webservices.jar;E:/Oracle/Middleware/wlserver_10.3/modules/features/weblogic.server.modules.sca_10.3.6.0.jar;E:\otm\launcher\launcher.jar
+
+INFO | 2014/05/09 00:47:31 | Argument #33 : com.oracle.otm.Launcher
+
+INFO | 2014/05/09 00:47:31 | Argument #34 : E:\otm\weblogic\weblogic.conf
+
+INFO | 2014/05/09 00:47:31 | Argument #35 : start_svc
+
+INFO | 2014/05/09 00:47:31 | Argument #36 : autokill
+
+INFO | 2014/05/09 00:47:32 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+
+INFO | 2014/05/09 00:47:32 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, strategy: Generational Parallel Mark & Sweep.
+
+INFO | 2014/05/09 00:47:32 | [INFO ][memory ] Heap size: 2097152KB, maximal heap size: 2097152KB, nursery size: 1048576KB.
+
+INFO | 2014/05/09 00:47:32 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+
+INFO | 2014/05/09 00:47:32 | [INFO ][memory ] <start> - start time of collection (seconds since jvm start).
+
+INFO | 2014/05/09 00:47:32 | [INFO ][memory ] <type> - OC (old collection) or YC (young collection).
+
+INFO | 2014/05/09 00:47:32 | [INFO ][memory ] <end> - end time of collection (seconds since jvm start).
+
+INFO | 2014/05/09 00:47:32 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+
+INFO | 2014/05/09 00:47:32 | [INFO ][memory ] <after> - memory used by objects after collection (KB).
+
+INFO | 2014/05/09 00:47:32 | [INFO ][memory ] <heap> - size of heap after collection (KB).
+
+INFO | 2014/05/09 00:47:32 | [INFO ][memory ] <time> - total time of collection (milliseconds).
+
+INFO | 2014/05/09 00:47:32 | [INFO ][memory ] <pause> - total sum of pauses during collection (milliseconds).
+
+INFO | 2014/05/09 00:47:32 | [INFO ][memory ] Run with -Xverbose:gcpause to see individual phases.
+
+INFO | 2014/05/09 00:47:32 | [INFO ][memory ] Running on hypervisor Unknown (but probably running on a hypervisor)
+
+INFO | 2014/05/09 00:47:48 | Start Service Argument #0 : weblogic.Server
+
+INFO | 2014/05/09 00:47:48 | Start Service Argument #1 : start
+
+INFO | 2014/05/09 00:47:49 | <May 9, 2014 12:47:48 AM IST> <Info> <Security> <BEA-090905> <Disabling CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true>
+
+INFO | 2014/05/09 00:47:49 | <May 9, 2014 12:47:49 AM IST> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true>
+
+INFO | 2014/05/09 00:47:50 | <May 9, 2014 12:47:50 AM IST> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Oracle JRockit(R) Version R28.2.4-14-151097-1.6.0_33-20120618-1634-windows-x86_64 from Oracle Corporation>
+
+INFO | 2014/05/09 00:47:52 | <May 9, 2014 12:47:52 AM IST> <Info> <Management> <BEA-141107> <Version: WebLogic Server 10.3.6.0 Tue Nov 15 08:52:36 PST 2011 1441050 >
+
+INFO | 2014/05/09 00:47:52 | <May 9, 2014 12:47:52 AM IST> <Warning> <Management> <BEA-141274> <Production mode has specified at the command line via the weblogic.ProductionModeEnabled system property. This system property overrides the development mode setting contained in config.xml. However, the console and WLST show the attribute values and defaults that correspond to the development mode specified in config.xml.>
+
+INFO | 2014/05/09 00:48:00 | <May 9, 2014 12:48:00 AM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING>
+
+INFO | 2014/05/09 00:48:00 | <May 9, 2014 12:48:00 AM IST> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool>
+
+INFO | 2014/05/09 00:48:04 | <May 9, 2014 12:48:04 AM IST> <Notice> <LoggingService> <BEA-320400> <The log file E:\otm\logs\weblogic\weblogic.log will be rotated. Reopen the log file if tailing has stopped. This can happen on some platforms like Windows.>
+
+INFO | 2014/05/09 00:48:04 | <May 9, 2014 12:48:04 AM IST> <Notice> <LoggingService> <BEA-320401> <The log file has been rotated to E:\otm\logs\weblogic\weblogic.log72369. Log messages will continue to be logged in E:\otm\logs\weblogic\weblogic.log.>
+
+INFO | 2014/05/09 00:48:04 | <May 9, 2014 12:48:04 AM IST> <Notice> <Log Management> <BEA-170019> <The server log file E:\otm\logs\weblogic\weblogic.log is opened. All server side log events will be written to this file.>
+
+INFO | 2014/05/09 00:48:04 | <May 9, 2014 12:48:04 AM IST> <Error> <Socket> <BEA-000438> <Unable to load performance pack. Using Java I/O instead. Please ensure that wlntio.dll is in: 'E:\otm\jdk\bin;C:\Windows\system32;C:\Windows;E:\otm\jdk\bin;E:\otm\dash\bin;E:\otm\apache\openssl\bin;E:\app\admin\product\11.2.0\dbhome_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;PATH;E:\Oracle\Middleware\Oracle_WT1\bin;E:\Oracle\Middleware\Oracle_WT1\opmn\bin;E:\Oracle\Middleware\Oracle_WT1\opmn\lib;E:\Oracle\Middleware\Oracle_WT1\perl\bin;E:\Oracle\Middleware\Oracle_WT2\bin;E:\Oracle\Middleware\Oracle_WT2\opmn\bin;E:\Oracle\Middleware\Oracle_WT2\opmn\lib;E:\Oracle\Middleware\Oracle_WT2\perl\bin;;.'
+
+>
+
+INFO | 2014/05/09 00:48:12 | GC3 realm initializing <-----------
+
+INFO | 2014/05/09 00:48:29 | -----------> GC3 realm initialized
+
+INFO | 2014/05/09 00:48:36 | <May 9, 2014 12:48:36 AM IST> <Notice> <Security> <BEA-090082> <Security initializing using security realm otmrealm.>
+
+INFO | 2014/05/09 00:48:41 | <May 9, 2014 12:48:41 AM IST> <Warning> <Store> <BEA-280109> <Unable to load the native wlfileio library for the persistent file store "_WLS_gc3-CCH1WTOTM3". The store will use buffered I/O. The store is still operating in a transactionally safe synchronous mode. See store open log messages for the requested and final write policies.>
+
+INFO | 2014/05/09 00:48:52 | [INFO ][memory ] [YC#1] 80.335-80.609: YC 1086315KB->371629KB (2097152KB), 0.274 s, sum of pauses 273.564 ms, longest pause 273.564 ms.
+
+INFO | 2014/05/09 00:48:53 | <May 9, 2014 12:48:53 AM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STANDBY>
+
+INFO | 2014/05/09 00:48:53 | <May 9, 2014 12:48:53 AM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING>
+
+INFO | 2014/05/09 00:49:22 | -- OTM Event: preDeploy
+
+INFO | 2014/05/09 00:50:02 | [INFO ][memory ] [YC#2] 150.353-150.539: YC 1181409KB->453859KB (2097152KB), 0.186 s, sum of pauses 185.644 ms, longest pause 185.644 ms.
+
+INFO | 2014/05/09 00:50:38 | [INFO ][memory ] [YC#3] 186.999-187.164: YC 1262285KB->534095KB (2097152KB), 0.165 s, sum of pauses 164.959 ms, longest pause 164.959 ms.
+
+INFO | 2014/05/09 00:51:13 | [INFO ][memory ] [YC#4] 221.922-222.109: YC 1344539KB->607965KB (2097152KB), 0.187 s, sum of pauses 186.684 ms, longest pause 186.684 ms.
+
+INFO | 2014/05/09 00:51:41 | [INFO ][memory ] [YC#5] 249.859-250.012: YC 1413134KB->680135KB (2097152KB), 0.153 s, sum of pauses 152.944 ms, longest pause 152.944 ms.
+
+INFO | 2014/05/09 00:52:23 | [INFO ][memory ] [YC#6] 291.251-291.425: YC 1490547KB->758890KB (2097152KB), 0.174 s, sum of pauses 173.398 ms, longest pause 173.398 ms.
+
+INFO | 2014/05/09 00:53:45 | [INFO ][memory ] [YC#7] 372.858-373.447: YC 1566283KB->900461KB (2097152KB), 0.589 s, sum of pauses 589.248 ms, longest pause 589.248 ms.
+
+INFO | 2014/05/09 00:53:46 | -- OTM Event: initContext
+
+INFO | 2014/05/09 00:53:46 | -- OTM Event: startupServlet
+
+INFO | 2014/05/09 00:53:46 | -- OTM Startup: loading startup classes
+
+INFO | 2014/05/09 00:53:46 | --
+
+INFO | 2014/05/09 01:04:16 | [INFO ][memory ] [YC#8] 1004.293-1004.674: YC 1692442KB->950336KB (2097152KB), 0.380 s, sum of pauses 379.759 ms, longest pause 379.759 ms.
+
+INFO | 2014/05/09 01:04:45 | : QUERYRESOURCES : 0
+
+INFO | 2014/05/09 01:04:46 | en : QUERYRESOURCES : 918780
+
+INFO | 2014/05/09 01:04:46 | en_US : QUERYRESOURCES : 0
+
+INFO | 2014/05/09 01:04:50 | -- OTM Event: postLoad
+
+INFO | 2014/05/09 01:04:50 | -- OTM Event: activateThread
+
+INFO | 2014/05/09 01:04:50 | -- OTM Startup: activating startup classes
+
+INFO | 2014/05/09 01:04:50 | -- OTM Event: postDeploy
+
+INFO | 2014/05/09 01:04:51 | <May 9, 2014 1:04:51 AM IST> <Notice> <Log Management> <BEA-170027> <The Server has established connection with the Domain level Diagnostic Service successfully.>
+
+INFO | 2014/05/09 01:04:52 | <May 9, 2014 1:04:52 AM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to ADMIN>
+
+INFO | 2014/05/09 01:04:53 | <May 9, 2014 1:04:53 AM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RESUMING>
+
+INFO | 2014/05/09 01:04:57 | <May 9, 2014 1:04:57 AM IST> <Notice> <Security> <BEA-090171> <Loading the identity certificate and private key stored under the alias DemoIdentity from the jks keystore file E:\Oracle\Middleware\wlserver_10.3\server\lib\DemoIdentity.jks.>
+
+INFO | 2014/05/09 01:04:57 | <May 9, 2014 1:04:57 AM IST> <Notice> <Security> <BEA-090169> <Loading trusted certificates from the jks keystore file E:\Oracle\Middleware\wlserver_10.3\server\lib\DemoTrust.jks.>
+
+INFO | 2014/05/09 01:04:57 | <May 9, 2014 1:04:57 AM IST> <Notice> <Security> <BEA-090169> <Loading trusted certificates from the jks keystore file E:\otm\jdk\jre\lib\security\cacerts.>
+
+INFO | 2014/05/09 01:04:57 | <May 9, 2014 1:04:57 AM IST> <Alert> <Security> <BEA-090152> <Demo trusted CA certificate is being used in production mode: [
+
+[
+
+Version: V3
+
+Subject: CN=CACERT, OU=FOR TESTING ONLY, O=MyOrganization, L=MyTown, ST=MyState, C=US
+
+Signature Algorithm: MD5withRSA, OID = 1.2.840.113549.1.1.4
+
+Key: Sun RSA public key, 512 bits
+
+modulus: 9550192877869244258838480703390456015046425375252278279190673063544122510925482179963329236052146047356415957587628011282484772458983977898996276815440753
+
+public exponent: 65537
+
+Validity: [From: Fri Mar 22 01:42:27 IST 2002,
+
+To: Wed Mar 23 01:42:27 IST 2022]
+
+Issuer: CN=CACERT, OU=FOR TESTING ONLY, O=MyOrganization, L=MyTown, ST=MyState, C=US
+
+SerialNumber: [ 33f10648 fcde0deb 4199921f d64537f4]
+
+Certificate Extensions: 1
+
+[1]: ObjectId: 2.5.29.15 Criticality=true
+
+KeyUsage [
+
+Key_CertSign
+
+]
+
+]
+
+Algorithm: [MD5withRSA]
+
+Signature:
+
+0000: 9D 26 4C 29 C8 91 C3 A7 06 C3 24 6F AE B4 F8 82 .&L)......$o....
+
+INFO | 2014/05/09 01:04:57 | 0010: 80 4D AA CB 7C 79 46 84 81 C4 66 95 F4 1E D8 C4 .M...yF...f.....
+
+INFO | 2014/05/09 01:04:57 | 0020: E9 B7 D9 7C E2 23 33 A4 B7 21 E0 AA 54 2B 4A FF .....#3..!..T+J.
+
+INFO | 2014/05/09 01:04:57 | 0030: CB 21 20 88 81 21 DB AC 90 54 D8 7D 79 63 23 3C .! ..!...T..yc#<
+
+INFO | 2014/05/09 01:04:57 |
+
+] The system is vulnerable to security attacks, since it trusts certificates signed by the demo trusted CA.>
+
+INFO | 2014/05/09 01:04:58 | <May 9, 2014 1:04:58 AM IST> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=Entrust Root Certification Authority - G2,OU=(c) 2009 Entrust\, Inc. - for authorized use only,OU=See www.entrust.net/legal-terms,O=Entrust\, Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.>
+
+INFO | 2014/05/09 01:04:58 | <May 9, 2014 1:04:58 AM IST> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=thawte Primary Root CA - G3,OU=(c) 2008 thawte\, Inc. - For authorized use only,OU=Certification Services Division,O=thawte\, Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.>
+
+INFO | 2014/05/09 01:04:58 | <May 9, 2014 1:04:58 AM IST> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=T-TeleSec GlobalRoot Class 3,OU=T-Systems Trust Center,O=T-Systems Enterprise Services GmbH,C=DE". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.>
+
+INFO | 2014/05/09 01:04:58 | <May 9, 2014 1:04:58 AM IST> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=T-TeleSec GlobalRoot Class 2,OU=T-Systems Trust Center,O=T-Systems Enterprise Services GmbH,C=DE". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.>
+
+INFO | 2014/05/09 01:04:58 | <May 9, 2014 1:04:58 AM IST> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=GlobalSign,O=GlobalSign,OU=GlobalSign Root CA - R3". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.>
+
+INFO | 2014/05/09 01:04:58 | <May 9, 2014 1:04:58 AM IST> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "OU=Security Communication RootCA2,O=SECOM Trust Systems CO.\,LTD.,C=JP". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.>
+
+INFO | 2014/05/09 01:04:58 | <May 9, 2014 1:04:58 AM IST> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=VeriSign Universal Root Certification Authority,OU=(c) 2008 VeriSign\, Inc. - For authorized use only,OU=VeriSign Trust Network,O=VeriSign\, Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.>
+
+INFO | 2014/05/09 01:04:58 | <May 9, 2014 1:04:58 AM IST> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=KEYNECTIS ROOT CA,OU=ROOT,O=KEYNECTIS,C=FR". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.>
+
+INFO | 2014/05/09 01:04:58 | <May 9, 2014 1:04:58 AM IST> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=GeoTrust Primary Certification Authority - G3,OU=(c) 2008 GeoTrust Inc. - For authorized use only,O=GeoTrust Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.>
+
+INFO | 2014/05/09 01:04:58 | <May 9, 2014 1:04:58 AM IST> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure" is now listening on 172.25.164.48:7002 for protocols iiops, t3s, ldaps, https.>
+
+INFO | 2014/05/09 01:04:58 | <May 9, 2014 1:04:58 AM IST> <Notice> <Server> <BEA-002613> <Channel "Default" is now listening on 172.25.164.48:7001 for protocols iiop, t3, ldap, snmp, http.>
+
+INFO | 2014/05/09 01:04:58 | <May 9, 2014 1:04:58 AM IST> <Notice> <WebLogicServer> <BEA-000329> <Started WebLogic Admin Server "gc3-CCH1WTOTM3" for domain "Otmv631" running in Production Mode>
+
+INFO | 2014/05/09 01:04:58 | <May 9, 2014 1:04:58 AM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RUNNING>
+
+INFO | 2014/05/09 01:04:58 | <May 9, 2014 1:04:58 AM IST> <Notice> <WebLogicServer> <BEA-000360> <Server started in RUNNING mode>
+
+INFO | 2014/05/09 01:05:15 | -- OTM Event: serverReady
+
+INFO | 2014/05/09 05:35:00 | [INFO ][memory ] [YC#9] 17247.847-17248.335: YC 1775927KB->1046158KB (2097152KB), 0.489 s, sum of pauses 488.280 ms, longest pause 488.280 ms.
+
+INFO | 2014/05/09 14:06:26 | [INFO ][memory ] [YC#10] 47934.612-47934.790: YC 1851764KB->1078614KB (2097152KB), 0.177 s, sum of pauses 176.918 ms, longest pause 176.918 ms.
+
+INFO | 2014/05/09 18:36:04 | <May 9, 2014 6:36:04 PM IST> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 172.25.164.48:61,528 during the configured idle timeout of 5 secs>
+
+INFO | 2014/05/09 18:36:04 | <May 9, 2014 6:36:04 PM IST> <Error> <Socket> <BEA-000403> <IOException occurred on socket: Socket[addr=/172.25.164.48,port=61528,localport=7001]
+
+java.net.SocketException: recv failed: Descriptor not a socket.
+
+INFO | 2014/05/09 18:36:04 | java.net.SocketException: recv failed: Descriptor not a socket
+
+INFO | 2014/05/09 18:36:04 | at jrockit.net.SocketNativeIO.readBytesPinned(Native Method)
+
+INFO | 2014/05/09 18:36:04 | at jrockit.net.SocketNativeIO.socketRead(SocketNativeIO.java:32)
+
+INFO | 2014/05/09 18:36:04 | at java.net.SocketInputStream.socketRead0(SocketInputStream.java)
+
+INFO | 2014/05/09 18:36:04 | at java.net.SocketInputStream.read(SocketInputStream.java:129)
+
+INFO | 2014/05/09 18:36:04 | at weblogic.socket.SocketMuxer.readFromSocket(SocketMuxer.java:988)
+
+INFO | 2014/05/09 18:36:04 | Truncated. see log file for complete stacktrace
+
+INFO | 2014/05/09 18:36:04 | >
+
+INFO | 2014/05/09 21:37:15 | [INFO ][memory ] [YC#11] 74983.988-74984.169: YC 1896312KB->1128678KB (2097152KB), 0.181 s, sum of pauses 180.643 ms, longest pause 180.643 ms.

@@ -1,0 +1,53 @@
+####<May 14, 2015 7:22:31 AM EEST> <Info> <Security> <OTM2> <> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <> <> <> <1431577351931> <BEA-000000> <Disabling CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true> 
+####<May 14, 2015 7:22:32 AM EEST> <Info> <Security> <OTM2> <> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <> <> <> <1431577352290> <BEA-000000> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true> 
+####<May 14, 2015 7:22:32 AM EEST> <Info> <WebLogicServer> <OTM2> <> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <> <> <> <1431577352889> <BEA-000000> <Starting WebLogic Server with Oracle JRockit(R) Version R28.2.9-13-157938-1.6.0_65-20130920-0911-windows-x86_64 from Oracle Corporation> 
+####<May 14, 2015 7:22:34 AM EEST> <Info> <Management> <OTM2> <> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <> <> <> <1431577354482> <BEA-000000> <Version: WebLogic Server 10.3.6.0  Tue Nov 15 08:52:36 PST 2011 1441050 > 
+####<May 14, 2015 7:22:34 AM EEST> <Warning> <Management> <OTM2> <> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <> <> <> <1431577354513> <BEA-000000> <Production mode has specified at the command line via the weblogic.ProductionModeEnabled system property. This system property overrides the development mode setting contained in config.xml. However, the console and WLST show the attribute values and defaults that correspond to the development mode specified in config.xml.> 
+####<May 14, 2015 7:22:39 AM EEST> <Notice> <WebLogicServer> <OTM2> <> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <> <> <> <1431577359415> <BEA-000000> <Server state changed to STARTING> 
+####<May 14, 2015 7:22:39 AM EEST> <Info> <WorkManager> <OTM2> <> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <> <> <> <1431577359446> <BEA-000000> <Initializing self-tuning thread pool> 
+####<May 14, 2015 7:22:40 AM EEST> <Info> <WebLogicServer> <OTM2> <> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <> <> <> <1431577360710> <BEA-000000> <WebLogic Server "gc3-46" version:
+WebLogic Server 10.3.6.0  Tue Nov 15 08:52:36 PST 2011 1441050  Copyright (c) 1995, 2011, Oracle and/or its affiliates. All rights reserved.> 
+####<May 14, 2015 7:22:41 AM EEST> <Notice> <Log Management> <OTM2> <> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <> <> <> <1431577361025> <BEA-170019> <The server log file C:\otm\logs\weblogic\weblogic.log is opened. All server side log events will be written to this file.> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Log Management> <OTM2> <> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <> <> <> <1431577361040> <BEA-170023> <The Server Logging is initialized with Java Logging API implementation.> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Diagnostics> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361181> <BEA-320001> <The ServerDebug service initialized successfully.> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Server> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361401> <BEA-002622> <The protocol "t3" is now configured.> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Server> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361401> <BEA-002622> <The protocol "t3s" is now configured.> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Server> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361401> <BEA-002622> <The protocol "http" is now configured.> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Server> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361401> <BEA-002622> <The protocol "https" is now configured.> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Server> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361401> <BEA-002622> <The protocol "iiop" is now configured.> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Server> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361401> <BEA-002622> <The protocol "iiops" is now configured.> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Server> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361417> <BEA-002622> <The protocol "ldap" is now configured.> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Server> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361417> <BEA-002622> <The protocol "ldaps" is now configured.> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Server> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361417> <BEA-002622> <The protocol "cluster" is now configured.> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Server> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361417> <BEA-002622> <The protocol "clusters" is now configured.> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Server> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361432> <BEA-002622> <The protocol "snmp" is now configured.> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Server> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361432> <BEA-002622> <The protocol "admin" is now configured.> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Server> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361432> <BEA-002624> <The administration protocol is "t3s" and is now configured.> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <RJVM> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361479> <BEA-000570> <Network Configuration for Channel "gc3-46"
+ Listen Address		 46.10.207.3:7001
+ Public Address		 N/A
+ Http Enabled		 true
+ Tunneling Enabled	 false
+ Outbound Enabled	 false
+ Admin Traffic Enabled	 true> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <RJVM> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361479> <BEA-000570> <Network Configuration for Channel "gc3-46"
+ Listen Address		 46.10.207.3:7002 (SSL)
+ Public Address		 N/A
+ Http Enabled		 true
+ Tunneling Enabled	 false
+ Outbound Enabled	 false
+ Admin Traffic Enabled	 true> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Server> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361606> <BEA-002609> <Channel Service initialized.> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Socket> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361668> <BEA-000406> <NTSocketMuxer was built on Jan 24 2006 20:40:35
+> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Socket> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361752> <BEA-000436> <Allocating 4 reader threads.> 
+####<May 14, 2015 7:22:41 AM EEST> <Info> <Socket> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577361758> <BEA-000446> <Native IO Enabled.> 
+####<May 14, 2015 7:22:42 AM EEST> <Info> <IIOP> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577362188> <BEA-002014> <IIOP subsystem enabled.> 
+####<May 14, 2015 7:22:44 AM EEST> <Info> <Security> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577364659> <BEA-000000> <Starting OpenJPA 1.1.1-SNAPSHOT> 
+####<May 14, 2015 7:22:45 AM EEST> <Info> <Security> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577365080> <BEA-000000> <StoreServiceImpl.initJDO - StoreService is initialized with Id = ldap_MzWWbgWgl0SFudHZyLyTGHwjxj4=> 
+####<May 14, 2015 7:22:45 AM EEST> <Info> <Security> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577365238> <BEA-090074> <Initializing Authenticator provider using LDIF template file C:\otm\weblogic\domains\otm\security\DefaultAuthenticatorInit.ldift.> 
+####<May 14, 2015 7:22:45 AM EEST> <Info> <Security> <OTM2> <gc3-46> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1431577365363> <BEA-090075> <The Authenticator provider has had its LDIF information loaded from: C:\otm\weblogic\domains\otm\security\DefaultAuthenticatorInit.ldift> 
+####<May 14, 2015 7:22:54 AM EEST> <Notice> <WebLogicServer> <OTM2> <gc3-46> <Thread-1> <<WLS Kernel>> <> <> <1431577374364> <BEA-000388> <JVM called WLS shutdown hook. The server will force shutdown now> 
+####<May 14, 2015 7:22:54 AM EEST> <Alert> <WebLogicServer> <OTM2> <gc3-46> <Thread-1> <<WLS Kernel>> <> <> <1431577374379> <BEA-000396> <Server shutdown has been requested by <WLS Kernel>> 
+####<May 14, 2015 7:22:54 AM EEST> <Notice> <WebLogicServer> <OTM2> <gc3-46> <Thread-1> <<WLS Kernel>> <> <> <1431577374442> <BEA-000365> <Server state changed to FORCE_SHUTTING_DOWN> 
+####<May 14, 2015 7:22:54 AM EEST> <Info> <WebLogicServer> <OTM2> <gc3-46> <Thread-1> <<WLS Kernel>> <> <> <1431577374473> <BEA-000236> <Stopping execute threads.> 

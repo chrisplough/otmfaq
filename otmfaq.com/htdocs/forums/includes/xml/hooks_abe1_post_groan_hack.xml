@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hooks>
+
+	<hooktype type="post_groan_hack">
+		<hook>post_groan_main_start</hook>
+		<hook>post_groan_main_end</hook>
+		<hook>post_groan_main_add_groan_start</hook>
+		<hook>post_groan_main_add_groan_end</hook>
+		<hook>post_groan_main_remove_all_groan_start</hook>
+		<hook>post_groan_main_remove_all_groan_end</hook>
+		<hook>post_groan_main_remove_user_groan_start</hook>
+		<hook>post_groan_main_remove_user_groan_end</hook>
+		<hook>post_groan_function_post_groan_off_start</hook>
+		<hook>post_groan_function_post_groan_off_end</hook>
+		<hook>post_groan_function_can_thank_this_post_start</hook>
+		<hook>post_groan_function_can_thank_this_post_end</hook>
+		<hook>post_groan_function_can_delete_all_groan_start</hook>
+		<hook>post_groan_function_can_delete_all_groan_end</hook>
+		<hook>post_groan_function_thanked_already_start</hook>
+		<hook>post_groan_function_thanked_already_end</hook>
+		<hook>post_groan_function_show_groan_date_start</hook>
+		<hook>post_groan_function_show_groan_date_end</hook>
+		<hook>post_groan_function_fetch_groan_start</hook>
+		<hook>post_groan_function_fetch_groan_end</hook>
+		<hook>post_groan_function_fetch_groan_bit_start</hook>
+		<hook>post_groan_function_fetch_groan_bit_end</hook>
+		<hook>post_groan_function_fetch_post_groan_template_start</hook>
+		<hook>post_groan_function_fetch_post_groan_template_end</hook>
+		<hook>post_groan_function_add_groan_start</hook>
+		<hook>post_groan_function_add_groan_end</hook>
+		<hook>post_groan_function_delete_all_groan_start</hook>
+		<hook>post_groan_function_delete_all_groan_end</hook>
+		<hook>post_groan_function_delete_groan_start</hook>
+		<hook>post_groan_function_delete_groan_end</hook>
+		<hook>post_groan_admin_start</hook>
+		<hook>post_groan_admin_end</hook>
+		<hook>post_groan_admin_recounters_start</hook>
+		<hook>post_groan_admin_recounters_end</hook>
+		<hook>post_groan_admin_user_amount_start</hook>
+		<hook>post_groan_admin_user_amount_end</hook>
+		<hook>post_groan_admin_thanked_posts_start</hook>
+		<hook>post_groan_admin_thanked_posts_end</hook>
+		<hook>post_groan_admin_thanked_times_start</hook>
+		<hook>post_groan_admin_thanked_times_end</hook>
+		<hook>post_groan_admin_post_amount_start</hook>
+		<hook>post_groan_admin_post_amount_end</hook>
+		<hook>post_groan_admin_special_actions_start</hook>
+		<hook>post_groan_admin_special_actions_end</hook>
+		<hook>post_groan_admin_delete_all_users_groan_start</hook>
+		<hook>post_groan_admin_delete_all_users_groan_end</hook>
+	</hooktype>
+
+</hooks>

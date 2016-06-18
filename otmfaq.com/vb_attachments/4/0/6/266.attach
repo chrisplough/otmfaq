@@ -1,0 +1,360 @@
+
+####<Sep 2, 2008 12:25:23 PM CEST> <Info> <XML> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-130036> <Initializing XMLRegistry.> 
+####<Sep 2, 2008 12:25:24 PM CEST> <Info> <JDBC> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-001135> <Initializing the JDBC service.> 
+####<Sep 2, 2008 12:25:24 PM CEST> <Info> <JDBC> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-001137> <Initialization complete.> 
+####<Sep 2, 2008 12:25:24 PM CEST> <Info> <Connector> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-190000> <Initializing J2EE Connector Service> 
+####<Sep 2, 2008 12:25:24 PM CEST> <Info> <Connector> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-190001> <J2EE Connector Service initialized successfully> 
+####<Sep 2, 2008 12:25:24 PM CEST> <Info> <IIOP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-002014> <IIOP subsystem enabled.> 
+####<Sep 2, 2008 12:25:25 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040090> <Deployed 5 default connection factories.> 
+####<Sep 2, 2008 12:25:25 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040305> <JMS service is initialized and in standby mode.> 
+####<Sep 2, 2008 12:25:25 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-101128> <Initializing HTTP services.> 
+####<Sep 2, 2008 12:25:26 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-101133> <Initializing Web server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:26 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-101052> <[HTTP gc3-atlast02] Initialized> 
+####<Sep 2, 2008 12:25:27 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-101135> <gc3-atlast02 is the default Web server.> 
+####<Sep 2, 2008 12:25:27 PM CEST> <Info> <J2EE> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-160037> <J2EE service initializing.> 
+####<Sep 2, 2008 12:25:27 PM CEST> <Warning> <Management> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149317> <Application DefaultWebApp_gc3 is configured with a deprecated deployment protocol and will be deployed as such.> 
+####<Sep 2, 2008 12:25:27 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149207> <Initializing.> 
+####<Sep 2, 2008 12:25:31 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module console of application console is transitioning from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:32 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module console of application console successfully transitioned from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:32 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module uddi of application uddi is transitioning from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:32 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module uddi of application uddi successfully transitioned from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:33 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module uddiexplorer of application uddiexplorer is transitioning from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:33 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module uddiexplorer of application uddiexplorer successfully transitioned from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:33 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module wl_management_internal1 of application wl_management_internal1 is transitioning from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:33 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module wl_management_internal1 of application wl_management_internal1 successfully transitioned from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:33 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module wl_management_internal2 of application wl_management_internal2 is transitioning from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:33 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module wl_management_internal2 of application wl_management_internal2 successfully transitioned from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:33 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module console of application console is transitioning from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module console of application console successfully transitioned from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<anonymous>> <> <BEA-101047> <[ServletContext(id=31755621,name=console,context-path=/console)] WebServiceServlet: init> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module uddi of application uddi is transitioning from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module uddi of application uddi successfully transitioned from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<anonymous>> <> <BEA-101047> <[ServletContext(id=8087063,name=uddi,context-path=/uddi)] WebServiceServlet: init> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module uddiexplorer of application uddiexplorer is transitioning from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module uddiexplorer of application uddiexplorer successfully transitioned from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<anonymous>> <> <BEA-101047> <[ServletContext(id=12985139,name=uddiexplorer,context-path=/uddiexplorer)] WebServiceServlet: init> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module wl_management_internal1 of application wl_management_internal1 is transitioning from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module wl_management_internal1 of application wl_management_internal1 successfully transitioned from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<anonymous>> <> <BEA-101047> <[ServletContext(id=21404650,name=wl_management_internal1,context-path=/wl_management_internal1)] WebServiceServlet: init> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module wl_management_internal2 of application wl_management_internal2 is transitioning from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module wl_management_internal2 of application wl_management_internal2 successfully transitioned from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<anonymous>> <> <BEA-101047> <[ServletContext(id=26444906,name=wl_management_internal2,context-path=/wl_management_internal2)] WebServiceServlet: init> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149208> <Initialization Complete.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <JTA> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-110441> <Opening transaction log with driver version "j1.0" and synchronous write policy "Cache-Flush". For information on synchronous write policies, refer to the weblogic.management.configuration.ServerMBean javadoc or console online help.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <JDBC> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-001138> <Resuming the JDBC service.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <JDBC> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-001140> <Resume complete.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040108> <User connection factory "DefaultXAConnectionFactory" is started.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040108> <User connection factory "QueueConnectionFactory" is started.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040108> <User connection factory "MessageDrivenBeanConnectionFactory" is started.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040108> <User connection factory "DefaultConnectionFactory" is started.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040108> <User connection factory "TopicConnectionFactory" is started.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040306> <JMS service is active now.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-101129> <Initializing the Web application container.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-101237> <HTTP logging has been disabled for the Web server: gc3-atlast02.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-101051> <[HTTP gc3-atlast02] started> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <WebService> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-220031> <The server does not support reliable SOAP messaging.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <WebService> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-220027> <Web Service reliable agents are started on the server.> 
+####<Sep 2, 2008 12:25:34 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149209> <Resuming.> 
+####<Sep 2, 2008 12:25:35 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040108> <User connection factory "GC3JMSConnectionFactory" is started.> 
+####<Sep 2, 2008 12:25:35 PM CEST> <Notice> <SNMP Agent> <vgz30> <gc3-atlast02> <SNMP Service Thread> <<WLS Kernel>> <> <000000> <The SNMP trap version is 1> 
+####<Sep 2, 2008 12:25:35 PM CEST> <Info> <SNMP Agent> <vgz30> <gc3-atlast02> <SNMP Service Thread> <<WLS Kernel>> <> <000000> <SNMP agent is initializating ...> 
+####<Sep 2, 2008 12:25:35 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040054> <JMSServer "GC3JMSServer". No persistent store configured.> 
+####<Sep 2, 2008 12:25:35 PM CEST> <Info> <SNMP Agent> <vgz30> <gc3-atlast02> <SNMP Service Thread> <<WLS Kernel>> <> <000000> <SNMP Agent Initialization Complete. 
+ Sending generic coldStart trap ...> 
+####<Sep 2, 2008 12:25:35 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040321> <JMSServer "GC3JMSServer" is resuming.> 
+####<Sep 2, 2008 12:25:36 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040010> <JMSServer "GC3JMSServer" configured no session pools.> 
+####<Sep 2, 2008 12:25:36 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040109> <JMSServer "GC3JMSServer" is started.> 
+####<Sep 2, 2008 12:25:36 PM CEST> <Warning> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-101181> <Could not find web.xml under WEB-INF in the doc root: ./applications/DefaultWebApp_gc3.> 
+####<Sep 2, 2008 12:25:36 PM CEST> <Info> <J2EE> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-160003> <Deployed : DefaultWebApp_gc3> 
+####<Sep 2, 2008 12:25:36 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-101133> <Initializing Web server gc3-atlast02.> 
+####<Sep 2, 2008 12:25:36 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149210> <Resumed.> 
+####<Sep 2, 2008 12:25:36 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<anonymous>> <> <BEA-101047> <[ServletContext(id=5856205,name=DefaultWebApp_gc3,context-path=)] WebServiceServlet: init> 
+####<Sep 2, 2008 12:25:37 PM CEST> <Info> <WebLogicServer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-000287> <Invoking startup class: glog.util.GC3StartupShutdownManager.startup(null)> 
+####<Sep 2, 2008 12:27:40 PM CEST> <Info> <WebLogicServer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <GUEST.ADMIN> <> <BEA-000288> <glog.util.GC3StartupShutdownManager reports: Glog Startup> 
+####<Sep 2, 2008 12:27:40 PM CEST> <Info> <Management> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-141187> <Java system properties are defined as follows: 
+bea.home = /atlast02/appl/bea
+file.encoding = ISO646-US
+file.encoding.pkg = sun.io
+file.separator = /
+glog.home = /atlast02/appl/otm/otm555/glog/config
+java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+java.awt.headless = TRUE
+java.awt.printerjob = sun.print.PSPrinterJob
+java.class.path = ../../../jsw/lib/wrapper.jar:../../../jdk/lib/tools.jar:../../../glog/glog_resources:../../../glog/config:../../../glog/gc3webapp/WEB-INF/classes:../../../glog/gc3webapp/WEB-INF/lib/glogserver.jar:../../../glog/gc3webapp/WEB-INF/lib/3rdparty/WaitForServer.zip
+java.class.version = 48.0
+java.endorsed.dirs = /atlast02/appl/otm/otm555/jdk/jre/lib/endorsed
+java.ext.dirs = /atlast02/appl/otm/otm555/jdk/jre/lib/ext
+java.home = /atlast02/appl/otm/otm555/jdk/jre
+java.io.tmpdir = /atlast02/appl/otm/otm555/temp
+java.library.path = ../../../jsw/lib:/atlast02/appl/otm/otm555/dash/lib:/atlast02/soe3/opt/oracle/product/10.2.0/client_1/lib32:/atlast02/soe3/opt/oracle/product/10.2.0/client_1/lib:/atlast02/appl/bea/weblogic81/server/lib/solaris
+java.naming.factory.initial = weblogic.jndi.WLInitialContextFactory
+java.naming.factory.url.pkgs = weblogic.jndi.factories:weblogic.corba.j2ee.naming.url
+java.protocol.handler.pkgs = weblogic.net|weblogic.utils|weblogic.utils
+java.runtime.name = Java(TM) 2 Runtime Environment, Standard Edition
+java.runtime.version = 1.4.2_12-b03
+java.security.auth.login.config = /atlast02/appl/otm/otm555/glog/config/gc3_jaas.config
+java.security.policy = /atlast02/appl/bea/weblogic81/server/lib/weblogic.policy
+java.specification.name = Java Platform API Specification
+java.specification.vendor = Sun Microsystems Inc.
+java.specification.version = 1.4
+java.util.prefs.PreferencesFactory = java.util.prefs.FileSystemPreferencesFactory
+java.vendor = Sun Microsystems Inc.
+java.vendor.url = http://java.sun.com/
+java.vendor.url.bug = http://java.sun.com/cgi-bin/bugreport.cgi
+java.version = 1.4.2_12
+java.vm.info = mixed mode
+java.vm.name = Java HotSpot(TM) Server VM
+java.vm.specification.name = Java Virtual Machine Specification
+java.vm.specification.vendor = Sun Microsystems Inc.
+java.vm.specification.version = 1.0
+java.vm.vendor = Sun Microsystems Inc.
+java.vm.version = 1.4.2_12-b03
+javax.rmi.CORBA.PortableRemoteObjectClass = weblogic.iiop.PortableRemoteObjectDelegateImpl
+javax.rmi.CORBA.UtilClass = weblogic.iiop.UtilDelegateImpl
+javax.xml.rpc.ServiceFactory = weblogic.webservice.core.rpc.ServiceFactoryImpl
+javax.xml.soap.MessageFactory = weblogic.webservice.core.soap.MessageFactoryImpl
+jmx.implementation.name = JMX RI
+jmx.implementation.vendor = Sun Microsystems
+jmx.implementation.version = 1.0
+jmx.specification.name = Java Management Extensions
+jmx.specification.vendor = Sun Microsystems
+jmx.specification.version = 1.0 Final Release
+org.omg.CORBA.ORBClass = weblogic.corba.orb.ORB
+org.omg.CORBA.ORBSingletonClass = weblogic.corba.orb.ORB
+org.xml.sax.driver = weblogic.apache.xerces.parsers.SAXParser
+org.xml.sax.parser = weblogic.xml.jaxp.RegistryParser
+os.arch = sparc
+os.name = SunOS
+os.version = 5.10
+path.separator = :
+sun.arch.data.model = 32
+sun.boot.class.path = /atlast02/appl/otm/otm555/jdk/jre/lib/rt.jar:/atlast02/appl/otm/otm555/jdk/jre/lib/i18n.jar:/atlast02/appl/otm/otm555/jdk/jre/lib/sunrsasign.jar:/atlast02/appl/otm/otm555/jdk/jre/lib/jsse.jar:/atlast02/appl/otm/otm555/jdk/jre/lib/jce.jar:/atlast02/appl/otm/otm555/jdk/jre/lib/charsets.jar:/atlast02/appl/otm/otm555/jdk/jre/classes
+sun.boot.library.path = /atlast02/appl/otm/otm555/jdk/jre/lib/sparc
+sun.cpu.endian = big
+sun.cpu.isalist = sparcv9 sparcv8plus sparcv8 sparcv8-fsmuld sparcv7 sparc sparcv9+vis sparcv9+vis2 sparcv8plus+vis sparcv8plus+vis2
+sun.io.unicode.encoding = UnicodeBig
+sun.os.patch.level = unknown
+user.dir = /atlast02/appl/otm/otm555/weblogic/config/gc3domain
+user.home = /atlast02/appl/otm/otm555/glog/config
+user.language = en
+user.name = glog
+user.timezone = Europe/Stockholm
+vde.home = ./gc3-atlast02/ldap
+weblogic.Name = gc3-atlast02
+weblogic.ProductionModeEnabled = true
+weblogic.home = /atlast02/appl/bea/weblogic81/server
+weblogic.management.discover = false
+weblogic.mbeanLegalClause.ByPass = false
+wrapper.cpu.timeout = 10
+wrapper.jvmid = 1
+wrapper.key = nMnfpn8KRGPjj2si
+wrapper.native_library = wrapper
+wrapper.port = 32000
+wrapper.service = TRUE
+wrapper.use_system_time = TRUE
+wrapper.version = 3.1.2
+> 
+####<Sep 2, 2008 12:27:40 PM CEST> <Info> <Management> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-141053> <The application poller has not started for the production server.> 
+####<Sep 2, 2008 12:27:40 PM CEST> <Info> <Socket> <vgz30> <gc3-atlast02> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000415> <System has file descriptor limits of - soft: 65,536, hard: 65,536> 
+####<Sep 2, 2008 12:27:40 PM CEST> <Info> <Socket> <vgz30> <gc3-atlast02> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000416> <Using effective file descriptor limit of: 65,536 open sockets/files.> 
+####<Sep 2, 2008 12:27:40 PM CEST> <Info> <Socket> <vgz30> <gc3-atlast02> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000406> <PosixSocketMuxer was built on Oct 28 2003 11:15:57> 
+####<Sep 2, 2008 12:27:40 PM CEST> <Info> <Socket> <vgz30> <gc3-atlast02> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000436> <Allocating 3 reader threads.> 
+####<Sep 2, 2008 12:27:40 PM CEST> <Info> <Socket> <vgz30> <gc3-atlast02> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000440> <NativeIO Enabled> 
+####<Sep 2, 2008 12:27:40 PM CEST> <Notice> <WebLogicServer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-000329> <Started WebLogic Admin Server "gc3-atlast02" for domain "gc3domain" running in Production Mode> 
+####<Sep 2, 2008 12:27:40 PM CEST> <Notice> <WebLogicServer> <vgz30> <gc3-atlast02> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000355> <Thread "ListenThread.Default" listening on port 7001, ip address 131.97.131.18> 
+####<Sep 2, 2008 12:27:40 PM CEST> <Notice> <WebLogicServer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-000360> <Server started in RUNNING mode> 
+####<Sep 2, 2008 12:27:41 PM CEST> <Info> <Management> <vgz30> <gc3-atlast02> <ExecuteThread: '1' for queue: 'weblogic.admin.RMI'> <<WLS Kernel>> <> <BEA-140009> <Configuration changes for the domain have been saved to the repository.> 
+####<Sep 2, 2008 12:27:41 PM CEST> <Info> <Configuration Management> <vgz30> <gc3-atlast02> <ExecuteThread: '1' for queue: 'weblogic.admin.RMI'> <<WLS Kernel>> <> <BEA-150007> <The booted configuration ./config.xml has been backed up at /atlast02/appl/otm/otm555/weblogic/config/gc3domain/./config.xml.booted.> 
+####<Sep 2, 2008 2:19:41 PM CEST> <Notice> <Log Management> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-170019> <The server log file /atlast02/appl/otm/otm555/logs/weblogic/weblogic.log is opened. All server side log events will be written to this file.> 
+####<Sep 2, 2008 2:19:49 PM CEST> <Info> <Security> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-090516> <The RoleMapper provider has preexisting LDAP data.> 
+####<Sep 2, 2008 2:20:16 PM CEST> <Info> <Security> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-090093> <No pre-WLS 8.1 Keystore providers are configured for server gc3-atlast02 for security realm gc3realm.> 
+####<Sep 2, 2008 2:20:16 PM CEST> <Notice> <Security> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-090082> <Security initializing using security realm gc3realm.> 
+####<Sep 2, 2008 2:20:17 PM CEST> <Notice> <WebLogicServer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-000327> <Starting WebLogic Admin Server "gc3-atlast02" for domain "gc3domain"> 
+####<Sep 2, 2008 2:20:17 PM CEST> <Info> <WebLogicServer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-000214> <WebLogic Server "gc3-atlast02" version:
+WebLogic XMLX Module 8.1 SP4  Mon Nov 29 16:21:29 PST 2004 471647 
+WebLogic Server 8.1 SP4  Mon Nov 29 16:21:29 PST 2004 471647  (c) 1995, 1996, 1997, 1998 WebLogic, Inc.
+ (c) 1999, 2000, 2001 BEA Systems, Inc.> 
+####<Sep 2, 2008 2:20:17 PM CEST> <Info> <WebLogicServer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-000215> <Loaded License : /atlast02/appl/bea/license.bea> 
+####<Sep 2, 2008 2:20:17 PM CEST> <Info> <RJVM> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-000570> <Network Configuration for Channel "gc3-atlast02"
+ Listen Address		 131.97.131.18:7001
+ Public Address		 N/A
+ Http Enabled		 true
+ Tunneling Enabled	 true
+ Outbound Enabled	 false
+ Admin Traffic Enabled	 true> 
+####<Sep 2, 2008 2:20:17 PM CEST> <Debug> <RJVM> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-000571> <Network Configuration Detail for Channel "gc3-atlast02"
+ Channel Weight		 50
+ Accept Backlog		 50
+ Login Timeout		 5000ms
+ Max Message Size	 10000000
+ Message Timeout	 60s
+ Idle Timeout		 65s
+ Tunneling Timeout	 40s
+ Tunneling Ping		 45s> 
+####<Sep 2, 2008 2:20:19 PM CEST> <Info> <XML> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-130036> <Initializing XMLRegistry.> 
+####<Sep 2, 2008 2:20:20 PM CEST> <Info> <JDBC> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-001135> <Initializing the JDBC service.> 
+####<Sep 2, 2008 2:20:20 PM CEST> <Info> <JDBC> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-001137> <Initialization complete.> 
+####<Sep 2, 2008 2:20:20 PM CEST> <Info> <Connector> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-190000> <Initializing J2EE Connector Service> 
+####<Sep 2, 2008 2:20:20 PM CEST> <Info> <Connector> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-190001> <J2EE Connector Service initialized successfully> 
+####<Sep 2, 2008 2:20:21 PM CEST> <Info> <IIOP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-002014> <IIOP subsystem enabled.> 
+####<Sep 2, 2008 2:20:22 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040090> <Deployed 5 default connection factories.> 
+####<Sep 2, 2008 2:20:22 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040305> <JMS service is initialized and in standby mode.> 
+####<Sep 2, 2008 2:20:22 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-101128> <Initializing HTTP services.> 
+####<Sep 2, 2008 2:20:22 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-101133> <Initializing Web server gc3-atlast02.> 
+####<Sep 2, 2008 2:20:23 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-101052> <[HTTP gc3-atlast02] Initialized> 
+####<Sep 2, 2008 2:20:23 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-101135> <gc3-atlast02 is the default Web server.> 
+####<Sep 2, 2008 2:20:23 PM CEST> <Info> <J2EE> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-160037> <J2EE service initializing.> 
+####<Sep 2, 2008 2:27:42 PM CEST> <Warning> <Management> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149317> <Application DefaultWebApp_gc3 is configured with a deprecated deployment protocol and will be deployed as such.> 
+####<Sep 2, 2008 2:27:42 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149207> <Initializing.> 
+####<Sep 2, 2008 2:27:45 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module console of application console is transitioning from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:46 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module console of application console successfully transitioned from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:46 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module uddi of application uddi is transitioning from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:47 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module uddi of application uddi successfully transitioned from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:47 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module uddiexplorer of application uddiexplorer is transitioning from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:47 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module uddiexplorer of application uddiexplorer successfully transitioned from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:47 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module wl_management_internal1 of application wl_management_internal1 is transitioning from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:47 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module wl_management_internal1 of application wl_management_internal1 successfully transitioned from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module wl_management_internal2 of application wl_management_internal2 is transitioning from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module wl_management_internal2 of application wl_management_internal2 successfully transitioned from unprepared to prepared on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module console of application console is transitioning from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module console of application console successfully transitioned from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<anonymous>> <> <BEA-101047> <[ServletContext(id=1056403,name=console,context-path=/console)] WebServiceServlet: init> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module uddi of application uddi is transitioning from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module uddi of application uddi successfully transitioned from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<anonymous>> <> <BEA-101047> <[ServletContext(id=1424575,name=uddi,context-path=/uddi)] WebServiceServlet: init> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module uddiexplorer of application uddiexplorer is transitioning from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module uddiexplorer of application uddiexplorer successfully transitioned from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<anonymous>> <> <BEA-101047> <[ServletContext(id=11104088,name=uddiexplorer,context-path=/uddiexplorer)] WebServiceServlet: init> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module wl_management_internal1 of application wl_management_internal1 is transitioning from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module wl_management_internal1 of application wl_management_internal1 successfully transitioned from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<anonymous>> <> <BEA-101047> <[ServletContext(id=31023803,name=wl_management_internal1,context-path=/wl_management_internal1)] WebServiceServlet: init> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149059> <Module wl_management_internal2 of application wl_management_internal2 is transitioning from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149060> <Module wl_management_internal2 of application wl_management_internal2 successfully transitioned from prepared to active on server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<anonymous>> <> <BEA-101047> <[ServletContext(id=1412856,name=wl_management_internal2,context-path=/wl_management_internal2)] WebServiceServlet: init> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149208> <Initialization Complete.> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <JTA> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-110441> <Opening transaction log with driver version "j1.0" and synchronous write policy "Cache-Flush". For information on synchronous write policies, refer to the weblogic.management.configuration.ServerMBean javadoc or console online help.> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <JDBC> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-001138> <Resuming the JDBC service.> 
+####<Sep 2, 2008 2:27:48 PM CEST> <Info> <JDBC> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-001140> <Resume complete.> 
+####<Sep 2, 2008 2:27:49 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040108> <User connection factory "DefaultXAConnectionFactory" is started.> 
+####<Sep 2, 2008 2:27:49 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040108> <User connection factory "QueueConnectionFactory" is started.> 
+####<Sep 2, 2008 2:27:49 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040108> <User connection factory "MessageDrivenBeanConnectionFactory" is started.> 
+####<Sep 2, 2008 2:27:49 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040108> <User connection factory "DefaultConnectionFactory" is started.> 
+####<Sep 2, 2008 2:27:49 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040108> <User connection factory "TopicConnectionFactory" is started.> 
+####<Sep 2, 2008 2:27:49 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040306> <JMS service is active now.> 
+####<Sep 2, 2008 2:27:49 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-101129> <Initializing the Web application container.> 
+####<Sep 2, 2008 2:27:49 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-101237> <HTTP logging has been disabled for the Web server: gc3-atlast02.> 
+####<Sep 2, 2008 2:27:49 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-101051> <[HTTP gc3-atlast02] started> 
+####<Sep 2, 2008 2:27:49 PM CEST> <Info> <WebService> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-220031> <The server does not support reliable SOAP messaging.> 
+####<Sep 2, 2008 2:27:49 PM CEST> <Info> <WebService> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-220027> <Web Service reliable agents are started on the server.> 
+####<Sep 2, 2008 2:27:49 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149209> <Resuming.> 
+####<Sep 2, 2008 2:27:49 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040108> <User connection factory "GC3JMSConnectionFactory" is started.> 
+####<Sep 2, 2008 2:27:49 PM CEST> <Notice> <SNMP Agent> <vgz30> <gc3-atlast02> <SNMP Service Thread> <<WLS Kernel>> <> <000000> <The SNMP trap version is 1> 
+####<Sep 2, 2008 2:27:49 PM CEST> <Info> <SNMP Agent> <vgz30> <gc3-atlast02> <SNMP Service Thread> <<WLS Kernel>> <> <000000> <SNMP agent is initializating ...> 
+####<Sep 2, 2008 2:27:49 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040054> <JMSServer "GC3JMSServer". No persistent store configured.> 
+####<Sep 2, 2008 2:27:51 PM CEST> <Info> <SNMP Agent> <vgz30> <gc3-atlast02> <SNMP Service Thread> <<WLS Kernel>> <> <000000> <SNMP Agent Initialization Complete. 
+ Sending generic coldStart trap ...> 
+####<Sep 2, 2008 2:27:51 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040321> <JMSServer "GC3JMSServer" is resuming.> 
+####<Sep 2, 2008 2:27:51 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040010> <JMSServer "GC3JMSServer" configured no session pools.> 
+####<Sep 2, 2008 2:27:51 PM CEST> <Info> <JMS> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-040109> <JMSServer "GC3JMSServer" is started.> 
+####<Sep 2, 2008 2:27:51 PM CEST> <Warning> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-101181> <Could not find web.xml under WEB-INF in the doc root: ./applications/DefaultWebApp_gc3.> 
+####<Sep 2, 2008 2:27:51 PM CEST> <Info> <J2EE> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-160003> <Deployed : DefaultWebApp_gc3> 
+####<Sep 2, 2008 2:27:51 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-101133> <Initializing Web server gc3-atlast02.> 
+####<Sep 2, 2008 2:27:51 PM CEST> <Info> <Deployer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-149210> <Resumed.> 
+####<Sep 2, 2008 2:27:51 PM CEST> <Info> <HTTP> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<anonymous>> <> <BEA-101047> <[ServletContext(id=8555978,name=DefaultWebApp_gc3,context-path=)] WebServiceServlet: init> 
+####<Sep 2, 2008 2:27:52 PM CEST> <Info> <WebLogicServer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-000287> <Invoking startup class: glog.util.GC3StartupShutdownManager.startup(null)> 
+####<Sep 2, 2008 2:29:58 PM CEST> <Info> <WebLogicServer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <GUEST.ADMIN> <> <BEA-000288> <glog.util.GC3StartupShutdownManager reports: Glog Startup> 
+####<Sep 2, 2008 2:29:58 PM CEST> <Info> <Management> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-141187> <Java system properties are defined as follows: 
+bea.home = /atlast02/appl/bea
+file.encoding = ISO646-US
+file.encoding.pkg = sun.io
+file.separator = /
+glog.home = /atlast02/appl/otm/otm555/glog/config
+java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+java.awt.headless = TRUE
+java.awt.printerjob = sun.print.PSPrinterJob
+java.class.path = ../../../jsw/lib/wrapper.jar:../../../jdk/lib/tools.jar:../../../glog/glog_resources:../../../glog/config:../../../glog/gc3webapp/WEB-INF/classes:../../../glog/gc3webapp/WEB-INF/lib/glogserver.jar:../../../glog/gc3webapp/WEB-INF/lib/3rdparty/WaitForServer.zip
+java.class.version = 48.0
+java.endorsed.dirs = /atlast02/appl/otm/otm555/jdk/jre/lib/endorsed
+java.ext.dirs = /atlast02/appl/otm/otm555/jdk/jre/lib/ext
+java.home = /atlast02/appl/otm/otm555/jdk/jre
+java.io.tmpdir = /atlast02/appl/otm/otm555/temp
+java.library.path = ../../../jsw/lib:/atlast02/appl/otm/otm555/dash/lib:/atlast02/soe3/opt/oracle/product/10.2.0/client_1/lib32:/atlast02/soe3/opt/oracle/product/10.2.0/client_1/lib:/atlast02/appl/bea/weblogic81/server/lib/solaris
+java.naming.factory.initial = weblogic.jndi.WLInitialContextFactory
+java.naming.factory.url.pkgs = weblogic.jndi.factories:weblogic.corba.j2ee.naming.url
+java.protocol.handler.pkgs = weblogic.net|weblogic.utils|weblogic.utils
+java.runtime.name = Java(TM) 2 Runtime Environment, Standard Edition
+java.runtime.version = 1.4.2_12-b03
+java.security.auth.login.config = /atlast02/appl/otm/otm555/glog/config/gc3_jaas.config
+java.security.policy = /atlast02/appl/bea/weblogic81/server/lib/weblogic.policy
+java.specification.name = Java Platform API Specification
+java.specification.vendor = Sun Microsystems Inc.
+java.specification.version = 1.4
+java.util.prefs.PreferencesFactory = java.util.prefs.FileSystemPreferencesFactory
+java.vendor = Sun Microsystems Inc.
+java.vendor.url = http://java.sun.com/
+java.vendor.url.bug = http://java.sun.com/cgi-bin/bugreport.cgi
+java.version = 1.4.2_12
+java.vm.info = mixed mode
+java.vm.name = Java HotSpot(TM) Server VM
+java.vm.specification.name = Java Virtual Machine Specification
+java.vm.specification.vendor = Sun Microsystems Inc.
+java.vm.specification.version = 1.0
+java.vm.vendor = Sun Microsystems Inc.
+java.vm.version = 1.4.2_12-b03
+javax.rmi.CORBA.PortableRemoteObjectClass = weblogic.iiop.PortableRemoteObjectDelegateImpl
+javax.rmi.CORBA.UtilClass = weblogic.iiop.UtilDelegateImpl
+javax.xml.rpc.ServiceFactory = weblogic.webservice.core.rpc.ServiceFactoryImpl
+javax.xml.soap.MessageFactory = weblogic.webservice.core.soap.MessageFactoryImpl
+jmx.implementation.name = JMX RI
+jmx.implementation.vendor = Sun Microsystems
+jmx.implementation.version = 1.0
+jmx.specification.name = Java Management Extensions
+jmx.specification.vendor = Sun Microsystems
+jmx.specification.version = 1.0 Final Release
+org.omg.CORBA.ORBClass = weblogic.corba.orb.ORB
+org.omg.CORBA.ORBSingletonClass = weblogic.corba.orb.ORB
+org.xml.sax.driver = weblogic.apache.xerces.parsers.SAXParser
+org.xml.sax.parser = weblogic.xml.jaxp.RegistryParser
+os.arch = sparc
+os.name = SunOS
+os.version = 5.10
+path.separator = :
+sun.arch.data.model = 32
+sun.boot.class.path = /atlast02/appl/otm/otm555/jdk/jre/lib/rt.jar:/atlast02/appl/otm/otm555/jdk/jre/lib/i18n.jar:/atlast02/appl/otm/otm555/jdk/jre/lib/sunrsasign.jar:/atlast02/appl/otm/otm555/jdk/jre/lib/jsse.jar:/atlast02/appl/otm/otm555/jdk/jre/lib/jce.jar:/atlast02/appl/otm/otm555/jdk/jre/lib/charsets.jar:/atlast02/appl/otm/otm555/jdk/jre/classes
+sun.boot.library.path = /atlast02/appl/otm/otm555/jdk/jre/lib/sparc
+sun.cpu.endian = big
+sun.cpu.isalist = sparcv9 sparcv8plus sparcv8 sparcv8-fsmuld sparcv7 sparc sparcv9+vis sparcv9+vis2 sparcv8plus+vis sparcv8plus+vis2
+sun.io.unicode.encoding = UnicodeBig
+sun.os.patch.level = unknown
+user.dir = /atlast02/appl/otm/otm555/weblogic/config/gc3domain
+user.home = /atlast02/appl/otm/otm555/glog/config
+user.language = en
+user.name = glog
+user.timezone = Europe/Stockholm
+vde.home = ./gc3-atlast02/ldap
+weblogic.Name = gc3-atlast02
+weblogic.ProductionModeEnabled = true
+weblogic.home = /atlast02/appl/bea/weblogic81/server
+weblogic.management.discover = false
+weblogic.mbeanLegalClause.ByPass = false
+wrapper.cpu.timeout = 10
+wrapper.jvmid = 1
+wrapper.key = GrDWZbDMgGa8FAn2
+wrapper.native_library = wrapper
+wrapper.port = 32000
+wrapper.service = TRUE
+wrapper.use_system_time = TRUE
+wrapper.version = 3.1.2
+> 
+####<Sep 2, 2008 2:29:58 PM CEST> <Info> <Management> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-141053> <The application poller has not started for the production server.> 
+####<Sep 2, 2008 2:29:58 PM CEST> <Info> <Socket> <vgz30> <gc3-atlast02> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000415> <System has file descriptor limits of - soft: 8,192, hard: 8,192> 
+####<Sep 2, 2008 2:29:58 PM CEST> <Info> <Socket> <vgz30> <gc3-atlast02> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000416> <Using effective file descriptor limit of: 8,192 open sockets/files.> 
+####<Sep 2, 2008 2:29:58 PM CEST> <Info> <Socket> <vgz30> <gc3-atlast02> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000406> <PosixSocketMuxer was built on Oct 28 2003 11:15:57> 
+####<Sep 2, 2008 2:29:59 PM CEST> <Info> <Socket> <vgz30> <gc3-atlast02> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000436> <Allocating 3 reader threads.> 
+####<Sep 2, 2008 2:29:59 PM CEST> <Info> <Socket> <vgz30> <gc3-atlast02> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000440> <NativeIO Enabled> 
+####<Sep 2, 2008 2:29:59 PM CEST> <Notice> <WebLogicServer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-000329> <Started WebLogic Admin Server "gc3-atlast02" for domain "gc3domain" running in Production Mode> 
+####<Sep 2, 2008 2:29:59 PM CEST> <Notice> <WebLogicServer> <vgz30> <gc3-atlast02> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000355> <Thread "ListenThread.Default" listening on port 7001, ip address 131.97.131.18> 
+####<Sep 2, 2008 2:29:59 PM CEST> <Notice> <WebLogicServer> <vgz30> <gc3-atlast02> <WrapperStartStopAppMain> <<WLS Kernel>> <> <BEA-000360> <Server started in RUNNING mode> 
+####<Sep 2, 2008 2:29:59 PM CEST> <Info> <Management> <vgz30> <gc3-atlast02> <ExecuteThread: '2' for queue: 'weblogic.admin.RMI'> <<WLS Kernel>> <> <BEA-140009> <Configuration changes for the domain have been saved to the repository.> 
+####<Sep 2, 2008 2:29:59 PM CEST> <Info> <Configuration Management> <vgz30> <gc3-atlast02> <ExecuteThread: '2' for queue: 'weblogic.admin.RMI'> <<WLS Kernel>> <> <BEA-150007> <The booted configuration ./config.xml has been backed up at /atlast02/appl/otm/otm555/weblogic/config/gc3domain/./config.xml.booted.> 
+####<Sep 2, 2008 2:30:05 PM CEST> <Info> <WebLogicServer> <vgz30> <gc3-atlast02> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000213> <Adding address: 131.97.131.18 to licensed client list> 

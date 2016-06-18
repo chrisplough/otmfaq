@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bitfields product="automediaembed">
+	<bitfielddefs>
+		<group name="ugp">
+			<group name="automediaembed_edit_permissions">
+				<bitfield name="can_other" group="automediaembed_edit_permissions" phrase="automediaembed_can_other" install="1,2,3,4,5,6,7" default="1">2</bitfield>
+				<bitfield name="can_post" group="automediaembed_edit_permissions" phrase="automediaembed_can_post" install="1,2,3,4,5,6,7" default="1">4</bitfield>
+				<bitfield name="can_blog" group="automediaembed_edit_permissions" phrase="automediaembed_can_blog" install="1,2,3,4,5,6,7" default="1">8</bitfield>
+				<bitfield name="can_group" group="automediaembed_edit_permissions" phrase="automediaembed_can_group" install="1,2,3,4,5,6,7" default="1">16</bitfield>
+				<bitfield name="can_vm" group="automediaembed_edit_permissions" phrase="automediaembed_can_vm" install="1,2,3,4,5,6,7" default="1">32</bitfield>
+				<bitfield name="can_sig" group="automediaembed_edit_permissions" phrase="automediaembed_can_sig" install="1,2,3,4,5,6,7" default="1">64</bitfield>
+			</group>
+			<group name="automediaembed_view_permissions">
+				<bitfield name="view_other" group="automediaembed_view_permissions" phrase="automediaembed_can_view_other" install="1,2,3,4,5,6,7" default="1">2</bitfield>
+				<bitfield name="view_post" group="automediaembed_view_permissions" phrase="automediaembed_can_view_post" install="1,2,3,4,5,6,7" default="1">4</bitfield>
+				<bitfield name="view_blog" group="automediaembed_view_permissions" phrase="automediaembed_can_view_blog" install="1,2,3,4,5,6,7" default="1">8</bitfield>
+				<bitfield name="view_group" group="automediaembed_view_permissions" phrase="automediaembed_can_view_group" install="1,2,3,4,5,6,7" default="1">16</bitfield>
+				<bitfield name="view_vm" group="automediaembed_view_permissions" phrase="automediaembed_can_view_vm" install="1,2,3,4,5,6,7" default="1">32</bitfield>
+				<bitfield name="view_sig" group="automediaembed_view_permissions" phrase="automediaembed_can_view_sig" install="1,2,3,4,5,6,7" default="1">64</bitfield>
+			</group>
+		</group>
+	</bitfielddefs>
+</bitfields>

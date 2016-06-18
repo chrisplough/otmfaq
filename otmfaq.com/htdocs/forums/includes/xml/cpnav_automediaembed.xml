@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<navgroups product="automediaembed">
+        <navgroup phrase="automediaembed_title" hr="true" displayorder="15">
+                <navoption displayorder="10">
+                        <phrase>automediaembed_settings</phrase>
+                        <link>automediaembed_admin.php?do=settings</link>
+                </navoption>
+                <navoption displayorder="10">
+                        <phrase>automediaembed_display</phrase>
+                        <link>automediaembed_admin.php</link>
+                </navoption>
+                <navoption displayorder="10">
+                        <phrase>automediaembed_addnew</phrase>
+                        <link>automediaembed_admin.php?do=edit</link>
+                </navoption>
+                <navoption displayorder="10">
+                        <phrase>automediaembed_import</phrase>
+                        <link>automediaembed_admin.php?do=import</link>
+                </navoption>
+                <navoption displayorder="10">
+                        <phrase>automediaembed_export</phrase>
+                        <link>automediaembed_admin.php?do=export</link>
+                </navoption>
+                <navoption displayorder="10">
+                        <phrase>automediaembed_tools</phrase>
+                        <link>automediaembed_admin.php?do=tools</link>
+                </navoption>
+        </navgroup>
+</navgroups>

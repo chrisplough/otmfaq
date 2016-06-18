@@ -1,0 +1,4314 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<translations>
+	<message>
+		<name>adm_cp</name>
+		<value>Panel de Control</value>
+	</message>
+	<message>
+		<name>cphome</name>
+		<value>Panel de Control de vBSEO</value>
+	</message>
+	<message>
+		<name>back_to</name>
+		<value>Volver a los Foros</value>
+	</message>
+	<message>
+		<name>logout</name>
+		<value>Cerrar Sesión</value>
+	</message>
+	<message>
+		<name>linkbacks</name>
+		<value>LinkBacks</value>
+	</message>
+	<message>
+		<name>in_linkbacks</name>
+		<value>LinkBacks Entrantes</value>
+	</message>
+	<message>
+		<name>out_linkbacks</name>
+		<value>LinkBacks Salientes</value>
+	</message>
+	<message>
+		<name>permalinks</name>
+		<value>Permalinks</value>
+	</message>
+	<message>
+		<name>patent_pending</name>
+		<value>Patente Pendiente</value>
+	</message>
+	<message>
+		<name>cookies_cleared</name>
+		<value>Todas las Cookies han Sido Borradas.</value>
+	</message>
+	<message>
+		<name>click_redirect</name>
+		<value>Click aquí si su navegador no le redirecciona automáticamente.</value>
+	</message>
+	<message>
+		<name>error</name>
+		<value>Error</value>
+	</message>
+	<message>
+		<name>pass_notsame</name>
+		<value>Las contraseñas introducidas no coinciden</value>
+	</message>
+	<message>
+		<name>pass_empty</name>
+		<value>Es obligatorio definir una contraseña</value>
+	</message>
+	<message>
+		<name>pass_defined</name>
+		<value>La contraseña del Administrador ya ha sido definida</value>
+	</message>
+	<message>
+		<name>config_readonly</name>
+		<value>El archivo de configuración no tiene permisos de escritura</value>
+	</message>
+	<message>
+		<name>config_writable</name>
+		<value>El archivo config.xml tiene permisos de escritura. Por motivos de seguridad, no olvides actualizar los permisos después de que termines de actualizar la configuración.</value>
+	</message>
+	<message>
+		<name>pass_select</name>
+		<value>Por favor defina una contraseña.</value>
+	</message>
+	<message>
+		<name>password</name>
+		<value>Contraseña</value>
+	</message>
+	<message>
+		<name>confirm</name>
+		<value>Confirmar</value>
+	</message>
+	<message>
+		<name>login</name>
+		<value>Iniciar</value>
+	</message>
+	<message>
+		<name>note_config</name>
+		<value>&lt;strong&gt;NOTA:&lt;/strong&gt; Su archivo vB-raiz/vbseo/resources/xml/config.xml debe tener permisos de escritura. Por favor cambie los permisos de dicho archivo.</value>
+	</message>
+	<message>
+		<name>login_failed</name>
+		<value>Falló el Inicio de Sesión</value>
+	</message>
+	<message>
+		<name>area_protected</name>
+		<value>Área Protegida por Contraseña.</value>
+	</message>
+	<message>
+		<name>warn_readonly</name>
+		<value>ADVERTENCIA: Su archivo config.xml no tiene permisos de escritura. Los ajustes no serán guardados.</value>
+	</message>
+	<message>
+		<name>saved_ok</name>
+		<value>Sus ajustes han sido guardados y cargados exitosamente.</value>
+	</message>
+	<message>
+		<name>quick_jump</name>
+		<value>Atajos</value>
+	</message>
+	<message>
+		<name>gen_set</name>
+		<value>Opciones Generales</value>
+	</message>
+	<message>
+		<name>vbseo_opt</name>
+		<value>Opciones de vBSEO</value>
+	</message>
+	<message>
+		<name>log_opt</name>
+		<value>Opciones de Registro &amp; Monitoreo</value>
+	</message>
+	<message>
+		<name>arc_opt</name>
+		<value>Opciones del Archivo de vB</value>
+	</message>
+	<message>
+		<name>url_opt</name>
+		<value>Reescritura de URLs</value>
+	</message>
+	<message>
+		<name>gen_opt</name>
+		<value>Configuración General</value>
+	</message>
+	<message>
+		<name>gen_opt_description</name>
+		<value>&lt;b&gt;Acerca de la Reescritura de URLs&lt;/b&gt;&lt;br /&gt;
+
+La reescritura de URLs no solo agrega palabras clave relevantes a las URLs de su foro, también consolida múltiples (diferentes) URLs en UNA SOLA URL para CADA recurso único. Este beneficio mejora la estructura interna de enlaces de su sitio mediante la creación de una red de enlaces coherentes que permitan a los motores de búsqueda encontrar e indexar apropiadamente el contenido único de su foro. Una estructura consistente de enlaces también asegura los enlaces entrantes SIEMPRE que se &quot;creen valores&quot; que señalen hacia las principales páginas de contenido y nunca páginas secundarias o entradas duplicadas, lo que aumenta la relevancia de su contenido principal con cada enlace creado.
+
+
+
+&lt;p style=&quot;color:#f00&quot;&gt;&lt;b&gt;IMPORTANTE:&lt;/b&gt; Esta es una característica que debe &lt;em&gt;¡CONFIGURAR Y OLVIDAR!&lt;/em&gt;. Una vez que haya definido aquí la estructura de las URLs para su foro, es ALTAMENTE RECOMENDADO que NO cambie estos ajustes de nuevo. Al hacerlo, afectará directamente la integridad de las URLs de su foro, perderá enlaces entrantes valiosos y posicionamiento en los buscadores.&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>urls_forum</name>
+		<value>URLs de los Foros</value>
+	</message>
+	<message>
+		<name>urls_ann</name>
+		<value>URLs de Anuncios</value>
+	</message>
+	<message>
+		<name>urls_thread</name>
+		<value>URLs de Temas</value>
+	</message>
+	<message>
+		<name>urls_prnthread</name>
+		<value>URLs de Temas (Versión Imprimible)</value>
+	</message>
+	<message>
+		<name>urls_post</name>
+		<value>URLs Showpost (showpost.php)</value>
+	</message>
+	<message>
+		<name>urls_polls</name>
+		<value>URLs de Encuestas</value>
+	</message>
+	<message>
+		<name>urls_member</name>
+		<value>URLs de Perfil de Usuario</value>
+	</message>
+	<message>
+		<name>urls_mlist</name>
+		<value>URLs de la Lista de Miembros</value>
+	</message>
+	<message>
+		<name>urls_avatar</name>
+		<value>URLs de Imagen de Avatar Personalizado</value>
+	</message>
+	<message>
+		<name>urls_navbul</name>
+		<value>URLs de Iconos de Navegación (Árbol de iconos)</value>
+	</message>
+	<message>
+		<name>urls_attach</name>
+		<value>URLs de Archivos Adjuntos</value>
+	</message>
+	<message>
+		<name>crrs</name>
+		<value>Reglas Personalizadas</value>
+	</message>
+	<message>
+		<name>seo_func</name>
+		<value>Funciones SEO</value>
+	</message>
+	<message>
+		<name>dyn_metas</name>
+		<value>ETIQUETAS META Dinámicas</value>
+	</message>
+	<message>
+		<name>dir_links</name>
+		<value>Enlaces Directos</value>
+	</message>
+	<message>
+		<name>add_ttitle</name>
+		<value>Agregar Títulos de Temas</value>
+	</message>
+	<message>
+		<name>add_extttitle</name>
+		<value>Agregar Títulos a Enlaces Externos</value>
+	</message>
+	<message>
+		<name>stopwords</name>
+		<value>Filtro de Palabras Vacías</value>
+	</message>
+	<message>
+		<name>acronym</name>
+		<value>Expansión de Acrónimos</value>
+	</message>
+	<message>
+		<name>rel_replacements</name>
+		<value>Reemplazos Relevantes</value>
+	</message>
+	<message>
+		<name>hp_set</name>
+		<value>Opciones de la Página de Inicio</value>
+	</message>
+	<message>
+		<name>int_rel</name>
+		<value>rel=&quot;nofollow&quot;s Internos</value>
+	</message>
+	<message>
+		<name>ext_rel</name>
+		<value>rel=&quot;nofollow&quot;s Externos</value>
+	</message>
+	<message>
+		<name>oth_enh</name>
+		<value>Otras Mejoras</value>
+	</message>
+	<message>
+		<name>cleanup_html</name>
+		<value>Limpieza de Código HTML</value>
+	</message>
+	<message>
+		<name>remove_prev</name>
+		<value>Remover Previsualización de Temas</value>
+	</message>
+	<message>
+		<name>guests_only</name>
+		<value>Características para Invitados</value>
+	</message>
+	<message>
+		<name>img_size</name>
+		<value>Atributos de Dimensiones de Imágenes</value>
+	</message>
+	<message>
+		<name>dl_backup</name>
+		<value>Descargar/Respaldar su Configuración Actual</value>
+	</message>
+	<message>
+		<name>download</name>
+		<value>Descargar</value>
+	</message>
+	<message>
+		<name>filename</name>
+		<value>Nombre del Archivo</value>
+	</message>
+	<message>
+		<name>description</name>
+		<value>Descripción</value>
+	</message>
+	<message>
+		<name>backup_all</name>
+		<value>&lt;b&gt;Respaldar TODA su Configuración de vBSEO&lt;/b&gt;&lt;br /&gt;
+
+            Respalda/Guarda todos los ajustes de vBSEO.</value>
+	</message>
+	<message>
+		<name>save_set_all</name>
+		<value>Guardar Toda la Configuración</value>
+	</message>
+	<message>
+		<name>backup_urls</name>
+		<value>&lt;b&gt;Respaldar SOLO su 'Configuración de Reescritura de URLs'&lt;/b&gt;&lt;br /&gt;
+
+            Comparta su 'Configuración de Reescritura de URLs' con otros usuarios.</value>
+	</message>
+	<message>
+		<name>upload_set</name>
+		<value>Subir el Archivo de Configuración (.xml)</value>
+	</message>
+	<message>
+		<name>choose_file</name>
+		<value>¡Por favor seleccione el archivo XML!</value>
+	</message>
+	<message>
+		<name>note_upcrr</name>
+		<value>&lt;b&gt;Nota:&lt;/b&gt; Al Subir su archivo XML de 'Configuración de Reescritura de URLs' (vbseo_urls.xml) NO SE sustituyen otros ajustes que haya hecho en las 'Opciones Generales' o en 'Funciones SEO'.</value>
+	</message>
+	<message>
+		<name>upload</name>
+		<value>Cargar</value>
+	</message>
+	<message>
+		<name>import_set</name>
+		<value>Importar Configuración</value>
+	</message>
+	<message>
+		<name>language_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;Idioma del Panel de Control de vBSEO&lt;br&gt;
+
+		                    &lt;/strong&gt;Seleccione el idioma a utilizar en el Panel de Control de vBSEO. El archivo de idioma debe ser subido previamente al directorio 'vB-raiz/vbseo/resources/xml/'.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>activate_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Activar Plugin?&lt;/b&gt;&lt;br /&gt;
+
+    Seleccione 'Sí' para activar vBSEO.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>yes</name>
+		<value>Sí</value>
+	</message>
+	<message>
+		<name>no</name>
+		<value>No</value>
+	</message>
+	<message>
+		<name>license_desc</name>
+		<value>&lt;b&gt;Su Clave de Licencia de vBSEO&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>key_config</name>
+		<value>La Clave de Licencia cambia con &lt;strong&gt;una nueva versión de vBSEO&lt;/strong&gt; O &lt;strong&gt;un cambio en la dirección URL de su foro&lt;/strong&gt;. Guarde la Clave válida (mostrada arriba) introduciéndola en el campo a continuación.</value>
+	</message>
+	<message>
+		<name>current_ver</name>
+		<value>Versión Actual</value>
+	</message>
+	<message>
+		<name>forums_root</name>
+		<value>Dirección URL del foro</value>
+	</message>
+	<message>
+		<name>current_key</name>
+		<value>Clave de licencia actual</value>
+	</message>
+	<message>
+		<name>contact_license</name>
+		<value>Contacte a &lt;a href&quot;mailto:licenses@crawlability.com&quot;&gt;licenses@crawlability.com&lt;/a&gt;</value>
+	</message>
+	<message>
+		<name>cannot_retrieve_license</name>
+		<value>vBSEO no ha podido recuperar una &quot;Clave Válida&quot; para su sitio. Esto ocurre si vBSEO no ha sido licenciado para su dominio O si el sistema no ha podido establecer una conexión de red para recuperar la clave. Por favor póngase en contacto con &lt;a href=&quot;mailto:licenses@crawlability.com&quot;&gt;licenses@crawlability.com&lt;/a&gt;, o envíe un ticket de soporte en &lt;a href=&quot;http://www.vbseo.com/support/&quot;&gt;http://www.vbseo.com/support/&lt;/a&gt; para obtener su clave de licencia.</value>
+	</message>
+	<message>
+		<name>unauth_upgrade</name>
+		<value>Al parecer este dominio no está licenciado para la versión de vBSEO que usted está tratando de instalar. Visite el &lt;a href&quot;https://www.vbseo.com/downloads/&quot;&gt;área de descargas&lt;/a&gt; para renovar su licencia, o volver a una versión anterior de vBSEO válida para su dominio.</value>
+	</message>
+	<message>
+		<name>redir_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Redireccionar 301 Contenido Original&lt;/b&gt;&lt;br /&gt;
+
+Las 'redirecciones 301' son para Google &quot;la manera segura&quot; de mover contenido. Habilite esta opción para redireccionar todas las páginas de contenido dinámico generadas previamente hacia nuevas páginas con contenido estático. Esta opción conserva el 'Ranking de Página' obtenido por los enlaces antiguos.&lt;/p&gt;
+
+&lt;p&gt;Nota: Se recomienda tener siempre esta opción en 'Sí'.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>domname_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Incluir Dominio en las URLs?&lt;/b&gt;&lt;br /&gt;
+
+Se cree que los motores de búsqueda son más propensos a seguir enlaces con URLs absolutas (www.sudominio.com/esta_pagina.html). Habilite esta opción para incluir el nombre de su dominio en cada enlace que se genere, de esta manera hace que sus URLs luzcan como absolutas (vs. relativas).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>noneng_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;¿Reemplazar Caracteres No Ingleses en las URLs?&lt;/b&gt;&lt;br /&gt;
+
+Seleccione 'Sí' para reemplazar caracteres no ingleses por su caracter equivalente. Habilite esta opción si el idioma de su foro no es el inglés o si existen caracteres no ingleses en sus foros (Ejemplo: Caf&amp;eacute;)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>redirext_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;Redireccionar &lt;i&gt;TODAS&lt;/i&gt; las URLs Externas Publicadas en Foros Privados.&lt;/b&gt;&lt;br /&gt;
+
+Habilite esta opción para redirigir todos los enlaces externos publicados en foros privados a través de un script interno. Esta opción oculta a los sitios externos las URLs de sus foros privados en los registros del servidor, ayudando a proteger su privacidad.&lt;/p&gt;
+
+&lt;p&gt;Nota: Las URLs se asemejarán a esta: 'http://www.sudominio.com/foros/redirect-to/?redirect=http://www.dominioexterno.com'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>email_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;¿Reescribir las URLs del Sistema de Email?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en 'Sí' para que vBSEO reescriba las direcciones URL incluidas en los correos de notificaciones automáticas.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.5.x o superior&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>link_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿LinkBack al Panel de Control de vBSEO?&lt;/b&gt;&lt;br /&gt;
+
+Esta característica colocará un enlace temporal hacia este Panel de Control en la parte superior de su foro; sirve para ahorrar mucho tiempo mientras usted está configurando vBSEO. NOTA: Solo los administradores del foro podrán ver este enlace (Grupo de Usuarios 6).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>fnf_desc</name>
+		<value>&lt;p&gt;
+
+                                          &lt;b&gt;Gestionar Solicitud de &quot;Archivo no Encontrado&quot;&lt;/b&gt;&lt;br /&gt;
+
+      Seleccione como serán tramitadas las solicitudes de 'Archivo No Encontrado': &lt;br /&gt;
+
+      - Redireccionar a la página de inicio &lt;br /&gt;
+
+      - Enviar código HTTP 404 y mostrar mensaje 'Page Not Found' &lt;br /&gt;
+
+      - Incluir página personalizada de error. NOTA: El nombre del archivo debe incluir la ruta completa. (Ejemplo: &lt;i&gt;/home/user/public_html/error.php&lt;/i&gt;)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>redire_hp</name>
+		<value>Redireccionar a la Página de Bienvenida</value>
+	</message>
+	<message>
+		<name>send_404</name>
+		<value>Enviar Código HTTP 404</value>
+	</message>
+	<message>
+		<name>inc_custom</name>
+		<value>Incluir Script Personalizado</value>
+	</message>
+	<message>
+		<name>exclpages_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;¿Excluir Páginas?&lt;/b&gt;&lt;br /&gt;
+
+Utilice expresiones regulares aquí para evitar que ciertos scripts y/o páginas sean tratados por vBSEO. Esto impide la reescritura de URLs así como la inserción del copyright de vBSEO en dicha página.&lt;/p&gt;
+
+&lt;p&gt;Ejemplos: (Separe cada expresión colocando una por línea)&lt;br /&gt;
+
+^index\.php\?do=feature&lt;br /&gt;
+
+VBGooglemap.php&lt;br /&gt;
+
+geek-gallery-popup.php&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>botact_desc</name>
+		<value>&lt;b&gt;¿Registrar la Actividad de Arañas en su Foro?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en 'Sí' para registrar la actividad de las Arañas de los Motores de Búsqueda en su foro. Esta opción &lt;b&gt;requiere&lt;/b&gt; tener instalado &lt;a href=&quot;http://www.vbulletin.org/forum/showthread.php?t=206169&quot; target=&quot;_blank&quot;&gt;vBSEO Google / Yahoo Sitemap Generator&lt;/a&gt;.&lt;br /&gt;
+
+Nota: Acceda a los registros por medio del Panel de Control del Sitemap</value>
+	</message>
+	<message>
+		<name>analytics_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;¿Agregar Código de Google Analytics a las Páginas del Foro?&lt;/b&gt;&lt;br /&gt;
+
+Seleccione &quot;Sí&quot; para agregar el código de Google Analytics a todas las páginas del foro. &lt;a href=&quot;http://www.google.com/analytics/&quot; target=&quot;_blank&quot;&gt;Google Analytics&lt;/a&gt; proporciona una manera fácil de monitorear el rendimiento de su tráfico, tanto orgánico, como resultados de búsqueda pagados.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_code_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;Introduzca su Código de Google Analytics&lt;/b&gt;&lt;br /&gt;
+
+Si usted activó la opción anterior, introduzca su Código de Google Analytics con el siguiente formato: UA-9999-1&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_track_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;¿Agregar Código &quot;Tracking External Link Clicks&quot; de Google Analytics?&lt;/b&gt; &lt;br /&gt;
+
+Seleccione &quot;Sí&quot; para añadir el Código &quot;Tracking External Link Clicks&quot; a todos los enlaces externos. 
+
+Esta característica le permite &lt;a href=&quot;http://www.google.com/support/analytics/bin/answer.py?hl=en&amp;answer=55594&quot; target=&quot;_blank&quot;&gt;realizar un seguimiento de los clicks salientes&lt;/a&gt; a través de su cuenta de Google Analytics.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_anon_desc</name>
+		<value>&lt;p&gt; &lt;b&gt;¿Agregar el código &quot;Anonimize&quot; de Google Analytics?&lt;/b&gt; &lt;br /&gt; Selecciona &quot;Sí&quot; para agregar el código Google Analytics IP Anonimize: &lt;a href=&quot;http://code.google.com/apis/analytics/docs/gaJS/gaJSApi_gat.html#_gat._anonymizeIp&quot; target=&quot;_blank&quot;&gt;más información&lt;/a&gt;.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_format_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;Introduzca el formato para el Seguimiento de los Enlaces Externos&lt;/b&gt;&lt;br /&gt;
+
+Introduzca el formato para la Captura de los Enlaces Externos de Google Analytics.&lt;br /&gt;
+
+Ejemplo: /outgoing/&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>funnel_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;¿Activar el Embudo (o filtro) de Google Analytics para el Registro de Usuarios?&lt;/b&gt;&lt;br /&gt;
+
+Seleccione &quot;Sí&quot; para añadir el Código de Google Analytics a todas las páginas que toman parte en el proceso de registro. &lt;/p&gt;
+
+&lt;p&gt;NOTA: Usted debe crear un nuevo &quot;Objetivo&quot; en su cuenta de Google Analytics para sus foros y añadir los siguientes pasos para ello
+
+(el número de pasos depende de si usted tiene el &quot;Sistema de Registro COPPA&quot; activado): &lt;br /&gt;
+
+/google-funnel/coppaform.html &lt;i&gt;(si es aplicable)&lt;/i&gt; &lt;br /&gt;
+
+/google-funnel/enter-birthday.html &lt;i&gt;(si es aplicable)&lt;/i&gt; &lt;br /&gt;
+
+/google-funnel/agreement.html &lt;br /&gt;
+
+/google-funnel/regform-show.html &lt;br /&gt;
+
+/google-funnel/regform-submit.html &lt;br /&gt;
+
+/google-funnel/registration-complete.html
+
+  
+
+&lt;p&gt;&lt;a href=&quot;http://www.google.com/support/analytics/bin/answer.py?hl=en&amp;answer=55515&quot; target=&quot;_blank&quot;&gt;¿Qué es un Embudo (o filtro)?&lt;/a&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>adsense_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Habilitar Orientación de Secciones Adsense?&lt;/b&gt; &lt;br&gt;Seleccione &quot;Sí&quot; para añadir secciones de etiquetas de Google AdSense a partes relevantes de las páginas de su foro, tales como: forumhome, forumdisplay y showthread. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>arcopt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&lt;i&gt;Opciones del Archivo:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;'Redirecciones 301' de Páginas de Temas al Archivo &lt;/b&gt;&lt;br /&gt;
+
+'Redirecciones 301' son para Google &quot;la manera segura&quot; de mover contenido. Seleccionando esta opción se redirigirá todo el contenido que se generaba dinámicamente, al nuevo contenido con URLs estáticas, guardando también el 'Ranking de Página' generado por las antiguas URLs.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Reescribir Páginas de Temas en el Archivo de vBulletin &lt;/b&gt;&lt;br /&gt;
+
+Esta opción reescribe las URLs al contenido original al que hacen referencia, suministrando un excelente sitemap para vBulletin.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Reescritura + Redirecciones 301&lt;/b&gt;&lt;br /&gt;
+
+Esta es una combinación de las opciones 1 y 2 (opciones anteriores). Esta opción reescribe las URLs de forma que el contenido original está enlazado desde el archivo Y TAMBIÉN añade Redirecciones 301 hacia las páginas de temas en el archivo. Por lo tanto, (a) esto funciona como un sitemap para el contenido estático y (b) garantiza que los enlaces externos que apunten a páginas de temas antiguos en el archivo serán redireccionados al nuevo contenido estático.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Conservar las opciones por defecto del Archivo de vBulletin &lt;/b&gt;&lt;br /&gt;
+
+Conserva las opciones por defecto del archivo.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>sel_one</name>
+		<value>Seleccione Una Opción</value>
+	</message>
+	<message>
+		<name>arc_redir_301</name>
+		<value>Redirecciones 301 al Archivo</value>
+	</message>
+	<message>
+		<name>arc_rewr_vbarc</name>
+		<value>Reescribir Archivo</value>
+	</message>
+	<message>
+		<name>arc_redir_rewr</name>
+		<value>Reescritura + Redirecciones 301 al Archivo</value>
+	</message>
+	<message>
+		<name>arc_keep</name>
+		<value>Conservar Opciones por Defecto</value>
+	</message>
+	<message>
+		<name>arcroot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Reescribir la URL que dirige al Archivo Principal:&lt;br /&gt;
+
+&lt;/b&gt;Use esta característica para reescribir la URL que dirige al archivo ('/archive/index.php/') por algo más amigable para los motores de búsqueda.&lt;/p&gt;
+
+&lt;p&gt;NOTA: Todas las URLs antiguas serán redireccionadas 301 al nuevo formato personalizado. Por lo tanto, las páginas previamente indexadas seguirán estando disponibles para los usuarios y para los robots de los motores de búsqueda.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+/hello/google/ o /sitemap/ o /archive/ etc. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>custom</name>
+		<value>Personalizado</value>
+	</message>
+	<message>
+		<name>save_set</name>
+		<value>Guardar Ajustes</value>
+	</message>
+	<message>
+		<name>reset</name>
+		<value>Restablecer</value>
+	</message>
+	<message>
+		<name>url_set_forum</name>
+		<value>Foro de Discusión de 'Opciones de Reescritura'</value>
+	</message>
+	<message>
+		<name>sep_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Definir Separador para las Partes de las URLs&lt;/b&gt;&lt;br /&gt;
+
+Este caracter separa las palabras individuales en las URLs reescritas. Se recomienda usar [ - ]. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>limurl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Longitud Límite de las URLs&lt;br /&gt;
+
+&lt;/b&gt;Algunos usuarios prefieren limitar la longitud de las URLs. Esta opción &quot;recorta&quot; partes de la URL, por ejemplo en: [forum_title] y [thread_title], a un número máximo de palabras clave.&lt;/p&gt;
+
+&lt;p&gt;NOTA: Coloque cero (0) para una longitud ilimitada.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pathbits_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;Definir Partes del Título de la Ruta del Foro&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo las partes del título del foro (dentro de las URLs) serán mostradas cuando se use la variable &lt;i&gt;[forum_path]&lt;/i&gt; en el formato de las URLs.&lt;/p&gt;
+
+&lt;p&gt;NOTA: Use la variable [forum_id] o [forum_title] o ambas. En el caso de que usted tenga dos foros con el mismo nombre, deberá incluir la variable [forum_id] para prevenir conflictos entre dichos foros. &lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+f[forum_id]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_forum_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reemplazar las URLs de los Foros?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reemplazar las URLs de los foros.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URLs de Foros&lt;/b&gt;&lt;br /&gt;
+
+Use la variable [forum_path] si quiere mostrar la ruta completa del subforo (una senda multinivel), o las variables [forum_title] o [forum_id] para mostrar solamente el nombre del foro o el id respectivamente.&lt;/p&gt;
+
+&lt;p&gt;NOTA: En caso de que usted tenga dos foros con el mismo nombre, es necesario que incluya la variable [forum_id] para prevenir conflictos. &lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+f[forum_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Foros&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo aparecerán las URLs de los índices para cada foro con varias páginas.&lt;/p&gt;
+
+&lt;p&gt;NOTA: En caso de que usted tenga dos foros con el mismo nombre, es necesario que incluya la variable [forum_id] para prevenir conflictos.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+f[forum_id]-[forum_page].html&lt;br /&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_ann_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs de los Anuncios?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs de los Anuncios.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>ann_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URLs de Anuncios Individuales&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de los Anuncios o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;NOTA: Como los anuncios son creados por los Administradores o Moderadores, hay poco riesgo de tener dos anuncios con el mismo título. Por lo tanto, a menudo es seguro no utilizar la variable [announcement_id] en esta opción.&lt;/p&gt;
+
+&lt;p&gt;NOTA: Como los anuncios son asociados con un foro, usted DEBE incluir el identificador del foro, como por ejemplo [forum_id] o [forum_title]. También DEBE incluir la variable [announcement_id] o [announcement_title]. &lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+f[forum_id]-announcement[announcement_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>ann_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URLs de Anuncios Múltiples&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de los Anuncios Múltiples o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;NOTA: Como los anuncios son asociados con un foro, usted DEBE incluir el identificador del foro, como por ejemplo [forum_id] o [forum_title]. NO incluya las variables [announcement_id] o [announcement_title]. &lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+f[forum_id]-announcements.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_thread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs de los Temas?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs de los Temas.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URLs de los Temas&lt;/b&gt;&lt;br /&gt;
+
+Seleccione el formato para las URLs de los Temas o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;NOTA: Usted siempre debe incluir la variable [thread_id] dentro del formato de la URL, ya que a menudo pueden haber temas con el mismo título. &lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+t[thread_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Temas&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo aparecerán las URLs de los índices para cada tema con varias páginas.&lt;/p&gt;
+
+&lt;p&gt;NOTA: Usted siempre debe incluir la variable [thread_id] dentro del formato de la URL, ya que a menudo pueden haber temas con el mismo título.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+t[thread_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Vista de Artículos GARS (garpg)&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo deben mostrarse las URLs de los índices con múltiples páginas de Vista de Artículos &lt;a href=&quot;http://www.thevbgeek.com/&quot; target=&quot;_blank&quot;&gt;GARS&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;NOTA: Usted siempre debe incluir la variable [thread_id] dentro del formato de la URL, ya que a menudo pueden haber temas con el mismo título. &lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+t[thread_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_lpformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Redirección a 'Último Mensaje en los Temas'&lt;br /&gt;
+
+&lt;/b&gt;Defina cómo deben mostrarse los enlaces de redirección al 'último mensaje en los temas'.&lt;/p&gt;
+
+&lt;p&gt;NOTA: La funcionalidad nativa de la redirección es usada para redireccionar al usuario al mensaje correcto dentro del tema (Ej: thread_title.html#post-xxxx)&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+t[thread_id]-last-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gpformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Redirección a 'Ir a Mensaje en un Tema'&lt;br /&gt;
+
+&lt;/b&gt;Defina cómo deben mostrarse los enlaces de redirección a 'Ir a Mensaje en un Tema'.&lt;/p&gt;
+
+&lt;p&gt;NOTA: La funcionalidad nativa de la redirección es usada para redireccionar al usuario al mensaje correcto dentro del tema (Ej: thead_title.html#post-xxxx)&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+t[thread_id]-post[post_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gppformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de 'Ir a Mensaje en Un Tema'&lt;br /&gt;
+
+&lt;/b&gt;Defina cómo deben mostrarse los enlaces de 'ir a mensajes en temas' para múltiples páginas.&lt;/p&gt;
+
+&lt;p&gt;NOTA: La funcionalidad nativa de la redirección es usada para redireccionar al usuario al mensaje correcto dentro del tema (Ej: thead_title.html#post-xxxx)&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+t[thread_id]-post[post_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_ptformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL de Redirección a 'Tema Anterior'&lt;br /&gt;
+
+&lt;/b&gt;Defina cómo deben mostrarse las URLs de 'Tema Anterior'. Estos son los enlaces que aparecen al final de las páginas de temas.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+t[thread_id]-prev-thread.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_ntformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL de Redireción a 'Próximo Tema'&lt;br /&gt;
+
+&lt;/b&gt;Defina cómo deben mostrarse las URLs de 'Próximo Tema'. Estos son los enlaces que aparecen al final de las páginas de temas.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+t[thread_id]-next-thread.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_pthread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir URLs 'Printthread'? (Versión Imprimible de Temas)&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs 'Printthread' (printthread.php).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_rel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Agregar rel=&quot;nofollow&quot; a las URLs 'Printthread'?&lt;/b&gt;&lt;br /&gt;
+
+Habilite esta opción para que los robots de los motores de búsqueda no sigan los enlaces 'printthread'. Los enlaces de vista de impresión de temas (printthread.php) pueden ser considerados &quot;contenido duplicado&quot; y posiblemente son excluidos o penalizados por los motores de búsqueda.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Formato para URLs 'Printthread'&lt;br /&gt;
+
+&lt;/b&gt;Defina cómo deben mostrarse las URLs 'Printthread'.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+t[thread_id]-print.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URLs de Paginación 'Printthread'&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo deben mostrarse las URLs 'Printthread' con múltiples páginas.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+t[thread_id]-print-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_post_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir URLs Showpost? ('Ver Mensaje Individual')&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs de vista simple de mensajes (showpost.php).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>post_rel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Agregar rel=&quot;nofollow&quot; a enlaces Showpost?&lt;/b&gt;&lt;br /&gt;
+
+Habilite esta opción para evitar que los robots de los motores de búsqueda sigan los enlaces de vista simple de mensajes (showpost.php). Las páginas de mensajes individuales pueden ser consideradas &quot;contenido duplicado&quot; por los motores de búsqueda.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;¿rel=&quot;nofollow&quot; Inteligente en enlaces Showpost?&lt;/b&gt;&lt;br /&gt;
+
+Esta opción evita que los robots de los motores de búsqueda sigan estos enlaces dependiendo de la cantidad de mensajes que tenga un tema. Si solo hay un mensaje (1) en el tema, se aplicará el rel=&quot;nofollow&quot; (ya que, tanto páginas showpost como páginas showthread son prácticamente las mismas). Si hay dos o más mensajes en un tema, NO se aplicará el rel=&quot;nofollow, permitiendo así que los robots de los motores de búsqueda sigan todos los enlaces showpost.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>smart</name>
+		<value>Inteligente</value>
+	</message>
+	<message>
+		<name>post_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Formato para las URLs de 'Ver Mensaje Individual'&lt;br /&gt;
+
+&lt;/b&gt;Defina cómo deben mostrarse las URLs de 'Ver Mensaje Individual'.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+[post_id]-[post_count]-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_poll</name>
+		<value>URLs de Encuestas</value>
+	</message>
+	<message>
+		<name>rw_poll_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs de las Encuestas?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs de las Encuestas.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>poll_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URLs de las Encuestas&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de las Encuestas o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;NOTA: Es recomendado usar la variable [poll_id] dentro del formato de la URL, ya que existe la posibilidad de que existan varias encuestas con el mismo título.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+p[poll_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_memb_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs de Perfil de Usuarios?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs del Perfil de Usuario.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URLs de Perfil de Usuarios&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL del Perfil de Usuario o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;NOTA: Como vBulletin no permite Nombres de Usuario duplicados, no es necesario usar la variable [user_id].&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_mlist_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs de la Lista de Miembros?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs de la Lista de Miembros.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL de la Lista de Miembros&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo debe mostrarse la URL de la página principal de la Lista de Miembros.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+users.html&lt;br /&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Lista de Miembros&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo deben mostrarse las URLs de los índices de la Lista de Miembros.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+users-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_lformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Lista de Miembros 'Por Letra'&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo deben mostrarse las URLs de los índices de la Lista de Miembros por Letras.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+users-[letter][page].html&lt;br /&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_avatar_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs de Avatar Personalizado?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir la URL de Avatar Personalizado.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>avatar_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL de Avatar Personalizado&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo deben mostrarse las URLs de Avatar Personalizado.&lt;/p&gt;
+
+&lt;p&gt;NOTA: &lt;b&gt;'avatars/'&lt;/b&gt; será agregado automáticamente a la dirección para prevenir conflictos entre las URLs de las imágenes.&lt;/p&gt;
+
+&lt;p&gt;NOTA: Como vBulletin no permite Nombres de Usuario duplicados, no es necesario usar la variable [user_id].&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_navbul_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs de los Iconos de Navegación (Árbol de iconos)?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs de los Iconos de Navegación.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>navbul_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URLs de los Iconos de Navegación de los Foros&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo deben mostrarse las URLs de los iconos de navegación de los foros.&lt;/p&gt;
+
+&lt;p&gt;NOTA: &lt;b&gt;'images/'&lt;/b&gt; será agregado automáticamente a la dirección para prevenir conflictos entre las URLs de las imágenes.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+f[forum_id].gif&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>navbul_tformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URLs de Iconos de Navegación de los Temas&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo deben mostrarse las URLs de los iconos de navegación de los temas.&lt;/p&gt;
+
+&lt;p&gt;Nota: &lt;b&gt;'images/'&lt;/b&gt; será agregado automáticamente a la url para prevenir conflictos entre las URLs de las imágenes.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+t[thread_id].gif&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_attach_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reemplazar las URLs de los 'Archivos Adjuntos'?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reemplazar las URLs de los 'Archivos Adjuntos'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attach_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URLs de los 'Archivos Adjuntos'&lt;/b&gt;&lt;br /&gt;
+
+Google y otros motores de búsqueda indexan imágenes (.gif, .jpg, .png, etc.) y otros tipos de archivos como documentos de Word (.doc) y documentos Adobe PDF (.pdf). Una variable especial [original_filename] ha sido creada para que otros archivos adjuntos conserven su nombre original Y TAMBIÉN su extensión en la URL.&lt;/p&gt;
+
+&lt;p&gt;NOTA: &lt;b&gt;'attachments/'&lt;/b&gt; será agregado automáticamente a la URL para prevenir conflictos entre las URLs de las imágenes.&lt;/p&gt;
+
+&lt;p&gt;NOTA: Es recomendado usar la variable [attachment_id] dentro del formato de la URL, porque es problable que se repitan en algunos mensajes los nombres originales de los 'archivos adjuntos'.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+[attachment_id]-[original_filename]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>crrs_forum</name>
+		<value>Foros de Discusión de 'Reglas Personalizadas de Reescritura'</value>
+	</message>
+	<message>
+		<name>crrs_def</name>
+		<value>&lt;b&gt;Definir Reglas Personalizadas de Reescritura &lt;/b&gt;&lt;span class=&quot;beta&quot;&gt;BETA&lt;/span&gt;&lt;br&gt;Usted puede aplicar a vBSEO un Motor de Reescritura para URLs no modificadas en las opciones por defecto. Defina sus propias reglas usando un formato de expresiones regulares:</value>
+	</message>
+	<message>
+		<name>crrs_desc</name>
+		<value>Ambas partes (izquierda &amp; derecha) son expresiones regulares: la primera parte es la &lt;b&gt;URL&lt;/b&gt; original, mientras que la segunda es la URL &lt;b&gt;reescrita&lt;/b&gt; usando el patrón de coincidencia de la primera parte. 
+
+&lt;p&gt;NOTA: El Equipo de vBSEO NO BRINDA soporte &quot;oficial&quot; para las expresiones regulares que usted utilice en esta sección. Por favor use esta característica SOLO si sabe lo que hace. Para obtener más ayuda, por favor visite los foros de vBSEO en &lt;a href=&quot;http://www.vbseo.com&quot; target=&quot;_blank&quot;&gt;http://www.vbseo.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;NOTA: Las líneas pueden ser comentadas utilizando dos barras verticales (//). Si alguna de sus reglas de reescritura contiene errores, éstos serán notificados automáticamente cuando usted haga clic en 'Guardar Ajustes'.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Ejemplos:&lt;/b&gt;&lt;br /&gt;
+
+'article\.php\?id=(\d+)'=&gt;'showarticle-$1.html'&lt;br /&gt;
+
+'browse\.php\?page=(\d+)'=&gt;'listing-$1.htm' &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metakw_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reemplazar el Contenido de la etiqueta 'META KEYWORDS'?&lt;/b&gt;&lt;br /&gt;
+
+Reemplaza dinámicamente la etiqueta 'META KEYWORDS' con contenido relevante para la página que se muestra. Afecta foros, temas, mensajes &amp; perfiles de usuarios. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bookmark_threadpost</name>
+		<value>Mostrar Iconos en Temas y Mensajes</value>
+	</message>
+	<message>
+		<name>bookmark_custom</name>
+		<value>Agregar personalizado</value>
+	</message>
+	<message>
+		<name>bookmark_services_desc</name>
+		<value>&lt;p&gt;Introduzca Servicios Sociales adicionales abajo con el formato:&lt;br /&gt;
+
+&lt;i&gt;Bookmark URL,Icon URL,&quot;Bookmark Thread&quot; Text,&quot;Bookmark Post&quot; Text&lt;/i&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bookmark_none</name>
+		<value>No Mostrar Iconos</value>
+	</message>
+	<message>
+		<name>bookmark_thread</name>
+		<value>Mostrar Iconos Solo en Temas</value>
+	</message>
+	<message>
+		<name>metadesc_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reemplazar el Contenido de la etiqueta 'META DESCRIPTION'?&lt;/b&gt;&lt;br /&gt;
+
+Esta opción reemplaza el contenido de la etiqueta 'META DESCRIPTION' con las primeras palabras del primer mensaje de la página que se está viendo, limitado al tamaño especificado en la opción de abajo.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metadesc_len_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Definir el tamaño de la etiqueta 'META DESCRIPTION'&lt;/b&gt;&lt;br /&gt;
+
+La etiqueta meta description usualmente tiene una dimensión de 150 a 200 caracteres, o menos.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>nextprev_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reemplazar enlaces de redirección de 'Anterior/Siguiente Tema'?&lt;/b&gt;&lt;br /&gt;
+
+Active esta opción para reemplazar los enlaces 'Anterior/Siguiente Tema', con enlaces de contenido relevante. &lt;i&gt;Nota: Esta opción agrega dos consultas a la base de datos.&lt;/i&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>dir_links_threads_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Enlaces Directos a los Temas Para los Invitados? &lt;/b&gt;&lt;br /&gt;
+
+Esta opción reemplaza los enlaces del &quot;Primer Mensaje No Leído en un Tema&quot; con enlaces directos a los Temas. Lo que quiere decir esto es dar acceso directo (no redireccionar) a los Invitados y a los Motores de Búsqueda con enlaces directos al contenido de los temas.&lt;br /&gt;
+
+También crea la funcionalidad &quot;Nuevo Mensaje&quot; contenida en los feeds RSS, que permite el mismo efecto para invitados y motores de búsqueda que si se accediera a su foro via RSS y RSS2.&lt;br /&gt;
+
+&lt;p&gt;NOTA: Esta opción reduciría la funcionalidad para los invitados, pero puede considerarse una ventaja para la finalidad SEO.&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>bookmark_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Mostrar Iconos de Marcadores Sociales&lt;/b&gt;&lt;br /&gt;
+
+Los Marcadores Sociales han evolucionado como una manera muy efectiva para compartir contenido con otros y consecuentemente más tráfico para su sitio web. Seleccione los iconos de los Marcadores Sociales que usted quiere que se muestren en las páginas de su foro.
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Opciones de Visualización de Marcadores Sociales:&lt;/i&gt;&lt;/b&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Mostrar Iconos en Temas y Mensajes&lt;/b&gt;&lt;br /&gt;
+
+Seleccione esta opción para mostrar los iconos de marcadores sociales en temas y mensajes dentro de los temas. Tenga en cuenta que los iconos de los marcadores aparecen en los temas dentro del menú desplegable 'LinkBack', mientras que en los mensajes aparecen en la esquina inferior izquierda.
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Mostrar Iconos En Temas Solamente&lt;/b&gt;&lt;br /&gt;
+
+Seleccione esta opción para mostrar los iconos de marcadores sociales únicamente en los temas y no en los mensajes individuales. Los iconos de los marcadores aparecen solo dentro del menú desplegable 'LinkBack'.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bookmark_thread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Mostrar Iconos de Marcadores Sociales En Temas&lt;/b&gt;&lt;br /&gt;
+
+Seleccione &quot;Sí&quot; para habilitar los Iconos de Marcadores Sociales en los Temas.
+
+&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>bookmark_post_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Mostrar Iconos de Marcadores Sociales En Mensajes&lt;/b&gt;&lt;br /&gt;
+
+Seleccione &quot;Sí&quot; para habilitar los Iconos de Marcadores Sociales en los Mensajes.
+
+&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>bookmark</name>
+		<value>Marcadores Sociales</value>
+	</message>
+	<message>
+		<name>flinks_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reemplazar 'Enlaces de Foro' con enlaces directos a las URLs objetivo? &lt;/b&gt;&lt;br /&gt;
+
+Habilite esta opción para reemplazar sus 'Enlaces de Foro' con URLs objetivo. &lt;/p&gt;
+
+&lt;p&gt;NOTA: Estos Enlaces de Foro son los que comúnmente serán redireccionados cuando se introducen URLs a través del Administrador de Foros en el AdminCP.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>addttl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Agregar Títulos de Temas a Enlaces Showthread como Texto Anclado?&lt;/b&gt;&lt;br /&gt;
+
+Habilite esta opción para crear enlaces ricos en palabras clave añadiendo el título del tema a las URLS que apuntan a páginas showthread.&lt;/p&gt;
+
+&lt;p&gt;NOTA: Esta opción funciona solo con vB 3.5.x o posterior&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Opciones de Agregado de Título de Temas:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;NO agregar títulos de temas&lt;/b&gt;&lt;br /&gt;
+
+Conservar las opciones por defecto de  vB. Los enlaces contenidos en temas/mensajes no serán modificados.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;AGREGAR títulos de temas como &quot;texto flotante&quot;&lt;/b&gt;&lt;br /&gt;
+
+Esta opción agrega el título del tema como texto flotante a cada enlace que apunta a una página showthread.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;AGREGAR títulos de temas como &quot;texto original&quot; (título del tema)&quot;&lt;/b&gt;&lt;br /&gt;
+
+Esta es una combinación de las opciones 1 y 2 (arriba). El texto original del enlace no se modifica, mientras el título del tema es agregado a la derecha (entre paréntesis).&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;REEMPLAZAR por texto original anclado (Título del tema)&lt;/b&gt;&lt;br /&gt;
+
+Esta opción reemplaza cualquier enlace que apunte a una página showthread con el correspondiente título del tema.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;i&gt;*&lt;/i&gt;&lt;/b&gt;&lt;i&gt;Los enlaces que apunten a foros privados NO serán reemplazados para evitar problemas de privacidad (ej: gente tratando de obtener títulos de temas privados escribiendo entradas aleatorias 'showthread.php?t=xxxx' en mensajes)&lt;/i&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>addttlext_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Agregar Títulos de Página a Enlaces Externos como Texto Anclado?&lt;/b&gt;&lt;br /&gt;Habilite esta opción para crear enlaces ricos en palabras clave añadiendo el título del tema a las URLs que apuntan a dominios externos. vBSEO se conecta al sitio externo cuando un nuevo enlace es creado y extrae el título de la página que lo contiene.&lt;/p&gt;&lt;p&gt;NOTA: Esta opción funciona SOLO con vB 3.5.X o superior&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attl_1</name>
+		<value>NO agregar títulos de temas</value>
+	</message>
+	<message>
+		<name>attl_2</name>
+		<value>AGREGAR títulos de temas como &quot;texto flotante&quot;</value>
+	</message>
+	<message>
+		<name>attl_3</name>
+		<value>AGREGAR títulos de temas como &quot;texto original (título del tema)&quot;</value>
+	</message>
+	<message>
+		<name>attl_4</name>
+		<value>REEMPLAZAR por texto original anclado (Título del tema)</value>
+	</message>
+	<message>
+		<name>addttlp_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Agregar Títulos de Temas a Enlaces Showpost como Texto Anclado?&lt;/b&gt;&lt;br /&gt;La misma funcionalidad que la opción anterior, pero válida para URLs showpost.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>remstop_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Remover &quot;Palabras Vacías&quot; de las URLs?&lt;/b&gt;&lt;br /&gt;
+
+Eliminando &quot;palabras vacías&quot; de las URLs puede incrementarse la relevancia para búsquedas específicas ya que los motores de búsqueda filtran estas palabras comunes cuando las personas las usan en sus consultas de búsqueda.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Removido Inteligente de &quot;Palabras Vacías&quot; en las URLs&lt;/b&gt;&lt;br /&gt;
+
+Habilitando esta opción, se filtrarán &quot;palabras vacías&quot; de las URLs &lt;b&gt;SOLO&lt;/b&gt; cuando los títulos son más largos que el número especificado dentro de la opción '&lt;a href=&quot;#url_gen&quot;&gt;Longitud Límite de las URLs&lt;/a&gt;'.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>stopdef_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Definir Palabras Vacías&lt;/b&gt;&lt;br /&gt;
+
+Cuando la opción de arriba es habilitada, las siguientes palabras serán omitidas en las URLs.&lt;/p&gt;
+
+&lt;p&gt;TIP: Encuentre palabras vacías comunes para otros idiomas en &lt;a href=&quot;http://www.ranks.nl/resources/stopwords.html&quot; target=&quot;_blank&quot;&gt;http://www.ranks.nl/stopwords/&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;Nota: &lt;a href=&quot;http://es.wikipedia.org/wiki/Palabras_vacías&quot;&gt;¿Qué son &quot;Palabras Vacías&quot;?&lt;/a&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acronym_def_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Definir Acrónimos&lt;/b&gt; &lt;br /&gt;
+
+Introduzca reemplazos de acrónimos (1 por línea). La expansión de acrónimos será aplicada a estas palabras clave como se define en la opción anterior.&lt;/p&gt;
+
+&lt;p&gt;NOTA: Los acrónimos no son sensibles a mayúsculas y minúsculas.&lt;/p&gt;
+
+&lt;p&gt;Ejemplos:&lt;br /&gt;
+
+'seo' =&gt; 'Search Engine Optimization'&lt;br /&gt;
+
+'pr' =&gt; 'Page Ranking'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acronym_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Expansión de Acrónimos&lt;/b&gt; &lt;br /&gt;
+
+Esta característica es ideal para incrementar la relevancia en los Motores de Búsqueda. Esto le permite reemplazar acrónimos comunes por frases reales en el contenido y en los títulos de los temas. &lt;/p&gt;
+
+&lt;p&gt;Al definir acrónimos correctamente también se mejora la accesibilidad y ayuda en el establecimiento de términos relevantes que se omiten a menudo debido al uso de acrónimos. Esto también aumenta el valor semántico del contenido generado por sus usuarios mientras mejora la usabilidad (es decir, hace su sitio más fácil de utilizar). Todos estos beneficios van mano a mano con SEO mejorado.
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Opciones de Expansión de Acrónimos:&lt;/i&gt;&lt;/b&gt;&lt;br /&gt;
+
+&lt;p&gt;&lt;b&gt;NO agregar expansión de acrónimos&lt;/b&gt;&lt;br /&gt;
+
+Los acrónimos no serán modificados.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;REEMPLAZAR acrónimos por texto expandido&lt;/b&gt;&lt;br /&gt;
+
+Esta opción convierte los acrónimos que coincidan con el texto correspondiente, según se define en el campo de abajo.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;AGREGAR etiqueta html 'acronym' a los acrónimos&lt;/b&gt;&lt;br /&gt;
+
+Esta opción envuelve cada acrónimo alrededor de una &lt;a href=&quot;http://www.w3.org/TR/html401/struct/text.html#edef-ACRONYM&quot; target=&quot;_blank&quot;&gt;etiqueta html 'acronym'&lt;/a&gt; con el texto correspondiente como un atributo de nombre.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;AGREGAR etiqueta html 'abbr' a los acrónimos&lt;/b&gt;&lt;br /&gt;
+
+La misma que la anterior, pero usando la &lt;a href=&quot;http://www.w3.org/TR/html4/struct/text.html#edef-ABBR&quot; target=&quot;_blank&quot;&gt;etiqueta html 'abbr'&lt;/a&gt;, que es todo lo contrario a la etiqueta html 'acronym'.&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>acro_opt1</name>
+		<value>NO agregar expansión de acrónimos</value>
+	</message>
+	<message>
+		<name>acro_opt2</name>
+		<value>REEMPLAZAR acrónimos como texto expandido</value>
+	</message>
+	<message>
+		<name>acro_opt3</name>
+		<value>AGREGAR etiqueta html 'acronym' a los acrónimos</value>
+	</message>
+	<message>
+		<name>acro_opt4</name>
+		<value>AGREGAR etiqueta html 'abbr' a los acrónimos</value>
+	</message>
+	<message>
+		<name>acro_url_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Aplicar Expansión de Acrónimos a las URLs?&lt;/b&gt; &lt;br /&gt;
+
+Seleccione &quot;Sí&quot; si desea reemplazar palabras clave en las URLs.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_content_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Aplicar Expansión de Acrónimos solamente en &quot;Áreas con Contenido&quot;?&lt;/b&gt;&lt;br /&gt;
+
+Seleccione &quot;Sí&quot; para reemplazar palabras clave SOLO en respuestas a temas, comentarios y entradas de blog. De otra manera, las palabras clave serán reemplazadas en cualquier parte del foro: títulos de temas, enlaces de navegación, listados de temas, etc.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_guests_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Aplicar Expansión de Acrónimos solamente para &quot;Invitados&quot;?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+Seleccione &quot;Sí&quot; para reemplazar palabras clave SOLO para los usuarios no registrados. De otra manera, las palabras clave serán reemplazadas para todos los usuarios.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_text_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Aplicar Expansión de Acrónimos a todo el texto?&lt;/b&gt;&lt;br /&gt;
+
+Seleccione &quot;Sí&quot; si desea reemplazar palabras clave en los textos.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>will_replace</name>
+		<value>será reemplazado por</value>
+	</message>
+	<message>
+		<name>forceroot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Forzar la Raíz del Foro como la Página de Inicio?&lt;/b&gt;&lt;br /&gt;
+
+Cuando se habilita esta opción, todos los enlaces de la página de bienvenida de su foro serán redireccionados al directorio raíz de vBulletin ('vbraíz/'). Si usted deshabilita esta opción, los enlaces de la página de bienvenida de su foro apuntarán al 'nombre del script' (Ej: foro.php) definido en las opciones de vBulletin. Esto permite a los usuarios con un alto 'Ranking de Página' en el 'index.php' usar esa página como la página de bienvenida de su sitio.&lt;br /&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>hpalias_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Definir &quot;Alias&quot; de la Página de Inicio&lt;/b&gt;&lt;br /&gt;
+
+      Esta característica le ayuda a consolidar PR (Ranking de Página) en la página de inicio de su foro. Muchos foros establecidos tienen diferentes Rankings de Página en la página de inicio del foro (usualmente hasta tres), como por ejemplo:&lt;br /&gt;
+
+      &lt;br /&gt;
+
+      www.susitio.com/foros/ (PR = A)&lt;br /&gt;
+
+      www.susitio.com/foros/index.php (PR = B)&lt;br /&gt;
+
+      www.susitio.com/foros/index.php? (PR = C)
+
+                                            &lt;p&gt;Esto es un típico problema de &quot;Escape de Ranking de Página&quot; y podría ocasionar que los motores de búsqueda etiqueten esas páginas como contenido duplicado.
+
+                                            &lt;p&gt;Los nombres de los archivos introducidos aquí serán redireccionados 301 a la página de inicio de su foro definida en el AdminCP de vBulletin. Introduzca un nombre de archivo (1) por línea.
+
+                                            &lt;p&gt;Ejemplos:&lt;br /&gt;
+
+      index.php &lt;br /&gt;
+
+      index.php?&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>intrel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Agregar rel=&quot;nofollow&quot; a&lt;i&gt; TODAS&lt;/i&gt; las Clasificaciones de Enlaces&lt;/b&gt;&lt;br /&gt;
+
+Habilite esta opción para evitar que los robots de los motores de búsqueda sigan los enlaces siguientes hacia páginas con el mismo contenido, pero ordenados de manera distinta. Estas páginas podrían ser etiquetadas como &quot;contenido duplicado&quot;. Por lo tanto, le recomendamos que habilite esta característica.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>reldyn_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Agregar rel=&quot;nofollow&quot; a &lt;i&gt;TODAS&lt;/i&gt; las Páginas Dinámicas&lt;/b&gt;&lt;br /&gt;
+
+Habilite esta opción para evitar que los motores de búsqueda sigan TODOS los enlaces generados de forma dinámica. Algunos ejemplos de estos enlaces son aquellos generados por: 'Responder', 'Citar', 'Respuesta Rápida' o enlaces de búsquedas. Estas páginas no tienen contenido relevante (o &quot;llamativo&quot;) que no debería ser indexado por los motores de búsqueda, resultando en un mejor SEO. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>relmemb_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Agregar rel=&quot;nofollow&quot; a los Enlaces que apuntan &lt;i&gt;AL&lt;/i&gt; Perfil de los Usuarios &lt;i&gt;DESDE&lt;/i&gt; el Postbit&lt;/b&gt;&lt;br /&gt;
+
+Habilite esta opción para evitar que los motores de búsqueda no sigan los enlaces a los perfiles de usuarios que se encuentran en los mensajes.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>relmemb_home_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Agregar rel=&quot;nofollow&quot; a los Enlaces que apuntan &lt;i&gt;AL&lt;/i&gt; Perfil de los Usuarios &lt;i&gt;DESDE&lt;/i&gt; Forumhome&lt;/b&gt;&lt;br /&gt;
+
+Habilite esta opción para evitar que los motores de búsqueda sigan los enlaces a los perfiles de usuarios que se encuentran en la Página de Inicio de sus Foros.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>extrel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Agregar rel=&quot;nofollow&quot; a &lt;i&gt;TODAS&lt;/i&gt; las URLs Externas&lt;/b&gt;&lt;br /&gt;
+
+Habilite esta opción para evitar que los motores de búsqueda sigan enlaces hacia páginas externas (URLs que apuntan hacia otros dominios).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>extwhite_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&quot;Lista Blanca&quot; de Dominios Externos&lt;/b&gt;&lt;br /&gt;
+
+Introduzca dominios a ser excluidos de la regla citada anteriormente. El rel=&quot;nofollow&quot; NO SERÁ agregado a los enlaces que apunten a los dominios en esta lista. Nota: Esto puede ser usado para dar el beneficio de NO rel='nofollowed' a firmas de un grupo de amigos.&lt;/p&gt;
+
+&lt;p&gt;Ejemplos:&lt;br /&gt;
+
+google.com (no es necesario colocar 'http://www') &lt;br /&gt;
+
+groups.google.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>clean_html_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Limpiar Código HTML?&lt;/b&gt;&lt;br /&gt;
+
+Seleccione 'Sí' para remover espacios en blanco y comentarios HTML innecesarios del código fuente de las páginas de su foro. Esto incrementa la proporción C2C (Contenido por Código) y reduce el tamaño de las páginas, dando como resultado un incremento en el rendimiento neto y una disminución en el ancho de banda requerido.&lt;/p&gt;
+
+&lt;p&gt;Nota: Si los comentarios (o etiquetas HTML) dentro de las páginas de su foro no cierran correctamente con su final de etiqueta correspondiente, en ese caso esta opción puede causar que sus páginas se muestren incorrectamente. Asegúrese de que su código fuente y sus plantillas están libres de errores de etiquetas HTML.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rem_prev_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Remover Texto Preliminar de los Temas Para los Invitados?&lt;/b&gt;&lt;br /&gt;Los títulos de temas en &lt;i&gt;forumdisplay&lt;/i&gt; contienen a menudo palabras clave &quot;contributivas&quot; relacionadas con el foro padre. Eliminar el texto de previsualización para los invitados puede ayudar a incrementar la proporción de palabras clave relevantes para estas páginas.&lt;/p&gt;
+
+&lt;p&gt;Nota: El Texto Preliminar de los Temas es el texto que aparece cuando se posa el cursor del mouse sobre el enlace del título de los temas dentro de los enlaces en páginas &lt;i&gt;forumdisplay&lt;/i&gt;.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_size_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Habilitar Atributos de Dimensión para etiquetas IMG?&lt;/b&gt;&lt;br /&gt;
+
+Selecicone &quot;Sí&quot; para habilitar la característica Atributos de Dimensión de Imágenes.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_def_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Definir Atributos de Dimensión&lt;/b&gt;&lt;br /&gt;
+
+Las plantilas por defecto de vB no incluyen los atributos &quot;width&quot; y &quot;height&quot; para las imágenes. Proporcionando una dimensión a todas las imágenes dentro de su foro, usted podrá lograr acelerar la carga de su página en la mayoría de los navegadores Web. Forzando las dimensiones de las imágenes, usted se asegura que los motores de búsqueda podrán determinar mejor la relación de las imágenes al texto que las rodea cuando se calcula la relevancia de palabras clave en las páginas de su foro.&lt;/p&gt;
+
+&lt;p&gt;Ejemplos:&lt;br /&gt;
+
+'thread.gif'=&gt;'20x20'&lt;br /&gt;
+
+'icon12.gif'=&gt;'16x16'&lt;/p&gt;
+
+&lt;p&gt;Ejemplos (incluyendo carpetas para distinguir imágenes con el mismo nombre):&lt;br /&gt;
+
+'buttons/quote.gif' =&gt; '70x22'&lt;br /&gt;
+
+'editor/quote.gif' =&gt; '21x20'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_note</name>
+		<value>Nota: Si usted ha cambiado las dimensiones por defecto de las imágenes de su foro, usted DEBE actualizar las dimensiones anteriores antes de habilitar esta característica. De otra manera, las imágenes que no se ajusten se verán distorsionadas.</value>
+	</message>
+	<message>
+		<name>max_chars</name>
+		<value>Máximo recomendado: 150 a 200 caracteres</value>
+	</message>
+	<message>
+		<name>rights_reserved</name>
+		<value>Reservados todos los Derechos</value>
+	</message>
+	<message>
+		<name>rr_forumdisplay</name>
+		<value>en páginas forumdisplay (y)</value>
+	</message>
+	<message>
+		<name>rr_showthread</name>
+		<value>en páginas showthread.</value>
+	</message>
+	<message>
+		<name>rr_cms</name>
+		<value>en artículos del CMS.</value>
+	</message>
+	<message>
+		<name>rr_blog</name>
+		<value>en páginas de blogs.</value>
+	</message>
+	<message>
+		<name>save_key</name>
+		<value>Guardar Clave</value>
+	</message>
+	<message>
+		<name>rrs_def</name>
+		<value>&lt;b&gt;Definir Reemplazos Relevantes&lt;/b&gt;&lt;br /&gt;
+
+Construya frases dinámicas que son reemplazadas introduciendo comentarios simples (hasta tres) en las plantillas del foro.</value>
+	</message>
+	<message>
+		<name>rrs_desc</name>
+		<value>Para cada conjunto, la primera frase se muestra SOLO en páginas forumdisplay y la segunda frase se muestra SOLO en páginas showthread.
+
+&lt;p&gt;&lt;strong&gt;Usted puede usar cualquiera de los patrones definidos abajo para construir sus frases:&lt;/strong&gt;&lt;br&gt;
+
+&lt;i&gt;[bb_title]&lt;/i&gt; - Título principal de su foro&lt;br&gt;
+
+&lt;i&gt;[default_keywords]&lt;/i&gt; - Sus palabras clave definidas en el AdminCP de vB&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;[forum_title]&lt;/i&gt; - El título del foro actual&lt;br&gt;
+
+&lt;i&gt;[forum_description]&lt;/i&gt; - La descripción del foro actual&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;[parent_forum_title]&lt;/i&gt; - El título del foro padre&lt;br&gt;
+
+&lt;i&gt;[parent_forum_description]&lt;/i&gt; - La descripción del foro padre&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;[thread_title]&lt;/i&gt; - El título actual del tema (Úselo SOLO en páginas showthread)&lt;br&gt;
+
+&lt;i&gt;[first_post_X_words]&lt;/i&gt; - Primeras X número de palabras clave del primer mensaje de la página (Úselo SOLO en páginas showthread)&lt;br&gt;
+
+&lt;I&gt;[thread_X_tags]&lt;/I&gt; - Primeras X etiquetas asignadas a un tema (Úselo SOLO en páginas showthread)&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;[thread_page]&lt;/em&gt; - El número de página del tema&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ejemplo de Frases Relevantes:&lt;/strong&gt;&lt;br&gt;
+
+Discusiones en el foro [forum_title] dentro del foro [parent_forum_title] en [bb_title] (en páginas forumdisplay)&lt;br&gt;
+
+Discusión [thread_title] en el [forum_title] dentro de [bb_title]; &amp;lt;em&amp;gt;[first_post_15_words]...&amp;lt;/em&gt; (en páginas showthread)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>catlinks</name>
+		<value>Enlaces de Categorías Directos</value>
+	</message>
+	<message>
+		<name>catlinks_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Habilitar Enlaces de Categorías Directos?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para habilitar enlaces tipo anclaje para las categorías de su foro. 
+
+&lt;br /&gt;&lt;br /&gt;Nota: Los enlaces a las categorías se verán de esta manera: &quot;http://raízdesuforo/#título_de_categoría&quot;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rrs_forum</name>
+		<value>Foros de Discusión de 'Reemplazos Relevantes'</value>
+	</message>
+	<message>
+		<name>extblack_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&quot;Lista Negra&quot; de Dominios Externos&lt;/b&gt;&lt;br /&gt;
+
+Los siguientes dominios SIEMPRE tendrán agregado un rel='nofollow' en sus enlaces, independientemente de los ajustes en la configuración.
+
+&lt;/p&gt;&lt;p&gt;Ejemplos:&lt;br /&gt;google.com (no es necesario colocar 'http://www')&lt;br /&gt;
+
+groups.google.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>linkback_black_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&quot;Lista Negra&quot; de LinkBacks&lt;/b&gt;&lt;br /&gt;
+
+Los LinkBacks de estos dominios SIEMPRE serán excluidos.
+
+&lt;/p&gt;&lt;p&gt;Ejemplos:&lt;br /&gt;sitiospam.com (no es necesario colocar 'http://www')&lt;br /&gt;
+
+subdominio.sitiospam.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_npformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Redirección a 'Nuevo Mensaje en un Tema'&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo deben mostrarse los enlaces de redirección al 'último mensaje en un tema'.&lt;br /&gt;Estos enlaces de redirección son los que se visualizan al posar el puntero del mouse sobre el tema más reciente en la columna 'Último mensaje' en la página principal de los foros o dentro de las categorías.&lt;/p&gt;
+
+&lt;p&gt;NOTA: La funcionalidad nativa de la redirección es usada para redireccionar al usuario al mensaje correcto dentro del tema (Ej: thread_title.html#post-xxxx)&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+t[thread_id]-new-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metadesc_members_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Descripción Meta de Perfiles de Usuarios&lt;/b&gt;&lt;br&gt;
+
+Defina un formato personalizado para la etiqueta descripción meta de las páginas del perfil de usuario. Usted puede usar los siguientes patrones para reemplazos automáticos:&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;[username]&lt;/i&gt; - Nombre de Usuario &lt;br&gt;
+
+&lt;i&gt;[usertitle]&lt;/i&gt; - Título de Usuario (&amp;quot;Moderador&amp;quot;, &amp;quot;Registrado&amp;quot;, etc.)&lt;br&gt;
+
+&lt;i&gt;[bb_title]&lt;/i&gt; - Título principal de su foro&lt;br&gt;
+
+&lt;em&gt;[user_field_1], [user_field_2], etc.&lt;/em&gt; - Campos de perfil personalizados tal como se definen en el AdminCP de vB&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ejemplo de Frase Descripción Meta:&lt;/strong&gt;&lt;br&gt;
+
+[username] es [usertitle] en [bb_title]. Ver el perfil de [username]. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>select_preset</name>
+		<value>Seleccione un Preajuste</value>
+	</message>
+	<message>
+		<name>current_preset</name>
+		<value>Preajuste Actual</value>
+	</message>
+	<message>
+		<name>preset_set</name>
+		<value>Cargar Formatos de URLs Preestablecidos</value>
+	</message>
+	<message>
+		<name>custom_settings</name>
+		<value>Ajustes Personalizados</value>
+	</message>
+	<message>
+		<name>load_preset</name>
+		<value>Cargar Preajustes</value>
+	</message>
+	<message>
+		<name>load_preset_warn</name>
+		<value>A menos que usted esté configurando vBSEO por primera vez, es altamente recomendado que no cambie la estructura de sus URLs. Haga click en 'Aceptar' para continuar o click en 'Cancelar' para abandonar esta acción.</value>
+	</message>
+	<message>
+		<name>adv_settings</name>
+		<value>Opciones Avanzadas</value>
+	</message>
+	<message>
+		<name>adv_settings_warn</name>
+		<value>Se sugiere altamente que se cargue uno de los preajustes definidos en el menú desplegable en lugar de establecer el formato de las URLs de forma manual. Si usted lo hace de forma manual, puede obtener como resultado una estructura incoherente de enlaces que impacten directamente el posicionamiento de su sitio en los motores de búsqueda.</value>
+	</message>
+	<message>
+		<name>note_preset</name>
+		<value>Nota: Los Preajustes contienen solo 'Opciones de Reescritura de URLs' y no afectan el resto de la configuración.</value>
+	</message>
+	<message>
+		<name>rw_archive_foot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&lt;i&gt;Opciones de Enlaces al Archivo en el Footer:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+
+                                          &lt;p&gt;&lt;b&gt;Agregar Enlaces a las Páginas Principales del Archivo&lt;/b&gt;&lt;br /&gt;
+
+                                            Seleccione esta opción para agregar en el footer enlaces que dirigen al archivo o sitemap.&lt;/p&gt;
+
+                                          &lt;p&gt;&lt;b&gt;Agregar Enlaces a TODAS las Páginas del Archivo&lt;/b&gt;&lt;br /&gt;
+
+                                            Seleccione esta opción para agregar en el footer enlaces a la página principal del archivo o sitemap Y TAMBIÉN múltiples páginas (osea, de profundidad).&lt;/p&gt;
+
+                                          &lt;p&gt;&lt;b&gt;No agregar Enlaces a las Páginas del Archivo&lt;/b&gt;&lt;br /&gt;
+
+                                            Seleccione esta opción para conservar los ajustes por defecto. &lt;/p&gt;
+
+                                          &lt;p&gt;Nota: Introduzca &amp;lt;!--VBSEO_ARCHIVE_LINKS--&amp;gt; en la plantilla footer para especificar una localización personalizada para los enlaces al archivo, de otra manera, éstos serán agregados al final de cada página. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>footer_arc</name>
+		<value>Enlaces al Archivo en el Footer</value>
+	</message>
+	<message>
+		<name>arc_opt1</name>
+		<value>Agregar Enlaces a las Páginas Principales del Archivo</value>
+	</message>
+	<message>
+		<name>arc_opt2</name>
+		<value>Agregar Enlaces a TODAS las Páginas del Archivo</value>
+	</message>
+	<message>
+		<name>arc_opt3</name>
+		<value>Agregar Enlaces a las Páginas Principales del Archivo (Solo para invitados)</value>
+	</message>
+	<message>
+		<name>arc_opt4</name>
+		<value>Agregar Enlaces a TODAS las Páginas del Archivo (Solo para invitados)</value>
+	</message>
+	<message>
+		<name>arc_opt0</name>
+		<value>No agregar Enlaces a las Páginas del Archivo</value>
+	</message>
+	<message>
+		<name>as_anchors</name>
+		<value>Como anclas</value>
+	</message>
+	<message>
+		<name>avail_pro_only</name>
+		<value>&lt;b&gt;Disponible SOLO en la versión Pro de vBSEO&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>addttl_black_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&quot;Lista Negra&quot; de Dominios&lt;/b&gt;&lt;br /&gt;Introduzca un listado de dominios de los cuales NO SE extraerá ni se agregará el título de las URLs como texto anclado.&lt;/p&gt;&lt;p&gt;Ejemplos:&lt;br /&gt;
+
+ejemplo.com&lt;br /&gt;
+
+sitio.com&lt;br /&gt;
+
+abc.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Habilitar Pingbacks Salientes&lt;/b&gt;&lt;br /&gt;
+
+Seleccione &quot;Sí&quot; para enviar pingbacks salientes cuando enlaces externos sean incluidos en temas.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_notify_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Notificaciones por Email de LinkBacks Entrantes&lt;/b&gt;&lt;br /&gt;
+
+Seleccione &quot;Sí&quot; para notificar por e-mail a los creadores de los temas cuando entren LinkBacks nuevos (Ping/Track/Refbacks).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>trackback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Habilitar Trackbacks Salientes&lt;/b&gt;&lt;br /&gt;
+
+Seleccione &quot;Sí&quot; para habilitar Trackbacks Salientes para los temas nuevos.&lt;/p&gt;&lt;p&gt;Nota: El campo Trackback es mostrado cuando se crea un tema nuevo o cuando se responde un tema en la vista avanzada.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_trackback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Habilitar Trackbacks Entrantes&lt;/b&gt;&lt;br /&gt;
+
+Seleccione &quot;Sí&quot; para habilitar Trackbacks Entrantes a los temas.&lt;/p&gt;&lt;p&gt;Nota: La moderación de Trackbacks Entrantes para foros individuales se configura a través del Panel de Administración de vBulletin en: &lt;em&gt;Foros y Moderadores &gt; Administrar Foros &gt; Editar Foro&lt;/em&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_refback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Habilitar Refbacks Entrantes&lt;/b&gt;&lt;br /&gt;
+
+Seleccione &quot;Sí&quot; para habilitar backlinks automáticos a URLs de referencia.&lt;/p&gt;&lt;p&gt;Nota: La moderación de Refbacks Entrantes para foros individuales se configura a través del AdminCP de vBulletin en: &lt;br /&gt;&lt;em&gt;Foros y Moderadores &amp;gt; Administrar Foros &amp;gt; Editar Foro&lt;/em&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Habilitar Pingbacks Entrantes&lt;/b&gt;&lt;br /&gt;
+
+Seleccione &quot;Sí&quot; para habilitar Pingbacks Entrantes a los temas.&lt;/p&gt;
+
+&lt;p&gt;Nota: La moderación de Pingbacks Entrantes para foros individuales se configura a través del Panel de Administración de vBulletin en: &lt;em&gt;Foros y Moderadores &gt; Administrar Foros &gt; Editar Foro&lt;/em&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>postbit_pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Habilitar indicadores &quot;Permalink&quot; en el Postbit&lt;/b&gt;&lt;br /&gt;
+
+Los Permalinks son básicamente enlaces que apuntan a los mensajes como anclas en temas, permitiendo a los usuarios referirse a mensajes específicos para LinkBacks Entrantes.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt;Opciones de Permalink: &lt;/b&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt;Mostrar Permalink en el contenido del Postbit&lt;/b&gt;
+
+&lt;br /&gt;
+
+Se agregará el enlace del &quot;Permalink&quot; encima del contenido de los mensajes, dentro del área del título.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt;Mostrar Permalink al lado del enlace showpost&lt;/b&gt;
+
+&lt;br /&gt;
+
+Se agregará el enlace del &quot;Permalink&quot; a la derecha de los enlaces showpost.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt;Reemplazar el enlace de número de mensaje con el Permalink&lt;/b&gt;
+
+&lt;br /&gt;
+
+Se reemplazarán los enlaces showpost links con el enlace del &quot;Permalink&quot;. Nota: Los mensajes ya no serán accesibles de forma individual.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt;No agregar indicador Permalink en el Postbit&lt;/b&gt;
+
+&lt;br /&gt;
+
+No recomendado si los LinkBacks están habilitados en su foro.
+
+&lt;/p&gt;
+
+
+
+&lt;p&gt;* Usted puede agregar &amp;lt;!--PERMALINK_INFO--&amp;gt; a la plantilla &lt;em&gt;postbit&lt;/em&gt; (o &lt;em&gt;posbit_legacy&lt;/em&gt;) para definir una localización personalizada para el &quot;Permalink&quot;.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>vbseo_affid</name>
+		<value>&lt;p&gt;&lt;b&gt;Su ID de Afiliado a vBSEO&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡ATRACTIVO!&lt;/span&gt;&lt;br /&gt;
+
+¡Gane Honorarios y más con 'vBSEO'!. Introduzca aquí su ID de Afiliado a vBSEO para colocar el enlace hacia su página de afiliado, en el copyright de vBSEO.&lt;/p&gt;&lt;p&gt;Más información: &lt;a href=&quot;http://www.vbseo.com/aff/&quot; target=&quot;_blank&quot;&gt;http://www.vbseo.com/aff/&lt;/a&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>custom301</name>
+		<value>Redirecciones Propias</value>
+	</message>
+	<message>
+		<name>custom301_def</name>
+		<value>&lt;b&gt;Definir Redirecciones 301 Personalizadas &lt;/b&gt;&lt;span class=&quot;beta&quot;&gt;BETA&lt;/span&gt;&lt;br&gt;
+
+Usted puede configurar reglas de redirecciones 301 aquí. Esto puede ser usado si usted movió la localización de cierto documento en su servidor.</value>
+	</message>
+	<message>
+		<name>custom301_desc</name>
+		<value>Ambas partes (izquierda &amp; derecha) son expresiones regulares: la primera parte es la &lt;b&gt;URL&lt;/b&gt; original, mientras que la segunda es la URL &lt;b&gt;redireccionada&lt;/b&gt; usando el patrón de coincidencia de la primera parte. 
+
+&lt;p&gt;Nota: El Equipo de vBSEO NO BRINDA soporte &quot;oficial&quot; para las expresiones regulares que usted utilice en esta sección. Por favor use esta característica SOLO si sabe lo que hace. &lt;/p&gt;&lt;p&gt;NOTA: Las líneas pueden ser comentadas utilizando dos barras verticales (//). Si alguna de las reglas de reescritura contiene errores, éstos serán notificados automáticamente cuando usted haga clic en 'Guardar Ajustes'.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Ejemplos:&lt;/b&gt;&lt;br /&gt;
+
+'articulo-(\d+)\.html'=&gt;'articulos/entrada-$1.html'&lt;br /&gt;
+
+'foro(\d+)\.html'=&gt;'f$1/'&lt;br /&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_attach_alt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir Etiqueta de Atributo Alt en los Adjuntos?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir los atributos &quot;alt&quot; en los adjuntos.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attach_alt_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Formato de Etiqueta de Atributo Alt en los Adjuntos &lt;/b&gt;&lt;br /&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+[thread_title]-[original_filename]&lt;br /&gt;
+
+[original_filename]
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>supportsystem</name>
+		<value>Atención al Cliente</value>
+	</message>
+	<message>
+		<name>affiliates</name>
+		<value>Afiliados</value>
+	</message>
+	<message>
+		<name>contact</name>
+		<value>Contacto</value>
+	</message>
+	<message>
+		<name>forums</name>
+		<value>Foros</value>
+	</message>
+	<message>
+		<name>ping_postbit_1</name>
+		<value>Mostrar Permalink en el contenido del Postbit </value>
+	</message>
+	<message>
+		<name>ping_postbit_3</name>
+		<value>Mostrar Permalink al lado del enlace Showpost</value>
+	</message>
+	<message>
+		<name>ping_postbit_2</name>
+		<value>Reemplazar el enlace de número de mensaje con el Permalink </value>
+	</message>
+	<message>
+		<name>ping_postbit_0</name>
+		<value>No agregar indicador Permalink en el Postbit </value>
+	</message>
+	<message>
+		<name>pingback_notify_bcc_desc</name>
+		<value>Email que será nofiticado con nuevos LinkBacks:</value>
+	</message>
+	<message>
+		<name>pingback_notify_bcc_desc2</name>
+		<value>(Separe varios emails con espacios)</value>
+	</message>
+	<message>
+		<name>pingback_service_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Servicios de Actualización&lt;/b&gt;&lt;br /&gt;
+
+vBSEO puede notificar a servicios externos cuando su comunidad publica nuevos temas y mensajes. Estos servicios trabajan como Motores de Búsqueda para la blogosfera (término bajo el cual se agrupa la totalidad de blogs web) y la convergencia de la forosfera (término bajo el cual se agrupa la totalidad de foros web).
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_stopwords_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;LinkBacks Entrantes Ignorados por Palabras Clave&lt;/b&gt;&lt;br /&gt;
+
+Los LinkBacks que incluyan alguna de las palabras de esta lista serán filtrados (NO aceptados) para disminuir el SPAM.&lt;/p&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_jump_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Remover Salto de Foro Desplegable Para Invitados?&lt;/b&gt;&lt;br /&gt;
+
+El Salto de Foro genera código HTML extra no relevante, especialmente en sitios grandes con múltiples foros. Deshabilite esto para los visitantes (y arañas de motores de búsqueda) para aligerar el contenido que los Motores de Búsqueda indexarán. Esto incrementará la proporción contenido por código lo cual es apetecible para propósitos SEO.&lt;/p&gt;
+
+
+
+&lt;p&gt;Nota: El Salto de Foro aparece al final de las páginas de los temas y los foros (menú 'Ir al Foro'). También a través del AdminCP de vBulletin usted puede deshabilitarlo completamente.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>htmlcharset</name>
+		<value>ISO-8859-1</value>
+	</message>
+	<message>
+		<name>lang_dir</name>
+		<value>ltr</value>
+	</message>
+	<message>
+		<name>preset_1</name>
+		<value>URLs Jerárquicas de tipo .html con contenido relevante en foros y temas (Opciones por Defecto)</value>
+	</message>
+	<message>
+		<name>preset_2</name>
+		<value>URLs Jerárquicas tipo directorio con contenido relevante en temas (usado en www.vBSEO.com)</value>
+	</message>
+	<message>
+		<name>preset_3</name>
+		<value>URLs Jerárquicas tipo .htm con contenido relevante en foros (usado en www.WebmasterWorld.com)</value>
+	</message>
+	<message>
+		<name>preset_4</name>
+		<value>URLs No-Jerárquicas tipo .html usando IDs (usado en www.DaniWeb.com)</value>
+	</message>
+	<message>
+		<name>preset_5</name>
+		<value>URLs No-Jerárquicas tipo directorio usando IDs (usado en www.MustangEvolution.com)</value>
+	</message>
+	<message>
+		<name>arcorder_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Invertir Orden de Desplegado de Temas en el Archivo:&lt;/b&gt; &lt;br /&gt;
+
+Por defecto, los enlaces a los temas en el Archivo (o sitemap) son mostrados del más antiguo al más nuevo. Habilite esta opción para invertir el orden de desplegado de temas (mostrar primero temas nuevos), para crear una estructura jerárquica que enlace al contenido más reciente, que naturalmente, es el contenido más importante en sus foros.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_links</name>
+		<value>Remover enlaces de Último Mensaje Para Invitados</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_column</name>
+		<value>Remover Columna Último Mensaje Para Invitados</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_none</name>
+		<value>Conservar Opciones por Defecto</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_desc</name>
+		<value>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Opciones de Removido de enlaces de 'Último Mensaje'&lt;/strong&gt;&lt;/em&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Remover enlaces de 'Último Mensaje' Para Invitados&lt;/strong&gt;&lt;br /&gt;
+
+Esta opción removerá los enlaces de último mensaje en &lt;em&gt;la página de inicio de los foros&lt;/em&gt; para invitados. Estos enlaces contienen redirecciones que para la función SEO es preferible mantenerlos al mínimo.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Remover Columna Último Mensaje Para Invitados&lt;/strong&gt;&lt;br /&gt;
+
+  Seleccione esta opción para remover completamente la columna de último mensaje en &lt;em&gt;forumhome&lt;/em&gt; para invitados. Además de eliminar los enlaces de último mensaje (opción citada anteriormente), esta opción incrementa la proporción contenido por código, mientras reduce el ancho de banda consumido por la página de inicio de su foro.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conservar Opciones por Defecto de Último Mensaje&lt;/strong&gt;&lt;br /&gt;
+
+Seleccione esta opción para conservar las opciones por defecto de vBulletin.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción reduciría la funcionalidad para los invitados, pero puede considerarse una ventaja para la finalidad SEO.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rem_member_dropdown_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;¿Remover Menú Desplegable DHTML en el Postbit para Invitados?&lt;/strong&gt;&lt;br /&gt;
+
+Seleccione &quot;Sí&quot; para remover el menú DHTML que se despliega cuando se da click en los nombres de usuarios para invitados. Esta opción removerá contenido no relevante para los invitados (y motores de búsqueda), incrementando la proporción contenido por código, mientras se reduce el ancho de banda usado en las páginas de temas. &lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción reduciría la funcionalidad para los invitados, pero puede considerarse una ventaja para la finalidad SEO.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog</name>
+		<value>URLs del Blog de vBulletin</value>
+	</message>
+	<message>
+		<name>rw_blog_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs del Blog?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs del vBulletin Blog.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogind_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Entrada de Blog&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de la entrada de blog o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Usted siempre debe incluir la variable [blog_id] dentro del formato de la URL ya que pueden haber entradas de blog que tengan el mismo título. &lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+blogs/b[blog_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloguser_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL del blog o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Como vBulletin no permite nombres de usuario duplicados, no es necesario usar la variable [user_id] cuando se use la variable [user_name].&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+blogs/u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogcat_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;Categoría de Blog&lt;/strong&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de categoría de blog para usuarios o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Es poco probable duplicar una categoría global de blog, ya que éstas son creadas por el administrador, por lo que usted puede omitir colocar la variable [category_id] para esta opción y tener así una &quot;URL limpia&quot;.&lt;/p&gt;
+
+&lt;p&gt;Nota: Como las categorías están asociadas a los usuarios, usted DEBE incluir un identificador de usuario, como [user_id] o [user_name]. Usted siempre DEBE incluir la variable [category_id] o [category_title] en el formato de la URL. &lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+blogs/u[user_id]-c[category_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogglobcat_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;Categoría Global de Blog&lt;/strong&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione el formato global para la URL de una categoría del blog o cree uno personalizado usando el campo que se brinda.
+
+&lt;br /&gt;&lt;br /&gt;
+
+Nota: Es poco probable duplicar una categoría global de blog, ya que éstas son creadas por el administrador, por lo que puede omitir colocar la variable [category_id] para esta opción y tener así una &quot;URL limpia&quot;.
+
+
+
+&lt;br /&gt;&lt;br /&gt;Ejemplo:&lt;br /&gt;
+
+blogs/c[category_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Listado de &quot;Entradas de Blog Recientes&quot;&lt;/b&gt;&lt;br /&gt;
+
+  Defina cómo debe mostrarse la URL del índice de la página donde se listan todas las entradas recientes de blog.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+  blogs/recent-entries.html&lt;br /&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blognext_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL de Redirección de &quot;Entrada Siguiente de Blog&quot;&lt;/b&gt;&lt;br /&gt;
+
+Define como deben mostrarse los enlaces para Entrada 'Siguiente' de Blog. Estos son los enlaces que se visualizan en la parte superior de las páginas de Entradas de Blog.&lt;/p&gt;
+
+&lt;p&gt;Nota: Usted siempre debe incluir la variable [blog_id] dentro del formato de la URL ya que pueden haber entradas de blog que tengan el mismo título. &lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+blogs/b[blog_id]-next.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogprev_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL de Redirección de &quot;Entrada Anterior de Blog&quot;&lt;/b&gt;&lt;br /&gt;
+
+Define como deben mostrarse los enlaces para Entrada 'Anterior' de Blog. Estos son los enlaces que se visualizan en la parte superior de las páginas de Entradas de Blog.&lt;/p&gt;
+
+&lt;p&gt;Nota: Usted siempre debe incluir la variable [blog_id] dentro del formato de la URL ya que pueden haber entradas de blog que tengan el mismo título. &lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+blogs/b[blog_id]-prev.htm&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogfeed_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Feed (Global)&lt;/b&gt;&lt;br /&gt;
+
+  Seleccione el formato global para la URL de blog feed RSS o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+  blogs/feed.rss&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogfeeduser_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Feed (Por Usuario)&lt;/b&gt;&lt;br /&gt;
+
+  Seleccione un formato para la URL de RSS feed para blogs individuales de usuarios o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+  blogs/feed[user_id].rss&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogmonth_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Lista de &quot;Blogs Por Mes&quot; (Global)&lt;/b&gt;&lt;br /&gt;
+
+  Defina cómo debe mostrarse la URL del índice de la página donde se listan todos los &quot;Blogs por Mes&quot;.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+  blogs/[year]-[month].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogday_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Lista de &quot;Blogs Por Día&quot; (Global)&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo debe mostrarse la URL del índice de la página donde se listan todos los &quot;Blogs por Día&quot;.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+blogs/[year]-[month]-[day].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogatt_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Adjuntos en el Blog&lt;/b&gt;&lt;br /&gt;
+
+  Google y otros motores de búsqueda indexan imágenes (.gif, .jpg, .png, etc.) y otros tipos de archivos como documentos de Word (.doc) y documentos Adobe PDF (.pdf). Una variable especial [original_filename] ha sido creada para que otros archivos adjuntos conserven su nombre original Y su extensión en la URL.&lt;/p&gt;
+
+&lt;p&gt;Nota: Es recomendado usar la variable [attachment_id] dentro del formato de la URL, porque es problable que se repitan en algunos mensajes los nombres originales de los 'archivos adjuntos'.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+  blogs/[attachment_id]-[original_filename]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestentry_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Listado de &quot;Mejores Entradas de Blog&quot;&lt;/b&gt;&lt;br /&gt;
+
+  Defina cómo debe mostrarse la URL del índice de la página donde se listan las &quot;Mejores Entradas de Blog&quot;.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+  blogs/best-entries.html
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestblogs_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Listado de &quot;Mejores Blogs&quot;&lt;/b&gt;&lt;br /&gt;
+
+  Defina cómo debe mostrarse la URL del índice de la página donde se listan los &quot;Mejores Blogs&quot;.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+  blogs/best-blogs.html&lt;br /&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>noneng_repl</name>
+		<value>Reemplazar Caracteres No Ingleses en las URLs</value>
+	</message>
+	<message>
+		<name>noneng_rem</name>
+		<value>Eliminar Caracteres No Ingleses en las URLs</value>
+	</message>
+	<message>
+		<name>noneng_keep</name>
+		<value>Conservar Caracteres No Ingleses en las URLs</value>
+	</message>
+	<message>
+		<name>blogblist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Listado de &quot;Todas las Entradas de Blog&quot;&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo debe mostrarse la URL del índice de la página donde se listan todas las entradas de blog.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+blogs/all.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogblistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación del Listado de &quot;Todas las Entradas de Blog&quot;&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo deben mostrarse las URLs de paginación del listado de &quot;Todas las Entradas de Blog&quot;.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+blogs/all-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloguday_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Lista de &quot;Blogs por Día&quot; (Por Usuario)&lt;/b&gt;&lt;br /&gt;
+
+  Defina cómo deben mostrarse las URLs de las listas de &quot;Blogs por Día&quot; por cada usuario.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+  blogs/u[user_id]-[year]-[month]-[day].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogumonth_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Lista de &quot;Blogs por Mes&quot; (Por Usuario)&lt;/b&gt;&lt;br /&gt;
+
+  Defina cómo deben mostrarse las URLs de las listas de &quot;Blogs por Mes&quot; por cada usuario.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+  blogs/u[user_id]-[year]-[month].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cache_opt</name>
+		<value>Opciones de Caché</value>
+	</message>
+	<message>
+		<name>cdn_opt</name>
+		<value>Integración CDN</value>
+	</message>
+	<message>
+		<name>like_opt</name>
+		<value>Sistema de &quot;Me gusta&quot;</value>
+	</message>
+	<message>
+		<name>blogclist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Lista de &quot;Comentarios de Blog&quot;&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo debe mostrarse la URL del índice de la página donde se listan los &quot;Comentarios de Blog&quot;.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+  blogs/comments.html&lt;br /&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogclistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Lista de &quot;Comentarios de Blog&quot;&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo deben mostrarse las URLs de paginación del Listado de &quot;Comentarios de Blog&quot;.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+blogs/comments-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación del Listado de &quot;Entradas de Blog Recientes&quot;&lt;/b&gt;&lt;br /&gt;
+
+  Defina cómo deben mostrarse las URLs de paginación del listado de &quot;Entradas Recientes de Blog&quot;.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+blogs/recent-entries-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestentpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación del Listado de &quot;Mejores Entradas de Blog&quot;&lt;/b&gt;&lt;br /&gt;
+
+  Defina cómo deben mostrarse las URLs de paginación del listado de las &quot;Mejores Entradas de Blog&quot;.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+  blogs/best-entries-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestblogspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación del Listado de &quot;Mejores Blogs&quot;&lt;/b&gt;&lt;br /&gt;
+
+  Defina cómo deben mostrarse las URLs de paginación del Listado de &quot;Mejores Blogs&quot;.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+  blogs/best-blogs-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cachetype_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Tipo de Caché&lt;/b&gt; &lt;br /&gt;
+
+Seleccione de la lista de abajo el sistema de caché a usar. Asegúrese de que su servidor soporta el tipo de caché seleccionado.&lt;/p&gt;
+
+&lt;p&gt;
+
+&lt;em&gt;memcached&lt;/em&gt;&lt;br /&gt;
+
+&lt;em&gt;APC Cache&lt;/em&gt;&lt;br /&gt;
+
+&lt;em&gt;XCache&lt;/em&gt;&lt;br /&gt;
+
+&lt;em&gt;eAccelerator&lt;/em&gt;&lt;br /&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>none</name>
+		<value>Ninguno</value>
+	</message>
+	<message>
+		<name>supported</name>
+		<value>&lt;b style=&quot;color:green&quot;&gt;Soportado&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>unsupported</name>
+		<value>&lt;b style=&quot;color:red&quot;&gt;No Soportado&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>memcacheopt_desc</name>
+		<value>&lt;h4&gt;Parámetros de Conexión Memcached &lt;/h4&gt; 
+
+&lt;p&gt; 
+
+Defina los parámetros memcached:
+
+&lt;br /&gt;Lista de servidores en el formato 'host:puerto,carga'
+
+&lt;br /&gt;&lt;br /&gt;
+
+&lt;b&gt;Ejemplos:&lt;/b&gt;
+
+&lt;br /&gt;localhost:11211,5
+
+&lt;br /&gt;196.1.12.2:11211,2
+
+&lt;br /&gt;
+
+&lt;br /&gt;&quot;tiempo de vida&quot; para los datos almacenados
+
+&lt;br /&gt;Conexiones Persistentes
+
+&lt;br /&gt;Tiempo de espera (en segundos)
+
+&lt;br /&gt;Intervalo de Reintento (en segundos)
+
+&lt;br /&gt;Compresión Automática de Objetos Grandes
+
+
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mc_ttl</name>
+		<value>&quot;Tiempo de vida&quot;</value>
+	</message>
+	<message>
+		<name>mc_retry</name>
+		<value>Intervalo de Reintento</value>
+	</message>
+	<message>
+		<name>mc_compress</name>
+		<value>Tamaño Mínimo de Objeto a Comprimir</value>
+	</message>
+	<message>
+		<name>mc_hosts</name>
+		<value>Lista de Servidores</value>
+	</message>
+	<message>
+		<name>mc_timeout</name>
+		<value>Tiempo de Espera</value>
+	</message>
+	<message>
+		<name>mc_pers</name>
+		<value>Usar Conexiones Persistentes</value>
+	</message>
+	<message>
+		<name>mc_vbulletin</name>
+		<value>Opciones en vBulletin</value>
+	</message>
+	<message>
+		<name>blogdaypage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Lista de &quot;Blogs Por Día&quot; (Global)&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo deben mostrarse las URLs de paginación del Listado de &quot;Blogs Por Día&quot;.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+blogs/[year]-[month]-[day]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogmonthpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Lista de &quot;Blogs Por Mes&quot; (Global)&lt;/b&gt;&lt;br /&gt;
+
+Defina cómo deben mostrarse las URLs de paginación del Listado de &quot;Blogs Por Mes&quot;.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+blogs/[year]-[month]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_bookm_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Mostrar Iconos de Marcadores Sociales en Entradas de Blogs?&lt;/b&gt;&lt;br /&gt;
+
+Los mismos Iconos de Marcadores Sociales de la opción citada anteriormente, pero para Entradas de Blogs.
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Opciones de Visualización de Marcadores Sociales en Blogs:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Mostrar Iconos DENTRO de los Mensajes de los Blogs&lt;/b&gt;
+
+&lt;br /&gt;
+
+Seleccione esta opción para mostrar los iconos de los marcadores sociales en la esquina superior derecha de los mensajes en las entradas de blogs.
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Mostrar Iconos DEBAJO de los Mensajes de los Blogs&lt;/b&gt;
+
+&lt;br /&gt;
+
+Seleccione esta opción para mostrar los iconos de los marcadores sociales en la esquina inferior derecha de los mensajes en las entradas de blogs.
+
+&lt;/p&gt;
+
+&lt;p&gt;* Introduzca &amp;lt;!--VBSEO_BOOKMARKS--&amp;gt; en la plantilla &quot;blog_show_entry&quot; si desea especificar una localización diferente para los iconos. Por defecto, los iconos de los marcadores aparecen en la esquina inferior izquierda en cada mensaje de blog.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cms_bookm_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Mostrar los Marcadores Sociales en los Artículos del CMS?&lt;/b&gt;&lt;br /&gt; Los mismos Iconos de Marcadores Sociales de la opción citada anteriormente, pero para Artículos del CMS. &lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>blogcatpage_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;Paginación de Categoría de Blog&lt;/strong&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de paginación de categoría de blog para usuarios o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Es poco probable duplicar una categoría para un usuario individual, ya que éstas son creadas por el administrador, por lo que puede omitir colocar la variable [category_id] para esta opción y tener así una &quot;URL limpia&quot;. &lt;/p&gt;
+
+&lt;p&gt;Nota: Como las categorías están asociadas a los usuarios, usted DEBE incluir un identificador de usuario, como [user_id] o [user_name]. Usted siempre DEBE incluir la variable [category_id] o [category_title] en el formato de la URL. &lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+blogs/u[user_id]-c[category_id]-page[page].html&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>blogglobcatpage_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;Paginación de Categoría Global de Blog&lt;/strong&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de paginación de categoría global de blog o cree uno personalizado usando el campo que se brinda.
+
+&lt;br /&gt;&lt;br /&gt;Nota: Es poco probable duplicar una categoría de blog, ya que éstas son creadas por el administrador, por lo que puede omitir colocar la variable [category_id] para esta opción y tener así una &quot;URL limpia&quot;.
+
+&lt;br /&gt;&lt;br /&gt;
+
+Ejemplo:&lt;br /&gt;
+
+blogs/c[category_id]-page[page].html&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>blogbmark_topright</name>
+		<value>Mostrar Iconos DENTRO de los Mensajes de los Blogs </value>
+	</message>
+	<message>
+		<name>blogbmark_bottom</name>
+		<value>Mostrar Iconos DEBAJO de los Mensajes de los Blogs </value>
+	</message>
+	<message>
+		<name>blogbmark_none</name>
+		<value>No Mostrar Iconos</value>
+	</message>
+	<message>
+		<name>blogdom_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Definir Dominio Personalizado para el Blog?&lt;/b&gt; 
+
+&lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;
+
+Deje esta opción en blanco para conservar los ajustes por defecto.
+
+&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>blogindpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Entrada de Blog&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de paginación en la Entrada de Blog o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Usted siempre debe incluir la variable [blog_id] dentro del formato de la URL ya que pueden haber entradas de blog que tengan el mismo título. &lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+blogs/b[blog_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloguserpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación del Blog&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de paginación del blog o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Como vBulletin no permite nombres de usuario duplicados, no es necesario usar la variable [user_id] cuando se use la variable [user_name].&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+blogs/u[user_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogindredir_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL de Redirección de Comentarios en Entradas de Blog&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de redirección de comentarios en Entradas de Blog o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+blogs/comment[comment_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_groups</name>
+		<value>URLs de Grupos Sociales</value>
+	</message>
+	<message>
+		<name>rw_groups_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs de los Grupos Sociales?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs de los Grupos Sociales.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groups_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Grupo Social&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL del grupo social o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+groups/[group_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Grupo Social&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de paginación de grupo social o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+groups/[group_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupmembers_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Miembros de Grupos Sociales&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de la página donde se listan los miembros de un grupo social o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+groups/[group_id]-users.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupmemberspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Miembros de Grupos Sociales&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de paginación de miembros de grupos sociales o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+groups/[group_id]-users-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppic_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Fotos de Grupos Sociales&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de las fotos de los grupos sociales o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+groups/[group_id]-pics.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppicpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Fotos de Grupos Sociales&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de paginación de fotos de grupos sociales o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+groups/[group_id]-pics-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>url_gen</name>
+		<value>Opciones Generales</value>
+	</message>
+	<message>
+		<name>url_forum</name>
+		<value>URLs del Foro</value>
+	</message>
+	<message>
+		<name>url_cms</name>
+		<value>URLs del CMS</value>
+	</message>
+	<message>
+		<name>url_groups</name>
+		<value>URLs de los Grupos Sociales</value>
+	</message>
+	<message>
+		<name>url_member</name>
+		<value>URLs de los Perfiles de Usuario</value>
+	</message>
+	<message>
+		<name>cmsdom_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Definir Dominio Personalizado Para el CMS?&lt;/b&gt; 
+
+&lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;
+
+Deje esta opción en blanco para conservar los ajustes por defecto.
+
+&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>cms_opt_description</name>
+		<value>&lt;h4&gt;Seleccione Su Formato Global de URLs del CMS&lt;/h4&gt;
+
+&lt;p&gt;Seleccione un formato de URLs preestablecido de la lista desplegable de abajo y haga clic en el botón &quot;Cargar Preajustes&quot;.&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>rw_cms_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs del CMS?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs del CMS.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmscat_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Categorías del CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+Seleccione un formato para las URLs de las Categorías del CMS o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 4.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+cmscat-[category_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmscatpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Categorías del CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;  &lt;br /&gt;
+
+Seleccione un formato para las URLs de paginación de las Categorías del CMS o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 4.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+cmscat-[category_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmssec_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Secciones del CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;  &lt;br /&gt;
+
+Seleccione un formato para las URLs de las Secciones del CMS o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 4.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+cmssection-[section_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsseclist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Listado de Artículos en Secciones del CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;  &lt;br /&gt;
+
+Seleccione un formato para las URLs del Listado de Artículos en Secciones del CMS o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 4.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+cmssection-[section_id]-list.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsseclistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación del Listado de Artículos en Secciones del CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;  &lt;br /&gt;
+
+Seleccione un formato para las URLs de Paginación del Listado de Artículos en Secciones del CMS o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 4.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+cmssection-[section_id]-list[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsauthor_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Autores del CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;  &lt;br /&gt;
+
+Seleccione un formato para las URLs de los Autores del CMS o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 4.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+cmsauth-[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsauthorpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Autores del CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;  &lt;br /&gt;
+
+Seleccione un formato para las URLs de Paginación de los Autores del CMS o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 4.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+cmsauth-[user_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsentry_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Entradas del CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;  &lt;br /&gt;
+
+Seleccione un formato para las URLs de las Entradas del CMS o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 4.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+cmsentry-[entry_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsentrypage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Entradas del CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;  &lt;br /&gt;
+
+Seleccione un formato para las URLs de Paginación de las Entradas del CMS o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 4.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+cmsentry-[entry_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsentrycompage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Comentarios en Entradas del CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;  &lt;br /&gt;
+
+Seleccione un formato para las URLs de Paginación de Comentarios en Entradas del CMS o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 4.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+cmsentry-[entry_id]-comments[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsattach_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Archivos Adjuntos del CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;  &lt;br /&gt;
+
+Seleccione un formato para las URLs de los archivos adjuntos del CMS o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 4.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+content/[attachment_id]-[original_filename]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmshome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Página de Inicio del CMS&lt;/b&gt; &lt;br /&gt;
+
+Seleccione un formato para la URL de la Página de Inicio del CMS o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 4.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+content.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>url_blog</name>
+		<value>URLs del Blog</value>
+	</message>
+	<message>
+		<name>forum_opt_description</name>
+		<value>&lt;h4&gt;Seleccione Su Formato Global de URLs del Foro&lt;/h4&gt;
+
+&lt;p&gt;Seleccione un formato de URLs preestablecido de la lista desplegable de abajo y haga clic en el botón &quot;Cargar Preajustes&quot;.&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>path_opt</name>
+		<value>Ruta del Foro</value>
+	</message>
+	<message>
+		<name>blog_opt_description</name>
+		<value>&lt;h4&gt;Seleccione Su Formato Global de URLs del Blog&lt;/h4&gt;
+
+&lt;p&gt;Seleccione un formato de URLs preestablecido de la lista desplegable de abajo y haga clic en el botón &quot;Cargar Preajustes&quot;.&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>groups_opt_description</name>
+		<value>&lt;h4&gt;Seleccione Su Formato Global de URLs de Grupos Sociales&lt;/h4&gt;
+
+&lt;p&gt;Seleccione un formato de URLs preestablecido de la lista desplegable de abajo y haga clic en el botón &quot;Cargar Preajustes&quot;.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>member_opt_description</name>
+		<value>&lt;h4&gt;Seleccione Su Formato Global de URLs de Perfiles de Usuario&lt;/h4&gt;
+
+&lt;p&gt;Seleccione un formato de URLs preestablecido de la lista desplegable de abajo y haga clic en el botón &quot;Cargar Preajustes&quot;.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_msg_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Mensajes de Visita&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de paginación de mensajes de visita o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+u[user_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_friends_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Lista de Amigos&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de paginación de lista de amigos o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+u[user_id]-friends[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_albums_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Lista de Álbumes&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de la lista de álbumes o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+u[user_id]-albums.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_albumspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Lista de Álbumes&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de paginación de lista de álbumes o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+u[user_id]-albums-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_album_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Álbumes&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de los álbumes de usuarios o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+u[user_id]-albums-[album_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_albumpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Álbumes&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para la paginación de álbumes de usuarios o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+u[user_id]-albums-[album_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_pic_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL de las Fotos&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de cada foto o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+u[user_id]-pic[picture_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_entry</name>
+		<value>URLs de Entradas de Blog</value>
+	</message>
+	<message>
+		<name>rw_blogent_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs de las Entradas de Blog?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs de las Entradas de Blog.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_cat</name>
+		<value>URLs de Categorías de Blog</value>
+	</message>
+	<message>
+		<name>rw_blogcat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs de las Categorías de Blog?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs de las Categorías de Blog.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_att</name>
+		<value>URLs de Adjuntos en el Blog</value>
+	</message>
+	<message>
+		<name>rw_blogatt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs de los Adjuntos en el Blog?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs de los Adjuntos en el Blog.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_feed</name>
+		<value>URLs de Blog Feed</value>
+	</message>
+	<message>
+		<name>rw_blogfeed_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs de Blog Feed?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs de Blog Feed.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_list</name>
+		<value>URLs de Listados de Blogs</value>
+	</message>
+	<message>
+		<name>rw_bloglist_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs de Listados de Blogs?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs de Listados de Blogs.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_forum</name>
+		<value>Permalinks en el Foro</value>
+	</message>
+	<message>
+		<name>permalink_profile</name>
+		<value>Permalinks en Perfiles de Usuarios</value>
+	</message>
+	<message>
+		<name>permalink_blog</name>
+		<value>Permalinks en los Blogs</value>
+	</message>
+	<message>
+		<name>permalink_cms</name>
+		<value>Permalinks en el CMS</value>
+	</message>
+	<message>
+		<name>permalink_profile_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Habilitar indicadores &quot;Permalink&quot; en Mensajes de Visita&lt;/b&gt; &lt;br /&gt;
+
+Los Permalinks en Mensajes de Visita en el perfil son enlaces que apuntan a Mensajes de Visita individuales como anclas en la Página del Perfil, permitiendo a los usuarios referirse a comentarios específicos en otros lugares.&lt;/p&gt;
+
+
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Opciones del Permalink:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt; Mostrar Permalink al lado de la fecha/hora del mensaje &lt;/b&gt;
+
+&lt;br /&gt;
+
+Se agregará el enlace del &quot;Permalink&quot; a la derecha del indicador de la hora &amp; fecha de cada mensaje.
+
+
+
+&lt;p&gt;&lt;b&gt; Fecha de mensaje como enlace del Permalink&lt;/b&gt;
+
+&lt;br /&gt;
+
+Se reemplazará la fecha del mensaje individual con el enlace del &quot;Permalink&quot;.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt; No agregar indicador Permalink en Mensajes de Visita &lt;/b&gt;
+
+&lt;br /&gt;
+
+No se agregará el enlace &quot;Permalink&quot; en los mensajes de visita. &lt;/p&gt;
+
+
+
+&lt;p&gt;* Usted puede agregar &amp;lt;!--PERMALINK_INFO--&amp;gt; a la plantilla &lt;em&gt;memberinfo_visitormessage&lt;/em&gt; para definir una localización personalizada para el enlace del &quot;Permalink&quot;.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_blog_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Habilitar indicadores &quot;Permalink&quot; para Comentarios en Blogs&lt;/b&gt; &lt;br /&gt;
+
+Los Permalinks en Comentarios de Blogs son enlaces que apuntan a Comentarios de Blogs individuales como anclas, permitiendo a los usuarios referirse a comentarios específicos en otros lugares.&lt;/p&gt;
+
+
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Opciones del Permalink:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt; Mostrar Permalink (Imagen de Ancla) en la esquina inferior derecha de cada Comentario de Blog &lt;/b&gt;
+
+&lt;br /&gt;
+
+Se agregará una imagen con el enlace del &quot;Permalink&quot; en la esquina inferior derecha de cada comentario.
+
+
+
+&lt;p&gt;&lt;b&gt; Fecha de comentario como enlace del Permalink  &lt;/b&gt;
+
+&lt;br /&gt;
+
+Se reemplazará la fecha del comentario individual con el enlace del &quot;Permalink&quot;.
+
+
+
+&lt;p&gt;&lt;b&gt; No agregar indicador Permalink en Comentarios de Blog &lt;/b&gt;
+
+&lt;br /&gt;
+
+No se agregará el enlace &quot;Permalink&quot; en los comentarios de blog.&lt;/p&gt;
+
+
+
+&lt;p&gt;* Usted puede agregar &amp;lt;!--PERMALINK_INFO--&amp;gt; a la plantilla &lt;em&gt;blog_comment&lt;/em&gt; para definir una localización personalizada para el enlace del &quot;Permalink&quot;.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_cms_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Habilitar indicadores &quot;Permalink&quot; en Comentarios de Artículos&lt;/b&gt; &lt;br /&gt;
+
+Los Permalinks en Comentarios de Artículos son enlaces que apuntan a Comentarios de Artículos individuales como anclas, permitiendo a los usuarios referirse a comentarios específicos en otros lugares.&lt;/p&gt;
+
+
+
+&lt;p&gt;Nota: Esta opción funciona solo con vB 4.0.x o superior&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Opciones del Permalink:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt; Mostrar Permalink (Imagen de Ancla) en la esquina inferior derecha de cada Comentario de Artículo &lt;/b&gt;
+
+&lt;br /&gt;
+
+Se agregará una imagen con el enlace del &quot;Permalink&quot; en la esquina inferior derecha de cada comentario.
+
+
+
+&lt;p&gt;&lt;b&gt; Fecha de comentario como enlace del Permalink &lt;/b&gt;
+
+&lt;br /&gt;
+
+Se reemplazará la fecha del comentario individual con el enlace del &quot;Permalink&quot;.
+
+
+
+&lt;p&gt;&lt;b&gt; No agregar indicador Permalink en Comentarios de Artículos &lt;/b&gt;
+
+&lt;br /&gt;
+
+No se agregará el enlace &quot;Permalink&quot; en los comentarios de artículos.&lt;/p&gt;
+
+
+
+&lt;p&gt;* Usted puede agregar &amp;lt;!--PERMALINK_INFO--&amp;gt; a la plantilla &lt;em&gt;cms_postbit&lt;/em&gt; para definir una localización personalizada para el enlace del &quot;Permalink&quot;.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pl_blog_1</name>
+		<value>Mostrar Permalink (Imagen de Ancla) en la esquina inferior derecha</value>
+	</message>
+	<message>
+		<name>pl_blog_2</name>
+		<value>Fecha de comentario como enlace del Permalink</value>
+	</message>
+	<message>
+		<name>pl_blog_0</name>
+		<value>No agregar indicador Permalink en Comentarios de Blog</value>
+	</message>
+	<message>
+		<name>pl_cms_1</name>
+		<value>Mostrar Permalink (Imagen de Ancla) en la esquina de cada Comentario</value>
+	</message>
+	<message>
+		<name>pl_cms_2</name>
+		<value>Fecha de comentario como enlace del Permalink</value>
+	</message>
+	<message>
+		<name>pl_cms_0</name>
+		<value>No agregar indicador Permalink en Comentarios de Artículos</value>
+	</message>
+	<message>
+		<name>pl_profile_0</name>
+		<value>No agregar indicador Permalink en Mensajes de Visita </value>
+	</message>
+	<message>
+		<name>pl_profile_1</name>
+		<value>Mostrar Permalink al lado de la fecha/hora del mensaje</value>
+	</message>
+	<message>
+		<name>pl_profile_2</name>
+		<value>Fecha de mensaje como enlace del Permalink</value>
+	</message>
+	<message>
+		<name>permalink_groups_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Habilitar indicadores &quot;Permalink&quot; en Mensajes de Grupos Sociales&lt;/b&gt;&lt;br /&gt;
+
+Los Permalinks en Mensajes de Grupos Sociales son enlaces que apuntan a Mensajes individuales de Miembros de los Grupos como anclas en la Página del Grupo Social, permitiendo a los usuarios referirse a un comentario específico en otros lugares.&lt;/p&gt;
+
+
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Opciones del Permalink:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt;Mostrar Permalink al lado de la fecha/hora del mensaje &lt;/b&gt;
+
+&lt;br /&gt;
+
+Se agregará el enlace del &quot;Permalink&quot; a la derecha del indicador de la hora &amp; fecha de cada mensaje. 
+
+
+
+&lt;p&gt;&lt;b&gt;Fecha de mensaje como enlace del Permalink&lt;/b&gt;
+
+&lt;br /&gt;
+
+Se reemplazará la fecha del mensaje individual con el enlace del &quot;Permalink&quot;.
+
+
+
+&lt;p&gt;&lt;b&gt;No agregar indicador Permalink en los Mensajes de Grupos Sociales&lt;/b&gt;
+
+&lt;br /&gt;
+
+No se agregará el enlace &quot;Permalink&quot; en los mensajes de los grupos sociales. &lt;/p&gt;
+
+
+
+&lt;p&gt;* Usted puede agregar &amp;lt;!--PERMALINK_INFO--&amp;gt; a la plantilla &lt;em&gt;socialgroups_message&lt;/em&gt; para definir una localización personalizada para el enlace del &quot;Permalink&quot;.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_groupspic_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Habilitar indicadores &quot;Permalink&quot; en Comentarios de Fotos de Grupos Sociales&lt;/b&gt; &lt;br /&gt;
+
+Los Permalinks en Comentarios de Fotos de Grupos Sociales son enlaces que apuntan a Comentarios Individuales de Fotos como anclas en cada página de imagen, permitiendo a los usuarios referirse a un comentario específico en otros lugares.
+
+&lt;/p&gt;
+
+
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Opciones de Permalink:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt;Mostrar Permalink al lado de la fecha/hora del mensaje &lt;/b&gt;
+
+&lt;br /&gt;
+
+Se agregará el enlace del &quot;Permalink&quot; a la derecha del indicador de la hora &amp; fecha de cada mensaje.
+
+
+
+&lt;p&gt;&lt;b&gt;Fecha de mensaje como enlace del Permalink&lt;/b&gt;
+
+&lt;br /&gt;
+
+Se reemplazará la fecha del mensaje individual con el enlace del &quot;Permalink&quot;.
+
+
+
+&lt;p&gt;&lt;b&gt;No agregar indicador Permalink a los Comentarios de Fotos de Grupos Sociales&lt;/b&gt;
+
+&lt;br /&gt;
+
+No se agregará el enlace &quot;Permalink&quot; en los comentarios de fotos en grupos sociales. &lt;/p&gt;
+
+
+
+&lt;p&gt;* Usted puede agregar &amp;lt;!--PERMALINK_INFO--&amp;gt; a la plantilla &lt;em&gt;picturecomment_message&lt;/em&gt; para definir una localización personalizada para el enlace del &quot;Permalink&quot;. 
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_groups</name>
+		<value>Permalinks en Grupos Sociales</value>
+	</message>
+	<message>
+		<name>permalink_groupspic</name>
+		<value>Permalinks en Comentarios de Fotos de Grupos Sociales</value>
+	</message>
+	<message>
+		<name>pl_groups_1</name>
+		<value>Mostrar Permalink al lado de la fecha/hora del mensaje</value>
+	</message>
+	<message>
+		<name>pl_groups_2</name>
+		<value>Fecha de mensaje como enlace del Permalink</value>
+	</message>
+	<message>
+		<name>pl_groups_0</name>
+		<value>No agregar indicador Permalink en los mensajes </value>
+	</message>
+	<message>
+		<name>memb_picimg_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Archivo de Imagen&lt;/b&gt;&lt;br /&gt;
+
+Seleccione el formato para la URL del archivo de las fotografías (&quot;URL de la Fotografía&quot;) o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+u[user_id]-pic[picture_id].[original_ext]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_picpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Comentarios en las Fotos&lt;/b&gt;&lt;br /&gt;
+
+Seleccione el formato de la URL para paginar los comentarios que se hacen a las fotos o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+u[user_id]-pic[picture_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_pic_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Habilitar indicadores &quot;Permalink&quot; en Álbumes de Usuarios&lt;/b&gt;&lt;br /&gt;
+
+Los Permalinks en Álbumes de Usuarios son enlaces que apuntan a Comentarios Individuales de Fotos como anclas en cada página del álbum, permitiendo a los usuarios referirse a un comentario de una foto específica en otros lugares.&lt;/p&gt;
+
+
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Opciones de Permalink:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt;Mostrar Permalink al lado de la fecha/hora del mensaje &lt;/b&gt;
+
+&lt;br /&gt;
+
+Se agregará el enlace del &quot;Permalink&quot; a la derecha del indicador de la hora &amp; fecha de cada mensaje.
+
+
+
+&lt;p&gt;&lt;b&gt;Fecha de mensaje como enlace del Permalink&lt;/b&gt;
+
+&lt;br /&gt;
+
+Se reemplazará la fecha del mensaje individual con el enlace del &quot;Permalink&quot;.
+
+
+
+&lt;p&gt;&lt;b&gt;No agregar indicador Permalink en Álbumes de Usuarios&lt;/b&gt;
+
+&lt;br /&gt;
+
+No se agregará el enlace &quot;Permalink&quot; en los álbumes de usuarios. &lt;/p&gt;
+
+
+
+&lt;p&gt;* Usted puedes agregar &amp;lt;!--PERMALINK_INFO--&amp;gt; a la plantilla &lt;em&gt;picturecomment_message&lt;/em&gt; para definir una localización personalizada para el enlace del &quot;Permalink&quot;.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_album</name>
+		<value>Permalinks en Álbumes de Usuarios</value>
+	</message>
+	<message>
+		<name>memb_convpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Mensajes de Visita en modo &quot;Ver Conversación&quot;&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de paginación de 'mensajes de visita' en el modo &quot;Ver Conversación&quot; o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+conv-[user_id]-[visitor_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_conv_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Mensajes de Visita&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de 'mensajes de visita' o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+conv-[user_id]-[visitor_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>ignore_linkback_dupe_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;¿Ignorar Linkbacks de URLs Duplicadas?&lt;/b&gt;&lt;br /&gt;
+
+Seleccione &quot;Sí&quot; para que vBSEO ignore los LinkBacks procedentes de URLs duplicadas.&lt;/p&gt;
+
+&lt;p&gt;Usando un algoritmo (procedimiento, técnica) especial, vBSEO tratará de identificar cuando un nuevo LinkBack es un duplicado de otro LinkBack previamente registrado, pero procedente de una URL distinta. El origen de estos LinkBacks duplicados son a menudo foros o plataformas publicadas con una arquitectura de navegación defectuosa, que muestra el mismo contenido bajo múltiples URLs.&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>preset_6</name>
+		<value>URLs Jerárquicas tipo .html con contenido relevante en temas (usado en www.vBulletinSetup.com)</value>
+	</message>
+	<message>
+		<name>grouppicture_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Página de Fotos de Grupos Sociales&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de la página de las fotos de un grupo social o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+groups-[group_name]-pic[picture_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppicturepage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Páginas de Fotos de Grupos Sociales&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de paginación de las páginas de fotos de grupos sociales o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+groups-[group_name]-pic[picture_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppictureimg_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Archivo de Fotos de Grupo&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de los archivos originales de las fotos o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+groups-[group_name]-pic[picture_id].[original_ext]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupshome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Página Principal de Grupos Sociales&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de la página principal de los grupos sociales o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+groups.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupsallpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Lista de &quot;Todos los Grupos Sociales&quot;&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;ACTUALIZADO!&lt;/span&gt; &lt;br /&gt;
+
+Seleccione un formato para las URLs de paginación de la lista de todos los grupos sociales o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+groups-all-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupsall_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Lista de &quot;Todos los Grupos Sociales&quot;&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;ACTUALIZADO!&lt;/span&gt; &lt;br /&gt;
+
+Seleccione un formato para la URL de la página en donde se listan todos los grupos sociales o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+groups-all.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloghome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Inicio de los Blogs&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de la página de inicio de los blogs o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+blogs.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>tagshome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Página Principal de Etiquetas&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de la página principal de las etiquetas o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+tags.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>tags_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Etiquetas&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de las Etiquetas o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+tags-[tag].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>tagspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Etiquetas&lt;/b&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de paginación de etiquetas o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 3.7.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+tags-[tag]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_tags</name>
+		<value>URLs de Etiquetas</value>
+	</message>
+	<message>
+		<name>rw_tags_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs de las Etiquetas?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs de las Etiquetas.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_hits_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Mostrar Visitas desde Linkbacks?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Mostrar el número de visitas que cada LinkBack ha generado (una columna adicional será mostrada en la tabla de LinkBacks). Introduzca uno o más IDs de Grupos de Usuarios para los cuales se mostrarán estos datos.
+
+&lt;br /&gt;&lt;br /&gt;
+
+Aviso: Por defecto, en vBulletin, los IDs de los Grupos de Usuarios No Registrados, Registrados, Administradores y Moderadores son 1, 2, 6 y 7 respectivamente.
+
+&lt;br /&gt;&lt;br /&gt;
+
+Ejemplo:&lt;br /&gt;
+
+1 2 6 7
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_hits_top</name>
+		<value>Mostrar # de visitas por LinkBack para: </value>
+	</message>
+	<message>
+		<name>pingback_hits_right</name>
+		<value>(Separa varios grupos de usuarios con espacios)</value>
+	</message>
+	<message>
+		<name>urls_blog_tag_search</name>
+		<value>Búsqueda de Etiquetas de Blogs</value>
+	</message>
+	<message>
+		<name>rw_blog_tag_search_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs de Búsqueda de Etiquetas en el Blog?&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs de Búsqueda de Etiquetas en el Blog.&lt;br /&gt;&lt;br /&gt;Nota: Esta opción funciona SOLO con vBulletin Blog 2.0.x o superior &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Etiquetas de Blogs&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de las etiquetas de blogs o cree uno personalizado usando el campo que se brinda.&lt;br /&gt;&lt;br /&gt;Nota: Esta opción funciona SOLO con vBulletin Blog 2.0.x o superior&lt;br /&gt;&lt;br /&gt;
+
+
+
+Ejemplo:&lt;br /&gt;
+
+blogs/tags-[tag].html
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_home_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Página de Inicio de Etiquetas de Blog&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de la Página de Inicio de Etiquetas de Blog o cree uno personalizado usando el campo que se brinda.&lt;br /&gt;&lt;br /&gt;Nota: Esta opción funciona SOLO con vBulletin Blog 2.0.x o superior&lt;br /&gt;&lt;br /&gt;
+
+
+
+Ejemplo:&lt;br /&gt;
+
+blogs/tags.html
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_cst_page</name>
+		<value>URLs de Páginas Personalizadas de Blogs</value>
+	</message>
+	<message>
+		<name>rw_blog_cst_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs de Páginas Personalizadas de Blogs?&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs de Páginas Personalizadas de Blogs.&lt;br /&gt;&lt;br /&gt;Nota: Esta opción funciona SOLO con vBulletin Blog 2.0.x o superior &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_cst_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Página Personalizada de Blog &lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+Seleccione un formato para la URL de la Página Personalizada de Blog.&lt;br /&gt;&lt;br /&gt;Nota: Esta opción funciona SOLO con vBulletin Blog 2.0.x o superior &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_tags</name>
+		<value>URLs de Etiquetas del Blog</value>
+	</message>
+	<message>
+		<name>rw_blog_tags_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs de las Etiquetas de los Blogs?&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs de las Etiquetas de los Blogs&lt;br /&gt;&lt;br /&gt;Nota: Esta opción funciona SOLO con vBulletin Blog 2.0.x o superior.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_desc_page</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Etiquetas de Blogs&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+Seleccione un formato para las URLs de paginación de etiquetas de blogs o cree uno personalizado usando el campo que se brinda.&lt;br /&gt;&lt;br /&gt;Nota: Esta opción funciona SOLO con vBulletin Blog 2.0.x o superior&lt;br /&gt;&lt;br /&gt;
+
+
+
+Ejemplo:&lt;br /&gt;
+
+blogs/tags-[tag]-[page].html
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglatestentries_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Listado de &quot;Últimas Entradas de Blog&quot;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+Defina cómo debe mostrarse la URL del índice de la página donde se listan todas las &quot;Últimas Entradas de Blog&quot;.
+
+&lt;br /&gt;&lt;br /&gt;Nota: Esta opción funciona SOLO con vBulletin Blog 2.0.x o superior&lt;br /&gt;&lt;br /&gt;
+
+Ejemplo:&lt;br /&gt;
+
+blogs/latest-entries.html
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglatestentriespage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación del Listado de &quot;Últimas Entradas de Blog&quot;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+Defina cómo deben mostrarse las URLs de paginación del Listado de &quot;Últimas Entradas de Blog&quot;.
+
+&lt;br /&gt;&lt;br /&gt;Nota: Esta opción funciona SOLO con vBulletin Blog 2.0.x o superior&lt;br /&gt;&lt;br /&gt;
+
+Ejemplo:&lt;br /&gt;
+
+blogs/latest-entries-[page].html
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_search_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL de Búsqueda de Etiqueta de Blog &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de Búsqueda de Etiqueta de Blog.&lt;br /&gt;&lt;br /&gt;Nota: Esta opción funciona SOLO con vBulletin Blog 2.0.x o superior &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_user_tags_serch_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL de Búsqueda de Etiqueta en Blog de Usuario &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+Seleccione un formato para la URL de Búsqueda de Etiqueta de Blog.&lt;br /&gt;&lt;br /&gt;Nota: Esta opción funciona SOLO con vBulletin Blog 2.0.x o superior &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>virt_html</name>
+		<value>Desplegado de HTML Virtual</value>
+	</message>
+	<message>
+		<name>virt_html_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Aplicar Despliegue Virtual HTML a Noticias de vB&lt;/b&gt; &lt;br /&gt;
+
+Optimiza la relevancia del primer texto de cada página, incrementando la proporción C2C (Contenido por Código) y eliminando elementos de texto y enlaces no relevantes, al permitir a vBSEO representar noticias generales de vBulletin (en la parte superior de tus páginas) usando Javascript.&lt;br /&gt;&lt;br /&gt;
+
+
+
+Esta propuesta elimina eficazmente las noticias actuales de vB del código fuente HTML e incementa la relevancia del resto del contenido de la página, mientras deja la página actual sin cambios para el usuario.&lt;br /&gt;&lt;br /&gt;
+
+
+
+Adicionalmente, cualquier plantilla que se coloque entre las siguientes etiquetas, también estará representada y eliminada por Javascript, lo que permite la flexibilidad necesaria para reemplazar cualquier parte de la página (con un contenido de baja calidad o enlaces) con una versión de JS para disminuir el impacto en el SEO.&lt;br /&gt;&lt;br /&gt;
+
+&amp;lt;!--VBSEO_VIRTUAL_HTML--&amp;gt;&lt;br /&gt;
+
+código aquí&lt;br /&gt;
+
+&amp;lt;!--/VBSEO_VIRTUAL_HTML--&amp;gt;
+
+&lt;br /&gt;
+
+&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>canonical_link</name>
+		<value>URLs Canonical</value>
+	</message>
+	<message>
+		<name>canonical_link_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Habilitar URLs Canonical&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;Una URL Canonical es la URL &quot;Preferida&quot; para cualquier página. Algunas páginas tienen más de una URL de acceso, lo que crea un problema de contenido duplicado. Google y otros motores de búsqueda ahora buscan un parámetro META rel=&quot;canonical&quot;, y usan esto como un indicio para determinar cuál es la URL correcta para el índice, osea, la versión preferida.&lt;br /&gt;&lt;br /&gt;
+
+
+
+vBSEO está construido en un Consenso de Enlaces, lo que asegura que todas las páginas en su foro son canonical, empezando por permitir solo una URL por recurso. Las URLs canonical nativas de vBSEO proveen ventajas, incluyendo mayor eficiencia en el rastreo, optimización en la vinculación externa y mayor valor en los enlaces. Esto no es brindado con el parámetro rel=&quot;canonical&quot; solo. Una aplicación de nivel en el consenso de enlaces, como lo es vBSEO, es necesaria para obtener estos beneficios.&lt;br /&gt;&lt;br /&gt;
+
+
+
+Sin embargo, Google sugiere que las URLs canonical son útiles como copia de seguridad para las URLs de páginas ordenadas. Este nivel de redundancia asegurará que si los motores de búsqueda descubren una clasificación distinta de URLs ordenadas, a éstos se les dará instrucciones para llegar a la URL correcta de la página que ellos rastrearon por primera vez. Ejemplos incluyen: versiones ordenadas de forumdisplay, discusiones de grupos sociales, listas de blogs y miembros, etc.&lt;br /&gt;
+
+&lt;/p&gt;
+
+        </value>
+	</message>
+	<message>
+		<name>group_search_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Búsqueda de Grupos Sociales &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de Búsqueda de Grupos Sociales.&lt;br /&gt;&lt;br /&gt; Nota: Esta opción funciona SOLO con vB 3.8.x o superior&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>group_subscrb_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Suscripción a Grupo Social&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de Suscripción a Grupos Sociales.&lt;br /&gt;&lt;br /&gt; Nota: Esta opción funciona SOLO con vB 3.8.x o superior&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>urls_group_category_header</name>
+		<value>Reescribir las Categorías de Grupos Sociales</value>
+	</message>
+	<message>
+		<name>rw_group_category_urls</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs de las Categorías de Grupos Sociales?&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs de las Categorías de Grupos Sociales.&lt;br /&gt;&lt;br /&gt; Nota: Esta opción funciona SOLO con vB 3.8.x o superior&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>group_category_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Categorías de Grupos Sociales&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de las Categorías de Grupos Sociales o cree uno personalizado usando el campo que se brinda.&lt;br /&gt;&lt;br /&gt; Nota: Esta opción funciona SOLO con vB 3.8.x o superior&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>group_category_list_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Lista de Categorías de Grupos Sociales&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de la página donde se listan las Categorías de los Grupos Sociales o cree uno personalizado usando el campo que se brinda.Select Social Group Category List URL rewrite format.&lt;br /&gt;&lt;br /&gt; Nota: Esta opción funciona SOLO con vB 3.8.x o superior&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>group_category_list_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Lista de Categorías de Grupos Sociales&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de paginación de Lista Categorías de Grupos Sociales o cree uno personalizado usando el campo que se brinda.&lt;br /&gt;&lt;br /&gt; Nota: Esta opción funciona SOLO con vB 3.8.x o superior&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>urls_group_discussion_header</name>
+		<value>Reescribir Discusiones de Grupos Sociales</value>
+	</message>
+	<message>
+		<name>group_discussion_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Discusiones de Grupos Sociales &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de las discusiones de los grupos sociales o cree uno personalizado usando el campo que se brinda.&lt;br /&gt;&lt;br /&gt; Nota: Esta opción funciona SOLO con vB 3.8.x o superior.&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>group_discussion_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Discusiones de Grupos Sociales.  &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione un formato de paginación de las discusiones de los grupos sociales o cree uno personalizado usando el campo que se brinda.&lt;br /&gt;&lt;br /&gt; Nota: Esta opción funciona SOLO con vB 3.8.x o superior&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>group_discussion_message_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Mensaje Individual en Discusión de Grupo Social &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de Mensaje Individual en Discusión de Grupo Social.&lt;br /&gt;&lt;br /&gt; Nota: Esta opción funciona SOLO con vB 3.8.x o superior&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>rw_albums_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir URLs de Álbumes?&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir la URL de la Página Principal de los Álbumes en el perfil del usuario.&lt;br /&gt;&lt;br /&gt; Nota: Esta opción funciona SOLO con vB 3.8.x o superior&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>url_albums</name>
+		<value>URLs de Álbumes</value>
+	</message>
+	<message>
+		<name>memb_albums_home_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Página Principal de Álbumes&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL de la Página Principal de los Álbumes o cree uno personalizado usando el campo que se brinda.&lt;br /&gt;&lt;br /&gt; Nota: Esta opción funciona SOLO con vB 3.8.x o superior&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>memb_albums_home_page_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de la Página Principal de los Álbumes&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de paginación de la Página Principal de los Álbumes o cree uno personalizado usando el campo que se brinda.&lt;br /&gt;&lt;br /&gt; Nota: Esta opción funciona SOLO con vB 3.8.x o superior&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>group_category_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Paginación de Categorías de Grupos Sociales &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione un formato para las URLs de paginación de Categorías de Grupos Sociales o cree uno personalizado usando el campo que se brinda.&lt;br /&gt;&lt;br /&gt; Nota: Esta opción funciona SOLO con vB 3.8.x o superior&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>group_discussion_last_post_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Último Mensaje en una Discusión. &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;&lt;br /&gt;
+
+Seleccione un formato para la URL del Último Mensaje en una Discusión o cree uno personalizado usando el campo que se brinda.&lt;br /&gt;&lt;br /&gt; Nota: Esta opción funciona SOLO con vB 3.8.x o superior&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>pl_groupspic_1</name>
+		<value>Mostrar Permalink al lado de la fecha/hora del mensaje</value>
+	</message>
+	<message>
+		<name>pl_groupspic_2</name>
+		<value>Fecha de mensaje como enlace del Permalink</value>
+	</message>
+	<message>
+		<name>pl_groupspic_0</name>
+		<value>No agregar indicador Permalink a los Comentarios de Fotos en Grupos Sociales</value>
+	</message>
+	<message>
+		<name>segmentation_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Análisis Segmentado de Google&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;Esta es una característica que se integra con Google Analytics; provee a los administradores la capacidad de dividir en segmentos y analizar las estadísticas del tráfico por grupos de usuarios.&lt;br /&gt;&lt;br /&gt;
+
+
+
+Usando la opción &quot;Segmentación Básica&quot;, los invitados de su foro serán analizados y rastreados en el grupo &quot;Invitados&quot; junto al grupo de &quot;Miembros&quot;. Esto le permite comparar la diferencia en la actividad entre los dos grupos.&lt;br /&gt;&lt;br /&gt;
+
+
+
+Usando la opción más avanzada, &quot;Segmentación Mejorada&quot;, usted podrá registrar y analizar el tráfico de todos los grupos de usuarios disponibles en su foro. Usted podrá ver estadísticas específicamente de sus invitados, miembros, moderadores, grupos personalizados, y cualquier otro grupo de usuarios primario.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>segmentation_1</name>
+		<value>Segmentación Básica</value>
+	</message>
+	<message>
+		<name>segmentation_2</name>
+		<value>Segmentación Mejorada</value>
+	</message>
+	<message>
+		<name>segmentation_0</name>
+		<value>Ninguno</value>
+	</message>
+	<message>
+		<name>vhtml_opt0</name>
+		<value>No aplicar Despliegue Virtual HTML</value>
+	</message>
+	<message>
+		<name>vhtml_opt1</name>
+		<value>Aplicar Despliegue Virtual HTML</value>
+	</message>
+	<message>
+		<name>vhtml_opt2</name>
+		<value>Aplicar Despliegue Virtual HTML (Solo para invitados)</value>
+	</message>
+	<message>
+		<name>twitter_user</name>
+		<value>Su Nombre de Usuario en Twitter</value>
+	</message>
+	<message>
+		<name>tb_opt</name>
+		<value>Opciones de Tweetboard</value>
+	</message>
+	<message>
+		<name>vbseo_tweetboard</name>
+		<value>&lt;p&gt;&lt;b&gt;Integración de Tweetboard&lt;/b&gt; &lt;br /&gt;
+
+Tweetboard crea instantáneamente un microforo para su sitio web, potenciado por Twitter.&lt;br /&gt;
+
+&lt;/p&gt;
+
+
+
+&lt;p&gt;Es una gran solución para involucrar a sus lectores y fomentar la participación en ellos, mientras atrae tráfico a su sitio web.&lt;br /&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;Habilitar Tweetboard a través de vBSEO es extremadamente simple y conveniente. Solo tiene que escribir aquí su nombre de usuario en Twitter, y vBSEO se encargará de hacer el resto.&lt;br /&gt;
+
+&lt;/p&gt;
+
+
+
+&lt;p&gt;Si usted no tiene una cuenta en Twitter, puede crear una &lt;a href=&quot;http://twitter.com&quot; target=&quot;_blank&quot;&gt;aquí&lt;/a&gt;.&lt;br /&gt;
+
+&lt;/p&gt;
+
+
+
+&lt;p&gt;
+
+Más información: &lt;a href=&quot;http://tweetboard.com&quot; target=&quot;_blank&quot;&gt;http://tweetboard.com&lt;/a&gt;
+
+&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>forum_feeds_url</name>
+		<value>URLs Feed de los Foros</value>
+	</message>
+	<message>
+		<name>rw_forum_feeds_url_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Reescribir las URLs Feed de los Foros?&lt;/b&gt;&lt;br /&gt;
+
+Coloque esta opción en &quot;Sí&quot; para reescribir las URLs Feed de los Foros.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_feeds_url_general</name>
+		<value>&lt;p&gt;&lt;b&gt;Formato General de URL del Feed&lt;/b&gt; &lt;br /&gt;
+
+Seleccione un formato General para la URL Feed del Foro o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 4.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+rss.xml&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_feeds_url_forum</name>
+		<value>&lt;p&gt;&lt;b&gt;URLs Feed de los Foros&lt;/b&gt; &lt;br /&gt;
+
+Seleccione un formato general para las URLs Feed de los Foros o cree uno personalizado usando el campo que se brinda.&lt;/p&gt;
+
+&lt;p&gt;Nota: Esta opción funciona SOLO con vB 4.x o superior&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;br /&gt;
+
+rss-{forum_title].xml&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cp_dashboard</name>
+		<value>Dashboard</value>
+	</message>
+	<message>
+		<name>cp_dashboard_desc</name>
+		<value>Personalice el rendimiento y las opciones de vBSEO.</value>
+	</message>
+	<message>
+		<name>cp_licinfo</name>
+		<value>Información de Licencia</value>
+	</message>
+	<message>
+		<name>cp_backup_restore</name>
+		<value>Respaldo &amp; Restaurado de Datos</value>
+	</message>
+	<message>
+		<name>cp_dashboard_header</name>
+		<value>Clave de Licencia &amp; Respaldo de Datos</value>
+	</message>
+	<message>
+		<name>cp_validkey</name>
+		<value>Clave Válida</value>
+	</message>
+	<message>
+		<name>cp_mustmatch</name>
+		<value>Este número debe coincidir con la &quot;Clave Válida&quot; mostrada anteriormente</value>
+	</message>
+	<message>
+		<name>cp_invalidkey</name>
+		<value>Clave Inválida</value>
+	</message>
+	<message>
+		<name>cp_copy</name>
+		<value>copiar</value>
+	</message>
+	<message>
+		<name>cp_save</name>
+		<value>Guardar</value>
+	</message>
+	<message>
+		<name>cp_gen_vbseo</name>
+		<value>Ajustes Generales</value>
+	</message>
+	<message>
+		<name>cp_gen_vbseo_desc</name>
+		<value>Personalice las Opciones Generales de vBSEO</value>
+	</message>
+	<message>
+		<name>view_site</name>
+		<value>Ir al Foro</value>
+	</message>
+	<message>
+		<name>dashboard</name>
+		<value>Dashboard</value>
+	</message>
+	<message>
+		<name>cp_login</name>
+		<value>Iniciar</value>
+	</message>
+	<message>
+		<name>cp_setpass</name>
+		<value>Defina una contraseña</value>
+	</message>
+	<message>
+		<name>url_opt_desc</name>
+		<value>Defina la estructura de URLs de su sitio.</value>
+	</message>
+	<message>
+		<name>basic_settings</name>
+		<value>Opciones Básicas</value>
+	</message>
+	<message>
+		<name>thecrrs</name>
+		<value>Reglas de Reescritura de URLs</value>
+	</message>
+	<message>
+		<name>thec301</name>
+		<value>Redirecciones Personalizadas</value>
+	</message>
+	<message>
+		<name>existing_files</name>
+		<value>Los siguientes archivos han quedado obsoletos y deben ser eliminados:</value>
+	</message>
+	<message>
+		<name>empty_formats</name>
+		<value>Los siguientes formatos de URLs actualmente están vacíos y deben ser corregidos:</value>
+	</message>
+	<message>
+		<name>char_opt</name>
+		<value>Opciones de Reemplazo de Caracteres</value>
+	</message>
+	<message>
+		<name>utf8_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;¿Habilitar Soporte UTF-8?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+Seleccione 'Sí' para usar el conjunto de caracteres UTF-8 en el texto de las funciones relacionadas con vBSEO.&lt;br /&gt;&lt;br /&gt;No habilite esta opción si el idioma de su foro no usa la codificación UTF-8
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>morechars_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;¿Habilitar caracteres especiales en URLs de usuarios?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+Seleccione 'Sí' para incluir caracteres no Ingleses en las direcciones URL de los perfiles de usuario.&lt;br /&gt;&lt;br /&gt;Esta opción también afecta las URLs de los Álbumes. No habilite esta opción a menos que un agente del Equipo de Soporte de vBSEO le pida que lo haga.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cp_charset</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;¿Utilizar conjunto de caracteres personalizados en el Panel de Control de vBSEO?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;  &lt;br /&gt;
+
+Introduzca el nombre del conjuto de caracteres personalizados en esta opción si desea usarlo en lugar del juego de caracteres por defecto.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>settings_saved</name>
+		<value>Ajustes Guardados</value>
+	</message>
+	<message>
+		<name>settings_saved_warning</name>
+		<value>Desplácese hacia Arriba para Leer la Advertencia</value>
+	</message>
+	<message>
+		<name>tagfilter_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;¿Habilitar el filtrado de URLs de Etiquetas?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+Seleccione 'Sí' para eliminar caracteres especiales en las URLs de las etiquetas.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>nourlenc_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;¿Deshabilitar &quot;urlencoding&quot; en URLs?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+Seleccione 'Sí' para deshabilitar urlencoding (%XX) de caracteres especiales en todas las URLs.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>utf8convert_desc</name>
+		<value>&lt;p&gt; &lt;b&gt;¿Convertir las Direcciones URL a la Codificación UTF8?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt; Selecciona 'Sí' si usted utiliza en su foro un juego de caracteres distinto al UTF y desea que las direcciones URL sean convertidas al formato UTF-8. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>char_repl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Defina sus Reemplazos Personalizados de Caracteres&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt;  &lt;br /&gt;
+
+Escriba los reemplazos de caracteres que desee colocando uno (1) por línea. Usted tiene que utilizar el valor ASCII HTML de los caracteres &lt;/p&gt;
+
+&lt;p&gt;Ejemplos:&lt;br /&gt;
+
+'&amp;# 268;'=&gt;'c'&lt;br /&gt;
+
+'&amp;# 351;'=&gt;'s'&lt;br /&gt;&lt;br /&gt;
+
+Los caracteres que sean de un valor por debajo de 256 deberán utilizar el siguiente formato&lt;br /&gt;
+
+chr(220)=&gt;'u'&lt;br /&gt;
+
+chr(214)=&gt;'o'&lt;br /&gt;&lt;br /&gt;
+
+Nota: Los caracteres Ascii tienen un espacio entre el símbolo # y el valor. Usted &lt;strong&gt;NO&lt;/strong&gt; tiene que usar ese espacio.
+
+&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>vbseo_cache_var_defin</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;Definir Prefijo de Caché&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+Si usted está ejecutando varias instancias de vBSEO en su servidor, usted necesitará definir un prefijo de caché único para cada instancia de vBSEO.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>copyright_position_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;Seleccione el Copyright de vBSEO&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+Por favor, elija la noticia de Copyright de vBSEO que desee que se muestre en el foro.&lt;br /&gt;&lt;br /&gt;
+
+Para poder eliminar el copyright, usted tendrá que comprar el Servicio Branding Free de vBSEO. Visite https://www.vbseo.com/branding-removal-option.html para más información.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>copyright_sel_0</name>
+		<value>Notica de copyright predeterminada</value>
+	</message>
+	<message>
+		<name>copyright_sel_1</name>
+		<value>Enlazado - Search Engine Friendly URLs by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_2</name>
+		<value>Enlazado - Content Relevant URLs by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_3</name>
+		<value>Enlazado - Search Engine Optimization by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_4</name>
+		<value>Enlazado - SEO by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_5</name>
+		<value>No Enlazado - Search Engine Friendly URLs by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_6</name>
+		<value>No Enlazado - Content Relevant URLs by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_7</name>
+		<value>No Enlazado - Search Engine Optimization by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_8</name>
+		<value>No Enlazado - SEO by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_9</name>
+		<value>Enlazado - LinkBacks Enabled by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_10</name>
+		<value>No Enlazado - LinkBacks Enabled by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>vbseo_noversion_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;Ocultar versión de vBSEO dentro de la Noticia de Copyright&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+¿Usted desea ocultar en la Noticia de Copyright la versión de vBSEO que está utilizando?.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_auto_link_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;Formato Autolink de Acrónimos&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+Defina el formato autolink de los acrónimos aquí.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>loading_error</name>
+		<value>Error al Cargar.</value>
+	</message>
+	<message>
+		<name>please_wait</name>
+		<value>Por favor espere...</value>
+	</message>
+	<message>
+		<name>invalidkey_notice</name>
+		<value>Su clave de licencia 'actual' no coincide con su clave válida, por favor licencie su instancia de vBSEO guardando su clave válida como su clave de licencia 'actual'. </value>
+	</message>
+	<message>
+		<name>vbseo_last_modified_header_desc</name>
+		<value>&lt;b&gt;Habilitar Last Modified Header&lt;/b&gt;  &lt;span class=&quot;beta&quot;&gt;¡BETA!&lt;/span&gt; &lt;br /&gt;
+
+¿Desea habilitar la opción 'Last Modified Header'?</value>
+	</message>
+	<message>
+		<name>vbseo_gars_support</name>
+		<value>&lt;b&gt;Habilitar Soporte GARS&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;¡NUEVO!&lt;/span&gt; &lt;br /&gt;
+
+¿Desea habilitar el Soporte &lt;a href=&quot;http://www.thevbgeek.com/geekmart.php?do=displayproduct&amp;id=3&quot;&gt;Gars&lt;/a&gt; para múltiples páginas Gars?</value>
+	</message>
+	<message>
+		<name>vbseo_vbulletin_php_extension</name>
+		<value>&lt;b&gt;Definir Extensión de vBulletin&lt;/b&gt;   &lt;br /&gt;
+
+Si usted está usando otra extensión php en lugar de .php, defina la extensión aquí</value>
+	</message>
+	<message>
+		<name>vbseo_vbulletin_config_php</name>
+		<value>&lt;b&gt;Definir Archivo Config de vBulletin&lt;/b&gt;   &lt;br /&gt;
+
+Si usted está usando un archivo config.php personalizado, por favor defina aquí la ruta y el nombre de su archivo config</value>
+	</message>
+	<message>
+		<name>vbseo_custom_doc_root</name>
+		<value>&lt;b&gt;Documento Raíz Personalizado&lt;/b&gt;   &lt;br /&gt;
+
+Defina la ruta de su documento raíz personalizado aquí&lt;br /&gt; Ejemplo: /home/user/public_html</value>
+	</message>
+	<message>
+		<name>vbseo_custom_doc_relative</name>
+		<value>&lt;b&gt;Definir Archivo Raíz Relativo de vBSEO&lt;/b&gt;   &lt;br /&gt;
+
+Defina la ruta relativa personalizada hacia el foro. Es necesario configurar esta opción si usted tiene vBulletin instalado dentro de un directorio, como por ejemplo 'foros'. Si este es su caso, usted tiene que definir su Documento Raíz Personalizado en la opción anterior y definir la ruta del foro aquí. &lt;br /&gt; Ejemplo: /foros/</value>
+	</message>
+	<message>
+		<name>vbseo_forum_slugs</name>
+		<value>&lt;b&gt;Definir vBSEO Forum Slugs&lt;/b&gt;   &lt;br /&gt;
+
+Defina sus forum slugs aquí</value>
+	</message>
+	<message>
+		<name>vbseo_applyto_forums</name>
+		<value>&lt;b&gt;Aplicar vBSEO en los Foros Especificados &lt;/b&gt; &lt;br /&gt; Separe cada ID con un espacio. Deje esta opción en blanco para que vBSEO funcione en todos los foros.</value>
+	</message>
+	<message>
+		<name>vbseo_avatar_prefix</name>
+		<value>&lt;b&gt;Definir Prefijo de Avatar&lt;/b&gt;   &lt;br /&gt;
+
+Defina el prefijo de reescritura para los avatares</value>
+	</message>
+	<message>
+		<name>vbseo_atttachment_prefix</name>
+		<value>&lt;b&gt;Definir Prefijo de Archivos Adjuntos&lt;/b&gt;   &lt;br /&gt;
+
+Defina el prefijo de reescritura para los archivos adjuntos</value>
+	</message>
+	<message>
+		<name>vbseo_icon_prefix</name>
+		<value>&lt;b&gt;Definir Prefijo de Iconos&lt;/b&gt;   &lt;br /&gt;
+
+Defina el prefijo de reescritura para los iconos</value>
+	</message>
+	<message>
+		<name>vbseo_thread_prefix_desc</name>
+		<value>&lt;b&gt;Incluir Prefijo de Tema&lt;/b&gt;   &lt;br /&gt;
+
+Habilite esta opción si desea incluir los Prefijos de Temas a las Reglas de Reescritura de URLs</value>
+	</message>
+	<message>
+		<name>vbseo_thread_prefix_name_desc</name>
+		<value>&lt;b&gt;Incluir Nombre de Prefijo de Tema&lt;/b&gt;   &lt;br /&gt;
+
+Habilite esta opción si desea incluir los nombres de los Prefijos de Temas a las Reglas de Reescritura de URLs</value>
+	</message>
+	<message>
+		<name>vbseo_copyright_header</name>
+		<value>Opciones de Copyright</value>
+	</message>
+	<message>
+		<name>vbseo_image_prefix_header</name>
+		<value>Opciones de Prefijos de Imagen</value>
+	</message>
+	<message>
+		<name>vbseo_advanced_custom_header</name>
+		<value>Opciones de Configuración Avanzada</value>
+	</message>
+	<message>
+		<name>vbseo_blog_prefix_header</name>
+		<value>Opciones Avanzadas del Blog</value>
+	</message>
+	<message>
+		<name>vbseo_blog_cat_prefix_desc</name>
+		<value>&lt;b&gt;Definir Prefijo de Categoría de Blog No Definida&lt;/b&gt;   &lt;br /&gt;
+
+Defina el Prefijo de Reescritura para la Categoría de Blog No Definida</value>
+	</message>
+	<message>
+		<name>replace_tag_title</name>
+		<value>Reemplazar la Etiqueta Title en Páginas de Etiquetas</value>
+	</message>
+	<message>
+		<name>replace_tag_title_desc</name>
+		<value>&lt;p&gt;Desea que vBSEO reemplace automáticamente el título de las páginas de etiquetas para incluir el nombre de la etiqueta?&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>crr_creator_link</name>
+		<value>Creador de CRR de vBSEO.com</value>
+	</message>
+	<message>
+		<name>rr_div</name>
+		<value>Insertar este Reemplazo Relevante en la sección &quot;Page title&quot; de las páginas que lo contienen (vBulletin 4.x.x o superior)</value>
+	</message>
+	<message>
+		<name>cdnopt_desc</name>
+		<value>&lt;h4&gt;Integración con MaxCDN&lt;/h4&gt; &lt;p&gt;CDN es una Red de Entrega de Contenido (Content Delivery Network). Las CDN's almacenan archivos estáticos como por ejemplo imágenes, CSS, JavaScript y otro contenido. Una solución CDN es una de las mejores maneras de acelerar su sitio e incrementar la capacidad del servidor.&lt;br /&gt;&lt;br /&gt;Opciones avanzadas - Introduzca zonas y directorios personalizados, colocando uno por línea, como por ejemplo:&lt;br /&gt;'images/' =&gt; 'http://images.yourcdn.com/'&lt;br /&gt;'files/' =&gt; 'http://files.yourcdn.com/'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cdnopt_adv_desc</name>
+		<value>La descripción para las opciones CDN avanzadas va aquí&lt;br /&gt;&lt;br /&gt;Defina zonas y directorios personalizados, colocando uno por línea, como por ejemplo:&lt;br /&gt;'images/' =&gt; 'http://images.yourcdn.com/'&lt;br /&gt;'files/' =&gt; 'http://files.yourcdn.com/'</value>
+	</message>
+	<message>
+		<name>cdn_defzone</name>
+		<value>Defina la dirección URL de la Zona de Arranque de CDN (usted deberá facilitar ya sea la dirección URL del &quot;CNAME&quot; o la dirección URL de la Zona de Arranque de MaxCDN, incluyendo http:// ). También debe incluir un slash final (/).</value>
+	</message>
+	<message>
+		<name>cdn_custfolder</name>
+		<value>Directorio Personalizado</value>
+	</message>
+	<message>
+		<name>cdn_def_custfolder</name>
+		<value>Introduzca cualquier directorio personalizado (opcional)</value>
+	</message>
+	<message>
+		<name>cdn_def_adv_zone</name>
+		<value>Elija cuáles archivos desea almacenar en su cuenta de CDN y defina la dirección URL de la Zona de Arranque personalizada ( cName ) para cada tipo de archivo.</value>
+	</message>
+	<message>
+		<name>cdn_single_zone</name>
+		<value>Utilizar una sona zona de arranque para todos los recursos</value>
+	</message>
+	<message>
+		<name>imgdim_toolarge</name>
+		<value>Número de imágenes </value>
+	</message>
+	<message>
+		<name>likesys_forum</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Activar el Enlace &quot;Me gusta&quot; en el Foro?&lt;/b&gt;&lt;br /&gt; ¿Activar el Sistema &quot;Me gusta&quot; en los temas y mensajes del Foro?. Tenga en cuenta que esta opción también habilita el &quot;Árbol de Likes&quot;&lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>likesys_blog</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Activar el Enlace &quot;Me gusta&quot; en el Blog?&lt;/b&gt;&lt;br /&gt; ¿Activar el Sistema &quot;Me gusta&quot; en las entradas y comentarios del Blog?&lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>likesys_cms</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Activar el Enlace &quot;Me gusta&quot; en el CMS?&lt;/b&gt;&lt;br /&gt; ¿Activar el Sistema &quot;Me gusta&quot; en los artículos y comentarios del CMS?&lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>likesys_vislink</name>
+		<value>&lt;p&gt;&lt;b&gt;¿Conservar el Enlace &quot;Me gusta&quot; Siempre Visible?&lt;/b&gt;&lt;br /&gt; ¿Mostrar siempre el enlace &quot;Me gusta&quot; (seleccione &quot;No&quot; para mostrarlo solamente cuando se posa el puntero del mouse por encima del mensaje)?&lt;/p&gt; </value>
+	</message>
+</translations>

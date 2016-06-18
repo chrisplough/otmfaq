@@ -1,0 +1,380 @@
+
+
+Creating GLOGOWNER objects...
+Creating packages...
+Creating tables...
+
+***Tables will be created unpartitioned.***                                                                            
+
+                                                                                                                      
+
+Creating primary keys...
+Creating foreign keys...
+Waiting to add constraint on BULK_REPORTING to REPORT                                                                   
+Waiting to add constraint on DOCUMENT_DEF to REPORT                                                                     
+Waiting to add constraint on DOCUMENT to REPORT                                                                         
+Waiting to add constraint on IPP_PRINTER_REP to REPORT                                                                  
+Adding security objects...
+No errors.
+No errors.
+Adding check constraints...
+Creating indexes...
+Creating sequences...
+
+                                                                                                                      
+
+
+                                                                                                                      
+
+Creating views...
+Creating timezone finder
+No errors.
+No errors.
+
+Creating Procurement Objects...
+
+Creating types...
+
+Creating Procurement Packages....
+No errors.
+No errors.
+
+Create Procurement Views...
+
+Creating security objects...
+No errors.
+Load java classes
+Enter glogowner password for parameter 1.
+Enter dbname for parameter 2.
+
+
+
+
+
+
+
+
+
+Creating additional packages...
+No errors.
+No errors.
+
+
+No errors.
+No errors.
+
+No errors.
+No errors.
+No errors.
+
+Create package spec pkg_dev_user_exit successfully                                                                      
+Create package spec pkg_temp_user_exit successfully                                                                     
+Create package spec pkg_bak_user_exit successfully                                                                      
+Create package body pkg_dev_user_exit successfully                                                                      
+Create package body pkg_temp_user_exit successfully                                                                     
+Create package body pkg_bak_user_exit successfully                                                                      
+No errors.
+
+
+No errors.
+
+Reserving job numbers....
+
+Initializing VPD master table set
+Creating database triggers...
+Creating trigger del_obj_from_hd_insert
+Creating tg_geo_postal_point
+Creating trigger on ITEM
+creating trigger LANE_SUMMARY_STAT_VARUPDATE
+creating trigger LANE_SUMMARY_STAT_UPDATE
+creating trigger on NOTIFY_SUBJECT
+creating trigger on OB_REFNUM
+creating trigger on ORDER_RELEASE
+creating trigger on PLANNING_PARAMETER
+creating trigger on P_BID BEFORE
+creating trigger on P_BID AFTER
+creating trigger on p_bid
+creating trigger bid_update_pct_loads
+creating trigger on P_BID_ROUND
+creating trigger on P_CARRIER_RESPONSE
+creating trigger on P_SOLUSTION_VIEW
+creating trigger on RATE_OFFERING
+Creating trigger on RELEASE_METHOD ...
+creating trigger on SERVPROV
+creating trigger on SHIPMENT
+creating trigger on SHIPMENT_REFNUM
+creating trigger on SKU
+creating trigger on TIME_ZONE_LOCALE
+creating trigger on VISIBILITY_EVENT
+insert AA table into table_set_detail
+Setting up archive objects
+
+For parameter 1 Please enter Y if archiving is stored on your OLTP database (vs. ROD), or N if not
+
+IS_ARCHIVE_ON_OLTP has been set to Y.                                                                                   
+a) Setting up archive triggers...
+b) Setting up archive tables...
+c) Connecting as ARCHIVE for grants...
+Archive setup done
+Running glogowner grants...
+
+Creating public synonyms for GLOGOWNER...
+Creating GLOGOWNER table comments...
+Creating report objects...
+
+Creating REPORTOWNER objects...
+Creating report tables...
+   DOCUMENT_REPORT_JOIN                                                                                                 
+   USER_WS_REPORT_ACCESS                                                                                                
+   REPORT                                                                                                               
+   REPORT_COMMON_PROPERTIES                                                                                             
+   REPORT_CONTROL                                                                                                       
+   REPORT_EMAIL                                                                                                         
+   REPORT_GROUP                                                                                                         
+   REPORT_LOG                                                                                                           
+   REPORT_LOG_PARAMETER                                                                                                 
+   REPORT_PARAMETER                                                                                                     
+   REPORT_PRINT                                                                                                         
+   REPORT_RESTRICT_FROM_LEVEL                                                                                           
+   REPORT_SET                                                                                                           
+   REPORT_SET_DETAIL                                                                                                    
+   REPORT_TEXT_TEMPLATE                                                                                                 
+Creating report primary keys...
+Creating report foreign keys...
+Creating report check constraints...
+Creating sequences...
+Doing grants...
+Creating report packages...
+Creating report packages...
+Creating package reports_library
+Creating package ACTIVITY_VIEW
+Creating package ALERT_DEMO
+Creating package AVAILABLE_NUMBERS_SUMMARY
+Creating package PKG_BATCH_GRID_REP
+Creating package BILL_OF_LADING
+Creating package CARRIER_CAPACITY_COMMITMENT
+Creating package CARRIER_DELIV_DEST_DETAIL
+Creating package CARRIER_DELIV_TIME_BY_DEST
+Creating package CARRIER_DELIV_TIME_BY_LANE
+Creating package CARRIER_DELIV_TIME_BY_LANE_DET
+Creating package CARRIER_PERF_BY_LANE_SUM
+Creating package CARRIER_PERFORMANCE_BY_LANE
+Creating package CARRIER_SHIPMENT_CAPACITY
+Creating package PKG_COMMERCIAL_INVOICE
+Creating package COMMERCIAL_INVOICE_BY_ORDER
+Creating package PACKAGE COST_SAVINGS
+Creating package CURRENT_ALLOCATION_STANDINGS
+Creating package PACKAGE DESTROYED_NUMBERS
+Creating package DOMESTIC_PACKING_LIST
+Creating package EVENT_BY_PARTY_DETAIL1
+Creating package EVENT_BY_PARTY_DETAIL2
+Creating package EVENT_BY_PARTY_SUMMARY
+Creating package EVENT_BY_STATUS_GROUP_DETAIL1
+Creating package EVENT_BY_STATUS_GROUP_DETAIL2
+Creating package EVENT_BY_STATUS_GROUP_SUMMARY
+Creating package EXEC_ST_DIST_AND_TIME_DETAIL
+Creating package EXEC_ST_DIST_AND_TIME_SUMMARY
+Creating package FREIGHT_PAY
+Creating package INVENTORY_PO_REPORT
+Creating package INVENTORY_REPORT
+Creating package INVENTORY_TOTAL_COUNTS
+Creating package PKG_INVOICE_REP
+Creating package ITEM_VALUE_REPORT
+Creating package ITEM_VALUE_REPORT_DETAIL
+Creating package PKG_LOGISTICS_GUIDE_REP
+Creating package LTL_TRAILER_BUILDING
+Creating package PACKAGE ORDER_FINANCIAL
+Creating package ORDER_FINANCIAL_OC
+Creating package ORDER_SUMMARY
+Creating package ORDERS_BY_PICKUP_STOP
+Creating package OVERALL_ALLOCATION_STANDINGS
+Creating package OVERALL_COUNT_STANDINGS
+Creating package PICKUP_SUMMARY
+Creating package PLANNED_VS_ACTUAL_DETAIL
+Creating package PLANNED_VS_ACTUAL_GRAPH
+Creating package PLANNED_VS_LOADED_ORDERS
+Creating package PROCUREMENT_SOL_EVAL_BY_LANE
+Creating package PROCUREMENT_SOLUTION_BY_LANE
+Creating package PROCUREMENT_SOLUTION_COST
+Creating package PROCUREMENT_BID_ROUND_STATUS
+Creating package PROCUREMENT_OUTLIER_BID_STATUS
+Creating package PROCUREMENT_WIN_VS_OTHER_BIDS
+Creating package PROCUREMENT_SHIPMENT_HISTORY
+Creating package PROCUREMENT_LANE_SUMMARY
+Creating package PROJECTED_LATE_ORDERS
+Creating package PURCHASE_ORDER_VIEW
+Creating package REBATE_INVOICE
+Creating package REBATE_SHIPMENT
+Creating package RELATIONSHIP_REPORT
+Creating package ROUTE_DEVIATION_DETAIL
+Creating package ROUTE_DEVIATION_SUMMARY
+Creating package ROUTE_SERVICE_LEVELS_DETAIL
+Creating package ROUTE_SERVICE_LEVELS_SUMMARY
+Creating package ROUTE_STRTG_CONF_FACTOR_DET
+Creating package ROUTE_STRTG_CONF_FACTOR_SUM
+Creating package SHIPMENT_BY_CARRIER
+Creating package TENDERS_DECLINED_BY_LANE
+Creating package TRANSMITTAL_LETTER
+Creating package EXECUTION_STATUS_SUMMARY
+Creating package EXECUTION_STATUS_DETAIL
+Creating package LOAD_CONFIG_REPORT
+Creating package body reports_library
+Creating package body ACTIVITY_VIEW
+Creating package body ALERT_DEMO
+Creating package body AVAILABLE_NUMBERS_SUMMARY
+Creating package body PKG_BATCH_GRID
+Creating package body BILL_OF_LADING
+Creating package body CARRIER_CAPACITY_COMMITMENT
+Creating package body CARRIER_DELIV_DEST_DETAIL
+Creating package body CARRIER_DELIV_TIME_BY_DEST
+Creating package body CARRIER_DELIV_TIME_BY_LANE
+Creating package body CARRIER_DELIV_TIME_BY_LANE_DET
+Creating package body CARRIER_PERF_BY_LANE_SUM
+Creating package body CARRIER_PERFORMANCE_BY_LANE
+Creating package body CARRIER_SHIPMENT_CAPACITY
+Creating package body PKG_COMMERCIAL_INVOICE
+Creating package body COMMERCIAL_INVOICE_BY_ORDER
+Creating package body COST_SAVINGS
+Creating package body CURRENT_ALLOCATION_STANDINGS
+Creating package body DESTROYED_NUMBERS
+Creating package body DOMESTIC_PACKING_LIST
+Creating package body EVENT_BY_PARTY_DETAIL1
+Creating package body EVENT_BY_PARTY_DETAIL2
+Creating package body EVENT_BY_PARTY_SUMMARY
+Creating package body EVENT_BY_STATUS_GROUP_DETAIL1
+Creating package body EVENT_BY_STATUS_GROUP_DETAIL2
+Creating package body EVENT_BY_STATUS_GROUP_SUMMARY
+Creating package body EXEC_ST_DIST_AND_TIME_DETAIL
+Creating package body EXEC_ST_DIST_AND_TIME_SUMMARY
+Creating package body FREIGHT_PAY
+Creating package body INVENTORY_PO_REPORT
+Creating package body INVENTORY_REPORT
+Creating package body INVENTORY_TOTAL_COUNTS
+Creating package body PKG_INVOICE_REP
+Creating package body ITEM_VALUE_REPORT
+Creating package body ITEM_VALUE_REPORT_DETAIL
+Creating package body PKG_LOGISTICS_GUIDE_REP
+Creating package body LTL_TRAILER_BUILDING
+Creating package body ORDER_FINANCIAL
+Creating package body ORDER_FINANCIAL_OC
+Creating package body ORDER_SUMMARY
+Creating package body ORDERS_BY_PICKUP_STOP
+Creating package body OVERALL_ALLOCATION_STANDINGS
+Creating package body OVERALL_COUNT_STANDINGS
+Creating package body PICKUP_SUMMARY
+Creating package body PLANNED_VS_ACTUAL_DETAIL
+Creating package body PLANNED_VS_ACTUAL_GRAPH
+Creating package body PLANNED_VS_LOADED_ORDERS
+Creating package body PROCUREMENT_SOL_EVAL_BY_LANE
+Creating package body PROCUREMENT_SOLUTION_BY_LANE
+Creating package body PROCUREMENT_SOLUTION_COST
+Creating package body PROCUREMENT_BID_ROUND_STATUS
+Creating package body PROCUREMENT_OUTLIER_BID_STATUS
+Creating package body PROCUREMENT_WIN_VS_OTHER_BIDS
+Creating package body PROCUREMENT_SHIPMENT_HISTORY
+Creating package body PROCUREMENT_LANE_SUMMARY
+Creating package body PROJECTED_LATE_ORDERS
+Creating package body PURCHASE_ORDER_VIEW
+Creating package body REBATE_INVOICE
+Creating package body REBATE_SHIPMENT
+Creating package body RELATIONSHIP_REPORT
+Creating package body ROUTE_DEVIATION_DETAIL
+Creating package body ROUTE_DEVIATION_SUMMARY
+Creating package body ROUTE_SERVICE_LEVELS_DETAIL
+Creating package body ROUTE_SERVICE_LEVELS_SUMMARY
+Creating package body ROUTE_STRTG_CONF_FACTOR_DET
+Creating package body ROUTE_STRTG_CONF_FACTOR_SUM
+Creating package body SHIPMENT_BY_CARRIER
+Creating package body TENDERS_DECLINED_BY_LANE
+Creating package body TRANSMITTAL_LETTER
+Creating package body EXECUTION_STATUS_DETAIL
+Creating package body EXECUTION_STATUS_SUMMARY
+Creating package body LOAD_CONFIG_REPORT
+Creating report views...
+
+Creating REPORTOWNER footprint triggers...
+Running reportowner_grants...
+Creating public synonyms for REPORTOWNER objects...
+Creating REPORTOWNER comments...
+Creating foreign keys...
+Running glogowner grants...
+
+Creating public synonyms for GLOGOWNER...
+Adding policies...
+Database Structure creation completed...
+
+Enter Connection ID for parameter 1 (Press Enter for default of LOCALDB)
+                                                                                                                        
+
+
+Starting PUBLIC data load process...
+(Call for import_content is import_content.cmd ..\..\config otmdb )
+
+
+(Call for updating password is update_password.cmd )
+
+
+OTM Database Object Counts
+
+Marking 6.0 structural changes applied...
+No errors.
+No errors.
+
+Marking 6.0 data migrations applied...
+No errors.
+No errors.
+No errors.
+
+ARCHIVE         LOB                      5                                                                              
+                SEQUENCE               356                                                                              
+                TABLE                  356                                                                              
+GLOGDEV         SYNONYM                  1                                                                              
+                TRIGGER                  1                                                                              
+GLOGLOAD        SYNONYM                  1                                                                              
+                TRIGGER                  1                                                                              
+GLOGOWNER       FUNCTION              8178                                                                              
+                INDEX                 3284                                                                              
+                JAVA CLASS              10                                                                              
+                JAVA SOURCE              7                                                                              
+                LOB                     38                                                                              
+                PACKAGE                 65                                                                              
+                PACKAGE BODY            63                                                                              
+                SEQUENCE               232                                                                              
+                TABLE                 1637                                                                              
+                TRIGGER               3710                                                                              
+                TYPE                     2                                                                              
+                VIEW                    21                                                                              
+REPORTOWNER     INDEX                   15                                                                              
+                PACKAGE                 80                                                                              
+                PACKAGE BODY            80                                                                              
+                SEQUENCE                 1                                                                              
+                TABLE                   15                                                                              
+                TRIGGER                 16                                                                              
+                VIEW                    33                                                                              
+
+
+
+List of first 50 Invalid objects after recompile.
+================================================
+
+
+Invalid objects before Recompile....
+
+       356                                                                                                              
+
+Invalid objects after Recompile....
+
+         0                                                                                                              
+
+
+
+All objects are now valid.                                                                                              
+
+
+                                                                                                                        
+
+
+OTM database users and their objects creation completed.
+Check create_all_<dbsid>_<timestamp>.log and import_content_<dbsid>_<timestamp> log files for ORA- or compilation errors.
+
+

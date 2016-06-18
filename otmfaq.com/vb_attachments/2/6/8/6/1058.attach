@@ -1,0 +1,1382 @@
+Time Process Severity ID System Log 
+2012-10-03 19:50:22.584 842258 Debug Workflow Publishing topic BuildShipmentsBuyRequest: bulkPlanXid=null, savedQuery=(pks), planningParamSetGid=null, description=null, scenarioGroup=null, shipmentsSuppressed=false, usePartition=false, partitionProfile=null on queue batch, group null [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] 
+2012-10-03 19:50:22.589 842258 Debug Workflow Starting workflow Build Shipments (420655736) in response to BuildShipmentsBuyRequest: bulkPlanXid=null, savedQuery=(pks), planningParamSetGid=null, description=null, scenarioGroup=null, shipmentsSuppressed=false, usePartition=false, partitionProfile=null [batch - 2] 
+2012-10-03 19:50:22.623 842258 Debug Workflow Publishing topic BulkPlan: PK=SUNNY.20121003-0012 on queue batch, group null [batch - 2] 
+2012-10-03 19:50:22.624 842258 Debug Workflow Completing workflow Build Shipments (420655736) [batch - 2] 
+2012-10-03 19:50:22.634 842258 Debug Workflow Starting workflow Simple Workflow (416869846) in response to BulkPlan: PK=SUNNY.20121003-0012 [batch - 1] 
+2012-10-03 19:50:22.635 842258 Debug Planning Sql text: SELECT order_release_gid, otm_version FROM order_release WHERE (order_release_gid IN (?,?)) AND (otm_version IS NULL OR (otm_version <> ?)) [batch - 1] 
+2012-10-03 19:50:22.642 842258 Debug Planning Property glog.business.consolidation.bulkplan.batchCommitBulkPlanResult: false [batch - 1] 
+2012-10-03 19:50:22.646 842258 Debug Planning Sql text: select order_release_gid from order_release where (is_template = 'N' or is_template = 'n' ) and (order_release_gid IN (?,?)) [batch - 1] 
+2012-10-03 19:50:22.69 842258 Debug Planning Sql text: SELECT order_release_gid, otm_version FROM order_release WHERE (order_release_gid IN (?,?)) AND (otm_version IS NULL OR (otm_version <> ?)) [batch - 1] 
+2012-10-03 19:50:22.748 842258 Debug Planning Total 2 orders ready for unassigned.. [batch - 1] 
+2012-10-03 19:50:22.754 842258 Debug Planning Begin unassignUnassignableOrders with 2 orders. [batch - 1] 
+2012-10-03 19:50:22.755 842258 Debug Planning DatabaseLoader is loading OrderReleaseData (criteria = top_t.order_release_gid IN ('SUNNY.SUNNY_MS_OR1','SUNNY.SUNNY_MS_OR2')) ... [batch - 1] 
+2012-10-03 19:50:22.842 842258 Debug Allocation Allocation - Planning Parameter Value - ALLOCATION GENERATES ACCRUALS : 0 [batch - 1] 
+2012-10-03 19:50:22.842 842258 Debug Allocation Allocation - Planning Parameter Value - SETTLEMENT REVERSES ACCRUALS : 0 [batch - 1] 
+2012-10-03 19:50:22.842 842258 Debug Planning OrderActionExecutor:unassignUnassignableOrders::Removing allocations for orders to be unassigned [batch - 1] 
+2012-10-03 19:50:22.853 842258 Debug Planning No related order movements found for the gvien 2 Order Releases. [batch - 1] 
+2012-10-03 19:50:22.856 842258 Debug Planning createSimpleGraph() for [Lglog.ejb.shipment.db.ShipmentPK;@18f265dd [batch - 1] 
+2012-10-03 19:50:22.892 842258 Debug Planning .. returning SimpleGraph: [batch - 1] 
+2012-10-03 19:50:22.892 842258 Debug Planning Simple Node: ShipmentPK = SUNNY.01037 OrderMovementPK = SUNNY.SUNNY_MS_OR2-011
+.. SSUs:
+..   SUNNY.SUNNY_MS_OR2-001-011 (1-1)
+..    ORLines:
+..        SUNNY.SUNNY_MS_OR2-001
+
+.. parents: 
+.. children: 
+ [batch - 1]
+Simple Node: ShipmentPK = SUNNY.01037 OrderMovementPK = SUNNY.SUNNY_MS_OR2-011 
+2012-10-03 19:50:22.893 842258 Debug Planning createSimpleGraph() for [Lglog.ejb.shipment.db.ShipmentPK;@18f2e5bd [batch - 1] 
+2012-10-03 19:50:22.908 842258 Debug Planning .. returning SimpleGraph: [batch - 1] 
+2012-10-03 19:50:22.909 842258 Debug Planning Simple Node: ShipmentPK = SUNNY.01036 OrderMovementPK = SUNNY.SUNNY_MS_OR1-011
+.. SSUs:
+..   SUNNY.SUNNY_MS_OR1-001-011 (1-1)
+..    ORLines:
+..        SUNNY.SUNNY_MS_OR1-001
+
+.. parents: 
+.. children: 
+ [batch - 1]
+Simple Node: ShipmentPK = SUNNY.01036 OrderMovementPK = SUNNY.SUNNY_MS_OR1-011 
+2012-10-03 19:50:22.909 842258 Debug Planning createSimpleGraph() for [Lglog.ejb.shipment.db.ShipmentPK;@18f399cf [batch - 1] 
+2012-10-03 19:50:22.926 842258 Debug Planning .. returning SimpleGraph: [batch - 1] 
+2012-10-03 19:50:22.926 842258 Debug Planning Simple Node: ShipmentPK = SUNNY.01037 OrderMovementPK = SUNNY.SUNNY_MS_OR2-011
+.. SSUs:
+..   SUNNY.SUNNY_MS_OR2-001-011 (1-1)
+..    ORLines:
+..        SUNNY.SUNNY_MS_OR2-001
+
+.. parents: 
+.. children: 
+ [batch - 1]
+Simple Node: ShipmentPK = SUNNY.01037 OrderMovementPK = SUNNY.SUNNY_MS_OR2-011 
+2012-10-03 19:50:22.926 842258 Debug Planning Simple Node: ShipmentPK = SUNNY.01036 OrderMovementPK = SUNNY.SUNNY_MS_OR1-011
+.. SSUs:
+..   SUNNY.SUNNY_MS_OR1-001-011 (1-1)
+..    ORLines:
+..        SUNNY.SUNNY_MS_OR1-001
+
+.. parents: 
+.. children: 
+ [batch - 1]
+Simple Node: ShipmentPK = SUNNY.01036 OrderMovementPK = SUNNY.SUNNY_MS_OR1-011 
+2012-10-03 19:50:22.927 842258 Debug Planning begin getConnectedShipmentGraphs... [batch - 1] 
+2012-10-03 19:50:22.927 842258 Debug Planning # roots in this graph: 2 [batch - 1] 
+2012-10-03 19:50:22.927 842258 Debug Planning # shipments nodes in this graph: 2 [batch - 1] 
+2012-10-03 19:50:22.927 842258 Debug Planning end getConnectedShipmentGraphs... [batch - 1] 
+2012-10-03 19:50:22.927 842258 Debug Planning # connected graphs: 2 [batch - 1] 
+2012-10-03 19:50:22.928 842258 Debug Planning Number of connected graphs (connected by shipment links): 2 [batch - 1] 
+2012-10-03 19:50:22.934 842258 Debug Planning Number of connected graphs (reconnected by order): 2 [batch - 1] 
+2012-10-03 19:50:22.934 842258 Debug Planning begin containsScheduleInstanceTShipments... [batch - 1] 
+2012-10-03 19:50:22.936 842258 Debug Planning begin containsConsolShipments... [batch - 1] 
+2012-10-03 19:50:22.937 842258 Debug Planning begin containsPermanentShipments... [batch - 1] 
+2012-10-03 19:50:22.939 842258 Debug Planning A shipment graph with 1 order releases is solely related to the given orders and will be deleted completely. [batch - 1] 
+2012-10-03 19:50:22.939 842258 Debug Planning begin containsConsolShipments... [batch - 1] 
+2012-10-03 19:50:22.98 842258 Debug Planning Sql text: SELECT shipment_gid FROM order_movement WHERE shipment_gid IS NOT NULL AND (order_movement_gid = ?) [batch - 1] 
+2012-10-03 19:50:22.986 842258 Debug Planning No related order movements found for the gvien 1 Order Releases. [batch - 1] 
+2012-10-03 19:50:22.988 842258 Debug Planning createSimpleGraph() for [Lglog.ejb.shipment.db.ShipmentPK;@1945d5dd [batch - 1] 
+2012-10-03 19:50:22.999 842258 Debug Planning .. returning SimpleGraph: [batch - 1] 
+2012-10-03 19:50:22.999 842258 Debug Planning Simple Node: ShipmentPK = SUNNY.01037 OrderMovementPK = SUNNY.SUNNY_MS_OR2-011
+.. SSUs:
+..   SUNNY.SUNNY_MS_OR2-001-011 (1-1)
+..    ORLines:
+..        SUNNY.SUNNY_MS_OR2-001
+
+.. parents: 
+.. children: 
+ [batch - 1]
+Simple Node: ShipmentPK = SUNNY.01037 OrderMovementPK = SUNNY.SUNNY_MS_OR2-011 
+2012-10-03 19:50:22.999 842258 Debug Planning createSimpleGraph() for [Lglog.ejb.shipment.db.ShipmentPK;@1949b3ba [batch - 1] 
+2012-10-03 19:50:23.014 842258 Debug Planning .. returning SimpleGraph: [batch - 1] 
+2012-10-03 19:50:23.015 842258 Debug Planning Simple Node: ShipmentPK = SUNNY.01037 OrderMovementPK = SUNNY.SUNNY_MS_OR2-011
+.. SSUs:
+..   SUNNY.SUNNY_MS_OR2-001-011 (1-1)
+..    ORLines:
+..        SUNNY.SUNNY_MS_OR2-001
+
+.. parents: 
+.. children: 
+ [batch - 1]
+Simple Node: ShipmentPK = SUNNY.01037 OrderMovementPK = SUNNY.SUNNY_MS_OR2-011 
+2012-10-03 19:50:23.078 842258 Debug Planning Sql text: select distinct sg2.SHIP_GROUP_GID, sg2.SHIPMENT_GID from SHIP_GROUP_D sg1, SHIP_GROUP_D sg2 where sg1.SHIP_GROUP_GID = sg2.SHIP_GROUP_GID and (sg1.shipment_gid = ?) [batch - 1] 
+2012-10-03 19:50:23.08 842258 Debug Planning # orders do not have order movements: 1 [batch - 1] 
+2012-10-03 19:50:23.081 842258 Debug Planning # (permanent) order movements to be set on status: 1 [batch - 1] 
+2012-10-03 19:50:23.081 842258 Debug Planning Start commitShipmentGraph in ShipmentUpdateSessionBean ... [batch - 1] 
+2012-10-03 19:50:23.081 842258 Debug Planning Order helper object is null, return perspective:B [batch - 1] 
+2012-10-03 19:50:23.082 842258 Debug Planning unAssignOrderFunctor - order release PK: SUNNY.SUNNY_MS_OR2, perspective:B [batch - 1] 
+2012-10-03 19:50:23.082 842258 Debug Planning Checking status of OrderRelease Bean. CurrentStatus: PLANNING_PLANNED - FINAL [batch - 1] 
+2012-10-03 19:50:23.082 842258 Debug Planning DatabaseLoader is loading ShipmentData (criteria = top.shipment_gid = ?) ... [batch - 1] 
+2012-10-03 19:50:23.176 842258 Debug Planning DatabaseLoader is loading SEquipmentData (criteria = top.s_equipment_gid in (select ssej.s_equipment_gid from shipment_s_equipment_join ssej where ssej.shipment_gid = ?)) ... [batch - 1] 
+2012-10-03 19:50:23.2 842258 Debug Planning DatabaseLoader is loading SShipUnitData (criteria = top.s_ship_unit_gid in (select ssd.s_ship_unit_gid from shipment_stop_d ssd where ssd.shipment_gid = ?)) ... [batch - 1] 
+2012-10-03 19:50:23.252 842258 Debug Planning DatabaseLoader is loading ConsolData (criteria = top.consol_gid in (select sh.consol_gid from shipment sh where sh.shipment_gid = ?)) ... [batch - 1] 
+2012-10-03 19:50:23.26 842258 Debug Planning DatabaseLoader is loading OrderMovementData (criteria = top.order_movement_gid = ?) ... [batch - 1] 
+2012-10-03 19:50:23.282 842258 Debug Planning DatabaseLoader is loading SEquipmentData (criteria = top.s_equipment_gid in (select sessuj.s_equipment_gid from s_equipment_s_ship_unit_join sessuj, order_movement_d omd where sessuj.s_ship_unit_gid = omd.s_ship_unit_gid and omd.order_movement_gid = ?)) ... [batch - 1] 
+2012-10-03 19:50:23.3 842258 Debug Planning DatabaseLoader is loading SShipUnitData (criteria = top.s_ship_unit_gid in (select omd.s_ship_unit_gid from order_movement_d omd where omd.order_movement_gid = ?)) ... [batch - 1] 
+2012-10-03 19:50:23.336 842258 Debug Planning Persistence is deleting SEquipmentData in bulk ... [batch - 1] 
+2012-10-03 19:50:23.392 842258 Debug Planning Persistence is deleting OrderMovementData in bulk ... [batch - 1] 
+2012-10-03 19:50:23.461 842258 Debug Planning Persistence is deleting SShipUnitData in bulk ... [batch - 1] 
+2012-10-03 19:50:23.562 842258 Debug Planning Persistence is inserting or updating SShipUnitData (parentPk = null) in bulk ... [batch - 1] 
+2012-10-03 19:50:23.569 842258 Debug Planning Begin remove ShipmentLinks from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.573 842258 Debug Planning Begin remove ShipmentStops from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.64 842258 Debug Planning Remove ShipmentStops element for SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.693 842258 Debug Planning Remove ShipmentStops element for SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.693 842258 Debug Planning Begin remove ShipmentInfeasibilityCodes from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.698 842258 Debug Planning Begin remove ShipmentCosts from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.706 842258 Debug Planning Begin removeShipmentCostDetails from ShipmentCostBean - removing shipment_cost_detail for shipment cost: 611 [batch - 1] 
+2012-10-03 19:50:23.71 842258 Debug Planning Begin removeShipmentCostRefs from ShipmentCostBean - removing shipment_cost_refs for shipment cost: 611 [batch - 1] 
+2012-10-03 19:50:23.714 842258 Debug Planning Begin removeShipmentCostRemarks from ShipmentCostBean - removing shipment_cost_remarks for shipment cost: 611 [batch - 1] 
+2012-10-03 19:50:23.724 842258 Debug Planning Remove ShipmentCosts element for SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.724 842258 Debug Planning Begin remove ShipmentCostRefs from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.728 842258 Debug Planning Begin remove ShipmentInfCosts from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.732 842258 Debug Planning Begin remove ShipmentTexts from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.737 842258 Debug Planning Begin remove TenderCollaborations from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.742 842258 Debug Planning Begin remove ShipmentRefnums from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.753 842258 Debug Planning Remove ShipmentRefnums element for SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.76 842258 Debug Planning Remove ShipmentRefnums element for SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.76 842258 Debug Planning Begin remove SsStatusHistories from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.765 842258 Debug Planning Begin remove Allocations from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.77 842258 Debug Planning Begin remove InvoiceShipments from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.774 842258 Debug Planning Begin remove ShipmentAccessorials from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.778 842258 Debug Planning Begin remove ShipmentSpecialServicess from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.782 842258 Debug Planning Begin remove ShipmentSEquipmentJoins from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.785 842258 Debug Planning Begin remove ShipmentOrderReleaseJoins from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.79 842258 Debug Planning Begin remove ShipSpecSvcSecChargeJoin from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.794 842258 Debug Planning Begin remove ShipGroupDs from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.799 842258 Debug Planning Begin remove Secondary charge for shipments from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.804 842258 Debug Planning Begin remove Shipment Doc Print Logs from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.809 842258 Debug Planning Begin remove Om_Shipment_join for shipment from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.813 842258 Debug Planning Begin remove ContainerGroups from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.818 842258 Debug Planning Begin remove ShipCommitCountJoin from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.822 842258 Debug Planning Begin remove ShipCommitAllocJoin from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.826 842258 Debug Planning Begin remove HosDailySummary from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.829 842258 Debug Planning Begin remove GroundSchedGenD from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.837 842258 Debug Planning Begin remove ShipmentRemark from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.841 842258 Debug Planning Begin remove ShipmentInvolvedParty from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.844 842258 Debug Planning Begin remove ShipmentTrEventContact from ShipmentBean - shipment: SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:23.92 842258 Debug Planning begin updateOmShipmentGid.. [batch - 1] 
+2012-10-03 19:50:23.92 842258 Debug Planning end updateOmShipmentGid.. [batch - 1] 
+2012-10-03 19:50:23.922 842258 Debug Planning Order helper object is null, return perspective:B [batch - 1] 
+2012-10-03 19:50:23.923 842258 Debug Planning Set Status of OrderRelease: SUNNY.SUNNY_MS_OR2 to GC3_APPL_OR_UNASSIGN_ORDER. [batch - 1] 
+2012-10-03 19:50:23.925 842258 Debug Planning Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ? src:SUNNY.SUNNY_MAD/changed:false dest:SUNNY.SUNNY_BOMBAY/changed:false [batch - 1] 
+2012-10-03 19:50:23.934 842258 Debug Planning Assign Itinerary: null to OrderRelease: SUNNY.SUNNY_MS_OR2 [batch - 1] 
+2012-10-03 19:50:23.935 842258 Debug Planning Assign bulk plan ID: null to OrderRelease: SUNNY.SUNNY_MS_OR2 [batch - 1] 
+2012-10-03 19:50:23.942 842258 Debug Planning Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ? src:SUNNY.SUNNY_MAD/changed:false dest:SUNNY.SUNNY_BOMBAY/changed:false [batch - 1] 
+2012-10-03 19:50:23.958 842258 Debug Planning Successfully set order related attributes. [batch - 1] 
+2012-10-03 19:50:23.958 842258 Debug Planning Order helper object is null, return perspective:B [batch - 1] 
+2012-10-03 19:50:23.959 842258 Debug Planning Successfully set order movement related attributes. [batch - 1] 
+2012-10-03 19:50:23.959 842258 Debug Planning Order helper object is null, return perspective:B [batch - 1] 
+2012-10-03 19:50:23.959 842258 Debug Planning Successfully set order movement related attributes. [batch - 1] 
+2012-10-03 19:50:23.959 842258 Debug Planning Returning from shipment update session bean. [batch - 1] 
+2012-10-03 19:50:24.039 842258 Debug Workflow Executing topic Recalculate Order Movement Totals: pk=SUNNY.SUNNY_MS_OR2-011 [batch - 1] 
+2012-10-03 19:50:24.043 842258 Debug Workflow Starting workflow Simple Workflow (422347195) in response to Recalculate Order Movement Totals: pk=SUNNY.SUNNY_MS_OR2-011 [batch - 1] 
+2012-10-03 19:50:24.049 842258 Debug Workflow Completing workflow Simple Workflow (422347195) [batch - 1] 
+2012-10-03 19:50:24.05 842258 Debug Workflow Executing topic Recalculate Shipment Totals: pk=SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:24.053 842258 Debug Workflow Starting workflow Simple Workflow (422382742) in response to Recalculate Shipment Totals: pk=SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:24.058 842258 Debug Workflow Completing workflow Simple Workflow (422382742) [batch - 1] 
+2012-10-03 19:50:24.059 842258 Debug Workflow Executing topic Recalculate Shipment Cost Totals: pk=SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:24.062 842258 Debug Workflow Starting workflow Simple Workflow (421726118) in response to Recalculate Shipment Cost Totals: pk=SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:24.067 842258 Debug Workflow Completing workflow Simple Workflow (421726118) [batch - 1] 
+2012-10-03 19:50:24.068 842258 Debug Workflow Executing topic Recalculate Shipment Equipment: pk=SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:24.071 842258 Debug Workflow Starting workflow Simple Workflow (421770504) in response to Recalculate Shipment Equipment: pk=SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:24.076 842258 Debug Workflow Completing workflow Simple Workflow (421770504) [batch - 1] 
+2012-10-03 19:50:24.077 842258 Debug Workflow Executing topic Recalculate Shipment Stop Fields: pk=SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:24.08 842258 Debug Workflow Starting workflow Simple Workflow (421855042) in response to Recalculate Shipment Stop Fields: pk=SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:24.086 842258 Debug Workflow Completing workflow Simple Workflow (421855042) [batch - 1] 
+2012-10-03 19:50:24.088 842258 Debug Workflow Executing topic Recalculate SShipUnit Totals: pk=SUNNY.SUNNY_MS_OR2-001-011 [batch - 1] 
+2012-10-03 19:50:24.093 842258 Debug Workflow Starting workflow Simple Workflow (421930345) in response to Recalculate SShipUnit Totals: pk=SUNNY.SUNNY_MS_OR2-001-011 [batch - 1] 
+2012-10-03 19:50:24.1 842258 Debug Workflow Completing workflow Simple Workflow (421930345) [batch - 1] 
+2012-10-03 19:50:24.101 842258 Debug Workflow Executing topic Recalculate Shipment Order Release Totals: pk=SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:24.108 842258 Debug Workflow Starting workflow Simple Workflow (421991793) in response to Recalculate Shipment Order Release Totals: pk=SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:24.115 842258 Debug Workflow Completing workflow Simple Workflow (421991793) [batch - 1] 
+2012-10-03 19:50:24.116 842258 Debug Workflow Executing topic Remove Monitor Profiles: pk=SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:24.12 842258 Debug Workflow Starting workflow Simple Workflow (422034105) in response to Remove Monitor Profiles: pk=SUNNY.01037 [batch - 1] 
+2012-10-03 19:50:24.127 842258 Debug Workflow Completing workflow Simple Workflow (422034105) [batch - 1] 
+2012-10-03 19:50:24.148 842258 Debug Planning begin containsScheduleInstanceTShipments... [batch - 1] 
+2012-10-03 19:50:24.151 842258 Debug Planning begin containsConsolShipments... [batch - 1] 
+2012-10-03 19:50:24.152 842258 Debug Planning begin containsPermanentShipments... [batch - 1] 
+2012-10-03 19:50:24.16 842258 Debug Planning A shipment graph with 1 order releases is solely related to the given orders and will be deleted completely. [batch - 1] 
+2012-10-03 19:50:24.161 842258 Debug Planning begin containsConsolShipments... [batch - 1] 
+2012-10-03 19:50:24.204 842258 Debug Planning Sql text: SELECT shipment_gid FROM order_movement WHERE shipment_gid IS NOT NULL AND (order_movement_gid = ?) [batch - 1] 
+2012-10-03 19:50:24.21 842258 Debug Planning No related order movements found for the gvien 1 Order Releases. [batch - 1] 
+2012-10-03 19:50:24.211 842258 Debug Planning createSimpleGraph() for [Lglog.ejb.shipment.db.ShipmentPK;@19211735 [batch - 1] 
+2012-10-03 19:50:24.222 842258 Debug Planning .. returning SimpleGraph: [batch - 1] 
+2012-10-03 19:50:24.222 842258 Debug Planning Simple Node: ShipmentPK = SUNNY.01036 OrderMovementPK = SUNNY.SUNNY_MS_OR1-011
+.. SSUs:
+..   SUNNY.SUNNY_MS_OR1-001-011 (1-1)
+..    ORLines:
+..        SUNNY.SUNNY_MS_OR1-001
+
+.. parents: 
+.. children: 
+ [batch - 1]
+Simple Node: ShipmentPK = SUNNY.01036 OrderMovementPK = SUNNY.SUNNY_MS_OR1-011 
+2012-10-03 19:50:24.222 842258 Debug Planning createSimpleGraph() for [Lglog.ejb.shipment.db.ShipmentPK;@19631d68 [batch - 1] 
+2012-10-03 19:50:24.233 842258 Debug Planning .. returning SimpleGraph: [batch - 1] 
+2012-10-03 19:50:24.233 842258 Debug Planning Simple Node: ShipmentPK = SUNNY.01036 OrderMovementPK = SUNNY.SUNNY_MS_OR1-011
+.. SSUs:
+..   SUNNY.SUNNY_MS_OR1-001-011 (1-1)
+..    ORLines:
+..        SUNNY.SUNNY_MS_OR1-001
+
+.. parents: 
+.. children: 
+ [batch - 1]
+Simple Node: ShipmentPK = SUNNY.01036 OrderMovementPK = SUNNY.SUNNY_MS_OR1-011 
+2012-10-03 19:50:24.288 842258 Debug Planning Sql text: select distinct sg2.SHIP_GROUP_GID, sg2.SHIPMENT_GID from SHIP_GROUP_D sg1, SHIP_GROUP_D sg2 where sg1.SHIP_GROUP_GID = sg2.SHIP_GROUP_GID and (sg1.shipment_gid = ?) [batch - 1] 
+2012-10-03 19:50:24.29 842258 Debug Planning # orders do not have order movements: 1 [batch - 1] 
+2012-10-03 19:50:24.29 842258 Debug Planning # (permanent) order movements to be set on status: 1 [batch - 1] 
+2012-10-03 19:50:24.291 842258 Debug Planning Start commitShipmentGraph in ShipmentUpdateSessionBean ... [batch - 1] 
+2012-10-03 19:50:24.291 842258 Debug Planning Order helper object is null, return perspective:B [batch - 1] 
+2012-10-03 19:50:24.292 842258 Debug Planning unAssignOrderFunctor - order release PK: SUNNY.SUNNY_MS_OR1, perspective:B [batch - 1] 
+2012-10-03 19:50:24.292 842258 Debug Planning Checking status of OrderRelease Bean. CurrentStatus: PLANNING_PLANNED - FINAL [batch - 1] 
+2012-10-03 19:50:24.292 842258 Debug Planning DatabaseLoader is loading ShipmentData (criteria = top.shipment_gid = ?) ... [batch - 1] 
+2012-10-03 19:50:24.378 842258 Debug Planning DatabaseLoader is loading SEquipmentData (criteria = top.s_equipment_gid in (select ssej.s_equipment_gid from shipment_s_equipment_join ssej where ssej.shipment_gid = ?)) ... [batch - 1] 
+2012-10-03 19:50:24.394 842258 Debug Planning DatabaseLoader is loading SShipUnitData (criteria = top.s_ship_unit_gid in (select ssd.s_ship_unit_gid from shipment_stop_d ssd where ssd.shipment_gid = ?)) ... [batch - 1] 
+2012-10-03 19:50:24.428 842258 Debug Planning DatabaseLoader is loading ConsolData (criteria = top.consol_gid in (select sh.consol_gid from shipment sh where sh.shipment_gid = ?)) ... [batch - 1] 
+2012-10-03 19:50:24.434 842258 Debug Planning DatabaseLoader is loading OrderMovementData (criteria = top.order_movement_gid = ?) ... [batch - 1] 
+2012-10-03 19:50:24.447 842258 Debug Planning DatabaseLoader is loading SEquipmentData (criteria = top.s_equipment_gid in (select sessuj.s_equipment_gid from s_equipment_s_ship_unit_join sessuj, order_movement_d omd where sessuj.s_ship_unit_gid = omd.s_ship_unit_gid and omd.order_movement_gid = ?)) ... [batch - 1] 
+2012-10-03 19:50:24.459 842258 Debug Planning DatabaseLoader is loading SShipUnitData (criteria = top.s_ship_unit_gid in (select omd.s_ship_unit_gid from order_movement_d omd where omd.order_movement_gid = ?)) ... [batch - 1] 
+2012-10-03 19:50:24.483 842258 Debug Planning Persistence is deleting SEquipmentData in bulk ... [batch - 1] 
+2012-10-03 19:50:24.531 842258 Debug Planning Persistence is deleting OrderMovementData in bulk ... [batch - 1] 
+2012-10-03 19:50:24.588 842258 Debug Planning Persistence is deleting SShipUnitData in bulk ... [batch - 1] 
+2012-10-03 19:50:24.684 842258 Debug Planning Persistence is inserting or updating SShipUnitData (parentPk = null) in bulk ... [batch - 1] 
+2012-10-03 19:50:24.69 842258 Debug Planning Begin remove ShipmentLinks from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.692 842258 Debug Planning Begin remove ShipmentStops from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.746 842258 Debug Planning Remove ShipmentStops element for SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.786 842258 Debug Planning Remove ShipmentStops element for SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.786 842258 Debug Planning Begin remove ShipmentInfeasibilityCodes from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.789 842258 Debug Planning Begin remove ShipmentCosts from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.795 842258 Debug Planning Begin removeShipmentCostDetails from ShipmentCostBean - removing shipment_cost_detail for shipment cost: 610 [batch - 1] 
+2012-10-03 19:50:24.798 842258 Debug Planning Begin removeShipmentCostRefs from ShipmentCostBean - removing shipment_cost_refs for shipment cost: 610 [batch - 1] 
+2012-10-03 19:50:24.8 842258 Debug Planning Begin removeShipmentCostRemarks from ShipmentCostBean - removing shipment_cost_remarks for shipment cost: 610 [batch - 1] 
+2012-10-03 19:50:24.808 842258 Debug Planning Remove ShipmentCosts element for SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.808 842258 Debug Planning Begin remove ShipmentCostRefs from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.811 842258 Debug Planning Begin remove ShipmentInfCosts from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.813 842258 Debug Planning Begin remove ShipmentTexts from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.817 842258 Debug Planning Begin remove TenderCollaborations from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.819 842258 Debug Planning Begin remove ShipmentRefnums from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.828 842258 Debug Planning Remove ShipmentRefnums element for SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.832 842258 Debug Planning Remove ShipmentRefnums element for SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.833 842258 Debug Planning Begin remove SsStatusHistories from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.836 842258 Debug Planning Begin remove Allocations from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.839 842258 Debug Planning Begin remove InvoiceShipments from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.841 842258 Debug Planning Begin remove ShipmentAccessorials from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.844 842258 Debug Planning Begin remove ShipmentSpecialServicess from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.846 842258 Debug Planning Begin remove ShipmentSEquipmentJoins from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.848 842258 Debug Planning Begin remove ShipmentOrderReleaseJoins from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.851 842258 Debug Planning Begin remove ShipSpecSvcSecChargeJoin from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.854 842258 Debug Planning Begin remove ShipGroupDs from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.856 842258 Debug Planning Begin remove Secondary charge for shipments from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.86 842258 Debug Planning Begin remove Shipment Doc Print Logs from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.863 842258 Debug Planning Begin remove Om_Shipment_join for shipment from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.866 842258 Debug Planning Begin remove ContainerGroups from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.869 842258 Debug Planning Begin remove ShipCommitCountJoin from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.871 842258 Debug Planning Begin remove ShipCommitAllocJoin from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.874 842258 Debug Planning Begin remove HosDailySummary from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.877 842258 Debug Planning Begin remove GroundSchedGenD from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.885 842258 Debug Planning Begin remove ShipmentRemark from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.887 842258 Debug Planning Begin remove ShipmentInvolvedParty from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.89 842258 Debug Planning Begin remove ShipmentTrEventContact from ShipmentBean - shipment: SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:24.954 842258 Debug Planning begin updateOmShipmentGid.. [batch - 1] 
+2012-10-03 19:50:24.954 842258 Debug Planning end updateOmShipmentGid.. [batch - 1] 
+2012-10-03 19:50:24.956 842258 Debug Planning Order helper object is null, return perspective:B [batch - 1] 
+2012-10-03 19:50:24.956 842258 Debug Planning Set Status of OrderRelease: SUNNY.SUNNY_MS_OR1 to GC3_APPL_OR_UNASSIGN_ORDER. [batch - 1] 
+2012-10-03 19:50:24.958 842258 Debug Planning Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ? src:SUNNY.SUNNY_MAD/changed:false dest:SUNNY.SUNNY_BANGALORE/changed:false [batch - 1] 
+2012-10-03 19:50:24.965 842258 Debug Planning Assign Itinerary: null to OrderRelease: SUNNY.SUNNY_MS_OR1 [batch - 1] 
+2012-10-03 19:50:24.965 842258 Debug Planning Assign bulk plan ID: null to OrderRelease: SUNNY.SUNNY_MS_OR1 [batch - 1] 
+2012-10-03 19:50:24.967 842258 Debug Planning Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ? src:SUNNY.SUNNY_MAD/changed:false dest:SUNNY.SUNNY_BANGALORE/changed:false [batch - 1] 
+2012-10-03 19:50:24.98 842258 Debug Planning Successfully set order related attributes. [batch - 1] 
+2012-10-03 19:50:24.98 842258 Debug Planning Order helper object is null, return perspective:B [batch - 1] 
+2012-10-03 19:50:24.98 842258 Debug Planning Successfully set order movement related attributes. [batch - 1] 
+2012-10-03 19:50:24.98 842258 Debug Planning Order helper object is null, return perspective:B [batch - 1] 
+2012-10-03 19:50:24.981 842258 Debug Planning Successfully set order movement related attributes. [batch - 1] 
+2012-10-03 19:50:24.981 842258 Debug Planning Returning from shipment update session bean. [batch - 1] 
+2012-10-03 19:50:25.068 842258 Debug Workflow Executing topic Recalculate Order Movement Totals: pk=SUNNY.SUNNY_MS_OR1-011 [batch - 1] 
+2012-10-03 19:50:25.071 842258 Debug Workflow Starting workflow Simple Workflow (427995013) in response to Recalculate Order Movement Totals: pk=SUNNY.SUNNY_MS_OR1-011 [batch - 1] 
+2012-10-03 19:50:25.077 842258 Debug Workflow Completing workflow Simple Workflow (427995013) [batch - 1] 
+2012-10-03 19:50:25.078 842258 Debug Workflow Executing topic Recalculate Shipment Totals: pk=SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:25.081 842258 Debug Workflow Starting workflow Simple Workflow (428029814) in response to Recalculate Shipment Totals: pk=SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:25.086 842258 Debug Workflow Completing workflow Simple Workflow (428029814) [batch - 1] 
+2012-10-03 19:50:25.087 842258 Debug Workflow Executing topic Recalculate Shipment Cost Totals: pk=SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:25.09 842258 Debug Workflow Starting workflow Simple Workflow (428065887) in response to Recalculate Shipment Cost Totals: pk=SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:25.095 842258 Debug Workflow Completing workflow Simple Workflow (428065887) [batch - 1] 
+2012-10-03 19:50:25.096 842258 Debug Workflow Executing topic Recalculate Shipment Equipment: pk=SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:25.099 842258 Debug Workflow Starting workflow Simple Workflow (428102352) in response to Recalculate Shipment Equipment: pk=SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:25.104 842258 Debug Workflow Completing workflow Simple Workflow (428102352) [batch - 1] 
+2012-10-03 19:50:25.105 842258 Debug Workflow Executing topic Recalculate Shipment Stop Fields: pk=SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:25.108 842258 Debug Workflow Starting workflow Simple Workflow (428138877) in response to Recalculate Shipment Stop Fields: pk=SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:25.113 842258 Debug Workflow Completing workflow Simple Workflow (428138877) [batch - 1] 
+2012-10-03 19:50:25.114 842258 Debug Workflow Executing topic Recalculate SShipUnit Totals: pk=SUNNY.SUNNY_MS_OR1-001-011 [batch - 1] 
+2012-10-03 19:50:25.117 842258 Debug Workflow Starting workflow Simple Workflow (427939977) in response to Recalculate SShipUnit Totals: pk=SUNNY.SUNNY_MS_OR1-001-011 [batch - 1] 
+2012-10-03 19:50:25.121 842258 Debug Workflow Completing workflow Simple Workflow (427939977) [batch - 1] 
+2012-10-03 19:50:25.122 842258 Debug Workflow Executing topic Recalculate Shipment Order Release Totals: pk=SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:25.125 842258 Debug Workflow Starting workflow Simple Workflow (427738941) in response to Recalculate Shipment Order Release Totals: pk=SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:25.13 842258 Debug Workflow Completing workflow Simple Workflow (427738941) [batch - 1] 
+2012-10-03 19:50:25.131 842258 Debug Workflow Executing topic Remove Monitor Profiles: pk=SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:25.134 842258 Debug Workflow Starting workflow Simple Workflow (427774321) in response to Remove Monitor Profiles: pk=SUNNY.01036 [batch - 1] 
+2012-10-03 19:50:25.139 842258 Debug Workflow Completing workflow Simple Workflow (427774321) [batch - 1] 
+2012-10-03 19:50:25.149 842258 Debug Planning Number of shipment graphs left to unassign orders: 0 [batch - 1] 
+2012-10-03 19:50:25.207 842258 Debug Planning End unassignUnassignableOrders [batch - 1] 
+2012-10-03 19:50:25.212 842258 Debug Planning Total Total 2 orders ready for bulk planning. TBulkPlanResult:<BulkPlanResult bulk Plan Gid = SUNNY.20121003-0012
+<-- Order Release Statistics -->
+ Num Of Order Releases Selected = 2
+ Num Of Order Releases Unassigned = 0
+ Num Of Order Releases Planned = 0
+ Num Of Order Releases Failed To Plan = 0
+<-- Order Movement Statistics -->
+ Num Of Order Movements Selected = 0
+ Num Of Order Movements Unassigned = 0
+ Num Of Order Movements Planned = 0
+ Num Of Order Movements Failed To Plan = 0
+<-- Shipment Statistics -->
+ Num Of Shipments Built = 0
+ Start Time = 2012-10-03 19:50:22 Asia/Calcutta
+ End Time = null > [batch - 1]
+Total Total 2 orders ready for bulk planning. TBulkPlanResult:<BulkPlanResult bulk Plan Gid = SUNNY.20121003-0012 
+2012-10-03 19:50:25.212 842258 Debug Planning Planning parameter: Max Num of Replan:0; num of replan allowed:0 [batch - 1] 
+2012-10-03 19:50:25.212 842258 Debug Planning Start to plan unassigned orders for bulk plan: SUNNY.20121003-0012. [batch - 1] 
+2012-10-03 19:50:25.213 842258 Debug Planning Bulk plan run #1 [batch - 1] 
+2012-10-03 19:50:25.213 842258 Debug Planning Begin computeLocCapPlanningWindow... [batch - 1] 
+2012-10-03 19:50:25.213 842258 Debug Planning End computeLocCapPlanningWindow... [batch - 1] 
+2012-10-03 19:50:25.213 842258 Debug Planning DatabaseLoader is loading OrderReleaseData (criteria = top_t.order_release_gid IN ('SUNNY.SUNNY_MS_OR1','SUNNY.SUNNY_MS_OR2')) ... [batch - 1] 
+2012-10-03 19:50:25.358 842258 Debug Planning Load TItinerary for itineraryPK: SUNNY.SUNNY_MS_ITI [batch - 1] 
+2012-10-03 19:50:25.376 842258 Debug Planning begin getMostFavorableItinerary... [batch - 1] 
+2012-10-03 19:50:25.376 842258 Debug Planning # itineraries not empty: 1 [batch - 1] 
+2012-10-03 19:50:25.376 842258 Debug Planning bestItinerary: SUNNY.SUNNY_MS_ITI [batch - 1] 
+2012-10-03 19:50:25.376 842258 Debug Planning is multistop: true [batch - 1] 
+2012-10-03 19:50:25.376 842258 Debug Planning # of order in this itinerary: 2 [batch - 1] 
+2012-10-03 19:50:25.377 842258 Debug Planning total weight: 40.0 LB [batch - 1] 
+2012-10-03 19:50:25.377 842258 Debug Planning total volume: 4.0 CUFT [batch - 1] 
+2012-10-03 19:50:25.382 842258 Debug Planning Planning parameters for this bulkplan: [batch - 1] 
+2012-10-03 19:50:25.382 842258 Debug Planning rate distance gid: ESTIMATE [batch - 1] 
+2012-10-03 19:50:25.383 842258 Debug Planning preferXDockThanDirectShipmentsFlag: false [batch - 1] 
+2012-10-03 19:50:25.383 842258 Debug Planning minBundlingTimeWindowOverlapForXDockPool: 1.0 D [batch - 1] 
+2012-10-03 19:50:25.383 842258 Debug Planning optimizePoolByNumOfOrders: false [batch - 1] 
+2012-10-03 19:50:25.383 842258 Debug Planning planningGroupRunXDockPostLTLSplitConsolidate: Runs XDock Post LTL split cons [batch - 1] 
+2012-10-03 19:50:25.383 842258 Debug Planning allowSmallDirectOrderToBeSplittable: false [batch - 1] 
+2012-10-03 19:50:25.383 842258 Debug Planning buildDirectShipmentOption: 3 [batch - 1] 
+2012-10-03 19:50:25.383 842258 Debug Planning planThruPoolBeforeXDock: true [batch - 1] 
+2012-10-03 19:50:25.383 842258 Debug Planning performPoolSwapping: true [batch - 1] 
+2012-10-03 19:50:25.383 842258 Debug Planning computeShipmentTimeWindow: false [batch - 1] 
+2012-10-03 19:50:25.384 842258 Debug Planning minInboundUnloadTimeAtXDock: 0.0 S [batch - 1] 
+2012-10-03 19:50:25.384 842258 Debug Planning multistopFavorSameDownstreamShipment: false [batch - 1] 
+2012-10-03 19:50:25.384 842258 Debug Planning multistopPoolLinehaulShipmentWithDirect: false [batch - 1] 
+2012-10-03 19:50:25.384 842258 Debug Planning multistopPoolLinehaulWithDirectAllAtOnce: false [batch - 1] 
+2012-10-03 19:50:25.384 842258 Debug Planning multistopXDockInboundShipmentWithDirect: false [batch - 1] 
+2012-10-03 19:50:25.384 842258 Debug Planning performCostBasedPoolXDockSelection: false [batch - 1] 
+2012-10-03 19:50:25.385 842258 Debug Planning logisticsGuidePK: NO LOGISTICS GUIDE EXISTS [batch - 1] 
+2012-10-03 19:50:25.385 842258 Debug Planning # order bundles to be planned in this itinerary is: 2 [batch - 1] 
+2012-10-03 19:50:25.385 842258 Debug Planning Number of orderBundles: 2 [batch - 1] 
+2012-10-03 19:50:25.386 842258 Debug Planning Order releases on one bundle: |SUNNY.SUNNY_MS_OR2| [batch - 1] 
+2012-10-03 19:50:25.386 842258 Debug Planning tOrderBundle early pickup: 2012-10-03 14:20:22 UTC [batch - 1] 
+2012-10-03 19:50:25.386 842258 Debug Planning tOrderBundle late pickup: 2012-11-02 14:20:22 UTC [batch - 1] 
+2012-10-03 19:50:25.386 842258 Debug Planning tOrderBundle early delivery: 2012-10-03 14:20:22 UTC [batch - 1] 
+2012-10-03 19:50:25.387 842258 Debug Planning tOrderBundle late delivery: 2012-11-02 14:20:22 UTC [batch - 1] 
+2012-10-03 19:50:25.387 842258 Debug Planning Order releases on one bundle: |SUNNY.SUNNY_MS_OR1| [batch - 1] 
+2012-10-03 19:50:25.387 842258 Debug Planning tOrderBundle early pickup: 2012-10-03 14:20:22 UTC [batch - 1] 
+2012-10-03 19:50:25.387 842258 Debug Planning tOrderBundle late pickup: 2012-11-02 14:20:22 UTC [batch - 1] 
+2012-10-03 19:50:25.387 842258 Debug Planning tOrderBundle early delivery: 2012-10-03 14:20:22 UTC [batch - 1] 
+2012-10-03 19:50:25.387 842258 Debug Planning tOrderBundle late delivery: 2012-11-02 14:20:22 UTC [batch - 1] 
+2012-10-03 19:50:25.388 842258 Debug Planning Number of orderBundles must ship thru xdock: 0 [batch - 1] 
+2012-10-03 19:50:25.388 842258 Debug Planning Number of orderBundles must ship thru xdock but no xdock specified: 0 [batch - 1] 
+2012-10-03 19:50:25.388 842258 Debug Planning Number of orderBundles must ship thru pool: 0 [batch - 1] 
+2012-10-03 19:50:25.388 842258 Debug Planning allowSmallDirectOrderToBeSplittable: false [batch - 1] 
+2012-10-03 19:50:25.389 842258 Debug Planning Check equipment capacity in equipment reference units: false [batch - 1] 
+2012-10-03 19:50:25.389 842258 Debug Planning Check equipment capacity in equipment reference units: false [batch - 1] 
+2012-10-03 19:50:25.389 842258 Debug Planning  There were 2 order bundle need to be splited [batch - 1]
+ 
+2012-10-03 19:50:25.389 842258 Debug Planning Begin makeDirectShipmentsForLargeBundles... [batch - 1] 
+2012-10-03 19:50:25.392 842258 Debug Planning ********** Begin buildTShipments for OrderBundle: |SUNNY.SUNNY_MS_OR2| with 1 itineraries. [batch - 1] 
+2012-10-03 19:50:25.392 842258 Debug Planning Begin buildTShipmentGraphCollection for OrderBundle: |SUNNY.SUNNY_MS_OR2| with 1 itineraries. [batch - 1] 
+2012-10-03 19:50:25.392 842258 Debug Planning -> Evaluating itinerary: SUNNY.SUNNY_MS_ITI [batch - 1] 
+2012-10-03 19:50:25.392 842258 Debug Planning ***** Begin building TItineraries for itineraryPK:SUNNY.SUNNY_MS_ITI ***** [batch - 1] 
+2012-10-03 19:50:25.393 842258 Debug Planning Begin building TLegHeaders for TItineraryFactory. [batch - 1] 
+2012-10-03 19:50:25.412 842258 Debug Planning Itinerary has only 1 leg, so created only TLegHeader: TLegHeader: { 
+2012-10-03 19:50:25.412 842258 Debug Planning ****** Begin building TLegSets in TLegFactory (TLegSet is one combination of valid locations for a Leg) ****** [batch - 1] 
+2012-10-03 19:50:25.412 842258 Debug Planning Maximum Number of TLetSets: 25 [batch - 1] 
+2012-10-03 19:50:25.413 842258 Debug Planning Adding TLegSet:, Leg #1 {SUNNY.102, SourceLocationPK: SUNNY.SUNNY_MAD, DestLocationPK: SUNNY.SUNNY_BOMBAY} to list of valid location combinations. [batch - 1] 
+2012-10-03 19:50:25.413 842258 Debug Planning ****** Returning 1 TLegSets from TLegFactory ****** [batch - 1] 
+2012-10-03 19:50:25.413 842258 Debug Planning ***** Returning 1 TItineraries (1 TItinerary for each different location combination)***** [batch - 1] 
+2012-10-03 19:50:25.413 842258 Debug Planning Find best shipping option for itinerary: SUNNY.SUNNY_MS_ITI with the following legs: [batch - 1] 
+2012-10-03 19:50:25.414 842258 Debug Planning Build TShipments on tLeg: SUNNY.102 from SUNNY.SUNNY_MAD to SUNNY.SUNNY_BOMBAY with start time 2012-10-03 14:20:22 UTC [batch - 1] 
+2012-10-03 19:50:25.414 842258 Debug Planning Begin create equipment options on leg: SUNNY.102 [batch - 1] 
+2012-10-03 19:50:25.414 842258 Debug Planning ----> WORKING ON LEG: {SUNNY.102, SourceLocationPK: SUNNY.SUNNY_MAD, DestLocationPK: SUNNY.SUNNY_BOMBAY} [batch - 1] 
+2012-10-03 19:50:25.414 842258 Debug Planning Creating equipment options: [batch - 1] 
+2012-10-03 19:50:25.414 842258 Debug Planning Equipment Assignment Type: N [batch - 1] 
+2012-10-03 19:50:25.414 842258 Debug Planning Is this an Order Movement Bundle: false [batch - 1] 
+2012-10-03 19:50:25.414 842258 Debug Planning Order has OR Equipments: false [batch - 1] 
+2012-10-03 19:50:25.415 842258 Debug Planning End create equipment options on leg: SUNNY.102 [batch - 1] 
+2012-10-03 19:50:25.415 842258 Debug Planning Creating leg options ... [batch - 1] 
+2012-10-03 19:50:25.415 842258 Debug Planning Creating leg options for leg SUNNY.102 with 1 equipment options. [batch - 1] 
+2012-10-03 19:50:25.415 842258 Debug Planning No source VIA locations on leg SUNNY.102 [batch - 1] 
+2012-10-03 19:50:25.415 842258 Debug Planning No dest VIA locations on leg SUNNY.102 [batch - 1] 
+2012-10-03 19:50:25.415 842258 Debug Planning Creating Leg Option with Equipment Option: Number of tSEquipments: 1
+--> SEquipmentGid: null, EquipmentGroup: null(428899063)   contains 1 TSShipUnits. unit: 1 428469221 created from ShipUnit: SUNNY.SUNNY_MS_OR2-001 ..range = 1-1
+PrevEquipmentOption: 
+NextEquipmentOptions: 
+tSShipUnitMap: {428469221 created from ShipUnit: SUNNY.SUNNY_MS_OR2-001 ..range = 1-1=[null]} and Arb option: NO_ARB  sourceViaLocation: null, destViaLocation null [batch - 1]
+Creating Leg Option with Equipment Option: Number of tSEquipments: 1 
+2012-10-03 19:50:25.416 842258 Debug Planning 1 leg options are created ... [batch - 1] 
+2012-10-03 19:50:25.416 842258 Debug Planning Creating TShipments on the leg ... [batch - 1] 
+2012-10-03 19:50:25.416 842258 Debug Planning Flag Create_Single_Shipment on leg: SUNNY.102 is false [batch - 1] 
+2012-10-03 19:50:25.416 842258 Debug Planning 1 TSEquipments on leg option 428982911. [batch - 1] 
+2012-10-03 19:50:25.416 842258 Debug Planning 1th TSEquipment: SEquipmentGid: null, EquipmentGroup: null(428899063) contains 1 TSShipUnits. unit: 1 428469221 created from ShipUnit: SUNNY.SUNNY_MS_OR2-001 ..range = 1-1 [batch - 1] 
+2012-10-03 19:50:25.417 842258 Debug Planning Creating new TShipment 429023186 for TSEquipment SEquipmentGid: null, EquipmentGroup: null(428899063) contains 1 TSShipUnits. unit: 1 428469221 created from ShipUnit: SUNNY.SUNNY_MS_OR2-001 ..range = 1-1. [batch - 1] 
+2012-10-03 19:50:25.429 842258 Debug Planning Begin insertViaPoints... [batch - 1] 
+2012-10-03 19:50:25.43 842258 Debug Planning leg: SUNNY.102 [batch - 1] 
+2012-10-03 19:50:25.43 842258 Debug Planning No Via Points, returning [batch - 1] 
+2012-10-03 19:50:25.43 842258 Debug Planning SQL Find LegInterimPoints by LegPK: select distinct lip.leg_gid, lip.seq_no from leg_interim_point lip where lip.leg_gid = ? order by lip.seq_no. [batch - 1] 
+2012-10-03 19:50:25.436 842258 Debug Planning # of interim points for leg: SUNNY.102 is: 0 [batch - 1] 
+2012-10-03 19:50:25.437 842258 Debug Planning Calculating and set cost for the leg ... [batch - 1] 
+2012-10-03 19:50:25.437 842258 Debug Planning There are 1 TShipments on leg option 428982911. [batch - 1] 
+2012-10-03 19:50:25.438 842258 Debug Planning 1th TShipment 429023186 [batch - 1] 
+2012-10-03 19:50:25.438 842258 Debug Planning RateFinder.findCommonFeasibleRateEngineResult(): Entering find common feasible rate engine result for 1 tShipments. [batch - 1] 
+2012-10-03 19:50:25.438 842258 Debug Planning RateFinder.findCommonFeasibleRateEngineResult(): Calculating cost for TShipment 1. [batch - 1] 
+2012-10-03 19:50:25.454 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): Begin Finding Valid Rate Geos ... [batch - 1] 
+2012-10-03 19:50:25.454 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): ShipmentGid (if any) = <null> [batch - 1] 
+2012-10-03 19:50:25.454 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): rateOfferingPKs = <null> [batch - 1] 
+2012-10-03 19:50:25.455 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): rateOfferingRuleSetGid = <null> [batch - 1] 
+2012-10-03 19:50:25.455 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): rateGeoRuleSetTGid = <null> [batch - 1] 
+2012-10-03 19:50:25.455 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): usePreferredRates = <true> [batch - 1] 
+2012-10-03 19:50:25.455 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): usePreferredRatesOnly = <false> [batch - 1] 
+2012-10-03 19:50:25.455 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): checkCmRating = <false> [batch - 1] 
+2012-10-03 19:50:25.455 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): useRouteExecutionRates = <false> [batch - 1] 
+2012-10-03 19:50:25.455 842258 Debug Planning RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates : <true> [batch - 1] 
+2012-10-03 19:50:25.456 842258 Debug Planning RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates Only : <false> [batch - 1] 
+2012-10-03 19:50:25.456 842258 Debug Planning RateGeoFinderSession.findCompositeRateGeoPKs(): Begin looking for preferred rates... [batch - 1] 
+2012-10-03 19:50:25.456 842258 Debug Planning RateGeoFinderSession.findCompositeRateGeoPKs(): No preferred rates are found. [batch - 1] 
+2012-10-03 19:50:25.456 842258 Debug Planning RateGeoFinderSession.findCompositeRateGeoPKs(): End looking for preferred rates. [batch - 1] 
+2012-10-03 19:50:25.456 842258 Debug Planning ********************************************************************* [batch - 1] 
+2012-10-03 19:50:25.457 842258 Debug Planning Rule Manager begin evaluating 1 entities [batch - 1] 
+2012-10-03 19:50:25.461 842258 Debug Planning RateOfferingUOMRule.check: No constraints specified, returning true. [batch - 1] 
+2012-10-03 19:50:25.462 842258 Debug Planning Current time at first stop of time zone: Asia/Calcutta is: 2012-10-03 19:50:25 Asia/Calcutta [batch - 1] 
+2012-10-03 19:50:25.462 842258 Debug Planning Shipment start time: null [batch - 1] 
+2012-10-03 19:50:25.462 842258 Debug Planning Shipment earliest possible start time: 2012-10-03 19:50:22 Asia/Calcutta [batch - 1] 
+2012-10-03 19:50:25.463 842258 Debug Planning EstimatedTenderTime: 2012-10-03 20:50:25 Asia/Calcutta [batch - 1] 
+2012-10-03 19:50:25.463 842258 Debug Planning EstimatedTenderLeadTime (statTime - estimatedTenderTime): -1 Hours 0 Minutes -4 Seconds [batch - 1] 
+2012-10-03 19:50:25.463 842258 Debug Planning Entity: SUNNY.SUNNY_MS_RO passed [batch - 1] 
+2012-10-03 19:50:25.463 842258 Debug Planning Rule Manager returning with 1 entities [batch - 1] 
+2012-10-03 19:50:25.463 842258 Debug Planning RateGeoFinderSession.getCustomerValidTRateOfferings(): Validating rate offering customer domain profiles against shipment/order domain names. [batch - 1] 
+2012-10-03 19:50:25.465 842258 Debug Planning Special service needed: UNLOAD [batch - 1] 
+2012-10-03 19:50:25.465 842258 Debug Planning Special service needed: LOAD [batch - 1] 
+2012-10-03 19:50:25.465 842258 Debug Planning The RateGeo and RateOffering DID support all of the needed special service codes, returning true... [batch - 1] 
+2012-10-03 19:50:25.466 842258 Debug Planning Rate Geo: SUNNY.SUNNY_MS_RR/Rate service: SUNNY.SUNNY_MS_RS [batch - 1] 
+2012-10-03 19:50:25.466 842258 Debug Planning RateServiceGidConstraint = <null> [batch - 1] 
+2012-10-03 19:50:25.466 842258 Debug Planning SUNNY.102 leg classification = null isPrimary = true. Checking for Rate Service Constraint on Order Bundle. [batch - 1] 
+2012-10-03 19:50:25.466 842258 Debug Planning RateGeoFinderSession.getCustomerValidTRateGeos() [batch - 1] 
+2012-10-03 19:50:25.466 842258 Debug Planning RateGeoFinderSession.getCustomerValidTRateGeos(): Returning: [batch - 1] 
+2012-10-03 19:50:25.467 842258 Debug Planning RateGeoFinderSession.getCustomerValidTRateGeos(): RateGeo <RateGeoFinderResult: tRateGeo = <SUNNY.SUNNY_MS_RR>, composite = <CompositeRateGeoPK: key = <TL|109|89|1346486400000|1504857600000>, hashCode = <-1648669243>, rgSeq = <89>, rgGid = <SUNNY.SUNNY_MS_RR>, roSeq = <109>, roGid = <SUNNY.SUNNY_MS_RO>, rank = <23>, transportModeGid = <TL>, effDate = <2012-09-01 08:00:00 UTC>, expDate = <2017-09-08 08:00:00 UTC>, servprovGid = <null>>, isPreferred = <false>> [batch - 1] 
+2012-10-03 19:50:25.467 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): Complete Finding Valid Rate Geos ... [batch - 1] 
+2012-10-03 19:50:25.467 842258 Debug Planning RateFinder.findShipmentCosts(): rateGeos [SUNNY.SUNNY_MS_RR] [batch - 1] 
+2012-10-03 19:50:25.472 842258 Debug Planning TShipment.InitAccessorials(): Shipment accessorial map is {} [batch - 1] 
+2012-10-03 19:50:25.474 842258 Debug Planning RateFinder.findShipmentCosts(): Total 1 rate engine result(s) returned from RateEngine. [batch - 1] 
+2012-10-03 19:50:25.474 842258 Debug Planning RateFinder.findShipmentCosts(): # feasible rateEngineResults = 1 [batch - 1] 
+2012-10-03 19:50:25.474 842258 Debug Planning RateFinder.findCommonFeasibleRateEngineResult(): 1 rates found for tShipment 1 and they are: [batch - 1] 
+2012-10-03 19:50:25.475 842258 Debug Planning   rate engine result #1: 
+ RateEngineResult ---> :
+   servprovGid              = SUNNY.SUNNY_MS_SP
+   transportModeGid         = TL
+   equipmentGroupProfileGid = null
+   rateServiceGid           = SUNNY.SUNNY_MS_RS
+   rateQualityGid           = null
+   totalCost                = 1000.0 USD
+   totalWeightCost          = 1000.0 USD
+   baseCost                 = 1000.0 USD
+   rateGeoGid               = SUNNY.SUNNY_MS_RR
+   rateOfferingGid          = SUNNY.SUNNY_MS_RO
+   routeCodeGid             = null
+   chargeableWeight         = 20.0 LB
+   dimWeight                = null
+   chargeableVolume         = 2.0 CUFT
+   dimVolume                = null
+   srcViaRateServiceGid     = null
+   destViaRateServiceGid    = null
+   isFeasible               = true
+   isPreferred              = false
+   serviceDays              = null
+   pickup                   = null
+   deliver                  = null
+   costDetails              = [
+   RERCostDetail: 
+
+   MultiDetail: 
+
+   RERCostDetail: 
+      costType           = B
+      cost               = 1,000 USD
+      details            = null
+
+      snapshots          = [GridSnapshot: [CostSnapshot: [cost = <1,000 USD>], mult1 = <1.0>, mult2 = <null>, operand1 = null>, operand2 <null>, operand3 = <null>, operand4 = null>, unitCount = <1>]]
+
+      costPK            = null
+      orlGids           = null
+      charge            = REChargeInterface: pk = <SUNNY.SUNNY_MS_RR 97>, snapShotOperands = <[Def: operandGid = <SHIPMENT>, dataType = <None>, uomClass = <null>, null, null, null, null, null, null, null]>
+      minMaxFlag        = 0
+]
+ [batch - 1]
+rate engine result #1:  
+2012-10-03 19:50:25.475 842258 Debug Planning RateFinder.findCommonFeasibleRateEngineResult(): Currently, 1 common rates are valid. [batch - 1] 
+2012-10-03 19:50:25.476 842258 Debug Planning Leaving find common feasible rate engine result for 1 tShipments. [batch - 1] 
+2012-10-03 19:50:25.476 842258 Debug Planning Total: 1 common rate engine results found for this set of TShipment. [batch - 1] 
+2012-10-03 19:50:25.476 842258 Debug Planning Entering createLegOptionsOnRateEngineResults... [batch - 1] 
+2012-10-03 19:50:25.476 842258 Debug Planning Evaluating common rate engine result:1 [batch - 1] 
+2012-10-03 19:50:25.476 842258 Debug Planning transportModeGid : TL [batch - 1] 
+2012-10-03 19:50:25.476 842258 Debug Planning servprovGid : SUNNY.SUNNY_MS_SP [batch - 1] 
+2012-10-03 19:50:25.476 842258 Debug Planning rateOfferingGid : SUNNY.SUNNY_MS_RO [batch - 1] 
+2012-10-03 19:50:25.476 842258 Debug Planning rateServiceGid : SUNNY.SUNNY_MS_RS [batch - 1] 
+2012-10-03 19:50:25.477 842258 Debug Planning rateGeoGid : SUNNY.SUNNY_MS_RR [batch - 1] 
+2012-10-03 19:50:25.478 842258 Debug Planning Created a clone tShipment: 429046674 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BOMBAY) from tShipment: 429023186 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BOMBAY) [batch - 1] 
+2012-10-03 19:50:25.479 842258 Debug Planning Getting matched rate engine result for shipment:1 [batch - 1] 
+2012-10-03 19:50:25.479 842258 Debug Planning Entering getMatchedRateEngineResult... [batch - 1] 
+2012-10-03 19:50:25.479 842258 Debug Planning Leaving getMatchedRateEngineResult [batch - 1] 
+2012-10-03 19:50:25.479 842258 Debug Planning Leaving createLegOptionsOnRateEngineResults... [batch - 1] 
+2012-10-03 19:50:25.479 842258 Debug Planning Entering calculateAndSetCarrierCapacityOptions... [batch - 1] 
+2012-10-03 19:50:25.479 842258 Debug Planning Leaving calculateAndSetCarrierCapacityOptions... [batch - 1] 
+2012-10-03 19:50:25.48 842258 Debug Planning After calculating cost, 1 leg options are still feasible [batch - 1] 
+2012-10-03 19:50:25.48 842258 Debug Planning Estimate Service within: 30 days. Is close enough for estimation?: false [batch - 1] 
+2012-10-03 19:50:25.48 842258 Debug Planning Service Time Estimation Flag (Parameter): true [batch - 1] 
+2012-10-03 19:50:25.48 842258 Debug Planning Number of leg options still feasible on leg SUNNY.102 is 1 [batch - 1] 
+2012-10-03 19:50:25.48 842258 Debug Planning end of makeLegOptions [batch - 1] 
+2012-10-03 19:50:25.481 842258 Debug Planning Using Leg Option Optimizer to construct shipment graph. [batch - 1] 
+2012-10-03 19:50:25.481 842258 Debug Planning leg src: null dest: null [batch - 1] 
+2012-10-03 19:50:25.481 842258 Debug Planning Building itinerary options and sort them by cost ... [batch - 1] 
+2012-10-03 19:50:25.481 842258 Debug Planning 1 itinerary options are built. [batch - 1] 
+2012-10-03 19:50:25.485 842258 Debug Planning Apply EARLIEST ServiceTimeResult to shipment: 429046674 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BOMBAY) [batch - 1] 
+2012-10-03 19:50:25.485 842258 Debug Planning shipment type: TRANSPORT, start time: 2012-10-03 19:50:25 Asia/Calcutta, end time: 2012-10-04 11:07:14 Asia/Calcutta [batch - 1] 
+2012-10-03 19:50:25.486 842258 Debug Planning Apply BEST ServiceTimeResult to shipment: 429046674 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BOMBAY) [batch - 1] 
+2012-10-03 19:50:25.486 842258 Debug Planning shipment type: TRANSPORT, start time: 2012-10-03 19:50:25 Asia/Calcutta, end time: 2012-10-04 11:07:14 Asia/Calcutta [batch - 1] 
+2012-10-03 19:50:25.486 842258 Debug Planning Applying stop service time result for stop: 1 at: SUNNY.SUNNY_MAD, arrival time: 2012-10-03 19:50:25 Asia/Calcutta, departure time: 2012-10-03 19:50:25 Asia/Calcutta [batch - 1] 
+2012-10-03 19:50:25.487 842258 Debug Planning Applying stop service time result for stop: 2 at: SUNNY.SUNNY_BOMBAY, arrival time: 2012-10-04 11:07:14 Asia/Calcutta, departure time: 2012-10-04 11:07:14 Asia/Calcutta [batch - 1] 
+2012-10-03 19:50:25.487 842258 Debug Planning Apply depot stop service time results. [batch - 1] 
+2012-10-03 19:50:25.487 842258 Debug Planning Is service time feasible: true [batch - 1] 
+2012-10-03 19:50:25.487 842258 Debug Planning Apply LATEST ServiceTimeResult to shipment: 429046674 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BOMBAY) [batch - 1] 
+2012-10-03 19:50:25.487 842258 Debug Planning shipment type: TRANSPORT, start time: 2012-10-03 19:50:25 Asia/Calcutta, end time: 2012-10-04 11:07:14 Asia/Calcutta [batch - 1] 
+2012-10-03 19:50:25.488 842258 Debug Planning LegOptionOptimizer::setOperationalLocations - Begin finding operational location for leg: {SUNNY.102, SourceLocationPK: SUNNY.SUNNY_MAD, DestLocationPK: SUNNY.SUNNY_BOMBAY} [batch - 1] 
+2012-10-03 19:50:25.488 842258 Debug Planning Total cost for the current shipment graph: 1000.0 USD [batch - 1] 
+2012-10-03 19:50:25.489 842258 Debug Planning Total cost for the best shipment graph: 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.0 USD [batch - 1] 
+2012-10-03 19:50:25.489 842258 Debug Planning Found the best itinerary SUNNY.SUNNY_MS_ITI [batch - 1] 
+2012-10-03 19:50:25.489 842258 Debug Planning Total cost for the current shipment graph: 1000.0 USD [batch - 1] 
+2012-10-03 19:50:25.489 842258 Debug Planning Total cost for the best shipment graph: 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.0 USD [batch - 1] 
+2012-10-03 19:50:25.49 842258 Debug Planning current best itinerary/cost is: SUNNY.SUNNY_MS_ITI/1000.0 USD [batch - 1] 
+2012-10-03 19:50:25.49 842258 Debug Planning Shipment graph built: 
+
+ Graph (nodes) : 
+
+ | Shipment: 429046674 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BOMBAY) | 
+
+ Graph (links) : 
+ [batch - 1]
+Shipment graph built:  
+2012-10-03 19:50:25.49 842258 Debug Planning Found the best itinerary SUNNY.SUNNY_MS_ITI [batch - 1] 
+2012-10-03 19:50:25.49 842258 Debug Planning ShipmentGroupBuilder - Begin createTShipmentGroups [batch - 1] 
+2012-10-03 19:50:25.49 842258 Debug Planning ShipmentGroupBuilder - Begin findValidRules [batch - 1] 
+2012-10-03 19:50:25.49 842258 Debug Planning Number of shipments: 1 [batch - 1] 
+2012-10-03 19:50:25.504 842258 Debug Planning No current Shipment Group Rules found [batch - 1] 
+2012-10-03 19:50:25.504 842258 Debug Planning Begin buildSecondaryChargeShipments... [batch - 1] 
+2012-10-03 19:50:25.504 842258 Debug Planning Begin buildSecondaryChargeShipmentsForGroups... [batch - 1] 
+2012-10-03 19:50:25.504 842258 Debug Planning Begin buildSecondaryChargeShipmentsForShipments... [batch - 1] 
+2012-10-03 19:50:25.509 842258 Debug Planning No secondary charge rule for rule type S [batch - 1] 
+2012-10-03 19:50:25.509 842258 Debug Planning start retrieving all secondary charge rules for itinerary: SUNNY.SUNNY_MS_ITI [batch - 1] 
+2012-10-03 19:50:25.51 842258 Debug Planning # of valid secondary_charge_rules base on itinerary: 0 [batch - 1] 
+2012-10-03 19:50:25.51 842258 Debug Planning End buildSecondaryChargeShipmentsForShipments... [batch - 1] 
+2012-10-03 19:50:25.51 842258 Debug Planning Begin buildSecondaryChargeShipmentsForShipmentStops... [batch - 1] 
+2012-10-03 19:50:25.515 842258 Debug Planning No secondary charge rule for the shipment stop rule, so no secondary charge will built against this rule in buildShipment process [batch - 1] 
+2012-10-03 19:50:25.515 842258 Debug Planning End buildSecondaryChargeShipmentsForShipments... [batch - 1] 
+2012-10-03 19:50:25.515 842258 Debug Planning ********** End Build Shipments for OrderBundle: |SUNNY.SUNNY_MS_OR2|. [batch - 1] 
+2012-10-03 19:50:25.515 842258 Debug Planning # tShipments in the shipmentGraph for large order: 1 [batch - 1] 
+2012-10-03 19:50:25.515 842258 Debug Planning ********** Begin buildTShipments for OrderBundle: |SUNNY.SUNNY_MS_OR1| with 1 itineraries. [batch - 1] 
+2012-10-03 19:50:25.516 842258 Debug Planning Begin buildTShipmentGraphCollection for OrderBundle: |SUNNY.SUNNY_MS_OR1| with 1 itineraries. [batch - 1] 
+2012-10-03 19:50:25.516 842258 Debug Planning -> Evaluating itinerary: SUNNY.SUNNY_MS_ITI [batch - 1] 
+2012-10-03 19:50:25.516 842258 Debug Planning ***** Begin building TItineraries for itineraryPK:SUNNY.SUNNY_MS_ITI ***** [batch - 1] 
+2012-10-03 19:50:25.517 842258 Debug Planning Begin building TLegHeaders for TItineraryFactory. [batch - 1] 
+2012-10-03 19:50:25.528 842258 Debug Planning Itinerary has only 1 leg, so created only TLegHeader: TLegHeader: { 
+2012-10-03 19:50:25.528 842258 Debug Planning ****** Begin building TLegSets in TLegFactory (TLegSet is one combination of valid locations for a Leg) ****** [batch - 1] 
+2012-10-03 19:50:25.528 842258 Debug Planning Maximum Number of TLetSets: 25 [batch - 1] 
+2012-10-03 19:50:25.528 842258 Debug Planning Adding TLegSet:, Leg #1 {SUNNY.102, SourceLocationPK: SUNNY.SUNNY_MAD, DestLocationPK: SUNNY.SUNNY_BANGALORE} to list of valid location combinations. [batch - 1] 
+2012-10-03 19:50:25.528 842258 Debug Planning ****** Returning 1 TLegSets from TLegFactory ****** [batch - 1] 
+2012-10-03 19:50:25.529 842258 Debug Planning ***** Returning 1 TItineraries (1 TItinerary for each different location combination)***** [batch - 1] 
+2012-10-03 19:50:25.529 842258 Debug Planning Find best shipping option for itinerary: SUNNY.SUNNY_MS_ITI with the following legs: [batch - 1] 
+2012-10-03 19:50:25.529 842258 Debug Planning Build TShipments on tLeg: SUNNY.102 from SUNNY.SUNNY_MAD to SUNNY.SUNNY_BANGALORE with start time 2012-10-03 14:20:22 UTC [batch - 1] 
+2012-10-03 19:50:25.529 842258 Debug Planning Begin create equipment options on leg: SUNNY.102 [batch - 1] 
+2012-10-03 19:50:25.53 842258 Debug Planning ----> WORKING ON LEG: {SUNNY.102, SourceLocationPK: SUNNY.SUNNY_MAD, DestLocationPK: SUNNY.SUNNY_BANGALORE} [batch - 1] 
+2012-10-03 19:50:25.53 842258 Debug Planning Creating equipment options: [batch - 1] 
+2012-10-03 19:50:25.53 842258 Debug Planning Equipment Assignment Type: N [batch - 1] 
+2012-10-03 19:50:25.53 842258 Debug Planning Is this an Order Movement Bundle: false [batch - 1] 
+2012-10-03 19:50:25.53 842258 Debug Planning Order has OR Equipments: false [batch - 1] 
+2012-10-03 19:50:25.53 842258 Debug Planning End create equipment options on leg: SUNNY.102 [batch - 1] 
+2012-10-03 19:50:25.53 842258 Debug Planning Creating leg options ... [batch - 1] 
+2012-10-03 19:50:25.531 842258 Debug Planning Creating leg options for leg SUNNY.102 with 1 equipment options. [batch - 1] 
+2012-10-03 19:50:25.531 842258 Debug Planning No source VIA locations on leg SUNNY.102 [batch - 1] 
+2012-10-03 19:50:25.531 842258 Debug Planning No dest VIA locations on leg SUNNY.102 [batch - 1] 
+2012-10-03 19:50:25.531 842258 Debug Planning Creating Leg Option with Equipment Option: Number of tSEquipments: 1
+--> SEquipmentGid: null, EquipmentGroup: null(429134236)   contains 1 TSShipUnits. unit: 1 428484919 created from ShipUnit: SUNNY.SUNNY_MS_OR1-001 ..range = 1-1
+PrevEquipmentOption: 
+NextEquipmentOptions: 
+tSShipUnitMap: {428484919 created from ShipUnit: SUNNY.SUNNY_MS_OR1-001 ..range = 1-1=[null]} and Arb option: NO_ARB  sourceViaLocation: null, destViaLocation null [batch - 1]
+Creating Leg Option with Equipment Option: Number of tSEquipments: 1 
+2012-10-03 19:50:25.531 842258 Debug Planning 1 leg options are created ... [batch - 1] 
+2012-10-03 19:50:25.531 842258 Debug Planning Creating TShipments on the leg ... [batch - 1] 
+2012-10-03 19:50:25.532 842258 Debug Planning Flag Create_Single_Shipment on leg: SUNNY.102 is false [batch - 1] 
+2012-10-03 19:50:25.532 842258 Debug Planning 1 TSEquipments on leg option 429230423. [batch - 1] 
+2012-10-03 19:50:25.532 842258 Debug Planning 1th TSEquipment: SEquipmentGid: null, EquipmentGroup: null(429134236) contains 1 TSShipUnits. unit: 1 428484919 created from ShipUnit: SUNNY.SUNNY_MS_OR1-001 ..range = 1-1 [batch - 1] 
+2012-10-03 19:50:25.532 842258 Debug Planning Creating new TShipment 429284996 for TSEquipment SEquipmentGid: null, EquipmentGroup: null(429134236) contains 1 TSShipUnits. unit: 1 428484919 created from ShipUnit: SUNNY.SUNNY_MS_OR1-001 ..range = 1-1. [batch - 1] 
+2012-10-03 19:50:25.543 842258 Debug Planning Begin insertViaPoints... [batch - 1] 
+2012-10-03 19:50:25.544 842258 Debug Planning leg: SUNNY.102 [batch - 1] 
+2012-10-03 19:50:25.544 842258 Debug Planning No Via Points, returning [batch - 1] 
+2012-10-03 19:50:25.544 842258 Debug Planning SQL Find LegInterimPoints by LegPK: select distinct lip.leg_gid, lip.seq_no from leg_interim_point lip where lip.leg_gid = ? order by lip.seq_no. [batch - 1] 
+2012-10-03 19:50:25.549 842258 Debug Planning # of interim points for leg: SUNNY.102 is: 0 [batch - 1] 
+2012-10-03 19:50:25.549 842258 Debug Planning Calculating and set cost for the leg ... [batch - 1] 
+2012-10-03 19:50:25.549 842258 Debug Planning There are 1 TShipments on leg option 429230423. [batch - 1] 
+2012-10-03 19:50:25.549 842258 Debug Planning 1th TShipment 429284996 [batch - 1] 
+2012-10-03 19:50:25.55 842258 Debug Planning RateFinder.findCommonFeasibleRateEngineResult(): Entering find common feasible rate engine result for 1 tShipments. [batch - 1] 
+2012-10-03 19:50:25.55 842258 Debug Planning RateFinder.findCommonFeasibleRateEngineResult(): Calculating cost for TShipment 1. [batch - 1] 
+2012-10-03 19:50:25.558 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): Begin Finding Valid Rate Geos ... [batch - 1] 
+2012-10-03 19:50:25.558 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): ShipmentGid (if any) = <null> [batch - 1] 
+2012-10-03 19:50:25.559 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): rateOfferingPKs = <null> [batch - 1] 
+2012-10-03 19:50:25.559 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): rateOfferingRuleSetGid = <null> [batch - 1] 
+2012-10-03 19:50:25.559 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): rateGeoRuleSetTGid = <null> [batch - 1] 
+2012-10-03 19:50:25.559 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): usePreferredRates = <true> [batch - 1] 
+2012-10-03 19:50:25.559 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): usePreferredRatesOnly = <false> [batch - 1] 
+2012-10-03 19:50:25.559 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): checkCmRating = <false> [batch - 1] 
+2012-10-03 19:50:25.559 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): useRouteExecutionRates = <false> [batch - 1] 
+2012-10-03 19:50:25.56 842258 Debug Planning RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates : <true> [batch - 1] 
+2012-10-03 19:50:25.56 842258 Debug Planning RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates Only : <false> [batch - 1] 
+2012-10-03 19:50:25.56 842258 Debug Planning RateGeoFinderSession.findCompositeRateGeoPKs(): Begin looking for preferred rates... [batch - 1] 
+2012-10-03 19:50:25.56 842258 Debug Planning RateGeoFinderSession.findCompositeRateGeoPKs(): No preferred rates are found. [batch - 1] 
+2012-10-03 19:50:25.56 842258 Debug Planning RateGeoFinderSession.findCompositeRateGeoPKs(): End looking for preferred rates. [batch - 1] 
+2012-10-03 19:50:25.561 842258 Debug Planning ********************************************************************* [batch - 1] 
+2012-10-03 19:50:25.561 842258 Debug Planning Rule Manager begin evaluating 1 entities [batch - 1] 
+2012-10-03 19:50:25.563 842258 Debug Planning RateOfferingUOMRule.check: No constraints specified, returning true. [batch - 1] 
+2012-10-03 19:50:25.564 842258 Debug Planning Current time at first stop of time zone: Asia/Calcutta is: 2012-10-03 19:50:25 Asia/Calcutta [batch - 1] 
+2012-10-03 19:50:25.564 842258 Debug Planning Shipment start time: null [batch - 1] 
+2012-10-03 19:50:25.564 842258 Debug Planning Shipment earliest possible start time: 2012-10-03 19:50:22 Asia/Calcutta [batch - 1] 
+2012-10-03 19:50:25.564 842258 Debug Planning EstimatedTenderTime: 2012-10-03 20:50:25 Asia/Calcutta [batch - 1] 
+2012-10-03 19:50:25.565 842258 Debug Planning EstimatedTenderLeadTime (statTime - estimatedTenderTime): -1 Hours 0 Minutes -4 Seconds [batch - 1] 
+2012-10-03 19:50:25.565 842258 Debug Planning Entity: SUNNY.SUNNY_MS_RO passed [batch - 1] 
+2012-10-03 19:50:25.565 842258 Debug Planning Rule Manager returning with 1 entities [batch - 1] 
+2012-10-03 19:50:25.565 842258 Debug Planning RateGeoFinderSession.getCustomerValidTRateOfferings(): Validating rate offering customer domain profiles against shipment/order domain names. [batch - 1] 
+2012-10-03 19:50:25.567 842258 Debug Planning Special service needed: UNLOAD [batch - 1] 
+2012-10-03 19:50:25.567 842258 Debug Planning Special service needed: LOAD [batch - 1] 
+2012-10-03 19:50:25.567 842258 Debug Planning The RateGeo and RateOffering DID support all of the needed special service codes, returning true... [batch - 1] 
+2012-10-03 19:50:25.567 842258 Debug Planning Rate Geo: SUNNY.SUNNY_MS_RR/Rate service: SUNNY.SUNNY_MS_RS [batch - 1] 
+2012-10-03 19:50:25.567 842258 Debug Planning RateServiceGidConstraint = <null> [batch - 1] 
+2012-10-03 19:50:25.567 842258 Debug Planning SUNNY.102 leg classification = null isPrimary = true. Checking for Rate Service Constraint on Order Bundle. [batch - 1] 
+2012-10-03 19:50:25.568 842258 Debug Planning RateGeoFinderSession.getCustomerValidTRateGeos() [batch - 1] 
+2012-10-03 19:50:25.568 842258 Debug Planning RateGeoFinderSession.getCustomerValidTRateGeos(): Returning: [batch - 1] 
+2012-10-03 19:50:25.568 842258 Debug Planning RateGeoFinderSession.getCustomerValidTRateGeos(): RateGeo <RateGeoFinderResult: tRateGeo = <SUNNY.SUNNY_MS_RR>, composite = <CompositeRateGeoPK: key = <TL|109|89|1346486400000|1504857600000>, hashCode = <-1648669243>, rgSeq = <89>, rgGid = <SUNNY.SUNNY_MS_RR>, roSeq = <109>, roGid = <SUNNY.SUNNY_MS_RO>, rank = <23>, transportModeGid = <TL>, effDate = <2012-09-01 08:00:00 UTC>, expDate = <2017-09-08 08:00:00 UTC>, servprovGid = <null>>, isPreferred = <false>> [batch - 1] 
+2012-10-03 19:50:25.569 842258 Debug Planning RateGeoFinderSession.findValidRateGeos(): Complete Finding Valid Rate Geos ... [batch - 1] 
+2012-10-03 19:50:25.569 842258 Debug Planning RateFinder.findShipmentCosts(): rateGeos [SUNNY.SUNNY_MS_RR] [batch - 1] 
+2012-10-03 19:50:25.572 842258 Debug Planning TShipment.InitAccessorials(): Shipment accessorial map is {} [batch - 1] 
+2012-10-03 19:50:25.574 842258 Debug Planning RateFinder.findShipmentCosts(): Total 1 rate engine result(s) returned from RateEngine. [batch - 1] 
+2012-10-03 19:50:25.574 842258 Debug Planning RateFinder.findShipmentCosts(): # feasible rateEngineResults = 1 [batch - 1] 
+2012-10-03 19:50:25.574 842258 Debug Planning RateFinder.findCommonFeasibleRateEngineResult(): 1 rates found for tShipment 1 and they are: [batch - 1] 
+2012-10-03 19:50:25.575 842258 Debug Planning   rate engine result #1: 
+ RateEngineResult ---> :
+   servprovGid              = SUNNY.SUNNY_MS_SP
+   transportModeGid         = TL
+   equipmentGroupProfileGid = null
+   rateServiceGid           = SUNNY.SUNNY_MS_RS
+   rateQualityGid           = null
+   totalCost                = 1000.0 USD
+   totalWeightCost          = 1000.0 USD
+   baseCost                 = 1000.0 USD
+   rateGeoGid               = SUNNY.SUNNY_MS_RR
+   rateOfferingGid          = SUNNY.SUNNY_MS_RO
+   routeCodeGid             = null
+   chargeableWeight         = 20.0 LB
+   dimWeight                = null
+   chargeableVolume         = 2.0 CUFT
+   dimVolume                = null
+   srcViaRateServiceGid     = null
+   destViaRateServiceGid    = null
+   isFeasible               = true
+   isPreferred              = false
+   serviceDays              = null
+   pickup                   = null
+   deliver                  = null
+   costDetails              = [
+   RERCostDetail: 
+
+   MultiDetail: 
+
+   RERCostDetail: 
+      costType           = B
+      cost               = 1,000 USD
+      details            = null
+
+      snapshots          = [GridSnapshot: [CostSnapshot: [cost = <1,000 USD>], mult1 = <1.0>, mult2 = <null>, operand1 = null>, operand2 <null>, operand3 = <null>, operand4 = null>, unitCount = <1>]]
+
+      costPK            = null
+      orlGids           = null
+      charge            = REChargeInterface: pk = <SUNNY.SUNNY_MS_RR 97>, snapShotOperands = <[Def: operandGid = <SHIPMENT>, dataType = <None>, uomClass = <null>, null, null, null, null, null, null, null]>
+      minMaxFlag        = 0
+]
+ [batch - 1]
+rate engine result #1:  
+2012-10-03 19:50:25.575 842258 Debug Planning RateFinder.findCommonFeasibleRateEngineResult(): Currently, 1 common rates are valid. [batch - 1] 
+2012-10-03 19:50:25.575 842258 Debug Planning Leaving find common feasible rate engine result for 1 tShipments. [batch - 1] 
+2012-10-03 19:50:25.575 842258 Debug Planning Total: 1 common rate engine results found for this set of TShipment. [batch - 1] 
+2012-10-03 19:50:25.575 842258 Debug Planning Entering createLegOptionsOnRateEngineResults... [batch - 1] 
+2012-10-03 19:50:25.576 842258 Debug Planning Evaluating common rate engine result:1 [batch - 1] 
+2012-10-03 19:50:25.576 842258 Debug Planning transportModeGid : TL [batch - 1] 
+2012-10-03 19:50:25.576 842258 Debug Planning servprovGid : SUNNY.SUNNY_MS_SP [batch - 1] 
+2012-10-03 19:50:25.576 842258 Debug Planning rateOfferingGid : SUNNY.SUNNY_MS_RO [batch - 1] 
+2012-10-03 19:50:25.576 842258 Debug Planning rateServiceGid : SUNNY.SUNNY_MS_RS [batch - 1] 
+2012-10-03 19:50:25.576 842258 Debug Planning rateGeoGid : SUNNY.SUNNY_MS_RR [batch - 1] 
+2012-10-03 19:50:25.577 842258 Debug Planning Created a clone tShipment: 429591649 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BANGALORE) from tShipment: 429284996 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BANGALORE) [batch - 1] 
+2012-10-03 19:50:25.578 842258 Debug Planning Getting matched rate engine result for shipment:1 [batch - 1] 
+2012-10-03 19:50:25.578 842258 Debug Planning Entering getMatchedRateEngineResult... [batch - 1] 
+2012-10-03 19:50:25.578 842258 Debug Planning Leaving getMatchedRateEngineResult [batch - 1] 
+2012-10-03 19:50:25.578 842258 Debug Planning Leaving createLegOptionsOnRateEngineResults... [batch - 1] 
+2012-10-03 19:50:25.578 842258 Debug Planning Entering calculateAndSetCarrierCapacityOptions... [batch - 1] 
+2012-10-03 19:50:25.578 842258 Debug Planning Leaving calculateAndSetCarrierCapacityOptions... [batch - 1] 
+2012-10-03 19:50:25.579 842258 Debug Planning After calculating cost, 1 leg options are still feasible [batch - 1] 
+2012-10-03 19:50:25.579 842258 Debug Planning Estimate Service within: 30 days. Is close enough for estimation?: false [batch - 1] 
+2012-10-03 19:50:25.579 842258 Debug Planning Service Time Estimation Flag (Parameter): true [batch - 1] 
+2012-10-03 19:50:25.579 842258 Debug Planning Number of leg options still feasible on leg SUNNY.102 is 1 [batch - 1] 
+2012-10-03 19:50:25.579 842258 Debug Planning end of makeLegOptions [batch - 1] 
+2012-10-03 19:50:25.579 842258 Debug Planning Using Leg Option Optimizer to construct shipment graph. [batch - 1] 
+2012-10-03 19:50:25.58 842258 Debug Planning leg src: null dest: null [batch - 1] 
+2012-10-03 19:50:25.58 842258 Debug Planning Building itinerary options and sort them by cost ... [batch - 1] 
+2012-10-03 19:50:25.58 842258 Debug Planning 1 itinerary options are built. [batch - 1] 
+2012-10-03 19:50:25.584 842258 Debug Planning Apply EARLIEST ServiceTimeResult to shipment: 429591649 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BANGALORE) [batch - 1] 
+2012-10-03 19:50:25.584 842258 Debug Planning shipment type: TRANSPORT, start time: 2012-10-03 19:50:25 Asia/Calcutta, end time: 2012-10-03 23:23:13 Asia/Calcutta [batch - 1] 
+2012-10-03 19:50:25.584 842258 Debug Planning Apply BEST ServiceTimeResult to shipment: 429591649 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BANGALORE) [batch - 1] 
+2012-10-03 19:50:25.585 842258 Debug Planning shipment type: TRANSPORT, start time: 2012-10-03 19:50:25 Asia/Calcutta, end time: 2012-10-03 23:23:13 Asia/Calcutta [batch - 1] 
+2012-10-03 19:50:25.585 842258 Debug Planning Applying stop service time result for stop: 1 at: SUNNY.SUNNY_MAD, arrival time: 2012-10-03 19:50:25 Asia/Calcutta, departure time: 2012-10-03 19:50:25 Asia/Calcutta [batch - 1] 
+2012-10-03 19:50:25.585 842258 Debug Planning Applying stop service time result for stop: 2 at: SUNNY.SUNNY_BANGALORE, arrival time: 2012-10-03 23:23:13 Asia/Calcutta, departure time: 2012-10-03 23:23:13 Asia/Calcutta [batch - 1] 
+2012-10-03 19:50:25.586 842258 Debug Planning Apply depot stop service time results. [batch - 1] 
+2012-10-03 19:50:25.586 842258 Debug Planning Is service time feasible: true [batch - 1] 
+2012-10-03 19:50:25.586 842258 Debug Planning Apply LATEST ServiceTimeResult to shipment: 429591649 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BANGALORE) [batch - 1] 
+2012-10-03 19:50:25.586 842258 Debug Planning shipment type: TRANSPORT, start time: 2012-10-03 19:50:25 Asia/Calcutta, end time: 2012-10-03 23:23:13 Asia/Calcutta [batch - 1] 
+2012-10-03 19:50:25.587 842258 Debug Planning LegOptionOptimizer::setOperationalLocations - Begin finding operational location for leg: {SUNNY.102, SourceLocationPK: SUNNY.SUNNY_MAD, DestLocationPK: SUNNY.SUNNY_BANGALORE} [batch - 1] 
+2012-10-03 19:50:25.587 842258 Debug Planning Total cost for the current shipment graph: 1000.0 USD [batch - 1] 
+2012-10-03 19:50:25.588 842258 Debug Planning Total cost for the best shipment graph: 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.0 USD [batch - 1] 
+2012-10-03 19:50:25.588 842258 Debug Planning Found the best itinerary SUNNY.SUNNY_MS_ITI [batch - 1] 
+2012-10-03 19:50:25.588 842258 Debug Planning Total cost for the current shipment graph: 1000.0 USD [batch - 1] 
+2012-10-03 19:50:25.588 842258 Debug Planning Total cost for the best shipment graph: 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.0 USD [batch - 1] 
+2012-10-03 19:50:25.588 842258 Debug Planning current best itinerary/cost is: SUNNY.SUNNY_MS_ITI/1000.0 USD [batch - 1] 
+2012-10-03 19:50:25.589 842258 Debug Planning Shipment graph built: 
+
+ Graph (nodes) : 
+
+ | Shipment: 429591649 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BANGALORE) | 
+
+ Graph (links) : 
+ [batch - 1]
+Shipment graph built:  
+2012-10-03 19:50:25.589 842258 Debug Planning Found the best itinerary SUNNY.SUNNY_MS_ITI [batch - 1] 
+2012-10-03 19:50:25.589 842258 Debug Planning ShipmentGroupBuilder - Begin createTShipmentGroups [batch - 1] 
+2012-10-03 19:50:25.589 842258 Debug Planning ShipmentGroupBuilder - Begin findValidRules [batch - 1] 
+2012-10-03 19:50:25.589 842258 Debug Planning Number of shipments: 1 [batch - 1] 
+2012-10-03 19:50:25.602 842258 Debug Planning No current Shipment Group Rules found [batch - 1] 
+2012-10-03 19:50:25.602 842258 Debug Planning Begin buildSecondaryChargeShipments... [batch - 1] 
+2012-10-03 19:50:25.602 842258 Debug Planning Begin buildSecondaryChargeShipmentsForGroups... [batch - 1] 
+2012-10-03 19:50:25.602 842258 Debug Planning Begin buildSecondaryChargeShipmentsForShipments... [batch - 1] 
+2012-10-03 19:50:25.607 842258 Debug Planning No secondary charge rule for rule type S [batch - 1] 
+2012-10-03 19:50:25.607 842258 Debug Planning start retrieving all secondary charge rules for itinerary: SUNNY.SUNNY_MS_ITI [batch - 1] 
+2012-10-03 19:50:25.607 842258 Debug Planning # of valid secondary_charge_rules base on itinerary: 0 [batch - 1] 
+2012-10-03 19:50:25.608 842258 Debug Planning End buildSecondaryChargeShipmentsForShipments... [batch - 1] 
+2012-10-03 19:50:25.608 842258 Debug Planning Begin buildSecondaryChargeShipmentsForShipmentStops... [batch - 1] 
+2012-10-03 19:50:25.612 842258 Debug Planning No secondary charge rule for the shipment stop rule, so no secondary charge will built against this rule in buildShipment process [batch - 1] 
+2012-10-03 19:50:25.612 842258 Debug Planning End buildSecondaryChargeShipmentsForShipments... [batch - 1] 
+2012-10-03 19:50:25.613 842258 Debug Planning ********** End Build Shipments for OrderBundle: |SUNNY.SUNNY_MS_OR1|. [batch - 1] 
+2012-10-03 19:50:25.613 842258 Debug Planning # tShipments in the shipmentGraph for large order: 1 [batch - 1] 
+2012-10-03 19:50:25.613 842258 Debug Planning # of tShipments in splitOrderTShipmentCollection: 2 [batch - 1] 
+2012-10-03 19:50:25.613 842258 Debug Planning End makeDirectShipmentsForLargeBundles. [batch - 1] 
+2012-10-03 19:50:25.613 842258 Debug Planning Begin makeDirectShipmentsForSmallOrders... [batch - 1] 
+2012-10-03 19:50:25.613 842258 Debug Planning Number of orderBundleToShipmentGraphCollection Objects returns: 0 (filter = 1) [batch - 1] 
+2012-10-03 19:50:25.614 842258 Debug Planning # of bundles that will be unbundled: 0 [batch - 1] 
+2012-10-03 19:50:25.614 842258 Debug Planning # of single order bundles: 0 [batch - 1] 
+2012-10-03 19:50:25.614 842258 Debug Planning Number of orderBundleToShipmentGraphCollection Objects returns: 0 (filter = 3) [batch - 1] 
+2012-10-03 19:50:25.614 842258 Debug Planning # of bundles in remainingTOrderBundleList: 0 [batch - 1] 
+2012-10-03 19:50:25.614 842258 Debug Planning Complete makeDirectShipmentsForSmallOrders. [batch - 1] 
+2012-10-03 19:50:25.614 842258 Debug Planning begin filterOutSmallDirectShipments [batch - 1] 
+2012-10-03 19:50:25.614 842258 Debug Planning # small bundles filtered: 0 [batch - 1] 
+2012-10-03 19:50:25.614 842258 Debug Planning end filterOutSmallDirectShipments [batch - 1] 
+2012-10-03 19:50:25.615 842258 Debug Planning # of shipments that will pass to mulistop shipment builder is : 2 [batch - 1] 
+2012-10-03 19:50:25.622 842258 Debug Planning # of interim points for leg: SUNNY.102 is: 0 [batch - 1] 
+2012-10-03 19:50:25.622 842258 Debug Planning # of interim points for leg: SUNNY.102 is: 0 [batch - 1] 
+2012-10-03 19:50:25.622 842258 Debug Planning # of bundles in remainingTOrderBundleList: 0 [batch - 1] 
+2012-10-03 19:50:25.623 842258 Debug Planning minTLWeight: null [batch - 1] 
+2012-10-03 19:50:25.623 842258 Debug Planning shipment weight: 20.0 LB [batch - 1] 
+2012-10-03 19:50:25.623 842258 Debug Planning minTLVolume: null [batch - 1] 
+2012-10-03 19:50:25.623 842258 Debug Planning shipment volume: 2.0 CUFT [batch - 1] 
+2012-10-03 19:50:25.623 842258 Debug Planning minTLUsagePercentage: 1.0 [batch - 1] 
+2012-10-03 19:50:25.623 842258 Debug Planning directMultistopShipment is from split orders, keep it [batch - 1] 
+2012-10-03 19:50:25.623 842258 Debug Planning # of bundles in leafBundle of the direct shipment: 1 [batch - 1] 
+2012-10-03 19:50:25.624 842258 Debug Planning tOrderBundle: 426789602 [batch - 1] 
+2012-10-03 19:50:25.624 842258 Debug Planning One multistop direct shipment was keft, # of stops: 2 [batch - 1] 
+2012-10-03 19:50:25.624 842258 Debug Planning Orders on this multistop: |SUNNY.SUNNY_MS_OR1| [batch - 1] 
+2012-10-03 19:50:25.624 842258 Debug Planning Multistop source: SUNNY.SUNNY_MAD [batch - 1] 
+2012-10-03 19:50:25.624 842258 Debug Planning Multistop dest: SUNNY.SUNNY_BANGALORE [batch - 1] 
+2012-10-03 19:50:25.624 842258 Debug Planning minTLWeight: null [batch - 1] 
+2012-10-03 19:50:25.624 842258 Debug Planning shipment weight: 20.0 LB [batch - 1] 
+2012-10-03 19:50:25.625 842258 Debug Planning minTLVolume: null [batch - 1] 
+2012-10-03 19:50:25.625 842258 Debug Planning shipment volume: 2.0 CUFT [batch - 1] 
+2012-10-03 19:50:25.625 842258 Debug Planning minTLUsagePercentage: 1.0 [batch - 1] 
+2012-10-03 19:50:25.625 842258 Debug Planning directMultistopShipment is from split orders, keep it [batch - 1] 
+2012-10-03 19:50:25.625 842258 Debug Planning # of bundles in leafBundle of the direct shipment: 1 [batch - 1] 
+2012-10-03 19:50:25.625 842258 Debug Planning tOrderBundle: 426717577 [batch - 1] 
+2012-10-03 19:50:25.625 842258 Debug Planning One multistop direct shipment was keft, # of stops: 2 [batch - 1] 
+2012-10-03 19:50:25.626 842258 Debug Planning Orders on this multistop: |SUNNY.SUNNY_MS_OR2| [batch - 1] 
+2012-10-03 19:50:25.626 842258 Debug Planning Multistop source: SUNNY.SUNNY_MAD [batch - 1] 
+2012-10-03 19:50:25.626 842258 Debug Planning Multistop dest: SUNNY.SUNNY_BOMBAY [batch - 1] 
+2012-10-03 19:50:25.626 842258 Debug Planning # tOrderBundle in remainingTOrderBundleList: 0 [batch - 1] 
+2012-10-03 19:50:25.626 842258 Debug Planning There are 2 Direct Multi Stop Shipment Made [batch - 1] 
+2012-10-03 19:50:25.626 842258 Debug Planning Begin splitUnplannedLargeBundlesAndReplaceWithSplitBundles [batch - 1] 
+2012-10-03 19:50:25.626 842258 Debug Planning Begin splitUnplannedLargeBundlesAndReplaceWithSplitBundles... [batch - 1] 
+2012-10-03 19:50:25.626 842258 Debug Planning # of bundles in largeBundleToBeSplitByOrderBundleSplitter before split: 0 [batch - 1] 
+2012-10-03 19:50:25.627 842258 Debug Planning # of bundles in mustShipThruPoolTOrderBundleList before split: 0 [batch - 1] 
+2012-10-03 19:50:25.627 842258 Debug Planning # of bundles in mustShipThruXDockTOrderBundleList before split: 0 [batch - 1] 
+2012-10-03 19:50:25.627 842258 Debug Planning # of bundles in remainingTOrderBundleList before split:: 0 [batch - 1] 
+2012-10-03 19:50:25.627 842258 Debug Planning begin splitLargeBundles.. [batch - 1] 
+2012-10-03 19:50:25.627 842258 Debug Planning end splitLargeBundles.. [batch - 1] 
+2012-10-03 19:50:25.627 842258 Debug Planning begin splitLargeBundles.. [batch - 1] 
+2012-10-03 19:50:25.627 842258 Debug Planning end splitLargeBundles.. [batch - 1] 
+2012-10-03 19:50:25.627 842258 Debug Planning begin splitLargeBundles.. [batch - 1] 
+2012-10-03 19:50:25.628 842258 Debug Planning end splitLargeBundles.. [batch - 1] 
+2012-10-03 19:50:25.628 842258 Debug Planning # of bundles in largeBundleToBeSplitByOrderBundleSplitter after split: 0 [batch - 1] 
+2012-10-03 19:50:25.628 842258 Debug Planning # of bundles in mustShipThruPoolTOrderBundleList after split: 0 [batch - 1] 
+2012-10-03 19:50:25.628 842258 Debug Planning # of bundles in mustShipThruXDockTOrderBundleList after split: 0 [batch - 1] 
+2012-10-03 19:50:25.628 842258 Debug Planning End splitUnplannedLargeBundlesAndReplaceWithSplitBundles [batch - 1] 
+2012-10-03 19:50:25.628 842258 Debug Planning Parameter: MinimizeWaitTimeAtDeconsolPools set to true [batch - 1] 
+2012-10-03 19:50:25.628 842258 Debug Planning Begin minimizeWaitTimeAtDeconsolidationPools for direct pool linehaul shipments [batch - 1] 
+2012-10-03 19:50:25.628 842258 Debug Planning End minimizeWaitTimeAtDeconsolidationPools for direct pool linehaul shipments [batch - 1] 
+2012-10-03 19:50:25.629 842258 Debug Planning Begin minimizeWaitTimeAtDeconsolidationPools for pool linehaul shipments from xdock [batch - 1] 
+2012-10-03 19:50:25.629 842258 Debug Planning End minimizeWaitTimeAtDeconsolidationPools for pool linehaul shipments from xdock [batch - 1] 
+2012-10-03 19:50:25.629 842258 Debug Planning # of directShipmentGraphCollectionFellFromPool is : 0 [batch - 1] 
+2012-10-03 19:50:25.629 842258 Debug Planning # of directShipmentGraphCollectionFellFromXDock is : 0 [batch - 1] 
+2012-10-03 19:50:25.629 842258 Debug Planning # of errorFallbackDirectShipmentGraphCollection is : 0 [batch - 1] 
+2012-10-03 19:50:25.629 842258 Debug Planning # of shipments that will pass to mulistop shipment builder is : 0 [batch - 1] 
+2012-10-03 19:50:25.629 842258 Debug Planning Total number shipment graphs build from PoolXDockPlanner is: 2 [batch - 1] 
+2012-10-03 19:50:25.629 842258 Debug Planning Number of direct multistop shipments: 2 [batch - 1] 
+2012-10-03 19:50:25.63 842258 Debug Planning    One multistop shipment: 
+
+ Graph (nodes) : 
+
+ | Shipment: 429591649 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BANGALORE) | 
+
+ Graph (links) : 
+ [batch - 1]
+One multistop shipment:  
+2012-10-03 19:50:25.63 842258 Debug Planning order releases on it: [batch - 1] 
+2012-10-03 19:50:25.63 842258 Debug Planning SUNNY.SUNNY_MS_OR1 [batch - 1] 
+2012-10-03 19:50:25.63 842258 Debug Planning    One multistop shipment: 
+
+ Graph (nodes) : 
+
+ | Shipment: 429046674 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BOMBAY) | 
+
+ Graph (links) : 
+ [batch - 1]
+One multistop shipment:  
+2012-10-03 19:50:25.63 842258 Debug Planning order releases on it: [batch - 1] 
+2012-10-03 19:50:25.631 842258 Debug Planning SUNNY.SUNNY_MS_OR2 [batch - 1] 
+2012-10-03 19:50:25.631 842258 Debug Planning Number of direct shipments fell from pool: 0 [batch - 1] 
+2012-10-03 19:50:25.631 842258 Debug Planning Number of deconsol pool shipment graphs: 0 [batch - 1] 
+2012-10-03 19:50:25.631 842258 Debug Planning Number of consol pool shipment graphs: 0 [batch - 1] 
+2012-10-03 19:50:25.631 842258 Debug Planning Number of direct shipments fell from xdock: 0 [batch - 1] 
+2012-10-03 19:50:25.631 842258 Debug Planning Number of xdock shipment graphs: 0 [batch - 1] 
+2012-10-03 19:50:25.631 842258 Debug Planning Number of shipment graphs origin at xdock: 0 [batch - 1] 
+2012-10-03 19:50:25.631 842258 Debug Planning Number of direct shipments from remainingDirectShipmentGraphCollection: 0 [batch - 1] 
+2012-10-03 19:50:25.632 842258 Debug Planning Number of direct shipment graphs of split orders: 0 [batch - 1] 
+2012-10-03 19:50:25.632 842258 Debug Planning Number of small direct shipment graphs 0 [batch - 1] 
+2012-10-03 19:50:25.632 842258 Debug Planning Planning Parameter CONNECT_SHIPMENT_GRAPHS_FOR_SPLIT_ORDERS set to true [batch - 1] 
+2012-10-03 19:50:25.632 842258 Debug Planning Total number shipment graphs finally build: 2 [batch - 1] 
+2012-10-03 19:50:25.633 842258 Debug Planning    One shipment graph: 
+
+ Graph (nodes) : 
+
+ | Shipment: 429591649 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BANGALORE) | 
+
+ Graph (links) : 
+ [batch - 1]
+One shipment graph:  
+2012-10-03 19:50:25.633 842258 Debug Planning # order releases on it: 1 [batch - 1] 
+2012-10-03 19:50:25.633 842258 Debug Planning # of shipments: 1 [batch - 1] 
+2012-10-03 19:50:25.633 842258 Debug Planning SUNNY.SUNNY_MS_OR1 [batch - 1] 
+2012-10-03 19:50:25.633 842258 Debug Planning shipment src: SUNNY.SUNNY_MAD [batch - 1] 
+2012-10-03 19:50:25.633 842258 Debug Planning shipment dest: SUNNY.SUNNY_BANGALORE [batch - 1] 
+2012-10-03 19:50:25.634 842258 Debug Planning orders: |SUNNY.SUNNY_MS_OR1| [batch - 1] 
+2012-10-03 19:50:25.634 842258 Debug Planning    One shipment graph: 
+
+ Graph (nodes) : 
+
+ | Shipment: 429046674 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BOMBAY) | 
+
+ Graph (links) : 
+ [batch - 1]
+One shipment graph:  
+2012-10-03 19:50:25.634 842258 Debug Planning # order releases on it: 1 [batch - 1] 
+2012-10-03 19:50:25.634 842258 Debug Planning # of shipments: 1 [batch - 1] 
+2012-10-03 19:50:25.634 842258 Debug Planning SUNNY.SUNNY_MS_OR2 [batch - 1] 
+2012-10-03 19:50:25.634 842258 Debug Planning shipment src: SUNNY.SUNNY_MAD [batch - 1] 
+2012-10-03 19:50:25.635 842258 Debug Planning shipment dest: SUNNY.SUNNY_BOMBAY [batch - 1] 
+2012-10-03 19:50:25.635 842258 Debug Planning orders: |SUNNY.SUNNY_MS_OR2| [batch - 1] 
+2012-10-03 19:50:25.635 842258 Debug Planning ShipmentGroupBuilder - Begin createTShipmentGroups [batch - 1] 
+2012-10-03 19:50:25.635 842258 Debug Planning ShipmentGroupBuilder - Begin findValidRules [batch - 1] 
+2012-10-03 19:50:25.635 842258 Debug Planning Number of shipments: 1 [batch - 1] 
+2012-10-03 19:50:25.648 842258 Debug Planning No current Shipment Group Rules found [batch - 1] 
+2012-10-03 19:50:25.648 842258 Debug Planning Built shipment groups for one graph [batch - 1] 
+2012-10-03 19:50:25.649 842258 Debug Planning Begin buildSecondaryChargeShipments... [batch - 1] 
+2012-10-03 19:50:25.649 842258 Debug Planning Begin buildSecondaryChargeShipmentsForGroups... [batch - 1] 
+2012-10-03 19:50:25.649 842258 Debug Planning Begin buildSecondaryChargeShipmentsForShipments... [batch - 1] 
+2012-10-03 19:50:25.654 842258 Debug Planning No secondary charge rule for rule type S [batch - 1] 
+2012-10-03 19:50:25.654 842258 Debug Planning start retrieving all secondary charge rules for itinerary: SUNNY.SUNNY_MS_ITI [batch - 1] 
+2012-10-03 19:50:25.654 842258 Debug Planning # of valid secondary_charge_rules base on itinerary: 0 [batch - 1] 
+2012-10-03 19:50:25.654 842258 Debug Planning End buildSecondaryChargeShipmentsForShipments... [batch - 1] 
+2012-10-03 19:50:25.655 842258 Debug Planning Begin buildSecondaryChargeShipmentsForShipmentStops... [batch - 1] 
+2012-10-03 19:50:25.659 842258 Debug Planning No secondary charge rule for the shipment stop rule, so no secondary charge will built against this rule in buildShipment process [batch - 1] 
+2012-10-03 19:50:25.659 842258 Debug Planning End buildSecondaryChargeShipmentsForShipments... [batch - 1] 
+2012-10-03 19:50:25.66 842258 Debug Planning Built secondary charges for shipment groups for one graph [batch - 1] 
+2012-10-03 19:50:25.66 842258 Debug Planning ShipmentGroupBuilder - Begin createTShipmentGroups [batch - 1] 
+2012-10-03 19:50:25.66 842258 Debug Planning ShipmentGroupBuilder - Begin findValidRules [batch - 1] 
+2012-10-03 19:50:25.66 842258 Debug Planning Number of shipments: 1 [batch - 1] 
+2012-10-03 19:50:25.671 842258 Debug Planning No current Shipment Group Rules found [batch - 1] 
+2012-10-03 19:50:25.671 842258 Debug Planning Built shipment groups for one graph [batch - 1] 
+2012-10-03 19:50:25.671 842258 Debug Planning Begin buildSecondaryChargeShipments... [batch - 1] 
+2012-10-03 19:50:25.672 842258 Debug Planning Begin buildSecondaryChargeShipmentsForGroups... [batch - 1] 
+2012-10-03 19:50:25.672 842258 Debug Planning Begin buildSecondaryChargeShipmentsForShipments... [batch - 1] 
+2012-10-03 19:50:25.676 842258 Debug Planning No secondary charge rule for rule type S [batch - 1] 
+2012-10-03 19:50:25.677 842258 Debug Planning start retrieving all secondary charge rules for itinerary: SUNNY.SUNNY_MS_ITI [batch - 1] 
+2012-10-03 19:50:25.677 842258 Debug Planning # of valid secondary_charge_rules base on itinerary: 0 [batch - 1] 
+2012-10-03 19:50:25.677 842258 Debug Planning End buildSecondaryChargeShipmentsForShipments... [batch - 1] 
+2012-10-03 19:50:25.677 842258 Debug Planning Begin buildSecondaryChargeShipmentsForShipmentStops... [batch - 1] 
+2012-10-03 19:50:25.681 842258 Debug Planning No secondary charge rule for the shipment stop rule, so no secondary charge will built against this rule in buildShipment process [batch - 1] 
+2012-10-03 19:50:25.682 842258 Debug Planning End buildSecondaryChargeShipmentsForShipments... [batch - 1] 
+2012-10-03 19:50:25.682 842258 Debug Planning Built secondary charges for shipment groups for one graph [batch - 1] 
+2012-10-03 19:50:25.682 842258 Debug Planning  There were 0 order bundle not planned [batch - 1]
+ 
+2012-10-03 19:50:25.683 842258 Debug Planning Begin PlanningSolutionImprovement ... [batch - 1] 
+2012-10-03 19:50:25.683 842258 Debug Planning None of the improvement steps is selected or number of iterations is 0. [batch - 1] 
+2012-10-03 19:50:25.683 842258 Debug Planning Begin consolidateShipmentGraphs [batch - 1] 
+2012-10-03 19:50:25.683 842258 Debug Planning Begin groupIntoSameItineraryShipmentGraphCollections [batch - 1] 
+2012-10-03 19:50:25.683 842258 Debug Planning End groupIntoSameItineraryShipmentGraphCollections [batch - 1] 
+2012-10-03 19:50:25.683 842258 Debug Planning End consolidateShipmentGraphs [batch - 1] 
+2012-10-03 19:50:25.683 842258 Debug Planning TrailerBuild - Begin createTShipmentGroups [batch - 1] 
+2012-10-03 19:50:25.688 842258 Debug Planning No Trailer Build Shipment Group Rules found [batch - 1] 
+2012-10-03 19:50:25.689 842258 Debug Planning Begin carrier capacity optimization for 2 ShipmentGraphCollection [batch - 1] 
+2012-10-03 19:50:25.689 842258 Debug Planning End carrier capacity optimization... [batch - 1] 
+2012-10-03 19:50:25.689 842258 Debug Planning Begin service provider engine... [batch - 1] 
+2012-10-03 19:50:25.689 842258 Debug Planning End service provider engine... [batch - 1] 
+2012-10-03 19:50:25.689 842258 Debug Planning Begin location capacity optimization... [batch - 1] 
+2012-10-03 19:50:25.689 842258 Debug Planning End location capacity optimization... [batch - 1] 
+2012-10-03 19:50:25.689 842258 Debug Planning Begin Post processing and Saving Shipments to Database ... [batch - 1] 
+2012-10-03 19:50:25.69 842258 Debug Planning # of shipment graphs created from this bulk plan run: 2 [batch - 1] 
+2012-10-03 19:50:25.69 842258 Debug Planning making order movement for shipment graph: 
+
+ Graph (nodes) : 
+
+ | Shipment: 429591649 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BANGALORE) | 
+
+ Graph (links) : 
+ [batch - 1]
+making order movement for shipment graph:  
+2012-10-03 19:50:25.69 842258 Debug Planning marking existing OMs with null OM gid for insertion: 
+
+ Graph (nodes) : 
+
+ | Shipment: 429591649 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BANGALORE) | 
+
+ Graph (links) : 
+ [batch - 1]
+marking existing OMs with null OM gid for insertion:  
+2012-10-03 19:50:25.69 842258 Debug Planning processing order release: SUNNY.SUNNY_MS_OR1 [batch - 1] 
+2012-10-03 19:50:25.691 842258 Debug Planning .. on shipment: 429591649 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BANGALORE) [batch - 1] 
+2012-10-03 19:50:25.691 842258 Debug Planning .. itinerary: SUNNY.SUNNY_MS_ITI [batch - 1] 
+2012-10-03 19:50:25.691 842258 Debug Planning .. leg : SUNNY.102 [batch - 1] 
+2012-10-03 19:50:25.692 842258 Debug Planning # order movements made: 1 [batch - 1] 
+2012-10-03 19:50:25.692 842258 Debug Planning making order movement for shipment graph: 
+
+ Graph (nodes) : 
+
+ | Shipment: 429046674 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BOMBAY) | 
+
+ Graph (links) : 
+ [batch - 1]
+making order movement for shipment graph:  
+2012-10-03 19:50:25.692 842258 Debug Planning marking existing OMs with null OM gid for insertion: 
+
+ Graph (nodes) : 
+
+ | Shipment: 429046674 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BOMBAY) | 
+
+ Graph (links) : 
+ [batch - 1]
+marking existing OMs with null OM gid for insertion:  
+2012-10-03 19:50:25.693 842258 Debug Planning processing order release: SUNNY.SUNNY_MS_OR2 [batch - 1] 
+2012-10-03 19:50:25.693 842258 Debug Planning .. on shipment: 429046674 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BOMBAY) [batch - 1] 
+2012-10-03 19:50:25.693 842258 Debug Planning .. itinerary: SUNNY.SUNNY_MS_ITI [batch - 1] 
+2012-10-03 19:50:25.693 842258 Debug Planning .. leg : SUNNY.102 [batch - 1] 
+2012-10-03 19:50:25.694 842258 Debug Planning # order movements made: 1 [batch - 1] 
+2012-10-03 19:50:25.694 842258 Debug Planning current graph to be saved contains shipments #: 1 [batch - 1] 
+2012-10-03 19:50:25.695 842258 Debug Planning current graph to be saved contains shipments #: 1 [batch - 1] 
+2012-10-03 19:50:25.701 842258 Debug Planning begin post processing carrier capacity optimization... [batch - 1] 
+2012-10-03 19:50:25.702 842258 Debug Planning end post processing carrier capacity optimization... [batch - 1] 
+2012-10-03 19:50:25.702 842258 Debug Planning begin shipment post processing... [batch - 1] 
+2012-10-03 19:50:25.702 842258 Debug Planning Start build shipment postProcessing... with the following shipments: [batch - 1] 
+2012-10-03 19:50:25.702 842258 Debug Planning ---> tShipment: 429591649 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BANGALORE) [batch - 1] 
+2012-10-03 19:50:25.702 842258 Debug Planning Start setStopTypes for tShipment: 429591649 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BANGALORE) [batch - 1] 
+2012-10-03 19:50:25.702 842258 Debug Planning End setStopTypes for tShipment: 429591649 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BANGALORE) [batch - 1] 
+2012-10-03 19:50:25.703 842258 Debug Planning Start makeShipmentInvolvedParties... [batch - 1] 
+2012-10-03 19:50:25.703 842258 Debug Planning Start retrieveAndSetExistingShipmentInvolvedParties... [batch - 1] 
+2012-10-03 19:50:25.703 842258 Debug Planning End retrieveAndSetExistingShipmentInvolvedParties... [batch - 1] 
+2012-10-03 19:50:25.703 842258 Debug Planning Start appendIntermediaryInvolvedPartyDatasToTShipments... [batch - 1] 
+2012-10-03 19:50:25.703 842258 Debug Planning Start appendServProvInvolvedPartyDatasToTShipments... [batch - 1] 
+2012-10-03 19:50:25.715 842258 Debug Planning No involved parties found for serv prov, BILL_FROM [batch - 1] 
+2012-10-03 19:50:25.719 842258 Debug Planning No involved parties found for serv prov, REMIT_TO [batch - 1] 
+2012-10-03 19:50:25.719 842258 Debug Planning End appendServProvInvolvedPartyDatasToTShipments. [batch - 1] 
+2012-10-03 19:50:25.72 842258 Debug Planning Start appendMasterCorporationInvolvedPartyDatasToTShipments... [batch - 1] 
+2012-10-03 19:50:25.726 842258 Debug Planning Start appendOrderReleaseInvPartyDatasToTShipment... [batch - 1] 
+2012-10-03 19:50:25.736 842258 Debug Planning End appendOrderReleaseInvPartyDatasToTShipment. [batch - 1] 
+2012-10-03 19:50:25.736 842258 Debug Planning Start appendLegInvolvedPartyDatasToTShipments... [batch - 1] 
+2012-10-03 19:50:25.741 842258 Debug Planning End appendLegInvolvedPartyDatasToTShipments. [batch - 1] 
+2012-10-03 19:50:25.741 842258 Debug Planning End makeShipmentInvolvedParties. [batch - 1] 
+2012-10-03 19:50:25.751 842258 Debug Planning Propagating shipment remarks
+ [batch - 1]
+Propagating shipment remarks 
+2012-10-03 19:50:25.751 842258 Debug Planning Done propagating shipment remarks for 0 costs
+ [batch - 1]
+Done propagating shipment remarks for 0 costs 
+2012-10-03 19:50:25.751 842258 Debug Planning Assigning shipment ports [batch - 1] 
+2012-10-03 19:50:25.751 842258 Debug Planning Done assigning shipment ports [batch - 1] 
+2012-10-03 19:50:25.752 842258 Debug Planning SShipUnitRecalcHelper::calculate - begin recalc for TSShipUnit [batch - 1] 
+2012-10-03 19:50:25.752 842258 Debug Planning SShipUnitRecalcHelper::calculate(TSShipUnit) - SShipUnit:null total gross weight:20.0 LB volume:2.0 CUFT [batch - 1] 
+2012-10-03 19:50:25.752 842258 Debug Planning Start makeShipmentRefnums... [batch - 1] 
+2012-10-03 19:50:25.752 842258 Debug Planning End makeShipmentRefnums... [batch - 1] 
+2012-10-03 19:50:25.753 842258 Debug Planning Start calculation of utilizations (weight, volume, equipment ref units) for TShipment: 429591649 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BANGALORE) [batch - 1] 
+2012-10-03 19:50:25.753 842258 Debug Planning Calculate equiment reference unit utilizaiton. [batch - 1] 
+2012-10-03 19:50:25.754 842258 Debug Planning Planning parameter: CHECK EQUIPMENT CAPACITY IN REFERENCE UNITS is off, skip. [batch - 1] 
+2012-10-03 19:50:25.754 842258 Debug Planning End build shipment postProcessing. [batch - 1] 
+2012-10-03 19:50:25.754 842258 Debug Planning Begin postProcessingCarrierCommitments.. [batch - 1] 
+2012-10-03 19:50:25.754 842258 Debug Planning End postProcessingCarrierCommitments.. [batch - 1] 
+2012-10-03 19:50:25.754 842258 Debug Planning end shipment post processing... [batch - 1] 
+2012-10-03 19:50:25.754 842258 Debug Planning begin save this graph... [batch - 1] 
+2012-10-03 19:50:25.755 842258 Debug Planning Start commitShipmentGraph in ShipmentUpdateSessionBean ... [batch - 1] 
+2012-10-03 19:50:25.755 842258 Debug Planning Order helper object is null, return perspective:B [batch - 1] 
+2012-10-03 19:50:25.756 842258 Debug Planning Persistence is inserting or updating SShipUnitData (parentPk = null) in bulk ... [batch - 1] 
+2012-10-03 19:50:25.756 842258 Debug Planning Some SShipUnitData being passed are new. Inserting ... [batch - 1] 
+2012-10-03 19:50:25.805 842258 Debug Planning Persistence is inserting or updating SShipUnitLineData (parentPk = SUNNY.SUNNY_MS_OR1-001-012) in bulk ... [batch - 1] 
+2012-10-03 19:50:25.805 842258 Debug Planning Some SShipUnitLineData being passed are new. Inserting ... [batch - 1] 
+2012-10-03 19:50:25.82 842258 Debug Workflow Registering Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [SUNNY.SUNNY_MS_OR1-001-012] [batch - 1] 
+2012-10-03 19:50:25.82 842258 Debug Planning Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = SUNNY.SUNNY_MS_OR1-001-012 1) in bulk ... [batch - 1] 
+2012-10-03 19:50:25.82 842258 Debug Planning Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = SUNNY.SUNNY_MS_OR1-001-012 1) in bulk ... [batch - 1] 
+2012-10-03 19:50:25.821 842258 Debug Planning Persistence is inserting or updating SShipUnitRefnumData (parentPk = SUNNY.SUNNY_MS_OR1-001-012) in bulk ... [batch - 1] 
+2012-10-03 19:50:25.821 842258 Debug Planning Persistence is inserting or updating SShipUnitRemarkData (parentPk = SUNNY.SUNNY_MS_OR1-001-012) in bulk ... [batch - 1] 
+2012-10-03 19:50:25.821 842258 Debug Planning Persistence is inserting or updating SShipUnitSealData (parentPk = SUNNY.SUNNY_MS_OR1-001-012) in bulk ... [batch - 1] 
+2012-10-03 19:50:25.821 842258 Debug Planning Persistence is inserting or updating SEquipmentData (parentPk = null) ... [batch - 1] 
+2012-10-03 19:50:25.821 842258 Debug Planning SEquipmentData being passed is new. Inserting ... [batch - 1] 
+2012-10-03 19:50:25.823 842258 Debug Planning Trying to populate SEquipment Data. [batch - 1] 
+2012-10-03 19:50:25.824 842258 Debug Planning All SEquipent relevant values are null. [batch - 1] 
+2012-10-03 19:50:25.839 842258 Debug Planning Persistence is inserting or updating SEquipmentSShipUnitJoinData (parentPk = SUNNY.474) in bulk ... [batch - 1] 
+2012-10-03 19:50:25.839 842258 Debug Planning Some SEquipmentSShipUnitJoinData being passed are new. Inserting ... [batch - 1] 
+2012-10-03 19:50:25.846 842258 Debug Planning Persistence is inserting or updating SShipUnitPieceData (parentPk = null) in bulk ... [batch - 1] 
+2012-10-03 19:50:25.855 842258 Debug Planning Persistence is inserting or updating ShipmentData (parentPk = null) ... [batch - 1] 
+2012-10-03 19:50:25.856 842258 Debug Planning ShipmentData being passed is new. Inserting ... [batch - 1] 
+2012-10-03 19:50:25.921 842258 Debug Planning Shipment modified/created: SUNNY.01038 [batch - 1] 
+2012-10-03 19:50:25.921 842258 Debug Planning Persistence is inserting or updating ShipmentStopData (parentPk = SUNNY.01038) ... [batch - 1] 
+2012-10-03 19:50:25.922 842258 Debug Planning ShipmentStopData being passed is new. Inserting ... [batch - 1] 
+2012-10-03 19:50:25.93 842258 Debug Planning Persistence is inserting or updating ShipmentStopDData (parentPk = SUNNY.01038 1) in bulk ... [batch - 1] 
+2012-10-03 19:50:25.93 842258 Debug Planning Some ShipmentStopDData being passed are new. Inserting ... [batch - 1] 
+2012-10-03 19:50:25.945 842258 Debug Planning Persistence is inserting or updating ShipmentStopInvPartyData (parentPk = SUNNY.01038 1) in bulk ... [batch - 1] 
+2012-10-03 19:50:25.945 842258 Debug Planning Persistence is inserting or updating ShipmentStopRefnumData (parentPk = SUNNY.01038 1) in bulk ... [batch - 1] 
+2012-10-03 19:50:25.945 842258 Debug Planning Persistence is inserting or updating ShipmentStopRemarkData (parentPk = SUNNY.01038 1) in bulk ... [batch - 1] 
+2012-10-03 19:50:25.95 842258 Debug Planning Persistence is inserting or updating ShipmentStopData (parentPk = SUNNY.01038) ... [batch - 1] 
+2012-10-03 19:50:25.95 842258 Debug Planning ShipmentStopData being passed is new. Inserting ... [batch - 1] 
+2012-10-03 19:50:25.959 842258 Debug Planning Persistence is inserting or updating ShipmentStopDData (parentPk = SUNNY.01038 2) in bulk ... [batch - 1] 
+2012-10-03 19:50:25.959 842258 Debug Planning Some ShipmentStopDData being passed are new. Inserting ... [batch - 1] 
+2012-10-03 19:50:25.964 842258 Debug Planning Persistence is inserting or updating ShipmentStopInvPartyData (parentPk = SUNNY.01038 2) in bulk ... [batch - 1] 
+2012-10-03 19:50:25.965 842258 Debug Planning Persistence is inserting or updating ShipmentStopRefnumData (parentPk = SUNNY.01038 2) in bulk ... [batch - 1] 
+2012-10-03 19:50:25.965 842258 Debug Planning Persistence is inserting or updating ShipmentStopRemarkData (parentPk = SUNNY.01038 2) in bulk ... [batch - 1] 
+2012-10-03 19:50:25.968 842258 Debug Planning Persistence is inserting or updating ShipmentSpecialServiceData (parentPk = SUNNY.01038) ... [batch - 1] 
+2012-10-03 19:50:25.968 842258 Debug Planning ShipmentSpecialServiceData being passed is new. Inserting ... [batch - 1] 
+2012-10-03 19:50:25.978 842258 Debug Planning Persistence is inserting or updating ShipmentSpecialServiceData (parentPk = SUNNY.01038) ... [batch - 1] 
+2012-10-03 19:50:25.978 842258 Debug Planning ShipmentSpecialServiceData being passed is new. Inserting ... [batch - 1] 
+2012-10-03 19:50:25.985 842258 Debug Planning Persistence is inserting or updating ShipmentSEquipmentJoinData (parentPk = SUNNY.01038) in bulk ... [batch - 1] 
+2012-10-03 19:50:25.985 842258 Debug Planning Some ShipmentSEquipmentJoinData being passed are new. Inserting ... [batch - 1] 
+2012-10-03 19:50:25.994 842258 Debug Planning Persistence is inserting or updating ShipmentRefnumData (parentPk = SUNNY.01038) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.011 842258 Debug Planning There are 0 shipment inf cost records [batch - 1] 
+2012-10-03 19:50:26.011 842258 Debug Planning after commiting shipment inf costs [batch - 1] 
+2012-10-03 19:50:26.012 842258 Debug Planning before makeShipmentRefnums [batch - 1] 
+2012-10-03 19:50:26.117 842258 Debug Planning after makeShipmentRefnums [batch - 1] 
+2012-10-03 19:50:26.117 842258 Debug Planning before commitShipmentInvolvedParties [batch - 1] 
+2012-10-03 19:50:26.117 842258 Debug Planning Persistence is inserting or updating ShipmentInvolvedPartyData (parentPk = SUNNY.01038) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.118 842258 Debug Planning after commitShipmentInvolvedParties [batch - 1] 
+2012-10-03 19:50:26.118 842258 Debug Planning after commitShipmentInvolvedPartyAddresses [batch - 1] 
+2012-10-03 19:50:26.118 842258 Debug Planning before committing shipment transactional event contacts [batch - 1] 
+2012-10-03 19:50:26.118 842258 Debug Planning after committing shipment transactional event contacts [batch - 1] 
+2012-10-03 19:50:26.118 842258 Debug Planning before commiting shipment texts [batch - 1] 
+2012-10-03 19:50:26.118 842258 Debug Planning after commiting shipment texts [batch - 1] 
+2012-10-03 19:50:26.148 842258 Debug Planning before commiting ship_commit_alloc_joins [batch - 1] 
+2012-10-03 19:50:26.148 842258 Debug Planning After commiting ship_commit_alloc_joins [batch - 1] 
+2012-10-03 19:50:26.148 842258 Debug Planning before commiting ship_commit_count_joins [batch - 1] 
+2012-10-03 19:50:26.148 842258 Debug Planning After commiting ship_commit_count_joins [batch - 1] 
+2012-10-03 19:50:26.149 842258 Debug Planning Performed the following recalculations: [ShipmentStopFieldsSync, ShipmentCalculatedEquipmentFieldsSync, ShipmentCalculatedOrderReleaseFieldsSync, ShipmentCalculatedCostFieldsSync, ShipmentCalculatedFieldsSync, ShipmentCalculatedEquipmentRefUnitFieldsSync, ShipmentCalculatedUtilFieldsSync] for shipmentPK: SUNNY.01038 [batch - 1] 
+2012-10-03 19:50:26.149 842258 Debug Planning begin updateOmShipmentGid.. [batch - 1] 
+2012-10-03 19:50:26.15 842258 Debug Planning end updateOmShipmentGid.. [batch - 1] 
+2012-10-03 19:50:26.15 842258 Debug Planning start saveOrderMovements... [batch - 1] 
+2012-10-03 19:50:26.15 842258 Debug Planning before save order_movements... [batch - 1] 
+2012-10-03 19:50:26.15 842258 Debug Planning Begin OrderMovementSaver::saveOrderMovement... [batch - 1] 
+2012-10-03 19:50:26.2 842258 Debug Planning End OrderMovementSaver::saveOrderMovement... [batch - 1] 
+2012-10-03 19:50:26.2 842258 Debug Planning after save order_movements [batch - 1] 
+2012-10-03 19:50:26.2 842258 Debug Planning before setOrderReleasesStatus... [batch - 1] 
+2012-10-03 19:50:26.201 842258 Debug Planning Set Status of OrderRelease: SUNNY.SUNNY_MS_OR1 to GC3_APPL_OR_ASSIGN_ORDER. [batch - 1] 
+2012-10-03 19:50:26.202 842258 Debug Planning Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ? src:SUNNY.SUNNY_MAD/changed:false dest:SUNNY.SUNNY_BANGALORE/changed:false [batch - 1] 
+2012-10-03 19:50:26.211 842258 Debug Planning Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ? src:SUNNY.SUNNY_MAD/changed:false dest:SUNNY.SUNNY_BANGALORE/changed:false [batch - 1] 
+2012-10-03 19:50:26.225 842258 Debug Planning Successfully set order related attributes. [batch - 1] 
+2012-10-03 19:50:26.225 842258 Debug Planning after setOrderReleasesStatus [batch - 1] 
+2012-10-03 19:50:26.226 842258 Debug Planning end saveOrderMovements. [batch - 1] 
+2012-10-03 19:50:26.228 842258 Debug Planning Order helper object is null, return perspective:B [batch - 1] 
+2012-10-03 19:50:26.228 842258 Debug Planning Set Status of OrderRelease: SUNNY.SUNNY_MS_OR1 to GC3_APPL_OR_ASSIGN_ORDER. [batch - 1] 
+2012-10-03 19:50:26.229 842258 Debug Planning Assign Itinerary: SUNNY.SUNNY_MS_ITI to OrderRelease: SUNNY.SUNNY_MS_OR1 [batch - 1] 
+2012-10-03 19:50:26.229 842258 Debug Planning Assign bulk plan ID: SUNNY.20121003-0012 to OrderRelease: SUNNY.SUNNY_MS_OR1 [batch - 1] 
+2012-10-03 19:50:26.231 842258 Debug Planning Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ? src:SUNNY.SUNNY_MAD/changed:false dest:SUNNY.SUNNY_BANGALORE/changed:false [batch - 1] 
+2012-10-03 19:50:26.242 842258 Debug Planning Successfully set order related attributes. [batch - 1] 
+2012-10-03 19:50:26.243 842258 Debug Planning Order helper object is null, return perspective:B [batch - 1] 
+2012-10-03 19:50:26.243 842258 Debug Planning Successfully set order movement related attributes. [batch - 1] 
+2012-10-03 19:50:26.243 842258 Debug Planning Order helper object is null, return perspective:B [batch - 1] 
+2012-10-03 19:50:26.243 842258 Debug Planning Successfully set order movement related attributes. [batch - 1] 
+2012-10-03 19:50:26.261 842258 Debug Planning PlanedShipmentCreated topic published for shipment SUNNY.01038 [batch - 1] 
+2012-10-03 19:50:26.261 842258 Debug Planning Returning from shipment update session bean. [batch - 1] 
+2012-10-03 19:50:26.295 842258 Debug Workflow Executing Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [SUNNY.SUNNY_MS_OR1-001-012] [batch - 1] 
+2012-10-03 19:50:26.31 842258 Debug Workflow Executing topic Recalculate Shipment Totals: pk=SUNNY.01038 [batch - 1] 
+2012-10-03 19:50:26.314 842258 Debug Workflow Starting workflow Simple Workflow (430379673) in response to Recalculate Shipment Totals: pk=SUNNY.01038 [batch - 1] 
+2012-10-03 19:50:26.345 842258 Debug Workflow Completing workflow Simple Workflow (430379673) [batch - 1] 
+2012-10-03 19:50:26.369 842258 Debug Workflow Executing topic Recalculate Shipment Order Release Totals: pk=SUNNY.01038 [batch - 1] 
+2012-10-03 19:50:26.373 842258 Debug Workflow Starting workflow Simple Workflow (432333062) in response to Recalculate Shipment Order Release Totals: pk=SUNNY.01038 [batch - 1] 
+2012-10-03 19:50:26.401 842258 Debug Workflow Completing workflow Simple Workflow (432333062) [batch - 1] 
+2012-10-03 19:50:26.418 842258 Debug Workflow Publishing topic PlannedShipmentCreated: shipment=SUNNY.01038, dataSource=USER on queue execution, group null [batch - 1] 
+2012-10-03 19:50:26.42 842258 Debug Planning end save this graph... [batch - 1] 
+2012-10-03 19:50:26.42 842258 Debug Planning Updating tBulkPlanResult after a graph is saved. [batch - 1] 
+2012-10-03 19:50:26.422 842258 Debug Workflow Starting workflow Plan Or Execute Shipments (416571239) in response to PlannedShipmentCreated: shipment=SUNNY.01038, dataSource=USER [execution - 2] 
+2012-10-03 19:50:26.426 842258 Debug Workflow Completing workflow Plan Or Execute Shipments (416571239) [execution - 2] 
+2012-10-03 19:50:26.435 842258 Debug Planning # of order release Pks specified: 1 [batch - 1] 
+2012-10-03 19:50:26.435 842258 Debug Planning # of TOrderReleases found in the graph: 1 [batch - 1] 
+2012-10-03 19:50:26.435 842258 Debug Planning get TBulkPlanByModeResult for mode: TL [batch - 1] 
+2012-10-03 19:50:26.436 842258 Debug Planning return tBulkPlanByModeResult newly constructed: <BulkPlanByModeResult bulk Plan Gid, mode= SUNNY.20121003-0012 TL
+<-- Order Release Statistics -->
+ Num Of Order Releases Planned = null
+<-- Order Movement Statistics -->
+ Num Of Order Movements Planned = 0
+<-- Shipment Statistics -->
+ Num Of Shipments Built = null [batch - 1]
+return tBulkPlanByModeResult newly constructed: <BulkPlanByModeResult bulk Plan Gid, mode= SUNNY.20121003-0012 TL 
+2012-10-03 19:50:26.436 842258 Debug Planning get TBulkPlanByServprovResult for servprov: SUNNY.SUNNY_MS_SP [batch - 1] 
+2012-10-03 19:50:26.436 842258 Debug Planning return tBulkPlanByServprovResult newly constructed: <BulkPlanByServprovResult bulk Plan Gid, mode= SUNNY.20121003-0012 SUNNY.SUNNY_MS_SP
+<-- Order Release Statistics -->
+ Num Of Order Releases Planned = null
+<-- Order Movement Statistics -->
+ Num Of Order Movements Planned = 0
+<-- Shipment Statistics -->
+ Num Of Shipments Built = null [batch - 1]
+return tBulkPlanByServprovResult newly constructed: <BulkPlanByServprovResult bulk Plan Gid, mode= SUNNY.20121003-0012 SUNNY.SUNNY_MS_SP 
+2012-10-03 19:50:26.437 842258 Debug Planning Committing tBulkPlanResult after a graph is saved. [batch - 1] 
+2012-10-03 19:50:26.489 842258 Debug Planning begin post processing carrier capacity optimization... [batch - 1] 
+2012-10-03 19:50:26.489 842258 Debug Planning end post processing carrier capacity optimization... [batch - 1] 
+2012-10-03 19:50:26.49 842258 Debug Planning begin shipment post processing... [batch - 1] 
+2012-10-03 19:50:26.49 842258 Debug Planning Start build shipment postProcessing... with the following shipments: [batch - 1] 
+2012-10-03 19:50:26.49 842258 Debug Planning ---> tShipment: 429046674 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BOMBAY) [batch - 1] 
+2012-10-03 19:50:26.49 842258 Debug Planning Start setStopTypes for tShipment: 429046674 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BOMBAY) [batch - 1] 
+2012-10-03 19:50:26.49 842258 Debug Planning End setStopTypes for tShipment: 429046674 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BOMBAY) [batch - 1] 
+2012-10-03 19:50:26.49 842258 Debug Planning Start makeShipmentInvolvedParties... [batch - 1] 
+2012-10-03 19:50:26.491 842258 Debug Planning Start retrieveAndSetExistingShipmentInvolvedParties... [batch - 1] 
+2012-10-03 19:50:26.491 842258 Debug Planning End retrieveAndSetExistingShipmentInvolvedParties... [batch - 1] 
+2012-10-03 19:50:26.491 842258 Debug Planning Start appendIntermediaryInvolvedPartyDatasToTShipments... [batch - 1] 
+2012-10-03 19:50:26.491 842258 Debug Planning Start appendServProvInvolvedPartyDatasToTShipments... [batch - 1] 
+2012-10-03 19:50:26.507 842258 Debug Planning No involved parties found for serv prov, BILL_FROM [batch - 1] 
+2012-10-03 19:50:26.512 842258 Debug Planning No involved parties found for serv prov, REMIT_TO [batch - 1] 
+2012-10-03 19:50:26.512 842258 Debug Planning End appendServProvInvolvedPartyDatasToTShipments. [batch - 1] 
+2012-10-03 19:50:26.512 842258 Debug Planning Start appendMasterCorporationInvolvedPartyDatasToTShipments... [batch - 1] 
+2012-10-03 19:50:26.518 842258 Debug Planning Start appendOrderReleaseInvPartyDatasToTShipment... [batch - 1] 
+2012-10-03 19:50:26.528 842258 Debug Planning End appendOrderReleaseInvPartyDatasToTShipment. [batch - 1] 
+2012-10-03 19:50:26.528 842258 Debug Planning Start appendLegInvolvedPartyDatasToTShipments... [batch - 1] 
+2012-10-03 19:50:26.532 842258 Debug Planning End appendLegInvolvedPartyDatasToTShipments. [batch - 1] 
+2012-10-03 19:50:26.533 842258 Debug Planning End makeShipmentInvolvedParties. [batch - 1] 
+2012-10-03 19:50:26.539 842258 Debug Planning Propagating shipment remarks
+ [batch - 1]
+Propagating shipment remarks 
+2012-10-03 19:50:26.539 842258 Debug Planning Done propagating shipment remarks for 0 costs
+ [batch - 1]
+Done propagating shipment remarks for 0 costs 
+2012-10-03 19:50:26.54 842258 Debug Planning Assigning shipment ports [batch - 1] 
+2012-10-03 19:50:26.54 842258 Debug Planning Done assigning shipment ports [batch - 1] 
+2012-10-03 19:50:26.54 842258 Debug Planning SShipUnitRecalcHelper::calculate - begin recalc for TSShipUnit [batch - 1] 
+2012-10-03 19:50:26.541 842258 Debug Planning SShipUnitRecalcHelper::calculate(TSShipUnit) - SShipUnit:null total gross weight:20.0 LB volume:2.0 CUFT [batch - 1] 
+2012-10-03 19:50:26.541 842258 Debug Planning Start makeShipmentRefnums... [batch - 1] 
+2012-10-03 19:50:26.541 842258 Debug Planning End makeShipmentRefnums... [batch - 1] 
+2012-10-03 19:50:26.542 842258 Debug Planning Start calculation of utilizations (weight, volume, equipment ref units) for TShipment: 429046674 (SUNNY.SUNNY_MAD->SUNNY.SUNNY_BOMBAY) [batch - 1] 
+2012-10-03 19:50:26.542 842258 Debug Planning Calculate equiment reference unit utilizaiton. [batch - 1] 
+2012-10-03 19:50:26.542 842258 Debug Planning Planning parameter: CHECK EQUIPMENT CAPACITY IN REFERENCE UNITS is off, skip. [batch - 1] 
+2012-10-03 19:50:26.542 842258 Debug Planning End build shipment postProcessing. [batch - 1] 
+2012-10-03 19:50:26.542 842258 Debug Planning Begin postProcessingCarrierCommitments.. [batch - 1] 
+2012-10-03 19:50:26.543 842258 Debug Planning End postProcessingCarrierCommitments.. [batch - 1] 
+2012-10-03 19:50:26.543 842258 Debug Planning end shipment post processing... [batch - 1] 
+2012-10-03 19:50:26.543 842258 Debug Planning begin save this graph... [batch - 1] 
+2012-10-03 19:50:26.543 842258 Debug Planning Start commitShipmentGraph in ShipmentUpdateSessionBean ... [batch - 1] 
+2012-10-03 19:50:26.544 842258 Debug Planning Order helper object is null, return perspective:B [batch - 1] 
+2012-10-03 19:50:26.544 842258 Debug Planning Persistence is inserting or updating SShipUnitData (parentPk = null) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.545 842258 Debug Planning Some SShipUnitData being passed are new. Inserting ... [batch - 1] 
+2012-10-03 19:50:26.573 842258 Debug Planning Persistence is inserting or updating SShipUnitLineData (parentPk = SUNNY.SUNNY_MS_OR2-001-012) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.574 842258 Debug Planning Some SShipUnitLineData being passed are new. Inserting ... [batch - 1] 
+2012-10-03 19:50:26.585 842258 Debug Workflow Registering Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [SUNNY.SUNNY_MS_OR2-001-012] [batch - 1] 
+2012-10-03 19:50:26.586 842258 Debug Planning Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = SUNNY.SUNNY_MS_OR2-001-012 1) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.586 842258 Debug Planning Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = SUNNY.SUNNY_MS_OR2-001-012 1) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.586 842258 Debug Planning Persistence is inserting or updating SShipUnitRefnumData (parentPk = SUNNY.SUNNY_MS_OR2-001-012) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.586 842258 Debug Planning Persistence is inserting or updating SShipUnitRemarkData (parentPk = SUNNY.SUNNY_MS_OR2-001-012) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.587 842258 Debug Planning Persistence is inserting or updating SShipUnitSealData (parentPk = SUNNY.SUNNY_MS_OR2-001-012) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.587 842258 Debug Planning Persistence is inserting or updating SEquipmentData (parentPk = null) ... [batch - 1] 
+2012-10-03 19:50:26.587 842258 Debug Planning SEquipmentData being passed is new. Inserting ... [batch - 1] 
+2012-10-03 19:50:26.588 842258 Debug Planning Trying to populate SEquipment Data. [batch - 1] 
+2012-10-03 19:50:26.589 842258 Debug Planning All SEquipent relevant values are null. [batch - 1] 
+2012-10-03 19:50:26.599 842258 Debug Planning Persistence is inserting or updating SEquipmentSShipUnitJoinData (parentPk = SUNNY.475) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.599 842258 Debug Planning Some SEquipmentSShipUnitJoinData being passed are new. Inserting ... [batch - 1] 
+2012-10-03 19:50:26.605 842258 Debug Planning Persistence is inserting or updating SShipUnitPieceData (parentPk = null) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.614 842258 Debug Planning Persistence is inserting or updating ShipmentData (parentPk = null) ... [batch - 1] 
+2012-10-03 19:50:26.614 842258 Debug Planning ShipmentData being passed is new. Inserting ... [batch - 1] 
+2012-10-03 19:50:26.683 842258 Debug Planning Shipment modified/created: SUNNY.01039 [batch - 1] 
+2012-10-03 19:50:26.683 842258 Debug Planning Persistence is inserting or updating ShipmentStopData (parentPk = SUNNY.01039) ... [batch - 1] 
+2012-10-03 19:50:26.683 842258 Debug Planning ShipmentStopData being passed is new. Inserting ... [batch - 1] 
+2012-10-03 19:50:26.692 842258 Debug Planning Persistence is inserting or updating ShipmentStopDData (parentPk = SUNNY.01039 1) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.692 842258 Debug Planning Some ShipmentStopDData being passed are new. Inserting ... [batch - 1] 
+2012-10-03 19:50:26.703 842258 Debug Planning Persistence is inserting or updating ShipmentStopInvPartyData (parentPk = SUNNY.01039 1) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.703 842258 Debug Planning Persistence is inserting or updating ShipmentStopRefnumData (parentPk = SUNNY.01039 1) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.703 842258 Debug Planning Persistence is inserting or updating ShipmentStopRemarkData (parentPk = SUNNY.01039 1) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.707 842258 Debug Planning Persistence is inserting or updating ShipmentStopData (parentPk = SUNNY.01039) ... [batch - 1] 
+2012-10-03 19:50:26.707 842258 Debug Planning ShipmentStopData being passed is new. Inserting ... [batch - 1] 
+2012-10-03 19:50:26.714 842258 Debug Planning Persistence is inserting or updating ShipmentStopDData (parentPk = SUNNY.01039 2) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.714 842258 Debug Planning Some ShipmentStopDData being passed are new. Inserting ... [batch - 1] 
+2012-10-03 19:50:26.718 842258 Debug Planning Persistence is inserting or updating ShipmentStopInvPartyData (parentPk = SUNNY.01039 2) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.718 842258 Debug Planning Persistence is inserting or updating ShipmentStopRefnumData (parentPk = SUNNY.01039 2) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.719 842258 Debug Planning Persistence is inserting or updating ShipmentStopRemarkData (parentPk = SUNNY.01039 2) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.721 842258 Debug Planning Persistence is inserting or updating ShipmentSpecialServiceData (parentPk = SUNNY.01039) ... [batch - 1] 
+2012-10-03 19:50:26.721 842258 Debug Planning ShipmentSpecialServiceData being passed is new. Inserting ... [batch - 1] 
+2012-10-03 19:50:26.728 842258 Debug Planning Persistence is inserting or updating ShipmentSpecialServiceData (parentPk = SUNNY.01039) ... [batch - 1] 
+2012-10-03 19:50:26.728 842258 Debug Planning ShipmentSpecialServiceData being passed is new. Inserting ... [batch - 1] 
+2012-10-03 19:50:26.734 842258 Debug Planning Persistence is inserting or updating ShipmentSEquipmentJoinData (parentPk = SUNNY.01039) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.734 842258 Debug Planning Some ShipmentSEquipmentJoinData being passed are new. Inserting ... [batch - 1] 
+2012-10-03 19:50:26.741 842258 Debug Planning Persistence is inserting or updating ShipmentRefnumData (parentPk = SUNNY.01039) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.752 842258 Debug Planning There are 0 shipment inf cost records [batch - 1] 
+2012-10-03 19:50:26.752 842258 Debug Planning after commiting shipment inf costs [batch - 1] 
+2012-10-03 19:50:26.752 842258 Debug Planning before makeShipmentRefnums [batch - 1] 
+2012-10-03 19:50:26.848 842258 Debug Planning after makeShipmentRefnums [batch - 1] 
+2012-10-03 19:50:26.848 842258 Debug Planning before commitShipmentInvolvedParties [batch - 1] 
+2012-10-03 19:50:26.849 842258 Debug Planning Persistence is inserting or updating ShipmentInvolvedPartyData (parentPk = SUNNY.01039) in bulk ... [batch - 1] 
+2012-10-03 19:50:26.849 842258 Debug Planning after commitShipmentInvolvedParties [batch - 1] 
+2012-10-03 19:50:26.849 842258 Debug Planning after commitShipmentInvolvedPartyAddresses [batch - 1] 
+2012-10-03 19:50:26.849 842258 Debug Planning before committing shipment transactional event contacts [batch - 1] 
+2012-10-03 19:50:26.849 842258 Debug Planning after committing shipment transactional event contacts [batch - 1] 
+2012-10-03 19:50:26.849 842258 Debug Planning before commiting shipment texts [batch - 1] 
+2012-10-03 19:50:26.85 842258 Debug Planning after commiting shipment texts [batch - 1] 
+2012-10-03 19:50:26.872 842258 Debug Planning before commiting ship_commit_alloc_joins [batch - 1] 
+2012-10-03 19:50:26.873 842258 Debug Planning After commiting ship_commit_alloc_joins [batch - 1] 
+2012-10-03 19:50:26.873 842258 Debug Planning before commiting ship_commit_count_joins [batch - 1] 
+2012-10-03 19:50:26.873 842258 Debug Planning After commiting ship_commit_count_joins [batch - 1] 
+2012-10-03 19:50:26.873 842258 Debug Planning Performed the following recalculations: [ShipmentStopFieldsSync, ShipmentCalculatedEquipmentFieldsSync, ShipmentCalculatedOrderReleaseFieldsSync, ShipmentCalculatedCostFieldsSync, ShipmentCalculatedFieldsSync, ShipmentCalculatedEquipmentRefUnitFieldsSync, ShipmentCalculatedUtilFieldsSync] for shipmentPK: SUNNY.01039 [batch - 1] 
+2012-10-03 19:50:26.874 842258 Debug Planning begin updateOmShipmentGid.. [batch - 1] 
+2012-10-03 19:50:26.874 842258 Debug Planning end updateOmShipmentGid.. [batch - 1] 
+2012-10-03 19:50:26.874 842258 Debug Planning start saveOrderMovements... [batch - 1] 
+2012-10-03 19:50:26.874 842258 Debug Planning before save order_movements... [batch - 1] 
+2012-10-03 19:50:26.874 842258 Debug Planning Begin OrderMovementSaver::saveOrderMovement... [batch - 1] 
+2012-10-03 19:50:26.914 842258 Debug Planning End OrderMovementSaver::saveOrderMovement... [batch - 1] 
+2012-10-03 19:50:26.914 842258 Debug Planning after save order_movements [batch - 1] 
+2012-10-03 19:50:26.915 842258 Debug Planning before setOrderReleasesStatus... [batch - 1] 
+2012-10-03 19:50:26.915 842258 Debug Planning Set Status of OrderRelease: SUNNY.SUNNY_MS_OR2 to GC3_APPL_OR_ASSIGN_ORDER. [batch - 1] 
+2012-10-03 19:50:26.916 842258 Debug Planning Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ? src:SUNNY.SUNNY_MAD/changed:false dest:SUNNY.SUNNY_BOMBAY/changed:false [batch - 1] 
+2012-10-03 19:50:26.924 842258 Debug Planning Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ? src:SUNNY.SUNNY_MAD/changed:false dest:SUNNY.SUNNY_BOMBAY/changed:false [batch - 1] 
+2012-10-03 19:50:26.938 842258 Debug Planning Successfully set order related attributes. [batch - 1] 
+2012-10-03 19:50:26.938 842258 Debug Planning after setOrderReleasesStatus [batch - 1] 
+2012-10-03 19:50:26.939 842258 Debug Planning end saveOrderMovements. [batch - 1] 
+2012-10-03 19:50:26.941 842258 Debug Planning Order helper object is null, return perspective:B [batch - 1] 
+2012-10-03 19:50:26.941 842258 Debug Planning Set Status of OrderRelease: SUNNY.SUNNY_MS_OR2 to GC3_APPL_OR_ASSIGN_ORDER. [batch - 1] 
+2012-10-03 19:50:26.942 842258 Debug Planning Assign Itinerary: SUNNY.SUNNY_MS_ITI to OrderRelease: SUNNY.SUNNY_MS_OR2 [batch - 1] 
+2012-10-03 19:50:26.942 842258 Debug Planning Assign bulk plan ID: SUNNY.20121003-0012 to OrderRelease: SUNNY.SUNNY_MS_OR2 [batch - 1] 
+2012-10-03 19:50:26.944 842258 Debug Planning Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ? src:SUNNY.SUNNY_MAD/changed:false dest:SUNNY.SUNNY_BOMBAY/changed:false [batch - 1] 
+2012-10-03 19:50:26.955 842258 Debug Planning Successfully set order related attributes. [batch - 1] 
+2012-10-03 19:50:26.956 842258 Debug Planning Order helper object is null, return perspective:B [batch - 1] 
+2012-10-03 19:50:26.956 842258 Debug Planning Successfully set order movement related attributes. [batch - 1] 
+2012-10-03 19:50:26.956 842258 Debug Planning Order helper object is null, return perspective:B [batch - 1] 
+2012-10-03 19:50:26.956 842258 Debug Planning Successfully set order movement related attributes. [batch - 1] 
+2012-10-03 19:50:26.974 842258 Debug Planning PlanedShipmentCreated topic published for shipment SUNNY.01039 [batch - 1] 
+2012-10-03 19:50:26.974 842258 Debug Planning Returning from shipment update session bean. [batch - 1] 
+2012-10-03 19:50:27.001 842258 Debug Workflow Executing Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [SUNNY.SUNNY_MS_OR2-001-012] [batch - 1] 
+2012-10-03 19:50:27.017 842258 Debug Workflow Executing topic Recalculate Shipment Totals: pk=SUNNY.01039 [batch - 1] 
+2012-10-03 19:50:27.021 842258 Debug Workflow Starting workflow Simple Workflow (433356652) in response to Recalculate Shipment Totals: pk=SUNNY.01039 [batch - 1] 
+2012-10-03 19:50:27.054 842258 Debug Workflow Completing workflow Simple Workflow (433356652) [batch - 1] 
+2012-10-03 19:50:27.071 842258 Debug Workflow Executing topic Recalculate Shipment Order Release Totals: pk=SUNNY.01039 [batch - 1] 
+2012-10-03 19:50:27.074 842258 Debug Workflow Starting workflow Simple Workflow (433731780) in response to Recalculate Shipment Order Release Totals: pk=SUNNY.01039 [batch - 1] 
+2012-10-03 19:50:27.103 842258 Debug Workflow Completing workflow Simple Workflow (433731780) [batch - 1] 
+2012-10-03 19:50:27.122 842258 Debug Workflow Publishing topic PlannedShipmentCreated: shipment=SUNNY.01039, dataSource=USER on queue execution, group null [batch - 1] 
+2012-10-03 19:50:27.124 842258 Debug Planning end save this graph... [batch - 1] 
+2012-10-03 19:50:27.124 842258 Debug Planning Updating tBulkPlanResult after a graph is saved. [batch - 1] 
+2012-10-03 19:50:27.127 842258 Debug Workflow Starting workflow Plan Or Execute Shipments (432166136) in response to PlannedShipmentCreated: shipment=SUNNY.01039, dataSource=USER [execution - 1] 
+2012-10-03 19:50:27.13 842258 Debug Workflow Completing workflow Plan Or Execute Shipments (432166136) [execution - 1] 
+2012-10-03 19:50:27.134 842258 Debug Planning one bulk_plan_by_mode is loaded, mode: TL [batch - 1] 
+2012-10-03 19:50:27.14 842258 Debug Planning one bulk_plan_by_servprov is loaded, servprov: SUNNY.SUNNY_MS_SP [batch - 1] 
+2012-10-03 19:50:27.142 842258 Debug Planning # of order release Pks specified: 1 [batch - 1] 
+2012-10-03 19:50:27.142 842258 Debug Planning # of TOrderReleases found in the graph: 1 [batch - 1] 
+2012-10-03 19:50:27.142 842258 Debug Planning get TBulkPlanByModeResult for mode: TL [batch - 1] 
+2012-10-03 19:50:27.143 842258 Debug Planning testing tBulkPlanByModeResult, its mode: TL [batch - 1] 
+2012-10-03 19:50:27.143 842258 Debug Planning return tBulkPlanByModeResult already exist: <BulkPlanByModeResult bulk Plan Gid, mode= SUNNY.20121003-0012 TL
+<-- Order Release Statistics -->
+ Num Of Order Releases Planned = 1
+<-- Order Movement Statistics -->
+ Num Of Order Movements Planned = 0
+<-- Shipment Statistics -->
+ Num Of Shipments Built = 1 [batch - 1]
+return tBulkPlanByModeResult already exist: <BulkPlanByModeResult bulk Plan Gid, mode= SUNNY.20121003-0012 TL 
+2012-10-03 19:50:27.143 842258 Debug Planning get TBulkPlanByServprovResult for servprov: SUNNY.SUNNY_MS_SP [batch - 1] 
+2012-10-03 19:50:27.144 842258 Debug Planning testing tBulkPlanByServprovResult, its servprov: SUNNY.SUNNY_MS_SP [batch - 1] 
+2012-10-03 19:50:27.144 842258 Debug Planning return tBulkPlanByServprovResult already exist: <BulkPlanByServprovResult bulk Plan Gid, mode= SUNNY.20121003-0012 SUNNY.SUNNY_MS_SP
+<-- Order Release Statistics -->
+ Num Of Order Releases Planned = 1
+<-- Order Movement Statistics -->
+ Num Of Order Movements Planned = 0
+<-- Shipment Statistics -->
+ Num Of Shipments Built = 1 [batch - 1]
+return tBulkPlanByServprovResult already exist: <BulkPlanByServprovResult bulk Plan Gid, mode= SUNNY.20121003-0012 SUNNY.SUNNY_MS_SP 
+2012-10-03 19:50:27.144 842258 Debug Planning Committing tBulkPlanResult after a graph is saved. [batch - 1] 
+2012-10-03 19:50:27.179 842258 Debug Planning Complete Saving Shipments to Database ... [batch - 1] 
+2012-10-03 19:50:27.179 842258 Debug Planning Begin Saving Trailler build Shipment Groups to Database ... [batch - 1] 
+2012-10-03 19:50:27.18 842258 Debug Planning End Saving Shipment Groups to Database ... [batch - 1] 
+2012-10-03 19:50:27.18 842258 Debug Planning End Saving Trailler build Shipment Groups to Database ... [batch - 1] 
+2012-10-03 19:50:27.18 842258 Debug Planning Begin Saving Continuous Move refnums to Database ... [batch - 1] 
+2012-10-03 19:50:27.18 842258 Debug Planning End Saving Continuous Move refnums to Database ... [batch - 1] 
+2012-10-03 19:50:27.181 842258 Debug Planning End Bulk plan run #1 [batch - 1] 
+2012-10-03 19:50:27.188 842258 Debug Planning one bulk_plan_by_mode is loaded, mode: TL [batch - 1] 
+2012-10-03 19:50:27.196 842258 Debug Planning one bulk_plan_by_servprov is loaded, servprov: SUNNY.SUNNY_MS_SP [batch - 1] 
+2012-10-03 19:50:27.197 842258 Debug Planning Updating bulk plan result:<BulkPlanResult bulk Plan Gid = SUNNY.20121003-0012
+<-- Order Release Statistics -->
+ Num Of Order Releases Selected = 2
+ Num Of Order Releases Unassigned = 2
+ Num Of Order Releases Planned = 2
+ Num Of Order Releases Failed To Plan = 0
+<-- Order Movement Statistics -->
+ Num Of Order Movements Selected = 0
+ Num Of Order Movements Unassigned = 0
+ Num Of Order Movements Planned = 0
+ Num Of Order Movements Failed To Plan = 0
+<-- Shipment Statistics -->
+ Num Of Shipments Built = 2
+ Start Time = 2012-10-03 19:50:22 Asia/Calcutta
+ End Time = 2012-10-03 19:50:27 Asia/Calcutta > ... [batch - 1]
+Updating bulk plan result:<BulkPlanResult bulk Plan Gid = SUNNY.20121003-0012 
+2012-10-03 19:50:27.235 842258 Debug Planning Updated bulk plan result:<BulkPlanResult bulk Plan Gid = SUNNY.20121003-0012
+<-- Order Release Statistics -->
+ Num Of Order Releases Selected = 2
+ Num Of Order Releases Unassigned = 2
+ Num Of Order Releases Planned = 2
+ Num Of Order Releases Failed To Plan = 0
+<-- Order Movement Statistics -->
+ Num Of Order Movements Selected = 0
+ Num Of Order Movements Unassigned = 0
+ Num Of Order Movements Planned = 0
+ Num Of Order Movements Failed To Plan = 0
+<-- Shipment Statistics -->
+ Num Of Shipments Built = 2
+ Start Time = 2012-10-03 19:50:22 Asia/Calcutta
+ End Time = 2012-10-03 19:50:27 Asia/Calcutta > has been committed. [batch - 1]
+Updated bulk plan result:<BulkPlanResult bulk Plan Gid = SUNNY.20121003-0012 
+2012-10-03 19:50:27.236 842258 Debug Workflow Completing workflow Simple Workflow (416869846) [batch - 1] 
+

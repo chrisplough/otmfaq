@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<navgroups product="remindermail" master="true">
+
+	<navgroup text="Inactive Reminders" displayorder="109">
+	
+		<navoption displayorder="10">
+			<text>Settings</text>
+			<link>../{$vbulletin->config[Misc][admincpdir]}/options.php?do=options&amp;dogroup=remindermail</link>
+		</navoption>
+	
+		<navoption displayorder="40">
+			<text>Inactivity Log</text>
+			<link>../{$vbulletin->config[Misc][admincpdir]}/inactivitylog.php</link>
+		</navoption>
+
+		<navoption displayorder="50">
+			<text>Reset Reminders</text>
+			<link>../{$vbulletin->config[Misc][admincpdir]}/resetreminders.php</link>
+		</navoption>
+
+		
+	</navgroup>
+	
+</navgroups>

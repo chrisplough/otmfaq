@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notify>
+    <To>
+        <FirstName/>
+        <LastName/>
+        <Fax/>
+        <Role>CONTACT</Role>
+    </To>
+    <NumberOfPages>1</NumberOfPages>
+    <Severity>Informational</Severity>
+    <DateTime TZ="Europe/Helsinki">2014-09-03 07:56:21</DateTime>
+    <BusinessObject PK="NSN.0001600">
+        <ID>KUEHNE NAGEL-000078</ID>
+    </BusinessObject>
+    <Shipment>
+        <Xid>0001600</Xid>
+        <Reference>KUEHNE NAGEL-000078</Reference>
+        <Perspective>B</Perspective>
+        <Origin>
+            <Xid>FI29</Xid>
+            <Name>NOKIA SOLUTIONS AND NETWORKS OY</Name>
+            <City>6604 LH Wijchen</City>
+            <Province/>
+            <ProvinceCode/>
+            <PostalCode>6604 LH</PostalCode>
+            <Country>NLD</Country>
+        </Origin>
+        <Dest>
+            <Xid>NFISA02W04-1191773575-SAP</Xid>
+            <Name>SA-07 (STC) NOKIA SOLUTIONS AND NETWORKS</Name>
+            <City>JEDDAH</City>
+            <Province/>
+            <ProvinceCode/>
+            <PostalCode>21472</PostalCode>
+            <Country>SAU</Country>
+        </Dest>
+        <ShipDate TZ="Europe/Helsinki">2012-01-12 12:24:24</ShipDate>
+        <EndDate TZ="Europe/Helsinki">2012-01-13 12:24:24</EndDate>
+        <References>
+            <Reference Qual="BM">KUEHNE NAGEL-000078</Reference>
+            <Reference Qual="BMS">27-08-2014 08:36:43</Reference>
+            <Reference Qual="GLOG">NSN.0001600</Reference>
+        </References>
+    </Shipment>
+    <ServiceProvider ID="KUEHNE NAGEL">
+        <SCAC/>
+        <Name>KUEHNE NAGEL</Name>
+        <Contact>
+            <FirstName/>
+            <LastName/>
+            <Phone/>
+            <EMail/>
+        </Contact>
+    </ServiceProvider>
+    <RouteExecutionInfo>
+        <OnRouteExecution>false</OnRouteExecution>
+        <RouteInstanceLegXid/>
+        <LegNum>0</LegNum>
+        <RouteInstanceXid/>
+        <RouteTemplateXid/>
+    </RouteExecutionInfo>
+    <StopInfo>
+        <Stop>
+            <StopNum>1</StopNum>
+            <LocationXid>FI29</LocationXid>
+            <PlannedArrival TZ="Europe/Amsterdam">2012-01-12 11:24:24</PlannedArrival>
+            <EstimatedArrival TZ="Europe/Amsterdam">2012-01-12 11:24:24</EstimatedArrival>
+            <PlannedDeparture TZ="Europe/Amsterdam">2012-01-12 11:24:24</PlannedDeparture>
+            <EstimatedDeparture TZ="Europe/Amsterdam">2012-01-12 11:24:24</EstimatedDeparture>
+        </Stop>
+        <Stop>
+            <StopNum>2</StopNum>
+            <LocationXid>NFISA02W04-1191773575-SAP</LocationXid>
+            <PlannedArrival TZ="Asia/Riyadh">2012-01-13 13:24:24</PlannedArrival>
+            <EstimatedArrival TZ="Asia/Riyadh">2012-01-13 13:24:24</EstimatedArrival>
+            <PlannedDeparture TZ="Asia/Riyadh">2012-01-13 13:24:24</PlannedDeparture>
+            <EstimatedDeparture TZ="Asia/Riyadh">2012-01-13 13:24:24</EstimatedDeparture>
+        </Stop>
+    </StopInfo>
+    <ObjectRefnums>
+        <ObjectRefnum>
+            <RefnumQual>NSN.BMS</RefnumQual>
+            <RefnumValue>27-08-2014 08:36:43</RefnumValue>
+        </ObjectRefnum>
+        <ObjectRefnum>
+            <RefnumQual>GLOG</RefnumQual>
+            <RefnumValue>NSN.0001600</RefnumValue>
+        </ObjectRefnum>
+        <ObjectRefnum>
+            <RefnumQual>BM</RefnumQual>
+            <RefnumValue>KUEHNE NAGEL-000078</RefnumValue>
+        </ObjectRefnum>
+    </ObjectRefnums>
+    <Driver/>
+    <ObjectManager>
+        <URL>http://fiheotmq01.eu.tieto.com:80/GC3/glog.webserver.shipment.ShipmentManagementServlet<Host>http://fiheotmq01.eu.tieto.com:80</Host>
+            <Path>/GC3/glog.webserver.shipment.ShipmentManagementServlet</Path>
+            <Arg>pk=NSN.0001600</Arg>
+        </URL>
+        <Type>SHIPMENT</Type>
+        <LocalType>Shipment</LocalType>
+    </ObjectManager>
+    <SendFullContent>true</SendFullContent>
+    <Subject>[KUEHNE NAGEL-000078, ]</Subject>
+    <Locale>
+        <Language>en</Language>
+        <Country>US</Country>
+        <Variant/>
+    </Locale>
+</notify>

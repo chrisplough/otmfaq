@@ -1,0 +1,289 @@
+Transmission Report   
+TransmissionHeader
+UserName
+Password = ******
+SenderSystemId
+GlogXMLElementName
+TransmissionBody
+GLogXMLElement
+TransmissionReport
+UserName = AAES.ADMIN
+TransmissionNo = 469
+ReportStatus = ERROR
+IntegrationLogMessage
+ILogSeqNo = 24
+ITransactionNo = -1
+WrittenBy = XML_STAGE
+IMessageClass = I
+IMessageCode = TRANSMISSION_RECEIVED
+DateTimeStamp
+GLogDate = 20150515042435
+TZId = UTC
+TZOffset = +00:00
+DomainName = AAES
+IntegrationLogMessage
+ILogSeqNo = 26
+ITransactionNo = 470
+ObjectGid
+Gid
+DomainName = AAES
+Xid = 86-8030
+WrittenBy = ItemMasterInterface
+IMessageClass = I
+IMessageCode = TRANSACTION_SUCCESS
+DateTimeStamp
+GLogDate = 20150515042436
+TZId = UTC
+TZOffset = +00:00
+DomainName = AAES
+IntegrationLogMessage
+ILogSeqNo = 27
+ITransactionNo = 471
+ObjectGid
+Gid
+DomainName = AAES
+Xid = 86-6011
+WrittenBy = ItemMasterInterface
+IMessageClass = I
+IMessageCode = TRANSACTION_SUCCESS
+DateTimeStamp
+GLogDate = 20150515042436
+TZId = UTC
+TZOffset = +00:00
+DomainName = AAES
+IntegrationLogMessage
+ILogSeqNo = 28
+ITransactionNo = 472
+ObjectGid
+Gid
+DomainName = AAES
+Xid = ORG-86-144
+WrittenBy = LocationInterface
+IMessageClass = I
+IMessageCode = TRANSACTION_SUCCESS
+DateTimeStamp
+GLogDate = 20150515042436
+TZId = UTC
+TZOffset = +00:00
+DomainName = AAES
+IntegrationLogMessage
+ILogSeqNo = 29
+ITransactionNo = 473
+ObjectGid
+Gid
+DomainName = AAES
+Xid = CUS-13059
+WrittenBy = LocationInterface
+IMessageClass = I
+IMessageCode = TRANSACTION_SUCCESS
+DateTimeStamp
+GLogDate = 20150515042436
+TZId = UTC
+TZOffset = +00:00
+DomainName = AAES
+IntegrationLogMessage
+ILogSeqNo = 30
+ITransactionNo = 474
+ObjectGid
+Gid
+DomainName = AAES
+Xid = CUS-13059-759
+WrittenBy = LocationInterface
+IMessageClass = I
+IMessageCode = TRANSACTION_SUCCESS
+DateTimeStamp
+GLogDate = 20150515042437
+TZId = UTC
+TZOffset = +00:00
+DomainName = AAES
+IntegrationLogMessage
+ILogSeqNo = 25
+ITransactionNo = 475
+WrittenBy = TransactionHeaderInterface
+IMessageClass = I
+IMessageCode = TRANSACTION_SUCCESS
+DateTimeStamp
+GLogDate = 20150515042435
+TZId = UTC
+TZOffset = +00:00
+DomainName = AAES
+IntegrationLogMessage
+ILogSeqNo = 31
+ITransactionNo = 476
+ObjectGid
+Gid
+DomainName = AAES
+Xid = 108017
+WrittenBy = ReleaseInterface
+IMessageClass = E
+IMessageCode = FK_NOT_FOUND_ERROR
+IMessageText = THE FOREIGN KEY ELEMENT CommercialTerms.IncoTermGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><DomainName>AAES</DomainName><Xid>FACTORY</Xid></Gid> COULD NOT BE FOUND IN TABLE INCO_TERM COLUMN inco_term_gid
+DateTimeStamp
+GLogDate = 20150515042437
+TZId = UTC
+TZOffset = +00:00
+DomainName = AAES
+IntegrationLogMessage
+ILogSeqNo = 32
+ITransactionNo = 476
+ObjectGid
+Gid
+DomainName = AAES
+Xid = 108017
+WrittenBy = ReleaseInterface
+IMessageClass = E
+IMessageCode = FK_NOT_FOUND_ERROR
+IMessageText = THE FOREIGN KEY ELEMENT CommercialTerms.PaymentMethodCodeGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><DomainName>AAES</DomainName><Xid>COLLECT</Xid></Gid> COULD NOT BE FOUND IN TABLE PAYMENT_METHOD_CODE COLUMN payment_method_code_gid
+DateTimeStamp
+GLogDate = 20150515042437
+TZId = UTC
+TZOffset = +00:00
+DomainName = AAES
+IntegrationLogMessage
+ILogSeqNo = 33
+ITransactionNo = 476
+ObjectGid
+Gid
+DomainName = AAES
+Xid = 108017
+WrittenBy = ReleaseInterface
+IMessageClass = E
+IMessageCode = FK_NOT_FOUND_ERROR
+IMessageText = THE FOREIGN KEY ELEMENT ReleaseHeader.TransportModeGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><DomainName>AAES</DomainName><Xid>RAIL</Xid></Gid> COULD NOT BE FOUND IN TABLE TRANSPORT_MODE COLUMN transport_mode_gid
+DateTimeStamp
+GLogDate = 20150515042438
+TZId = UTC
+TZOffset = +00:00
+DomainName = AAES
+IntegrationLogMessage
+ILogSeqNo = 34
+ITransactionNo = 476
+ObjectGid
+Gid
+DomainName = AAES
+Xid = 108017
+WrittenBy = ReleaseInterface
+IMessageClass = E
+IMessageCode = FK_NOT_FOUND_ERROR
+IMessageText = THE FOREIGN KEY ELEMENT ReleaseHeader.RateServiceGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><DomainName>AAES</DomainName><Xid>D2D</Xid></Gid> COULD NOT BE FOUND IN TABLE RATE_SERVICE COLUMN RATE_SERVICE_GID
+DateTimeStamp
+GLogDate = 20150515042438
+TZId = UTC
+TZOffset = +00:00
+DomainName = AAES
+IntegrationLogMessage
+ILogSeqNo = 35
+ITransactionNo = 476
+ObjectGid
+Gid
+DomainName = AAES
+Xid = 108017
+WrittenBy = ReleaseInterface
+IMessageClass = E
+IMessageCode = FK_NOT_FOUND_ERROR
+IMessageText = THE FOREIGN KEY ELEMENT Volume.VolumeUOMGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>CFT</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+DateTimeStamp
+GLogDate = 20150515042438
+TZId = UTC
+TZOffset = +00:00
+DomainName = AAES
+IntegrationLogMessage
+ILogSeqNo = 36
+ITransactionNo = 476
+ObjectGid
+Gid
+DomainName = AAES
+Xid = 108017
+WrittenBy = ReleaseInterface
+IMessageClass = E
+IMessageCode = FK_NOT_FOUND_ERROR
+IMessageText = THE FOREIGN KEY ELEMENT Volume.VolumeUOMGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>CFT</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+DateTimeStamp
+GLogDate = 20150515042438
+TZId = UTC
+TZOffset = +00:00
+DomainName = AAES
+IntegrationLogMessage
+ILogSeqNo = 37
+ITransactionNo = 476
+ObjectGid
+Gid
+DomainName = AAES
+Xid = 108017
+WrittenBy = ReleaseInterface
+IMessageClass = E
+IMessageCode = FK_NOT_FOUND_ERROR
+IMessageText = THE FOREIGN KEY ELEMENT Volume.VolumeUOMGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>CFT</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+DateTimeStamp
+GLogDate = 20150515042438
+TZId = UTC
+TZOffset = +00:00
+DomainName = AAES
+IntegrationLogMessage
+ILogSeqNo = 38
+ITransactionNo = 476
+ObjectGid
+Gid
+DomainName = AAES
+Xid = 108017
+WrittenBy = ReleaseInterface
+IMessageClass = E
+IMessageCode = FK_NOT_FOUND_ERROR
+IMessageText = THE FOREIGN KEY ELEMENT Volume.VolumeUOMGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>CFT</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+DateTimeStamp
+GLogDate = 20150515042438
+TZId = UTC
+TZOffset = +00:00
+DomainName = AAES
+IntegrationLogMessage
+ILogSeqNo = 39
+ITransactionNo = 476
+ObjectGid
+Gid
+DomainName = AAES
+Xid = 108017
+WrittenBy = ReleaseInterface
+IMessageClass = E
+IMessageCode = FK_NOT_FOUND_ERROR
+IMessageText = THE FOREIGN KEY ELEMENT Volume.VolumeUOMGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>CFT</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+DateTimeStamp
+GLogDate = 20150515042438
+TZId = UTC
+TZOffset = +00:00
+DomainName = AAES
+IntegrationLogMessage
+ILogSeqNo = 40
+ITransactionNo = 476
+ObjectGid
+Gid
+DomainName = xxX
+Xid = 108017
+WrittenBy = ReleaseInterface
+IMessageClass = E
+IMessageCode = FK_NOT_FOUND_ERROR
+IMessageText = THE FOREIGN KEY ELEMENT Volume.VolumeUOMGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>CFT</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+DateTimeStamp
+GLogDate = 20150515042438
+TZId = UTC
+TZOffset = +00:00
+DomainName = AAES
+IntegrationLogMessage
+ILogSeqNo = 41
+ITransactionNo = 476
+ObjectGid
+Gid
+DomainName = AAES
+Xid = 108017
+WrittenBy = ReleaseInterface
+IMessageClass = E
+IMessageCode = FK_NOT_FOUND_ERROR
+IMessageText = THE FOREIGN KEY ELEMENT Volume.VolumeUOMGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>CFT</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+DateTimeStamp
+GLogDate = 20150515042438
+TZId = UTC
+TZOffset = +00:00
+DomainName = AAES
+TransmissionSummary
+FirstTransactionNo = 470
+LastTransactionNo = 476
+ 

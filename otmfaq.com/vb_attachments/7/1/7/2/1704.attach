@@ -1,0 +1,516 @@
+INFO | 2015/01/23 20:31:19 | Starting Launched Process...
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rem ----------------------------------------------------------------------- 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rem --- user-configurable variables 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rem ----------------------------------------------------------------------- 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>set GLOG_HOME=C:\otm 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>set JAVA_HOME=C:\otm\jdk 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>set JAVA_CMD="C:\otm\jdk\bin\java.exe" 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>set ORACLE_HOME=C:\oracle\product\11.2.0\dbhome_1 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>set NLS_LANG=American_America.UTF8 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>set MEM_ARGS= 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rem *********************************************************************** 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rem **********     DO NOT CHANGE ANYTHING BELOW THIS LINE!       ********** 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rem *********************************************************************** 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rem ----------------------------------------------------------------------- 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rem --- program-specific variables 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rem ----------------------------------------------------------------------- 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>APP_NAME="WebLogic" 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>APP_LONG_NAME="WebLogic Application Server" 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>set LAUNCHER_CONF="C:\otm\weblogic\weblogic.conf" 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>set LAUNCHER_JAR_FILE="C:\otm\launcher\launcher.jar" 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>set WL_HOME=C:\OracleMW\wlserver_10.3 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rem ----------------------------------------------------------------------- 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rem --- generic variables 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rem ----------------------------------------------------------------------- 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>set DASH_HOME=C:\otm\dash 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>set XPRESS=C:\otm\dash\bin 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>set CLASSPATH=;C:\OracleMW\wlserver_10.3\server\lib\weblogic.jar 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>set PATH=C:\oracle\product\11.2.0\dbhome_1\lib;C:\otm\jdk\bin;C:\oracle\product\11.2.0\dbhome_1\bin;C:\OracleMW\wlserver_10.3\server\native\win\x64;C:\otm\jdk\bin;C:\otm\dash\bin;C:\otm\apache\openssl\bin;C:\oracle\product\11.2.0\dbhome_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;JAVA_HOME\bin;C:\OracleMW\Oracle_WT1\bin;C:\OracleMW\Oracle_WT1\opmn\bin;C:\OracleMW\Oracle_WT1\opmn\lib;C:\OracleMW\Oracle_WT1\perl\bin; 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>if "Windows_NT" == "Windows_NT" goto nt 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rem Find the requested command. 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>for /F %v in ('echo copyconfigtemplate|findstr "^start$ ^stop$ ^restart$ ^copyconfigtemplate$ ^status"') do call :exec set COMMAND=%v 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>call :exec set COMMAND=copyconfigtemplate 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>set COMMAND=copyconfigtemplate 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>goto :eof 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>if "copyconfigtemplate" == "" (
+INFO | 2015/01/23 20:31:19 | echo Usage: C:\otm\weblogic\weblogic.bat { start : stop : restart: status: copyconfigtemplate}  
+INFO | 2015/01/23 20:31:19 |  pause 
+INFO | 2015/01/23 20:31:19 |  goto :eof 
+INFO | 2015/01/23 20:31:19 | )  else (shift) 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rem
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rem Run the application. 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rem At runtime, the current directory will be that of Wrapper.exe 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rem
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>call :copyconfigtemplate 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>copy /y C:\otm\weblogic\domains\otm\config\config.xml.fresh C:\otm\weblogic\domains\otm\config\config.xml 
+INFO | 2015/01/23 20:31:19 |         1 file(s) copied.
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>del /q C:\otm\weblogic\domains\otm\config\jdbc\PRIMARY*.* 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>del /q C:\otm\weblogic\domains\otm\config\configCache\*.* 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rd /s /q C:\otm\weblogic\domains\otm\pending 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>goto :eof 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>rem if errorlevel 1 pause 
+INFO | 2015/01/23 20:31:19 | 
+INFO | 2015/01/23 20:31:19 | C:\otm\jdk\bin>goto :eof 
+INFO | 2015/01/23 20:31:20 | java version "1.6.0_65"
+INFO | 2015/01/23 20:31:20 | Java(TM) SE Runtime Environment (build 1.6.0_65-b09)
+INFO | 2015/01/23 20:31:20 | Oracle JRockit(R) (build R28.2.9-13-157938-1.6.0_65-20130920-0911-windows-x86_64, compiled mode)
+INFO | 2015/01/23 20:31:20 | Argument #0 : C:/otm/jdk/bin/java
+INFO | 2015/01/23 20:31:20 | Argument #1 : -Xms1536m
+INFO | 2015/01/23 20:31:20 | Argument #2 : -Xmx1536m
+INFO | 2015/01/23 20:31:20 | Argument #3 : -jrockit
+INFO | 2015/01/23 20:31:20 | Argument #4 : -Xgc:throughput
+INFO | 2015/01/23 20:31:20 | Argument #5 : -Xverbose:memory
+INFO | 2015/01/23 20:31:20 | Argument #6 : -Dglog.home=C:/otm/glog/config
+INFO | 2015/01/23 20:31:20 | Argument #7 : -Duser.home=C:/otm/glog/config
+INFO | 2015/01/23 20:31:20 | Argument #8 : -Djava.io.tmpdir=C:/otm/temp
+INFO | 2015/01/23 20:31:20 | Argument #9 : -Djava.awt.headless=true
+INFO | 2015/01/23 20:31:20 | Argument #10 : -Djava.security.auth.login.config=C:/otm/glog/config/otm_jaas.config
+INFO | 2015/01/23 20:31:20 | Argument #11 : -Xss256k
+INFO | 2015/01/23 20:31:20 | Argument #12 : -Dweblogic.Name=gc3-WINSERVER
+INFO | 2015/01/23 20:31:20 | Argument #13 : -Dbea.home=C:/OracleMW
+INFO | 2015/01/23 20:31:20 | Argument #14 : -Dweblogic.home=C:/OracleMW/wlserver_10.3/server
+INFO | 2015/01/23 20:31:20 | Argument #15 : -Dweblogic.management.username=system
+INFO | 2015/01/23 20:31:20 | Argument #16 : -Dweblogic.management.password=CHANGEME
+INFO | 2015/01/23 20:31:20 | Argument #17 : -Dweblogic.ProductionModeEnabled=true
+INFO | 2015/01/23 20:31:20 | Argument #18 : -Dweblogic.management.discover=false
+INFO | 2015/01/23 20:31:20 | Argument #19 : -Djava.security.policy=C:/OracleMW/wlserver_10.3/server/lib/weblogic.policy
+INFO | 2015/01/23 20:31:20 | Argument #20 : -Dwli.home=C:/OracleMW/wlserver_10.3/integration
+INFO | 2015/01/23 20:31:20 | Argument #21 : -Dwls.home=C:/OracleMW/wlserver_10.3/server
+INFO | 2015/01/23 20:31:20 | Argument #22 : -Dweblogic.RootDirectory=C:/otm/weblogic/domains/otm
+INFO | 2015/01/23 20:31:20 | Argument #23 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2015/01/23 20:31:20 | Argument #24 : -Djavax.xml.soap.SOAPFactory=weblogic.xml.saaj.SOAPFactoryImpl
+INFO | 2015/01/23 20:31:20 | Argument #25 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2015/01/23 20:31:20 | Argument #26 : -DpropertyProtection=mask
+INFO | 2015/01/23 20:31:20 | Argument #27 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2015/01/23 20:31:20 | Argument #28 : -Djavax.xml.soap.MessageFactory=weblogic.xml.saaj.MessageFactoryImpl
+INFO | 2015/01/23 20:31:20 | Argument #29 : -Djavax.management.builder.initial=weblogic.management.jmx.mbeanserver.WLSMBeanServerBuilder
+INFO | 2015/01/23 20:31:20 | Argument #30 : -Dweblogic.wsee.policy.LoadFromClassPathEnabled=true
+INFO | 2015/01/23 20:31:20 | Argument #31 : -Dmode=appserver
+INFO | 2015/01/23 20:31:20 | Argument #32 : -classpath
+INFO | 2015/01/23 20:31:20 | Argument #33 : C:/otm/jdk/lib/tools.jar;C:/otm/glog/glog_resources/custom;C:/otm/glog/glog_resources;C:/otm/glog/config;C:/otm/glog/gc3webapp/WEB-INF/classes;C:/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/ojdbc6.jar;C:/otm/dash/lib/xprb.jar;C:/otm/dash/lib/xprm.jar;C:/otm/dash/lib/xprs.jar;C:/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar;C:/OracleMW/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar;C:/OracleMW/wlserver_10.3/server/lib/weblogic.jar;C:/OracleMW/wlserver_10.3/server/lib/webservices.jar;C:/OracleMW/modules/features/weblogic.server.modules.sca_10.3.6.0.jar;C:\otm\launcher\launcher.jar
+INFO | 2015/01/23 20:31:20 | Argument #34 : com.oracle.otm.Launcher
+INFO | 2015/01/23 20:31:20 | Argument #35 : C:\otm\weblogic\weblogic.conf
+INFO | 2015/01/23 20:31:20 | Argument #36 : start_svc
+INFO | 2015/01/23 20:31:20 | Argument #37 : autokill
+INFO | 2015/01/23 20:31:20 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2015/01/23 20:31:20 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, strategy: Generational Parallel Mark & Sweep.
+INFO | 2015/01/23 20:31:20 | [INFO ][memory ] Heap size: 1572864KB, maximal heap size: 1572864KB, nursery size: 786432KB.
+INFO | 2015/01/23 20:31:20 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2015/01/23 20:31:20 | [INFO ][memory ] <start>  - start time of collection (seconds since jvm start).
+INFO | 2015/01/23 20:31:20 | [INFO ][memory ] <type>   - OC (old collection) or YC (young collection).
+INFO | 2015/01/23 20:31:20 | [INFO ][memory ] <end>    - end time of collection (seconds since jvm start).
+INFO | 2015/01/23 20:31:20 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2015/01/23 20:31:20 | [INFO ][memory ] <after>  - memory used by objects after collection (KB).
+INFO | 2015/01/23 20:31:20 | [INFO ][memory ] <heap>   - size of heap after collection (KB).
+INFO | 2015/01/23 20:31:20 | [INFO ][memory ] <time>   - total time of collection (milliseconds).
+INFO | 2015/01/23 20:31:20 | [INFO ][memory ] <pause>  - total sum of pauses during collection (milliseconds).
+INFO | 2015/01/23 20:31:20 | [INFO ][memory ]            Run with -Xverbose:gcpause to see individual phases.
+INFO | 2015/01/23 20:31:20 | [INFO ][memory ] Running on hypervisor Unknown (but probably running on a hypervisor)
+INFO | 2015/01/23 20:31:21 | Start Service Argument #0 : weblogic.Server
+INFO | 2015/01/23 20:31:21 | Start Service Argument #1 : start
+INFO | 2015/01/23 20:31:21 | <Jan 23, 2015 8:31:21 PM IST> <Info> <Security> <BEA-090905> <Disabling CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true> 
+INFO | 2015/01/23 20:31:21 | <Jan 23, 2015 8:31:21 PM IST> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true> 
+INFO | 2015/01/23 20:31:22 | <Jan 23, 2015 8:31:22 PM IST> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Oracle JRockit(R) Version R28.2.9-13-157938-1.6.0_65-20130920-0911-windows-x86_64 from Oracle Corporation> 
+INFO | 2015/01/23 20:31:23 | <Jan 23, 2015 8:31:23 PM IST> <Info> <Management> <BEA-141107> <Version: WebLogic Server 10.3.6.0  Tue Nov 15 08:52:36 PST 2011 1441050 > 
+INFO | 2015/01/23 20:31:23 | <Jan 23, 2015 8:31:23 PM IST> <Warning> <Management> <BEA-141274> <Production mode has specified at the command line via the weblogic.ProductionModeEnabled system property. This system property overrides the development mode setting contained in config.xml. However, the console and WLST show the attribute values and defaults that correspond to the development mode specified in config.xml.> 
+INFO | 2015/01/23 20:31:26 | <Jan 23, 2015 8:31:26 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2015/01/23 20:31:26 | <Jan 23, 2015 8:31:26 PM IST> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+INFO | 2015/01/23 20:31:27 | <Jan 23, 2015 8:31:27 PM IST> <Notice> <LoggingService> <BEA-320400> <The log file C:\otm\logs\weblogic\weblogic.log will be rotated. Reopen the log file if tailing has stopped. This can happen on some platforms like Windows.> 
+INFO | 2015/01/23 20:31:27 | <Jan 23, 2015 8:31:27 PM IST> <Notice> <LoggingService> <BEA-320401> <The log file has been rotated to C:\otm\logs\weblogic\weblogic.log00263. Log messages will continue to be logged in C:\otm\logs\weblogic\weblogic.log.> 
+INFO | 2015/01/23 20:31:27 | <Jan 23, 2015 8:31:27 PM IST> <Notice> <Log Management> <BEA-170019> <The server log file C:\otm\logs\weblogic\weblogic.log is opened. All server side log events will be written to this file.> 
+INFO | 2015/01/23 20:31:28 | <Jan 23, 2015 8:31:28 PM IST> <Error> <Socket> <BEA-000438> <Unable to load performance pack. Using Java I/O instead. Please ensure that wlntio.dll is in: 'C:\otm\jdk\bin;C:\Windows\system32;C:\Windows;C:\otm\jdk\bin;C:\otm\dash\bin;C:\otm\apache\openssl\bin;C:\oracle\product\11.2.0\dbhome_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;JAVA_HOME\bin;C:\OracleMW\Oracle_WT1\bin;C:\OracleMW\Oracle_WT1\opmn\bin;C:\OracleMW\Oracle_WT1\opmn\lib;C:\OracleMW\Oracle_WT1\perl\bin;;.'
+> 
+INFO | 2015/01/23 20:31:36 | [INFO ][memory ] [YC#1] 16.367-16.857: YC 826120KB->312628KB (1572864KB), 0.490 s, sum of pauses 488.052 ms, longest pause 488.052 ms.
+INFO | 2015/01/23 20:31:37 | Error loading  properties from WEB_CUSTOM (property set): Error initializing properties for WEB_CUSTOM (property set)
+java.io.IOException: Error retrieving property set WEB_CUSTOM
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2046)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1818)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.load(GLProperties.java:431)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.init(GLProperties.java:257)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.<init>(GLProperties.java:219)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$NestedPropertySource.load(GLProperties.java:1440)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$NestedPropertySet.load(GLProperties.java:1553)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1861)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1824)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.load(GLProperties.java:431)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.init(GLProperties.java:257)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.<init>(GLProperties.java:176)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:145)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:141)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.<clinit>(GLProperties.java:2243)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.j2ee.jaas.GC3AuthenticationProviderImpl.<init>(GC3AuthenticationProviderImpl.java:20)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.Class.newInstance0(Class.java:357)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.Class.newInstance(Class.java:310)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:46)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:363)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:315)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:257)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:72)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.internal.WLSIdentityServiceImpl.initialize(WLSIdentityServiceImpl.java:46)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CSSWLSDelegateImpl.initializeServiceEngine(CSSWLSDelegateImpl.java:299)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CSSWLSDelegateImpl.initialize(CSSWLSDelegateImpl.java:221)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.InitializeServiceEngine(CommonSecurityServiceManagerDelegateImpl.java:1790)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:446)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:841)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:871)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1034)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:879)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.SecurityService.start(SecurityService.java:141)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.t3.srvr.SubsystemRequest.run(SubsystemRequest.java:64)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2015/01/23 20:31:37 | Caused by: java.io.IOException: Error reading property set WEB_CUSTOM
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:332)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2031)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1819)
+INFO | 2015/01/23 20:31:37 | 	... 38 more
+INFO | 2015/01/23 20:31:37 | Caused by: cause.InvalidDataConnection
+
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.exception.GLException.factory(GLException.java:462)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.exception.GLException.factory(GLException.java:438)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.exception.GLException.factory(GLException.java:434)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.exception.GLException.factory(GLException.java:422)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:347)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:466)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:440)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:70)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:343)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:329)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2031)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1818)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.load(GLProperties.java:431)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.init(GLProperties.java:257)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.<init>(GLProperties.java:218)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$NestedPropertySource.load(GLProperties.java:1440)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$NestedPropertySet.load(GLProperties.java:1553)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1861)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1824)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.load(GLProperties.java:431)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.init(GLProperties.java:257)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.<init>(GLProperties.java:176)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:145)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:140)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.<clinit>(GLProperties.java:2243)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.j2ee.jaas.GC3AuthenticationProviderImpl.<init>(GC3AuthenticationProviderImpl.java:20)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.Class.newInstance0(Class.java:357)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.Class.newInstance(Class.java:310)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:46)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:363)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:315)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:257)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:72)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.internal.WLSIdentityServiceImpl.initialize(WLSIdentityServiceImpl.java:46)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CSSWLSDelegateImpl.initializeServiceEngine(CSSWLSDelegateImpl.java:299)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CSSWLSDelegateImpl.initialize(CSSWLSDelegateImpl.java:220)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.InitializeServiceEngine(CommonSecurityServiceManagerDelegateImpl.java:1789)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:443)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:841)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:870)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1032)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:873)
+INFO | 2015/01/23 20:31:37 | 	... 4 more
+INFO | 2015/01/23 20:31:37 | 
+INFO | 2015/01/23 20:31:37 | Error loading  properties from APP_CUSTOM (property set): Error initializing properties for APP_CUSTOM (property set)
+java.io.IOException: Error retrieving property set APP_CUSTOM
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2046)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1818)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.load(GLProperties.java:431)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.init(GLProperties.java:257)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.<init>(GLProperties.java:219)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$NestedPropertySource.load(GLProperties.java:1440)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$NestedPropertySet.load(GLProperties.java:1553)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1861)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1824)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.load(GLProperties.java:431)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.init(GLProperties.java:257)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.<init>(GLProperties.java:176)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:145)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:141)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.<clinit>(GLProperties.java:2243)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.j2ee.jaas.GC3AuthenticationProviderImpl.<init>(GC3AuthenticationProviderImpl.java:20)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.Class.newInstance0(Class.java:357)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.Class.newInstance(Class.java:310)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:46)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:363)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:315)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:257)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:72)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.internal.WLSIdentityServiceImpl.initialize(WLSIdentityServiceImpl.java:46)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CSSWLSDelegateImpl.initializeServiceEngine(CSSWLSDelegateImpl.java:299)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CSSWLSDelegateImpl.initialize(CSSWLSDelegateImpl.java:221)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.InitializeServiceEngine(CommonSecurityServiceManagerDelegateImpl.java:1790)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:446)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:841)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:871)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1034)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:879)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.SecurityService.start(SecurityService.java:141)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.t3.srvr.SubsystemRequest.run(SubsystemRequest.java:64)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2015/01/23 20:31:37 | Caused by: java.io.IOException: Error reading property set APP_CUSTOM
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:332)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2031)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1819)
+INFO | 2015/01/23 20:31:37 | 	... 38 more
+INFO | 2015/01/23 20:31:37 | Caused by: cause.InvalidDataConnection
+
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.exception.GLException.factory(GLException.java:462)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.exception.GLException.factory(GLException.java:438)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.exception.GLException.factory(GLException.java:434)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.exception.GLException.factory(GLException.java:422)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:347)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:466)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:440)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:70)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:343)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:329)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2031)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1818)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.load(GLProperties.java:431)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.init(GLProperties.java:257)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.<init>(GLProperties.java:218)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$NestedPropertySource.load(GLProperties.java:1440)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$NestedPropertySet.load(GLProperties.java:1553)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1861)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1824)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.load(GLProperties.java:431)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.init(GLProperties.java:257)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.<init>(GLProperties.java:176)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:145)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:140)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.<clinit>(GLProperties.java:2243)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.j2ee.jaas.GC3AuthenticationProviderImpl.<init>(GC3AuthenticationProviderImpl.java:20)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.Class.newInstance0(Class.java:357)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.Class.newInstance(Class.java:310)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:46)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:363)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:315)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:257)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:72)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.internal.WLSIdentityServiceImpl.initialize(WLSIdentityServiceImpl.java:46)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CSSWLSDelegateImpl.initializeServiceEngine(CSSWLSDelegateImpl.java:299)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CSSWLSDelegateImpl.initialize(CSSWLSDelegateImpl.java:220)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.InitializeServiceEngine(CommonSecurityServiceManagerDelegateImpl.java:1789)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:443)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:841)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:870)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1032)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:873)
+INFO | 2015/01/23 20:31:37 | 	... 4 more
+INFO | 2015/01/23 20:31:37 | 
+INFO | 2015/01/23 20:31:37 | Error loading  properties from APP_WORKFLOW_THREADING (property set): Error initializing properties for APP_WORKFLOW_THREADING (property set)
+java.io.IOException: Error retrieving property set APP_WORKFLOW_THREADING
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2046)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1818)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.load(GLProperties.java:431)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.init(GLProperties.java:257)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.<init>(GLProperties.java:219)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$NestedPropertySource.load(GLProperties.java:1440)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$NestedPropertySet.load(GLProperties.java:1553)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1861)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1824)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.load(GLProperties.java:431)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.init(GLProperties.java:257)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.<init>(GLProperties.java:176)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:145)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:141)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.<clinit>(GLProperties.java:2243)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.j2ee.jaas.GC3AuthenticationProviderImpl.<init>(GC3AuthenticationProviderImpl.java:20)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.Class.newInstance0(Class.java:357)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.Class.newInstance(Class.java:310)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:46)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:363)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:315)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:257)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:72)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.internal.WLSIdentityServiceImpl.initialize(WLSIdentityServiceImpl.java:46)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CSSWLSDelegateImpl.initializeServiceEngine(CSSWLSDelegateImpl.java:299)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CSSWLSDelegateImpl.initialize(CSSWLSDelegateImpl.java:221)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.InitializeServiceEngine(CommonSecurityServiceManagerDelegateImpl.java:1790)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:446)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:841)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:871)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1034)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:879)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.SecurityService.start(SecurityService.java:141)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.t3.srvr.SubsystemRequest.run(SubsystemRequest.java:64)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2015/01/23 20:31:37 | Caused by: java.io.IOException: Error reading property set APP_WORKFLOW_THREADING
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:332)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2031)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1819)
+INFO | 2015/01/23 20:31:37 | 	... 38 more
+INFO | 2015/01/23 20:31:37 | Caused by: cause.InvalidDataConnection
+
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.exception.GLException.factory(GLException.java:462)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.exception.GLException.factory(GLException.java:438)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.exception.GLException.factory(GLException.java:434)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.exception.GLException.factory(GLException.java:422)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:347)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:466)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:440)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:70)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:343)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.readPropertySet(GLProperties.java:329)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$PropertySetSource.getInputStream(GLProperties.java:2031)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1818)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.load(GLProperties.java:431)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.init(GLProperties.java:257)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.<init>(GLProperties.java:218)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$NestedPropertySource.load(GLProperties.java:1440)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$NestedPropertySet.load(GLProperties.java:1553)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1861)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties$Source.load(GLProperties.java:1824)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.load(GLProperties.java:431)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.init(GLProperties.java:257)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.<init>(GLProperties.java:176)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:145)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.getFromAppTier(GLProperties.java:140)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.GLProperties.<clinit>(GLProperties.java:2243)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.j2ee.jaas.GC3AuthenticationProviderImpl.<init>(GC3AuthenticationProviderImpl.java:20)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.Class.newInstance0(Class.java:357)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.Class.newInstance(Class.java:310)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:46)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:363)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:315)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:257)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:72)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.internal.WLSIdentityServiceImpl.initialize(WLSIdentityServiceImpl.java:46)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CSSWLSDelegateImpl.initializeServiceEngine(CSSWLSDelegateImpl.java:299)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CSSWLSDelegateImpl.initialize(CSSWLSDelegateImpl.java:220)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.InitializeServiceEngine(CommonSecurityServiceManagerDelegateImpl.java:1789)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:443)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:841)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:870)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1032)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:873)
+INFO | 2015/01/23 20:31:37 | 	... 4 more
+INFO | 2015/01/23 20:31:37 | 
+INFO | 2015/01/23 20:31:37 | GC3 realm initializing <-----------
+INFO | 2015/01/23 20:31:37 | cause.InvalidDataConnection
+
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2015/01/23 20:31:37 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2015/01/23 20:31:37 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.exception.GLException.factory(GLException.java:462)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.exception.GLException.factory(GLException.java:438)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.exception.GLException.factory(GLException.java:434)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.exception.GLException.factory(GLException.java:422)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:347)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:466)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:440)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:70)
+INFO | 2015/01/23 20:31:37 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1638)
+INFO | 2015/01/23 20:31:37 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1674)
+INFO | 2015/01/23 20:31:37 | 	at glog.database.security.dbrealm.CachingRealm.readKnownGroups(CachingRealm.java:421)
+INFO | 2015/01/23 20:31:37 | 	at glog.database.security.dbrealm.CachingRealm.initCaches(CachingRealm.java:191)
+INFO | 2015/01/23 20:31:37 | 	at glog.database.security.dbrealm.CachingRealm.<init>(CachingRealm.java:141)
+INFO | 2015/01/23 20:31:37 | 	at glog.database.security.dbrealm.CachingRealm.initialize(CachingRealm.java:123)
+INFO | 2015/01/23 20:31:37 | 	at glog.util.j2ee.jaas.GC3AuthenticationProviderImpl.initialize(GC3AuthenticationProviderImpl.java:32)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:60)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:363)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:315)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:257)
+INFO | 2015/01/23 20:31:37 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:72)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.internal.WLSIdentityServiceImpl.initialize(WLSIdentityServiceImpl.java:46)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CSSWLSDelegateImpl.initializeServiceEngine(CSSWLSDelegateImpl.java:299)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CSSWLSDelegateImpl.initialize(CSSWLSDelegateImpl.java:220)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.InitializeServiceEngine(CommonSecurityServiceManagerDelegateImpl.java:1789)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:443)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:841)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:870)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1032)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:873)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.security.SecurityService.start(SecurityService.java:141)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.t3.srvr.SubsystemRequest.run(SubsystemRequest.java:64)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2015/01/23 20:31:37 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2015/01/23 20:31:37 | Fatal Error: Realm Initialization failed!!
+INFO | 2015/01/23 20:31:37 | <Jan 23, 2015 8:31:37 PM IST> <Notice> <WebLogicServer> <BEA-000388> <JVM called WLS shutdown hook. The server will force shutdown now> 
+INFO | 2015/01/23 20:31:37 | <Jan 23, 2015 8:31:37 PM IST> <Alert> <WebLogicServer> <BEA-000396> <Server shutdown has been requested by <WLS Kernel>> 
+INFO | 2015/01/23 20:31:37 | <Jan 23, 2015 8:31:37 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FORCE_SHUTTING_DOWN> 
+INFO | 2015/01/23 20:31:38 | Stopped Launched Process...

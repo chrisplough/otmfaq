@@ -1,0 +1,57 @@
+api_level = 3
+is_open = 1
+guest_okay = 1
+reg_url=register.php
+version=vb40_3.9.4
+
+hide_forum_id = 
+allowed_usergroup =
+forum_signature = 1
+support_md5 = 1
+allow_moderate = 1
+disable_bbcode = 0
+
+report_post = 1
+report_pm = 1
+
+goto_unread = 1
+goto_post = 1
+
+mark_read = 1
+mark_forum = 1
+
+no_refresh_on_post = 1
+subscribe_forum = 1
+disable_subscribe_forum = 0
+
+get_latest_topic = 1
+get_id_by_url = 1
+
+delete_reason = 1
+
+mod_approve = 1
+mod_delete = 1
+mod_report = 0
+
+anonymous = 1
+pm_load = 1
+subscribe_load = 1
+subscribe_topic_mode = 0,1,2,3
+subscribe_forum_mode = 0,2,3
+emoji = 1
+searchid = 1
+avatar = 1
+multi_quote = 1
+inbox_stat = 1
+user_id = 1
+
+// supported level 4 functions
+get_forum = 1
+get_forum_status = 1
+get_topic_status = 1
+get_participated_forum = 1
+get_smilies = 1
+get_online_users = 1
+mark_topic_read = 1
+mark_pm_unread = 1
+advanced_search = 1

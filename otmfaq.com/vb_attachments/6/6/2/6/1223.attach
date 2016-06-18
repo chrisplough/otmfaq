@@ -1,0 +1,173 @@
+<Transmission>
+	<TransmissionHeader>
+		<Username>JOHN</Username>
+		<Password>test1234</Password>
+	</TransmissionHeader>
+	<TransmissionBody>
+		<GLogXMLElement>
+			<TransOrder>
+				<TransOrderHeader>
+					<TransOrderGid>
+						<Gid>
+							<DomainName>JJH</DomainName>
+							<Xid></Xid>
+						</Gid>
+					</TransOrderGid>
+					<TransactionCode>I</TransactionCode>
+					<OrderTypeGid>
+						<Gid>
+							<DomainName>JJH</DomainName>
+							<Xid>CUSTOME ORDER</Xid>
+						</Gid>
+					</OrderTypeGid>
+					<ProcessingCodeGid>
+						<Gid>
+							<Xid>PLN</Xid>
+						</Gid>
+					</ProcessingCodeGid>
+					<ReleaseMethodGid>
+						<Gid>
+							<Xid>SHIP_UNITS</Xid>
+						</Gid>
+					</ReleaseMethodGid>
+					<InvolvedParty>
+						<InvolvedPartyQualifierGid>
+							<Gid>
+								<Xid>SHIP_FROM</Xid>
+							</Gid>
+						</InvolvedPartyQualifierGid>
+						<ContactRef>
+							<ContactGid>
+								<Gid>
+									<DomainName>JJH</DomainName>
+									<Xid>ABC1234JJH WORLDWIDE</Xid>
+								</Gid>
+								<TransactionCode>I</TransactionCode>
+							</ContactGid>
+						</ContactRef>
+					</InvolvedParty>
+					<InvolvedParty>
+						<InvolvedPartyQualifierGid>
+							<Gid>
+								<Xid>SHIP TO</Xid>
+							</Gid>
+						</InvolvedPartyQualifierGid>
+						<ContactRef>
+							<ContactGid>
+								<Gid>
+									<DomainName>JJH</DomainName>
+									<Xid>ABC1234MR CUSTOMER</Xid>
+								</Gid>
+								<TransactionCode>I</TransactionCode>
+							</ContactGid>
+						</ContactRef>
+					</InvolvedParty>
+					<ReleaseInstruction>
+						<TransOrderGid>
+							<Gid>
+								<DomainName>JJH</DomainName>
+								<Xid>2013-03-12T17:04:31.822Z</Xid>
+							</Gid>
+						</TransOrderGid>
+						<QuantityToRelease>
+							<PackagedItemCount>1</PackagedItemCount>
+						</QuantityToRelease>
+						<ShipUnitReleaseCount>1</ShipUnitReleaseCount>
+					</ReleaseInstruction>
+				</TransOrderHeader>
+				<ShipUnitDetail>
+					<ShipUnit>
+						<ShipUnitGid>
+							<Gid>
+								<DomainName>JJH</DomainName>
+								<Xid/>
+							</Gid>
+						</ShipUnitGid>
+						<TransactionCode>I</TransactionCode>
+						<ShipFromLocationRef>
+							<LocationRef>
+								<Location>
+									<TransactionCode>I</TransactionCode>
+									<LocationGid>
+										<Gid>
+											<DomainName>JJH</DomainName>
+											<Xid>MK7 8LELYTHAM HOUSE</Xid>
+										</Gid>
+									</LocationGid>
+									<LocationName>JJH WORLDWIDE</LocationName>
+									<Address>
+										<AddressLine1>LYTHAM HOUSE</AddressLine1>
+										<AddressLine2>28 CALDECOTTE LAKE DRIVE</AddressLine2>
+										<AddressLines>
+											<SequenceNumber>1</SequenceNumber>
+											<AddressLine>CALDECOTTE</AddressLine>
+										</AddressLines>
+										<City>MILTON KEYNES</City>
+										<PostalCode>MK7 8LE</PostalCode>
+										<CountryCode3Gid>GBR</CountryCode3Gid>
+									</Address>
+								</Location>
+							</LocationRef>
+						</ShipFromLocationRef>
+						<ShipToLocationRef>
+							<LocationRef>
+								<Location>
+									<TransactionCode>I</TransactionCode>
+									<LocationGid>
+										<Gid>
+											<DomainName>JJH</DomainName>
+											<Xid>MK4 9AB100 CUSTOMER SOLUTIONS STREET</Xid>
+										</Gid>
+									</LocationGid>
+									<LocationName>MR CUSTOMER</LocationName>
+									<Address>
+										<AddressLine1>100 CUSTOMER SOLUTIONS STREET</AddressLine1>
+										<AddressLine2/>
+										<AddressLines>
+											<SequenceNumber>2</SequenceNumber>
+											<AddressLine>MILTON KEYNES</AddressLine>
+										</AddressLines>
+										<City>MILTON KEYNES</City>
+										<PostalCode>MK4 4AB</PostalCode>
+									</Address>
+								</Location>
+							</LocationRef>
+						</ShipToLocationRef>
+						<TimeWindow>
+							<EarlyPickupDt>
+								<GLogDate>20100302000000</GLogDate>
+							</EarlyPickupDt>
+						</TimeWindow>
+						<TotalGrossWeightVolume>
+							<Weight>
+								<WeightValue/>
+							</Weight>
+						</TotalGrossWeightVolume>
+						<TagInfo>
+							<ItemTag1>SND</ItemTag1>
+							<ItemTag2/>
+						</TagInfo>
+						<IsShippable>Y</IsShippable>
+						<ReleasedCount>1</ReleasedCount>
+						<PlanFromLocationGid>
+							<LocationGid>
+								<Gid>
+									<DomainName>JJH</DomainName>
+									<Xid>MK7 8</Xid>
+								</Gid>
+							</LocationGid>
+						</PlanFromLocationGid>
+						<PlanToLocationGid>
+							<LocationGid>
+								<Gid>
+									<DomainName>JJH</DomainName>
+									<Xid>MK4 4</Xid>
+								</Gid>
+							</LocationGid>
+						</PlanToLocationGid>
+					</ShipUnit>
+				</ShipUnitDetail>
+			</TransOrder>
+		</GLogXMLElement>
+	</TransmissionBody>
+</Transmission>

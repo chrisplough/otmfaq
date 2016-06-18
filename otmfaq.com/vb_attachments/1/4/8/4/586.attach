@@ -1,0 +1,180 @@
+#####################################################################
+# G-Log Properties File for Web Server Only
+#
+# This property file holds the configurable settings for the 
+# G-Log Web Server. These settings will override any settings 
+# in glog.webserver.properties, glog.common.properties, and
+# glog.base.properties.  These properties are initially set 
+# by the install scripts, but can be modified to work with 
+# your specific server. All G-Log property changes should be
+# made to this file, rather than the webserver, common, or 
+# base property files.
+#####################################################################
+# !!!!!!!!!!!!!!!!!!!!!!!!!!! IMPORTANT !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# Place all changes, new properties, and custom properties in the
+# Custom Properties section near the end of this file.  This section
+# will be used by future installers during upgrades.  Properties 
+# that are outside this section will not be migrated.
+#####################################################################
+
+#--------------------------------------------------------------------
+# Base Install Settings
+#--------------------------------------------------------------------
+
+# GC3 version
+glog.software.version=OTMv55
+glog.software.patch.version=OTMv55-CU05
+glog.software.installtype=WebServer
+
+# installation paths
+gc3.dir=e:/gc3_prod
+gc3.config.dir=$gc3.dir$/glog/config
+temp.dir=$gc3.dir$/temp
+
+# application server URL and port
+appserver=gc3app.kraft.com
+appserver.port=7001
+
+# web server URL and port
+webserver=gc3-web1.kraft.com
+webserver.port=80
+
+# web URL prefix - should be blank unless web server is behind a reverse-proxy server
+glog.webserver.urlprefix=
+
+# web server URL (may differ from server name)
+glog.webserver.URL=http://gc3.kraft.com:80$glog.webserver.urlprefix$
+
+# db server URL and information
+dbserver=ti1125.krft.net
+glog.database.sid=p150i0
+glog.database.connectstring=ti1125_p150i0
+glog.database.port=1521
+glog.database.schema=glogowner
+
+# db users and passwords
+glog.database.user=glogdba
+glog.database.password=glogdba
+glog.database.load.user=glogload
+glog.database.load.password=glogload
+
+# oracle driver type should be "Oracle" for thin drivers or "weblogic" for oci drivers
+glog.database.default.poolDriver=Oracle
+
+# default password storage setting (Encrypt/Text) - Note, changing this option also requires db changes
+glog.crypto.password.mode=Encrypt
+
+#--------------------------------------------------------------------
+# Log Settings
+#--------------------------------------------------------------------
+
+# turn logging on or off
+glog.log.on=true
+
+# path to log file(s)
+glog.log.dir=$gc3.dir$/logs
+glog.log.file.defaultLog.filepath=$gc3.dir$/logs/glog.default.log
+
+# maximum size of log files (bytes)
+glog.log.maxsize=10000000
+
+# maximum number of log backup files 
+glog.log.backups=10
+
+#--------------------------------------------------------------------
+# Web Server Settings
+#--------------------------------------------------------------------
+
+document.root=$gc3.dir$/apache/htdocs
+
+# maximum number of results returned by port/airport finder, optional  
+glog.webserver.portresults.count=100
+
+# maximum number of results returned by giv, optional  
+glog.webserver.givresults.count=100
+
+## external Oracle Reports Server - optional
+report_feature=true
+p_reports_server=rep_kftusoktulapp96_report_server
+p_reports_out_dir=e:/GC3_55/rptapache/htdocs
+reports_server_fqdn=http://kftusoktulapp96.krft.net:7779/reports/rwservlet
+report_server_url=http://kftusoktulapp96.krft.net:81
+#discoverer_url=
+
+# Advanced Analytics
+#aa_webserver=http://:$glog.webserver.urlprefix$
+#aa_domain=.
+
+## Replicated Operational Database (ROD) - optional
+#ods_feature=true
+#glog.ods.dbserver=otmodsdb.us.pm.com
+#glog.database.ods.sid=otmodsdb
+#glog.ods.connectstring=otmodsdb
+#glog.ods.database.port=1521
+#glog.database.ods.schema=glogowner
+
+# scalability settings
+glog.scalability.on=true
+glog.scalability.thisMachine=
+glog.scalability.thisMachineURL=
+glog.scalability.defaultServer=DEFAULT
+glog.scalability.defaultMachineURL=t3://gc3app.kraft.com:7001
+
+### these options are for logging
+glog.log.ID.JMS.on=true
+glog.log.ID.Scalability.on=true
+glog.log.ID.ScalabilityDetails.on=true
+
+# list of avaliable app servers to poll for network topology - used only by web server.  one per line.
+!remove glog.scalability.topologyMachineURL
+glog.scalability.topologyMachineURL=t3://gc3app.kraft.com:7001
+glog.scalability.topologyMachineURL=t3://gc3app3.kraft.com:7001
+#glog.scalability.topologyMachineURL=<additional app server>
+
+#--------------------------------------------------------------------
+# Custom Properties - Beginning
+#--------------------------------------------------------------------
+# Place all changes, new properties, and custom properties here.
+# This section will be used during GC3 Upgrades
+#--------------------------------------------------------------------
+glog.login.suppressAccountPolicy = False
+glog.webserver.finder.results.configurable = False
+glog.webserver.finalresults.showquerycount = True
+glog.webserver.finderresults.showquerycount = true
+glog.audit.beforeafter = on
+glog.webserver.finderresults.showquerycount = true
+glog.optimization.columngeneration.maxIterations = 10
+glog.coroute.app.business.route.PercentMipTolerance = 2
+glog.coroute.app.business.route.MaxMipRuntime = 60 
+glog.cache.RateDistanceCache.capacity = 1000000
+glog.webserver.xsl.debug=true
+glog.webserver.indicatorWhiteEqualsNull = false
+glog.appointment.searchDays = 10
+glog.savedquery.show_all_savedqueries = true
+glog.appointment.servprov.allowInfeasibleappointment = false
+glog.appointment.enforceServprovRule = true
+glog.appointment.servprovRule.cutOffHour=16
+glog.appointment.servprovRule.numberOfDaysAfterCutOffHour=2
+glog.appointment.servprovRule.numberOfDaysBeforeCutOffHour=1
+glog.query.asDateColumns.CAPACITY_COMMITMENT_ALLOC=EFFECTIVE_DATE
+glog.query.asDateColumns.COMMIT_ALLOC_USAGE=START_DATE
+glog.query.asDateColumns.CAPACITY_COMMITMENT=EFFECTIVE_DATE
+glog.query.asDateColumns.COMMIT_USAGE=START_DATE
+glog.query.asDateColumns.CAPACITY_USAGE=START_DATE
+glog.ui.dockmanager.defaultcellwidth = 130
+#--------------------------------------------------------------------
+# Custom Properties - End
+#--------------------------------------------------------------------
+
+#--------------------------------------------------------------------
+# Default EBS Properties
+#--------------------------------------------------------------------
+
+#!include glog.ebs.properties
+
+#--------------------------------------------------------------------
+# Default Web Server Properties
+#--------------------------------------------------------------------
+
+!include glog.webserver.properties
+

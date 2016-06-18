@@ -1,0 +1,463 @@
+set serveroutput on 
+-------------------------------------------------------------------------------------------------------
+-- This script applies database patches to any v5.5 database.
+-- It is safe to run this script multiple times.  It keeps track of which patches
+-- it has applied to the database in the dbpatch table, and only applies the patches
+-- which have not yet been applied.
+--
+-- To add a new patch to this script you must adhere to the following convensions:
+-- 1. Each patch procedure must be called patchNNNN, where NNNN is a glogzilla bug number.
+-- 2. Each patch procedure must be listed in the apply_all_patches procedure
+-- 3. A patch procedure may not throw exceptions.  It should catch any exceptions as appropriate.
+-- 4. If a patch depends on any other packages being recreated, add the call to the script
+--    to recreate the dependent package below
+
+-------------------------------------------------------------------------------------------------------
+-- recreate packages that this script depends on being up-to-date
+-------------------------------------------------------------------------------------------------------
+set feedback off echo off doc off define on verify off
+
+
+DEFINE FM_VERSION='5.5'
+DEFINE VERSION = '55'
+
+COLUMN ws_glogownerpass noprint new_value glogownerpass
+COLUMN ws_reportownerpass noprint new_value reportownerpass
+COLUMN ws_archivepass noprint new_value archivepass
+COLUMN ws_dbsid new_value dbsid NOPRINT
+COLUMN ws_dbname NOPRINT new_value dbname
+COLUMN WS_IS_PARTN_DB NOPRINT new_value V_IS_PARTN_DB
+COLUMN ws_logdate NOPRINT new_value logdate
+COLUMN WS_BEGIN_TIME NOPRINT NEW_VALUE BEGIN_TIME
+COLUMN WS_END_TIME NOPRINT NEW_VALUE END_TIME
+COLUMN WS_CONTENT_UPDATE NOPRINT NEW_VALUE CONTENT_UPDATE
+COLUMN WS_PASSWORD_UPDATE NOPRINT NEW_VALUE PASSWORD_UPDATE
+COLUMN WS_PROPERTIES_PATH NOPRINT NEW_VALUE PROPERTIES_PATH
+COLUMN WS_GLOGOWNER_ALIAS NOPRINT NEW_VALUE GLOGOWNER_ALIAS
+COLUMN WS_REPORTOWNER_ALIAS NOPRINT NEW_VALUE REPORTOWNER_ALIAS
+COLUMN WS_ARCHIVE_DB NOPRINT NEW_VALUE ARCHIVE_DB
+COLUMN WS_ARCHIVEDB_GLOGOWNERPASS NOPRINT NEW_VALUE ARCHIVEDB_GLOGOWNERPASS
+COLUMN WS_ARCHIVEPASS NOPRINT NEW_VALUE ARCHIVEPASS
+SELECT TO_CHAR(SYSDATE,'DD-MON-YYYY HH24:MI:SS') ws_begin_time,
+TO_CHAR(SYSDATE,'YYYYMMDDHH24MI') ws_logdate
+FROM DUAL;
+
+PROMPT Please ensure that you have set up the ARCHIVE location and dblink(s) prior to running patch,
+PROMPT to determine whether archiving will be set up on the OLTP database or the ROD database.
+PROMPT (Read 'Archive Setup' in documentation for more info).  If this has not been set up,
+PROMPT  cancel this job and set up first.  This only needs to be set up once.  The database link
+PROMPT is not necessary if you are storing archiving on the OLTP.
+
+prompt
+prompt Enter GLOGOWNER password for parameter 1
+SELECT '&1' ws_glogownerpass
+FROM DUAL;
+
+prompt
+prompt Enter REPORTOWNER password for parameter 2
+SELECT '&2' ws_reportownerpass
+FROM DUAL;
+
+prompt
+prompt Enter Connection ID for parameter 3
+SELECT '&3' ws_DBSID
+FROM DUAL;
+
+prompt
+prompt Is this a Unix machine (ie. runs .sh rather than .cmd scripts)? (Y/N : Y)?
+prompt Enter Y or N for parameter 4
+SELECT DECODE(UPPER(nvl('&&4','Y')),'Y','./update_content.sh','N','update_content.cmd') WS_CONTENT_UPDATE
+FROM DUAL;
+SELECT DECODE(UPPER(nvl('&&4','Y')),'Y','./update_password.sh','N','update_password.cmd') WS_PASSWORD_UPDATE
+FROM DUAL;
+
+prompt
+prompt
+prompt Enter the ARCHIVE password where archiving is stored for parameter 5:
+SELECT '&5' WS_ARCHIVEPASS
+FROM DUAL;
+
+prompt
+prompt
+prompt Enter the GLOGOWNER password where archiving is stored for parameter 6 (if on OLTP, same as parameter 1):
+SELECT '&6' WS_ARCHIVEDB_GLOGOWNERPASS
+FROM DUAL;
+
+prompt
+prompt
+prompt Enter the connection id where archiving is stored for parameter 7 (if on OLTP, same as parameter 3):
+SELECT '&7' ws_archive_db
+FROM DUAL;
+
+prompt
+prompt Please enter the glog properties path for parameter 8:
+SELECT '&8' WS_PROPERTIES_PATH
+FROM DUAL;
+
+connect glogowner/&glogownerpass@&dbsid
+
+SELECT NAME ws_dbname
+FROM V$DATABASE;
+
+spool dbpatch_&version._&dbname._&logdate..log
+
+Prompt
+Prompt
+Prompt Starting dbpatch_&version on &dbname.
+Prompt    Start time: &begin_time
+Prompt
+
+Prompt
+PROMPT Stopping Oracle Advanced Queue Listener...
+begin
+  execute immediate 'begin pkg_queue_management.stop_listener_during_patch; end;';
+exception
+  when others then
+    null;
+end;
+/
+Prompt Compiling packages...
+@@f_get_patch_release
+@@create_table_package
+@@create_primary_key_package
+@@create_foreign_key_package
+@@create_checkc_package
+@@create_index_package
+@@create_sequence_package
+@@create_alter_table_package
+@@create_err_package
+@@create_prevent_mutation_package.sql
+@@create_procure_transform_package
+@@create_util_package
+@@create_vpd_pre_run_package
+@@create_partit_package
+@./pkg/pkg_purge.pkb
+@create_pkg_novpd_inschema_copy
+
+SET SERVEROUTPUT ON 
+
+PROMPT
+Prompt Creating new tables...
+exec create_table.all_tables('Y');
+exec create_table.insert_all_table_codes;
+
+prompt Building fp_triggers for new tables
+exec vpd_pre_run.build_fp_triggers
+
+Prompt
+Prompt Disable all policies before making structure change
+exec vpd_pre_run.disable_all_policies
+
+Prompt
+Prompt Applying table/column updates...
+exec upgrade_utl.global_version := '&FM_VERSION';
+exec alter_table.set_time_off
+@@create_dbupdate_&version
+
+Prompt
+Prompt Apply updates that invalidate VPD package
+exec dbupdate_55.apply('update58427');
+exec dbupdate_55.apply('update59839');
+exec dbupdate_55.apply('update5504708');
+@recompile_invalid_objects
+
+Prompt 
+Prompt Apply several pre-CU3 updates such that dbpatch_55 can compile
+exec dbupdate_55.apply('update5468003'); 
+exec dbupdate_55.apply('update5520240'); 
+
+Prompt
+Prompt Recompile VPD and other invalid packages
+@create_vpd_package
+@recompile_invalid_objects
+
+Prompt Apply patch5766587 that modify data before update5766587 that renames column deviation_reason 
+Prompt in route_instance_leg to feasibility_code_gid 
+@@create_dbpatch_&version..sql
+exec dbpatch_55.apply_patch('patch5766587');
+exec dbupdate_55.apply('update5766587');
+
+Prompt apply patch5743820 before making table external_system_web_service obsolete
+exec dbpatch_55.apply_patch('patch5743820');
+exec dbupdate_55.apply('update5743820');
+
+Prompt 
+Prompt Recreate patch package to avoid invalidation
+@create_dbpatch_55.sql
+
+Prompt Apply patch5755550 that migrate data from SEQUENCE_TYPE to PICKUP/DROPOFF_ROUTING_SEQUENCE_GID 
+Prompt after update5755550A but before update575555B 
+exec dbupdate_55.apply('update5755550A');
+exec dbpatch_55.apply_patch('patch5755550');
+exec dbupdate_55.apply('update5755550B');
+
+Prompt Applying all other updates....
+exec dbupdate_&version..apply_all;
+@create_procurement_package
+
+Prompt
+Prompt Adding primary keys....
+exec primary_key.all_keys('Y');
+
+Prompt
+Prompt Adding new sequences...
+exec create_sequence.create_all
+
+Prompt
+Prompt Adding check constraints...
+exec checkc.add_all;
+
+prompt
+Prompt Cleaning up obsolete synonyms
+execute glog_util.remove_obsolete_synonym;
+
+Prompt
+prompt Loading new java classes...
+@@load_java &glogownerpass &dbsid
+
+Prompt
+Prompt Enable all policies after making structure change
+alter package vpd_pre_run compile;
+exec vpd_pre_run.enable_all_policies
+
+Prompt
+Prompt Re-validate VPD package and other objects before changing data...
+@create_vpd_package.sql
+@recompile_invalid_objects.sql
+
+Prompt
+Prompt Setting up grants and public synonyms...
+@@create_public_synonyms
+@@glogowner_grants
+
+Prompt
+Prompt Rebuilding footprint triggers...
+exec vpd_pre_run.Build_fp_triggers;
+
+Prompt
+Prompt Disable DATA_TYPE_ASSOCIATION trigger TG_DATA_TYPE_ASSOC_BIU to suppress errors from the trigger
+REM The recompile_invalid_object.sql will get the trigger enabled.
+alter trigger TG_DATA_TYPE_ASSOC_BIU disable;
+
+Prompt
+Prompt Adding patch data content
+Prompt Updating general content...
+Prompt (Call for updating content is &CONTENT_UPDATE &PROPERTIES_PATH V55P)
+host &CONTENT_UPDATE  &PROPERTIES_PATH V55P
+
+prompt
+Prompt Applying patches...
+@@create_dbpatch_&version..sql
+alter package vpd compile;
+alter package dbpatch_55 compile;
+Prompt
+Prompt Recompile before changing data
+@recompile_invalid_objects
+
+exec dbpatch_&version..apply_all;
+
+Prompt Updating password for new gl_users
+Prompt (Call for updating password is &PASSWORD_UPDATE )
+host &PASSWORD_UPDATE  &&PROPERTIES_PATH e1 e1 e1
+host &PASSWORD_UPDATE  &&PROPERTIES_PATH E1.ADMIN CHANGEME CHANGEME
+host &PASSWORD_UPDATE  &&PROPERTIES_PATH E1.DEFAULT CHANGEME CHANGEME
+host &PASSWORD_UPDATE  &&PROPERTIES_PATH ebs ebs ebs
+host &PASSWORD_UPDATE  &&PROPERTIES_PATH EBS.ADMIN CHANGEME CHANGEME
+host &PASSWORD_UPDATE  &&PROPERTIES_PATH EBS.DEFAULT CHANGEME CHANGEME
+host &PASSWORD_UPDATE  &&PROPERTIES_PATH guest CHANGEME guest
+host &PASSWORD_UPDATE  &&PROPERTIES_PATH guest CHANGEME CHANGEME
+
+Prompt
+Prompt Adding new foreign keys...
+exec foreign_key.all_keys('Y');
+
+Prompt
+Prompt Creating new indexes....
+exec create_index.all_indexes('Y');
+
+Prompt
+Prompt Create/modify triggers....
+@@create_pkg_dhl_util.sql
+@@create_triggers
+
+Prompt
+
+Prompt Adding Table/column comments.....
+@@create_glogowner_comments.sql
+
+Prompt
+Prompt Adding validation triggers...
+SET SERVEROUTPUT OFF
+exec xvalidate.create_triggers;
+
+Prompt
+Prompt Reinitialize VPD lite and VPD master tables
+exec vpd_pre_run.init_vpd_lite_ts;
+exec vpd_pre_run.init_vpd_master_ts;
+
+Prompt
+Prompt Reinstall jobs...
+exec pkg_purge.install;
+
+Prompt
+Prompt Adding domain data...
+exec security.insert_domain_reference_data(true);
+
+prompt
+Prompt Adding EBS menus
+exec security.insert_user_menu_layout_data('EBS');
+prompt
+Prompt Adding E1 menus
+exec security.insert_user_menu_layout_data('E1');
+
+Prompt
+Prompt Adding AA tables to table set detail
+@insert_aatab_to_tsd.sql
+
+set feedback off echo off define on
+
+Prompt
+Prompt Re-creating changed packages....
+@create_pkg_integration_util.sql
+@./pkg/trunc_partit_table.pkb
+@./pkg/cr_aggregator.pks
+@./pkg/cr_aggregator.pkb
+@./pkg/pkg_novpd_domain_copy.pks
+@./pkg/pkg_novpd_domain_copy.pkb
+@./pkg/domainman.pks
+@./pkg/domainman.pkb
+@./pkg/pkg_objectgid_finder.pkb
+@./pkg/pkg_queue_management.pkb
+@./pkg/rrl.pkb
+@./pkg/tact.pkb
+
+Prompt
+Prompt Add user associations...
+execute security.create_user_association
+
+Prompt
+Prompt Recreating policies...
+exec vpd_pre_run.add_all_policies;
+
+Prompt
+Prompt Setting up archive triggers...
+@@pkg_archive_triggers
+exec pkg_archive_triggers.create_all
+
+Prompt
+Prompt Re-creating package that got changed and not used for the dbpatch process...
+@./pkg/vpd.pkb
+
+Prompt
+Prompt Connecting as REPORTOWNER...
+connect reportowner/&reportownerpass@&dbsid
+set serveroutput on size 1000000
+Prompt Applying report table/column updates...
+exec dbupdate_&version..apply_all_rpt
+
+Prompt
+Prompt Adding reportowner primary keys...
+exec primary_key.rpt_keys
+
+Prompt
+prompt Recreating report packages...
+@@create_report_packages
+prompt Adding check constraints...
+exec checkc.add_rpt
+prompt Recreating report views...
+@@create_report_views
+
+Prompt
+Prompt Rebuilding footprint triggers...
+@@create_rpt_fp_triggers_package.sql
+exec rpt_fp_triggers.drop_fp_triggers
+exec rpt_fp_triggers.Build_fp_triggers
+
+Prompt
+Prompt Setting up REPORTOWNER grants and public synonyms...
+@@create_public_synonyms
+@@reportowner_grants
+
+Prompt
+Prompt Recompiling REPORTOWNER invalid objects...
+@@recompile_invalid_objects
+
+Prompt
+Prompt Connecting as GLOGOWNER for ARCHIVE for to db changes...
+connect glogowner/&ARCHIVEDB_GLOGOWNERPASS@&archive_db
+set serveroutput on
+@@pkg_archive_tables
+exec pkg_archive_tables.create_all
+
+Prompt
+Prompt Connecting as ARCHIVE for grants...
+connect archive/&archivepass@&archive_db
+@@archive_grants
+
+Prompt
+Prompt Connecting as GLOGOWNER for final structure check...
+connect glogowner/&glogownerpass@&dbsid
+Prompt Recompiling GLOGOWNER invalid objects...
+@@recompile_invalid_objects
+
+exec upgrade_utl.global_version := '&FM_VERSION';
+
+SET SERVEROUTPUT ON
+DECLARE
+   CURSOR C1 IS
+   SELECT OBJECT_NAME FROM USER_ARGUMENTS
+    WHERE (PACKAGE_NAME = 'DBPATCH_&version'
+     AND (UPPER(OBJECT_NAME) LIKE 'PATCH%'))
+     OR (PACKAGE_NAME = 'DBUPDATE_&version'
+     AND (UPPER(OBJECT_NAME) LIKE 'UPDATE%'))
+    MINUS
+     SELECT UPPER(PATCH_NAME)
+       FROM DBPATCH_LOG
+      WHERE VERSION = '&fm_version';
+   updates_not_applied BOOLEAN := FALSE;
+BEGIN
+   FOR C1_REC IN C1 LOOP
+      IF C1%ROWCOUNT = 1 THEN
+         DBMS_OUTPUT.PUT_LINE('The following patches did not apply successfully:'||CHR(10));
+      END IF;
+      updates_not_applied := TRUE;
+      DBMS_OUTPUT.PUT_LINE('  '||C1_REC.OBJECT_NAME);
+   END LOOP;
+   IF updates_not_applied THEN
+      upgrade_utl.set_upgrade_status('DBPATCH','ERROR');
+      COMMIT;
+      DBMS_OUTPUT.PUT_LINE(CHR(10)||'WARNING!');
+      DBMS_OUTPUT.PUT_LINE(chr(10)||'Not all patches were successfully implemented.  Please review dbpatch_&version._&dbsid..log.');
+      DBMS_OUTPUT.PUT_LINE('Rerun the dbpatch_&version process if you need to, or ask OTM support for help.');
+   ELSE
+      upgrade_utl.set_upgrade_status('DBPATCH','COMPLETED');
+      COMMIT;
+      DBMS_OUTPUT.PUT_LINE(CHR(10)||'All patches applied successfully, but please review dbpatch_&version._&dbsid..log');
+      DBMS_OUTPUT.PUT_LINE('to ensure all other parts of the update (creation of new tables, keys, triggers)');
+      DBMS_OUTPUT.PUT_LINE('also were successful, and that everything compiled correctly.');
+      DBMS_OUTPUT.PUT_LINE('Also, review the update_content_V55P_<timestamp>.log to ensure');
+      DBMS_OUTPUT.PUT_LINE('that no errors occurred for data content load.');
+   END IF;
+END;
+/
+
+drop package dbupdate_&version;
+drop package dbpatch_&version;
+Prompt
+Prompt Removing old version of novpd_load.sql, Run novpd_domain_copy_script_builder.sql to create new version
+host rm novpd_load.sql
+
+SELECT TO_CHAR(SYSDATE,'DD-MON-YYYY HH24:MI:SS') ws_end_time
+FROM DUAL;
+
+Prompt End time: &end_time
+
+PROMPT
+EXEC GLOG_UTIL.PRINT_TIME_ELAPSED('&BEGIN_TIME','&END_TIME');
+Prompt
+Prompt Patch process complete.
+
+spool off
+
+
+SET SERVEROUTPUT OFF

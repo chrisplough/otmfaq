@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hooks>
+        <hooktype type="automediaembed_hooks">
+                <hook>automediaembed_check_perms</hook>
+                <hook>automediaembed_prep_text_start</hook>
+                <hook>automediaembed_prep_text_end</hook>
+                <hook>automediaembed_parse_bbcode_start</hook>
+                <hook>automediaembed_parse_bbcode_end</hook>
+                <hook>automediaembed_parse_bbcode_nomedia_start</hook>
+                <hook>automediaembed_parse_bbcode_nomedia_end</hook>
+                <hook>automediaembed_disable_option_start</hook>
+                <hook>automediaembed_disable_option_end</hook>
+                <hook>automediaembed_parse_bbcode_match_start</hook>
+                <hook>automediaembed_parse_bbcode_match_end</hook>
+                <hook>automediaembed_invalid_to_embed</hook>
+        </hooktype>
+</hooks>

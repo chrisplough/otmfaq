@@ -1,0 +1,1035 @@
+INFO | 2013/04/02 04:42:41 | Starting Launched Process...
+INFO | 2013/04/02 04:42:41 | java version "1.6.0_33"
+INFO | 2013/04/02 04:42:41 | Java(TM) SE Runtime Environment (build 1.6.0_33-b03)
+INFO | 2013/04/02 04:42:41 | Oracle JRockit(R) (build R28.2.4-14-151097-1.6.0_33-20120618-1634-linux-x86_64, compiled mode)
+INFO | 2013/04/02 04:42:41 | Argument #0 : /home/drvmounts/db1_400g/oracle/otm/jdk/bin/java
+INFO | 2013/04/02 04:42:41 | Argument #1 : -Xms2048m
+INFO | 2013/04/02 04:42:41 | Argument #2 : -Xmx2048m
+INFO | 2013/04/02 04:42:41 | Argument #3 : -jrockit
+INFO | 2013/04/02 04:42:41 | Argument #4 : -Xgc:throughput
+INFO | 2013/04/02 04:42:41 | Argument #5 : -Xverbose:memory
+INFO | 2013/04/02 04:42:41 | Argument #6 : -DGC3EncodedPassword=Q0hBTkdFTUU=
+INFO | 2013/04/02 04:42:41 | Argument #7 : -Dglog.properties=glog.tomcat.properties
+INFO | 2013/04/02 04:42:41 | Argument #8 : -Dglog.home=/home/drvmounts/db1_400g/oracle/otm/glog/config
+INFO | 2013/04/02 04:42:41 | Argument #9 : -Duser.home=/home/drvmounts/db1_400g/oracle/otm/glog/config
+INFO | 2013/04/02 04:42:41 | Argument #10 : -Djava.io.tmpdir=/home/drvmounts/db1_400g/oracle/otm/temp
+INFO | 2013/04/02 04:42:41 | Argument #11 : -Djava.awt.headless=true
+INFO | 2013/04/02 04:42:41 | Argument #12 : -Djava.security.auth.login.config=/home/drvmounts/db1_400g/oracle/otm/glog/config/otm_jaas.config
+INFO | 2013/04/02 04:42:41 | Argument #13 : -Dweblogic.ThreadPoolSize=15
+INFO | 2013/04/02 04:42:41 | Argument #14 : -Djava.endorsed.dirs=/home/drvmounts/db1_400g/oracle/otm/tomcat/endorsed
+INFO | 2013/04/02 04:42:41 | Argument #15 : -Dcatalina.base=/home/drvmounts/db1_400g/oracle/otm/tomcat
+INFO | 2013/04/02 04:42:41 | Argument #16 : -Dcatalina.home=/home/drvmounts/db1_400g/oracle/otm/tomcat
+INFO | 2013/04/02 04:42:41 | Argument #17 : -classpath
+INFO | 2013/04/02 04:42:41 | Argument #18 : /home/drvmounts/db1_400g/oracle/otm/tomcat/bin/bootstrap.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/bin/tomcat-juli.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/ecj-3.7.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/jasper-el.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/catalina-ha.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-api.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-dbcp.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/catalina.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/el-api.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-coyote.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/annotations-api.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/servlet-api.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-jdbc.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-i18n-ja.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-util.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/catalina-ant.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-i18n-es.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-i18n-fr.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/jasper.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/jsp-api.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/catalina-tribes.jar:/home/drvmounts/db1_400g/oracle/otm/glog/glog_resources:/home/drvmounts/db1_400g/oracle/otm/glog/config:/home/drvmounts/db1_400g/oracle/otm/glog/gc3webapp/WEB-INF/classes:/home/drvmounts/db1_400g/oracle/otm/dash/lib/xprb.jar:/home/drvmounts/db1_400g/oracle/otm/dash/lib/xprm.jar:/home/drvmounts/db1_400g/oracle/otm/dash/lib/xprs.jar:/home/drvmounts/db1_400g/oracle/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar:/home/drvmounts/db1_400g/oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/home/drvmounts/db1_400g/oracle/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/wlfullclient.jar:/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/webservices.jar
+INFO | 2013/04/02 04:42:41 | Argument #19 : org.apache.catalina.startup.Bootstrap
+INFO | 2013/04/02 04:42:41 | Argument #20 : start
+INFO | 2013/04/02 04:42:41 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2013/04/02 04:42:41 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, strategy: Generational Parallel Mark & Sweep.
+INFO | 2013/04/02 04:42:41 | [INFO ][memory ] Heap size: 2097152KB, maximal heap size: 2097152KB, nursery size: 1048576KB.
+INFO | 2013/04/02 04:42:41 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2013/04/02 04:42:41 | [INFO ][memory ] <start>  - start time of collection (seconds since jvm start).
+INFO | 2013/04/02 04:42:41 | [INFO ][memory ] <type>   - OC (old collection) or YC (young collection).
+INFO | 2013/04/02 04:42:41 | [INFO ][memory ] <end>    - end time of collection (seconds since jvm start).
+INFO | 2013/04/02 04:42:41 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2013/04/02 04:42:41 | [INFO ][memory ] <after>  - memory used by objects after collection (KB).
+INFO | 2013/04/02 04:42:41 | [INFO ][memory ] <heap>   - size of heap after collection (KB).
+INFO | 2013/04/02 04:42:41 | [INFO ][memory ] <time>   - total time of collection (milliseconds).
+INFO | 2013/04/02 04:42:41 | [INFO ][memory ] <pause>  - total sum of pauses during collection (milliseconds).
+INFO | 2013/04/02 04:42:41 | [INFO ][memory ]            Run with -Xverbose:gcpause to see individual phases.
+INFO | 2013/04/02 04:42:42 | Apr 2, 2013 4:42:42 AM org.apache.catalina.core.AprLifecycleListener init
+INFO | 2013/04/02 04:42:42 | INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/home/drvmounts/db1_400g/oracle/otm/jdk/jre/lib/amd64/jrockit:/home/drvmounts/db1_400g/oracle/otm/jdk/jre/lib/amd64:/home/drvmounts/db1_400g/oracle/otm/jdk/jre/../lib/amd64:/home/drvmounts/db1_400g/oracle/otm/dash/lib:/home/drvmounts/db1_400g/oracle/VIS/db/tech_st/11.1.0/lib:/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/linux/x86_64:/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/linux/i686:/home/drvmounts/db1_400g/oracle/VIS/db/tech_st/11.1.0/lib:/home/drvmounts/db1_400g/oracle/VIS/db/tech_st/11.1.0/lib:
+INFO | 2013/04/02 04:42:42 | Apr 2, 2013 4:42:42 AM org.apache.coyote.AbstractProtocol init
+INFO | 2013/04/02 04:42:42 | INFO: Initializing ProtocolHandler ["http-bio-localhost/127.0.0.1-8009"]
+INFO | 2013/04/02 04:42:42 | Apr 2, 2013 4:42:42 AM org.apache.catalina.startup.Catalina load
+INFO | 2013/04/02 04:42:42 | INFO: Initialization processed in 597 ms
+INFO | 2013/04/02 04:42:42 | Apr 2, 2013 4:42:42 AM org.apache.catalina.core.StandardService startInternal
+INFO | 2013/04/02 04:42:42 | INFO: Starting service Tomcat
+INFO | 2013/04/02 04:42:42 | Apr 2, 2013 4:42:42 AM org.apache.catalina.core.StandardEngine startInternal
+INFO | 2013/04/02 04:42:42 | INFO: Starting Servlet Engine: Apache Tomcat/7.0.22
+INFO | 2013/04/02 04:42:43 | Apr 2, 2013 4:42:43 AM org.apache.catalina.startup.TldConfig tldScanJar
+INFO | 2013/04/02 04:42:43 | WARNING: Failed to process JAR [jar:file:/home/drvmounts/db1_400g/oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar!/] for TLD files
+INFO | 2013/04/02 04:42:43 | java.io.FileNotFoundException: File not found
+INFO | 2013/04/02 04:42:43 | 	at java.util.zip.ZipFile.open(Native Method)
+INFO | 2013/04/02 04:42:43 | 	at java.util.zip.ZipFile.<init>(ZipFile.java:117)
+INFO | 2013/04/02 04:42:43 | 	at java.util.jar.JarFile.<init>(JarFile.java:135)
+INFO | 2013/04/02 04:42:43 | 	at java.util.jar.JarFile.<init>(JarFile.java:72)
+INFO | 2013/04/02 04:42:43 | 	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:72)
+INFO | 2013/04/02 04:42:43 | 	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:48)
+INFO | 2013/04/02 04:42:43 | 	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:70)
+INFO | 2013/04/02 04:42:43 | 	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:104)
+INFO | 2013/04/02 04:42:43 | 	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:71)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.tomcat.util.scan.FileUrlJar.<init>(FileUrlJar.java:40)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:34)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.startup.TldConfig.tldScanJar(TldConfig.java:460)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.startup.TldConfig.access$100(TldConfig.java:58)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.startup.TldConfig$TldJarScannerCallback.scan(TldConfig.java:276)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:241)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:204)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.startup.TldConfig.execute(TldConfig.java:250)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.startup.TldConfig.lifecycleEvent(TldConfig.java:540)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5103)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1033)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:774)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1033)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:291)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:443)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:727)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.startup.Catalina.start(Catalina.java:621)
+INFO | 2013/04/02 04:42:43 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO | 2013/04/02 04:42:43 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO | 2013/04/02 04:42:43 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO | 2013/04/02 04:42:43 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:322)
+INFO | 2013/04/02 04:42:43 | 	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:450)
+INFO | 2013/04/02 04:42:44 | Apr 2, 2013 4:42:44 AM org.apache.catalina.startup.TldConfig tldScanJar
+INFO | 2013/04/02 04:42:44 | WARNING: Failed to process JAR [jar:file:/home/drvmounts/db1_400g/oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar!/] for TLD files
+INFO | 2013/04/02 04:42:44 | java.io.FileNotFoundException: File not found
+INFO | 2013/04/02 04:42:44 | 	at java.util.zip.ZipFile.open(Native Method)
+INFO | 2013/04/02 04:42:44 | 	at java.util.zip.ZipFile.<init>(ZipFile.java:117)
+INFO | 2013/04/02 04:42:44 | 	at java.util.jar.JarFile.<init>(JarFile.java:135)
+INFO | 2013/04/02 04:42:44 | 	at java.util.jar.JarFile.<init>(JarFile.java:72)
+INFO | 2013/04/02 04:42:44 | 	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:72)
+INFO | 2013/04/02 04:42:44 | 	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:48)
+INFO | 2013/04/02 04:42:44 | 	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:70)
+INFO | 2013/04/02 04:42:44 | 	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:104)
+INFO | 2013/04/02 04:42:44 | 	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:71)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.tomcat.util.scan.FileUrlJar.<init>(FileUrlJar.java:40)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:34)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.startup.TldConfig.tldScanJar(TldConfig.java:460)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.startup.TldConfig.access$100(TldConfig.java:58)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.startup.TldConfig$TldJarScannerCallback.scan(TldConfig.java:276)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:241)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:204)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.startup.TldConfig.execute(TldConfig.java:250)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.startup.TldConfig.lifecycleEvent(TldConfig.java:540)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5103)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1033)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:774)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1033)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:291)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:443)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:727)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.startup.Catalina.start(Catalina.java:621)
+INFO | 2013/04/02 04:42:44 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO | 2013/04/02 04:42:44 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO | 2013/04/02 04:42:44 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO | 2013/04/02 04:42:44 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:322)
+INFO | 2013/04/02 04:42:44 | 	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:450)
+INFO | 2013/04/02 04:42:46 | Apr 2, 2013 4:42:46 AM org.apache.coyote.AbstractProtocol start
+INFO | 2013/04/02 04:42:46 | INFO: Starting ProtocolHandler ["http-bio-localhost/127.0.0.1-8009"]
+INFO | 2013/04/02 04:42:46 | Apr 2, 2013 4:42:46 AM org.apache.catalina.startup.Catalina start
+INFO | 2013/04/02 04:42:46 | INFO: Server startup in 4082 ms
+INFO | 2013/04/02 04:43:53 |  : QUERYRESOURCES : 0
+INFO | 2013/04/02 04:43:54 | en : QUERYRESOURCES : 918315
+INFO | 2013/04/02 04:43:54 | en_US : QUERYRESOURCES : 0
+INFO | 2013/04/02 04:43:54 |  : TRANSLATION : 0
+INFO | 2013/04/02 04:43:56 | en : TRANSLATION : 1075697
+INFO | 2013/04/02 04:43:56 | en_US : TRANSLATION : 0
+INFO | 2013/04/02 04:44:15 | en_US_DBA : TRANSLATION : 0
+INFO | 2013/04/02 04:50:04 |  : ERROR : 0
+INFO | 2013/04/02 04:50:05 | en : ERROR : 504588
+INFO | 2013/04/02 04:50:05 | en_US : ERROR : 0
+INFO | 2013/04/02 04:50:05 | en_US_DBA : ERROR : 0
+INFO | 2013/04/02 04:54:09 | User EBS not found
+INFO | 2013/04/02 04:54:09 | 
+INFO | 2013/04/02 04:54:09 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2013/04/02 04:54:09 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2013/04/02 04:54:09 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2013/04/02 04:54:09 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2013/04/02 04:54:09 | 	at glog.util.exception.GLException.factory(GLException.java:448)
+INFO | 2013/04/02 04:54:09 | 	at glog.util.exception.GLException.factory(GLException.java:424)
+INFO | 2013/04/02 04:54:09 | 	at glog.database.security.GLSecurityException.factory(GLSecurityException.java:40)
+INFO | 2013/04/02 04:54:09 | 	at glog.database.security.SecurityUserImpl.findReq(SecurityUserImpl.java:185)
+INFO | 2013/04/02 04:54:09 | 	at glog.database.security.SecurityUserImpl.authenticate(SecurityUserImpl.java:211)
+INFO | 2013/04/02 04:54:09 | 	at glog.database.security.SecurityUtil.authenticateUser(SecurityUtil.java:80)
+INFO | 2013/04/02 04:54:09 | 	at glog.database.security.SecuritySessionBean.authenticateUser(SecuritySessionBean.java:172)
+INFO | 2013/04/02 04:54:09 | 	at glog.database.security.SecuritySessionServerSideEJBWrapper.authenticateUser(SecuritySessionServerSideEJBWrapper.java:743)
+INFO | 2013/04/02 04:54:09 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.__WL_invoke(Unknown Source)
+INFO | 2013/04/02 04:54:09 | 	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+INFO | 2013/04/02 04:54:09 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.authenticateUser(Unknown Source)
+INFO | 2013/04/02 04:54:09 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl_WLSkel.invoke(Unknown Source)
+INFO | 2013/04/02 04:54:09 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:667)
+INFO | 2013/04/02 04:54:09 | 	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:230)
+INFO | 2013/04/02 04:54:09 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:522)
+INFO | 2013/04/02 04:54:09 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO | 2013/04/02 04:54:09 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+INFO | 2013/04/02 04:54:09 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:518)
+INFO | 2013/04/02 04:54:09 | 	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+INFO | 2013/04/02 04:54:09 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2013/04/02 04:54:09 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2013/04/02 04:54:26 | User EBS not found
+INFO | 2013/04/02 04:54:26 | 
+INFO | 2013/04/02 04:54:26 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2013/04/02 04:54:26 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2013/04/02 04:54:26 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2013/04/02 04:54:26 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2013/04/02 04:54:26 | 	at glog.util.exception.GLException.factory(GLException.java:448)
+INFO | 2013/04/02 04:54:26 | 	at glog.util.exception.GLException.factory(GLException.java:424)
+INFO | 2013/04/02 04:54:26 | 	at glog.database.security.GLSecurityException.factory(GLSecurityException.java:40)
+INFO | 2013/04/02 04:54:26 | 	at glog.database.security.SecurityUserImpl.findReq(SecurityUserImpl.java:185)
+INFO | 2013/04/02 04:54:26 | 	at glog.database.security.SecurityUserImpl.authenticate(SecurityUserImpl.java:211)
+INFO | 2013/04/02 04:54:26 | 	at glog.database.security.SecurityUtil.authenticateUser(SecurityUtil.java:80)
+INFO | 2013/04/02 04:54:26 | 	at glog.database.security.SecuritySessionBean.authenticateUser(SecuritySessionBean.java:172)
+INFO | 2013/04/02 04:54:26 | 	at glog.database.security.SecuritySessionServerSideEJBWrapper.authenticateUser(SecuritySessionServerSideEJBWrapper.java:743)
+INFO | 2013/04/02 04:54:26 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.__WL_invoke(Unknown Source)
+INFO | 2013/04/02 04:54:26 | 	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+INFO | 2013/04/02 04:54:26 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.authenticateUser(Unknown Source)
+INFO | 2013/04/02 04:54:26 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl_WLSkel.invoke(Unknown Source)
+INFO | 2013/04/02 04:54:26 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:667)
+INFO | 2013/04/02 04:54:26 | 	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:230)
+INFO | 2013/04/02 04:54:26 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:522)
+INFO | 2013/04/02 04:54:26 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO | 2013/04/02 04:54:26 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+INFO | 2013/04/02 04:54:26 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:518)
+INFO | 2013/04/02 04:54:26 | 	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+INFO | 2013/04/02 04:54:26 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2013/04/02 04:54:26 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2013/04/02 04:55:11 | User EBS not found
+INFO | 2013/04/02 04:55:11 | 
+INFO | 2013/04/02 04:55:11 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2013/04/02 04:55:11 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2013/04/02 04:55:11 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2013/04/02 04:55:11 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2013/04/02 04:55:11 | 	at glog.util.exception.GLException.factory(GLException.java:448)
+INFO | 2013/04/02 04:55:11 | 	at glog.util.exception.GLException.factory(GLException.java:424)
+INFO | 2013/04/02 04:55:11 | 	at glog.database.security.GLSecurityException.factory(GLSecurityException.java:40)
+INFO | 2013/04/02 04:55:11 | 	at glog.database.security.SecurityUserImpl.findReq(SecurityUserImpl.java:185)
+INFO | 2013/04/02 04:55:11 | 	at glog.database.security.SecurityUserImpl.authenticate(SecurityUserImpl.java:211)
+INFO | 2013/04/02 04:55:11 | 	at glog.database.security.SecurityUtil.authenticateUser(SecurityUtil.java:80)
+INFO | 2013/04/02 04:55:11 | 	at glog.database.security.SecuritySessionBean.authenticateUser(SecuritySessionBean.java:172)
+INFO | 2013/04/02 04:55:11 | 	at glog.database.security.SecuritySessionServerSideEJBWrapper.authenticateUser(SecuritySessionServerSideEJBWrapper.java:743)
+INFO | 2013/04/02 04:55:11 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.__WL_invoke(Unknown Source)
+INFO | 2013/04/02 04:55:11 | 	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+INFO | 2013/04/02 04:55:11 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.authenticateUser(Unknown Source)
+INFO | 2013/04/02 04:55:11 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl_WLSkel.invoke(Unknown Source)
+INFO | 2013/04/02 04:55:11 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:667)
+INFO | 2013/04/02 04:55:11 | 	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:230)
+INFO | 2013/04/02 04:55:11 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:522)
+INFO | 2013/04/02 04:55:11 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO | 2013/04/02 04:55:11 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+INFO | 2013/04/02 04:55:11 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:518)
+INFO | 2013/04/02 04:55:11 | 	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+INFO | 2013/04/02 04:55:11 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2013/04/02 04:55:11 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2013/04/02 04:55:18 | User EBS not found
+INFO | 2013/04/02 04:55:18 | 
+INFO | 2013/04/02 04:55:18 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2013/04/02 04:55:18 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2013/04/02 04:55:18 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2013/04/02 04:55:18 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2013/04/02 04:55:18 | 	at glog.util.exception.GLException.factory(GLException.java:448)
+INFO | 2013/04/02 04:55:18 | 	at glog.util.exception.GLException.factory(GLException.java:424)
+INFO | 2013/04/02 04:55:18 | 	at glog.database.security.GLSecurityException.factory(GLSecurityException.java:40)
+INFO | 2013/04/02 04:55:18 | 	at glog.database.security.SecurityUserImpl.findReq(SecurityUserImpl.java:185)
+INFO | 2013/04/02 04:55:18 | 	at glog.database.security.SecurityUserImpl.authenticate(SecurityUserImpl.java:211)
+INFO | 2013/04/02 04:55:18 | 	at glog.database.security.SecurityUtil.authenticateUser(SecurityUtil.java:80)
+INFO | 2013/04/02 04:55:18 | 	at glog.database.security.SecuritySessionBean.authenticateUser(SecuritySessionBean.java:172)
+INFO | 2013/04/02 04:55:18 | 	at glog.database.security.SecuritySessionServerSideEJBWrapper.authenticateUser(SecuritySessionServerSideEJBWrapper.java:743)
+INFO | 2013/04/02 04:55:18 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.__WL_invoke(Unknown Source)
+INFO | 2013/04/02 04:55:18 | 	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+INFO | 2013/04/02 04:55:18 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.authenticateUser(Unknown Source)
+INFO | 2013/04/02 04:55:18 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl_WLSkel.invoke(Unknown Source)
+INFO | 2013/04/02 04:55:18 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:667)
+INFO | 2013/04/02 04:55:18 | 	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:230)
+INFO | 2013/04/02 04:55:18 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:522)
+INFO | 2013/04/02 04:55:18 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO | 2013/04/02 04:55:18 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+INFO | 2013/04/02 04:55:18 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:518)
+INFO | 2013/04/02 04:55:18 | 	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+INFO | 2013/04/02 04:55:18 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2013/04/02 04:55:18 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2013/04/02 05:01:19 | User EBS not found
+INFO | 2013/04/02 05:01:19 | 
+INFO | 2013/04/02 05:01:19 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2013/04/02 05:01:19 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2013/04/02 05:01:19 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2013/04/02 05:01:19 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2013/04/02 05:01:19 | 	at glog.util.exception.GLException.factory(GLException.java:448)
+INFO | 2013/04/02 05:01:19 | 	at glog.util.exception.GLException.factory(GLException.java:424)
+INFO | 2013/04/02 05:01:19 | 	at glog.database.security.GLSecurityException.factory(GLSecurityException.java:40)
+INFO | 2013/04/02 05:01:19 | 	at glog.database.security.SecurityUserImpl.findReq(SecurityUserImpl.java:185)
+INFO | 2013/04/02 05:01:19 | 	at glog.database.security.SecurityUserImpl.authenticate(SecurityUserImpl.java:211)
+INFO | 2013/04/02 05:01:19 | 	at glog.database.security.SecurityUtil.authenticateUser(SecurityUtil.java:80)
+INFO | 2013/04/02 05:01:19 | 	at glog.database.security.SecuritySessionBean.authenticateUser(SecuritySessionBean.java:172)
+INFO | 2013/04/02 05:01:19 | 	at glog.database.security.SecuritySessionServerSideEJBWrapper.authenticateUser(SecuritySessionServerSideEJBWrapper.java:743)
+INFO | 2013/04/02 05:01:19 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.__WL_invoke(Unknown Source)
+INFO | 2013/04/02 05:01:19 | 	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+INFO | 2013/04/02 05:01:19 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.authenticateUser(Unknown Source)
+INFO | 2013/04/02 05:01:19 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl_WLSkel.invoke(Unknown Source)
+INFO | 2013/04/02 05:01:19 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:667)
+INFO | 2013/04/02 05:01:19 | 	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:230)
+INFO | 2013/04/02 05:01:19 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:522)
+INFO | 2013/04/02 05:01:19 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO | 2013/04/02 05:01:19 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+INFO | 2013/04/02 05:01:19 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:518)
+INFO | 2013/04/02 05:01:19 | 	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+INFO | 2013/04/02 05:01:19 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2013/04/02 05:01:19 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2013/04/02 05:23:05 | [INFO ][memory ] [YC#1] 2424.174-2424.249: YC 994283KB->428439KB (2097152KB), 0.075 s, sum of pauses 75.119 ms, longest pause 75.119 ms.
+INFO | 2013/04/02 05:48:33 | en_US_GUEST : TRANSLATION : 0
+INFO | 2013/04/02 05:52:42 | en_US_GUEST : ERROR : 0
+INFO | 2013/04/02 06:23:05 | [INFO ][memory ] [YC#2] 6024.250-6024.279: YC 642184KB->457695KB (2097152KB), 0.029 s, sum of pauses 29.326 ms, longest pause 29.326 ms.
+INFO | 2013/04/02 07:23:05 | [INFO ][memory ] [YC#3] 9624.279-9624.284: YC 524728KB->458159KB (2097152KB), 0.004 s, sum of pauses 4.115 ms, longest pause 4.115 ms.
+INFO | 2013/04/02 08:23:05 | [INFO ][memory ] [YC#4] 13224.284-13224.288: YC 524503KB->458351KB (2097152KB), 0.004 s, sum of pauses 4.154 ms, longest pause 4.154 ms.
+INFO | 2013/04/02 09:23:05 | [INFO ][memory ] [YC#5] 16824.288-16824.292: YC 524757KB->458479KB (2097152KB), 0.004 s, sum of pauses 3.705 ms, longest pause 3.705 ms.
+INFO | 2013/04/02 10:23:05 | [INFO ][memory ] [YC#6] 20424.292-20424.297: YC 525123KB->458675KB (2097152KB), 0.004 s, sum of pauses 4.364 ms, longest pause 4.364 ms.
+INFO | 2013/04/02 11:23:05 | [INFO ][memory ] [YC#7] 24024.297-24024.301: YC 525245KB->458931KB (2097152KB), 0.004 s, sum of pauses 3.999 ms, longest pause 3.999 ms.
+INFO | 2013/04/02 12:23:05 | [INFO ][memory ] [YC#8] 27624.301-27624.305: YC 525515KB->459187KB (2097152KB), 0.004 s, sum of pauses 3.801 ms, longest pause 3.801 ms.
+INFO | 2013/04/02 13:23:05 | [INFO ][memory ] [YC#9] 31224.305-31224.309: YC 525808KB->459443KB (2097152KB), 0.004 s, sum of pauses 3.611 ms, longest pause 3.611 ms.
+INFO | 2013/04/02 14:23:05 | [INFO ][memory ] [YC#10] 34824.309-34824.313: YC 526013KB->459699KB (2097152KB), 0.003 s, sum of pauses 3.391 ms, longest pause 3.391 ms.
+INFO | 2013/04/02 15:23:05 | [INFO ][memory ] [YC#11] 38424.313-38424.317: YC 526356KB->459955KB (2097152KB), 0.003 s, sum of pauses 3.355 ms, longest pause 3.355 ms.
+INFO | 2013/04/02 16:23:05 | [INFO ][memory ] [YC#12] 42024.317-42024.320: YC 526561KB->460211KB (2097152KB), 0.004 s, sum of pauses 3.558 ms, longest pause 3.558 ms.
+INFO | 2013/04/02 17:23:05 | [INFO ][memory ] [YC#13] 45624.320-45624.323: YC 526815KB->460467KB (2097152KB), 0.004 s, sum of pauses 3.559 ms, longest pause 3.559 ms.
+INFO | 2013/04/02 18:23:05 | [INFO ][memory ] [YC#14] 49224.324-49224.327: YC 527060KB->460723KB (2097152KB), 0.003 s, sum of pauses 3.342 ms, longest pause 3.342 ms.
+INFO | 2013/04/02 19:15:48 | weblogic.rmi.extensions.RequestTimeoutException: RJVM response from 'weblogic.rjvm.RJVMImpl@1914f981 - id: '5191023539317388090S:192.168.0.44:[7001,-1,-1,-1,-1,-1,-1]:Otmv630:gc3-erptitlilnx' connect time: 'Tue Apr 02 04:43:51 EDT 2013'' for 'getUserAccess(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)' timed out after: 600000ms.
+INFO | 2013/04/02 19:15:48 | 	at weblogic.rjvm.ResponseImpl.unmarshalReturn(ResponseImpl.java:237)
+INFO | 2013/04/02 19:15:48 | 	at weblogic.rmi.cluster.ClusterableRemoteRef.invoke(ClusterableRemoteRef.java:348)
+INFO | 2013/04/02 19:15:48 | 	at weblogic.rmi.cluster.ClusterableRemoteRef.invoke(ClusterableRemoteRef.java:259)
+INFO | 2013/04/02 19:15:48 | 	at glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl_1036_WLStub.getUserAccess(Unknown Source)
+INFO | 2013/04/02 19:15:48 | 	at glog.webserver.umt.UserManager.getUserAccess(UserManager.java:572)
+INFO | 2013/04/02 19:15:48 | 	at glog.webserver.umt.UserManager.<init>(UserManager.java:153)
+INFO | 2013/04/02 19:15:48 | 	at glog.webserver.servlet.umt.Login.getDocument(Login.java:247)
+INFO | 2013/04/02 19:15:48 | 	at glog.webserver.util.BaseServlet.getServletResult(BaseServlet.java:320)
+INFO | 2013/04/02 19:15:48 | 	at glog.webserver.util.BaseServlet.getServletResultEx(BaseServlet.java:1080)
+INFO | 2013/04/02 19:15:48 | 	at glog.webserver.servlet.DefaultServlet.getServletResultEx(DefaultServlet.java:157)
+INFO | 2013/04/02 19:15:48 | 	at glog.webserver.util.BaseServlet.process(BaseServlet.java:523)
+INFO | 2013/04/02 19:15:48 | 	at glog.webserver.util.BaseServlet.service(BaseServlet.java:977)
+INFO | 2013/04/02 19:15:48 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:722)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:304)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+INFO | 2013/04/02 19:15:48 | 	at glog.webserver.screenlayout.FrameInterceptFilter.doFilter(FrameInterceptFilter.java:29)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+INFO | 2013/04/02 19:15:48 | 	at glog.webserver.screenlayout.CsrfFilter.doFilter(CsrfFilter.java:53)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+INFO | 2013/04/02 19:15:48 | 	at glog.webserver.session.ParameterValidation.doFilter(ParameterValidation.java:29)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+INFO | 2013/04/02 19:15:48 | 	at glog.webserver.screenlayout.ClientSessionTracker.doFilter(ClientSessionTracker.java:72)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+INFO | 2013/04/02 19:15:48 | 	at glog.webserver.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:44)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:224)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:405)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:964)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:515)
+INFO | 2013/04/02 19:15:48 | 	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:304)
+INFO | 2013/04/02 19:15:48 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+INFO | 2013/04/02 19:15:48 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+INFO | 2013/04/02 19:15:48 | 	at java.lang.Thread.run(Thread.java:662)
+INFO | 2013/04/02 19:15:48 |  : EXPLANATION : 0
+INFO | 2013/04/02 19:15:48 | en : EXPLANATION : 73142
+INFO | 2013/04/02 19:15:48 | en_US : EXPLANATION : 0
+INFO | 2013/04/02 19:23:05 | [INFO ][memory ] [YC#15] 52824.327-52824.334: YC 539667KB->462947KB (2097152KB), 0.007 s, sum of pauses 7.012 ms, longest pause 7.012 ms.
+INFO | 2013/04/02 19:27:17 | weblogic.rmi.extensions.RequestTimeoutException: RJVM response from 'weblogic.rjvm.RJVMImpl@1914f981 - id: '5191023539317388090S:192.168.0.44:[7001,-1,-1,-1,-1,-1,-1]:Otmv630:gc3-erptitlilnx' connect time: 'Tue Apr 02 04:43:51 EDT 2013'' for 'getUserAccess(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)' timed out after: 600000ms.
+INFO | 2013/04/02 19:27:17 | 	at weblogic.rjvm.ResponseImpl.unmarshalReturn(ResponseImpl.java:237)
+INFO | 2013/04/02 19:27:17 | 	at weblogic.rmi.cluster.ClusterableRemoteRef.invoke(ClusterableRemoteRef.java:348)
+INFO | 2013/04/02 19:27:17 | 	at weblogic.rmi.cluster.ClusterableRemoteRef.invoke(ClusterableRemoteRef.java:259)
+INFO | 2013/04/02 19:27:17 | 	at glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl_1036_WLStub.getUserAccess(Unknown Source)
+INFO | 2013/04/02 19:27:17 | 	at glog.webserver.umt.UserManager.getUserAccess(UserManager.java:572)
+INFO | 2013/04/02 19:27:17 | 	at glog.webserver.umt.UserManager.<init>(UserManager.java:153)
+INFO | 2013/04/02 19:27:17 | 	at glog.webserver.servlet.umt.Login.getDocument(Login.java:247)
+INFO | 2013/04/02 19:27:17 | 	at glog.webserver.util.BaseServlet.getServletResult(BaseServlet.java:320)
+INFO | 2013/04/02 19:27:17 | 	at glog.webserver.util.BaseServlet.getServletResultEx(BaseServlet.java:1080)
+INFO | 2013/04/02 19:27:17 | 	at glog.webserver.servlet.DefaultServlet.getServletResultEx(DefaultServlet.java:157)
+INFO | 2013/04/02 19:27:17 | 	at glog.webserver.util.BaseServlet.process(BaseServlet.java:523)
+INFO | 2013/04/02 19:27:17 | 	at glog.webserver.util.BaseServlet.service(BaseServlet.java:977)
+INFO | 2013/04/02 19:27:17 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:722)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:304)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+INFO | 2013/04/02 19:27:17 | 	at glog.webserver.screenlayout.FrameInterceptFilter.doFilter(FrameInterceptFilter.java:29)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+INFO | 2013/04/02 19:27:17 | 	at glog.webserver.screenlayout.CsrfFilter.doFilter(CsrfFilter.java:53)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+INFO | 2013/04/02 19:27:17 | 	at glog.webserver.session.ParameterValidation.doFilter(ParameterValidation.java:29)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+INFO | 2013/04/02 19:27:17 | 	at glog.webserver.screenlayout.ClientSessionTracker.doFilter(ClientSessionTracker.java:72)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+INFO | 2013/04/02 19:27:17 | 	at glog.webserver.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:44)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:224)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:405)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:964)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:515)
+INFO | 2013/04/02 19:27:17 | 	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:304)
+INFO | 2013/04/02 19:27:17 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+INFO | 2013/04/02 19:27:17 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+INFO | 2013/04/02 19:27:17 | 	at java.lang.Thread.run(Thread.java:662)
+INFO | 2013/04/02 19:52:13 | Apr 2, 2013 7:52:13 PM org.apache.catalina.core.StandardServer await
+INFO | 2013/04/02 19:52:13 | INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+INFO | 2013/04/02 19:52:13 | Apr 2, 2013 7:52:13 PM org.apache.coyote.AbstractProtocol pause
+INFO | 2013/04/02 19:52:13 | INFO: Pausing ProtocolHandler ["http-bio-localhost/127.0.0.1-8009"]
+INFO | 2013/04/02 19:52:14 | Apr 2, 2013 7:52:14 PM org.apache.catalina.core.StandardService stopInternal
+INFO | 2013/04/02 19:52:14 | INFO: Stopping service Tomcat
+INFO | 2013/04/02 19:52:14 | Apr 2, 2013 7:52:14 PM org.apache.catalina.core.StandardWrapper unload
+INFO | 2013/04/02 19:52:14 | INFO: Waiting for 2 instance(s) to be deallocated
+INFO | 2013/04/02 19:52:15 | Apr 2, 2013 7:52:15 PM org.apache.catalina.core.StandardWrapper unload
+INFO | 2013/04/02 19:52:15 | INFO: Waiting for 2 instance(s) to be deallocated
+INFO | 2013/04/02 19:52:16 | Apr 2, 2013 7:52:16 PM org.apache.catalina.core.StandardWrapper unload
+INFO | 2013/04/02 19:52:16 | INFO: Waiting for 2 instance(s) to be deallocated
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] is still processing a request that has yet to finish. This is very likely to create a memory leak. You can control the time allowed for requests to finish by using the unloadDelay attribute of the standard Context implementation.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [weblogic.timers.TimerThread] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [weblogic.transaction.TxTimer: '1'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] is still processing a request that has yet to finish. This is very likely to create a memory leak. You can control the time allowed for requests to finish by using the unloadDelay attribute of the standard Context implementation.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [GC3 Poller] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '0' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '1' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '2' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '3' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '4' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '5' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '6' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '7' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '8' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '9' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '10' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '11' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '12' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '13' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '14' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 19:52:17 | SEVERE: The web application [/GC3] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.coyote.AbstractProtocol stop
+INFO | 2013/04/02 19:52:17 | INFO: Stopping ProtocolHandler ["http-bio-localhost/127.0.0.1-8009"]
+INFO | 2013/04/02 19:52:17 | Apr 2, 2013 7:52:17 PM org.apache.coyote.AbstractProtocol destroy
+INFO | 2013/04/02 19:52:17 | INFO: Destroying ProtocolHandler ["http-bio-localhost/127.0.0.1-8009"]
+INFO | 2013/04/02 19:52:17 | Stopped Launched Process...
+INFO | 2013/04/02 19:56:40 | Starting Launched Process...
+INFO | 2013/04/02 19:56:40 | java version "1.6.0_33"
+INFO | 2013/04/02 19:56:40 | Java(TM) SE Runtime Environment (build 1.6.0_33-b03)
+INFO | 2013/04/02 19:56:40 | Oracle JRockit(R) (build R28.2.4-14-151097-1.6.0_33-20120618-1634-linux-x86_64, compiled mode)
+INFO | 2013/04/02 19:56:40 | Argument #0 : /home/drvmounts/db1_400g/oracle/otm/jdk/bin/java
+INFO | 2013/04/02 19:56:40 | Argument #1 : -Xms2048m
+INFO | 2013/04/02 19:56:40 | Argument #2 : -Xmx2048m
+INFO | 2013/04/02 19:56:40 | Argument #3 : -jrockit
+INFO | 2013/04/02 19:56:40 | Argument #4 : -Xgc:throughput
+INFO | 2013/04/02 19:56:40 | Argument #5 : -Xverbose:memory
+INFO | 2013/04/02 19:56:40 | Argument #6 : -DGC3EncodedPassword=Q0hBTkdFTUU=
+INFO | 2013/04/02 19:56:40 | Argument #7 : -Dglog.properties=glog.tomcat.properties
+INFO | 2013/04/02 19:56:40 | Argument #8 : -Dglog.home=/home/drvmounts/db1_400g/oracle/otm/glog/config
+INFO | 2013/04/02 19:56:40 | Argument #9 : -Duser.home=/home/drvmounts/db1_400g/oracle/otm/glog/config
+INFO | 2013/04/02 19:56:40 | Argument #10 : -Djava.io.tmpdir=/home/drvmounts/db1_400g/oracle/otm/temp
+INFO | 2013/04/02 19:56:40 | Argument #11 : -Djava.awt.headless=true
+INFO | 2013/04/02 19:56:40 | Argument #12 : -Djava.security.auth.login.config=/home/drvmounts/db1_400g/oracle/otm/glog/config/otm_jaas.config
+INFO | 2013/04/02 19:56:40 | Argument #13 : -Dweblogic.ThreadPoolSize=15
+INFO | 2013/04/02 19:56:40 | Argument #14 : -Djava.endorsed.dirs=/home/drvmounts/db1_400g/oracle/otm/tomcat/endorsed
+INFO | 2013/04/02 19:56:40 | Argument #15 : -Dcatalina.base=/home/drvmounts/db1_400g/oracle/otm/tomcat
+INFO | 2013/04/02 19:56:40 | Argument #16 : -Dcatalina.home=/home/drvmounts/db1_400g/oracle/otm/tomcat
+INFO | 2013/04/02 19:56:40 | Argument #17 : -classpath
+INFO | 2013/04/02 19:56:40 | Argument #18 : /home/drvmounts/db1_400g/oracle/otm/tomcat/bin/bootstrap.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/bin/tomcat-juli.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/ecj-3.7.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/jasper-el.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/catalina-ha.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-api.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-dbcp.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/catalina.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/el-api.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-coyote.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/annotations-api.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/servlet-api.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-jdbc.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-i18n-ja.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-util.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/catalina-ant.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-i18n-es.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-i18n-fr.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/jasper.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/jsp-api.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/catalina-tribes.jar:/home/drvmounts/db1_400g/oracle/otm/glog/glog_resources:/home/drvmounts/db1_400g/oracle/otm/glog/config:/home/drvmounts/db1_400g/oracle/otm/glog/gc3webapp/WEB-INF/classes:/home/drvmounts/db1_400g/oracle/otm/dash/lib/xprb.jar:/home/drvmounts/db1_400g/oracle/otm/dash/lib/xprm.jar:/home/drvmounts/db1_400g/oracle/otm/dash/lib/xprs.jar:/home/drvmounts/db1_400g/oracle/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar:/home/drvmounts/db1_400g/oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/home/drvmounts/db1_400g/oracle/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/wlfullclient.jar:/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/webservices.jar
+INFO | 2013/04/02 19:56:40 | Argument #19 : org.apache.catalina.startup.Bootstrap
+INFO | 2013/04/02 19:56:40 | Argument #20 : start
+INFO | 2013/04/02 19:56:40 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2013/04/02 19:56:40 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, strategy: Generational Parallel Mark & Sweep.
+INFO | 2013/04/02 19:56:40 | [INFO ][memory ] Heap size: 2097152KB, maximal heap size: 2097152KB, nursery size: 1048576KB.
+INFO | 2013/04/02 19:56:40 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2013/04/02 19:56:40 | [INFO ][memory ] <start>  - start time of collection (seconds since jvm start).
+INFO | 2013/04/02 19:56:40 | [INFO ][memory ] <type>   - OC (old collection) or YC (young collection).
+INFO | 2013/04/02 19:56:40 | [INFO ][memory ] <end>    - end time of collection (seconds since jvm start).
+INFO | 2013/04/02 19:56:40 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2013/04/02 19:56:40 | [INFO ][memory ] <after>  - memory used by objects after collection (KB).
+INFO | 2013/04/02 19:56:40 | [INFO ][memory ] <heap>   - size of heap after collection (KB).
+INFO | 2013/04/02 19:56:40 | [INFO ][memory ] <time>   - total time of collection (milliseconds).
+INFO | 2013/04/02 19:56:40 | [INFO ][memory ] <pause>  - total sum of pauses during collection (milliseconds).
+INFO | 2013/04/02 19:56:40 | [INFO ][memory ]            Run with -Xverbose:gcpause to see individual phases.
+INFO | 2013/04/02 19:56:41 | Apr 2, 2013 7:56:41 PM org.apache.catalina.core.AprLifecycleListener init
+INFO | 2013/04/02 19:56:41 | INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/home/drvmounts/db1_400g/oracle/otm/jdk/jre/lib/amd64/jrockit:/home/drvmounts/db1_400g/oracle/otm/jdk/jre/lib/amd64:/home/drvmounts/db1_400g/oracle/otm/jdk/jre/../lib/amd64:/home/drvmounts/db1_400g/oracle/otm/dash/lib:/home/drvmounts/db1_400g/oracle/VIS/db/tech_st/11.1.0/lib:/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/linux/x86_64:/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/linux/i686:/home/drvmounts/db1_400g/oracle/VIS/db/tech_st/11.1.0/lib:/usr/X11R6/lib:/usr/openwin/lib:/home/drvmounts/db1_400g/oracle/VIS/db/tech_st/11.1.0/lib:/usr/dt/lib:/home/drvmounts/db1_400g/oracle/VIS/db/tech_st/11.1.0/ctx/lib
+INFO | 2013/04/02 19:56:41 | [INFO ][memory ] [YC#1] 1.067-1.073: YC 27954KB->266310KB (2097152KB), 0.006 s, sum of pauses 6.239 ms, longest pause 6.239 ms.
+INFO | 2013/04/02 19:56:41 | Apr 2, 2013 7:56:41 PM org.apache.coyote.AbstractProtocol init
+INFO | 2013/04/02 19:56:41 | INFO: Initializing ProtocolHandler ["http-bio-localhost/127.0.0.1-8009"]
+INFO | 2013/04/02 19:56:41 | Apr 2, 2013 7:56:41 PM org.apache.catalina.startup.Catalina load
+INFO | 2013/04/02 19:56:41 | INFO: Initialization processed in 628 ms
+INFO | 2013/04/02 19:56:41 | Apr 2, 2013 7:56:41 PM org.apache.catalina.core.StandardService startInternal
+INFO | 2013/04/02 19:56:41 | INFO: Starting service Tomcat
+INFO | 2013/04/02 19:56:41 | Apr 2, 2013 7:56:41 PM org.apache.catalina.core.StandardEngine startInternal
+INFO | 2013/04/02 19:56:41 | INFO: Starting Servlet Engine: Apache Tomcat/7.0.22
+INFO | 2013/04/02 19:56:42 | Apr 2, 2013 7:56:42 PM org.apache.catalina.startup.TldConfig tldScanJar
+INFO | 2013/04/02 19:56:42 | WARNING: Failed to process JAR [jar:file:/home/drvmounts/db1_400g/oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar!/] for TLD files
+INFO | 2013/04/02 19:56:42 | java.io.FileNotFoundException: File not found
+INFO | 2013/04/02 19:56:42 | 	at java.util.zip.ZipFile.open(Native Method)
+INFO | 2013/04/02 19:56:42 | 	at java.util.zip.ZipFile.<init>(ZipFile.java:117)
+INFO | 2013/04/02 19:56:42 | 	at java.util.jar.JarFile.<init>(JarFile.java:135)
+INFO | 2013/04/02 19:56:42 | 	at java.util.jar.JarFile.<init>(JarFile.java:72)
+INFO | 2013/04/02 19:56:42 | 	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:72)
+INFO | 2013/04/02 19:56:42 | 	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:48)
+INFO | 2013/04/02 19:56:42 | 	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:70)
+INFO | 2013/04/02 19:56:42 | 	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:104)
+INFO | 2013/04/02 19:56:42 | 	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:71)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.tomcat.util.scan.FileUrlJar.<init>(FileUrlJar.java:40)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:34)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.startup.TldConfig.tldScanJar(TldConfig.java:460)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.startup.TldConfig.access$100(TldConfig.java:58)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.startup.TldConfig$TldJarScannerCallback.scan(TldConfig.java:276)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:241)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:204)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.startup.TldConfig.execute(TldConfig.java:250)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.startup.TldConfig.lifecycleEvent(TldConfig.java:540)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5103)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1033)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:774)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1033)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:291)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:443)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:727)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.startup.Catalina.start(Catalina.java:621)
+INFO | 2013/04/02 19:56:42 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO | 2013/04/02 19:56:42 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO | 2013/04/02 19:56:42 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO | 2013/04/02 19:56:42 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:322)
+INFO | 2013/04/02 19:56:42 | 	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:450)
+INFO | 2013/04/02 19:56:43 | Apr 2, 2013 7:56:43 PM org.apache.catalina.startup.TldConfig tldScanJar
+INFO | 2013/04/02 19:56:43 | WARNING: Failed to process JAR [jar:file:/home/drvmounts/db1_400g/oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar!/] for TLD files
+INFO | 2013/04/02 19:56:43 | java.io.FileNotFoundException: File not found
+INFO | 2013/04/02 19:56:43 | 	at java.util.zip.ZipFile.open(Native Method)
+INFO | 2013/04/02 19:56:43 | 	at java.util.zip.ZipFile.<init>(ZipFile.java:117)
+INFO | 2013/04/02 19:56:43 | 	at java.util.jar.JarFile.<init>(JarFile.java:135)
+INFO | 2013/04/02 19:56:43 | 	at java.util.jar.JarFile.<init>(JarFile.java:72)
+INFO | 2013/04/02 19:56:43 | 	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:72)
+INFO | 2013/04/02 19:56:43 | 	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:48)
+INFO | 2013/04/02 19:56:43 | 	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:70)
+INFO | 2013/04/02 19:56:43 | 	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:104)
+INFO | 2013/04/02 19:56:43 | 	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:71)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.tomcat.util.scan.FileUrlJar.<init>(FileUrlJar.java:40)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:34)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.startup.TldConfig.tldScanJar(TldConfig.java:460)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.startup.TldConfig.access$100(TldConfig.java:58)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.startup.TldConfig$TldJarScannerCallback.scan(TldConfig.java:276)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:241)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:204)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.startup.TldConfig.execute(TldConfig.java:250)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.startup.TldConfig.lifecycleEvent(TldConfig.java:540)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5103)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1033)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:774)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1033)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:291)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:443)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:727)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.startup.Catalina.start(Catalina.java:621)
+INFO | 2013/04/02 19:56:43 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO | 2013/04/02 19:56:43 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO | 2013/04/02 19:56:43 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO | 2013/04/02 19:56:43 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:322)
+INFO | 2013/04/02 19:56:43 | 	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:450)
+INFO | 2013/04/02 19:56:45 | Apr 2, 2013 7:56:45 PM org.apache.coyote.AbstractProtocol start
+INFO | 2013/04/02 19:56:45 | INFO: Starting ProtocolHandler ["http-bio-localhost/127.0.0.1-8009"]
+INFO | 2013/04/02 19:56:45 | Apr 2, 2013 7:56:45 PM org.apache.catalina.startup.Catalina start
+INFO | 2013/04/02 19:56:45 | INFO: Server startup in 4086 ms
+INFO | 2013/04/02 19:57:11 |  : QUERYRESOURCES : 0
+INFO | 2013/04/02 19:57:12 | en : QUERYRESOURCES : 918315
+INFO | 2013/04/02 19:57:12 | en_US : QUERYRESOURCES : 0
+INFO | 2013/04/02 19:57:12 |  : TRANSLATION : 0
+INFO | 2013/04/02 19:57:14 | en : TRANSLATION : 1075697
+INFO | 2013/04/02 19:57:14 | en_US : TRANSLATION : 0
+INFO | 2013/04/02 19:57:28 | en_US_DBA : TRANSLATION : 0
+INFO | 2013/04/02 20:56:43 | [INFO ][memory ] [YC#2] 3603.133-3603.193: YC 1039282KB->392353KB (2097152KB), 0.060 s, sum of pauses 59.869 ms, longest pause 59.869 ms.
+INFO | 2013/04/02 21:15:24 | Apr 2, 2013 9:15:24 PM org.apache.catalina.core.StandardServer await
+INFO | 2013/04/02 21:15:24 | INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+INFO | 2013/04/02 21:15:24 | Apr 2, 2013 9:15:24 PM org.apache.coyote.AbstractProtocol pause
+INFO | 2013/04/02 21:15:24 | INFO: Pausing ProtocolHandler ["http-bio-localhost/127.0.0.1-8009"]
+INFO | 2013/04/02 21:15:25 | Apr 2, 2013 9:15:25 PM org.apache.catalina.core.StandardService stopInternal
+INFO | 2013/04/02 21:15:25 | INFO: Stopping service Tomcat
+INFO | 2013/04/02 21:15:26 | Apr 2, 2013 9:15:26 PM org.apache.catalina.core.StandardWrapper unload
+INFO | 2013/04/02 21:15:26 | INFO: Waiting for 1 instance(s) to be deallocated
+INFO | 2013/04/02 21:15:27 | Apr 2, 2013 9:15:27 PM org.apache.catalina.core.StandardWrapper unload
+INFO | 2013/04/02 21:15:27 | INFO: Waiting for 1 instance(s) to be deallocated
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.core.StandardWrapper unload
+INFO | 2013/04/02 21:15:28 | INFO: Waiting for 1 instance(s) to be deallocated
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [weblogic.timers.TimerThread] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [weblogic.transaction.TxTimer: '1'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] is still processing a request that has yet to finish. This is very likely to create a memory leak. You can control the time allowed for requests to finish by using the unloadDelay attribute of the standard Context implementation.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [GC3 Poller] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '0' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '1' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '2' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '3' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '4' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '5' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '6' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '7' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '8' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '9' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '10' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '11' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '12' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '13' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [ExecuteThread: '14' for queue: 'default'] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+INFO | 2013/04/02 21:15:28 | SEVERE: The web application [/GC3] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak.
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.coyote.AbstractProtocol stop
+INFO | 2013/04/02 21:15:28 | INFO: Stopping ProtocolHandler ["http-bio-localhost/127.0.0.1-8009"]
+INFO | 2013/04/02 21:15:28 | Apr 2, 2013 9:15:28 PM org.apache.coyote.AbstractProtocol destroy
+INFO | 2013/04/02 21:15:28 | INFO: Destroying ProtocolHandler ["http-bio-localhost/127.0.0.1-8009"]
+INFO | 2013/04/02 21:15:28 | Stopped Launched Process...
+INFO | 2013/04/03 01:45:19 | Starting Launched Process...
+INFO | 2013/04/03 01:45:19 | java version "1.6.0_33"
+INFO | 2013/04/03 01:45:19 | Java(TM) SE Runtime Environment (build 1.6.0_33-b03)
+INFO | 2013/04/03 01:45:19 | Oracle JRockit(R) (build R28.2.4-14-151097-1.6.0_33-20120618-1634-linux-x86_64, compiled mode)
+INFO | 2013/04/03 01:45:19 | Argument #0 : /home/drvmounts/db1_400g/oracle/otm/jdk/bin/java
+INFO | 2013/04/03 01:45:19 | Argument #1 : -Xms2048m
+INFO | 2013/04/03 01:45:19 | Argument #2 : -Xmx2048m
+INFO | 2013/04/03 01:45:19 | Argument #3 : -jrockit
+INFO | 2013/04/03 01:45:19 | Argument #4 : -Xgc:throughput
+INFO | 2013/04/03 01:45:19 | Argument #5 : -Xverbose:memory
+INFO | 2013/04/03 01:45:19 | Argument #6 : -DGC3EncodedPassword=Q0hBTkdFTUU=
+INFO | 2013/04/03 01:45:19 | Argument #7 : -Dglog.properties=glog.tomcat.properties
+INFO | 2013/04/03 01:45:19 | Argument #8 : -Dglog.home=/home/drvmounts/db1_400g/oracle/otm/glog/config
+INFO | 2013/04/03 01:45:19 | Argument #9 : -Duser.home=/home/drvmounts/db1_400g/oracle/otm/glog/config
+INFO | 2013/04/03 01:45:19 | Argument #10 : -Djava.io.tmpdir=/home/drvmounts/db1_400g/oracle/otm/temp
+INFO | 2013/04/03 01:45:19 | Argument #11 : -Djava.awt.headless=true
+INFO | 2013/04/03 01:45:19 | Argument #12 : -Djava.security.auth.login.config=/home/drvmounts/db1_400g/oracle/otm/glog/config/otm_jaas.config
+INFO | 2013/04/03 01:45:19 | Argument #13 : -Dweblogic.ThreadPoolSize=15
+INFO | 2013/04/03 01:45:19 | Argument #14 : -Djava.endorsed.dirs=/home/drvmounts/db1_400g/oracle/otm/tomcat/endorsed
+INFO | 2013/04/03 01:45:19 | Argument #15 : -Dcatalina.base=/home/drvmounts/db1_400g/oracle/otm/tomcat
+INFO | 2013/04/03 01:45:19 | Argument #16 : -Dcatalina.home=/home/drvmounts/db1_400g/oracle/otm/tomcat
+INFO | 2013/04/03 01:45:19 | Argument #17 : -classpath
+INFO | 2013/04/03 01:45:19 | Argument #18 : /home/drvmounts/db1_400g/oracle/otm/tomcat/bin/bootstrap.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/bin/tomcat-juli.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/ecj-3.7.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/jasper-el.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/catalina-ha.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-api.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-dbcp.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/catalina.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/el-api.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-coyote.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/annotations-api.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/servlet-api.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-jdbc.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-i18n-ja.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-util.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/catalina-ant.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-i18n-es.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/tomcat-i18n-fr.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/jasper.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/jsp-api.jar:/home/drvmounts/db1_400g/oracle/otm/tomcat/lib/catalina-tribes.jar:/home/drvmounts/db1_400g/oracle/otm/glog/glog_resources:/home/drvmounts/db1_400g/oracle/otm/glog/config:/home/drvmounts/db1_400g/oracle/otm/glog/gc3webapp/WEB-INF/classes:/home/drvmounts/db1_400g/oracle/otm/dash/lib/xprb.jar:/home/drvmounts/db1_400g/oracle/otm/dash/lib/xprm.jar:/home/drvmounts/db1_400g/oracle/otm/dash/lib/xprs.jar:/home/drvmounts/db1_400g/oracle/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar:/home/drvmounts/db1_400g/oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/home/drvmounts/db1_400g/oracle/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/wlfullclient.jar:/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/webservices.jar
+INFO | 2013/04/03 01:45:19 | Argument #19 : org.apache.catalina.startup.Bootstrap
+INFO | 2013/04/03 01:45:19 | Argument #20 : start
+INFO | 2013/04/03 01:45:19 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2013/04/03 01:45:19 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, strategy: Generational Parallel Mark & Sweep.
+INFO | 2013/04/03 01:45:19 | [INFO ][memory ] Heap size: 2097152KB, maximal heap size: 2097152KB, nursery size: 1048576KB.
+INFO | 2013/04/03 01:45:19 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2013/04/03 01:45:19 | [INFO ][memory ] <start>  - start time of collection (seconds since jvm start).
+INFO | 2013/04/03 01:45:19 | [INFO ][memory ] <type>   - OC (old collection) or YC (young collection).
+INFO | 2013/04/03 01:45:19 | [INFO ][memory ] <end>    - end time of collection (seconds since jvm start).
+INFO | 2013/04/03 01:45:19 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2013/04/03 01:45:19 | [INFO ][memory ] <after>  - memory used by objects after collection (KB).
+INFO | 2013/04/03 01:45:19 | [INFO ][memory ] <heap>   - size of heap after collection (KB).
+INFO | 2013/04/03 01:45:19 | [INFO ][memory ] <time>   - total time of collection (milliseconds).
+INFO | 2013/04/03 01:45:19 | [INFO ][memory ] <pause>  - total sum of pauses during collection (milliseconds).
+INFO | 2013/04/03 01:45:19 | [INFO ][memory ]            Run with -Xverbose:gcpause to see individual phases.
+INFO | 2013/04/03 01:45:20 | Apr 3, 2013 1:45:20 AM org.apache.catalina.core.AprLifecycleListener init
+INFO | 2013/04/03 01:45:20 | INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/home/drvmounts/db1_400g/oracle/otm/jdk/jre/lib/amd64/jrockit:/home/drvmounts/db1_400g/oracle/otm/jdk/jre/lib/amd64:/home/drvmounts/db1_400g/oracle/otm/jdk/jre/../lib/amd64:/home/drvmounts/db1_400g/oracle/otm/dash/lib:/home/drvmounts/db1_400g/oracle/VIS/db/tech_st/11.1.0/lib:/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/linux/x86_64:/home/drvmounts/db1_400g/oracle/Middleware/wlserver_10.3/server/lib/linux/i686:/home/drvmounts/db1_400g/oracle/VIS/db/tech_st/11.1.0/lib:/usr/X11R6/lib:/usr/openwin/lib:/home/drvmounts/db1_400g/oracle/VIS/db/tech_st/11.1.0/lib:/usr/dt/lib:/home/drvmounts/db1_400g/oracle/VIS/db/tech_st/11.1.0/ctx/lib
+INFO | 2013/04/03 01:45:20 | [INFO ][memory ] [YC#1] 1.031-1.040: YC 27954KB->266374KB (2097152KB), 0.009 s, sum of pauses 8.939 ms, longest pause 8.939 ms.
+INFO | 2013/04/03 01:45:20 | Apr 3, 2013 1:45:20 AM org.apache.coyote.AbstractProtocol init
+INFO | 2013/04/03 01:45:20 | INFO: Initializing ProtocolHandler ["http-bio-localhost/127.0.0.1-8009"]
+INFO | 2013/04/03 01:45:20 | Apr 3, 2013 1:45:20 AM org.apache.catalina.startup.Catalina load
+INFO | 2013/04/03 01:45:20 | INFO: Initialization processed in 615 ms
+INFO | 2013/04/03 01:45:20 | Apr 3, 2013 1:45:20 AM org.apache.catalina.core.StandardService startInternal
+INFO | 2013/04/03 01:45:20 | INFO: Starting service Tomcat
+INFO | 2013/04/03 01:45:20 | Apr 3, 2013 1:45:20 AM org.apache.catalina.core.StandardEngine startInternal
+INFO | 2013/04/03 01:45:20 | INFO: Starting Servlet Engine: Apache Tomcat/7.0.22
+INFO | 2013/04/03 01:45:20 | Apr 3, 2013 1:45:20 AM org.apache.catalina.startup.TldConfig tldScanJar
+INFO | 2013/04/03 01:45:20 | WARNING: Failed to process JAR [jar:file:/home/drvmounts/db1_400g/oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar!/] for TLD files
+INFO | 2013/04/03 01:45:20 | java.io.FileNotFoundException: File not found
+INFO | 2013/04/03 01:45:20 | 	at java.util.zip.ZipFile.open(Native Method)
+INFO | 2013/04/03 01:45:20 | 	at java.util.zip.ZipFile.<init>(ZipFile.java:117)
+INFO | 2013/04/03 01:45:20 | 	at java.util.jar.JarFile.<init>(JarFile.java:135)
+INFO | 2013/04/03 01:45:20 | 	at java.util.jar.JarFile.<init>(JarFile.java:72)
+INFO | 2013/04/03 01:45:20 | 	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:72)
+INFO | 2013/04/03 01:45:20 | 	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:48)
+INFO | 2013/04/03 01:45:20 | 	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:70)
+INFO | 2013/04/03 01:45:20 | 	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:104)
+INFO | 2013/04/03 01:45:20 | 	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:71)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.tomcat.util.scan.FileUrlJar.<init>(FileUrlJar.java:40)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:34)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.startup.TldConfig.tldScanJar(TldConfig.java:460)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.startup.TldConfig.access$100(TldConfig.java:58)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.startup.TldConfig$TldJarScannerCallback.scan(TldConfig.java:276)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:241)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:204)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.startup.TldConfig.execute(TldConfig.java:250)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.startup.TldConfig.lifecycleEvent(TldConfig.java:540)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5103)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1033)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:774)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1033)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:291)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:443)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:727)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.startup.Catalina.start(Catalina.java:621)
+INFO | 2013/04/03 01:45:20 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO | 2013/04/03 01:45:20 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO | 2013/04/03 01:45:20 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO | 2013/04/03 01:45:20 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:322)
+INFO | 2013/04/03 01:45:20 | 	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:450)
+INFO | 2013/04/03 01:45:30 | Apr 3, 2013 1:45:30 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO | 2013/04/03 01:45:30 | INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [9,098] milliseconds.
+INFO | 2013/04/03 01:45:31 | Apr 3, 2013 1:45:31 AM org.apache.catalina.startup.TldConfig tldScanJar
+INFO | 2013/04/03 01:45:31 | WARNING: Failed to process JAR [jar:file:/home/drvmounts/db1_400g/oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar!/] for TLD files
+INFO | 2013/04/03 01:45:31 | java.io.FileNotFoundException: File not found
+INFO | 2013/04/03 01:45:31 | 	at java.util.zip.ZipFile.open(Native Method)
+INFO | 2013/04/03 01:45:31 | 	at java.util.zip.ZipFile.<init>(ZipFile.java:117)
+INFO | 2013/04/03 01:45:31 | 	at java.util.jar.JarFile.<init>(JarFile.java:135)
+INFO | 2013/04/03 01:45:31 | 	at java.util.jar.JarFile.<init>(JarFile.java:72)
+INFO | 2013/04/03 01:45:31 | 	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:72)
+INFO | 2013/04/03 01:45:31 | 	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:48)
+INFO | 2013/04/03 01:45:31 | 	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:70)
+INFO | 2013/04/03 01:45:31 | 	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:104)
+INFO | 2013/04/03 01:45:31 | 	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:71)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.tomcat.util.scan.FileUrlJar.<init>(FileUrlJar.java:40)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:34)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.startup.TldConfig.tldScanJar(TldConfig.java:460)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.startup.TldConfig.access$100(TldConfig.java:58)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.startup.TldConfig$TldJarScannerCallback.scan(TldConfig.java:276)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:241)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:204)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.startup.TldConfig.execute(TldConfig.java:250)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.startup.TldConfig.lifecycleEvent(TldConfig.java:540)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5103)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1033)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:774)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1033)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:291)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:443)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:727)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:148)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.startup.Catalina.start(Catalina.java:621)
+INFO | 2013/04/03 01:45:31 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO | 2013/04/03 01:45:31 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO | 2013/04/03 01:45:31 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO | 2013/04/03 01:45:31 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:322)
+INFO | 2013/04/03 01:45:31 | 	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:450)
+INFO | 2013/04/03 01:45:33 | Apr 3, 2013 1:45:33 AM org.apache.coyote.AbstractProtocol start
+INFO | 2013/04/03 01:45:33 | INFO: Starting ProtocolHandler ["http-bio-localhost/127.0.0.1-8009"]
+INFO | 2013/04/03 01:45:33 | Apr 3, 2013 1:45:33 AM org.apache.catalina.startup.Catalina start
+INFO | 2013/04/03 01:45:33 | INFO: Server startup in 13131 ms
+INFO | 2013/04/03 01:45:57 |  : QUERYRESOURCES : 0
+INFO | 2013/04/03 01:45:58 | en : QUERYRESOURCES : 918315
+INFO | 2013/04/03 01:45:58 | en_US : QUERYRESOURCES : 0
+INFO | 2013/04/03 01:45:58 |  : TRANSLATION : 0
+INFO | 2013/04/03 01:46:00 | en : TRANSLATION : 1075697
+INFO | 2013/04/03 01:46:00 | en_US : TRANSLATION : 0
+INFO | 2013/04/03 01:47:54 | en_US_DBA : TRANSLATION : 0
+INFO | 2013/04/03 02:19:38 |  : ERROR : 0
+INFO | 2013/04/03 02:19:39 | en : ERROR : 504588
+INFO | 2013/04/03 02:19:39 | en_US : ERROR : 0
+INFO | 2013/04/03 02:45:20 | [INFO ][memory ] [YC#2] 3601.041-3601.106: YC 1091505KB->400205KB (2097152KB), 0.065 s, sum of pauses 64.876 ms, longest pause 64.876 ms.
+INFO | 2013/04/03 03:45:20 | [INFO ][memory ] [YC#3] 7201.107-7201.140: YC 466943KB->429452KB (2097152KB), 0.033 s, sum of pauses 32.786 ms, longest pause 32.786 ms.
+INFO | 2013/04/03 04:45:20 | [INFO ][memory ] [YC#4] 10801.139-10801.144: YC 517612KB->430398KB (2097152KB), 0.005 s, sum of pauses 4.588 ms, longest pause 4.588 ms.
+INFO | 2013/04/03 04:50:46 | en_US_DBA : ERROR : 0
+INFO | 2013/04/03 05:45:20 | [INFO ][memory ] [YC#5] 14401.144-14401.154: YC 529396KB->434747KB (2097152KB), 0.009 s, sum of pauses 9.211 ms, longest pause 9.211 ms.
+INFO | 2013/04/03 06:45:20 | [INFO ][memory ] [YC#6] 18001.154-18001.158: YC 501546KB->435055KB (2097152KB), 0.003 s, sum of pauses 3.403 ms, longest pause 3.403 ms.
+INFO | 2013/04/03 07:45:20 | [INFO ][memory ] [YC#7] 21601.158-21601.162: YC 501718KB->435311KB (2097152KB), 0.004 s, sum of pauses 3.638 ms, longest pause 3.638 ms.
+INFO | 2013/04/03 08:45:20 | [INFO ][memory ] [YC#8] 25201.161-25201.165: YC 501883KB->435503KB (2097152KB), 0.003 s, sum of pauses 3.278 ms, longest pause 3.278 ms.
+INFO | 2013/04/03 09:08:22 |  : EXPLANATION : 0
+INFO | 2013/04/03 09:08:23 | en : EXPLANATION : 73142
+INFO | 2013/04/03 09:08:23 | en_US : EXPLANATION : 0
+INFO | 2013/04/03 09:08:23 | en_US_DBA : EXPLANATION : 0
+INFO | 2013/04/03 09:45:20 | [INFO ][memory ] [YC#9] 28801.165-28801.180: YC 549622KB->441729KB (2097152KB), 0.015 s, sum of pauses 15.020 ms, longest pause 15.020 ms.
+INFO | 2013/04/03 10:45:20 | [INFO ][memory ] [YC#10] 32401.181-32401.185: YC 511114KB->442403KB (2097152KB), 0.004 s, sum of pauses 3.933 ms, longest pause 3.933 ms.
+INFO | 2013/04/03 11:09:00 | User DBA.DEFAULT not found
+INFO | 2013/04/03 11:09:00 | 
+INFO | 2013/04/03 11:09:00 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2013/04/03 11:09:00 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2013/04/03 11:09:00 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2013/04/03 11:09:00 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2013/04/03 11:09:00 | 	at glog.util.exception.GLException.factory(GLException.java:448)
+INFO | 2013/04/03 11:09:00 | 	at glog.util.exception.GLException.factory(GLException.java:424)
+INFO | 2013/04/03 11:09:00 | 	at glog.database.security.GLSecurityException.factory(GLSecurityException.java:40)
+INFO | 2013/04/03 11:09:00 | 	at glog.database.security.SecurityUserImpl.findReq(SecurityUserImpl.java:185)
+INFO | 2013/04/03 11:09:00 | 	at glog.database.security.SecurityUserImpl.authenticate(SecurityUserImpl.java:211)
+INFO | 2013/04/03 11:09:00 | 	at glog.database.security.SecurityUtil.authenticateUser(SecurityUtil.java:80)
+INFO | 2013/04/03 11:09:00 | 	at glog.database.security.SecuritySessionBean.authenticateUser(SecuritySessionBean.java:172)
+INFO | 2013/04/03 11:09:00 | 	at glog.database.security.SecuritySessionServerSideEJBWrapper.authenticateUser(SecuritySessionServerSideEJBWrapper.java:743)
+INFO | 2013/04/03 11:09:00 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.__WL_invoke(Unknown Source)
+INFO | 2013/04/03 11:09:00 | 	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+INFO | 2013/04/03 11:09:00 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.authenticateUser(Unknown Source)
+INFO | 2013/04/03 11:09:00 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl_WLSkel.invoke(Unknown Source)
+INFO | 2013/04/03 11:09:00 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:667)
+INFO | 2013/04/03 11:09:00 | 	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:230)
+INFO | 2013/04/03 11:09:00 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:522)
+INFO | 2013/04/03 11:09:00 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO | 2013/04/03 11:09:00 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+INFO | 2013/04/03 11:09:00 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:518)
+INFO | 2013/04/03 11:09:00 | 	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+INFO | 2013/04/03 11:09:00 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2013/04/03 11:09:00 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2013/04/03 11:45:20 | [INFO ][memory ] [YC#11] 36001.184-36001.196: YC 573797KB->444912KB (2097152KB), 0.011 s, sum of pauses 11.408 ms, longest pause 11.408 ms.
+INFO | 2013/04/03 12:45:20 | [INFO ][memory ] [YC#12] 39601.197-39601.200: YC 512026KB->445232KB (2097152KB), 0.004 s, sum of pauses 3.815 ms, longest pause 3.815 ms.
+INFO | 2013/04/03 13:45:20 | [INFO ][memory ] [YC#13] 43201.201-43201.205: YC 511702KB->445616KB (2097152KB), 0.004 s, sum of pauses 3.546 ms, longest pause 3.546 ms.
+INFO | 2013/04/03 14:45:20 | [INFO ][memory ] [YC#14] 46801.205-46801.209: YC 512208KB->445872KB (2097152KB), 0.004 s, sum of pauses 3.530 ms, longest pause 3.530 ms.
+INFO | 2013/04/03 15:45:20 | [INFO ][memory ] [YC#15] 50401.208-50401.212: YC 512511KB->446128KB (2097152KB), 0.003 s, sum of pauses 3.353 ms, longest pause 3.353 ms.
+INFO | 2013/04/03 16:45:20 | [INFO ][memory ] [YC#16] 54001.212-54001.216: YC 512728KB->446384KB (2097152KB), 0.004 s, sum of pauses 3.904 ms, longest pause 3.904 ms.
+INFO | 2013/04/03 17:45:20 | [INFO ][memory ] [YC#17] 57601.217-57601.220: YC 512992KB->446640KB (2097152KB), 0.003 s, sum of pauses 3.401 ms, longest pause 3.401 ms.
+INFO | 2013/04/03 18:45:20 | [INFO ][memory ] [YC#18] 61201.220-61201.224: YC 513306KB->446896KB (2097152KB), 0.004 s, sum of pauses 3.917 ms, longest pause 3.917 ms.
+INFO | 2013/04/03 19:45:20 | [INFO ][memory ] [YC#19] 64801.224-64801.228: YC 525755KB->447570KB (2097152KB), 0.004 s, sum of pauses 3.830 ms, longest pause 3.830 ms.
+INFO | 2013/04/03 20:03:21 | User DBA.DEFAULT not found
+INFO | 2013/04/03 20:03:21 | 
+INFO | 2013/04/03 20:03:21 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2013/04/03 20:03:21 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2013/04/03 20:03:21 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2013/04/03 20:03:21 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2013/04/03 20:03:21 | 	at glog.util.exception.GLException.factory(GLException.java:448)
+INFO | 2013/04/03 20:03:21 | 	at glog.util.exception.GLException.factory(GLException.java:424)
+INFO | 2013/04/03 20:03:21 | 	at glog.database.security.GLSecurityException.factory(GLSecurityException.java:40)
+INFO | 2013/04/03 20:03:21 | 	at glog.database.security.SecurityUserImpl.findReq(SecurityUserImpl.java:185)
+INFO | 2013/04/03 20:03:21 | 	at glog.database.security.SecurityUserImpl.authenticate(SecurityUserImpl.java:211)
+INFO | 2013/04/03 20:03:21 | 	at glog.database.security.SecurityUtil.authenticateUser(SecurityUtil.java:80)
+INFO | 2013/04/03 20:03:21 | 	at glog.database.security.SecuritySessionBean.authenticateUser(SecuritySessionBean.java:172)
+INFO | 2013/04/03 20:03:21 | 	at glog.database.security.SecuritySessionServerSideEJBWrapper.authenticateUser(SecuritySessionServerSideEJBWrapper.java:743)
+INFO | 2013/04/03 20:03:21 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.__WL_invoke(Unknown Source)
+INFO | 2013/04/03 20:03:21 | 	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+INFO | 2013/04/03 20:03:21 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.authenticateUser(Unknown Source)
+INFO | 2013/04/03 20:03:21 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl_WLSkel.invoke(Unknown Source)
+INFO | 2013/04/03 20:03:21 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:667)
+INFO | 2013/04/03 20:03:21 | 	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:230)
+INFO | 2013/04/03 20:03:21 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:522)
+INFO | 2013/04/03 20:03:21 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO | 2013/04/03 20:03:21 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+INFO | 2013/04/03 20:03:21 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:518)
+INFO | 2013/04/03 20:03:21 | 	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+INFO | 2013/04/03 20:03:21 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2013/04/03 20:03:21 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2013/04/03 20:18:32 | User DBA.DEFAULT not found
+INFO | 2013/04/03 20:18:32 | 
+INFO | 2013/04/03 20:18:32 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2013/04/03 20:18:32 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2013/04/03 20:18:32 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2013/04/03 20:18:32 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2013/04/03 20:18:32 | 	at glog.util.exception.GLException.factory(GLException.java:448)
+INFO | 2013/04/03 20:18:32 | 	at glog.util.exception.GLException.factory(GLException.java:424)
+INFO | 2013/04/03 20:18:32 | 	at glog.database.security.GLSecurityException.factory(GLSecurityException.java:40)
+INFO | 2013/04/03 20:18:32 | 	at glog.database.security.SecurityUserImpl.findReq(SecurityUserImpl.java:185)
+INFO | 2013/04/03 20:18:32 | 	at glog.database.security.SecurityUserImpl.authenticate(SecurityUserImpl.java:211)
+INFO | 2013/04/03 20:18:32 | 	at glog.database.security.SecurityUtil.authenticateUser(SecurityUtil.java:80)
+INFO | 2013/04/03 20:18:32 | 	at glog.database.security.SecuritySessionBean.authenticateUser(SecuritySessionBean.java:172)
+INFO | 2013/04/03 20:18:32 | 	at glog.database.security.SecuritySessionServerSideEJBWrapper.authenticateUser(SecuritySessionServerSideEJBWrapper.java:743)
+INFO | 2013/04/03 20:18:32 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.__WL_invoke(Unknown Source)
+INFO | 2013/04/03 20:18:32 | 	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+INFO | 2013/04/03 20:18:32 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.authenticateUser(Unknown Source)
+INFO | 2013/04/03 20:18:32 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl_WLSkel.invoke(Unknown Source)
+INFO | 2013/04/03 20:18:32 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:667)
+INFO | 2013/04/03 20:18:32 | 	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:230)
+INFO | 2013/04/03 20:18:32 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:522)
+INFO | 2013/04/03 20:18:32 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO | 2013/04/03 20:18:32 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+INFO | 2013/04/03 20:18:32 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:518)
+INFO | 2013/04/03 20:18:32 | 	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+INFO | 2013/04/03 20:18:32 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2013/04/03 20:18:32 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2013/04/03 20:18:39 | User DBA.DEFAULT not found
+INFO | 2013/04/03 20:18:39 | 
+INFO | 2013/04/03 20:18:39 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2013/04/03 20:18:39 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2013/04/03 20:18:39 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2013/04/03 20:18:39 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2013/04/03 20:18:39 | 	at glog.util.exception.GLException.factory(GLException.java:448)
+INFO | 2013/04/03 20:18:39 | 	at glog.util.exception.GLException.factory(GLException.java:424)
+INFO | 2013/04/03 20:18:39 | 	at glog.database.security.GLSecurityException.factory(GLSecurityException.java:40)
+INFO | 2013/04/03 20:18:39 | 	at glog.database.security.SecurityUserImpl.findReq(SecurityUserImpl.java:185)
+INFO | 2013/04/03 20:18:39 | 	at glog.database.security.SecurityUserImpl.authenticate(SecurityUserImpl.java:211)
+INFO | 2013/04/03 20:18:39 | 	at glog.database.security.SecurityUtil.authenticateUser(SecurityUtil.java:80)
+INFO | 2013/04/03 20:18:39 | 	at glog.database.security.SecuritySessionBean.authenticateUser(SecuritySessionBean.java:172)
+INFO | 2013/04/03 20:18:39 | 	at glog.database.security.SecuritySessionServerSideEJBWrapper.authenticateUser(SecuritySessionServerSideEJBWrapper.java:743)
+INFO | 2013/04/03 20:18:39 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.__WL_invoke(Unknown Source)
+INFO | 2013/04/03 20:18:39 | 	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+INFO | 2013/04/03 20:18:39 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.authenticateUser(Unknown Source)
+INFO | 2013/04/03 20:18:39 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl_WLSkel.invoke(Unknown Source)
+INFO | 2013/04/03 20:18:39 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:667)
+INFO | 2013/04/03 20:18:39 | 	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:230)
+INFO | 2013/04/03 20:18:39 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:522)
+INFO | 2013/04/03 20:18:39 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO | 2013/04/03 20:18:39 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+INFO | 2013/04/03 20:18:39 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:518)
+INFO | 2013/04/03 20:18:39 | 	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+INFO | 2013/04/03 20:18:39 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2013/04/03 20:18:39 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2013/04/03 20:18:50 | User GUEST.DEFAULT not found
+INFO | 2013/04/03 20:18:50 | 
+INFO | 2013/04/03 20:18:50 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2013/04/03 20:18:50 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2013/04/03 20:18:50 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2013/04/03 20:18:50 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2013/04/03 20:18:50 | 	at glog.util.exception.GLException.factory(GLException.java:448)
+INFO | 2013/04/03 20:18:50 | 	at glog.util.exception.GLException.factory(GLException.java:424)
+INFO | 2013/04/03 20:18:50 | 	at glog.database.security.GLSecurityException.factory(GLSecurityException.java:40)
+INFO | 2013/04/03 20:18:50 | 	at glog.database.security.SecurityUserImpl.findReq(SecurityUserImpl.java:185)
+INFO | 2013/04/03 20:18:50 | 	at glog.database.security.SecurityUserImpl.authenticate(SecurityUserImpl.java:211)
+INFO | 2013/04/03 20:18:50 | 	at glog.database.security.SecurityUtil.authenticateUser(SecurityUtil.java:80)
+INFO | 2013/04/03 20:18:50 | 	at glog.database.security.SecuritySessionBean.authenticateUser(SecuritySessionBean.java:172)
+INFO | 2013/04/03 20:18:50 | 	at glog.database.security.SecuritySessionServerSideEJBWrapper.authenticateUser(SecuritySessionServerSideEJBWrapper.java:743)
+INFO | 2013/04/03 20:18:50 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.__WL_invoke(Unknown Source)
+INFO | 2013/04/03 20:18:50 | 	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+INFO | 2013/04/03 20:18:50 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.authenticateUser(Unknown Source)
+INFO | 2013/04/03 20:18:50 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl_WLSkel.invoke(Unknown Source)
+INFO | 2013/04/03 20:18:50 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:667)
+INFO | 2013/04/03 20:18:50 | 	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:230)
+INFO | 2013/04/03 20:18:50 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:522)
+INFO | 2013/04/03 20:18:50 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO | 2013/04/03 20:18:50 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+INFO | 2013/04/03 20:18:50 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:518)
+INFO | 2013/04/03 20:18:50 | 	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+INFO | 2013/04/03 20:18:50 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2013/04/03 20:18:50 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2013/04/03 20:19:06 | en_US_GUEST : TRANSLATION : 0
+INFO | 2013/04/03 20:45:20 | [INFO ][memory ] [YC#20] 68401.229-68401.234: YC 537902KB->448634KB (2097152KB), 0.005 s, sum of pauses 5.246 ms, longest pause 5.246 ms.
+INFO | 2013/04/03 21:45:20 | [INFO ][memory ] [YC#21] 72001.234-72001.237: YC 515543KB->449146KB (2097152KB), 0.004 s, sum of pauses 3.708 ms, longest pause 3.708 ms.
+INFO | 2013/04/03 22:45:20 | [INFO ][memory ] [YC#22] 75601.238-75601.241: YC 515794KB->449402KB (2097152KB), 0.003 s, sum of pauses 3.412 ms, longest pause 3.412 ms.
+INFO | 2013/04/03 23:45:20 | [INFO ][memory ] [YC#23] 79201.242-79201.246: YC 515980KB->449658KB (2097152KB), 0.004 s, sum of pauses 4.326 ms, longest pause 4.326 ms.
+INFO | 2013/04/04 00:45:20 | [INFO ][memory ] [YC#24] 82801.247-82801.250: YC 516278KB->449914KB (2097152KB), 0.003 s, sum of pauses 3.444 ms, longest pause 3.444 ms.
+INFO | 2013/04/04 01:45:20 | [INFO ][memory ] [YC#25] 86401.250-86401.255: YC 516572KB->450170KB (2097152KB), 0.005 s, sum of pauses 4.492 ms, longest pause 4.492 ms.
+INFO | 2013/04/04 02:45:20 | [INFO ][memory ] [YC#26] 90001.255-90001.260: YC 516768KB->450362KB (2097152KB), 0.005 s, sum of pauses 5.200 ms, longest pause 5.200 ms.
+INFO | 2013/04/04 03:45:20 | [INFO ][memory ] [YC#27] 93601.261-93601.265: YC 516987KB->450618KB (2097152KB), 0.005 s, sum of pauses 4.462 ms, longest pause 4.462 ms.
+INFO | 2013/04/04 04:45:20 | [INFO ][memory ] [YC#28] 97201.265-97201.269: YC 521105KB->451292KB (2097152KB), 0.004 s, sum of pauses 3.663 ms, longest pause 3.663 ms.
+INFO | 2013/04/04 04:48:04 | weblogic.rmi.extensions.RequestTimeoutException: RJVM response from 'weblogic.rjvm.RJVMImpl@18e582e4 - id: '-1193228551985552821S:192.168.0.44:[7001,-1,-1,-1,-1,-1,-1]:Otmv630:gc3-erptitlilnx' connect time: 'Wed Apr 03 01:45:56 EDT 2013'' for 'getUserAccess(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)' timed out after: 600000ms.
+INFO | 2013/04/04 04:48:04 | 	at weblogic.rjvm.ResponseImpl.unmarshalReturn(ResponseImpl.java:237)
+INFO | 2013/04/04 04:48:04 | 	at weblogic.rmi.cluster.ClusterableRemoteRef.invoke(ClusterableRemoteRef.java:348)
+INFO | 2013/04/04 04:48:04 | 	at weblogic.rmi.cluster.ClusterableRemoteRef.invoke(ClusterableRemoteRef.java:259)
+INFO | 2013/04/04 04:48:04 | 	at glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl_1036_WLStub.getUserAccess(Unknown Source)
+INFO | 2013/04/04 04:48:04 | 	at glog.webserver.umt.UserManager.getUserAccess(UserManager.java:572)
+INFO | 2013/04/04 04:48:04 | 	at glog.webserver.umt.UserManager.<init>(UserManager.java:153)
+INFO | 2013/04/04 04:48:04 | 	at glog.webserver.servlet.umt.Login.getDocument(Login.java:247)
+INFO | 2013/04/04 04:48:04 | 	at glog.webserver.util.BaseServlet.getServletResult(BaseServlet.java:320)
+INFO | 2013/04/04 04:48:04 | 	at glog.webserver.util.BaseServlet.getServletResultEx(BaseServlet.java:1080)
+INFO | 2013/04/04 04:48:04 | 	at glog.webserver.servlet.DefaultServlet.getServletResultEx(DefaultServlet.java:157)
+INFO | 2013/04/04 04:48:04 | 	at glog.webserver.util.BaseServlet.process(BaseServlet.java:523)
+INFO | 2013/04/04 04:48:04 | 	at glog.webserver.util.BaseServlet.service(BaseServlet.java:977)
+INFO | 2013/04/04 04:48:04 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:722)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:304)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+INFO | 2013/04/04 04:48:04 | 	at glog.webserver.screenlayout.FrameInterceptFilter.doFilter(FrameInterceptFilter.java:29)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+INFO | 2013/04/04 04:48:04 | 	at glog.webserver.screenlayout.CsrfFilter.doFilter(CsrfFilter.java:53)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+INFO | 2013/04/04 04:48:04 | 	at glog.webserver.session.ParameterValidation.doFilter(ParameterValidation.java:29)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+INFO | 2013/04/04 04:48:04 | 	at glog.webserver.screenlayout.ClientSessionTracker.doFilter(ClientSessionTracker.java:72)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+INFO | 2013/04/04 04:48:04 | 	at glog.webserver.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:44)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:224)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:405)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:964)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:515)
+INFO | 2013/04/04 04:48:04 | 	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:304)
+INFO | 2013/04/04 04:48:04 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+INFO | 2013/04/04 04:48:04 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+INFO | 2013/04/04 04:48:04 | 	at java.lang.Thread.run(Thread.java:662)
+INFO | 2013/04/04 05:45:20 | [INFO ][memory ] [YC#29] 100801.269-100801.273: YC 520261KB->451773KB (2097152KB), 0.003 s, sum of pauses 3.416 ms, longest pause 3.416 ms.
+INFO | 2013/04/04 06:45:20 | [INFO ][memory ] [YC#30] 104401.273-104401.277: YC 518435KB->452029KB (2097152KB), 0.004 s, sum of pauses 3.783 ms, longest pause 3.783 ms.
+INFO | 2013/04/04 07:45:20 | [INFO ][memory ] [YC#31] 108001.278-108001.281: YC 518608KB->452285KB (2097152KB), 0.004 s, sum of pauses 3.488 ms, longest pause 3.488 ms.
+INFO | 2013/04/04 08:45:20 | [INFO ][memory ] [YC#32] 111601.281-111601.285: YC 518713KB->452541KB (2097152KB), 0.004 s, sum of pauses 4.072 ms, longest pause 4.072 ms.
+INFO | 2013/04/04 09:45:20 | [INFO ][memory ] [YC#33] 115201.285-115201.290: YC 519186KB->452797KB (2097152KB), 0.005 s, sum of pauses 4.536 ms, longest pause 4.536 ms.
+INFO | 2013/04/04 10:45:20 | [INFO ][memory ] [YC#34] 118801.291-118801.294: YC 519369KB->453053KB (2097152KB), 0.003 s, sum of pauses 3.294 ms, longest pause 3.294 ms.
+INFO | 2013/04/04 11:45:20 | [INFO ][memory ] [YC#35] 122401.294-122401.297: YC 519648KB->453309KB (2097152KB), 0.003 s, sum of pauses 3.282 ms, longest pause 3.282 ms.
+INFO | 2013/04/04 12:45:20 | [INFO ][memory ] [YC#36] 126001.298-126001.301: YC 519952KB->453565KB (2097152KB), 0.004 s, sum of pauses 3.454 ms, longest pause 3.454 ms.
+INFO | 2013/04/04 13:45:20 | [INFO ][memory ] [YC#37] 129601.302-129601.305: YC 520144KB->453821KB (2097152KB), 0.003 s, sum of pauses 3.343 ms, longest pause 3.343 ms.
+INFO | 2013/04/04 14:45:20 | [INFO ][memory ] [YC#38] 133201.306-133201.309: YC 520445KB->454077KB (2097152KB), 0.004 s, sum of pauses 3.462 ms, longest pause 3.462 ms.
+INFO | 2013/04/04 15:45:20 | [INFO ][memory ] [YC#39] 136801.309-136801.312: YC 520749KB->454333KB (2097152KB), 0.003 s, sum of pauses 3.331 ms, longest pause 3.331 ms.
+INFO | 2013/04/04 16:45:20 | [INFO ][memory ] [YC#40] 140401.313-140401.316: YC 520956KB->454589KB (2097152KB), 0.003 s, sum of pauses 3.417 ms, longest pause 3.417 ms.
+INFO | 2013/04/04 17:45:20 | [INFO ][memory ] [YC#41] 144001.317-144001.320: YC 521200KB->454845KB (2097152KB), 0.003 s, sum of pauses 3.190 ms, longest pause 3.190 ms.
+INFO | 2013/04/04 18:45:20 | [INFO ][memory ] [YC#42] 147601.320-147601.323: YC 521498KB->455101KB (2097152KB), 0.004 s, sum of pauses 3.450 ms, longest pause 3.450 ms.
+INFO | 2013/04/04 19:45:20 | [INFO ][memory ] [YC#43] 151201.324-151201.328: YC 521699KB->455357KB (2097152KB), 0.004 s, sum of pauses 4.128 ms, longest pause 4.128 ms.
+INFO | 2013/04/04 20:45:20 | [INFO ][memory ] [YC#44] 154801.328-154801.332: YC 521970KB->455613KB (2097152KB), 0.004 s, sum of pauses 3.913 ms, longest pause 3.913 ms.
+INFO | 2013/04/04 21:45:20 | [INFO ][memory ] [YC#45] 158401.333-158401.337: YC 527868KB->456125KB (2097152KB), 0.004 s, sum of pauses 3.893 ms, longest pause 3.893 ms.
+INFO | 2013/04/04 22:45:20 | [INFO ][memory ] [YC#46] 162001.336-162001.340: YC 522961KB->456573KB (2097152KB), 0.004 s, sum of pauses 3.733 ms, longest pause 3.733 ms.
+INFO | 2013/04/04 23:45:20 | [INFO ][memory ] [YC#47] 165601.341-165601.345: YC 523178KB->456829KB (2097152KB), 0.005 s, sum of pauses 4.639 ms, longest pause 4.639 ms.
+INFO | 2013/04/05 00:45:20 | [INFO ][memory ] [YC#48] 169201.346-169201.349: YC 523492KB->457085KB (2097152KB), 0.003 s, sum of pauses 3.347 ms, longest pause 3.347 ms.
+INFO | 2013/04/05 01:45:20 | [INFO ][memory ] [YC#49] 172801.349-172801.352: YC 523679KB->457341KB (2097152KB), 0.003 s, sum of pauses 3.168 ms, longest pause 3.168 ms.
+INFO | 2013/04/05 02:45:20 | [INFO ][memory ] [YC#50] 176401.353-176401.356: YC 523927KB->457597KB (2097152KB), 0.003 s, sum of pauses 3.318 ms, longest pause 3.318 ms.
+INFO | 2013/04/05 03:45:20 | [INFO ][memory ] [YC#51] 180001.357-180001.360: YC 524045KB->457853KB (2097152KB), 0.003 s, sum of pauses 3.401 ms, longest pause 3.401 ms.

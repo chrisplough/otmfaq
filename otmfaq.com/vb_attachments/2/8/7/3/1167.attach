@@ -1,0 +1,275 @@
+INFO | 2012/12/19 01:10:31 | Starting Launched Process...
+INFO | 2012/12/19 01:10:31 | java version "1.6.0_20"
+INFO | 2012/12/19 01:10:31 | Java(TM) SE Runtime Environment (build 1.6.0_20-b02)
+INFO | 2012/12/19 01:10:31 | Oracle JRockit(R) (build R28.0.1-21-133393-1.6.0_20-20100512-2126-linux-x86_64, compiled mode)
+INFO | 2012/12/19 01:10:31 | Argument #0 : /u01/otm/jdk/bin/java
+INFO | 2012/12/19 01:10:31 | Argument #1 : -Xms1600m
+INFO | 2012/12/19 01:10:31 | Argument #2 : -Xmx1600m
+INFO | 2012/12/19 01:10:31 | Argument #3 : -jrockit
+INFO | 2012/12/19 01:10:31 | Argument #4 : -Xgcprio:throughput
+INFO | 2012/12/19 01:10:31 | Argument #5 : -Xverbose:memory
+INFO | 2012/12/19 01:10:31 | Argument #6 : -Dglog.home=/u01/otm/glog/config
+INFO | 2012/12/19 01:10:31 | Argument #7 : -Duser.home=/u01/otm/glog/config
+INFO | 2012/12/19 01:10:31 | Argument #8 : -Djava.io.tmpdir=/u01/otm/temp
+INFO | 2012/12/19 01:10:31 | Argument #9 : -Djava.awt.headless=true
+INFO | 2012/12/19 01:10:31 | Argument #10 : -Djava.security.auth.login.config=/u01/otm/glog/config/otm_jaas.config
+INFO | 2012/12/19 01:10:31 | Argument #11 : -Xss256k
+INFO | 2012/12/19 01:10:31 | Argument #12 : -Dweblogic.Name=gc3-otm
+INFO | 2012/12/19 01:10:31 | Argument #13 : -Dbea.home=/u01/middleware
+INFO | 2012/12/19 01:10:31 | Argument #14 : -Dweblogic.home=/u01/middleware/wlserver_10.3/server
+INFO | 2012/12/19 01:10:31 | Argument #15 : -Dweblogic.management.username=system
+INFO | 2012/12/19 01:10:31 | Argument #16 : -Dweblogic.management.password=CHANGEME
+INFO | 2012/12/19 01:10:31 | Argument #17 : -Dweblogic.ProductionModeEnabled=true
+INFO | 2012/12/19 01:10:31 | Argument #18 : -Dweblogic.management.discover=false
+INFO | 2012/12/19 01:10:31 | Argument #19 : -Djava.security.policy=/u01/middleware/wlserver_10.3/server/lib/weblogic.policy
+INFO | 2012/12/19 01:10:31 | Argument #20 : -Dwli.home=/u01/middleware/wlserver_10.3/integration
+INFO | 2012/12/19 01:10:31 | Argument #21 : -Dwls.home=/u01/middleware/wlserver_10.3/server
+INFO | 2012/12/19 01:10:31 | Argument #22 : -Dweblogic.RootDirectory=/u01/otm/weblogic/domains/otm
+INFO | 2012/12/19 01:10:31 | Argument #23 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2012/12/19 01:10:31 | Argument #24 : -Djavax.xml.soap.SOAPFactory=weblogic.xml.saaj.SOAPFactoryImpl
+INFO | 2012/12/19 01:10:31 | Argument #25 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2012/12/19 01:10:31 | Argument #26 : -DpropertyProtection=mask
+INFO | 2012/12/19 01:10:31 | Argument #27 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2012/12/19 01:10:31 | Argument #28 : -Djavax.xml.soap.MessageFactory=weblogic.xml.saaj.MessageFactoryImpl
+INFO | 2012/12/19 01:10:31 | Argument #29 : -Djavax.management.builder.initial=weblogic.management.jmx.mbeanserver.WLSMBeanServerBuilder
+INFO | 2012/12/19 01:10:31 | Argument #30 : -classpath
+INFO | 2012/12/19 01:10:31 | Argument #31 : /u01/otm/jdk/lib/tools.jar:/u01/otm/glog/glog_resources:/u01/otm/glog/config:/u01/otm/glog/gc3webapp/WEB-INF/classes:/u01/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/ojdbc6.jar:/u01/otm/dash/lib/xprb.jar:/u01/otm/dash/lib/xprm.jar:/u01/otm/dash/lib/xprs.jar:/u01/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar:/u01/middleware/wlserver_10.3/server/lib/weblogic.jar:/u01/middleware/wlserver_10.3/server/lib/webservices.jar:/u01/otm/glog/gc3webapp/WEB-INF/lib/external/otm-samples.jar
+INFO | 2012/12/19 01:10:31 | Argument #32 : weblogic.Server
+INFO | 2012/12/19 01:10:31 | Argument #33 : start
+INFO | 2012/12/19 01:10:31 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2012/12/19 01:10:31 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, strategy: Generational Parallel Mark & Sweep.
+INFO | 2012/12/19 01:10:31 | [INFO ][memory ] Heap size: 1638400KB, maximal heap size: 1638400KB, nursery size: 819200KB.
+INFO | 2012/12/19 01:10:31 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2012/12/19 01:10:31 | [INFO ][memory ] <start>  - start time of collection (seconds since jvm start).
+INFO | 2012/12/19 01:10:31 | [INFO ][memory ] <type>   - OC (old collection) or YC (young collection).
+INFO | 2012/12/19 01:10:31 | [INFO ][memory ] <end>    - end time of collection (seconds since jvm start).
+INFO | 2012/12/19 01:10:31 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2012/12/19 01:10:31 | [INFO ][memory ] <after>  - memory used by objects after collection (KB).
+INFO | 2012/12/19 01:10:31 | [INFO ][memory ] <heap>   - size of heap after collection (KB).
+INFO | 2012/12/19 01:10:31 | [INFO ][memory ] <time>   - total time of collection (milliseconds).
+INFO | 2012/12/19 01:10:31 | [INFO ][memory ] <pause>  - total sum of pauses during collection (milliseconds).
+INFO | 2012/12/19 01:10:31 | [INFO ][memory ]            Run with -Xverbose:gcpause to see individual phases.
+INFO | 2012/12/19 01:10:32 | [INFO ][memory ] Running on hypervisor Xen v3.1
+INFO | 2012/12/19 01:10:34 | <Dec 19, 2012 1:10:34 AM IST> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Oracle JRockit(R) Version R28.0.1-21-133393-1.6.0_20-20100512-2126-linux-x86_64 from Oracle Corporation> 
+INFO | 2012/12/19 01:10:36 | <Dec 19, 2012 1:10:36 AM IST> <Info> <Management> <BEA-141107> <Version: WebLogic Server 10.3.3.0  Fri Apr 9 00:05:28 PDT 2010 1321401 > 
+INFO | 2012/12/19 01:10:36 | <Dec 19, 2012 1:10:36 AM IST> <Warning> <Management> <BEA-141274> <Production mode has specified at the command line via the weblogic.ProductionModeEnabled system property. This system property overrides the development mode setting contained in config.xml. However, the console and WLST show the attribute values and defaults that correspond to the development mode specified in config.xml.> 
+INFO | 2012/12/19 01:10:43 | <Dec 19, 2012 1:10:43 AM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2012/12/19 01:10:43 | <Dec 19, 2012 1:10:43 AM IST> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+INFO | 2012/12/19 01:10:45 | <Dec 19, 2012 1:10:45 AM IST> <Notice> <LoggingService> <BEA-320400> <The log file /u01/otm/logs/weblogic/weblogic.log will be rotated. Reopen the log file if tailing has stopped. This can happen on some platforms like Windows.> 
+INFO | 2012/12/19 01:10:45 | <Dec 19, 2012 1:10:45 AM IST> <Notice> <LoggingService> <BEA-320401> <The log file has been rotated to /u01/otm/logs/weblogic/weblogic.log00005. Log messages will continue to be logged in /u01/otm/logs/weblogic/weblogic.log.> 
+INFO | 2012/12/19 01:10:45 | <Dec 19, 2012 1:10:45 AM IST> <Notice> <Log Management> <BEA-170019> <The server log file /u01/otm/logs/weblogic/weblogic.log is opened. All server side log events will be written to this file.> 
+INFO | 2012/12/19 01:11:00 | GC3 realm initializing <-----------
+INFO | 2012/12/19 01:13:52 | -----------> GC3 realm initialized
+INFO | 2012/12/19 01:13:59 | [INFO ][memory ] [YC#1] 207.119-207.671: YC 840321KB->291267KB (1638400KB), 0.552 s, sum of pauses 551.800 ms, longest pause 551.800 ms.
+INFO | 2012/12/19 01:14:04 | <Dec 19, 2012 1:14:04 AM IST> <Notice> <Security> <BEA-090082> <Security initializing using security realm otmrealm.> 
+INFO | 2012/12/19 01:14:13 | <Dec 19, 2012 1:14:13 AM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STANDBY> 
+INFO | 2012/12/19 01:14:13 | <Dec 19, 2012 1:14:13 AM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2012/12/19 01:14:27 | [INFO ][memory ] [YC#2] 234.783-235.223: YC 923671KB->331417KB (1638400KB), 0.440 s, sum of pauses 439.871 ms, longest pause 439.871 ms.
+INFO | 2012/12/19 01:14:30 | -- OTM Event: preDeploy
+INFO | 2012/12/19 01:14:44 | [INFO ][memory ] [YC#3] 252.597-253.018: YC 977081KB->392266KB (1638400KB), 0.421 s, sum of pauses 420.920 ms, longest pause 420.920 ms.
+INFO | 2012/12/19 01:14:56 | [INFO ][memory ] [YC#4] 263.930-264.137: YC 1040075KB->440973KB (1638400KB), 0.206 s, sum of pauses 206.301 ms, longest pause 206.301 ms.
+INFO | 2012/12/19 01:15:07 | [INFO ][memory ] [YC#5] 275.597-275.804: YC 1089349KB->490503KB (1638400KB), 0.207 s, sum of pauses 207.212 ms, longest pause 207.212 ms.
+INFO | 2012/12/19 01:15:17 | [INFO ][memory ] [YC#6] 285.446-285.649: YC 1136167KB->537193KB (1638400KB), 0.203 s, sum of pauses 203.302 ms, longest pause 203.302 ms.
+INFO | 2012/12/19 01:15:27 | [INFO ][memory ] [YC#7] 295.495-295.698: YC 1184403KB->585813KB (1638400KB), 0.204 s, sum of pauses 203.480 ms, longest pause 203.480 ms.
+INFO | 2012/12/19 01:15:37 | [INFO ][memory ] [YC#8] 305.023-305.231: YC 1235585KB->636619KB (1638400KB), 0.208 s, sum of pauses 208.124 ms, longest pause 208.124 ms.
+INFO | 2012/12/19 01:15:47 | [INFO ][memory ] [YC#9] 315.113-315.324: YC 1284764KB->685838KB (1638400KB), 0.211 s, sum of pauses 210.549 ms, longest pause 210.549 ms.
+INFO | 2012/12/19 01:15:57 | [INFO ][memory ] [YC#10] 325.215-325.431: YC 1332148KB->733686KB (1638400KB), 0.216 s, sum of pauses 216.210 ms, longest pause 216.210 ms.
+INFO | 2012/12/19 01:16:07 | [INFO ][memory ] [YC#11] 335.170-335.382: YC 1376152KB->777507KB (1638400KB), 0.212 s, sum of pauses 212.040 ms, longest pause 212.040 ms.
+INFO | 2012/12/19 01:16:16 | [INFO ][memory ] [YC#12] 344.862-345.068: YC 1422080KB->823081KB (1638400KB), 0.207 s, sum of pauses 206.392 ms, longest pause 206.392 ms.
+INFO | 2012/12/19 01:16:25 | [INFO ][memory ] [YC#13] 353.882-354.076: YC 1459126KB->859320KB (1638400KB), 0.194 s, sum of pauses 193.609 ms, longest pause 193.609 ms.
+INFO | 2012/12/19 01:16:35 | [INFO ][memory ] [YC#14] 363.357-363.558: YC 1507980KB->907200KB (1638400KB), 0.201 s, sum of pauses 201.272 ms, longest pause 201.272 ms.
+INFO | 2012/12/19 01:16:44 | [INFO ][memory ] [YC#15] 372.877-373.080: YC 1551976KB->952494KB (1638400KB), 0.203 s, sum of pauses 203.116 ms, longest pause 203.116 ms.
+INFO | 2012/12/19 01:16:54 | [INFO ][memory ] [YC#16] 381.928-382.137: YC 1600277KB->1000618KB (1638400KB), 0.209 s, sum of pauses 209.164 ms, longest pause 209.164 ms.
+INFO | 2012/12/19 01:17:04 | [INFO ][memory ] [OC#1] 390.770-392.201: OC 1579594KB->302935KB (1638400KB), 1.431 s, sum of pauses 1369.716 ms, longest pause 1369.716 ms.
+INFO | 2012/12/19 01:17:17 | [INFO ][memory ] [YC#17] 404.899-405.125: YC 1161988KB->561183KB (1638400KB), 0.226 s, sum of pauses 226.157 ms, longest pause 226.157 ms.
+INFO | 2012/12/19 01:17:26 | [INFO ][memory ] [YC#18] 414.168-414.410: YC 1213291KB->614832KB (1638400KB), 0.242 s, sum of pauses 241.718 ms, longest pause 241.718 ms.
+INFO | 2012/12/19 01:17:35 | [INFO ][memory ] [YC#19] 423.291-423.518: YC 1266199KB->667581KB (1638400KB), 0.227 s, sum of pauses 226.685 ms, longest pause 226.685 ms.
+INFO | 2012/12/19 01:17:45 | [INFO ][memory ] [YC#20] 432.922-433.167: YC 1318948KB->720603KB (1638400KB), 0.245 s, sum of pauses 244.662 ms, longest pause 244.662 ms.
+INFO | 2012/12/19 01:17:54 | [INFO ][memory ] [YC#21] 442.408-442.644: YC 1361732KB->763682KB (1638400KB), 0.236 s, sum of pauses 236.145 ms, longest pause 236.145 ms.
+INFO | 2012/12/19 01:18:03 | [INFO ][memory ] [YC#22] 451.013-451.226: YC 1447003KB->846028KB (1638400KB), 0.213 s, sum of pauses 212.384 ms, longest pause 212.384 ms.
+INFO | 2012/12/19 01:18:12 | [INFO ][memory ] [YC#23] 460.645-460.877: YC 1497703KB->898907KB (1638400KB), 0.232 s, sum of pauses 231.560 ms, longest pause 231.560 ms.
+INFO | 2012/12/19 01:18:22 | [INFO ][memory ] [YC#24] 470.466-470.699: YC 1551194KB->952240KB (1638400KB), 0.233 s, sum of pauses 232.933 ms, longest pause 232.933 ms.
+INFO | 2012/12/19 01:18:32 | [INFO ][memory ] [YC#25] 480.578-480.806: YC 1604611KB->1006331KB (1638400KB), 0.227 s, sum of pauses 227.208 ms, longest pause 227.208 ms.
+INFO | 2012/12/19 01:18:42 | [INFO ][memory ] [OC#2] 489.481-491.098: OC 1527052KB->445386KB (1638400KB), 1.616 s, sum of pauses 1562.493 ms, longest pause 1562.493 ms.
+INFO | 2012/12/19 01:18:53 | [INFO ][memory ] [YC#26] 501.584-501.784: YC 1169638KB->679074KB (1638400KB), 0.200 s, sum of pauses 200.230 ms, longest pause 200.230 ms.
+INFO | 2012/12/19 01:19:02 | [INFO ][memory ] [YC#27] 510.762-510.985: YC 1211276KB->723773KB (1638400KB), 0.223 s, sum of pauses 222.632 ms, longest pause 222.632 ms.
+INFO | 2012/12/19 01:19:12 | [INFO ][memory ] [YC#28] 520.149-520.374: YC 1254427KB->767022KB (1638400KB), 0.225 s, sum of pauses 224.665 ms, longest pause 224.665 ms.
+INFO | 2012/12/19 01:19:20 | [INFO ][memory ] [YC#29] 528.253-528.479: YC 1304840KB->817221KB (1638400KB), 0.226 s, sum of pauses 225.422 ms, longest pause 225.422 ms.
+INFO | 2012/12/19 01:19:29 | [INFO ][memory ] [YC#30] 537.154-537.372: YC 1345680KB->857413KB (1638400KB), 0.218 s, sum of pauses 217.922 ms, longest pause 217.922 ms.
+INFO | 2012/12/19 01:19:37 | [INFO ][memory ] [YC#31] 545.783-546.011: YC 1387971KB->900010KB (1638400KB), 0.228 s, sum of pauses 227.529 ms, longest pause 227.529 ms.
+INFO | 2012/12/19 01:19:46 | [INFO ][memory ] [YC#32] 554.407-554.624: YC 1430246KB->942424KB (1638400KB), 0.217 s, sum of pauses 216.503 ms, longest pause 216.503 ms.
+INFO | 2012/12/19 01:19:55 | [INFO ][memory ] [YC#33] 563.197-563.418: YC 1472928KB->985205KB (1638400KB), 0.221 s, sum of pauses 220.956 ms, longest pause 220.956 ms.
+INFO | 2012/12/19 01:20:04 | [INFO ][memory ] [YC#34] 572.772-572.999: YC 1519090KB->1031865KB (1638400KB), 0.228 s, sum of pauses 227.359 ms, longest pause 227.359 ms.
+INFO | 2012/12/19 01:20:16 | Dec 19, 2012 1:20:16 AM com.sun.faces.config.ConfigureListener contextInitialized
+INFO | 2012/12/19 01:20:16 | INFO: Initializing Sun's JavaServer Faces implementation (1.2_03-b04-FCS) for context '/console'
+INFO | 2012/12/19 01:20:16 | Dec 19, 2012 1:20:16 AM com.sun.faces.config.ConfigureListener contextInitialized
+INFO | 2012/12/19 01:20:16 | INFO: Completed initializing Sun's JavaServer Faces implementation (1.2_03-b04-FCS) for context '/console'
+INFO | 2012/12/19 01:20:19 | [INFO ][memory ] [YC#35] 587.437-587.902: YC 1552562KB->1064928KB (1638400KB), 0.465 s, sum of pauses 464.448 ms, longest pause 464.448 ms.
+INFO | 2012/12/19 01:20:40 | [INFO ][memory ] [YC#36] 608.232-608.838: YC 1572071KB->1112368KB (1638400KB), 0.606 s, sum of pauses 605.754 ms, longest pause 605.754 ms.
+INFO | 2012/12/19 01:21:01 | [INFO ][memory ] [YC#37] 629.310-629.687: YC 1621482KB->1638400KB (1638400KB), 0.378 s, sum of pauses 377.563 ms, longest pause 377.563 ms.
+INFO | 2012/12/19 01:21:04 | [INFO ][memory ] [OC#3] 629.687-632.224: OC 1638400KB->622294KB (1638400KB), 2.537 s, sum of pauses 2525.835 ms, longest pause 2525.835 ms.
+INFO | 2012/12/19 01:21:28 | [INFO ][memory ] [YC#38] 655.696-656.210: YC 1225243KB->809467KB (1638400KB), 0.514 s, sum of pauses 513.836 ms, longest pause 513.836 ms.
+INFO | 2012/12/19 01:21:43 | [INFO ][memory ] [YC#39] 670.516-671.365: YC 1304161KB->916197KB (1638400KB), 0.849 s, sum of pauses 848.989 ms, longest pause 848.989 ms.
+INFO | 2012/12/19 01:21:49 | -- OTM Event: initContext
+INFO | 2012/12/19 01:21:49 | -- OTM Event: startupServlet
+INFO | 2012/12/19 01:21:49 | -- OTM Startup: loading startup classes
+INFO | 2012/12/19 01:22:45 | --
+INFO | 2012/12/19 01:22:48 | [INFO ][memory ] [YC#40] 736.311-736.982: YC 1499407KB->1077610KB (1638400KB), 0.671 s, sum of pauses 670.786 ms, longest pause 670.786 ms.
+INFO | 2012/12/19 01:36:43 | [INFO ][memory ] [YC#41] 1570.858-1571.489: YC 1531890KB->1132226KB (1638400KB), 0.631 s, sum of pauses 630.678 ms, longest pause 630.678 ms.
+INFO | 2012/12/19 01:55:42 |  : ERROR : 0
+INFO | 2012/12/19 01:56:39 | en : ERROR : 488911
+INFO | 2012/12/19 01:57:35 | en_US : ERROR : 0
+INFO | 2012/12/19 02:27:30 |  : QUERYRESOURCES : 0
+INFO | 2012/12/19 02:28:27 | en : QUERYRESOURCES : 787346
+INFO | 2012/12/19 02:28:29 | [INFO ][memory ] [OC#4] 4675.357-4677.891: OC 1313943KB->792717KB (1638400KB), 2.534 s, sum of pauses 2522.073 ms, longest pause 2522.073 ms.
+INFO | 2012/12/19 02:29:26 | en_US : QUERYRESOURCES : 0
+INFO | 2012/12/19 02:29:26 | -- OTM Event: postLoad
+INFO | 2012/12/19 02:29:26 | -- OTM Event: activateThread
+INFO | 2012/12/19 02:29:26 | -- OTM Startup: activating startup classes
+INFO | 2012/12/19 02:29:26 | -- OTM Event: postDeploy
+INFO | 2012/12/19 02:29:27 | <Dec 19, 2012 2:29:27 AM IST> <Notice> <Log Management> <BEA-170027> <The Server has established connection with the Domain level Diagnostic Service successfully.> 
+INFO | 2012/12/19 02:29:30 | <Dec 19, 2012 2:29:30 AM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to ADMIN> 
+INFO | 2012/12/19 02:29:30 | <Dec 19, 2012 2:29:30 AM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RESUMING> 
+INFO | 2012/12/19 02:29:31 | Server t3://otm.abcd.co.in:7001 is not responding
+INFO | 2012/12/19 02:29:31 | 
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.handleConnectException(NamingDirectory.java:818)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.getContext(NamingDirectory.java:791)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.j2ee.remote.ASNamingDirectory.jaasLogin(ASNamingDirectory.java:85)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.<init>(NamingDirectory.java:758)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:197)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.getForGuest(NamingDirectory.java:279)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:113)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:124)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.SessionBeanHomeInvoker.<init>(SessionBeanHomeInvoker.java:26)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:168)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:223)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.getForSystem(NamingDirectory.java:267)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.getForSystem(NamingDirectory.java:319)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.getForSystem(NamingDirectory.java:323)
+INFO | 2012/12/19 02:29:31 | 	at glog.server.diag.DiagLoader.activate(DiagLoader.java:58)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.StartupShutdownManager.activate(StartupShutdownManager.java:127)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.StartupShutdownManager.activate(StartupShutdownManager.java:112)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.StartupShutdownManager.activate(StartupShutdownManager.java:108)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.j2ee.startup.WLStartup.startupActivate(WLStartup.java:61)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.j2ee.startup.WLStartup.onEvent(WLStartup.java:38)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.j2ee.startup.WLStartup$ActivateThread.run(WLStartup.java:98)
+INFO | 2012/12/19 02:29:31 | Server t3://otm.abcd.co.in:7001 is not responding
+INFO | 2012/12/19 02:29:31 | 
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.handleConnectException(NamingDirectory.java:818)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.getContext(NamingDirectory.java:791)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.j2ee.remote.ASNamingDirectory.jaasLogin(ASNamingDirectory.java:85)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.<init>(NamingDirectory.java:758)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:197)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.getForGuest(NamingDirectory.java:279)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:113)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:124)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.SessionBeanHomeInvoker.<init>(SessionBeanHomeInvoker.java:26)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:168)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:223)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.getForSystem(NamingDirectory.java:267)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.getForSystem(NamingDirectory.java:319)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.remote.NamingDirectory.getForSystem(NamingDirectory.java:323)
+INFO | 2012/12/19 02:29:31 | 	at glog.server.diag.DiagLoader.activate(DiagLoader.java:58)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.StartupShutdownManager.activate(StartupShutdownManager.java:127)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.StartupShutdownManager.activate(StartupShutdownManager.java:112)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.StartupShutdownManager.activate(StartupShutdownManager.java:108)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.j2ee.startup.WLStartup.startupActivate(WLStartup.java:61)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.j2ee.startup.WLStartup.onEvent(WLStartup.java:38)
+INFO | 2012/12/19 02:29:31 | 	at glog.util.j2ee.startup.WLStartup$ActivateThread.run(WLStartup.java:98)
+INFO | 2012/12/19 02:29:31 | <Dec 19, 2012 2:29:31 AM IST> <Notice> <Server> <BEA-002613> <Channel "Default" is now listening on 192.168.1.220:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2012/12/19 02:29:31 | <Dec 19, 2012 2:29:31 AM IST> <Notice> <WebLogicServer> <BEA-000329> <Started WebLogic Admin Server "gc3-otm" for domain "Otmv620" running in Production Mode> 
+INFO | 2012/12/19 02:29:32 | <Dec 19, 2012 2:29:32 AM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RUNNING> 
+INFO | 2012/12/19 02:29:32 | <Dec 19, 2012 2:29:32 AM IST> <Notice> <WebLogicServer> <BEA-000360> <Server started in RUNNING mode> 
+INFO | 2012/12/19 02:29:38 | Server t3://otm.abcd.co.in:7001 is not responding
+INFO | 2012/12/19 02:29:38 | 
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.handleConnectException(NamingDirectory.java:818)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.getContext(NamingDirectory.java:791)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.j2ee.remote.ASNamingDirectory.jaasLogin(ASNamingDirectory.java:85)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.<init>(NamingDirectory.java:758)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:197)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.getForGuest(NamingDirectory.java:279)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:113)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:124)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.SessionBeanHomeInvoker.<init>(SessionBeanHomeInvoker.java:26)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:168)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:223)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.getForSystem(NamingDirectory.java:267)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.getForSystem(NamingDirectory.java:319)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.getForSystem(NamingDirectory.java:323)
+INFO | 2012/12/19 02:29:38 | 	at glog.management.alerts.MetricPoll.ping(MetricPoll.java:21)
+INFO | 2012/12/19 02:29:38 | 	at glog.management.alerts.MetricPoll.<init>(MetricPoll.java:16)
+INFO | 2012/12/19 02:29:38 | 	at glog.management.alerts.StatusPoll.<init>(StatusPoll.java:6)
+INFO | 2012/12/19 02:29:38 | 	at glog.management.alerts.ConnectionAlerts$ConnectionAvailability.<init>(ConnectionAlerts.java:68)
+INFO | 2012/12/19 02:29:38 | 	at glog.management.alerts.ConnectionAlerts.<clinit>(ConnectionAlerts.java:82)
+INFO | 2012/12/19 02:29:38 | 	at glog.management.alerts.AlertsPerf.<clinit>(AlertsPerf.java:33)
+INFO | 2012/12/19 02:29:38 | 	at java.lang.Class.forName0(Native Method)
+INFO | 2012/12/19 02:29:38 | 	at java.lang.Class.forName(Class.java:169)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.j2ee.mbean.ASMBeanDeployer.deployMBeans(ASMBeanDeployer.java:54)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.mbean.MBeanRegistration.activate(MBeanRegistration.java:13)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.StartupShutdownManager.activate(StartupShutdownManager.java:127)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.StartupShutdownManager.activate(StartupShutdownManager.java:112)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.StartupShutdownManager.activate(StartupShutdownManager.java:108)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.j2ee.startup.WLStartup.startupActivate(WLStartup.java:61)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.j2ee.startup.WLStartup.onEvent(WLStartup.java:38)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.j2ee.startup.WLStartup$ActivateThread.run(WLStartup.java:98)
+INFO | 2012/12/19 02:29:38 | Server t3://otm.abcd.co.in:7001 is not responding
+INFO | 2012/12/19 02:29:38 | 
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.handleConnectException(NamingDirectory.java:818)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.getContext(NamingDirectory.java:791)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.j2ee.remote.ASNamingDirectory.jaasLogin(ASNamingDirectory.java:85)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.<init>(NamingDirectory.java:758)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:197)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.getForGuest(NamingDirectory.java:279)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:113)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:124)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.SessionBeanHomeInvoker.<init>(SessionBeanHomeInvoker.java:26)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:168)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:223)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.getForSystem(NamingDirectory.java:267)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.getForSystem(NamingDirectory.java:319)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.remote.NamingDirectory.getForSystem(NamingDirectory.java:323)
+INFO | 2012/12/19 02:29:38 | 	at glog.management.alerts.MetricPoll.ping(MetricPoll.java:21)
+INFO | 2012/12/19 02:29:38 | 	at glog.management.alerts.MetricPoll.<init>(MetricPoll.java:16)
+INFO | 2012/12/19 02:29:38 | 	at glog.management.alerts.StatusPoll.<init>(StatusPoll.java:6)
+INFO | 2012/12/19 02:29:38 | 	at glog.management.alerts.ConnectionAlerts$ConnectionAvailability.<init>(ConnectionAlerts.java:68)
+INFO | 2012/12/19 02:29:38 | 	at glog.management.alerts.ConnectionAlerts.<clinit>(ConnectionAlerts.java:82)
+INFO | 2012/12/19 02:29:38 | 	at glog.management.alerts.AlertsPerf.<clinit>(AlertsPerf.java:33)
+INFO | 2012/12/19 02:29:38 | 	at java.lang.Class.forName0(Native Method)
+INFO | 2012/12/19 02:29:38 | 	at java.lang.Class.forName(Class.java:169)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.j2ee.mbean.ASMBeanDeployer.deployMBeans(ASMBeanDeployer.java:54)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.mbean.MBeanRegistration.activate(MBeanRegistration.java:13)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.StartupShutdownManager.activate(StartupShutdownManager.java:127)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.StartupShutdownManager.activate(StartupShutdownManager.java:112)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.StartupShutdownManager.activate(StartupShutdownManager.java:108)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.j2ee.startup.WLStartup.startupActivate(WLStartup.java:61)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.j2ee.startup.WLStartup.onEvent(WLStartup.java:38)
+INFO | 2012/12/19 02:29:38 | 	at glog.util.j2ee.startup.WLStartup$ActivateThread.run(WLStartup.java:98)
+INFO | 2012/12/19 02:29:39 | Server t3://otm.abcd.co.in:7001 is not responding
+INFO | 2012/12/19 02:29:39 | 
+INFO | 2012/12/19 02:29:39 | 	at glog.util.remote.NamingDirectory.handleConnectException(NamingDirectory.java:818)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.remote.NamingDirectory.getContext(NamingDirectory.java:791)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.j2ee.remote.ASNamingDirectory.jaasLogin(ASNamingDirectory.java:85)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.remote.NamingDirectory.<init>(NamingDirectory.java:758)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:197)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.remote.NamingDirectory.getForGuest(NamingDirectory.java:279)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:113)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:124)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.remote.SessionBeanHomeInvoker.<init>(SessionBeanHomeInvoker.java:26)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:168)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.remote.NamingDirectory.get(NamingDirectory.java:223)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.remote.NamingDirectory.getForSystem(NamingDirectory.java:267)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.remote.NamingDirectory.getForSystem(NamingDirectory.java:319)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.remote.NamingDirectory.getForSystem(NamingDirectory.java:323)
+INFO | 2012/12/19 02:29:39 | 	at glog.management.alerts.MetricPoll.ping(MetricPoll.java:21)
+INFO | 2012/12/19 02:29:39 | 	at glog.management.alerts.ConnectionAlerts.<init>(ConnectionAlerts.java:19)
+INFO | 2012/12/19 02:29:39 | 	at glog.management.alerts.AlertsPerf.<clinit>(AlertsPerf.java:33)
+INFO | 2012/12/19 02:29:39 | 	at java.lang.Class.forName0(Native Method)
+INFO | 2012/12/19 02:29:39 | 	at java.lang.Class.forName(Class.java:169)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.j2ee.mbean.ASMBeanDeployer.deployMBeans(ASMBeanDeployer.java:54)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.mbean.MBeanRegistration.activate(MBeanRegistration.java:13)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.StartupShutdownManager.activate(StartupShutdownManager.java:127)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.StartupShutdownManager.activate(StartupShutdownManager.java:112)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.StartupShutdownManager.activate(StartupShutdownManager.java:108)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.j2ee.startup.WLStartup.startupActivate(WLStartup.java:61)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.j2ee.startup.WLStartup.onEvent(WLStartup.java:38)
+INFO | 2012/12/19 02:29:39 | 	at glog.util.j2ee.startup.WLStartup$ActivateThread.run(WLStartup.java:98)

@@ -1,0 +1,201 @@
+CREATE OR REPLACE PACKAGE REPORTOWNER.pk_budgetreport
+AS
+   desname                  VARCHAR2 (200);
+   destype                  VARCHAR2 (100);
+   desformat                VARCHAR2 (200)   := 'PDF';
+   p_gl_user                VARCHAR2 (128);
+   p_role_id                VARCHAR2 (1000);
+   p_database_conn_string   VARCHAR2 (50);
+   p_file                   VARCHAR2 (100);
+   p_pdf_hyperlink          VARCHAR2 (1000);
+   p_report_gid             VARCHAR2 (101);
+   p_xml_hyperlink          VARCHAR2 (1000);
+   p_domain                 VARCHAR2 (50);
+   p_keep_file_flag         VARCHAR2 (1);
+   p_language_id            VARCHAR2 (30);
+   p_rpt_job                NUMBER;
+   p_format                 VARCHAR2 (40);
+   p_date_format            VARCHAR2 (15)    := 'MM/DD/YYYY';
+   p_time_format            VARCHAR2 (32767);
+   p_report_call            VARCHAR2 (1000);
+   p_glog_user              VARCHAR2 (30);
+   p_glog_user_pass         VARCHAR2 (30);
+   p_report_physical_name   VARCHAR2 (100)   := 'Track And Trace';
+   p_within_report          VARCHAR2 (1);
+   p_reports_out_dir        VARCHAR2 (100);
+   p_reports_server         VARCHAR2 (100);
+   p_ship_start_range       DATE;
+   p_ship_end_range         DATE;
+   p_group_by               VARCHAR2 (2000);
+   p_rep_userid             VARCHAR2 (100);  
+    
+   P_KEY_ID                    VARCHAR2 (32767);
+   P_CITY_FROM              VARCHAR2 (32767);
+   P_CITY_FRM_ISO_CNTY_CDE  VARCHAR2 (32767);  
+   P_CITY_DESTINATION       VARCHAR2 (32767); 
+   P_CITY_DEST_ISO_CNTY_CDE VARCHAR2 (32767);
+   P_BUDGET_VERSION         VARCHAR2 (32767);
+   P_MODE_OF_TRANSPORT      VARCHAR2 (32767);
+      
+   P_KEY_ID_PARAM                    VARCHAR2 (32767):= '1=1';
+   P_CITY_FROM_PARAM              VARCHAR2 (32767):= '1=1';
+   P_CITY_FRM_ISO_CNTY_CDE_PARAM  VARCHAR2 (32767):= '1=1';
+   P_CITY_DESTINATION_PARAM       VARCHAR2 (32767):= '1=1'; 
+   P_CITY_DEST_ISO_CNTY_CDE_PARAM VARCHAR2 (32767):= '1=1'; 
+   P_BUDGET_VERSION_PARAM         VARCHAR2 (32767):= '1=1'; 
+   P_MODE_OF_TRANSPORT_PARAM      VARCHAR2 (32767):= '1=1'; 
+   
+
+   FUNCTION afterpform
+      RETURN BOOLEAN;
+
+   FUNCTION afterreport
+      RETURN BOOLEAN;
+
+   FUNCTION beforepform
+      RETURN BOOLEAN;
+
+   FUNCTION beforereport
+      RETURN BOOLEAN;
+
+   PROCEDURE set_lexical_parameters;
+      
+END pk_budgetreport;
+/
+CREATE OR REPLACE PACKAGE BODY REPORTOWNER.pk_budgetreport
+AS
+   FUNCTION afterpform
+      RETURN BOOLEAN
+   IS
+      v_string    VARCHAR2 (32750);
+      ws_date     VARCHAR2 (30);
+      v_boolean   BOOLEAN;
+   BEGIN
+      reports_library.set_vpd (p_gl_user);
+      v_boolean :=
+         reports_library.get_user_preferences (p_gl_user,
+                                               p_role_id,
+                                               p_date_format,
+                                               p_time_format,
+                                               p_language_id
+                                              );
+      v_string :=
+         RTRIM (reports_library.build_localization_string (p_report_gid,
+                                                           p_language_id
+                                                          )
+               );
+
+      IF p_keep_file_flag = 'Y'
+      THEN
+         ws_date := '_' || TO_CHAR (SYSDATE, 'YYMMDDHHMI');
+      END IF;
+
+      desname := 'C:\' || p_file;
+      p_report_physical_name := RTRIM (p_report_physical_name);
+      set_lexical_parameters;
+      RETURN (TRUE);
+   END;
+
+   FUNCTION afterreport
+      RETURN BOOLEAN
+   IS
+   BEGIN
+      RETURN (TRUE);
+   END;
+
+   FUNCTION beforepform
+      RETURN BOOLEAN
+   IS
+   BEGIN
+      RETURN (TRUE);
+   END;
+
+   FUNCTION beforereport
+      RETURN BOOLEAN
+   IS
+   BEGIN
+      --REPORTS_LIBRARY.SET_VPD(P_GL_USER);
+      RETURN (TRUE);
+   END;
+
+   PROCEDURE set_lexical_parameters
+   IS
+
+   BEGIN
+      IF (P_KEY_ID = '1=1') OR (P_KEY_ID IS NULL)
+      THEN
+         P_KEY_ID_PARAM := '1=1';
+      ELSE
+         P_KEY_ID_PARAM :=
+               'KEY '
+            || reports_library.get_filter_condition (P_KEY_ID, NULL, 'Y');
+      END IF;
+
+      IF (P_CITY_FROM = '1=1') OR (P_CITY_FROM IS NULL)
+      THEN
+         P_CITY_FROM_PARAM := '1=1';
+      ELSE
+         P_CITY_FROM_PARAM :=
+               'CITY_FROM'
+            || reports_library.get_filter_condition (P_CITY_FROM, NULL, 'Y');
+      END IF;
+         
+      IF (P_CITY_FRM_ISO_CNTY_CDE = '1=1') OR (P_CITY_FRM_ISO_CNTY_CDE IS NULL)
+      THEN
+         P_CITY_FRM_ISO_CNTY_CDE_PARAM := '1=1';
+      ELSE
+         P_CITY_FRM_ISO_CNTY_CDE_PARAM :=
+               'CITY_FROM_ISO_COUNTRY_CODE'
+            || reports_library.get_filter_condition (P_CITY_FRM_ISO_CNTY_CDE, NULL, 'Y');
+      END IF;
+
+     
+      IF (P_CITY_DESTINATION = '1=1') OR (P_CITY_DESTINATION IS NULL)
+      THEN
+         P_CITY_DESTINATION_PARAM := '1=1';
+      ELSE
+         P_CITY_DESTINATION_PARAM :=
+               'CITY_DESTINATION '
+            || reports_library.get_filter_condition (P_CITY_DESTINATION, NULL, 'Y');
+      END IF;
+      
+      IF (P_CITY_DEST_ISO_CNTY_CDE = '1=1') OR (P_CITY_DEST_ISO_CNTY_CDE IS NULL)
+      THEN
+         P_CITY_DEST_ISO_CNTY_CDE_PARAM := '1=1';
+      ELSE
+         P_CITY_DEST_ISO_CNTY_CDE_PARAM :=
+               'CITY_DESTINATION_ISO_COUNTRY_CODE '
+            || reports_library.get_filter_condition (P_CITY_DEST_ISO_CNTY_CDE, NULL, 'Y');
+      END IF;
+      
+      IF (P_BUDGET_VERSION = '1=1') OR (P_BUDGET_VERSION IS NULL)
+      THEN
+         P_BUDGET_VERSION_PARAM := '1=1';
+      ELSE
+         P_BUDGET_VERSION_PARAM :=
+               'BUDGET_VERSION '
+            || reports_library.get_filter_condition (P_BUDGET_VERSION, NULL, 'Y');
+      END IF;
+      
+      IF (P_MODE_OF_TRANSPORT = '1=1') OR (P_MODE_OF_TRANSPORT IS NULL)
+      THEN
+         P_MODE_OF_TRANSPORT_PARAM := '1=1';
+      ELSE
+         P_MODE_OF_TRANSPORT_PARAM :=
+               'MODE_OF_TRANSPORT '
+            || reports_library.get_filter_condition (P_MODE_OF_TRANSPORT, NULL, 'Y');
+      END IF;
+    
+      COMMIT;
+   END;  
+
+END pk_budgetreport;
+/
+grant execute on pk_pk_budgetreport to  GLOGDBA;
+/
+grant debug on pk_pk_budgetreport to  GLOGDBA;
+/
+grant debug on pk_pk_budgetreport to  GLOGOWNER;
+/
+grant execute on pk_pk_budgetreport to  GLOGOWNER;
+/

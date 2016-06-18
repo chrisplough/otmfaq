@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<navgroups product="vbulletin" master="true">
+
+	<navgroup phrase="threads_and_posts" permissions="canadminthreads" displayorder="80">
+
+		<navoption displayorder="100">
+			<phrase>force_read_thread</phrase>
+			<link>force_read_thread.php</link>
+		</navoption>
+
+	</navgroup>
+
+</navgroups>

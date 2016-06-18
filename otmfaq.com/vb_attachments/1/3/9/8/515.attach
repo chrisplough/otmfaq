@@ -1,0 +1,87 @@
+2010-01-24 03:33:34.582	849457	Debug	RMIConnections	Changing user role: null to ADMIN [[ACTIVE] ExecuteThread: ']
+2010-01-24 03:33:34.651	849457	Debug	Workflow	Starting workflow New XML Transmission (47126437) in response to NewXmlTopic: transmission=362 [integration - 1]
+2010-01-24 03:33:34.668	849457	Debug	Workflow	Publishing topic Transaction Processor: transactionNo=3022 [Location ] on queue publishWait, group null [integration - 1]
+2010-01-24 03:33:34.669	849457	Debug	Workflow	Completing workflow New XML Transmission (47126437) [integration - 1]
+2010-01-24 03:33:34.67	849457	Debug	Workflow	Starting workflow Simple Workflow (49731492) in response to Transaction Processor: transactionNo=3022 [Location ] [publishWait - 3]
+2010-01-24 03:33:34.674	849457	Debug	RMIConnections	Changing user role: null to ADMIN [publishWait - 3]
+2010-01-24 03:33:34.7	849457	Error	Exception	java.lang.NullPointerException
+
+java.lang.NullPointerException
+	at glog.integration.application.location.ContactWrapper.toExternalSystemData(ContactWrapper.java:544)
+	at glog.integration.application.location.ContactWrapper.mapExternalSystem(ContactWrapper.java:534)
+	at glog.integration.application.location.ContactWrapper.toContactData(ContactWrapper.java:659)
+	at glog.integration.application.location.ContactWrapper.toContactData(ContactWrapper.java:622)
+	at glog.integration.application.location.ContactWrapper.mapSelf(ContactWrapper.java:397)
+	at glog.integration.xmlbasewrapper.XmlBaseWrapper.map(XmlBaseWrapper.java:165)
+	at glog.integration.xmlbasewrapper.XmlBaseWrapperList.map(XmlBaseWrapperList.java:71)
+	at glog.integration.application.location.LocationWrapper.mapChildren(LocationWrapper.java:417)
+	at glog.integration.xmlbasewrapper.XmlBaseWrapper.map(XmlBaseWrapper.java:167)
+	at glog.integration.xmlbasewrapper.XmlBaseWrapper.persistViaContainer(XmlBaseWrapper.java:313)
+	at glog.integration.application.location.LocationInterface.persistIndivXML(LocationInterface.java:97)
+	at glog.integration.application.location.LocationInterface.persistXML(LocationInterface.java:85)
+	at glog.integration.application.BaseInterface.persistXMLBase(BaseInterface.java:186)
+	at glog.integration.application.TransactionProcessor.processTransaction(TransactionProcessor.java:217)
+	at glog.integration.application.TransactionProcessor.processTransaction(TransactionProcessor.java:356)
+	at glog.server.workflow.transproc.TransProc.execute(TransProc.java:106)
+	at glog.server.workflow.SimpleWorkflow.execute(SimpleWorkflow.java:23)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:64)
+	at glog.server.workflow.WorkflowSessionNonTransServerSideEJBWrapper_t6tuwu_EOImpl.execute(WorkflowSessionNonTransServerSideEJBWrapper_t6tuwu_EOImpl.java:352)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:347)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:142)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:96)
+	at glog.util.event.EventThread.run(EventThread.java:83)
+	at java.lang.Thread.run(Thread.java:595)
+ [publishWait - 3]
+2010-01-24 03:33:34.71	849457	Debug	RMIConnections	Changing user role: null to ADMIN [publishWait - 3]
+2010-01-24 03:33:34.777	849457	Error	Exception	java.lang.NullPointerException
+
+java.lang.NullPointerException
+	at glog.integration.tools.IntegrationContext.validateFK(IntegrationContext.java:803)
+	at glog.integration.application.location.LocationWrapper.validate(LocationWrapper.java:176)
+	at glog.integration.application.location.LocationInterface.validateXML(LocationInterface.java:128)
+	at glog.integration.application.ValidationSessionBean.doValidation(ValidationSessionBean.java:28)
+	at glog.integration.application.ValidationSessionServerSideEJBWrapper.doValidation(ValidationSessionServerSideEJBWrapper.java:42)
+	at glog.integration.application.ValidationSessionHome_rsshsf_EOImpl.doValidation(ValidationSessionHome_rsshsf_EOImpl.java:60)
+	at glog.integration.application.TransactionProcessor.postErrorValidation(TransactionProcessor.java:301)
+	at glog.integration.application.TransactionProcessor.processTransaction(TransactionProcessor.java:252)
+	at glog.integration.application.TransactionProcessor.processTransaction(TransactionProcessor.java:356)
+	at glog.server.workflow.transproc.TransProc.execute(TransProc.java:106)
+	at glog.server.workflow.SimpleWorkflow.execute(SimpleWorkflow.java:23)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:64)
+	at glog.server.workflow.WorkflowSessionNonTransServerSideEJBWrapper_t6tuwu_EOImpl.execute(WorkflowSessionNonTransServerSideEJBWrapper_t6tuwu_EOImpl.java:352)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:347)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:142)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:96)
+	at glog.util.event.EventThread.run(EventThread.java:83)
+	at java.lang.Thread.run(Thread.java:595)
+ [publishWait - 3]
+2010-01-24 03:33:34.778	849457	Error	Exception	java.lang.NullPointerException
+
+java.lang.NullPointerException
+	at glog.integration.tools.IntegrationContext.validateFK(IntegrationContext.java:803)
+	at glog.integration.application.location.LocationWrapper.validate(LocationWrapper.java:176)
+	at glog.integration.application.location.LocationInterface.validateXML(LocationInterface.java:128)
+	at glog.integration.application.ValidationSessionBean.doValidation(ValidationSessionBean.java:28)
+	at glog.integration.application.ValidationSessionServerSideEJBWrapper.doValidation(ValidationSessionServerSideEJBWrapper.java:42)
+	at glog.integration.application.ValidationSessionHome_rsshsf_EOImpl.doValidation(ValidationSessionHome_rsshsf_EOImpl.java:60)
+	at glog.integration.application.TransactionProcessor.postErrorValidation(TransactionProcessor.java:301)
+	at glog.integration.application.TransactionProcessor.processTransaction(TransactionProcessor.java:252)
+	at glog.integration.application.TransactionProcessor.processTransaction(TransactionProcessor.java:356)
+	at glog.server.workflow.transproc.TransProc.execute(TransProc.java:106)
+	at glog.server.workflow.SimpleWorkflow.execute(SimpleWorkflow.java:23)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:64)
+	at glog.server.workflow.WorkflowSessionNonTransServerSideEJBWrapper_t6tuwu_EOImpl.execute(WorkflowSessionNonTransServerSideEJBWrapper_t6tuwu_EOImpl.java:352)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:347)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:142)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:96)
+	at glog.util.event.EventThread.run(EventThread.java:83)
+	at java.lang.Thread.run(Thread.java:595)
+ [publishWait - 3]
+2010-01-24 03:33:36.133	849457	Debug	Workflow	Completing workflow Simple Workflow (49731492) [publishWait - 3]
+2010-01-24 03:33:36.134	849457	Debug	Workflow	Publishing topic PostTransmission: user=GUEST.ADMIN, transmissionId=362 on queue integrationOutbound, group null [publishWait - 3]
+2010-01-24 03:33:36.136	849457	Debug	Workflow	Starting workflow Simple Workflow (49322506) in response to PostTransmission: user=GUEST.ADMIN, transmissionId=362 [integrationOutbound - 1]
+2010-01-24 03:33:36.139	849457	Debug	RMIConnections	Changing user role: null to ADMIN [integrationOutbound - 1]
+2010-01-24 03:33:36.145	849457	Debug	Workflow	Completing workflow Simple Workflow (49322506) [integrationOutbound - 1]

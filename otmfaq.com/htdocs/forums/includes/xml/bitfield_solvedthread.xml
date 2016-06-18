@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bitfields product="solvedthread">
+	<bitfielddefs>
+		<group name="ugp">
+			<group name="solvedthread_permissions">
+				<bitfield name="canmarksolved" group="solvedthread_permissions" phrase="solvedthread_canmarksolved">1</bitfield>
+			</group>
+		</group>
+	</bitfielddefs>
+</bitfields>

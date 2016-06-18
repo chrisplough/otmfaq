@@ -1,0 +1,207 @@
+before Persist - checked
+
+
+2010-12-20 11:45:05.827	774582	Debug	GLog	   AppActionChecks.  [glog.server.action.AppActionCheck@116b793b] [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:05.827	774582	Debug	GLog	   appActionCheck: glog.server.action.AppActionCheck@116b793b pks: [GLFWW.ORDER11_PRABHU] [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:05.828	774582	Debug	GLog	   appActionCheck Query ? : false [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:05.828	774582	Debug	GLog	   appActionCheck  pks Empty ? false [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:05.879	774582	Debug	PersistenceDetails	select statement
+where order_base_gid = ? [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:05.897	774582	Debug	Persistence	Start Persistence Manager [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:05.897	774582	Debug	PersistenceDetails	Generic Container before persistence 
+BeanData:
+    orderBaseGid: GLFWW.ORDER11_PRABHU
+    orderBaseXid: ORDER11_PRABHU
+    externalSystemId: null
+    paymentMethodCodeGid: null
+    incoTermGid: null
+    termLocationText: null
+    planningGroupGid: null
+    fixedItineraryGid: null
+    orderTypeGid: null
+    timeWindowEmphasisGid: null
+    rateServiceProfileGid: null
+    servprovGid: null
+    servprovProfileGid: null
+    transportModeGid: null
+    modeProfileGid: null
+    equipmentGroupGid: null
+    equipmentGroupProfileGid: null
+    processingCodeGid: null
+    shipWithGroup: null
+    isFullyReleased: false
+    effectiveDate: null
+    expirationDate: null
+    isTemplate: false
+    rateOfferingGid: null
+    rateGeoGid: null
+    sellRateOfferingGid: null
+    sellRateGeoGid: null
+    fixedSellItineraryGid: null
+    totalWeight: 15000.0 LB
+    totalVolume: 2.0 CUFT
+    mustShipDirect: false
+    mustShipThruXDock: false
+    mustShipThruPool: false
+    batchBalanceOrderTypeGid: null
+    scheduleGid: null
+    isKnownShipper: false
+    allowOverReleasing: Y
+    releaseMethodGid: ONE_TO_ONE
+    totalNetWeight: 15000.0 LB
+    totalNetVolume: 2.0 CUFT
+    dimRateFactorGid: null
+    userDefined1IconGid: null
+    userDefined2IconGid: null
+    userDefined3IconGid: null
+    userDefined4IconGid: null
+    userDefined5IconGid: null
+    bundlingType: AUTOMATIC
+    totalDeclaredValue: 0.0 USD
+    sellServprovGid: null
+    sellServprovProfileGid: null
+    rateServiceGid: null
+    defaultStowageModeGid: null
+    stuffLocationGid: null
+    destuffLocationGid: null
+    customerUnitizationRequest: false
+    unitizationConditionName: null
+    isIgnoreLocationCalendar: null
+    pickupRoutingSequenceGid: null
+    dropoffRoutingSequenceGid: null
+    priority: 1
+    domainName: GLFWW
+
+BeanDataClassName: glog.ejb.orderbase.db.ObOrderBaseData
+TransactionCode: NP
+PK: glog.ejb.orderbase.db.ObOrderBasePK PK Value: GLFWW.ORDER11_PRABHU
+Children Size: 2
+ObRefnumData (Size is 1)
+
+BeanData:
+    orderBaseGid: GLFWW.ORDER11_PRABHU
+    obRefnumQualGid: GLOG
+    obRefnumValue: GLFWW.ORDER11_PRABHU
+    domainName: GLFWW
+
+BeanDataClassName: glog.ejb.orderbase.db.ObRefnumData
+TransactionCode: NP
+PK: glog.ejb.orderbase.db.ObRefnumPK PK Value: GLOG GLFWW.ORDER11_PRABHU GLFWW.ORDER11_PRABHU
+Children Size: 0
+ObLineData (Size is 1)
+
+BeanData:
+    obLineGid: GLFWW.ORDER11_PRABHU-001
+    obLineXid: ORDER11_PRABHU-001
+    orderBaseGid: GLFWW.ORDER11_PRABHU
+    sourceLocationGid: GLFWW.10000830
+    destLocationGid: GLFWW.10000831
+    tag1: null
+    tag2: null
+    tag3: null
+    tag4: null
+    isSplitAllowed: true
+    weight: 15000.0 LB
+    volume: 2.0 CUFT
+    declaredValue: 0.0 USD
+    earlyPickupDate: 2010-11-12 18:04:00 GMT
+    latePickupDate: 2010-11-15 18:04:00 GMT
+    earlyDeliveryDate: 2010-11-23 18:04:00 GMT
+    lateDeliveryDate: 2010-11-30 18:04:00 GMT
+    packagedItemGid: GLFWW.ITEM10_PRABHU
+    isAutoRelease: true
+    packagedCount: 120
+    loadPoint: null
+    unloadPoint: null
+    pickupIsAppt: false
+    deliveryIsAppt: false
+    planFromLocationGid: GLFWW.10000830
+    planFromLoadPoint: null
+    planToLocationGid: GLFWW.10000831
+    planToUnloadPoint: null
+    numLayersPerShipUnit: 1
+    isShippable: false
+    quantityPerLayer: 2
+    releasedWeight: 0.0 LB
+    releasedVolume: 0.0 CUFT
+    releasedCount: 0
+    packagingUnitGid: GLFWW.CAN
+    packagingUnitCount: 200
+    transportHandlingUnitGid: GLFWW.EA
+    initialItemGid: GLFWW.ITEM10_PRABHU
+    roundingInstruction: U
+    roundTo: LAY
+    bufferLocationGid: GLFWW.10000830
+    domainName: GLFWW
+
+BeanDataClassName: glog.ejb.orderbase.db.ObLineData
+TransactionCode: IU
+PK: glog.ejb.orderbase.db.ObLinePK PK Value: GLFWW.ORDER11_PRABHU-001
+Children Size: 0
+ [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:05.898	774582	Debug	Persistence	Start pre persistence [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:05.898	774582	Debug	Persistence	End pre persistence [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:05.898	774582	Debug	Persistence	Transaction type NP/Business Type OrderBase/Data Source USER/Persistence Type persistenceByBeanData [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:05.898	774582	Debug	Persistence	--  Container = GLFWW.ORDER11_PRABHU/class glog.ejb.orderbase.db.ObOrderBasePK/NP [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:05.898	774582	Debug	Persistence	--  Container = GLFWW.ORDER11_PRABHU-001/class glog.ejb.orderbase.db.ObLinePK/IU [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:05.898	774582	Debug	Persistence	--  Container = GLOG GLFWW.ORDER11_PRABHU GLFWW.ORDER11_PRABHU/class glog.ejb.orderbase.db.ObRefnumPK/NP [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:05.902	774582	Debug	PersistenceDetails	    obLineGid: GLFWW.ORDER11_PRABHU-001
+    obLineXid: ORDER11_PRABHU-001
+    orderBaseGid: GLFWW.ORDER11_PRABHU
+    sourceLocationGid: GLFWW.10000830
+    destLocationGid: GLFWW.10000831
+    tag1: null
+    tag2: null
+    tag3: null
+    tag4: null
+    isSplitAllowed: true
+    weight: 15000.0 LB
+    volume: 2.0 CUFT
+    declaredValue: 0.0 USD
+    earlyPickupDate: 2010-11-12 18:04:00 GMT
+    latePickupDate: 2010-11-15 18:04:00 GMT
+    earlyDeliveryDate: 2010-11-23 18:04:00 GMT
+    lateDeliveryDate: 2010-11-30 18:04:00 GMT
+    packagedItemGid: GLFWW.ITEM10_PRABHU
+    isAutoRelease: true
+    packagedCount: 120
+    loadPoint: null
+    unloadPoint: null
+    pickupIsAppt: false
+    deliveryIsAppt: false
+    planFromLocationGid: GLFWW.10000830
+    planFromLoadPoint: null
+    planToLocationGid: GLFWW.10000831
+    planToUnloadPoint: null
+    numLayersPerShipUnit: 1
+    isShippable: false
+    quantityPerLayer: 2
+    releasedWeight: 0.0 LB
+    releasedVolume: 0.0 CUFT
+    releasedCount: 0
+    packagingUnitGid: GLFWW.CAN
+    packagingUnitCount: 200
+    transportHandlingUnitGid: GLFWW.EA
+    initialItemGid: GLFWW.ITEM10_PRABHU
+    roundingInstruction: U
+    roundTo: LAY
+    bufferLocationGid: GLFWW.10000830
+    domainName: GLFWW
+ [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:05.902	774582	Debug	PersistenceDetails	Bean Data Start Update in insertUpdate 
+2010-12-20 11:45:06.259	774582	Debug	PersistenceDetails	Bean Data Complete update in insertUpdate
+2010-12-20 11:45:06.259	774582	Debug	Persistence	Start post persistence GLFWW.ORDER11_PRABHU [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:06.259	774582	Debug	PersistenceDetails	validation callout mode
+2010-12-20 11:45:06.259	774582	Debug	PersistenceDetails	Not do callout validation  [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:06.26	774582	Debug	Persistence	End post persistence GLFWW.ORDER11_PRABHU [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:06.26	774582	Debug	Persistence	End Persistence Manager GLFWW.ORDER11_PRABHU [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:06.264	774582	Debug	Workflow	Starting workflow Simple Workflow (288941907) in response to Recalculate Order Base Totals: pk=GLFWW.ORDER11_PRABHU [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:06.276	774582	Debug	Workflow	Completing workflow Simple Workflow (288941907) [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2010-12-20 11:45:06.285	774582	Debug	WorkflowDetails	Topic OrderBaseModQuantitiesChange: order=GLFWW.ORDER11_PRABHU, dataSource=USER, beforePersist=false, children= queued for commit [txComplete - 1]
+2010-12-20 11:45:06.286	774582	Debug	WorkflowDetails	Topic OrderBaseModAnyChange: order=GLFWW.ORDER11_PRABHU, dataSource=USER, beforePersist=false, children=ORDER BASE - QUANTITIES MODIFIED,ORDER BASE - SIGNIFICANT CHANGE queued for commit [txComplete - 1]
+2010-12-20 11:45:06.286	774582	Debug	WorkflowDetails	Topic OrderBaseModSignificantChange: order=GLFWW.ORDER11_PRABHU, dataSource=USER, beforePersist=false, children= queued for commit [txComplete - 1]
+2010-12-20 11:45:06.287	774582	Debug	WorkflowDetails	Topic ObLineModLineQtyChange: obLine=GLFWW.ORDER11_PRABHU-001, dataSource=USER, beforePersist=false, children= queued for commit [txComplete - 1]
+2010-12-20 11:45:06.287	774582	Debug	WorkflowDetails	Topic ObLineModAnyChange: obLine=GLFWW.ORDER11_PRABHU-001, dataSource=USER, beforePersist=false, children=ORDER BASE LINE - QUANTITY MODIFIED queued for commit [txComplete - 1]
+
+
+

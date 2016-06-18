@@ -1,0 +1,39 @@
+2008-05-07 15:57:19.241	271924	Debug	Planning	Created new RateInquirySession object [ExecuteThread: '30' for q]
+2008-05-07 15:57:19.241	271924	Debug	Planning	Start Rate Inquiry [ExecuteThread: '30' for q]
+2008-05-07 15:57:19.277	271924	Debug	Planning	Input Available Time = 2008-05-07 15:56:46 America/New_York [ExecuteThread: '30' for q]
+2008-05-07 15:57:19.277	271924	Debug	Planning	Input Late Delivery Time = null [ExecuteThread: '30' for q]
+2008-05-07 15:57:19.277	271924	Debug	Planning	Available Time = 2008-05-07 19:56:46 UTC [ExecuteThread: '30' for q]
+2008-05-07 15:57:19.277	271924	Debug	Planning	Late Delivery Time = 2009-05-07 19:56:46 UTC [ExecuteThread: '30' for q]
+2008-05-07 15:57:19.297	271924	Debug	Planning	RateInquirySession.getRateInquiryData(): customerDomain = <> [ExecuteThread: '30' for q]
+2008-05-07 15:57:19.297	271924	Debug	Planning	End Rate Inquiry [ExecuteThread: '30' for q]
+2008-05-07 15:57:19.309	271924	Debug	Planning	RateInquirySession.buildEquipmentOptions(): Common Equipment Group found for the Equipment Groups, Equipment by Initial Number and Packaged Items specified. [ExecuteThread: '30' for q]
+2008-05-07 15:57:19.309	271924	Debug	Planning	RateInquirySession.buildEquipmentOptions(): Common Equipment Group being used null. [ExecuteThread: '30' for q]
+2008-05-07 15:57:19.31	271924	Debug	Planning	RateInquirySession.buildServprovOptions(): No Input Servprovs. Can not handle non-Compatible Location Servprovs for location:FD.8966 [ExecuteThread: '30' for q]
+2008-05-07 15:57:19.31	271924	Error	Exception	Can not handle non-Compatible Location Servprovs.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.business.rate.rateinquiry.RateInquirySession.handleLocServprovProfile(RateInquirySession.java:832)
+	at glog.business.rate.rateinquiry.RateInquirySession.buildServprovOptions(RateInquirySession.java:795)
+	at glog.business.rate.rateinquiry.RateInquirySession.getRates(RateInquirySession.java:697)
+	at glog.business.rate.rateinquiry.RateInquirySession.getRatesInternal(RateInquirySession.java:625)
+	at glog.business.rate.rateinquiry.RateInquirySession.getRates(RateInquirySession.java:179)
+	at glog.business.action.RateActionExecutor.getRates(RateActionExecutor.java:83)
+	at glog.business.session.RateActionSessionBean.getRates(RateActionSessionBean.java:64)
+	at glog.business.session.RateActionSessionServerSideEJBWrapper.getRates(RateActionSessionServerSideEJBWrapper.java:58)
+	at glog.business.session.RateActionSessionHome_a6s4b5_EOImpl.getRates(RateActionSessionHome_a6s4b5_EOImpl.java:208)
+	at glog.business.session.RateActionSessionHome_a6s4b5_EOImpl_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:477)
+	at weblogic.rmi.cluster.ReplicaAwareServerRef.invoke(ReplicaAwareServerRef.java:108)
+	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:420)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:415)
+	at weblogic.rmi.internal.BasicExecuteRequest.execute(BasicExecuteRequest.java:30)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:219)
+ [ExecuteThread: '30' for q]
+2008-05-07 15:57:19.31	271924	Debug	Planning	End Rate Inquiry [ExecuteThread: '30' for q]

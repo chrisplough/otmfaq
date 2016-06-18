@@ -1,0 +1,2261 @@
+ <Transmission>
+ <TransmissionHeader>
+  <UserName></UserName> 
+  <Password></Password> 
+ <AckSpec>
+ <ComMethodGid>
+ <Gid>
+  <Xid>EMAIL</Xid> 
+  </Gid>
+  </ComMethodGid>
+  <EmailAddress></EmailAddress> 
+  <SmtpHost>s</SmtpHost> 
+  </AckSpec>
+  </TransmissionHeader>
+ <TransmissionBody>
+ <GLogXMLElement>
+ <TransOrder>
+ <TransOrderHeader>
+<TransOrderGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>105574440</Xid> 
+  </Gid>
+  </TransOrderGid>
+  <TransactionCode>IU</TransactionCode> 
+  <IsUpdateShipmentOnly>Y</IsUpdateShipmentOnly> 
+ <ProcessingCodeGid>
+ <Gid>
+  <Xid>NOPLN</Xid> 
+  </Gid>
+  </ProcessingCodeGid>
+ <ReleaseMethodGid>
+ <Gid>
+  <Xid>ONE_TO_ONE</Xid> 
+  </Gid>
+  </ReleaseMethodGid>
+ <InvolvedParty>
+ <InvolvedPartyQualifierGid>
+ <Gid>
+  <Xid>LOGISTICS</Xid> 
+  </Gid>
+  </InvolvedPartyQualifierGid>
+ <ContactRef>
+ <ContactGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>CCNA PLANNER</Xid> 
+  </Gid>
+  </ContactGid>
+  </ContactRef>
+ <ComMethodGid>
+ <Gid>
+  <Xid>BY CONTACT</Xid> 
+  </Gid>
+  </ComMethodGid>
+  </InvolvedParty>
+ <OrderTypeGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>NORMAL ORDERS</Xid> 
+  </Gid>
+  </OrderTypeGid>
+ <Remark>
+ <RemarkQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>INSTRUCTIONS</Xid> 
+  </Gid>
+  </RemarkQualifierGid>
+  <RemarkText>BILLING INFORMATION</RemarkText> 
+  </Remark>
+  </TransOrderHeader>
+ <ShipUnitDetail>
+ <ShipUnit>
+ <ShipUnitGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>105574440_001</Xid> 
+  </Gid>
+  </ShipUnitGid>
+  <TransactionCode /> 
+ <ShipFromLocationRef>
+ <LocationRef>
+ <LocationGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>03550010</Xid> 
+  </Gid>
+  </LocationGid>
+  </LocationRef>
+  </ShipFromLocationRef>
+  <ShipFromLoadPoint /> 
+ <ShipToLocationRef>
+ <LocationRef>
+ <LocationGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>10226651_C</Xid> 
+  </Gid>
+  </LocationGid>
+  </LocationRef>
+  </ShipToLocationRef>
+  <ShipToUnloadPoint /> 
+ <TimeWindow>
+ <EarlyPickupDt>
+  <GLogDate>20141125000000</GLogDate> 
+  </EarlyPickupDt>
+ <LatePickupDt>
+  <GLogDate>20141125235959</GLogDate> 
+  </LatePickupDt>
+ <EarlyDeliveryDt>
+  <GLogDate>20141126000000</GLogDate> 
+  </EarlyDeliveryDt>
+ <LateDeliveryDt>
+  <GLogDate>20141126235959</GLogDate> 
+  </LateDeliveryDt>
+  </TimeWindow>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>285379</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>285379</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>1</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>741.3</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>30</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06070002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>183678</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>183678</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>2</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>438.02</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>189260.001</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>20</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06060002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>7571</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>7571</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>3</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>2190</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>50</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06060002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>61884</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>61884</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>4</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>2710</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>50</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06060002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>254287</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>254287</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>5</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>254.1</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>10</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06070002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>254280</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>254280</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>6</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>100.9</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>2</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06070031</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>99581</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>99581</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>7</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>438.8</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>10</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06060002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>126080</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>126080</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>8</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>2200.5</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>50</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06060002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>126082</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>126082</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>9</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>2776.5</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>50</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06060002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>52305</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>52305</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>10</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>2218</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>50</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06070002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>52030</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>52030</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>11</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>55.58</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>2</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06060002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>61888</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>61888</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>12</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>2739.5</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>50</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06070002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>52280</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>52280</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>13</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>1373.5</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>50</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06070002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>52048</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>52048</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>14</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>2681.5</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>50</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06070002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>282606</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>282606</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>15</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>243.6</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>14</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US04100002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>164081</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>164081</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>16</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>1099</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>50</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06070002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>247881</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>247881</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>17</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>261</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>9</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06070002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>247883</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>247883</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>18</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>265.5</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>9</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06070002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>254283</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>254283</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>19</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>1270.5</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>50</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06070031</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>296684</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>296684</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>20</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>24</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>2</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06070002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>265279</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>265279</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>21</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>145.8</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>9</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US04100002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>138880</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>138880</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>22</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>262.6</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>10</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06070002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>1237583</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>1237583</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>23</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>0</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>15</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>DEFAULT</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>DEFAULT</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>183677</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>183677</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>24</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>5058</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>1703250.001</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>90</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06060002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+ <ShipUnitContent>
+ <PackagedItemRef>
+ <PackagedItem>
+ <Packaging>
+ <PackagedItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>126078</Xid> 
+  </Gid>
+  </PackagedItemGid>
+ <HazmatPackageTypeGid>
+ <Gid>
+  <Xid>DEFAULT</Xid> 
+  </Gid>
+  </HazmatPackageTypeGid>
+  </Packaging>
+ <Item>
+  <TransactionCode>IU</TransactionCode> 
+ <ItemGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>126078</Xid> 
+  </Gid>
+  </ItemGid>
+  </Item>
+  </PackagedItem>
+  </PackagedItemRef>
+  <LineNumber>25</LineNumber> 
+ <ItemQuantity>
+  <ItemTag1 /> 
+  <ItemTag2 /> 
+  <ItemTag3 /> 
+  <ItemTag4 /> 
+  <IsShippable /> 
+  <IsSplitAllowed /> 
+ <WeightVolume>
+ <Weight>
+  <WeightValue>8334</WeightValue> 
+ <WeightUOMGid>
+ <Gid>
+  <Xid>LB</Xid> 
+  </Gid>
+  </WeightUOMGid>
+  </Weight>
+ <Volume>
+  <VolumeValue>0.0010</VolumeValue> 
+ <VolumeUOMGid>
+ <Gid>
+  <Xid>GALUS</Xid> 
+  </Gid>
+  </VolumeUOMGid>
+  </Volume>
+  </WeightVolume>
+  <PackagedItemCount>150</PackagedItemCount> 
+  </ItemQuantity>
+  <PackagedItemSpecCount /> 
+  <CountPerShipUnit /> 
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP PROFIT CENTER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>US06060002</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP TAX JURISDICTION</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>0503717101</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+ <ShipUnitLineRefnum>
+ <ShipUnitLineRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP REL OWNER</Xid> 
+  </Gid>
+  </ShipUnitLineRefnumQualifierGid>
+  <ShipUnitLineRefnumValue>F</ShipUnitLineRefnumValue> 
+  </ShipUnitLineRefnum>
+  </ShipUnitContent>
+  <FlexCommodityValue /> 
+  <IsSplitAllowed /> 
+  <ShipUnitCount>15</ShipUnitCount> 
+  <IsShippable>Y</IsShippable> 
+ <ShipUnitRefnum>
+ <ShipUnitRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP COMPANY CODE</Xid> 
+  </Gid>
+  </ShipUnitRefnumQualifierGid>
+  <ShipUnitRefnumValue>0101</ShipUnitRefnumValue> 
+  </ShipUnitRefnum>
+ <ShipUnitRefnum>
+ <ShipUnitRefnumQualifierGid>
+ <Gid>
+  <DomainName>TCCS/CCNA</DomainName> 
+  <Xid>SAP RCV COMPANY CODE</Xid> 
+  </Gid>
+  </ShipUnitRefnumQualifierGid>
+  <ShipUnitRefnumValue>DEFAULT</ShipUnitRefnumValue> 
+  </ShipUnitRefnum>
+  </ShipUnit>
+  </ShipUnitDetail>
+  </TransOrder>
+  </GLogXMLElement>
+  </TransmissionBody>
+  </Transmission>

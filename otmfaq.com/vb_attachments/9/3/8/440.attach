@@ -1,0 +1,89 @@
+<html>
+<head>
+<script type="text/javascript">
+var xmlhttp;
+function loadXMLDoc(url)
+{
+xmlhttp=null;
+if (window.XMLHttpRequest)
+  {// code for IE7, Firefox, Opera, etc.
+  xmlhttp=new XMLHttpRequest();
+  }
+else if (window.ActiveXObject)
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+//var Dom = new ActiveXObject("Microsoft.XMLDOM");
+  }
+if (xmlhttp!=null)
+  {
+  xmlhttp.onreadystatechange=state_Change;
+  xmlhttp.open("POST",url,true);
+  var xmlValue = XMLtest.myXML.value;
+//  xmlValue = xmlValue.replace("P_ArgValue",XMLtest.ArgValue.value);
+//  xmlValue = xmlValue.replace("P_RefnumValue",XMLtest.RefnumValue.value);
+  //alert(XMLtest.ArgValue.value);
+  //alert(xmlValue);
+  xmlhttp.send(xmlValue);
+  }
+else
+  {
+  alert("Your browser does not support XMLHTTP.");
+  }
+}
+
+function state_Change()
+{
+if (xmlhttp.readyState==4)
+  {// 4 = "loaded"
+  if (xmlhttp.status==200)
+    {// 200 = "OK"
+//    document.getElementById('A1').innerHTML=xmlhttp.status;
+//    document.getElementById('A2').innerHTML=xmlhttp.statusText;
+//alert(xmlhttp.responseText);
+    document.getElementById('retXML').value=xmlhttp.responseText;
+    }
+  else
+    {
+    alert("Problem retrieving XML data:" + xmlhttp.statusText);
+    }
+  }
+}
+</script>
+</head>
+
+<body>
+<h2>Using the HttpRequest Object</h2>
+<!--
+<p><b>Status:</b>
+<span id="A1"></span>
+</p>
+
+<p><b>Status text:</b>
+<span id="A2"></span>
+</p>
+
+<p><b>Response:</b>
+<br /><span id="A3"></span>
+</p>
+-->
+<form name="XMLtest">
+<!-- ArgValue:<input id='ArgValue' name="ArgValue" type='text'/><br>
+RefnumValue:<input id='RefnumValue' name="RefnumValue" type='text'/>
+<p>
+Return XML:<br -->
+<textarea name="retXML" id="retXML" rows="20" cols="100">
+</textarea>
+<input value="Send" type="button" onclick="loadXMLDoc('http://YOUR.OTM.SERVER/GC3/glog.integration.servlet.WMServlet')">
+
+<!-- div style='visibility: hidden;' -->
+<textarea name="myXML" rows="20" cols="100">
+&lt;Transmission&gt;
+
+&lt;/Transmission&gt;
+</textarea>
+<!-- /div -->
+
+</form>
+
+</body>
+</html>

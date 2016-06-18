@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet xmlns:miscHelper="http://www.jclark.com/xt/java/glog.webserver.util.MiscellaneousHelper" xmlns:translator="http://www.jclark.com/xt/java/glog.webserver.i18n.Translator" xmlns:util="http://www.jclark.com/xt/java/glog.webserver.util.Util" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xt="http://www.jclark.com/xt" exclude-result-prefixes="miscHelper translator util xt" version="1.0">
+
+
+
+  <xsl:import href="file:comm/otm/StdWidgets.xsl"/>
+  <xsl:import href="file:themes/themes.xsl"/>
+  <xsl:output method="html"/>
+
+  <xsl:template match="/">
+     <html>
+       <head><xsl:call-template name="set_url_prefix"/>
+        <xsl:call-template name="css"/>
+		<link href="{$glogUrlPrefix}/css/finder/finder.css" rel="styleSheet" type="text/css"/>
+	    <script language="javascript" type="text/javascript" src="{util:format-url('glog.webserver.util.JSTranslatorServlet')}"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/validation/validation.js"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/comm/otm/calendar.js"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/finder/find.js"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/finder/finderwin.js"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/help.js"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/comm/fields.js"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/comm/IWindow.js"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/finder/SavedQueries.js"/>
+        <script language="javascript" type="text/javascript">
+
+	        	var cantEditSvdQry = '<xsl:value-of select="miscHelper:get-escaped-translated-value-for-java-script('alertmessage.cantEditSavedQuery')"/>';
+	        	var selectAQueryToEdit="<xsl:value-of select="miscHelper:get-escaped-translated-value-for-java-script('alertmessage.selectAQueryToEdit')"/>";
+	        	var Searching="<xsl:value-of select="miscHelper:get-escaped-translated-value-for-java-script('button.Searching')"/>";
+        </script>
+        <script>
+           var newLink= '';
+
+           <xsl:apply-templates select="/form_attributes/saved_query" mode="first"/>
+
+           function goButtonSubmit(servlet) {
+              parent.body.document.search.redirect_url.value = servlet;
+              parent.body.document.search.target="_parent";
+           parent.body.document.search.action="<xsl:value-of select="util:format-url('glog.webserver.finder.ActionResultServlet')"/>";
+              performSearch();
+             }
+
+           function exportButtonSubmit(servlet) {
+              var redir = parent.body.document.search.redirect_url.value;
+              var finder_action = parent.body.document.search.action;
+              var finder_target = parent.body.document.search.target;
+              parent.body.document.search.redirect_url.value = servlet;
+              parent.body.document.search.target="export_frame";
+           parent.body.document.search.action="<xsl:value-of select="util:format-url('glog.webserver.finder.ActionResultServlet')"/>";
+              performSearch();
+
+              parent.body.document.search.redirect_url.value = redir;
+              parent.body.document.search.action = finder_action;
+              parent.body.document.search.target = finder_target;
+           }
+
+
+           function performMainSearch(type) {
+
+               if(!parent.body.document.search) {
+                  alert("<xsl:value-of select="miscHelper:get-escaped-translated-value-for-java-script('alertmessage.entireWindowToLoad')"/>");
+                  return;
+               }
+
+               x = document.savedqueryform.query_selectedName;
+               if (type == 'Execute') {
+                    if (x.value == '') {
+                        alert("<xsl:value-of select="miscHelper:get-escaped-translated-value-for-java-script('alertmessage.selectAQuery')"/>");
+                        return;
+                    }
+                    var result = evaluateSavedQuery(document.savedqueryform, '<xsl:value-of select="/form_attributes/hidden[@name='query_name']/@value"/>', x.value, parent.body.document);
+                    if (result == false) {
+                        return;
+                    }
+
+                    parent.body.document.search.elements['ignore_request'].value = 'Y';
+                    parent.body.document.search.elements['saved_query_name'].value = x.value;
+               }
+
+               if(document.management_main.searching == 'true')
+                  return;
+               else
+                  document.management_main.searching = 'true';
+
+              disableButtonByName('search_button',Searching);
+
+              if(!validateFinder()){
+                alert("<xsl:value-of select="miscHelper:get-escaped-translated-value-for-java-script('alertmessage.commaSeparatedList')"/>");
+                hidePacifier('search_button');
+                document.management_main.searching = 'false';
+                enableButtonByName('search_button');
+                return;
+              }
+
+               parent.body.document.search.target="_parent";
+           parent.body.document.search.action="<xsl:value-of select="util:format-url('glog.webserver.finder.ResultServlet')"/>";
+
+               performSearch();
+               
+          /* Added For Bug# 7322423 */
+                
+              if(document.management_main.searching == 'false')
+               {
+                enableButtonByName('search_button');
+               }
+           }
+
+           function launchLists() {
+           parent.document.location.href='<xsl:value-of select="util:format-url(concat('glog.webserver.list.ListManagementServlet?data_query_type=',/form_attributes/@data_query_type,'&amp;workspace_gid=DEFAULT&amp;finder_set_gid=',/form_attributes/hidden[@name= 'finder_set_gid']/@value))"/>';
+           }
+
+           function performSearch() {
+                var target = parent.body.document.search;
+                target.finder_submit.onchange();
+           }
+
+          function loadFinderActionFrame(left, top, queryName, finderSetGid) {
+              loadActionFrame(queryName, finderSetGid, parent.body.document);
+          }
+
+
+          function loadSavedQueryActionFrame(left, top, queryName, finderSetGid) {
+             x = document.savedqueryform.query_selectedName;
+
+             if (x.value == '') {
+                alert("<xsl:value-of select="miscHelper:get-escaped-translated-value-for-java-script('alertmessage.selectAQuery')"/>");
+                return;
+             }
+
+             parent.body.document.search.elements['saved_query_name'].value = x.value;
+             parent.body.document.search.elements['ignore_request'].value = 'Y';
+             loadActionFrame(queryName, finderSetGid, parent.body.document);
+          }
+         </script>
+       </head>
+       <body class="{$sBodyClass}">
+
+<table class="{$buttonsContClass}" border="0">
+	<tr>
+		    <form name="management_main" searching="false">
+			<td>
+
+		   		<xsl:call-template name="button">
+				<xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('button.search')"/></xsl:with-param>
+				<xsl:with-param name="href">javascript:this.focus();performMainSearch('Search');</xsl:with-param>
+				<xsl:with-param name="name">search_button</xsl:with-param>
+				<xsl:with-param name="width"/>
+				</xsl:call-template>
+
+		   </td>
+		        <xsl:if test="/form_attributes/hidden[@name='finder_allow_new' and @value='true']">
+                  <xsl:choose>
+                    <xsl:when test="/form_attributes/hidden[@name='handler_name']">
+                      <td>
+                        <xsl:call-template name="button">
+                          <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('button.new')"/></xsl:with-param>
+                          <xsl:with-param name="href"><xsl:value-of select="util:format-url(concat('glog.webserver.powerdata.GenericManagementServlet?new=y&amp;handler_name=',util:escape-u-r-l(string(/form_attributes/hidden[@name='handler_name']/@value))))"/></xsl:with-param>
+                          <xsl:with-param name="width"/>
+                          <xsl:with-param name="id">new</xsl:with-param>
+                          <xsl:with-param name="target">_parent</xsl:with-param>
+                        </xsl:call-template>
+                      </td>
+                    </xsl:when>
+                    <xsl:when test="/form_attributes/hidden[@name='new_url']">
+                      <xsl:if test="not(/form_attributes/hidden[@name='non_management' and @value='true'])">
+                        <td>
+                          <xsl:variable name="seperator">
+                            <xsl:choose>
+                             <xsl:when test="contains(/form_attributes/hidden[@name='new_url']/@value, '?')">&amp;</xsl:when>
+                             <xsl:otherwise>?</xsl:otherwise>
+                            </xsl:choose>
+                            </xsl:variable>
+                          <xsl:call-template name="button">
+                            <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('button.new')"/></xsl:with-param>
+                            <xsl:with-param name="href"><xsl:value-of select="/form_attributes/hidden[@name='new_url']/@value"/><xsl:value-of select="$seperator"/>management_action=edit&amp;new=y&amp;finder_set_gid=<xsl:value-of select="/form_attributes/hidden[@name='finder_set_gid']/@value"/></xsl:with-param>
+                            <xsl:with-param name="width"/>
+                            <xsl:with-param name="accesskey">c</xsl:with-param>
+                            <xsl:with-param name="id">new</xsl:with-param>
+                            <xsl:with-param name="target">_parent</xsl:with-param>
+                          </xsl:call-template>
+                        </td>
+                      </xsl:if>
+                    </xsl:when>
+                  </xsl:choose>
+                </xsl:if>
+		   <td>
+             <xsl:call-template name="button">
+               <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('button.sortorder')"/></xsl:with-param>
+               <xsl:with-param name="href">javascript:PopupSortWin()</xsl:with-param>
+               <xsl:with-param name="width"/>
+             </xsl:call-template>
+           </td>
+           <xsl:if test="not(/form_attributes/@data_query_type = '') and not(/form_attributes/hidden[@name='hide_lists' and @value='true'])">
+             <td>
+               <xsl:call-template name="button">
+                 <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('button.lists')"/></xsl:with-param>
+                 <xsl:with-param name="href">javascript:launchLists();</xsl:with-param>
+                 <xsl:with-param name="width"/>
+               </xsl:call-template>
+             </td>
+           </xsl:if>
+<!-- [Original] <xsl:if test="not(/form_attributes/@action_count = 0)"> -->
+<!-- Modify @value to the screen set you would like to remove actions -->	
+           <xsl:if test="not(/form_attributes/@action_count = 0) and not(/form_attributes/hidden[@name='finder_set_gid' and @value='CN370.IDS_SH'])">
+             <td>
+               <xsl:call-template name="button">
+                 <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('button.actions')"/></xsl:with-param>
+                 <xsl:with-param name="href">javascript:void(1);</xsl:with-param>
+                 <xsl:with-param name="onClick">return loadFinderActionFrame(event.screenX, event.screenY, '<xsl:value-of select="/form_attributes/hidden[@name='query_name']/@value"/>', '<xsl:value-of select="/form_attributes/hidden[@name='finder_set_gid']/@value"/>');</xsl:with-param>
+                 <xsl:with-param name="accesskey">a</xsl:with-param>
+               </xsl:call-template>
+             </td>
+           </xsl:if>
+           <xsl:if test="string(/form_attributes/@query_finder_adapter) = 'true' and not(/form_attributes/hidden[@name='hide_export' and @value='true'])">
+             <td>
+               <xsl:call-template name="button">
+                 <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('button.export')"/></xsl:with-param>
+                 <xsl:with-param name="href">javascript:void(1);</xsl:with-param>
+                 <xsl:with-param name="onClick">return exportButtonSubmit('<xsl:value-of select="util:format-url('glog.webserver.finder.ExportResultsServlet')"/>');</xsl:with-param>
+                 <xsl:with-param name="accesskey">a</xsl:with-param>
+               </xsl:call-template>
+             </td>
+           </xsl:if>
+         </form>
+         <xsl:apply-templates select="/form_attributes/saved_query" mode="second"/>
+		</tr>
+	</table>
+       </body>
+     </html>
+  </xsl:template>
+
+
+  <xsl:template match="/form_attributes/saved_query" mode="first">
+    function savedQueryOnChange(x) {
+    <xsl:for-each select="field">
+      <xsl:text>
+          document.forms['savedqueryform'].elements['display_</xsl:text><xsl:value-of select="@name"/><xsl:text>'].value = x.options[x.selectedIndex].text;
+          document.forms['savedqueryform'].elements['query_selectedIndex'].value = x.selectedIndex;
+          document.forms['savedqueryform'].elements['query_selectedName'].value = x.options[x.selectedIndex].text;
+        </xsl:text>
+      </xsl:for-each>
+      }
+
+    function editSavedQuery() {
+    
+	        	var cantEditSvdQry = '<xsl:value-of select="miscHelper:get-escaped-translated-value-for-java-script('alertmessage.cantEditSavedQuery')"/>';
+	        	var selectAQueryToEdit="<xsl:value-of select="miscHelper:get-escaped-translated-value-for-java-script('alertmessage.selectAQueryToEdit')"/>";
+    
+      <xsl:for-each select="field">
+        <xsl:text>
+          if (document.forms['savedqueryform'].elements['query_selectedIndex'].value == 0)
+            alert(selectAQueryToEdit);
+          else if(document.forms['savedqueryform'].elements['query_selectedIndex'].value == 'TESTING USE IN FINDER') {
+            alert(cantEditSvdQry);
+          }
+          else
+            reloadWindow();
+
+          return;
+        </xsl:text>
+      </xsl:for-each>
+    }
+    </xsl:template>
+
+
+
+<xsl:template match="/form_attributes/saved_query" mode="second">
+    <xsl:param name="showExecute">true</xsl:param>
+    <xsl:param name="showActions">true</xsl:param>
+    <form name="savedqueryform">
+	        <input type="hidden" name="sort_col1" value=""/>
+	        <input type="hidden" name="sort_col2" value=""/>
+	        <input type="hidden" name="sort_col3" value=""/>
+         	<input type="hidden" name="sort_col1_ascend" value=""/>
+          	<input type="hidden" name="sort_col2_ascend" value=""/>
+          	<input type="hidden" name="sort_col3_ascend" value=""/>
+          	<input type="hidden" name="query_selectedIndex" value=""/>
+          	<input type="hidden" name="query_selectedName" value="{field/@value}"/>
+          	<input type="hidden" name="saved_query_name" value=""/>
+            <input type="hidden" name="saved_query_params" value=""/>
+
+              <xsl:if test="not(/form_attributes/hidden[@name='hide_queries' and @value='true'])">
+		<td>
+			<table class="{$boxClass}"><tr><td>
+                  <span class="{$labelNoWrapClass}"><xsl:value-of select="translator:get-translated-value('label.SavedQuery')"/>:</span>
+                </td>
+                <td style="padding-right: 5px">
+                  <xsl:for-each select="field">
+                    <xsl:variable name="value">
+                      <xsl:choose>
+                        <xsl:when test="@value = ''"><xsl:value-of select="/form_attributes/hidden[@name='saved_query_name']/@value"/></xsl:when>
+                        <xsl:otherwise><xsl:value-of select="@value"/></xsl:otherwise>
+                      </xsl:choose>
+                    </xsl:variable>
+                    <SELECT name="{@name}" onChange="javascript: savedQueryOnChange(this);">
+                      <option value=""/>
+                      <xsl:for-each select="item">
+                        <option value="{@value}">
+                          <xsl:if test="$value = @value">
+                            <xsl:attribute name="selected">on</xsl:attribute>
+                            <script>document.forms['savedqueryform'].elements['query_selectedIndex'].value = '<xsl:value-of select="position()"/>';</script>
+                          </xsl:if>
+                          <xsl:value-of select="@display"/>
+                        </option>
+                      </xsl:for-each>
+                    </SELECT>
+                    <input type="hidden" name="display_{@name}" value="{@value}"/>
+                  </xsl:for-each></td>
+            <xsl:if test="$showExecute='true'">
+                <td>
+                  <xsl:call-template name="button">
+                    <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('button.executequery')"/></xsl:with-param>
+                    <xsl:with-param name="href">javascript:void(1);</xsl:with-param>
+                    <xsl:with-param name="onClick">performMainSearch('Execute');</xsl:with-param>
+                    <xsl:with-param name="width"/>
+                  </xsl:call-template>
+                </td>
+            </xsl:if>
+<!-- [Original] <xsl:if test="not(/form_attributes/@action_count=0)"> -->
+<!-- Modify @value to the screen set you would like to remove actions -->			
+                <xsl:if test="not(/form_attributes/@action_count=0) and not(/form_attributes/hidden[@name='finder_set_gid' and @value='CN370.IDS_SH'])">
+                <xsl:if test="$showActions='true'">
+                <td>
+                  <xsl:call-template name="button">
+                    <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('button.actions')"/></xsl:with-param>
+                    <xsl:with-param name="href">javascript:void(1);</xsl:with-param>
+                    <xsl:with-param name="onClick">return loadSavedQueryActionFrame(event.screenX, event.screenY, '<xsl:value-of select="/form_attributes/hidden[@name='query_name']/@value"/>', '<xsl:value-of select="/form_attributes/hidden[@name='finder_set_gid']/@value"/>');</xsl:with-param>
+                    <xsl:with-param name="accesskey">a</xsl:with-param>
+                  </xsl:call-template>
+                </td>
+                </xsl:if>
+                </xsl:if>
+                <td>
+                  <xsl:call-template name="button">
+                    <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('button.edit')"/></xsl:with-param>
+                    <xsl:with-param name="href">javascript:void(1);</xsl:with-param>
+                    <xsl:with-param name="width"/>
+                    <xsl:with-param name="onClick">return editSavedQuery();</xsl:with-param>
+                  </xsl:call-template>
+                </td>
+                <td>
+                  <xsl:call-template name="button">
+                    <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('button.save')"/></xsl:with-param>
+                    <xsl:with-param name="href">javascript:void(1);</xsl:with-param>
+                    <xsl:with-param name="onClick">javascript:PopupSavedQueryWin()</xsl:with-param>
+                    <xsl:with-param name="width"/>
+                  </xsl:call-template>
+                </td>
+              </tr></table>
+		</td>
+		                </xsl:if>
+          </form>
+
+      </xsl:template>
+
+
+      <xsl:template match="/finder/form_attributes" mode="dependent">
+        <xsl:for-each select="hidden">
+          <xsl:element name="input">
+            <xsl:attribute name="type">hidden</xsl:attribute>
+            <xsl:attribute name="name"><xsl:value-of select="@name"/></xsl:attribute>
+            <xsl:attribute name="value"><xsl:value-of select="@value"/></xsl:attribute>
+          </xsl:element>
+        </xsl:for-each>
+      </xsl:template>
+
+    </xsl:stylesheet>

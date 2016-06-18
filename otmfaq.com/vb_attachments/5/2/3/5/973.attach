@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet  xmlns:translator="http://www.jclark.com/xt/java/glog.webserver.i18n.Translator" xmlns:miscHelper="http://www.jclark.com/xt/java/glog.webserver.util.MiscellaneousHelper" xmlns:util="http://www.jclark.com/xt/java/glog.webserver.util.Util" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xt="http://www.jclark.com/xt" exclude-result-prefixes="translator util xt" version="1.0">
+  <xsl:import href="file:comm/otm/Fields.xsl"/>
+  <xsl:import href="file:comm/otm/Header.xsl"/>
+  <xsl:import href="file:comm/otm/StdWidgets.xsl"/>
+  <xsl:import href="file:comm/otm/Style.xsl"/>
+  <xsl:import href="file:comm/otm/comm.xsl"/>
+  <xsl:import href="file:comm/otm/Remarks.xsl"/>
+  <xsl:import href="file:themes/themes.xsl"/>
+
+  <xsl:output method="html"/>
+
+  <xsl:template match="/">
+    <html>
+      <head><xsl:call-template name="set_url_prefix"/>
+        <xsl:call-template name="setPageTitle"/>
+              <script language="javascript" type="text/javascript" src="{util:format-url('glog.webserver.util.JSTranslatorServlet')}"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/finder/find.js"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/validation/validation.js"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/comm/fields.js"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/comm/otm/grids.js"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/comm/otm/text.js"/>        
+        <xsl:call-template name="css"/>
+      </head>
+
+      <body class="{$mBodyClass}">
+        <xsl:call-template name="manageheader"/>
+        <xsl:call-template name="help">
+            <xsl:with-param name="help_id">helpManage</xsl:with-param>
+            <xsl:with-param name="help_url">/html/help/webhelp/planning/shipment_manager/adjust_shipment_costs_detail.htm</xsl:with-param>
+        </xsl:call-template>
+
+        <form name="management_main" method="post" action="{util:format-url('glog.webserver.shipment.ShipmentUpdateServlet')}" onSubmit="return checkData('management_main');">
+          <input type="hidden" name="ID" value="{@ID}"/>
+          <input type="hidden" name="document_name" value="shipment_cost_document"/>
+          <input type="hidden" name="redirect" value="{util:format-url('glog.webserver.uic.shipment.GetAdjustShipmentCostUpdate')}"/>
+          <input type="hidden" name="grid_name" value=""/>
+          <input type="hidden" name="grid_action" value=""/>
+          <input type="hidden" name="grid_position" value=""/>
+
+          <xsl:apply-templates select="shipment_cost"/>
+          <xsl:call-template name="management_footer"/>
+        </form>
+      </body>
+    </html>
+  </xsl:template>
+
+  <xsl:template name="footer_content">
+    <table class="{$buttonsContClass}">
+        <tr>
+            <td>
+              <xsl:call-template name="button">
+                <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('button.ok')"/></xsl:with-param>
+                <xsl:with-param name="href">javascript:if(checkData('management_main'))document.management_main.submit();</xsl:with-param>
+                <xsl:with-param name="id">ok</xsl:with-param>
+              </xsl:call-template>
+            </td>
+         </tr>
+     </table>
+  </xsl:template>
+
+  <xsl:template match="shipment_cost">
+    <xsl:call-template name="action_management_folder"/>
+  </xsl:template>
+
+  <xsl:template name="invoke_sections">
+    <xsl:call-template name="section1"/>
+    <xsl:call-template name="horizontal_rule"/>
+    <xsl:if test="not(adjustment_type='REVERSE_ONLY') and not(adjustment_type='ADJUST_ONLY')">
+      <xsl:call-template name="section2"/>
+      <xsl:call-template name="horizontal_rule"/>
+    </xsl:if>
+    <xsl:call-template name="section3"/>
+  </xsl:template>
+
+  <xsl:template name="content1">
+    <xsl:call-template name="CommShipmentRef_EnterShipmentCostHeader"/>
+  </xsl:template>
+
+  <xsl:template name="content2">
+    <xsl:call-template name="CommShipmentRef_ShipmentCostRefGrid">
+      <xsl:with-param name="CallingXSLFile">shipment/ShipmentCost.xsl</xsl:with-param>
+    </xsl:call-template>
+  </xsl:template>
+
+  <xsl:template name="content3">
+    <xsl:call-template name="Remarks">
+      <xsl:with-param name="query">glog.server.query.shipment.ShipmentCostRemarkQuery</xsl:with-param>
+      <xsl:with-param name="master">shipment_cost_remarks</xsl:with-param>
+      <xsl:with-param name="child">shipment_cost_remark</xsl:with-param>
+      <xsl:with-param name="remarkNodes"><xsl:copy-of select="shipment_cost_remarks/shipment_cost_remark"/></xsl:with-param>
+      <xsl:with-param name="remarkSequence">remark_seq</xsl:with-param>
+    </xsl:call-template>
+  </xsl:template>
+
+  <xsl:template name="CommShipmentRef_EnterShipmentCostHeader">
+    <xsl:if test="not(adjustment_type='')">
+      <tr>
+        <td>
+          <xsl:call-template name="fieldNumber">
+            <xsl:with-param name="name">shipment_cost/seqno</xsl:with-param>
+            <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('label.CostID')"/></xsl:with-param>
+            <xsl:with-param name="form">management_main</xsl:with-param>
+            <xsl:with-param name="value"><xsl:value-of select="seqno"/></xsl:with-param>
+            <xsl:with-param name="query">false</xsl:with-param>
+            <xsl:with-param name="prec">0</xsl:with-param>
+            <xsl:with-param name="readonly">true</xsl:with-param>
+          </xsl:call-template>
+        </td>
+        <td colspan="3">
+          <xsl:call-template name="fieldTextArea">
+            <xsl:with-param name="name">details</xsl:with-param>
+            <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('label.Details')"/></xsl:with-param>
+            <xsl:with-param name="form">management_main</xsl:with-param>
+            <xsl:with-param name="value"/>
+            <xsl:with-param name="query">false</xsl:with-param>
+            <xsl:with-param name="max">4000</xsl:with-param>
+            <xsl:with-param name="rows"><xsl:number value="count(shipment_cost_details/shipment_cost_detail)"/></xsl:with-param>
+            <xsl:with-param name="wrap">hard</xsl:with-param>
+            <xsl:with-param name="columns">75</xsl:with-param>
+            <xsl:with-param name="readonly">true</xsl:with-param>
+          </xsl:call-template>
+
+          <script>
+            <xsl:for-each select="shipment_cost_details/shipment_cost_detail">
+              <xsl:sort select="detail_seqno" data-type="number"/>
+              document.management_main.elements['details'].value += '<xsl:value-of select="miscHelper:escape-string-for-java-script(string(detail))"/>\r\n';
+            </xsl:for-each>
+          </script>
+        </td>
+      </tr>
+    </xsl:if>
+
+      <xsl:if test="not(adjustment_type='REVERSE_ONLY')">
+        <tr>
+          <xsl:if test="not(adjustment_type='ADJUST_ONLY')">
+            <td>
+              <xsl:call-template name="fieldFixedDropList">
+                  <xsl:with-param name="name">shipment_cost/cost_type</xsl:with-param>
+                  <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('label.CostType')"/></xsl:with-param>
+                  <xsl:with-param name="form">management_main</xsl:with-param>
+                  <xsl:with-param name="valueID"><xsl:value-of select="cost_type"/></xsl:with-param>
+                  <xsl:with-param name="value"><xsl:value-of select="cost_type"/></xsl:with-param>
+                  <xsl:with-param name="query">false</xsl:with-param>
+                  <xsl:with-param name="size">15</xsl:with-param>
+                  <xsl:with-param name="required">true</xsl:with-param>
+                  <xsl:with-param name="options">
+                    <options>
+                      <option value=""/>
+					  <!--
+                      <option value="B" name="Base"/>
+					  -->
+                      <option value="A" name="Accessorial"/>
+                      <option value="S" name="Stop-off Charge"/>
+                      <option value="D" name="Discount"/>
+                      <option value="C" name="Circuity Charge"/>
+                      <option value="L" name="Delta"/>
+                      <option value="O" name="Other"/>
+                    </options>
+                  </xsl:with-param>
+                </xsl:call-template>
+            </td>
+          </xsl:if>
+
+              <td>
+                <xsl:call-template name="uomFieldCurrency">
+                  <xsl:with-param name="name">shipment_cost/cost</xsl:with-param>
+                  <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('field.shipment_cost/cost')"/></xsl:with-param>
+                  <xsl:with-param name="form">management_main</xsl:with-param>
+                  <xsl:with-param name="query">false</xsl:with-param>
+                  <xsl:with-param name="value"><xsl:copy-of select="cost"/></xsl:with-param>
+                  <xsl:with-param name="size">15</xsl:with-param>
+                  <xsl:with-param name="currency"><xsl:value-of select="cost/@CR"/></xsl:with-param>
+                  <xsl:with-param name="required">true</xsl:with-param>
+                  <xsl:with-param name="prec">2</xsl:with-param>
+                  <xsl:with-param name="max">10</xsl:with-param>
+                  <xsl:with-param name="minValue">-999999999</xsl:with-param>
+                  <xsl:with-param name="allowNeg">true</xsl:with-param>
+                </xsl:call-template>
+              </td>
+
+          <xsl:if test="not(adjustment_type='ADJUST_ONLY')">
+              <td>
+                <xsl:call-template name="fieldBoolean">
+                  <xsl:with-param name="name">shipment_cost/is_cost_fixed</xsl:with-param>
+            <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('field.shipment_cost/is_cost_fixed')"/></xsl:with-param>
+                  <xsl:with-param name="query">false</xsl:with-param>
+                  <xsl:with-param name="value"><xsl:value-of select="is_cost_fixed"/></xsl:with-param>
+                </xsl:call-template>
+             </td>
+             <td>
+               <xsl:call-template name="fieldBoolean">
+                 <xsl:with-param name="name">shipment_cost/process_as_flow_through</xsl:with-param>
+                 <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('field.shipment_cost/process_as_flow_through')"/></xsl:with-param>
+                 <xsl:with-param name="query">false</xsl:with-param>
+                 <xsl:with-param name="value"><xsl:value-of select="process_as_flow_through"/></xsl:with-param>
+               </xsl:call-template>
+             </td>
+          </xsl:if>
+        </tr>
+      </xsl:if>
+
+        <tr>
+          <xsl:if test="not(adjustment_type='REVERSE_ONLY') and not(adjustment_type='ADJUST_ONLY')">
+             <td>
+                  <xsl:call-template name="fieldPickList">
+                  <xsl:with-param name="name">shipment_cost/accessorial_code/xid</xsl:with-param>
+                  <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('field.shipment_cost/accessorial_code/xid')"/></xsl:with-param>
+                  <xsl:with-param name="form">management_main</xsl:with-param>
+                  <xsl:with-param name="query_name">glog.server.query.powerdata.AccessorialCodeQuery</xsl:with-param>
+                  <xsl:with-param name="valueID"><xsl:value-of select="accessorial_code/xid/@ID"/></xsl:with-param>
+                  <xsl:with-param name="value"><xsl:value-of select="accessorial_code/xid"/></xsl:with-param>
+                  <xsl:with-param name="required">false</xsl:with-param>
+                  </xsl:call-template>
+              </td>
+             <td>
+                  <xsl:call-template name="fieldPickList">
+                  <xsl:with-param name="name">shipment_cost/general_ledger_code/xid</xsl:with-param>
+                  <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('label.GeneralLedgerCode')"/></xsl:with-param>
+                  <xsl:with-param name="form">management_main</xsl:with-param>
+                  <xsl:with-param name="query_name">glog.server.query.invoice.GeneralLedgerCodeQuery</xsl:with-param>
+                  <xsl:with-param name="valueID"><xsl:value-of select="general_ledger_code/xid/@ID"/></xsl:with-param>
+                  <xsl:with-param name="value"><xsl:value-of select="general_ledger_code/xid"/></xsl:with-param>
+                  <xsl:with-param name="required">false</xsl:with-param>
+                  </xsl:call-template>
+              </td>
+             <td>
+                  <xsl:call-template name="fieldPickList">
+                  <xsl:with-param name="name">shipment_cost/payment_method_code/xid</xsl:with-param>
+                  <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('label.PayMethodCode')"/></xsl:with-param>
+                  <xsl:with-param name="form">management_main</xsl:with-param>
+                  <xsl:with-param name="query_name">glog.server.query.powerdata.StandardPaymentMethodCodeQuery</xsl:with-param>
+                  <xsl:with-param name="valueID"><xsl:value-of select="payment_method_code/xid/@ID"/></xsl:with-param>
+                  <xsl:with-param name="value"><xsl:value-of select="payment_method_code/xid"/></xsl:with-param>
+                  <xsl:with-param name="required">false</xsl:with-param>
+                  </xsl:call-template>
+              </td>
+          </xsl:if>
+
+              <td>
+                  <xsl:call-template name="fieldPickList">
+                    <xsl:with-param name="name">shipment_cost/adjustment_reason/xid</xsl:with-param>
+                  <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('field.shipment_cost/adjustment_reason/xid')"/></xsl:with-param>
+                  <xsl:with-param name="form">management_main</xsl:with-param>
+                  <xsl:with-param name="query_name">glog.server.query.invoice.AdjustmentReasonQuery</xsl:with-param>
+                  <xsl:with-param name="valueID"><xsl:value-of select="adjustment_reason/xid/@ID"/></xsl:with-param>
+                  <xsl:with-param name="value"><xsl:value-of select="adjustment_reason/xid"/></xsl:with-param>
+                  <xsl:with-param name="required">true</xsl:with-param>
+                  </xsl:call-template>
+              </td>
+        </tr>
+  </xsl:template>
+
+  <xsl:template name="CommShipmentRef_ShipmentCostRefGrid">
+    <xsl:call-template name="section15">
+        <xsl:with-param name="name" select="translator:get-translated-value('label.Lines')"/>
+        <xsl:with-param name="tableId">table_shipment_cost_ref_grid</xsl:with-param>
+        <xsl:with-param name="anchorName">shipment_cost_ref_grid</xsl:with-param>
+        <xsl:with-param name="sectionType">grid</xsl:with-param>
+    </xsl:call-template>
+  </xsl:template>
+
+  <xsl:template name="content15header">
+    <xsl:call-template name="gridDefinition">
+        <xsl:with-param name="gridName">shipment_cost_ref_grid</xsl:with-param>
+        <xsl:with-param name="queryName">glog.server.query.shipment.ShipmentCostRefQuery</xsl:with-param>
+        <xsl:with-param name="masterElementName">shipment_cost_refs</xsl:with-param>
+        <xsl:with-param name="childElementName">shipment_cost_ref</xsl:with-param>
+        <xsl:with-param name="clientGrid">true</xsl:with-param>
+    </xsl:call-template>
+
+    <tr>
+        <xsl:call-template name="shipment_cost_ref_grid_fields"/>
+
+        <td class="{$mGridHeaderButtonsCellClass}">
+          <table class="{$mGridButtonsContClass}"><tr><td>
+              <xsl:call-template name="buttongridsave">
+                <xsl:with-param name="href">javascript:addGridElement('shipment_cost_ref_grid', 'management_main', false);</xsl:with-param>
+                <xsl:with-param name="onClick">return checkGrid('shipment_cost_ref_grid');</xsl:with-param>
+        </xsl:call-template>
+        </td></tr></table>
+        </td>
+    </tr>
+  </xsl:template>
+
+  <xsl:template name="content15">
+    <xsl:apply-templates select="shipment_cost_refs"/>
+  </xsl:template>
+
+  <xsl:template match="shipment_cost_refs">
+    <xsl:for-each select="shipment_cost_ref">
+      <input type="hidden"  name="new_grid_field_shipment_cost_ref_grid" value="{@ID}" id="new_grid_field_shipment_cost_ref_grid_{@ID}"/>
+      <input type="hidden" name="grid_action_shipment_cost_ref_grid_{@ID}" value="ignore"/>
+      <input type="hidden" name="grid_position_{@ID}" value="{position()}"/>
+      <xsl:variable name="className"><xsl:call-template name="getMGridRowBGClass"><xsl:with-param name="position" select="position()"/></xsl:call-template></xsl:variable>
+      <tr class="{$className}" id="{@ID}">
+        <xsl:call-template name="shipment_cost_ref_grid_fields">
+          <xsl:with-param name="gridrow"><xsl:value-of select="position()"/></xsl:with-param>
+        </xsl:call-template>
+
+        <td class="{$mGridBodyButtonsCellClass}">
+            <table class="{$mGridButtonsContClass}"><tr><td>
+        <xsl:call-template name="buttongriddelete">
+           <xsl:with-param name="grid">shipment_cost_ref_grid</xsl:with-param>
+           <xsl:with-param name="delhref">javascript:void(0);</xsl:with-param>
+           <xsl:with-param name="delOverride">deleteChildGrid('shipment_cost_ref_grid', '<xsl:value-of select="util:escape-quotes(@ID)"/>');</xsl:with-param>
+         </xsl:call-template>
+         </td></tr></table>
+            </td>
+          </tr>
+    </xsl:for-each>
+  </xsl:template>
+
+  <xsl:template name="shipment_cost_ref_grid_fields">
+    <xsl:param name="gridrow">0</xsl:param>
+
+    <xsl:variable name="cellClassName">
+        <xsl:call-template name="getMGridRowCellClass">
+            <xsl:with-param name="rowNum" select="$gridrow"/>
+        </xsl:call-template>
+    </xsl:variable>
+    <td class="{$cellClassName}">
+        <xsl:call-template name="fieldFixedDropList">
+            <xsl:with-param name="name">shipment_cost_ref/cost_reference_gid</xsl:with-param>
+            <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('label.order_release_line_xid')"/></xsl:with-param>
+            <xsl:with-param name="form">management_main</xsl:with-param>
+            <xsl:with-param name="valueID"><xsl:value-of select="cost_reference_gid/@ID"/></xsl:with-param>
+            <xsl:with-param name="value"><xsl:value-of select="cost_reference_gid"/></xsl:with-param>
+            <xsl:with-param name="grid">shipment_cost_ref_grid</xsl:with-param>
+            <xsl:with-param name="required">true</xsl:with-param>
+            <xsl:with-param name="gridrow"><xsl:value-of select="$gridrow"/></xsl:with-param>
+            <xsl:with-param name="options"><xsl:copy-of select="//shipment_cost/order_release_lines"/></xsl:with-param>
+            <xsl:with-param name="option">single</xsl:with-param>
+        </xsl:call-template>
+    </td>
+  </xsl:template>
+
+</xsl:stylesheet>

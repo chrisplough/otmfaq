@@ -1,0 +1,130 @@
+STATUS | wrapper  | 2008/06/11 18:14:27 | --> Wrapper Started as Service
+STATUS | wrapper  | 2008/06/11 18:14:28 | Launching a JVM...
+INFO   | jvm 1    | 2008/06/11 18:14:28 | [memory ] GC strategy: System optimized over pausetime (initial strategy singleconcon)
+INFO   | jvm 1    | 2008/06/11 18:14:28 | [memory ] heap size: 1049600K, maximal heap size: 1049600K
+INFO   | jvm 1    | 2008/06/11 18:14:28 | [memory ] <s>-<end>: GC <before>K-><after>K (<heap>K), <pause> ms
+INFO   | jvm 1    | 2008/06/11 18:14:28 | [memory ] <s/start> - start time of collection (seconds since jvm start)
+INFO   | jvm 1    | 2008/06/11 18:14:28 | [memory ] <end>     - end time of collection (seconds since jvm start)
+INFO   | jvm 1    | 2008/06/11 18:14:28 | [memory ] <before>  - memory used by objects before collection (KB)
+INFO   | jvm 1    | 2008/06/11 18:14:28 | [memory ] <after>   - memory used by objects after collection (KB)
+INFO   | jvm 1    | 2008/06/11 18:14:28 | [memory ] <heap>    - size of heap after collection (KB)
+INFO   | jvm 1    | 2008/06/11 18:14:28 | [memory ] <pause>   - total pause time during collection (milliseconds)
+INFO   | jvm 1    | 2008/06/11 18:14:29 | Wrapper (Version 3.1.2) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2008/06/11 18:14:29 | 
+INFO   | jvm 1    | 2008/06/11 18:14:29 | Created MBeanServer with ID: 30a6b3:11a77a7e5e4:-8000:hydhtc137458d:1
+INFO   | jvm 1    | 2008/06/11 18:14:53 |  : TRANSLATION : 0
+INFO   | jvm 1    | 2008/06/11 18:14:54 | en : TRANSLATION : 697416
+INFO   | jvm 1    | 2008/06/11 18:14:54 | en_US : TRANSLATION : 57
+INFO   | jvm 1    | 2008/06/11 18:15:25 |  : ERROR : 0
+INFO   | jvm 1    | 2008/06/11 18:15:25 | en : ERROR : 401209
+INFO   | jvm 1    | 2008/06/11 18:15:25 | en_US : ERROR : 0
+INFO   | jvm 1    | 2008/06/11 18:15:25 |  : EXPLANATION : 0
+INFO   | jvm 1    | 2008/06/11 18:15:26 | en : EXPLANATION : 65584
+INFO   | jvm 1    | 2008/06/11 18:15:26 | en_US : EXPLANATION : 0
+INFO   | jvm 1    | 2008/06/11 18:15:26 | java.sql.SQLException: ORA-00942: table or view does not exist
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 
+INFO   | jvm 1    | 2008/06/11 18:15:26 | java.sql.SQLException: ORA-00942: table or view does not exist
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:288)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:745)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:216)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:810)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1039)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at oracle.jdbc.driver.T4CPreparedStatement.executeMaybeDescribe(T4CPreparedStatement.java:850)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1134)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3339)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3384)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at weblogic.jdbc.wrapper.PreparedStatement.executeQuery(PreparedStatement.java:124)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at glog.util.jdbc.noserver.SqlQuery.executeQuery(SqlQuery.java:146)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at glog.util.jdbc.noserver.SqlQuery.resetArguments(SqlQuery.java:124)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at glog.util.jdbc.noserver.SqlQuery.open(SqlQuery.java:94)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at glog.server.useraccess.UserAccessSessionBean.getUserAccess(UserAccessSessionBean.java:151)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at glog.server.useraccess.UserAccessSessionServerSideEJBWrapper.getUserAccess(UserAccessSessionServerSideEJBWrapper.java:70)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl.getUserAccess(UserAccessSessionHome_uzvgzz_EOImpl.java:154)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl_WLSkel.invoke(Unknown Source)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:477)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at weblogic.rmi.cluster.ReplicaAwareServerRef.invoke(ReplicaAwareServerRef.java:108)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:420)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:415)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at weblogic.rmi.internal.BasicExecuteRequest.execute(BasicExecuteRequest.java:30)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:219)
+INFO   | jvm 1    | 2008/06/11 18:15:26 | 	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:178)
+INFO   | jvm 1    | 2008/06/11 18:15:51 | Authentication Failed for user DBA.ADMIN
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 	at jrockit.reflect.NativeConstructorInvoker.newInstance([Ljava.lang.Object;)Ljava.lang.Object;(Unknown Source)
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 	at java.lang.reflect.Constructor.newInstance([Ljava.lang.Object;I)Ljava.lang.Object;(Unknown Source)
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 	at glog.util.exception.GLException.factory(GLException.java:413)
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 	at glog.database.security.GLSecurityException.factory(GLSecurityException.java:40)
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 	at glog.database.security.SecurityUserImpl.authenticate(SecurityUserImpl.java:183)
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 	at glog.database.security.SecurityUtil.authenticateUser(SecurityUtil.java:74)
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 	at glog.database.security.SecuritySessionBean.authenticateUser(SecuritySessionBean.java:171)
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.authenticateUser(SecuritySessionHome_snlvan_EOImpl.java:1720)
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl_WLSkel.invoke(ILweblogic.rmi.spi.InboundRequest;Lweblogic.rmi.spi.OutboundResponse;Ljava.lang.Object;)Lweblogic.rmi.spi.OutboundResponse;(Unknown Source)
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:477)
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 	at weblogic.rmi.cluster.ReplicaAwareServerRef.invoke(ReplicaAwareServerRef.java:108)
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:420)
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:415)
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 	at weblogic.rmi.internal.BasicExecuteRequest.execute(BasicExecuteRequest.java:30)
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:219)
+INFO   | jvm 1    | 2008/06/11 18:15:51 | 	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:178)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | java.sql.SQLException: ORA-00942: table or view does not exist
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 
+INFO   | jvm 1    | 2008/06/11 18:17:17 | java.sql.SQLException: ORA-00942: table or view does not exist
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:288)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:745)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:216)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:810)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1039)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.T4CPreparedStatement.executeMaybeDescribe(T4CPreparedStatement.java:850)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1134)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3339)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3384)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.jdbc.wrapper.PreparedStatement.executeQuery(PreparedStatement.java:124)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at glog.util.jdbc.noserver.SqlQuery.executeQuery(SqlQuery.java:146)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at glog.util.jdbc.noserver.SqlQuery.resetArguments(SqlQuery.java:124)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at glog.util.jdbc.noserver.SqlQuery.open(SqlQuery.java:94)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at glog.server.useraccess.UserAccessSessionBean.getUserAccess(UserAccessSessionBean.java:151)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at glog.server.useraccess.UserAccessSessionServerSideEJBWrapper.getUserAccess(UserAccessSessionServerSideEJBWrapper.java:70)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl.getUserAccess(UserAccessSessionHome_uzvgzz_EOImpl.java:154)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at glog.server.useraccess.UserAccessSessionHome_uzvgzz_EOImpl_WLSkel.invoke(Unknown Source)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:477)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.rmi.cluster.ReplicaAwareServerRef.invoke(ReplicaAwareServerRef.java:108)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:420)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:415)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.rmi.internal.BasicExecuteRequest.execute(BasicExecuteRequest.java:30)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:219)
+INFO   | jvm 1    | 2008/06/11 18:17:17 | 	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:178)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | User GUEST not found
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at jrockit.reflect.NativeConstructorInvoker.newInstance([Ljava.lang.Object;)Ljava.lang.Object;(Unknown Source)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at java.lang.reflect.Constructor.newInstance([Ljava.lang.Object;I)Ljava.lang.Object;(Unknown Source)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at glog.util.exception.GLException.factory(GLException.java:413)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at glog.database.security.GLSecurityException.factory(GLSecurityException.java:40)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at glog.database.security.SecurityUserImpl.findReq(SecurityUserImpl.java:154)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at glog.database.security.SecurityUserImpl.authenticate(SecurityUserImpl.java:180)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at glog.database.security.SecurityUtil.authenticateUser(SecurityUtil.java:74)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at glog.database.security.SecuritySessionBean.authenticateUser(SecuritySessionBean.java:171)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl.authenticateUser(SecuritySessionHome_snlvan_EOImpl.java:1720)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at glog.database.security.SecuritySessionHome_snlvan_EOImpl_WLSkel.invoke(ILweblogic.rmi.spi.InboundRequest;Lweblogic.rmi.spi.OutboundResponse;Ljava.lang.Object;)Lweblogic.rmi.spi.OutboundResponse;(Unknown Source)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:477)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at weblogic.rmi.cluster.ReplicaAwareServerRef.invoke(ReplicaAwareServerRef.java:108)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:420)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:415)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at weblogic.rmi.internal.BasicExecuteRequest.execute(BasicExecuteRequest.java:30)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:219)
+INFO   | jvm 1    | 2008/06/11 18:17:22 | 	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:178)

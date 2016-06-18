@@ -1,0 +1,63 @@
+Microsoft Windows [Versión 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation. Reservados todos los derechos.
+
+C:\Users\user>sqlplus system/Aventia2@otmdb
+
+SQL*Plus: Release 11.2.0.1.0 Production on Mar Oct 23 10:01:33 2012
+
+Copyright (c) 1982, 2010, Oracle.  All rights reserved.
+
+
+Conectado a:
+Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> select * from product_component_version;
+
+PRODUCT
+--------------------------------------------------------------------------------
+
+VERSION
+--------------------------------------------------------------------------------
+
+STATUS
+--------------------------------------------------------------------------------
+
+NLSRTL
+11.2.0.1.0
+Production
+
+Oracle Database 11g Enterprise Edition
+11.2.0.1.0
+64bit Production
+
+PRODUCT
+--------------------------------------------------------------------------------
+
+VERSION
+--------------------------------------------------------------------------------
+
+STATUS
+--------------------------------------------------------------------------------
+
+
+PL/SQL
+11.2.0.1.0
+Production
+
+TNS for 64-bit Windows:
+11.2.0.1.0
+
+PRODUCT
+--------------------------------------------------------------------------------
+
+VERSION
+--------------------------------------------------------------------------------
+
+STATUS
+--------------------------------------------------------------------------------
+
+Production
+
+
+SQL>

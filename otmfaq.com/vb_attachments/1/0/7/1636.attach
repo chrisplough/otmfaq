@@ -1,0 +1,74 @@
+2014-08-04 13:33:47.511	202726	Debug	ContentManagement	Document TRAINING.20140804-0001: parameter (label)=OTM-0000071 [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-04 13:33:47.512	202726	Debug	ContentManagement	Document TRAINING.20140804-0001: parameter (name)=OTM-TRAINING.20140804-0001 [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-04 13:33:47.529	0	Debug	ContentManagement	Failed to retrieve external content for TRAINING.20140804-0001: cms=SHAREPOINT, id=SHAREPOINT [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-04 13:33:47.555	202754	Debug	ContentManagement	Document TRAINING.20140804-0001: parameter (label)=OTM-0000072 was OTM-0000071 [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-04 13:33:47.561	202754	Debug	CMISCalls	Creating session for http://winserver/_vti_bin/CMISSoapwsdl.aspx
+	org.apache.chemistry.opencmis.binding.spi.type=webservices
+	org.apache.chemistry.opencmis.binding.webservices.ACLService=http://winserver/_vti_bin/CMISSoapwsdl.aspx
+	org.apache.chemistry.opencmis.binding.webservices.DiscoveryService=http://winserver/_vti_bin/CMISSoapwsdl.aspx
+	org.apache.chemistry.opencmis.binding.webservices.MultiFilingService=http://winserver/_vti_bin/CMISSoapwsdl.aspx
+	org.apache.chemistry.opencmis.binding.webservices.NavigationService=http://winserver/_vti_bin/CMISSoapwsdl.aspx
+	org.apache.chemistry.opencmis.binding.webservices.ObjectService=http://winserver/_vti_bin/CMISSoapwsdl.aspx
+	org.apache.chemistry.opencmis.binding.webservices.PolicyService=http://winserver/_vti_bin/CMISSoapwsdl.aspx
+	org.apache.chemistry.opencmis.binding.webservices.RelationshipService=http://winserver/_vti_bin/CMISSoapwsdl.aspx
+	org.apache.chemistry.opencmis.binding.webservices.RepositoryService=http://winserver/_vti_bin/CMISSoapwsdl.aspx
+	org.apache.chemistry.opencmis.binding.webservices.VersioningService=http://winserver/_vti_bin/CMISSoapwsdl.aspx
+	org.apache.chemistry.opencmis.user=Administrator
+ [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-04 13:33:47.872	202754	Error	Exception	org.apache.chemistry.opencmis.commons.exceptions.CmisRuntimeException: Error: No Content-type in the header!
+
+org.apache.chemistry.opencmis.commons.exceptions.CmisRuntimeException: Error: No Content-type in the header!
+	at org.apache.chemistry.opencmis.client.bindings.spi.webservices.RepositoryServiceImpl.getRepositoryInfos(RepositoryServiceImpl.java:76)
+	at org.apache.chemistry.opencmis.client.bindings.impl.RepositoryServiceImpl.getRepositoryInfos(RepositoryServiceImpl.java:88)
+	at org.apache.chemistry.opencmis.client.runtime.SessionFactoryImpl.getRepositories(SessionFactoryImpl.java:109)
+	at org.apache.chemistry.opencmis.client.runtime.SessionFactoryImpl.getRepositories(SessionFactoryImpl.java:96)
+	at glog.server.document.cms.CmsHandlerCMIS.session(CmsHandlerCMIS.java:328)
+	at glog.server.document.cms.CmsHandlerCMIS.getRepositoryCapabilities(CmsHandlerCMIS.java:283)
+	at glog.server.document.cms.CmsHandlerCMIS.supportsUnfiling(CmsHandlerCMIS.java:63)
+	at glog.server.document.cms.CmsHandlerExternal.setContent(CmsHandlerExternal.java:57)
+	at glog.server.document.DocumentSessionBean.insertUpdateDocumentContent(DocumentSessionBean.java:260)
+	at glog.server.document.DocumentSessionServerSideEJBWrapper.insertUpdateDocumentContent(DocumentSessionServerSideEJBWrapper.java:519)
+	at glog.server.document.DocumentSessionBean.setDocumentContent(DocumentSessionBean.java:150)
+	at glog.server.document.DocumentSessionServerSideEJBWrapper.setDocumentContent(DocumentSessionServerSideEJBWrapper.java:218)
+	at glog.server.document.DocumentSessionBean.setDocumentContent(DocumentSessionBean.java:118)
+	at glog.server.document.DocumentSessionServerSideEJBWrapper.setDocumentContent(DocumentSessionServerSideEJBWrapper.java:175)
+	at glog.server.document.DocumentSessionBean.setDocumentContent(DocumentSessionBean.java:114)
+	at glog.server.document.DocumentSessionServerSideEJBWrapper.setDocumentContent(DocumentSessionServerSideEJBWrapper.java:132)
+	at glog.server.document.DocumentSessionHome_z01ru9_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at glog.server.document.DocumentSessionHome_z01ru9_EOImpl.setDocumentContent(Unknown Source)
+	at glog.server.document.gen.DocumentSessionSkel.setDocumentContent(DocumentSessionSkel.java:223)
+	at glog.server.document.gen.DocumentSessionSkel.exec(DocumentSessionSkel.java:45)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:16)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:62)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:50)
+	at glog.server.wrapper.WrapperSessionHome_a06097_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at glog.server.wrapper.WrapperSessionHome_a06097_EOImpl.execDispatch(Unknown Source)
+	at glog.server.wrapper.WrapperSessionHome_a06097_EOImpl_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:668)
+	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:230)
+	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:523)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:518)
+	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:119)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: javax.xml.ws.WebServiceException: No Content-type in the header!
+	at com.sun.xml.ws.transport.http.client.HttpTransportPipe.process(HttpTransportPipe.java:268)
+	at com.sun.xml.ws.transport.http.client.HttpTransportPipe.processRequest(HttpTransportPipe.java:124)
+	at com.sun.xml.ws.transport.DeferredTransportPipe.processRequest(DeferredTransportPipe.java:118)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.client.Stub.process(Stub.java:272)
+	at com.sun.xml.ws.client.sei.SEIStub.doProcess(SEIStub.java:153)
+	at com.sun.xml.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:115)
+	at com.sun.xml.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:95)
+	at com.sun.xml.ws.client.sei.SEIStub.invoke(SEIStub.java:136)
+	at com.sun.proxy.$Proxy144.getRepositories(Unknown Source)
+	at org.apache.chemistry.opencmis.client.bindings.spi.webservices.RepositoryServiceImpl.getRepositoryInfos(RepositoryServiceImpl.java:62)
+	... 36 more
+ [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)']

@@ -1,0 +1,52 @@
+<?php
+/*======================================================================*\
+|| #################################################################### ||
+|| # vBulletin 4.1.1 Patch Level 1 - Licence Number VBS309B87F
+|| # ---------------------------------------------------------------- # ||
+|| # Copyright ©2000-2011 vBulletin Solutions Inc. All Rights Reserved. ||
+|| # This file may not be redistributed in whole or significant part. # ||
+|| # ---------------- VBULLETIN IS NOT FREE SOFTWARE ---------------- # ||
+|| # http://www.vbulletin.com | http://www.vbulletin.com/license.html # ||
+|| #################################################################### ||
+\*======================================================================*/
+if (!VB_API) die;
+
+loadCommonWhiteList();
+
+$VB_API_WHITELIST = array(
+	'response' => array(
+		'pagenumbers', 'totalposts',
+		'activeusers' => $VB_API_WHITELIST_COMMON['activeusers'],
+		'bookmarksites' => $VB_API_WHITELIST_COMMON['bookmarksites'],
+		'FIRSTPOSTID',
+		'firstunread', 'forumrules', 'LASTPOSTID', 'nextthreadinfo',
+		'numberguest', 'numberregistered',
+		'pagenav' => $VB_API_WHITELIST_COMMON['pagenav'],
+		'pagenumber',
+		'perpage',
+		'poll' => array(
+			'pollbits' => array(
+				'*' => array(
+					'option' => array('question', 'votes', 'percentraw'),
+				),
+			),
+			'pollenddate', 'pollendtime',
+			'pollinfo' => array(
+				'pollid', 'question', 'numbervotes'
+			),
+			'pollstatus'
+		),
+		'postbits' => $VB_API_WHITELIST_COMMON['postbits'],
+		'prevthreadinfo', 'postid', 'similarthreads',
+		'tag_list',
+		'thread' => $VB_API_WHITELIST_COMMON['threadinfo'],
+		'threadlist', 'totalonline',
+	)
+);
+
+/*======================================================================*\
+|| ####################################################################
+|| # Downloaded: 17:08, Tue Jul 12th 2011
+|| # CVS: $RCSfile$ - $Revision: 35584 $
+|| ####################################################################
+\*======================================================================*/

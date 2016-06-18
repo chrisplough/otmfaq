@@ -1,0 +1,3318 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<translations>
+	<message>
+		<name>adm_cp</name>
+		<value>Admin Control Panel</value>
+	</message>
+	<message>
+		<name>cphome</name>
+		<value>vBSEO CP Home</value>
+	</message>
+	<message>
+		<name>back_to</name>
+		<value>Back to the Forums</value>
+	</message>
+	<message>
+		<name>logout</name>
+		<value>Logout</value>
+	</message>
+	<message>
+		<name>linkbacks</name>
+		<value>LinkBacks</value>
+	</message>
+	<message>
+		<name>in_linkbacks</name>
+		<value>Incoming LinkBacks</value>
+	</message>
+	<message>
+		<name>out_linkbacks</name>
+		<value>Outgoing LinkBacks</value>
+	</message>
+	<message>
+		<name>permalinks</name>
+		<value>Permalinks</value>
+	</message>
+	<message>
+		<name>patent_pending</name>
+		<value>Patent Pending</value>
+	</message>
+	<message>
+		<name>cookies_cleared</name>
+		<value>All Cookies Cleared.</value>
+	</message>
+	<message>
+		<name>click_redirect</name>
+		<value>Click here if your browser does not automatically redirect you.</value>
+	</message>
+	<message>
+		<name>error</name>
+		<value>Error</value>
+	</message>
+	<message>
+		<name>pass_notsame</name>
+		<value>Passwords entered are not the same</value>
+	</message>
+	<message>
+		<name>pass_empty</name>
+		<value>Password cannot be empty</value>
+	</message>
+	<message>
+		<name>pass_defined</name>
+		<value>Admin password is already defined</value>
+	</message>
+	<message>
+		<name>config_readonly</name>
+		<value>Your config.xml is not writable. Settings cannot be saved.</value>
+	</message>
+	<message>
+		<name>config_writable</name>
+		<value>Your config.xml is writable. Don't forget to update permissions after you finish updating the configuration for security purposes.</value>
+	</message>
+	<message>
+		<name>pass_select</name>
+		<value>Please select a password.</value>
+	</message>
+	<message>
+		<name>password</name>
+		<value>Password</value>
+	</message>
+	<message>
+		<name>confirm</name>
+		<value>Confirm</value>
+	</message>
+	<message>
+		<name>login</name>
+		<value>Login</value>
+	</message>
+	<message>
+		<name>note_config</name>
+		<value>&lt;strong&gt;NOTE:&lt;/strong&gt; Your vB-root/vbseo/resources/xml/config.xml file must be writable. Please change file permissions accordingly.</value>
+	</message>
+	<message>
+		<name>login_failed</name>
+		<value>Login failed</value>
+	</message>
+	<message>
+		<name>area_protected</name>
+		<value>This area is password protected.</value>
+	</message>
+	<message>
+		<name>warn_readonly</name>
+		<value>Note: Your config.xml is not writable. Settings cannot be saved.</value>
+	</message>
+	<message>
+		<name>saved_ok</name>
+		<value>Your settings have been successfully saved.</value>
+	</message>
+	<message>
+		<name>quick_jump</name>
+		<value>Quick Jump</value>
+	</message>
+	<message>
+		<name>gen_set</name>
+		<value>General Settings</value>
+	</message>
+	<message>
+		<name>vbseo_opt</name>
+		<value>vBSEO Options</value>
+	</message>
+	<message>
+		<name>log_opt</name>
+		<value>Log &amp; Tracking Options</value>
+	</message>
+	<message>
+		<name>arc_opt</name>
+		<value>vB's Archive Options</value>
+	</message>
+	<message>
+		<name>url_opt</name>
+		<value>URL Rewrite Settings</value>
+	</message>
+	<message>
+		<name>gen_opt</name>
+		<value>General Options</value>
+	</message>
+	<message>
+		<name>gen_opt_description</name>
+		<value>&lt;b&gt;About URL Rewriting&lt;/b&gt;&lt;br /&gt;
+URL rewriting not only adds relevant keywords to your forum URLs but also consolidates multiple (different) URLs into ONE URL for EACH unique resource. This second benefit enhances your site's internal linking structure by creating a network of consistent links that allow search engines to properly find and index your site's unique content. A consistent link structure also ensures incoming links ALWAYS &quot;create value&quot; by pointing to main content pages and never to secondary or duplicate entries, thus increasing relevancy for your core content with each back-link.
+
+&lt;p style=&quot;color:#f00&quot;&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; This is a &lt;em&gt;SET-IT AND FORGET-IT!&lt;/em&gt; feature. Once you select your URL structure here, it is STRONGLY recommended NOT changing these settings again. Doing so will directly impact URL integrity, losing valuable incoming links and search engine positioning.&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>urls_forum</name>
+		<value>Forum URLs</value>
+	</message>
+	<message>
+		<name>urls_ann</name>
+		<value>Announcement URLs</value>
+	</message>
+	<message>
+		<name>urls_thread</name>
+		<value>Thread URLs</value>
+	</message>
+	<message>
+		<name>urls_prnthread</name>
+		<value>Printthread URLs</value>
+	</message>
+	<message>
+		<name>urls_post</name>
+		<value>Showpost URLs</value>
+	</message>
+	<message>
+		<name>urls_polls</name>
+		<value>Poll URLs</value>
+	</message>
+	<message>
+		<name>urls_member</name>
+		<value>Member's Profile URLs</value>
+	</message>
+	<message>
+		<name>urls_mlist</name>
+		<value>Member's List URLs</value>
+	</message>
+	<message>
+		<name>urls_avatar</name>
+		<value>Custom Avatar Image URLs</value>
+	</message>
+	<message>
+		<name>urls_navbul</name>
+		<value>Nav Bullet (Tree Icon) Image URLs</value>
+	</message>
+	<message>
+		<name>urls_attach</name>
+		<value>Attachment URLs</value>
+	</message>
+	<message>
+		<name>crrs</name>
+		<value>Custom Rewrite Rules</value>
+	</message>
+	<message>
+		<name>seo_func</name>
+		<value>SEO Functions</value>
+	</message>
+	<message>
+		<name>dyn_metas</name>
+		<value>Dynamic META TAGS</value>
+	</message>
+	<message>
+		<name>dir_links</name>
+		<value>Direct Links</value>
+	</message>
+	<message>
+		<name>add_ttitle</name>
+		<value>Add Thread Titles</value>
+	</message>
+	<message>
+		<name>add_extttitle</name>
+		<value>Add Titles to External Links</value>
+	</message>
+	<message>
+		<name>stopwords</name>
+		<value>Stopword Filtering</value>
+	</message>
+	<message>
+		<name>acronym</name>
+		<value>Acronym Expansion</value>
+	</message>
+	<message>
+		<name>rel_replacements</name>
+		<value>Relevant Replacements</value>
+	</message>
+	<message>
+		<name>hp_set</name>
+		<value>Homepage Settings</value>
+	</message>
+	<message>
+		<name>int_rel</name>
+		<value>Internal rel=&quot;nofollow&quot;s</value>
+	</message>
+	<message>
+		<name>ext_rel</name>
+		<value>External rel=&quot;nofollow&quot;s</value>
+	</message>
+	<message>
+		<name>oth_enh</name>
+		<value>Other Enhancements</value>
+	</message>
+	<message>
+		<name>cleanup_html</name>
+		<value>Cleanup HTML Code</value>
+	</message>
+	<message>
+		<name>remove_prev</name>
+		<value>Remove Thread Preview Text</value>
+	</message>
+	<message>
+		<name>guests_only</name>
+		<value>Guest Only Enhancements</value>
+	</message>
+	<message>
+		<name>img_size</name>
+		<value>Image Size Attributes</value>
+	</message>
+	<message>
+		<name>dl_backup</name>
+		<value>Download/Backup your Current Settings</value>
+	</message>
+	<message>
+		<name>download</name>
+		<value>Download</value>
+	</message>
+	<message>
+		<name>filename</name>
+		<value>File Name</value>
+	</message>
+	<message>
+		<name>description</name>
+		<value>Description</value>
+	</message>
+	<message>
+		<name>backup_all</name>
+		<value>&lt;b&gt;Backup ALL of your vBSEO Settings&lt;/b&gt;&lt;br /&gt;
+            Backup/Save all of your vBSEO settings.</value>
+	</message>
+	<message>
+		<name>save_set_all</name>
+		<value>Save All Settings</value>
+	</message>
+	<message>
+		<name>backup_urls</name>
+		<value>&lt;b&gt;Backup ONLY your 'URL Rewrite Settings'&lt;/b&gt;&lt;br /&gt;
+            Share your 'URL Rewrite Settings' with other users.</value>
+	</message>
+	<message>
+		<name>upload_set</name>
+		<value>Upload a Settings (.xml) File</value>
+	</message>
+	<message>
+		<name>choose_file</name>
+		<value>Please choose the xml file!</value>
+	</message>
+	<message>
+		<name>note_upcrr</name>
+		<value>&lt;b&gt;Note:&lt;/b&gt; Uploading a 'URL Rewrite Settings' XML file (vbseo_urls.xml) WILL NOT override other settings like your 'General Settings' or 'SEO Functions'.</value>
+	</message>
+	<message>
+		<name>upload</name>
+		<value>Upload</value>
+	</message>
+	<message>
+		<name>import_set</name>
+		<value>Import Settings</value>
+	</message>
+	<message>
+		<name>language_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;vBSEO CP Interface Language&lt;br&gt;
+                              &lt;/strong&gt;Select a language for the vBSEO Control Panel. Your language pack must be previously uploaded to the 'vB-root/vbseo/resources/xml/' folder.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>activate_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Activate Plugin?&lt;/b&gt;&lt;br /&gt;
+    Select 'Yes' to activate vBSEO static URLs (CRUs) and other SEO features.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>yes</name>
+		<value>Yes</value>
+	</message>
+	<message>
+		<name>no</name>
+		<value>No</value>
+	</message>
+	<message>
+		<name>license_desc</name>
+		<value>&lt;b&gt;Your vBSEO License Key&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>key_config</name>
+		<value>Your key changes with &lt;strong&gt;a new vBSEO version&lt;/strong&gt; OR &lt;strong&gt;a change in forum URL&lt;/strong&gt;. Save your Valid key (displayed above) by entering it in the field below.</value>
+	</message>
+	<message>
+		<name>current_ver</name>
+		<value>Current version</value>
+	</message>
+	<message>
+		<name>forums_root</name>
+		<value>Your forums root</value>
+	</message>
+	<message>
+		<name>current_key</name>
+		<value>Your current key</value>
+	</message>
+	<message>
+		<name>contact_license</name>
+		<value>Contact &lt;a href&quot;mailto:licenses@crawlability.com&quot;&gt;licenses@crawlability.com&lt;/a&gt;</value>
+	</message>
+	<message>
+		<name>cannot_retrieve_license</name>
+		<value>vBSEO was unable to retrieve a 'Valid key' for your site. This occurs if vBSEO has not been licensed for your domain OR if the system was unable to establish a network connection to retrieve the key. Please contact &lt;a href=&quot;mailto:licenses@crawlability.com&quot;&gt;licenses@crawlability.com&lt;/a&gt;, or open a support ticket at &lt;a href=&quot;http://www.vbseo.com/support/&quot;&gt;http://www.vbseo.com/support/&lt;/a&gt; to get your license key.</value>
+	</message>
+	<message>
+		<name>unauth_upgrade</name>
+		<value>It appears this domain is not licensed for the vBSEO version your are attempting to install. Visit the &lt;a href&quot;https://www.vbseo.com/downloads/&quot;&gt;downloads area&lt;/a&gt; to renew your license, or revert to a previous vBSEO version valid for your domain.</value>
+	</message>
+	<message>
+		<name>redir_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;301 Redirect Original Content&lt;/b&gt;&lt;br /&gt;
+'301 redirects' are &quot;Google's Safe&quot; way of moving content. Enable this option to redirect all previously dynamic generated pages to the new, static content. This option saves 'Page Ranking' gained from old incoming links.&lt;/p&gt;
+&lt;p&gt;Note: It is recommended to leave this setting always ON.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>domname_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Include Domain Name in URLs?&lt;/b&gt;&lt;br /&gt;
+Search engines are thought to be more likely to follow links with absolute URLs (www.yourdomain.com/this_page.html). Enable this option to include your domain name in your forum links, thus, making your URLs look absolute (vs. relative).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>noneng_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Replace Non-English Characters in URLs?&lt;/b&gt;&lt;br /&gt;
+Select 'Yes' to replace non-English characters with their English equivalent. Enable this option if your forums are not in English or if any non-English characters occur in your forums (E.g. Caf&amp;eacute;)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>redirext_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Redirect &lt;i&gt;ALL&lt;/i&gt; External URLs Posted in Private Forums&lt;/b&gt;&lt;br /&gt;
+Enable this option to redirect all external links posted in private forums through an internal script. This will hide URLs from your private forums in server logs on external sites, thus protecting your privacy.&lt;/p&gt;
+&lt;p&gt;Note: The URLs will look like 'http://www.yourdormain.com/forums/redirect-to/?redirect=http://www.externaldomain.com'</value>
+	</message>
+	<message>
+		<name>email_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Rewrite System Email URLs?&lt;/b&gt;&lt;br /&gt;
+Set this option to 'Yes' to have vBSEO rewrite automatic notification emails. &lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.5.x or higher&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>link_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Link Back to the vBSEO Admin Control Panel?&lt;/b&gt;&lt;br /&gt;
+This feature will set a temporary link to this control panel at the top of your vBulletin forum pages, and works as a great time-saver while setting up your static URLs. NOTE: This link is only viewable by vBulletin forum admins (Usergroup 6).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>fnf_desc</name>
+		<value>&lt;p&gt;
+                                          &lt;b&gt;&quot;File Not Found&quot; requests handling?&lt;/b&gt;&lt;br /&gt;
+      Select how 'File Not found' requests will be handled: &lt;br /&gt;
+      - Redirect to homepage &lt;br /&gt;
+      - Send 404 HTTP code and show a 'Page not found' message &lt;br /&gt;
+      - Include custom error page. NOTE: The filename should include the absolute path. (example: &lt;i&gt;/home/user/public_html/error.php&lt;/i&gt;)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>redire_hp</name>
+		<value>Redirect to homepage</value>
+	</message>
+	<message>
+		<name>send_404</name>
+		<value>Send 404 HTTP code</value>
+	</message>
+	<message>
+		<name>inc_custom</name>
+		<value>Include custom script</value>
+	</message>
+	<message>
+		<name>exclpages_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Exclude Pages?&lt;/b&gt;&lt;br /&gt;
+Use regular expressions here to exclude scripts and/or pages from being affected by vBSEO. This prevents rewriting as well as copyright insertion.&lt;/p&gt;
+&lt;p&gt;Examples:(separate multiple expressions with returns)&lt;br /&gt;
+^index\.php\?do=feature&lt;br /&gt;
+VBGooglemap.php&lt;br /&gt;
+geek-gallery-popup.php&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>botact_desc</name>
+		<value>&lt;b&gt;Log Spider Activity in your Forums?&lt;/b&gt;&lt;br /&gt;
+Set this option to 'Yes' to log Search Engine Spider activity on your Forums. This option &lt;b&gt;requires&lt;/b&gt; the &lt;a href=&quot;http://www.vbulletin.org/forum/showthread.php?t=184573&quot; target=&quot;_blank&quot;&gt;vBSEO Google / Yahoo Sitemap Generator&lt;/a&gt; installed.&lt;br /&gt;
+Note: Access your spider activity logs via your sitemap reports interface</value>
+	</message>
+	<message>
+		<name>analytics_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Add Google Analytics Code to your Forum Pages?&lt;/b&gt;&lt;br /&gt;
+Select &quot;Yes&quot; to add the Google Analytics code to all your forum pages. &lt;a href=&quot;http://www.google.com/analytics/&quot; target=&quot;_blank&quot;&gt;Google Analytics&lt;/a&gt; provides an easy way to monitor your traffic performance for both, organic and paid search engine results.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_code_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Enter your Google Analytics Code&lt;/b&gt;&lt;br /&gt;
+Enter your Google Analytics Code in the following format: UA-9999-1&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_track_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Add Google Analytics &quot;Tracking External Link Clicks&quot; Code?&lt;/b&gt; &lt;br /&gt;
+Select &quot;Yes&quot; to add the Google Analytics External Link Tracking code to all your external links. 
+This feature enables you to &lt;a href=&quot;http://www.google.com/support/analytics/bin/answer.py?hl=en&amp;answer=55594&quot; target=&quot;_blank&quot;&gt; track clicks on outbound links&lt;/a&gt; via your Google Analytics account.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_anon_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Add Google Analytics &quot;Anonimize&quot; Code?&lt;/b&gt; &lt;br /&gt;
+Select &quot;Yes&quot; to add the Google Analytics IP Anonimze code: 
+&lt;a href=&quot;http://code.google.com/apis/analytics/docs/gaJS/gaJSApi_gat.html#_gat._anonymizeIp&quot; target=&quot;_blank&quot;&gt;details on analytics anonimze function&lt;/a&gt;.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_format_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Enter format for Google Analytics External Links Tracking&lt;/b&gt;&lt;br /&gt;
+Enter your Google Analytics External Links Tracking format.&lt;br /&gt;
+Example: /outgoing/&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>funnel_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Enable Google Analytics Funnel for Member Registrations?&lt;/b&gt;&lt;br /&gt;
+Select &quot;Yes&quot; to add the Google Analytics code to all pages within your forum member registration process. &lt;/p&gt;
+&lt;p&gt;NOTE: You should create a new &quot;Goal&quot; in your Analytics account for your forums site and add the following steps for it
+(number of steps depends on whether you have enabled &quot;Use COPPA Registration System&quot; in vB admincp or not): &lt;br /&gt;
+/google-funnel/coppaform.html &lt;i&gt;(if applicable)&lt;/i&gt; &lt;br /&gt;
+/google-funnel/enter-birthday.html &lt;i&gt;(if applicable)&lt;/i&gt; &lt;br /&gt;
+/google-funnel/agreement.html &lt;br /&gt;
+/google-funnel/regform-show.html &lt;br /&gt;
+/google-funnel/regform-submit.html &lt;br /&gt;
+/google-funnel/registration-complete.html
+  
+&lt;p&gt;&lt;a href=&quot;http://www.google.com/support/analytics/bin/answer.py?hl=en&amp;answer=55515&quot; target=&quot;_blank&quot;&gt;What is a funnel?&lt;/a&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>adsense_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable Adsense Section Targeting?&lt;/b&gt; &lt;span class=beta&gt;BETA&lt;/span&gt;&lt;br&gt;Select &quot;Yes&quot; to add Google AdSense section tags to relevant parts of your forum pages within forumhome, forumdisplay and showthread. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>arcopt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&lt;i&gt;Archive Options:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;301 Redirect vB's Archive Thread Pages &lt;/b&gt;&lt;br /&gt;
+'301 redirects' are &quot;Google's Safe&quot; way of moving content. Select this option to save your 'Page Ranking' while redirecting spiders (and users) to the new, static pages.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Rewrite vB's Archive Thread Pages &lt;/b&gt;&lt;br /&gt;
+This option rewrites URLs so that original content is linked from within the archives, providing an excellent vBulletin sitemap.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Rewrite + 301 Redirect Archive Pages&lt;/b&gt;&lt;br /&gt;
+This is a combination of options 1 and 2 (above). This option rewrites URLs so that original content is linked from within the archives AND also adds 301 redirects to the archive thread pages. Therefore, (a) it works as a sitemap for the static site and (b) it ensures that incoming links pointing to the old archive thread pages are redirected to the new, static pages also.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Keep vB's Archive default settings &lt;/b&gt;&lt;br /&gt;
+Keep vBulletin's default archive settings.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>sel_one</name>
+		<value>Select One</value>
+	</message>
+	<message>
+		<name>arc_redir_301</name>
+		<value>301 Redirect vB's Archive</value>
+	</message>
+	<message>
+		<name>arc_rewr_vbarc</name>
+		<value>Rewrite vB's Archive</value>
+	</message>
+	<message>
+		<name>arc_redir_rewr</name>
+		<value>Rewrite + 301 Redirect vB's Archive</value>
+	</message>
+	<message>
+		<name>arc_keep</name>
+		<value>Keep vB's Archive default settings</value>
+	</message>
+	<message>
+		<name>arcroot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Archive Root:&lt;br /&gt;
+&lt;/b&gt;Use this feature to replace the default '/archive/index.php/' part of the archive pages to a more search engine friendly version.&lt;/p&gt;
+&lt;p&gt;NOTE: Old archive root URLs will be 301 redirected to the new custom formats. Therefore, previously indexed archive pages will still be found by both users and spiders.&lt;/p&gt;
+&lt;p&gt;Sample Custom Strings:&lt;br /&gt;
+/hello/google/ or /sitemap/ or /archive/ etc. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>custom</name>
+		<value>Custom</value>
+	</message>
+	<message>
+		<name>save_set</name>
+		<value>Save Settings</value>
+	</message>
+	<message>
+		<name>reset</name>
+		<value>Reset</value>
+	</message>
+	<message>
+		<name>url_set_forum</name>
+		<value>vBSEO 'URL Rewrite Settings' Forums</value>
+	</message>
+	<message>
+		<name>sep_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Define Separator for URL Parts&lt;/b&gt;&lt;br /&gt;
+This character will separate individual words in rewritten URLs. Using [ - ] is recommended. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>limurl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Limit URL Length&lt;br /&gt;
+&lt;/b&gt;Specify the maximum number of keywords allowed in your forum URLs. If a forum or thread title has more keywords that the limit you set, they will NOT be included. If you apply a limit, suggested settings are between 5 and 7 keywords.&lt;/p&gt;
+&lt;p&gt;NOTE: Enter 0 for an unlimited number of keywords in your URLs.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pathbits_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Define Forum Path Title Bits&lt;/b&gt;&lt;br /&gt;
+Define how forum parts (within URLs) are going to appear when using &lt;i&gt;[forum_path]&lt;/i&gt; in the URL formats below.&lt;/p&gt;
+&lt;p&gt;NOTE: Use [forum_id] or [forum_title] or both - In the rare instance that you have two forums with the same name, you will need to include the [forum_id] to prevent conflicts. &lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+f[forum_id]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_forum_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Forum URLs?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to have forum URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Forum&lt;/b&gt;&lt;br /&gt;
+Create a virtual multi-level forum path using [forum_path] or show only the forum name (or id) using the variables [forum_title] or [forum_id]&lt;/p&gt;
+&lt;p&gt;NOTE: In the rare instance you have two forums with the same name, you will need to include the variable [forum_id] to prevent conflicts. &lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+f[forum_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Forum Pagination&lt;/b&gt;&lt;br /&gt;
+Define how the index URLs for each forum  with multiple pages will appear.&lt;/p&gt;
+&lt;p&gt;NOTE: In the rare instance you have two forums with the same name, you will need to include the variable [forum_id] to prevent conflicts.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+f[forum_id]-[forum_page].html&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_ann_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Announcement URLs?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to have announcement URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>ann_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Announcement&lt;/b&gt;&lt;br /&gt;
+Select an announcement URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;NOTE: Since announcements are posted by admins or moderators, there is little risk of having two announcements with the same title. Therefore, it is often safe not to use [announcement_id] in this setting.&lt;/p&gt;
+&lt;p&gt;NOTE: Since announcements are associated with forums, you MUST include a forum identifier such as [forum_id] or [forum_title]. You MUST also include either the [announcement_id] or [announcement_title] variable. &lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+f[forum_id]-announcement[announcement_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>ann_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Multiple Announcements&lt;/b&gt;&lt;br /&gt;
+Select the 'View All Announcements' page URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;NOTE: Since announcements are associated with forums, you MUST include a forum identifier such as [forum_id] or [forum_title]. Do NOT include the variables [announcement_id] or [announcement_title]. &lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+f[forum_id]-announcements.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_thread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Thread URLs?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to rewrite thread URLs.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Thread&lt;/b&gt;&lt;br /&gt;
+Select a thread URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;NOTE: You should always include [thread_id] within your URL format since threads can often have the same titles. &lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+t[thread_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Thread Pagination&lt;/b&gt;&lt;br /&gt;
+Define how individual thread pages URLs with multiple pages will appear.&lt;/p&gt;
+&lt;p&gt;NOTE: You should always include [thread_id] within your URL format since threads can often have the same titles. &lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+t[thread_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;GARS Article View (garpg)&lt;/b&gt;&lt;br /&gt;
+Define how individual &lt;a href=&quot;http://www.thevbgeek.com/&quot; target=&quot;_blank&quot;&gt;GARS&lt;/a&gt; Article View URLs with multiple pages will appear.&lt;/p&gt;
+&lt;p&gt;NOTE: You should always include [thread_id] within your URL format since threads can often have the same titles. &lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+t[thread_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_lpformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Last Post in Thread' Redirect&lt;br /&gt;
+&lt;/b&gt;Define how links to 'last posts in threads' will appear.&lt;/p&gt;
+&lt;p&gt;NOTE: The native redirection functionality is used to redirect the user to the appropriate anchored post within the thread (i.e. thead_title.html#post-xxxx)&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+t[thread_id]-last-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gpformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Go To Post in Thread' Redirect&lt;br /&gt;
+&lt;/b&gt;Define how links to 'go to posts in threads' will appear.&lt;/p&gt;
+&lt;p&gt;NOTE: The native redirection functionality is used to redirect the user to the appropriate anchored post within the thread (i.e. thead_title.html#post-xxxx)&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+t[thread_id]-post[post_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gppformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Go To Post in Thread' Pagination Redirect&lt;br /&gt;
+&lt;/b&gt;Define how links to multi pages 'go to posts in threads' will appear.&lt;/p&gt;
+&lt;p&gt;NOTE: The native redirection functionality is used to redirect the user to the appropriate anchored post within the thread (i.e. thead_title.html#post-xxxx)&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+t[thread_id]-post[post_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_ptformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Previous Thread' Redirect&lt;br /&gt;
+&lt;/b&gt;Define how links to 'previous threads' will appear. These are the links at the bottom of thread pages.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+t[thread_id]-prev-thread.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_ntformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Next Thread' Redirect&lt;br /&gt;
+&lt;/b&gt;Define how links to 'next threads' will appear. These are the links at the bottom of thread pages.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+t[thread_id]-next-thread.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_pthread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Printthread URLs?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to have print version (printthread.php) of URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_rel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Add rel=&quot;nofollow&quot; to the Printthread links?&lt;/b&gt;&lt;br /&gt;
+Enable this option to prevent search engines from following links to Printthread. It is thought that printable versions of threads (printthread.php) may be considered &quot;duplicate content&quot; by search engines and possibly penalized or excluded.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Printthread'&lt;br /&gt;
+&lt;/b&gt;Define how links to the 'printable version of threads' will appear.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+t[thread_id]-print.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Printthread' Pagination&lt;/b&gt;&lt;br /&gt;
+Define how 'printable version of threads' with multiple pages will appear.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+t[thread_id]-print-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_post_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Showpost URLs?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to have single versions of posts (showpost.php) URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>post_rel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Add rel=&quot;nofollow&quot; to the Showpost links?&lt;/b&gt;&lt;br /&gt;
+Enable this option to prevent search engines from following links to single versions of posts (showpost.php). Individual post pages might be considered &quot;duplicate content&quot; by search engines.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Smart rel=&quot;nofollow&quot; for Showpost links?&lt;/b&gt;&lt;br /&gt;
+This option prevents search engines from following showpost links conditional to the amount of postings in a thread. If there is only one (1) post in a page, rel=&quot;nofollow&quot; will be applied to showpost (as both showpost &amp; showthread are virtually the same). If there are two (2) or more postings in a page, rel=&quot;nofollow&quot; will NOT be added, thus allowing search engines to follow all showpost links.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>smart</name>
+		<value>Smart</value>
+	</message>
+	<message>
+		<name>post_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Showpost'&lt;br /&gt;
+&lt;/b&gt;Define how links to 'single versions of threads' will appear.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+[post_id]-[post_count]-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_poll</name>
+		<value>Poll URLs</value>
+	</message>
+	<message>
+		<name>rw_poll_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Poll URLs?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to have poll URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>poll_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Poll&lt;/b&gt;&lt;br /&gt;
+Select a poll URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;NOTE: We recommend using [poll_id] within your URL format since there is a chance that users will post polls with the same title.&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+p[poll_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_memb_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Member Profile URLs?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to have profile URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Member Profile&lt;/b&gt;&lt;br /&gt;
+Select a member profile URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;NOTE: Since vBulletin does not allow for duplicate usernames, it is safe not to use the [user_id] variable.&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_mlist_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Member's List URLs?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to have member index pages URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Member's List&lt;/b&gt;&lt;br /&gt;
+Define how the member's list index URL will appear.&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+users.html&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Member's List Pagination&lt;/b&gt;&lt;br /&gt;
+Define how member index URLs with multiple pages will appear.&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+users-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_lformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Member's List 'By Letter' Pages &lt;/b&gt;&lt;br /&gt;
+Define how individual member's list indexes by letter URLs will appear.&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+users-[letter][page].html&lt;br /&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_avatar_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Custom Avatar URLs?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to have custom avatar URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>avatar_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Custom Avatar&lt;/b&gt;&lt;br /&gt;
+Define how custom avatar image URLs will appear.&lt;/p&gt;
+&lt;p&gt;NOTE: &lt;b&gt;'avatars/'&lt;/b&gt; will be added automatically to the address to prevent conflicting image URLs.&lt;/p&gt;
+&lt;p&gt;NOTE: Since vBulletin does not allow for duplicate usernames, it is safe not to use the [user_id] variable.&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_navbul_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Nav Bullet Image URLs?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to have tree URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>navbul_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Forum Nav Bullet Image URLs &lt;/b&gt;&lt;br /&gt;
+Define how nav bullet image URLs for forums will appear.&lt;/p&gt;
+&lt;p&gt;NOTE: &lt;b&gt;'images/'&lt;/b&gt; will be added automatically to the address to prevent conflicting image URLs.&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+f[forum_id].gif&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>navbul_tformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Thread Nav Bullet Image URLs &lt;/b&gt;&lt;br /&gt;
+Define how nav bullet image URLs for threads will appear.&lt;/p&gt;
+&lt;p&gt;NOTE: &lt;b&gt;'images/'&lt;/b&gt; will be added automatically to the address to prevent conflicting image URLs.&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+t[thread_id].gif&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_attach_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Attachment URLs?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to have attachment URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attach_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Attachment&lt;/b&gt;&lt;br /&gt;
+Google and other search engines index image (.gif, .jpg, .png, etc.) and other file types such as Word documents (.doc) and Adobe PDF documents (.pdf). A special variable [original_filename] has been created so that attachments keep their original filename AND extension in the URL.&lt;/p&gt;
+&lt;p&gt;NOTE: &lt;b&gt;'attachments/'&lt;/b&gt; will be added automatically to the url to prevent conflicting image URLs.&lt;/p&gt;
+&lt;p&gt;NOTE: We recommend using [attachment_id] within your URL format since there is a chance that users will post attachments with the same 'original filename'.&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+[attachment_id]-[original_filename]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>crrs_forum</name>
+		<value>vBSEO 'Custom Rewrite Rules' Forums</value>
+	</message>
+	<message>
+		<name>crrs_def</name>
+		<value>&lt;b&gt;Define Custom Rewrite Rules &lt;/b&gt;&lt;span class=&quot;beta&quot;&gt;BETA&lt;/span&gt;&lt;br&gt;You can apply vBSEO's Rewrite Engine to URLs not modified by the default feature set. Define your own rules using a regular expression format:</value>
+	</message>
+	<message>
+		<name>crrs_desc</name>
+		<value>Both parts (left &amp; right) are regular expressions: the first part is the original &lt;b&gt;URL&lt;/b&gt;, while the second one is the &lt;b&gt;rewritten&lt;/b&gt; URL using the matched pattern of the first part. 
+&lt;p&gt;NOTE: The vBSEO Team will NOT provide &quot;official&quot; support for the regular expressions you enter when using this feature. Please use this feature ONLY if you know what you are doing. For further help, please visit the vBSEO forums at &lt;a href=&quot;http://www.vbseo.com&quot; target=&quot;_blank&quot;&gt;http://www.vbseo.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;NOTE: Lines can be commented out by preceding them with two forward slashes (//). If any of your rewrite rules contain errors they will be automatically commented out when you click 'Save Settings'.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Examples:&lt;/b&gt;&lt;br /&gt;
+'article\.php\?id=(\d+)'=&gt;'showarticle-$1.html'&lt;br /&gt;
+'browse\.php\?page=(\d+)'=&gt;'listing-$1.htm' &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metakw_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Replace the 'META KEYWORDS' Content?&lt;/b&gt;&lt;br /&gt;
+Replaces the 'META KEYWORDS' dynamically with content relevant to the page being displayed. Affects forums, threads, posts &amp; member profiles. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bookmark_threadpost</name>
+		<value>Display Icons in Both, Threads and Posts</value>
+	</message>
+	<message>
+		<name>bookmark_custom</name>
+		<value>add custom</value>
+	</message>
+	<message>
+		<name>bookmark_services_desc</name>
+		<value>&lt;p&gt;Enter additional Bookmarking Services below in the format:&lt;br /&gt;
+&lt;i&gt;Bookmark URL,Icon URL,&quot;Bookmark Thread&quot; Text,&quot;Bookmark Post&quot; Text&lt;/i&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bookmark_none</name>
+		<value>Do Not Display Icons</value>
+	</message>
+	<message>
+		<name>bookmark_thread</name>
+		<value>Display Icons for Threads Only</value>
+	</message>
+	<message>
+		<name>metadesc_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Replace the 'META DESCRIPTION' Content?&lt;/b&gt;&lt;br /&gt;
+This option replaces the 'META DESCRIPTION' content with the first words of the first posting in the page to a limit defined in the option below.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metadesc_len_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Define the 'META DESCRIPTION' Length?&lt;/b&gt;&lt;br /&gt;
+The meta description tag usually consists of 150 to 200 characters or less.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>nextprev_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Replace 'Previous/Next Thread' redirect links?&lt;/b&gt;&lt;br /&gt;
+Enable this option to replace the 'Next Thread' &amp; 'Previous Thread' links with direct, Content Relevant links. &lt;br /&gt;&lt;i&gt;Note: This option adds two queries.&lt;/i&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>dir_links_threads_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Direct Links to Threads For Guest Visitors? &lt;/b&gt;&lt;br /&gt;
+This option replaces links to &quot;First Unread Post in Thread&quot; with direct links to Threads. Giving direct (not redirected) access for guests and spiders to your thread content.&lt;br /&gt;
+It also strips the &quot;New-Post&quot; functionality from RSS feeds, enabling the same effect for guests and spiders reaching your board via RSS and RSS2 feeds.&lt;br /&gt;
+&lt;p&gt;NOTE: This option would reduce functionality for non-members, but could be considered an acceptable tradeoff for SEO.&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Display Social Bookmarking Icons&lt;/b&gt;&lt;br /&gt;
+Social Bookmarking has evolved as a very effective way of sharing content with others and consequently bringing more traffic to your website. Check the Social Bookmarking Icons to be displayed in your forum pages.
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Social Bookmarking Icons Display Options:&lt;/i&gt;&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Display Icons in Both, Threads and Posts&lt;/b&gt;&lt;br /&gt;
+Select this option to display social bookmarking icons for both, threads and posts within threads. Note that thread bookmarking icons appear within the 'LinkBack' drop-down menu, while post bookmarking icons appear at the bottom-left corner of each post.
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Display Icons For Threads Only&lt;/b&gt;&lt;br /&gt;
+Select this option to display social bookmark icons for threads and not for posts individually. Thread bookmarking icons will appear only within the 'LinkBack' drop-down menu.
+&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark_thread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Display Social Bookmarking Icons For Threads&lt;/b&gt;&lt;br /&gt;
+Select &quot;Yes&quot; to enable Social Bookmarking Icons for Threads.
+&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark_post_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Display Social Bookmarking Icons For Posts&lt;/b&gt;&lt;br /&gt;
+Select &quot;Yes&quot; to enable Social Bookmarking Icons for Posts.
+&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark</name>
+		<value>Social Bookmarking</value>
+	</message>
+	<message>
+		<name>flinks_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Replace 'Forum Links' with direct links to target URLs? &lt;/b&gt;&lt;br /&gt;
+Enable this option to replace your 'Forum Links' with the direct target URLs. &lt;/p&gt;
+&lt;p&gt;NOTE: These Forum Links are the ones that would commonly be redirected when entering URLs via the Forum Manager in the admincp.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>addttl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Add Thread Titles to Showthread Links Anchor Text?&lt;/b&gt;&lt;br /&gt;
+Enable this option to create keyword-rich links by adding thread titles to URLs that point to showthread pages.&lt;/p&gt;
+&lt;p&gt;NOTE: This option works ONLY with vB 3.5.x or higher&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Add Thread Title Options:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Do NOT add thread titles&lt;/b&gt;&lt;br /&gt;
+Keep vB's original functionality. Links posted in threads/posts are not modified.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;ADD thread titles as &quot;popup text&quot;&lt;/b&gt;&lt;br /&gt;
+This option adds the target thread title to the 'title' (popup) tag of every link that points to a showthread page.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;ADD thread titles as &quot;original-text (thread title)&quot;&lt;/b&gt;&lt;br /&gt;
+This is a combination of options 1 and 2 (above). The original link (text) is left untouched while the 'thread title' is added (within parenthesis) right after it.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;REPLACE original anchor text&lt;/b&gt;&lt;br /&gt;
+This option replaces any link pointing to a showthread page with the corresponding thread title.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;*&lt;/i&gt;&lt;/b&gt;&lt;i&gt;Links pointing to private forums are NOT replaced to prevent privacy issues (i.e. people determining titles of private forum threads by writing random 'showthread.php?t=xxxx' in postings)&lt;/i&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>addttlext_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Add Page Titles to External Links Anchor Text?&lt;/b&gt;&lt;br /&gt;Enable this option to create keyword-rich links by adding page titles to URLs that point to external domains. vBSEO will connect to external sites when new links are posted and extract the page title from them.&lt;/p&gt;&lt;p&gt;NOTE: This option works ONLY with vB 3.5.x or higher&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attl_1</name>
+		<value>Do NOT add thread titles</value>
+	</message>
+	<message>
+		<name>attl_2</name>
+		<value>ADD thread titles as &quot;popup text&quot;</value>
+	</message>
+	<message>
+		<name>attl_3</name>
+		<value>ADD thread titles as &quot;original-text (thread title)&quot;</value>
+	</message>
+	<message>
+		<name>attl_4</name>
+		<value>REPLACE original anchor text</value>
+	</message>
+	<message>
+		<name>addttlp_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Add Thread Titles to Showpost Links Anchor Text?&lt;/b&gt;&lt;br /&gt;Same link replacements as above but for showpost URLs.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>remstop_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Remove Stopwords from URLs?&lt;/b&gt;&lt;br /&gt;
+Removing &quot;stopwords&quot; from URLs may increase relevancy for specific searches as some search engines filter these common words when people use them in their search queries.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Smart Stopword Removal from URLs?&lt;/b&gt;&lt;br /&gt;
+Enabling this option filters &quot;stopwords&quot; from URLs &lt;b&gt;ONLY&lt;/b&gt; when titles are longer than the specified number within the '&lt;a href=&quot;#url_gen&quot;&gt;Limit URL Length&lt;/a&gt;' setting.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>stopdef_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Define Stopwords&lt;/b&gt;&lt;br /&gt;
+When the above feature is enabled, the following words will be ommitted in the URLs.&lt;/p&gt;
+&lt;p&gt;TIP: Find common stopwords for other languages in &lt;a href=&quot;http://www.ranks.nl/resources/stopwords.html&quot; target=&quot;_blank&quot;&gt;http://www.ranks.nl/stopwords/&lt;/a&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acronym_def_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Define Acronyms&lt;/b&gt; &lt;br /&gt;
+Enter acronym replacements (1 per line). Acronym expansion will be applied to these keywords as defined in the option above.
+&lt;p&gt;NOTE: Acronyms are not case sensitive.&lt;/p&gt;
+&lt;p&gt;Examples:&lt;br /&gt;
+'seo'=&gt;'Search Engine Optimization'&lt;br /&gt;
+'pr'=&gt;'Page Ranking'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acronym_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Acronym Expansion&lt;/b&gt; &lt;br /&gt;
+This feature is great for increasing SE relevancy. It allows you to replace common acronyms for real phrases in your thread content and titles. &lt;/p&gt;
+&lt;p&gt;Properly defining acronyms also improves accessibility and aids in establishing relevancy for terms often omitted due to acronym usage. It also increases the semantic value of your user generated content while improving usability (i.e. - making your site easier to use), all these benefits go hand-on-hand with improved SEO.
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Acronym Expansion Options:&lt;/i&gt;&lt;/b&gt;&lt;br /&gt;
+&lt;p&gt;&lt;b&gt;Do NOT add expand acronyms&lt;/b&gt;&lt;br /&gt;
+Acronyms are not modified.
+&lt;p&gt;&lt;b&gt;REPLACE acronyms as expanded text&lt;/b&gt;&lt;br /&gt;
+This option converts matching acronyms to the corresponding text as defined in the field below.
+&lt;p&gt;&lt;b&gt;ADD 'acronym' html tag to acronyms&lt;/b&gt;&lt;br /&gt;
+This option wraps each acronym around an &lt;a href=&quot;http://www.w3.org/TR/html401/struct/text.html#edef-ACRONYM&quot; target=&quot;_blank&quot;&gt;'acronym' html tag&lt;/a&gt; with the corresponding text as a name attribute.
+&lt;p&gt;&lt;b&gt;ADD 'abbr' html tag to acronyms&lt;/b&gt;&lt;br /&gt;
+Same as above but using the &lt;a href=&quot;http://www.w3.org/TR/html4/struct/text.html#edef-ABBR&quot; target=&quot;_blank&quot;&gt;'abbr' html tag&lt;/a&gt;, as opposed to the 'acronym' html tag.
+</value>
+	</message>
+	<message>
+		<name>acro_opt1</name>
+		<value>Do NOT add expand acronyms</value>
+	</message>
+	<message>
+		<name>acro_opt2</name>
+		<value>REPLACE acronyms as expanded text</value>
+	</message>
+	<message>
+		<name>acro_opt3</name>
+		<value>ADD 'acronym' html tag to acronyms</value>
+	</message>
+	<message>
+		<name>acro_opt4</name>
+		<value>ADD 'abbr' html tag to acronyms</value>
+	</message>
+	<message>
+		<name>acro_url_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Apply Acronym Expansion to URLs?&lt;/b&gt; &lt;br /&gt;
+Select &quot;Yes&quot; if you want to replace keywords in the URLs.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_content_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Apply Acronym Expansion to &quot;Content Areas&quot; only?&lt;/b&gt; &lt;br /&gt;
+Select &quot;Yes&quot; to replace keywords in thread replies, blog entries and comments ONLY. Otherwise keywords will be replaced anywhere they occur: thread titles, navigation links, thread lists, etc.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_guests_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Apply Acronym Expansion for &quot;Guests&quot; only?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Select &quot;Yes&quot; to replace keywords for unregistered visitors ONLY. Otherwise keywords will be replaced for all visitors.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_text_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Apply Acronym Expansion to all text?&lt;/b&gt;&lt;br /&gt;
+Select &quot;Yes&quot; if you want to replace keywords in the text.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>will_replace</name>
+		<value>will be replaced by</value>
+	</message>
+	<message>
+		<name>forceroot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Force Forum Root as Homepage?&lt;/b&gt;&lt;br /&gt;
+When enabled, all links to your forum homepage will be directed to 'vbroot/'. If disabled, your forum homepage links will point to the 'script name' (E.g. forum.php) as defined in your vBulletin configuration settings. This allows users with high PageRank in 'index.php' to use it as their default homepage.&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>hpalias_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Define Homepage Aliases&lt;/b&gt;&lt;br /&gt;
+      This feature will help consolidate PR (Google PageRank) in your forum homepage. Many established forums will have different PRs in forum home (usually up to three), as an example:&lt;br /&gt;
+      &lt;br /&gt;
+      www.yoursite.com/forums/ (PR = A)&lt;br /&gt;
+      www.yoursite.com/forums/index.php (PR = B)&lt;br /&gt;
+      www.yoursite.com/forums/index.php? (PR = C)
+                                            &lt;p&gt;This is a typical &quot;PageRank Leakage&quot; issue and might also lead search engines to tag these pages as duplicate content.
+                                            &lt;p&gt;Filenames entered here will be 301 redirected to your forum's homepage as defined through your vBulletin's Admin CP. Enter one (1) filename per line.
+                                            &lt;p&gt;Examples:&lt;br /&gt;
+      index.php &lt;br /&gt;
+      index.php?&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>intrel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Add rel=&quot;nofollow&quot; to&lt;i&gt; ALL&lt;/i&gt; Sorting Links&lt;/b&gt;&lt;br /&gt;
+Enable this option to prevent search engines from following links to pages with the same content, but sorted differently. These pages might be tagged as &quot;duplicate content&quot;. Therefore, we recommend enabling this feature.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>reldyn_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Add rel=&quot;nofollow&quot; to &lt;i&gt;ALL&lt;/i&gt; Dynamic Pages&lt;/b&gt;&lt;br /&gt;
+Enable this option to prevent search engines from following ALL dynamic links. Some examples are: 'Post Reply' links, 'Quote' links and 'Quick Reply' or 'Search' links. These pages have non-relevant (or &quot;noise&quot;) content which should not be indexed by search engines , resulting in better SEO. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>relmemb_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Add rel=&quot;nofollow&quot; to Links pointing &lt;i&gt;TO&lt;/i&gt; Member Profiles &lt;i&gt;FROM&lt;/i&gt; Postbit&lt;/b&gt;&lt;br /&gt;
+Enable this option to prevent search engines from following links to member profiles found in posts.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>relmemb_home_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Add rel=&quot;nofollow&quot; to Links pointing &lt;i&gt;TO&lt;/i&gt; Member Profiles &lt;i&gt;FROM&lt;/i&gt; Forumhome&lt;/b&gt;&lt;br /&gt;
+Enable this option to prevent search engines from following links to member profiles found in your Forum Homepage.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>extrel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Add rel=&quot;nofollow&quot; to &lt;i&gt;ALL&lt;/i&gt; External URLs&lt;/b&gt;&lt;br /&gt;
+Enable this option to prevent search engines from following links to external pages (URLs that point to other domains).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>extwhite_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;External domains &quot;Whitelist&quot;&lt;/b&gt;&lt;br /&gt;
+Enter domains to be excluded from the above rule. Rel='nofollow' WILL NOT be added to links pointing to domains in this list. Note: This can be used to give the benefit of NON rel='nofollowed' signatures to a group of friends.&lt;/p&gt;
+&lt;p&gt;Examples:&lt;br /&gt;
+google.com (no 'http://www' required) &lt;br /&gt;
+groups.google.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>clean_html_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Cleanup HTML code?&lt;/b&gt;&lt;br /&gt;
+Select 'Yes' to remove unnecessary whitespace characters and HTML comments from the source code of your forum pages. This increases the C2C (Content to Code) ratio and reduces page sizes, resulting in a net performance increase and reduction in bandwidth required.&lt;/p&gt;
+&lt;p&gt;NOTE: If comments (or HTML tags) within your pages are not closed correctly with their corresponding end tags, then this option could cause your pages to display incorrectly. Be sure that your templates contain error free HTML tags and code.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rem_prev_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Remove Thread Preview Text For Guest Visitors?&lt;/b&gt;&lt;br /&gt;Thread titles in &lt;i&gt;forumdisplay&lt;/i&gt; links often contain &quot;contributory&quot; keywords related to the parent forum. Removing the thread preview text for unregistered visitors may help increase the relevant keyword ratio for these pages.&lt;/p&gt;
+&lt;p&gt;NOTE: Thread Preview Text is the text that appears when hovering thread links within the &lt;i&gt;forumdisplay&lt;/i&gt; links.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_size_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable Dimension Attributes for IMG tags?&lt;/b&gt;&lt;br /&gt;
+Select &quot;Yes&quot; to enable the Image Size Attributes feature.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_def_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Define Dimension Attributes&lt;/b&gt;&lt;br /&gt;
+vB default templates do not include &quot;width&quot; and &quot;height&quot; attributes for images. Providing image dimensions for all images within your forum will speed-up page rendering in most Web browsers. Forcing image dimensions also ensures that search engines can better determine the relationship of images to surrounding text when calculating the keyword relevancy of your forum pages.&lt;/p&gt;
+&lt;p&gt;Examples:&lt;br /&gt;
+'thread.gif'=&gt;'20x20'&lt;br /&gt;
+'icon12.gif'=&gt;'16x16'&lt;/p&gt;
+&lt;p&gt;Examples (including folders to distinguish images with the same name):&lt;br /&gt;
+'buttons/quote.gif' =&gt; '70x22'&lt;br /&gt;
+'editor/quote.gif' =&gt; '21x20'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_note</name>
+		<value>NOTE: If you have changed your forum's default image sizes, you MUST update the dimensions above before enabling this feature. Otherwise, all non-conforming images will be distorted.</value>
+	</message>
+	<message>
+		<name>max_chars</name>
+		<value>150 to 200 characters max. recommended</value>
+	</message>
+	<message>
+		<name>rights_reserved</name>
+		<value>All Rights Reserved</value>
+	</message>
+	<message>
+		<name>rr_forumdisplay</name>
+		<value>on forumdisplay pages (and)</value>
+	</message>
+	<message>
+		<name>rr_showthread</name>
+		<value>on showthread pages.</value>
+	</message>
+	<message>
+		<name>rr_cms</name>
+		<value>on CMS articles pages.</value>
+	</message>
+	<message>
+		<name>rr_blog</name>
+		<value>on blog pages.</value>
+	</message>
+	<message>
+		<name>save_key</name>
+		<value>Save Key</value>
+	</message>
+	<message>
+		<name>rrs_def</name>
+		<value>&lt;b&gt;Define Relevant Replacements&lt;/b&gt;&lt;br /&gt;
+Build dynamic phrases that get replaced by entering simple comments (up to three) in your forum templates.</value>
+	</message>
+	<message>
+		<name>rrs_desc</name>
+		<value>For each set, the first phrase will be displayed ONLY in forumdisplay pages and the second phrase will be displayed ONLY in showthread pages.
+&lt;p&gt;&lt;strong&gt;You may use any of the patterns defined below to build your phrases:&lt;/strong&gt;&lt;br&gt;
+&lt;i&gt;[bb_title]&lt;/i&gt; - Your forum's main title&lt;br&gt;
+&lt;i&gt;[default_keywords]&lt;/i&gt; - Your keywords as defined in vB's admincp&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;[forum_title]&lt;/i&gt; - The current forum's title&lt;br&gt;
+&lt;i&gt;[forum_description]&lt;/i&gt; - The current forum's description&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;[parent_forum_title]&lt;/i&gt; - The parent forum's title&lt;br&gt;
+&lt;i&gt;[parent_forum_description]&lt;/i&gt; - The parent forum's description&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;[thread_title]&lt;/i&gt; - The current thread's title (Use ONLY on showthread pages)&lt;br&gt;
+&lt;I&gt;[first_post_X_words]&lt;/I&gt; - First X number of words from the page's first posting (Use ONLY on showthread and CMS article pages)&lt;br&gt;
+&lt;I&gt;[thread_X_tags]&lt;/I&gt; - First X tags assigned to a thread (Use ONLY on showthread pages)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[thread_page]&lt;/em&gt; - The thread's page number&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[cms_title]&lt;/em&gt; - The current CMS page's title (Use Only on CMS pages)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sample Relevant Phrases:&lt;/strong&gt;&lt;br&gt;
+[Forum_title] discussions within the [parent_forum_title] at the [bb_title] (on forumdisplay pages)&lt;br&gt;
+Discuss [thread_title] at the [forum_title] within the [bb_title]; &amp;lt;em&amp;gt;[first_post_15_words]...&amp;lt;/em&amp;gt; (on showthread pages)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>catlinks</name>
+		<value>Direct Category Links</value>
+	</message>
+	<message>
+		<name>catlinks_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Direct Category Links?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to enable anchor type links for forum categories. 
+&lt;br /&gt;&lt;br /&gt;NOTE: Link to categories will look like &quot;http://yourforumsroot/#category_title&quot;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rrs_forum</name>
+		<value>vBSEO 'Relevant Replacements' Forums</value>
+	</message>
+	<message>
+		<name>extblack_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;External domains &quot;Blacklist&quot;&lt;/b&gt;&lt;br /&gt;
+The following domains will ALWAYS have rel='nofollow' added to the links regardless of other configuration settings.
+&lt;/p&gt;&lt;p&gt;Examples:&lt;br /&gt;google.com (no 'http://www' required)&lt;br /&gt;
+groups.google.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>linkback_black_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;LinkBack  &quot;Blacklist&quot;&lt;/b&gt;&lt;br /&gt;
+LinkBacks from these domains will ALWAYS be excluded.
+&lt;/p&gt;&lt;p&gt;Examples:&lt;br /&gt;spamsite.com (no 'http://www' required)&lt;br /&gt;
+subdomain.spamsite.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_npformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Newest Post in Thread' Redirect&lt;br&gt;
+&lt;/b&gt;Define how links to 'newest posts in threads' will appear.&lt;/p&gt;
+&lt;p&gt;NOTE: The native redirection functionality is used to redirect the user to the appropriate anchored post within the thread (i.e. thead_title.html#post-xxxx)&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br&gt;
+t[thread_id]-new-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metadesc_members_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Meta Description for Member Profiles&lt;/b&gt;&lt;br&gt;
+Define a custom format for the meta description tag of member profile pages. You may use the following patterns for automatic replacements:&lt;/p&gt;
+&lt;p&gt;&lt;I&gt;[username]&lt;/I&gt; - Member username &lt;br&gt;
+&lt;i&gt;[usertitle]&lt;/i&gt; - Member user title (&amp;quot;Moderator&amp;quot;, &amp;quot;Registered Member&amp;quot;, etc.)&lt;br&gt;
+&lt;i&gt;[bb_title]&lt;/i&gt; - Your forum's main title&lt;br&gt;
+&lt;em&gt;[user_field_1], [user_field_2], etc.&lt;/em&gt; - Custom user fields as defined in the vB Admin CP&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sample Meta Description Phrase:&lt;/strong&gt;&lt;br&gt;
+[username] is a [usertitle] in the [bb_title]. View [username]'s profile. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>select_preset</name>
+		<value>Select Preset</value>
+	</message>
+	<message>
+		<name>current_preset</name>
+		<value>Current Preset</value>
+	</message>
+	<message>
+		<name>preset_set</name>
+		<value>Load URL Formats Preset</value>
+	</message>
+	<message>
+		<name>custom_settings</name>
+		<value>Custom Settings</value>
+	</message>
+	<message>
+		<name>load_preset</name>
+		<value>Load Preset</value>
+	</message>
+	<message>
+		<name>load_preset_warn</name>
+		<value>Unless you are configuring vBSEO for the first time, it is strongly advised not to change your URL structure. Click 'OK' to continue or 'Cancel' this action.</value>
+	</message>
+	<message>
+		<name>adv_settings</name>
+		<value>Advanced Settings</value>
+	</message>
+	<message>
+		<name>adv_settings_warn</name>
+		<value>It is strongly suggested loading a predefined URL format from the dropdown as opposed to setting your URLs manually. Doing so may result in an inconsistent URL structure that may impact your search engine positioning.</value>
+	</message>
+	<message>
+		<name>note_preset</name>
+		<value>Note: Presets contain 'URL Rewrite Settings' only and will not affect your other options.</value>
+	</message>
+	<message>
+		<name>rw_archive_foot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&lt;i&gt;Footer Archive Links Options:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+                                          &lt;p&gt;&lt;b&gt;Add Links to the Archive Main Pages&lt;/b&gt;&lt;br /&gt;
+                                            Select this option to add links to the main archive sitemap pages at the footer of your forum pages.&lt;/p&gt;
+                                          &lt;p&gt;&lt;b&gt;Add Links to ALL Archive Pages&lt;/b&gt;&lt;br /&gt;
+                                            Select this option to add links to the main archive sitemap pages AND multiple (deep) archive pages  at the footer of your forum pages.&lt;/p&gt;
+                                          &lt;p&gt;&lt;b&gt;Do not add Links to Archive Pages&lt;/b&gt;&lt;br /&gt;
+                                            Select this option to keep the default settings. &lt;/p&gt;
+                                          &lt;p&gt;NOTE: Enter &amp;lt;!--VBSEO_ARCHIVE_LINKS--&amp;gt; in your footer template to specify a location for the archive links, otherwise, these will be added at the very bottom of the output. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>footer_arc</name>
+		<value>Footer Archive Links</value>
+	</message>
+	<message>
+		<name>arc_opt1</name>
+		<value>Add Links to the Archive Main Pages</value>
+	</message>
+	<message>
+		<name>arc_opt2</name>
+		<value>Add Links to ALL Archive Pages</value>
+	</message>
+	<message>
+		<name>arc_opt3</name>
+		<value>Add Links to the Archive Main Pages (For guests only)</value>
+	</message>
+	<message>
+		<name>arc_opt4</name>
+		<value>Add Links to ALL Archive Pages (For guests only)</value>
+	</message>
+	<message>
+		<name>arc_opt0</name>
+		<value>Do not add Links to Archive Pages</value>
+	</message>
+	<message>
+		<name>as_anchors</name>
+		<value>As anchors</value>
+	</message>
+	<message>
+		<name>avail_pro_only</name>
+		<value>&lt;b&gt;Available in vBSEO Pro version only&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>addttl_black_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Add Page Title to External domains &quot;Blacklist&quot;&lt;/b&gt;&lt;br /&gt;Enter domains list that will NOT have titles retrieved and added as anchor text.&lt;/p&gt;&lt;p&gt;Examples:&lt;br /&gt;
+example.com&lt;br /&gt;
+site.com&lt;br /&gt;
+abc.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable Outgoing Pingbacks&lt;/b&gt;&lt;br /&gt;
+Select &amp;quot;Yes&amp;quot; to send outgoing pingbacks when external links are included in posts.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_notify_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Email Notifications on Incoming LinkBacks&lt;/b&gt;&lt;br /&gt;
+Select &amp;quot;Yes&amp;quot; to notify post owners of incoming LinkBacks (Ping/Track/Refbacks) when these occur.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>trackback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable Outgoing Trackbacks&lt;/b&gt;&lt;br /&gt;
+Select &quot;Yes&quot; to enable outgoing trackbacks for new threads.&lt;/p&gt;&lt;p&gt;Note: The trackback field is displayed when creating a new thread or when replying to a thread in advanced view.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_trackback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable Incoming Trackbacks&lt;/b&gt;&lt;br /&gt;
+Select &quot;Yes&quot; to enable incoming trackbacks for discussions.&lt;/p&gt;&lt;p&gt;Note: Incoming trackback moderation for individual forums is set via your vBulletin Admin CP in: &lt;em&gt;Forums and Moderators &amp;gt; Forum Manager &amp;gt; Edit Forum&lt;/em&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_refback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable Incoming Refbacks&lt;/b&gt;&lt;br /&gt;
+Select &quot;Yes&quot; to enable automatic backlinks to referring URLs.&lt;/p&gt;&lt;p&gt;Note: Incoming Refback moderation for individual forums is set via your vBulletin Admin CP in: &lt;br /&gt;&lt;em&gt;Forums and Moderators &amp;gt; Forum Manager &amp;gt; Edit Forum&lt;/em&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable Incoming Pingbacks&lt;/b&gt;&lt;br /&gt;
+Select &quot;Yes&quot; to enable incoming pingbacks for discussions.&lt;/p&gt;
+&lt;p&gt;Note: Incoming pingback moderation for individual forums is set via your vBulletin Admin CP in: &lt;em&gt;Forums and Moderators &amp;gt; Forum Manager &amp;gt; Edit Forum&lt;/em&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>postbit_pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable &quot;Permalink&quot; indicators in Postbits&lt;/b&gt;&lt;br /&gt;
+Permalinks are basically links that point to posts as anchors in threads, allowing users to reference specific posts for incoming LinkBacks.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Permalink options: &lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Display Permalink in Postbit content&lt;/b&gt;
+&lt;br /&gt;
+Will add the &quot;Permalink&quot; link above your post content, within the title area.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Display Permalink beside Showpost Link &lt;/b&gt;
+&lt;br /&gt;
+Will add the &quot;Permalink&quot; link to the right of your showpost links.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Replace post number link with Permalink&lt;/b&gt;
+&lt;br /&gt;
+Will replace individual showpost links with the &quot;Permalink&quot; link. Note: Posts will no longer be accessible individually.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Do not add Permalink indicator in Postbit&lt;/b&gt;
+&lt;br /&gt;
+Not recommended if LinkBacks are enabled on your forums.
+&lt;/p&gt;
+
+&lt;p&gt;* You can add &amp;lt;!--PERMALINK_INFO--&amp;gt; to your &lt;em&gt;postbit&lt;/em&gt; (or &lt;em&gt;posbit_legacy&lt;/em&gt;) template to define a custom location for your &quot;Permalink&quot; link.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>vbseo_affid</name>
+		<value>&lt;p&gt;&lt;b&gt;Your vBSEO Affiliate ID&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;HOT!&lt;/span&gt;&lt;br /&gt;
+Earn Back 'Your vBSEO' Product Fees and More! Enter your vBSEO affiliate ID here to have the  copyright footer link to your affiliate landing page.&lt;/p&gt;&lt;p&gt;More info: &lt;a href=&quot;http://www.vbseo.com/aff/&quot; target=&quot;_blank&quot;&gt;http://www.vbseo.com/aff/&lt;/a&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>custom301</name>
+		<value>Custom Redirects</value>
+	</message>
+	<message>
+		<name>custom301_def</name>
+		<value>&lt;b&gt;Define Custom 301 Redirects &lt;/b&gt;&lt;span class=&quot;beta&quot;&gt;BETA&lt;/span&gt;&lt;br&gt;
+You can setup the 301 redirection rules here. This can be used if you moved the location of certain document at your server.</value>
+	</message>
+	<message>
+		<name>custom301_desc</name>
+		<value>Both parts (left &amp; right) are regular expressions: the first part is the original &lt;b&gt;URL&lt;/b&gt;, while the second one is the &lt;b&gt;redirected&lt;/b&gt; URL using the matched pattern of the first part. 
+&lt;p&gt;NOTE: The vBSEO Team will NOT provide &quot;official&quot; support for the regular expressions you enter when using this feature. Please use this feature ONLY if you know what you are doing. &lt;/p&gt;&lt;p&gt;NOTE: Lines can be commented out by preceding them with two forward slashes (//). If any of your rewrite rules contain errors they will be automatically commented out when you click 'Save Settings'.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Examples:&lt;/b&gt;&lt;br /&gt;
+'article-(\d+)\.html'=&gt;'articles/entry-$1.html'&lt;br /&gt;
+'forum(\d+)\.html'=&gt;'f$1/'&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_attach_alt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Attachment Alt Tag Attribute?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to have attachment alt attributes rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attach_alt_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Attachment Alt Tag attribute Format &lt;/b&gt;&lt;br /&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+[thread_title]-[original_filename]&lt;br /&gt;
+[original_filename]
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>supportsystem</name>
+		<value>Support Ticket System</value>
+	</message>
+	<message>
+		<name>affiliates</name>
+		<value>Affiliates</value>
+	</message>
+	<message>
+		<name>contact</name>
+		<value>Contact</value>
+	</message>
+	<message>
+		<name>forums</name>
+		<value>Forums</value>
+	</message>
+	<message>
+		<name>ping_postbit_1</name>
+		<value>Display Permalink in Postbit content </value>
+	</message>
+	<message>
+		<name>ping_postbit_3</name>
+		<value>Display Permalink beside Showpost Link </value>
+	</message>
+	<message>
+		<name>ping_postbit_2</name>
+		<value>Replace post number link with Permalink </value>
+	</message>
+	<message>
+		<name>ping_postbit_0</name>
+		<value>Do not add Permalink indicator in Postbit </value>
+	</message>
+	<message>
+		<name>pingback_notify_bcc_desc</name>
+		<value>Email copy of LinkBack notifications:</value>
+	</message>
+	<message>
+		<name>pingback_notify_bcc_desc2</name>
+		<value>(Separate multiple emails with spaces)</value>
+	</message>
+	<message>
+		<name>pingback_service_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Update Services&lt;/b&gt;&lt;br /&gt;
+vBSEO can notify external services when your community publishes new threads and posts. These services work as Search Engines for the blogosphere and converging forumsphere.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_stopwords_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Incoming LinkBack Keyword Ignore List&lt;/b&gt;&lt;br /&gt;
+LinkBacks that include any of the words from this list will be filtered (NOT accepted) to minimize SPAM.&lt;/p&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_jump_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Remove Forumjump Dropdown For Guest Visitors&lt;/b&gt;&lt;br /&gt;
+The forumjump dropdown generates extra non-relevant HTML code, especially on larger, multiple-forum sites. Disable it for guests (and spiders) to lighten the content Search Engines will index. This will increase the content to code ratio which is desirable for SEO purposes.&lt;/p&gt;
+
+&lt;p&gt;NOTE: The Forumjump Dropdown appears at the bottom of your thread and forum pages. There's also an option via the vBulletin admincp to disable it completely.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>htmlcharset</name>
+		<value>ISO-8859-1</value>
+	</message>
+	<message>
+		<name>lang_dir</name>
+		<value>ltr</value>
+	</message>
+	<message>
+		<name>preset_1</name>
+		<value>Hierarchic .html type URLs with content relevant forums and threads (Default Settings)</value>
+	</message>
+	<message>
+		<name>preset_2</name>
+		<value>Hierarchic directory type URLs with content relevant threads (used at www.vBSEO.com)</value>
+	</message>
+	<message>
+		<name>preset_3</name>
+		<value>Hierarchic .htm type URLs with content relevant forums (used at www.WebmasterWorld.com)</value>
+	</message>
+	<message>
+		<name>preset_4</name>
+		<value>Non-hierarchic .html type URLs using IDs (used at www.DaniWeb.com)</value>
+	</message>
+	<message>
+		<name>preset_5</name>
+		<value>Non-hierarchic directory type URLs using IDs (used at www.MustangEvolution.com)</value>
+	</message>
+	<message>
+		<name>arcorder_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Invert archive thread display order:&lt;/b&gt; &lt;br /&gt;
+By default, the archive (or sitemap) thread links are displayed from oldest to newest. Enable this option to invert your sitemap thread display order (display newest theads first), creating a hierarchical structure that links to the most recent content which naturally is the most important content in your forums.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_links</name>
+		<value>Remove Last Post Links For Guest Visitors</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_column</name>
+		<value>Remove Last Post Column For Guest Visitors</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_none</name>
+		<value>Keep Default Last Post Settings</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_desc</name>
+		<value>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Remove Last Post Links Options:&lt;/strong&gt;&lt;/em&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remove Last Post Links For Guest Visitors&lt;/strong&gt;&lt;br /&gt;
+This option will remove last post links on &lt;em&gt;forumhome&lt;/em&gt; for guest visitors. These links contain redirects that some SEO's might prefer to keep to a minimum.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remove Last Post Column For Guest Visitors&lt;/strong&gt;&lt;br /&gt;
+  Select this option to completely remove the last post column on &lt;em&gt;forumhome&lt;/em&gt; for guest visitors. In addition to removing the last post links (option  above), this option will increase your content to code ratio while  reducing bandwidth consumed by your forum homepage. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keep Default Last Post Settings&lt;/strong&gt;&lt;br /&gt;
+Select this option to keep the default last post links settings.&lt;/p&gt;
+&lt;p&gt;NOTE: This option would reduce functionality for non-members, but could be considered an acceptable tradeoff for SEO.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rem_member_dropdown_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;Remove Member DHTML Popup Dropdowns in Postbit For Guest Visitors?&lt;/strong&gt;&lt;br /&gt;
+Select this option to remove the DHTML Popup Window displayed for member usernames in posts for guest visitors. This option will remove non-relevant content from your thread output for guests (and spiders), increasing your content to code ratio while reducing bandwidth used in  your thread pages. &lt;/p&gt;
+&lt;p&gt;NOTE: This option would reduce functionality for non-members, but could be considered an acceptable tradeoff for SEO.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog</name>
+		<value>vBulletin Blog URLs</value>
+	</message>
+	<message>
+		<name>rw_blog_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Blog URLs?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to have vBulletin Blog URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogind_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Entry&lt;/b&gt;&lt;br /&gt;
+Select a blog entry URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;NOTE: You should always include [blog_id] within your URL format since blog entries can often have the same titles. &lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+blogs/b[blog_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloguser_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog&lt;/b&gt;&lt;br /&gt;
+Select a blog URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;NOTE: Since vBulletin does not allow for duplicate usernames, it is safe not to use the [user_id] when using the [user_name] variable.&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+blogs/u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogcat_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;Blog Category&lt;/strong&gt;&lt;br /&gt;
+Select the blog category URL format for users or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;NOTE: Duplicate categories for a single user is an unlikely scenario, so you may skip the [category_id] variable for this setting to have a &amp;quot;cleaner URL&amp;quot;.&lt;/p&gt;
+&lt;p&gt;NOTE: Since categories are associated to users, you MUST include a user identifier such as [user_id] or [user_name]. You  MUST also include either the [category_id] or [category_title] variable in the URL format. &lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+blogs/u[user_id]-c[category_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogglobcat_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;Blog Global Category&lt;/strong&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Select the blog global category URL format or create a custom layout using the field provided.
+&lt;br /&gt;&lt;br /&gt;
+NOTE: Duplicate global categories is an unlikely scenario since these are set by the administrator, so you may skip the [category_id] variable for this setting to have a &quot;cleaner URL&quot;.
+
+&lt;br /&gt;&lt;br /&gt;Sample custom string:&lt;br /&gt;
+blogs/c[category_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Recent Blog Entries&amp;quot; List&lt;/b&gt;&lt;br /&gt;
+  Define how the &amp;quot;Recent Blog Entries&amp;quot; list index URL will appear.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+  blogs/recent-entries.html&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blognext_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Next Blog Entry&amp;quot; Redirect&lt;/b&gt;&lt;br /&gt;
+Define how links to 'Next' Blog entry links will appear. These are the links at the top of blog entry pages.&lt;/p&gt;
+&lt;p&gt;NOTE: You should always include [blog_id] within your URL format since blog entries can often have the same titles. &lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+blogs/b[blog_id]-next.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogprev_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Previous Blog Entry&amp;quot; Redirect&lt;/b&gt;&lt;br /&gt;
+Define how links to 'Previous' Blog entry links will appear. These are the links at the top of blog entry pages.&lt;/p&gt;
+&lt;p&gt;NOTE: You should always include [blog_id] within your URL format since blog entries can often have the same titles. &lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+blogs/b[blog_id]-prev.htm&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogfeed_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Feed (Global)&lt;/b&gt;&lt;br /&gt;
+  Select the global blog RSS feed URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+  blogs/feed.rss&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogfeeduser_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Feed (Per User)&lt;/b&gt;&lt;br /&gt;
+  Select the RSS feed URL format for individual user blogs  or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+  blogs/feed[user_id].rss&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogmonth_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Blogs By Month&amp;quot; List (Global)&lt;/b&gt;&lt;br /&gt;
+  Define how the &amp;quot;All Blog Entries&amp;quot; list index URL will appear.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+  blogs/[year]-[month].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogday_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Blogs By Day&amp;quot; List (Global)&lt;/b&gt;&lt;br /&gt;
+Define how the &amp;quot;Blogs by Day&amp;quot; list index URL will appear.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+blogs/[year]-[month]-[day].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogatt_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Attachments&lt;/b&gt;&lt;br /&gt;
+  Google and other search engines index image (.gif, .jpg, .png, etc.)  and other file types such as Word documents (.doc) and Adobe PDF  documents (.pdf). A special variable [original_filename] has been  created so that attachments keep their original filename AND extension  in the URL.&lt;/p&gt;
+&lt;p&gt;NOTE: We recommend using [attachment_id] within your URL format  since there is a chance that users will post attachments with the same  'original filename'.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+  blogs/[attachment_id]-[original_filename]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestentry_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Best Blog Entries&amp;quot; List&lt;/b&gt;&lt;br /&gt;
+  Define how the &amp;quot;Best Blog Entries&amp;quot; list index URL will appear.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+  blogs/best-entries.html
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestblogs_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Best Blogs&amp;quot; List&lt;/b&gt;&lt;br /&gt;
+  Define how the &amp;quot;Best Blogs&amp;quot; list index URL will appear.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+  blogs/best-blogs.html&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>noneng_repl</name>
+		<value>Replace Non-English Characters in URLs</value>
+	</message>
+	<message>
+		<name>noneng_rem</name>
+		<value>Remove Non-English Characters in URLs</value>
+	</message>
+	<message>
+		<name>noneng_keep</name>
+		<value>Keep Non-English Characters in URLs</value>
+	</message>
+	<message>
+		<name>blogblist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;All Blog Entries&amp;quot; List&lt;/b&gt;&lt;br /&gt;
+Define how the &amp;quot;All Blog Entries&amp;quot; list index URL will appear.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+blogs/all.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogblistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;All Blog Entries&amp;quot; List Pagination&lt;/b&gt;&lt;br /&gt;
+Define how the &amp;quot;All Blog Entries&amp;quot; multiple page list  URLs will appear.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+blogs/all-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloguday_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Blogs By Day&amp;quot; List (Per User)&lt;/b&gt;&lt;br /&gt;
+  Define how the &amp;quot;Blogs by Day&amp;quot;  list URLs will appear for each user.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+  blogs/u[user_id]-[year]-[month]-[day].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogumonth_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Blogs By Month&amp;quot; List (Per User)&lt;/b&gt;&lt;br /&gt;
+  Define how the &amp;quot;All Blog Entries&amp;quot; list index URL will appear.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+  blogs/u[user_id]-[year]-[month].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cache_opt</name>
+		<value>Caching Options</value>
+	</message>
+	<message>
+		<name>cdn_opt</name>
+		<value>CDN Integration</value>
+	</message>
+	<message>
+		<name>like_opt</name>
+		<value>Likes System</value>
+	</message>
+	<message>
+		<name>blogclist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Blog Comments&amp;quot; List&lt;/b&gt;&lt;br /&gt;
+Define how the &amp;quot;Blog Comments&amp;quot; list index URL will appear.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+  blogs/comments.html&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogclistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Blog Comments&amp;quot; List Pagination&lt;/b&gt;&lt;br /&gt;
+Define how the &amp;quot;Blog Comments&amp;quot; multiple page list  URLs will appear.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+blogs/comments-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Recent Blog Entries&amp;quot; List Pagination&lt;/b&gt;&lt;br /&gt;
+  Define how the &amp;quot;Recent Blog Entries&amp;quot; multiple page list  URLs will appear.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+blogs/recent-entries-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestentpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Best Blog Entries&amp;quot; List Pagination&lt;/b&gt;&lt;br /&gt;
+  Define how the &amp;quot;Best Blog Entries&amp;quot; multiple page list  URLs will appear.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+  blogs/best-entries-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestblogspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Best Blogs&amp;quot; List Pagination&lt;/b&gt;&lt;br /&gt;
+  Define how the &amp;quot;Best Blogs&amp;quot; multiple page list  URLs will appear.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+  blogs/best-blogs-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cachetype_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Cache Type&lt;/b&gt; &lt;span class=beta&gt;BETA&lt;/span&gt;&lt;br /&gt;
+Select the caching system to use from the list below. Make sure that your server supports the selected cache type.&lt;/p&gt;
+&lt;p&gt;
+&lt;em&gt;memcached&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;APC Cache&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;XCache&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;eAccelerator&lt;/em&gt;&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>none</name>
+		<value>None</value>
+	</message>
+	<message>
+		<name>supported</name>
+		<value>&lt;b style=&quot;color:green&quot;&gt;Supported&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>unsupported</name>
+		<value>&lt;b style=&quot;color:red&quot;&gt;Unsupported&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>memcacheopt_desc</name>
+		<value>&lt;h4&gt;Memcached Connection Parameters &lt;span class=beta&gt;BETA&lt;/span&gt;&lt;/h4&gt; 
+&lt;p&gt;
+Define memcached parameters:
+&lt;br /&gt;Server list in the format 'host:port,weight'
+&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;Examples:&lt;/b&gt;
+&lt;br /&gt;localhost:11211,5
+&lt;br /&gt;196.1.12.2:11211,2
+&lt;br /&gt;
+&lt;br /&gt;&quot;time to live&quot; for stored data
+&lt;br /&gt;Persistent Connections
+&lt;br /&gt;Timeout (in seconds)
+&lt;br /&gt;Retry Interval (in seconds)
+&lt;br /&gt;Automatic Compression of Large Objects
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mc_ttl</name>
+		<value>&quot;Time to live&quot;</value>
+	</message>
+	<message>
+		<name>mc_retry</name>
+		<value>Retry interval</value>
+	</message>
+	<message>
+		<name>mc_compress</name>
+		<value>Minimum Object Size To Compress</value>
+	</message>
+	<message>
+		<name>mc_hosts</name>
+		<value>Servers List</value>
+	</message>
+	<message>
+		<name>mc_timeout</name>
+		<value>Connection Timeout</value>
+	</message>
+	<message>
+		<name>mc_pers</name>
+		<value>Use Persistent Connections</value>
+	</message>
+	<message>
+		<name>mc_vbulletin</name>
+		<value>vBulletin's settings</value>
+	</message>
+	<message>
+		<name>blogdaypage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Blogs By Day&amp;quot; List (Global, Pagination)&lt;/b&gt;&lt;br /&gt;
+Define how the &amp;quot;Blogs by Day&amp;quot; multiple page list index URL will appear.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+blogs/[year]-[month]-[day]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogmonthpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Blogs By Month&amp;quot; List (Global, Pagination)&lt;/b&gt;&lt;br /&gt;
+Define how the &amp;quot;Blogs by Month&amp;quot; multiple page list index URL will appear.&lt;/p&gt;
+&lt;p&gt;Sample Custom String:&lt;br /&gt;
+blogs/[year]-[month]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_bookm_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Display Social Bookmarking Icons for Blog Entries?&lt;/b&gt;&lt;br /&gt;
+Same bookmarking icons as above but for vBulletin Blog entries.
+&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>cms_bookm_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Display Social Bookmarking Icons for CMS Articles?&lt;/b&gt;&lt;br /&gt;
+Same bookmarking icons as above but for vBulletin CMS Articles.
+&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>blogcatpage_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;Blog Category Pagination&lt;/strong&gt;&lt;br /&gt;
+Select the blog category URL format for users or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;NOTE: Duplicate categories for a single user is an unlikely scenario, so you may skip the [category_id] variable for this setting to have a &amp;quot;cleaner URL&amp;quot;.&lt;/p&gt;
+&lt;p&gt;NOTE: Since categories are associated to users, you MUST include a user identifier such as [user_id] or [user_name]. You  MUST also include either the [category_id] or [category_title] variable in the URL format. &lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+blogs/u[user_id]-c[category_id]-page[page].html&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>blogglobcatpage_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;Blog Global Category Pagination&lt;/strong&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Select the global blog category pagination URL format or create a custom layout using the field provided.
+&lt;br /&gt;&lt;br /&gt;NOTE: Duplicate global categories is an unlikely scenario since these are set by the administrator, so you may skip the [category_id] variable for this setting to have a &quot;cleaner URL&quot;.
+&lt;br /&gt;&lt;br /&gt;
+Sample custom string:&lt;br /&gt;
+blogs/c[category_id]-page[page].html&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>blogbmark_topright</name>
+		<value>Display Icons WITHIN Blog Entry Posts </value>
+	</message>
+	<message>
+		<name>blogbmark_bottom</name>
+		<value>Display Icons BELOW Blog Entry Posts </value>
+	</message>
+	<message>
+		<name>blogbmark_none</name>
+		<value>Do Not Display Icons</value>
+	</message>
+	<message>
+		<name>blogdom_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Define Custom Blog Domain?&lt;/b&gt; 
+&lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Leave this option empty to keep default settings.
+&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>blogindpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Entry Pagination&lt;/b&gt;&lt;br /&gt;
+Select a blog entry URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;NOTE: You should always include [blog_id] within your URL format since blog entries can often have the same titles. &lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+blogs/b[blog_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloguserpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Pagination&lt;/b&gt;&lt;br /&gt;
+Select a blog URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;NOTE: Since vBulletin does not allow for duplicate usernames, it is safe not to use the [user_id] when using the [user_name] variable.&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+blogs/u[user_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogindredir_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Entry Comment Redirect&lt;/b&gt; &lt;br /&gt;
+Select a blog entry redirect URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+blogs/comment[comment_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_groups</name>
+		<value>Social Group URLs</value>
+	</message>
+	<message>
+		<name>rw_groups_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Social Group URLs?&lt;/b&gt; &lt;br /&gt;
+Set this option to &quot;Yes&quot; to have Social Group URLs rewritten.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groups_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group&lt;/b&gt; &lt;br /&gt;
+Select a social group URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+groups/[group_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group Pagination&lt;/b&gt; &lt;br /&gt;
+Select a social group pagination URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+groups/[group_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupmembers_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group Members&lt;/b&gt; &lt;br /&gt;
+Select a social group members URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+groups/[group_id]-users.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupmemberspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group Members Pagination&lt;/b&gt; &lt;br /&gt;
+Select a social group members pagination URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+groups/[group_id]-users-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppic_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group Pictures&lt;/b&gt; &lt;br /&gt;
+Select a social group pictures URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+groups/[group_id]-pics.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppicpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group Pictures Pagination&lt;/b&gt; &lt;br /&gt;
+Select a social group pictures pagination URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+groups/[group_id]-pics-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>url_gen</name>
+		<value>General Options</value>
+	</message>
+	<message>
+		<name>url_forum</name>
+		<value>Forum URLs</value>
+	</message>
+	<message>
+		<name>url_cms</name>
+		<value>CMS URLs</value>
+	</message>
+	<message>
+		<name>url_groups</name>
+		<value>Social Group URLs</value>
+	</message>
+	<message>
+		<name>url_member</name>
+		<value>Member Profile URLs</value>
+	</message>
+	<message>
+		<name>cmsdom_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Define Custom CMS Domain?&lt;/b&gt; 
+&lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Leave this option empty to keep default settings.
+&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>cms_opt_description</name>
+		<value>&lt;h4&gt;Select Your CMS URLs Global Format &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;/h4&gt;
+&lt;p&gt;Select a URL format preset from the dropdown list below and click the &quot;Load Preset&quot; button.&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>rw_cms_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite CMS URLs?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Set this option to &quot;Yes&quot; to have CMS URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmscat_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Category&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select a CMS category URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 4.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+cmscat-[category_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmscatpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Category Pagination&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select a CMS category pagination URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 4.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+cmscat-[category_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmssec_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Section&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select a CMS Section URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 4.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+cmssection-[section_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsseclist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Section Articles List&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select a CMS Section Articles List URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 4.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+cmssection-[section_id]-list.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsseclistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Section Articles List Pagination&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select a CMS Section Articles List Pagination URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 4.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+cmssection-[section_id]-list[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsauthor_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Author&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select a CMS Author URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 4.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+cmsauth-[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsauthorpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Author Pagination&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select a CMS Author Pagination URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 4.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+cmsauth-[user_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsentry_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Entry&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select a CMS entry URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 4.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+cmsentry-[entry_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsentrypage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Entry Pagination&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select a CMS entry pagination URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 4.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+cmsentry-[entry_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsentrycompage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Entry Comments Pagination&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select a CMS entry comments pagination URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 4.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+cmsentry-[entry_id]-comments[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsattach_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Attachment&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select a CMS attachment URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 4.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+content/[attachment_id]-[original_filename]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmshome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Home&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select a CMS Home URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 4.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+content.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>url_blog</name>
+		<value>Blog URLs</value>
+	</message>
+	<message>
+		<name>forum_opt_description</name>
+		<value>&lt;h4&gt;Select Your Forum URLs Global Format&lt;/h4&gt;
+&lt;p&gt;Select a URL format preset from the dropdown list below and click the &quot;Load Preset&quot; button.&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>path_opt</name>
+		<value>Forum Path</value>
+	</message>
+	<message>
+		<name>blog_opt_description</name>
+		<value>&lt;h4&gt;Select Your Blog URLs Global Format&lt;/h4&gt;
+&lt;p&gt;Select a URL format preset from the dropdown list below and click the &quot;Load Preset&quot; button.&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>groups_opt_description</name>
+		<value>&lt;h4&gt;Select Your Social Group URLs Global Format&lt;/h4&gt;
+&lt;p&gt;Select a URL format preset from the dropdown list below and click the &quot;Load Preset&quot; button.&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>member_opt_description</name>
+		<value>&lt;h4&gt;Select Your Member Profile URLs Global Format&lt;/h4&gt;
+&lt;p&gt;Select a URL format preset from the dropdown list below and click the &quot;Load Preset&quot; button.&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>memb_msg_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Visitor Messaging Pagination&lt;/b&gt; &lt;br /&gt;
+Select a visitor messaging pagination URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+u[user_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_friends_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Friends List Pagination&lt;/b&gt; &lt;br /&gt;
+Select a friends list pagination URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+u[user_id]-friends[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_albums_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Albums List&lt;/b&gt; &lt;br /&gt;
+Select an albums list URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+u[user_id]-albums.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_albumspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Albums List Pagination&lt;/b&gt; &lt;br /&gt;
+Select an albums list URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+u[user_id]-albums-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_album_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Albums&lt;/b&gt; &lt;br /&gt;
+Select a member album's URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+u[user_id]-albums-[album_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_albumpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Albums Pagination&lt;/b&gt; &lt;br /&gt;
+Select a member album's pagination URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+u[user_id]-albums-[album_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_pic_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Picture Page&lt;/b&gt; &lt;br /&gt;
+Select a member picture's page URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+u[user_id]-album[album_id]-pic[picture_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_entry</name>
+		<value>Blog Entry URLs</value>
+	</message>
+	<message>
+		<name>rw_blogent_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Blog Entry URLs?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to have Blog Entry URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_cat</name>
+		<value>Blog Category URLs</value>
+	</message>
+	<message>
+		<name>rw_blogcat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Blog Category URLs?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to have Blog Category URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_att</name>
+		<value>Blog Attachment URLs</value>
+	</message>
+	<message>
+		<name>rw_blogatt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Blog Attachment URLs?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to have Blog Attachment URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_feed</name>
+		<value>Blog Feed URLs</value>
+	</message>
+	<message>
+		<name>rw_blogfeed_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Blog Feed URLs?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to have Blog Feed URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_list</name>
+		<value>Blog Lists URLs</value>
+	</message>
+	<message>
+		<name>rw_bloglist_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Blog Lists URLs?&lt;/b&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to have Blog Lists URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_forum</name>
+		<value>Forum Permalinks</value>
+	</message>
+	<message>
+		<name>permalink_profile</name>
+		<value>User Profile Permalinks</value>
+	</message>
+	<message>
+		<name>permalink_blog</name>
+		<value>Blog Permalinks</value>
+	</message>
+	<message>
+		<name>permalink_cms</name>
+		<value>CMS Permalinks</value>
+	</message>
+	<message>
+		<name>permalink_profile_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable &quot;Permalink&quot; indicators for Profile Visitor Messages&lt;/b&gt; &lt;br /&gt;
+Permalinks for Profile Visitor Messages are links that point to individual Visitor Messages as anchors in the Profile Page, allowing users to reference specific comments elswhere.&lt;/p&gt;
+
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink options:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt; Display Permalink beside message date/time &lt;/b&gt;
+&lt;br /&gt;
+Will add the &quot;Permalink&quot; link to the right of each message's date &amp; time indicator.
+
+&lt;p&gt;&lt;b&gt; Link message date as Permalink&lt;/b&gt;
+&lt;br /&gt;
+Will replace individual message's date with the &quot;Permalink&quot; link.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt; Do not add Permalink indicator in Visitor Messages &lt;/b&gt;
+&lt;br /&gt;
+Do not enable &quot;Permalink&quot; links for visitor messages. &lt;/p&gt;
+
+&lt;p&gt;* You can add &amp;lt;!--PERMALINK_INFO--&amp;gt; to your &lt;em&gt;memberinfo_visitormessage&lt;/em&gt; template to define a custom location for your &quot;Permalink&quot; link.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_blog_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable &quot;Permalink&quot; indicators for Blog Comments&lt;/b&gt; &lt;br /&gt;
+Permalinks for Blog Comments are links that point to individual Blog Comments as anchors, allowing users to reference specific comments elsewhere.&lt;/p&gt;
+
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink options:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt; Display Permalink (Anchor Image) at the bottom-right of each Blog Comment &lt;/b&gt;
+&lt;br /&gt;
+Will add the &quot;Permalink&quot; link image at the bottom-right of each comment.
+
+&lt;p&gt;&lt;b&gt; Link comment date as Permalink  &lt;/b&gt;
+&lt;br /&gt;
+Will replace individual comment's date with the &quot;Permalink&quot; link.
+
+&lt;p&gt;&lt;b&gt; Do not add Permalink indicator in Blog Comments &lt;/b&gt;
+&lt;br /&gt;
+Do not enable &quot;Permalink&quot; links for blog comments.&lt;/p&gt;
+
+&lt;p&gt;* You can add &amp;lt;!--PERMALINK_INFO--&amp;gt; to your &lt;em&gt;blog_comment&lt;/em&gt; template to define a custom location for your &quot;Permalink&quot; link.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_cms_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable &quot;Permalink&quot; indicators for Article Comments&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Permalinks for Article Comments are links that point to individual Article Comments as anchors, allowing users to reference specific comments elsewhere.&lt;/p&gt;
+
+&lt;p&gt;Note: This option works ONLY with vB 4.0.x or higher&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink options:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt; Display Permalink (Anchor Image) at the bottom-right of each Article Comment &lt;/b&gt;
+&lt;br /&gt;
+Will add the &quot;Permalink&quot; link image at the bottom-right of each comment.
+
+&lt;p&gt;&lt;b&gt; Link comment date as Permalink  &lt;/b&gt;
+&lt;br /&gt;
+Will replace individual comment's date with the &quot;Permalink&quot; link.
+
+&lt;p&gt;&lt;b&gt; Do not add Permalink indicator in Article Comments &lt;/b&gt;
+&lt;br /&gt;
+Do not enable &quot;Permalink&quot; links for blog comments.&lt;/p&gt;
+
+&lt;p&gt;* You can add &amp;lt;!--PERMALINK_INFO--&amp;gt; to your &lt;em&gt;cms_postbit&lt;/em&gt; template to define a custom location for your &quot;Permalink&quot; link.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pl_blog_1</name>
+		<value>Display Permalink (Anchor Image) at the bottom-right of each Blog Comment</value>
+	</message>
+	<message>
+		<name>pl_blog_2</name>
+		<value>Link comment date as Permalink</value>
+	</message>
+	<message>
+		<name>pl_blog_0</name>
+		<value>Do not add Permalink indicator in Blog Comments</value>
+	</message>
+	<message>
+		<name>pl_cms_1</name>
+		<value>Display Permalink (Anchor Image) at the bottom-right of each Article Comment</value>
+	</message>
+	<message>
+		<name>pl_cms_2</name>
+		<value>Link comment date as Permalink</value>
+	</message>
+	<message>
+		<name>pl_cms_0</name>
+		<value>Do not add Permalink indicator in Article Comments</value>
+	</message>
+	<message>
+		<name>pl_profile_0</name>
+		<value>Do not add Permalink indicator in Visitor Messages</value>
+	</message>
+	<message>
+		<name>pl_profile_1</name>
+		<value>Display Permalink beside message date/time</value>
+	</message>
+	<message>
+		<name>pl_profile_2</name>
+		<value>Link message date as Permalink</value>
+	</message>
+	<message>
+		<name>permalink_groups_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable &quot;Permalink&quot; indicators for Social Group Messages&lt;/b&gt; &lt;br /&gt;
+Permalinks for Social Group Messages are links that point to individual Member Message as anchors in the Social Group Page, allowing users to reference specific comments elsewhere.&lt;/p&gt;
+
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink options:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Display Permalink beside message date/time&lt;/b&gt;
+&lt;br /&gt;
+Will add the &quot;Permalink&quot; link to the right of each message's date &amp; time indicator.
+
+&lt;p&gt;&lt;b&gt;Link message date as Permalink&lt;/b&gt;
+&lt;br /&gt;
+Will replace individual message's date with the &quot;Permalink&quot; link.
+
+&lt;p&gt;&lt;b&gt;Do not add Permalink indicator in Social Group Messages&lt;/b&gt;
+&lt;br /&gt;
+Do not enable &quot;Permalink&quot; links for social group messages. &lt;/p&gt;
+
+&lt;p&gt;* You can add &amp;lt;!--PERMALINK_INFO--&amp;gt; to your &lt;em&gt;socialgroups_message&lt;/em&gt; template to define a custom location for your &quot;Permalink&quot; link.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_groupspic_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable &quot;Permalink&quot; indicators for Social Group Picture Comments&lt;/b&gt; &lt;br /&gt;
+Permalinks for Social Group Picture Comments are links that point to individual Picture Comments as anchors in each image page, allowing users to reference specific picture comments elsewhere.
+&lt;/p&gt;
+
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink options:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Display Permalink beside message date/time&lt;/b&gt;
+&lt;br /&gt;
+Will add the &quot;Permalink&quot; link to the right of each message's date &amp; time indicator.
+
+&lt;p&gt;&lt;b&gt;Link message date as Permalink&lt;/b&gt;
+&lt;br /&gt;
+Will replace individual message's date with the &quot;Permalink&quot; link.
+
+&lt;p&gt;&lt;b&gt;Do not add Permalink indicator in Social Group Picture Comments&lt;/b&gt;
+&lt;br /&gt;
+Do not enable &quot;Permalink&quot; links for social group picture comments. &lt;/p&gt;
+
+&lt;p&gt;* You can add &amp;lt;!--PERMALINK_INFO--&amp;gt; to your &lt;em&gt;picturecomment_message&lt;/em&gt; template to define a custom location for your &quot;Permalink&quot; link.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_groups</name>
+		<value>Social Group Permalinks</value>
+	</message>
+	<message>
+		<name>permalink_groupspic</name>
+		<value>Social Group Picture Comments Permalinks</value>
+	</message>
+	<message>
+		<name>pl_groups_1</name>
+		<value>Display Permalink beside message date/time</value>
+	</message>
+	<message>
+		<name>pl_groups_2</name>
+		<value>Link message date as Permalink</value>
+	</message>
+	<message>
+		<name>pl_groups_0</name>
+		<value>Do not add Permalink indicator in Visitor Messages </value>
+	</message>
+	<message>
+		<name>memb_picimg_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Picture File&lt;/b&gt;&lt;br /&gt;
+Select a picture file's URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+u[user_id]-pic[picture_id].[original_ext]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_picpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Picture Page Pagination&lt;/b&gt; &lt;br /&gt;
+Select a member pictures pagination URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+u[user_id]-pic[picture_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_pic_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable &quot;Permalink&quot; indicators for for User Albums&lt;/b&gt; &lt;br /&gt;
+Permalinks for User Albums are links that point to individual Picture Comments as anchors in each album page, allowing users to reference specific picture comments elsewhere.&lt;/p&gt;
+
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink options:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Display Permalink beside message date/time&lt;/b&gt;
+&lt;br /&gt;
+Will add the &quot;Permalink&quot; link to the right of each message's date &amp; time indicator.
+
+&lt;p&gt;&lt;b&gt;Link message date as Permalink&lt;/b&gt;
+&lt;br /&gt;
+Will replace individual message's date with the &quot;Permalink&quot; link.
+
+&lt;p&gt;&lt;b&gt;Do not add Permalink indicator in User Albums&lt;/b&gt;
+&lt;br /&gt;
+Do not enable &quot;Permalink&quot; links for user albums. &lt;/p&gt;
+
+&lt;p&gt;* You can add &amp;lt;!--PERMALINK_INFO--&amp;gt; to your &lt;em&gt;picturecomment_message&lt;/em&gt; template to define a custom location for your &quot;Permalink&quot; link.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_album</name>
+		<value>User Album Permalinks</value>
+	</message>
+	<message>
+		<name>memb_convpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Visitor Conversation Pagination&lt;/b&gt; &lt;br /&gt;
+Select a visitor conversation pagination URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+conv-[user_id]-[visitor_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_conv_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Visitor Conversation&lt;/b&gt; &lt;br /&gt;
+Select a visitor conversation URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+conv-[user_id]-[visitor_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>ignore_linkback_dupe_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Ignore Linkbacks from Duplicate URLs?&lt;/b&gt; &lt;br /&gt;
+Select &quot;Yes&quot; to have vBSEO ignore Linkbacks coming from duplicate URLs.&lt;/p&gt;
+&lt;p&gt;Using a special algorithm, vBSEO will attempt to identify when a new Linkback is a duplicate of a previously registered Linkback, but comes from a different URL. The source of these duplicate Linkbacks are often forums or publishing platforms with flawed navigational architecture, that display the same content under multiple URLs.&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>preset_6</name>
+		<value>Hierarchic .html type URLs with content relevant threads (used at www.vBulletinSetup.com)</value>
+	</message>
+	<message>
+		<name>grouppicture_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group Picture Page&lt;/b&gt; &lt;br /&gt;
+Select a social group picture page URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+groups-[group_name]-pic[picture_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppicturepage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group Picture Page Pagination&lt;/b&gt; &lt;br /&gt;
+Select a social group picture pagination URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+groups-[group_name]-pic[picture_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppictureimg_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Group Picture File&lt;/b&gt; &lt;br /&gt;
+Select a group picture file's URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+groups-[group_name]-pic[picture_id].[original_ext]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupshome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Groups Home&lt;/b&gt; &lt;br /&gt;
+Select a groups home URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+groups.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupsallpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&quot;All Social Groups&quot; List Pagination&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;UPDATED!&lt;/span&gt; &lt;br /&gt;
+Select all groups list pagination URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+groups-all-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupsall_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&quot;All Social Groups&quot; List&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;UPDATED!&lt;/span&gt; &lt;br /&gt;
+Select all groups list URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+groups-all.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloghome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blogs Home&lt;/b&gt; &lt;br /&gt;
+Select a blogs home URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+blogs.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>tagshome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Tags Home&lt;/b&gt; &lt;br /&gt;
+Select a tags home URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+tags.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>tags_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Tags&lt;/b&gt; &lt;br /&gt;
+Select a tags URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+tags-[tag].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>tagspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Tags Pagination&lt;/b&gt; &lt;br /&gt;
+Select a tags pagination URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+tags-[tag]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_tags</name>
+		<value>Tags URLs</value>
+	</message>
+	<message>
+		<name>rw_tags_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Tags URLs?&lt;/b&gt;   &lt;br /&gt;
+Set this option to &quot;Yes&quot; to have tags URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_hits_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Display Hits from Linkbacks?&lt;/b&gt; &lt;br /&gt;
+Show the number of visits each Linkback has generated (an additional column will be displayed in the Linkback table). Enter one or more usergroup IDs for which this data will be displayed.
+&lt;br /&gt;&lt;br /&gt;
+Hint: The default vBulletin usergroup IDs for Unregistered, Registered, Administrator and Moderator usergroups are 1, 2, 6 and 7 respectively.
+&lt;br /&gt;&lt;br /&gt;
+Example:&lt;br /&gt;
+1 2 6 7
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_hits_top</name>
+		<value>Display # of hits per LinkBack to: </value>
+	</message>
+	<message>
+		<name>pingback_hits_right</name>
+		<value>(Separate multiple usergroups with spaces)</value>
+	</message>
+	<message>
+		<name>urls_blog_tag_search</name>
+		<value>Blog Tag Search</value>
+	</message>
+	<message>
+		<name>rw_blog_tag_search_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Tag Search URL?&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Set this option to &quot;Yes&quot; to have Blog Tag Search URLs rewritten.&lt;br /&gt;&lt;br /&gt;Note: This option works ONLY with vBulletin Blog 2.0.x or higher &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Tags&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Select a blog tags URL format or create a custom layout using the field provided.&lt;br /&gt;&lt;br /&gt;Note: This option works ONLY with vBulletin Blog 2.0.x or higher&lt;br /&gt;&lt;br /&gt;
+
+Sample custom string:&lt;br /&gt;
+blogs/tags-[tag].html
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_home_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Tags Home&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Select a blog tags home URL format or create a custom layout using the field provided.&lt;br /&gt;&lt;br /&gt;Note: This option works ONLY with vBulletin Blog 2.0.x or higher&lt;br /&gt;&lt;br /&gt;
+
+Sample custom string:&lt;br /&gt;
+blogs/tags.html
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_cst_page</name>
+		<value>Blog Custom Pages URLs</value>
+	</message>
+	<message>
+		<name>rw_blog_cst_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Blog Custom Pages &lt;/b&gt;  &lt;br /&gt;
+Set this option to &quot;Yes&quot; to have Blog Custom Page URLs rewritten.&lt;br /&gt;&lt;br /&gt;Note: This option works ONLY with vBulletin Blog 2.0.x or higher &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_cst_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Custom Page &lt;/b&gt;  &lt;br /&gt;
+Select Blog Custom Page URL rewrite format.&lt;br /&gt;&lt;br /&gt;Note: This option works ONLY with vBulletin Blog 2.0.x or higher &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_tags</name>
+		<value>Blog Tags URLs</value>
+	</message>
+	<message>
+		<name>rw_blog_tags_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Blog Tag URLs?&lt;/b&gt;  &lt;br /&gt;
+Set this option to &quot;Yes&quot; to have Blog Tag URLs rewritten&lt;br /&gt;&lt;br /&gt;Note: This option works ONLY with vBulletin Blog 2.0.x or higher .&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_desc_page</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Tags Pagination&lt;/b&gt; &lt;br /&gt;
+Select a blog tags pagination URL format or create a custom layout using the field provided.&lt;br /&gt;&lt;br /&gt;Note: This option works ONLY with vBulletin Blog 2.0.x or higher&lt;br /&gt;&lt;br /&gt;
+
+Sample custom string:&lt;br /&gt;
+blogs/tags-[tag]-[page].html
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglatestentries_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Latest Blog Entries&amp;quot; List&lt;/b&gt; &lt;br /&gt;
+Define how the &amp;quot;Latest Blog Entries&amp;quot; list index URL will appear.
+&lt;br /&gt;&lt;br /&gt;Note: This option works ONLY with vBulletin Blog 2.0.x or higher&lt;br /&gt;&lt;br /&gt;
+Sample Custom String:&lt;br /&gt;
+blogs/latest-entries.html
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglatestentriespage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Latest Blog Entries&amp;quot; List Pagination&lt;/b&gt; &lt;br /&gt;
+Define how the &amp;quot;Latest Blog Entries&amp;quot; list pagination URLs will appear.
+&lt;br /&gt;&lt;br /&gt;Note: This option works ONLY with vBulletin Blog 2.0.x or higher&lt;br /&gt;&lt;br /&gt;
+Sample Custom String:&lt;br /&gt;
+blogs/latest-entries-[page].html
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_search_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Search Tag URL &lt;/b&gt; &lt;br /&gt;
+Select Blog Tag URL rewrite format.&lt;br /&gt;&lt;br /&gt;Note: This option works ONLY with vBulletin Blog 2.0.x or higher &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_user_tags_serch_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog User Search Tag URL &lt;/b&gt; &lt;br /&gt;
+Select Blog Tag URL rewrite format.&lt;br /&gt;&lt;br /&gt;Note: This option works ONLY with vBulletin Blog 2.0.x or higher &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>virt_html</name>
+		<value>Virtual HTML Display</value>
+	</message>
+	<message>
+		<name>virt_html_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Apply Virtual HTML Display to vB Notices&lt;/b&gt;  &lt;br /&gt;
+Optimize the relevancy of each page's first text, increase C2C (Content to Code) ratio, and eliminate non-relevant text elements and links by enabling vBSEO to represent general vBulletin notices (at the top of your pages) using Javascript.&lt;br /&gt;&lt;br /&gt;
+
+This approach effectively removes the actual vB Notices from the HTML source, and increases the relevancy of the rest of the page's content, while leaving the actual page unchanged for the user.&lt;br /&gt;&lt;br /&gt;
+
+Additionally, any template code placed between the following tags will also be rendered with Javascript and removed, allowing the flexibility to replace any part of the page (with low quality content or links) with a JS version to minimize SEO impact.&lt;br /&gt;&lt;br /&gt;
+&amp;lt;!--VBSEO_VIRTUAL_HTML--&amp;gt;&lt;br /&gt;
+code here&lt;br /&gt;
+&amp;lt;!--/VBSEO_VIRTUAL_HTML--&amp;gt;
+&lt;br /&gt;
+&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>canonical_link</name>
+		<value>Canonical URLs</value>
+	</message>
+	<message>
+		<name>canonical_link_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable Canonical URLs&lt;/b&gt;   &lt;br /&gt;A canonical URL is the &quot;Preferred&quot; URL for any page. Some pages have more than one accessible URL, creating a duplicate content problem. Google and other search engines now look for a META parameter rel=&quot;canonical&quot;, and use this as a hint to determine which URL is the correct one to index, i.e. the preferred version.&lt;br /&gt;&lt;br /&gt;
+
+vBSEO's built in Link Consensus ensures that all pages on your forum are canonical to begin with, allowing for only one URL per resource. vBSEO's native canonical URLs provide advantages including greater crawling efficiency, optimized external linking, maximized link value. This is not provided with the rel=&quot;canonical&quot; parameter alone. vBSEO's Application level link consensus is required for these advantages.&lt;br /&gt;&lt;br /&gt;
+
+However, Google's canonical hints are helpful as a backup for URLs such as custom sorted pages. This level of redundancy will ensure that if search engines ever discover the sorting URLs, they will be instructed of the correct page URL for link consensus the first time they crawl the page. Examples include custom sorted versions of forumdisplay, social group discussions, member and blog lists, etc.&lt;br /&gt;
+&lt;/p&gt;
+        </value>
+	</message>
+	<message>
+		<name>group_search_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group Search &lt;/b&gt; &lt;br /&gt;
+Select Social Group Search URL rewrite format.&lt;br /&gt;&lt;br /&gt; Note: This option works ONLY with vB 3.8.x or higher&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>group_subscrb_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group Subscription&lt;/b&gt;&lt;br /&gt;
+Select Social Group Subscription URL rewrite format.&lt;br /&gt;&lt;br /&gt; Note: This option works ONLY with vB 3.8.x or higher&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>urls_group_category_header</name>
+		<value>Social Group Category Rewrite</value>
+	</message>
+	<message>
+		<name>rw_group_category_urls</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Social Group Category Urls?&lt;/b&gt;  &lt;br /&gt;
+Set this option to &quot;Yes&quot; to have Social Group Category Urls rewritten.&lt;br /&gt;&lt;br /&gt; Note: This option works ONLY with vB 3.8.x or higher&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>group_category_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group Category&lt;/b&gt; &lt;br /&gt;
+Select Social Group Category URL rewrite format.&lt;br /&gt;&lt;br /&gt; Note: This option works ONLY with vB 3.8.x or higher&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>group_category_list_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group Category List&lt;/b&gt; &lt;br /&gt;
+Select Social Group Category List URL rewrite format.&lt;br /&gt;&lt;br /&gt; Note: This option works ONLY with vB 3.8.x or higher&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>group_category_list_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group Category List Pagination&lt;/b&gt; &lt;br /&gt;
+Select Social Group Category List URL Pagination rewrite format.&lt;br /&gt;&lt;br /&gt; Note: This option works ONLY with vB 3.8.x or higher&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>urls_group_discussion_header</name>
+		<value>Social Group Discussion Rewrite</value>
+	</message>
+	<message>
+		<name>group_discussion_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group Discussion &lt;/b&gt; &lt;br /&gt;
+Select Social Group Discussion URL rewrite format&lt;br /&gt;&lt;br /&gt; Note: This option works ONLY with vB 3.8.x or higher.&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>group_discussion_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group Discussion Pagination  &lt;/b&gt; &lt;br /&gt;
+Select Social Group Discussion Pagination URL rewrite format.&lt;br /&gt;&lt;br /&gt; Note: This option works ONLY with vB 3.8.x or higher&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>group_discussion_message_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group Discussion Single Message &lt;/b&gt; &lt;br /&gt;
+Select Social Group Discussion Single Message URL rewrite format.&lt;br /&gt;&lt;br /&gt; Note: This option works ONLY with vB 3.8.x or higher&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>rw_albums_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Albums URLs?&lt;/b&gt;  &lt;br /&gt;
+Set this option to &quot;Yes&quot; to have Albums Homepage URL rewritten.&lt;br /&gt;&lt;br /&gt; Note: This option works ONLY with vB 3.8.x or higher&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>url_albums</name>
+		<value>Albums URLs</value>
+	</message>
+	<message>
+		<name>memb_albums_home_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Albums Homepage&lt;/b&gt; &lt;br /&gt;
+Select Albums Homepage URL rewrite format.&lt;br /&gt;&lt;br /&gt; Note: This option works ONLY with vB 3.8.x or higher&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>memb_albums_home_page_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Albums Homepage Pagination&lt;/b&gt; &lt;br /&gt;
+Select Albums Homepage Pagination URL rewrite format.&lt;br /&gt;&lt;br /&gt; Note: This option works ONLY with vB 3.8.x or higher&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>group_category_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group Category Pagination &lt;/b&gt; &lt;br /&gt;
+Select Social Group Category URL rewrite format.&lt;br /&gt;&lt;br /&gt; Note: This option works ONLY with vB 3.8.x or higher&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>group_discussion_last_post_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group Discussion Last Post &lt;/b&gt; &lt;br /&gt;
+Select Social Group Discussion Last Post URL rewrite format.&lt;br /&gt;&lt;br /&gt; Note: This option works ONLY with vB 3.8.x or higher&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>pl_groupspic_1</name>
+		<value>Display Permalink beside message date/time</value>
+	</message>
+	<message>
+		<name>pl_groupspic_2</name>
+		<value>Link message date as Permalink</value>
+	</message>
+	<message>
+		<name>pl_groupspic_0</name>
+		<value>Do not add Permalink indicator in Social Group Picture Comments</value>
+	</message>
+	<message>
+		<name>segmentation_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Google Segmentation Tracking&lt;/b&gt;  &lt;br /&gt;This is an integration feature for Google Analytics, providing admins with the ability to segment and view their stats by usergroup.&lt;br /&gt;&lt;br /&gt;
+
+Using the &quot;Basic Segmentation&quot; option, visitors to your forum will be tracked and segmented into &quot;Guest&quot; and &quot;Member&quot; groups. This allows you to compare the difference in activity between the two groups.&lt;br /&gt;&lt;br /&gt;
+
+Using the more advanced &quot;Enhanced Segmentation&quot; option, you can track and segment your traffic into every different user group available on your forum. View stats specifically for your guests, members, moderators, customers, and every other primary user group.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>segmentation_1</name>
+		<value>Basic Segmentation</value>
+	</message>
+	<message>
+		<name>segmentation_2</name>
+		<value>Enhanced Segmentation</value>
+	</message>
+	<message>
+		<name>segmentation_0</name>
+		<value>None</value>
+	</message>
+	<message>
+		<name>vhtml_opt0</name>
+		<value>Do not apply Virtual HTML Display</value>
+	</message>
+	<message>
+		<name>vhtml_opt1</name>
+		<value>Apply Virtual HTML Display</value>
+	</message>
+	<message>
+		<name>vhtml_opt2</name>
+		<value>Apply Virtual HTML Display (For guests only)</value>
+	</message>
+	<message>
+		<name>twitter_user</name>
+		<value>Your Twitter username</value>
+	</message>
+	<message>
+		<name>tb_opt</name>
+		<value>Tweetboard Options</value>
+	</message>
+	<message>
+		<name>vbseo_tweetboard</name>
+		<value>&lt;p&gt;&lt;b&gt;Tweetboard Integration&lt;/b&gt; &lt;br /&gt;
+Tweetboard creates an instant Twitter-powered microforum for your website.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It's a great solution for engaging your readers and encourage participation while bringing traffic back to your website.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Enabling Tweetboard via vBSEO is extremely simple and convenient. Just enter your Twitter username here, and vBSEO will take care of the rest.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;If you don't have a Twitter account yet, you may create on &lt;a href=&quot;http://twitter.com&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+More info: &lt;a href=&quot;http://tweetboard.com&quot; target=&quot;_blank&quot;&gt;http://tweetboard.com&lt;/a&gt;
+&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>forum_feeds_url</name>
+		<value>Forum Feed URLs</value>
+	</message>
+	<message>
+		<name>rw_forum_feeds_url_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Forum Feed URLs?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Set this option to &quot;Yes&quot; to have Forum Feed URLs rewritten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_feeds_url_general</name>
+		<value>&lt;p&gt;&lt;b&gt;General Forum Feed URLs&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select a General Forum Feed URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 4.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+rss.xml&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_feeds_url_forum</name>
+		<value>&lt;p&gt;&lt;b&gt;Forum Feed URL format&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select a Forum Feed URL format or create a custom layout using the field provided.&lt;/p&gt;
+&lt;p&gt;Note: This option works ONLY with vB 4.x or higher&lt;/p&gt;
+&lt;p&gt;Sample custom string:&lt;br /&gt;
+rss-{forum_title].xml&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cp_dashboard</name>
+		<value>Dashboard</value>
+	</message>
+	<message>
+		<name>cp_dashboard_desc</name>
+		<value>Your vBSEO-enabled site performance and basic management options.</value>
+	</message>
+	<message>
+		<name>cp_licinfo</name>
+		<value>License Information</value>
+	</message>
+	<message>
+		<name>cp_backup_restore</name>
+		<value>Data Backup &amp; Restore</value>
+	</message>
+	<message>
+		<name>cp_dashboard_header</name>
+		<value>License Key &amp; Data Backup</value>
+	</message>
+	<message>
+		<name>cp_validkey</name>
+		<value>Valid key</value>
+	</message>
+	<message>
+		<name>cp_mustmatch</name>
+		<value>This number must match the &quot;Valid key&quot; listed above</value>
+	</message>
+	<message>
+		<name>cp_invalidkey</name>
+		<value>Invalid key</value>
+	</message>
+	<message>
+		<name>cp_copy</name>
+		<value>copy</value>
+	</message>
+	<message>
+		<name>cp_save</name>
+		<value>Save</value>
+	</message>
+	<message>
+		<name>cp_gen_vbseo</name>
+		<value>General Settings</value>
+	</message>
+	<message>
+		<name>cp_gen_vbseo_desc</name>
+		<value>Customize general vBSEO Options</value>
+	</message>
+	<message>
+		<name>view_site</name>
+		<value>View the Site</value>
+	</message>
+	<message>
+		<name>dashboard</name>
+		<value>Dashboard</value>
+	</message>
+	<message>
+		<name>cp_login</name>
+		<value>Login</value>
+	</message>
+	<message>
+		<name>cp_setpass</name>
+		<value>Define a password</value>
+	</message>
+	<message>
+		<name>url_opt_desc</name>
+		<value>Define the URL structure of your site.</value>
+	</message>
+	<message>
+		<name>basic_settings</name>
+		<value>Basic Settings</value>
+	</message>
+	<message>
+		<name>thecrrs</name>
+		<value>Custom Rewrite Rules</value>
+	</message>
+	<message>
+		<name>thec301</name>
+		<value>Custom Redirects</value>
+	</message>
+	<message>
+		<name>existing_files</name>
+		<value>The following files have now been deprecated and should be removed:</value>
+	</message>
+	<message>
+		<name>empty_formats</name>
+		<value>The following URL formats are currently empty and should be corrected:</value>
+	</message>
+	<message>
+		<name>char_opt</name>
+		<value>Character Replacement</value>
+	</message>
+	<message>
+		<name>utf8_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Enable UTF-8 support ?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select 'Yes' to use UTF-8 character set in text-related vBSEO functions.&lt;br /&gt;&lt;br /&gt;Do not enable this option if you are not using UTF-8 as your forum language
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>morechars_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Enable special characters in member URLs ?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select 'Yes' to include non-English characters in member profile URLs.&lt;br /&gt;&lt;br /&gt;This setting also effects Album Urls. Don't enable this option unless you are asked to do so by vBSEO Support Staff.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cp_charset</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Use custom character set in vBSEO CP ?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Enter custom character set name in this setting if you want to use it instead of default charset.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>settings_saved</name>
+		<value>Settings Saved</value>
+	</message>
+	<message>
+		<name>settings_saved_warning</name>
+		<value>Scroll Up to Read Warning</value>
+	</message>
+	<message>
+		<name>tagfilter_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Enable filtering for Tags URLs ?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select 'Yes' to remove special characters from tags URLs.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>nourlenc_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Disable &quot;urlencoding&quot; in URLs ?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select 'Yes' to disable urlencoding (%XX) of special characters in all URLs.&lt;br /&gt;&lt;br /&gt;Don't enable this option unless you are asked to do so by vBSEO Support Staff.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>utf8convert_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Convert URLs to UTF8 Charset ?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Select 'Yes' if your forum uses non-UTF charset and you want to have URLs converted to UTF-8.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>char_repl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Define your Custom Character Replacements&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;  &lt;br /&gt;
+Enter character replacements (1 per line). You need to use Ascii Html value for the characters &lt;/p&gt;
+&lt;p&gt;Examples:&lt;br /&gt;
+'&amp;# 268;'=&gt;'c'&lt;br /&gt;
+'&amp;# 351;'=&gt;'s'&lt;br /&gt;&lt;br /&gt;
+Characters that has a value below 256 should be used the following format ( actual character ) &lt;br /&gt;
+Ü=&gt;'u'&lt;br /&gt;
+ö=&gt;'o'&lt;br /&gt;&lt;br /&gt;
+Note: Ascii characters have a space between # and value. You should not use that space.
+&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>vbseo_cache_var_defin</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Define Cache Prefix&lt;/b&gt;  &lt;br /&gt;
+If you have multiple vBSEO instances running on your server, you need to define a unique cache prefix for each instance.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>copyright_position_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Choose vBSEO Copyright&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Please choose vBSEO Copyright notice you want to display.&lt;br /&gt;&lt;br /&gt;
+To remove the Copyright you will need our Branding Free Service visit https://www.vbseo.com/branding-removal-option.html for more information.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>copyright_sel_0</name>
+		<value>Default copyright notice</value>
+	</message>
+	<message>
+		<name>copyright_sel_1</name>
+		<value>Linked - Search Engine Friendly URLs by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_2</name>
+		<value>Linked - Content Relevant URLs by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_3</name>
+		<value>Linked - Search Engine Optimization by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_4</name>
+		<value>Linked - SEO by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_5</name>
+		<value>Linked - LinkBacks Enabled by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_6</name>
+		<value>Not Linked - Search Engine Friendly URLs by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_7</name>
+		<value>Not Linked - Content Relevant URLs by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_8</name>
+		<value>Not Linked - Search Engine Optimization by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_9</name>
+		<value>Not Linked - SEO by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_10</name>
+		<value>Not Linked - LinkBacks Enabled by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>vbseo_noversion_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Hide vBSEO version inside Copyright Notice&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Do you want to hide version you are using within vBSEO Copyright notice.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_auto_link_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Acronym Autolink Format&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Define your acronym autolink format here.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>loading_error</name>
+		<value>Loading error.</value>
+	</message>
+	<message>
+		<name>please_wait</name>
+		<value>Please wait...</value>
+	</message>
+	<message>
+		<name>invalidkey_notice</name>
+		<value>Your 'current' license key does not match your valid key, please license your vBSEO instance by saving your valid key as your 'current' license key. </value>
+	</message>
+	<message>
+		<name>vbseo_last_modified_header_desc</name>
+		<value>&lt;b&gt;Enable Last Modified Header&lt;/b&gt;  &lt;span class=&quot;beta&quot;&gt;BETA!&lt;/span&gt; &lt;br /&gt;
+Do you want to enable last modified header option ?</value>
+	</message>
+	<message>
+		<name>vbseo_gars_support</name>
+		<value>&lt;b&gt;Enable GARS Support&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt;
+Do you want to Enable &lt;a href=&quot;http://www.thevbgeek.com/geekmart.php?do=displayproduct&amp;id=3&quot;&gt;Gars&lt;/a&gt; Support for multiple Gars pages</value>
+	</message>
+	<message>
+		<name>vbseo_vbulletin_php_extension</name>
+		<value>&lt;b&gt;Define vBulletin Extension&lt;/b&gt;   &lt;br /&gt;
+If you are using any other php extension then .php , define your php extension here</value>
+	</message>
+	<message>
+		<name>vbseo_vbulletin_config_php</name>
+		<value>&lt;b&gt;Define vBulletin Config&lt;/b&gt;   &lt;br /&gt;
+If you are using a custom config.php file please define your config file path and name here</value>
+	</message>
+	<message>
+		<name>vbseo_custom_doc_root</name>
+		<value>&lt;b&gt;Custom Doc Root&lt;/b&gt;   &lt;br /&gt;
+Define your custom document root path here&lt;br /&gt; Example : /home/user/public_html</value>
+	</message>
+	<message>
+		<name>vbseo_custom_doc_relative</name>
+		<value>&lt;b&gt;Define vBSEO Custom Relative Doc Root&lt;/b&gt;   &lt;br /&gt;
+Define your custom relative path for your forum. This option is required if you have your vBulletin installation inside a folder like forum. If this is the case , you have to define your Custom Doc Root above and define your forum path here. &lt;br /&gt; Example : /forum/</value>
+	</message>
+	<message>
+		<name>vbseo_forum_slugs</name>
+		<value>&lt;b&gt;Define vBSEO Forum Slugs&lt;/b&gt;   &lt;br /&gt;
+Define your forum slugs here</value>
+	</message>
+	<message>
+		<name>vbseo_applyto_forums</name>
+		<value>&lt;b&gt;Rewrite URLs on specified vBulletin Forum IDs &lt;/b&gt;   &lt;br /&gt;
+Separate IDs with space. Leave the setting empty to apply vBSEO on all forums.</value>
+	</message>
+	<message>
+		<name>vbseo_avatar_prefix</name>
+		<value>&lt;b&gt;Define Avatar Prefix&lt;/b&gt;   &lt;br /&gt;
+Define your avatar rewrite prefix</value>
+	</message>
+	<message>
+		<name>vbseo_atttachment_prefix</name>
+		<value>&lt;b&gt;Define Atttachment Prefix&lt;/b&gt;   &lt;br /&gt;
+Define your atttachment rewrite prefix</value>
+	</message>
+	<message>
+		<name>vbseo_icon_prefix</name>
+		<value>&lt;b&gt;Define Icon Prefix&lt;/b&gt;   &lt;br /&gt;
+Define your icon rewrite prefix</value>
+	</message>
+	<message>
+		<name>vbseo_thread_prefix_desc</name>
+		<value>&lt;b&gt;Include Thread Prefix&lt;/b&gt;   &lt;br /&gt;
+Do you want to include Thread Prefixes to your Url rewrite Rules</value>
+	</message>
+	<message>
+		<name>vbseo_thread_prefix_name_desc</name>
+		<value>&lt;b&gt;Include Thread Prefix Name&lt;/b&gt;   &lt;br /&gt;
+Do you want to include Thread Prefix Names to your Url rewrite Rules</value>
+	</message>
+	<message>
+		<name>vbseo_copyright_header</name>
+		<value>Copyright Options</value>
+	</message>
+	<message>
+		<name>vbseo_image_prefix_header</name>
+		<value>Image Prefix Options</value>
+	</message>
+	<message>
+		<name>vbseo_advanced_custom_header</name>
+		<value>Advanced Configuration Options</value>
+	</message>
+	<message>
+		<name>vbseo_blog_prefix_header</name>
+		<value>Advanced Blog Options</value>
+	</message>
+	<message>
+		<name>vbseo_blog_cat_prefix_desc</name>
+		<value>&lt;b&gt;Define Blog Undefined Category Prefix&lt;/b&gt;   &lt;br /&gt;
+Define your Blog Undefined Category Prefix rewrite prefix</value>
+	</message>
+	<message>
+		<name>replace_tag_title</name>
+		<value>Replace Tag Page Title</value>
+	</message>
+	<message>
+		<name>replace_tag_title_desc</name>
+		<value>&lt;p&gt;Do you want vBSEO auto replace page title on Tag pages and include Tag Name to Page title ?&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>crr_creator_link</name>
+		<value>vBSEO.com CRR Creator</value>
+	</message>
+	<message>
+		<name>rr_div</name>
+		<value>Insert this Relevant Replacement in &quot;Page title&quot; section on forum and thread pages (vB4.x+ only)</value>
+	</message>
+	<message>
+		<name>cdnopt_desc</name>
+		<value>&lt;h4&gt;MaxCDN Integration&lt;/h4&gt;
+			&lt;p&gt;A CDN is a Content Delivery Network. CDN's host static files like Images, CSS, JavaScript and other content. A CDN solution is one of the best ways to speed up your site and increase your server capacity.&lt;br /&gt;&lt;br /&gt;Advanced settings - Enter custom folders and zones, one per line, like:&lt;br /&gt;'images/' =&gt; 'http://images.yourcdn.com/'&lt;br /&gt;'files/' =&gt; 'http://files.yourcdn.com/'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cdnopt_adv_desc</name>
+		<value>Advanced CDN option description goes here&lt;br /&gt;&lt;br /&gt;Enter custom folders and zones, one per line, like:&lt;br /&gt;'images/' =&gt; 'http://images.yourcdn.com/'&lt;br /&gt;'files/' =&gt; 'http://files.yourcdn.com/'</value>
+	</message>
+	<message>
+		<name>cdn_defzone</name>
+		<value>Define Your CDN Pull Zone URL (you need to supply either the CNAME URL or your MaxCDN Pullzone URL, including http:// ). You must also include a trailing slash (/).</value>
+	</message>
+	<message>
+		<name>cdn_custfolder</name>
+		<value>Custom Folder</value>
+	</message>
+	<message>
+		<name>cdn_def_custfolder</name>
+		<value>Enter Custom Folders (optional)</value>
+	</message>
+	<message>
+		<name>cdn_def_adv_zone</name>
+		<value>Choose which files you want to host within CDN and define your custom Pull Zone ( cName ) url for each file type.</value>
+	</message>
+	<message>
+		<name>cdn_single_zone</name>
+		<value>Use single pull zone for all resources</value>
+	</message>
+	<message>
+		<name>imgdim_toolarge</name>
+		<value>The number of images dimensions defined is too large, and was truncated to the maximum recommended size: </value>
+	</message>
+	<message>
+		<name>likesys_forum</name>
+		<value>&lt;p&gt;&lt;b&gt;Likes System on the Forum?&lt;/b&gt;&lt;br /&gt;
+Enable the Likes System for Forum threads and posts? Note that this option also enables the "Likes Tree" functionality.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>likesys_blog</name>
+		<value>&lt;p&gt;&lt;b&gt;Likes System on Blogs?&lt;/b&gt;&lt;br /&gt;
+Enable the Likes System for Blog entries and comments?&lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>likesys_cms</name>
+		<value>&lt;p&gt;&lt;b&gt;Likes System on CMS?&lt;/b&gt;&lt;br /&gt;
+Enable the Likes System for CMS articles and comments?&lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>likesys_vislink</name>
+		<value>&lt;p&gt;&lt;b&gt;Like Link Always Visible?&lt;/b&gt;&lt;br /&gt;
+Always show "Like" link (select "No" to show it when moving mouse over the post only)?&lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>utf8convert_orig_charset</name>
+		<value>If enabled, please specify original character set used in database</value>
+	</message>
+</translations>

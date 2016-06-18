@@ -1,0 +1,1684 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<translations>
+	<message>
+		<name>adm_cp</name>
+		<value>Admin Control Panel</value>
+	</message>
+	<message>
+		<name>cphome</name>
+		<value>vBSEO CP Home</value>
+	</message>
+	<message>
+		<name>back_to</name>
+		<value>Terug naar de Forums</value>
+	</message>
+	<message>
+		<name>logout</name>
+		<value>Uitloggen</value>
+	</message>
+	<message>
+		<name>linkbacks</name>
+		<value>LinkBacks (Ping/Track/Refbacks)</value>
+	</message>
+	<message>
+		<name>in_linkbacks</name>
+		<value>Binnenkomende LinkBacks</value>
+	</message>
+	<message>
+		<name>out_linkbacks</name>
+		<value>Vertrekkende LinkBacks</value>
+	</message>
+	<message>
+		<name>permalinks</name>
+		<value>Permalinks</value>
+	</message>
+	<message>
+		<name>patent_pending</name>
+		<value>Patent in Afwachting</value>
+	</message>
+	<message>
+		<name>cookies_cleared</name>
+		<value>Alle Cookies Gewist.</value>
+	</message>
+	<message>
+		<name>click_redirect</name>
+		<value>Klik hier als je browser je niet automatisch doorstuurt.</value>
+	</message>
+	<message>
+		<name>error</name>
+		<value>Fout</value>
+	</message>
+	<message>
+		<name>pass_notsame</name>
+		<value>De ingevulde wachtwoorden zijn niet hetzelfde</value>
+	</message>
+	<message>
+		<name>pass_empty</name>
+		<value>Wachtwoord kan niet leeg zijn</value>
+	</message>
+	<message>
+		<name>pass_defined</name>
+		<value>Admin wachtwoord is reeds bepaald</value>
+	</message>
+	<message>
+		<name>config_readonly</name>
+		<value>Config bestand is niet schrijfbaar</value>
+	</message>
+	<message>
+		<name>pass_select</name>
+		<value>Selecteer een wachtwoord alstublieft.</value>
+	</message>
+	<message>
+		<name>password</name>
+		<value>Wachtwoord</value>
+	</message>
+	<message>
+		<name>confirm</name>
+		<value>Bevestig</value>
+	</message>
+	<message>
+		<name>login</name>
+		<value>Inloggen</value>
+	</message>
+	<message>
+		<name>note_config</name>
+		<value>&lt;strong&gt;NOTA:&lt;/strong&gt; Je /includes/config_vbseo.php bestand moet schrijfbaar zijn. Verander de bestand permissies alstublieft.</value>
+	</message>
+	<message>
+		<name>login_failed</name>
+		<value>Inloggen gefaald</value>
+	</message>
+	<message>
+		<name>area_protected</name>
+		<value>Dit deel is beschermd met een wachtwoord.</value>
+	</message>
+	<message>
+		<name>warn_readonly</name>
+		<value>WAASCHUWING: Je config_vbseo.php is niet schrijfbaar. Instellingen kunnen hierdoor niet bewaard worden.</value>
+	</message>
+	<message>
+		<name>saved_ok</name>
+		<value>Je instellingen zijn succesvol geupload en bewaard.</value>
+	</message>
+	<message>
+		<name>quick_jump</name>
+		<value>Snelsprong Menu</value>
+	</message>
+	<message>
+		<name>gen_set</name>
+		<value>Algemene Instellingen</value>
+	</message>
+	<message>
+		<name>vbseo_opt</name>
+		<value>vBSEO Opties</value>
+	</message>
+	<message>
+		<name>log_opt</name>
+		<value>Logboek &amp; WaarnemingsOpties</value>
+	</message>
+	<message>
+		<name>arc_opt</name>
+		<value>vB's Archief Opties</value>
+	</message>
+	<message>
+		<name>url_opt</name>
+		<value>URL Herschrijf Instellingen</value>
+	</message>
+	<message>
+		<name>gen_opt</name>
+		<value>Algemene Opties</value>
+	</message>
+	<message>
+		<name>gen_opt_description</name>
+		<value>&lt;b&gt;Selecteer het Globale URL Formaat voor Jouw Forum&lt;/b&gt;&lt;br /&gt;
+Het herschrijven van URLs voegt niet alleen relevante sleutelwoorden toe aan de URLs van je forum maar consolideert ook meerdere (verchillende) URLs in ÉÉN URL voor ELK uniek medium. Dit tweede voordeel verbetert de interne linkstructuur van je site door het creëren van een netwerk van consistente links die zoekmachines toestaan om de unieke inhoud van jouw site naar behoren te vinden en te indexeren.
+Een consistente linkstructuur verzekerd ook dat binnenkomende links ALTIJD &quot;waarde creëren&quot; door te verwijzen naar inhoud van hoofdpagina's en nooit naar tweederangspagina's of duplicaten, waardoor de relevantie voor de kern van je inhoud verbeterd met elke back-link.
+&lt;p style=&quot;color:#f00&quot;&gt;&lt;b&gt;BELANGRIJK:&lt;/b&gt; Dit is een &lt;em&gt;STEL-HET-IN EN VERGEET-HET!&lt;/em&gt; functie. Éénmaal je je URL structuur hier geselecteerd hebt, is het STERK aanbevolen om deze instellingen NOOIT meer te veranderen. Door dit toch te doen zal er een directe impact zijn op de URL integriteit, waardoor er waardevolle binnenkomende links en zoekmachine positie verloren gaan.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;b&gt;Instructies:&lt;/b&gt;&lt;br /&gt;
+Selecteer een vooraf ingesteld URL formaat uit de menulijst hieronder en klik op de &quot;Laad Voorinstelling&quot; knop. Je mag ook een aangepaste URL structuur instellen door de Geavanceerde Instellingen te doen uitzetten (klik op de '+' link).
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_forum</name>
+		<value>Forum URLs</value>
+	</message>
+	<message>
+		<name>urls_ann</name>
+		<value>Aankondiging URLs</value>
+	</message>
+	<message>
+		<name>urls_thread</name>
+		<value>Onderwerp URLs</value>
+	</message>
+	<message>
+		<name>urls_prnthread</name>
+		<value>Print Onderwerp URLs</value>
+	</message>
+	<message>
+		<name>urls_post</name>
+		<value>Toon Post URLs</value>
+	</message>
+	<message>
+		<name>urls_polls</name>
+		<value>Poll URLs</value>
+	</message>
+	<message>
+		<name>urls_member</name>
+		<value>Leden Profiel URLs</value>
+	</message>
+	<message>
+		<name>urls_mlist</name>
+		<value>Leden Lijst URLs</value>
+	</message>
+	<message>
+		<name>urls_avatar</name>
+		<value>Aangepaste Avatar Afbeelding URLs</value>
+	</message>
+	<message>
+		<name>urls_navbul</name>
+		<value>Nav Bullet (Stamboom Icoon) Afbeelding URLs</value>
+	</message>
+	<message>
+		<name>urls_attach</name>
+		<value>Bijlagen URLs</value>
+	</message>
+	<message>
+		<name>crrs</name>
+		<value>Aangepaste Herschrijf Regels</value>
+	</message>
+	<message>
+		<name>seo_func</name>
+		<value>SEO Functies</value>
+	</message>
+	<message>
+		<name>dyn_metas</name>
+		<value>Dynamische META TAGS</value>
+	</message>
+	<message>
+		<name>dir_links</name>
+		<value>Directe Links</value>
+	</message>
+	<message>
+		<name>add_ttitle</name>
+		<value>Toevoegen Onderwerp Titels</value>
+	</message>
+	<message>
+		<name>add_extttitle</name>
+		<value>Toevoegen Titels aan Externe Links</value>
+	</message>
+	<message>
+		<name>stopwords</name>
+		<value>Stopwoord Filter</value>
+	</message>
+	<message>
+		<name>acronym</name>
+		<value>Acroniem Expansie</value>
+	</message>
+	<message>
+		<name>rel_replacements</name>
+		<value>Relevante Vervangingen</value>
+	</message>
+	<message>
+		<name>hp_set</name>
+		<value>Hoofdpagina Instellingen</value>
+	</message>
+	<message>
+		<name>int_rel</name>
+		<value>Interne rel=&quot;nofollow&quot;s</value>
+	</message>
+	<message>
+		<name>ext_rel</name>
+		<value>Externe rel=&quot;nofollow&quot;s</value>
+	</message>
+	<message>
+		<name>oth_enh</name>
+		<value>Andere Verbeteringen</value>
+	</message>
+	<message>
+		<name>cleanup_html</name>
+		<value>Schoonmaken HTML Code</value>
+	</message>
+	<message>
+		<name>remove_prev</name>
+		<value>Verwijder Onderwerp Preview Tekst</value>
+	</message>
+	<message>
+		<name>guests_only</name>
+		<value>Verbeteringen alleen voor Bezoekers</value>
+	</message>
+	<message>
+		<name>img_size</name>
+		<value>Afbeelding Grootte Eigenschappen</value>
+	</message>
+	<message>
+		<name>dl_backup</name>
+		<value>Download/Backup je Huidige Instellingen</value>
+	</message>
+	<message>
+		<name>download</name>
+		<value>Download</value>
+	</message>
+	<message>
+		<name>filename</name>
+		<value>Bestandsnaam</value>
+	</message>
+	<message>
+		<name>description</name>
+		<value>Beschrijving</value>
+	</message>
+	<message>
+		<name>backup_all</name>
+		<value>&lt;b&gt;Backup AL je vBSEO Instellingen&lt;/b&gt;&lt;br /&gt;
+            Backup/Bewaar al je vBSEO instellingen.</value>
+	</message>
+	<message>
+		<name>save_set_all</name>
+		<value>Bewaar alle Instellingen</value>
+	</message>
+	<message>
+		<name>backup_urls</name>
+		<value>&lt;b&gt;Backup ALLEEN je 'URL Herschrijf Instellingen'&lt;/b&gt;&lt;br /&gt;
+            Deel je 'URL Herschrijf Instellingen' met andere gebruikers.</value>
+	</message>
+	<message>
+		<name>upload_set</name>
+		<value>Upload een Instellingen (.xml) Bestand</value>
+	</message>
+	<message>
+		<name>choose_file</name>
+		<value>Kies het xml bestand alstublieft!</value>
+	</message>
+	<message>
+		<name>note_upcrr</name>
+		<value>&lt;b&gt;Nota:&lt;/b&gt; Het Uploaden van een 'URL Herschrijf Instellingen' XML bestand (vbseo_urls.xml) ZAL GEEN andere instellingen overschrijven zoals je 'Algemene Instellingen' of 'SEO Functies'.</value>
+	</message>
+	<message>
+		<name>upload</name>
+		<value>Upload</value>
+	</message>
+	<message>
+		<name>import_set</name>
+		<value>Importeer Instellingen</value>
+	</message>
+	<message>
+		<name>language_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;vBSEO CP Interface Taal&lt;br&gt;
+                              &lt;/strong&gt;Selecteer een taal voor het vBSEO Controlepaneel. Je taalpakket moet vooraf geupload zijn naar de 'forums/includes/xml/' map.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>activate_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Activeer Plugin?&lt;/b&gt;&lt;br /&gt;
+    Selecteer 'Ja' om vBSEO's statische URLs (CRUs) en andere SEO functies te activeren.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>yes</name>
+		<value>Ja</value>
+	</message>
+	<message>
+		<name>no</name>
+		<value>Nee</value>
+	</message>
+	<message>
+		<name>license_desc</name>
+		<value>&lt;b&gt;Jouw vBSEO Licentie Sleutel&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>key_config</name>
+		<value>Je Licentie Sleutel veranderd bij 1) een nieuwe vBSEO versie of 2) een verandering van forum URL. Bewaar je huidige Licentie Sleutel (getoond in het Rood hieronder) in je configuratie bestand. Éénmaal ingevuld, zal de Licentie Sleutel Groen worden als aanduiding van een product met licentie</value>
+	</message>
+	<message>
+		<name>current_ver</name>
+		<value>Huidige versie</value>
+	</message>
+	<message>
+		<name>forums_root</name>
+		<value>Jouw forums root</value>
+	</message>
+	<message>
+		<name>current_key</name>
+		<value>Jouw huidige sleutel</value>
+	</message>
+	<message>
+		<name>redir_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;301 Doorsturen Originele Inhoud&lt;/b&gt;&lt;br /&gt;
+'301 doorsturingen' zijn &quot;Google's Veilige&quot; manier van inhoud verplaatsen. Schakel deze optie in om alle voorgaande dynamisch gegenereerde pagina's door te sturen naar de nieuwe, statische inhoud. Deze optie behoud 'Pagina Rang' gewonnen van oude binnenkomende links.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>domname_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Domeinnaam Invoegen in URLs?&lt;/b&gt;&lt;br /&gt;
+Van zoekmachines wordt gedacht dat ze waarschijnlijk eerder links met absolute URLs volgen (www.jouwdomein.com/deze_pagina.html). Schakel deze optie in om je domeinnaam in te voegen in je forum links en daardoor je URLs er absoluut te doen uitzien (vs. relatief).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>noneng_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Vervang Niet-Engelse Karakters in URLs?&lt;/b&gt;&lt;br /&gt;
+Selecteer 'Ja' om niet-Engelse karakters te vervangen met hun Engelse equivalent. Schakel deze optie in als je forums niet in het Engels zijn of als niet-Engelse karakters voorkomen in je forum (bijv. Caf&amp;eacute;)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>redirext_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Doorsturen van &lt;i&gt;ALLE&lt;/i&gt; Externe URLs Gepost in Privé Forums&lt;/b&gt;&lt;br /&gt;
+Schakel deze optie in om alle externe links die gepost zijn in privé forums door te sturen door een intern script. Dit zal URLs van je privé forums verbergen in server logboeken op externe sites, waardoor je privacy beschermd wordt.&lt;/p&gt;
+&lt;p&gt;Nota: De URLs zullen eruit zien als 'http://www.yourdormain.com/forums/redirect-to/?redirect=http://www.externdomein.com'</value>
+	</message>
+	<message>
+		<name>email_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Herschrijf Systeem E-mail URLs?&lt;/b&gt;&lt;br /&gt;
+Stel deze optie in naar 'Ja' om vBSEO de automatische notificatie e-mails te laten herschrijven. &lt;/p&gt;
+&lt;p&gt;Nota: Deze optie werkt alleen met vB 3.5.x of hoger&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>link_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Link-terug plaatsen naar het vBSEO Admin Controlepaneel?&lt;/b&gt;&lt;br /&gt;
+Deze functie zal een tijdelijke link naar dit controlepaneel plaatsen aan de top van jouw vBulletin forum pagina's, en werkt als een aanzienlijke tijd-spaarder bij het instellen van je statische URLs. NOTA: Deze link is alleen zichtbaar voor vBulletin forum admins (Gebruikersgroep 6).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>fnf_desc</name>
+		<value>&lt;p&gt;
+                                          &lt;b&gt;&quot;Bestand Niet Gevonden&quot; verzoek behandeling?&lt;/b&gt;&lt;br /&gt;
+      Selecteer hoe 'Bestand Niet Gevonden' verzoeken zullen behandeld worden: &lt;br /&gt;
+      - Doorsturen naar de hoofdpagina &lt;br /&gt;
+      - Stuur 404 HTTP code en toon een 'Pagina niet gevonden' bericht &lt;br /&gt;
+      - Invoegen aangepaste foutenpagina. NOTA: De bestandsnaam moet het absolute pad bevatten. (voorbeeld: &lt;i&gt;/home/user/public_html/error.php&lt;/i&gt;)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>redire_hp</name>
+		<value>Doorsturen naar hoofdpagina</value>
+	</message>
+	<message>
+		<name>send_404</name>
+		<value>Verzend 404 HTTP code</value>
+	</message>
+	<message>
+		<name>inc_custom</name>
+		<value>Invoegen aangepast script</value>
+	</message>
+	<message>
+		<name>exclpages_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Uitsluiten Pagina's?&lt;/b&gt;&lt;br /&gt;
+Gebruik hier reguliere expressies om scripts en/of pagina's uit te sluiten van de invloed van vBSEO. Dit voorkomt zowel herschrijven als toevoegen van copyright.&lt;/p&gt;
+&lt;p&gt;Voorbeelden:(scheid meerdere expressies met enters)&lt;br /&gt;
+^index\.php\?do=feature&lt;br /&gt;
+VBGooglemap.php&lt;br /&gt;
+geek-gallery-popup.php&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>botact_desc</name>
+		<value>&lt;b&gt;Loggen Spider Activiteit in je Forums?&lt;/b&gt;&lt;br /&gt;
+Stel deze optie in naar 'Ja' om activiteiten van zoekmachines op je forum bij te houden in een logboek. Deze optie &lt;b&gt;vereist&lt;/b&gt; installatie van de &lt;a href=&quot;http://www.vbulletin.org/forum/showthread.php?t=100435&quot; target=&quot;_blank&quot;&gt;vBSEO Google / Yahoo Sitemap Generator&lt;/a&gt;.&lt;/p&gt;
+Nota: Logboeken van de spider-activiteit zijn toegankelijk via je sitemap reports interface.</value>
+	</message>
+	<message>
+		<name>analytics_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Google Analytics Code Toevoegen in je Forum Pagina's?&lt;/b&gt;&lt;br /&gt;
+Selecteer &quot;Ja&quot; om de Google Analytics code aan al je forum pagina's toe te voegen. &lt;a href=&quot;http://www.google.com/analytics/&quot; target=&quot;_blank&quot;&gt;Google Analytics&lt;/a&gt; laat je toe om op een eenvoudige manier je verkeer ('traffic') prestaties, zowel voor organische als betaalde zoekmachine resultaten, te controleren.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_code_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Vul je Google Analytics Code in&lt;/b&gt;&lt;br /&gt;
+Vul je Google Analytics Code in het volgende formaat in: UA-9999-1&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_track_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Google Analytics &quot;Tracking Externe Link Klik's&quot; Code Toevoegen?&lt;/b&gt; &lt;br /&gt;
+Selecteer &quot;Ja&quot; om de Google Analytics Externe Link Tracking code toe te voegen aan al je externe links. 
+Deze functie laat je toe om &lt;a href=&quot;http://www.google.com/support/analytics/bin/answer.py?hl=en&amp;answer=55594&quot; target=&quot;_blank&quot;&gt; klik's op uitgaande links te volgen&lt;/a&gt; via je Google Analytics account.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_format_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Vul het formaat voor Google Analytics Externe Links Tracking in&lt;/b&gt;&lt;br /&gt;
+Vul je Google Analytics Externe Links Tracking formaat in.&lt;br /&gt;
+Voorbeeld: /outgoing/&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>funnel_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Inschakelen Google Analytics Funnel voor Leden Registraties?&lt;/b&gt;&lt;br /&gt;
+Selecteer &quot;Ja&quot; om de Google Analytics code toe te voegen aan al de pagina's in het registratie proces voor je forum leden. &lt;/p&gt;
+&lt;p&gt;NOTA: Je hoort een nieuw &quot;Doel&quot; te creëren in je Analytics account voor je forums site en daarin de volgende stappen toe te voegen (aantal stappen afhankelijk van of je het &quot;Gebruik COPPA Registratie Systeem&quot; hebt ingeschakeld of niet): &lt;br /&gt;
+/google-funnel/coppaform.html &lt;i&gt;(indien van toepassing)&lt;/i&gt; &lt;br /&gt;
+/google-funnel/enter-birthday.html &lt;i&gt;(indien van toepassing)&lt;/i&gt; &lt;br /&gt;
+/google-funnel/agreement.html &lt;br /&gt;
+/google-funnel/regform-show.html &lt;br /&gt;
+/google-funnel/regform-submit.html &lt;br /&gt;
+/google-funnel/registration-complete.html
+  
+&lt;p&gt;&lt;a href=&quot;https://www.google.com/support/analytics/bin/answer.py?answer=26797&amp;hl=en_US&quot; target=&quot;_blank&quot;&gt;Wat is een funnel?&lt;/a&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>adsense_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Inschakelen Adsense Sectie Targeting? &lt;/b&gt; &lt;span class=beta&gt;BETA&lt;/span&gt;&lt;br&gt;Selecteer &quot;Ja&quot; om Google AdSense sectie tags toe te voegen aan relevante delen van je forum pagina's binnen forumhome, forumdisplay en showthread. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>arcopt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&lt;i&gt;Archief Opties:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;301 Doorsturen vB's Archief Onderwerp Pagina's &lt;/b&gt;&lt;br /&gt;
+'301 doorsturingen' zijn &quot;Google's Veilige&quot; manier van inhoud verplaatsen. Selecteer deze optie om je 'Pagina Rang' te behouden terwijl je spiders (en gebruikers) doorstuurt naar de nieuwe, statische pagina's.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Herschrijf vB's Archief Onderwerp Pagina's &lt;/b&gt;&lt;br /&gt;
+Deze optie herschrijft URLs zodat originele inhoud gelinkt is vanuit de archieven, wat zorgt voor een uitstekende sitemap.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Herschrijf + 301 Doorsturen Archief Pagina's&lt;/b&gt;&lt;br /&gt;
+Dit is een combinatie van opties 1 en 2 (hierboven). Deze opties herschrijft URLs zodat originele inhoud gelinkt is vanuit de archieven EN voegt ook 301 doorsturingen toe aan de archief onderwerp pagina's. Daardoor, (a) werkt het als een sitemap voor de statische site en (b) verzekerd het ook dat binnenkomende links die verwijzen naar de oude archief onderwerp pagina's, doorgestuurd worden naar de nieuwe, statische paginas.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Behoud vB's Archief standaard instellingen &lt;/b&gt;&lt;br /&gt;
+Behoud vBulletin's standaard archief instellingen.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>sel_one</name>
+		<value>Selecteer een optie</value>
+	</message>
+	<message>
+		<name>arc_redir_301</name>
+		<value>301 Doorsturen vB's Archief</value>
+	</message>
+	<message>
+		<name>arc_rewr_vbarc</name>
+		<value>Herschrijf vB's Archief</value>
+	</message>
+	<message>
+		<name>arc_redir_rewr</name>
+		<value>Herschrijf + 301 Doorsturen vB's Archief</value>
+	</message>
+	<message>
+		<name>arc_keep</name>
+		<value>Behoud vB's Standaard Archief Instellingen</value>
+	</message>
+	<message>
+		<name>arcroot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Herschrijf Archief Root:&lt;br /&gt;
+&lt;/b&gt;Gebruik deze functie om het standaard '/archive/index.php/' deel van de archief pagina's te vervangen met een meer zoekmachine-vriendelijke versie.&lt;/p&gt;
+&lt;p&gt;NOTA: Oude archief root URLs zullen 301 doorgestuurd worden naar de nieuwe aangepaste formaten. Doordoor zullen eerder geïndexeerde archief pagina's nog steeds gevonden worden door zowel gebruikers als spiders.&lt;/p&gt;
+&lt;p&gt;Voorbeeld Aangepaste Lijnen:&lt;br /&gt;
+/hello/google/ of /sitemap/ of /archief/ etc. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>custom</name>
+		<value>Aangepast</value>
+	</message>
+	<message>
+		<name>save_set</name>
+		<value>Bewaar Instellingen</value>
+	</message>
+	<message>
+		<name>reset</name>
+		<value>Reset</value>
+	</message>
+	<message>
+		<name>url_set_forum</name>
+		<value>vBSEO 'URL Rewrite Settings' Forums</value>
+	</message>
+	<message>
+		<name>sep_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Definiëer Scheiding voor URL Delen&lt;/b&gt;&lt;br /&gt;
+Dit karakter zal individuele woorden scheiden in herschreven URLs. Gebruik van [ - ] is aanbevolen. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>limurl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Begrens URL Lengte&lt;br /&gt;
+&lt;/b&gt;Sommige gebruikers prefereren om de lengte van hun URLs te begrenzen. Deze instelling &quot;knot&quot; URL delen, i.e. [forum_title] en [thread_title] naar een maximum nummer van sleutelwoorden.&lt;/p&gt;
+&lt;p&gt;NOTA: Stel deze parameter in op nul (0) voor ongelimiteerde lengte.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pathbits_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Definiëer Forum Pad Titel Fragment&lt;/b&gt;&lt;br /&gt;
+Definiëer hoe forum delen (binnen URLs) eruit gaan zien bij gebruik van &lt;i&gt;[forum_path]&lt;/i&gt; in de URL formaten hieronder.&lt;/p&gt;
+&lt;p&gt;NOTA: Gebruik [forum_id] of [forum_title] of beiden - In het uitzonderlijke geval waarbij je twee forums hebt met dezelfde naam, zal je de [forum_id] moeten toevoegen om conflicten te voorkomen. &lt;/p&gt;
+&lt;p&gt;Voorbeeld Aangepaste Lijn:&lt;br /&gt;
+f[forum_id]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_forum_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Herschrijf Forum URLs?&lt;/b&gt;&lt;br /&gt;
+Stel deze optie in naar &quot;Ja&quot; om forum URLs te herschrijven.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Forum URL Formaat&lt;/b&gt;&lt;br /&gt;
+Crëeer een virtueel multi-level forum pad door gebruik van [forum_path] of toon alleen de forumnaam (of id) door gebruik van de variabelen [forum_title] of [forum_id]&lt;/p&gt;
+&lt;p&gt;NOTA: In het uitzonderlijke geval dat je twee forums met dezelfde naam hebt, zal je de variabele [forum_id] moeten toevoegen om conflicten te voorkomen. &lt;/p&gt;
+&lt;p&gt;Voorbeeld Aangepaste Lijn:&lt;br /&gt;
+f[forum_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Forum Index Pagina URL Formaat&lt;/b&gt;&lt;br /&gt;
+Definiëer hoe de index URLs voor elk forum met meerdere pagina's eruit zullen zien.&lt;/p&gt;
+&lt;p&gt;NOTA: In het uitzonderlijke geval waarbij je twee forums hebt met dezelfde naam, moet je de variabele [forum_id] toevoegen om conflicten te voorkomen.&lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+f[forum_id]-[forum_page].html&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_ann_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Herschrijf Aankondiging URLs?&lt;/b&gt;&lt;br /&gt;
+Stel deze optie in naar &quot;Ja&quot; om aankondiging URLs te herschrijven.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>ann_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Individuele Aankondiging URL Formaat&lt;/b&gt;&lt;br /&gt;
+Selecteer een aankondiging URL formaat of creëer een aangepaste layout door gebruik te maken van het voorziene veld.&lt;/p&gt;
+&lt;p&gt;NOTA: Omdat aankondigingen gepost worden door admins of moderators, is er maar een kleine kans dat er twee aankondigingen zijn met dezelfde titel. Daarom is het meestal veilig om  [announcement_id] niet te gebruiken in deze instelling.&lt;/p&gt;
+&lt;p&gt;NOTA: Omdat aankondigingen associatie hebben met forums, MOET je een forum identificatie zoals [forum_id] of [forum_title] toevoegen. Je MOET ook de [announcement_id] OF [announcement_title] variabele toevoegen. &lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+f[forum_id]-announcement[announcement_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>ann_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Meerdere Aankondigingen URL Formaat&lt;/b&gt;&lt;br /&gt;
+Selecteer het 'Bekijk Alle Aankondigingen' pagina URL formaat of creëer een aangepaste layout door gebruik te maken van het voorziene veld.&lt;/p&gt;
+&lt;p&gt;NOTA: Omdat aankondigingen associatie hebben met forums, MOET je een forum identificatie zoals [forum_id] of [forum_title] toevoegen. Voeg hier NIET de variabelen [announcement_id] of [announcement_title] toe. &lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+f[forum_id]-announcements.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_thread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Herschrijf Onderwerp URLs?&lt;/b&gt;&lt;br /&gt;
+Stel deze optie in naar &quot;Ja&quot; om onderwerp URLs te herschrijven.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Onderwerp URL Formaat&lt;/b&gt;&lt;br /&gt;
+Selecteer een onderwerp URL formaat of creëer een aangepaste layout door gebruik te maken van het voorziene veld.&lt;/p&gt;
+&lt;p&gt;NOTA: Je hoort altijd [thread_id] op te nemen binnen je URL formaat omdat onderwerpen vaak dezelfde titel kunnen hebben. &lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+t[thread_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Meerdere Pagina's Onderwerp URL Formaat&lt;/b&gt;&lt;br /&gt;
+Definiëer hoe individuele onderwerp pagina URLs met meerdere pagina's eruit zullen zien.&lt;/p&gt;
+&lt;p&gt;NOTA: Je hoort altijd [thread_id] op te nemen binnen je URL formaat omdat onderwerpen vaak dezelfde titel kunnen hebben. &lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+t[thread_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;GARS Artikel Bekijk URL Formaat (garpg)&lt;/b&gt;&lt;br /&gt;
+Definiëer hoe individuele &lt;a href=&quot;http://www.thevbgeek.com/&quot;&gt;GARS&lt;/a&gt; Artikel Bekijk URLs met meerdere pagina's eruit zullen zien.&lt;/p&gt;
+&lt;p&gt;NOTA: Je hoort altijd [thread_id] op te nemen binnen je URL formaat omdat onderwerpen vaak dezelfde titel kunnen hebben. &lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+t[thread_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_lpformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Laatste Post in Onderwerp' Doorstuur URL Formaat&lt;br /&gt;
+&lt;/b&gt;Definiëer hoe links naar 'laatste posts in onderwerpen' eruit zullen zien.&lt;/p&gt;
+&lt;p&gt;NOTA: De oorspronkelijke doorstuur functie is gebruikt om de gebruiker door te sturen naar de gepaste geankerde post binnen het onderwerp (i.e. thead_title.html#post-xxxx)&lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+t[thread_id]-last-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gpformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Ga Naar Post in Onderwerp' Doorstuur URL Formaat&lt;br /&gt;
+&lt;/b&gt;Definiëer hoe links naar 'ga naar posts in onderwerp' ('go to posts in threads') eruit zullen zien.&lt;/p&gt;
+&lt;p&gt;NOTA: The oorspronkelijke doorstuur functie is gebruikt om de gebruiker door te sturen naar de gepaste geankerde post binnen het onderwerp (i.e. thead_title.html#post-xxxx)&lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+t[thread_id]-post[post_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gppformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Meerdere pagina 'Ga Naar Post in Onderwerp' Doorstuur URL Formaat&lt;br /&gt;
+&lt;/b&gt;Definiëer hoe links naar meerdere pagina's 'ga naar posts in onderwerpen' eruit zullen zien.&lt;/p&gt;
+&lt;p&gt;NOTA: De oorspronkelijke doorstuur functie is gebruikt om de gebruiker door te sturen naar de gepaste geankerde post binnen het onderwerp (i.e. thead_title.html#post-xxxx)&lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+t[thread_id]-post[post_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_ptformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Vorig Onderwerp' Doorstuur URL Formaat&lt;br /&gt;
+&lt;/b&gt;Definiëer hoe links naar 'vorige onderwerpen' eruit zullen zien. Dit zijn de links onderaan de onderwerp pagina's.&lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+t[thread_id]-prev-thread.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_ntformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Volgend Onderwerp' Doorstuur URL Formaat&lt;br /&gt;
+&lt;/b&gt;Definiëer hoe links naar 'volgende onderwerpen' eruit zullen zien. Dit zijn de links onderaan de onderwerp pagina's.&lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+t[thread_id]-next-thread.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_pthread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Herschrijf Printonderwerp (Printthread) URLs?&lt;/b&gt;&lt;br /&gt;
+Stel deze optie in naar &quot;Ja&quot; om de print versie (printthread.php) van URLs te herschrijven.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_rel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;rel=&quot;nofollow&quot; toevoegen aan de Printonderwerp (Printthread) links?&lt;/b&gt;&lt;br /&gt;
+Schakel deze optie in om te voorkomen dat zoekmachines links naar Printthread volgen. Er is vermoeden dat printbare versies van onderwerpen (printthread.php) mogelijk gezien worden als &quot;duplicate content&quot; door zoekmachines wat kan leiden tot straffen of uitsluiting.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Printthread' URL Formaat&lt;br /&gt;
+&lt;/b&gt;Definiëer hoe links naar de 'printbare versies van onderwerpen' eruit zullen zien.&lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+t[thread_id]-print.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Meerdere Pagina 'Printthread' URL Formaat&lt;/b&gt;&lt;br /&gt;
+Definiëer hoe 'printbare versie van onderwerpen' met meerdere pagina's eruit zal zien.&lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+t[thread_id]-print-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_post_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Herschrijf Toonpost (Showpost) URLs?&lt;/b&gt;&lt;br /&gt;
+Stel deze optie in naar &quot;Ja&quot; om enkele versies van posts (showpost.php) URLs te herschrijven.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>post_rel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;rel=&quot;nofollow&quot; toevoegen aan de Toonpost (Showpost) links?&lt;/b&gt;&lt;br /&gt;
+Schakel deze optie in om te voorkomen dat zoekmachines links volgen naar enkele versies van posts (showpost.php). Individuele post pagina's kunnen mogelijk gezien worden als &quot;duplicate content&quot; door zoekmachines.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Slim rel=&quot;nofollow&quot; voor Toonpost (Showpost) links?&lt;/b&gt;&lt;br /&gt;
+Deze optie voorkomt dat zoekmachines showpost links volgen conditioneel aan het aantal posts in een onderwerp. Als er slechts één (1) post in een pagina is, dan zal rel=&quot;nofollow&quot; toegevoegd worden aan showpost (aangezien showpost &amp; showthread eigenlijk hetzelfde zijn). Als er twee (2) of meer posts zijn in een pagina, dan zal rel=&quot;nofollow&quot; NIET toegevoegd worden, waardoor zoekmachines alle showpost links kunnen volgen.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>smart</name>
+		<value>Slim</value>
+	</message>
+	<message>
+		<name>post_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Showpost' URL Formaat&lt;br /&gt;
+&lt;/b&gt;Definiëer hoe links naar 'enkele versies van onderwerpen' eruit zullen zien.&lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+[post_id]-[post_count]-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_poll</name>
+		<value>Poll URLs</value>
+	</message>
+	<message>
+		<name>rw_poll_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Herschrijf Poll URLs?&lt;/b&gt;&lt;br /&gt;
+Stel deze optie in naar &quot;Ja&quot; om poll URLs te herschrijven.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>poll_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Poll URL Formaat&lt;/b&gt;&lt;br /&gt;
+Selecteer een poll URL formaat of creëer een aangepaste layout door gebruik te maken van het voorziene veld.&lt;/p&gt;
+&lt;p&gt;NOTA: Wij raden aan om [poll_id] te gebruiken binnen je URL formaat aangezien er een kans is dat gebruikers polls met dezelfde titel zullen posten.&lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+p[poll_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_memb_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Herschrijf Leden Profiel URLs?&lt;/b&gt;&lt;br /&gt;
+Stel deze optie in naar &quot;Ja&quot; om profiel URLs te herschrijven.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Leden Profiel URL Formaat&lt;/b&gt;&lt;br /&gt;
+Selecteer een leden profiel URL formaat of creëer een aangepaste layout door gebruik te maken van het voorziene veld.&lt;/p&gt;
+&lt;p&gt;NOTA: Aangezien vBulletin geen dubbele gebruikernamen toelaat, is het veilig om de [user_id] variabele niet te gebruiken.&lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_mlist_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Herschrijf LedenLijst URLs?&lt;/b&gt;&lt;br /&gt;
+Stel deze optie in naar &quot;Ja&quot; om leden index pagina URLs te herschrijven.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;LedenLijst URL&lt;/b&gt; &lt;b&gt;Formaat&lt;/b&gt;&lt;br /&gt;
+Definiëer hoe de ledenlijst index URL eruit zal zien.&lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+users.html&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Leden Meerdere-Pagina Lijst URL Formaat&lt;/b&gt;&lt;br /&gt;
+Definiëer hoe leden index URLs met meerdere pagina's eruit zullen zien.&lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+users-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_lformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;LedenLijst 'Door Letter Pagina's' URL Formaat &lt;/b&gt;&lt;br /&gt;
+Definiëer hoe individuele ledenlijst indexes door letter URLs eruit zullen zien.&lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+users-[letter][page].html&lt;br /&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_avatar_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Herschrijf Aangepaste Avatar URLs?&lt;/b&gt;&lt;br /&gt;
+Stel deze optie in naar &quot;Ja&quot; om aangepaste avatar URLs te herschrijven.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>avatar_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Aangepaste Avatar URL Formaat&lt;/b&gt;&lt;br /&gt;
+Definiëer hoe aangepaste avatar afbeelding URLs eruit zullen zien.&lt;/p&gt;
+&lt;p&gt;NOTA: &lt;b&gt;'avatars/'&lt;/b&gt; zullen automatisch toegevoegd worden aan het adres om conflicten met afbeelding URLs te voorkomen.&lt;/p&gt;
+&lt;p&gt;NOTA: Aangezien vBulletin geen dubbele gebruikernamen toelaat, is het veilig om de [user_id] variabele niet te gebruiken.&lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_navbul_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Herschrijf 'Nav Bullet' Afbeelding URLs?&lt;/b&gt;&lt;br /&gt;
+Stel deze optie in naar &quot;Ja&quot; om 'tree' URLs te herschrijven.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>navbul_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Forum 'Nav Bullet' Afbeelding URLs &lt;/b&gt;&lt;br /&gt;
+Definiëer hoe nav bullet afbeelding URLs voor forums eruit zullen zien.&lt;/p&gt;
+&lt;p&gt;NOTA: &lt;b&gt;'images/'&lt;/b&gt; zal automatisch toegevoegd worden aan het adres om conflicten met afbeelding URLs te voorkomen.&lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+f[forum_id].gif&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>navbul_tformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Onderwerp 'Nav Bullet' Afbeelding URLs &lt;/b&gt;&lt;br /&gt;
+Definiëer hoe 'nav bullet' afbeelding URLs voor onderwerpen er zullen uitzien.&lt;/p&gt;
+&lt;p&gt;NOTA: &lt;b&gt;'images/'&lt;/b&gt; zal automatisch toegevoegd worden aan het adres om conflicten met afbeelding URLs te voorkomen.&lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+t[thread_id].gif&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_attach_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Herschrijf Bijlagen (Attachment) URLs?&lt;/b&gt;&lt;br /&gt;
+Stel deze optie in naar &quot;Ja&quot; om bijlage (attachment) URLs te herschrijven.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attach_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Bijlagen URLs Formaat &lt;/b&gt;&lt;br /&gt;
+Google en andere zoekmachines indexeren afbeeldingen (.gif, .jpg, .png, etc.) en andere bestandstypes zoals Word documenten (.doc) en Adobe PDF documenten (.pdf). Een speciale variabele [original_filename]  is gemaakt geweest zodat bijlagen hun originele bestandsnaam EN extentie in de URL kunnen behouden.&lt;/p&gt;
+&lt;p&gt;NOTA: &lt;b&gt;'attachments/'&lt;/b&gt; zal automatisch toegevoegd worden aan de url om conflicten in afbeelding URLs te voorkomen.&lt;/p&gt;
+&lt;p&gt;NOTA: We raden aan om [attachment_id] te gebruiken in je URL formaat aangezien dat er een kans is dat gebruikers bijlagen zullen posten met dezelfde 'originele bestandsnaam'.&lt;/p&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+[attachment_id]-[original_filename]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>crrs_forum</name>
+		<value>vBSEO 'Custom Rewrite Rules' Forums</value>
+	</message>
+	<message>
+		<name>crrs_def</name>
+		<value>&lt;b&gt;Definiëer Aangepaste Herschrijf Regels &lt;/b&gt;&lt;span class=&quot;beta&quot;&gt;BETA&lt;/span&gt;&lt;br&gt;Je kan vBSEO's Herschijf Systeem toepassen op URLs die niet veranderd zijn door de standaard functie set. Definiëer je eigen regels door gebruik te maken van een regulier expressie formaat:</value>
+	</message>
+	<message>
+		<name>crrs_desc</name>
+		<value>Beide delen (links &amp; rechts) zijn reguliere expressies: het eerste deel is de originele &lt;b&gt;URL&lt;/b&gt;, terwijl de tweede de &lt;b&gt;herschreven&lt;/b&gt; URL is, gebruik makend van het gelijkende patroon van het eerste deel. 
+&lt;p&gt;NOTA: Het vBSEO Team zal GEEN &quot;officiële&quot; ondersteuning geven voor de reguliere expressies die je invult bij gebruik van deze functie. Gebruik deze functie ALLEEN als je weet wat je doet a.u.b. Bezoek voor verdere hulp de vBSEO forums op &lt;a href=&quot;http://www.vbseo.com&quot; target=&quot;_blank&quot;&gt;http://www.vbseo.com&lt;/a&gt; a.u.b.&lt;/p&gt;
+&lt;p&gt;NOTA: Lijnen kunnen uitgesloten worden door er tweemaal een voorwaardse slash voor te plaatsen (//). Als één van je herschrijf regels fouten bevat dan worden ze automatisch uitgesloten wanneer je klikt op 'Bewaar Instellingen'.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Voorbeelden:&lt;/b&gt;&lt;br /&gt;
+'article\.php\?id=(\d+)'=&gt;'showarticle-$1.html'&lt;br /&gt;
+'browse\.php\?page=(\d+)'=&gt;'listing-$1.htm' &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metakw_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Vervang de 'META KEYWORDS' Inhoud&lt;/b&gt;?&lt;br /&gt;
+Vervang de 'META KEYWORDS' dynamisch met inhoud relevant aan de pagina die getoond wordt. Heeft invloed op forums, onderwerpen, posts &amp; leden profielen. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bookmark_threadpost</name>
+		<value>Toon Iconen in zowel Onderwerpen als Posts</value>
+	</message>
+	<message>
+		<name>bookmark_custom</name>
+		<value>aangepaste toevoegen</value>
+	</message>
+	<message>
+		<name>bookmark_services_desc</name>
+		<value>&lt;p&gt;Vul additionele Bookmarking Diensten in onderaan in het formaat:&lt;br /&gt;
+&lt;i&gt;Bookmark URL, Icoon URL, &quot;Bookmark Onderwerp&quot; Tekst, &quot;Bookmark Post&quot; Tekst&lt;/i&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bookmark_none</name>
+		<value>Toon Geen Iconen</value>
+	</message>
+	<message>
+		<name>bookmark_thread</name>
+		<value>Toon Iconen Alleen voor Onderwerpen</value>
+	</message>
+	<message>
+		<name>metadesc_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Vervang de 'META DESCRIPTION' Inhoud?&lt;/b&gt;&lt;br /&gt;
+Deze optie vervangt de 'META DESCRIPTION' inhoud met de eerste woorden van de eerste post in de pagina tot een limiet gedefiniëerd in de optie hieronder.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metadesc_len_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Definiëer de 'META DESCRIPTION' Lengte?&lt;/b&gt;&lt;br /&gt;
+De meta beschrijving tag bestaat gewoonlijk uit 150 tot 200 karakters of minder.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>nextprev_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Vervang 'Vorige/Volgende Onderwerp' doorstuur links?&lt;/b&gt;&lt;br /&gt;
+Schakel deze optie in om de 'Volgend Onderwerp' &amp; 'Vorig Onderwerp' links te vervangen met directe, Inhoud Relevante links. &lt;i&gt;Nota: Deze optie voegt twee queries toe.&lt;/i&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>dir_links_threads_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Directe Links naar Onderwerpen Voor Gast Bezoekers? &lt;/b&gt;&lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+Deze optie vervangt links naar &quot;Eerste Ongelezen Post in Onderwerp&quot; met directe links naar Onderwerpen. Wat directe (niet doorgestuurde) toegang geeft voor gasten en spiders tot je onderwerp inhoud.&lt;br /&gt;
+Het stript ook de &quot;Nieuw-Post&quot; functionaliteit van RSS feeds, wat hetzelfde effect geeft voor gasten en spiders die je board bereiken via RSS en RSS2 feeds.&lt;br /&gt;
+&lt;p&gt;NOTA: Deze optie zou functionaliteit voor niet-leden verminderen, maar kan overweegd worden als een accepteerbare inruil voor SEO.&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Toon Sociale Bookmarking Iconen&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+Sociale Bookmarking is geëvolueerd als een zeer effectieve manier van inhoud delen met anderen en bijgevolg meer verkeer (traffic) naar je website te sturen. Vink de Sociale Bookmarking Iconen aan die je wilt tonen in je forum pagina's.
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Sociale Bookmarking Iconen Vertoon Opties:&lt;/i&gt;&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Toon Iconen in zowel Onderwerpen als Posts&lt;/b&gt;&lt;br /&gt;
+Selecteer deze optie om sociale bookmarking iconen voor zowel onderwerpen als posts te tonen binnen onderwerpen. Merk op dat onderwerp bookmarking iconen zullen verschijnen binnen het 'LinkBack' snel-menu, terwijl post bookmarking iconen zullen verschijnen links-onderaan van elke posts.
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Toon Iconen Alleen Voor Onderwerpen&lt;/b&gt;&lt;br /&gt;
+Selecteer deze optie om sociale bookmark iconen te tonen voor onderwerpen en niet voor individuele posts. Onderwerp bookmarking iconen zullen alleen verschijnen binnen het 'LinkBack' snel-menu.
+&lt;/p&gt;
+
+&lt;p&gt;* Enter &amp;lt;!--VBSEO_BOOKMARKS--&amp;gt; in your postbit (or postbit_legacy) template if you want to specify a different location for the social bookmarking icons. By default, post bookmarking icons will appear at the bottom-left corner of each post.
+&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark_thread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Toon Sociale Bookmarking Iconen Voor Onderwerpen&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+Select &quot;Ja&quot; om Sociale Bookmarking Iconen voor Onderwerpen te tonen.
+&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark_post_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Toon Sociale Bladwijzer Iconen Voor Posts&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+Selecteer &quot;Ja&quot; om Sociale Bladwijzer Iconen voor Posts in te schakelen.
+&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark</name>
+		<value>Sociale Bladwijzers</value>
+	</message>
+	<message>
+		<name>flinks_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Vervang 'Forum Links' met directe links om te doelen op URLs? &lt;/b&gt;&lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+Schakel deze optie in om je 'Forum Links' te vervangen met de directe doel URLs. &lt;/p&gt;
+&lt;p&gt;NOTA: Deze Forum Links zijn de links die gewoonlijk doorgestuurd zouden worden wanneer ze ingevuld worden via de Forum Manager in het admincp.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>addttl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Onderwerp Titels Toevoegen aan AnkerTekst van Toononderwerp (Showthread) Links?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+Schakel deze optie in om sleutelwoord-rijke links te creëren door het toevoegen van onderwerp titels aan URLs die verwijzen naar toononderwerp (showthread) pagina's.&lt;/p&gt;
+&lt;p&gt;NOTA: Deze optie werkt ALLEEN met vB 3.5.x of hoger&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Onderwerp Titel Toevoegen Opties:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Voeg GEEN onderwerp titels toe&lt;/b&gt;&lt;br /&gt;
+Behoud de originele functionaliteit van vBulletin. Links gepost in onderwerpen/posts worden niet veranderd.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Onderwerp titels TOEVOEGEN als &quot;popup tekst&quot;&lt;/b&gt;&lt;br /&gt;
+Deze optie voegt de titel van het doel-onderwerp toe aan de 'titel' (popup) tag van elke link die verwijst naar een toononderwerp (showthread) pagina.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Onderwerp titels TOEVOEGEN als &quot;originele-tekst (onderwerp titel)&quot;&lt;/b&gt;&lt;br /&gt;
+Dit is een combinatie van opties 1 en 2 (hierboven). De originele link (tekst) blijft zoals die is terwijl de 'onderwerp titel' toegevoegd wordt (tussen haakjes) vlak erna.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;VERVANG originele ankertekst&lt;/b&gt;&lt;br /&gt;
+Deze optie vervangt elke link, die verwijst naar een toononderwerp (showthread) pagina, met de bijhorende onderwerp titel.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;*&lt;/i&gt;&lt;/b&gt;&lt;i&gt;Links die verwijzen naar privé forums worden NIET vervangen om misbruik van privé zaken te voorkomen (i.e. het proberen achterhalen van titels van onderwerpen in privé forums door het lukraak schrijven van 'showthread.php?t=xxxx' in posts)&lt;/i&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>addttlext_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Pagina Titels Toevoegen aan Ankertekst van Externe Links?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;Schakel deze optie in om sleutelwoord-rijke links te creëren door het toevoegen van pagina titels aan URLs die verwijzen naar externe domeinen. vBSEO zal verbinden met externe sites wanneer nieuwe links worden gepost en de pagina titel eruit halen.&lt;/p&gt;&lt;p&gt;NOTA: Deze optie werkt alleen met vB 3.5.x of hoger&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attl_1</name>
+		<value>Voeg GEEN onderwerp titels toe</value>
+	</message>
+	<message>
+		<name>attl_2</name>
+		<value>TOEVOEGEN onderwerp titels als &quot;popup tekst&quot;</value>
+	</message>
+	<message>
+		<name>attl_3</name>
+		<value>TOEVOEGEN onderwerp titels als &quot;originele tekst (onderwerp titel)&quot;</value>
+	</message>
+	<message>
+		<name>attl_4</name>
+		<value>VERVANG originele ankertekst</value>
+	</message>
+	<message>
+		<name>addttlp_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Onderwerp Titels Toevoegen aan de Ankertekst voor Links van Toonpost ( Showpost)?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;Dezelfde link vervangingen als hierboven maar dan voor toonpost (showpost) URLs.&lt;/p&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>remstop_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Verwijderd Stopwoorden uit URLs?&lt;/b&gt;&lt;br /&gt;
+Het verwijderen van &quot;stopwoorden&quot; uit URLs verhoogt mogelijk de relevantie voor specifieke zoekopdrachten aangezien sommige zoekmachines deze veelgebruikte woorden eruit filteren wanneer mensen ze gebruiken in hun zoekopdracht.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Slimme Stopwoord Verwijdering uit URLs?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+Het inschakelen van deze optie zorgt voor het filteren van &quot;stopwoorden&quot; uit URLs &lt;b&gt;ALLEEN&lt;/b&gt; wanneer titels langer zijn dan het gespecifiëerde nummer binnen de '&lt;a href=&quot;#url_general&quot;&gt;Begrens URL Lengte&lt;/a&gt;' instelling.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>stopdef_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Definiëer Stopwoorden&lt;/b&gt;&lt;br /&gt;
+Wanneer de functie hierboven is ingeschakeld zullen de volgende woorden weggelaten worden in de URLs.&lt;/p&gt;
+&lt;p&gt;TIP: Vind veelgebruikte stopwoorden voor andere talen in &lt;a href=&quot;http://www.ranks.nl/stopwords/&quot; target=&quot;_blank&quot;&gt;http://www.ranks.nl/stopwords/&lt;/a&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acronym_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Acroniem Expansie&lt;/b&gt;&lt;br /&gt;
+Deze functie is uitstekend voor het verhogen van SE relevantie. Het laat je toe om alledaagse acroniemen te vervangen met relevante, echte zinnen in je onderwerp inhoud en titels. Vul één (1) vervanging in per lijn.&lt;/p&gt;
+&lt;p&gt;NOTA: Acroniemen zijn niet hoofdlettergevoelig.&lt;/p&gt;
+&lt;p&gt;Voorbeelden:&lt;br /&gt;
+'seo'=&gt;'Search Engine Optimization'&lt;br /&gt;
+'pr'=&gt;'Page Ranking'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_url_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Acroniem Expansie Toepassen op URLs?&lt;/b&gt;&lt;br /&gt;
+Selecteer &quot;Ja&quot; als je sleutelwoorden wilt vervangen in de URLs.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_text_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Pas Acroniem Expansie toe op alle tekst?&lt;/b&gt;&lt;br /&gt;
+Selecteer &quot;Ja&quot; als je sleutelwoorden wilt vervangen in de tekst.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>will_replace</name>
+		<value>zal vervangen worden door</value>
+	</message>
+	<message>
+		<name>forceroot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Forceer Forum Basis (Root) als Homepage?&lt;/b&gt;&lt;br /&gt;
+Bij inschakeling zullen alle links naar je forum hoofdpagina doorgestuurd worden naar 'vbroot/'. Bij uitschakeling zullen je forum hoofdpagina links verwijzen naar de 'scriptnaam' (E.g. forum.php) zoals gedefiniëerd in je vBulletin configuratie instellingen. Dit laat toe om gebruikers met hoge PageRank in 'index.php' deze te gebruiken als hun standaard hoofdpagina.&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>hpalias_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Definiëer Homepage Aliassen&lt;/b&gt;&lt;br /&gt;
+Deze functie zal helpen om PR (Google PageRank) samen te brengen in je forum hoofdpagina. VeelMany gevestigde forums hebben verschillende PRs in de forum hoofdpagina (gewoonlijk tot en met drie), als voorbeeld:&lt;br /&gt;
+      &lt;br /&gt;
+      www.jouwsite.com/forums/ (PR = A)&lt;br /&gt;
+      www.jouwsite.com/forums/index.php (PR = B)&lt;br /&gt;
+      www.jouwsite.com/forums/index.php? (PR = C)
+                                            &lt;p&gt;Dit is een typisch geval van &quot;PageRank Lekken&quot; en kan mogelijk ook leiden tot zoekmachines die deze pagina's als dubbele inhoud gaan zien.
+                                            &lt;p&gt;Bestandsnamen hier ingevuld zullen 301 doorgestuurd worden naar je forums hoofdpagina zoals die gedefiniëerd is door jouw vBulletin's Admin CP. Vul één (1) bestandsnaam in per lijn.
+                                            &lt;p&gt;Voorbeelden:&lt;br /&gt;
+      index.php &lt;br /&gt;
+      index.php?&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>intrel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Voeg rel=&quot;nofollow&quot; toe aan &lt;i&gt;ALLE&lt;/i&gt; Sorteer (Sorting) Links&lt;/b&gt;&lt;br /&gt;
+Schakel deze optie in om te voorkomen dat zoekmachines links naar pagina's volgen met dezelfde inhoud, maar anders gesorteerd. Deze pagina's worden mogelijk gezien als &quot;duplicate content&quot;. Om die reden raden we aan om deze functie in te schakelen.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>reldyn_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Voeg rel=&quot;nofollow&quot; toe aan &lt;i&gt;ALLE&lt;/i&gt; Dynamische Pagina's&lt;/b&gt;&lt;br /&gt;
+Schakel deze optie in om te voorkomen dat zoekmachines ALLE dynamische links volgen. Enkele voorbeelden zijn: 'Post Reply' links, 'Quote' links en 'Quick Reply' of 'Search' links. Deze pagina's bevatten niet-relevante (of &quot;noise&quot;) inhoud wat niet geïndexeerd zou moeten worden door zoekmachines, resulterend in betere SEO. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>relmemb_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Voeg rel=&quot;nofollow&quot; toe aan Links verwijzend &lt;i&gt;NAAR&lt;/i&gt; Leden Profielen &lt;i&gt;VANUIT&lt;/i&gt; Postbit&lt;/b&gt;&lt;br /&gt;
+Schakel deze optie in om te voorkomen dat zoekmachines links naar leden profielen volgen in posts.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>relmemb_home_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Voeg rel=&quot;nofollow&quot; toe aan links &lt;i&gt;NAAR&lt;/i&gt; Leden Profielen &lt;i&gt;VANUIT&lt;/i&gt; de Forum Hoofdpagina&lt;/b&gt;&lt;br /&gt;
+Schakel deze optie in om te voorkomen dat zoekmachines links volgen naar leden profielen in je Forum Hoofdpagina.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>extrel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Voeg rel=&quot;nofollow&quot; toe aan &lt;i&gt;ALLE&lt;/i&gt; Externe URLs&lt;/b&gt;&lt;br /&gt;
+Schakel deze optie in om te voorkomen dat zoekmachines links volgen naar externe pagina's (URLs die verwijzen naar andere domeinen).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>extwhite_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Externe domeinen &quot;Witte Lijst&quot;&lt;/b&gt;&lt;br /&gt;
+Vul domeinen in die uitgezonderd moeten worden van de regel hierboven. Rel='nofollow' ZAL NIET toegevoegd worden aan links die verwijzen naar domeinen in deze lijst. Nota: Dit kan gebruikt worden om NIET rel='nofollowed' links in handtekeningen toe te staan aan een groep van vrienden.&lt;/p&gt;
+&lt;p&gt;Voorbeelden:&lt;br /&gt;
+google.com (geen 'http://www' vereist) &lt;br /&gt;
+groups.google.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>clean_html_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Schoonmaken HTML code?&lt;/b&gt;&lt;br /&gt;
+Selecteer 'Ja' om overbodige witruimten en HTML commentaren te verwijderen uit de broncode van je forum pagina's. Dit verhoogt de C2C (Content to Code) ratio en vermindert paginagrootte wat resulteert in betere prestaties en een vermindering van het bandbreedte gebruik.&lt;/p&gt;
+&lt;p&gt;NOTA: Als commentaren (of HTML tags) binnen je pagina's niet correct gesloten zijn met hun bijhorende einde tags, dan kan deze optie een foutieve weergave van je pagina's veroorzaken. Zorg dat je er zeker van bent dat je templates fouten-vrije HTML tags en code bevatten.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rem_prev_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Onderwerp Preview Tekst Verwijderen Voor Gast-Bezoekers?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;Onderwerp titels in &lt;i&gt;forumdisplay&lt;/i&gt; links bevatten vaak &quot;ondersteunende&quot; sleutelwoorden gerelateerd aan de forum categorie waarin ze zich bevinden. Het verwijderen van de onderwerp preview tekst voor ongeregistreerde bezoekers kan mogelijk helpen om de sleutelwoord relevantie voor deze pagina's te verhogen.&lt;/p&gt;
+&lt;p&gt;NOTA: Onderwerp Preview Tekst is de tekst die verschijnt wanneer je met de muiscursor over onderwerp links in &lt;i&gt;forumdisplay&lt;/i&gt; beweegt.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_size_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Schakel Dimensie Attributen in voor IMG tags?&lt;/b&gt;&lt;br /&gt;
+Selecteer &quot;Ja&quot; om de Afbeelding Grootte Attributen functie in te schakelen.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_def_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Definiëer Dimensie Attributen&lt;/b&gt;&lt;br /&gt;
+De standaard vB templates bevatten niet de &quot;width&quot; en &quot;height&quot; attributen voor afbeeldingen. Het voorzien van afbeeldingdimensies voor alle afbeeldingen binnen je forum zal het vertalen van de code van pagina's naar weergave, in de meeste browsers versnellen. Het forceren van afbeeldingdimensies verzekerd ook dat zoekmachines beter kunnen bepalen wat de relatie van afbeeldingen met de omliggende tekst is, wanneer ze de sleutelwoord-relevantie voor je forum pagina's berekenen.&lt;/p&gt;
+&lt;p&gt;Voorbeeld:&lt;br /&gt;
+'thread.gif'=&gt;'20x20'&lt;br /&gt;
+'icon12.gif'=&gt;'16x16'&lt;/p&gt;
+&lt;p&gt;Voorbeelden (inclusief mappen voor het uit elkaar houden van afbeeldingen met dezelfde naam):&lt;br /&gt;
+'buttons/quote.gif' =&gt; '70x22'&lt;br /&gt;
+'editor/quote.gif' =&gt; '21x20'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_note</name>
+		<value>NOTA: Als je de standaard afbeelding groottes van je forum verandert hebt, dan MOET je de dimensies hierboven updaten alvorens deze functie in te schakelen. Anders zullen alle niet-conforme afbeeldingen er misvormd uitzien. Als je veel afbeeldingen hebt die geen standaard afmetingen hebben, dan kan dit een tijdrovend proces zijn. Daarom is er op het vBSEO forum een handig tooltje om dit snel te doen: &lt;a href=&quot;http://www.vbseo.com/f28/automatically-retrieve-image-dimensions-1601/&quot;&gt; Automatically Retrieve Image Dimensions&lt;/a&gt; (Automatisch Terugvinden Afmetingen Afbeeldingen.)</value>
+	</message>
+	<message>
+		<name>max_chars</name>
+		<value>150 tot 200 karakters max. aanbevolen</value>
+	</message>
+	<message>
+		<name>rights_reserved</name>
+		<value>Alle Rechten Voorbehouden</value>
+	</message>
+	<message>
+		<name>rr_forumdisplay</name>
+		<value>op forumdisplay pagina's (en)</value>
+	</message>
+	<message>
+		<name>rr_showthread</name>
+		<value>op showthread pagina's</value>
+	</message>
+	<message>
+		<name>save_key</name>
+		<value>Bewaar Sleutel</value>
+	</message>
+	<message>
+		<name>rrs_def</name>
+		<value>&lt;b&gt;Definiëer Relevante Vervangingen&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;UPDATED!&lt;/span&gt;&lt;br /&gt;
+Bouw dynamische zinnen die vervangen worden door het opgeven van eenvoudige commentaren (tot drie) in je forum templates.</value>
+	</message>
+	<message>
+		<name>rrs_desc</name>
+		<value>Voor elke set zal de eerste zin ALLEEN getoond worden in forumdisplay pagina's en de tweede zin ALLEEN getoond in showthread pagina's.
+&lt;p&gt;&lt;strong&gt;Je mag elk patroon hieronder gedefiniëerd gebruiken om je zinnen mee op te bouwen:&lt;/strong&gt;&lt;br&gt;
+&lt;i&gt;[bb_title]&lt;/i&gt; - Jouw forum's hoofdtitel&lt;br&gt;
+&lt;i&gt;[default_keywords]&lt;/i&gt; - Jouw sleutelwoorden zoals gedefiniëerd incvB's admincp&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;[forum_title]&lt;/i&gt; - De huidige forum's titel&lt;br&gt;
+&lt;i&gt;[forum_description]&lt;/i&gt; - De huidige forum's beschrijving&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;[parent_forum_title]&lt;/i&gt; - De 'parent' forum's titel&lt;br&gt;
+&lt;i&gt;[parent_forum_description]&lt;/i&gt; - De 'parent' forum's beschrijving&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;[thread_title]&lt;/i&gt; - De huidige onderwerp titel (Gebruik dit ALLEEN showthread pagina's)&lt;br&gt;
+&lt;I&gt;[first_post_X_words]&lt;/I&gt; - Eerste X nummer van woorden van de eerste post op een pagina (Gebruik ALLEEN op showthread pagina's)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[thread_page]&lt;/em&gt; - Het onderwerp pagina nummer&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Voorbeeld Relevante Zinnen:&lt;/strong&gt;&lt;br&gt;
+[Forum_title] discussies binnen het [parent_forum_title] op het [bb_title] (op forumdisplay pagina's)&lt;br&gt;
+Discussiëer over [thread_title] op het [forum_title] binnen de [bb_title]; &amp;lt;em&amp;gt;[first_post_15_words]...&amp;lt;/em&amp;gt; (op showthread pagina's)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>catlinks</name>
+		<value>Directe Categorie Links</value>
+	</message>
+	<message>
+		<name>catlinks_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Directe Categorie Links?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+Stel deze optie in naar &quot;Ja&quot; om anker links voor forum categorieën in te schakelen. 
+&lt;br /&gt;&lt;br /&gt;NOTA: Links naar categorieën zullen eruit zien als &quot;http://yourforumsroot/#category_title&quot;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rrs_forum</name>
+		<value>vBSEO 'Relevant Replacements' Forums</value>
+	</message>
+	<message>
+		<name>extblack_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Externe domeinen &quot;Zwarte Lijst&quot;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+De volgende domeinen zullen ALTIJD rel='nofollow' toegevoegd krijgen aan de links, los van andere configuratie instellingen.
+&lt;/p&gt;&lt;p&gt;Voorbeelden:&lt;br /&gt;google.com (geen 'http://www' vereist)&lt;br /&gt;
+groups.google.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>linkback_black_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;LinkBack  &quot;Blacklist&quot;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+LinkBacks afkomstig van deze domeinen zullen ALTIJD uitgesloten worden.
+&lt;/p&gt;&lt;p&gt;Voorbeelden:&lt;br /&gt;spamsite.com (no 'http://www' required)&lt;br /&gt;
+subdomain.spamsite.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_npformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Nieuwste Post in Onderwerp' Doorstuur URL Formaat&lt;br&gt;
+                                            &lt;/b&gt;Definiëer hoe links naar 'nieuwste posts in onderwerp' eruit zullen zien.&lt;/p&gt;
+                                              &lt;p&gt;NOTA: De oorspronkelijke doorstuur functionaliteit is gebruikt om de gebruiker door te sturen naar de gepaste geankerde post binnen het onderwerp (i.e. thead_title.html#post-xxxx)&lt;/p&gt;
+                                              &lt;p&gt;Voorbeeld Aangepaste Lijn:&lt;br&gt;
+                                    t[thread_id]-new-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metadesc_members_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Meta Beschrijving voor Leden Profielen&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;UPDATED!&lt;/span&gt;
+                                            &lt;br&gt;
+Definiëer een aangepast formaat voor de meta beschrijving tag van leden profiel pagina's. Je mag de volgende patronen gebruiken voor automatische vervangingen:&lt;/p&gt;
+                                          &lt;p&gt;&lt;I&gt;[username]&lt;/I&gt; - Lid Gebruikersnaam &lt;br&gt;
+                                            &lt;i&gt;[usertitle]&lt;/i&gt; - Lid gebruikerstitel (&amp;quot;Moderator&amp;quot;, &amp;quot;Registered Member&amp;quot;, etc.)&lt;br&gt;
+                                            &lt;i&gt;[bb_title]&lt;/i&gt; - Jouw forum's hoofdtitel&lt;br&gt;
+                                            &lt;em&gt;[user_field_1], [user_field_2], etc.&lt;/em&gt; - Aangepaste gebruikersvelden zoals gedefiniëerd in het vB Admin CP&lt;/p&gt;
+                                          &lt;p&gt;&lt;strong&gt;Voorbeeld Meta Beschrijving Zin:&lt;/strong&gt;&lt;br&gt;
+                                          [username] is een [usertitle] in de [bb_title]. Bekijk [username]'s profiel. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>select_preset</name>
+		<value>Selecteer Voorinstelling</value>
+	</message>
+	<message>
+		<name>current_preset</name>
+		<value>Huidige Voorinstelling</value>
+	</message>
+	<message>
+		<name>preset_set</name>
+		<value>Laad URL Formaten Voorinstelling</value>
+	</message>
+	<message>
+		<name>custom_settings</name>
+		<value>Aangepaste Instellingen</value>
+	</message>
+	<message>
+		<name>load_preset</name>
+		<value>Laad Voorinstelling</value>
+	</message>
+	<message>
+		<name>load_preset_warn</name>
+		<value>Tenzij je vBSEO configureerd voor de eerste keer, is het sterk aan te raden om de URL structuur niet te veranderen. Klik 'OK' om verder te gaan of 'Cancel' deze actie.</value>
+	</message>
+	<message>
+		<name>adv_settings</name>
+		<value>Geavanceerde Instellingen</value>
+	</message>
+	<message>
+		<name>adv_settings_warn</name>
+		<value>Het is sterk aanbevolen om een vooraf ingesteld URL formaat te laden uit het snel-menu in plaats van je URLs manueel in te stellen. Manuele instellingen zouden kunnen resulteren in een inconsequente URL structuur die mogelijk een impact kan hebben op je zoekmachine posities.</value>
+	</message>
+	<message>
+		<name>note_preset</name>
+		<value>Nota: Voorinstellingen bevatten alleen 'URL Herschrijf Instellingen' en zullen geen invloed hebben op je andere opties.</value>
+	</message>
+	<message>
+		<name>rw_archive_foot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&lt;i&gt;Footer Archief Links Opties:&lt;/i&gt;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;/p&gt;
+                                          &lt;p&gt;&lt;b&gt;Links Toevoegen naar de Archief Hoofdpagina's&lt;/b&gt;&lt;br /&gt;
+                                            Selecteer deze optie om links toe te voegen naar de hoofd archief sitemap pagina's aan de footer van je forum pagina's.&lt;/p&gt;
+                                          &lt;p&gt;&lt;b&gt;Links Toevoegen naar ALLE Archief Pagina's&lt;/b&gt;&lt;br /&gt;
+                                            Selecteer deze optie om links toe te voegen naar de hoofd archief sitemap pagina's EN meerdere (diepe) archief pagina's aan de footer van je forum pagina's.&lt;/p&gt;
+                                          &lt;p&gt;&lt;b&gt;Voeg geen Links toe naar Archief Pagina's&lt;/b&gt;&lt;br /&gt;
+                                            Selecteer deze optie om de standaard instellingen te behouden. &lt;/p&gt;
+                                          &lt;p&gt;NOTA: Voeg &amp;lt;!--VBSEO_ARCHIVE_LINKS--&amp;gt; toe in je footer template om een locatie te specifiëren voor de archief links, anders zullen deze toegevoegd worden aan het onderste punt van de pagina. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>footer_arc</name>
+		<value>Footer Archief Links</value>
+	</message>
+	<message>
+		<name>arc_opt1</name>
+		<value>Links Toevoegen naa de Archief Hoofdpagina's</value>
+	</message>
+	<message>
+		<name>arc_opt2</name>
+		<value>Links Toevoegen naar ALLE Archief Pagina's</value>
+	</message>
+	<message>
+		<name>arc_opt3</name>
+		<value>Links Toevoegen naar de Archief Hoofdpagina's (Alleen voor bezoekers/gasten)</value>
+	</message>
+	<message>
+		<name>arc_opt4</name>
+		<value>Links Toevoegen naar ALLE Archief Pagina's (Alleen voor bezoekers/gasten)</value>
+	</message>
+	<message>
+		<name>arc_opt0</name>
+		<value>Geen Links Toevoegen naar Archief Pagina's</value>
+	</message>
+	<message>
+		<name>as_anchors</name>
+		<value>Als ankers</value>
+	</message>
+	<message>
+		<name>avail_pro_only</name>
+		<value>&lt;b&gt;Alleen Beschikbaar in de vBSEO Pro versie&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>addttl_black_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Pagina Titel Toevoegen aan Externe domeinen &quot;Zwarte lijst&quot;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;Vul de domeinenlijst in waarvan de titel NIET gebruikt zal worden en toegevoegd als anker tekst.&lt;/p&gt;&lt;p&gt;Voorbeelden:&lt;br /&gt;
+example.com&lt;br /&gt;
+site.com&lt;br /&gt;
+abc.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Schakel Uitgaande Pingbacks in&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+Selecteer &amp;quot;Ja&amp;quot; om uitgaande pingbacks te verzenden wanneer externe links opgenomen worden in posts.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_notify_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;E-mail Notificaties over Binnenkomende LinkBacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+Selecteer &amp;quot;Ja&amp;quot; om post eigenaren van binnenkomende LinkBacks (Ping/Track/Refbacks) te waarshuwen wanneer deze tot stand komen.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>trackback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Schakel Uitgaande Trackbacks in&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+Selecteer &quot;Ja&quot; om uitgaande trackbacks voor nieuwe onderwerpen in te schakelen.&lt;/p&gt;&lt;p&gt;Nota: Het trackback veld is zichtbaar bij het creëren van een nieuw onderwerp of bij het reageren op een onderwerp in de geavanceerde editor.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_trackback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Schakel Binnenkomende Trackbacks in&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+Selecteer &quot;Ja&quot; om binnenkomende trackbacks voor discussies in te schakelen.&lt;/p&gt;&lt;p&gt;Nota: Binnenkomende Trackback moderatie voor individuele forums kan ingesteld worden via je vBulletin Admin CP in: &lt;br /&gt;&lt;em&gt;Forums en Moderators &amp;gt; Forum Beheer &amp;gt; Bewerk Forum&lt;/em&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_refback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Schakel Binnenkomende Refbacks in&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+Selecteer &quot;Ja&quot; om automatische backlinks naar refererende URLs in te schakelen.&lt;/p&gt;&lt;p&gt;Nota: Binnenkomende Refback moderatie voor individuele forums kan ingesteld worden via je vBulletin Admin CP in: &lt;br /&gt;&lt;em&gt;Forums en Moderators &amp;gt; Forum Beheer &amp;gt; Bewerk Forum&lt;/em&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Schakel Binnenkomende Pingbacks in&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+Selecteer &quot;Ja&quot; om binnenkomende pingbacks voor discussies in te schakelen.&lt;/p&gt;
+&lt;p&gt;Nota: Binnenkomende pingback moderatie voor individuele forums kan ingesteld worden via je vBulletin Admin CP in: &lt;em&gt;Forums en Moderators &amp;gt; Forum Beheer &amp;gt; Bewerk Forum&lt;/em&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>postbit_pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Schakel &quot;Permalink&quot; indicators in Postbits in&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+Permalinks zijn in essentie links die verwijzen naar posts als ankers in onderwerpen, waardoor ze gebruikers toestaan om naar specifieke posts te refereren voor binnenkomende LinkBacks.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Permalink opties: &lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Toon Permalink in Postbit inhoud&lt;/b&gt;
+&lt;br /&gt;
+Zal de &quot;Permalink&quot; link toevoegen boven je post inhoud, binnen het title gebied.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Toon Permalink naast Toonpost (Showpost) Link &lt;/b&gt;
+&lt;br /&gt;
+Zal de &quot;Permalink&quot; link toevoegen aan de rechterkant van je showpost links.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Vervang postnummer link met Permalink&lt;/b&gt;
+&lt;br /&gt;
+Zal individuele showpost links vervangen met de &quot;Permalink&quot; link. Nota: Posts zullen niet langer individueel toegankelijk zijn.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Voeg de Permalink indicator niet toe in Postbit&lt;/b&gt;
+&lt;br /&gt;
+Niet aanbevolen als LinkBacks ingeschakeld zijn op je forums.
+&lt;/p&gt;
+
+&lt;p&gt;* Je kan &amp;lt;!--PERMALINK_INFO--&amp;gt; toevoegen aan je postbit (of posbit_legacy) template om een aangepaste locatie te definiëren voor je &quot;Permalink&quot; link.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>vbseo_affid</name>
+		<value>&lt;p&gt;&lt;b&gt;Jouw vBSEO Vennoot (Affiliate) ID&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;HOT!&lt;/span&gt;&lt;br /&gt;
+Verdien 'Jouw vBSEO' Product Tarief terug en Meer! Vul je vBSEO affiliate ID hier in om de auteursrecht footer te laten linken naar jouw affiliate landing pagina.&lt;/p&gt;&lt;p&gt;Meer info: &lt;a href=&quot;http://www.vbseo.com/aff/&quot; target=&quot;_blank&quot;&gt;http://www.vbseo.com/aff/&lt;/a&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>custom301</name>
+		<value>Aangepaste Doorsturingen</value>
+	</message>
+	<message>
+		<name>custom301_def</name>
+		<value>&lt;b&gt;Definiëer Aangepaste 301 Doorsturingen &lt;/b&gt;&lt;span class=&quot;beta&quot;&gt;BETA&lt;/span&gt;&lt;br&gt;
+Je kan de 301 doorsturingen regels hier instellen. Dit kan gebruikt worden als je de locatie verplaatst hebt van een bepaald document op je server.</value>
+	</message>
+	<message>
+		<name>custom301_desc</name>
+		<value>Beide delen (links &amp; rechts) zijn reguliere expressies: het eerste deel is de originele &lt;b&gt;URL&lt;/b&gt;, terwijl de tweede de &lt;b&gt;doorgestuurde&lt;/b&gt; URL is, gebruik makend van het gelijkende patroon van het eerste deel. 
+&lt;p&gt;NOTA: Het vBSEO Team zal GEEN &quot;officiële&quot; ondersteuning geven voor de reguliere expressies die je invult bij gebruik van deze functie. Gebruik deze functie ALLEEN als je weet wat je doet a.u.b.&lt;/p&gt;&lt;p&gt;NOTA: Lijnen kunnen uitgesloten worden door er tweemaal een voorwaardse slash voor te plaatsen (//). Als één van je herschrijf regels fouten bevat dan worden ze automatisch uitgesloten wanneer je klikt op 'Bewaar Instellingen'.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Voorbeelden:&lt;/b&gt;&lt;br /&gt;
+'article-(\d+)\.html'=&gt;'articles/entry-$1.html'&lt;br /&gt;
+'forum(\d+)\.html'=&gt;'f$1/'&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_attach_alt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Herschrijf Bijlage Alt Tag Attribuut?&lt;/b&gt;&lt;br /&gt;
+Stel deze optie in naar &quot;Ja&quot; om alt attributen van bijlagen te herschrijven.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attach_alt_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Bijlage Alt Tag attribuut Formaat &lt;/b&gt;&lt;br /&gt;
+&lt;p&gt;Voorbeeld aangepaste lijn:&lt;br /&gt;
+[thread_title]-[original_filename]&lt;br /&gt;
+[original_filename]
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>supportsystem</name>
+		<value>Support Ticket Systeem</value>
+	</message>
+	<message>
+		<name>affiliates</name>
+		<value>Vennoten (Affiliates)</value>
+	</message>
+	<message>
+		<name>contact</name>
+		<value>Contacteren</value>
+	</message>
+	<message>
+		<name>forums</name>
+		<value>Forums</value>
+	</message>
+	<message>
+		<name>ping_postbit_1</name>
+		<value>Toon Permalink in Postbit inhoud </value>
+	</message>
+	<message>
+		<name>ping_postbit_3</name>
+		<value>Toon Permalink naast Showpost Link </value>
+	</message>
+	<message>
+		<name>ping_postbit_2</name>
+		<value>Vervang post nummer link met Permalink </value>
+	</message>
+	<message>
+		<name>ping_postbit_0</name>
+		<value>Voeg geen Permalink indicator toe in Postbit </value>
+	</message>
+	<message>
+		<name>pingback_notify_bcc_desc</name>
+		<value>E-mail kopie van LinkBack notificaties:</value>
+	</message>
+	<message>
+		<name>pingback_notify_bcc_desc2</name>
+		<value>(Scheid meerdere e-mails met spaties)</value>
+	</message>
+	<message>
+		<name>pingback_service_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Update Diensten&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt; &lt;br /&gt;
+vBSEO kan externe diensten een melding geven, wanneer jouw community nieuwe onderwerpen en posts publiceert. Deze diensten werken als Zoekmachines voor de 'blogosphere' en samenkomende 'forumsphere'.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_stopwords_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Binnenkomende LinkBack Sleutelwoord NegeerLijst&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+LinkBacks die één van de woorden uit deze lijst bevatten zullen gefilterd worden (NIET geaccepteerd) om SPAM te minimaliseren.&lt;/p&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_jump_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Verwijder Forumsprong Snelmenu Voor Gast Bezoekers&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NIEUW!&lt;/span&gt;&lt;br /&gt;
+Het Forumsprong Snelmenu genereert extra niet-relevante HTML code, vooral op grotere, meerdere-forums sites. Schakel het uit voor gasten (en spiders) om de content die zoekmachines zullen indexeren te verlichten. Dit zal de inhoud tot code ratio verhogen wat wenselijk is voor SEO doelstellingen.&lt;/p&gt;
+
+&lt;p&gt;NOTA: Het Forumsprong Snelmenu verschijnt onderaan je onderwerp en forum pagina's. Er is ook een optie in het vBulletin admincp om het compleet uit te schakelen.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acronym_def_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>acro_opt1</name>
+		<value></value>
+	</message>
+	<message>
+		<name>acro_opt2</name>
+		<value></value>
+	</message>
+	<message>
+		<name>acro_opt3</name>
+		<value></value>
+	</message>
+	<message>
+		<name>acro_opt4</name>
+		<value></value>
+	</message>
+	<message>
+		<name>acro_content_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>rr_blog</name>
+		<value></value>
+	</message>
+	<message>
+		<name>blogindpage_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>bloguserpage_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>blogindredir_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>urls_groups</name>
+		<value></value>
+	</message>
+	<message>
+		<name>rw_groups_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>groups_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>groupspage_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>groupmembers_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>groupmemberspage_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>grouppic_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>grouppicpage_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>url_gen</name>
+		<value></value>
+	</message>
+	<message>
+		<name>url_forum</name>
+		<value></value>
+	</message>
+	<message>
+		<name>url_blog</name>
+		<value></value>
+	</message>
+	<message>
+		<name>forum_opt_description</name>
+		<value></value>
+	</message>
+	<message>
+		<name>path_opt</name>
+		<value></value>
+	</message>
+	<message>
+		<name>blog_opt_description</name>
+		<value></value>
+	</message>
+	<message>
+		<name>memb_msg_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>memb_friends_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>memb_albums_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>memb_album_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>memb_pic_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>urls_blog_entry</name>
+		<value></value>
+	</message>
+	<message>
+		<name>rw_blogent_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>urls_blog_cat</name>
+		<value></value>
+	</message>
+	<message>
+		<name>rw_blogcat_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>urls_blog_att</name>
+		<value></value>
+	</message>
+	<message>
+		<name>rw_blogatt_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>urls_blog_feed</name>
+		<value></value>
+	</message>
+	<message>
+		<name>rw_blogfeed_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>urls_blog_list</name>
+		<value></value>
+	</message>
+	<message>
+		<name>rw_bloglist_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>permalink_forum</name>
+		<value></value>
+	</message>
+	<message>
+		<name>permalink_profile</name>
+		<value></value>
+	</message>
+	<message>
+		<name>permalink_blog</name>
+		<value></value>
+	</message>
+	<message>
+		<name>permalink_profile_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>permalink_blog_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>pl_blog_1</name>
+		<value></value>
+	</message>
+	<message>
+		<name>pl_blog_0</name>
+		<value></value>
+	</message>
+	<message>
+		<name>pl_profile_0</name>
+		<value></value>
+	</message>
+	<message>
+		<name>pl_profile_1</name>
+		<value></value>
+	</message>
+	<message>
+		<name>pl_profile_2</name>
+		<value></value>
+	</message>
+	<message>
+		<name>permalink_groups_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>permalink_groups</name>
+		<value></value>
+	</message>
+	<message>
+		<name>pl_groups_1</name>
+		<value></value>
+	</message>
+	<message>
+		<name>pl_groups_2</name>
+		<value></value>
+	</message>
+	<message>
+		<name>pl_groups_0</name>
+		<value></value>
+	</message>
+	<message>
+		<name>memb_picimg_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>memb_picpage_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>permalink_pic_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>permalink_album</name>
+		<value></value>
+	</message>
+	<message>
+		<name>memb_convpage_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>memb_conv_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>ignore_linkback_dupe_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>preset_6</name>
+		<value></value>
+	</message>
+	<message>
+		<name>grouppicture_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>grouppicturepage_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>grouppictureimg_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>groupshome_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>bloghome_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>tagshome_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>tags_format_desc</name>
+		<value></value>
+	</message>
+	<message>
+		<name>urls_tags</name>
+		<value></value>
+	</message>
+	<message>
+		<name>rw_tags_desc</name>
+		<value></value>
+	</message>
+</translations>

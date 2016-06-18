@@ -1,0 +1,87 @@
+<dataTemplate name="DMS_CN_REPORT" description="Template description" defaultPackage="DMS_CN_DETAILS_MV">
+	<properties>
+		<property name="include_parameters" value="true"/>
+		<property name="include_null_Element" value="true"/>
+		<property name="include_rowsettag" value="false"/>
+		<property name="xml_tag_case" value="as_are"/>
+		<property name="debug_mode" value="on"/>
+		<property name="db_fetch_size" value="100"/>
+		<property name="scalable_mode" value="on"/>
+	</properties>
+	<parameters>
+		<parameter name="P_SERVPROV_GID" dataType="character" include_in_output="FALSE" />
+		<parameter name="P_TERMI_GID" datatype="character" include_in_output="FALSE" />
+		<parameter name="P_CN_DATE" datatype="date" include_in_output="FALSE" />
+		<parameter name="P_TRANSPORT_MODE" datatype="character" include_in_output="FALSE" />
+		<parameter name="P_CUST_GID" datatype="character" include_in_output="FALSE" />
+	</parameters>
+
+	<dataQuery>
+		<sqlStatement name="Q_CN">
+			<![CDATA[(SELECT ORDER_RELEASE
+					, INDI
+					, ORDER_OWNER
+					, ORDER_OWNER_ID
+					, VENDOR_ID
+					, VENDOR_NAME
+					, TERMINAL_ID
+					, CN
+					, SERVICE_TYPE
+					, CN_DATE
+					, CN_INSERT_DATE
+					, ITEM_QTY
+					, NET_WEIGHT
+					, UOM
+					, SHIPMENT_ID
+					, BRANCH
+					, PERSPECTIVE
+					, TOTAL_COST
+					, ACTUAL_DELIVERY_DATE
+					, POD_RECEIVED_DATE
+					, POD_INSERT_DATE
+					, TRANSPORT_MODE
+					, SOURCE_LOC
+					, DESTINATION
+					, VEHICLE_BATCH_ID
+					, EXCEPTIONAL_EVENTS
+					FROM MV_CN_DETAILS
+					WHERE &p_SERVPROV_GID_Where 
+					AND &p_termi_GID_where
+					AND &P_Cn_Date_Where
+					AND &P_Transport_Mode_where
+					AND &p_CUST_GID_Where
+					)]]>
+		</sqlStatement>
+	</dataQuery>
+	<dataTrigger name="BEFOREREPORT" source="DMS_CN_DETAILS_MV.BEFOREREPORT"/>
+	<dataStructure>
+		<group name="G_CN_REPORT" source="Q_CN">
+			<element name="ORDER_RELEASE" value="ORDER_RELEASE" />
+			<element name="INDI" value="INDI" />
+			<element name="ORDER_OWNER" value="ORDER_OWNER" />
+			<element name="ORDER_OWNER_ID" value="ORDER_OWNER_ID" />
+			<element name="VENDOR_ID" value="VENDOR_ID" />
+			<element name="VENDOR_NAME" value="VENDOR_NAME" />
+			<element name="TERMINAL_ID" value="TERMINAL_ID" />
+			<element name="CN" value="CN" />
+			<element name="SERVICE_TYPE" value="SERVICE_TYPE" />
+			<element name="CN_DATE" value="CN_DATE" />
+			<element name="CN_INSERT_DATE" value="CN_INSERT_DATE" />
+			<element name="ITEM_QTY" value="ITEM_QTY" />
+			<element name="NET_WEIGHT" value="NET_WEIGHT" />
+			<element name="UOM" value="UOM" />
+			<element name="SHIPMENT_ID" value="SHIPMENT_ID" />
+			<element name="BRANCH" value="BRANCH" />
+			<element name="PERSPECTIVE" value="PERSPECTIVE" />
+			<element name="TOTAL_COST" value="TOTAL_COST" />
+			<element name="ACTUAL_DELIVERY_DATE" value="ACTUAL_DELIVERY_DATE" />
+			<element name="POD_RECEIVED_DATE" value="POD_RECEIVED_DATE" />
+			<element name="POD_INSERT_DATE" value="POD_INSERT_DATE" />
+			<element name="TRANSPORT_MODE" value="TRANSPORT_MODE" />
+			<element name="SOURCE_LOC" value="SOURCE_LOC" />
+			<element name="DESTINATION" value="DESTINATION" />
+			<element name="VEHICLE_BATCH_ID" value="VEHICLE_BATCH_ID" />
+			<element name="EXCEPTIONAL_EVENTS" value="EXCEPTIONAL_EVENTS" />
+		</group>
+	</dataStructure>
+</dataTemplate>

@@ -1,0 +1,44 @@
+Tapatalk ('the Software') is a copyrighted work of authorship and is also protected under applicable laws. Quoord Systems retains ownership of the Software and any copies of it, regardless of the form in which the copies may exist. This license is not a sale of the original Software or any copies.
+
+By installing and using vBulletin on your server, you agree to the following terms and conditions. Such agreement is either on your own behalf or on behalf of any corporate entity which employs you or which you represent ('Corporate Licensee'). In this Agreement, 'you' includes both the reader and any Corporate Licensee and 'Quoord Systems' means Quoord Systems Limited:
+
+Tapatalk license grants you the right to run multiple instances of the Software given that each instance has been registered in Tapatalk Directory at http://www.tapatalk.com/ within three days of the installation. You agree to use this Software only for the purpose of supporting Quoord Systems created/managed mobile client. Modifications to the Software are prohibited.
+The Software is licensed only to you. You may not rent, lease, sublicense, sell, assign, pledge, transfer or otherwise dispose of the Software in any form, on a temporary or permanent basis, without the prior written consent of Quoord Systems.
+
+The license is effective until terminated (Owned License)/The license is effective for one year from the date you purchase the Software (Leased License). You may terminate it at any time by uninstalling the Software and destroying any copies in any form.
+You undertake to; ensure that, prior to use of the Software by your employees or agents, all such parties are notified of the terms of this Agreement; and hold all data (including object and source codes), software listings and all other information relating to the Software confidential and not at any time, during the period of the license or after its expiry, disclose the same whether directly or indirectly to any third party without Quoord Systems's consent. You agree not to use the Software for any illegal purposes and shall comply with all applicable legislation. 
+
+The Software may not be used for anything that would represent or is associated with an Intellectual Property violation, including, but not limited to, engaging in any activity that infringes or misappropriates the intellectual property rights of others, including copyrights, trademarks, service marks, trade secrets, software piracy, and patents held by individuals, corporations, or other entities. If any of the terms of this Agreement are violated, Quoord Systems reserves the right to revoke the Software license at any time.
+
+Some of the source code are owned and copyrighted by JelSoft, the creator of vBulletin software. This distribution is part of the vBulletin Community MOD distribution whereby Quoord Systems adheres to JelSoft policy of "visible source". This Software must not be used in any vBulletin installation that does not have valid license from JelSoft.
+
+
+Disclaimer of Warranty
+
+The software and the accompanying files are sold "As Is" and without warranties as to performance of merchantability or any other warrantied whether expressed or implied.
+
+Quoord Systems does not monitor the forums powered by the Software. Quoord Systems is not liable for the content of any message posted on a forum that's transimitted thru the Software.
+
+Quoord Systems cannot be held responsible and accepts no liability for any failure in transmission by you and where for whatever reason your transmission is corrupted fails to arrive or arrives after an undue delay or is received in an unintelligible form.
+
+You must assume the entire risk of using the Software. ANY LIABILITY OF Quoord Systems WILL BE LIMITED EXCLUSIVELY TO PRODUCT REPLACEMENT.
+
+Except in respect of personal injury or death caused directly by the negligence of Quoord Systems, in no event will Quoord Systems be liable to you for any damages, including any lost profits, lost savings, loss of data or any indirect, special, incidental or consequential damages arising out of the use of or inability to use such Software, even if Quoord Systems has been advised of the possibility of such damages. Nothing in this Agreement limits liability for fraudulent misrepresentation.
+
+Terms in this Agreement excluding or limiting liability in relation to breach of the terms implied by the "Supply of Goods (Implied Terms) Act 1973 or the Sale of Goods Act 1979 do not apply when this Agreement is made with a consumer.
+
+This license gives you specific legal rights and you may have other rights that vary from country to country. Some jurisdictions do not allow the exclusion of implied warranties, or certain kinds of limitations or exclusions of liability, so the above limitations and exclusions may not apply to you. Other jurisdictions allow limitations and exclusions subject to certain conditions. In such a case the above limitations and exclusions shall apply to the fullest extent permitted by the laws of such applicable jurisdictions. If any part of the above limitations or exclusions is held to be void of unenforceable, such part shall be deemed to be deleted from this agreement and the remainder of the limitation or exclusion shall continue in full force and effect. Any rights that you may have as a consumer (i.e. a purchaser for private as opposed to business, academic or government use) are not affected.
+
+
+General
+
+From time to time, Quoord Systems may inspect your registration integrity thru our Tapatalk Directory System. This will be done without collecting any information whatsoever about your server or your users. The only information verified will be your license number, the domain on which the software is run and the number of registered users in your form. Should Quoord Systems discover discrepancies in the software usage, be aware that you may lose your license and may face legal actions for Software Piracy. Your information will not be shared with 3rd parties. Occasionally, it is necessary to record your IP address for security and performance monitoring.
+
+
+This Agreement constitutes the complete statement of the agreement between you and Quoord Systems, and supersedes all representations, understandings or prior agreements between you and Quoord Systems.
+
+Quoord Systems reserves the right to modify these terms at any time.
+
+This Agreement is governed by the laws of Hong Kong S.A.R., P.R.C of China.
+
+Tapatalk® is a registered trademark of Quoord Systems Limited.

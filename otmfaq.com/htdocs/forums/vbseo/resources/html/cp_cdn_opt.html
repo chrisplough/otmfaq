@@ -1,0 +1,67 @@
+			<div class="content-box">
+				<div class="content-box-header">
+					<h3>{lang:cdn_opt}</h3>
+				<div class="clear"></div>
+				</div> 
+                <div class="content-box-body">
+                    <div class="tab-content default-tab" id="tab1"> 
+                        <div class="column-body">
+                            <div class="left">
+                                {lang:cdnopt_desc}
+                            </div>
+                            <div class="right">
+                               <dd>
+                               <p>{lang:cdn_single_zone}:</p>
+                               <input type="radio"  name="setting[VBSEO_CDN_SINGLE]" id="cdn_single" value="1" onclick="cdn_switch()" {var:mc_cdntype1}><label for="cdn_single">{lang:yes}</label>
+                               <input type="radio"  name="setting[VBSEO_CDN_SINGLE]" value="0" id="cdn_multi" onclick="cdn_switch()" {var:mc_cdntype0}><label for="cdn_multi">{lang:no}</label>
+                               </dd>
+                                <dl>
+                                    <div class="cdn_single">
+                                    <dd>{lang:cdn_defzone}</dd>
+                                    <dd><input class="small-input" name="setting[VBSEO_CDN_ZONE]" size="34" type="text" value="{opt:VBSEO_CDN_ZONE}" /></dd>
+                                    </div>
+
+                                    <dd><input {var:mc_cdn_js} value="1" name="setting[VBSEO_CDN_JS]" id="VBSEO_CDN_JS" type="checkbox"><label for="VBSEO_CDN_JS"> Javascript/CSS</label></dd>
+                                    <div class="cdn_multi">
+                                    <dd><input class="small-input" name="setting[VBSEO_CDN_JS_ZONE]" size="34" type="text" value="{opt:VBSEO_CDN_JS_ZONE}" /></dd>
+                                    </div>
+                                    <dd><input {var:mc_cdn_images} value="1" name="setting[VBSEO_CDN_IMAGES]" id="VBSEO_CDN_IMAGES" type="checkbox"><label for="VBSEO_CDN_IMAGES"> Images</label></dd>
+                                    <div class="cdn_multi">
+                                    <dd><input class="small-input" name="setting[VBSEO_CDN_IMAGES_ZONE]" size="34" type="text" value="{opt:VBSEO_CDN_IMAGES_ZONE}" /></dd>
+                                    </div>
+                                    <dd><input {var:mc_cdn_avatars} value="1" name="setting[VBSEO_CDN_AVATARS]" id="VBSEO_CDN_AVATARS" type="checkbox"><label for="VBSEO_CDN_AVATARS"> Avatars</label></dd>
+                                    <div class="cdn_multi">
+                                    <dd><input class="small-input" name="setting[VBSEO_CDN_AVATARS_ZONE]" size="34" type="text" value="{opt:VBSEO_CDN_AVATARS_ZONE}" /></dd>
+                                    </div>
+                                    <dd><input {var:mc_cdn_attach} value="1" name="setting[VBSEO_CDN_ATTACH]" id="VBSEO_CDN_ATTACH" type="checkbox"><label for="VBSEO_CDN_ATTACH"> Attachments</label></dd>
+                                    <div class="cdn_multi">
+                                    <dd><input class="small-input" name="setting[VBSEO_CDN_ATTACH_ZONE]" size="34" type="text" value="{opt:VBSEO_CDN_ATTACH_ZONE}" /></dd>
+                                    </div>
+
+                                        <div id="cdncustom"><dt><p>{lang:cdn_def_custfolder}</p></dt>
+                                            <dd><textarea class="small-input" name="setting[cdn_custom_text]" rows="10" wrap="VIRTUAL" id="cdn_custom_text">{var_esc:cdn_text}</textarea></dd>
+                                        </div>
+                                </dl>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+            		</div>
+            	</div>
+                    <div class="column-body footer">
+                    <span class="input-notification success png_bg save_success" style="display:none">{lang:settings_saved}</span>
+                    <input name="setting[noreload_skip]" type="hidden" />
+                          <input class="button" name="Reset" value="{lang:reset}" type="reset" />&nbsp;
+                          <input class="button" value="{lang:save_set}" name="edit" type="submit" />
+					</div>
+
+           </div>
+           
+<script type="text/javascript">
+function cdn_switch()
+{
+	var issingle = $('#cdn_single').is(':checked');
+	$('.cdn_'+(issingle?'single':'multi')).show();
+	$('.cdn_'+(issingle?'multi':'single')).hide();
+}
+cdn_switch();
+</script>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <xsd:anyType xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+       xsi:type="xsd:string" xmlns:xsi="http://www.w3.org
+       /2001/XMLSchema-instance">
+      <soapenv:Envelope>
+      ....
+      </soapenv:Envelope>
+</xsd:anyType>

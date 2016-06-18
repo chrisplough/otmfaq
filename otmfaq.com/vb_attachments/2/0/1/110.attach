@@ -1,0 +1,132 @@
+Time Process Severity ID System Log 
+2007-11-07 22:00:43.584 724358 Debug Agent Begin to check condition P001.IS_BILL_NOT_ISSUED of agent P001.BILL_ISSUE (2099418) [lifetime: 2]
+Begin to check condition P001.IS_BILL_NOT_ISSUED of agent P001.BILL_ISSUE (2099418) [lifetime: 2]
+ 
+2007-11-07 22:00:43.663 724358 Debug Agent Saved condition P001.IS_BILL_NOT_ISSUED is true [lifetime: 2]
+Saved condition P001.IS_BILL_NOT_ISSUED is true [lifetime: 2]
+ 
+2007-11-07 22:00:43.663 724358 Debug Agent Agent P001.BILL_ISSUE (2099418) condition P001.IS_BILL_NOT_ISSUED is true [lifetime: 2]
+Agent P001.BILL_ISSUE (2099418) condition P001.IS_BILL_NOT_ISSUED is true [lifetime: 2]
+ 
+2007-11-07 22:00:43.663 724358 Debug Agent Starting agent P001.BILL_ISSUE (2099418) in response to BillCreated: bill=P001.CB-20060728-0010, dataSource=USER, beforePersist=false, children=null (as null) [lifetime: 2]
+Starting agent P001.BILL_ISSUE (2099418) in response to BillCreated: bill=P001.CB-20060728-0010, dataSource=USER, beforePersist=false, children=null (as null) [lifetime: 2]
+ 
+2007-11-07 22:00:43.666 724358 Debug Agent Performing action Log: message=SA - Agent BILL_ISSUE invoked as P001 (2099418) [agentUtility: 4]
+Performing action Log: message=SA - Agent BILL_ISSUE invoked as P001 (2099418) [agentUtility: 4]
+ 
+2007-11-07 22:00:43.666 724358 Debug Workflow SA - Agent BILL_ISSUE invoked [agentUtility: 4]
+SA - Agent BILL_ISSUE invoked [agentUtility: 4]
+ 
+2007-11-07 22:00:43.666 724358 Debug Agent Complete action Log: message=SA - Agent BILL_ISSUE invoked (2099418) [agentUtility: 4]
+Complete action Log: message=SA - Agent BILL_ISSUE invoked (2099418) [agentUtility: 4]
+ 
+2007-11-07 22:00:43.666 724358 Debug Agent Publishing topic Assign: variableName=$CHECK_BA_PC_CC, savedQueryGid=P001.CHECK_BA_PC_CC on queue agentUtility, group null [agentUtility: 4]
+Publishing topic Assign: variableName=$CHECK_BA_PC_CC, savedQueryGid=P001.CHECK_BA_PC_CC on queue agentUtility, group null [agentUtility: 4]
+ 
+2007-11-07 22:00:43.668 724358 Debug Agent Performing action Assign: variableName=$CHECK_BA_PC_CC, savedQueryGid=P001.CHECK_BA_PC_CC as P001 (2099418) [agentUtility: 3]
+Performing action Assign: variableName=$CHECK_BA_PC_CC, savedQueryGid=P001.CHECK_BA_PC_CC as P001 (2099418) [agentUtility: 3]
+ 
+2007-11-07 22:00:44.009 724358 Debug Agent Complete action Assign: variableName=$CHECK_BA_PC_CC, savedQueryGid=P001.CHECK_BA_PC_CC (2099418) [agentUtility: 3]
+Complete action Assign: variableName=$CHECK_BA_PC_CC, savedQueryGid=P001.CHECK_BA_PC_CC (2099418) [agentUtility: 3]
+ 
+2007-11-07 22:00:44.009 724358 Debug Agent Publishing topic If: savedCondition=null, threshold=null, expression=Y = Y, forceTrue=false on queue agentUtility, group null [agentUtility: 3]
+Publishing topic If: savedCondition=null, threshold=null, expression=Y = Y, forceTrue=false on queue agentUtility, group null [agentUtility: 3]
+ 
+2007-11-07 22:00:44.012 724358 Debug Agent Performing action If: savedCondition=null, threshold=null, expression=Y = Y, forceTrue=false as P001 (2099418); was If: savedCondition=null, threshold=null, expression=$CHECK_BA_PC_CC = Y, forceTrue=false [agentUtility: 2]
+Performing action If: savedCondition=null, threshold=null, expression=Y = Y, forceTrue=false as P001 (2099418); was If: savedCondition=null, threshold=null, expression=$CHECK_BA_PC_CC = Y, forceTrue=false [agentUtility: 2]
+ 
+2007-11-07 22:00:44.012 724358 Debug Agent Action If returns true [agentUtility: 2]
+Action If returns true [agentUtility: 2]
+ 
+2007-11-07 22:00:44.014 724358 Debug Agent Performing action Log: message=SA - PC/CC ok as P001 (2099418) [agentUtility: 1]
+Performing action Log: message=SA - PC/CC ok as P001 (2099418) [agentUtility: 1]
+ 
+2007-11-07 22:00:44.014 724358 Debug Workflow SA - PC/CC ok [agentUtility: 1]
+SA - PC/CC ok [agentUtility: 1]
+ 
+2007-11-07 22:00:44.014 724358 Debug Agent Complete action Log: message=SA - PC/CC ok (2099418) [agentUtility: 1]
+Complete action Log: message=SA - PC/CC ok (2099418) [agentUtility: 1]
+ 
+2007-11-07 22:00:44.015 724358 Debug Agent Publishing topic If: savedCondition=P001.IS_STANDARD, threshold=null, expression=null, forceTrue=false on queue agentUtility, group null [agentUtility: 1]
+Publishing topic If: savedCondition=P001.IS_STANDARD, threshold=null, expression=null, forceTrue=false on queue agentUtility, group null [agentUtility: 1]
+ 
+2007-11-07 22:00:44.016 724358 Debug Agent Performing action If: savedCondition=P001.IS_STANDARD, threshold=null, expression=null, forceTrue=false as P001 (2099418) [agentUtility: 4]
+Performing action If: savedCondition=P001.IS_STANDARD, threshold=null, expression=null, forceTrue=false as P001 (2099418) [agentUtility: 4]
+ 
+2007-11-07 22:00:44.062 724358 Debug Agent Saved condition P001.IS_STANDARD is true [agentUtility: 4]
+Saved condition P001.IS_STANDARD is true [agentUtility: 4]
+ 
+2007-11-07 22:00:44.063 724358 Debug Agent Action If returns true [agentUtility: 4]
+Action If returns true [agentUtility: 4]
+ 
+2007-11-07 22:00:44.065 724358 Debug Agent Performing action GenerateRefnum: refnumQual=P001.SAP_INVOICE_NUMBER, bnType=X_STANDARD_BILL_REF_P as P001 (2099418) [agentUtility: 3]
+Performing action GenerateRefnum: refnumQual=P001.SAP_INVOICE_NUMBER, bnType=X_STANDARD_BILL_REF_P as P001 (2099418) [agentUtility: 3]
+ 
+2007-11-07 22:00:44.105 724358 Error Exception cause.BNXReference_CrossDomainIsNotAllowed (currentDomain=P001, key=default_domain, value=PUBLIC) at sun.reflect.GeneratedConstructorAccessor281.newInstance(Unknown Source) at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27) at java.lang.reflect.Constructor.newInstance(Constructor.java:274) at glog.util.exception.GLException.factory(GLException.java:405) at glog.util.exception.GLException.factory(GLException.java:388) at glog.server.bngenerator.picture.BNPictureInstruction$XReference.getSegment(BNPictureInstruction.java:189) at glog.server.bngenerator.picture.BNPictureParser.newSegment(BNPictureParser.java:264) at glog.server.bngenerator.picture.BNPictureParser.parse(BNPictureParser.java:51) at glog.server.bngenerator.picture.BNPictureGenerator.getSegments(BNPictureGenerator.java:113) at glog.server.bngenerator.picture.BNPictureGenerator.perform(BNPictureGenerator.java:31) at glog.server.bngenerator.BNEngine.generateWithBNSequence(BNEngine.java:268) at glog.server.bngenerator.BNEngine.generate(BNEngine.java:81) at glog.server.bngenerator.BNEngine.generate(BNEngine.java:56) at glog.server.bngenerator.BNEngine.generate(BNEngine.java:40) at glog.server.bngenerator.BNEngine.generateRefnum(BNEngine.java:223) at glog.server.agent.utility.GenerateRefnum.execute(GenerateRefnum.java:42) at glog.server.agent.ActionWorkflow.execute(ActionWorkflow.java:52) at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:67) at glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(WorkflowSessionServerSideEJBWrapper.java:32) at glog.server.workflow.WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.execute(WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.java:208) at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:354) at glog.server.workflow.Trigger.trigger(Trigger.java:115) at glog.util.event.EventQueueRunnable.processEvent(EventQueueRunnable.java:130) at glog.util.event.EventQueueRunnable.run(EventQueueRunnable.java:93) at java.lang.Thread.run(Thread.java:534) [agentUtility: 3]
+cause.BNXReference_CrossDomainIsNotAllowed (currentDomain=P001, key=default_domain, value=PUBLIC)
+
+	at sun.reflect.GeneratedConstructorAccessor281.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:405)
+	at glog.util.exception.GLException.factory(GLException.java:388)
+	at glog.server.bngenerator.picture.BNPictureInstruction$XReference.getSegment(BNPictureInstruction.java:189)
+	at glog.server.bngenerator.picture.BNPictureParser.newSegment(BNPictureParser.java:264)
+	at glog.server.bngenerator.picture.BNPictureParser.parse(BNPictureParser.java:51)
+	at glog.server.bngenerator.picture.BNPictureGenerator.getSegments(BNPictureGenerator.java:113)
+	at glog.server.bngenerator.picture.BNPictureGenerator.perform(BNPictureGenerator.java:31)
+	at glog.server.bngenerator.BNEngine.generateWithBNSequence(BNEngine.java:268)
+	at glog.server.bngenerator.BNEngine.generate(BNEngine.java:81)
+	at glog.server.bngenerator.BNEngine.generate(BNEngine.java:56)
+	at glog.server.bngenerator.BNEngine.generate(BNEngine.java:40)
+	at glog.server.bngenerator.BNEngine.generateRefnum(BNEngine.java:223)
+	at glog.server.agent.utility.GenerateRefnum.execute(GenerateRefnum.java:42)
+	at glog.server.agent.ActionWorkflow.execute(ActionWorkflow.java:52)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:67)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(WorkflowSessionServerSideEJBWrapper.java:32)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.execute(WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.java:208)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:354)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:115)
+	at glog.util.event.EventQueueRunnable.processEvent(EventQueueRunnable.java:130)
+	at glog.util.event.EventQueueRunnable.run(EventQueueRunnable.java:93)
+	at java.lang.Thread.run(Thread.java:534)
+ [agentUtility: 3]
+ 
+2007-11-07 22:00:44.108 724358 Debug Agent Agent P001.BILL_ISSUE (2099418) received error 163916/CLOSE/Process Agent: cause.BNXReference_CrossDomainIsNotAllowed (currentDomain=P001, key=default_domain, value=PUBLIC) at sun.reflect.GeneratedConstructorAccessor281.newInstance(Unknown Source) at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27) at java.lang.reflect.Constructor.newInstance(Constructor.java:274) at glog.util.exception.GLException.factory(GLException.java:405) at glog.util.exception.GLException.factory(GLException.java:388) at glog.server.bngenerator.picture.BNPictureInstruction$XReference.getSegment(BNPictureInstruction.java:189) at glog.server.bngenerator.picture.BNPictureParser.newSegment(BNPictureParser.java:264) at glog.server.bngenerator.picture.BNPictureParser.parse(BNPictureParser.java:51) at glog.server.bngenerator.picture.BNPictureGenerator.getSegments(BNPictureGenerator.java:113) at glog.server.bngenerator.picture.BNPictureGenerator.perform(BNPictureGenerator.java:31) at glog.server.bngenerator.BNEngine.generateWithBNSequence(BNEngine.java:268) at glog.server.bngenerator.BNEngine.generate(BNEngine.java:81) at glog.server.bngenerator.BNEngine.generate(BNEngine.java:56) at glog.server.bngenerator.BNEngine.generate(BNEngine.java:40) at glog.server.bngenerator.BNEngine.generateRefnum(BNEngine.java:223) at glog.server.agent.utility.GenerateRefnum.execute(GenerateRefnum.java:42) at glog.server.agent.ActionWorkflow.execute(ActionWorkflow.java:52) at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:67) at glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(WorkflowSessionServerSideEJBWrapper.java:32) at glog.server.workflow.WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.execute(WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.java:208) at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:354) at glog.server.workflow.Trigger.trigger(Trigger.java:115) at glog.util.event.EventQueueRunnable.processEvent(EventQueueRunnable.java:130) at glog.util.event.EventQueueRunnable.run(EventQueueRunnable.java:93) at java.lang.Thread.run(Thread.java:534) [agentUtility: 3]
+Agent P001.BILL_ISSUE (2099418) received error 163916/CLOSE/Process Agent:
+cause.BNXReference_CrossDomainIsNotAllowed (currentDomain=P001, key=default_domain, value=PUBLIC)
+
+	at sun.reflect.GeneratedConstructorAccessor281.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:405)
+	at glog.util.exception.GLException.factory(GLException.java:388)
+	at glog.server.bngenerator.picture.BNPictureInstruction$XReference.getSegment(BNPictureInstruction.java:189)
+	at glog.server.bngenerator.picture.BNPictureParser.newSegment(BNPictureParser.java:264)
+	at glog.server.bngenerator.picture.BNPictureParser.parse(BNPictureParser.java:51)
+	at glog.server.bngenerator.picture.BNPictureGenerator.getSegments(BNPictureGenerator.java:113)
+	at glog.server.bngenerator.picture.BNPictureGenerator.perform(BNPictureGenerator.java:31)
+	at glog.server.bngenerator.BNEngine.generateWithBNSequence(BNEngine.java:268)
+	at glog.server.bngenerator.BNEngine.generate(BNEngine.java:81)
+	at glog.server.bngenerator.BNEngine.generate(BNEngine.java:56)
+	at glog.server.bngenerator.BNEngine.generate(BNEngine.java:40)
+	at glog.server.bngenerator.BNEngine.generateRefnum(BNEngine.java:223)
+	at glog.server.agent.utility.GenerateRefnum.execute(GenerateRefnum.java:42)
+	at glog.server.agent.ActionWorkflow.execute(ActionWorkflow.java:52)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:67)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(WorkflowSessionServerSideEJBWrapper.java:32)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.execute(WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.java:208)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:354)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:115)
+	at glog.util.event.EventQueueRunnable.processEvent(EventQueueRunnable.java:130)
+	at glog.util.event.EventQueueRunnable.run(EventQueueRunnable.java:93)
+	at java.lang.Thread.run(Thread.java:534)
+ [agentUtility: 3]
+ 
+2007-11-07 22:00:44.108 724358 Error Exception Agent P001.BILL_ISSUE failed [agentUtility: 3]
+Agent P001.BILL_ISSUE failed
+ [agentUtility: 3]
+ 
+2007-11-07 22:00:44.109 724358 Debug Agent Agent P001.BILL_ISSUE (2099418) on error completed [agentUtility: 3]
+Agent P001.BILL_ISSUE (2099418) on error completed [agentUtility: 3]
+ 

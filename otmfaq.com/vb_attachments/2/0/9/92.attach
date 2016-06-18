@@ -1,0 +1,121 @@
+#********************************************************************
+# Wrapper Properties
+#********************************************************************
+
+# Environment Variables
+set.GLOG_HOME=/oracle/OTM
+set.ORACLE_HOME=/oracle/OTMADCL
+
+# Java Application
+wrapper.java.command=%GLOG_HOME%/jdk/bin/java
+
+# Java Main class.  This class must implement the WrapperListener interface
+#  or guarantee that the WrapperManager class is initialized.  Helper
+#  classes are provided to do this for you.  See the Integration section
+#  of the documentation for details.
+wrapper.java.mainclass=org.tanukisoftware.wrapper.WrapperStartStopApp
+
+# Default timeout values.
+#  Do not change these without understanding their purpose.
+wrapper.cpu.timeout=10
+wrapper.ping.timeout=60
+wrapper.startup.timeout=60
+wrapper.shutdown.timeout=120
+wrapper.restart.delay=5
+
+# Java Classpath (include wrapper.jar)  Add class path elements as
+#  needed starting from 1
+wrapper.java.classpath.1=../../jsw/lib/wrapper.jar
+wrapper.java.classpath.2=./bootstrap.jar
+wrapper.java.classpath.3=./commons-logging-api.jar
+wrapper.java.classpath.4=../common/lib/*.jar
+wrapper.java.classpath.5=../../glog/glog_resources
+wrapper.java.classpath.6=../../glog/config
+wrapper.java.classpath.7=../../glog/gc3webapp/WEB-INF/classes
+wrapper.java.classpath.8=../../glog/gc3webapp/WEB-INF/lib/glogserver.jar
+wrapper.java.classpath.9=../../glog/gc3webapp/WEB-INF/lib/3rdparty/WaitForServer.zip
+wrapper.java.classpath.10=../..jdk/lib/tools.jar
+wrapper.java.classpath.11=/oracle/OTM/oas/j2ee/home/lib/oc4j-internal.jar
+wrapper.java.classpath.12=/oracle/OTM/oas/j2ee/home/jazncore.jar
+wrapper.java.classpath.13=/oracle/OTM/oas/j2ee/home/lib/jmxri.jar
+wrapper.java.classpath.14=/oracle/OTM/oas/j2ee/home/oc4j-api.jar
+wrapper.java.classpath.15=/oracle/OTM/oas/j2ee/home/lib/jta.jar
+wrapper.java.classpath.16=/oracle/OTM/oas/j2ee/home/lib/ejb.jar
+
+# Java Library Path (location of Wrapper.DLL or libwrapper.so)
+wrapper.java.library.path.1=../../jsw/lib
+wrapper.java.library.path.2=%ORACLE_HOME%/lib
+
+# Java Additional Parameters
+wrapper.java.additional.1=-server
+wrapper.java.additional.2=-Xms1025m
+wrapper.java.additional.3=-Xmx1025m
+wrapper.java.additional.4=-DbogusPlaceholder=1
+wrapper.java.additional.5=-verbose:gc
+wrapper.java.additional.6=-Xnoclassgc
+wrapper.java.additional.7=-DGC3EncodedPassword=Q0hBTkdFTUU=
+wrapper.java.additional.8=-Dglog.properties=glog.tomcat.properties
+wrapper.java.additional.9=-Dglog.home=%GLOG_HOME%/glog/config
+wrapper.java.additional.10=-Duser.home=%GLOG_HOME%/glog/config
+wrapper.java.additional.11=-Djava.io.tmpdir=%GLOG_HOME%/temp
+wrapper.java.additional.12=-Djava.awt.headless=true
+wrapper.java.additional.13=-Djava.security.auth.login.config=%GLOG_HOME%/glog/config/gc3_jaas.config
+wrapper.java.additional.14=-Dweblogic.ThreadPoolSize=15
+wrapper.java.additional.15=-Djava.endorsed.dirs=%GLOG_HOME%/tomcat/common/endorsed
+wrapper.java.additional.16=-Dcatalina.base=%GLOG_HOME%/tomcat
+wrapper.java.additional.17=-Dcatalina.home=%GLOG_HOME%/tomcat
+wrapper.java.additional.18=-XX:MaxPermSize=256m
+wrapper.java.additional.19=-XX:NewSize=256m
+wrapper.java.additional.20=-XX:MaxNewSize=256m
+
+# Application parameters.  Add parameters as needed starting from 1
+wrapper.app.parameter.1=org.apache.catalina.startup.Bootstrap
+wrapper.app.parameter.2=1
+wrapper.app.parameter.3=start
+
+wrapper.app.parameter.4=org.apache.catalina.startup.Bootstrap
+wrapper.app.parameter.5=true
+wrapper.app.parameter.6=1
+wrapper.app.parameter.7=stop
+
+#********************************************************************
+# Wrapper Logging Properties
+#********************************************************************
+# Format of output for the console.  (See docs for formats)
+wrapper.console.format=LPTM
+
+# Log Level for console output.  (See docs for log levels)
+wrapper.console.loglevel=INFO
+
+# Log file to use for wrapper output logging.
+wrapper.logfile=../../logs/tomcat/console.log
+
+# Format of output for the log file.  (See docs for formats)
+wrapper.logfile.format=LPTM
+
+# Log Level for log file output.  (See docs for log levels)
+wrapper.logfile.loglevel=INFO
+
+# Maximum size that the log file will be allowed to grow to before
+#  the log is rolled. Size is specified in bytes.  The default value
+#  of 0, disables log rolling.  May abbreviate with the 'k' (kb) or
+#  'm' (mb) suffix.  For example: 10m = 10 megabytes.
+wrapper.logfile.maxsize=10m
+
+# Maximum number of rolled log files which will be allowed before old
+#  files are deleted.  The default value of 0 implies no limit.
+wrapper.logfile.maxfiles=10
+
+# Log Level for sys/event log output.  (See docs for log levels)
+wrapper.syslog.loglevel=NONE
+
+#******************************************************************** # Wrapper
+Filters and Triggers
+#******************************************************************** # Actions
+to perform when certain output is detected
+
+# Uncomment the following lines to restart the JVM if an OutOfMemoryException is detected
+#wrapper.filter.trigger.1=java.lang.OutOfMemoryError
+#wrapper.filter.action.1=RESTART
+
+

@@ -1,0 +1,121 @@
+Transmission Report 
+•	TransmissionHeader 
+o	UserName 
+o	Password
+•	TransmissionBody 
+o	GLogXMLElement 
+?	TransmissionReport 
+?	TransmissionNo = 1313 
+?	ReportStatus = ERROR 
+?	IntegrationLogMessage 
+?	ILogSeqNo = 1252 
+?	ITransactionNo = -1 
+?	WrittenBy = XML_STAGE 
+?	IMessageClass = I 
+?	IMessageCode = TRANSMISSION_RECEIVED 
+?	IMessageText = Transmission 1313 received 
+?	DateTimeStamp 
+?	GLogDate = 20100508193626 
+?	TZId = UTC 
+?	TZOffset = +00:00
+?	DomainName = EBS
+?	IntegrationLogMessage 
+?	ILogSeqNo = 1259 
+?	ITransactionNo = 61019 
+?	ObjectGid 
+?	Gid 
+?	DomainName = EBS 
+?	Xid = 113026
+?	WrittenBy = ReleaseInterface 
+?	IMessageClass = E 
+?	IMessageCode = FK_NOT_FOUND_ERROR 
+?	IMessageText = THE FOREIGN KEY ELEMENT releaseLine.PackagedItemRef.PackagedItemGid WITH VALUE EBS138-85018 COULD NOT BE FOUND IN TABLE PACKAGED_ITEM COLUMN PACKAGED_ITEM_GID 
+?	DateTimeStamp 
+?	GLogDate = 20100508194829 
+?	TZId = UTC 
+?	TZOffset = +00:00
+?	DomainName = EBS
+?	IntegrationLogMessage 
+?	ILogSeqNo = 1260 
+?	ITransactionNo = 61019 
+?	ObjectGid 
+?	Gid 
+?	DomainName = EBS 
+?	Xid = 113026
+?	WrittenBy = ReleaseInterface 
+?	IMessageClass = E 
+?	IMessageCode = FK_NOT_FOUND_ERROR 
+?	IMessageText = THE FOREIGN KEY ELEMENT releaseLine.PackagedItemRef.PackagedItemGid WITH VALUE EBS138-85001 COULD NOT BE FOUND IN TABLE PACKAGED_ITEM COLUMN PACKAGED_ITEM_GID 
+?	DateTimeStamp 
+?	GLogDate = 20100508194829 
+?	TZId = UTC 
+?	TZOffset = +00:00
+?	DomainName = EBS
+?	IntegrationLogMessage 
+?	ILogSeqNo = 1261 
+?	ITransactionNo = 61019 
+?	ObjectGid 
+?	Gid 
+?	DomainName = EBS 
+?	Xid = 113026
+?	WrittenBy = ReleaseInterface 
+?	IMessageClass = E 
+?	IMessageCode = FK_NOT_FOUND_ERROR 
+?	IMessageText = THE FOREIGN KEY ELEMENT releaseLine.PackagedItemRef.PackagedItemGid WITH VALUE EBS138-85015 COULD NOT BE FOUND IN TABLE PACKAGED_ITEM COLUMN PACKAGED_ITEM_GID 
+?	DateTimeStamp 
+?	GLogDate = 20100508194829 
+?	TZId = UTC 
+?	TZOffset = +00:00
+?	DomainName = EBS
+?	IntegrationLogMessage 
+?	ILogSeqNo = 1262 
+?	ITransactionNo = 61019 
+?	ObjectGid 
+?	Gid 
+?	DomainName = EBS 
+?	Xid = 113026
+?	WrittenBy = ReleaseInterface 
+?	IMessageClass = E 
+?	IMessageCode = FK_NOT_FOUND_ERROR 
+?	IMessageText = THE FOREIGN KEY ELEMENT releaseLine.PackagedItemRef.PackagedItemGid WITH VALUE EBS138-85006 COULD NOT BE FOUND IN TABLE PACKAGED_ITEM COLUMN PACKAGED_ITEM_GID 
+?	DateTimeStamp 
+?	GLogDate = 20100508194829 
+?	TZId = UTC 
+?	TZOffset = +00:00
+?	DomainName = EBS
+?	IntegrationLogMessage 
+?	ILogSeqNo = 1263 
+?	ITransactionNo = 61019 
+?	ObjectGid 
+?	Gid 
+?	DomainName = EBS 
+?	Xid = 113026
+?	WrittenBy = ReleaseInterface 
+?	IMessageClass = E 
+?	IMessageCode = FK_NOT_FOUND_ERROR 
+?	IMessageText = THE FOREIGN KEY ELEMENT releaseLine.PackagedItemRef.PackagedItemGid WITH VALUE EBS138-85003 COULD NOT BE FOUND IN TABLE PACKAGED_ITEM COLUMN PACKAGED_ITEM_GID 
+?	DateTimeStamp 
+?	GLogDate = 20100508194829 
+?	TZId = UTC 
+?	TZOffset = +00:00
+?	DomainName = EBS
+?	IntegrationLogMessage 
+?	ILogSeqNo = 1264 
+?	ITransactionNo = 61019 
+?	ObjectGid 
+?	Gid 
+?	DomainName = EBS 
+?	Xid = 113026
+?	WrittenBy = ReleaseInterface 
+?	IMessageClass = E 
+?	IMessageCode = FK_NOT_FOUND_ERROR 
+?	IMessageText = THE FOREIGN KEY ELEMENT releaseLine.PackagedItemRef.PackagedItemGid WITH VALUE EBS138-85007 COULD NOT BE FOUND IN TABLE PACKAGED_ITEM COLUMN PACKAGED_ITEM_GID 
+?	DateTimeStamp 
+?	GLogDate = 20100508194829 
+?	TZId = UTC 
+?	TZOffset = +00:00
+?	DomainName = EBS
+?	TransmissionSummary 
+?	FirstTransactionNo = 61019 
+?	LastTransactionNo = 61019
+

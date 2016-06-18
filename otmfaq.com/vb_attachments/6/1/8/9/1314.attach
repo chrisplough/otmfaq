@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:template match="Transmission">
+    <Transmission>
+      <TransmissionHeader>
+        <UserName>D1.ADMIN</UserName>
+        <Password>CHANGEME</Password>
+        <AckSpec>
+          <ComMethodGid>
+            <Gid>
+              <Xid>EMAIL</Xid>
+            </Gid>
+          </ComMethodGid>
+<!--          <EmailAddress>abcd@abcd.co.in</EmailAddress>-->
+        </AckSpec>
+        <IsProcessInSequence>Y</IsProcessInSequence>
+	</TransmissionHeader>
+	<TransmissionBody>
+        <xsl:variable name="driver1">
+          <xsl:value-of select="substring-before(TransmissionBody/GLogXMLElement/TransactionHeader/SendReason/Remark/RemarkText,'|')"/>
+        </xsl:variable>
+        <xsl:variable name="isactive1">
+          <xsl:value-of select="substring-after(TransmissionBody/GLogXMLElement/TransactionHeader/SendReason/Remark/RemarkText,'|')"/>
+        </xsl:variable>
+		<GLogXMLElement>
+			<Driver xmlns="http://xmlns.oracle.com/apps/otm">
+				<DriverGid>
+						<Gid>
+							<DomainName>T1/FL1</DomainName>
+							<Xid><xsl:value-of select="$driver1"/></Xid>
+						</Gid>
+				</DriverGid>
+<!--				<TransactionCode>IU</TransactionCode>-->
+				<DriverHeader>
+						<IsActive><xsl:value-of select="$isactive1"/></IsActive>
+				</DriverHeader>
+			</Driver>
+		</GLogXMLElement>
+      </TransmissionBody>
+    </Transmission>
+  </xsl:template>
+</xsl:stylesheet>

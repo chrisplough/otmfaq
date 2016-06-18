@@ -1,0 +1,503 @@
+2008-12-09 15:14:52.734	521273	Debug	Planning	Created new RateInquirySession object [RMICallHandler-23]
+2008-12-09 15:14:52.734	521273	Debug	Planning	Start Rate Inquiry (Route) [RMICallHandler-23]
+2008-12-09 15:14:52.750	521273	Debug	Planning	Input Available Time = null [RMICallHandler-23]
+2008-12-09 15:14:52.750	521273	Debug	Planning	Input Late Delivery Time = null [RMICallHandler-23]
+2008-12-09 15:14:52.750	521273	Debug	Planning	Available Time = 2008-12-09 06:14:52 UTC [RMICallHandler-23]
+2008-12-09 15:14:52.750	521273	Debug	Planning	Late Delivery Time = 2009-12-09 06:14:52 UTC [RMICallHandler-23]
+2008-12-09 15:14:52.750	521273	Debug	Planning	RateInquirySession.getRateInquiryData(): customerDomain = <null> [RMICallHandler-23]
+2008-12-09 15:14:52.750	521273	Debug	Planning	End Rate Inquiry [RMICallHandler-23]
+2008-12-09 15:14:52.750	521273	Debug	Planning	RateInquirySession.validateRoutingOption(): before getTOrderRelease [RMICallHandler-23]
+2008-12-09 15:14:52.750	521273	Debug	Planning	RateInquirySession.getTOrderRelease() [RMICallHandler-23]
+2008-12-09 15:14:52.750	521273	Debug	Planning	RateInquirySession.getTOrderRelease(): Setting order release domain to <null> [RMICallHandler-23]
+2008-12-09 15:14:52.781	521273	Debug	Planning	RateInquirySession.getTOrderRelease(): PackagedItemGid = <DEFAULT> [RMICallHandler-23]
+2008-12-09 15:14:52.828	521273	Debug	Planning	Find all itineries for order bundle: |$TOBJECT$.234| with prespective: B [RMICallHandler-23]
+2008-12-09 15:14:52.828	521273	Debug	Planning	From source location: ALLEXFG.KOWLOON-CORPORATION to dest location: ALLEXFG.MINATO-CORPORATION [RMICallHandler-23]
+2008-12-09 15:14:52.828	521273	Debug	Planning	Find Itinerary SQL: select all i.itinerary_gid from itinerary i, lane l, hname_set_member hsms, hname_set_member hsmd where hsms.hname in ('COUNTRY\CHN\', 'CITY/COUNTRY\HONG KONG\CHN\', 'LOCATION\ALLEXFG.KOWLOON-CORPORATION\') and hsmd.hname in ('COUNTRY\JPN\', 'ZONE1\1\', 'CITY/COUNTRY\TOKYO\JPN\', 'POSTAL_CODE\1050000\', 'LOCATION\ALLEXFG.MINATO-CORPORATION\') and l.source_hname_set_gid = hsms.hname_set_gid and l.dest_hname_set_gid = hsmd.hname_set_gid and i.x_lane_gid = l.x_lane_gid and (i.perspective = ? or i.perspective = ?); [A, B], {1} [RMICallHandler-23]
+2008-12-09 15:14:52.828	521273	Debug	Planning	Detailed Find Itinerary SQL: select all i.itinerary_gid from itinerary i, lane l, hname_set_member hsms, hname_set_member hsmd where hsms.hname in ('COUNTRY\CHN\', 'CITY/COUNTRY\HONG KONG\CHN\', 'LOCATION\ALLEXFG.KOWLOON-CORPORATION\') and hsmd.hname in ('COUNTRY\JPN\', 'ZONE1\1\', 'CITY/COUNTRY\TOKYO\JPN\', 'POSTAL_CODE\1050000\', 'LOCATION\ALLEXFG.MINATO-CORPORATION\') and l.source_hname_set_gid = hsms.hname_set_gid and l.dest_hname_set_gid = hsmd.hname_set_gid and i.x_lane_gid = l.x_lane_gid and (i.perspective = ? or i.perspective = ?); [A, B], database_vpd_user: {2} [RMICallHandler-23]
+2008-12-09 15:14:52.843	521273	Debug	Planning	Number of itineraries found: 2 [RMICallHandler-23]
+2008-12-09 15:14:52.843	521273	Debug	Planning	Add itinerary:ALLEXFG.ALLEXFG_SELL to  toBeEvaluatedItineraryList. [RMICallHandler-23]
+2008-12-09 15:14:52.843	521273	Debug	Planning	Add itinerary:ALLEXFG.IMPORT_HKG_HND to  toBeEvaluatedItineraryList. [RMICallHandler-23]
+2008-12-09 15:14:52.843	521273	Debug	Planning	********************************************************************* [RMICallHandler-23]
+2008-12-09 15:14:52.843	521273	Debug	Planning	Rule Manager begin evaluating 2  entities [RMICallHandler-23]
+2008-12-09 15:14:52.843	521273	Debug	Planning	Entity: ALLEXFG.ALLEXFG_SELL  passed [RMICallHandler-23]
+2008-12-09 15:14:52.859	521273	Debug	Planning	Entity: ALLEXFG.IMPORT_HKG_HND  passed [RMICallHandler-23]
+2008-12-09 15:14:52.859	521273	Debug	Planning	Rule Manager returning with 2 entities [RMICallHandler-23]
+2008-12-09 15:14:52.859	521273	Debug	Planning	CriteriaToBeIgnoredHelper::setCriteriaToBeIgnored--:  [RMICallHandler-23]
+2008-12-09 15:14:52.859	521273	Debug	Planning	Begin build shipment show options. [RMICallHandler-23]
+2008-12-09 15:14:52.859	521273	Debug	Planning	********** Begin buildTShipments for OrderBundle: |$TOBJECT$.234| with 1 itineraries. [RMICallHandler-23]
+2008-12-09 15:14:52.859	521273	Debug	Planning	Begin buildTShipmentGraphCollection for OrderBundle: |$TOBJECT$.234| with 1 itineraries. [RMICallHandler-23]
+2008-12-09 15:14:52.859	521273	Debug	Planning	     -> Evaluating itinerary: ALLEXFG.ALLEXFG_SELL [RMICallHandler-23]
+2008-12-09 15:14:52.859	521273	Debug	Planning	***** Begin building TItineraries for itineraryPK:ALLEXFG.ALLEXFG_SELL ***** [RMICallHandler-23]
+2008-12-09 15:14:52.859	521273	Debug	Planning	Begin building TLegHeaders for TItineraryFactory. [RMICallHandler-23]
+2008-12-09 15:14:52.875	521273	Debug	Planning	Itinerary has only 1 leg, so created only TLegHeader: TLegHeader: {	overall originPK: ALLEXFG.KOWLOON-CORPORATION	overall destinationPK: ALLEXFG.MINATO-CORPORATION	Leg sourcePKs: [ALLEXFG.KOWLOON-CORPORATION]	Leg destinationPKs: [ALLEXFG.MINATO-CORPORATION]. [RMICallHandler-23]
+2008-12-09 15:14:52.875	521273	Debug	Planning	****** Begin building TLegSets in TLegFactory (TLegSet is one combination of valid locations for a Leg) ****** [RMICallHandler-23]
+2008-12-09 15:14:52.875	521273	Debug	Planning	Maximum Number of TLetSets: 25 [RMICallHandler-23]
+2008-12-09 15:14:52.875	521273	Debug	Planning	Adding TLegSet:, Leg #1 {ALLEXFG.761, SourceLocationPK: ALLEXFG.KOWLOON-CORPORATION, DestLocationPK: ALLEXFG.MINATO-CORPORATION} to list of valid location combinations. [RMICallHandler-23]
+2008-12-09 15:14:52.875	521273	Debug	Planning	****** Returning 1 TLegSets from TLegFactory ****** [RMICallHandler-23]
+2008-12-09 15:14:52.875	521273	Debug	Planning	***** Returning 1 TItineraries (1 TItinerary for each different location combination)***** [RMICallHandler-23]
+2008-12-09 15:14:52.875	521273	Debug	Planning	ShipmentBuilder - makeTSShipUnits: working on TShipUnit $TOBJECT$.236 [RMICallHandler-23]
+2008-12-09 15:14:52.875	521273	Debug	Planning	Find best shipping option for itinerary: ALLEXFG.ALLEXFG_SELL with the following legs:  [RMICallHandler-23]
+2008-12-09 15:14:52.875	521273	Debug	Planning	Build TShipments on tLeg: ALLEXFG.761 from ALLEXFG.KOWLOON-CORPORATION to ALLEXFG.MINATO-CORPORATION with start time 2008-12-09 06:14:52 UTC [RMICallHandler-23]
+2008-12-09 15:14:52.875	521273	Debug	Planning	Begin create equipment options on leg: ALLEXFG.761 [RMICallHandler-23]
+2008-12-09 15:14:52.875	521273	Debug	Planning	----> WORKING ON LEG: {ALLEXFG.761, SourceLocationPK: ALLEXFG.KOWLOON-CORPORATION, DestLocationPK: ALLEXFG.MINATO-CORPORATION} [RMICallHandler-23]
+2008-12-09 15:14:52.875	521273	Debug	Planning	Creating equipment options:  [RMICallHandler-23]
+2008-12-09 15:14:52.875	521273	Debug	Planning	   Equipment Assignment Type: O [RMICallHandler-23]
+2008-12-09 15:14:52.875	521273	Debug	Planning	   Is this an Order Movement Bundle: false [RMICallHandler-23]
+2008-12-09 15:14:52.875	521273	Debug	Planning	   Order has OR Equipments: false [RMICallHandler-23]
+2008-12-09 15:14:52.875	521273	Debug	Planning	Create new equipments options, connect with previous leg's equipment options IF ANY. [RMICallHandler-23]
+2008-12-09 15:14:52.890	521273	Debug	Planning	No dest VIA locations on leg ALLEXFG.761 [RMICallHandler-23]
+2008-12-09 15:14:52.890	521273	Debug	Planning	No source VIA locations on leg ALLEXFG.761 [RMICallHandler-23]
+2008-12-09 15:14:52.890	521273	Debug	Planning	RateGeoFinderSession.findTRateGeosByAddresses() [RMICallHandler-23]
+2008-12-09 15:14:52.890	521273	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates : <false> [RMICallHandler-23]
+2008-12-09 15:14:52.890	521273	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates Only : <false> [RMICallHandler-23]
+2008-12-09 15:14:52.890	521273	Debug	Planning	No Capacity Override are defined for Leg: ALLEXFG.761 [RMICallHandler-23]
+2008-12-09 15:14:52.890	521273	Debug	Planning	End create equipment options on leg: ALLEXFG.761 [RMICallHandler-23]
+2008-12-09 15:14:52.890	521273	Debug	Planning	Creating leg options ... [RMICallHandler-23]
+2008-12-09 15:14:52.890	521273	Debug	Planning	Creating leg options for leg ALLEXFG.761 with 1 equipment options. [RMICallHandler-23]
+2008-12-09 15:14:52.890	521273	Debug	Planning	No source VIA locations on leg ALLEXFG.761 [RMICallHandler-23]
+2008-12-09 15:14:52.890	521273	Debug	Planning	No dest VIA locations on leg ALLEXFG.761 [RMICallHandler-23]
+2008-12-09 15:14:52.890	521273	Debug	Planning	Creating Leg Option with Equipment Option: Number of tSEquipments: 1
+--> EquipmentGroup: ALLEXFG.EQG001(2460369)   contains 1 TSShipUnits. unit: 1 16497433 created from ShipUnit: $TOBJECT$.236
+PrevEquipmentOption: 
+NextEquipmentOptions: 
+tSShipUnitMap: {16497433 created from ShipUnit: $TOBJECT$.236=[null]} and Arb option: NO_ARB  sourceViaLocation: null, destViaLocation null [RMICallHandler-23]
+2008-12-09 15:14:52.890	521273	Debug	Planning	1 leg options are created ... [RMICallHandler-23]
+2008-12-09 15:14:52.890	521273	Debug	Planning	Creating TShipments on the leg ... [RMICallHandler-23]
+2008-12-09 15:14:52.890	521273	Debug	Planning	Flag Create_Single_Shipment on leg: ALLEXFG.761 is false [RMICallHandler-23]
+2008-12-09 15:14:52.890	521273	Debug	Planning	1 TSEquipments on leg option 12368143. [RMICallHandler-23]
+2008-12-09 15:14:52.890	521273	Debug	Planning	   1th TSEquipment: EquipmentGroup: ALLEXFG.EQG001(2460369)   contains 1 TSShipUnits. unit: 1 16497433 created from ShipUnit: $TOBJECT$.236  [RMICallHandler-23]
+2008-12-09 15:14:52.890	521273	Debug	Planning	Creating new TShipment 1681398 for TSEquipment EquipmentGroup: ALLEXFG.EQG001(2460369)   contains 1 TSShipUnits. unit: 1 16497433 created from ShipUnit: $TOBJECT$.236. [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	Begin insertViaPoints... [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	leg: ALLEXFG.761 [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	No Via Points, returning [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	SQL Find LegInterimPoints by LegPK: select distinct lip.leg_gid, lip.seq_no from leg_interim_point lip where lip.leg_gid = ? order by lip.seq_no. [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	# of interim points for leg: ALLEXFG.761 is: 0 [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	Calculating and set cost for the leg ... [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	There are 1 TShipments on leg option 12368143.  [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	     1th TShipment 1681398 [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	RateFinder.findCommonFeasibleRateEngineResult(): Entering find common feasible rate engine result for 1 tShipments. [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	RateFinder.findCommonFeasibleRateEngineResult(): Calculating cost for TShipment 1. [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Begin Finding Valid Rate Geos ... [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): ShipmentGid (if any) = <null> [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingPKs = <null> [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingRuleSetGid = <null> [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateGeoRuleSetTGid = <null> [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRates = <true> [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRatesOnly = <false> [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): checkCmRating = <false> [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): useRouteExecutionRates = <false> [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates : <false> [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates Only : <false> [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	********************************************************************* [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	Rule Manager begin evaluating 1  entities [RMICallHandler-23]
+2008-12-09 15:14:52.906	521273	Debug	Planning	RateOfferingUOMRule.check: No constraints specified, returning true. [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	Current time at first stop of time zone: Asia/Hong_Kong is: 2008-12-09 14:14:52 Asia/Hong_Kong [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	Shipment start time: null [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	Shipment earliest possible start time: 2008-12-09 14:14:52 Asia/Hong_Kong [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	EstimatedTenderTime: 2008-12-09 15:14:52 Asia/Hong_Kong [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	EstimatedTenderLeadTime (statTime - estimatedTenderTime): -1 Hours 0 Minutes -1 Seconds [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	Entity: ALLEXFG.ALLEXFG_SELL  passed [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	Rule Manager returning with 1 entities [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateOfferings(): Validating rate offering customer domain profiles against shipment/order domain names. [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	TShipment.InitAccessorials(): Shipment accessorial map is {} [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	No Special Services are needed for this bundle, returning true... [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	After filtering special services for mode, no Special Services are needed for this bundle, returning true... [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	Rate Geo: ALLEXFG.ALLEXFG_SELL/Rate service: ALLEXFG.LTL_SIM [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	RateServiceGidConstraint = <null> [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	ALLEXFG.761 leg classification = null isPrimary = true. Check for Rate Service Constraint on Order Bundle. [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	Rate Geo rate service Not Compatible because of Iinerary Leg Rate Service Profile. [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos() [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos(): Returning: [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos(): RateGeo <RateGeoFinderResult: tRateGeo = <ALLEXFG.ALLEXFG_SELL>, composite = <CompositeRateGeoPK: key = <LTL|ALLEXFG.ALLEXFG_SELL|ALLEXFG.ALLEXFG_SELL|1212307200000|1262246400000>, hashCode = <-1161262827>, rgGid = <ALLEXFG.ALLEXFG_SELL>, roGid = <ALLEXFG.ALLEXFG_SELL>, rank = <4>, transportModeGid = <LTL>, effDate = <2008-06-01 08:00:00 UTC>, expDate = <2009-12-31 08:00:00 UTC>, servprovGid = <null>>, isPreferred = <false>> [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Complete Finding Valid Rate Geos ... [RMICallHandler-23]
+2008-12-09 15:14:52.921	521273	Debug	Planning	RateFinder.findShipmentCosts(): rateGeos [ALLEXFG.ALLEXFG_SELL] [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	RateFinder.findShipmentCosts(): Total 1 rate engine result(s) returned from RateEngine. [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	RateFinder.findShipmentCosts(): # feasible rateEngineResults = 1 [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	RateFinder.findCommonFeasibleRateEngineResult(): 1 rates found for tShipment 1 and they are:  [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	  rate engine result: 1 [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	          transportModeGid : LTL [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	          servprovGid      : ALLEXFG.NECACBD [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	          rateOfferingGid  : ALLEXFG.ALLEXFG_SELL [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	          rateServiceGid   : ALLEXFG.LTL_SIM [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	          rateGeoGid       : ALLEXFG.ALLEXFG_SELL [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	RateFinder.findCommonFeasibleRateEngineResult(): Currently, 1 common rates are valid. [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	Leaving find common feasible rate engine result for 1 tShipments. [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	Total: 1 common rate engine results found for this set of TShipment. [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	Entering createLegOptionsOnRateEngineResults... [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	 Evaluating common rate engine result:1 [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	          transportModeGid : LTL [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	          servprovGid      : ALLEXFG.NECACBD [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	          rateOfferingGid  : ALLEXFG.ALLEXFG_SELL [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	          rateServiceGid   : ALLEXFG.LTL_SIM [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	          rateGeoGid       : ALLEXFG.ALLEXFG_SELL [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	Created a clone tShipment: 11651987 (ALLEXFG.KOWLOON-CORPORATION->ALLEXFG.MINATO-CORPORATION) from tShipment: 1681398 (ALLEXFG.KOWLOON-CORPORATION->ALLEXFG.MINATO-CORPORATION) [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	 Getting matched rate engine result for shipment:1 [RMICallHandler-23]
+2008-12-09 15:14:52.937	521273	Debug	Planning	 Entering getMatchedRateEngineResult... [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	 Leaving getMatchedRateEngineResult [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Leaving createLegOptionsOnRateEngineResults... [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Entering calculateAndSetCarrierCapacityOptions... [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Leaving calculateAndSetCarrierCapacityOptions... [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Apply Conopt recommendation if exist... [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	After calculating cost, 1 leg options are still feasible [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Estimate Service within: 30 days. Is close enough for estimation?: false  [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Service Time Estimation Flag (Parameter): true  [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Number of leg options still feasible on leg ALLEXFG.761 is 1 [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	end of makeLegOptions [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Using Leg Option Optimizer to construct shipment graph. [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	    leg src: null dest: null [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Building itinerary options and sort them by cost ... [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	1 itinerary options are built. [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Apply EARLIEST ServiceTimeResult to shipment: 11651987 (ALLEXFG.KOWLOON-CORPORATION->ALLEXFG.MINATO-CORPORATION) [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	shipment type: TRANSPORT, start time: 2008-12-09 14:14:52 Asia/Hong_Kong, end time: 2008-12-09 15:14:52 JST [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Apply BEST ServiceTimeResult to shipment: 11651987 (ALLEXFG.KOWLOON-CORPORATION->ALLEXFG.MINATO-CORPORATION) [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	shipment type: TRANSPORT, start time: 2008-12-09 14:14:52 Asia/Hong_Kong, end time: 2008-12-09 15:14:52 JST [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Applying stop service time result for stop: 1 at: ALLEXFG.KOWLOON-CORPORATION, arrival time: 2008-12-09 14:14:52 Asia/Hong_Kong, departure time: 2008-12-09 14:14:52 Asia/Hong_Kong [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Applying stop service time result for stop: 2 at: ALLEXFG.MINATO-CORPORATION, arrival time: 2008-12-09 15:14:52 JST, departure time: 2008-12-09 15:14:52 JST [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Apply depot stop service time results. [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Is service time feasible: true [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Apply LATEST ServiceTimeResult to shipment: 11651987 (ALLEXFG.KOWLOON-CORPORATION->ALLEXFG.MINATO-CORPORATION) [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	shipment type: TRANSPORT, start time: 2008-12-09 14:14:52 Asia/Hong_Kong, end time: 2008-12-09 15:14:52 JST [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	LegOptionOptimizer::setOperationalLocations - Begin finding operational location for leg: {ALLEXFG.761, SourceLocationPK: ALLEXFG.KOWLOON-CORPORATION, DestLocationPK: ALLEXFG.MINATO-CORPORATION}  [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Total cost for the current shipment graph : $1000.0 JPY. [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Total cost for the best shipment graph: $179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.0 USD. [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Found the best itinerary ALLEXFG.ALLEXFG_SELL [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Total cost for the current shipment graph : $1000.0 JPY. [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Total cost for the best shipment graph: $179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.0 USD. [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	   total cost is smaller then current best cost [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	   current best graph is substituted by current graph [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	   current best itinerary is: ALLEXFG.ALLEXFG_SELL [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Shipment graph built: 
+
+ Graph (nodes) : 
+
+ | Shipment: 11651987 (ALLEXFG.KOWLOON-CORPORATION->ALLEXFG.MINATO-CORPORATION) | 
+
+ Graph (links) : 
+ [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	Found the best itinerary ALLEXFG.ALLEXFG_SELL [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	ShipmentGroupBuilder - Begin createTShipmentGroups [RMICallHandler-23]
+2008-12-09 15:14:52.953	521273	Debug	Planning	ShipmentGroupBuilder - Begin findValidRules [RMICallHandler-23]
+2008-12-09 15:14:52.968	521273	Debug	Planning	No current Shipment Group Rules found [RMICallHandler-23]
+2008-12-09 15:14:52.968	521273	Debug	Planning	Begin buildSecondaryChargeShipments... [RMICallHandler-23]
+2008-12-09 15:14:52.968	521273	Debug	Planning	Begin buildSecondaryChargeShipmentsForGroups... [RMICallHandler-23]
+2008-12-09 15:14:52.968	521273	Debug	Planning	Begin buildSecondaryChargeShipmentsForShipments... [RMICallHandler-23]
+2008-12-09 15:14:52.968	521273	Debug	Planning	No secondary charge rule for rule type S [RMICallHandler-23]
+2008-12-09 15:14:52.968	521273	Debug	Planning	start retrieving all secondary charge rules for itinerary: ALLEXFG.ALLEXFG_SELL [RMICallHandler-23]
+2008-12-09 15:14:52.968	521273	Debug	Planning	# of valid secondary_charge_rules base on itinerary: 0 [RMICallHandler-23]
+2008-12-09 15:14:52.968	521273	Debug	Planning	End buildSecondaryChargeShipmentsForShipments... [RMICallHandler-23]
+2008-12-09 15:14:52.968	521273	Debug	Planning	********** End Build Shipments for OrderBundle: |$TOBJECT$.234|. [RMICallHandler-23]
+2008-12-09 15:14:52.968	521273	Debug	Planning	A graph of TShipments have been built for ALLEXFG.ALLEXFG_SELL. [RMICallHandler-23]
+2008-12-09 15:14:52.968	521273	Debug	Planning	********** Begin buildTShipments for OrderBundle: |$TOBJECT$.234| with 1 itineraries. [RMICallHandler-23]
+2008-12-09 15:14:52.968	521273	Debug	Planning	Begin buildTShipmentGraphCollection for OrderBundle: |$TOBJECT$.234| with 1 itineraries. [RMICallHandler-23]
+2008-12-09 15:14:52.968	521273	Debug	Planning	     -> Evaluating itinerary: ALLEXFG.IMPORT_HKG_HND [RMICallHandler-23]
+2008-12-09 15:14:52.968	521273	Debug	Planning	***** Begin building TItineraries for itineraryPK:ALLEXFG.IMPORT_HKG_HND ***** [RMICallHandler-23]
+2008-12-09 15:14:52.968	521273	Debug	Planning	Begin building TLegHeaders for TItineraryFactory. [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	Itinerary has only 1 leg, so created only TLegHeader: TLegHeader: {	overall originPK: ALLEXFG.KOWLOON-CORPORATION	overall destinationPK: ALLEXFG.MINATO-CORPORATION	Leg sourcePKs: [ALLEXFG.KOWLOON-CORPORATION]	Leg destinationPKs: [ALLEXFG.MINATO-CORPORATION]. [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	****** Begin building TLegSets in TLegFactory (TLegSet is one combination of valid locations for a Leg) ****** [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	Maximum Number of TLetSets: 25 [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	Adding TLegSet:, Leg #1 {ALLEXFG.206, SourceLocationPK: ALLEXFG.KOWLOON-CORPORATION, DestLocationPK: ALLEXFG.MINATO-CORPORATION} to list of valid location combinations. [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	****** Returning 1 TLegSets from TLegFactory ****** [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	***** Returning 1 TItineraries (1 TItinerary for each different location combination)***** [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	Find best shipping option for itinerary: ALLEXFG.IMPORT_HKG_HND with the following legs:  [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	Build TShipments on tLeg: ALLEXFG.206 from ALLEXFG.KOWLOON-CORPORATION to ALLEXFG.MINATO-CORPORATION with start time 2008-12-09 06:14:52 UTC [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	Begin create equipment options on leg: ALLEXFG.206 [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	----> WORKING ON LEG: {ALLEXFG.206, SourceLocationPK: ALLEXFG.KOWLOON-CORPORATION, DestLocationPK: ALLEXFG.MINATO-CORPORATION} [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	Creating equipment options:  [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	   Equipment Assignment Type: N [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	   Is this an Order Movement Bundle: false [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	   Order has OR Equipments: false [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	End create equipment options on leg: ALLEXFG.206 [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	Creating leg options ... [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	Creating leg options for leg ALLEXFG.206 with 1 equipment options. [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	No source VIA locations on leg ALLEXFG.206 [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	No dest VIA locations on leg ALLEXFG.206 [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	Creating Leg Option with Equipment Option: Number of tSEquipments: 1
+--> EquipmentGroup: null(13898355)   contains 1 TSShipUnits. unit: 1 16497433 created from ShipUnit: $TOBJECT$.236
+PrevEquipmentOption: 
+NextEquipmentOptions: 
+tSShipUnitMap: {16497433 created from ShipUnit: $TOBJECT$.236=[null]} and Arb option: NO_ARB  sourceViaLocation: null, destViaLocation null [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	1 leg options are created ... [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	Creating TShipments on the leg ... [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	Flag Create_Single_Shipment on leg: ALLEXFG.206 is false [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	1 TSEquipments on leg option 17258007. [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	   1th TSEquipment: EquipmentGroup: null(13898355)   contains 1 TSShipUnits. unit: 1 16497433 created from ShipUnit: $TOBJECT$.236  [RMICallHandler-23]
+2008-12-09 15:14:52.984	521273	Debug	Planning	Creating new TShipment 10813576 for TSEquipment EquipmentGroup: null(13898355)   contains 1 TSShipUnits. unit: 1 16497433 created from ShipUnit: $TOBJECT$.236. [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	Begin insertViaPoints... [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	leg: ALLEXFG.206 [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	No Via Points, returning [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	SQL Find LegInterimPoints by LegPK: select distinct lip.leg_gid, lip.seq_no from leg_interim_point lip where lip.leg_gid = ? order by lip.seq_no. [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	# of interim points for leg: ALLEXFG.206 is: 0 [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	Calculating and set cost for the leg ... [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	There are 1 TShipments on leg option 17258007.  [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	     1th TShipment 10813576 [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	RateFinder.findCommonFeasibleRateEngineResult(): Entering find common feasible rate engine result for 1 tShipments. [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	RateFinder.findCommonFeasibleRateEngineResult(): Calculating cost for TShipment 1. [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Begin Finding Valid Rate Geos ... [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): ShipmentGid (if any) = <null> [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingPKs = <null> [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingRuleSetGid = <null> [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateGeoRuleSetTGid = <null> [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRates = <true> [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRatesOnly = <false> [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): checkCmRating = <false> [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): useRouteExecutionRates = <false> [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates : <false> [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates Only : <false> [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	********************************************************************* [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	Rule Manager begin evaluating 1  entities [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	RateOfferingUOMRule.check: No constraints specified, returning true. [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	Current time at first stop of time zone: Asia/Hong_Kong is: 2008-12-09 14:14:53 Asia/Hong_Kong [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	Shipment start time: null [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	Shipment earliest possible start time: 2008-12-09 14:14:52 Asia/Hong_Kong [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	EstimatedTenderTime: 2008-12-09 15:14:53 Asia/Hong_Kong [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	EstimatedTenderLeadTime (statTime - estimatedTenderTime): -1 Hours 0 Minutes -1 Seconds [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	Entity: ALLEXFG.ALLEXFG_SELL  passed [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	Rule Manager returning with 1 entities [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateOfferings(): Validating rate offering customer domain profiles against shipment/order domain names. [RMICallHandler-23]
+2008-12-09 15:14:53.000	521273	Debug	Planning	TShipment.InitAccessorials(): Shipment accessorial map is {} [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	No Special Services are needed for this bundle, returning true... [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	After filtering special services for mode, no Special Services are needed for this bundle, returning true... [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	Rate Geo: ALLEXFG.ALLEXFG_SELL/Rate service: ALLEXFG.LTL_SIM [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	RateServiceGidConstraint = <null> [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	ALLEXFG.206 leg classification = null isPrimary = false. Check for Rate Service Constraint on Order Bundle. [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	Rate Geo rate service Not Compatible because of Iinerary Leg Rate Service Profile. [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos() [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos(): Returning: [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos(): RateGeo <RateGeoFinderResult: tRateGeo = <ALLEXFG.ALLEXFG_SELL>, composite = <CompositeRateGeoPK: key = <LTL|ALLEXFG.ALLEXFG_SELL|ALLEXFG.ALLEXFG_SELL|1212307200000|1262246400000>, hashCode = <-1161262827>, rgGid = <ALLEXFG.ALLEXFG_SELL>, roGid = <ALLEXFG.ALLEXFG_SELL>, rank = <4>, transportModeGid = <LTL>, effDate = <2008-06-01 08:00:00 UTC>, expDate = <2009-12-31 08:00:00 UTC>, servprovGid = <null>>, isPreferred = <false>> [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Complete Finding Valid Rate Geos ... [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	RateFinder.findShipmentCosts(): rateGeos [ALLEXFG.ALLEXFG_SELL] [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	RateFinder.findShipmentCosts(): Total 1 rate engine result(s) returned from RateEngine. [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	RateFinder.findShipmentCosts(): # feasible rateEngineResults = 1 [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	RateFinder.findCommonFeasibleRateEngineResult(): 1 rates found for tShipment 1 and they are:  [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	  rate engine result: 1 [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	          transportModeGid : LTL [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	          servprovGid      : ALLEXFG.NECACBD [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	          rateOfferingGid  : ALLEXFG.ALLEXFG_SELL [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	          rateServiceGid   : ALLEXFG.LTL_SIM [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	          rateGeoGid       : ALLEXFG.ALLEXFG_SELL [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	RateFinder.findCommonFeasibleRateEngineResult(): Currently, 1 common rates are valid. [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	Leaving find common feasible rate engine result for 1 tShipments. [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	Total: 1 common rate engine results found for this set of TShipment. [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	Entering createLegOptionsOnRateEngineResults... [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	 Evaluating common rate engine result:1 [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	          transportModeGid : LTL [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	          servprovGid      : ALLEXFG.NECACBD [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	          rateOfferingGid  : ALLEXFG.ALLEXFG_SELL [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	          rateServiceGid   : ALLEXFG.LTL_SIM [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	          rateGeoGid       : ALLEXFG.ALLEXFG_SELL [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	Created a clone tShipment: 563781 (ALLEXFG.KOWLOON-CORPORATION->ALLEXFG.MINATO-CORPORATION) from tShipment: 10813576 (ALLEXFG.KOWLOON-CORPORATION->ALLEXFG.MINATO-CORPORATION) [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	 Getting matched rate engine result for shipment:1 [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	 Entering getMatchedRateEngineResult... [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	 Leaving getMatchedRateEngineResult [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	Leaving createLegOptionsOnRateEngineResults... [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	Entering calculateAndSetCarrierCapacityOptions... [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	Leaving calculateAndSetCarrierCapacityOptions... [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	After calculating cost, 1 leg options are still feasible [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	Estimate Service within: 30 days. Is close enough for estimation?: false  [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	Service Time Estimation Flag (Parameter): true  [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	Number of leg options still feasible on leg ALLEXFG.206 is 1 [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	end of makeLegOptions [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	Using Leg Option Optimizer to construct shipment graph. [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	    leg src: null dest: null [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	Building itinerary options and sort them by cost ... [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Debug	Planning	1 itinerary options are built. [RMICallHandler-23]
+2008-12-09 15:14:53.015	521273	Warning	Planning	None of the combinations of leg options were feasible for this itinerary. [RMICallHandler-23]
+2008-12-09 15:14:53.031	521273	Warning	Planning	No feasible shipments created for Itinerary: ALLEXFG.IMPORT_HKG_HND. [RMICallHandler-23]
+2008-12-09 15:14:53.031	521273	Error	Exception	No shipments built for order bundle
+
+	at sun.reflect.GeneratedConstructorAccessor98.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.util.explanation.Explanations.factory(Explanations.java:418)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:366)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentsShowOptions(OrderActionExecutor.java:514)
+	at glog.business.action.OrderActionExecutor.buildShipmentsShowOptions(OrderActionExecutor.java:486)
+	at glog.business.action.OrderActionExecutor.buildShipmentsShowOptions(OrderActionExecutor.java:466)
+	at glog.business.rate.rateinquiry.RateInquirySession.getRates_Route(RateInquirySession.java:908)
+	at glog.business.rate.rateinquiry.RateInquirySession.getRatesInternal(RateInquirySession.java:591)
+	at glog.business.rate.rateinquiry.RateInquirySession.getRates_Route(RateInquirySession.java:187)
+	at glog.business.action.RateActionExecutor.getRates_Route(RateActionExecutor.java:97)
+	at glog.business.session.RateActionSessionBean.getRates_Route(RateActionSessionBean.java:85)
+	at glog.business.session.RateActionSessionServerSideEJBWrapper.getRates_Route(RateActionSessionServerSideEJBWrapper.java:90)
+	at sun.reflect.GeneratedMethodAccessor153.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at RateActionSessionHome_RemoteProxy_6iid3ag.getRates_Route(Unknown Source)
+	at glog.integration.application.query.RIQ2.buildRIQQueryResult(RIQ2.java:1145)
+	at glog.integration.application.query.QueryInterface.validateRemoteQuery(QueryInterface.java:104)
+	at glog.integration.application.query.QueryInterface.validateXML(QueryInterface.java:66)
+	at glog.integration.application.TransmissionProcessor.processQuery(TransmissionProcessor.java:234)
+	at glog.integration.application.CommandLineSessionBean.processQuery(CommandLineSessionBean.java:294)
+	at glog.integration.application.CommandLineSessionServerSideEJBWrapper.processQuery(CommandLineSessionServerSideEJBWrapper.java:136)
+	at sun.reflect.GeneratedMethodAccessor170.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxRequiresNewInterceptor.invoke(TxRequiresNewInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at CommandLineSessionHome_RemoteProxy_1eanlac.processQuery(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-23]
+2008-12-09 15:14:53.031	521273	Debug	Planning	Rate Inquiry results found [RMICallHandler-23]
+2008-12-09 15:14:53.031	521273	Debug	Planning	Rate Inquiry results built [RMICallHandler-23]
+2008-12-09 15:14:53.031	521273	Debug	Planning	End Rate Inquiry [RMICallHandler-23]
+2008-12-09 15:14:53.031	0	Debug	Planning	CriteriaToBeIgnoredHelper.clearCriteriaToBeIgnored(): Clearing thread local stored criteria to be ignored-- [RMICallHandler-23]
+2008-12-09 15:15:07.484	0	Debug	Workflow	Starting workflow Process Control (20826711) in response to 10s: 2008-12-09 06:15:07 Asia/Tokyo [timer - 1]
+2008-12-09 15:15:07.484	0	Debug	Workflow	Completing workflow Process Control (20826711) [timer - 1]
+
+2008-12-09 15:15:12.484	0	Error	Exception	java.net.SocketTimeoutException???????"http://10.226.54.101:7001/otm_adf_outbound_remotequeryreply/IntXml?WSDL"?WSDL????????????????: Read timed out: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at HTTPClient.BufferedInputStream.fillBuff(BufferedInputStream.java:192)
+	at HTTPClient.BufferedInputStream.read(BufferedInputStream.java:112)
+	at HTTPClient.StreamDemultiplexor.read(StreamDemultiplexor.java:322)
+	at HTTPClient.RespInputStream.read(RespInputStream.java:170)
+	at HTTPClient.RespInputStream.read(RespInputStream.java:129)
+	at HTTPClient.Response.readResponseHeaders(Response.java:1002)
+	at HTTPClient.Response.getHeaders(Response.java:718)
+	at HTTPClient.Response.getStatusCode(Response.java:268)
+	at HTTPClient.RetryModule.responsePhase1Handler(RetryModule.java:92)
+	at HTTPClient.HTTPResponse.handleResponse(HTTPResponse.java:771)
+	at HTTPClient.HTTPResponse.getStatusCode(HTTPResponse.java:204)
+	at oracle.j2ee.ws.wsdl.xml.WSDLReaderImpl.openAsStream(WSDLReaderImpl.java:396)
+	at oracle.j2ee.ws.wsdl.xml.WSDLReaderImpl.readDocument(WSDLReaderImpl.java:312)
+	at oracle.j2ee.ws.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:277)
+	at oracle.j2ee.ws.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:464)
+	at oracle.j2ee.ws.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:442)
+	at glog.server.webservice.WebServiceSessionBean.getDefinition(WebServiceSessionBean.java:304)
+	at glog.server.webservice.WebServiceSessionBean.produceFromWSDL(WebServiceSessionBean.java:98)
+	at glog.server.webservice.WebServiceSessionServerSideEJBWrapper.produceFromWSDL(WebServiceSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WebServiceSessionHome_RemoteProxy_e2m996.produceFromWSDL(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+
+
+java.net.SocketTimeoutException???????"http://10.226.54.101:7001/otm_adf_outbound_remotequeryreply/IntXml?WSDL"?WSDL????????????????: Read timed out: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at HTTPClient.BufferedInputStream.fillBuff(BufferedInputStream.java:192)
+	at HTTPClient.BufferedInputStream.read(BufferedInputStream.java:112)
+	at HTTPClient.StreamDemultiplexor.read(StreamDemultiplexor.java:322)
+	at HTTPClient.RespInputStream.read(RespInputStream.java:170)
+	at HTTPClient.RespInputStream.read(RespInputStream.java:129)
+	at HTTPClient.Response.readResponseHeaders(Response.java:1002)
+	at HTTPClient.Response.getHeaders(Response.java:718)
+	at HTTPClient.Response.getStatusCode(Response.java:268)
+	at HTTPClient.RetryModule.responsePhase1Handler(RetryModule.java:92)
+	at HTTPClient.HTTPResponse.handleResponse(HTTPResponse.java:771)
+	at HTTPClient.HTTPResponse.getStatusCode(HTTPResponse.java:204)
+	at oracle.j2ee.ws.wsdl.xml.WSDLReaderImpl.openAsStream(WSDLReaderImpl.java:396)
+	at oracle.j2ee.ws.wsdl.xml.WSDLReaderImpl.readDocument(WSDLReaderImpl.java:312)
+	at oracle.j2ee.ws.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:277)
+	at oracle.j2ee.ws.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:464)
+	at oracle.j2ee.ws.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:442)
+	at glog.server.webservice.WebServiceSessionBean.getDefinition(WebServiceSessionBean.java:304)
+	at glog.server.webservice.WebServiceSessionBean.produceFromWSDL(WebServiceSessionBean.java:98)
+	at glog.server.webservice.WebServiceSessionServerSideEJBWrapper.produceFromWSDL(WebServiceSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WebServiceSessionHome_RemoteProxy_e2m996.produceFromWSDL(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+
+	at oracle.j2ee.ws.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:282)
+	at oracle.j2ee.ws.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:464)
+	at oracle.j2ee.ws.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:442)
+	at glog.server.webservice.WebServiceSessionBean.getDefinition(WebServiceSessionBean.java:304)
+	at glog.server.webservice.WebServiceSessionBean.produceFromWSDL(WebServiceSessionBean.java:98)
+	at glog.server.webservice.WebServiceSessionServerSideEJBWrapper.produceFromWSDL(WebServiceSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WebServiceSessionHome_RemoteProxy_e2m996.produceFromWSDL(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-19]

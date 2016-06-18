@@ -1,0 +1,275 @@
+Transmission Report 	
+
+    TransmissionHeader
+        UserName
+        Password
+        SenderSystemId
+        GlogXMLElementName
+    TransmissionBody
+        GLogXMLElement
+            TransmissionReport
+                UserName = DBA.ADMIN
+                TransmissionNo = 272
+                ReportStatus = ERROR
+                IntegrationLogMessage
+                    ILogSeqNo = 472
+                    ITransactionNo = -1
+                    WrittenBy = XML_STAGE
+                    IMessageClass = I
+                    IMessageCode = TRANSMISSION_RECEIVED
+                    DateTimeStamp
+                        GLogDate = 20130704160836
+                        TZId = UTC
+                        TZOffset = +00:00
+                    DomainName = DBA
+                IntegrationLogMessage
+                    ILogSeqNo = 476
+                    ITransactionNo = 395
+                    ObjectGid
+                        Gid
+                            DomainName = DBA
+                            Xid = 799-13603
+                    WrittenBy = ItemMasterInterface
+                    IMessageClass = I
+                    IMessageCode = TRANSACTION_SUCCESS
+                    DateTimeStamp
+                        GLogDate = 20130704160837
+                        TZId = UTC
+                        TZOffset = +00:00
+                    DomainName = DBA
+                IntegrationLogMessage
+                    ILogSeqNo = 478
+                    ITransactionNo = 396
+                    ObjectGid
+                        Gid
+                            DomainName = DBA
+                            Xid = CUS-30391
+                    WrittenBy = LocationInterface
+                    IMessageClass = I
+                    IMessageCode = TRANSACTION_SUCCESS
+                    DateTimeStamp
+                        GLogDate = 20130704160837
+                        TZId = UTC
+                        TZOffset = +00:00
+                    DomainName = DBA
+                IntegrationLogMessage
+                    ILogSeqNo = 480
+                    ITransactionNo = 398
+                    ObjectGid
+                        Gid
+                            DomainName = DBA
+                            Xid = CUS-30391-25797
+                    WrittenBy = LocationInterface
+                    IMessageClass = I
+                    IMessageCode = TRANSACTION_SUCCESS
+                    DateTimeStamp
+                        GLogDate = 20130704160838
+                        TZId = UTC
+                        TZOffset = +00:00
+                    DomainName = DBA
+                IntegrationLogMessage
+                    ILogSeqNo = 474
+                    ITransactionNo = 400
+                    WrittenBy = TransactionHeaderInterface
+                    IMessageClass = I
+                    IMessageCode = TRANSACTION_SUCCESS
+                    DateTimeStamp
+                        GLogDate = 20130704160837
+                        TZId = UTC
+                        TZOffset = +00:00
+                    DomainName = DBA
+                IntegrationLogMessage
+                    ILogSeqNo = 517
+                    ITransactionNo = 401
+                    ObjectGid
+                        Gid
+                            DomainName = DBA
+                            Xid = 9630394
+                    WrittenBy = ReleaseInterface
+                    IMessageClass = E
+                    IMessageCode = FK_NOT_FOUND_ERROR
+                    IMessageText = THE FOREIGN KEY ELEMENT Weight.WeightUOMGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>EA</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+                    DateTimeStamp
+                        GLogDate = 20130704162042
+                        TZId = UTC
+                        TZOffset = +00:00
+                    DomainName = DBA
+                IntegrationLogMessage
+                    ILogSeqNo = 518
+                    ITransactionNo = 401
+                    ObjectGid
+                        Gid
+                            DomainName = DBA
+                            Xid = 9630394
+                    WrittenBy = ReleaseInterface
+                    IMessageClass = E
+                    IMessageCode = FK_NOT_FOUND_ERROR
+                    IMessageText = THE FOREIGN KEY ELEMENT Volume.VolumeUOMGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>EA</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+                    DateTimeStamp
+                        GLogDate = 20130704162042
+                        TZId = UTC
+                        TZOffset = +00:00
+                    DomainName = DBA
+                IntegrationLogMessage
+                    ILogSeqNo = 519
+                    ITransactionNo = 401
+                    ObjectGid
+                        Gid
+                            DomainName = DBA
+                            Xid = 9630394
+                    WrittenBy = ReleaseInterface
+                    IMessageClass = E
+                    IMessageCode = FK_NOT_FOUND_ERROR
+                    IMessageText = THE FOREIGN KEY ELEMENT Weight.WeightUOMGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>EA</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+                    DateTimeStamp
+                        GLogDate = 20130704162042
+                        TZId = UTC
+                        TZOffset = +00:00
+                    DomainName = DBA
+                IntegrationLogMessage
+                    ILogSeqNo = 520
+                    ITransactionNo = 401
+                    ObjectGid
+                        Gid
+                            DomainName = DBA
+                            Xid = 9630394
+                    WrittenBy = ReleaseInterface
+                    IMessageClass = E
+                    IMessageCode = FK_NOT_FOUND_ERROR
+                    IMessageText = THE FOREIGN KEY ELEMENT Volume.VolumeUOMGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>EA</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+                    DateTimeStamp
+                        GLogDate = 20130704162042
+                        TZId = UTC
+                        TZOffset = +00:00
+                    DomainName = DBA
+                IntegrationLogMessage
+                    ILogSeqNo = 521
+                    ITransactionNo = 401
+                    ObjectGid
+                        Gid
+                            DomainName = DBA
+                            Xid = 9630394
+                    WrittenBy = ReleaseInterface
+                    IMessageClass = E
+                    IMessageCode = FK_NOT_FOUND_ERROR
+                    IMessageText = THE FOREIGN KEY ELEMENT Length.LengthUOMGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>C12</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+                    DateTimeStamp
+                        GLogDate = 20130704162042
+                        TZId = UTC
+                        TZOffset = +00:00
+                    DomainName = DBA
+                IntegrationLogMessage
+                    ILogSeqNo = 522
+                    ITransactionNo = 401
+                    ObjectGid
+                        Gid
+                            DomainName = DBA
+                            Xid = 9630394
+                    WrittenBy = ReleaseInterface
+                    IMessageClass = E
+                    IMessageCode = FK_NOT_FOUND_ERROR
+                    IMessageText = THE FOREIGN KEY ELEMENT LengthWidthHeight.Width WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>C12</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+                    DateTimeStamp
+                        GLogDate = 20130704162042
+                        TZId = UTC
+                        TZOffset = +00:00
+                    DomainName = DBA
+                IntegrationLogMessage
+                    ILogSeqNo = 523
+                    ITransactionNo = 401
+                    ObjectGid
+                        Gid
+                            DomainName = DBA
+                            Xid = 9630394
+                    WrittenBy = ReleaseInterface
+                    IMessageClass = E
+                    IMessageCode = FK_NOT_FOUND_ERROR
+                    IMessageText = THE FOREIGN KEY ELEMENT LengthWidthHeight.Height WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>C12</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+                    DateTimeStamp
+                        GLogDate = 20130704162042
+                        TZId = UTC
+                        TZOffset = +00:00
+                    DomainName = DBA
+                IntegrationLogMessage
+                    ILogSeqNo = 524
+                    ITransactionNo = 401
+                    ObjectGid
+                        Gid
+                            DomainName = DBA
+                            Xid = 9630394
+                    WrittenBy = ReleaseInterface
+                    IMessageClass = E
+                    IMessageCode = FK_NOT_FOUND_ERROR
+                    IMessageText = THE FOREIGN KEY ELEMENT Weight.WeightUOMGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>EA</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+                    DateTimeStamp
+                        GLogDate = 20130704162042
+                        TZId = UTC
+                        TZOffset = +00:00
+                    DomainName = DBA
+                IntegrationLogMessage
+                    ILogSeqNo = 525
+                    ITransactionNo = 401
+                    ObjectGid
+                        Gid
+                            DomainName = DBA
+                            Xid = 9630394
+                    WrittenBy = ReleaseInterface
+                    IMessageClass = E
+                    IMessageCode = FK_NOT_FOUND_ERROR
+                    IMessageText = THE FOREIGN KEY ELEMENT Volume.VolumeUOMGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>EA</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+                    DateTimeStamp
+                        GLogDate = 20130704162042
+                        TZId = UTC
+                        TZOffset = +00:00
+                    DomainName = DBA
+                IntegrationLogMessage
+                    ILogSeqNo = 526
+                    ITransactionNo = 401
+                    ObjectGid
+                        Gid
+                            DomainName = DBA
+                            Xid = 9630394
+                    WrittenBy = ReleaseInterface
+                    IMessageClass = E
+                    IMessageCode = FK_NOT_FOUND_ERROR
+                    IMessageText = THE FOREIGN KEY ELEMENT Weight.WeightUOMGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>EA</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+                    DateTimeStamp
+                        GLogDate = 20130704162042
+                        TZId = UTC
+                        TZOffset = +00:00
+                    DomainName = DBA
+                IntegrationLogMessage
+                    ILogSeqNo = 527
+                    ITransactionNo = 401
+                    ObjectGid
+                        Gid
+                            DomainName = DBA
+                            Xid = 9630394
+                    WrittenBy = ReleaseInterface
+                    IMessageClass = E
+                    IMessageCode = FK_NOT_FOUND_ERROR
+                    IMessageText = THE FOREIGN KEY ELEMENT Volume.VolumeUOMGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>EA</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+                    DateTimeStamp
+                        GLogDate = 20130704162042
+                        TZId = UTC
+                        TZOffset = +00:00
+                    DomainName = DBA
+                IntegrationLogMessage
+                    ILogSeqNo = 528
+                    ITransactionNo = 401
+                    ObjectGid
+                        Gid
+                            DomainName = DBA
+                            Xid = 9630394
+                    WrittenBy = ReleaseInterface
+                    IMessageClass = E
+                    IMessageCode = FK_NOT_FOUND_ERROR
+                    IMessageText = THE FOREIGN KEY ELEMENT Weight.WeightUOMGid WITH VALUE <Gid xmlns="http://xmlns.oracle.com/apps/otm"><Xid>EA</Xid></Gid> COULD NOT BE FOUND IN TABLE UOM COLUMN UOM_CODE
+                    DateTimeStamp
+                        GLogDate = 20130704162042
+                        TZId = UTC
+                        TZOffset = +00:00
+                    DomainName = DBA
+                TransmissionSummary
+                    FirstTransactionNo = 395
+                    LastTransactionNo = 401

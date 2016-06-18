@@ -1,0 +1,89 @@
+INFO | 2010/06/25 21:12:07 | Starting Launched Process...
+INFO | 2010/06/25 21:12:07 | Argument #0 : C:/otm/jdk/bin/java
+INFO | 2010/06/25 21:12:07 | Argument #1 : -jrockit
+INFO | 2010/06/25 21:12:07 | Argument #2 : -Xms1600m
+INFO | 2010/06/25 21:12:07 | Argument #3 : -Xmx1600m
+INFO | 2010/06/25 21:12:07 | Argument #4 : -Xgcprio:throughput
+INFO | 2010/06/25 21:12:07 | Argument #5 : -Xverbose:memory
+INFO | 2010/06/25 21:12:07 | Argument #6 : -Dglog.home=C:/otm/glog/config
+INFO | 2010/06/25 21:12:07 | Argument #7 : -Duser.home=C:/otm/glog/config
+INFO | 2010/06/25 21:12:07 | Argument #8 : -Djava.io.tmpdir=C:/otm/temp
+INFO | 2010/06/25 21:12:07 | Argument #9 : -Djava.awt.headless=true
+INFO | 2010/06/25 21:12:07 | Argument #10 : -Xss256k
+INFO | 2010/06/25 21:12:07 | Argument #11 : -Doracle.jdbc.V8Compatible=true
+INFO | 2010/06/25 21:12:07 | Argument #12 : -classpath
+INFO | 2010/06/25 21:12:07 | Argument #13 : C:/otm/oas/j2ee/home/oc4j.jar;C:/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/execjar.jar;C:\otm\glog\gc3webapp\WEB-INF\lib\external\otm-samples.jar
+INFO | 2010/06/25 21:12:07 | Argument #14 : oracle.oc4j.loader.boot.BootStrap
+INFO | 2010/06/25 21:12:07 | Argument #15 : -userThreads
+INFO | 2010/06/25 21:12:07 | Argument #16 : -config
+INFO | 2010/06/25 21:12:07 | Argument #17 : C:/otm/oas/j2ee/home/config/server.xml
+INFO | 2010/06/25 21:12:07 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2010/06/25 21:12:07 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, initial strategy: Generational Parallel Mark & Sweep
+INFO | 2010/06/25 21:12:07 | [INFO ][memory ] heap size: 1638400K, maximal heap size: 1638400K, nursery size: 819200K
+INFO | 2010/06/25 21:12:07 | [INFO ][memory ] <s>-<end>: GC <before>K-><after>K (<heap>K), <pause> ms
+INFO | 2010/06/25 21:12:07 | [INFO ][memory ] <s/start> - start time of collection (seconds since jvm start)
+INFO | 2010/06/25 21:12:07 | [INFO ][memory ] <end>     - end time of collection (seconds since jvm start)
+INFO | 2010/06/25 21:12:07 | [INFO ][memory ] <before>  - memory used by objects before collection (KB)
+INFO | 2010/06/25 21:12:07 | [INFO ][memory ] <after>   - memory used by objects after collection (KB)
+INFO | 2010/06/25 21:12:07 | [INFO ][memory ] <heap>    - size of heap after collection (KB)
+INFO | 2010/06/25 21:12:07 | [INFO ][memory ] <pause>   - total sum of pauses during collection (milliseconds)
+INFO | 2010/06/25 21:12:07 | [INFO ][memory ]             run with -Xverbose:gcpause to see individual pauses
+INFO | 2010/06/25 21:12:12 | 10/06/25 21:12:12 -- OTM Startup: preDeploy
+INFO | 2010/06/25 21:12:12 | 10/06/25 21:12:12 -- OTM Startup: initializing realm
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 java.sql.SQLException: Protocol violation
+
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 java.sql.SQLException: Protocol violation
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:208)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at oracle.jdbc.driver.T4C7Ocommoncall.receive(T4C7Ocommoncall.java:150)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:465)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at oracle.jdbc.driver.PhysicalConnection.close(PhysicalConnection.java:1521)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.util.datasource.DataSource.release(DataSource.java:173)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.release(T2SharedConnection.java:318)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.util.jdbc.noserver.T2SharedConnection.close(T2SharedConnection.java:55)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.database.security.dbrealm.RdbmsRealm.queryAll(RdbmsRealm.java:210)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1071)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1083)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.database.security.dbrealm.CachingRealm.readKnownGroups(CachingRealm.java:318)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.database.security.dbrealm.CachingRealm.initCaches(CachingRealm.java:185)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.database.security.dbrealm.CachingRealm.<init>(CachingRealm.java:139)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.database.security.dbrealm.CachingRealm.initialize(CachingRealm.java:127)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.util.j2ee.startup.OASStartup.startupRealm(OASStartup.java:43)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.util.j2ee.startup.OASStartup.onEvent(OASStartup.java:28)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.util.j2ee.startup.OASStartupShutdownManager.preDeploy(OASStartupShutdownManager.java:19)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at com.evermind.util.ClassDescriptor.executeStartupClass(ClassDescriptor.java:73)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at com.evermind.server.ApplicationServer.execStartupClassesPreDeploy(ApplicationServer.java:1408)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at com.evermind.server.ApplicationServer.setConfig(ApplicationServer.java:1009)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at com.evermind.server.ApplicationServerLauncher.run(ApplicationServerLauncher.java:131)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at java.lang.Thread.run(Thread.java:595)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 java.sql.SQLException: Protocol violation
+
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 java.sql.SQLException: Protocol violation
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:208)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at oracle.jdbc.driver.T4C7Ocommoncall.receive(T4C7Ocommoncall.java:150)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:465)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at oracle.jdbc.driver.PhysicalConnection.close(PhysicalConnection.java:1521)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.util.datasource.DataSource.release(DataSource.java:173)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.release(T2SharedConnection.java:318)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.util.jdbc.noserver.T2SharedConnection.close(T2SharedConnection.java:55)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.database.security.dbrealm.RdbmsRealm.queryAll(RdbmsRealm.java:210)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1071)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1083)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.database.security.dbrealm.CachingRealm.readKnownGroups(CachingRealm.java:318)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.database.security.dbrealm.CachingRealm.initCaches(CachingRealm.java:185)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.database.security.dbrealm.CachingRealm.<init>(CachingRealm.java:139)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.database.security.dbrealm.CachingRealm.initialize(CachingRealm.java:127)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.util.j2ee.startup.OASStartup.startupRealm(OASStartup.java:43)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.util.j2ee.startup.OASStartup.onEvent(OASStartup.java:28)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at glog.util.j2ee.startup.OASStartupShutdownManager.preDeploy(OASStartupShutdownManager.java:19)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at com.evermind.util.ClassDescriptor.executeStartupClass(ClassDescriptor.java:73)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at com.evermind.server.ApplicationServer.execStartupClassesPreDeploy(ApplicationServer.java:1408)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at com.evermind.server.ApplicationServer.setConfig(ApplicationServer.java:1009)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at com.evermind.server.ApplicationServerLauncher.run(ApplicationServerLauncher.java:131)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 	at java.lang.Thread.run(Thread.java:595)
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 Fatal Error: Realm Initialization failed!!
+INFO | 2010/06/25 21:12:13 | 10/06/25 21:12:13 Shutting down OC4J...
+INFO | 2010/06/25 21:12:13 | Stopped Launched Process...

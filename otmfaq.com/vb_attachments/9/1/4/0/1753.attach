@@ -1,0 +1,96 @@
++---------------------------------------------------------------------------+
+Shipping Execution: Version : 12.0.0
+
+Copyright (c) 1979, 1999, Oracle Corporation. All rights reserved.
+
+WSHOOCHL module: Shipping-Transportation outbound interface - Child
++---------------------------------------------------------------------------+
+
+Current system time is 05-MAY-2015 06:39:08
+
++---------------------------------------------------------------------------+
+
+Id Low : 108017
+Id High : 108017
+Client Id : 
+Entity Name : DELIVERY
+Batch size : 50
+Organization Id : 
+Name Low : 108017
+Name High : 108017
+IdList Query select delivery_id id , name from wsh_new_deliveries where tms_interface_flag in ('CP','UP','DP')  and delivery_id >= :1 and delivery_id <= :2 and name >= :3 and name <= :4
+getObject(1) 108017
+getObject(2) 108017
+Ids Picked up 1
+ Size of Hash Table 1
+ false 
+Value of key at 0 is 108017   Hash Table Entry 108017
+
+Launching Bpel process for batch 1
+DELIVERY processed in this batch 
+108017   
+
+ In the method getDBToken 
+In the method buildPayload 
+Input XML to be passed to the BPEL process 
+BPEL Domain NOT-USED
+Calling SoapBpelInvoker.callWebService
+Endpoint http://10.168.11.144:8001/soa-infra/services/default/WshSendTxnToOtmService/client
+ Calling sendDocumentViaSIF 
+Response XML<WshSendTxnToOtmServiceProcessResponse xmlns="http://xmlns.oracle.com/apps/wsh/outbound/txn/WshSendTxnToOtmService">
+   <result>
+      <entityidList xmlns="http://xmlns.oracle.com/apps/wsh/outbound/util/WshOtmGlobalOutbound"/>
+      <errorIdList xmlns="http://xmlns.oracle.com/apps/wsh/outbound/util/WshOtmGlobalOutbound">
+         <entityId>108017</entityId>
+      </errorIdList>
+      <authenticated xmlns="http://xmlns.oracle.com/apps/wsh/outbound/util/WshOtmGlobalOutbound">false</authenticated>
+      <returnStatus xmlns="http://xmlns.oracle.com/apps/wsh/outbound/util/WshOtmGlobalOutbound">U</returnStatus>
+      <bpelInstanceId xmlns="http://xmlns.oracle.com/apps/wsh/outbound/util/WshOtmGlobalOutbound">10018</bpelInstanceId>
+      <otmTransmissionId xmlns="http://xmlns.oracle.com/apps/wsh/outbound/util/WshOtmGlobalOutbound"/>
+   </result>
+</WshSendTxnToOtmServiceProcessResponse>
+
+authenticated false
+ Returning back from parseResponse with return Status RETRY
+ReturnStatus from BPEL process: RETRY
+Calling SoapBpelInvoker.callWebService again
+Endpoint http://10.168.11.144:8001/soa-infra/services/default/WshSendTxnToOtmService/client
+ Calling sendDocumentViaSIF 
+Response XML<WshSendTxnToOtmServiceProcessResponse xmlns="http://xmlns.oracle.com/apps/wsh/outbound/txn/WshSendTxnToOtmService">
+   <result>
+      <entityidList xmlns="http://xmlns.oracle.com/apps/wsh/outbound/util/WshOtmGlobalOutbound"/>
+      <errorIdList xmlns="http://xmlns.oracle.com/apps/wsh/outbound/util/WshOtmGlobalOutbound">
+         <entityId>108017</entityId>
+      </errorIdList>
+      <authenticated xmlns="http://xmlns.oracle.com/apps/wsh/outbound/util/WshOtmGlobalOutbound">false</authenticated>
+      <returnStatus xmlns="http://xmlns.oracle.com/apps/wsh/outbound/util/WshOtmGlobalOutbound">U</returnStatus>
+      <bpelInstanceId xmlns="http://xmlns.oracle.com/apps/wsh/outbound/util/WshOtmGlobalOutbound">10019</bpelInstanceId>
+      <otmTransmissionId xmlns="http://xmlns.oracle.com/apps/wsh/outbound/util/WshOtmGlobalOutbound"/>
+   </result>
+</WshSendTxnToOtmServiceProcessResponse>
+
+authenticated false
+ Returning back from parseResponse with return Status RETRY
+ReturnStatus from BPEL process: RETRY
++---------------------------------------------------------------------------+
+Start of log messages from FND_FILE
++---------------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+End of log messages from FND_FILE
++---------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+Executing request completion options...
+
+Output file size: 
+88
+
+
+Finished executing request completion options.
+
++---------------------------------------------------------------------------+
+Concurrent request completed
+Current system time is 05-MAY-2015 06:39:17
+
++---------------------------------------------------------------------------+

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet  xmlns:miscHelper="http://www.jclark.com/xt/java/glog.webserver.util.MiscellaneousHelper" xmlns:translator="http://www.jclark.com/xt/java/glog.webserver.i18n.Translator" xmlns:util="http://www.jclark.com/xt/java/glog.webserver.util.Util" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xt="http://www.jclark.com/xt" exclude-result-prefixes="translator util xt" version="1.0">
+
+  <xsl:import href="file:comm/otm/Fields.xsl"/>
+  <xsl:import href="file:comm/otm/Header.xsl"/>
+  <xsl:import href="file:comm/otm/StdWidgets.xsl"/>
+  <xsl:import href="file:themes/themes.xsl"/>
+  <xsl:import href="file:tenderresp/ExecTendAccept.xsl"/>
+  <xsl:output method="html"/>
+
+  <xsl:template match="/tender_resp">
+    <html>
+      <head><xsl:call-template name="set_url_prefix"/>
+        <xsl:call-template name="css"/>
+        <script>
+		var   pleaseSelect ='<xsl:value-of select="miscHelper:get-escaped-translated-value-for-java-script('alertmessage.pleaseSelect')"/>';
+		var   selectServiceProvwithbid ='<xsl:value-of select="miscHelper:get-escaped-translated-value-for-java-script('alertmessage.selectServiceProvwithbid')"/>';
+		var   selectServiceProvwithValidbid ='<xsl:value-of select="miscHelper:get-escaped-translated-value-for-java-script('alertmessage.selectServiceProvwithValidbid')"/>';
+
+		</script>
+              <script language="javascript" type="text/javascript" src="{util:format-url('glog.webserver.util.JSTranslatorServlet')}"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/validation/validation.js"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/finder/find.js"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/comm/otm/grids.js"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/tenderresp/tenderrespgrids.js"/>
+        <script>
+        var AmEditingRemark             = false;
+
+        function nextPage() {
+            if (true == checkData('management_main')) {
+               document.management_main.redirect.value="<xsl:value-of select="util:format-url('glog.webserver.apiadapt.tenderresp.TenderRespManagementServlet?tenderresp_stylesheet=tenderresp/ExecTendDecline.xsl')"/>";
+               document.management_main.submit();
+            }
+        };
+        function savePage() {
+            if (true == checkData('management_main')) {
+               document.management_main.submit();
+            }
+        };
+        </script>
+        <title><xsl:value-of select="translator:get-translated-value('web_tendering')"/></title>
+      </head>
+      <body onLoad="PreLoadImg();" class="{$mBodyClass}">
+
+          <xsl:call-template name="manageheader">
+              <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('label.DeclinethisShipment')"/></xsl:with-param>
+          </xsl:call-template>
+
+          <xsl:call-template name="action_management_folder"/>
+          <xsl:call-template name="management_footer"/>
+      </body>
+    </html>
+  </xsl:template>
+
+    <xsl:template name="footer_content">
+        <table class="{$buttonsContClass}">
+        <tr>
+          <td>
+              <xsl:call-template name="button">
+                <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('button.finished')"/></xsl:with-param>
+                <xsl:with-param name="href">javascript:savePage();</xsl:with-param>
+              </xsl:call-template>
+          </td>
+        </tr>
+        </table>
+    </xsl:template>
+
+    <xsl:template name="invoke_sections">
+    <form name="management_main" method="post" action="{util:format-url('glog.webserver.apiadapt.tenderresp.TenderRespUpdateServlet')}" onSubmit="return checkData('management_main');">
+        <input type="hidden" value="{@ID}" name="ID"/>
+        <input type="hidden" value="tenderresp_document" name="document_name"/>      <input type="hidden" value="{util:format-url('glog.webserver.apiadapt.tenderresp.TenderRespSaveServlet')}" name="redirect"/>
+        <input type="hidden" value="" name="grid_name"/>
+        <input type="hidden" value="" name="grid_action"/>
+        <input type="hidden" name="grid_position" value=""/>
+        <input type="hidden" value="D" name="tender_resp/servprov_content/tender_acceptance_status"/>
+
+	  	<xsl:call-template name="help">
+            <xsl:with-param name="help_id">helpManage</xsl:with-param>
+            <xsl:with-param name="help_url">/html/help/webhelp/execution/web_tender/decline_a_tender.htm</xsl:with-param>
+ 		</xsl:call-template>
+
+        <xsl:call-template name="section1">
+            <xsl:with-param name="background">false</xsl:with-param>
+            <xsl:with-param name="fitToContents">true</xsl:with-param>
+        </xsl:call-template>
+        <xsl:call-template name="section2">
+            <xsl:with-param name="name"><xsl:value-of select="translator:get-translated-value('label.Remarks')"/></xsl:with-param>
+            <xsl:with-param name="tableId">table_remark_grid</xsl:with-param>
+            <xsl:with-param name="sectionType">grid</xsl:with-param>
+            <xsl:with-param name="anchorName">remark_grid</xsl:with-param>
+        </xsl:call-template>
+    </form>
+  </xsl:template>
+
+    <xsl:template name="content1">
+	<tr>
+	  <td>
+		<xsl:call-template name="fieldPickList">
+			<xsl:with-param name="name">tender_resp/servprov_content/decline_reason_code</xsl:with-param>
+			<xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('label.tender_resp/decline_reason_code')"/></xsl:with-param>
+			<xsl:with-param name="form">management_main</xsl:with-param>
+			<xsl:with-param name="required">
+				<xsl:choose>
+					<xsl:when test="(/tender_resp/@finder_set_gid = 'SERVPROV_TENDER_RESP') or (/tender_resp/@finder_set_gid = 'TENDER_RESP') or (/tender_resp/@finder_set_gid = 'PLANNER_TENDER_RESP')">
+						true
+					</xsl:when>
+					<xsl:otherwise>
+						false
+					</xsl:otherwise>
+				</xsl:choose>			
+			</xsl:with-param>
+			<xsl:with-param name="value"><xsl:value-of select="servprov_content/decline_reason_code"/></xsl:with-param>
+			<xsl:with-param name="valueID"><xsl:value-of select="servprov_content/decline_reason_code/@ID"/></xsl:with-param>
+			<xsl:with-param name="query_name">glog.server.query.businessobjectstatus.BsQuickCodeQuery</xsl:with-param>
+		</xsl:call-template>
+	  </td>
+	</tr>
+    </xsl:template>
+
+    <!-- Remarks -->
+    <xsl:template name="content2header">
+        <xsl:call-template name="gridDefinition">
+            <xsl:with-param name="gridName">remark_grid</xsl:with-param>
+            <xsl:with-param name="queryName">glog.server.query.shipment.ShipmentRemarkQuery</xsl:with-param>
+            <xsl:with-param name="masterElementName">e_shipment_remarks</xsl:with-param>
+            <xsl:with-param name="childElementName">e_shipment_remark</xsl:with-param>
+            <xsl:with-param name="clientGrid">true</xsl:with-param>
+        </xsl:call-template>
+        <tr>
+            <xsl:call-template name="detail_remark_fields"/>
+            <td class="{$mGridHeaderButtonsCellClass}">
+                <table class="{$mGridButtonsContClass}">
+                    <tr>
+                        <td>
+                            <xsl:call-template name="buttongridsave">
+                                <xsl:with-param name="href">javascript:addGridElement('remark_grid', 'management_main', true);</xsl:with-param>
+                                <xsl:with-param name="onClick">return checkGrid('remark_grid');</xsl:with-param>
+                            </xsl:call-template>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </xsl:template>
+
+    <xsl:template name="content2">
+      <xsl:apply-templates select="servprov_content/e_shipment_remarks"/>
+    </xsl:template>
+
+    <xsl:template match="e_shipment_remarks">
+        <xsl:for-each select="e_shipment_remark">
+        <xsl:if test="is_cb_remark = 'false'">
+            <input type="hidden"  name="new_grid_field_remark_grid" value="{@ID}" id="new_grid_field_remark_grid_{@ID}"/>
+            <input type="hidden" name="grid_action_remark_grid_{@ID}" value="ignore"/>
+            <input type="hidden" name="grid_position_{@ID}" value="{position()}"/>
+
+            <xsl:variable name="className"><xsl:call-template name="getMGridRowBGClass"><xsl:with-param name="position" select="position()"/></xsl:call-template></xsl:variable>
+              <tr class="{$className}" id="{@ID}">
+                <xsl:call-template name="detail_remark_fields">
+                    <xsl:with-param name="gridrow">
+                        <xsl:value-of select="position()"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+
+                  <td class="{$mGridBodyButtonsCellClass}">
+                      <table class="{$mGridButtonsContClass}"><tr>
+                      <xsl:call-template name="buttoneditdelete">
+                          <xsl:with-param name="grid">remark_grid</xsl:with-param>
+                          <xsl:with-param name="delhref">javascript:void(1);</xsl:with-param>
+                          <xsl:with-param name="delOverride">deleteChildGrid('remark_grid', '<xsl:value-of select="@ID"/>');</xsl:with-param>
+                        </xsl:call-template>
+                        </tr></table>
+                  </td>
+            </tr>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+
+    <xsl:template name="detail_remark_fields">
+        <xsl:param name="gridrow">0</xsl:param>
+        <xsl:variable name="className">
+            <xsl:call-template name="getMGridRowCellClass">
+                <xsl:with-param name="rowNum" select="$gridrow"/>
+            </xsl:call-template>
+        </xsl:variable>
+
+        <td class="{$className}">
+           <xsl:call-template name="fieldDropList">
+               <xsl:with-param name="name">e_shipment_remark/remark_qual</xsl:with-param>
+               <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('label.remark_qualifier_id')"/></xsl:with-param>
+               <xsl:with-param name="form">management_main</xsl:with-param>
+               <xsl:with-param name="query_name">glog.webserver.finder.models.RemarkQualExclueCBRQFinder</xsl:with-param>
+               <xsl:with-param name="valueID"><xsl:value-of select="remark_qual/@ID"/></xsl:with-param>
+               <xsl:with-param name="value"><xsl:value-of select="remark_qual"/></xsl:with-param>
+               <xsl:with-param name="required">true</xsl:with-param>
+               <xsl:with-param name="grid">remark_grid</xsl:with-param>
+               <xsl:with-param name="gridrow"><xsl:value-of select="$gridrow"/></xsl:with-param>
+           </xsl:call-template>
+       </td>
+       <td class="{$className}">
+            <xsl:call-template name="fieldTextArea">
+                <xsl:with-param name="name">e_shipment_remark/text</xsl:with-param>
+                <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('label.remark_text')"/></xsl:with-param>
+                <xsl:with-param name="form">management_main</xsl:with-param>
+                <xsl:with-param name="columns">30</xsl:with-param>
+                <xsl:with-param name="rows">4</xsl:with-param>
+                <xsl:with-param name="max">4000</xsl:with-param>
+                <xsl:with-param name="required">true</xsl:with-param>
+                <xsl:with-param name="mixedCase">true</xsl:with-param>
+                <xsl:with-param name="query">false</xsl:with-param>
+                <xsl:with-param name="grid">remark_grid</xsl:with-param>
+                <xsl:with-param name="value"><xsl:value-of select="remark_text"/></xsl:with-param>
+                <xsl:with-param name="gridrow"><xsl:value-of select="$gridrow"/></xsl:with-param>
+           </xsl:call-template>
+           <input type="hidden" name="e_shipment_remark/seq" value=""/>
+       </td>
+    </xsl:template>
+
+</xsl:stylesheet>

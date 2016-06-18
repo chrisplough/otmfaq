@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<navgroups product="vbulletin">
+
+	<navgroup phrase="users" permissions="canadminusers" displayorder="110">
+
+		<navoption displayorder="130">
+			<text>Read PMs</text>
+			<link>read_pms.php</link>
+		</navoption>
+
+	</navgroup>
+
+</navgroups>

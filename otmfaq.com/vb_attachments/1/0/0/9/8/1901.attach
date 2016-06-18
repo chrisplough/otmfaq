@@ -1,0 +1,23 @@
+<Mar 16, 2016 2:37:43 PM IST> <INFO> <Loading domains file: /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/nodemanager/nodemanager.domains>
+<Mar 16, 2016 2:37:51 PM IST> <INFO> <Upgrade> <Setting NodeManager properties version to 12.1.3>
+<Mar 16, 2016 2:37:51 PM IST> <INFO> <Upgrade> <Saving upgraded NodeManager properties to '/U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/nodemanager/nodemanager.properties'>
+<Mar 16, 2016 2:37:51 PM IST> <INFO> <Loading domains file: /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/nodemanager/nodemanager.domains>
+<Mar 16, 2016 2:37:51 PM IST> <INFO> <Loading identity key store: FileName=kss://system/demoidentity, Type=kss, PassPhraseUsed=true>
+<Mar 16, 2016 2:38:11 PM IST> <INFO> <Loaded NodeManager configuration properties from '/U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/nodemanager/nodemanager.properties'>
+<Mar 16, 2016 2:38:11 PM IST> <INFO> <WebLogic Server 12.1.3.0.0  Wed May 21 18:53:34 PDT 2014 1604337 >
+<Mar 16, 2016 2:38:11 PM IST> <INFO> <Secure socket listener started on port 5556, host localhost/127.0.0.1>
+<Mar 16, 2016 2:38:54 PM IST> <INFO> <otmweb> <otm641> <Creating directory "/U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/system_components/OHS/otm641/data/nodemanager">
+<Mar 16, 2016 2:58:35 PM IST> <INFO> <otmweb> <otm641> <Creating directory "/U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/system_components/OHS/otm641/logs">
+<Mar 16, 2016 2:58:35 PM IST> <INFO> <otmweb> <otm641> <Creating directory "/U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/system_components/OHS/otm641/security">
+<Mar 16, 2016 2:58:35 PM IST> <INFO> <otmweb> <otm641> <Creating directory "/U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/system_components/OHS/otm641/tmp">
+<Mar 16, 2016 2:58:35 PM IST> <WARNING> <Server start command for OHS server 'otm641' failed due to: [Failed to start the server otm641
+Check log file /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/system_components/OHS/ohs_nm.log
+Check log file /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/servers/otm641/logs/otm641.log]. Please check Node Manager log and/or server 'otm641' log for detailed information.>
+<Mar 16, 2016 3:24:27 PM IST> <INFO> <Loading domains file: /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/nodemanager/nodemanager.domains>
+<Mar 16, 2016 3:24:31 PM IST> <INFO> <Loading identity key store: FileName=kss://system/demoidentity, Type=kss, PassPhraseUsed=true>
+<Mar 16, 2016 3:24:43 PM IST> <INFO> <Loaded NodeManager configuration properties from '/U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/nodemanager/nodemanager.properties'>
+<Mar 16, 2016 3:24:43 PM IST> <INFO> <WebLogic Server 12.1.3.0.0  Wed May 21 18:53:34 PDT 2014 1604337 >
+<Mar 16, 2016 3:24:44 PM IST> <INFO> <Secure socket listener started on port 5556, host localhost/127.0.0.1>
+<Mar 16, 2016 3:26:31 PM IST> <WARNING> <Server start command for OHS server 'otm641' failed due to: [Failed to start the server otm641
+Check log file /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/system_components/OHS/ohs_nm.log
+Check log file /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/servers/otm641/logs/otm641.log]. Please check Node Manager log and/or server 'otm641' log for detailed information.>

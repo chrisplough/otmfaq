@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Transmission>
+ <TransmissionHeader>
+<UserName>XX.ADMIN</UserName>
+<Password>XX</Password>
+</TransmissionHeader>
+  <TransmissionBody>
+    <GLogXMLElement>
+	<GenericStatusUpdate>
+	<GenericStatusObjectType>INVOICE</GenericStatusObjectType>
+	<Gid>
+	<DomainName>XX</DomainName>
+	<Xid>1111</Xid>
+	</Gid>
+	<TransactionCode>U</TransactionCode>
+	<Status>
+	<StatusTypeGid>
+	<Gid>
+	<DomainName>XX</DomainName>
+	<Xid>INVOICE_CREATION</Xid>
+	</Gid>
+	</StatusTypeGid>
+	<StatusValueGid>
+	<Gid>
+	<DomainName>XX</DomainName>
+	<Xid>INVOICE_CREATED_MODIFIED</Xid>
+	</Gid>
+	</StatusValueGid>
+	</Status>
+	</GenericStatusUpdate>	
+	 </GLogXMLElement>
+  </TransmissionBody>
+</Transmission>

@@ -1,0 +1,48 @@
+INFO | 2015/03/12 15:56:32 | java version "1.6.0_65"
+INFO | 2015/03/12 15:56:32 | Java(TM) SE Runtime Environment (build 1.6.0_65-b09)
+INFO | 2015/03/12 15:56:32 | Oracle JRockit(R) (build R28.2.9-13-157938-1.6.0_65-20130920-0910-linux-x86_64, compiled mode)
+INFO | 2015/03/12 15:56:32 | Argument #0 : /home/oracle/otm/jdk/bin/java
+INFO | 2015/03/12 15:56:32 | Argument #1 : -Xms4096m
+INFO | 2015/03/12 15:56:32 | Argument #2 : -Xmx4096m
+INFO | 2015/03/12 15:56:32 | Argument #3 : -jrockit
+INFO | 2015/03/12 15:56:32 | Argument #4 : -Xgc:throughput
+INFO | 2015/03/12 15:56:32 | Argument #5 : -Xverbose:memory
+INFO | 2015/03/12 15:56:32 | Argument #6 : -DGC3EncodedPassword=Q0hBTkdFTUU=
+INFO | 2015/03/12 15:56:32 | Argument #7 : -Dglog.properties=glog.tomcat.properties
+INFO | 2015/03/12 15:56:32 | Argument #8 : -Dglog.home=/home/oracle/otm/glog/config
+INFO | 2015/03/12 15:56:32 | Argument #9 : -Duser.home=/home/oracle/otm/glog/config
+INFO | 2015/03/12 15:56:32 | Argument #10 : -Djava.io.tmpdir=/home/oracle/otm/temp
+INFO | 2015/03/12 15:56:32 | Argument #11 : -Djava.awt.headless=true
+INFO | 2015/03/12 15:56:32 | Argument #12 : -Djava.security.auth.login.config=/home/oracle/otm/glog/config/otm_jaas.config
+INFO | 2015/03/12 15:56:32 | Argument #13 : -Dweblogic.ThreadPoolSize=15
+INFO | 2015/03/12 15:56:32 | Argument #14 : -Djava.endorsed.dirs=/home/oracle/otm/tomcat/endorsed
+INFO | 2015/03/12 15:56:32 | Argument #15 : -Dcatalina.base=/home/oracle/otm/tomcat
+INFO | 2015/03/12 15:56:32 | Argument #16 : -Dcatalina.home=/home/oracle/otm/tomcat
+INFO | 2015/03/12 15:56:32 | Argument #17 : -classpath
+INFO | 2015/03/12 15:56:32 | Argument #18 : /home/oracle/otm/tomcat/bin/bootstrap.jar:/home/oracle/otm/tomcat/bin/tomcat-juli.jar:/home/oracle/otm/tomcat/lib/tomcat-util.jar:/home/oracle/otm/tomcat/lib/tomcat-i18n-es.jar:/home/oracle/otm/tomcat/lib/jasper.jar:/home/oracle/otm/tomcat/lib/tomcat-i18n-fr.jar:/home/oracle/otm/tomcat/lib/ecj-4.2.2.jar:/home/oracle/otm/tomcat/lib/catalina-ant.jar:/home/oracle/otm/tomcat/lib/tomcat7-websocket.jar:/home/oracle/otm/tomcat/lib/catalina-ha.jar:/home/oracle/otm/tomcat/lib/tomcat-dbcp.jar:/home/oracle/otm/tomcat/lib/websocket-api.jar:/home/oracle/otm/tomcat/lib/annotations-api.jar:/home/oracle/otm/tomcat/lib/tomcat-api.jar:/home/oracle/otm/tomcat/lib/catalina-tribes.jar:/home/oracle/otm/tomcat/lib/el-api.jar:/home/oracle/otm/tomcat/lib/jsp-api.jar:/home/oracle/otm/tomcat/lib/tomcat-jdbc.jar:/home/oracle/otm/tomcat/lib/tomcat-coyote.jar:/home/oracle/otm/tomcat/lib/catalina.jar:/home/oracle/otm/tomcat/lib/tomcat-i18n-ja.jar:/home/oracle/otm/tomcat/lib/jasper-el.jar:/home/oracle/otm/tomcat/lib/ecj-3.7.jar:/home/oracle/otm/tomcat/lib/servlet-api.jar:/home/oracle/otm/glog/glog_resources:/home/oracle/otm/glog/config:/home/oracle/otm/glog/gc3webapp/WEB-INF/classes:/home/oracle/otm/dash/lib/xprb.jar:/home/oracle/otm/dash/lib/xprm.jar:/home/oracle/otm/dash/lib/xprs.jar:/home/oracle/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar:/home/oracle/Oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/home/oracle/Oracle/Middleware/wlserver_10.3/server/lib/webservices.jar:/home/oracle/Oracle/Middleware/wlserver_10.3/server/lib/weblogic.jar
+INFO | 2015/03/12 15:56:32 | Argument #19 : org.apache.catalina.startup.Bootstrap
+INFO | 2015/03/12 15:56:32 | Argument #20 : start
+INFO | 2015/03/12 15:56:32 | [INFO ][memory ] Running with 32 bit heap and compressed references supporting 32GB heap.
+INFO | 2015/03/12 15:56:32 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, strategy: Generational Parallel Mark & Sweep.
+INFO | 2015/03/12 15:56:32 | [INFO ][memory ] Heap size: 4194304KB, maximal heap size: 4194304KB, nursery size: 2097152KB.
+INFO | 2015/03/12 15:56:32 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2015/03/12 15:56:32 | [INFO ][memory ] <start> - start time of collection (seconds since jvm start).
+INFO | 2015/03/12 15:56:32 | [INFO ][memory ] <type> - OC (old collection) or YC (young collection).
+INFO | 2015/03/12 15:56:32 | [INFO ][memory ] <end> - end time of collection (seconds since jvm start).
+INFO | 2015/03/12 15:56:32 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2015/03/12 15:56:32 | [INFO ][memory ] <after> - memory used by objects after collection (KB).
+INFO | 2015/03/12 15:56:32 | [INFO ][memory ] <heap> - size of heap after collection (KB).
+INFO | 2015/03/12 15:56:32 | [INFO ][memory ] <time> - total time of collection (milliseconds).
+INFO | 2015/03/12 15:56:32 | [INFO ][memory ] <pause> - total sum of pauses during collection (milliseconds).
+INFO | 2015/03/12 15:56:32 | [INFO ][memory ] Run with -Xverbose:gcpause to see individual phases.
+INFO | 2015/03/12 15:56:33 | [INFO ][memory ] Running on hypervisor Unknown (but probably running on a hypervisor)
+INFO | 2015/03/12 15:56:56 | Mar 12, 2015 3:56:56 PM org.apache.catalina.core.AprLifecycleListener init
+INFO | 2015/03/12 15:56:56 | INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/home/oracle/otm/jdk/jre/lib/amd64/jrockit:/home/oracle/otm/jdk/jre/lib/amd64:/home/oracle/otm/jdk/jre/../lib/amd64:/home/oracle/otm/dash/lib:/u01/app/oracle/product/11.2.0/dbhome_1/lib:/home/oracle/Oracle/Middleware/wlserver_10.3/server/lib/linux/x86_64:/home/oracle/Oracle/Middleware/wlserver_10.3/server/lib/linux/i686:/u01/app/oracle/product/11.2.0/dbhome_1/lib:/u01/app/oracle/product/11.2.0/dbhome_1/lib:/u01/app/oracle/product/11.2.0/dbhome_1/lib:
+INFO | 2015/03/12 15:56:59 | Mar 12, 2015 3:56:59 PM org.apache.coyote.AbstractProtocol init
+INFO | 2015/03/12 15:56:59 | INFO: Initializing ProtocolHandler ["http-bio-127.0.0.1-8009"]
+INFO | 2015/03/12 15:56:59 | Mar 12, 2015 3:56:59 PM org.apache.catalina.startup.Catalina load
+INFO | 2015/03/12 15:56:59 | INFO: Initialization processed in 4531 ms
+INFO | 2015/03/12 15:56:59 | Mar 12, 2015 3:56:59 PM org.apache.catalina.core.StandardService startInternal
+INFO | 2015/03/12 15:56:59 | INFO: Starting service Tomcat
+INFO | 2015/03/12 15:56:59 | Mar 12, 2015 3:56:59 PM org.apache.catalina.core.StandardEngine startInternal
+INFO | 2015/03/12 15:56:59 | INFO: Starting Servlet Engine: Apache Tomcat/7.0.47

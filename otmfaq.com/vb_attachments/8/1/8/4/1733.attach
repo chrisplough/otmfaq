@@ -1,0 +1,83 @@
+
+
+INFO | 2015/03/12 15:56:42 | Starting Launched Process...
+INFO | 2015/03/12 15:56:43 | java version "1.6.0_65"
+INFO | 2015/03/12 15:56:43 | Java(TM) SE Runtime Environment (build 1.6.0_65-b09)
+INFO | 2015/03/12 15:56:43 | Oracle JRockit(R) (build R28.2.9-13-157938-1.6.0_65-20130920-0910-linux-x86_64, compiled mode)
+INFO | 2015/03/12 15:56:43 | Argument #0 : /home/oracle/otm/jdk/bin/java
+INFO | 2015/03/12 15:56:43 | Argument #1 : -Xms1536m
+INFO | 2015/03/12 15:56:43 | Argument #2 : -Xmx1536m
+INFO | 2015/03/12 15:56:43 | Argument #3 : -jrockit
+INFO | 2015/03/12 15:56:43 | Argument #4 : -Xgc:throughput
+INFO | 2015/03/12 15:56:43 | Argument #5 : -Xverbose:memory
+INFO | 2015/03/12 15:56:43 | Argument #6 : -Dglog.home=/home/oracle/otm/glog/config
+INFO | 2015/03/12 15:56:43 | Argument #7 : -Duser.home=/home/oracle/otm/glog/config
+INFO | 2015/03/12 15:56:43 | Argument #8 : -Djava.io.tmpdir=/home/oracle/otm/temp
+INFO | 2015/03/12 15:56:43 | Argument #9 : -Djava.awt.headless=true
+INFO | 2015/03/12 15:56:43 | Argument #10 : -Djava.security.auth.login.config=/home/oracle/otm/glog/config/otm_jaas.config
+INFO | 2015/03/12 15:56:43 | Argument #11 : -Xss256k
+INFO | 2015/03/12 15:56:43 | Argument #12 : -Dweblogic.Name=gc3-OTM-SERVER
+INFO | 2015/03/12 15:56:43 | Argument #13 : -Dbea.home=/home/oracle/Oracle/Middleware
+INFO | 2015/03/12 15:56:43 | Argument #14 : -Dweblogic.home=/home/oracle/Oracle/Middleware/wlserver_10.3/server
+INFO | 2015/03/12 15:56:43 | Argument #15 : -Dweblogic.management.username=system
+INFO | 2015/03/12 15:56:43 | Argument #16 : -Dweblogic.management.password=CHANGEME
+INFO | 2015/03/12 15:56:43 | Argument #17 : -Dweblogic.ProductionModeEnabled=true
+INFO | 2015/03/12 15:56:43 | Argument #18 : -Dweblogic.management.discover=false
+INFO | 2015/03/12 15:56:43 | Argument #19 : -Djava.security.policy=/home/oracle/Oracle/Middleware/wlserver_10.3/server/lib/weblogic.policy
+INFO | 2015/03/12 15:56:43 | Argument #20 : -Dwli.home=/home/oracle/Oracle/Middleware/wlserver_10.3/integration
+INFO | 2015/03/12 15:56:43 | Argument #21 : -Dwls.home=/home/oracle/Oracle/Middleware/wlserver_10.3/server
+INFO | 2015/03/12 15:56:43 | Argument #22 : -Dweblogic.RootDirectory=/home/oracle/otm/weblogic/domains/otm
+INFO | 2015/03/12 15:56:43 | Argument #23 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2015/03/12 15:56:43 | Argument #24 : -Djavax.xml.soap.SOAPFactory=weblogic.xml.saaj.SOAPFactoryImpl
+INFO | 2015/03/12 15:56:43 | Argument #25 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2015/03/12 15:56:43 | Argument #26 : -DpropertyProtection=mask
+INFO | 2015/03/12 15:56:43 | Argument #27 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2015/03/12 15:56:43 | Argument #28 : -Djavax.xml.soap.MessageFactory=weblogic.xml.saaj.MessageFactoryImpl
+INFO | 2015/03/12 15:56:43 | Argument #29 : -Djavax.management.builder.initial=weblogic.management.jmx.mbeanserver.WLSMBeanServerBuilder
+INFO | 2015/03/12 15:56:43 | Argument #30 : -Dweblogic.wsee.policy.LoadFromClassPathEnabled=true
+INFO | 2015/03/12 15:56:43 | Argument #31 : -Dmode=appserver
+INFO | 2015/03/12 15:56:43 | Argument #32 : -DGC3EncodedPassword=Q0hBTkdFTUU=
+INFO | 2015/03/12 15:56:43 | Argument #33 : -classpath
+INFO | 2015/03/12 15:56:43 | Argument #34 : /home/oracle/otm/jdk/lib/tools.jar:/home/oracle/otm/glog/glog_resources/custom:/home/oracle/otm/glog/glog_resources:/home/oracle/otm/glog/config:/home/oracle/otm/glog/gc3webapp/WEB-INF/classes:/home/oracle/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/ojdbc6.jar:/home/oracle/otm/dash/lib/xprb.jar:/home/oracle/otm/dash/lib/xprm.jar:/home/oracle/otm/dash/lib/xprs.jar:/home/oracle/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar:/home/oracle/Oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/home/oracle/Oracle/Middleware/wlserver_10.3/server/lib/weblogic.jar:/home/oracle/Oracle/Middleware/wlserver_10.3/server/lib/webservices.jar:/home/oracle/Oracle/Middleware/modules/features/weblogic.server.modules.sca_10.3.6.0.jar
+INFO | 2015/03/12 15:56:43 | Argument #35 : weblogic.Server
+INFO | 2015/03/12 15:56:43 | Argument #36 : start
+INFO | 2015/03/12 15:56:43 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2015/03/12 15:56:43 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, strategy: Generational Parallel Mark & Sweep.
+INFO | 2015/03/12 15:56:43 | [INFO ][memory ] Heap size: 1572864KB, maximal heap size: 1572864KB, nursery size: 786432KB.
+INFO | 2015/03/12 15:56:43 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2015/03/12 15:56:43 | [INFO ][memory ] <start> - start time of collection (seconds since jvm start).
+INFO | 2015/03/12 15:56:43 | [INFO ][memory ] <type> - OC (old collection) or YC (young collection).
+INFO | 2015/03/12 15:56:43 | [INFO ][memory ] <end> - end time of collection (seconds since jvm start).
+INFO | 2015/03/12 15:56:43 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2015/03/12 15:56:43 | [INFO ][memory ] <after> - memory used by objects after collection (KB).
+INFO | 2015/03/12 15:56:43 | [INFO ][memory ] <heap> - size of heap after collection (KB).
+INFO | 2015/03/12 15:56:43 | [INFO ][memory ] <time> - total time of collection (milliseconds).
+INFO | 2015/03/12 15:56:43 | [INFO ][memory ] <pause> - total sum of pauses during collection (milliseconds).
+INFO | 2015/03/12 15:56:43 | [INFO ][memory ] Run with -Xverbose:gcpause to see individual phases.
+INFO | 2015/03/12 15:56:43 | [INFO ][memory ] Running on hypervisor Unknown (but probably running on a hypervisor)
+INFO | 2015/03/12 15:56:53 | <Mar 12, 2015 3:56:52 PM EDT> <Info> <Security> <BEA-090905> <Disabling CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true>
+INFO | 2015/03/12 15:56:53 | <Mar 12, 2015 3:56:53 PM EDT> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true>
+INFO | 2015/03/12 15:56:55 | <Mar 12, 2015 3:56:55 PM EDT> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Oracle JRockit(R) Version R28.2.9-13-157938-1.6.0_65-20130920-0910-linux-x86_64 from Oracle Corporation>
+INFO | 2015/03/12 15:56:58 | <Mar 12, 2015 3:56:58 PM EDT> <Info> <Management> <BEA-141107> <Version: WebLogic Server 10.3.6.0 Tue Nov 15 08:52:36 PST 2011 1441050 >
+INFO | 2015/03/12 15:56:58 | <Mar 12, 2015 3:56:58 PM EDT> <Warning> <Management> <BEA-141274> <Production mode has specified at the command line via the weblogic.ProductionModeEnabled system property. This system property overrides the development mode setting contained in config.xml. However, the console and WLST show the attribute values and defaults that correspond to the development mode specified in config.xml.>
+INFO | 2015/03/12 15:57:15 | <Mar 12, 2015 3:57:15 PM EDT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING>
+INFO | 2015/03/12 15:57:15 | <Mar 12, 2015 3:57:15 PM EDT> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool>
+INFO | 2015/03/12 15:57:17 | <Mar 12, 2015 3:57:17 PM EDT> <Notice> <LoggingService> <BEA-320400> <The log file /home/oracle/otm/logs/weblogic/weblogic.log will be rotated. Reopen the log file if tailing has stopped. This can happen on some platforms like Windows.>
+INFO | 2015/03/12 15:57:17 | <Mar 12, 2015 3:57:17 PM EDT> <Notice> <LoggingService> <BEA-320401> <The log file has been rotated to /home/oracle/otm/logs/weblogic/weblogic.log00007. Log messages will continue to be logged in /home/oracle/otm/logs/weblogic/weblogic.log.>
+INFO | 2015/03/12 15:57:17 | <Mar 12, 2015 3:57:17 PM EDT> <Notice> <Log Management> <BEA-170019> <The server log file /home/oracle/otm/logs/weblogic/weblogic.log is opened. All server side log events will be written to this file.>
+INFO | 2015/03/12 15:58:27 | [INFO ][memory ] [YC#1] 103.480-104.025: YC 830250KB->304811KB (1572864KB), 0.545 s, sum of pauses 543.163 ms, longest pause 543.163 ms.
+INFO | 2015/03/12 15:58:27 | GC3 realm initializing <-----------
+INFO | 2015/03/12 15:58:39 | -----------> GC3 realm initialized
+INFO | 2015/03/12 15:58:45 | [INFO ][memory ] [YC#2] 121.411-122.106: YC 897561KB->347024KB (1572864KB), 0.695 s, sum of pauses 695.158 ms, longest pause 695.158 ms.
+INFO | 2015/03/12 15:58:47 | <Mar 12, 2015 3:58:47 PM EDT> <Notice> <Security> <BEA-090082> <Security initializing using security realm otmrealm.>
+INFO | 2015/03/12 15:59:30 | <Mar 12, 2015 3:59:30 PM EDT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STANDBY>
+INFO | 2015/03/12 15:59:30 | <Mar 12, 2015 3:59:30 PM EDT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING>
+INFO | 2015/03/12 16:00:39 | -- OTM Event: preDeploy
+INFO | 2015/03/12 16:01:05 | [INFO ][memory ] [YC#3] 262.099-262.174: YC 960105KB->398763KB (1572864KB), 0.075 s, sum of pauses 75.082 ms, longest pause 75.082 ms.
+INFO | 2015/03/12 16:01:40 | [INFO ][memory ] [YC#4] 296.472-297.310: YC 1005136KB->454857KB (1572864KB), 0.838 s, sum of pauses 837.510 ms, longest pause 837.510 ms.
+INFO | 2015/03/12 16:02:12 | [INFO ][memory ] [YC#5] 329.813-329.860: YC 1060606KB->514776KB (1572864KB), 0.046 s, sum of pauses 46.072 ms, longest pause 46.072 ms.
+INFO | 2015/03/12 16:02:41 | [INFO ][memory ] [YC#6] 357.996-358.575: YC 1122003KB->573293KB (1572864KB), 0.578 s, sum of pauses 578.186 ms, longest pause 578.186 ms.
+INFO | 2015/03/12 16:03:13 | [INFO ][memory ] [YC#7] 390.091-390.174: YC 1183968KB->634823KB (1572864KB), 0.082 s, sum of pauses 82.192 ms, longest pause 82.192 ms.
+INFO | 2015/03/12 16:03:42 | [INFO ][memory ] [YC#8] 419.609-419.729: YC 1243567KB->693266KB (1572864KB), 0.120 s, sum of pauses 119.928 ms, longest pause 119.928 ms.
+INFO | 2015/03/12 16:04:03 | [INFO ][memory ] [YC#9] 440.122-440.479: YC 1299489KB->750298KB (1572864KB), 0.357 s, sum of pauses 356.514 ms, longest pause 356.514 ms.
+INFO | 2015/03/12 16:06:02 | [INFO ][memory ] [YC#10] 557.560-559.038: YC 1359548KB->826988KB (1572864KB), 1.478 s, sum of pauses 1478.048 ms, longest pause 1478.048 ms.

@@ -1,0 +1,169 @@
+<Transmission xmlns="http://xmlns.oracle.com/apps/otm">
+                                <TransmissionHeader>        
+                                <Version>6.2</Version> 
+                                <TransmissionCreateDt>
+                                    <GLogDate>'
+               || TO_CHAR (SYSDATE, 'YYYYMMDDHHMISS')
+               || '</GLogDate> 
+                                    <TZId>US/Eastern</TZId> 
+                                    <TZOffset>-04:00</TZOffset> 
+                                </TransmissionCreateDt>
+                                <TransactionCount>1</TransactionCount> 
+                                <SenderHostName>http://transporter-stg.apllogistics.com:80</SenderHostName> 
+                                <SenderSystemID>http://transporter-stg.apllogistics.com:80</SenderSystemID> 
+                                <UserName>tmsaplftp</UserName> 
+                                <Password>tmsaplftp</Password> 
+                                <SenderTransmissionNo>'
+               || TO_CHAR (v_next_trans)
+               || '</SenderTransmissionNo> 
+                                <ReferenceTransmissionNo>0</ReferenceTransmissionNo> 
+                                <GLogXMLElementName>TransOrderStatus</GLogXMLElementName> 
+                                <NotifyInfo>
+                                    <ContactGid>
+                                        <Gid>
+                                            <DomainName>'
+               || v_parent_domain
+               || '</DomainName> 
+                                            <Xid>NNH_TEST</Xid> 
+                                        </Gid>
+                                    </ContactGid>
+                                    <ExternalSystemGid>
+                                        <Gid>
+                                            <DomainName>'
+               || v_parent_domain
+               || '</DomainName> 
+                                            <Xid>NNH_TEST</Xid> 
+                                        </Gid>
+                                    </ExternalSystemGid>
+                                </NotifyInfo>
+                            </TransmissionHeader>
+                            <TransmissionBody>
+                                <GLogXMLElement>
+                                    <TransactionHeader>
+                                        <SenderTransactionId>'
+               || TO_CHAR (v_next_transaction)
+               || '</SenderTransactionId>                                       
+                                        <SendReason>
+                                            <SendReasonGid>
+                                                <Gid>
+                                                    <Xid>ORDER RELEASE STATUS - RECEIVED</Xid> 
+                                                </Gid>
+                                            </SendReasonGid>
+                                            <ObjectType>ORDER</ObjectType> 
+                                            <EventReason>
+                                                <ResponsiblePartyGid>
+                                                    <Gid>
+                                                        <Xid>'
+               || r.resp_party
+               || '</Xid> 
+                                                    </Gid>
+                                                </ResponsiblePartyGid>
+                                                <StatusGroup>
+                                                    <StatusGroupGid>
+                                                        <Gid>
+                                                            <DomainName>'
+               || v_domain
+               || '</DomainName> 
+                                                            <Xid></Xid> 
+                                                        </Gid>
+                                                    </StatusGroupGid>                                                    
+                                                </StatusGroup>
+                                                <StatusCode>
+                                                    <StatusCodeGid>
+                                                        <Gid>
+                                                            <DomainName>'
+               || v_domain
+               || '</DomainName> 
+                                                            <Xid>'
+               || r.status_code
+               || '</Xid> 
+                                                        </Gid>
+                                                    </StatusCodeGid>                                                   
+                                                </StatusCode>
+                                            </EventReason>
+                                        </SendReason>
+                                    </TransactionHeader>
+                                    <TransOrderStatus>
+                                    <ReleaseGid>
+                                        <Gid>
+                                            <DomainName>'
+               || v_domain
+               || '</DomainName>
+                                            <Xid>'
+               || r.order_release_gid
+               || '</Xid>
+                                        </Gid>
+                                    </ReleaseGid>
+                                    <StatusLevel>ORDER</StatusLevel>
+                                    <OrderRefnum>
+                                        <OrderRefnumQualifierGid>
+                                            <Gid>
+                                                <Xid>GLOG</Xid>
+                                            </Gid>
+                                        </OrderRefnumQualifierGid>
+                                        <OrderRefnumValue>'
+               || r.order_release_gid
+               || '</OrderRefnumValue>
+                                    </OrderRefnum>
+                                    <StatusCodeGid>
+                                        <Gid>
+                                            <DomainName>'
+               || v_domain
+               || '</DomainName>
+                                            <Xid>'
+               || r.status_code
+               || '</Xid>
+                                        </Gid>
+                                    </StatusCodeGid>
+                                    <TimeZoneGid>
+                                        <Gid>
+                                            <Xid>Local</Xid>
+                                        </Gid>
+                                    </TimeZoneGid>
+                                    <EventDt>
+                                        <GLogDate>'
+               || TO_CHAR (r.event_date, 'YYYYMMDDHHMISS')
+               || '</GLogDate>
+                                        <TZId>Local</TZId>
+                                        <TZOffset>+00:00</TZOffset>
+                                    </EventDt>
+                                    <EventGroup>
+                                        <EventGroupGid>
+                                            <Gid>
+                                                <DomainName>'
+               || v_parent_domain
+               || '</DomainName>
+                                                <Xid>'
+               || r.event_group
+               || '</Xid>
+                                            </Gid>
+                                        </EventGroupGid>
+                                    </EventGroup>
+                                    <StatusGroup>
+                                        <StatusGroupGid>
+                                            <Gid>
+                                                <DomainName>'
+               || v_domain
+               || '</DomainName>
+                                                <Xid></Xid>
+                                            </Gid>
+                                        </StatusGroupGid>
+                                    </StatusGroup>
+                                    <ReasonGroup/>
+                                    <ResponsiblePartyGid>
+                                        <Gid>
+                                            <DomainName>'
+               || v_parent_domain
+               || '</DomainName>
+                                            <Xid>'
+               || r.resp_party
+               || '</Xid>
+                                        </Gid>
+                                    </ResponsiblePartyGid>
+                                    <ReportingUser>'
+               || r.reporting_user
+               || '</ReportingUser>
+                                  </TransOrderStatus>
+                                 </GLogXMLElement>
+                                </TransmissionBody>
+                            </Transmission>'

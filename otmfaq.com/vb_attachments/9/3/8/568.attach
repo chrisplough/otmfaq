@@ -1,0 +1,81 @@
+<!--
+************************************************************************
+                       ** FTI Configurations **
+************************************************************************
+Customers are required to perform the below configuration changes. 
+Please use this file version only as a template to make the necessary 
+changes in your file version.
+1. **FTI Config 1**: Set the path of the webcat to the FTI Webcat folder 'aa'
+2. **FTI Config 2**: Add & specify the Maximum allowed dropdown values
+3. **FTI Config 3**: Add the information related to the credentialstore.xml
+4. **FTI Config 4**: Add SSO related information
+************************************************************************
+-->
+<?xml version="1.0" encoding="utf-8"?>
+<WebConfig>
+   <ServerInstance>
+   <DSN>AnalyticsWeb</DSN>
+
+<!-- **FTI Config 1**: Change the path of the webcat to use 
+      the FTI webcat folder 'aa' as below
+-->
+<CatalogPath><OracleBIData>/web/catalog/aa</CatalogPath>
+<!--End of **FTI Config 1** -->
+<Alerts>
+	<ScheduleServer>vpayyavu-lap</ScheduleServer>
+</Alerts>
+<AdvancedReporting>
+	<ReportingEngine>XmlP</ReportingEngine>
+	<Volume>XmlP</Volume>
+	<ServerURL>http://vpayyavu-lap:9704/xmlpserver/services/XMLPService</ServerURL>
+	<WebURL>http://vpayyavu-lap:9704/xmlpserver</WebURL>
+	<AdminURL>http://vpayyavu-lap:9704/xmlpserver/servlet/admin</AdminURL>
+	<AdminCredentialAlias>bipublisheradmin</AdminCredentialAlias>
+</AdvancedReporting>
+<JavaHome>V:\jdk-sun-1.6.0.13</JavaHome>
+<BIforOfficeURL>client/OracleBIOffice.exe</BIforOfficeURL>
+
+<!-- **FTI Config 2**: Add the below XML tag after the <BIforOfficeURL>..</BIforOfficeURL> XML tag
+                       Using this XML tag you can specify the Maximum allowed dropdown values
+-->
+
+<Prompts> 
+	<MaxDropDownValues>1500</MaxDropDownValues> 
+</Prompts>
+<!-- End of **FTI Config 2** -->
+
+<!-- To configure a limited set of languages to be available to users uncomment the <AllowedLanguages> tag below and choose a subset set of language tags from the list. Values must be comma separated. -->
+<!-- <AllowedLanguages>ar,cs,da,de,el,en,es,fi,fr,hr,hu,it,iw,ja,ko,nl,no,pl,pt,pt-br,ro,ru,sk,sv,th,tr,zh,zh-tw</AllowedLanguages> -->
+<!-- To configure a limited set of locales to be available to users uncomment the <AllowedLocales> tag below and choose a subset set of locale tags from the list. Values must be comma separated. -->
+<!-- <AllowedLocales>ar-dz,ar-bh,ar-dj,ar-eg,ar-iq,ar-jo,ar-kw,ar-lb,ar-ly,ar-ma,ar-om,ar-qa,ar-sa,ar-so,ar-sd,ar-sy,ar-tn,ar-ae,ar-ye,cs-cz,da-dk,de-at,de-ch,de-de,de-li,de-lu,el-gr,en-au,en-ca,en-cb,en-gb,en-hk,en-ie,en-in,en-jm,en-nz,en-ph,en-us,en-za,en-zw,es-ar,es-bo,es-cl,es-co,es-cr,es-do,es-ec,es-es,es-gt,es-hn,es-mx,es-ni,es-pa,es-pe,es-pr,es-py,es-sv,es-uy,es-ve,fi-fi,fr-be,fr-ca,fr-ch,fr-fr,fr-lu,fr-mc,hr-hr,hu-hu,id-id,it-ch,it-it,iw-il,ja-jp,ko-kr,ms-my,nl-be,nl-nl,no-no,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sv-fi,sv-se,th-th,tr-tr,zh-cn,zh-mo,zh-sg,zh-tw</AllowedLocales> -->
+<!-- <Disconnected><ArchiveIbots>true</ArchiveIbots><DisconnectedDir>disconnected</DisconnectedDir></Disconnected> -->
+
+<!-- **FTI Config 3**: Add the reference to the credentialstore.xml as below
+-->
+
+<CredentialStore>
+	<CredentialStorage type="file" path="<OracleBIData>/web/config/credentialstore.xml" passphrase="another_secret"/>
+</CredentialStore>
+
+<!-- End of **FTI Config 3** -->
+
+<!-- **FTI Config 4**: Add the below SSO related information
+	a. Enable the SSO with the tag <SSO enabled="true">
+	b. Impersonate the BI Server on behalf of the SSO User using:
+	   <Param name="IMPERSONATE" source="serverVariable" nameInSource="REMOTE_USER"/>
+	c. Provide the LogoffURL and LogonURL using the respective tags.
+		Ex: <LogoffUrl>http://myotm.oracle.com</LogoffUrl>
+		    <LogonUrl>http://myotm.oracle.com</LogonUrl>
+-->
+<Auth>
+<SSO enabled="true">
+<ParamList>
+	<Param name="IMPERSONATE" source="serverVariable" nameInSource="REMOTE_USER"/>
+</ParamList>
+<LogoffUrl>http://{OTM-WEBSERVER}</LogoffUrl>
+<LogonUrl>http://{OTM-WEBSERVER}</LogonUrl>
+</SSO>
+</Auth> 
+<!-- End of **FTI Config 4** -->
+</ServerInstance>
+</WebConfig>

@@ -1,0 +1,778 @@
+2015-04-27 02:02:36.67	483666	Debug	Planning	Sql text: SELECT UNIQUE ssd.shipment_gid, su.order_release_gid, orl.otm_version FROM shipment_stop_d ssd, s_ship_unit ssu, ship_unit su, order_release orl  WHERE ssd.s_ship_unit_gid = ssu.s_ship_unit_gid  AND ssu.ship_unit_gid = su.ship_unit_gid  AND su.order_release_gid = orl.order_release_gid AND  (ssd.shipment_gid = ?)  AND (orl.otm_version IS NULL OR (orl.otm_version <> ?))  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.739	483666	Debug	Planning	Calling glog.business.action.fleetassignment.driver.AssignDriverAction.load(). [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.74	483666	Debug	Planning	createSimpleGraph() for  [Lglog.ejb.shipment.db.ShipmentPK;@1816f091 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.758	483666	Debug	Planning	.. returning SimpleGraph:   [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.758	483666	Debug	Planning	Simple Node: ShipmentPK = DSC.01001 OrderMovementPK = DSC.1-002
+.. SSUs:
+..   DSC.1-001-002 (0-0)
+..    ORLines:
+..        DSC.1-001
+
+.. parents: 
+.. children: 
+ [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.758	483666	Debug	Planning	createSimpleGraph() for  [Lglog.ejb.shipment.db.ShipmentPK;@183306eb [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.777	483666	Debug	Planning	.. returning SimpleGraph:   [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.777	483666	Debug	Planning	Simple Node: ShipmentPK = DSC.01001 OrderMovementPK = DSC.1-002
+.. SSUs:
+..   DSC.1-001-002 (0-0)
+..    ORLines:
+..        DSC.1-001
+
+.. parents: 
+.. children: 
+ [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.783	483666	Debug	PlanningDetails	Before loading shipments. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.787	483666	Debug	Planning	Sql text: SELECT permanent_om_gid FROM om_shipment_join WHERE  (shipment_gid = ?)  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.794	483666	Debug	Planning	DatabaseLoader is loading ShipmentData (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.795	483666	Debug	PlanningDetails	EntityLoader is loading shipment (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.807	483666	Debug	PlanningDetails	EntityLoader is loading shipment_remark (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.81	483666	Debug	PlanningDetails	EntityLoader is loading shipment_special_service (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.814	483666	Debug	PlanningDetails	EntityLoader is loading shipment_special_service_ref (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.818	483666	Debug	PlanningDetails	EntityLoader is loading shipment_spec_service_remark (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.821	483666	Debug	PlanningDetails	EntityLoader is loading ship_spec_svc_sec_charge_join (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.824	483666	Debug	PlanningDetails	EntityLoader is loading shipment_inf_cost (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.828	483666	Debug	PlanningDetails	EntityLoader is loading driver_assignment (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.831	483666	Debug	PlanningDetails	EntityLoader is loading shipment_infeasibility (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.834	483666	Debug	PlanningDetails	EntityLoader is loading shipment_cost (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.838	483666	Debug	PlanningDetails	EntityLoader is loading accessorial_cost (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.844	483666	Debug	PlanningDetails	EntityLoader is loading rate_geo_cost (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.85	483666	Debug	PlanningDetails	EntityLoader is loading shipment_reqdoc (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.854	483666	Debug	PlanningDetails	EntityLoader is loading ship_commit_count_join (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.857	483666	Debug	PlanningDetails	EntityLoader is loading shipment_refnum (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.861	483666	Debug	PlanningDetails	EntityLoader is loading shipment_s_equipment_join (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.864	483666	Debug	PlanningDetails	EntityLoader is loading shipment_involved_party (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.867	483666	Debug	PlanningDetails	EntityLoader is loading shipment_stop (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.873	483666	Debug	PlanningDetails	EntityLoader is loading shipment_stop_remark (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.876	483666	Debug	PlanningDetails	EntityLoader is loading shipment_stop_refnum (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.879	483666	Debug	PlanningDetails	EntityLoader is loading shipment_stop_inv_party (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.883	483666	Debug	PlanningDetails	EntityLoader is loading shipment_stop_d (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.886	483666	Debug	PlanningDetails	EntityLoader is loading shipment_stop_su_inv_party (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.89	483666	Debug	PlanningDetails	EntityLoader is loading shipment_reqdoc_doc (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.894	483666	Debug	PlanningDetails	EntityLoader is loading ship_commit_alloc_join (criteria = (top_t.shipment_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.897	483666	Debug	Planning	Creating TShipment for shipmentPK: DSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.902	483666	Debug	Planning	Business process pid is 293326 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.902	483666	Debug	Planning	DatabaseLoader is loading OrderMovementData (criteria = (top_t.order_movement_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.903	483666	Debug	PlanningDetails	EntityLoader is loading order_movement (criteria = (top_t.order_movement_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.908	483666	Debug	PlanningDetails	EntityLoader is loading order_movement_refnum (criteria = (top_t.order_movement_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.909	483666	Debug	PlanningDetails	EntityLoader is loading order_movement_d (criteria = (top_t.order_movement_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.91	483666	Debug	PlanningDetails	EntityLoader is loading order_movement_remark (criteria = (top_t.order_movement_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.916	483666	Debug	PlanningDetails	load order movement external status. type: CHARTER VOYAGE ARRIVE MOD, value:CHARTER VOYAGE ARRIVE MOD_NEW [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.916	483666	Debug	PlanningDetails	load order movement external status. type: CHARTER VOYAGE DEPART MOD, value:CHARTER VOYAGE DEPART MOD_NEW [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.916	483666	Debug	PlanningDetails	load order movement external status. type: FLEET ASSIGNMENT OM, value:FLEET ASSIGNMENT OM_NOT ASSIGNED [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.917	483666	Debug	Planning	Business process pid is 293326 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.92	483666	Debug	PlanningDetails	Construct StopOrderBundle for TShipmentStops for shipment: DSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.92	483666	Debug	PlanningDetails	make stop orders bundle for stop: 1 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.92	483666	Debug	PlanningDetails	                stop location is: DSC.DHL POHORELICE SITE [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.931	483666	Debug	Planning	Business process pid is 293326 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.961	483666	Debug	PlanningDetails	TLocation.getPickupRoutingSequenceGid(): returning: null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.961	483666	Debug	PlanningDetails	TLocation.getDropoffRoutingSequenceGid(): returning: null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.961	483666	Debug	PlanningDetails	TLocation.getPickupRoutingSequenceGid(): returning: null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.961	483666	Debug	PlanningDetails	TLocation.getPickupRoutingSequenceGid(): returning: null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.962	483666	Debug	PlanningDetails	TLocation.getDropoffRoutingSequenceGid(): returning: null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.962	483666	Debug	PlanningDetails	TLocation.getDropoffRoutingSequenceGid(): returning: null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.977	483666	Debug	PlanningDetails	make stop orders bundle for stop: 2 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.977	483666	Debug	PlanningDetails	                stop location is: DSC.DHL JAZLOVICE SITE [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.999	483666	Debug	PlanningDetails	Make depot stops for shipment: DSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:36.999	483666	Debug	Planning	Load TItinerary for itineraryPK: DSC.DSC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.019	483666	Debug	PlanningDetails	After making depot stops, the stops on shipment are:  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.019	483666	Debug	PlanningDetails	Stop DSC.DHL POHORELICE SITE, isDepot: false [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.019	483666	Debug	PlanningDetails	Stop DSC.DHL JAZLOVICE SITE, isDepot: false [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.023	483666	Debug	Planning	Creating Shipment Order Bundle for shipmentPK:DSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.027	483666	Debug	Planning	Business process pid is 293326 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.052	483666	Debug	PlanningDetails	TLocation.getPickupRoutingSequenceGid(): returning: null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.052	483666	Debug	PlanningDetails	TLocation.getDropoffRoutingSequenceGid(): returning: null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.052	483666	Debug	PlanningDetails	TLocation.getPickupRoutingSequenceGid(): returning: null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.052	483666	Debug	PlanningDetails	TLocation.getPickupRoutingSequenceGid(): returning: null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.052	483666	Debug	PlanningDetails	TLocation.getDropoffRoutingSequenceGid(): returning: null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.052	483666	Debug	PlanningDetails	TLocation.getDropoffRoutingSequenceGid(): returning: null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.075	483666	Debug	Planning	Created TShipment for shipmentPK:DSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.075	483666	Debug	Planning	DatabaseLoader is loading SEquipmentData (criteria = se.s_equipment_gid in (select ssej.s_equipment_gid from shipment_s_equipment_join ssej where ssej.shipment_gid = ?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.075	483666	Debug	PlanningDetails	EntityLoader is loading s_equipment (criteria = se.s_equipment_gid in (select ssej.s_equipment_gid from shipment_s_equipment_join ssej where ssej.shipment_gid = ?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.081	483666	Debug	PlanningDetails	EntityLoader is loading s_equipment_s_ship_unit_join (criteria = se.s_equipment_gid in (select ssej.s_equipment_gid from shipment_s_equipment_join ssej where ssej.shipment_gid = ?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.085	483666	Debug	PlanningDetails	EntityLoader is loading s_ship_unit_piece (criteria = se.s_equipment_gid in (select ssej.s_equipment_gid from shipment_s_equipment_join ssej where ssej.shipment_gid = ?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.089	483666	Debug	PlanningDetails	EntityLoader is loading s_equipment_seal (criteria = se.s_equipment_gid in (select ssej.s_equipment_gid from shipment_s_equipment_join ssej where ssej.shipment_gid = ?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.097	483666	Debug	Planning	DatabaseLoader is loading SShipUnitData (criteria = (top_t.s_ship_unit_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.097	483666	Debug	PlanningDetails	EntityLoader is loading s_ship_unit (criteria = (top_t.s_ship_unit_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.102	483666	Debug	PlanningDetails	EntityLoader is loading s_ship_unit_line (criteria = (top_t.s_ship_unit_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.108	483666	Debug	PlanningDetails	EntityLoader is loading s_ship_unit_line_refnum (criteria = (top_t.s_ship_unit_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.111	483666	Debug	PlanningDetails	EntityLoader is loading s_ship_unit_line_remark (criteria = (top_t.s_ship_unit_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.114	483666	Debug	PlanningDetails	EntityLoader is loading s_equipment_s_ship_unit_join (criteria = (top_t.s_ship_unit_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.118	483666	Debug	PlanningDetails	EntityLoader is loading s_ship_unit_special_service (criteria = (top_t.s_ship_unit_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.121	483666	Debug	PlanningDetails	EntityLoader is loading s_ship_unit_remark (criteria = (top_t.s_ship_unit_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.124	483666	Debug	PlanningDetails	EntityLoader is loading s_ship_unit_seal (criteria = (top_t.s_ship_unit_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.127	483666	Debug	PlanningDetails	EntityLoader is loading s_ship_unit_refnum (criteria = (top_t.s_ship_unit_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.13	483666	Debug	PlanningDetails	EntityLoader is loading s_ship_unit_accessorial (criteria = (top_t.s_ship_unit_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.133	483666	Debug	PlanningDetails	EntityLoader is loading s_ship_unit_piece (criteria = (top_t.s_ship_unit_gid=?)) ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.137	483666	Debug	PlanningDetails	After loading shipments. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.137	483666	Debug	PlanningDetails	Before loading itineraries. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.137	483666	Debug	Planning	Load TItinerary for itineraryPK: DSC.DSC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.152	483666	Debug	PlanningDetails	After loading itineraries. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.156	483666	Debug	Planning	 setTSEquipments: [Lglog.business.shipment.TSEquipment;@18381381 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.156	483666	Debug	Planning	     each tSEquipment: SEquipmentGid: DSC.1410, EquipmentGroup: DSC.1.5T(405117718)   contains 0 TSShipUnits. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.164	483666	Debug	PlanningDetails	One shipment graph with 1 object nodes were loaded [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.168	483666	Debug	FleetAssignmentDetails	No driver assignment found for driver DSC.63. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.168	483666	Debug	PlanningDetails	Before loading shipments. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.172	483666	Debug	PlanningDetails	After loading shipments. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.172	483666	Debug	PlanningDetails	Before loading itineraries. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.172	483666	Debug	PlanningDetails	After loading itineraries. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.172	483666	Debug	PlanningDetails	One shipment graph with 1 object nodes were loaded [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.176	483666	Debug	FleetAssignmentDetails	No driver assignment found for driver DSC.63. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.176	483666	Debug	Planning	Calling glog.business.action.fleetassignment.driver.AssignDriverAction.process(). [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.196	483666	Debug	FleetAssignmentDetails	No driver assignment found for driver DSC.63. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.196	483666	Debug	FleetAssignmentDetails	Start isStraightTruck for Shipment Gid DSC.01001 and DriverGid DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.196	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.196	483666	Debug	FleetAssignmentDetails	Start getAssosiatedPowerUnitWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.196	483666	Debug	FleetAssignmentDetails	getAssosiatedPowerUnitWithDriver returned PowerUnitPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.196	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithPowerUnit for PowerUnit Gid DSC.VAN_1.5T_10 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.196	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithPowerUnit returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.196	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithDriver returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.196	483666	Debug	FleetAssignment	Shipment is part of Straight Truck/KITDSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.196	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.196	483666	Debug	FleetAssignmentDetails	Start getAssosiatedPowerUnitWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.197	483666	Debug	FleetAssignmentDetails	getAssosiatedPowerUnitWithDriver returned PowerUnitPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.197	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithPowerUnit for PowerUnit Gid DSC.VAN_1.5T_10 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.197	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithPowerUnit returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.197	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithDriver returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.197	483666	Debug	FleetAssignment	Validate PICKLOADED and DROPLOADED Special services for Straight truck driver: {1} [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.197	483666	Debug	FleetAssignmentDetails	Start isStraightTruck for Shipment Gid DSC.01001 and DriverGid DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.197	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.197	483666	Debug	FleetAssignmentDetails	Start getAssosiatedPowerUnitWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.197	483666	Debug	FleetAssignmentDetails	getAssosiatedPowerUnitWithDriver returned PowerUnitPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.197	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithPowerUnit for PowerUnit Gid DSC.VAN_1.5T_10 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.197	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithPowerUnit returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.197	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithDriver returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.197	483666	Debug	FleetAssignment	Shipment is part of Straight Truck/KITDSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.197	483666	Debug	FleetAssignmentDetails	Ignore AssignSameDriverToShipmentsWithSameCMName constraint: false [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.197	483666	Debug	FleetAssignmentDetails	parameter ASSIGN SAME DRIVER TO SHIPMENTS WITH SAME CM NAME is: true [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.202	483666	Debug	Planning	********************************************************************* [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.202	483666	Debug	Planning	Rule Manager begin evaluating 1  entities [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.203	483666	Debug	PlanningDetails	Starting rule: DRIVER_TO_EQUIPMENT for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.203	483666	Debug	PlanningDetails	Ending rule: DRIVER_TO_EQUIPMENT (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.203	483666	Debug	PlanningDetails	Starting rule: DRIVER_TO_LOCATION for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.203	483666	Debug	PlanningDetails	Ending rule: DRIVER_TO_LOCATION (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.203	483666	Debug	PlanningDetails	Starting rule: DRIVER_TO_REGION for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.203	483666	Debug	PlanningDetails	Ending rule: DRIVER_TO_REGION (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.203	483666	Debug	Planning	Entity: null  passed [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.203	483666	Debug	Planning	Rule Manager returning with 1 entities [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.203	483666	Debug	FleetAssignmentDetails	Start isStraightTruck for Shipment Gid DSC.01001 and DriverGid DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.203	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.203	483666	Debug	FleetAssignmentDetails	Start getAssosiatedPowerUnitWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.203	483666	Debug	FleetAssignmentDetails	getAssosiatedPowerUnitWithDriver returned PowerUnitPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.203	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithPowerUnit for PowerUnit Gid DSC.VAN_1.5T_10 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.203	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithPowerUnit returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.204	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithDriver returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.204	483666	Debug	FleetAssignment	Shipment is part of Straight Truck/KITDSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.204	483666	Debug	FleetAssignment	The Source Depot stop is updated for shipment [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.204	483666	Debug	FleetAssignment	The Destination Depot stop is updated for shipment [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.204	483666	Debug	Planning	Start getPowerUnit... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.204	483666	Debug	FleetAssignmentDetails	Start getAssosiatedPowerUnitWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.204	483666	Debug	FleetAssignmentDetails	getAssosiatedPowerUnitWithDriver returned PowerUnitPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.204	483666	Debug	Planning	End getPowerUnits... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.22	483666	Debug	FleetAssignmentDetails	Drivers associated power unit: {0}. Shipments power unit assignment status: POWER UNIT ASSIGNMENT_UNASSIGNED [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.22	483666	Debug	Planning	Start getPowerUnit... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.22	483666	Debug	FleetAssignmentDetails	Start getAssosiatedPowerUnitWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.22	483666	Debug	FleetAssignmentDetails	getAssosiatedPowerUnitWithDriver returned PowerUnitPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.22	483666	Debug	Planning	End getPowerUnits... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.22	483666	Debug	FleetAssignmentDetails	Power Unit is assigned and status is updated [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.22	483666	Debug	Planning	********************************************************************* [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.221	483666	Debug	Planning	Rule Manager begin evaluating 1  entities [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.221	483666	Debug	PlanningDetails	Starting rule: driverShipmentSpeclSrvRule for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.221	483666	Debug	PlanningDetails	Ending rule: driverShipmentSpeclSrvRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.221	483666	Debug	PlanningDetails	Starting rule: driverShipmentRemarkRule for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.221	483666	Debug	PlanningDetails	Ending rule: driverShipmentRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.221	483666	Debug	PlanningDetails	Starting rule: driverLocationRemarkRule for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.221	483666	Debug	PlanningDetails	Ending rule: driverLocationRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.221	483666	Debug	PlanningDetails	Starting rule: driverOrderRemarkRule for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.221	483666	Debug	PlanningDetails	Ending rule: driverOrderRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.221	483666	Debug	PlanningDetails	Starting rule: driverOrderMovementRemarkRule for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.221	483666	Debug	PlanningDetails	Ending rule: driverOrderMovementRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.221	483666	Debug	PlanningDetails	Starting rule: driverItemRemarkRule for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.222	483666	Debug	PlanningDetails	Ending rule: driverItemRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.222	483666	Debug	PlanningDetails	Starting rule: powerUnitShipmentSpeclSrvRule for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.222	483666	Debug	PlanningDetails	Ending rule: powerUnitShipmentSpeclSrvRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.222	483666	Debug	PlanningDetails	Starting rule: powerUnitShipmentRemarkRule for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.222	483666	Debug	PlanningDetails	Ending rule: powerUnitShipmentRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.222	483666	Debug	PlanningDetails	Starting rule: powerUnitLocationRemarkRule for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.222	483666	Debug	PlanningDetails	Ending rule: powerUnitLocationRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.222	483666	Debug	PlanningDetails	Starting rule: powerUnitOrderRemarkRule for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.222	483666	Debug	PlanningDetails	Ending rule: powerUnitOrderRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.222	483666	Debug	PlanningDetails	Starting rule: powerUnitOrderMovementRemarkRule for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.222	483666	Debug	PlanningDetails	Ending rule: powerUnitOrderMovementRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.222	483666	Debug	PlanningDetails	Starting rule: powerUnitItemRemarkRule for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.222	483666	Debug	PlanningDetails	Ending rule: powerUnitItemRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.222	483666	Debug	PlanningDetails	Starting rule: POWER_UNIT_TO_EQUIPMENT for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.222	483666	Debug	PlanningDetails	Ending rule: POWER_UNIT_TO_EQUIPMENT (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.222	483666	Debug	PlanningDetails	Starting rule: POWER_UNIT_TYPE_TO_LOCATION for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.222	483666	Debug	PlanningDetails	Ending rule: POWER_UNIT_TYPE_TO_LOCATION (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.223	483666	Debug	PlanningDetails	Starting rule: POWER_UNIT_TO_LOCATION for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.223	483666	Debug	PlanningDetails	Ending rule: POWER_UNIT_TO_LOCATION (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.223	483666	Debug	PlanningDetails	Starting rule: EQUIPMENT_TYPE_TO_LOCATION for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.223	483666	Debug	PlanningDetails	Ending rule: EQUIPMENT_TYPE_TO_LOCATION (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.223	483666	Debug	PlanningDetails	Starting rule: DRIVER_MAX_MILES_PER_DAY for DSC.63 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.223	483666	Debug	Planning	shipmentDistance 129.76 MIfor shipment DSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.223	483666	Debug	PlanningDetails	Ending rule: DRIVER_MAX_MILES_PER_DAY (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.223	483666	Debug	Planning	Entity: null  passed [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.223	483666	Debug	Planning	Rule Manager returning with 1 entities [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.227	483666	Debug	FleetAssignmentDetails	From updateDriverAssignment Driver Assignment Status Set to Assigned for shipment: DSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.237	483666	Debug	FleetAssignment	Calling positionEquipmentType. option: isFeasible=true; goodnessCost=75.79010335199999
+legOptions.. count: 1
+LegType: FREIGHT, EquipmentTypeGID: DSC.1.5T, EquipmentGID: DSC.VAN_1.5T_10SEquipmentPK: DSC.1410
+ [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.237	483666	Debug	FleetAssignment	entering PositionEquipmentTypeLogic.setUpMaps(): [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.237	483666	Debug	FleetAssignment	..checking the requested locations: [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.237	483666	Debug	FleetAssignment	..checking the requested equipment instances: [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.237	483666	Debug	FleetAssignment	.... for leg: FREIGHT [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.237	483666	Debug	FleetAssignment	...... requested equipment type: DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.237	483666	Debug	FleetAssignment	...... requested equipment: DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.237	483666	Debug	FleetAssignment	........ has equipment type: DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.244	483666	Debug	FleetAssignment	........ has available location: DSC.DHL POHORELICE SITE [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.244	483666	Debug	FleetAssignment	........ shipment liveload location: DSC.DHL POHORELICE SITE [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.244	483666	Debug	FleetAssignmentDetails	Start isStraightTruck for Shipment Gid DSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.244	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.244	483666	Debug	FleetAssignmentDetails	Start getAssosiatedPowerUnitWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.245	483666	Debug	FleetAssignmentDetails	getAssosiatedPowerUnitWithDriver returned PowerUnitPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.245	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithPowerUnit for PowerUnit Gid DSC.VAN_1.5T_10 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.245	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithPowerUnit returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.245	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithDriver returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.245	483666	Debug	FleetAssignment	Shipment is part of Straight Truck/KITDSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.245	483666	Debug	FleetAssignment	........ this is straight truck Driver,PowerUnit and Equipment is kit:  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.245	483666	Debug	FleetAssignment	..finished checking the requested equipment instances: [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.245	483666	Debug	FleetAssignment	..pickPoolLocationSet = [DSC.DHL POHORELICE SITE] [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.245	483666	Debug	FleetAssignment	..dropPoolLocationSet = [DSC.DHL JAZLOVICE SITE] [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.245	483666	Debug	FleetAssignment	entering getEquipmentTypeGidToCountsMapForLocation() for location DSC.DHL POHORELICE SITE [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.279	483666	Debug	FleetAssignment	....for pick location: DSC.DHL POHORELICE SITE [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.279	483666	Debug	FleetAssignment	......equipmentTypeGidToCountsMap = {DSC.1.5T={CHECK_INVENTORY_TARGET=0, SURPLUS_BUCKET=0, AVAILABLE_BUCKET=2}} [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.279	483666	Debug	FleetAssignment	entering getEquipmentTypeGidToCountsMapForLocation() for location DSC.DHL JAZLOVICE SITE [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.283	483666	Debug	FleetAssignment	....for drop location: DSC.DHL JAZLOVICE SITE [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.283	483666	Debug	FleetAssignment	......equipmentTypeGidToCountsMap = {} [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.283	483666	Debug	FleetAssignment	setupSubstitutabilityMaps() for EquipmentTypeAssigner: [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.284	483666	Debug	FleetAssignment	..equipmentTypeGid DSC.1.5T has substitutes: [DSC.1.5T] [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.284	483666	Debug	FleetAssignment	entering PositionEquipmentTypeLogic.processPositionEquipmentTypes(): [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.284	483666	Debug	FleetAssignment	entering PositionEquipmentTypeLogic.processGetOptions() [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.284	483666	Debug	FleetAssignment	.. processing legType: FREIGHT [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.284	483666	Debug	FleetAssignment	constructing EquipmentTypeAssigner: [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.284	483666	Debug	FleetAssignment	entering EquipmentTypeAssigner.createTaskList: [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.284	483666	Debug	FleetAssignment	entering createFreightTaskList [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.284	483666	Debug	FleetAssignment	entering getFreightEquipmentTypeGid, includeSubstitutes = false [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.284	483666	Debug	FleetAssignment	.. shipment freight SEquipment, getting types from EquipmentGroup DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.284	483666	Debug	FleetAssignment	leaving getFreightEquipmentTypeGid, equipmentTypeSet: [DSC.1.5T] [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.284	483666	Debug	FleetAssignment	...the available equipment types for the freight equipment: [DSC.1.5T] [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.284	483666	Debug	FleetAssignmentDetails	Start isStraightTruck for Shipment Gid DSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.284	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.284	483666	Debug	FleetAssignmentDetails	Start getAssosiatedPowerUnitWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.284	483666	Debug	FleetAssignmentDetails	getAssosiatedPowerUnitWithDriver returned PowerUnitPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.284	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithPowerUnit for PowerUnit Gid DSC.VAN_1.5T_10 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.284	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithPowerUnit returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.284	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithDriver returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.285	483666	Debug	FleetAssignment	Shipment is part of Straight Truck/KITDSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.285	483666	Debug	FleetAssignment	...... requested equipmentType DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.285	483666	Debug	FleetAssignment	......equipmentType DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.285	483666	Debug	FleetAssignment	..created freight Task for equipment type DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.285	483666	Debug	FleetAssignment	leaving createFreightTaskList [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.285	483666	Debug	FleetAssignment	exiting EquipmentTypeAssigner.createTaskList [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.299	483666	Debug	Planning	Status of Order Movement: DSC.1-002  prevents function : GC3_APPL_OM_ASSIGN_ORDER_MOVEMENT from executing. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.299	483666	Debug	FleetAssignment	The Source Depot stop is updated for shipment [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.299	483666	Debug	FleetAssignment	The Destination Depot stop is updated for shipment [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.299	483666	Debug	Planning	setTSEquipmentCapacityUsageMap [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.299	483666	Debug	Planning	tSequipment: SEquipmentGid: DSC.1410, EquipmentGroup: DSC.1.5T(405117718)   contains 1 TSShipUnits. unit: 1 DSC.1-001-002 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.299	483666	Debug	PlanningDetails	 merging shipmentAccessorials null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.299	483666	Debug	PlanningDetails	 merging shipmentAccessorials null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.3	483666	Debug	Planning	Created a clone tShipment: clone: DSC.01001 from tShipment: DSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.3	483666	Debug	Planning	setTSEquipmentCapacityUsageMap [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.3	483666	Debug	Planning	tSequipment: SEquipmentGid: DSC.1410, EquipmentGroup: DSC.1.5T(406621639)   contains 1 TSShipUnits. unit: 1 DSC.1-001-002 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.3	483666	Debug	FleetAssignmentDetails	..assignEquipmentTypeForFreight: [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.3	483666	Debug	FleetAssignmentDetails	.... existing freight equipment: DSC.1410 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.3	483666	Debug	FleetAssignmentDetails	Start isStraightTruck for Shipment Gid DSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.3	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.3	483666	Debug	FleetAssignmentDetails	Start getAssosiatedPowerUnitWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.3	483666	Debug	FleetAssignmentDetails	getAssosiatedPowerUnitWithDriver returned PowerUnitPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.3	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithPowerUnit for PowerUnit Gid DSC.VAN_1.5T_10 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.3	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithPowerUnit returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.3	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithDriver returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.301	483666	Debug	FleetAssignment	Shipment is part of Straight Truck/KITDSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.301	483666	Debug	FleetAssignmentDetails	..Equipment is straight truck [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.301	483666	Debug	FleetAssignmentDetails	Start isStraightTruck for Shipment Gid DSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.301	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.301	483666	Debug	FleetAssignmentDetails	Start getAssosiatedPowerUnitWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.301	483666	Debug	FleetAssignmentDetails	getAssosiatedPowerUnitWithDriver returned PowerUnitPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.301	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithPowerUnit for PowerUnit Gid DSC.VAN_1.5T_10 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.301	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithPowerUnit returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.301	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithDriver returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.301	483666	Debug	FleetAssignment	Shipment is part of Straight Truck/KITDSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.301	483666	Debug	Planning	********************************************************************* [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.301	483666	Debug	Planning	Rule Manager begin evaluating 1  entities [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.301	483666	Debug	PlanningDetails	Starting rule: EQUIPMENT_TYPE_TO_LOCATION for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.301	483666	Debug	PlanningDetails	Ending rule: EQUIPMENT_TYPE_TO_LOCATION (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.302	483666	Debug	PlanningDetails	Starting rule: equipTypeShipmentSpeclSrvRule for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.302	483666	Debug	PlanningDetails	Ending rule: equipTypeShipmentSpeclSrvRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.302	483666	Debug	PlanningDetails	Starting rule: equipTypeShipmentRemarkRule for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.302	483666	Debug	PlanningDetails	Ending rule: equipTypeShipmentRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.302	483666	Debug	PlanningDetails	Starting rule: equipTypeLocationRemarkRule for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.302	483666	Debug	PlanningDetails	Ending rule: equipTypeLocationRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.302	483666	Debug	PlanningDetails	Starting rule: equipTypeOrderRemarkRule for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.302	483666	Debug	PlanningDetails	Ending rule: equipTypeOrderRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.302	483666	Debug	PlanningDetails	Starting rule: equipTypeOrderMovementRemarkRule for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.302	483666	Debug	PlanningDetails	Ending rule: equipTypeOrderMovementRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.302	483666	Debug	PlanningDetails	Starting rule: equipTypeItemRemarkRule for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.302	483666	Debug	PlanningDetails	Ending rule: equipTypeItemRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.302	483666	Debug	Planning	Entity: null  passed [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.302	483666	Debug	Planning	Rule Manager returning with 1 entities [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.311	483666	Debug	FleetAssignment	....creating leg option: [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.311	483666	Debug	FleetAssignment	......legType = FREIGHT [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.311	483666	Debug	FleetAssignment	......location = null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.311	483666	Debug	FleetAssignment	......equipmentTypeGid = DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.311	483666	Debug	FleetAssignment	leaving PositionEquipmentTypeLogic.processGetOptions() [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.311	483666	Debug	FleetAssignment	evaluating nTuple 0 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.312	483666	Debug	Planning	setTSEquipmentCapacityUsageMap [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.312	483666	Debug	Planning	tSequipment: SEquipmentGid: DSC.1410, EquipmentGroup: DSC.1.5T(405117718)   contains 1 TSShipUnits. unit: 1 DSC.1-001-002 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.312	483666	Debug	PlanningDetails	 merging shipmentAccessorials null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.312	483666	Debug	PlanningDetails	 merging shipmentAccessorials null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.312	483666	Debug	Planning	Created a clone tShipment: clone: DSC.01001 from tShipment: DSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.312	483666	Debug	FleetAssignment	... legType: FREIGHT, location null, eqType DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.312	483666	Debug	FleetAssignment	constructing EquipmentTypeAssigner: [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.312	483666	Debug	FleetAssignment	The Source Depot stop is updated for shipment [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.312	483666	Debug	FleetAssignment	The Destination Depot stop is updated for shipment [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.312	483666	Debug	FleetAssignmentDetails	..assignEquipmentTypeForFreight: [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.312	483666	Debug	FleetAssignmentDetails	.... existing freight equipment: DSC.1410 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.312	483666	Debug	FleetAssignmentDetails	Start isStraightTruck for Shipment Gid DSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.313	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.313	483666	Debug	FleetAssignmentDetails	Start getAssosiatedPowerUnitWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.313	483666	Debug	FleetAssignmentDetails	getAssosiatedPowerUnitWithDriver returned PowerUnitPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.313	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithPowerUnit for PowerUnit Gid DSC.VAN_1.5T_10 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.313	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithPowerUnit returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.313	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithDriver returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.313	483666	Debug	FleetAssignment	Shipment is part of Straight Truck/KITDSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.313	483666	Debug	FleetAssignmentDetails	..Equipment is straight truck [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.313	483666	Debug	FleetAssignmentDetails	Start isStraightTruck for Shipment Gid DSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.313	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.313	483666	Debug	FleetAssignmentDetails	Start getAssosiatedPowerUnitWithDriver for Driver Gid DSC.63 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.313	483666	Debug	FleetAssignmentDetails	getAssosiatedPowerUnitWithDriver returned PowerUnitPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.313	483666	Debug	FleetAssignmentDetails	Start getAssosiatedEquipmentWithPowerUnit for PowerUnit Gid DSC.VAN_1.5T_10 and for the Date 2015-04-26 20:32:36 UTC [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.313	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithPowerUnit returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.313	483666	Debug	FleetAssignmentDetails	getAssosiatedEquipmentWithDriver returned EquipmentPK is DSC.VAN_1.5T_10  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.313	483666	Debug	FleetAssignment	Shipment is part of Straight Truck/KITDSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.324	483666	Debug	Planning	********************************************************************* [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.324	483666	Debug	Planning	Rule Manager begin evaluating 1  entities [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.325	483666	Debug	PlanningDetails	Starting rule: EQUIPMENT_TYPE_TO_LOCATION for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.325	483666	Debug	PlanningDetails	Ending rule: EQUIPMENT_TYPE_TO_LOCATION (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.325	483666	Debug	PlanningDetails	Starting rule: equipTypeShipmentSpeclSrvRule for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.325	483666	Debug	PlanningDetails	Ending rule: equipTypeShipmentSpeclSrvRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.325	483666	Debug	PlanningDetails	Starting rule: equipTypeShipmentRemarkRule for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.325	483666	Debug	PlanningDetails	Ending rule: equipTypeShipmentRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.325	483666	Debug	PlanningDetails	Starting rule: equipTypeLocationRemarkRule for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.325	483666	Debug	PlanningDetails	Ending rule: equipTypeLocationRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.325	483666	Debug	PlanningDetails	Starting rule: equipTypeOrderRemarkRule for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.325	483666	Debug	PlanningDetails	Ending rule: equipTypeOrderRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.325	483666	Debug	PlanningDetails	Starting rule: equipTypeOrderMovementRemarkRule for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.325	483666	Debug	PlanningDetails	Ending rule: equipTypeOrderMovementRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.325	483666	Debug	PlanningDetails	Starting rule: equipTypeItemRemarkRule for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.325	483666	Debug	PlanningDetails	Ending rule: equipTypeItemRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.325	483666	Debug	Planning	Entity: null  passed [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.326	483666	Debug	Planning	Rule Manager returning with 1 entities [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.329	483666	Debug	Planning	********************************************************************* [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.329	483666	Debug	Planning	Rule Manager begin evaluating 1  entities [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.329	483666	Debug	PlanningDetails	Starting rule: equipShipmentSpeclSrvRule for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.329	483666	Debug	PlanningDetails	Ending rule: equipShipmentSpeclSrvRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.329	483666	Debug	PlanningDetails	Starting rule: equipShipmentRemarkRule for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Ending rule: equipShipmentRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Starting rule: equipLocationRemarkRule for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Ending rule: equipLocationRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Starting rule: equipOrderRemarkRule for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Ending rule: equipOrderRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Starting rule: equipOrderMovementRemarkRule for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Ending rule: equipOrderMovementRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Starting rule: equipItemRemarkRule for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Ending rule: equipItemRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Starting rule: POWER_UNIT_TO_EQUIPMENT for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Ending rule: POWER_UNIT_TO_EQUIPMENT (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Starting rule: POWER_UNIT_TO_LOCATION for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Ending rule: POWER_UNIT_TO_LOCATION (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Starting rule: POWER_UNIT_TYPE_TO_LOCATION for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Ending rule: POWER_UNIT_TYPE_TO_LOCATION (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Starting rule: DRIVER_TO_LOCATION for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Ending rule: DRIVER_TO_LOCATION (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Starting rule: EQUIPMENT_TYPE_TO_LOCATION for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.33	483666	Debug	PlanningDetails	Ending rule: EQUIPMENT_TYPE_TO_LOCATION (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.331	483666	Debug	Planning	Entity: null  passed [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.331	483666	Debug	Planning	Rule Manager returning with 1 entities [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.331	483666	Debug	PlanningDetails	Use max wait time between stops: 365 Days 0 Hours 0 Minutes 0 Seconds [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.331	483666	Debug	PlanningDetails	Use max long haul wait time: 365 Days 0 Hours 0 Minutes 0 Seconds [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.332	483666	Debug	Planning	SQL Find LegInterimPoints by LegPK: select distinct lip.leg_gid, lip.seq_no from leg_interim_point lip where lip.leg_gid = ? order by lip.seq_no. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.339	483666	Debug	Planning	Apply BEST ServiceTimeResult to shipment: DSC.01001 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.339	483666	Debug	Planning	shipment type: TRANSPORT, start time: 2015-04-26 22:32:37 Europe/Prague, end time: 2015-04-27 00:54:10 Europe/Prague [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.339	483666	Debug	Planning	Applying stop service time result for stop: 1 at: DSC.DHL POHORELICE SITE, arrival time: 2015-04-26 22:32:37 Europe/Prague, departure time: 2015-04-26 22:32:37 Europe/Prague [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.34	483666	Debug	Planning	Applying stop service time result for stop: 2 at: DSC.DHL JAZLOVICE SITE, arrival time: 2015-04-27 00:54:10 Europe/Prague, departure time: 2015-04-27 00:54:10 Europe/Prague [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.34	483666	Debug	Planning	Apply depot stop service time results. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.34	483666	Debug	Planning	Is service time feasible: true [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.34	483666	Debug	Planning	ReCalculateShipmentCost: driver DSC.63 for shipment DSC.01001 has no rate offering, use service privider DSC.SUPPLIER from tShipment. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.34	483666	Debug	Planning	rateGeoGid = null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.34	483666	Debug	Planning	rateOfferingGid = null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.34	483666	Debug	Planning	serviceProviderGid = DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.352	483666	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Begin Finding Valid Rate Geos ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.352	483666	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): ShipmentGid (if any) = <DSC.01001> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.352	483666	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingPKs = <[DSC.SUPPLIER]> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.352	483666	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingRuleSetGid = <null> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.353	483666	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateGeoRuleSetTGid = <null> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.353	483666	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRates = <true> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.353	483666	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRatesOnly = <false> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.353	483666	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): checkCmRating = <false> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.353	483666	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): useRouteExecutionRates = <false> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.353	483666	Debug	PlanningDetails	RateGeoFinderSession.findValidRateGeos(): startTime passed in = <2015-04-26 22:32:37 Europe/Prague> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.353	483666	Debug	PlanningDetails	RateGeoFinderSession.findValidRateGeos(): Converted startTime to source TZ = <2015-04-26 22:32:37 Europe/Prague> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.353	483666	Debug	PlanningDetails	RateGeoFinderSession.findTRateGeosByAddresses(): Pre-specified rate offerings: [300] [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.353	483666	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates : <true> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.353	483666	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates Only : <false> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.354	483666	Debug	PlanningDetails	RateGeoFinderSession.findCompositeRateGeoPKsByAddress(): Retrieved cached result for DSC.DHL POHORELICE SITE|DSC.DHL JAZLOVICE SITE|DSCB [CompositeRateGeoPK: key = <LTL|298|302|1420099200000|1483171200000>, hashCode = <-83454446>, rgSeq = <302>, rgGid = <DSC.DSC>, roSeq = <298>, roGid = <DSC.DSC>, rank = <40>, transportModeGid = <LTL>, effDate = <2015-01-01 08:00:00 UTC>, expDate = <2016-12-31 08:00:00 UTC>, servprovGid = <null>, CompositeRateGeoPK: key = <LTL|300|312|1420099200000|1483171200000>, hashCode = <1303395411>, rgSeq = <312>, rgGid = <DSC.SUPPLIER>, roSeq = <300>, roGid = <DSC.SUPPLIER>, rank = <40>, transportModeGid = <LTL>, effDate = <2015-01-01 08:00:00 UTC>, expDate = <2016-12-31 08:00:00 UTC>, servprovGid = <null>] [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.354	483666	Debug	PlanningDetails	RateGeoFinderSession.findCompositeRateGeoPKsByAddress(): Normalized startTime = <2015-04-26 22:32:37 UTC> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.354	483666	Debug	PlanningDetails	RateGeoFinderSession.findCompositeRateGeoPKsByAddress(): Beginning date filter process. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.354	483666	Debug	PlanningDetails	RateGeoFinderSession.findCompositeRateGeoPKsByAddress(): Testing  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.354	483666	Debug	PlanningDetails	RateGeoFinderSession.findCompositeRateGeoPKsByAddress(): effDate = <2015-01-01 UTC>, expDate = <2016-12-31 UTC> <DSC.DSC|DSC.DSC> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.354	483666	Debug	PlanningDetails	RateGeoFinderSession.findCompositeRateGeoPKsByAddress(): Succeeded [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.354	483666	Debug	PlanningDetails	RateGeoFinderSession.findCompositeRateGeoPKsByAddress(): Testing  [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.354	483666	Debug	PlanningDetails	RateGeoFinderSession.findCompositeRateGeoPKsByAddress(): effDate = <2015-01-01 UTC>, expDate = <2016-12-31 UTC> <DSC.SUPPLIER|DSC.SUPPLIER> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.354	483666	Debug	PlanningDetails	RateGeoFinderSession.findCompositeRateGeoPKsByAddress(): Succeeded [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.354	483666	Debug	PlanningDetails	RateGeoFinderSession.findCompositeRateGeoPKsByAddress(): Returning date filtered list: [RateGeoFinderResult: tRateGeo = <null>, composite = <CompositeRateGeoPK: key = <LTL|298|302|1420099200000|1483171200000>, hashCode = <-83454446>, rgSeq = <302>, rgGid = <DSC.DSC>, roSeq = <298>, roGid = <DSC.DSC>, rank = <40>, transportModeGid = <LTL>, effDate = <2015-01-01 08:00:00 UTC>, expDate = <2016-12-31 08:00:00 UTC>, servprovGid = <null>>, isPreferred = <false>, RateGeoFinderResult: tRateGeo = <null>, composite = <CompositeRateGeoPK: key = <LTL|300|312|1420099200000|1483171200000>, hashCode = <1303395411>, rgSeq = <312>, rgGid = <DSC.SUPPLIER>, roSeq = <300>, roGid = <DSC.SUPPLIER>, rank = <40>, transportModeGid = <LTL>, effDate = <2015-01-01 08:00:00 UTC>, expDate = <2016-12-31 08:00:00 UTC>, servprovGid = <null>>, isPreferred = <false>] [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.354	483666	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Begin looking for preferred rates... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.354	483666	Debug	PlanningDetails	RateGeoFinderSession.findPreferredRatesByAddress(): Converted startTime to source TZ = <2015-04-26 22:32:37 Europe/Prague> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.354	483666	Debug	PlanningDetails	RateGeoFinderSession.findPreferredRatesByAddress(): Returning cached preferred rates result for DSC.DHL POHORELICE SITE|DSC.DHL JAZLOVICE SITE|DSCB [] [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.354	483666	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): No preferred rates are found. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.355	483666	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): End looking for preferred rates. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.355	483666	Debug	PlanningDetails	RateGeoFinderSession.findTRateGeosByAddresses(): Check the validity of rate offerings found by lane or zone) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.355	483666	Debug	PlanningDetails	RateGeoFinderSession.findTRateGeosByAddresses(): RateGeoFinderSession.findTRateGeosByAddress(): rateOfferingGidSet = <[300]> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.355	483666	Debug	PlanningDetails	RateGeoFinderSession.findTRateGeosByAddress(): Loading TRateOffering <300> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.355	483666	Debug	PlanningDetails	RateGeoFinderSession.findTRateGeosByAddress(): Adding to tRateOfferingList. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.355	483666	Debug	PlanningDetails	RateGeoFinderSession.getRuleValidTRateOfferings(): Invoked getRuleValidTRateOfferings.  ruleSetGid = <null> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.355	483666	Debug	PlanningDetails	RateGeoFinderSession.getRuleValidTRateOfferings(): ruleSetGid was null. gid retrieved from property <roset1> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.355	483666	Debug	Planning	********************************************************************* [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.355	483666	Debug	Planning	Rule Manager begin evaluating 1  entities [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.355	483666	Debug	PlanningDetails	Starting rule: romRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.355	483666	Debug	PlanningDetails	Ending rule: romRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.355	483666	Debug	PlanningDetails	Starting rule: rowRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.355	483666	Debug	PlanningDetails	Ending rule: rowRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.355	483666	Debug	PlanningDetails	Starting rule: rospRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.355	483666	Debug	PlanningDetails	Ending rule: rospRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.355	483666	Debug	PlanningDetails	Starting rule: rovRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Ending rule: rovRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Starting rule: rodRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Ending rule: rodRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Starting rule: roeqRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Ending rule: roeqRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Starting rule: rorcfRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Ending rule: rorcfRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Starting rule: rouomRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	Planning	RateOfferingUOMRule.check: No constraints specified, returning true. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Ending rule: rouomRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Starting rule: roactRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Ending rule: roactRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Starting rule: rocoRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Ending rule: rocoRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Starting rule: rolocRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Ending rule: rolocRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Starting rule: rotltRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Ending rule: rotltRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Starting rule: rosegRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.356	483666	Debug	PlanningDetails	Ending rule: rosegRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.357	483666	Debug	PlanningDetails	Starting rule: roHazRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.357	483666	Debug	PlanningDetails	Ending rule: roHazRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.357	483666	Debug	PlanningDetails	Starting rule: roDirectRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.357	483666	Debug	PlanningDetails	Ending rule: roDirectRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.357	483666	Debug	Planning	Entity: DSC.SUPPLIER  passed [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.357	483666	Debug	Planning	Rule Manager returning with 1 entities [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.357	483666	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateOfferings(): Validating rate offering customer domain profiles against shipment/order domain names. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.357	483666	Debug	PlanningDetails	RateGeoFinderSession.getCustomerValidTRateOfferings(): Inspecting ro <DSC.SUPPLIER> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.357	483666	Debug	PlanningDetails	RateGeoFinderSession.filterResultsByRateOfferings(): comparing rate records against set of valid rate offerings. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.357	483666	Debug	PlanningDetails	RateGeoFinderSession.filterResultsByRateOfferings(): Valid Rate Offering set: <[300]> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.357	483666	Debug	PlanningDetails	RateGeoFinderSession.filterResultsByRateOfferings(): Testing <RateGeoFinderResult: tRateGeo = <null>, composite = <CompositeRateGeoPK: key = <LTL|298|302|1420099200000|1483171200000>, hashCode = <-83454446>, rgSeq = <302>, rgGid = <DSC.DSC>, roSeq = <298>, roGid = <DSC.DSC>, rank = <40>, transportModeGid = <LTL>, effDate = <2015-01-01 08:00:00 UTC>, expDate = <2016-12-31 08:00:00 UTC>, servprovGid = <null>>, isPreferred = <false>>, roSeq = <298> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.357	483666	Debug	PlanningDetails	RateGeoFinderSession.filterResultsByRateOfferings(): Testing <RateGeoFinderResult: tRateGeo = <null>, composite = <CompositeRateGeoPK: key = <LTL|300|312|1420099200000|1483171200000>, hashCode = <1303395411>, rgSeq = <312>, rgGid = <DSC.SUPPLIER>, roSeq = <300>, roGid = <DSC.SUPPLIER>, rank = <40>, transportModeGid = <LTL>, effDate = <2015-01-01 08:00:00 UTC>, expDate = <2016-12-31 08:00:00 UTC>, servprovGid = <null>>, isPreferred = <false>>, roSeq = <300> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.357	483666	Debug	PlanningDetails	RateGeoFinderSession.filterResultsByRateOfferings(): Matched rate record found. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.357	483666	Debug	PlanningDetails	RateGeoFinderSession.filterResultsByRateOfferings(): Returning <[RateGeoFinderResult: tRateGeo = <null>, composite = <CompositeRateGeoPK: key = <LTL|300|312|1420099200000|1483171200000>, hashCode = <1303395411>, rgSeq = <312>, rgGid = <DSC.SUPPLIER>, roSeq = <300>, roGid = <DSC.SUPPLIER>, rank = <40>, transportModeGid = <LTL>, effDate = <2015-01-01 08:00:00 UTC>, expDate = <2016-12-31 08:00:00 UTC>, servprovGid = <null>>, isPreferred = <false>]> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.358	483666	Debug	PlanningDetails	Starting rule: rgsRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.358	483666	Debug	PlanningDetails	Ending rule: rgsRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.358	483666	Debug	PlanningDetails	Starting rule: rgssRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.358	483666	Debug	Planning	Special service needed: UNLOAD [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.358	483666	Debug	Planning	Special service needed: LOAD [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.358	483666	Debug	Planning	The RateGeo and RateOffering DID support all of the needed special service codes, returning true... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.358	483666	Debug	PlanningDetails	Ending rule: rgssRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.358	483666	Debug	PlanningDetails	Starting rule: rgrsRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.358	483666	Debug	Planning	Rate Geo: DSC.SUPPLIER/Rate service: TL-SIM [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.358	483666	Debug	Planning	DSC.329 leg classification = null isPrimary = false. Checking for Rate Service Constraint on Order Bundle. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Ending rule: rgrsRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Starting rule: rgCofcTofcRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Ending rule: rgCofcTofcRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Starting rule: rgCRCRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Ending rule: rgCRCRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Starting rule: rgIMPRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Ending rule: rgIMPRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Starting rule: rgrcRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Ending rule: rgrcRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Starting rule: rgeqRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Ending rule: rgeqRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Starting rule: rgcRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Ending rule: rgcRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Starting rule: rgvRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Ending rule: rgvRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Starting rule: rgpRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Ending rule: rgpRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Starting rule: rgHazRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Ending rule: rgHazRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Starting rule: rgrcscRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	RateGeoRouteCodeServingCarrierRule.check() [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	RateGeoRouteCodeServingCarrierRule passes. No Route Code on Rate Geo. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.359	483666	Debug	PlanningDetails	Ending rule: rgrcscRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.36	483666	Debug	PlanningDetails	Starting rule: rgeiRule for DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.36	483666	Debug	PlanningDetails	RateGeoEquipmentInitialRule.check() [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.36	483666	Debug	PlanningDetails	RateGeoEquipmentInitialRule passes. No Route Code on Rate Geo. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.36	483666	Debug	PlanningDetails	Ending rule: rgeiRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.36	483666	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos() [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.36	483666	Debug	PlanningDetails	RateGeoFinderSession.getCustomerValidTRateGeos(): RateGeo <DSC.SUPPLIER> belongs to rate offering <DSC.SUPPLIER> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.36	483666	Debug	PlanningDetails	RateGeoFinderSession.getCustomerValidTRateGeos(): Now looping through rate offering groups. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.36	483666	Debug	PlanningDetails	RateGeoFinderSession.getCustomerValidTRateGeos(): RateGeo <DSC.SUPPLIER> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.36	483666	Debug	PlanningDetails	RateGeoFinderSession.getCustomerValidTRateGeos(): FoundProfile is false and no profile specified, adding to valid geo list. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.36	483666	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos(): Returning: [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.36	483666	Debug	Planning	RateGeoFinderSession.getCustomerValidTRateGeos(): RateGeo <RateGeoFinderResult: tRateGeo = <DSC.SUPPLIER>, composite = <CompositeRateGeoPK: key = <LTL|300|312|1420099200000|1483171200000>, hashCode = <1303395411>, rgSeq = <312>, rgGid = <DSC.SUPPLIER>, roSeq = <300>, roGid = <DSC.SUPPLIER>, rank = <40>, transportModeGid = <LTL>, effDate = <2015-01-01 08:00:00 UTC>, expDate = <2016-12-31 08:00:00 UTC>, servprovGid = <null>>, isPreferred = <false>> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.36	483666	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Complete Finding Valid Rate Geos ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.36	483666	Debug	Planning	RateFinder.findShipmentCosts(): total 1 rate geo(s) returned from RateGeoFinder. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.368	483666	Debug	Planning	RateFinder.findShipmentCosts(): Total 1 rate engine result(s) returned from RateEngine. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.368	483666	Debug	PlanningDetails	No order_release_line_Gids associated with this cost from RatingEngine. Shipment Cost:ShipmentCost:      shipmentCostSeqno: null
+    shipmentGid: DSC.01001
+    costType: B
+    cost: 73.090103352 USD
+    accessorialCodeGid: null
+    accessorialCostGid: null
+    billableIndicatorGid: null
+    rateGeoCostGroupGid: DSC.SUPPLIER
+    rateGeoCostSeq: 374
+    specialServiceGid: null
+    isCostFixed: false
+    processAsFlowThru: false
+    adjustmentReasonGid: null
+    generalLedgerGid: null
+    paymentMethodCodeGid: null
+    exchangeRateDate: null
+    exchangeRateGid: DEFAULT
+    sShipUnitGid: null
+    sShipUnitLineNo: null
+    isWeighted: false
+    domainName: null
+    costCategoryGid: null
+    trackingNumber: null
+. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.368	483666	Debug	PlanningDetails	No order_release_line_Gids associated with this cost from RatingEngine. Shipment Cost:ShipmentCost:      shipmentCostSeqno: null
+    shipmentGid: DSC.01001
+    costType: A
+    cost: 1.35 EUR
+    accessorialCodeGid: DSC.LOADING
+    accessorialCostGid: DSC.LOADING COST
+    billableIndicatorGid: null
+    rateGeoCostGroupGid: null
+    rateGeoCostSeq: null
+    specialServiceGid: null
+    isCostFixed: false
+    processAsFlowThru: false
+    adjustmentReasonGid: null
+    generalLedgerGid: null
+    paymentMethodCodeGid: null
+    exchangeRateDate: null
+    exchangeRateGid: DEFAULT
+    sShipUnitGid: null
+    sShipUnitLineNo: null
+    isWeighted: false
+    domainName: null
+    costCategoryGid: null
+    trackingNumber: null
+. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.368	483666	Debug	PlanningDetails	No order_release_line_Gids associated with this cost from RatingEngine. Shipment Cost:ShipmentCost:      shipmentCostSeqno: null
+    shipmentGid: DSC.01001
+    costType: A
+    cost: 1.35 EUR
+    accessorialCodeGid: DSC.UNLOADING
+    accessorialCostGid: DSC.UNLOADING COST
+    billableIndicatorGid: null
+    rateGeoCostGroupGid: null
+    rateGeoCostSeq: null
+    specialServiceGid: null
+    isCostFixed: false
+    processAsFlowThru: false
+    adjustmentReasonGid: null
+    generalLedgerGid: null
+    paymentMethodCodeGid: null
+    exchangeRateDate: null
+    exchangeRateGid: DEFAULT
+    sShipUnitGid: null
+    sShipUnitLineNo: null
+    isWeighted: false
+    domainName: null
+    costCategoryGid: null
+    trackingNumber: null
+. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.369	483666	Debug	PlanningDetails	Replacing current shipment cost with new shipment costs, keepFixedCosts: true [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.387	483666	Debug	PlanningDetails	Process current shipment cost: ShipmentCost:      shipmentCostSeqno: 2141
+    shipmentGid: DSC.01001
+    costType: B
+    cost: 73.090103352 USD
+    accessorialCodeGid: null
+    accessorialCostGid: null
+    billableIndicatorGid: null
+    rateGeoCostGroupGid: DSC.SUPPLIER
+    rateGeoCostSeq: 374
+    specialServiceGid: null
+    isCostFixed: false
+    processAsFlowThru: false
+    adjustmentReasonGid: null
+    generalLedgerGid: null
+    paymentMethodCodeGid: null
+    exchangeRateDate: null
+    exchangeRateGid: DEFAULT
+    sShipUnitGid: null
+    sShipUnitLineNo: null
+    isWeighted: false
+    domainName: DSC
+    costCategoryGid: null
+    trackingNumber: null
+ [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.387	483666	Debug	PlanningDetails	This cost is not fixed, or we do not keep fixed costs. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.387	483666	Debug	PlanningDetails	This cost is loaded, will remove it from the database. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.387	483666	Debug	PlanningDetails	Process current shipment cost: ShipmentCost:      shipmentCostSeqno: 2142
+    shipmentGid: DSC.01001
+    costType: A
+    cost: 1.35 EUR
+    accessorialCodeGid: DSC.LOADING
+    accessorialCostGid: DSC.LOADING COST
+    billableIndicatorGid: null
+    rateGeoCostGroupGid: null
+    rateGeoCostSeq: null
+    specialServiceGid: null
+    isCostFixed: false
+    processAsFlowThru: false
+    adjustmentReasonGid: null
+    generalLedgerGid: null
+    paymentMethodCodeGid: null
+    exchangeRateDate: null
+    exchangeRateGid: DEFAULT
+    sShipUnitGid: null
+    sShipUnitLineNo: null
+    isWeighted: false
+    domainName: DSC
+    costCategoryGid: null
+    trackingNumber: null
+ [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.387	483666	Debug	PlanningDetails	This cost is not fixed, or we do not keep fixed costs. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.387	483666	Debug	PlanningDetails	This cost is loaded, will remove it from the database. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.387	483666	Debug	PlanningDetails	Process current shipment cost: ShipmentCost:      shipmentCostSeqno: 2143
+    shipmentGid: DSC.01001
+    costType: A
+    cost: 1.35 EUR
+    accessorialCodeGid: DSC.UNLOADING
+    accessorialCostGid: DSC.UNLOADING COST
+    billableIndicatorGid: null
+    rateGeoCostGroupGid: null
+    rateGeoCostSeq: null
+    specialServiceGid: null
+    isCostFixed: false
+    processAsFlowThru: false
+    adjustmentReasonGid: null
+    generalLedgerGid: null
+    paymentMethodCodeGid: null
+    exchangeRateDate: null
+    exchangeRateGid: DEFAULT
+    sShipUnitGid: null
+    sShipUnitLineNo: null
+    isWeighted: false
+    domainName: DSC
+    costCategoryGid: null
+    trackingNumber: null
+ [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.387	483666	Debug	PlanningDetails	This cost is not fixed, or we do not keep fixed costs. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.387	483666	Debug	PlanningDetails	This cost is loaded, will remove it from the database. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.387	483666	Debug	PlanningDetails	TShipment.calcDisplayRates() [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.388	483666	Debug	PlanningDetails	TShipment.calcDisplayRates(): Retrieving TRateOffering for ro gid <DSC.SUPPLIER> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.388	483666	Debug	PlanningDetails	TShipment.calcDisplayRates(): Retrieving TRateOfferingType for rot gid <LTL> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.388	483666	Debug	PlanningDetails	TShipment.calcDisplayRates(): <TRateOfferingType: gid = <LTL>, attributes = <[DISTANCESTANDARD, UNITSOFMEASURE, COMMENTS, GRID, RATEAPPLICATIONMETRICS, WEIGHTBREAKS, MAXSTOPS, RULESANDTERMS, CONTRACTINFO, QUALITYRATING, EQUIPMENTGROUPPROFILE, MINCOST, USERCLASSIFICATIONS, ACCESSORIALS]>, costingSequence = <[    rateOfferingTypeGid: LTL
+    rateAttributeGid: ACCESSORIALS
+    seqNo: 3
+    domainName: PUBLIC
+,     rateOfferingTypeGid: LTL
+    rateAttributeGid: GRID
+    seqNo: 1
+    domainName: PUBLIC
+,     rateOfferingTypeGid: LTL
+    rateAttributeGid: MINCOST
+    seqNo: 2
+    domainName: PUBLIC
+,     rateOfferingTypeGid: LTL
+    rateAttributeGid: QUALITYRATING
+    seqNo: 4
+    domainName: PUBLIC
+]>> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.388	483666	Debug	FleetAssignment	entering PositionEquipmentTypeLogic.processMultiEquipmentOptions(): [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.388	483666	Debug	FleetAssignment	Input Equipment Type Options... Count = 1
+ [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.388	483666	Debug	FleetAssignmentDetails	Input Equipment Type Options... List = 
+[isFeasible=true; goodnessCost=75.79010335199999
+legOptions.. count: 1
+LegType: FREIGHT, EquipmentTypeGID: DSC.1.5T, EquipmentGID: DSC.VAN_1.5T_10SEquipmentPK: DSC.1410
+] [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.388	483666	Debug	FleetAssignment	..found feasible option [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.388	483666	Debug	FleetAssignment	constructing EquipmentTypeAssigner: [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.388	483666	Debug	FleetAssignment	The Source Depot stop is updated for shipment [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.388	483666	Debug	FleetAssignment	The Destination Depot stop is updated for shipment [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.388	483666	Debug	FleetAssignmentDetails	..assignEquipmentTypeForFreight: [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.399	483666	Debug	Planning	********************************************************************* [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.399	483666	Debug	Planning	Rule Manager begin evaluating 1  entities [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.399	483666	Debug	PlanningDetails	Starting rule: EQUIPMENT_TYPE_TO_LOCATION for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.399	483666	Debug	PlanningDetails	Ending rule: EQUIPMENT_TYPE_TO_LOCATION (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.399	483666	Debug	PlanningDetails	Starting rule: equipTypeShipmentSpeclSrvRule for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.399	483666	Debug	PlanningDetails	Ending rule: equipTypeShipmentSpeclSrvRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.399	483666	Debug	PlanningDetails	Starting rule: equipTypeShipmentRemarkRule for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.399	483666	Debug	PlanningDetails	Ending rule: equipTypeShipmentRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.399	483666	Debug	PlanningDetails	Starting rule: equipTypeLocationRemarkRule for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.399	483666	Debug	PlanningDetails	Ending rule: equipTypeLocationRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.399	483666	Debug	PlanningDetails	Starting rule: equipTypeOrderRemarkRule for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.4	483666	Debug	PlanningDetails	Ending rule: equipTypeOrderRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.4	483666	Debug	PlanningDetails	Starting rule: equipTypeOrderMovementRemarkRule for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.4	483666	Debug	PlanningDetails	Ending rule: equipTypeOrderMovementRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.4	483666	Debug	PlanningDetails	Starting rule: equipTypeItemRemarkRule for DSC.1.5T [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.4	483666	Debug	PlanningDetails	Ending rule: equipTypeItemRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.4	483666	Debug	Planning	Entity: null  passed [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.4	483666	Debug	Planning	Rule Manager returning with 1 entities [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.403	483666	Debug	Planning	********************************************************************* [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.404	483666	Debug	Planning	Rule Manager begin evaluating 1  entities [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.404	483666	Debug	PlanningDetails	Starting rule: equipShipmentSpeclSrvRule for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.404	483666	Debug	PlanningDetails	Ending rule: equipShipmentSpeclSrvRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.404	483666	Debug	PlanningDetails	Starting rule: equipShipmentRemarkRule for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.404	483666	Debug	PlanningDetails	Ending rule: equipShipmentRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.404	483666	Debug	PlanningDetails	Starting rule: equipLocationRemarkRule for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.404	483666	Debug	PlanningDetails	Ending rule: equipLocationRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.404	483666	Debug	PlanningDetails	Starting rule: equipOrderRemarkRule for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.404	483666	Debug	PlanningDetails	Ending rule: equipOrderRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.404	483666	Debug	PlanningDetails	Starting rule: equipOrderMovementRemarkRule for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.404	483666	Debug	PlanningDetails	Ending rule: equipOrderMovementRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.404	483666	Debug	PlanningDetails	Starting rule: equipItemRemarkRule for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.404	483666	Debug	PlanningDetails	Ending rule: equipItemRemarkRule (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.404	483666	Debug	PlanningDetails	Starting rule: POWER_UNIT_TO_EQUIPMENT for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.404	483666	Debug	PlanningDetails	Ending rule: POWER_UNIT_TO_EQUIPMENT (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.404	483666	Debug	PlanningDetails	Starting rule: POWER_UNIT_TO_LOCATION for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.404	483666	Debug	PlanningDetails	Ending rule: POWER_UNIT_TO_LOCATION (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.405	483666	Debug	PlanningDetails	Starting rule: POWER_UNIT_TYPE_TO_LOCATION for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.405	483666	Debug	PlanningDetails	Ending rule: POWER_UNIT_TYPE_TO_LOCATION (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.405	483666	Debug	PlanningDetails	Starting rule: DRIVER_TO_LOCATION for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.405	483666	Debug	PlanningDetails	Ending rule: DRIVER_TO_LOCATION (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.405	483666	Debug	PlanningDetails	Starting rule: EQUIPMENT_TYPE_TO_LOCATION for DSC.VAN_1.5T_10 [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.405	483666	Debug	PlanningDetails	Ending rule: EQUIPMENT_TYPE_TO_LOCATION (passed) [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.405	483666	Debug	Planning	Entity: null  passed [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.405	483666	Debug	Planning	Rule Manager returning with 1 entities [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.405	483666	Debug	FleetAssignment	leaving PositionEquipmentTypeLogic.processPositionEquipmentTypes(): [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.405	483666	Debug	Planning	Calling glog.business.action.fleetassignment.driver.AssignDriverAction.redrive(). [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.405	483666	Debug	Planning	ReCalculateShipmentCost: driver DSC.63 for shipment DSC.01001 has no rate offering, use service privider DSC.SUPPLIER from tShipment. [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.406	483666	Debug	Planning	rateGeoGid = null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.406	483666	Debug	Planning	rateOfferingGid = null [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.406	483666	Debug	Planning	serviceProviderGid = DSC.SUPPLIER [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.418	483666	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): Begin Finding Valid Rate Geos ... [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.418	483666	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): ShipmentGid (if any) = <DSC.01001> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.418	483666	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingPKs = <[DSC.SUPPLIER]> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.418	483666	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateOfferingRuleSetGid = <null> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.418	483666	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): rateGeoRuleSetTGid = <null> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.418	483666	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRates = <true> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.419	483666	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): usePreferredRatesOnly = <false> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-04-27 02:02:37.419	483666	Debug	Planning	RateGeoFinderSession.findValidRateGeos(): checkCmRating = <false> [[ACTIVE] ExecuteThread: '9' for queue: 'weblogic.kernel.Default (self-tuning)']

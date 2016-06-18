@@ -1,0 +1,316 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<dataTemplate name="GTM_TRANSACTION" defaultPackage="" version="1.0">
+	<parameters>
+       <parameter name="P_GL_USER" dataType="character" defaultValue="DBA.ADMIN"/>
+       <parameter name="P_ROLE_ID" dataType="character" defaultValue="ADMIN"/>
+       <parameter name="P_SHIPMENT_XID" dataType="character"/>
+	</parameters>
+	<dataQuery>
+		<sqlStatement name="gtm_transaction">
+			<![CDATA[select ltrim("GTM_TRANSACTION"."INCO_TERM_GID",'PAC.') as "INCO_TERM",
+			ltrim("GTM_TRANSACTION"."OBJECT_ID",'PAC.') as "SHIPMENT_ID",
+			(select	  REPLACE(REPLACE("GTM_TRANS_REFNUM"."REFNUM_VALUE", 'PAC.'), '_O')   
+			from	"GLOGOWNER"."GTM_TRANS_REFNUM" "GTM_TRANS_REFNUM"
+			where "GTM_TRANS_REFNUM"."GTM_TRANSACTION_GID" = "GTM_TRANSACTION"."GTM_TRANSACTION_GID"
+			and "GTM_TRANS_REFNUM"."GTM_TRANS_REFNUM_QUAL_GID" = 'TRIP_ID') as "INVOICE_NUMBER",
+			(SELECT TO_CHAR(SYSDATE) FROM DUAL) AS "SYS_DATE",
+			 (SELECT "SHIP"."SHIPMENT_NAME"
+                         FROM "SHIPMENT" "SHIP"
+                         WHERE "SHIP"."SHIPMENT_GID"='PAC.'||:P_SHIPMENT_XID) AS "EBS_TRIP_NUMBER",
+			(select	 "GTM_TRANS_REFNUM"."REFNUM_VALUE"
+			from	"GLOGOWNER"."GTM_TRANS_REFNUM" "GTM_TRANS_REFNUM"
+			where "GTM_TRANS_REFNUM"."GTM_TRANSACTION_GID" = "GTM_TRANSACTION"."GTM_TRANSACTION_GID"
+			and "GTM_TRANS_REFNUM"."GTM_TRANS_REFNUM_QUAL_GID" = 'PAC.FF_SHIPMENT') as "FF_SHIPMENT",
+			(select	 "GTM_TRANS_REFNUM"."REFNUM_VALUE"
+			from	"GLOGOWNER"."GTM_TRANS_REFNUM" "GTM_TRANS_REFNUM"
+			where "GTM_TRANS_REFNUM"."GTM_TRANSACTION_GID" = "GTM_TRANSACTION"."GTM_TRANSACTION_GID"
+			and "GTM_TRANS_REFNUM"."GTM_TRANS_REFNUM_QUAL_GID" = 'PAC.ITEM_DESC_CI') as "ITEM_DESC_CI",
+			(select	 NVL(SUBSTR("GTM_TRANSACTION_REMARK"."REMARK_TEXT", 0, INSTR("GTM_TRANSACTION_REMARK"."REMARK_TEXT", '-')-1),"GTM_TRANSACTION_REMARK"."REMARK_TEXT")  
+			from	"GLOGOWNER"."GTM_TRANSACTION_REMARK" "GTM_TRANSACTION_REMARK"
+			where "GTM_TRANSACTION_REMARK"."GTM_TRANSACTION_GID" = "GTM_TRANSACTION"."GTM_TRANSACTION_GID"
+			and "GTM_TRANSACTION_REMARK"."REMARK_QUAL_GID" = 'FREIGHT_TERMS_CODE') as "FREIGHT_TERMS_CODE",
+			(select	 "GTM_TRANS_REFNUM"."REFNUM_VALUE"
+			from	"GLOGOWNER"."GTM_TRANS_REFNUM" "GTM_TRANS_REFNUM"
+			where "GTM_TRANS_REFNUM"."GTM_TRANSACTION_GID" = "GTM_TRANSACTION"."GTM_TRANSACTION_GID"
+			and "GTM_TRANS_REFNUM"."GTM_TRANS_REFNUM_QUAL_GID" = 'MAWB'
+			and ROWNUM = 1) as "AIR_WAY_BILL_NUMBER",
+			(select	 "GTM_TRANS_REFNUM"."REFNUM_VALUE"
+			from	"GLOGOWNER"."GTM_TRANS_REFNUM" "GTM_TRANS_REFNUM"
+			where "GTM_TRANS_REFNUM"."GTM_TRANSACTION_GID" = "GTM_TRANSACTION"."GTM_TRANSACTION_GID"
+			and "GTM_TRANS_REFNUM"."GTM_TRANS_REFNUM_QUAL_GID" = 'ITN'
+			and ROWNUM = 1) as "ITN",
+			(select	 to_char("SHIPMENT_REFNUM"."INSERT_DATE", 'MM/DD/YYYY HH:MI:SS')
+			from	"GLOGOWNER"."SHIPMENT_REFNUM" "SHIPMENT_REFNUM"
+			where  "GTM_TRANSACTION"."OBJECT_ID" = "SHIPMENT_REFNUM"."SHIPMENT_GID"
+			and "GTM_TRANSACTION"."DATA_QUERY_TYPE_GID" = 'SHIPMENT'
+			and "SHIPMENT_REFNUM"."SHIPMENT_REFNUM_QUAL_GID" = 'MAWB'
+			and ROWNUM = 1) as "BOOKED_ON",
+			to_char(sysdate, 'DD-MON-YYYY') as "INVOICE_DATE",
+			(select	 SUM("GTM_TRANS_LINE_CURRENCY"."CURRENCY_VALUE")
+			from	"GLOGOWNER"."GTM_TRANSACTION" "GTM_TRANSACTION", "GLOGOWNER"."GTM_TRANSACTION_LINE" "GTM_TRANSACTION_LINE",
+			"GLOGOWNER"."GTM_TRANS_LINE_CURRENCY" "GTM_TRANS_LINE_CURRENCY"
+			where "GTM_TRANS_LINE_CURRENCY"."GTM_TRANSACTION_LINE_GID" = "GTM_TRANSACTION_LINE"."GTM_TRANSACTION_LINE_GID"
+			and "GTM_TRANSACTION"."GTM_TRANSACTION_GID"="GTM_TRANSACTION_LINE"."GTM_TRANSACTION_GID"
+			and "GTM_TRANS_LINE_CURRENCY"."GTM_CURRENCY_TYPE_GID" = 'PAC.REPAIR_COST') as "TOTAL_TRANS_VALUE",
+			((select "GTM_TRANSACTION_REMARK"."REMARK_TEXT"  
+			from	"GLOGOWNER"."GTM_TRANSACTION_REMARK" "GTM_TRANSACTION_REMARK"
+			where "GTM_TRANSACTION_REMARK"."GTM_TRANSACTION_GID" = "GTM_TRANSACTION"."GTM_TRANSACTION_GID"
+			and "GTM_TRANSACTION_REMARK"."REMARK_QUAL_GID" = 'CARRIER_ID')||' : '||(select ltrim("SHIPMENT"."RATE_OFFERING_GID",'PAC.') from "GLOGOWNER"."SHIPMENT" 
+			where "SHIPMENT"."SHIPMENT_GID"= "GTM_TRANSACTION"."OBJECT_ID")) as "CARRIER",
+			(select	 "GTM_TRANSACTION_REMARK"."REMARK_TEXT"  
+			from	"GLOGOWNER"."GTM_TRANSACTION_REMARK" "GTM_TRANSACTION_REMARK"
+			where "GTM_TRANSACTION_REMARK"."GTM_TRANSACTION_GID" = "GTM_TRANSACTION"."GTM_TRANSACTION_GID"
+			and "GTM_TRANSACTION_REMARK"."REMARK_QUAL_GID" = 'DELIVERY_INSTRUCTIONS_LINE_1') as "DELIVERY_INSTRUCTION",
+			(select	 "GTM_TRANSACTION_REMARK"."REMARK_TEXT"  
+			from	"GLOGOWNER"."GTM_TRANSACTION_REMARK" "GTM_TRANSACTION_REMARK"
+			where "GTM_TRANSACTION_REMARK"."GTM_TRANSACTION_GID" = "GTM_TRANSACTION"."GTM_TRANSACTION_GID"
+			and "GTM_TRANSACTION_REMARK"."REMARK_QUAL_GID" = 'PAC.CI_TRANS_TEXT') as "CI_TRANS_TEXT",
+			(select	 concat(round("GTM_TRANSACTION_QUANTITY"."QUANTITY_VALUE", 3),  lpad("GTM_TRANSACTION_QUANTITY"."UOM_CODE", length("GTM_TRANSACTION_QUANTITY"."UOM_CODE")+1, ' '))
+			from	"GLOGOWNER"."GTM_TRANSACTION_QUANTITY" "GTM_TRANSACTION_QUANTITY"
+			where "GTM_TRANSACTION_QUANTITY"."GTM_TRANSACTION_GID" = "GTM_TRANSACTION"."GTM_TRANSACTION_GID"
+			and "GTM_TRANSACTION_QUANTITY"."GTM_QUANTITY_TYPE_GID" = 'TOTAL GROSS WEIGHT') as "TOTAL_GROSS_WEIGHT",
+			(select	 "GTM_TRANSACTION_QUANTITY"."QUANTITY_VALUE"  
+			from	"GLOGOWNER"."GTM_TRANSACTION_QUANTITY" "GTM_TRANSACTION_QUANTITY"
+			where "GTM_TRANSACTION_QUANTITY"."GTM_TRANSACTION_GID" = "GTM_TRANSACTION"."GTM_TRANSACTION_GID"
+			and "GTM_TRANSACTION_QUANTITY"."GTM_QUANTITY_TYPE_GID" = 'TOTAL SHIP UNIT COUNT') as "TOTAL_SHIP_UNIT_COUNT",
+			"ST_COMPANY_NAME", "ST_CITY", "ST_PROVINCE_CODE", "ST_POSTAL_CODE", "ST_COUNTRY", "ST_ADDRESS_LINE1", "ST_ADDRESS_LINE2", "ST_ADDRESS_LINE3", "ST_ADDRESS_LINE4",
+			"SF_COMPANY_NAME", "SF_CITY", "SF_PROVINCE_CODE", "SF_POSTAL_CODE", "SF_COUNTRY", "SF_ADDRESS_LINE1", "SF_ADDRESS_LINE2", "SF_ADDRESS_LINE3", "SF_ADDRESS_LINE4",
+			"BT_COMPANY_NAME", "BT_CITY", "BT_PROVINCE_CODE", "BT_POSTAL_CODE", "BT_COUNTRY", "BT_ADDRESS_LINE1", "BT_ADDRESS_LINE2", "BT_ADDRESS_LINE3", "BT_ADDRESS_LINE4",
+			decode("ST_CONTACT", "IS_CONTACT", null, "IS_COMPANY_NAME") as "IS_COMPANY_NAME", 
+			decode("ST_CONTACT", "IS_CONTACT", null, "IS_CITY") as "IS_CITY", 
+			decode("ST_CONTACT", "IS_CONTACT", null, "IS_PROVINCE_CODE") as "IS_PROVINCE_CODE", 
+			decode("ST_CONTACT", "IS_CONTACT", null, "IS_POSTAL_CODE") as "IS_POSTAL_CODE", 
+			decode("ST_CONTACT", "IS_CONTACT", null, "IS_COUNTRY") as "IS_COUNTRY", 
+			decode("ST_CONTACT", "IS_CONTACT", null, "IS_ADDRESS_LINE1") as "IS_ADDRESS_LINE1", 
+			decode("ST_CONTACT", "IS_CONTACT", null, "IS_ADDRESS_LINE2") as "IS_ADDRESS_LINE2", 
+			decode("ST_CONTACT", "IS_CONTACT", null, "IS_ADDRESS_LINE3") as "IS_ADDRESS_LINE3", 
+			decode("ST_CONTACT", "IS_CONTACT", null, "IS_ADDRESS_LINE4") as "IS_ADDRESS_LINE4",
+			(select 
+			case
+			  WHEN "ST_COUNTRY"='BRA' THEN 'ORIGINAL INVOICE'
+			  ELSE 'COMMERCIAL INVOICE'
+			END
+			from dual) as "DOC_TITLE"
+			from	"GLOGOWNER"."GTM_TRANSACTION" "GTM_TRANSACTION"
+			left outer join (select "CONTACT"."CONTACT_GID" as "ST_CONTACT", 
+			        "GTM_TRANSACTION_INVOLVED_PARTY"."GTM_TRANSACTION_GID" as "ST_TRANSACTION_GID",	
+				"CONTACT"."COMPANY_NAME" as "ST_COMPANY_NAME",
+			 	"LOCATION"."CITY" as "ST_CITY",
+			 	"LOCATION"."PROVINCE_CODE" as "ST_PROVINCE_CODE",
+			 	"LOCATION"."POSTAL_CODE" as "ST_POSTAL_CODE",
+			 	(SELECT "COUNTRY_CODE"."COUNTRY_CODE2" FROM  "GLOGOWNER"."COUNTRY_CODE" WHERE "COUNTRY_CODE"."COUNTRY_CODE3_GID" = "LOCATION"."COUNTRY_CODE3_GID") as "ST_COUNTRY",
+			 	(select	substr("LOCATION_ADDRESS"."ADDRESS_LINE", 0, 70) from	"GLOGOWNER"."LOCATION_ADDRESS" "LOCATION_ADDRESS"
+			 	where  "LOCATION_ADDRESS"."LOCATION_GID" = "LOCATION"."LOCATION_GID" and "LOCATION_ADDRESS"."LINE_SEQUENCE" = 1) as "ST_ADDRESS_LINE1",
+			 	(select	substr("LOCATION_ADDRESS"."ADDRESS_LINE", 0, 70) from	"GLOGOWNER"."LOCATION_ADDRESS" "LOCATION_ADDRESS"
+			 	where  "LOCATION_ADDRESS"."LOCATION_GID" = "LOCATION"."LOCATION_GID" and "LOCATION_ADDRESS"."LINE_SEQUENCE" = 2) as "ST_ADDRESS_LINE2",
+			 	(select	substr("LOCATION_ADDRESS"."ADDRESS_LINE", 0, 70) from	"GLOGOWNER"."LOCATION_ADDRESS" "LOCATION_ADDRESS"
+			 	where  "LOCATION_ADDRESS"."LOCATION_GID" = "LOCATION"."LOCATION_GID" and "LOCATION_ADDRESS"."LINE_SEQUENCE" = 3) as "ST_ADDRESS_LINE3",
+			 	(select	substr("LOCATION_ADDRESS"."ADDRESS_LINE", 0, 70) from	"GLOGOWNER"."LOCATION_ADDRESS" "LOCATION_ADDRESS"
+			 	where  "LOCATION_ADDRESS"."LOCATION_GID" = "LOCATION"."LOCATION_GID" and "LOCATION_ADDRESS"."LINE_SEQUENCE" = 4) as "ST_ADDRESS_LINE4"
+			 	from	"GLOGOWNER"."LOCATION" "LOCATION", "GLOGOWNER"."CONTACT" "CONTACT",
+			 	"GLOGOWNER"."GTM_TRANSACTION_INVOLVED_PARTY" "GTM_TRANSACTION_INVOLVED_PARTY"
+			 	where   "GTM_TRANSACTION_INVOLVED_PARTY"."INVOLVED_PARTY_CONTACT_GID"="CONTACT"."CONTACT_GID"
+			 	and  "GTM_TRANSACTION_INVOLVED_PARTY"."INVOLVED_PARTY_QUAL_GID" = 'SHIP_TO'
+			 	and "CONTACT"."LOCATION_GID"="LOCATION"."LOCATION_GID"
+			 	) "SHIP_TO"
+			 on ("SHIP_TO"."ST_TRANSACTION_GID" = "GTM_TRANSACTION"."GTM_TRANSACTION_GID")
+                         left outer join (select "GTM_TRANSACTION_INVOLVED_PARTY"."GTM_TRANSACTION_GID" as "SF_TRANSACTION_GID",	
+                         	"CONTACT"."COMPANY_NAME" as "SF_COMPANY_NAME",
+			 	"LOCATION"."CITY" as "SF_CITY",
+			 	"LOCATION"."PROVINCE_CODE" as "SF_PROVINCE_CODE",
+			 	"LOCATION"."POSTAL_CODE" as "SF_POSTAL_CODE",
+			 	(SELECT "COUNTRY_CODE"."COUNTRY_CODE2" FROM  "GLOGOWNER"."COUNTRY_CODE" WHERE "COUNTRY_CODE"."COUNTRY_CODE3_GID" = "LOCATION"."COUNTRY_CODE3_GID") as "SF_COUNTRY",
+			 	(select	substr("LOCATION_ADDRESS"."ADDRESS_LINE",0, 70) from	"GLOGOWNER"."LOCATION_ADDRESS" "LOCATION_ADDRESS"
+			 	where  "LOCATION_ADDRESS"."LOCATION_GID" = "LOCATION"."LOCATION_GID" and "LOCATION_ADDRESS"."LINE_SEQUENCE" = 1) as "SF_ADDRESS_LINE1",
+			 	(select	substr("LOCATION_ADDRESS"."ADDRESS_LINE", 0, 70) from	"GLOGOWNER"."LOCATION_ADDRESS" "LOCATION_ADDRESS"
+			 	where  "LOCATION_ADDRESS"."LOCATION_GID" = "LOCATION"."LOCATION_GID" and "LOCATION_ADDRESS"."LINE_SEQUENCE" = 2) as "SF_ADDRESS_LINE2",
+			 	(select	substr("LOCATION_ADDRESS"."ADDRESS_LINE", 0, 70) from	"GLOGOWNER"."LOCATION_ADDRESS" "LOCATION_ADDRESS"
+			 	where  "LOCATION_ADDRESS"."LOCATION_GID" = "LOCATION"."LOCATION_GID" and "LOCATION_ADDRESS"."LINE_SEQUENCE" = 3) as "SF_ADDRESS_LINE3",
+			 	(select	substr("LOCATION_ADDRESS"."ADDRESS_LINE", 0, 70) from	"GLOGOWNER"."LOCATION_ADDRESS" "LOCATION_ADDRESS"
+			 	where  "LOCATION_ADDRESS"."LOCATION_GID" = "LOCATION"."LOCATION_GID" and "LOCATION_ADDRESS"."LINE_SEQUENCE" = 4) as "SF_ADDRESS_LINE4"
+			 	from	"GLOGOWNER"."LOCATION" "LOCATION", "GLOGOWNER"."CONTACT" "CONTACT",
+			 	"GLOGOWNER"."GTM_TRANSACTION_INVOLVED_PARTY" "GTM_TRANSACTION_INVOLVED_PARTY"
+			 	where   "GTM_TRANSACTION_INVOLVED_PARTY"."INVOLVED_PARTY_CONTACT_GID"="CONTACT"."CONTACT_GID"
+			 	and  "GTM_TRANSACTION_INVOLVED_PARTY"."INVOLVED_PARTY_QUAL_GID" = 'SHIP_FROM'
+			 	and "CONTACT"."LOCATION_GID"="LOCATION"."LOCATION_GID"
+			 	) "SHIP_FROM"
+			 on ("SHIP_FROM"."SF_TRANSACTION_GID" = "GTM_TRANSACTION"."GTM_TRANSACTION_GID")	
+                         left outer join (select "GTM_TRANSACTION_INVOLVED_PARTY"."GTM_TRANSACTION_GID" as "BT_TRANSACTION_GID",	
+                         	"CONTACT"."COMPANY_NAME" as "BT_COMPANY_NAME",
+			 	"LOCATION"."CITY" as "BT_CITY",
+			 	"LOCATION"."PROVINCE_CODE" as "BT_PROVINCE_CODE",
+			 	"LOCATION"."POSTAL_CODE" as "BT_POSTAL_CODE",
+			 	(SELECT "COUNTRY_CODE"."COUNTRY_CODE2" FROM  "GLOGOWNER"."COUNTRY_CODE" WHERE "COUNTRY_CODE"."COUNTRY_CODE3_GID" = "LOCATION"."COUNTRY_CODE3_GID") as "BT_COUNTRY",
+			 	(select	substr("LOCATION_ADDRESS"."ADDRESS_LINE", 0, 70) from	"GLOGOWNER"."LOCATION_ADDRESS" "LOCATION_ADDRESS"
+			 	where  "LOCATION_ADDRESS"."LOCATION_GID" = "LOCATION"."LOCATION_GID" and "LOCATION_ADDRESS"."LINE_SEQUENCE" = 1) as "BT_ADDRESS_LINE1",
+			 	(select	substr("LOCATION_ADDRESS"."ADDRESS_LINE", 0, 70) from	"GLOGOWNER"."LOCATION_ADDRESS" "LOCATION_ADDRESS"
+			 	where  "LOCATION_ADDRESS"."LOCATION_GID" = "LOCATION"."LOCATION_GID" and "LOCATION_ADDRESS"."LINE_SEQUENCE" = 2) as "BT_ADDRESS_LINE2",
+			 	(select	substr("LOCATION_ADDRESS"."ADDRESS_LINE", 0, 70) from	"GLOGOWNER"."LOCATION_ADDRESS" "LOCATION_ADDRESS"
+			 	where  "LOCATION_ADDRESS"."LOCATION_GID" = "LOCATION"."LOCATION_GID" and "LOCATION_ADDRESS"."LINE_SEQUENCE" = 3) as "BT_ADDRESS_LINE3",
+			 	(select	substr("LOCATION_ADDRESS"."ADDRESS_LINE", 0, 70) from	"GLOGOWNER"."LOCATION_ADDRESS" "LOCATION_ADDRESS"
+			 	where  "LOCATION_ADDRESS"."LOCATION_GID" = "LOCATION"."LOCATION_GID" and "LOCATION_ADDRESS"."LINE_SEQUENCE" = 4) as "BT_ADDRESS_LINE4"
+			 	from	"GLOGOWNER"."LOCATION" "LOCATION", "GLOGOWNER"."CONTACT" "CONTACT",
+			 	"GLOGOWNER"."GTM_TRANSACTION_INVOLVED_PARTY" "GTM_TRANSACTION_INVOLVED_PARTY"
+			 	where   "GTM_TRANSACTION_INVOLVED_PARTY"."INVOLVED_PARTY_CONTACT_GID"="CONTACT"."CONTACT_GID"
+			 	and  "GTM_TRANSACTION_INVOLVED_PARTY"."INVOLVED_PARTY_QUAL_GID" = 'BILL_TO'
+			 	and "CONTACT"."LOCATION_GID"="LOCATION"."LOCATION_GID"
+			 	) "BILL_TO"
+			 on ("BILL_TO"."BT_TRANSACTION_GID" = "GTM_TRANSACTION"."GTM_TRANSACTION_GID")	
+                         left outer join (select "CONTACT"."CONTACT_GID" as "IS_CONTACT",
+                         	"GTM_TRANSACTION_INVOLVED_PARTY"."GTM_TRANSACTION_GID" as "IS_TRANSACTION_GID",	
+                         	"CONTACT"."COMPANY_NAME" as "IS_COMPANY_NAME",
+                         	"LOCATION"."CITY" as "IS_CITY",
+                         	"LOCATION"."PROVINCE_CODE" as "IS_PROVINCE_CODE",
+                         	"LOCATION"."POSTAL_CODE" as "IS_POSTAL_CODE",
+                         	(SELECT "COUNTRY_CODE"."COUNTRY_CODE2" FROM  "GLOGOWNER"."COUNTRY_CODE" WHERE "COUNTRY_CODE"."COUNTRY_CODE3_GID" = "LOCATION"."COUNTRY_CODE3_GID") as "IS_COUNTRY",
+                         	(select	substr("LOCATION_ADDRESS"."ADDRESS_LINE", 0, 70) from	"GLOGOWNER"."LOCATION_ADDRESS" "LOCATION_ADDRESS"
+                         	where  "LOCATION_ADDRESS"."LOCATION_GID" = "LOCATION"."LOCATION_GID" and "LOCATION_ADDRESS"."LINE_SEQUENCE" = 1) as "IS_ADDRESS_LINE1",
+                         	(select	substr("LOCATION_ADDRESS"."ADDRESS_LINE", 0, 70) from	"GLOGOWNER"."LOCATION_ADDRESS" "LOCATION_ADDRESS"
+                         	where  "LOCATION_ADDRESS"."LOCATION_GID" = "LOCATION"."LOCATION_GID" and "LOCATION_ADDRESS"."LINE_SEQUENCE" = 2) as "IS_ADDRESS_LINE2",
+                         	(select	substr("LOCATION_ADDRESS"."ADDRESS_LINE", 0, 70) from	"GLOGOWNER"."LOCATION_ADDRESS" "LOCATION_ADDRESS"
+                         	where  "LOCATION_ADDRESS"."LOCATION_GID" = "LOCATION"."LOCATION_GID" and "LOCATION_ADDRESS"."LINE_SEQUENCE" = 3) as "IS_ADDRESS_LINE3",
+                         	(select	substr("LOCATION_ADDRESS"."ADDRESS_LINE", 0, 70) from	"GLOGOWNER"."LOCATION_ADDRESS" "LOCATION_ADDRESS"
+                         	where  "LOCATION_ADDRESS"."LOCATION_GID" = "LOCATION"."LOCATION_GID" and "LOCATION_ADDRESS"."LINE_SEQUENCE" = 4) as "IS_ADDRESS_LINE4"
+                         	from	"GLOGOWNER"."LOCATION" "LOCATION", "GLOGOWNER"."CONTACT" "CONTACT",
+                         	"GLOGOWNER"."GTM_TRANSACTION_INVOLVED_PARTY" "GTM_TRANSACTION_INVOLVED_PARTY"
+                         	where   "GTM_TRANSACTION_INVOLVED_PARTY"."INVOLVED_PARTY_CONTACT_GID"="CONTACT"."CONTACT_GID"
+                         	and  "GTM_TRANSACTION_INVOLVED_PARTY"."INVOLVED_PARTY_QUAL_GID" = 'INTERMED_SHIP_TO'
+			 	and "CONTACT"."LOCATION_GID"="LOCATION"."LOCATION_GID"
+			 	) "INTERMED_SHIP_TO"
+			 on ("INTERMED_SHIP_TO"."IS_TRANSACTION_GID" = "GTM_TRANSACTION"."GTM_TRANSACTION_GID")
+			where rownum = 1 
+			and GTM_TRANSACTION.OBJECT_ID='PAC.'||:P_SHIPMENT_XID]]>
+		</sqlStatement>
+		<sqlStatement name="trans_ship">
+			<![CDATA[ SELECT  "SSD"."SHIPMENT_GID" AS "SHIPMENT_GID",
+                          "SSU"."S_SHIP_UNIT_XID" AS "SHIP_UNIT_ID",
+                          "SSU"."TRANSPORT_HANDLING_UNIT_GID" AS "DIMENSIONS", 
+                          "SSU"."SHIP_UNIT_COUNT" AS "COUNT",
+                          ROUND(SUM("SSUL"."WEIGHT_BASE"),2) AS "WEIGHT"
+                    FROM "GLOGOWNER"."SHIPMENT_STOP_D" "SSD", "GLOGOWNER"."S_SHIP_UNIT_LINE" "SSUL",  "GLOGOWNER"."S_SHIP_UNIT" "SSU"
+                    WHERE 1=1 
+                         AND "SSD"."S_SHIP_UNIT_GID" = "SSUL"."S_SHIP_UNIT_GID"
+                         AND "SSD"."S_SHIP_UNIT_GID"="SSU"."S_SHIP_UNIT_GID"
+                         AND "SSD"."ACTIVITY" = 'P' 
+                         AND "SSD"."SHIPMENT_GID" ='PAC.'||:P_SHIPMENT_XID
+                         GROUP BY "SSD"."SHIPMENT_GID",
+                         "SSU"."S_SHIP_UNIT_XID",
+                         "SSU"."TRANSPORT_HANDLING_UNIT_GID",
+                         "SSU"."SHIP_UNIT_COUNT"                       
+ 			]]>
+		</sqlStatement>
+		   <sqlStatement name="trans_order">
+            <![CDATA[SELECT   "DELIVERY_NUMBER",
+                              "PO_NUMBER",
+                              "PROGRAM_NUMBER",
+                              "TAIL"
+                          FROM (SELECT   "ORD"."ORDER_RELEASE_XID" AS "DELIVERY_NUMBER",
+                          (SELECT "ORDER_RELEASE_REFNUM_VALUE"
+                          FROM "GLOGOWNER"."ORDER_RELEASE_REFNUM" "ORD_REFNUM"
+                          WHERE "ORD_REFNUM"."ORDER_RELEASE_REFNUM_QUAL_GID"='PAC.PURCHASE_ORDER_NUMBER'
+                          AND "ORD_REFNUM"."ORDER_RELEASE_GID"="ORD"."ORDER_RELEASE_GID") AS "PO_NUMBER",
+                          (SELECT "ORD_REFNUM"."ORL_REFNUM_VALUE"
+                          FROM "GLOGOWNER"."ORDER_RELEASE_LINE_REFNUM" "ORD_REFNUM",
+                               "GLOGOWNER"."ORDER_RELEASE_LINE" "ORD_LINE"
+                          WHERE "ORD_REFNUM"."ORDER_RELEASE_REFNUM_QUAL_GID"='PAC.PROGRAM' 
+                          AND "ORD_REFNUM"."ORDER_RELEASE_LINE_GID"="ORD_LINE"."ORDER_RELEASE_LINE_GID"
+                          AND "ORD_LINE"."ORDER_RELEASE_GID"="ORD"."ORDER_RELEASE_GID"
+                          AND ROWNUM<2)                                           AS "PROGRAM_NUMBER",
+                          (SELECT "ORD_REFNUM"."ORL_REFNUM_VALUE"
+                          FROM "GLOGOWNER"."ORDER_RELEASE_LINE_REFNUM" "ORD_REFNUM",
+                               "GLOGOWNER"."ORDER_RELEASE_LINE" "ORD_LINE"
+                          WHERE "ORD_REFNUM"."ORDER_RELEASE_REFNUM_QUAL_GID"='PAC.TAIL' 
+                          AND "ORD_REFNUM"."ORDER_RELEASE_LINE_GID"="ORD_LINE"."ORDER_RELEASE_LINE_GID"
+                          AND "ORD_LINE"."ORDER_RELEASE_GID"="ORD"."ORDER_RELEASE_GID"
+                          AND ROWNUM<2)                                            AS "TAIL"
+                         FROM "GLOGOWNER"."SHIPMENT_STOP_D" "SSD", 
+                              "GLOGOWNER"."S_SHIP_UNIT_LINE" "SSUL",  
+                              "GLOGOWNER"."S_SHIP_UNIT" "SSU",
+                              "GLOGOWNER"."ORDER_RELEASE" "ORD"
+                    WHERE 1=1 
+                         AND  "SSUL"."ORDER_RELEASE_GID"="ORD"."ORDER_RELEASE_GID"
+                         AND  "SSD"."S_SHIP_UNIT_GID" = "SSUL"."S_SHIP_UNIT_GID"  
+                         AND "SSD"."S_SHIP_UNIT_GID"="SSU"."S_SHIP_UNIT_GID"
+                         AND "SSD"."ACTIVITY" = 'P' 
+                         AND "SSD"."SHIPMENT_GID" ='PAC.'||:P_SHIPMENT_XID)
+                         GROUP BY "DELIVERY_NUMBER",
+                         "PO_NUMBER",
+                         "PROGRAM_NUMBER",
+                         "TAIL"                     
+             ]]>
+        </sqlStatement>
+	</dataQuery>
+	<dataStructure tagName="com_inv">
+			<group name="gtm_trans" source="gtm_transaction" label="gtm_trans">
+				<element name="DOC_TITLE" value="DOC_TITLE" dataType="xsd:string" label="DOC_TITLE" breakOrder="None" fieldOrder="1"/>
+				<element name="INVOICE_NUMBER" value="INVOICE_NUMBER" dataType="xsd:string" label="INVOICE_NUMBER" breakOrder="None" fieldOrder="1"/>
+				<element name="SHIPMENT_ID" value="SHIPMENT_ID" dataType="xsd:string" label="SHIPMENT_ID" breakOrder="None" fieldOrder="1"/>
+				<element name="ITN" value="ITN" dataType="xsd:string" label="ITN" breakOrder="None" fieldOrder="1"/>
+				<element name="ITEM_DESC_CI" value="ITEM_DESC_CI" dataType="xsd:string" label="ITEM_DESC_CI" breakOrder="None" fieldOrder="1"/>
+				<element name="FF_SHIPMENT" value="FF_SHIPMENT" dataType="xsd:string" label="FF_SHIPMENT" breakOrder="None" fieldOrder="1"/>
+				<element name="INCO_TERM" value="INCO_TERM" dataType="xsd:string" label="INCO_TERM" breakOrder="None" fieldOrder="1"/>
+				<element name="AIR_WAY_BILL_NUMBER" value="AIR_WAY_BILL_NUMBER" dataType="xsd:integer" label="AIR_WAY_BILL_NUMBER" breakOrder="None" fieldOrder="1"/>
+				<element name="BOOKED_ON" value="BOOKED_ON" dataType="xsd:string" label="BOOKED_ON" breakOrder="None" fieldOrder="1"/>
+				<element name="FREIGHT_TERMS_CODE" value="FREIGHT_TERMS_CODE" dataType="xsd:string" label="FREIGHT_TERMS_CODE" breakOrder="None" fieldOrder="5"/>
+				<element name="TOTAL_TRANS_VALUE" value="TOTAL_TRANS_VALUE" dataType="xsd:integer" label="TOTAL_TRANS_VALUE" breakOrder="None" fieldOrder="3"/>
+				<element name="CARRIER" value="CARRIER" dataType="xsd:string" label="CARRIER" breakOrder="None" fieldOrder="1"/>
+				<element name="DELIVERY_INSTRUCTION" value="DELIVERY_INSTRUCTION" dataType="xsd:string" label="DELIVERY_INSTRUCTION" breakOrder="None" fieldOrder="1"/>
+				<element name="CI_TRANS_TEXT" value="CI_TRANS_TEXT" dataType="xsd:string" label="CI_TRANS_TEXT" breakOrder="None" fieldOrder="1"/>
+				<element name="TOTAL_GROSS_WEIGHT" value="TOTAL_GROSS_WEIGHT" dataType="xsd:string" label="TOTAL_GROSS_WEIGHT" breakOrder="None" fieldOrder="1"/>
+				<element name="TOTAL_SHIP_UNIT_COUNT" value="TOTAL_SHIP_UNIT_COUNT" dataType="xsd:string" label="TOTAL_SHIP_UNIT_COUNT" breakOrder="None" fieldOrder="1"/>
+				<element name="ST_COMPANY_NAME" value="ST_COMPANY_NAME" dataType="xsd:string" label="ST_COMPANY_NAME" breakOrder="None" fieldOrder="1"/>
+				<element name="ST_CITY" value="ST_CITY" dataType="xsd:string" label="ST_CITY" breakOrder="None" fieldOrder="1"/>
+				<element name="ST_PROVINCE_CODE" value="ST_PROVINCE_CODE" dataType="xsd:string" label="ST_PROVINCE_CODE" breakOrder="None" fieldOrder="1"/>
+				<element name="ST_POSTAL_CODE" value="ST_POSTAL_CODE" dataType="xsd:string" label="ST_POSTAL_CODE" breakOrder="None" fieldOrder="1"/>
+				<element name="ST_COUNTRY" value="ST_COUNTRY" dataType="xsd:string" label="ST_COUNTRY" breakOrder="None" fieldOrder="1"/>
+				<element name="ST_ADDRESS_LINE1" value="ST_ADDRESS_LINE1" dataType="xsd:string" label="ST_ADDRESS_LINE1" breakOrder="None" fieldOrder="1"/>
+				<element name="ST_ADDRESS_LINE2" value="ST_ADDRESS_LINE2" dataType="xsd:string" label="ST_ADDRESS_LINE2" breakOrder="None" fieldOrder="1"/>
+				<element name="ST_ADDRESS_LINE3" value="ST_ADDRESS_LINE3" dataType="xsd:string" label="ST_ADDRESS_LINE3" breakOrder="None" fieldOrder="1"/>
+				<element name="ST_ADDRESS_LINE4" value="ST_ADDRESS_LINE4" dataType="xsd:string" label="ST_ADDRESS_LINE4" breakOrder="None" fieldOrder="1"/>
+				<element name="SF_COMPANY_NAME" value="SF_COMPANY_NAME" dataType="xsd:string" label="SF_COMPANY_NAME" breakOrder="None" fieldOrder="1"/>
+				<element name="SF_CITY" value="SF_CITY" dataType="xsd:string" label="SF_CITY" breakOrder="None" fieldOrder="1"/>
+				<element name="SF_PROVINCE_CODE" value="SF_PROVINCE_CODE" dataType="xsd:string" label="SF_PROVINCE_CODE" breakOrder="None" fieldOrder="1"/>
+				<element name="SF_POSTAL_CODE" value="SF_POSTAL_CODE" dataType="xsd:string" label="SF_POSTAL_CODE" breakOrder="None" fieldOrder="1"/>
+				<element name="SF_COUNTRY" value="SF_COUNTRY" dataType="xsd:string" label="SF_COUNTRY" breakOrder="None" fieldOrder="1"/>
+				<element name="SF_ADDRESS_LINE1" value="SF_ADDRESS_LINE1" dataType="xsd:string" label="SF_ADDRESS_LINE1" breakOrder="None" fieldOrder="1"/>
+				<element name="SF_ADDRESS_LINE2" value="SF_ADDRESS_LINE2" dataType="xsd:string" label="SF_ADDRESS_LINE2" breakOrder="None" fieldOrder="1"/>
+				<element name="SF_ADDRESS_LINE3" value="SF_ADDRESS_LINE3" dataType="xsd:string" label="SF_ADDRESS_LINE3" breakOrder="None" fieldOrder="1"/>
+				<element name="SF_ADDRESS_LINE4" value="SF_ADDRESS_LINE4" dataType="xsd:string" label="SF_ADDRESS_LINE4" breakOrder="None" fieldOrder="1"/>
+				<element name="BT_COMPANY_NAME" value="BT_COMPANY_NAME" dataType="xsd:string" label="BT_COMPANY_NAME" breakOrder="None" fieldOrder="1"/>
+				<element name="BT_CITY" value="BT_CITY" dataType="xsd:string" label="BT_CITY" breakOrder="None" fieldOrder="1"/>
+				<element name="BT_PROVINCE_CODE" value="BT_PROVINCE_CODE" dataType="xsd:string" label="BT_PROVINCE_CODE" breakOrder="None" fieldOrder="1"/>
+				<element name="BT_POSTAL_CODE" value="BT_POSTAL_CODE" dataType="xsd:string" label="BT_POSTAL_CODE" breakOrder="None" fieldOrder="1"/>
+				<element name="BT_COUNTRY" value="BT_COUNTRY" dataType="xsd:string" label="BT_COUNTRY" breakOrder="None" fieldOrder="1"/>
+				<element name="BT_ADDRESS_LINE1" value="BT_ADDRESS_LINE1" dataType="xsd:string" label="BT_ADDRESS_LINE1" breakOrder="None" fieldOrder="1"/>
+				<element name="BT_ADDRESS_LINE2" value="BT_ADDRESS_LINE2" dataType="xsd:string" label="BT_ADDRESS_LINE2" breakOrder="None" fieldOrder="1"/>
+				<element name="BT_ADDRESS_LINE3" value="BT_ADDRESS_LINE3" dataType="xsd:string" label="BT_ADDRESS_LINE3" breakOrder="None" fieldOrder="1"/>
+				<element name="BT_ADDRESS_LINE4" value="BT_ADDRESS_LINE4" dataType="xsd:string" label="BT_ADDRESS_LINE4" breakOrder="None" fieldOrder="1"/>
+				<element name="IS_COMPANY_NAME" value="IS_COMPANY_NAME" dataType="xsd:string" label="IS_COMPANY_NAME" breakOrder="None" fieldOrder="1"/>
+				<element name="IS_CITY" value="IS_CITY" dataType="xsd:string" label="IS_CITY" breakOrder="None" fieldOrder="1"/>
+				<element name="IS_PROVINCE_CODE" value="IS_PROVINCE_CODE" dataType="xsd:string" label="IS_PROVINCE_CODE" breakOrder="None" fieldOrder="1"/>
+				<element name="IS_POSTAL_CODE" value="IS_POSTAL_CODE" dataType="xsd:string" label="IS_POSTAL_CODE" breakOrder="None" fieldOrder="1"/>
+				<element name="IS_COUNTRY" value="IS_COUNTRY" dataType="xsd:string" label="IS_COUNTRY" breakOrder="None" fieldOrder="1"/>
+				<element name="IS_ADDRESS_LINE1" value="IS_ADDRESS_LINE1" dataType="xsd:string" label="IS_ADDRESS_LINE1" breakOrder="None" fieldOrder="1"/>
+				<element name="IS_ADDRESS_LINE2" value="IS_ADDRESS_LINE2" dataType="xsd:string" label="IS_ADDRESS_LINE2" breakOrder="None" fieldOrder="1"/>
+				<element name="IS_ADDRESS_LINE3" value="IS_ADDRESS_LINE3" dataType="xsd:string" label="IS_ADDRESS_LINE3" breakOrder="None" fieldOrder="1"/>
+				<element name="IS_ADDRESS_LINE4" value="IS_ADDRESS_LINE4" dataType="xsd:string" label="IS_ADDRESS_LINE4" breakOrder="None" fieldOrder="1"/>
+				<element name="EBS_TRIP_NUMBER" value="EBS_TRIP_NUMBER" dataType="xsd:string" label="EBS_TRIP_NUMBER" breakOrder="None" fieldOrder="1"/>
+				<element name="SYS_DATE" value="SYS_DATE" dataType="xsd:string" label="SYS_DATE" breakOrder="None" fieldOrder="1"/>
+				<group name="trans_ships" source="trans_ship" label="trans_ship">
+					<element name="SHIPMENT_GID" value="SHIPMENT_GID" dataType="xsd:string" label="SHIPMENT_GID" breakOrder="None" fieldOrder="1"/>
+					<element name="SHIP_UNIT_ID" value="SHIP_UNIT_ID" dataType="xsd:string" label="SHIP_UNIT_ID" breakOrder="None" fieldOrder="2"/>
+					<element name="DIMENSIONS" value="DIMENSIONS" dataType="xsd:string" label="DIMENSIONS" breakOrder="None" fieldOrder="3"/>
+					<element name="COUNT" value="COUNT" dataType="xsd:integer" label="COUNT" breakOrder="None" fieldOrder="4"/>
+					<element name="WEIGHT" value="WEIGHT" dataType="xsd:integer" label="WEIGHT" breakOrder="None" fieldOrder="5"/>
+				</group>
+				<group name="trans_order" source="trans_order" label="trans_order">
+                    <element name="DELIVERY_NUMBER" value="DELIVERY_NUMBER" dataType="xsd:string" label="DELIVERY_NUMBER" breakOrder="None" fieldOrder="1"/>
+                    <element name="PO_NUMBER" value="PO_NUMBER" dataType="xsd:string" label="PO_NUMBER" breakOrder="None" fieldOrder="4"/>
+                    <element name="PROGRAM_NUMBER" value="PROGRAM_NUMBER" dataType="xsd:string" label="PROGRAM_NUMBER" breakOrder="None" fieldOrder="2"/>
+                    <element name="TAIL" value="TAIL" dataType="xsd:string" label="TAIL" breakOrder="None" fieldOrder="3"/>
+                </group>
+			</group>
+	    <element name="cs_totalshipunits" function="sum" dataType="number" value="trans_ships.count"/>
+        <element name="cs_totalweight" function="sum" dataType="number" value="trans_ships.WEIGHT"/>
+	</dataStructure>
+</dataTemplate>

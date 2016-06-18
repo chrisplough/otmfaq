@@ -1,0 +1,84 @@
+INFO | 2014/05/15 22:26:30 | Starting Launched Process...
+INFO | 2014/05/15 22:26:30 | java version "1.6.0_65"
+INFO | 2014/05/15 22:26:30 | Java(TM) SE Runtime Environment (build 1.6.0_65-b09)
+INFO | 2014/05/15 22:26:30 | Oracle JRockit(R) (build R28.2.9-13-157938-1.6.0_65-20130920-0910-linux-x86_64, compiled mode)
+INFO | 2014/05/15 22:26:30 | Argument #0 : /u01/applotm/OTM6/jdk/bin/java
+INFO | 2014/05/15 22:26:30 | Argument #1 : -Xms2048m
+INFO | 2014/05/15 22:26:30 | Argument #2 : -Xmx2048m
+INFO | 2014/05/15 22:26:30 | Argument #3 : -jrockit
+INFO | 2014/05/15 22:26:30 | Argument #4 : -Xgc:throughput
+INFO | 2014/05/15 22:26:30 | Argument #5 : -Xverbose:memory
+INFO | 2014/05/15 22:26:30 | Argument #6 : -DGC3EncodedPassword=d2VsY29tZTEyMw==
+INFO | 2014/05/15 22:26:30 | Argument #7 : -Dglog.properties=glog.tomcat.properties
+INFO | 2014/05/15 22:26:30 | Argument #8 : -Dglog.home=/u01/applotm/OTM6/glog/config
+INFO | 2014/05/15 22:26:30 | Argument #9 : -Duser.home=/u01/applotm/OTM6/glog/config
+INFO | 2014/05/15 22:26:30 | Argument #10 : -Djava.io.tmpdir=/u01/applotm/OTM6/temp
+INFO | 2014/05/15 22:26:30 | Argument #11 : -Djava.awt.headless=true
+INFO | 2014/05/15 22:26:30 | Argument #12 : -Djava.security.auth.login.config=/u01/applotm/OTM6/glog/config/otm_jaas.config
+INFO | 2014/05/15 22:26:30 | Argument #13 : -Dweblogic.ThreadPoolSize=15
+INFO | 2014/05/15 22:26:30 | Argument #14 : -Djava.endorsed.dirs=/u01/applotm/OTM6/tomcat/endorsed
+INFO | 2014/05/15 22:26:30 | Argument #15 : -Dcatalina.base=/u01/applotm/OTM6/tomcat
+INFO | 2014/05/15 22:26:30 | Argument #16 : -Dcatalina.home=/u01/applotm/OTM6/tomcat
+INFO | 2014/05/15 22:26:30 | Argument #17 : -classpath
+INFO | 2014/05/15 22:26:30 | Argument #18 : /u01/applotm/OTM6/tomcat/bin/bootstrap.jar:/u01/applotm/OTM6/tomcat/bin/tomcat-juli.jar:/u01/applotm/OTM6/tomcat/lib/servlet-api.jar:/u01/applotm/OTM6/tomcat/lib/tomcat-i18n-es.jar:/u01/applotm/OTM6/tomcat/lib/tomcat-util.jar:/u01/applotm/OTM6/tomcat/lib/catalina.jar:/u01/applotm/OTM6/tomcat/lib/tomcat-dbcp.jar:/u01/applotm/OTM6/tomcat/lib/websocket-api.jar:/u01/applotm/OTM6/tomcat/lib/catalina-tribes.jar:/u01/applotm/OTM6/tomcat/lib/tomcat7-websocket.jar:/u01/applotm/OTM6/tomcat/lib/catalina-ha.jar:/u01/applotm/OTM6/tomcat/lib/tomcat-coyote.jar:/u01/applotm/OTM6/tomcat/lib/catalina-ant.jar:/u01/applotm/OTM6/tomcat/lib/tomcat-jdbc.jar:/u01/applotm/OTM6/tomcat/lib/jasper-el.jar:/u01/applotm/OTM6/tomcat/lib/el-api.jar:/u01/applotm/OTM6/tomcat/lib/tomcat-i18n-ja.jar:/u01/applotm/OTM6/tomcat/lib/ecj-4.2.2.jar:/u01/applotm/OTM6/tomcat/lib/annotations-api.jar:/u01/applotm/OTM6/tomcat/lib/ecj-3.7.jar:/u01/applotm/OTM6/tomcat/lib/jsp-api.jar:/u01/applotm/OTM6/tomcat/lib/tomcat-api.jar:/u01/applotm/OTM6/tomcat/lib/jasper.jar:/u01/applotm/OTM6/tomcat/lib/tomcat-i18n-fr.jar:/u01/applotm/OTM6/glog/glog_resources:/u01/applotm/OTM6/glog/config:/u01/applotm/OTM6/glog/gc3webapp/WEB-INF/classes:/u01/applotm/OTM6/dash/lib/xprb.jar:/u01/applotm/OTM6/dash/lib/xprm.jar:/u01/applotm/OTM6/dash/lib/xprs.jar:/u01/applotm/OTM6/glog/gc3webapp/WEB-INF/lib/glogserver.jar:/u01/applotm/WL/Oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/u01/applotm/OTM6/glog/gc3webapp/WEB-INF/lib/3rdparty/wlfullclient.jar:/u01/applotm/WL/Oracle/Middleware/wlserver_10.3/server/lib/webservices.jar
+INFO | 2014/05/15 22:26:30 | Argument #19 : org.apache.catalina.startup.Bootstrap
+INFO | 2014/05/15 22:26:30 | Argument #20 : start
+INFO | 2014/05/15 22:26:30 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2014/05/15 22:26:30 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, strategy: Generational Parallel Mark & Sweep.
+INFO | 2014/05/15 22:26:30 | [INFO ][memory ] Heap size: 2097152KB, maximal heap size: 2097152KB, nursery size: 1048576KB.
+INFO | 2014/05/15 22:26:30 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2014/05/15 22:26:30 | [INFO ][memory ] <start>  - start time of collection (seconds since jvm start).
+INFO | 2014/05/15 22:26:30 | [INFO ][memory ] <type>   - OC (old collection) or YC (young collection).
+INFO | 2014/05/15 22:26:30 | [INFO ][memory ] <end>    - end time of collection (seconds since jvm start).
+INFO | 2014/05/15 22:26:30 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2014/05/15 22:26:30 | [INFO ][memory ] <after>  - memory used by objects after collection (KB).
+INFO | 2014/05/15 22:26:30 | [INFO ][memory ] <heap>   - size of heap after collection (KB).
+INFO | 2014/05/15 22:26:30 | [INFO ][memory ] <time>   - total time of collection (milliseconds).
+INFO | 2014/05/15 22:26:30 | [INFO ][memory ] <pause>  - total sum of pauses during collection (milliseconds).
+INFO | 2014/05/15 22:26:30 | [INFO ][memory ]            Run with -Xverbose:gcpause to see individual phases.
+INFO | 2014/05/15 22:26:32 | May 15, 2014 10:26:32 PM org.apache.catalina.core.AprLifecycleListener init
+INFO | 2014/05/15 22:26:32 | INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/u01/applotm/OTM6/jdk/jre/lib/amd64/jrockit:/u01/applotm/OTM6/jdk/jre/lib/amd64:/u01/applotm/OTM6/jdk/jre/../lib/amd64:/u01/applotm/OTM6/dash/lib:/u01/applotm/DB/product/11.2.0/dbhome_1/lib:/u01/applotm/WL/Oracle/Middleware/wlserver_10.3/server/lib/linux/x86_64:/u01/applotm/WL/Oracle/Middleware/wlserver_10.3/server/lib/linux/i686:/u01/applotm/DB/product/11.2.0/dbhome_1/lib:
+INFO | 2014/05/15 22:26:33 | May 15, 2014 10:26:33 PM org.apache.coyote.AbstractProtocol init
+INFO | 2014/05/15 22:26:33 | INFO: Initializing ProtocolHandler ["http-bio-127.0.0.1-8009"]
+INFO | 2014/05/15 22:26:33 | May 15, 2014 10:26:33 PM org.apache.catalina.startup.Catalina load
+INFO | 2014/05/15 22:26:33 | INFO: Initialization processed in 1090 ms
+INFO | 2014/05/15 22:26:33 | May 15, 2014 10:26:33 PM org.apache.catalina.core.StandardService startInternal
+INFO | 2014/05/15 22:26:33 | INFO: Starting service Tomcat
+INFO | 2014/05/15 22:26:33 | May 15, 2014 10:26:33 PM org.apache.catalina.core.StandardEngine startInternal
+INFO | 2014/05/15 22:26:33 | INFO: Starting Servlet Engine: Apache Tomcat/7.0.47
+INFO | 2014/05/15 22:26:39 | [INFO ][memory ] [YC#1] 8.527-8.581: YC 1069092KB->309158KB (2097152KB), 0.054 s, sum of pauses 54.219 ms, longest pause 54.219 ms.
+INFO | 2014/05/15 22:26:41 | May 15, 2014 10:26:41 PM org.apache.tomcat.websocket.server.WsSci onStartup
+INFO | 2014/05/15 22:26:41 | INFO: JSR 356 WebSocket (Java WebSocket 1.0) support is not available when running on Java 6. To suppress this message, run Tomcat on Java 7, remove the WebSocket JARs from $CATALINA_HOME/lib or add the WebSocketJARs to the tomcat.util.scan.DefaultJarScanner.jarsToSkip property in $CATALINA_BASE/conf/catalina.properties. Note that the deprecated Tomcat 7 WebSocket API will be available. 
+INFO | 2014/05/15 22:26:43 | [INFO ][memory ] [YC#2] 13.004-13.054: YC 1108353KB->382546KB (2097152KB), 0.050 s, sum of pauses 49.819 ms, longest pause 49.819 ms.
+INFO | 2014/05/15 22:26:47 | [INFO ][memory ] [YC#3] 16.561-16.624: YC 1220820KB->500078KB (2097152KB), 0.063 s, sum of pauses 62.650 ms, longest pause 62.650 ms.
+INFO | 2014/05/15 22:26:50 | [INFO ][memory ] [YC#4] 20.027-20.074: YC 1360012KB->613410KB (2097152KB), 0.047 s, sum of pauses 46.669 ms, longest pause 46.669 ms.
+INFO | 2014/05/15 22:26:54 | [INFO ][memory ] [YC#5] 23.931-24.012: YC 1614563KB->901653KB (2097152KB), 0.081 s, sum of pauses 80.572 ms, longest pause 80.572 ms.
+INFO | 2014/05/15 22:26:59 | [INFO ][memory ] [YC#6] 28.111-28.179: YC 1759593KB->1049609KB (2097152KB), 0.068 s, sum of pauses 67.852 ms, longest pause 67.852 ms.
+INFO | 2014/05/15 22:27:02 | [INFO ][memory ] [YC#7] 31.888-31.988: YC 1853293KB->1141904KB (2097152KB), 0.100 s, sum of pauses 100.179 ms, longest pause 100.179 ms.
+INFO | 2014/05/15 22:27:05 | [INFO ][memory ] [YC#8] 34.913-34.962: YC 1947048KB->1219552KB (2097152KB), 0.048 s, sum of pauses 48.375 ms, longest pause 48.375 ms.
+INFO | 2014/05/15 22:27:08 | [INFO ][memory ] [YC#9] 37.589-37.632: YC 2023586KB->2084342KB (2097152KB), 0.043 s, sum of pauses 42.740 ms, longest pause 42.740 ms.
+INFO | 2014/05/15 22:27:08 | [INFO ][memory ] [OC#1] 37.632-37.678: OC 2084342KB->126561KB (2097152KB), 0.046 s, sum of pauses 33.046 ms, longest pause 33.046 ms.
+INFO | 2014/05/15 22:27:14 | [INFO ][memory ] [YC#10] 43.085-43.157: YC 1259335KB->562912KB (2097152KB), 0.073 s, sum of pauses 72.748 ms, longest pause 72.748 ms.
+INFO | 2014/05/15 22:27:17 | May 15, 2014 10:27:17 PM org.apache.catalina.core.ApplicationContext log
+INFO | 2014/05/15 22:27:17 | INFO: Marking servlet InitializeWebScalability as unavailable
+INFO | 2014/05/15 22:27:17 | May 15, 2014 10:27:17 PM org.apache.catalina.core.StandardContext loadOnStartup
+INFO | 2014/05/15 22:27:17 | SEVERE: Servlet /GC3 threw load() exception
+INFO | 2014/05/15 22:27:17 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO | 2014/05/15 22:27:17 | 	at glog.webserver.util.NTierServlet.init(NTierServlet.java:33)
+INFO | 2014/05/15 22:27:17 | 	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+INFO | 2014/05/15 22:27:17 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+INFO | 2014/05/15 22:27:17 | 	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+INFO | 2014/05/15 22:27:17 | 	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+INFO | 2014/05/15 22:27:17 | 	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+INFO | 2014/05/15 22:27:17 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+INFO | 2014/05/15 22:27:17 | 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1560)
+INFO | 2014/05/15 22:27:17 | 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+INFO | 2014/05/15 22:27:17 | 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+INFO | 2014/05/15 22:27:17 | 	at java.util.concurrent.FutureTask.run(FutureTask.java:139)
+INFO | 2014/05/15 22:27:17 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+INFO | 2014/05/15 22:27:17 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:919)
+INFO | 2014/05/15 22:27:17 | 	at java.lang.Thread.run(Thread.java:680)
+INFO | 2014/05/15 22:27:17 | May 15, 2014 10:27:17 PM org.apache.coyote.AbstractProtocol start
+INFO | 2014/05/15 22:27:17 | INFO: Starting ProtocolHandler ["http-bio-127.0.0.1-8009"]
+INFO | 2014/05/15 22:27:17 | May 15, 2014 10:27:17 PM org.apache.catalina.startup.Catalina start
+INFO | 2014/05/15 22:27:17 | INFO: Server startup in 44434 ms

@@ -1,0 +1,54 @@
+agent, 
+planning,
+ planning details,
+ rating, 
+multistop,
+ multistopdetails, 
+exception,
+ and sql logging turned on
+
+
+error and exception!
+
+2010-01-07 19:29:05.775 534425 Debug Planning Entity: LOLD.AITI_NEXT_DAY_AIR_CWT failed Rate Offering Weight Rule [batch - 3]
+Entity: LOLD.AITI_NEXT_DAY_AIR_CWT  failed Rate Offering Weight Rule [batch - 3]
+2010-01-07 19:29:05.775 534425 Debug PlanningDetails RateOfferingModeRule.check(): Mode rule failed for RO <LOLD.CPU_TLR>. Offering mode of <CPU> not compatible with shipment mode list of <[Lglog.ejb.transportmode.db.TransportModePK 
+2010-01-07 19:29:05.792 534425 Debug PlanningDetails RateOfferingModeRule.check(): Mode rule failed for RO <LOLD.VPU_TLD>. Offering mode of <VPU> not compatible with shipment mode list of <[Lglog.ejb.transportmode.db.TransportModePK;@14aa50a> [batch - 3]
+RateOfferingModeRule.check(): Mode rule failed for RO <LOLD.VPU_TLD>.  Offering mode of <VPU> not compatible with shipment mode list of <[Lglog.ejb.transportmode.db.TransportModePK;@14aa50a> [batch - 3]
+ 
+2010-01-07 19:29:05.793 534425 Debug PlanningDetails Ending rule: Rate Offering Mode Rule (failed) [batch - 3]
+Ending rule: Rate Offering Mode Rule (failed) [batch - 3]
+ 
+2010-01-07 19:29:05.793 534425 Debug Planning Entity: LOLD.VPU_TLD failed Rate Offering Mode Rule [batch - 3]
+Entity: LOLD.VPU_TLD  failed Rate Offering Mode Rule [batch - 3]
+ 
+2010-01-07 19:29:05.793 534425 Debug PlanningDetails Starting rule: Rate Offering Mode Rule [batch - 3]
+Starting rule: Rate Offering Mode Rule [batch - 3]
+ 
+2010-01-07 19:29:05.793 534425 Debug PlanningDetails RateOfferingModeRule.check(): Mode rule failed for RO <LOLD.VPU_TLR>. Offering mode of <VPU> not compatible with shipment mode list of <[Lglog.ejb.transportmode.db.TransportModePK;@14aa50a> [batch - 3]
+RateOfferingModeRule.check(): Mode rule failed for RO <LOLD.VPU_TLR>.  Offering mode of <VPU> not compatible with shipment mode list of <[Lglog.ejb.transportmode.db.TransportModePK;@14aa50a> [batch - 3]
+ 
+2010-01-07 19:29:05.793 534425 Debug PlanningDetails Ending rule: Rate Offering Mode Rule (failed) [batch - 3]
+Ending rule: Rate Offering Mode Rule (failed) [batch - 3]
+ 
+2010-01-07 19:29:05.8 534425 Debug PlanningDetails Starting rule: Rate Geo Equipment Rule [batch - 3]
+Starting rule: Rate Geo Equipment Rule [batch - 3]
+ 
+2010-01-07 19:29:05.8 534425 Debug PlanningDetails Ending rule: Rate Geo Equipment Rule (failed) [batch - 3]
+Ending rule: Rate Geo Equipment Rule (failed) [batch - 3]
+ 
+2010-01-07 19:29:05.801 534425 Debug Planning Complete Finding Valid Rate Geos ... [batch - 3]
+Complete Finding Valid Rate Geos ... [batch - 3]
+ 
+2010-01-07 19:29:05.801 534425 Debug Planning RateFinder.findShipmentCosts(): total 0 rate geo(s) returned from RateGeoFinder. [batch - 3]
+RateFinder.findShipmentCosts(): total 0 rate geo(s) returned from RateGeoFinder. [batch - 3]
+ 
+2010-01-07 19:29:05.802 534425 Debug Planning Unable to assign least cost feasible service provider since no RateEngineResults found. [batch - 3]
+Unable to assign least cost feasible service provider since no RateEngineResults found. [batch - 3]
+ 
+2010-01-07 19:29:05.802 534425 Debug Planning End assignLeastCostServiceProvider. [batch - 3]
+End assignLeastCostServiceProvider. [batch - 3]
+ 
+2010-01-07 19:29:05.802 534425 Debug Planning No direct shipment exists for orders: |LOLD.13377470_1000_ST_00200-002| [batch - 3]
+No direct shipment exists for orders: |LOLD.13377470_1000_ST_00200-002| [batch - 3]
+ 

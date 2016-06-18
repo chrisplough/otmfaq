@@ -1,0 +1,52 @@
+function to_checkdate()
+{
+
+var earlyDateField1 = document.forms['management_main'].elements['input/available_date'].value;
+//alert(earlyDateField1);
+if(earlyDateField1 !=null) 
+{
+var today = new Date()
+//alert (today);
+var month = today.getMonth();
+//alert ("month"+month);
+var year = today.getYear();
+//alert("year"+year);
+var day = today.getDate();
+//alert("day"+day);
+if(day &lt; 10) 
+{
+//alert("inside days if");
+day = "0" + day;
+//alert("day"+day);
+}
+if(month &lt; 10) 
+{
+//alert("inside months if");
+month= "0" + month;
+//alert("month"+month);
+}
+if(year &lt; 1000) 
+{
+//alert("inside years if");
+year+=1900;
+//alert("year"+year);
+}
+var tdate = new Date(year,month,day);
+//alert("tdate"+tdate);
+
+var earlydatecon=earlyDateField1.substring(0,10); 
+//alert("earlydatecon"+earlydatecon);
+strDate1 = earlydatecon.split("-"); 
+//alert("strDate1"+strDate1);
+strDate1[1]=strDate1[1]-1;
+var earlydatecon1=new Date(strDate1[0],strDate1[1],strDate1[2]);
+//alert("earlydatecon1"+earlydatecon1);
+//alert(earlydatecon1);
+tdate.setDate(tdate.getDate() + 730); 
+//alert(tdate);
+if (earlydatecon1 &gt; tdate)
+{
+alert('Pickup Date Should Not be Later than 24 Months from the Current Date');
+document.forms['management_main'].elements['input/available_date'].value='';
+}
+}

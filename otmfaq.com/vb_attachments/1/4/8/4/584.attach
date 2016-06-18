@@ -1,0 +1,300 @@
+#####################################################################
+# G-Log Properties File for Both Web and App Server
+#
+# This property file holds the configurable settings for the
+# G-Log Web and App Servers (running on the same box). These
+# settings will override any settings in glog.webserver.properties,
+# glog.appserver.properties, glog.common.properties, and
+# glog.base.properties.  These properties are initially set
+# by the install scripts, but can be modified to work with
+# your specific server. All G-Log property changes should be
+# made to this file, rather than the webserver, appserver,
+# common, or base property files.
+#####################################################################
+# !!!!!!!!!!!!!!!!!!!!!!!!!!! IMPORTANT !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#-------------------------------------------------------------------
+# Place all thread settings changes in the Custom Thread Properties
+# section at the end of this file.
+#-------------------------------------------------------------------
+# Place all other changes, new properties, and custom properties in
+# the Custom Properties section near the end of this file.
+#-------------------------------------------------------------------
+# These sections will be used by future installers during upgrades.
+# Properties that are outside this section will not be migrated.
+#####################################################################
+
+#--------------------------------------------------------------------
+# Base Install Settings
+#--------------------------------------------------------------------
+
+# GC3 version
+glog.software.version=OTMv55
+glog.software.patch.version=OTMv55-CU05
+glog.software.installtype=AppServer
+
+# installation paths
+gc3.dir=E:/gc3_prod
+gc3.config.dir=$gc3.dir$/glog/config
+temp.dir=$gc3.dir$/temp
+
+# application server URL and port
+appserver=gc3app3.kraft.com
+appserver.port=7001
+
+# web server URL and port
+webserver=gc3.kraft.com
+webserver.port=80
+
+# web URL prefix - should be blank unless web server is behind a reverse-proxy server
+glog.webserver.urlprefix=
+
+# web server URL (may differ from server name)
+glog.webserver.URL=http://gc3.kraft.com:80$glog.webserver.urlprefix$
+
+# db server URL and information
+dbserver=ti1125.krft.net
+glog.database.sid=p150i0
+glog.database.connectstring=ti1125_p150i0
+glog.database.port=1521
+glog.database.schema=glogowner
+
+# db users and passwords
+glog.database.user=glogdba
+glog.database.password=glogdba
+glog.database.load.user=glogload
+glog.database.load.password=glogload
+
+# oracle driver type should be "Oracle" for thin drivers or "weblogic" for oci drivers
+glog.database.default.poolDriver=Oracle
+
+# default password storage setting (Encrypt/Text) - Note, changing this option also requires db changes
+glog.crypto.password.mode=Encrypt
+
+#--------------------------------------------------------------------
+# Log Settings
+#--------------------------------------------------------------------
+
+# turn logging on or off
+glog.log.on=false
+
+# path to log file(s)
+glog.log.dir=$gc3.dir$/logs
+glog.log.file.defaultLog.filepath=$gc3.dir$/logs/glog.default.log
+
+# maximum size of log files (bytes)
+glog.log.maxsize=10000000
+
+# maximum number of log backup files
+glog.log.backups=10
+
+#--------------------------------------------------------------------
+# Web Server Settings
+#--------------------------------------------------------------------
+
+document.root=$gc3.dir$/apache/htdocs
+
+# maximum number of results returned by port/airport finder, optional
+glog.webserver.portresults.count=100
+
+# maximum number of results returned by giv, optional
+glog.webserver.givresults.count=100
+
+## external Oracle Reports Server - optional
+report_feature=true
+p_reports_server=rep_kftusoktulapp96_report_server
+p_reports_out_dir=e:/GC3_55/rptapache/htdocs
+reports_server_fqdn=http://kftusoktulapp96.krft.net:7779/reports/rwservlet
+report_server_url=http://kftusoktulapp96.krft.net:81
+#discoverer_url=
+
+# Advanced Analytics
+#aa_webserver=http://:$glog.webserver.urlprefix$
+#aa_domain=.
+
+## Replicated Operational Database (ROD) - optional
+#ods_feature=true
+#glog.ods.dbserver=otmodsdb.KRFT.Net
+#glog.database.ods.sid=otmodsdb
+#glog.ods.connectstring=otmodsdb
+#glog.ods.database.port=1521
+#glog.database.ods.schema=glogowner
+
+#--------------------------------------------------------------------
+# App Server Settings
+#--------------------------------------------------------------------
+
+# scalability settings
+glog.scalability.on=true
+glog.log.ID.JMS.on=true
+glog.log.ID.Scalability.on=true
+glog.log.ID.ScalabilityDetails.on=true
+
+glog.scalability.thisTarget=gc3-gc3app3
+glog.scalability.thisMachine=SECONDARY
+glog.scalability.thisMachineURL=t3://gc3app3.kraft.com:7001
+glog.scalability.defaultServer=DEFAULT
+glog.scalability.defaultMachineURL=t3://gc3app.kraft.com:7001
+
+# list of avaliable app servers to poll for network topology - used only by web server.  one per line.
+!remove glog.scalability.topologyMachineURL
+glog.scalability.topologyMachineURL=t3://gc3app.kraft.com:7001
+glog.scalability.topologyMachineURL=t3://gc3app3.kraft.com:7001
+#glog.scalability.topologyMachineURL=<additional app server>
+
+# list of avaliable web servers - used only by app server.  one per line.
+!remove glog.scalability.topologyWebserverURL
+glog.scalability.topologyWebserverURL=http://gc3-web1.kraft.com:80
+glog.scalability.topologyWebserverURL=http://gc3-web2.kraft.com:80
+glog.scalability.topologyWebserverURL=http://gc3-web3.kraft.com:80
+glog.scalability.topologyWebserverURL=http://gc3-web4.kraft.com:81
+#glog.scalability.topologyWebserverURL=<additional web server>
+
+# mail settings
+glog.mail.smtp.host=smtp.kraft.com
+glog.workflow.notify.defaultSmtphost=smtp.kraft.com
+glog.mail.images=$glog.webserver.URL$/images/mail
+
+# workflow settings
+glog.workflow.notify.advisor.name=G-Log Advisor
+glog.workflow.notify.advisor.email=tranmasup@kraft.com
+glog.workflow.notify.advisor.fax=555-555-1212
+
+## FaxMaker Settings - optional
+#glog.workflow.notify.faxmaker.email=fax@KRFT.Net
+
+## RightFax Settings - optional
+#glog.fax.defaultHandler.routingMode=to
+#glog.fax.defaultHandler.routingPicture=/name={lastName},{firstName}/fax={rawPhone}/
+#glog.fax.email=fax@KRFT.Net
+
+## external integration settings
+#glog.integration.URLtoSendBills=http://<server_name>/servlets/<ClassNameOfServletThatReceivesFinancialRelatedXML>
+#glog.integration.URLtoSendVouchers=http://<server_name>/servlets/<ClassNameOfServletThatReceivesFinancialRelatedXML>
+
+# external SMC Rateware - optional
+glog.RatingEngine.Rateware.URL=KFTUSOKTULLCC02.krft.net
+glog.RatingEngine.Rateware.Port=23700
+
+# external PCMiler - optional
+pcmiler.host=KFTUSOKTULAPP89.KRFT.Net
+pcmiler.port=8145
+
+## external Rand McNally - optional
+#intelliroute.host=intelliroute.KRFT.Net
+#intelliroute.port=1998
+#intelliroute.user=otm
+#intelliroute.password=changeme
+#intelliroute.location=company
+
+## external MileMaker - optional
+#milemaker.host=milemaker.KRFT.Net
+#milemaker.port=1031
+
+#--------------------------------------------------------------------
+# Custom Properties - Beginning
+#--------------------------------------------------------------------
+# Place all changes, new properties, and custom properties here.
+# This section will be used during GC3 Upgrades
+#--------------------------------------------------------------------
+glog.login.suppressAccountPolicy = False
+glog.webserver.finder.results.configurable = True
+glog.webserver.finalresults.showquerycount = True
+glog.webserver.finderresults.showquerycount = true
+glog.audit.beforeafter = on
+# glog.business.RateGeoCache.disable=true
+glog.xslcompiler.poolsize.maximum=1
+glog.webserver.finderresults.showquerycount = true
+glog.optimization.columngeneration.maxIterations = 10
+glog.coroute.app.business.route.PercentMipTolerance = 2
+glog.coroute.app.business.route.MaxMipRuntime = 60 
+glog.cache.RateDistanceCache.capacity = 1000000
+glog.cache.CorouteSolverDistance.capacity=20000
+glog.cache.RateGeoCache.capacity=300
+glog.business.capacity.ignoreSawCapacityAndCommitment=true
+glog.query.vpdOptimization.glog.server.query.shipment.BuyShipmentQuery = active
+glog.appointment.displayString.shipment = confirmationNumber:objectRefnum:KRAFT.LOADTYPE_DROP_OR_LIVE
+glog.server.bngenerator.xreference.crossDomain = on
+glog.process.execAsEnabled.planning = true
+glog.optimization.allowCallBacks=false
+glog.appointment.searchDays = 10
+glog.savedquery.show_all_savedqueries = true
+glog.appointment.servprov.allowInfeasibleappointment = false
+glog.appointment.enforceServprovRule = true
+glog.appointment.servprovRule.cutOffHour=16
+glog.appointment.servprovRule.numberOfDaysAfterCutOffHour=2
+glog.appointment.servprovRule.numberOfDaysBeforeCutOffHour=1
+glog.query.asDateColumns.CAPACITY_COMMITMENT_ALLOC=EFFECTIVE_DATE
+glog.query.asDateColumns.COMMIT_ALLOC_USAGE=START_DATE
+glog.query.asDateColumns.CAPACITY_COMMITMENT=EFFECTIVE_DATE
+glog.query.asDateColumns.COMMIT_USAGE=START_DATE
+glog.query.asDateColumns.CAPACITY_USAGE=START_DATE
+glog.ui.dockmanager.defaultcellwidth = 130
+#--------------------------------------------------------------------
+# Custom Properties - End
+#--------------------------------------------------------------------
+
+#--------------------------------------------------------------------
+# Default EBS Properties
+#--------------------------------------------------------------------
+
+#!include glog.ebs.properties
+
+#--------------------------------------------------------------------
+# Default Web Server Properties
+#--------------------------------------------------------------------
+
+!include glog.webserver.properties
+
+#--------------------------------------------------------------------
+# Default App Server Properties
+#--------------------------------------------------------------------
+
+!include glog.appserver.properties
+
+#--------------------------------------------------------------------
+# Turn off Workflow persistence
+#--------------------------------------------------------------------
+glog.workflow.persistent.reboot=false
+!remove glog.workflow.persistent.classes
+
+#--------------------------------------------------------------------
+# Custom Thread Properties - Beginning
+#--------------------------------------------------------------------
+# Place all thread changes and properties here.
+# This section will be used during GC3 Upgrades
+#--------------------------------------------------------------------
+glog.workflow.topic.group.glog.server.workflow.invoice.ApproveInvoiceTopic=execution
+glog.workflow.topic.group.glog.server.workflow.invoice.MatchInvoiceTopic=execution
+glog.workflow.topic.group.glog.server.workflow.invoice.ProcessInvoiceTopic=execution
+glog.workflow.topic.group.glog.server.workflow.invoice.IssueCustomerBillTopic=execution
+glog.workflow.topic.group.glog.server.workflow.invoice.IssuePaymentVoucherTopic=execution
+glog.workflow.topic.group.glog.server.workflow.invoice.GenerateAutoPayInvoiceTopic=execution
+glog.workflow.topic.group.glog.server.workflow.invoice.IssueAllocationTopic=execution
+!remove glog.workflow.topicGroup=batch,2
+glog.workflow.topicGroup=batch,2
+# these changes are to create new custom queue for bulk plan
+glog.workflow.topicGroup=custom_batch_bulk_plan,2
+# assigning bulk plan related topics to new custom queue
+glog.workflow.topic.group.glog.server.workflow.adhoc.CompareBulkPlanResults=custom_batch_bulk_plan
+glog.workflow.topic.group.glog.server.workflow.adhoc.CompareBulkPlanToExpectedResults=custom_batch_bulk_plan
+glog.workflow.topic.group.glog.server.workflow.adhoc.BulkPlan=custom_batch_bulk_plan
+glog.workflow.topic.group.glog.server.workflow.invoice.BulkAllocationTopic=custom_batch_bulk_plan
+glog.workflow.topic.group.glog.server.workflow.adhoc.BuildShipmentsBuyRequest=custom_batch_bulk_plan
+# Below mentioned changes are to create new custom queue for Cooperatice routing scenarion and aggregation
+glog.workflow.topicGroup=custom_batch_CR,2
+# assigning CR related topics to new custom queue
+glog.workflow.topic.group.glog.coroute.app.server.workflow.CRAggregatorRequest=custom_batch_CR
+glog.workflow.topic.group.glog.coroute.app.server.workflow.CRForecasterRequest=custom_batch_CR
+glog.workflow.topic.group.glog.coroute.app.server.workflow.CRSolverRequest=custom_batch_CR
+glog.workflow.topic.group.glog.coroute.app.server.workflow.PShipmentSetRequest=custom_batch_CR
+# Below mentioned changes are to create new custom queue for invoice interface processsing
+glog.workflow.topicGroup=custom_agentUtility,6
+# assigning invoice interface topic which takes maximum time of processing to the new custom queue
+glog.workflow.topic.group.glog.server.agent.utility.If=custom_agentUtility
+# Below mentioned changes are also to create new custom queue for invoice interface processsing
+glog.workflow.topicGroup=custom_agentPlanning,3
+# assigning invoice interface topic which takes maximum time of processing to the new custom queue
+glog.workflow.topic.group.glog.server.agent.business.invoice.AutoMatchInvoice=custom_agentPlanning
+#--------------------------------------------------------------------
+# Custom Thread Properties - End
+#--------------------------------------------------------------------

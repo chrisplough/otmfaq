@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bitfields product="vbulletin">
+	<bitfielddefs>
+		<group name="ugp">
+			<group name="ms_search_all_unanswered_permissions">
+				<bitfield name="search_all_unanswered" group="ms_search_all_unanswered_permissions"  phrase="ms_search_all_unanswered">1</bitfield>
+			</group>
+		</group>
+	</bitfielddefs>
+</bitfields>

@@ -1,0 +1,538 @@
+INFO | 2013/11/06 12:49:18 | Starting Launched Process...
+INFO | 2013/11/06 12:49:18 | java version "1.6.0_33"
+INFO | 2013/11/06 12:49:18 | Java(TM) SE Runtime Environment (build 1.6.0_33-b03)
+INFO | 2013/11/06 12:49:18 | Oracle JRockit(R) (build R28.2.4-14-151097-1.6.0_33-20120618-1634-linux-x86_64, compiled mode)
+INFO | 2013/11/06 12:49:18 | Argument #0 : /home/oracle/otm/jdk/bin/java
+INFO | 2013/11/06 12:49:18 | Argument #1 : -Xms1536m
+INFO | 2013/11/06 12:49:18 | Argument #2 : -Xmx1536m
+INFO | 2013/11/06 12:49:18 | Argument #3 : -jrockit
+INFO | 2013/11/06 12:49:18 | Argument #4 : -Xgc:throughput
+INFO | 2013/11/06 12:49:18 | Argument #5 : -Xverbose:memory
+INFO | 2013/11/06 12:49:18 | Argument #6 : -Dglog.home=/home/oracle/otm/glog/config
+INFO | 2013/11/06 12:49:18 | Argument #7 : -Duser.home=/home/oracle/otm/glog/config
+INFO | 2013/11/06 12:49:18 | Argument #8 : -Djava.io.tmpdir=/home/oracle/otm/temp
+INFO | 2013/11/06 12:49:18 | Argument #9 : -Djava.awt.headless=true
+INFO | 2013/11/06 12:49:18 | Argument #10 : -Djava.security.auth.login.config=/home/oracle/otm/glog/config/otm_jaas.config
+INFO | 2013/11/06 12:49:18 | Argument #11 : -Xss256k
+INFO | 2013/11/06 12:49:18 | Argument #12 : -Dweblogic.Name=gc3-OTM-SERVER-LINUX
+INFO | 2013/11/06 12:49:18 | Argument #13 : -Dbea.home=/home/oracle/Middleware
+INFO | 2013/11/06 12:49:18 | Argument #14 : -Dweblogic.home=/home/oracle/Middleware/wlserver_10.3/server
+INFO | 2013/11/06 12:49:18 | Argument #15 : -Dweblogic.management.username=system
+INFO | 2013/11/06 12:49:18 | Argument #16 : -Dweblogic.management.password=CHANGEME
+INFO | 2013/11/06 12:49:18 | Argument #17 : -Dweblogic.ProductionModeEnabled=true
+INFO | 2013/11/06 12:49:18 | Argument #18 : -Dweblogic.management.discover=false
+INFO | 2013/11/06 12:49:18 | Argument #19 : -Djava.security.policy=/home/oracle/Middleware/wlserver_10.3/server/lib/weblogic.policy
+INFO | 2013/11/06 12:49:18 | Argument #20 : -Dwli.home=/home/oracle/Middleware/wlserver_10.3/integration
+INFO | 2013/11/06 12:49:18 | Argument #21 : -Dwls.home=/home/oracle/Middleware/wlserver_10.3/server
+INFO | 2013/11/06 12:49:18 | Argument #22 : -Dweblogic.RootDirectory=/home/oracle/otm/weblogic/domains/otm
+INFO | 2013/11/06 12:49:18 | Argument #23 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2013/11/06 12:49:18 | Argument #24 : -Djavax.xml.soap.SOAPFactory=weblogic.xml.saaj.SOAPFactoryImpl
+INFO | 2013/11/06 12:49:18 | Argument #25 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2013/11/06 12:49:18 | Argument #26 : -DpropertyProtection=mask
+INFO | 2013/11/06 12:49:18 | Argument #27 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2013/11/06 12:49:18 | Argument #28 : -Djavax.xml.soap.MessageFactory=weblogic.xml.saaj.MessageFactoryImpl
+INFO | 2013/11/06 12:49:18 | Argument #29 : -Djavax.management.builder.initial=weblogic.management.jmx.mbeanserver.WLSMBeanServerBuilder
+INFO | 2013/11/06 12:49:18 | Argument #30 : -Dweblogic.wsee.policy.LoadFromClassPathEnabled=true
+INFO | 2013/11/06 12:49:18 | Argument #31 : -Dmode=appserver
+INFO | 2013/11/06 12:49:18 | Argument #32 : -classpath
+INFO | 2013/11/06 12:49:18 | Argument #33 : /home/oracle/otm/jdk/lib/tools.jar:/home/oracle/otm/glog/glog_resources/custom:/home/oracle/otm/glog/glog_resources:/home/oracle/otm/glog/config:/home/oracle/otm/glog/gc3webapp/WEB-INF/classes:/home/oracle/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/ojdbc6.jar:/home/oracle/otm/dash/lib/xprb.jar:/home/oracle/otm/dash/lib/xprm.jar:/home/oracle/otm/dash/lib/xprs.jar:/home/oracle/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar:/home/oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/home/oracle/Middleware/wlserver_10.3/server/lib/weblogic.jar:/home/oracle/Middleware/wlserver_10.3/server/lib/webservices.jar:/home/oracle/Middleware/modules/features/weblogic.server.modules.sca_10.3.6.0.jar
+INFO | 2013/11/06 12:49:18 | Argument #34 : weblogic.Server
+INFO | 2013/11/06 12:49:18 | Argument #35 : start
+INFO | 2013/11/06 12:49:18 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2013/11/06 12:49:18 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, strategy: Generational Parallel Mark & Sweep.
+INFO | 2013/11/06 12:49:18 | [INFO ][memory ] Heap size: 1572864KB, maximal heap size: 1572864KB, nursery size: 786432KB.
+INFO | 2013/11/06 12:49:18 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2013/11/06 12:49:18 | [INFO ][memory ] <start>  - start time of collection (seconds since jvm start).
+INFO | 2013/11/06 12:49:18 | [INFO ][memory ] <type>   - OC (old collection) or YC (young collection).
+INFO | 2013/11/06 12:49:18 | [INFO ][memory ] <end>    - end time of collection (seconds since jvm start).
+INFO | 2013/11/06 12:49:18 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2013/11/06 12:49:18 | [INFO ][memory ] <after>  - memory used by objects after collection (KB).
+INFO | 2013/11/06 12:49:18 | [INFO ][memory ] <heap>   - size of heap after collection (KB).
+INFO | 2013/11/06 12:49:18 | [INFO ][memory ] <time>   - total time of collection (milliseconds).
+INFO | 2013/11/06 12:49:18 | [INFO ][memory ] <pause>  - total sum of pauses during collection (milliseconds).
+INFO | 2013/11/06 12:49:18 | [INFO ][memory ]            Run with -Xverbose:gcpause to see individual phases.
+INFO | 2013/11/06 12:49:21 | <Nov 6, 2013 12:49:21 PM SGT> <Info> <Security> <BEA-090905> <Disabling CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true> 
+INFO | 2013/11/06 12:49:21 | <Nov 6, 2013 12:49:21 PM SGT> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true> 
+INFO | 2013/11/06 12:49:22 | <Nov 6, 2013 12:49:22 PM SGT> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Oracle JRockit(R) Version R28.2.4-14-151097-1.6.0_33-20120618-1634-linux-x86_64 from Oracle Corporation> 
+INFO | 2013/11/06 12:49:24 | <Nov 6, 2013 12:49:24 PM SGT> <Info> <Management> <BEA-141107> <Version: WebLogic Server 10.3.6.0  Tue Nov 15 08:52:36 PST 2011 1441050 > 
+INFO | 2013/11/06 12:49:24 | <Nov 6, 2013 12:49:24 PM SGT> <Warning> <Management> <BEA-141274> <Production mode has specified at the command line via the weblogic.ProductionModeEnabled system property. This system property overrides the development mode setting contained in config.xml. However, the console and WLST show the attribute values and defaults that correspond to the development mode specified in config.xml.> 
+INFO | 2013/11/06 12:49:28 | <Nov 6, 2013 12:49:28 PM SGT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2013/11/06 12:49:28 | <Nov 6, 2013 12:49:28 PM SGT> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+INFO | 2013/11/06 12:49:29 | <Nov 6, 2013 12:49:29 PM SGT> <Notice> <Log Management> <BEA-170019> <The server log file /home/oracle/otm/logs/weblogic/weblogic.log is opened. All server side log events will be written to this file.> 
+INFO | 2013/11/06 12:49:33 | GC3 realm initializing <-----------
+INFO | 2013/11/06 12:50:35 | cause.InvalidDataConnection
+INFO | 2013/11/06 12:50:35 | 
+INFO | 2013/11/06 12:50:35 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2013/11/06 12:50:35 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2013/11/06 12:50:35 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2013/11/06 12:50:35 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2013/11/06 12:50:35 | 	at glog.util.exception.GLException.factory(GLException.java:460)
+INFO | 2013/11/06 12:50:35 | 	at glog.util.exception.GLException.factory(GLException.java:436)
+INFO | 2013/11/06 12:50:35 | 	at glog.util.exception.GLException.factory(GLException.java:432)
+INFO | 2013/11/06 12:50:35 | 	at glog.util.exception.GLException.factory(GLException.java:420)
+INFO | 2013/11/06 12:50:35 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:347)
+INFO | 2013/11/06 12:50:35 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:463)
+INFO | 2013/11/06 12:50:35 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:437)
+INFO | 2013/11/06 12:50:35 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:70)
+INFO | 2013/11/06 12:50:35 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1632)
+INFO | 2013/11/06 12:50:35 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1668)
+INFO | 2013/11/06 12:50:35 | 	at glog.database.security.dbrealm.CachingRealm.readKnownGroups(CachingRealm.java:421)
+INFO | 2013/11/06 12:50:35 | 	at glog.database.security.dbrealm.CachingRealm.initCaches(CachingRealm.java:191)
+INFO | 2013/11/06 12:50:35 | 	at glog.database.security.dbrealm.CachingRealm.<init>(CachingRealm.java:141)
+INFO | 2013/11/06 12:50:35 | 	at glog.database.security.dbrealm.CachingRealm.initialize(CachingRealm.java:123)
+INFO | 2013/11/06 12:50:35 | 	at glog.util.j2ee.jaas.GC3AuthenticationProviderImpl.initialize(GC3AuthenticationProviderImpl.java:32)
+INFO | 2013/11/06 12:50:35 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:60)
+INFO | 2013/11/06 12:50:35 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:363)
+INFO | 2013/11/06 12:50:35 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:315)
+INFO | 2013/11/06 12:50:35 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:257)
+INFO | 2013/11/06 12:50:35 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:72)
+INFO | 2013/11/06 12:50:35 | 	at weblogic.security.service.internal.WLSIdentityServiceImpl.initialize(WLSIdentityServiceImpl.java:46)
+INFO | 2013/11/06 12:50:35 | 	at weblogic.security.service.CSSWLSDelegateImpl.initializeServiceEngine(CSSWLSDelegateImpl.java:299)
+INFO | 2013/11/06 12:50:35 | 	at weblogic.security.service.CSSWLSDelegateImpl.initialize(CSSWLSDelegateImpl.java:220)
+INFO | 2013/11/06 12:50:35 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.InitializeServiceEngine(CommonSecurityServiceManagerDelegateImpl.java:1789)
+INFO | 2013/11/06 12:50:35 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:443)
+INFO | 2013/11/06 12:50:35 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:841)
+INFO | 2013/11/06 12:50:35 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:870)
+INFO | 2013/11/06 12:50:35 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1032)
+INFO | 2013/11/06 12:50:35 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:873)
+INFO | 2013/11/06 12:50:35 | 	at weblogic.security.SecurityService.start(SecurityService.java:141)
+INFO | 2013/11/06 12:50:35 | 	at weblogic.t3.srvr.SubsystemRequest.run(SubsystemRequest.java:64)
+INFO | 2013/11/06 12:50:35 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2013/11/06 12:50:35 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2013/11/06 12:50:35 | Fatal Error: Realm Initialization failed!!
+INFO | 2013/11/06 12:50:35 | <Nov 6, 2013 12:50:35 PM SGT> <Notice> <WebLogicServer> <BEA-000388> <JVM called WLS shutdown hook. The server will force shutdown now> 
+INFO | 2013/11/06 12:50:35 | <Nov 6, 2013 12:50:35 PM SGT> <Alert> <WebLogicServer> <BEA-000396> <Server shutdown has been requested by <WLS Kernel>> 
+INFO | 2013/11/06 12:50:35 | <Nov 6, 2013 12:50:35 PM SGT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FORCE_SHUTTING_DOWN> 
+INFO | 2013/11/06 12:50:35 | Stopped Launched Process...
+INFO | 2013/11/06 13:22:27 | Starting Launched Process...
+INFO | 2013/11/06 13:22:28 | java version "1.6.0_33"
+INFO | 2013/11/06 13:22:28 | Java(TM) SE Runtime Environment (build 1.6.0_33-b03)
+INFO | 2013/11/06 13:22:28 | Oracle JRockit(R) (build R28.2.4-14-151097-1.6.0_33-20120618-1634-linux-x86_64, compiled mode)
+INFO | 2013/11/06 13:22:28 | Argument #0 : /home/oracle/otm/jdk/bin/java
+INFO | 2013/11/06 13:22:28 | Argument #1 : -Xms1536m
+INFO | 2013/11/06 13:22:28 | Argument #2 : -Xmx1536m
+INFO | 2013/11/06 13:22:28 | Argument #3 : -jrockit
+INFO | 2013/11/06 13:22:28 | Argument #4 : -Xgc:throughput
+INFO | 2013/11/06 13:22:28 | Argument #5 : -Xverbose:memory
+INFO | 2013/11/06 13:22:28 | Argument #6 : -Dglog.home=/home/oracle/otm/glog/config
+INFO | 2013/11/06 13:22:28 | Argument #7 : -Duser.home=/home/oracle/otm/glog/config
+INFO | 2013/11/06 13:22:28 | Argument #8 : -Djava.io.tmpdir=/home/oracle/otm/temp
+INFO | 2013/11/06 13:22:28 | Argument #9 : -Djava.awt.headless=true
+INFO | 2013/11/06 13:22:28 | Argument #10 : -Djava.security.auth.login.config=/home/oracle/otm/glog/config/otm_jaas.config
+INFO | 2013/11/06 13:22:28 | Argument #11 : -Xss256k
+INFO | 2013/11/06 13:22:28 | Argument #12 : -Dweblogic.Name=gc3-OTM-SERVER-LINUX
+INFO | 2013/11/06 13:22:28 | Argument #13 : -Dbea.home=/home/oracle/Middleware
+INFO | 2013/11/06 13:22:28 | Argument #14 : -Dweblogic.home=/home/oracle/Middleware/wlserver_10.3/server
+INFO | 2013/11/06 13:22:28 | Argument #15 : -Dweblogic.management.username=system
+INFO | 2013/11/06 13:22:28 | Argument #16 : -Dweblogic.management.password=CHANGEME
+INFO | 2013/11/06 13:22:28 | Argument #17 : -Dweblogic.ProductionModeEnabled=true
+INFO | 2013/11/06 13:22:28 | Argument #18 : -Dweblogic.management.discover=false
+INFO | 2013/11/06 13:22:28 | Argument #19 : -Djava.security.policy=/home/oracle/Middleware/wlserver_10.3/server/lib/weblogic.policy
+INFO | 2013/11/06 13:22:28 | Argument #20 : -Dwli.home=/home/oracle/Middleware/wlserver_10.3/integration
+INFO | 2013/11/06 13:22:28 | Argument #21 : -Dwls.home=/home/oracle/Middleware/wlserver_10.3/server
+INFO | 2013/11/06 13:22:28 | Argument #22 : -Dweblogic.RootDirectory=/home/oracle/otm/weblogic/domains/otm
+INFO | 2013/11/06 13:22:28 | Argument #23 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2013/11/06 13:22:28 | Argument #24 : -Djavax.xml.soap.SOAPFactory=weblogic.xml.saaj.SOAPFactoryImpl
+INFO | 2013/11/06 13:22:28 | Argument #25 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2013/11/06 13:22:28 | Argument #26 : -DpropertyProtection=mask
+INFO | 2013/11/06 13:22:28 | Argument #27 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2013/11/06 13:22:28 | Argument #28 : -Djavax.xml.soap.MessageFactory=weblogic.xml.saaj.MessageFactoryImpl
+INFO | 2013/11/06 13:22:28 | Argument #29 : -Djavax.management.builder.initial=weblogic.management.jmx.mbeanserver.WLSMBeanServerBuilder
+INFO | 2013/11/06 13:22:28 | Argument #30 : -Dweblogic.wsee.policy.LoadFromClassPathEnabled=true
+INFO | 2013/11/06 13:22:28 | Argument #31 : -Dmode=appserver
+INFO | 2013/11/06 13:22:28 | Argument #32 : -classpath
+INFO | 2013/11/06 13:22:28 | Argument #33 : /home/oracle/otm/jdk/lib/tools.jar:/home/oracle/otm/glog/glog_resources/custom:/home/oracle/otm/glog/glog_resources:/home/oracle/otm/glog/config:/home/oracle/otm/glog/gc3webapp/WEB-INF/classes:/home/oracle/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/ojdbc6.jar:/home/oracle/otm/dash/lib/xprb.jar:/home/oracle/otm/dash/lib/xprm.jar:/home/oracle/otm/dash/lib/xprs.jar:/home/oracle/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar:/home/oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/home/oracle/Middleware/wlserver_10.3/server/lib/weblogic.jar:/home/oracle/Middleware/wlserver_10.3/server/lib/webservices.jar:/home/oracle/Middleware/modules/features/weblogic.server.modules.sca_10.3.6.0.jar
+INFO | 2013/11/06 13:22:28 | Argument #34 : weblogic.Server
+INFO | 2013/11/06 13:22:28 | Argument #35 : start
+INFO | 2013/11/06 13:22:28 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2013/11/06 13:22:28 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, strategy: Generational Parallel Mark & Sweep.
+INFO | 2013/11/06 13:22:28 | [INFO ][memory ] Heap size: 1572864KB, maximal heap size: 1572864KB, nursery size: 786432KB.
+INFO | 2013/11/06 13:22:28 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2013/11/06 13:22:28 | [INFO ][memory ] <start>  - start time of collection (seconds since jvm start).
+INFO | 2013/11/06 13:22:28 | [INFO ][memory ] <type>   - OC (old collection) or YC (young collection).
+INFO | 2013/11/06 13:22:28 | [INFO ][memory ] <end>    - end time of collection (seconds since jvm start).
+INFO | 2013/11/06 13:22:28 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2013/11/06 13:22:28 | [INFO ][memory ] <after>  - memory used by objects after collection (KB).
+INFO | 2013/11/06 13:22:28 | [INFO ][memory ] <heap>   - size of heap after collection (KB).
+INFO | 2013/11/06 13:22:28 | [INFO ][memory ] <time>   - total time of collection (milliseconds).
+INFO | 2013/11/06 13:22:28 | [INFO ][memory ] <pause>  - total sum of pauses during collection (milliseconds).
+INFO | 2013/11/06 13:22:28 | [INFO ][memory ]            Run with -Xverbose:gcpause to see individual phases.
+INFO | 2013/11/06 13:22:31 | <Nov 6, 2013 1:22:31 PM SGT> <Info> <Security> <BEA-090905> <Disabling CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true> 
+INFO | 2013/11/06 13:22:31 | <Nov 6, 2013 1:22:31 PM SGT> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true> 
+INFO | 2013/11/06 13:22:32 | <Nov 6, 2013 1:22:32 PM SGT> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Oracle JRockit(R) Version R28.2.4-14-151097-1.6.0_33-20120618-1634-linux-x86_64 from Oracle Corporation> 
+INFO | 2013/11/06 13:22:34 | <Nov 6, 2013 1:22:34 PM SGT> <Info> <Management> <BEA-141107> <Version: WebLogic Server 10.3.6.0  Tue Nov 15 08:52:36 PST 2011 1441050 > 
+INFO | 2013/11/06 13:22:34 | <Nov 6, 2013 1:22:34 PM SGT> <Warning> <Management> <BEA-141274> <Production mode has specified at the command line via the weblogic.ProductionModeEnabled system property. This system property overrides the development mode setting contained in config.xml. However, the console and WLST show the attribute values and defaults that correspond to the development mode specified in config.xml.> 
+INFO | 2013/11/06 13:22:39 | <Nov 6, 2013 1:22:39 PM SGT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2013/11/06 13:22:39 | <Nov 6, 2013 1:22:39 PM SGT> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+INFO | 2013/11/06 13:22:41 | <Nov 6, 2013 1:22:41 PM SGT> <Notice> <LoggingService> <BEA-320400> <The log file /home/oracle/otm/logs/weblogic/weblogic.log will be rotated. Reopen the log file if tailing has stopped. This can happen on some platforms like Windows.> 
+INFO | 2013/11/06 13:22:41 | <Nov 6, 2013 1:22:41 PM SGT> <Notice> <LoggingService> <BEA-320401> <The log file has been rotated to /home/oracle/otm/logs/weblogic/weblogic.log00001. Log messages will continue to be logged in /home/oracle/otm/logs/weblogic/weblogic.log.> 
+INFO | 2013/11/06 13:22:41 | <Nov 6, 2013 1:22:41 PM SGT> <Notice> <Log Management> <BEA-170019> <The server log file /home/oracle/otm/logs/weblogic/weblogic.log is opened. All server side log events will be written to this file.> 
+INFO | 2013/11/06 13:22:47 | GC3 realm initializing <-----------
+INFO | 2013/11/06 13:23:49 | cause.InvalidDataConnection
+INFO | 2013/11/06 13:23:49 | 
+INFO | 2013/11/06 13:23:49 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2013/11/06 13:23:49 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2013/11/06 13:23:49 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2013/11/06 13:23:49 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2013/11/06 13:23:49 | 	at glog.util.exception.GLException.factory(GLException.java:460)
+INFO | 2013/11/06 13:23:49 | 	at glog.util.exception.GLException.factory(GLException.java:436)
+INFO | 2013/11/06 13:23:49 | 	at glog.util.exception.GLException.factory(GLException.java:432)
+INFO | 2013/11/06 13:23:49 | 	at glog.util.exception.GLException.factory(GLException.java:420)
+INFO | 2013/11/06 13:23:49 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:347)
+INFO | 2013/11/06 13:23:49 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:463)
+INFO | 2013/11/06 13:23:49 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:437)
+INFO | 2013/11/06 13:23:49 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:70)
+INFO | 2013/11/06 13:23:49 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1632)
+INFO | 2013/11/06 13:23:49 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1668)
+INFO | 2013/11/06 13:23:49 | 	at glog.database.security.dbrealm.CachingRealm.readKnownGroups(CachingRealm.java:421)
+INFO | 2013/11/06 13:23:49 | 	at glog.database.security.dbrealm.CachingRealm.initCaches(CachingRealm.java:191)
+INFO | 2013/11/06 13:23:49 | 	at glog.database.security.dbrealm.CachingRealm.<init>(CachingRealm.java:141)
+INFO | 2013/11/06 13:23:49 | 	at glog.database.security.dbrealm.CachingRealm.initialize(CachingRealm.java:123)
+INFO | 2013/11/06 13:23:49 | 	at glog.util.j2ee.jaas.GC3AuthenticationProviderImpl.initialize(GC3AuthenticationProviderImpl.java:32)
+INFO | 2013/11/06 13:23:49 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:60)
+INFO | 2013/11/06 13:23:49 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:363)
+INFO | 2013/11/06 13:23:49 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:315)
+INFO | 2013/11/06 13:23:49 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:257)
+INFO | 2013/11/06 13:23:49 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:72)
+INFO | 2013/11/06 13:23:49 | 	at weblogic.security.service.internal.WLSIdentityServiceImpl.initialize(WLSIdentityServiceImpl.java:46)
+INFO | 2013/11/06 13:23:49 | 	at weblogic.security.service.CSSWLSDelegateImpl.initializeServiceEngine(CSSWLSDelegateImpl.java:299)
+INFO | 2013/11/06 13:23:49 | 	at weblogic.security.service.CSSWLSDelegateImpl.initialize(CSSWLSDelegateImpl.java:220)
+INFO | 2013/11/06 13:23:49 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.InitializeServiceEngine(CommonSecurityServiceManagerDelegateImpl.java:1789)
+INFO | 2013/11/06 13:23:49 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:443)
+INFO | 2013/11/06 13:23:49 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:841)
+INFO | 2013/11/06 13:23:49 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:870)
+INFO | 2013/11/06 13:23:49 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1032)
+INFO | 2013/11/06 13:23:49 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:873)
+INFO | 2013/11/06 13:23:49 | 	at weblogic.security.SecurityService.start(SecurityService.java:141)
+INFO | 2013/11/06 13:23:49 | 	at weblogic.t3.srvr.SubsystemRequest.run(SubsystemRequest.java:64)
+INFO | 2013/11/06 13:23:49 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2013/11/06 13:23:49 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2013/11/06 13:23:50 | Fatal Error: Realm Initialization failed!!
+INFO | 2013/11/06 13:23:50 | <Nov 6, 2013 1:23:50 PM SGT> <Notice> <WebLogicServer> <BEA-000388> <JVM called WLS shutdown hook. The server will force shutdown now> 
+INFO | 2013/11/06 13:23:50 | <Nov 6, 2013 1:23:50 PM SGT> <Alert> <WebLogicServer> <BEA-000396> <Server shutdown has been requested by <WLS Kernel>> 
+INFO | 2013/11/06 13:23:50 | <Nov 6, 2013 1:23:50 PM SGT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FORCE_SHUTTING_DOWN> 
+INFO | 2013/11/06 13:23:50 | Stopped Launched Process...
+INFO | 2013/11/06 13:35:59 | Starting Launched Process...
+INFO | 2013/11/06 13:35:59 | java version "1.6.0_33"
+INFO | 2013/11/06 13:35:59 | Java(TM) SE Runtime Environment (build 1.6.0_33-b03)
+INFO | 2013/11/06 13:35:59 | Oracle JRockit(R) (build R28.2.4-14-151097-1.6.0_33-20120618-1634-linux-x86_64, compiled mode)
+INFO | 2013/11/06 13:35:59 | Argument #0 : /home/oracle/otm/jdk/bin/java
+INFO | 2013/11/06 13:35:59 | Argument #1 : -Xms1536m
+INFO | 2013/11/06 13:35:59 | Argument #2 : -Xmx1536m
+INFO | 2013/11/06 13:35:59 | Argument #3 : -jrockit
+INFO | 2013/11/06 13:35:59 | Argument #4 : -Xgc:throughput
+INFO | 2013/11/06 13:35:59 | Argument #5 : -Xverbose:memory
+INFO | 2013/11/06 13:35:59 | Argument #6 : -Dglog.home=/home/oracle/otm/glog/config
+INFO | 2013/11/06 13:35:59 | Argument #7 : -Duser.home=/home/oracle/otm/glog/config
+INFO | 2013/11/06 13:35:59 | Argument #8 : -Djava.io.tmpdir=/home/oracle/otm/temp
+INFO | 2013/11/06 13:35:59 | Argument #9 : -Djava.awt.headless=true
+INFO | 2013/11/06 13:35:59 | Argument #10 : -Djava.security.auth.login.config=/home/oracle/otm/glog/config/otm_jaas.config
+INFO | 2013/11/06 13:35:59 | Argument #11 : -Xss256k
+INFO | 2013/11/06 13:35:59 | Argument #12 : -Dweblogic.Name=gc3-OTM-SERVER-LINUX
+INFO | 2013/11/06 13:35:59 | Argument #13 : -Dbea.home=/home/oracle/Middleware
+INFO | 2013/11/06 13:35:59 | Argument #14 : -Dweblogic.home=/home/oracle/Middleware/wlserver_10.3/server
+INFO | 2013/11/06 13:35:59 | Argument #15 : -Dweblogic.management.username=system
+INFO | 2013/11/06 13:35:59 | Argument #16 : -Dweblogic.management.password=CHANGEME
+INFO | 2013/11/06 13:35:59 | Argument #17 : -Dweblogic.ProductionModeEnabled=true
+INFO | 2013/11/06 13:35:59 | Argument #18 : -Dweblogic.management.discover=false
+INFO | 2013/11/06 13:35:59 | Argument #19 : -Djava.security.policy=/home/oracle/Middleware/wlserver_10.3/server/lib/weblogic.policy
+INFO | 2013/11/06 13:35:59 | Argument #20 : -Dwli.home=/home/oracle/Middleware/wlserver_10.3/integration
+INFO | 2013/11/06 13:35:59 | Argument #21 : -Dwls.home=/home/oracle/Middleware/wlserver_10.3/server
+INFO | 2013/11/06 13:35:59 | Argument #22 : -Dweblogic.RootDirectory=/home/oracle/otm/weblogic/domains/otm
+INFO | 2013/11/06 13:35:59 | Argument #23 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2013/11/06 13:35:59 | Argument #24 : -Djavax.xml.soap.SOAPFactory=weblogic.xml.saaj.SOAPFactoryImpl
+INFO | 2013/11/06 13:35:59 | Argument #25 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2013/11/06 13:35:59 | Argument #26 : -DpropertyProtection=mask
+INFO | 2013/11/06 13:35:59 | Argument #27 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2013/11/06 13:35:59 | Argument #28 : -Djavax.xml.soap.MessageFactory=weblogic.xml.saaj.MessageFactoryImpl
+INFO | 2013/11/06 13:35:59 | Argument #29 : -Djavax.management.builder.initial=weblogic.management.jmx.mbeanserver.WLSMBeanServerBuilder
+INFO | 2013/11/06 13:35:59 | Argument #30 : -Dweblogic.wsee.policy.LoadFromClassPathEnabled=true
+INFO | 2013/11/06 13:35:59 | Argument #31 : -Dmode=appserver
+INFO | 2013/11/06 13:35:59 | Argument #32 : -classpath
+INFO | 2013/11/06 13:35:59 | Argument #33 : /home/oracle/otm/jdk/lib/tools.jar:/home/oracle/otm/glog/glog_resources/custom:/home/oracle/otm/glog/glog_resources:/home/oracle/otm/glog/config:/home/oracle/otm/glog/gc3webapp/WEB-INF/classes:/home/oracle/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/ojdbc6.jar:/home/oracle/otm/dash/lib/xprb.jar:/home/oracle/otm/dash/lib/xprm.jar:/home/oracle/otm/dash/lib/xprs.jar:/home/oracle/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar:/home/oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/home/oracle/Middleware/wlserver_10.3/server/lib/weblogic.jar:/home/oracle/Middleware/wlserver_10.3/server/lib/webservices.jar:/home/oracle/Middleware/modules/features/weblogic.server.modules.sca_10.3.6.0.jar
+INFO | 2013/11/06 13:35:59 | Argument #34 : weblogic.Server
+INFO | 2013/11/06 13:35:59 | Argument #35 : start
+INFO | 2013/11/06 13:35:59 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2013/11/06 13:35:59 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, strategy: Generational Parallel Mark & Sweep.
+INFO | 2013/11/06 13:35:59 | [INFO ][memory ] Heap size: 1572864KB, maximal heap size: 1572864KB, nursery size: 786432KB.
+INFO | 2013/11/06 13:35:59 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2013/11/06 13:35:59 | [INFO ][memory ] <start>  - start time of collection (seconds since jvm start).
+INFO | 2013/11/06 13:35:59 | [INFO ][memory ] <type>   - OC (old collection) or YC (young collection).
+INFO | 2013/11/06 13:35:59 | [INFO ][memory ] <end>    - end time of collection (seconds since jvm start).
+INFO | 2013/11/06 13:35:59 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2013/11/06 13:35:59 | [INFO ][memory ] <after>  - memory used by objects after collection (KB).
+INFO | 2013/11/06 13:35:59 | [INFO ][memory ] <heap>   - size of heap after collection (KB).
+INFO | 2013/11/06 13:35:59 | [INFO ][memory ] <time>   - total time of collection (milliseconds).
+INFO | 2013/11/06 13:35:59 | [INFO ][memory ] <pause>  - total sum of pauses during collection (milliseconds).
+INFO | 2013/11/06 13:35:59 | [INFO ][memory ]            Run with -Xverbose:gcpause to see individual phases.
+INFO | 2013/11/06 13:36:02 | <Nov 6, 2013 1:36:02 PM SGT> <Info> <Security> <BEA-090905> <Disabling CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true> 
+INFO | 2013/11/06 13:36:02 | <Nov 6, 2013 1:36:02 PM SGT> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true> 
+INFO | 2013/11/06 13:36:03 | <Nov 6, 2013 1:36:03 PM SGT> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Oracle JRockit(R) Version R28.2.4-14-151097-1.6.0_33-20120618-1634-linux-x86_64 from Oracle Corporation> 
+INFO | 2013/11/06 13:36:05 | <Nov 6, 2013 1:36:05 PM SGT> <Info> <Management> <BEA-141107> <Version: WebLogic Server 10.3.6.0  Tue Nov 15 08:52:36 PST 2011 1441050 > 
+INFO | 2013/11/06 13:36:05 | <Nov 6, 2013 1:36:05 PM SGT> <Warning> <Management> <BEA-141274> <Production mode has specified at the command line via the weblogic.ProductionModeEnabled system property. This system property overrides the development mode setting contained in config.xml. However, the console and WLST show the attribute values and defaults that correspond to the development mode specified in config.xml.> 
+INFO | 2013/11/06 13:36:09 | <Nov 6, 2013 1:36:09 PM SGT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2013/11/06 13:36:09 | <Nov 6, 2013 1:36:09 PM SGT> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+INFO | 2013/11/06 13:36:10 | <Nov 6, 2013 1:36:10 PM SGT> <Notice> <LoggingService> <BEA-320400> <The log file /home/oracle/otm/logs/weblogic/weblogic.log will be rotated. Reopen the log file if tailing has stopped. This can happen on some platforms like Windows.> 
+INFO | 2013/11/06 13:36:10 | <Nov 6, 2013 1:36:10 PM SGT> <Notice> <LoggingService> <BEA-320401> <The log file has been rotated to /home/oracle/otm/logs/weblogic/weblogic.log00002. Log messages will continue to be logged in /home/oracle/otm/logs/weblogic/weblogic.log.> 
+INFO | 2013/11/06 13:36:10 | <Nov 6, 2013 1:36:10 PM SGT> <Notice> <Log Management> <BEA-170019> <The server log file /home/oracle/otm/logs/weblogic/weblogic.log is opened. All server side log events will be written to this file.> 
+INFO | 2013/11/06 13:36:15 | GC3 realm initializing <-----------
+INFO | 2013/11/06 13:37:16 | cause.InvalidDataConnection
+INFO | 2013/11/06 13:37:16 | 
+INFO | 2013/11/06 13:37:16 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2013/11/06 13:37:16 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2013/11/06 13:37:16 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2013/11/06 13:37:16 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2013/11/06 13:37:16 | 	at glog.util.exception.GLException.factory(GLException.java:460)
+INFO | 2013/11/06 13:37:16 | 	at glog.util.exception.GLException.factory(GLException.java:436)
+INFO | 2013/11/06 13:37:16 | 	at glog.util.exception.GLException.factory(GLException.java:432)
+INFO | 2013/11/06 13:37:16 | 	at glog.util.exception.GLException.factory(GLException.java:420)
+INFO | 2013/11/06 13:37:16 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:347)
+INFO | 2013/11/06 13:37:16 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:463)
+INFO | 2013/11/06 13:37:16 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:437)
+INFO | 2013/11/06 13:37:16 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:70)
+INFO | 2013/11/06 13:37:16 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1632)
+INFO | 2013/11/06 13:37:16 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1668)
+INFO | 2013/11/06 13:37:16 | 	at glog.database.security.dbrealm.CachingRealm.readKnownGroups(CachingRealm.java:421)
+INFO | 2013/11/06 13:37:16 | 	at glog.database.security.dbrealm.CachingRealm.initCaches(CachingRealm.java:191)
+INFO | 2013/11/06 13:37:16 | 	at glog.database.security.dbrealm.CachingRealm.<init>(CachingRealm.java:141)
+INFO | 2013/11/06 13:37:16 | 	at glog.database.security.dbrealm.CachingRealm.initialize(CachingRealm.java:123)
+INFO | 2013/11/06 13:37:16 | 	at glog.util.j2ee.jaas.GC3AuthenticationProviderImpl.initialize(GC3AuthenticationProviderImpl.java:32)
+INFO | 2013/11/06 13:37:16 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:60)
+INFO | 2013/11/06 13:37:16 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:363)
+INFO | 2013/11/06 13:37:16 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:315)
+INFO | 2013/11/06 13:37:16 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:257)
+INFO | 2013/11/06 13:37:16 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:72)
+INFO | 2013/11/06 13:37:16 | 	at weblogic.security.service.internal.WLSIdentityServiceImpl.initialize(WLSIdentityServiceImpl.java:46)
+INFO | 2013/11/06 13:37:16 | 	at weblogic.security.service.CSSWLSDelegateImpl.initializeServiceEngine(CSSWLSDelegateImpl.java:299)
+INFO | 2013/11/06 13:37:16 | 	at weblogic.security.service.CSSWLSDelegateImpl.initialize(CSSWLSDelegateImpl.java:220)
+INFO | 2013/11/06 13:37:16 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.InitializeServiceEngine(CommonSecurityServiceManagerDelegateImpl.java:1789)
+INFO | 2013/11/06 13:37:16 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:443)
+INFO | 2013/11/06 13:37:16 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:841)
+INFO | 2013/11/06 13:37:16 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:870)
+INFO | 2013/11/06 13:37:16 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1032)
+INFO | 2013/11/06 13:37:16 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:873)
+INFO | 2013/11/06 13:37:16 | 	at weblogic.security.SecurityService.start(SecurityService.java:141)
+INFO | 2013/11/06 13:37:16 | 	at weblogic.t3.srvr.SubsystemRequest.run(SubsystemRequest.java:64)
+INFO | 2013/11/06 13:37:16 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2013/11/06 13:37:16 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2013/11/06 13:37:17 | Fatal Error: Realm Initialization failed!!
+INFO | 2013/11/06 13:37:17 | <Nov 6, 2013 1:37:17 PM SGT> <Notice> <WebLogicServer> <BEA-000388> <JVM called WLS shutdown hook. The server will force shutdown now> 
+INFO | 2013/11/06 13:37:17 | <Nov 6, 2013 1:37:17 PM SGT> <Alert> <WebLogicServer> <BEA-000396> <Server shutdown has been requested by <WLS Kernel>> 
+INFO | 2013/11/06 13:37:17 | <Nov 6, 2013 1:37:17 PM SGT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FORCE_SHUTTING_DOWN> 
+INFO | 2013/11/06 13:37:17 | Stopped Launched Process...
+INFO | 2013/11/06 14:10:37 | Starting Launched Process...
+INFO | 2013/11/06 14:10:38 | java version "1.6.0_33"
+INFO | 2013/11/06 14:10:38 | Java(TM) SE Runtime Environment (build 1.6.0_33-b03)
+INFO | 2013/11/06 14:10:38 | Oracle JRockit(R) (build R28.2.4-14-151097-1.6.0_33-20120618-1634-linux-x86_64, compiled mode)
+INFO | 2013/11/06 14:10:38 | Argument #0 : /home/oracle/otm/jdk/bin/java
+INFO | 2013/11/06 14:10:38 | Argument #1 : -Xms1536m
+INFO | 2013/11/06 14:10:38 | Argument #2 : -Xmx1536m
+INFO | 2013/11/06 14:10:38 | Argument #3 : -jrockit
+INFO | 2013/11/06 14:10:38 | Argument #4 : -Xgc:throughput
+INFO | 2013/11/06 14:10:38 | Argument #5 : -Xverbose:memory
+INFO | 2013/11/06 14:10:38 | Argument #6 : -Dglog.home=/home/oracle/otm/glog/config
+INFO | 2013/11/06 14:10:38 | Argument #7 : -Duser.home=/home/oracle/otm/glog/config
+INFO | 2013/11/06 14:10:38 | Argument #8 : -Djava.io.tmpdir=/home/oracle/otm/temp
+INFO | 2013/11/06 14:10:38 | Argument #9 : -Djava.awt.headless=true
+INFO | 2013/11/06 14:10:38 | Argument #10 : -Djava.security.auth.login.config=/home/oracle/otm/glog/config/otm_jaas.config
+INFO | 2013/11/06 14:10:38 | Argument #11 : -Xss256k
+INFO | 2013/11/06 14:10:38 | Argument #12 : -Dweblogic.Name=gc3-OTM-SERVER-LINUX
+INFO | 2013/11/06 14:10:38 | Argument #13 : -Dbea.home=/home/oracle/Middleware
+INFO | 2013/11/06 14:10:38 | Argument #14 : -Dweblogic.home=/home/oracle/Middleware/wlserver_10.3/server
+INFO | 2013/11/06 14:10:38 | Argument #15 : -Dweblogic.management.username=system
+INFO | 2013/11/06 14:10:38 | Argument #16 : -Dweblogic.management.password=CHANGEME
+INFO | 2013/11/06 14:10:38 | Argument #17 : -Dweblogic.ProductionModeEnabled=true
+INFO | 2013/11/06 14:10:38 | Argument #18 : -Dweblogic.management.discover=false
+INFO | 2013/11/06 14:10:38 | Argument #19 : -Djava.security.policy=/home/oracle/Middleware/wlserver_10.3/server/lib/weblogic.policy
+INFO | 2013/11/06 14:10:38 | Argument #20 : -Dwli.home=/home/oracle/Middleware/wlserver_10.3/integration
+INFO | 2013/11/06 14:10:38 | Argument #21 : -Dwls.home=/home/oracle/Middleware/wlserver_10.3/server
+INFO | 2013/11/06 14:10:38 | Argument #22 : -Dweblogic.RootDirectory=/home/oracle/otm/weblogic/domains/otm
+INFO | 2013/11/06 14:10:38 | Argument #23 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2013/11/06 14:10:38 | Argument #24 : -Djavax.xml.soap.SOAPFactory=weblogic.xml.saaj.SOAPFactoryImpl
+INFO | 2013/11/06 14:10:38 | Argument #25 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2013/11/06 14:10:38 | Argument #26 : -DpropertyProtection=mask
+INFO | 2013/11/06 14:10:38 | Argument #27 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2013/11/06 14:10:38 | Argument #28 : -Djavax.xml.soap.MessageFactory=weblogic.xml.saaj.MessageFactoryImpl
+INFO | 2013/11/06 14:10:38 | Argument #29 : -Djavax.management.builder.initial=weblogic.management.jmx.mbeanserver.WLSMBeanServerBuilder
+INFO | 2013/11/06 14:10:38 | Argument #30 : -Dweblogic.wsee.policy.LoadFromClassPathEnabled=true
+INFO | 2013/11/06 14:10:38 | Argument #31 : -Dmode=appserver
+INFO | 2013/11/06 14:10:38 | Argument #32 : -classpath
+INFO | 2013/11/06 14:10:38 | Argument #33 : /home/oracle/otm/jdk/lib/tools.jar:/home/oracle/otm/glog/glog_resources/custom:/home/oracle/otm/glog/glog_resources:/home/oracle/otm/glog/config:/home/oracle/otm/glog/gc3webapp/WEB-INF/classes:/home/oracle/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/ojdbc6.jar:/home/oracle/otm/dash/lib/xprb.jar:/home/oracle/otm/dash/lib/xprm.jar:/home/oracle/otm/dash/lib/xprs.jar:/home/oracle/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar:/home/oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/home/oracle/Middleware/wlserver_10.3/server/lib/weblogic.jar:/home/oracle/Middleware/wlserver_10.3/server/lib/webservices.jar:/home/oracle/Middleware/modules/features/weblogic.server.modules.sca_10.3.6.0.jar
+INFO | 2013/11/06 14:10:38 | Argument #34 : weblogic.Server
+INFO | 2013/11/06 14:10:38 | Argument #35 : start
+INFO | 2013/11/06 14:10:38 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2013/11/06 14:10:38 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, strategy: Generational Parallel Mark & Sweep.
+INFO | 2013/11/06 14:10:38 | [INFO ][memory ] Heap size: 1572864KB, maximal heap size: 1572864KB, nursery size: 786432KB.
+INFO | 2013/11/06 14:10:38 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2013/11/06 14:10:38 | [INFO ][memory ] <start>  - start time of collection (seconds since jvm start).
+INFO | 2013/11/06 14:10:38 | [INFO ][memory ] <type>   - OC (old collection) or YC (young collection).
+INFO | 2013/11/06 14:10:38 | [INFO ][memory ] <end>    - end time of collection (seconds since jvm start).
+INFO | 2013/11/06 14:10:38 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2013/11/06 14:10:38 | [INFO ][memory ] <after>  - memory used by objects after collection (KB).
+INFO | 2013/11/06 14:10:38 | [INFO ][memory ] <heap>   - size of heap after collection (KB).
+INFO | 2013/11/06 14:10:38 | [INFO ][memory ] <time>   - total time of collection (milliseconds).
+INFO | 2013/11/06 14:10:38 | [INFO ][memory ] <pause>  - total sum of pauses during collection (milliseconds).
+INFO | 2013/11/06 14:10:38 | [INFO ][memory ]            Run with -Xverbose:gcpause to see individual phases.
+INFO | 2013/11/06 14:10:40 | <Nov 6, 2013 2:10:39 PM SGT> <Info> <Security> <BEA-090905> <Disabling CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true> 
+INFO | 2013/11/06 14:10:40 | <Nov 6, 2013 2:10:40 PM SGT> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true> 
+INFO | 2013/11/06 14:10:40 | <Nov 6, 2013 2:10:40 PM SGT> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Oracle JRockit(R) Version R28.2.4-14-151097-1.6.0_33-20120618-1634-linux-x86_64 from Oracle Corporation> 
+INFO | 2013/11/06 14:10:42 | <Nov 6, 2013 2:10:42 PM SGT> <Info> <Management> <BEA-141107> <Version: WebLogic Server 10.3.6.0  Tue Nov 15 08:52:36 PST 2011 1441050 > 
+INFO | 2013/11/06 14:10:42 | <Nov 6, 2013 2:10:42 PM SGT> <Warning> <Management> <BEA-141274> <Production mode has specified at the command line via the weblogic.ProductionModeEnabled system property. This system property overrides the development mode setting contained in config.xml. However, the console and WLST show the attribute values and defaults that correspond to the development mode specified in config.xml.> 
+INFO | 2013/11/06 14:10:45 | <Nov 6, 2013 2:10:45 PM SGT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2013/11/06 14:10:45 | <Nov 6, 2013 2:10:45 PM SGT> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+INFO | 2013/11/06 14:10:46 | <Nov 6, 2013 2:10:46 PM SGT> <Notice> <LoggingService> <BEA-320400> <The log file /home/oracle/otm/logs/weblogic/weblogic.log will be rotated. Reopen the log file if tailing has stopped. This can happen on some platforms like Windows.> 
+INFO | 2013/11/06 14:10:46 | <Nov 6, 2013 2:10:46 PM SGT> <Notice> <LoggingService> <BEA-320401> <The log file has been rotated to /home/oracle/otm/logs/weblogic/weblogic.log00003. Log messages will continue to be logged in /home/oracle/otm/logs/weblogic/weblogic.log.> 
+INFO | 2013/11/06 14:10:46 | <Nov 6, 2013 2:10:46 PM SGT> <Notice> <Log Management> <BEA-170019> <The server log file /home/oracle/otm/logs/weblogic/weblogic.log is opened. All server side log events will be written to this file.> 
+INFO | 2013/11/06 14:10:49 | GC3 realm initializing <-----------
+INFO | 2013/11/06 14:11:51 | cause.InvalidDataConnection
+INFO | 2013/11/06 14:11:51 | 
+INFO | 2013/11/06 14:11:51 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2013/11/06 14:11:51 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2013/11/06 14:11:51 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2013/11/06 14:11:51 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2013/11/06 14:11:51 | 	at glog.util.exception.GLException.factory(GLException.java:460)
+INFO | 2013/11/06 14:11:51 | 	at glog.util.exception.GLException.factory(GLException.java:436)
+INFO | 2013/11/06 14:11:51 | 	at glog.util.exception.GLException.factory(GLException.java:432)
+INFO | 2013/11/06 14:11:51 | 	at glog.util.exception.GLException.factory(GLException.java:420)
+INFO | 2013/11/06 14:11:51 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:347)
+INFO | 2013/11/06 14:11:51 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:463)
+INFO | 2013/11/06 14:11:51 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:437)
+INFO | 2013/11/06 14:11:51 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:70)
+INFO | 2013/11/06 14:11:51 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1632)
+INFO | 2013/11/06 14:11:51 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1668)
+INFO | 2013/11/06 14:11:51 | 	at glog.database.security.dbrealm.CachingRealm.readKnownGroups(CachingRealm.java:421)
+INFO | 2013/11/06 14:11:51 | 	at glog.database.security.dbrealm.CachingRealm.initCaches(CachingRealm.java:191)
+INFO | 2013/11/06 14:11:51 | 	at glog.database.security.dbrealm.CachingRealm.<init>(CachingRealm.java:141)
+INFO | 2013/11/06 14:11:51 | 	at glog.database.security.dbrealm.CachingRealm.initialize(CachingRealm.java:123)
+INFO | 2013/11/06 14:11:51 | 	at glog.util.j2ee.jaas.GC3AuthenticationProviderImpl.initialize(GC3AuthenticationProviderImpl.java:32)
+INFO | 2013/11/06 14:11:51 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:60)
+INFO | 2013/11/06 14:11:51 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:363)
+INFO | 2013/11/06 14:11:51 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:315)
+INFO | 2013/11/06 14:11:51 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:257)
+INFO | 2013/11/06 14:11:51 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:72)
+INFO | 2013/11/06 14:11:51 | 	at weblogic.security.service.internal.WLSIdentityServiceImpl.initialize(WLSIdentityServiceImpl.java:46)
+INFO | 2013/11/06 14:11:51 | 	at weblogic.security.service.CSSWLSDelegateImpl.initializeServiceEngine(CSSWLSDelegateImpl.java:299)
+INFO | 2013/11/06 14:11:51 | 	at weblogic.security.service.CSSWLSDelegateImpl.initialize(CSSWLSDelegateImpl.java:220)
+INFO | 2013/11/06 14:11:51 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.InitializeServiceEngine(CommonSecurityServiceManagerDelegateImpl.java:1789)
+INFO | 2013/11/06 14:11:51 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:443)
+INFO | 2013/11/06 14:11:51 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:841)
+INFO | 2013/11/06 14:11:51 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:870)
+INFO | 2013/11/06 14:11:51 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1032)
+INFO | 2013/11/06 14:11:51 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:873)
+INFO | 2013/11/06 14:11:51 | 	at weblogic.security.SecurityService.start(SecurityService.java:141)
+INFO | 2013/11/06 14:11:51 | 	at weblogic.t3.srvr.SubsystemRequest.run(SubsystemRequest.java:64)
+INFO | 2013/11/06 14:11:51 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2013/11/06 14:11:51 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2013/11/06 14:11:51 | Fatal Error: Realm Initialization failed!!
+INFO | 2013/11/06 14:11:51 | <Nov 6, 2013 2:11:51 PM SGT> <Notice> <WebLogicServer> <BEA-000388> <JVM called WLS shutdown hook. The server will force shutdown now> 
+INFO | 2013/11/06 14:11:51 | <Nov 6, 2013 2:11:51 PM SGT> <Alert> <WebLogicServer> <BEA-000396> <Server shutdown has been requested by <WLS Kernel>> 
+INFO | 2013/11/06 14:11:52 | <Nov 6, 2013 2:11:52 PM SGT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FORCE_SHUTTING_DOWN> 
+INFO | 2013/11/06 14:11:52 | Stopped Launched Process...
+INFO | 2013/11/06 14:16:52 | Starting Launched Process...
+INFO | 2013/11/06 14:16:52 | java version "1.6.0_33"
+INFO | 2013/11/06 14:16:52 | Java(TM) SE Runtime Environment (build 1.6.0_33-b03)
+INFO | 2013/11/06 14:16:52 | Oracle JRockit(R) (build R28.2.4-14-151097-1.6.0_33-20120618-1634-linux-x86_64, compiled mode)
+INFO | 2013/11/06 14:16:52 | Argument #0 : /home/oracle/otm/jdk/bin/java
+INFO | 2013/11/06 14:16:52 | Argument #1 : -Xms1536m
+INFO | 2013/11/06 14:16:52 | Argument #2 : -Xmx1536m
+INFO | 2013/11/06 14:16:52 | Argument #3 : -jrockit
+INFO | 2013/11/06 14:16:52 | Argument #4 : -Xgc:throughput
+INFO | 2013/11/06 14:16:52 | Argument #5 : -Xverbose:memory
+INFO | 2013/11/06 14:16:52 | Argument #6 : -Dglog.home=/home/oracle/otm/glog/config
+INFO | 2013/11/06 14:16:52 | Argument #7 : -Duser.home=/home/oracle/otm/glog/config
+INFO | 2013/11/06 14:16:52 | Argument #8 : -Djava.io.tmpdir=/home/oracle/otm/temp
+INFO | 2013/11/06 14:16:52 | Argument #9 : -Djava.awt.headless=true
+INFO | 2013/11/06 14:16:52 | Argument #10 : -Djava.security.auth.login.config=/home/oracle/otm/glog/config/otm_jaas.config
+INFO | 2013/11/06 14:16:52 | Argument #11 : -Xss256k
+INFO | 2013/11/06 14:16:52 | Argument #12 : -Dweblogic.Name=gc3-OTM-SERVER-LINUX
+INFO | 2013/11/06 14:16:52 | Argument #13 : -Dbea.home=/home/oracle/Middleware
+INFO | 2013/11/06 14:16:52 | Argument #14 : -Dweblogic.home=/home/oracle/Middleware/wlserver_10.3/server
+INFO | 2013/11/06 14:16:52 | Argument #15 : -Dweblogic.management.username=system
+INFO | 2013/11/06 14:16:52 | Argument #16 : -Dweblogic.management.password=CHANGEME
+INFO | 2013/11/06 14:16:52 | Argument #17 : -Dweblogic.ProductionModeEnabled=true
+INFO | 2013/11/06 14:16:52 | Argument #18 : -Dweblogic.management.discover=false
+INFO | 2013/11/06 14:16:52 | Argument #19 : -Djava.security.policy=/home/oracle/Middleware/wlserver_10.3/server/lib/weblogic.policy
+INFO | 2013/11/06 14:16:52 | Argument #20 : -Dwli.home=/home/oracle/Middleware/wlserver_10.3/integration
+INFO | 2013/11/06 14:16:52 | Argument #21 : -Dwls.home=/home/oracle/Middleware/wlserver_10.3/server
+INFO | 2013/11/06 14:16:52 | Argument #22 : -Dweblogic.RootDirectory=/home/oracle/otm/weblogic/domains/otm
+INFO | 2013/11/06 14:16:52 | Argument #23 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2013/11/06 14:16:52 | Argument #24 : -Djavax.xml.soap.SOAPFactory=weblogic.xml.saaj.SOAPFactoryImpl
+INFO | 2013/11/06 14:16:52 | Argument #25 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2013/11/06 14:16:52 | Argument #26 : -DpropertyProtection=mask
+INFO | 2013/11/06 14:16:52 | Argument #27 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2013/11/06 14:16:52 | Argument #28 : -Djavax.xml.soap.MessageFactory=weblogic.xml.saaj.MessageFactoryImpl
+INFO | 2013/11/06 14:16:52 | Argument #29 : -Djavax.management.builder.initial=weblogic.management.jmx.mbeanserver.WLSMBeanServerBuilder
+INFO | 2013/11/06 14:16:52 | Argument #30 : -Dweblogic.wsee.policy.LoadFromClassPathEnabled=true
+INFO | 2013/11/06 14:16:52 | Argument #31 : -Dmode=appserver
+INFO | 2013/11/06 14:16:52 | Argument #32 : -classpath
+INFO | 2013/11/06 14:16:52 | Argument #33 : /home/oracle/otm/jdk/lib/tools.jar:/home/oracle/otm/glog/glog_resources/custom:/home/oracle/otm/glog/glog_resources:/home/oracle/otm/glog/config:/home/oracle/otm/glog/gc3webapp/WEB-INF/classes:/home/oracle/otm/glog/gc3webapp/WEB-INF/lib/3rdparty/ojdbc6.jar:/home/oracle/otm/dash/lib/xprb.jar:/home/oracle/otm/dash/lib/xprm.jar:/home/oracle/otm/dash/lib/xprs.jar:/home/oracle/otm/glog/gc3webapp/WEB-INF/lib/glogserver.jar:/home/oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/home/oracle/Middleware/wlserver_10.3/server/lib/weblogic.jar:/home/oracle/Middleware/wlserver_10.3/server/lib/webservices.jar:/home/oracle/Middleware/modules/features/weblogic.server.modules.sca_10.3.6.0.jar
+INFO | 2013/11/06 14:16:52 | Argument #34 : weblogic.Server
+INFO | 2013/11/06 14:16:52 | Argument #35 : start
+INFO | 2013/11/06 14:16:53 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2013/11/06 14:16:53 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, strategy: Generational Parallel Mark & Sweep.
+INFO | 2013/11/06 14:16:53 | [INFO ][memory ] Heap size: 1572864KB, maximal heap size: 1572864KB, nursery size: 786432KB.
+INFO | 2013/11/06 14:16:53 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2013/11/06 14:16:53 | [INFO ][memory ] <start>  - start time of collection (seconds since jvm start).
+INFO | 2013/11/06 14:16:53 | [INFO ][memory ] <type>   - OC (old collection) or YC (young collection).
+INFO | 2013/11/06 14:16:53 | [INFO ][memory ] <end>    - end time of collection (seconds since jvm start).
+INFO | 2013/11/06 14:16:53 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2013/11/06 14:16:53 | [INFO ][memory ] <after>  - memory used by objects after collection (KB).
+INFO | 2013/11/06 14:16:53 | [INFO ][memory ] <heap>   - size of heap after collection (KB).
+INFO | 2013/11/06 14:16:53 | [INFO ][memory ] <time>   - total time of collection (milliseconds).
+INFO | 2013/11/06 14:16:53 | [INFO ][memory ] <pause>  - total sum of pauses during collection (milliseconds).
+INFO | 2013/11/06 14:16:53 | [INFO ][memory ]            Run with -Xverbose:gcpause to see individual phases.
+INFO | 2013/11/06 14:16:55 | <Nov 6, 2013 2:16:55 PM SGT> <Info> <Security> <BEA-090905> <Disabling CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true> 
+INFO | 2013/11/06 14:16:55 | <Nov 6, 2013 2:16:55 PM SGT> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true> 
+INFO | 2013/11/06 14:16:56 | <Nov 6, 2013 2:16:56 PM SGT> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Oracle JRockit(R) Version R28.2.4-14-151097-1.6.0_33-20120618-1634-linux-x86_64 from Oracle Corporation> 
+INFO | 2013/11/06 14:16:57 | <Nov 6, 2013 2:16:57 PM SGT> <Info> <Management> <BEA-141107> <Version: WebLogic Server 10.3.6.0  Tue Nov 15 08:52:36 PST 2011 1441050 > 
+INFO | 2013/11/06 14:16:57 | <Nov 6, 2013 2:16:57 PM SGT> <Warning> <Management> <BEA-141274> <Production mode has specified at the command line via the weblogic.ProductionModeEnabled system property. This system property overrides the development mode setting contained in config.xml. However, the console and WLST show the attribute values and defaults that correspond to the development mode specified in config.xml.> 
+INFO | 2013/11/06 14:17:01 | <Nov 6, 2013 2:17:01 PM SGT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2013/11/06 14:17:01 | <Nov 6, 2013 2:17:01 PM SGT> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+INFO | 2013/11/06 14:17:02 | <Nov 6, 2013 2:17:02 PM SGT> <Notice> <LoggingService> <BEA-320400> <The log file /home/oracle/otm/logs/weblogic/weblogic.log will be rotated. Reopen the log file if tailing has stopped. This can happen on some platforms like Windows.> 
+INFO | 2013/11/06 14:17:02 | <Nov 6, 2013 2:17:02 PM SGT> <Notice> <LoggingService> <BEA-320401> <The log file has been rotated to /home/oracle/otm/logs/weblogic/weblogic.log00004. Log messages will continue to be logged in /home/oracle/otm/logs/weblogic/weblogic.log.> 
+INFO | 2013/11/06 14:17:02 | <Nov 6, 2013 2:17:02 PM SGT> <Notice> <Log Management> <BEA-170019> <The server log file /home/oracle/otm/logs/weblogic/weblogic.log is opened. All server side log events will be written to this file.> 
+INFO | 2013/11/06 14:17:05 | GC3 realm initializing <-----------
+INFO | 2013/11/06 14:18:06 | cause.InvalidDataConnection
+INFO | 2013/11/06 14:18:06 | 
+INFO | 2013/11/06 14:18:06 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO | 2013/11/06 14:18:06 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+INFO | 2013/11/06 14:18:06 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+INFO | 2013/11/06 14:18:06 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+INFO | 2013/11/06 14:18:06 | 	at glog.util.exception.GLException.factory(GLException.java:460)
+INFO | 2013/11/06 14:18:06 | 	at glog.util.exception.GLException.factory(GLException.java:436)
+INFO | 2013/11/06 14:18:06 | 	at glog.util.exception.GLException.factory(GLException.java:432)
+INFO | 2013/11/06 14:18:06 | 	at glog.util.exception.GLException.factory(GLException.java:420)
+INFO | 2013/11/06 14:18:06 | 	at glog.util.jdbc.noserver.T2SharedConnection.checkDataSource(T2SharedConnection.java:347)
+INFO | 2013/11/06 14:18:06 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:463)
+INFO | 2013/11/06 14:18:06 | 	at glog.util.jdbc.noserver.T2SharedConnection$ReferencedConnection.addRef(T2SharedConnection.java:437)
+INFO | 2013/11/06 14:18:06 | 	at glog.util.jdbc.noserver.T2SharedConnection.open(T2SharedConnection.java:70)
+INFO | 2013/11/06 14:18:06 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1632)
+INFO | 2013/11/06 14:18:06 | 	at glog.database.security.dbrealm.RdbmsRealm.getKnownGroups(RdbmsRealm.java:1668)
+INFO | 2013/11/06 14:18:06 | 	at glog.database.security.dbrealm.CachingRealm.readKnownGroups(CachingRealm.java:421)
+INFO | 2013/11/06 14:18:06 | 	at glog.database.security.dbrealm.CachingRealm.initCaches(CachingRealm.java:191)
+INFO | 2013/11/06 14:18:06 | 	at glog.database.security.dbrealm.CachingRealm.<init>(CachingRealm.java:141)
+INFO | 2013/11/06 14:18:06 | 	at glog.database.security.dbrealm.CachingRealm.initialize(CachingRealm.java:123)
+INFO | 2013/11/06 14:18:06 | 	at glog.util.j2ee.jaas.GC3AuthenticationProviderImpl.initialize(GC3AuthenticationProviderImpl.java:32)
+INFO | 2013/11/06 14:18:06 | 	at com.bea.common.security.internal.legacy.service.SecurityProviderImpl.init(SecurityProviderImpl.java:60)
+INFO | 2013/11/06 14:18:06 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:363)
+INFO | 2013/11/06 14:18:06 | 	at com.bea.common.engine.internal.ServiceEngineImpl.findOrStartService(ServiceEngineImpl.java:315)
+INFO | 2013/11/06 14:18:06 | 	at com.bea.common.engine.internal.ServiceEngineImpl.lookupService(ServiceEngineImpl.java:257)
+INFO | 2013/11/06 14:18:06 | 	at com.bea.common.engine.internal.ServicesImpl.getService(ServicesImpl.java:72)
+INFO | 2013/11/06 14:18:06 | 	at weblogic.security.service.internal.WLSIdentityServiceImpl.initialize(WLSIdentityServiceImpl.java:46)
+INFO | 2013/11/06 14:18:06 | 	at weblogic.security.service.CSSWLSDelegateImpl.initializeServiceEngine(CSSWLSDelegateImpl.java:299)
+INFO | 2013/11/06 14:18:06 | 	at weblogic.security.service.CSSWLSDelegateImpl.initialize(CSSWLSDelegateImpl.java:220)
+INFO | 2013/11/06 14:18:06 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.InitializeServiceEngine(CommonSecurityServiceManagerDelegateImpl.java:1789)
+INFO | 2013/11/06 14:18:06 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealm(CommonSecurityServiceManagerDelegateImpl.java:443)
+INFO | 2013/11/06 14:18:06 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.loadRealm(CommonSecurityServiceManagerDelegateImpl.java:841)
+INFO | 2013/11/06 14:18:06 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initializeRealms(CommonSecurityServiceManagerDelegateImpl.java:870)
+INFO | 2013/11/06 14:18:06 | 	at weblogic.security.service.CommonSecurityServiceManagerDelegateImpl.initialize(CommonSecurityServiceManagerDelegateImpl.java:1032)
+INFO | 2013/11/06 14:18:06 | 	at weblogic.security.service.SecurityServiceManager.initialize(SecurityServiceManager.java:873)
+INFO | 2013/11/06 14:18:06 | 	at weblogic.security.SecurityService.start(SecurityService.java:141)
+INFO | 2013/11/06 14:18:06 | 	at weblogic.t3.srvr.SubsystemRequest.run(SubsystemRequest.java:64)
+INFO | 2013/11/06 14:18:06 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+INFO | 2013/11/06 14:18:06 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+INFO | 2013/11/06 14:18:06 | Fatal Error: Realm Initialization failed!!
+INFO | 2013/11/06 14:18:06 | <Nov 6, 2013 2:18:06 PM SGT> <Notice> <WebLogicServer> <BEA-000388> <JVM called WLS shutdown hook. The server will force shutdown now> 
+INFO | 2013/11/06 14:18:06 | <Nov 6, 2013 2:18:06 PM SGT> <Alert> <WebLogicServer> <BEA-000396> <Server shutdown has been requested by <WLS Kernel>> 
+INFO | 2013/11/06 14:18:06 | <Nov 6, 2013 2:18:06 PM SGT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to FORCE_SHUTTING_DOWN> 
+INFO | 2013/11/06 14:18:06 | Stopped Launched Process...

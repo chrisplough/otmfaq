@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet xmlns:miscHelper="http://www.jclark.com/xt/java/glog.webserver.util.MiscellaneousHelper" xmlns:translator="http://www.jclark.com/xt/java/glog.webserver.i18n.Translator" xmlns:util="http://www.jclark.com/xt/java/glog.webserver.util.Util" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xt="http://www.jclark.com/xt" exclude-result-prefixes="translator util xt" version="1.0">
+
+  <xsl:import href="file:comm/otm/StdWidgets.xsl"/>
+  <xsl:import href="file:comm/otm/Fields.xsl"/>
+  <xsl:import href="file:comm/otm/Header.xsl"/>
+  <xsl:import href="file:themes/themes.xsl"/>
+
+  <xsl:output method="html"/>
+
+  <xsl:template match="/"> 
+    <html>
+      <head><xsl:call-template name="set_url_prefix"/>
+        <xsl:call-template name="setPageTitle"/>
+        <script language="javascript" type="text/javascript" src="{util:format-url('glog.webserver.util.JSTranslatorServlet')}"/> 
+		<script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/finder/find.js"/>
+		<script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/validation/validation.js"/>
+        <script language="javascript" type="text/javascript" src="{$glogUrlPrefix}/js/comm/multipart.js"/>
+        <xsl:call-template name="css"/>
+        <script>
+          function screenValidate() {
+             if(document.management_main.external_status_primary.options.selectedIndex == 0) {
+                errorMessages[errorMessages.length] = "<xsl:value-of select="miscHelper:get-escaped-translated-value-for-java-script('alertmessage.statusTypeAndValue')"/>"
+                //'You must select a status type and status value';
+                return false;
+             }
+             if(document.management_main.external_status_secondary.options.selectedIndex == 0) {
+                errorMessages[errorMessages.length] = "<xsl:value-of select="miscHelper:get-escaped-translated-value-for-java-script('alertmessage.statusTypeAndValue')"/>"
+              //'You must select a and status value';
+                return false;
+             }
+             return true;
+          }
+        </script>
+
+      </head>
+      <body class="{$mBodyClass}">
+        <xsl:call-template name="manageheader"/>
+
+        <form name="management_main" method="post" action="{util:format-url('glog.webserver.util.QueryResponseServlet?state=change')}" onSubmit="return checkData('management_main');">
+          <input type="hidden" name="data_query_type" value="{/input/data_query_type}"/>
+          <xsl:for-each select="/input/pks/pk">
+            <input type="hidden" name="pk" value="{@ID}"/>
+          </xsl:for-each>
+	      <xsl:if test="not(/input/schedule/@ID = '')">
+	         <input type="hidden" name="schedule_pk" value="{/input/schedule/@ID}"/>
+	      </xsl:if>
+          <xsl:call-template name="action_management_folder"/>
+          <xsl:call-template name="management_footer"/>          
+        </form>
+
+        <xsl:call-template name="help">
+          <xsl:with-param name="help_id">helpManage</xsl:with-param>
+          <xsl:with-param name="help_url">/html/help/webhelp/gtm/party/actions/change_external_status.htm</xsl:with-param>
+        </xsl:call-template>
+      </body>
+    </html>
+  </xsl:template>
+
+
+<xsl:template name="footer_content">        
+    <table class="{$buttonsContClass}">
+        <tr>
+            <td>
+                <xsl:call-template name="button">
+                    <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('button.ok')"/></xsl:with-param>
+                    <xsl:with-param name="href">javascript:if(checkData('management_main'))document.management_main.submit();</xsl:with-param>
+                </xsl:call-template>
+            </td>
+        </tr>
+    </table>
+</xsl:template>
+
+    <xsl:template name="invoke_sections">
+        <xsl:call-template name="section1">
+            <xsl:with-param name="background">false</xsl:with-param>
+        </xsl:call-template>
+  </xsl:template>
+  
+  
+  
+<xsl:template name="content1">
+      <tr>
+        <td>
+          <xsl:call-template name="fieldMultipartDropList">
+            <xsl:with-param name="name">external_status</xsl:with-param>
+            <xsl:with-param name="form">management_main</xsl:with-param>
+            <xsl:with-param name="label"><xsl:value-of select="translator:get-translated-value('label.ExternalStatusTypeAndValue')"/></xsl:with-param>
+            <xsl:with-param name="query_name">glog.webserver.finder.models.ExternalStatusValueFinderModel</xsl:with-param>
+            <xsl:with-param name="value"/>
+            <xsl:with-param name="required">true</xsl:with-param>
+            <xsl:with-param name="query">false</xsl:with-param>
+            <xsl:with-param name="data_query_type"><xsl:value-of select="/input/data_query_type"/></xsl:with-param>
+          </xsl:call-template>
+        </td>
+      </tr>  
+</xsl:template>
+      
+</xsl:stylesheet>

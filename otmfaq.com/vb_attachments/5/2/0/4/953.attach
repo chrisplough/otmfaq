@@ -1,0 +1,661 @@
+INFO | 2012/04/12 01:42:34 | [INFO ][memory ] [YC#648] Warning: Your computer has generated 19585 page faults during the last garbage collection.
+INFO | 2012/04/12 01:42:34 | [INFO ][memory ] [YC#648] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 01:42:34 | [INFO ][memory ] [YC#648] 741009.987-741065.148: YC 1390588KB->1096704KB (1638400KB), 55.161 s, sum of pauses 55150.236 ms, longest pause 55150.236 ms.
+INFO | 2012/04/12 01:42:34 | Timer is behind system clock by 55100 msecs.
+INFO | 2012/04/12 07:07:13 | [INFO ][memory ] [YC#649] Warning: Your computer has generated 24351 page faults during the last garbage collection.
+INFO | 2012/04/12 07:07:13 | [INFO ][memory ] [YC#649] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 07:07:13 | Timer is behind system clock by 65200 msecs.[INFO ][memory ] [YC#649] 760478.137-760542.104: YC 1421334KB->1123448KB (1638400KB), 63.967 s, sum of pauses 63966.416 ms, longest pause 63966.416 ms.
+INFO | 2012/04/12 07:07:13 | 
+INFO | 2012/04/12 11:10:18 | [INFO ][memory ] [YC#650] Warning: Your computer has generated 36392 page faults during the last garbage collection.
+INFO | 2012/04/12 11:10:18 | [INFO ][memory ] [YC#650] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 11:10:18 | Timer is behind system clock by 107900 msecs.[INFO ][memory ] [YC#650] 775010.894-775118.913: YC 1457046KB->1158460KB (1638400KB), 108.019 s, sum of pauses 108017.894 ms, longest pause 108017.894 ms.
+INFO | 2012/04/12 11:10:18 | 
+INFO | 2012/04/12 11:10:18 | Timer is behind system clock by 10300 msecs.
+INFO | 2012/04/12 11:22:38 | <12 Apr, 2012 11:22:27 AM IST> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.241.47.139:64,708 during the configured idle timeout of 5 secs> 
+INFO | 2012/04/12 11:30:15 | [INFO ][memory ] [YC#651] Warning: Your computer has generated 34202 page faults during the last garbage collection.
+INFO | 2012/04/12 11:30:15 | [INFO ][memory ] [YC#651] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 11:30:15 | [INFO ][memory ] [YC#651] 776194.947-776311.419: YC 1543098KB->1245146KB (1638400KB), 116.472 s, sum of pauses 116312.294 ms, longest pause 116312.294 ms.
+INFO | 2012/04/12 11:30:15 | Timer is behind system clock by 116300 msecs.
+INFO | 2012/04/12 11:40:02 | glog.util.remote.CreateDuplicateRecord
+INFO | 2012/04/12 11:40:02 | Cannot add the ACTIVITY_CALENDAR record. ACTIVITY_CALENDAR_ID must be unique.
+INFO | 2012/04/12 11:40:02 |     java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (GLOGOWNER.PK_ACTIVITY_CALENDAR) violated
+INFO | 2012/04/12 11:40:02 | 
+INFO | 2012/04/12 11:40:02 | 
+INFO | 2012/04/12 11:40:02 | java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (GLOGOWNER.PK_ACTIVITY_CALENDAR) violated
+INFO | 2012/04/12 11:40:02 | 
+INFO | 2012/04/12 11:40:02 | 	at oracle.jdbc.driver.SQLStateMapping.newSQLException(SQLStateMapping.java:85)
+INFO | 2012/04/12 11:40:02 | 	at oracle.jdbc.driver.DatabaseError.newSQLException(DatabaseError.java:133)
+INFO | 2012/04/12 11:40:02 | 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:206)
+INFO | 2012/04/12 11:40:02 | 	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:455)
+INFO | 2012/04/12 11:40:02 | 	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:413)
+INFO | 2012/04/12 11:40:02 | 	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:1034)
+INFO | 2012/04/12 11:40:02 | 	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:194)
+INFO | 2012/04/12 11:40:02 | 	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:953)
+INFO | 2012/04/12 11:40:02 | 	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1223)
+INFO | 2012/04/12 11:40:02 | 	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3386)
+INFO | 2012/04/12 11:40:02 | 	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3467)
+INFO | 2012/04/12 11:40:02 | 	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1350)
+INFO | 2012/04/12 11:40:02 | 	at weblogic.jdbc.wrapper.PreparedStatement.executeUpdate(PreparedStatement.java:172)
+INFO | 2012/04/12 11:40:02 | 	at glog.util.jdbc.SqlUpdate.resetArguments(SqlUpdate.java:241)
+INFO | 2012/04/12 11:40:02 | 	at glog.util.jdbc.SqlUpdate.resetArguments(SqlUpdate.java:161)
+INFO | 2012/04/12 11:40:02 | 	at glog.util.jdbc.SqlUpdate.execute(SqlUpdate.java:90)
+INFO | 2012/04/12 11:40:02 | 	at glog.util.remote.BeanManagedEntityBean.executeUpdate(BeanManagedEntityBean.java:795)
+INFO | 2012/04/12 11:40:02 | 	at glog.util.remote.BeanManagedEntityBean$1.execute(BeanManagedEntityBean.java:197)
+INFO | 2012/04/12 11:40:02 | 	at glog.util.remote.BeanManagedEntityBean.dbModify(BeanManagedEntityBean.java:1068)
+INFO | 2012/04/12 11:40:02 | 	at glog.util.remote.BeanManagedEntityBean.doCreate(BeanManagedEntityBean.java:193)
+INFO | 2012/04/12 11:40:02 | 	at glog.util.remote.BaseEntityBean$1.doIt(BaseEntityBean.java:455)
+INFO | 2012/04/12 11:40:02 | 	at glog.util.remote.BaseEntityBean.ejb(BaseEntityBean.java:798)
+INFO | 2012/04/12 11:40:02 | 	at glog.util.remote.BaseEntityBean.ejbCreator(BaseEntityBean.java:453)
+INFO | 2012/04/12 11:40:02 | 	at glog.ejb.calendar.db.ActivityCalendarBeanDB.ejbCreate(ActivityCalendarBeanDB.java:57)
+INFO | 2012/04/12 11:40:02 | 	at glog.ejb.calendar.ejb_ActivityCalendar_sccsh8_Impl.ejbCreate(ejb_ActivityCalendar_sccsh8_Impl.java:265)
+INFO | 2012/04/12 11:40:02 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO | 2012/04/12 11:40:02 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO | 2012/04/12 11:40:02 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO | 2012/04/12 11:40:02 | 	at weblogic.ejb.container.manager.ExclusiveEntityManager.create(ExclusiveEntityManager.java:801)
+INFO | 2012/04/12 11:40:02 | 	at weblogic.ejb.container.manager.ExclusiveEntityManager.remoteCreate(ExclusiveEntityManager.java:772)
+INFO | 2012/04/12 11:40:02 | 	at weblogic.ejb.container.internal.EntityEJBHome.create(EntityEJBHome.java:270)
+INFO | 2012/04/12 11:40:02 | 	at glog.ejb.calendar.ejb_ActivityCalendar_sccsh8_HomeImpl.create(ejb_ActivityCalendar_sccsh8_HomeImpl.java:84)
+INFO | 2012/04/12 11:40:02 | 	at glog.business.calendar.CalendarAccessor.addActivity(CalendarAccessor.java:508)
+INFO | 2012/04/12 11:40:02 | 	at glog.server.query.calendar.CalendarHandler.updateActivities(CalendarHandler.java:190)
+INFO | 2012/04/12 11:40:02 | 	at glog.server.query.calendar.CalendarHandler.postCreate(CalendarHandler.java:248)
+INFO | 2012/04/12 11:40:02 | 	at glog.webserver.update.GenericContainerXMLUpdate.process(GenericContainerXMLUpdate.java:132)
+INFO | 2012/04/12 11:40:02 | 	at glog.server.xmlupdate.XMLUpdateSessionBean.updateAndTrack(XMLUpdateSessionBean.java:244)
+INFO | 2012/04/12 11:40:02 | 	at glog.server.xmlupdate.XMLUpdateSessionServerSideEJBWrapper.updateAndTrack(XMLUpdateSessionServerSideEJBWrapper.java:376)
+INFO | 2012/04/12 11:40:02 | 	at glog.server.xmlupdate.XMLUpdateSessionHome_x72wrp_EOImpl.updateAndTrack(XMLUpdateSessionHome_x72wrp_EOImpl.java:354)
+INFO | 2012/04/12 11:40:02 | 	at glog.server.xmlupdate.XMLUpdateSessionHome_x72wrp_EOImpl_WLSkel.invoke(Unknown Source)
+INFO | 2012/04/12 11:40:02 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:589)
+INFO | 2012/04/12 11:40:02 | 	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:230)
+INFO | 2012/04/12 11:40:02 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:477)
+INFO | 2012/04/12 11:40:02 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO | 2012/04/12 11:40:02 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+INFO | 2012/04/12 11:40:02 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:473)
+INFO | 2012/04/12 11:40:02 | 	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+INFO | 2012/04/12 11:40:02 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:201)
+INFO | 2012/04/12 11:40:02 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:173)
+INFO | 2012/04/12 11:41:28 | glog.util.remote.CreateDuplicateRecord
+INFO | 2012/04/12 11:41:28 | Cannot add the ACTIVITY_CALENDAR record. ACTIVITY_CALENDAR_ID must be unique.
+INFO | 2012/04/12 11:41:28 |     java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (GLOGOWNER.PK_ACTIVITY_CALENDAR) violated
+INFO | 2012/04/12 11:41:28 | 
+INFO | 2012/04/12 11:41:28 | 
+INFO | 2012/04/12 11:41:28 | java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (GLOGOWNER.PK_ACTIVITY_CALENDAR) violated
+INFO | 2012/04/12 11:41:28 | 
+INFO | 2012/04/12 11:41:28 | 	at oracle.jdbc.driver.SQLStateMapping.newSQLException(SQLStateMapping.java:85)
+INFO | 2012/04/12 11:41:28 | 	at oracle.jdbc.driver.DatabaseError.newSQLException(DatabaseError.java:133)
+INFO | 2012/04/12 11:41:28 | 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:206)
+INFO | 2012/04/12 11:41:28 | 	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:455)
+INFO | 2012/04/12 11:41:28 | 	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:413)
+INFO | 2012/04/12 11:41:28 | 	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:1034)
+INFO | 2012/04/12 11:41:28 | 	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:194)
+INFO | 2012/04/12 11:41:28 | 	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:953)
+INFO | 2012/04/12 11:41:28 | 	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1223)
+INFO | 2012/04/12 11:41:28 | 	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3386)
+INFO | 2012/04/12 11:41:28 | 	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3467)
+INFO | 2012/04/12 11:41:28 | 	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1350)
+INFO | 2012/04/12 11:41:28 | 	at weblogic.jdbc.wrapper.PreparedStatement.executeUpdate(PreparedStatement.java:172)
+INFO | 2012/04/12 11:41:28 | 	at glog.util.jdbc.SqlUpdate.resetArguments(SqlUpdate.java:241)
+INFO | 2012/04/12 11:41:28 | 	at glog.util.jdbc.SqlUpdate.resetArguments(SqlUpdate.java:161)
+INFO | 2012/04/12 11:41:28 | 	at glog.util.jdbc.SqlUpdate.execute(SqlUpdate.java:90)
+INFO | 2012/04/12 11:41:28 | 	at glog.util.remote.BeanManagedEntityBean.executeUpdate(BeanManagedEntityBean.java:795)
+INFO | 2012/04/12 11:41:28 | 	at glog.util.remote.BeanManagedEntityBean$1.execute(BeanManagedEntityBean.java:197)
+INFO | 2012/04/12 11:41:28 | 	at glog.util.remote.BeanManagedEntityBean.dbModify(BeanManagedEntityBean.java:1068)
+INFO | 2012/04/12 11:41:28 | 	at glog.util.remote.BeanManagedEntityBean.doCreate(BeanManagedEntityBean.java:193)
+INFO | 2012/04/12 11:41:28 | 	at glog.util.remote.BaseEntityBean$1.doIt(BaseEntityBean.java:455)
+INFO | 2012/04/12 11:41:28 | 	at glog.util.remote.BaseEntityBean.ejb(BaseEntityBean.java:798)
+INFO | 2012/04/12 11:41:28 | 	at glog.util.remote.BaseEntityBean.ejbCreator(BaseEntityBean.java:453)
+INFO | 2012/04/12 11:41:28 | 	at glog.ejb.calendar.db.ActivityCalendarBeanDB.ejbCreate(ActivityCalendarBeanDB.java:57)
+INFO | 2012/04/12 11:41:28 | 	at glog.ejb.calendar.ejb_ActivityCalendar_sccsh8_Impl.ejbCreate(ejb_ActivityCalendar_sccsh8_Impl.java:265)
+INFO | 2012/04/12 11:41:28 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO | 2012/04/12 11:41:28 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO | 2012/04/12 11:41:28 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO | 2012/04/12 11:41:28 | 	at weblogic.ejb.container.manager.ExclusiveEntityManager.create(ExclusiveEntityManager.java:801)
+INFO | 2012/04/12 11:41:28 | 	at weblogic.ejb.container.manager.ExclusiveEntityManager.remoteCreate(ExclusiveEntityManager.java:772)
+INFO | 2012/04/12 11:41:28 | 	at weblogic.ejb.container.internal.EntityEJBHome.create(EntityEJBHome.java:270)
+INFO | 2012/04/12 11:41:28 | 	at glog.ejb.calendar.ejb_ActivityCalendar_sccsh8_HomeImpl.create(ejb_ActivityCalendar_sccsh8_HomeImpl.java:84)
+INFO | 2012/04/12 11:41:28 | 	at glog.business.calendar.CalendarAccessor.addActivity(CalendarAccessor.java:508)
+INFO | 2012/04/12 11:41:28 | 	at glog.server.query.calendar.CalendarHandler.updateActivities(CalendarHandler.java:190)
+INFO | 2012/04/12 11:41:28 | 	at glog.server.query.calendar.CalendarHandler.postCreate(CalendarHandler.java:248)
+INFO | 2012/04/12 11:41:28 | 	at glog.webserver.update.GenericContainerXMLUpdate.process(GenericContainerXMLUpdate.java:132)
+INFO | 2012/04/12 11:41:28 | 	at glog.server.xmlupdate.XMLUpdateSessionBean.updateAndTrack(XMLUpdateSessionBean.java:244)
+INFO | 2012/04/12 11:41:28 | 	at glog.server.xmlupdate.XMLUpdateSessionServerSideEJBWrapper.updateAndTrack(XMLUpdateSessionServerSideEJBWrapper.java:376)
+INFO | 2012/04/12 11:41:28 | 	at glog.server.xmlupdate.XMLUpdateSessionHome_x72wrp_EOImpl.updateAndTrack(XMLUpdateSessionHome_x72wrp_EOImpl.java:354)
+INFO | 2012/04/12 11:41:28 | 	at glog.server.xmlupdate.XMLUpdateSessionHome_x72wrp_EOImpl_WLSkel.invoke(Unknown Source)
+INFO | 2012/04/12 11:41:28 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:589)
+INFO | 2012/04/12 11:41:28 | 	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:230)
+INFO | 2012/04/12 11:41:28 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:477)
+INFO | 2012/04/12 11:41:28 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO | 2012/04/12 11:41:28 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+INFO | 2012/04/12 11:41:28 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:473)
+INFO | 2012/04/12 11:41:28 | 	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+INFO | 2012/04/12 11:41:28 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:201)
+INFO | 2012/04/12 11:41:28 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:173)
+INFO | 2012/04/12 11:42:20 | glog.util.remote.CreateDuplicateRecord
+INFO | 2012/04/12 11:42:20 | Cannot add the ACTIVITY_CALENDAR record. ACTIVITY_CALENDAR_ID must be unique.
+INFO | 2012/04/12 11:42:20 |     java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (GLOGOWNER.PK_ACTIVITY_CALENDAR) violated
+INFO | 2012/04/12 11:42:20 | 
+INFO | 2012/04/12 11:42:20 | 
+INFO | 2012/04/12 11:42:20 | java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (GLOGOWNER.PK_ACTIVITY_CALENDAR) violated
+INFO | 2012/04/12 11:42:20 | 
+INFO | 2012/04/12 11:42:20 | 	at oracle.jdbc.driver.SQLStateMapping.newSQLException(SQLStateMapping.java:85)
+INFO | 2012/04/12 11:42:20 | 	at oracle.jdbc.driver.DatabaseError.newSQLException(DatabaseError.java:133)
+INFO | 2012/04/12 11:42:20 | 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:206)
+INFO | 2012/04/12 11:42:20 | 	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:455)
+INFO | 2012/04/12 11:42:20 | 	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:413)
+INFO | 2012/04/12 11:42:20 | 	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:1034)
+INFO | 2012/04/12 11:42:20 | 	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:194)
+INFO | 2012/04/12 11:42:20 | 	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:953)
+INFO | 2012/04/12 11:42:20 | 	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1223)
+INFO | 2012/04/12 11:42:20 | 	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3386)
+INFO | 2012/04/12 11:42:20 | 	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3467)
+INFO | 2012/04/12 11:42:20 | 	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1350)
+INFO | 2012/04/12 11:42:20 | 	at weblogic.jdbc.wrapper.PreparedStatement.executeUpdate(PreparedStatement.java:172)
+INFO | 2012/04/12 11:42:20 | 	at glog.util.jdbc.SqlUpdate.resetArguments(SqlUpdate.java:241)
+INFO | 2012/04/12 11:42:20 | 	at glog.util.jdbc.SqlUpdate.resetArguments(SqlUpdate.java:161)
+INFO | 2012/04/12 11:42:20 | 	at glog.util.jdbc.SqlUpdate.execute(SqlUpdate.java:90)
+INFO | 2012/04/12 11:42:20 | 	at glog.util.remote.BeanManagedEntityBean.executeUpdate(BeanManagedEntityBean.java:795)
+INFO | 2012/04/12 11:42:20 | 	at glog.util.remote.BeanManagedEntityBean$1.execute(BeanManagedEntityBean.java:197)
+INFO | 2012/04/12 11:42:20 | 	at glog.util.remote.BeanManagedEntityBean.dbModify(BeanManagedEntityBean.java:1068)
+INFO | 2012/04/12 11:42:20 | 	at glog.util.remote.BeanManagedEntityBean.doCreate(BeanManagedEntityBean.java:193)
+INFO | 2012/04/12 11:42:20 | 	at glog.util.remote.BaseEntityBean$1.doIt(BaseEntityBean.java:455)
+INFO | 2012/04/12 11:42:20 | 	at glog.util.remote.BaseEntityBean.ejb(BaseEntityBean.java:798)
+INFO | 2012/04/12 11:42:20 | 	at glog.util.remote.BaseEntityBean.ejbCreator(BaseEntityBean.java:453)
+INFO | 2012/04/12 11:42:20 | 	at glog.ejb.calendar.db.ActivityCalendarBeanDB.ejbCreate(ActivityCalendarBeanDB.java:57)
+INFO | 2012/04/12 11:42:20 | 	at glog.ejb.calendar.ejb_ActivityCalendar_sccsh8_Impl.ejbCreate(ejb_ActivityCalendar_sccsh8_Impl.java:265)
+INFO | 2012/04/12 11:42:20 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO | 2012/04/12 11:42:20 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO | 2012/04/12 11:42:20 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO | 2012/04/12 11:42:20 | 	at weblogic.ejb.container.manager.ExclusiveEntityManager.create(ExclusiveEntityManager.java:801)
+INFO | 2012/04/12 11:42:20 | 	at weblogic.ejb.container.manager.ExclusiveEntityManager.remoteCreate(ExclusiveEntityManager.java:772)
+INFO | 2012/04/12 11:42:20 | 	at weblogic.ejb.container.internal.EntityEJBHome.create(EntityEJBHome.java:270)
+INFO | 2012/04/12 11:42:20 | 	at glog.ejb.calendar.ejb_ActivityCalendar_sccsh8_HomeImpl.create(ejb_ActivityCalendar_sccsh8_HomeImpl.java:84)
+INFO | 2012/04/12 11:42:20 | 	at glog.business.calendar.CalendarAccessor.addActivity(CalendarAccessor.java:508)
+INFO | 2012/04/12 11:42:20 | 	at glog.server.query.calendar.CalendarHandler.updateActivities(CalendarHandler.java:190)
+INFO | 2012/04/12 11:42:20 | 	at glog.server.query.calendar.CalendarHandler.postCreate(CalendarHandler.java:248)
+INFO | 2012/04/12 11:42:20 | 	at glog.webserver.update.GenericContainerXMLUpdate.process(GenericContainerXMLUpdate.java:132)
+INFO | 2012/04/12 11:42:20 | 	at glog.server.xmlupdate.XMLUpdateSessionBean.updateAndTrack(XMLUpdateSessionBean.java:244)
+INFO | 2012/04/12 11:42:20 | 	at glog.server.xmlupdate.XMLUpdateSessionServerSideEJBWrapper.updateAndTrack(XMLUpdateSessionServerSideEJBWrapper.java:376)
+INFO | 2012/04/12 11:42:20 | 	at glog.server.xmlupdate.XMLUpdateSessionHome_x72wrp_EOImpl.updateAndTrack(XMLUpdateSessionHome_x72wrp_EOImpl.java:354)
+INFO | 2012/04/12 11:42:20 | 	at glog.server.xmlupdate.XMLUpdateSessionHome_x72wrp_EOImpl_WLSkel.invoke(Unknown Source)
+INFO | 2012/04/12 11:42:20 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:589)
+INFO | 2012/04/12 11:42:20 | 	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:230)
+INFO | 2012/04/12 11:42:20 | 	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:477)
+INFO | 2012/04/12 11:42:20 | 	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+INFO | 2012/04/12 11:42:20 | 	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+INFO | 2012/04/12 11:42:20 | 	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:473)
+INFO | 2012/04/12 11:42:20 | 	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+INFO | 2012/04/12 11:42:20 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:201)
+INFO | 2012/04/12 11:42:20 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:173)
+INFO | 2012/04/12 11:58:13 | [INFO ][memory ] [YC#652] Warning: Your computer has generated 45508 page faults during the last garbage collection.
+INFO | 2012/04/12 11:58:13 | Timer is behind system clock by 129800 msecs.[INFO ][memory ] [YC#652] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 11:58:13 | 
+INFO | 2012/04/12 11:58:13 | [INFO ][memory ] [YC#652] 777837.129-777966.930: YC 1613777KB->1317138KB (1638400KB), 129.801 s, sum of pauses 128871.568 ms, longest pause 128871.568 ms.
+INFO | 2012/04/12 11:59:17 | Timer is behind system clock by 34700 msecs.
+INFO | 2012/04/12 12:00:33 | Timer is behind system clock by 11100 msecs.
+INFO | 2012/04/12 12:06:00 | [INFO ][memory ] [OC#35] Warning: Your computer has generated 78775 page faults during the last garbage collection.
+INFO | 2012/04/12 12:06:01 | [INFO ][memory ] [OC#35] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 12:06:01 | [INFO ][memory ] [OC#35] 778162.874-778468.466: OC 1344744KB->830057KB (1638400KB), 305.592 s, sum of pauses 270256.093 ms, longest pause 270256.093 ms.
+INFO | 2012/04/12 12:06:01 | Timer is behind system clock by 306400 msecs.
+INFO | 2012/04/12 12:06:11 | <12 Apr, 2012 12:06:10 PM IST> <Error> <EJB> <BEA-010026> <Exception occurred during commit of transaction Name=[EJB glog.ejb.usermenu.UserMenuLayoutServerSideEJBWrapper.getDataWithLobs()],Xid=BEA1-49E3D6E30FCC57DD70F7(423393139),Status=Rolled back. [Reason=weblogic.transaction.internal.TimedOutException: Transaction timed out after 317 seconds 
+INFO | 2012/04/12 12:06:11 | BEA1-49E3D6E30FCC57DD70F7],numRepliesOwedMe=0,numRepliesOwedOthers=0,seconds since begin=319,seconds left=9,XAServerResourceInfo[weblogic.jdbc.wrapper.JTSXAResourceImpl]=(ServerResourceInfo[weblogic.jdbc.wrapper.JTSXAResourceImpl]=(state=rolledback,assigned=gc3-ctsincalsdcx),xar=weblogic.jdbc.wrapper.JTSXAResourceImpl@193c7a73,re-Registered = false),SCInfo[Otmv620+gc3-ctsincalsdcx]=(state=rolledback),properties=({weblogic.transaction.name=[EJB glog.ejb.usermenu.UserMenuLayoutServerSideEJBWrapper.getDataWithLobs()], ISOLATION LEVEL=2, weblogic.jdbc=t3://10.236.145.114:7001}),local properties=({modifiedListeners=[weblogic.ejb.container.internal.TxManager$TxListener@193c77c6]}),OwnerTransactionManager=ServerTM[ServerCoordinatorDescriptor=(CoordinatorURL=gc3-ctsincalsdcx+10.236.145.114:7001+Otmv620+t3+, XAResources={WLStore_Otmv620__WLS_gc3-ctsincalsdcx, WSATGatewayRM_gc3-ctsincalsdcx_Otmv620, weblogic.jdbc.wrapper.JTSXAResourceImpl},NonXAResources={})],CoordinatorURL=gc3-ctsincalsdcx+10.236.145.114:7001+Otmv620+t3+): weblogic.transaction.RollbackException: Transaction timed out after 317 seconds 
+INFO | 2012/04/12 12:06:11 | BEA1-49E3D6E30FCC57DD70F7
+INFO | 2012/04/12 12:06:11 | 	at weblogic.transaction.internal.TransactionImpl.throwRollbackException(TransactionImpl.java:1871)
+INFO | 2012/04/12 12:06:11 | 	at weblogic.transaction.internal.ServerTransactionImpl.internalCommit(ServerTransactionImpl.java:330)
+INFO | 2012/04/12 12:06:11 | 	at weblogic.transaction.internal.ServerTransactionImpl.commit(ServerTransactionImpl.java:224)
+INFO | 2012/04/12 12:06:11 | 	at weblogic.ejb.container.internal.BaseRemoteObject.postInvoke1(BaseRemoteObject.java:627)
+INFO | 2012/04/12 12:06:11 | 	at glog.ejb.usermenu.ejb_UserMenuLayout_p0mlx6_EOImpl.getDataWithLobs(ejb_UserMenuLayout_p0mlx6_EOImpl.java:1309)
+INFO | 2012/04/12 12:06:11 | 	at glog.server.usermenu.UserMenuLayoutSessionBean.getUserMenuLayouts(UserMenuLayoutSessionBean.java:125)
+INFO | 2012/04/12 12:06:11 | 	at glog.server.usermenu.UserMenuLayoutSessionServerSideEJBWrapper.getUserMenuLayouts(UserMenuLayoutSessionServerSideEJBWrapper.java:214)
+INFO | 2012/04/12 12:06:11 | 	at glog.server.usermenu.UserMenuLayoutSessionHome_l29zsf_EOImpl.getUserMenuLayouts(UserMenuLayoutSessionHome_l29zsf_EOImpl.java:425)
+INFO | 2012/04/12 12:06:11 | 	at glog.server.usermenu.UserMenuLayoutSessionHome_l29zsf_EOImpl_WLSkel.invoke(Unknown Source)
+INFO | 2012/04/12 12:06:11 | 	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:590)
+INFO | 2012/04/12 12:06:11 | 	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:232)
+INFO | 2012/04/12 12:06:11 | 	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+INFO | 2012/04/12 12:06:11 | 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:173)
+INFO | 2012/04/12 12:06:11 | Caused by: weblogic.transaction.internal.TimedOutException: Transaction timed out after 317 seconds 
+INFO | 2012/04/12 12:06:11 | BEA1-49E3D6E30FCC57DD70F7
+INFO | 2012/04/12 12:06:11 | 	at weblogic.transaction.internal.ServerTransactionImpl.wakeUp(ServerTransactionImpl.java:1733)
+INFO | 2012/04/12 12:06:11 | 	at weblogic.transaction.internal.ServerTransactionManagerImpl.processTimedOutTransactions(ServerTransactionManagerImpl.java:1578)
+INFO | 2012/04/12 12:06:11 | 	at weblogic.transaction.internal.TransactionManagerImpl.wakeUp(TransactionManagerImpl.java:1900)
+INFO | 2012/04/12 12:06:11 | 	at weblogic.transaction.internal.ServerTransactionManagerImpl.wakeUp(ServerTransactionManagerImpl.java:1488)
+INFO | 2012/04/12 12:06:11 | 	at weblogic.transaction.internal.WLSTimer.timerExpired(WLSTimer.java:35)
+INFO | 2012/04/12 12:06:11 | 	at weblogic.timers.internal.TimerImpl.run(TimerImpl.java:273)
+INFO | 2012/04/12 12:06:11 | 	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:528)
+INFO | 2012/04/12 12:06:11 | 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:201)
+INFO | 2012/04/12 12:06:11 | 	... 1 more
+INFO | 2012/04/12 12:06:11 | .> 
+INFO | 2012/04/12 12:06:13 | <12 Apr, 2012 12:06:13 PM IST> <Warning> <RMI> <BEA-080006> <Failed to associate the transaction context with the response while marshalling an exception to the client:
+INFO | 2012/04/12 12:06:13 |  java.rmi.ConnectException: This RJVM has already been shutdown -4717370160020240134C:10.236.145.114R:-4531674556023164782S:10.236.145.114:[7001,7001,-1,-1,-1,-1,-1]:Otmv620:gc3-ctsincalsdcx.
+INFO | 2012/04/12 12:06:13 | java.rmi.ConnectException: This RJVM has already been shutdown -4717370160020240134C:10.236.145.114R:-4531674556023164782S:10.236.145.114:[7001,7001,-1,-1,-1,-1,-1]:Otmv620:gc3-ctsincalsdcx
+INFO | 2012/04/12 12:06:13 | 	at weblogic.rjvm.RJVMImpl.getOutputStream(RJVMImpl.java:344)
+INFO | 2012/04/12 12:06:13 | 	at weblogic.rjvm.RJVMImpl.getResponseStream(RJVMImpl.java:715)
+INFO | 2012/04/12 12:06:13 | 	at weblogic.rjvm.MsgAbbrevInputStream.getOutboundResponse(MsgAbbrevInputStream.java:567)
+INFO | 2012/04/12 12:06:13 | 	at weblogic.rmi.internal.BasicServerRef.postInvoke(BasicServerRef.java:640)
+INFO | 2012/04/12 12:06:13 | 	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+INFO | 2012/04/12 12:06:13 | 	Truncated. see log file for complete stacktrace
+INFO | 2012/04/12 12:06:13 | > 
+INFO | 2012/04/12 12:07:58 | <12 Apr, 2012 12:07:58 PM IST> <Error> <WebLogicServer> <BEA-000337> <[STUCK] ExecuteThread: '27' for queue: 'weblogic.kernel.Default (self-tuning)' has been busy for "611" seconds working on the request "weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl@192117c8", which is more than the configured time (StuckThreadMaxTime) of "600" seconds. Stack trace:
+INFO | 2012/04/12 12:07:58 | Thread-183 "[STUCK] ExecuteThread: '27' for queue: 'weblogic.kernel.Default (self-tuning)'" <alive, in native, suspended, priority=1, DAEMON> {
+INFO | 2012/04/12 12:07:58 |     jrockit.net.SocketNativeIO.readBytesPinned(SocketNativeIO.java:???)
+INFO | 2012/04/12 12:07:58 |     jrockit.net.SocketNativeIO.socketRead(SocketNativeIO.java:24)
+INFO | 2012/04/12 12:07:58 |     java.net.SocketInputStream.socketRead0(SocketInputStream.java:???)
+INFO | 2012/04/12 12:07:58 |     java.net.SocketInputStream.read(SocketInputStream.java:107)
+INFO | 2012/04/12 12:07:58 |     oracle.net.ns.Packet.receive(Packet.java:247)
+INFO | 2012/04/12 12:07:58 |     oracle.net.ns.DataPacket.receive(DataPacket.java:92)
+INFO | 2012/04/12 12:07:58 |     oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:166)
+INFO | 2012/04/12 12:07:58 |     oracle.net.ns.NetInputStream.read(NetInputStream.java:111)
+INFO | 2012/04/12 12:07:58 |     oracle.net.ns.NetInputStream.read(NetInputStream.java:94)
+INFO | 2012/04/12 12:07:58 |     oracle.net.ns.NetInputStream.read(NetInputStream.java:79)
+INFO | 2012/04/12 12:07:58 |     oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:108)
+INFO | 2012/04/12 12:07:58 |     oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:71)
+INFO | 2012/04/12 12:07:58 |     oracle.jdbc.driver.T4CMAREngine.unmarshalUB1(T4CMAREngine.java:1034)
+INFO | 2012/04/12 12:07:58 |     oracle.jdbc.driver.T4CMAREngine.unmarshalSB1(T4CMAREngine.java:1016)
+INFO | 2012/04/12 12:07:58 |     oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:559)
+INFO | 2012/04/12 12:07:58 |     oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:67)
+INFO | 2012/04/12 12:07:58 |     oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:949)
+INFO | 2012/04/12 12:07:58 |     oracle.jdbc.driver.T4CPreparedStatement.executeMaybeDescribe(T4CPreparedStatement.java:832)
+INFO | 2012/04/12 12:07:58 |     oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1148)
+INFO | 2012/04/12 12:07:58 |     oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3367)
+INFO | 2012/04/12 12:07:58 |     oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3480)
+INFO | 2012/04/12 12:07:58 |     ^-- Holding lock: oracle.jdbc.driver.T4CConnection@18b57f0e[thin lock]
+INFO | 2012/04/12 12:07:58 |     oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1374)
+INFO | 2012/04/12 12:07:58 |     weblogic.jdbc.common.internal.ConnectionEnv.testInternal(ConnectionEnv.java:760)
+INFO | 2012/04/12 12:07:58 |     weblogic.jdbc.common.internal.ConnectionEnv.test(ConnectionEnv.java:738)
+INFO | 2012/04/12 12:07:58 |     weblogic.jdbc.common.internal.ConnectionEnv.test(ConnectionEnv.java:495)
+INFO | 2012/04/12 12:07:58 |     weblogic.common.resourcepool.ResourcePoolImpl.testResource(ResourcePoolImpl.java:2339)
+INFO | 2012/04/12 12:07:58 |     weblogic.common.resourcepool.ResourcePoolImpl.checkResource(ResourcePoolImpl.java:1651)
+INFO | 2012/04/12 12:07:58 |     weblogic.common.resourcepool.ResourcePoolImpl.checkAndReturnResource(ResourcePoolImpl.java:1560)
+INFO | 2012/04/12 12:07:58 |     weblogic.common.resourcepool.ResourcePoolImpl.checkAndReturnResource(ResourcePoolImpl.java:1553)
+INFO | 2012/04/12 12:07:58 |     weblogic.common.resourcepool.ResourcePoolImpl.testUnusedResources(ResourcePoolImpl.java:1973)
+INFO | 2012/04/12 12:07:58 |     weblogic.common.resourcepool.ResourcePoolImpl.access$900(ResourcePoolImpl.java:40)
+INFO | 2012/04/12 12:07:58 |     weblogic.common.resourcepool.ResourcePoolImpl$ResourcePoolMaintanenceTask.timerExpired(ResourcePoolImpl.java:2394)
+INFO | 2012/04/12 12:07:58 |     weblogic.timers.internal.TimerImpl.run(TimerImpl.java:253)
+INFO | 2012/04/12 12:07:58 |     weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:528)
+INFO | 2012/04/12 12:07:58 |     weblogic.work.ExecuteThread.execute(ExecuteThread.java:198)
+INFO | 2012/04/12 12:07:58 |     weblogic.work.ExecuteThread.run(ExecuteThread.java:165)
+INFO | 2012/04/12 12:07:58 | }
+INFO | 2012/04/12 12:07:58 | 
+INFO | 2012/04/12 12:07:58 | > 
+INFO | 2012/04/12 12:11:03 | Timer is behind system clock by 119400 msecs.
+INFO | 2012/04/12 13:06:49 | [INFO ][memory ] [YC#653] Warning: Your computer has generated 40804 page faults during the last garbage collection.
+INFO | 2012/04/12 13:06:49 | [INFO ][memory ] [YC#653] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 13:06:49 | Timer is behind system clock by 112700 msecs.[INFO ][memory ] [YC#653] 781994.587-782107.125: YC 1306523KB->1009969KB (1638400KB), 112.538 s, sum of pauses 112533.803 ms, longest pause 112533.803 ms.
+INFO | 2012/04/12 13:06:49 | 
+INFO | 2012/04/12 14:42:55 | [INFO ][memory ] [YC#654] Warning: Your computer has generated 26385 page faults during the last garbage collection.
+INFO | 2012/04/12 14:42:55 | [INFO ][memory ] [YC#654] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 14:42:55 | [INFO ][memory ] [YC#654] 787807.206-787879.740: YC 1367012KB->1072838KB (1638400KB), 72.534 s, sum of pauses 72521.890 ms, longest pause 72521.890 ms.
+INFO | 2012/04/12 14:42:55 | Timer is behind system clock by 72500 msecs.
+INFO | 2012/04/12 16:33:30 | [INFO ][memory ] [YC#655] Warning: Your computer has generated 56630 page faults during the last garbage collection.
+INFO | 2012/04/12 16:33:30 | [INFO ][memory ] [YC#655] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 16:33:30 | Timer is behind system clock by 153400 msecs.[INFO ][memory ] [YC#655] 794356.117-794508.399: YC 1428035KB->1128267KB (1638400KB), 152.282 s, sum of pauses 152274.930 ms, longest pause 152274.930 ms.
+INFO | 2012/04/12 16:33:30 | 
+INFO | 2012/04/12 16:33:31 | Timer is behind system clock by 15700 msecs.
+INFO | 2012/04/12 16:44:32 | [INFO ][memory ] [YC#656] Warning: Your computer has generated 41894 page faults during the last garbage collection.
+INFO | 2012/04/12 16:44:32 | [INFO ][memory ] [YC#656] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 16:44:32 | [INFO ][memory ] [YC#656] 795031.206-795151.897: YC 1440173KB->1146307KB (1638400KB), 120.691 s, sum of pauses 117950.357 ms, longest pause 117950.357 ms.
+INFO | 2012/04/12 16:44:32 | Timer is behind system clock by 120600 msecs.
+INFO | 2012/04/12 17:17:25 | [INFO ][memory ] [YC#657] Warning: Your computer has generated 30909 page faults during the last garbage collection.
+INFO | 2012/04/12 17:17:25 | [INFO ][memory ] [YC#657] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 17:17:25 | [INFO ][memory ] [YC#657] 797035.871-797126.914: YC 1514984KB->1216424KB (1638400KB), 91.043 s, sum of pauses 87991.684 ms, longest pause 87991.684 ms.
+INFO | 2012/04/12 17:17:25 | Timer is behind system clock by 101200 msecs.
+INFO | 2012/04/12 17:18:17 | Timer is behind system clock by 11800 msecs.
+INFO | 2012/04/12 17:27:58 | Timer is behind system clock by 10900 msecs.
+INFO | 2012/04/12 17:35:22 | [INFO ][memory ] [YC#658] Warning: Your computer has generated 59864 page faults during the last garbage collection.
+INFO | 2012/04/12 17:35:22 | [INFO ][memory ] [YC#658] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 17:35:22 | Timer is behind system clock by 179400 msecs.[INFO ][memory ] [YC#658] 798047.221-798223.892: YC 1569274KB->1273571KB (1638400KB), 176.670 s, sum of pauses 174513.185 ms, longest pause 174513.185 ms.
+INFO | 2012/04/12 17:35:29 | 
+INFO | 2012/04/12 17:35:29 | Timer is behind system clock by 16800 msecs.
+INFO | 2012/04/12 17:52:36 | [INFO ][memory ] [YC#659] Warning: Your computer has generated 38228 page faults during the last garbage collection.
+INFO | 2012/04/12 17:52:36 | [INFO ][memory ] [YC#659] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 17:52:36 | Timer is behind system clock by 138700 msecs.[INFO ][memory ] [YC#659] 799081.398-799218.154: YC 1596441KB->1297815KB (1638400KB), 136.756 s, sum of pauses 136481.747 ms, longest pause 136481.747 ms.
+INFO | 2012/04/12 17:52:36 | 
+INFO | 2012/04/12 17:55:43 | Timer is behind system clock by 183300 msecs.
+INFO | 2012/04/12 17:55:48 | [INFO ][memory ] [OC#36] Warning: Your computer has generated 38519 page faults during the last garbage collection.
+INFO | 2012/04/12 17:55:48 | [INFO ][memory ] [OC#36] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 17:55:48 | [INFO ][memory ] [OC#36] 799273.323-799462.311: OC 1460362KB->833843KB (1638400KB), 188.987 s, sum of pauses 136813.274 ms, longest pause 136813.274 ms.
+INFO | 2012/04/12 18:03:58 | Timer is behind system clock by 112800 msecs.
+INFO | 2012/04/12 18:17:53 | [INFO ][memory ] [YC#660] Warning: Your computer has generated 48130 page faults during the last garbage collection.
+INFO | 2012/04/12 18:17:53 | [INFO ][memory ] [YC#660] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 18:17:53 | [INFO ][memory ] [YC#660] 800628.376-800773.967: YC 1292820KB->994538KB (1638400KB), 145.592 s, sum of pauses 145588.488 ms, longest pause 145588.488 ms.
+INFO | 2012/04/12 18:17:53 | Timer is behind system clock by 148100 msecs.
+INFO | 2012/04/12 18:17:55 | Timer is behind system clock by 13100 msecs.
+INFO | 2012/04/12 18:27:57 | [INFO ][memory ] [YC#661] Warning: Your computer has generated 23009 page faults during the last garbage collection.
+INFO | 2012/04/12 18:27:57 | [INFO ][memory ] [YC#661] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 18:27:57 | [INFO ][memory ] [YC#661] 801309.211-801373.551: YC 1334023KB->1040632KB (1638400KB), 64.340 s, sum of pauses 64337.247 ms, longest pause 64337.247 ms.
+INFO | 2012/04/12 18:27:57 | Timer is behind system clock by 64300 msecs.
+INFO | 2012/04/12 18:28:08 | [INFO ][memory ] [YC#662] 801402.052-801402.331: YC 1343823KB->1047014KB (1638400KB), 0.278 s, sum of pauses 277.712 ms, longest pause 277.712 ms.
+INFO | 2012/04/12 18:28:11 | [INFO ][memory ] [YC#663] 801405.000-801405.826: YC 1350038KB->1047261KB (1638400KB), 0.826 s, sum of pauses 123.670 ms, longest pause 123.670 ms.
+INFO | 2012/04/12 18:28:14 | [INFO ][memory ] [YC#664] 801408.695-801408.801: YC 1350895KB->1048166KB (1638400KB), 0.106 s, sum of pauses 105.359 ms, longest pause 105.359 ms.
+INFO | 2012/04/12 18:28:17 | [INFO ][memory ] [YC#665] 801411.645-801411.759: YC 1351190KB->1048413KB (1638400KB), 0.113 s, sum of pauses 112.781 ms, longest pause 112.781 ms.
+INFO | 2012/04/12 18:28:25 | [INFO ][memory ] [YC#666] 801414.721-801419.280: YC 1351446KB->1048678KB (1638400KB), 4.559 s, sum of pauses 4557.913 ms, longest pause 4557.913 ms.
+INFO | 2012/04/12 18:38:12 | [INFO ][memory ] [YC#667] Warning: Your computer has generated 17664 page faults during the last garbage collection.
+INFO | 2012/04/12 18:38:12 | [INFO ][memory ] [YC#667] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 18:38:12 | Timer is behind system clock by 63800 msecs.[INFO ][memory ] [YC#667] 801931.565-801995.415: YC 1363631KB->1063541KB (1638400KB), 63.850 s, sum of pauses 63849.586 ms, longest pause 63849.586 ms.
+INFO | 2012/04/12 18:38:12 | 
+INFO | 2012/04/12 18:38:25 | [INFO ][memory ] [YC#668] 802019.378-802019.596: YC 1371710KB->1072077KB (1638400KB), 0.218 s, sum of pauses 217.641 ms, longest pause 217.641 ms.
+INFO | 2012/04/12 18:38:30 | [INFO ][memory ] [YC#669] 802024.517-802024.653: YC 1375109KB->1072600KB (1638400KB), 0.136 s, sum of pauses 135.104 ms, longest pause 135.104 ms.
+INFO | 2012/04/12 18:38:35 | [INFO ][memory ] [YC#670] 802029.517-802029.647: YC 1375632KB->1072794KB (1638400KB), 0.131 s, sum of pauses 129.959 ms, longest pause 129.959 ms.
+INFO | 2012/04/12 18:45:59 | [INFO ][memory ] [YC#671] Warning: Your computer has generated 16062 page faults during the last garbage collection.
+INFO | 2012/04/12 18:46:00 | [INFO ][memory ] [YC#671] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 18:46:00 | Timer is behind system clock by 59500 msecs.[INFO ][memory ] [YC#671] 802400.577-802460.110: YC 1391945KB->1091316KB (1638400KB), 59.533 s, sum of pauses 59532.361 ms, longest pause 59532.361 ms.
+INFO | 2012/04/12 18:46:00 | 
+INFO | 2012/04/12 18:46:17 | [INFO ][memory ] [YC#672] 802491.632-802491.801: YC 1395110KB->1093212KB (1638400KB), 0.169 s, sum of pauses 168.881 ms, longest pause 168.881 ms.
+INFO | 2012/04/12 19:03:52 | [INFO ][memory ] [YC#673] Warning: Your computer has generated 27797 page faults during the last garbage collection.
+INFO | 2012/04/12 19:03:52 | Timer is behind system clock by 83400 msecs.[INFO ][memory ] [YC#673] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 19:03:52 | [INFO ][memory ] [YC#673] 803433.179-803516.637: YC 1448633KB->1156360KB (1638400KB), 83.458 s, sum of pauses 83449.194 ms, longest pause 83449.194 ms.
+INFO | 2012/04/12 19:03:52 | 
+INFO | 2012/04/12 19:11:30 | [INFO ][memory ] [YC#674] Warning: Your computer has generated 22208 page faults during the last garbage collection.
+INFO | 2012/04/12 19:11:30 | [INFO ][memory ] [YC#674] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 19:11:30 | [INFO ][memory ] [YC#674] 803917.188-803977.417: YC 1475852KB->1180537KB (1638400KB), 60.229 s, sum of pauses 60222.092 ms, longest pause 60222.092 ms.
+INFO | 2012/04/12 19:11:30 | Timer is behind system clock by 65000 msecs.
+INFO | 2012/04/12 19:12:27 | [INFO ][memory ] [YC#675] 804047.976-804062.095: YC 1507028KB->1206492KB (1638400KB), 14.119 s, sum of pauses 14118.251 ms, longest pause 14118.251 ms.
+INFO | 2012/04/12 19:12:30 | Timer is behind system clock by 14100 msecs.
+INFO | 2012/04/12 19:12:47 | [INFO ][memory ] [YC#676] 804081.625-804081.779: YC 1509525KB->1208987KB (1638400KB), 0.153 s, sum of pauses 152.993 ms, longest pause 152.993 ms.
+INFO | 2012/04/12 19:12:55 | [INFO ][memory ] [YC#677] 804089.247-804089.420: YC 1512018KB->1209244KB (1638400KB), 0.174 s, sum of pauses 173.427 ms, longest pause 173.427 ms.
+INFO | 2012/04/12 19:30:50 | [INFO ][memory ] [YC#678] Warning: Your computer has generated 44498 page faults during the last garbage collection.
+INFO | 2012/04/12 19:30:50 | [INFO ][memory ] [YC#678] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 19:30:50 | [INFO ][memory ] [YC#678] 805020.019-805143.736: YC 1567150KB->1266664KB (1638400KB), 123.716 s, sum of pauses 123710.443 ms, longest pause 123710.443 ms.
+INFO | 2012/04/12 19:30:50 | Timer is behind system clock by 124500 msecs.
+INFO | 2012/04/12 19:48:36 | [INFO ][memory ] [YC#679] Warning: Your computer has generated 25238 page faults during the last garbage collection.
+INFO | 2012/04/12 19:48:36 | [INFO ][memory ] [YC#679] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 19:48:36 | [INFO ][memory ] [YC#679] 806094.455-806195.531: YC 1606816KB->1315839KB (1638400KB), 101.075 s, sum of pauses 100475.531 ms, longest pause 100475.531 ms.
+INFO | 2012/04/12 19:48:36 | Timer is behind system clock by 101900 msecs.
+INFO | 2012/04/12 19:48:36 | Timer is behind system clock by 14900 msecs.
+INFO | 2012/04/12 19:48:53 | Timer is behind system clock by 27100 msecs.
+INFO | 2012/04/12 19:48:53 | [INFO ][memory ] [YC#680] 806220.722-806247.779: YC 1619901KB->1318725KB (1638400KB), 27.057 s, sum of pauses 295.480 ms, longest pause 295.480 ms.
+INFO | 2012/04/12 19:50:53 | Timer is behind system clock by 114900 msecs.
+INFO | 2012/04/12 19:50:56 | [INFO ][memory ] [OC#37] Warning: Your computer has generated 33519 page faults during the last garbage collection.
+INFO | 2012/04/12 19:50:56 | [INFO ][memory ] [OC#37] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 19:50:56 | [INFO ][memory ] [OC#37] 806252.313-806370.291: OC 1390999KB->832388KB (1638400KB), 117.978 s, sum of pauses 111743.448 ms, longest pause 111743.448 ms.
+INFO | 2012/04/12 19:52:02 | Timer is behind system clock by 47500 msecs.
+INFO | 2012/04/12 19:52:02 | [INFO ][memory ] [YC#681] 806388.709-806436.225: YC 1236657KB->936709KB (1638400KB), 47.516 s, sum of pauses 347.651 ms, longest pause 347.651 ms.
+INFO | 2012/04/12 19:52:54 | [INFO ][memory ] [YC#682] 806483.853-806489.210: YC 1239753KB->941077KB (1638400KB), 5.357 s, sum of pauses 5356.602 ms, longest pause 5356.602 ms.
+INFO | 2012/04/12 19:53:05 | [INFO ][memory ] [YC#683] 806499.610-806499.772: YC 1242563KB->941364KB (1638400KB), 0.162 s, sum of pauses 160.795 ms, longest pause 160.795 ms.
+INFO | 2012/04/12 19:53:50 | [INFO ][memory ] [YC#684] 806543.000-806544.966: YC 1255400KB->954915KB (1638400KB), 1.966 s, sum of pauses 1966.029 ms, longest pause 1966.029 ms.
+INFO | 2012/04/12 20:02:27 | [INFO ][memory ] [YC#685] 807021.851-807054.560: YC 1283736KB->991895KB (1638400KB), 32.708 s, sum of pauses 32699.784 ms, longest pause 32699.784 ms.
+INFO | 2012/04/12 20:02:27 | Timer is behind system clock by 32700 msecs.
+INFO | 2012/04/12 20:15:06 | [INFO ][memory ] [YC#686] Warning: Your computer has generated 30989 page faults during the last garbage collection.
+INFO | 2012/04/12 20:15:06 | [INFO ][memory ] [YC#686] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 20:15:06 | Timer is behind system clock by 75900 msecs.[INFO ][memory ] [YC#686] 807739.256-807812.579: YC 1301602KB->1006737KB (1638400KB), 73.323 s, sum of pauses 73307.644 ms, longest pause 73307.644 ms.
+INFO | 2012/04/12 20:15:10 | 
+INFO | 2012/04/12 20:15:41 | [INFO ][memory ] [YC#687] 807846.108-807856.077: YC 1308714KB->1008214KB (1638400KB), 9.969 s, sum of pauses 9967.799 ms, longest pause 9967.799 ms.
+INFO | 2012/04/12 20:15:55 | [INFO ][memory ] [YC#688] 807869.242-807869.405: YC 1311398KB->1010457KB (1638400KB), 0.163 s, sum of pauses 162.094 ms, longest pause 162.094 ms.
+INFO | 2012/04/12 20:44:49 | [INFO ][memory ] [YC#689] Warning: Your computer has generated 38404 page faults during the last garbage collection.
+INFO | 2012/04/12 20:44:49 | [INFO ][memory ] [YC#689] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 20:44:49 | Timer is behind system clock by 113300 msecs.[INFO ][memory ] [YC#689] 809471.009-809581.385: YC 1379369KB->1082595KB (1638400KB), 110.376 s, sum of pauses 110371.054 ms, longest pause 110371.054 ms.
+INFO | 2012/04/12 20:44:49 | 
+INFO | 2012/04/12 21:04:27 | [INFO ][memory ] [YC#690] Warning: Your computer has generated 30586 page faults during the last garbage collection.
+INFO | 2012/04/12 21:04:27 | [INFO ][memory ] [YC#690] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 21:04:27 | Timer is behind system clock by 104800 msecs.
+INFO | 2012/04/12 21:04:27 | [INFO ][memory ] [YC#690] 810655.577-810759.274: YC 1422122KB->1128800KB (1638400KB), 103.697 s, sum of pauses 103684.778 ms, longest pause 103684.778 ms.
+INFO | 2012/04/12 21:04:48 | Timer is behind system clock by 28400 msecs.
+INFO | 2012/04/12 21:05:08 | [INFO ][memory ] [YC#691] 810821.629-810822.934: YC 1430443KB->1130297KB (1638400KB), 1.305 s, sum of pauses 1304.126 ms, longest pause 1304.126 ms.
+INFO | 2012/04/12 22:12:34 | [INFO ][memory ] [YC#692] Warning: Your computer has generated 49314 page faults during the last garbage collection.
+INFO | 2012/04/12 22:12:34 | [INFO ][memory ] [YC#692] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/12 22:12:34 | [INFO ][memory ] [YC#692] 814723.074-814858.809: YC 1491107KB->1194430KB (1638400KB), 135.735 s, sum of pauses 135723.666 ms, longest pause 135723.666 ms.
+INFO | 2012/04/12 22:12:34 | Timer is behind system clock by 136000 msecs.
+INFO | 2012/04/13 03:56:49 | Timer is behind system clock by 14400 msecs.
+INFO | 2012/04/13 03:56:49 | [INFO ][memory ] [YC#693] 835509.455-835523.899: YC 1509722KB->1212569KB (1638400KB), 14.445 s, sum of pauses 14444.016 ms, longest pause 14444.016 ms.
+INFO | 2012/04/13 06:50:31 | [INFO ][memory ] [YC#694] Warning: Your computer has generated 29450 page faults during the last garbage collection.
+INFO | 2012/04/13 06:50:31 | [INFO ][memory ] [YC#694] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 06:50:31 | Timer is behind system clock by 81800 msecs.[INFO ][memory ] [YC#694] 845846.613-845927.370: YC 1532972KB->1241664KB (1638400KB), 80.757 s, sum of pauses 80749.556 ms, longest pause 80749.556 ms.
+INFO | 2012/04/13 06:50:31 | 
+INFO | 2012/04/13 07:35:23 | [INFO ][memory ] [YC#695] Warning: Your computer has generated 35618 page faults during the last garbage collection.
+INFO | 2012/04/13 07:35:23 | Timer is behind system clock by 93800 msecs.[INFO ][memory ] [YC#695] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 07:35:23 | [INFO ][memory ] [YC#695] 848516.601-848610.401: YC 1583466KB->1285300KB (1638400KB), 93.800 s, sum of pauses 93794.504 ms, longest pause 93794.504 ms.
+INFO | 2012/04/13 07:35:23 | 
+INFO | 2012/04/13 07:48:34 | [INFO ][memory ] [YC#696] Warning: Your computer has generated 23976 page faults during the last garbage collection.
+INFO | 2012/04/13 07:48:34 | [INFO ][memory ] [YC#696] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 07:48:34 | [INFO ][memory ] [YC#696] 849300.865-849386.985: YC 1620835KB->1328490KB (1638400KB), 86.121 s, sum of pauses 85979.540 ms, longest pause 85979.540 ms.
+INFO | 2012/04/13 07:48:34 | Timer is behind system clock by 86000 msecs.
+INFO | 2012/04/13 07:48:34 | Timer is behind system clock by 22700 msecs.
+INFO | 2012/04/13 07:50:42 | Timer is behind system clock by 135900 msecs.
+INFO | 2012/04/13 07:50:46 | [INFO ][memory ] [OC#38] Warning: Your computer has generated 37210 page faults during the last garbage collection.
+INFO | 2012/04/13 07:50:46 | [INFO ][memory ] [OC#38] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 07:50:46 | [INFO ][memory ] [OC#38] 849420.532-849560.982: OC 1367494KB->839367KB (1638400KB), 140.450 s, sum of pauses 135915.707 ms, longest pause 135915.707 ms.
+INFO | 2012/04/13 08:04:44 | [INFO ][memory ] [YC#697] Warning: Your computer has generated 25449 page faults during the last garbage collection.
+INFO | 2012/04/13 08:04:44 | [INFO ][memory ] [YC#697] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 08:04:44 | Timer is behind system clock by 80000 msecs.[INFO ][memory ] [YC#697] 850295.825-850377.069: YC 1269794KB->974492KB (1638400KB), 81.244 s, sum of pauses 80105.618 ms, longest pause 80105.618 ms.
+INFO | 2012/04/13 08:04:44 | 
+INFO | 2012/04/13 08:04:44 | [INFO ][memory ] [YC#698] 850396.000-850396.575: YC 1279456KB->977869KB (1638400KB), 0.575 s, sum of pauses 353.243 ms, longest pause 353.243 ms.
+INFO | 2012/04/13 08:04:48 | [INFO ][memory ] [YC#699] 850401.238-850402.703: YC 1280102KB->979776KB (1638400KB), 1.465 s, sum of pauses 117.631 ms, longest pause 117.631 ms.
+INFO | 2012/04/13 08:08:08 | [INFO ][memory ] [YC#700] 850580.462-850600.499: YC 1311923KB->1014912KB (1638400KB), 20.036 s, sum of pauses 20014.582 ms, longest pause 20014.582 ms.
+INFO | 2012/04/13 08:08:08 | Timer is behind system clock by 20000 msecs.
+INFO | 2012/04/13 08:21:14 | [INFO ][memory ] [YC#701] Warning: Your computer has generated 20451 page faults during the last garbage collection.
+INFO | 2012/04/13 08:21:14 | [INFO ][memory ] [YC#701] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 08:21:14 | Timer is behind system clock by 50100 msecs.[INFO ][memory ] [YC#701] 851332.832-851383.001: YC 1325498KB->1028481KB (1638400KB), 50.169 s, sum of pauses 50156.135 ms, longest pause 50156.135 ms.
+INFO | 2012/04/13 08:21:14 | 
+INFO | 2012/04/13 08:21:25 | [INFO ][memory ] [YC#702] 851397.655-851399.719: YC 1330979KB->1029215KB (1638400KB), 2.064 s, sum of pauses 183.805 ms, longest pause 183.805 ms.
+INFO | 2012/04/13 08:21:48 | [INFO ][memory ] [YC#703] 851421.298-851422.370: YC 1333442KB->1032597KB (1638400KB), 1.072 s, sum of pauses 1071.081 ms, longest pause 1071.081 ms.
+INFO | 2012/04/13 08:32:20 | [INFO ][memory ] [YC#704] Warning: Your computer has generated 23664 page faults during the last garbage collection.
+INFO | 2012/04/13 08:32:20 | [INFO ][memory ] [YC#704] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 08:32:20 | [INFO ][memory ] [YC#704] 851974.502-852040.326: YC 1347172KB->1053824KB (1638400KB), 65.825 s, sum of pauses 65822.500 ms, longest pause 65822.500 ms.
+INFO | 2012/04/13 08:32:20 | Timer is behind system clock by 65800 msecs.
+INFO | 2012/04/13 08:32:47 | [INFO ][memory ] [YC#705] 852077.910-852081.922: YC 1356320KB->1054711KB (1638400KB), 4.012 s, sum of pauses 4011.961 ms, longest pause 4011.961 ms.
+INFO | 2012/04/13 08:32:53 | [INFO ][memory ] [YC#706] 852087.973-852088.106: YC 1356678KB->1055079KB (1638400KB), 0.134 s, sum of pauses 133.164 ms, longest pause 133.164 ms.
+INFO | 2012/04/13 08:33:08 | [INFO ][memory ] [YC#707] 852102.776-852102.902: YC 1358090KB->1058489KB (1638400KB), 0.126 s, sum of pauses 125.774 ms, longest pause 125.774 ms.
+INFO | 2012/04/13 08:33:13 | [INFO ][memory ] [YC#708] 852107.908-852108.014: YC 1360452KB->1058801KB (1638400KB), 0.106 s, sum of pauses 105.981 ms, longest pause 105.981 ms.
+INFO | 2012/04/13 08:33:25 | [INFO ][memory ] [YC#709] 852119.532-852119.652: YC 1363873KB->1062166KB (1638400KB), 0.120 s, sum of pauses 119.472 ms, longest pause 119.472 ms.
+INFO | 2012/04/13 08:41:02 | [INFO ][memory ] [YC#710] Warning: Your computer has generated 24337 page faults during the last garbage collection.
+INFO | 2012/04/13 08:41:02 | [INFO ][memory ] [YC#710] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 08:41:02 | Timer is behind system clock by 60500 msecs.[INFO ][memory ] [YC#710] 852505.241-852565.770: YC 1402354KB->1104565KB (1638400KB), 60.529 s, sum of pauses 60522.062 ms, longest pause 60522.062 ms.
+INFO | 2012/04/13 08:41:02 | 
+INFO | 2012/04/13 09:13:30 | [INFO ][memory ] [YC#711] Warning: Your computer has generated 26615 page faults during the last garbage collection.
+INFO | 2012/04/13 09:13:30 | [INFO ][memory ] [YC#711] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 09:13:30 | [INFO ][memory ] [YC#711] 854424.746-854511.516: YC 1437318KB->1139491KB (1638400KB), 86.771 s, sum of pauses 86763.893 ms, longest pause 86763.893 ms.
+INFO | 2012/04/13 09:13:30 | Timer is behind system clock by 88900 msecs.
+INFO | 2012/04/13 10:30:08 | [INFO ][memory ] [YC#712] Warning: Your computer has generated 38768 page faults during the last garbage collection.
+INFO | 2012/04/13 10:30:08 | [INFO ][memory ] [YC#712] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 10:30:08 | [INFO ][memory ] [YC#712] 859007.508-859109.592: YC 1476286KB->1182249KB (1638400KB), 102.084 s, sum of pauses 101974.942 ms, longest pause 101974.942 ms.
+INFO | 2012/04/13 10:30:20 | Timer is behind system clock by 127100 msecs.
+INFO | 2012/04/13 11:23:17 | [INFO ][memory ] [YC#713] Warning: Your computer has generated 28152 page faults during the last garbage collection.
+INFO | 2012/04/13 11:23:17 | [INFO ][memory ] [YC#713] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 11:23:17 | Timer is behind system clock by 82400 msecs.[INFO ][memory ] [YC#713] 862213.055-862295.478: YC 1530266KB->1236139KB (1638400KB), 82.423 s, sum of pauses 82422.494 ms, longest pause 82422.494 ms.
+INFO | 2012/04/13 11:23:17 | 
+INFO | 2012/04/13 12:00:29 | [INFO ][memory ] [YC#714] Warning: Your computer has generated 24987 page faults during the last garbage collection.
+INFO | 2012/04/13 12:00:29 | [INFO ][memory ] [YC#714] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 12:00:29 | [INFO ][memory ] [YC#714] 864431.225-864518.073: YC 1577355KB->1284663KB (1638400KB), 86.848 s, sum of pauses 86843.997 ms, longest pause 86843.997 ms.
+INFO | 2012/04/13 12:00:29 | Timer is behind system clock by 86700 msecs.
+INFO | 2012/04/13 12:05:46 | [INFO ][memory ] [YC#715] Warning: Your computer has generated 17882 page faults during the last garbage collection.
+INFO | 2012/04/13 12:05:46 | Timer is behind system clock by 49100 msecs.[INFO ][memory ] [YC#715] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 12:05:46 | [INFO ][memory ] [YC#715] 864803.492-864852.619: YC 1600904KB->1302344KB (1638400KB), 49.128 s, sum of pauses 49123.929 ms, longest pause 49123.929 ms.
+INFO | 2012/04/13 12:05:46 | 
+INFO | 2012/04/13 12:06:05 | [INFO ][memory ] [YC#716] 864879.512-864879.678: YC 1605876KB->1305571KB (1638400KB), 0.165 s, sum of pauses 164.770 ms, longest pause 164.770 ms.
+INFO | 2012/04/13 12:21:31 | Timer is behind system clock by 148700 msecs.
+INFO | 2012/04/13 12:21:34 | [INFO ][memory ] [OC#39] Warning: Your computer has generated 51199 page faults during the last garbage collection.
+INFO | 2012/04/13 12:21:34 | [INFO ][memory ] [OC#39] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 12:21:34 | [INFO ][memory ] [OC#39] 865644.704-865809.050: OC 1551145KB->858726KB (1638400KB), 164.346 s, sum of pauses 148681.397 ms, longest pause 148681.397 ms.
+INFO | 2012/04/13 12:21:34 | Timer is behind system clock by 15600 msecs.
+INFO | 2012/04/13 12:23:07 | Timer is behind system clock by 32300 msecs.
+INFO | 2012/04/13 12:42:20 | [INFO ][memory ] [YC#717] Warning: Your computer has generated 36041 page faults during the last garbage collection.
+INFO | 2012/04/13 12:42:20 | [INFO ][memory ] [YC#717] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 12:42:20 | [INFO ][memory ] [YC#717] 866972.901-867052.515: YC 1291771KB->998852KB (1638400KB), 79.614 s, sum of pauses 79610.792 ms, longest pause 79610.792 ms.
+INFO | 2012/04/13 12:42:20 | Timer is behind system clock by 79600 msecs.
+WARNING | 2012/04/13 12:42:24 | Launched Process Forcibly Killed.
+INFO | 2012/04/13 12:43:45 | Stopped Launched Process...
+INFO | 2012/04/13 12:44:34 | Starting Launched Process...
+INFO | 2012/04/13 12:44:35 | java version "1.6.0_20"
+INFO | 2012/04/13 12:44:35 | Java(TM) SE Runtime Environment (build 1.6.0_20-b02)
+INFO | 2012/04/13 12:44:35 | Oracle JRockit(R) (build R28.0.1-21-133393-1.6.0_20-20100512-2127-solaris-sparcv9, compiled mode)
+INFO | 2012/04/13 12:44:35 | Argument #0 : /fusion/otm/otm62/jdk/bin/sparcv9/java
+INFO | 2012/04/13 12:44:35 | Argument #1 : -Xms1600m
+INFO | 2012/04/13 12:44:35 | Argument #2 : -Xmx1600m
+INFO | 2012/04/13 12:44:35 | Argument #3 : -jrockit
+INFO | 2012/04/13 12:44:35 | Argument #4 : -Xgcprio:throughput
+INFO | 2012/04/13 12:44:35 | Argument #5 : -Xverbose:memory
+INFO | 2012/04/13 12:44:35 | Argument #6 : -Dglog.home=/fusion/otm/otm62/glog/config
+INFO | 2012/04/13 12:44:35 | Argument #7 : -Duser.home=/fusion/otm/otm62/glog/config
+INFO | 2012/04/13 12:44:35 | Argument #8 : -Djava.io.tmpdir=/fusion/otm/otm62/temp
+INFO | 2012/04/13 12:44:35 | Argument #9 : -Djava.awt.headless=true
+INFO | 2012/04/13 12:44:35 | Argument #10 : -Djava.security.auth.login.config=/fusion/otm/otm62/glog/config/otm_jaas.config
+INFO | 2012/04/13 12:44:35 | Argument #11 : -Xss512k
+INFO | 2012/04/13 12:44:35 | Argument #12 : -Dweblogic.Name=gc3-ctsincalsdcx
+INFO | 2012/04/13 12:44:35 | Argument #13 : -Dbea.home=/fusion/otm/bea
+INFO | 2012/04/13 12:44:35 | Argument #14 : -Dweblogic.home=/fusion/otm/bea/wlserver_10.3/server
+INFO | 2012/04/13 12:44:35 | Argument #15 : -Dweblogic.management.username=system
+INFO | 2012/04/13 12:44:35 | Argument #16 : -Dweblogic.management.password=CHANGEME
+INFO | 2012/04/13 12:44:35 | Argument #17 : -Dweblogic.ProductionModeEnabled=true
+INFO | 2012/04/13 12:44:35 | Argument #18 : -Dweblogic.management.discover=false
+INFO | 2012/04/13 12:44:35 | Argument #19 : -Djava.security.policy=/fusion/otm/bea/wlserver_10.3/server/lib/weblogic.policy
+INFO | 2012/04/13 12:44:35 | Argument #20 : -Dwli.home=/fusion/otm/bea/wlserver_10.3/integration
+INFO | 2012/04/13 12:44:35 | Argument #21 : -Dwls.home=/fusion/otm/bea/wlserver_10.3/server
+INFO | 2012/04/13 12:44:35 | Argument #22 : -Dweblogic.RootDirectory=/fusion/otm/otm62/weblogic/domains/otm
+INFO | 2012/04/13 12:44:35 | Argument #23 : -Dweblogic.configuration.schemaValidationEnabled=false
+INFO | 2012/04/13 12:44:35 | Argument #24 : -Djavax.xml.soap.SOAPFactory=weblogic.xml.saaj.SOAPFactoryImpl
+INFO | 2012/04/13 12:44:35 | Argument #25 : -Dweblogic.MaxMessageSize=100000000
+INFO | 2012/04/13 12:44:35 | Argument #26 : -DpropertyProtection=mask
+INFO | 2012/04/13 12:44:35 | Argument #27 : -Dorg.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+INFO | 2012/04/13 12:44:35 | Argument #28 : -Djavax.xml.soap.MessageFactory=weblogic.xml.saaj.MessageFactoryImpl
+INFO | 2012/04/13 12:44:35 | Argument #29 : -Djavax.management.builder.initial=weblogic.management.jmx.mbeanserver.WLSMBeanServerBuilder
+INFO | 2012/04/13 12:44:35 | Argument #30 : -classpath
+INFO | 2012/04/13 12:44:35 | Argument #31 : /fusion/otm/otm62/jdk/lib/tools.jar:/fusion/otm/otm62/glog/glog_resources:/fusion/otm/otm62/glog/config:/fusion/otm/otm62/glog/gc3webapp/WEB-INF/classes:/fusion/otm/otm62/glog/gc3webapp/WEB-INF/lib/3rdparty/ojdbc6.jar:/fusion/otm/otm62/dash/lib/xprb.jar:/fusion/otm/otm62/dash/lib/xprm.jar:/fusion/otm/otm62/dash/lib/xprs.jar:/fusion/otm/otm62/glog/gc3webapp/WEB-INF/lib/glogserver.jar:/fusion/otm/bea/wlserver_10.3/server/lib/weblogic.jar:/fusion/otm/bea/wlserver_10.3/server/lib/webservices.jar:/fusion/otm/otm62/glog/gc3webapp/WEB-INF/lib/external/otm-samples.jar
+INFO | 2012/04/13 12:44:35 | Argument #32 : weblogic.Server
+INFO | 2012/04/13 12:44:35 | Argument #33 : start
+INFO | 2012/04/13 12:44:35 | [INFO ][memory ] Running with 32 bit heap and compressed references.
+INFO | 2012/04/13 12:44:35 | [INFO ][memory ] Using 4MB pages for Java heap.
+INFO | 2012/04/13 12:44:35 | [INFO ][memory ] GC mode: Garbage collection optimized for throughput, strategy: Generational Parallel Mark & Sweep.
+INFO | 2012/04/13 12:44:35 | [INFO ][memory ] Heap size: 1638400KB, maximal heap size: 1638400KB, nursery size: 819200KB.
+INFO | 2012/04/13 12:44:35 | [INFO ][memory ] <start>-<end>: <type> <before>KB-><after>KB (<heap>KB), <time> ms, sum of pauses <pause> ms.
+INFO | 2012/04/13 12:44:35 | [INFO ][memory ] <start>  - start time of collection (seconds since jvm start).
+INFO | 2012/04/13 12:44:35 | [INFO ][memory ] <type>   - OC (old collection) or YC (young collection).
+INFO | 2012/04/13 12:44:35 | [INFO ][memory ] <end>    - end time of collection (seconds since jvm start).
+INFO | 2012/04/13 12:44:35 | [INFO ][memory ] <before> - memory used by objects before collection (KB).
+INFO | 2012/04/13 12:44:35 | [INFO ][memory ] <after>  - memory used by objects after collection (KB).
+INFO | 2012/04/13 12:44:35 | [INFO ][memory ] <heap>   - size of heap after collection (KB).
+INFO | 2012/04/13 12:44:35 | [INFO ][memory ] <time>   - total time of collection (milliseconds).
+INFO | 2012/04/13 12:44:35 | [INFO ][memory ] <pause>  - total sum of pauses during collection (milliseconds).
+INFO | 2012/04/13 12:44:35 | [INFO ][memory ]            Run with -Xverbose:gcpause to see individual phases.
+INFO | 2012/04/13 12:44:40 | <13 Apr, 2012 12:44:39 PM IST> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Oracle JRockit(R) Version R28.0.1-21-133393-1.6.0_20-20100512-2127-solaris-sparcv9 from Oracle Corporation> 
+INFO | 2012/04/13 12:44:43 | <13 Apr, 2012 12:44:43 PM IST> <Info> <Management> <BEA-141107> <Version: WebLogic Server 10.3.3.0  Fri Apr 9 00:05:28 PDT 2010 1321401 > 
+INFO | 2012/04/13 12:44:43 | <13 Apr, 2012 12:44:43 PM IST> <Warning> <Management> <BEA-141274> <Production mode has specified at the command line via the weblogic.ProductionModeEnabled system property. This system property overrides the development mode setting contained in config.xml. However, the console and WLST show the attribute values and defaults that correspond to the development mode specified in config.xml.> 
+INFO | 2012/04/13 12:44:54 | <13 Apr, 2012 12:44:54 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2012/04/13 12:44:54 | <13 Apr, 2012 12:44:54 PM IST> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+INFO | 2012/04/13 12:44:58 | <13 Apr, 2012 12:44:58 PM IST> <Notice> <LoggingService> <BEA-320400> <The log file /fusion/otm/otm62/logs/weblogic/weblogic.log will be rotated. Reopen the log file if tailing has stopped. This can happen on some platforms like Windows.> 
+INFO | 2012/04/13 12:44:58 | <13 Apr, 2012 12:44:58 PM IST> <Notice> <LoggingService> <BEA-320401> <The log file has been rotated to /fusion/otm/otm62/logs/weblogic/weblogic.log00035. Log messages will continue to be logged in /fusion/otm/otm62/logs/weblogic/weblogic.log.> 
+INFO | 2012/04/13 12:44:58 | <13 Apr, 2012 12:44:58 PM IST> <Notice> <Log Management> <BEA-170019> <The server log file /fusion/otm/otm62/logs/weblogic/weblogic.log is opened. All server side log events will be written to this file.> 
+INFO | 2012/04/13 12:45:21 | GC3 realm initializing <-----------
+INFO | 2012/04/13 12:45:28 | -----------> GC3 realm initialized
+INFO | 2012/04/13 12:45:39 | [INFO ][memory ] [YC#1] 63.036-63.350: YC 841417KB->290379KB (1638400KB), 0.314 s, sum of pauses 313.541 ms, longest pause 313.541 ms.
+INFO | 2012/04/13 12:45:46 | <13 Apr, 2012 12:45:46 PM IST> <Notice> <Security> <BEA-090082> <Security initializing using security realm otmrealm.> 
+INFO | 2012/04/13 12:46:02 | <13 Apr, 2012 12:46:02 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STANDBY> 
+INFO | 2012/04/13 12:46:02 | <13 Apr, 2012 12:46:02 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+INFO | 2012/04/13 12:46:23 | [INFO ][memory ] [YC#2] 107.344-107.612: YC 924877KB->335119KB (1638400KB), 0.267 s, sum of pauses 267.292 ms, longest pause 267.292 ms.
+INFO | 2012/04/13 12:46:30 | -- OTM Event: preDeploy
+INFO | 2012/04/13 12:46:51 | [INFO ][memory ] [YC#3] 135.307-135.598: YC 982333KB->397823KB (1638400KB), 0.292 s, sum of pauses 291.342 ms, longest pause 291.342 ms.
+INFO | 2012/04/13 12:47:08 | [INFO ][memory ] [YC#4] 152.944-153.067: YC 1045353KB->446123KB (1638400KB), 0.123 s, sum of pauses 123.153 ms, longest pause 123.153 ms.
+INFO | 2012/04/13 12:47:27 | [INFO ][memory ] [YC#5] 171.343-171.459: YC 1095187KB->495829KB (1638400KB), 0.116 s, sum of pauses 115.535 ms, longest pause 115.535 ms.
+INFO | 2012/04/13 12:47:44 | [INFO ][memory ] [YC#6] 188.878-188.994: YC 1144261KB->545095KB (1638400KB), 0.116 s, sum of pauses 115.707 ms, longest pause 115.707 ms.
+INFO | 2012/04/13 12:48:01 | [INFO ][memory ] [YC#7] 206.047-206.166: YC 1194400KB->595682KB (1638400KB), 0.119 s, sum of pauses 119.083 ms, longest pause 119.083 ms.
+INFO | 2012/04/13 12:48:18 | [INFO ][memory ] [YC#8] 223.054-223.175: YC 1246641KB->647743KB (1638400KB), 0.122 s, sum of pauses 121.254 ms, longest pause 121.254 ms.
+INFO | 2012/04/13 12:48:35 | [INFO ][memory ] [YC#9] 240.005-240.164: YC 1296493KB->697263KB (1638400KB), 0.159 s, sum of pauses 158.882 ms, longest pause 158.882 ms.
+INFO | 2012/04/13 12:48:53 | [INFO ][memory ] [YC#10] 257.294-257.425: YC 1345255KB->746700KB (1638400KB), 0.131 s, sum of pauses 130.598 ms, longest pause 130.598 ms.
+INFO | 2012/04/13 12:49:09 | [INFO ][memory ] [YC#11] 273.680-273.806: YC 1389687KB->790713KB (1638400KB), 0.125 s, sum of pauses 125.076 ms, longest pause 125.076 ms.
+INFO | 2012/04/13 12:49:25 | [INFO ][memory ] [YC#12] 289.456-289.589: YC 1434886KB->835519KB (1638400KB), 0.132 s, sum of pauses 132.044 ms, longest pause 132.044 ms.
+INFO | 2012/04/13 12:49:41 | [INFO ][memory ] [YC#13] 305.427-305.549: YC 1472484KB->872548KB (1638400KB), 0.122 s, sum of pauses 121.570 ms, longest pause 121.570 ms.
+INFO | 2012/04/13 12:49:56 | [INFO ][memory ] [YC#14] 321.064-321.182: YC 1521493KB->920840KB (1638400KB), 0.118 s, sum of pauses 117.347 ms, longest pause 117.347 ms.
+INFO | 2012/04/13 12:50:12 | [INFO ][memory ] [YC#15] 336.983-337.107: YC 1566037KB->966413KB (1638400KB), 0.123 s, sum of pauses 122.995 ms, longest pause 122.995 ms.
+INFO | 2012/04/13 12:50:27 | [INFO ][memory ] [YC#16] 351.847-351.978: YC 1613972KB->1014404KB (1638400KB), 0.131 s, sum of pauses 130.979 ms, longest pause 130.979 ms.
+INFO | 2012/04/13 12:50:39 | [INFO ][memory ] [OC#1] 363.373-364.290: OC 1474459KB->296910KB (1638400KB), 0.917 s, sum of pauses 898.051 ms, longest pause 898.051 ms.
+INFO | 2012/04/13 12:51:00 | [INFO ][memory ] [YC#17] 384.743-384.899: YC 1151303KB->550442KB (1638400KB), 0.156 s, sum of pauses 155.950 ms, longest pause 155.950 ms.
+INFO | 2012/04/13 12:51:15 | [INFO ][memory ] [YC#18] 400.127-400.281: YC 1201000KB->602499KB (1638400KB), 0.154 s, sum of pauses 153.550 ms, longest pause 153.550 ms.
+INFO | 2012/04/13 12:51:30 | [INFO ][memory ] [YC#19] 414.844-414.991: YC 1246014KB->647276KB (1638400KB), 0.147 s, sum of pauses 146.442 ms, longest pause 146.442 ms.
+INFO | 2012/04/13 12:51:46 | [INFO ][memory ] [YC#20] 430.322-430.502: YC 1298100KB->698759KB (1638400KB), 0.180 s, sum of pauses 179.593 ms, longest pause 179.593 ms.
+INFO | 2012/04/13 12:52:01 | [INFO ][memory ] [YC#21] 445.677-445.832: YC 1343858KB->746115KB (1638400KB), 0.155 s, sum of pauses 155.150 ms, longest pause 155.150 ms.
+INFO | 2012/04/13 12:52:15 | [INFO ][memory ] [YC#22] 459.492-459.638: YC 1430428KB->829786KB (1638400KB), 0.145 s, sum of pauses 145.033 ms, longest pause 145.033 ms.
+INFO | 2012/04/13 12:52:29 | [INFO ][memory ] [YC#23] 474.057-474.217: YC 1479118KB->881126KB (1638400KB), 0.160 s, sum of pauses 159.519 ms, longest pause 159.519 ms.
+INFO | 2012/04/13 12:52:44 | [INFO ][memory ] [YC#24] 489.054-489.218: YC 1534940KB->935889KB (1638400KB), 0.164 s, sum of pauses 163.611 ms, longest pause 163.611 ms.
+INFO | 2012/04/13 12:52:59 | [INFO ][memory ] [YC#25] 503.730-503.891: YC 1586585KB->988161KB (1638400KB), 0.161 s, sum of pauses 160.486 ms, longest pause 160.486 ms.
+INFO | 2012/04/13 12:53:16 | [INFO ][memory ] [OC#2] 519.364-520.413: OC 1637458KB->440024KB (1638400KB), 1.050 s, sum of pauses 1030.602 ms, longest pause 1030.602 ms.
+INFO | 2012/04/13 12:53:32 | [INFO ][memory ] [YC#26] 536.241-536.434: YC 1167700KB->675165KB (1638400KB), 0.194 s, sum of pauses 192.997 ms, longest pause 192.997 ms.
+INFO | 2012/04/13 12:53:44 | [INFO ][memory ] [YC#27] 549.114-549.271: YC 1214677KB->725101KB (1638400KB), 0.157 s, sum of pauses 156.998 ms, longest pause 156.998 ms.
+INFO | 2012/04/13 12:53:57 | [INFO ][memory ] [YC#28] 561.181-561.340: YC 1261374KB->771531KB (1638400KB), 0.159 s, sum of pauses 158.339 ms, longest pause 158.339 ms.
+INFO | 2012/04/13 12:54:08 | [INFO ][memory ] [YC#29] 572.833-572.988: YC 1312951KB->823253KB (1638400KB), 0.155 s, sum of pauses 155.056 ms, longest pause 155.056 ms.
+INFO | 2012/04/13 12:54:21 | [INFO ][memory ] [YC#30] 585.190-585.352: YC 1357816KB->867088KB (1638400KB), 0.162 s, sum of pauses 161.714 ms, longest pause 161.714 ms.
+INFO | 2012/04/13 12:54:33 | [INFO ][memory ] [YC#31] 597.750-597.984: YC 1402918KB->913240KB (1638400KB), 0.234 s, sum of pauses 233.834 ms, longest pause 233.834 ms.
+INFO | 2012/04/13 12:54:45 | [INFO ][memory ] [YC#32] 609.931-610.092: YC 1446067KB->956470KB (1638400KB), 0.161 s, sum of pauses 160.267 ms, longest pause 160.267 ms.
+INFO | 2012/04/13 12:54:58 | [INFO ][memory ] [YC#33] 622.233-622.402: YC 1493748KB->1003546KB (1638400KB), 0.168 s, sum of pauses 168.143 ms, longest pause 168.143 ms.
+INFO | 2012/04/13 12:55:10 | [INFO ][memory ] [YC#34] 634.845-635.009: YC 1541288KB->1052131KB (1638400KB), 0.164 s, sum of pauses 164.083 ms, longest pause 164.083 ms.
+INFO | 2012/04/13 12:55:26 | 13 Apr, 2012 12:55:26 PM com.sun.faces.config.ConfigureListener contextInitialized
+INFO | 2012/04/13 12:55:26 | INFO: Initializing Sun's JavaServer Faces implementation (1.2_03-b04-FCS) for context '/console'
+INFO | 2012/04/13 12:55:26 | 13 Apr, 2012 12:55:26 PM com.sun.faces.config.ConfigureListener contextInitialized
+INFO | 2012/04/13 12:55:26 | INFO: Completed initializing Sun's JavaServer Faces implementation (1.2_03-b04-FCS) for context '/console'
+INFO | 2012/04/13 12:55:33 | [INFO ][memory ] [YC#35] 657.237-657.576: YC 1575723KB->1086804KB (1638400KB), 0.339 s, sum of pauses 338.597 ms, longest pause 338.597 ms.
+INFO | 2012/04/13 12:55:56 | [INFO ][memory ] [YC#36] 680.142-680.540: YC 1596283KB->1638400KB (1638400KB), 0.398 s, sum of pauses 397.367 ms, longest pause 397.367 ms.
+INFO | 2012/04/13 12:55:58 | [INFO ][memory ] [OC#3] 680.540-682.383: OC 1638400KB->561093KB (1638400KB), 1.843 s, sum of pauses 1822.625 ms, longest pause 1822.625 ms.
+INFO | 2012/04/13 12:56:26 | [INFO ][memory ] [YC#37] 710.469-710.796: YC 1173954KB->755531KB (1638400KB), 0.326 s, sum of pauses 325.902 ms, longest pause 325.902 ms.
+INFO | 2012/04/13 12:56:47 | [INFO ][memory ] [YC#38] 731.261-731.563: YC 1211302KB->793764KB (1638400KB), 0.302 s, sum of pauses 301.383 ms, longest pause 301.383 ms.
+INFO | 2012/04/13 12:57:11 | [INFO ][memory ] [YC#39] 754.740-755.386: YC 1289905KB->899613KB (1638400KB), 0.645 s, sum of pauses 644.733 ms, longest pause 644.733 ms.
+INFO | 2012/04/13 12:57:26 | [INFO ][memory ] [YC#40] 770.197-770.665: YC 1354215KB->928944KB (1638400KB), 0.468 s, sum of pauses 468.269 ms, longest pause 468.269 ms.
+INFO | 2012/04/13 12:57:26 | -- OTM Event: initContext
+INFO | 2012/04/13 12:57:26 | -- OTM Event: startupServlet
+INFO | 2012/04/13 12:57:26 | -- OTM Startup: loading startup classes
+INFO | 2012/04/13 12:57:27 | --
+INFO | 2012/04/13 12:58:15 | [INFO ][memory ] [YC#41] 819.700-820.212: YC 1455767KB->1053711KB (1638400KB), 0.511 s, sum of pauses 510.956 ms, longest pause 510.956 ms.
+INFO | 2012/04/13 12:58:52 |  : ERROR : 0
+INFO | 2012/04/13 12:58:53 | en : ERROR : 489145
+INFO | 2012/04/13 12:58:53 | en_US : ERROR : 0
+INFO | 2012/04/13 12:58:59 |  : QUERYRESOURCES : 0
+INFO | 2012/04/13 12:58:59 | en : QUERYRESOURCES : 787346
+INFO | 2012/04/13 12:59:00 | en_IN : QUERYRESOURCES : 0
+INFO | 2012/04/13 12:59:00 | en_US : QUERYRESOURCES : 0
+INFO | 2012/04/13 12:59:01 | -- OTM Event: postLoad
+INFO | 2012/04/13 12:59:01 | -- OTM Event: activateThread
+INFO | 2012/04/13 12:59:01 | -- OTM Startup: activating startup classes
+INFO | 2012/04/13 12:59:01 | -- OTM Event: postDeploy
+INFO | 2012/04/13 12:59:01 | <13 Apr, 2012 12:59:01 PM IST> <Notice> <Log Management> <BEA-170027> <The Server has established connection with the Domain level Diagnostic Service successfully.> 
+INFO | 2012/04/13 12:59:02 | <13 Apr, 2012 12:59:02 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to ADMIN> 
+INFO | 2012/04/13 12:59:03 | <13 Apr, 2012 12:59:03 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RESUMING> 
+INFO | 2012/04/13 12:59:04 | [INFO ][memory ] [YC#42] 868.301-868.816: YC 1532446KB->1138143KB (1638400KB), 0.515 s, sum of pauses 514.622 ms, longest pause 514.622 ms.
+INFO | 2012/04/13 12:59:04 | <13 Apr, 2012 12:59:04 PM IST> <Notice> <Server> <BEA-002613> <Channel "Default" is now listening on 10.236.145.114:7001 for protocols iiop, t3, ldap, snmp, http.> 
+INFO | 2012/04/13 12:59:04 | <13 Apr, 2012 12:59:04 PM IST> <Notice> <WebLogicServer> <BEA-000329> <Started WebLogic Admin Server "gc3-ctsincalsdcx" for domain "Otmv620" running in Production Mode> 
+INFO | 2012/04/13 12:59:04 | <13 Apr, 2012 12:59:04 PM IST> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RUNNING> 
+INFO | 2012/04/13 12:59:04 | <13 Apr, 2012 12:59:04 PM IST> <Notice> <WebLogicServer> <BEA-000360> <Server started in RUNNING mode> 
+INFO | 2012/04/13 12:59:20 | -- OTM Event: serverReady
+INFO | 2012/04/13 13:00:14 | <13 Apr, 2012 1:00:14 PM IST> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.236.145.114:34,066 during the configured idle timeout of 5 secs> 
+INFO | 2012/04/13 13:00:45 | [INFO ][memory ] [OC#4] 968.126-970.113: OC 1462728KB->845073KB (1638400KB), 1.987 s, sum of pauses 1966.369 ms, longest pause 1966.369 ms.
+INFO | 2012/04/13 13:12:46 | [INFO ][memory ] [YC#43] 1690.199-1690.871: YC 1415400KB->1034880KB (1638400KB), 0.672 s, sum of pauses 670.365 ms, longest pause 670.365 ms.
+INFO | 2012/04/13 13:15:54 | [INFO ][memory ] [YC#44] 1877.886-1878.222: YC 1459504KB->1076286KB (1638400KB), 0.336 s, sum of pauses 334.019 ms, longest pause 334.019 ms.
+INFO | 2012/04/13 13:16:10 | [INFO ][memory ] [YC#45] 1894.534-1894.709: YC 1485727KB->1086871KB (1638400KB), 0.175 s, sum of pauses 174.161 ms, longest pause 174.161 ms.
+INFO | 2012/04/13 13:16:23 | [INFO ][memory ] [YC#46] 1907.841-1908.032: YC 1494912KB->1093216KB (1638400KB), 0.191 s, sum of pauses 190.458 ms, longest pause 190.458 ms.
+INFO | 2012/04/13 13:32:42 | en_US_GUEST : QUERYRESOURCES : 0
+INFO | 2012/04/13 13:46:25 | Timer is behind system clock by 13900 msecs.
+INFO | 2012/04/13 13:46:25 | [INFO ][memory ] [YC#47] 3694.412-3708.387: YC 1541407KB->1147309KB (1638400KB), 13.975 s, sum of pauses 13969.283 ms, longest pause 13969.283 ms.
+INFO | 2012/04/13 14:09:20 | Timer is behind system clock by 30400 msecs.
+INFO | 2012/04/13 14:09:21 | [INFO ][memory ] [OC#5] Warning: Your computer has generated 15062 page faults during the last garbage collection.
+INFO | 2012/04/13 14:09:21 | [INFO ][memory ] [OC#5] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 14:09:21 | [INFO ][memory ] [OC#5] 5053.308-5085.818: OC 1445709KB->896330KB (1638400KB), 32.511 s, sum of pauses 30227.765 ms, longest pause 30227.765 ms.
+INFO | 2012/04/13 14:36:21 | [INFO ][memory ] [YC#48] 6688.910-6704.286: YC 1381796KB->1092331KB (1638400KB), 15.375 s, sum of pauses 15375.048 ms, longest pause 15375.048 ms.
+INFO | 2012/04/13 14:36:21 | Timer is behind system clock by 15300 msecs.
+INFO | 2012/04/13 14:37:25 | [INFO ][memory ] [YC#49] 6769.936-6770.125: YC 1391564KB->1097488KB (1638400KB), 0.188 s, sum of pauses 188.015 ms, longest pause 188.015 ms.
+INFO | 2012/04/13 14:44:23 | [INFO ][memory ] [YC#50] 7187.136-7187.435: YC 1445980KB->1150947KB (1638400KB), 0.299 s, sum of pauses 298.303 ms, longest pause 298.303 ms.
+INFO | 2012/04/13 14:45:41 | Timer is behind system clock by 18900 msecs.
+INFO | 2012/04/13 14:45:57 | [INFO ][memory ] [YC#51] 7280.244-7281.833: YC 1472196KB->1183241KB (1638400KB), 1.589 s, sum of pauses 1588.568 ms, longest pause 1588.568 ms.
+INFO | 2012/04/13 14:47:43 | [INFO ][memory ] [YC#52] 7388.061-7388.260: YC 1482910KB->1192171KB (1638400KB), 0.199 s, sum of pauses 197.566 ms, longest pause 197.566 ms.
+INFO | 2012/04/13 14:47:49 | [INFO ][memory ] [YC#53] 7393.323-7393.452: YC 1489298KB->1192727KB (1638400KB), 0.129 s, sum of pauses 128.248 ms, longest pause 128.248 ms.
+INFO | 2012/04/13 14:47:54 | [INFO ][memory ] [YC#54] 7398.804-7398.960: YC 1489743KB->1192981KB (1638400KB), 0.156 s, sum of pauses 155.493 ms, longest pause 155.493 ms.
+INFO | 2012/04/13 14:48:00 | [INFO ][memory ] [YC#55] 7404.690-7404.830: YC 1490780KB->1196449KB (1638400KB), 0.140 s, sum of pauses 139.440 ms, longest pause 139.440 ms.
+INFO | 2012/04/13 14:48:05 | [INFO ][memory ] [YC#56] 7410.167-7410.292: YC 1493406KB->1196708KB (1638400KB), 0.125 s, sum of pauses 124.441 ms, longest pause 124.441 ms.
+INFO | 2012/04/13 14:48:20 | [INFO ][memory ] [YC#57] 7424.748-7424.902: YC 1512467KB->1216536KB (1638400KB), 0.154 s, sum of pauses 153.856 ms, longest pause 153.856 ms.
+INFO | 2012/04/13 14:55:04 | Timer is behind system clock by 15900 msecs.
+INFO | 2012/04/13 14:55:04 | [INFO ][memory ] [OC#6] 7812.302-7828.265: OC 1323347KB->866528KB (1638400KB), 15.964 s, sum of pauses 15841.055 ms, longest pause 15841.055 ms.
+INFO | 2012/04/13 15:21:28 | Timer is behind system clock by 23300 msecs.
+INFO | 2012/04/13 15:21:28 | [INFO ][memory ] [YC#58] 9388.215-9411.589: YC 1331852KB->1062809KB (1638400KB), 23.374 s, sum of pauses 23368.077 ms, longest pause 23368.077 ms.
+INFO | 2012/04/13 15:40:25 | [INFO ][memory ] [YC#59] 10546.228-10549.799: YC 1381211KB->1107787KB (1638400KB), 3.571 s, sum of pauses 3570.310 ms, longest pause 3570.310 ms.
+INFO | 2012/04/13 15:57:44 | en_US_CTSTMS/CTS : QUERYRESOURCES : 0
+INFO | 2012/04/13 16:02:33 | [INFO ][memory ] [YC#60] Warning: Your computer has generated 11449 page faults during the last garbage collection.
+INFO | 2012/04/13 16:02:33 | [INFO ][memory ] [YC#60] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 16:02:33 | [INFO ][memory ] [YC#60] 11853.300-11876.640: YC 1434860KB->1162357KB (1638400KB), 23.340 s, sum of pauses 23335.911 ms, longest pause 23335.911 ms.
+INFO | 2012/04/13 16:02:33 | Timer is behind system clock by 23400 msecs.
+INFO | 2012/04/13 16:03:48 | Timer is behind system clock by 47300 msecs.
+INFO | 2012/04/13 16:03:49 | [INFO ][memory ] [OC#7] Warning: Your computer has generated 19372 page faults during the last garbage collection.
+INFO | 2012/04/13 16:03:49 | [INFO ][memory ] [OC#7] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 16:03:49 | [INFO ][memory ] [OC#7] 11905.176-11953.530: OC 1257558KB->874275KB (1638400KB), 48.355 s, sum of pauses 47225.326 ms, longest pause 47225.326 ms.
+INFO | 2012/04/13 16:14:03 | [INFO ][memory ] [YC#61] 12562.510-12566.096: YC 1340607KB->1070794KB (1638400KB), 3.587 s, sum of pauses 3585.843 ms, longest pause 3585.843 ms.
+INFO | 2012/04/13 17:05:55 | [INFO ][memory ] [YC#62] Warning: Your computer has generated 10828 page faults during the last garbage collection.
+INFO | 2012/04/13 17:05:56 | [INFO ][memory ] [YC#62] If you find this swapping problematic, please consider running JRockit with a smaller heap.
+INFO | 2012/04/13 17:05:56 | [INFO ][memory ] [YC#62] 15647.768-15678.602: YC 1423429KB->1149895KB (1638400KB), 30.834 s, sum of pauses 30830.267 ms, longest pause 30830.267 ms.
+INFO | 2012/04/13 17:05:56 | Timer is behind system clock by 30900 msecs.
+INFO | 2012/04/13 17:16:58 | [INFO ][memory ] [YC#63] 16323.729-16342.255: YC 1500603KB->1229006KB (1638400KB), 18.526 s, sum of pauses 18512.072 ms, longest pause 18512.072 ms.
+INFO | 2012/04/13 17:16:58 | Timer is behind system clock by 18500 msecs.
+INFO | 2012/04/13 17:20:34 | en_US_GWORK : QUERYRESOURCES : 0
+INFO | 2012/04/13 19:06:18 | [INFO ][memory ] [YC#64] 22878.221-22901.665: YC 1548813KB->1281361KB (1638400KB), 23.445 s, sum of pauses 23444.286 ms, longest pause 23444.286 ms.
+INFO | 2012/04/13 19:06:18 | Timer is behind system clock by 23400 msecs.
+INFO | 2012/04/13 23:00:35 | Timer is behind system clock by 17600 msecs.

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hooks>
+
+	<hooktype type="post_thanks_hack">
+		<hook>post_thanks_main_start</hook>
+		<hook>post_thanks_main_end</hook>
+		<hook>post_thanks_main_add_thanks_start</hook>
+		<hook>post_thanks_main_add_thanks_end</hook>
+		<hook>post_thanks_main_remove_all_thanks_start</hook>
+		<hook>post_thanks_main_remove_all_thanks_end</hook>
+		<hook>post_thanks_main_remove_user_thanks_start</hook>
+		<hook>post_thanks_main_remove_user_thanks_end</hook>
+		<hook>post_thanks_function_post_thanks_off_start</hook>
+		<hook>post_thanks_function_post_thanks_off_end</hook>
+		<hook>post_thanks_function_can_thank_this_post_start</hook>
+		<hook>post_thanks_function_can_thank_this_post_end</hook>
+		<hook>post_thanks_function_can_delete_all_thanks_start</hook>
+		<hook>post_thanks_function_can_delete_all_thanks_end</hook>
+		<hook>post_thanks_function_thanked_already_start</hook>
+		<hook>post_thanks_function_thanked_already_end</hook>
+		<hook>post_thanks_function_show_thanks_date_start</hook>
+		<hook>post_thanks_function_show_thanks_date_end</hook>
+		<hook>post_thanks_function_fetch_thanks_start</hook>
+		<hook>post_thanks_function_fetch_thanks_end</hook>
+		<hook>post_thanks_function_fetch_thanks_bit_start</hook>
+		<hook>post_thanks_function_fetch_thanks_bit_end</hook>
+		<hook>post_thanks_function_fetch_post_thanks_template_start</hook>
+		<hook>post_thanks_function_fetch_post_thanks_template_end</hook>
+		<hook>post_thanks_function_add_thanks_start</hook>
+		<hook>post_thanks_function_add_thanks_end</hook>
+		<hook>post_thanks_function_delete_all_thanks_start</hook>
+		<hook>post_thanks_function_delete_all_thanks_end</hook>
+		<hook>post_thanks_function_delete_thanks_start</hook>
+		<hook>post_thanks_function_delete_thanks_end</hook>
+		<hook>post_thanks_admin_start</hook>
+		<hook>post_thanks_admin_end</hook>
+		<hook>post_thanks_admin_recounters_start</hook>
+		<hook>post_thanks_admin_recounters_end</hook>
+		<hook>post_thanks_admin_user_amount_start</hook>
+		<hook>post_thanks_admin_user_amount_end</hook>
+		<hook>post_thanks_admin_thanked_posts_start</hook>
+		<hook>post_thanks_admin_thanked_posts_end</hook>
+		<hook>post_thanks_admin_thanked_times_start</hook>
+		<hook>post_thanks_admin_thanked_times_end</hook>
+		<hook>post_thanks_admin_post_amount_start</hook>
+		<hook>post_thanks_admin_post_amount_end</hook>
+		<hook>post_thanks_admin_special_actions_start</hook>
+		<hook>post_thanks_admin_special_actions_end</hook>
+		<hook>post_thanks_admin_delete_all_users_thanks_start</hook>
+		<hook>post_thanks_admin_delete_all_users_thanks_end</hook>
+	</hooktype>
+
+</hooks>

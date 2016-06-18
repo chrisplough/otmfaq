@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:translator="http://www.jclark.com/xt/java/glog.webserver.i18n.Translator" xmlns:uomHelper="http://www.jclark.com/xt/java/glog.webserver.util.UOMHelper" xmlns:util="http://www.jclark.com/xt/java/glog.webserver.util.Util" version="1.0">
+		 <!--
+<xsl:import href="file:workflow/TenderUtilHtml.xsl"/>
+<xsl:include href="file:workflow/Locale.xsl"/>
+<xsl:template match="notify/Blob/xml/">
+-->
+		 <xsl:template match="notify">
+		 		 <xsl:variable name="CallURL"><xsl:value-of select="Reply/URL/text()"/>?<xsl:value-of select="Reply/URL/TransactionArg"/><xsl:value-of select="util:escape-u-r-l(string(TransactionID))"/>%20<xsl:value-of select="util:escape-u-r-l(string(ShipmentID))"/></xsl:variable>
+		 		 <xsl:variable name="ShipmentXid" select="Blob/xml/TenderOffer/Shipment/ShipmentHeader/ShipmentGid/Gid/Xid"/>
+		 		 <xsl:variable name="PULoc" select="Blob/xml/TenderOffer/Shipment/ShipmentStop[StopSequence=1]/LocationRef/LocationGid/Gid/Xid"/>
+		 		 <xsl:variable name="PULocContact" select="Blob/xml/TenderOffer/Shipment/Location[LocationGid/Gid/Xid=$PULoc]/Contact[IsPrimaryContact='Y']/Fax"/>
+		 		 <xsl:variable name="ServProv" select="substring(Blob/xml/TenderOffer/Shipment/ShipmentHeader/ServiceProviderGid/Gid/Xid,1,4)"/>
+		 		 <xsl:variable name="TotalMiles" select="round(/notify/Blob/xml/TenderOffer/Shipment/ShipmentHeader/LoadedDistance/Distance/DistanceValue)"/>
+		 		 <xsl:variable name="Perspective" select="Blob/xml//TenderOffer/Shipment/ShipmentHeader2/Perspective"/>
+		 		 <xsl:variable name="GerbProv" select="substring(Blob/xml/TenderOffer/Shipment/ShipmentHeader/RateOfferingGid/Gid/Xid,5,4)"/>
+		 		 <xsl:variable name="PickupAppt" select="Blob/xml/TenderOffer/Shipment/ShipmentStop[StopSequence=1]/AppointmentPickup/GLogDate"/>
+		 		 <xsl:variable name="NullTag"/>
+		 		 <!--EMPTY STRING VARIABLE-->
+		 		 <html>
+		 		 		 <head>
+		 		 		 		 <title>Mercury Marine - Load Tender</title>
+		 		 		 </head>
+		 		 		 <body>
+		 		 		 		 <table cellpadding="0" border="0" width="670px">
+		 		 		 		 		 <tr>
+		 		 		 		 		 		 <td valign="bottom">
+		 		 		 		 		 		 		 <img alt="GLog" src="https://otm.mercurymarine.com/images/mail/MM_LOGO.gif" width="105" height="100" align="left"/>
+		 		 		 		 		 		 </td>
+		 		 		 		 		 		 <td valign="bottom" align="right">
+		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="6">
+		 		 		 		 		 		 		 		 <xsl:text>Load Tender</xsl:text>
+		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 </td>
+		 		 		 		 		 </tr>
+		 		 		 		 		 <tr>
+		 		 		 		 		 		 <td valign="top" style="border-color: #999999; border-width: thin; border-top-style: solid; border-bottom-style: solid; border-right-style: solid; border-left-style: solid;">
+		 		 		 		 		 		 		 <!--Tender Summary Table-->
+		 		 		 		 		 		 		 <table width="100%" cellpadding="2" align="left" cellspacing="0">
+		 		 		 		 		 		 		 		 <tr>
+		 		 		 		 		 		 		 		 		 <td bgcolor="#999999" align="left" colspan="2">
+		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="3">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Tender Summary</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <hr style="color: #999999;"/>
+		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 		 <!--Tender Summary-->
+		 		 		 		 		 		 		 		 <tr>
+		 		 		 		 		 		 		 		 		 <td nowrap="nowrap">
+		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Load #:</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Carrier:</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Accept/Reject Tender Offer</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 <hr style="color: #999999; height:1;"/>
+		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Total Stops:</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Total Miles:</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Total Weight:</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Total Cases:</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 		 <hr style="color: #999999; height:1;"/>
+		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Line Haul:</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Stop Charge:</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Fuel Charge:</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 		 <hr style="color: #999999; height:1;"/>
+		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Total Cost:</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 <td nowrap="nowrap">
+		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="$ShipmentXid"/>
+		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="$ServProv"/>
+		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 <a>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:attribute name="href"><xsl:value-of select="$CallURL"/></xsl:attribute>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text> Click Here </xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 </a>
+		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 <hr style="color: #999999; height:1;"/>
+		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="Blob/xml/TenderOffer/Shipment/ShipmentHeader/StopCount"/>
+		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="$TotalMiles"/>
+		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="round(Blob/xml/TenderOffer/Shipment/ShipmentHeader/TotalWeightVolume/WeightVolume/Weight/WeightValue)"/>
+		 		 		 		 		 		 		 		 		 		 		 <xsl:text> </xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="Blob/xml/TenderOffer/Shipment/ShipmentHeader/TotalWeightVolume/WeightVolume/Weight/WeightUOMGid/Gid/Xid"/>
+		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Blob/xml/TenderOffer/Shipment/ShipmentHeader/TotalShipUnitCount"/>
+		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 <hr style="color: #999999; height:1;"/>
+		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 <xsl:variable name="Discount" select="Blob/xml/TenderOffer/Shipment/ShipmentHeader/ShipmentCost[CostType='D']/Cost/FinancialAmount/MonetaryAmount"/>
+		 		 		 		 		 		 		 		 		 		 		 <xsl:variable name="Base" select="Blob/xml/TenderOffer/Shipment/ShipmentHeader/ShipmentCost[CostType='B']/Cost/FinancialAmount/MonetaryAmount"/>
+		 		 		 		 		 		 		 		 		 		 		 <xsl:call-template name="CostFormat">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:with-param name="Cost" select="$Base"/>
+		 		 		 		 		 		 		 		 		 		 		 </xsl:call-template>
+		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 <xsl:variable name="Stop" select="Blob/xml/TenderOffer/Shipment/ShipmentHeader/ShipmentCost[CostType='S']/Cost/FinancialAmount/MonetaryAmount"/>
+		 		 		 		 		 		 		 		 		 		 		 <xsl:call-template name="CostFormat">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:with-param name="Cost" select="$Stop"/>
+		 		 		 		 		 		 		 		 		 		 		 </xsl:call-template>
+		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 <xsl:variable name="Fuel" select="Blob/xml/TenderOffer/Shipment/ShipmentHeader/ShipmentCost[CostType='A']/Cost/FinancialAmount/MonetaryAmount"/>
+		 		 		 		 		 		 		 		 		 		 		 <xsl:call-template name="CostFormat">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:with-param name="Cost" select="$Fuel"/>
+		 		 		 		 		 		 		 		 		 		 		 </xsl:call-template>
+		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 <hr style="color: #999999; height:1;"/>
+		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 <xsl:variable name="Cost" select="Blob/xml/TenderOffer/Shipment/ShipmentHeader/TotalActualCost/FinancialAmount/MonetaryAmount"/>
+		 		 		 		 		 		 		 		 		 		 		 <xsl:call-template name="CostFormat">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:with-param name="Cost" select="$Cost"/>
+		 		 		 		 		 		 		 		 		 		 		 </xsl:call-template>
+		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 </table>
+		 		 		 		 		 		 </td>
+		 		 		 		 		 		 <td style="border-color: #999999; border-width: thin; border-top-style: solid; border-bottom-style: solid; border-right-style: solid; border-left-style: solid;" valign="top">
+		 		 		 		 		 		 		 <!--Tender Comments-->
+		 		 		 		 		 		 		 <table cellpadding="2" width="100%" cellspacing="0">
+		 		 		 		 		 		 		 		 <tr valign="top">
+		 		 		 		 		 		 		 		 		 <td bgcolor="#999999" valign="top" align="left">
+		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="3">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Tender Comments</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <hr style="color: #999999;"/>
+		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 		 <tr>
+		 		 		 		 		 		 		 		 		 <td style="border-color: #999999; border-width: 1px; border-length: 100%; border-style: solid;">
+		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 <xsl:variable name="TenderRmk" select="/notify/Blob/xml/TenderOffer/Shipment/ShipmentHeader/Remark[RemarkQualifierGid/Gid/Xid='TENDER REMARK']/RemarkText"/>
+		 		 		 		 		 		 		 		 		 		 		 <xsl:choose>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:when test="$TenderRmk!=$NullTag">
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="$TenderRmk"/>
+		 		 		 		 		 		 		 		 		 		 		 		 </xsl:when>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:otherwise>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>N/A</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 </xsl:otherwise>
+		 		 		 		 		 		 		 		 		 		 		 </xsl:choose>
+		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 </table>
+		 		 		 		 		 		 		 <!--Pickup Summary Table-->
+		 		 		 		 		 		 		 <table cellpadding="2" width="100%" cellspacing="0">
+		 		 		 		 		 		 		 		 <tr valign="top">
+		 		 		 		 		 		 		 		 		 <td bgcolor="#999999" valign="top" align="left" colspan="4">
+		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="3">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Pickup Summary</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <hr style="color: #999999;"/>
+		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 		 <tr height="100%" valign="top">
+		 		 		 		 		 		 		 		 		 <td style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; border-right-style: solid;">
+		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Stop #</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 <td style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; border-right-style: solid;">
+		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Appt Date</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 <td style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; border-right-style: solid;">
+		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Appt Time</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 <td style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; ">
+		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Location</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 		 <!--PU STOPS-->
+		 		 		 		 		 		 		 		 <xsl:for-each select="Blob/xml/TenderOffer/Shipment/ShipmentStop[ShipmentStopDetail[1]/Activity='P']">
+		 		 		 		 		 		 		 		 		 <xsl:variable name="LocationXid" select="LocationRef/LocationGid/Gid/Xid"/>
+		 		 		 		 		 		 		 		 		 <tr height="100%" valign="top">
+		 		 		 		 		 		 		 		 		 		 <td style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; border-right-style: solid;">
+		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="StopSequence"/> 
+		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 		 <td style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; border-right-style: solid;">
+		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:call-template name="FormatDate">
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:with-param name="DateString" select="AppointmentPickup"/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:with-param name="FormatType" select="string('GLogDateTimeType')"/>
+		 		 		 		 		 		 		 		 		 		 		 		 </xsl:call-template>
+																						
+                                                                                          <!--       <xsl:value-of select="AppointmentPickup" />																					-->
+		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 		 <td style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; border-right-style: solid;">
+		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:call-template name="FormatDate">
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:with-param name="DateString" select="AppointmentPickup"/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:with-param name="FormatType" select="string('Time')"/>
+		 		 		 		 		 		 		 		 		 		 		 		 </xsl:call-template>
+		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 		 <td style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; ">
+		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Blob/xml/TenderOffer/Shipment/Location[LocationGid/Gid/Xid=$LocationXid]/LocationName"/>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Blob/xml/TenderOffer/Shipment/Location[LocationGid/Gid/Xid=$LocationXid]/Address/AddressLines[SequenceNumber=1]/AddressLine"/>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Blob/xml/TenderOffer/Shipment/Location[LocationGid/Gid/Xid=$LocationXid]/Address/City"/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text> </xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/nofity/Blob/xml/TenderOffer/Shipment/Location[LocationGid/Gid/Xid=$LocationXid]/Address/ProvinceCode"/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text> </xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Blob/xml/TenderOffer/Shipment/Location[LocationGid/Gid/Xid=$LocationXid]/Address/PostalCode"/>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Blob/xml/TenderOffer/Shipment/Location[LocationGid/Gid/Xid=$LocationXid]/Contact[IsPrimaryContact='Y']/Phone1"/>
+		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 		 </xsl:for-each>
+		 		 		 		 		 		 		 </table>
+		 		 		 		 		 		 </td>
+		 		 		 		 		 </tr>
+		 		 		 		 		 <tr>
+		 		 		 		 		 		 <td style="border-color: #999999; border-width: thin; border-top-style: solid; border-bottom-style: solid; border-right-style: solid; border-left-style: solid;" colspan="2">
+		 		 		 		 		 		 		 <!--Delivery Summary Table-->
+		 		 		 		 		 		 		 <table cellpadding="2" width="100%" align="left" cellspacing="0">
+		 		 		 		 		 		 		 		 <tr>
+		 		 		 		 		 		 		 		 		 <td align="left" colspan="4" bgcolor="#999999">
+		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="3">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Delivery Summary</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <hr style="color: #999999;"/>
+		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 		 <xsl:for-each select="Blob/xml/TenderOffer/Shipment/ShipmentStop[ShipmentStopDetail[1]/Activity='D']">
+		 		 		 		 		 		 		 		 		 <xsl:variable name="LocationXid2" select="LocationRef/LocationGid/Gid/Xid"/>
+		 		 		 		 		 		 		 		 		 <tr valign="top">
+		 		 		 		 		 		 		 		 		 		 <td width="15%" style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; border-right-style: solid;">
+		 		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Stop #:</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Appt Date:</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Appt #:</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Miles:</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 		 <td style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; border-right-style: solid;">
+		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:variable name="StopNum" select="StopSequence"/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="$StopNum"/>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:call-template name="FormatDate">
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:with-param name="DateString" select="AppointmentDelivery"/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:with-param name="FormatType" select="string('DateTime')"/>
+		 		 		 		 		 		 		 		 		 		 		 		 </xsl:call-template>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="Remark[RemarkQualifierGid/Gid/Xid='APPOINTMENT NUMBER']/RemarkText"/>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="DistFromPrevStop"/>
+		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 		 <td style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; ">
+		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Blob/xml/TenderOffer/Shipment/Location[LocationGid/Gid/Xid=$LocationXid2]/LocationName"/>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Blob/xml/TenderOffer/Shipment/Location[LocationGid/Gid/Xid=$LocationXid2]/Address/AddressLines[SequenceNumber=1]/AddressLine"/>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Blob/xml/TenderOffer/Shipment/Location[LocationGid/Gid/Xid=$LocationXid2]/Address/AddressLines[SequenceNumber=2]/AddressLine"/>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Blob/xml/TenderOffer/Shipment/Location[LocationGid/Gid/Xid=$LocationXid2]/Address/City"/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text> </xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Blob/xml/TenderOffer/Shipment/Location[LocationGid/Gid/Xid=$LocationXid2]/Address/ProvinceCode"/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text> </xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Blob/xml/TenderOffer/Shipment/Location[LocationGid/Gid/Xid=$LocationXid2]/Address/PostalCode"/>
+		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Blob/xml/TenderOffer/Shipment/Location[LocationGid/Gid/Xid=$LocationXid2]/Contact[IsPrimaryContact='Y']/Phone1"/>
+		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 		 		 <tr>
+		 		 		 		 		 		 		 		 		 		 <td colspan="3">
+		 		 		 		 		 		 		 		 		 		 		 <table cellpadding="3" width="100%">
+		 		 		 		 		 		 		 		 		 		 		 		 <tr valign="top">
+		 		 		 		 		 		 		 		 		 		 		 		 		 <td width="15%" style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; border-right-style: solid;">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Shipper</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <td width="15%" style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; border-right-style: solid;">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Order ID</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <td width="20%" style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; border-right-style: solid;">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Payment Terms</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <!--td width="30%" style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; border-right-style: solid;">
+														<b>
+															<font face="Courier New, Arial, Helvetica" size="2">
+																<xsl:text>Delivery Date</xsl:text>
+															</font>
+														</b>
+													</td-->
+		 		 		 		 		 		 		 		 		 		 		 		 		 <td width="10%" style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; border-right-style: solid;">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Cases</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <td width="10%" style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; ">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Weight</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:for-each select="ReleaseOnStop">
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:variable name="OrderBaseXid" select="ID"/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <tr height="100%" valign="top">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 <td style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; border-right-style: solid;">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Blob/xml/TenderOffer/Shipment/Release/ReleaseGid/Gid[Xid=$OrderBaseXid]/DomainName"/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 <td style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; border-right-style: solid;">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="$OrderBaseXid"/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 <td style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; border-right-style: solid;">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Blob/xml/TenderOffer/Shipment/Release[ReleaseGid/Gid/Xid=$OrderBaseXid]/ReleaseRefnum[ReleaseRefnumQualifierGid/Gid/Xid='FREIGHT_TERMS']/ReleaseRefnumValue		 "/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 <!--td style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; border-right-style: solid;">
+															
+<font face="Courier New, Arial, Helvetica" size="2">
+												<xsl:call-template name="FormatDate2">
+													<xsl:with-param name="DateString2" select="/notify/Blob/xml/TenderOffer/Shipment/Release[ReleaseGid/Gid/Xid=$OrderBaseXid]/TimeWindow/LateDeliveryDate"/>
+													<xsl:with-param name="FormatType2" select="string('Date2')"/>
+												</xsl:call-template>
+											</font>															
+														</td-->
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 <td style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid; border-right-style: solid;">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="
+/notify/Blob/xml/TenderOffer/Shipment/ShipmentStop/ReleaseOnStop[ID=$OrderBaseXid]/TotalPackageCount"/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 <td style="border-color: #999999; border-width: 1px; border-length: 100%; border-bottom-style: solid;">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Blob/xml/TenderOffer/Shipment/Release[ReleaseGid/Gid/Xid=$OrderBaseXid]/TotalWeightVolume/WeightVolume/Weight/WeightValue"/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 		 		 		 		 		 </xsl:for-each>
+		 		 		 		 		 		 		 		 		 		 		 </table>
+		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 		 		 <tr>
+		 		 		 		 		 		 		 		 		 		 <td colspan="3">
+		 		 		 		 		 		 		 		 		 		 		 <table cellpadding="1" width="100%" style="border-color: black; border-width: 2px; border-length: 100%; border-bottom-style: solid;">
+		 		 		 		 		 		 		 		 		 		 		 		 <tr valign="top">
+		 		 		 		 		 		 		 		 		 		 		 		 		 <td>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Special Requirements:  </xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="1">
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <i>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Blob/xml/TenderOffer/Shipment/Location[LocationGid/Gid/Xid=$LocationXid2]/Remark[RemarkQualifierGid/Gid/Xid='SPCL_RQMT']/RemarkText"/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>,</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Blob/xml/TenderOffer/Shipment/ShipmentHeader/Remark[RemarkQualifierGid/Gid/Xid='SPCL_RQMT']/RemarkText"/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>,</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="Remark[RemarkQualifierGid/Gid/Xid='SPCL_RQMT']/RemarkText"/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 </i>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 		 		 		 		 </table>
+		 		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 		 </xsl:for-each>
+		 		 		 		 		 		 		 </table>
+		 		 		 		 		 		 </td>
+		 		 		 		 		 </tr>
+		 		 		 		 		 <tr>
+		 		 		 		 		 		 <td style="border-color: #999999; border-width: thin; border-top-style: solid; border-bottom-style: solid; border-right-style: solid; border-left-style: solid;" colspan="2">
+		 		 		 		 		 		 		 <table cellpadding="0">
+		 		 		 		 		 		 		 		 <tr>
+		 		 		 		 		 		 		 		 		 <td colspan="2">
+		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="1">
+		 		 		 		 		 		 		 		 		 		 		 <ol>
+		 		 		 		 		 		 		 		 		 		 		 		 <li>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Weights listed on Tender document do not include pallet weight.</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 </li>
+		 		 		 		 		 		 		 		 		 		 		 		 <li>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>ALL Loads must be live unload unless approved by Mercury Marine in advance of shipping.</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 </li>
+		 		 		 		 		 		 		 		 		 		 		 		 <li>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Driver responsible for piece count and supervision of unloading including legible consignee signature with detailed exceptions on each bill of lading.</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 </li>
+		 		 		 		 		 		 		 		 		 		 		 		 <li>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Possible driver assist at unloading. Unloading (lumper) fees will be reimbursed in full if signed receipt accompanies invoice.</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 </li>
+		 		 		 		 		 		 		 		 		 		 		 		 <li>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Carrier must alert Mercury Marine of any delays in transit and missed appointments ASAP.</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 </li>
+		 		 		 		 		 		 		 		 		 		 		 		 <li>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>48 ft. or 53 ft. dry van is required on all shipments</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 </li>
+		 		 		 		 		 		 		 		 		 		 		 </ol>
+		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 		 <tr>
+		 		 		 		 		 		 		 		 		 <td valign="top" align="left">
+		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="1">
+		 		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 		 <ul>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <li>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Payment requires the following Mercury Marine reference ID# on your invoice:  </xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 <u>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="$ShipmentXid"/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 </u>
+		 		 		 		 		 		 		 		 		 		 		 		 		 </li>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <li>
+		 		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Proof of deliveries for each bill of lading must accompany invoice.</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 		 </li>
+		 		 		 		 		 		 		 		 		 		 		 		 </ul>
+		 		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 		 <td style="border-color: #999999; border-width: 1px; border-length: 100%; border-style: solid;" valign="top" align="left">
+		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="1">
+		 		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 		 <i>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>SEND ALL PREPAID FREIGHT BILLS TO:</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Mercury Marine</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>c/o Williams and Associates</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>405 E. 78th St.</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <br/>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Bloomington, MN 55420</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 		 </i>
+		 		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 </table>
+		 		 		 		 		 		 </td>
+		 		 		 		 		 </tr>
+		 		 		 		 		 <tr>
+		 		 		 		 		 		 <td style="border-color: #999999; border-width: thin; border-top-style: solid; border-bottom-style: solid; border-right-style: solid; border-left-style: solid;">
+		 		 		 		 		 		 		 <table cellpadding="0" cellspacing="0">
+		 		 		 		 		 		 		 		 <tr style="height: 10;">
+		 		 		 		 		 		 		 		 		 <td>
+		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:text>Please Respond By:</xsl:text>
+		 		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 		 <tr style="height: 10;">
+		 		 		 		 		 		 		 		 		 <td>
+		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="1">
+		 		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Reply/By"/>
+		 		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 		 <tr style="height: 10;">
+		 		 		 		 		 		 		 		 		 <td>
+		 		 		 		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="1">
+		 		 		 		 		 		 		 		 		 		 		 <b>
+		 		 		 		 		 		 		 		 		 		 		 		 <xsl:value-of select="/notify/Reply/By/@TZ"/>
+		 		 		 		 		 		 		 		 		 		 		 </b>
+		 		 		 		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 		 		 		 </td>
+		 		 		 		 		 		 		 		 </tr>
+		 		 		 		 		 		 		 </table>
+		 		 		 		 		 		 </td>
+		 		 		 		 		 		 <td style="border-color: #999999; border-width: thin; border-top-style: solid; border-bottom-style: solid; border-right-style: solid; border-left-style: solid;">
+		 		 		 		 		 		 		 <font face="Courier New, Arial, Helvetica" size="2">
+		 		 		 		 		 		 		 		 <xsl:text>Please respond to this tender using the Accept/Reject link above.
+</xsl:text>
+		 		 		 		 		 		 		 		 <xsl:value-of select="$PULocContact"/>
+		 		 		 		 		 		 		 		 <xsl:text>  Failure to accept this tender within two hours will result in the loss of the shipment.</xsl:text>
+		 		 		 		 		 		 		 </font>
+		 		 		 		 		 		 </td>
+		 		 		 		 		 </tr>
+		 		 		 		 </table>
+		 		 		 </body>
+		 		 </html>
+		 </xsl:template>
+		 <xsl:template name="FormatDate">
+		 		 <xsl:param name="DateString"/>
+		 		 <xsl:param name="FormatType"/>
+		 		 <xsl:variable name="NullString"/>
+		 		 <!--EMPTY STRING VARIABLE-->
+		 		 <xsl:choose>
+		 		 		 <xsl:when test="$DateString!=$NullString">
+		 		 		 		 <xsl:choose>
+		 		 		 		 		 <xsl:when test="$FormatType='Date'">
+		 		 		 		 		 		 <xsl:value-of select="substring($DateString,6,2)"/>
+		 		 		 		 		 		 <xsl:value-of select="string('/')"/>
+		 		 		 		 		 		 <xsl:value-of select="substring($DateString,9,2)"/>
+		 		 		 		 		 		 <xsl:value-of select="string('/')"/>
+		 		 		 		 		 		 <xsl:value-of select="substring($DateString,1,4)"/>
+		 		 		 		 		 </xsl:when>
+		 		 		 		 		 <xsl:when test="$FormatType='Time'">
+		 		 		 		 		 		 <xsl:value-of select="substring($DateString,12,5)"/>
+		 		 		 		 		 </xsl:when>
+		 		 		 		 		 <xsl:when test="$FormatType='DateTime'">
+		 		 		 		 		 		 <xsl:value-of select="substring($DateString,6,2)"/>
+		 		 		 		 		 		 <xsl:value-of select="string('/')"/>
+		 		 		 		 		 		 <xsl:value-of select="substring($DateString,9,2)"/>
+		 		 		 		 		 		 <xsl:value-of select="string('/')"/>
+		 		 		 		 		 		 <xsl:value-of select="substring($DateString,1,4)"/>
+		 		 		 		 		 		 <xsl:value-of select="string(' ')"/>
+		 		 		 		 		 		 <xsl:value-of select="substring($DateString,12,5)"/>
+		 		 		 		 		 </xsl:when>
+		 		 		 		 </xsl:choose>
+		 		 		 </xsl:when>
+		 		 		 <xsl:otherwise>
+		 		 		 		 <xsl:value-of select="string('N/A')"/>
+		 		 		 </xsl:otherwise>
+		 		 </xsl:choose>
+		 </xsl:template>
+		 
+		 
+<xsl:template name="FormatDate2">
+		 		 <xsl:param name="DateString2"/>
+		 		 <xsl:param name="FormatType2"/>
+		 		 <xsl:variable name="NullString2"/>
+		 		 <!--EMPTY STRING VARIABLE-->
+		 		 <xsl:choose>
+		 		 		 <xsl:when test="$DateString2!=$NullString2">
+		 		 		 		 <xsl:choose>
+		 		 		 		 		 <xsl:when test="$FormatType2='Date2'">
+		 		 		 		 		 		 <xsl:value-of select="substring($DateString2,5,2)"/>
+		 		 		 		 		 		 <xsl:value-of select="string('/')"/>
+		 		 		 		 		 		 <xsl:value-of select="substring($DateString2,7,2)"/>
+		 		 		 		 		 		 <xsl:value-of select="string('/')"/>
+		 		 		 		 		 		 <xsl:value-of select="substring($DateString2,1,4)"/>
+		 		 		 		 		 </xsl:when>
+		 		 		 		 		 </xsl:choose>
+		 		 		 </xsl:when>
+		 		 		 <xsl:otherwise>
+		 		 		 		 <xsl:value-of select="string('N/A')"/>
+		 		 		 </xsl:otherwise>
+		 		 </xsl:choose>
+		 </xsl:template>
+		 		 
+		 
+		 
+		 
+		 
+		 <xsl:template name="CostFormat">
+		 		 <xsl:param name="Cost"/>
+		 		 <xsl:choose>
+		 		 		 <xsl:when test="contains($Cost,'.')">
+		 		 		 		 <xsl:variable name="Cost2">
+		 		 		 		 		 <xsl:value-of select="string('$')"/>
+		 		 		 		 		 <xsl:value-of select="substring-before($Cost,'.')"/>
+		 		 		 		 		 <xsl:text>.</xsl:text>
+		 		 		 		 		 <xsl:value-of select="substring(substring-after($Cost,'.'),1,2)"/>
+		 		 		 		 </xsl:variable>
+		 		 		 		 <xsl:value-of select="$Cost2"/>
+		 		 		 </xsl:when>
+		 		 		 <xsl:otherwise>
+		 		 		 		 <xsl:variable name="Cost2">
+		 		 		 		 		 <xsl:value-of select="string('$')"/>
+		 		 		 		 		 <xsl:value-of select="$Cost"/>
+		 		 		 		 		 <xsl:value-of select="string('.00')"/>
+		 		 		 		 </xsl:variable>
+		 		 		 		 <xsl:if test="$Cost2='$.00'">
+		 		 		 		 		 <xsl:text>$0</xsl:text>
+		 		 		 		 </xsl:if>
+		 		 		 		 <xsl:if test="$Cost2!='$.00'">
+		 		 		 		 		 <xsl:value-of select="$Cost2"/>
+		 		 		 		 </xsl:if>
+		 		 		 </xsl:otherwise>
+		 		 </xsl:choose>
+		 </xsl:template>
+</xsl:stylesheet>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hooks>
+	<hooktype type="vba_cmps">
+		<hook>vba_cmps_fetch_vba_module</hook>
+		<hook>vba_cmps_include_getpage</hook>
+		<hook>vba_cmps_include_preprocess_modules</hook>
+		<hook>vba_cmps_include_switch_type</hook>
+		<hook>vba_cmps_include_switch_pagetype</hook>
+		<hook>vba_cmps_module_birthdays</hook>
+		<hook>vba_cmps_module_buddylistbits</hook>
+		<hook>vba_cmps_module_currentpoll_start</hook>
+		<hook>vba_cmps_module_currentpoll_middle</hook>
+		<hook>vba_cmps_module_currentpoll_pollbits</hook>
+		<hook>vba_cmps_module_currentpoll_end</hook>
+		<hook>vba_cmps_module_minicalendar</hook>
+		<hook>vba_cmps_module_moderate</hook>
+		<hook>vba_cmps_module_navigation_start</hook>
+		<hook>vba_cmps_module_navigation_cus_pagebits</hook>
+		<hook>vba_cmps_module_navigation_def_pagebits</hook>
+		<hook>vba_cmps_module_navigation_end</hook>
+		<hook>vba_cmps_module_news_start</hook>
+		<hook>vba_cmps_module_newsbits</hook>
+		<hook>vba_cmps_module_newsbits_attachmentbits</hook>
+		<hook>vba_cmps_module_news_archivebits</hook>
+		<hook>vba_cmps_module_onlineuserbits</hook>
+		<hook>vba_cmps_module_recthreads_start</hook>
+		<hook>vba_cmps_module_recthreadsbits</hook>
+		<hook>vba_cmps_module_stats</hook>
+		<hook>vba_cmps_module_tags</hook>
+		<hook>vba_cmps_module_welcomeblock</hook>
+		<hook>vba_cmps_print_output</hook>
+		<hook>vba_cmps_template_alter</hook>
+	</hooktype>
+	<hooktype type="vba_cmps_admin_cp">
+		<hook>vba_cmps_admin_global</hook>
+		<hook>vba_cmps_admin_modify_settings</hook>
+		<hook>vba_cmps_admin_new_page_or_module</hook>
+		<hook>vba_cmps_admin_add_edit_module_start</hook>
+		<hook>vba_cmps_admin_add_edit_module_switch_type</hook>
+		<hook>vba_cmps_admin_add_edit_module_end</hook>
+		<hook>vba_cmps_admin_do_add_edit_module</hook>
+		<hook>vba_cmps_admin_do_remove_module</hook>
+		<hook>vba_cmps_admin_add_edit_page_start</hook>
+		<hook>vba_cmps_admin_add_edit_page_switch_type</hook>
+		<hook>vba_cmps_admin_add_edit_page_modules</hook>
+		<hook>vba_cmps_admin_add_edit_page_end</hook>
+		<hook>vba_cmps_admin_do_add_edit_page</hook>
+		<hook>vba_cmps_admin_do_remove_page</hook>
+		<hook>vba_cmps_admin_integrate_pluginoutput</hook>
+		<hook>vba_cmps_admin_end</hook>
+	</hooktype>
+	<hooktype type="vba_cmps_admin_functions">
+		<hook>vba_cmps_modulecache_loop</hook>
+		<hook>vba_cmps_pagecache_start</hook>
+		<hook>vba_cmps_pagecache_loop</hook>
+		<hook>vba_cmps_homepagecache</hook>
+		<hook>vba_cmps_settingscache_loop</hook>
+		<hook>vba_cmps_print_settingsbit</hook>
+		<hook>vba_cmps_construct_cmps_settings</hook>
+		<hook>vba_cmps_format_module_layout</hook>
+		<hook>vba_cmps_format_sitenav_links</hook>
+		<hook>vba_cmps_cp_text_editor</hook>
+	</hooktype>
+</hooks>

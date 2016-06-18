@@ -1,0 +1,34 @@
+SQL> select username, password from dba_users where username='GLOGOWNER';
+
+USERNAME                       PASSWORD
+------------------------------ ------------------------------
+GLOGOWNER
+SQL> SELECT NAME,PASSWORD from SYS.USER$;
+
+********
+NAME                           PASSWORD
+------------------------------ ------------------------------
+ARCHIVE                        679459CE431927F9
+GLOGDBA                        F5C013AB59E285BB
+GLOGOWNER                      89886D0FA158019A
+GLOGDEV                        BBE3F9C8C2D42F24
+GLOGLOAD                       3CF67C452E273743
+GLOBALREPORTUSER               683B6BB3A55C1329
+REPORTOWNER                    9275F9346708BBB4
+
+106 filas seleccionadas.
+
+SQL>
+
+C:\Users\user>sqlplus glogowner/glogowner@otmdb
+
+SQL*Plus: Release 11.2.0.1.0 Production on Mar Oct 23 10:47:22 2012
+
+Copyright (c) 1982, 2010, Oracle.  All rights reserved.
+
+
+Conectado a:
+Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> exit

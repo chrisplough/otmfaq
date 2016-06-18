@@ -1,0 +1,157 @@
+  PROCEDURE log(p_text IN VARCHAR2) IS
+  BEGIN
+    NULL;
+  EXCEPTION
+    WHEN OTHERS THEN
+      NULL;
+  END;
+  --
+  FUNCTION p_formatvalidtrigger(destype IN VARCHAR2) RETURN BOOLEAN IS
+  BEGIN
+   IF destype = 'Cache' AND p_within_report = 'N' THEN
+    IF p_format = 'View PDF' THEN
+         desformat := 'PDF';
+        ELSIF p_format = 'View EXCEL' THEN
+          desformat := 'EXCEL';  
+            ELSIF p_format = 'View HTML' THEN
+        desformat := 'HTMLCSS';
+      END IF;
+    END IF;
+    RETURN(TRUE);
+  EXCEPTION
+    WHEN OTHERS THEN
+      RAISE;
+  END p_formatvalidtrigger;
+  --
+  FUNCTION beforereport RETURN BOOLEAN IS
+  BEGIN
+    log('beforereport:entered');
+    reports_library.set_vpd(P_GL_USER);
+    log('beforereport:end');
+    RETURN(TRUE);
+  EXCEPTION
+    WHEN OTHERS THEN
+      RAISE;
+  END beforereport;
+
+  FUNCTION afterreport RETURN BOOLEAN IS
+  BEGIN
+    log('afterreport:entered');
+    reports_library.set_vpd(P_GL_USER);
+    log('afterreport:1');
+    IF UPPER(destype) = 'FILE' AND p_split = 1 THEN
+      log('afterreport:2');
+      rpt_general.p_insert_log(p_file,
+                               p_report_gid,
+                               p_rpt_job,
+                               P_GL_USER,
+                               p_domain,
+                               NULL,
+                               NULL,
+                               NULL,
+                               NULL,
+                               NULL,
+                               NULL,
+                               p_report_set_gid);
+    ELSE
+      log('afterreport:3');
+      IF UPPER(destype) = 'FILE' THEN
+        rpt_general.p_insert_log(p_file,
+                                 p_report_gid,
+                                 p_rpt_job,
+                                 P_GL_USER,
+                                 p_domain);
+      END IF;
+    END IF;
+    log('afterreport:4');
+    RETURN(TRUE);
+  EXCEPTION
+    WHEN OTHERS THEN
+      log('afterreport:' || SQLERRM);
+      RAISE;
+  END afterreport;
+
+  FUNCTION beforepform RETURN BOOLEAN IS
+  BEGIN
+    log('beforepform:entered');
+    reports_library.set_vpd(P_GL_USER);
+    RETURN(TRUE);
+  EXCEPTION
+    WHEN OTHERS THEN
+      log('beforepform:' || SQLERRM);
+      RAISE;
+  END beforepform;
+
+  FUNCTION afterpform RETURN BOOLEAN IS
+    v_string  VARCHAR2(32750);
+    ws_date   VARCHAR2(30);
+    v_boolean BOOLEAN;
+  BEGIN
+    log('afterpform:1');
+    log('afterpform:2');
+    v_boolean := reports_library.get_user_preferences(sys_context('gl_user_ctx',
+                                                                  'gl_user_id'),
+                                                      sys_context('gl_user_ctx',
+                                                                  'user_role_gid'),
+                                                      p_date_format,
+                                                      p_time_format,
+                                                      p_language_id);
+    log('p_gl_user:' || p_gl_user);
+    log('p_date_format' || p_date_format);
+    log('p_time_format' || p_time_format);
+
+    log('afterpform:3');
+    v_string := RTRIM(reports_library.build_localization_string(p_report_gid,
+                                                                p_language_id));
+    log('afterpform:4');
+    IF P_SHIPMENT_NAME IS NULL THEN 
+      log('null');  
+    ELSE  
+      log(p_shipment_name); 
+    END IF; 
+ set_lexical_parameter; 
+    log('afterpform:5');
+    IF p_keep_file_flag = 'Y' THEN
+      log('afterpform:6');
+      ws_date := '_' || TO_CHAR(SYSDATE,
+                                'YYMMDDHHMI');
+    END IF;
+    log('afterpform:7');
+    p_file := LOWER(TRANSLATE(TRANSLATE(p_domain || '_' || p_report_gid,
+                                        '.',
+                                        '_'),
+                              ' ',
+                              '_') || p_rpt_job || ws_date || '.' || desformat);
+    log('afterpform:8');
+    desname := LOWER(p_reports_out_dir || '/' || p_file);
+    p_report_physical_name := RTRIM(p_report_physical_name);
+    p_pdf_hyperlink        := p_report_call || '?' || p_rep_userid || ' server=' || p_reports_server || ' report=' || p_report_physical_name ||
+                             ' destype=CACHE desformat=PDF p_gl_user=' || p_gl_user || ' p_within_report=Y' || ' p_rep_userid=' || p_rep_userid;
+    p_excel_hyperlink        := p_report_call || '?' || p_rep_userid || ' server=' || p_reports_server || ' report=' || p_report_physical_name ||
+                              ' destype=CACHE desformat=spreadsheet p_gl_user=' || p_gl_user || ' p_within_report=Y' || ' p_rep_userid=' || p_rep_userid;
+   
+    p_xml_hyperlink        := p_report_call || '?' || p_rep_userid || ' server=' || p_reports_server || ' report=' || p_report_physical_name ||
+                              ' destype=CACHE desformat=XML p_gl_user=' || p_gl_user || ' p_within_report=Y' || ' p_rep_userid=' || p_rep_userid;
+    RETURN(TRUE);
+  EXCEPTION
+    WHEN OTHERS THEN
+      log('afterpform:' || SQLERRM);
+      RETURN FALSE;
+  END afterpform;
+   PROCEDURE set_lexical_parameter IS
+  BEGIN
+    IF NOT (P_SHIPMENT_NAME IS NULL OR P_SHIPMENT_NAME = '1=1') THEN
+      P_SHIPMENT_NAME1 := 'SH.SHIPMENT_XID' || REPORTS_LIBRARY.GET_FILTER_CONDITION(P_SHIPMENT_NAME);
+    ELSE
+      P_SHIPMENT_NAME1 := '1=1';
+    END IF;
+    LOG(P_SHIPMENT_NAME1);
+    log('date format:' || p_date_format);
+
+  EXCEPTION
+    WHEN OTHERS THEN
+      log('set_lexical_parameter:' || SQLERRM);
+  END set_lexical_parameter;
+
+  /*  THIS PROCEDURE LOGIC TO BE CHANGED FOR EVERY REPORT */
+END GE_SHIPMENT_EXTRACT_PKG;

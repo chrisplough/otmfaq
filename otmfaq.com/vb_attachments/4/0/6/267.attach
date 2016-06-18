@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Domain ConfigurationVersion="8.1.4.0" Name="gc3domain">
+    <Server IIOPEnabled="false"
+        JDBCLogFileName="/atlast02/appl/otm/otm555/logs/weblogic/jdbc.log"
+        JDBCLoggingEnabled="false" ListenAddress="131.97.131.18"
+        ListenPort="7001" Name="gc3-atlast02" NativeIOEnabled="true"
+        ServerVersion="8.1.4.0" StdoutSeverityLevel="16" TunnelingEnabled="true">
+        <COM Name="gc3-atlast02"/>
+        <ExecuteQueue Name="default" ThreadCount="50"/>
+        <IIOP Name="gc3-atlast02"/>
+        <JTAMigratableTarget Cluster="" Name="gc3-atlast02" UserPreferredServer="gc3-atlast02"/>
+        <JTARecoveryService Name="gc3-atlast02"/>
+        <KernelDebug Name="gc3-atlast02"/>
+        <Log FileCount="10" FileMinSize="10240"
+            FileName="/atlast02/appl/otm/otm555/logs/weblogic/weblogic.log"
+            Name="gc3-atlast02" NumberOfFilesLimited="true" RotationType="bySize"/>
+        <SSL Enabled="false" IdentityAndTrustLocations="KeyStores"
+            ListenPort="7002" Name="gc3-atlast02"
+            ServerCertificateChainFileName="./ca.pem"
+            ServerCertificateFileName="./democert.pem" ServerKeyFileName="./demokey.pem"/>
+        <ServerDebug Name="gc3-atlast02"/>
+        <ServerStart Name="gc3-atlast02"/>
+        <WebServer DefaultWebApp="DefaultWebApp_gc3"
+            LogFileBufferKBytes="1024"
+            LogFileName="/atlast02/appl/otm/otm555/logs/weblogic/access.log"
+            LoggingEnabled="false" Name="gc3-atlast02"/>
+    </Server>
+    <!-- Commented out: in 5.0 all connection pools are dynamically managed. If you need a connection pool for test programs, add this back in
+	    <JDBCConnectionPool CapacityIncrement="2"
+	        DriverName="oracle.jdbc.driver.OracleDriver"
+	        InitialCapacity="10" MaxCapacity="150" Name="dbaPool"
+	        Properties="user=glogdba;password=glogdba;dll=ocijdbc9;protocol=thin"
+	        RefreshMinutes="1" Targets="gc3-atlast02" TestConnectionsOnReserve="false"
+	        TestTableName="dual" URL="jdbc:oracle:thin:@oraatlt2.got.volvo.net:1521:dyatl5t"/>
+    <JDBCDataSource JNDIName="dbaPool" Name="dbaPool" PoolName="dbaPool" Targets="gc3-atlast02"/>
+    -->
+    <JMSConnectionFactory AllowCloseInOnMessage="true"
+        DefaultDeliveryMode="Persistent" DefaultPriority="4"
+        DefaultTimeToLive="0"
+        JNDIName="weblogic.jndi.jms.ConnectionFactory"
+        MessagesMaximum="100" Name="GC3JMSConnectionFactory"
+        OverrunPolicy="KeepOld" Targets="gc3-atlast02"/>
+    <JMSServer Name="GC3JMSServer" Targets="gc3-atlast02">
+        <JMSTopic JNDIName="weblogic.jndi.jms.gc3ActivateServerTopic"
+            Name="GC3ActivateServerTopic" StoreEnabled="false"/>
+        <JMSTopic JNDIName="weblogic.jndi.jms.gc3BeanUpdateTopic"
+            Name="GC3BeanUpdateTopic" StoreEnabled="false"/>
+        <JMSTopic JNDIName="weblogic.jndi.jms.gc3CacheRefreshTopic"
+            Name="GC3CacheRefreshTopic" StoreEnabled="false"/>
+        <JMSTopic JNDIName="weblogic.jndi.jms.gc3QueryUpdateTopic"
+            Name="GC3QueryUpdateTopic" StoreEnabled="false"/>
+        <JMSTopic JNDIName="weblogic.jndi.jms.gc3ProfileTopic"
+            Name="GC3ProfileTopic" StoreEnabled="false"/>
+        <JMSTopic
+            JNDIName="weblogic.jndi.jms.gc3ObjectLockAvailableTopic"
+            Name="GC3ObjectLockAvailableTopic" StoreEnabled="false"/>
+        <JMSTopic JNDIName="weblogic.jndi.jms.gc3ManagerLayoutTopic"
+            Name="GC3ManagerLayoutTopic" StoreEnabled="false"/>
+    </JMSServer>
+    <JTA Name="gc3domain"/>
+    <Log FileCount="10" FileMinSize="10240"
+        FileName="/atlast02/appl/otm/otm555/logs/weblogic/wl-domain.log"
+        Name="gc3domain" NumberOfFilesLimited="true" RotationType="bySize"/>
+    <SNMPAgent CommunityPrefix="readonly" DebugLevel="0" Enabled="true"
+        Name="gc3domain" SNMPPort="7161" TargetedTrapDestinations=""/>
+    <EmbeddedLDAP
+        CredentialEncrypted="{3DES}MKLGXF+HUQhL7MNbP+1cSAhHjsD0fiZMByBAI6Hofoo=" Name="gc3domain"/>
+    <JMSFileStore Directory="rmfilestore" Name="FileStore"/>
+    <WSReliableDeliveryPolicy DefaultRetryCount="10"
+        DefaultTimeToLive="60000" Name="RMDefaultPolicy" Store="FileStore"/>
+    <Security Name="gc3domain"
+        PasswordPolicy="wl_default_password_policy"
+        Realm="wl_default_realm" RealmSetup="true">
+        <weblogic.security.providers.authorization.DefaultRoleMapper
+            Name="Security:Name=gc3realmDefaultRoleMapper" Realm="Security:Name=gc3realm"/>
+        <weblogic.security.providers.authorization.DefaultAuthorizer
+            Name="Security:Name=gc3realmDefaultAuthorizer" Realm="Security:Name=gc3realm"/>
+        <weblogic.security.providers.authorization.DefaultAdjudicator
+            Name="Security:Name=gc3realmDefaultAdjudicator" Realm="Security:Name=gc3realm"/>
+        <weblogic.security.providers.credentials.DefaultCredentialMapper
+            Name="Security:Name=gc3realmDefaultCredentialMapper" Realm="Security:Name=gc3realm"/>
+        <weblogic.management.security.authentication.UserLockoutManager
+            Name="Security:Name=gc3realmUserLockoutManager" Realm="Security:Name=gc3realm"/>
+        <weblogic.management.security.Realm
+            Adjudicator="Security:Name=gc3realmDefaultAdjudicator"
+            AuthenticationProviders="Security:Name=gc3realmGC3AuthenticationProvider"
+            Authorizers="Security:Name=gc3realmGC3AuthorizationProvider"
+            CredentialMappers="Security:Name=gc3realmDefaultCredentialMapper"
+            DefaultRealm="true" DisplayName="gc3realm"
+            Name="Security:Name=gc3realm"
+            RoleMappers="Security:Name=gc3realmDefaultRoleMapper" UserLockoutManager="Security:Name=gc3realmUserLockoutManager"/>
+        <weblogic.security.providers.authentication.DefaultAuthenticator
+            Name="Security:Name=gc3realmDefaultAuthenticator" Realm="Security:Name=gc3realm"/>
+        <glog.util.j2ee.jaas.GC3AuthenticationProvider
+            Name="Security:Name=gc3realmGC3AuthenticationProvider" Realm="Security:Name=gc3realm"/>
+        <glog.util.j2ee.jaas.GC3AuthorizationProvider
+            Name="Security:Name=gc3realmGC3AuthorizationProvider" Realm="Security:Name=gc3realm"/>
+    </Security>
+    <SecurityConfiguration
+        CredentialEncrypted="{3DES}RRVpReH5befozmUKC2sPZFOZOHlT3LbxqI9KXAaTsbps5bCCtKM1KZkaJnwM5xaJVyulHdElZ9FAAgig8PJpPqFoH6RAO+o5"
+        Name="gc3domain" RealmBootStrapVersion="1"/>
+    <Realm FileRealm="wl_default_file_realm" Name="wl_default_realm"/>
+    <FileRealm Name="wl_default_file_realm"/>
+    <PasswordPolicy Name="wl_default_password_policy"/>
+    <ShutdownClass ClassName="glog.util.GC3StartupShutdownManager"
+        Name="gc3Shutdown" Targets="gc3-atlast02"/>
+    <StartupClass ClassName="glog.util.GC3StartupShutdownManager"
+        FailureIsFatal="false" Name="gc3Startup" Targets="gc3-atlast02"/>
+    <ApplicationManager Name="gc3domain"/>
+    <Application Deployed="true" Name="DefaultWebApp_gc3"
+        Path="./applications" StagedTargets="" StagingMode="nostage" TwoPhase="false">
+        <WebAppComponent Name="DefaultWebApp_gc3" Targets="gc3-atlast02" URI="DefaultWebApp_gc3"/>
+    </Application>
+</Domain>

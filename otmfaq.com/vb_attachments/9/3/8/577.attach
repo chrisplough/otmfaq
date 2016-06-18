@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jsp:root version="2.0" xmlns="http://www.w3.org/1999/xhtml" xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fn="http://java.sun.com/jsp/jstl/functions" xmlns:gc3="http://www.glog.com/gc3/gc3-taglib" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:nav="urn:jsptagdir:/WEB-INF/tags" xmlns:x="http://java.sun.com/jsp/jstl/xml" xmlns:sql="http://java.sun.com/jsp/jstl/sql" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt">
+
+<sql:setDataSource var="dataSource" driver="oracle.jdbc.driver.OracleDriver"
+url="jdbc:oracle:thin:@localhost:1521:otm55" user="glogdba" password="glogdba"
+scope="page"/>
+
+<jsp:useBean id="now" class="java.util.Date" />
+
+    <jsp:directive.page contentType="text/html" isELIgnored="false"/>
+    <gc3:manager_layout enteredIn="false" help="/html/help/webhelp/planning/shipment_manager/multi_create_shipments/multi_create_shipmnt.htm" name="Header" onLoad="setTotalsReadonly();setTotalDistanceReadonly();" title="Forwarder&apos;s Cargo Receipt" xpath="shipment">
+
+<table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none">
+ <tr style='height:.25in'>
+  <td width="209" colspan="3" valign="top" style='width:156.75pt;border:none;
+  border-top:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:.25in'>
+<tt><span style='color:#003366'>Shipper</span></tt>
+  </td>
+  <td width="381" colspan="4" rowspan="10" valign="top" style='width:286.05pt;
+  border:none;border-bottom:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
+  height:.25in'>
+  <p><img width="367" height="367" src="/images/image001.jpg"></img></p>
+  </td>
+ </tr>
+ <tr style='height:53.25pt'>
+  <td width="209" colspan="3" valign="top" style="width:156.75pt;border:none;
+  padding:0in 5.4pt 0in 5.4pt;height:53.25p">
+  <x:set var="ShipperLocGid" select="string($mainNode/location_shipment_involved_parties/location_shipment_involved_party[@ID2='SHIPPER']/location/xid/@ID)"/>
+  <x:set var="ShipperContactGid" select="string($mainNode/location_shipment_involved_parties/location_shipment_involved_party[@ID2='SHIPPER']/contact/xid/@ID)"/>
+
+<sql:query var="ShipperLocation" dataSource="${dataSource}" maxRows="1" sql="
+select location_name||' : '||(select ADDRESS_LINE from location_address where location_gid=l.location_gid and LINE_SEQUENCE=1)||' '||(select ADDRESS_LINE from location_address where location_gid=l.location_gid and LINE_SEQUENCE=2)||' '||(select ADDRESS_LINE from location_address where location_gid=l.location_gid and LINE_SEQUENCE=3)||', '||CITY||', '||PROVINCE_CODE||', '||POSTAL_CODE||', '||(select country_name from country_code where COUNTRY_CODE3_GID=l.COUNTRY_CODE3_GID) addr from location l where location_gid=?">
+	<sql:param value="${ShipperLocGid}"/>
+</sql:query>
+<c:forEach var="row" items="${ShipperLocation.rows}">
+	<c:out value="${row.addr}"/>
+</c:forEach>
+
+  </td>
+ </tr>
+ <tr style='height:17.25pt'>
+  <td width="209" colspan="3" valign="top" style='width:156.75pt;border:none;
+  border-top:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:17.25pt'>
+  <tt><span style='color:#003366'>Consignee</span></tt>
+  </td>
+ </tr>
+ <tr style='height:44.25pt'>
+  <td width="209" colspan="3" valign="top" style='width:156.75pt;border:none;
+  border-bottom:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:44.25pt'>
+  <x:set var="ConsigneeLocGid" select="string($mainNode/location_shipment_involved_parties/location_shipment_involved_party[@ID2='CONSIGNEE']/location/xid/@ID)"/>
+  <x:set var="ConsigneeContactGid" select="string($mainNode/location_shipment_involved_parties/location_shipment_involved_party[@ID2='CONSIGNEE']/contact/xid/@ID)"/>
+  
+<sql:query var="ConsigneeLocation" dataSource="${dataSource}" maxRows="1" sql="
+select location_name||' : '||(select ADDRESS_LINE from location_address where location_gid=l.location_gid and LINE_SEQUENCE=1)||' '||(select ADDRESS_LINE from location_address where location_gid=l.location_gid and LINE_SEQUENCE=2)||' '||(select ADDRESS_LINE from location_address where location_gid=l.location_gid and LINE_SEQUENCE=3)||', '||CITY||', '||PROVINCE_CODE||', '||POSTAL_CODE||', '||(select country_name from country_code where COUNTRY_CODE3_GID=l.COUNTRY_CODE3_GID) addr from location l where location_gid=?">
+	<sql:param value="${ConsigneeLocGid}"/>
+</sql:query>
+<c:forEach var="row" items="${ConsigneeLocation.rows}">
+	<c:out value="${row.addr}"/>
+</c:forEach>
+
+  </td>
+ </tr>
+ <tr style='height:.25in'>
+  <td width="209" colspan="3" valign="top" style='width:156.75pt;border:none;
+  padding:0in 5.4pt 0in 5.4pt;height:.25in'>
+  <tt><span style='color:#003366'>Notify Party</span></tt>
+  </td>
+ </tr>
+ <tr style='height:44.25pt'>
+  <td width="209" colspan="3" valign="top" style='width:156.75pt;border:none;
+  border-bottom:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:44.25pt'>
+  <x:set var="NotifyLocGid" select="string($mainNode/location_shipment_involved_parties/location_shipment_involved_party[@ID2='NOTIFY PARTY']/location/xid/@ID)"/>
+ <x:set var="NotifyContactGid" select="string($mainNode/location_shipment_involved_parties/location_shipment_involved_party[@ID2='NOTIFY PARTY']/contact/xid/@ID)"/>
+
+<sql:query var="NotifyLocation" dataSource="${dataSource}" maxRows="1" sql="
+select location_name||' : '||(select ADDRESS_LINE from location_address where location_gid=l.location_gid and LINE_SEQUENCE=1)||' '||(select ADDRESS_LINE from location_address where location_gid=l.location_gid and LINE_SEQUENCE=2)||' '||(select ADDRESS_LINE from location_address where location_gid=l.location_gid and LINE_SEQUENCE=3)||', '||CITY||', '||PROVINCE_CODE||', '||POSTAL_CODE||', '||(select country_name from country_code where COUNTRY_CODE3_GID=l.COUNTRY_CODE3_GID) addr from location l where location_gid=?">
+	<sql:param value="${NotifyLocGid}"/>
+</sql:query>
+<c:forEach var="row" items="${NotifyLocation.rows}">
+	<c:out value="${row.addr}"/>
+</c:forEach>
+
+  </td>
+ </tr>
+ <tr style='height:8.25pt'>
+  <td width="103" colspan="2" valign="top" style='width:77.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:8.25pt'>
+  <tt><span style='color:#333333'>Pre-carriage by</span></tt><p> </p>
+  </td>
+  <td width="106" valign="top" style='width:79.5pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:8.25pt'>
+  <tt><span style='color:#003366'>Place of Receipt</span></tt>
+  </td>
+ </tr>
+ <tr style='height:21.0pt'>
+  <td width="103" colspan="2" valign="top" style='width:77.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:21.0pt'>
+  <p> </p>
+  </td>
+  <td width="106" valign="top" style='width:79.5pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:21.0pt'>
+  <x:out select="$mainNode/origin/city"/>
+  <x:if select="$mainNode/origin/city = ''">
+	  <x:out select="$mainNode/origin/location_name"/>
+  </x:if>
+  </td>
+ </tr>
+ <tr style='height:21.75pt'>
+  <td width="103" colspan="2" valign="top" style='width:77.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:21.75pt'>
+  <tt><span style='color:#003366'>Port of Loading</span></tt>
+  </td>
+  <td width="106" valign="top" style='width:79.5pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:21.75pt'>
+  <tt><span style='color:#003366'>Port of Discharge</span></tt>
+  </td>
+ </tr>
+ <tr style='height:24.75pt'>
+  <td width="103" colspan="2" valign="top" style='width:77.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:24.75pt'>
+  <x:out select="$mainNode/port_of_load_location_xid"/> 
+  </td>
+  <td width="106" valign="top" style='width:79.5pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:24.75pt'>
+  <x:out select="$mainNode/port_of_dis_location_xid"/> 
+  </td>
+ </tr>
+ <tr>
+  <td width="209" colspan="3" valign="top" style='width:156.75pt;border:none;
+  border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <tt><span style='color:#003366'>Ocean Vessel</span></tt>
+  </td>
+  <td width="122" colspan="2" valign="top" style='width:91.5pt;border:none;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <tt><span style='color:#003366'>Voy No</span></tt>
+  </td>
+  <td width="259" colspan="2" valign="top" style='width:194.55pt;border:none;
+  border-left:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <tt><span style='color:#003366'>Place of Delivery</span></tt>
+  </td>
+ </tr>
+ <tr>
+  <td width="209" colspan="3" valign="top" style='width:156.75pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <x:out select="$mainNode/vessel_xid"/>
+  </td>
+  <td width="122" colspan="2" valign="top" style='width:91.5pt;border:none;
+  border-bottom:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+<x:out select="$mainNode/voyage_xid"/>  
+  </td>
+  <td width="259" colspan="2" valign="top" style='width:194.55pt;border-top:none;
+  border-left:solid windowtext 1.0pt;border-bottom:solid windowtext 1.0pt;
+  border-right:none;padding:0in 5.4pt 0in 5.4pt'>
+  <x:out select="$mainNode/destination/city"/>
+    <x:if select="$mainNode/destination/city = ''">
+	  <x:out select="$mainNode/destination/location_name"/>
+  </x:if>
+  </td>
+ </tr>
+ <tr>
+  <td width="590" colspan="7" valign="top" style='width:6.15in;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  
+
+  <table border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+   <tr>
+    <th width="404" valign="top" style='width:302.65pt;border:none;border-right:
+    solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <tt><span style='color:#003366'><font size="-1">Cntr No Seal No ; Marks &amp; Nos No of Cntr or P’kgs Kind of P’kgs  Description of Goods</font></span></tt>
+    </th>
+    <th width="71" valign="top" style='width:53.2pt;border:none;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <tt><span style='color:#003366'>Gross Weight</span></tt>
+    </th>
+    <th width="102" valign="top" style='width:76.15pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+    <tt><span style='color:#003366'>Measurement</span></tt>
+    </th>
+   </tr>
+   
+   <x:forEach var="SSU" select="$mainNode/shipment_stops/shipment_stop/shipment_stop_ds/shipment_stop_d[activity='P']/s_ship_units/s_ship_unit">
+   
+   <tr>
+    <td width="70%" valign="top" style='width:302.65pt;border:none;border-right:
+    solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <x:out select="$SSU/ship_unit_count"/><c:out value=" "/><x:out select="$SSU/transport_handling_unit/xid"/>(s)
+    
+    </td>
+    <td width="15%" valign="top" style='width:53.2pt;border:none;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <u><x:out select="$SSU/s_ship_unit_lines/s_ship_unit_line/weight/@IN"/></u>
+    </td>
+    <td width="15%" valign="top" style='width:76.15pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+    <u><x:out select="$SSU/s_ship_unit_lines/s_ship_unit_line/volume/@IN"/></u>
+    </td>
+   </tr>
+   <tr>
+    <td width="70%" valign="top" style='width:302.65pt;border:none;border-right:
+    solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+<x:out select="$SSU/s_ship_unit_lines/s_ship_unit_line/item/xid"/>
+    </td>
+    <td width="15%" valign="top" style='width:53.2pt;border:none;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <x:out select="$SSU/s_ship_unit_lines/s_ship_unit_line/weight"/>
+    </td>
+    <td width="15%" valign="top" style='width:76.15pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+    <x:out select="$SSU/s_ship_unit_lines/s_ship_unit_line/volume"/>
+    </td>
+   </tr>
+   
+   </x:forEach>
+  </table>
+   
+  <table border="1" cellspacing="0" cellpadding="0" style='border-collapse:collapse;border:none'>
+   <tr>
+    <td width="70%" valign="top" style='width:302.65pt;border-top:solid windowtext 1.0pt;
+    border-left:none;border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt'>
+     <x:out select="$mainNode/total_ship_unit_count"/><c:out value=" "/><x:out select="$mainNode/shipment_stops/shipment_stop/shipment_stop_ds/shipment_stop_d[activity='P']/s_ship_units/s_ship_unit/transport_handling_unit/xid"/>(s)
+    </td>
+    <td width="15%" valign="top" style='width:53.2pt;border-top:solid windowtext 1.0pt;
+    border-left:none;border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <x:out select="$mainNode/total_weight"/>
+    </td>
+    <td width="15%" valign="top" style='width:76.15pt;border-top:solid windowtext 1.0pt;
+    border-left:none;border-bottom:double windowtext 1.5pt;border-right:none;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <x:out select="$mainNode/total_volume"/>
+    </td>
+   </tr>
+  </table>
+  
+  <tt><span style='color:#003366'>TOTAL NUMBER OF CONTAINERS OR PACKAGES (IN WORD)</span></tt>
+  
+  <x:set var="totPC" select="string($mainNode/total_ship_unit_count)"/>
+<sql:query var = "totPC_W" dataSource="${dataSource}" sql="select TO_CHAR(TO_DATE(TO_NUMBER(?),'J'),'JSP') PC from dual">
+	<sql:param value="${totPC}"/>
+</sql:query>
+<c:forEach var="row" items="${totPC_W.rows}">
+	<c:out value="${row.PC}"/>
+</c:forEach>
+  <c:out value=" "/><x:out select="$mainNode/shipment_stops/shipment_stop/shipment_stop_ds/shipment_stop_d[activity='P']/s_ship_units/s_ship_unit/transport_handling_unit/xid"/>(S) ONLY.
+  </td>
+ </tr>
+ <tr>
+  <td width="590" colspan="7" valign="top" style='width:6.15in;border:none;
+  border-bottom:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <table border="0" cellspacing="0" cellpadding="0"
+   style='border-collapse:collapse'>
+   <tr>
+    <td width="98" valign="top" style='width:73.8pt;padding:0in 5.4pt 0in 5.4pt'>
+    <tt><span style='color:#003366'>Freight &amp; CHARGES</span></tt>
+    </td>
+    <td width="98" valign="top" style='width:73.8pt;padding:0in 5.4pt 0in 5.4pt'>
+    <tt><span style='color:#003366'>Revenue Tons</span></tt>
+    </td>
+    <td width="98" valign="top" style='width:73.8pt;padding:0in 5.4pt 0in 5.4pt'>
+    <tt><span style='color:#003366'>Rate</span></tt>
+    </td>
+    <td width="98" valign="top" style='width:73.8pt;border:none;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <tt><span style='color:#003366'>Per</span></tt>
+    </td>
+    <td width="98" valign="top" style='width:73.8pt;border:none;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <tt><span style='color:#003366'>Prepaid</span></tt>
+    </td>
+    <td width="98" valign="top" style='width:73.8pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+    <tt><span style='color:#003366'>Collect</span></tt>
+    </td>
+   </tr>
+   <tr>
+    <td width="98" valign="top" style='width:73.8pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p> </p>
+    </td>
+    <td width="98" valign="top" style='width:73.8pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p> </p>
+    </td>
+    <td width="98" valign="top" style='width:73.8pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p> </p>
+    </td>
+    <td width="98" valign="top" style='width:73.8pt;border:none;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p> </p>
+    </td>
+    <td width="98" valign="top" style='width:73.8pt;border:none;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p> </p>
+    </td>
+    <td width="98" valign="top" style='width:73.8pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+    <p> </p>
+    </td>
+   </tr>
+  </table>
+  <p></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="98" valign="top" style='width:73.8pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <tt><span style='color:#003366'>FCR No</span></tt>
+  </td>
+  <td width="148" colspan="3" valign="top" style='width:110.7pt;border:none;
+  border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <tt><span style='color:#003366'>Prepaid at</span></tt>
+  </td>
+  <td width="148" colspan="2" valign="top" style='width:110.7pt;border:none;
+  border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <tt><span style='color:#003366'>Payable at</span></tt>
+  </td>
+  <td width="197" valign="top" style='width:2.05in;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <tt><span style='color:#003366'>Place of FCR(s) Issued</span></tt>
+  </td>
+ </tr>
+ <tr>
+  <td width="98" valign="top" style='width:73.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <x:out select="$mainNode/xid"/>
+  </td>
+  <td width="148" colspan="3" valign="top" style='width:110.7pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p> </p>
+  </td>
+  <td width="148" colspan="2" valign="top" style='width:110.7pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p> </p>
+  </td>
+  <td width="197" valign="top" style='width:2.05in;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+<c:out value="      "/>  
+  <fmt:formatDate value="${now}" pattern="d/MMM/yyyy"/>
+  </td>
+ </tr>
+ <tr>
+  <td width="98" valign="top" style='width:73.8pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <tt><span style='color:#003366'>Ex Rate</span></tt>
+  </td>
+  <td width="148" colspan="3" valign="top" style='width:110.7pt;border:none;
+  border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <tt><span style='color:#003366'>Total Prepaid in Local Currency</span></tt>
+  </td>
+  <td width="148" colspan="2" valign="top" style='width:110.7pt;border:none;
+  border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <tt><span style='color:#003366'>Number of Original FCR(s)</span></tt>
+  </td>
+  <td width="197" rowspan="2" valign="top" style='width:2.05in;border:none;
+  border-bottom:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p><img width="174" height="16" src="/images/image002.jpg"></img></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="98" rowspan="3" valign="top" style='width:73.8pt;border:none;border-right:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <c:out value=" "/>
+  </td>
+  <td width="148" colspan="3" valign="top" style='width:110.7pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <c:out value=" "/>
+  </td>
+  <td width="148" colspan="2" valign="top" style='width:110.7pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <c:out value="( )"/>
+  </td>
+ </tr>
+ <tr>
+  <td width="295" colspan="5" valign="top" style='width:221.4pt;border:none;
+  border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <tt><span style='color:#003366'>FCR DELIVERY OF GOODS PLEASE APPLY TO</span></tt>
+  </td>
+  <td width="197" valign="top" style='width:2.05in;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <tt><span style='color:#003366'>Date</span></tt>
+  </td>
+ </tr>
+ <tr>
+  <td width="295" colspan="5" valign="top" style='width:221.4pt;border:none;
+  border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <c:out value=" "/>
+  </td>
+  <td width="197" valign="top" style='width:2.05in;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <fmt:formatDate value="${now}" pattern="d/MMM/yyyy"/>
+  <x:out select="$mainNode/vessel_xid"/><c:out value="   "/><x:out select="$mainNode/voyage_xid"/>
+  </td>
+ </tr>
+ <tr height="0">
+  <td width="98" style='border:none'></td>
+  <td width="5" style='border:none'></td>
+  <td width="106" style='border:none'></td>
+  <td width="37" style='border:none'></td>
+  <td width="85" style='border:none'></td>
+  <td width="63" style='border:none'></td>
+  <td width="197" style='border:none'></td>
+ </tr>
+</table>
+</gc3:manager_layout>
+</jsp:root>

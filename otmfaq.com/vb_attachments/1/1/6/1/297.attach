@@ -1,0 +1,407 @@
+
+OS Solaris 10
+Install type : Web,Rpt,oas
+--------------------------
+
+Steps:
+
+- Database installed 
+  Version 10.2.0.4
+  OS User :devtm_db
+  SID = DEVTM
+
+- DB Client 
+  Version 10.2.0.4
+  OS User :devtm_ap
+  
+- Oracle Forms Reports Server Installed 10g  
+  Version 10.1.2.0.2
+  OS User :devtm_ap
+  
+  
+- OTM 
+  Version 5.5 CU4
+  Web,App,Rpt type
+  OS User :devtm_ap
+ 
+ 
+  
+Prior to OTM installation launching otmv554_solaris.bin :-
+=======================
+1.DB Client connection to OTM DB has been verified
+  
+devtm_ap$sqlplus system/manager1@DEVTM
+
+SQL*Plus: Release 10.2.0.4.0 - Production on Tue Jan 20 14:59:13 2009
+
+Copyright (c) 1982, 2007, Oracle.  All Rights Reserved.
+
+
+Connected to:
+Oracle Database 10g Enterprise Edition Release 10.2.0.4.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+2.Report Server Sample report is getting created has been verified
+
+
+==============
+INSTALL STEPS
+=============
+OTM Installer has been executed by devtm_ap user (OS User)
+
+Installation as per the adminstration guide, for the intermediate entry screens
+
+===
+Post Installation, 3rd Party Libries have been copied according to README.txt:-
+
+export OTM=/san09/devtm/otmprod
+export LIB_BASE=/san09/media/otm55/3rdparties
+============
+cp $LIB_BASE/velocity/velocity-1.4/velocity-1.4.jar $OTM/glog/gc3webapp/WEB-INF/lib/3rdparty
+cp $LIB_BASE/velocity/velocity-1.4/velocity-dep-1.4.jar $OTM/glog/gc3webapp/WEB-INF/lib/3rdparty
+
+chmod 755 $OTM/glog/gc3webapp/WEB-INF/lib/3rdparty/velocity-1.4.jar $OTM/glog/gc3webapp/WEB-INF/lib/3rdparty/velocity-dep-1.4.jar
+chown devtm_ap $OTM/glog/gc3webapp/WEB-INF/lib/3rdparty/velocity-1.4.jar $OTM/glog/gc3webapp/WEB-INF/lib/3rdparty/velocity-dep-1.4.jar
+
+=============
+cd $OTM/tomcat/common/lib/
+mkdir struts-1.2.7-lib
+
+cd /san09/media/otm55/3rdparties/struts/struts-1.2.7-lib
+
+cp struts-bean.tld $OTM/tomcat/common/lib/struts-1.2.7-lib/struts-bean.tld
+cp struts-config_1_2.dtd $OTM/tomcat/common/lib/struts-1.2.7-lib/struts-config_1_2.dtd
+cp struts-html.tld $OTM/tomcat/common/lib/struts-1.2.7-lib/struts-html.tld
+cp struts-logic.tld $OTM/tomcat/common/lib/struts-1.2.7-lib/struts-logic.tld
+cp struts-nested.tld $OTM/tomcat/common/lib/struts-1.2.7-lib/struts-nested.tld
+cp struts-tiles.tld $OTM/tomcat/common/lib/struts-1.2.7-lib/struts-tiles.tld
+cp tiles-config_1_1.dtd $OTM/tomcat/common/lib/struts-1.2.7-lib/tiles-config_1_1.dtd
+cp validator-rules.xml $OTM/tomcat/common/lib/struts-1.2.7-lib/validator-rules.xml
+
+
+cd $OTM/tomcat/common/lib/struts-1.2.7-lib
+
+chmod 755 struts-bean.tld
+chmod 755 struts-config_1_2.dtd
+chmod 755 struts-html.tld
+chmod 755 struts-logic.tld
+chmod 755 struts-nested.tld
+chmod 755 struts-tiles.tld
+chmod 755 tiles-config_1_1.dtd
+chmod 755 validator-rules.xml
+
+chown devtm_ap struts-bean.tld
+chown devtm_ap struts-config_1_2.dtd
+chown devtm_ap struts-html.tld  
+chown devtm_ap struts-logic.tld
+chown devtm_ap struts-nested.tld
+chown devtm_ap struts-tiles.tld
+chown devtm_ap tiles-config_1_1.dtd
+chown devtm_ap validator-rules.xml
+
+
+==================
+
+cd /san09/media/otm55/3rdparties/jakarta/jakarta-taglibs-standard-1.1.2/lib
+
+cp jstl.jar standard.jar $OTM/glog/gc3webapp/WEB-INF/lib
+cp jstl.jar standard.jar $OTM/glog/gc3webapp/WEB-INF/lib/3rdparty
+
+
+cd $OTM/glog/gc3webapp/WEB-INF/lib
+chmod 755 jstl.jar standard.jar
+chown devtm_ap jstl.jar standard.jar
+cd $OTM/glog/gc3webapp/WEB-INF/lib/3rdparty
+chmod 755 jstl.jar standard.jar
+chown devtm_ap jstl.jar standard.jar
+
+==================
+cd $OTM/glog/gc3webapp/WEB-INF/lib/3rdparty
+
+cp /san09/media/otm55/3rdparties/FinJ/FinJ-code_2003-10-22_12h17_CEST+0200.jar $OTM/glog/gc3webapp/WEB-INF/lib/3rdparty/finj.jar
+
+cd $OTM/glog/gc3webapp/WEB-INF/lib/3rdparty
+chmod 755 finj.jar
+chown devtm_ap finj.jar
+
+====
+cp /san09/media/otm55/3rdparties/wsdl/wsdl4j-1_4/lib/wsdl4j.jar $OTM/glog/gc3webapp/WEB-INF/lib/3rdparty
+
+cd $OTM/glog/gc3webapp/WEB-INF/lib/3rdparty
+
+chmod 755 wsdl4j.jar
+
+chown devtm_ap wsdl4j.jar
+
+======
+cd /san09/media/otm55/3rdparties/openmap/openmap-4.5.4/lib
+
+cp openmap.jar $OTM/glog/gc3webapp/WEB-INF/lib/3rdparty
+
+cd $OTM/glog/gc3webapp/WEB-INF/lib/3rdparty
+
+chown devtm_ap openmap.jar
+chmod 755 openmap.jar
+
+=======================================
+
+POST INSTALLER STEPS 
+====================
+
+DB Post Installer steps:-
+DB Parameters changed and DB restarted
+O7_DICTIONARY_ACCESSIBILITY = true
+db_16k_cache_size = 104857600
+
+Following scripts are run from system user
+
+@create_gc3_tablespaces.sql
+
+@create_glog_roles.sql
+@create_glog_users.sql
+
+export NLS_LANG=AMERICAN_AMERICA.UTF8
+export ORACLE_SID=DEVTM
+
+
+devtm_ap$cd /san09/devtm/otmprod/glog/oracle/export
+imp parfile=imp_otmv55_partition.par userid=system/manager1@DEVTM
+
+
+
+1. Change to the <otm_install_path>/glog/oracle/script8 directory on the OTM Application server. In SQL*Plus, as user GLOGOWNER run:
+DB LOGIN GLOGOWNER
+@create_vpd_package.sql
+@glogowner_grants.sql
+@create_public_synonyms.sql
+@create_logon_triggers (enter connection string when prompted)
+2. In SQL*Plus, as user ARCHIVE run:
+DB LOGIN ARCHIVE
+@archive_grants
+
+3. In SQL*Plus, as user REPORTOWNER run:
+DB LOGIN REPORTOWNER
+@reportowner_grants.sql
+@create_public_synonyms.sql
+@recompile_invalid_objects.sql
+
+4. In SQL*Plus, as user GLOGOWNER run:
+DB LOGIN GLOGOWNER
+@aq_setup.sql
+@recompile_invalid_objects.sql
+
+5. In SQL*Plus, as user GLOGOWNER run:
+DB LOGIN GLOGOWNER
+Select count(*) from all_objects where status= 'INVALID'
+and owner in ('GLOGOWNER','REPORTOWNER','GLOGDEV','GLOGLOAD');
+
+6.Select namespace from dba_context where schema ='GLOGOWNER' ;
+
+SQL>Select namespace from dba_context where schema ='GLOGOWNER'
+/
+
+GL_USER_CTX
+
+7.
+select object_owner, count(*) from dba_policies
+where object_owner in ('GLOGOWNER','REPORTOWNER')
+group by object_owner;
+
+GLOGOWNER
+18552
+REPORTOWNER
+224
+
+8.
+
+@object_count.sql
+
+SQL> @object_count.sql
+
+ARCHIVE         LOB                      4
+                SEQUENCE               242
+                TABLE                  242
+GLOGDEV         SYNONYM                  3
+                TRIGGER                  1
+GLOGLOAD        SYNONYM                  3
+                TRIGGER                  1
+GLOGOWNER       FUNCTION                 1
+                INDEX                 2494
+                INDEX PARTITION         39
+                JAVA CLASS              10
+                JAVA SOURCE              7
+                LOB                     28
+                LOB PARTITION           39
+                PACKAGE                 66
+                PACKAGE BODY            64
+                PROCEDURE                1
+                QUEUE                    3
+                SEQUENCE               141
+                TABLE                 1198
+                TABLE PARTITION        280
+                TRIGGER               2693
+                TYPE                     4
+                VIEW                    25
+REPORTOWNER     INDEX                   14
+                PACKAGE                  9
+                PACKAGE BODY             9
+                SEQUENCE                 1
+                TABLE                   14
+                TRIGGER                 15
+                VIEW                    33
+
+
+Set serverout on size 1000000
+Execute domainman.reset_sequence;
+
+ACTIVITY_CALENDAR_SEQUENCE: reset next value to 100
+APP_SHARED_ITEM_SEQUENCE: reset next value to 39
+EXPLANATION_SEQUENCE: reset next value to 2
+IE_SS_STOP:
+IM_MILEAGE:
+IE_SHIPMENT_REFNUM:
+IE_SHIP_GROUP_REFNUM:
+IE_MARKS:
+IE_SS_REMARK:
+IE_INROUTE_SERVPROV:
+IE_SS_EQUIPMENT:
+IE_SS_STOP:
+IM_MILEAGE:
+IE_SHIPMENT_REFNUM:
+IE_SHIP_GROUP_REFNUM:
+IE_MARKS:
+IE_SS_REMARK:
+IE_INROUTE_SERVPROV:
+IE_SS_EQUIPMENT:
+IE_SS_STOP:
+IM_MILEAGE:
+IE_SHIPMENT_REFNUM:
+IE_SHIP_GROUP_REFNUM:
+IE_MARKS:
+IE_SS_REMARK:
+IE_INROUTE_SERVPROV:
+IE_SS_EQUIPMENT:
+IE_SS_STOP:
+IM_MILEAGE:
+IE_SHIPMENT_REFNUM:
+IE_SHIP_GROUP_REFNUM:
+IE_MARKS:
+IE_SS_REMARK:
+IE_INROUTE_SERVPROV:
+IE_SS_EQUIPMENT:
+IE_SS_STOP:
+IM_MILEAGE:
+IE_SHIPMENT_REFNUM:
+IE_SHIP_GROUP_REFNUM:
+IE_MARKS:
+IE_SS_REMARK:
+IE_INROUTE_SERVPROV:
+IE_SS_EQUIPMENT:
+IE_SS_STOP:
+IM_MILEAGE:
+IE_SHIPMENT_REFNUM:
+IE_SHIP_GROUP_REFNUM:
+IE_MARKS:
+IE_SS_REMARK:
+IE_INROUTE_SERVPROV:
+IE_SS_EQUIPMENT:
+IE_SS_STOP:
+IM_MILEAGE:
+IE_SHIPMENT_REFNUM:
+IE_SHIP_GROUP_REFNUM:
+IE_MARKS:
+IE_SS_REMARK:
+IE_INROUTE_SERVPROV:
+IE_SS_EQUIPMENT:
+PROCESS_CONTROL_HISTORY_SEQ: reset next value to 2
+PROCESS_CONTROL_REQUEST_SEQ: reset next value to 2
+SHIPMENT_SEQUENCE: reset next value to 2
+TIME_ZONE_LOCALE_SEQUENCE: reset next value to 1516
+USER_MENU_SEQUENCE: reset next value to 2707
+
+PL/SQL procedure successfully completed.
+
+Setup Security Roles
+1. Change to the <otm_install_path>/gc3/glog/oracle directory on the OTM Application server.
+2. In SQL*Plus as the GLOGOWNER user, run:
+@insert_security_roles.sql
+
+Migrate the New Database
+
+devtm_ap$ /san09/devtm/otmprod/install/gc3env.sh
+
+
+Change directory to <otm55_install_path>/glog/oracle/script8
+In SQL*Plus as user GLOGOWNER, run:
+@dbpatch_55.sql
+Enter the passwords and connection strings when prompted
+
+
+SQL> @dbpatch_55.sql
+
+
+
+Please ensure that you have set up the ARCHIVE location and dblink(s) prior to running patch,
+to determine whether archiving will be set up on the OLTP database or the ROD database.
+(Read 'Archive Setup' in documentation for more info).  If this has not been set up,
+cancel this job and set up first.  This only needs to be set up once.  The database link
+is not necessary if you are storing archiving on the OLTP.
+
+Enter GLOGOWNER password for parameter 1
+Enter value for 1: GLOGOWNER
+
+
+
+
+Enter REPORTOWNER password for parameter 2
+Enter value for 2: REPORTOWNER
+
+
+
+
+Enter Connection ID for parameter 3
+Enter value for 3: DEVTM
+
+
+
+
+Is this a Unix machine (ie. runs .sh rather than .cmd scripts)? (Y/N : Y)?
+Enter Y or N for parameter 4
+Enter value for 4: Y
+
+
+
+
+
+
+
+
+
+Enter the ARCHIVE password where archiving is stored for parameter 5:
+Enter value for 5: ARCHIVE
+
+
+
+
+
+Enter the GLOGOWNER password where archiving is stored for parameter 6 (if on OLTP, same as parameter 1):
+Enter value for 6: GLOGOWNER
+
+
+
+
+
+Enter the connection id where archiving is stored for parameter 7 (if on OLTP, same as parameter 3):
+Enter value for 7: DEVTM
+
+
+
+
+Please enter the glog properties path for parameter 8:
+Enter value for 8: /san09/devtm/otmprod/glog/config
+
+
+Run Security Role Script
+14. Go to the <otm_install_path>\glog\oracle directory on the OTM Application server. In SQL*Plus as GLOGOWNER, run:
+
+SQL> @insert_security_roles.sql

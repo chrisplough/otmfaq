@@ -1,0 +1,44 @@
+Starting agent EVO.SHIPMENT EVENT TRACKER (600072784) in response to ShipmentStatusTracking: transaction=2951, shipment=EVO.01009, event=ACTUAL_PICKUP (as null) [shipmentEvents - 3]
+2013-12-09 13:38:22.753	 	Debug	Agent	Publishing topic If: complexExpression=null, attributerule=null, savedCondition=null, threshold=null, expression=Y = Y, javaPlugin=null, forceTrue=false (SHIPMENT EVENT TRACKER) on queue agentUtility, group null [shipmentEvents - 3]
+2013-12-09 13:38:22.754	338262	Debug	Agent	Performing action If: complexExpression=null, attributerule=null, savedCondition=null, threshold=null, expression=Y = Y, javaPlugin=null, forceTrue=false (SHIPMENT EVENT TRACKER) as EVO (600072784); was If: complexExpression=null, attributerule=null, savedCondition=null, threshold=null, expression=$EVENT_GROUP.IS_AT_SHIPMENT_LOC = Y, javaPlugin=null, forceTrue=false [agentUtility - 4]
+2013-12-09 13:38:22.755	338262	Debug	Agent	Action If returns true [agentUtility - 4]
+2013-12-09 13:38:22.755	 	Debug	Agent	Publishing topic If: complexExpression=null, attributerule=null, savedCondition=null, threshold=null, expression= = Y, javaPlugin=null, forceTrue=false (SHIPMENT EVENT TRACKER) on queue agentUtility, group null [agentUtility - 4]
+2013-12-09 13:38:22.756	338262	Debug	Agent	Performing action If: complexExpression=null, attributerule=null, savedCondition=null, threshold=null, expression= = Y, javaPlugin=null, forceTrue=false (SHIPMENT EVENT TRACKER) as EVO (600072784); was If: complexExpression=null, attributerule=null, savedCondition=null, threshold=null, expression=$EVENT_GROUP.IS_APPOINTMENT_TIME = Y, javaPlugin=null, forceTrue=false [agentUtility - 4]
+2013-12-09 13:38:22.756	338262	Debug	Agent	Action If returns false [agentUtility - 4]
+2013-12-09 13:38:22.756	338262	Debug	Agent	Complete action If: complexExpression=null, attributerule=null, savedCondition=null, threshold=null, expression= = Y, javaPlugin=null, forceTrue=false (SHIPMENT EVENT TRACKER) (600072784) [agentUtility - 4]
+2013-12-09 13:38:22.757	338262	Debug	Agent	Publishing topic Else (SHIPMENT EVENT TRACKER) on queue agentUtility, group null [agentUtility - 4]
+2013-12-09 13:38:22.758	338262	Debug	Agent	Performing action Else (SHIPMENT EVENT TRACKER) as EVO (600072784); was Else [agentUtility - 4]
+2013-12-09 13:38:22.771	338262	Debug	GLog	AppActionChecks. [glog.server.action.AppActionCheck@27ed1d76] [agentUtility - 4]
+2013-12-09 13:38:22.771	338262	Debug	GLog	appActionCheck: glog.server.action.AppActionCheck@27ed1d76 pks: [EVO.01009] [agentUtility - 4]
+2013-12-09 13:38:22.771	338262	Debug	GLog	appActionCheck Query ? : false [agentUtility - 4]
+2013-12-09 13:38:22.771	338262	Debug	GLog	appActionCheck pks Empty ? false [agentUtility - 4]
+2013-12-09 13:38:22.771	338262	Debug	Agent	Action Else returns true [agentUtility - 4]
+2013-12-09 13:38:22.771	 	Debug	Agent	Publishing topic UpdateTimes: lateThreshold=3600.0 S, redrive=true, numDownstreamShipments= (SHIPMENT EVENT TRACKER) on queue shipmentEvents, group null [agentUtility - 4]
+2013-12-09 13:38:22.773	338262	Debug	Agent	Performing action UpdateTimes: lateThreshold=3600.0 S, redrive=true, numDownstreamShipments= (SHIPMENT EVENT TRACKER) as EVO (600072784); was UpdateTimes: lateThreshold=3600.0 S, redrive=true, numDownstreamShipments= [shipmentEvents - 2]
+2013-12-09 13:38:22.775	338262	Error	Exception	
+
+Shipment Stop Number is null
+
+	at sun.reflect.GeneratedConstructorAccessor767.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at glog.util.exception.GLException.factory(GLException.java:435)
+	at glog.util.exception.GLException.factory(GLException.java:411)
+	at glog.util.exception.GLException.factory(GLException.java:407)
+	at glog.util.exception.GLException.factory(GLException.java:403)
+	at glog.server.agent.business.shipment.UpdateTimes.execute(UpdateTimes.java:53)
+	at glog.server.agent.ActionWorkflow.execute(ActionWorkflow.java:49)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:64)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(WorkflowSessionServerSideEJBWrapper.java:38)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.execute(WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.java:206)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:352)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:146)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:98)
+	at glog.util.event.EventThread.run(EventThread.java:82)
+	at java.lang.Thread.run(Thread.java:619)
+ [shipmentEvents - 2]
+
+2013-12-09 13:38:22.777	338262	Debug	Agent	Agent EVO.SHIPMENT EVENT TRACKER (600072784) received error 26503/CLOSE/Process Agent:
+2013-12-09 13:38:22.777	338262	Error	Exception	Agent EVO.SHIPMENT EVENT TRACKER failed
+2013-12-09 13:38:22.777	338262	Debug	Agent	Agent EVO.SHIPMENT EVENT TRACKER (600072784) on error completed [shipmentEvents - 2]

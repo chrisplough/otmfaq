@@ -1,0 +1,1352 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<translations>
+	<message>
+		<name>adm_cp</name>
+		<value>Administrator-Kontrollzentrum</value>
+	</message>
+	<message>
+		<name>cphome</name>
+		<value>vBSEO Administrator-Kontrollzentrum Startseite</value>
+	</message>
+	<message>
+		<name>back_to</name>
+		<value>Zurück zu den Foren</value>
+	</message>
+	<message>
+		<name>logout</name>
+		<value>Logout</value>
+	</message>
+	<message>
+		<name>linkbacks</name>
+		<value>LinkBacks (Ping/Track/Refbacks)</value>
+	</message>
+	<message>
+		<name>in_linkbacks</name>
+		<value>Incoming LinkBacks</value>
+	</message>
+	<message>
+		<name>out_linkbacks</name>
+		<value>Outgoing LinkBacks</value>
+	</message>
+	<message>
+		<name>permalinks</name>
+		<value>Permalinks</value>
+	</message>
+	<message>
+		<name>patent_pending</name>
+		<value>Patent Pending</value>
+	</message>
+	<message>
+		<name>cookies_cleared</name>
+		<value>Alle Cookies gelöscht.</value>
+	</message>
+	<message>
+		<name>click_redirect</name>
+		<value>Bitte klicken Sie hier, wenn ihr Browser Sie nicht automatisch weiterleitet</value>
+	</message>
+	<message>
+		<name>error</name>
+		<value>Fehler</value>
+	</message>
+	<message>
+		<name>pass_notsame</name>
+		<value>Die eingegebenen Passwörter stimmen nicht überein.</value>
+	</message>
+	<message>
+		<name>pass_empty</name>
+		<value>Das Passwortfeld darf nicht leer sein.</value>
+	</message>
+	<message>
+		<name>pass_defined</name>
+		<value>Das Administratorpasswort wurde bereits festgelegt</value>
+	</message>
+	<message>
+		<name>config_readonly</name>
+		<value>Die Config Datei ist nicht beschreibbar.</value>
+	</message>
+	<message>
+		<name>pass_select</name>
+		<value>Bitte geben Sie ein Passwort ein.</value>
+	</message>
+	<message>
+		<name>password</name>
+		<value>Passwort</value>
+	</message>
+	<message>
+		<name>confirm</name>
+		<value>Bestätigung</value>
+	</message>
+	<message>
+		<name>login</name>
+		<value>Login</value>
+	</message>
+	<message>
+		<name>note_config</name>
+		<value>&lt;strong&gt;Achtung:&lt;/strong&gt;Die /includes/config_vbseo.php Datei muss beschreibbar sein. Bitte passen Sie die Rechte dementsprechend an.</value>
+	</message>
+	<message>
+		<name>login_failed</name>
+		<value>Login schlug fehl</value>
+	</message>
+	<message>
+		<name>area_protected</name>
+		<value>Dieser Bereich ist passwortgeschützt.</value>
+	</message>
+	<message>
+		<name>warn_readonly</name>
+		<value>ACHTUNG: Ihre config_vbseo.php ist nicht beschreibbar. Die Einstellungen werden nicht gespeichert.</value>
+	</message>
+	<message>
+		<name>saved_ok</name>
+		<value>Ihre Einstellungen wurden erfolgreich hochgeladen und gespeichert.</value>
+	</message>
+	<message>
+		<name>quick_jump</name>
+		<value>Schnellauswahl</value>
+	</message>
+	<message>
+		<name>gen_set</name>
+		<value>Allgemeine Einstellungen</value>
+	</message>
+	<message>
+		<name>vbseo_opt</name>
+		<value>vBSEO Grundeinstellungen</value>
+	</message>
+	<message>
+		<name>log_opt</name>
+		<value>Log &amp; Tracking Einstellungen</value>
+	</message>
+	<message>
+		<name>arc_opt</name>
+		<value>vB's Archiv Einstellungen</value>
+	</message>
+	<message>
+		<name>url_opt</name>
+		<value>URL Rewrite Einstellungen</value>
+	</message>
+	<message>
+		<name>gen_opt</name>
+		<value>Allgemeine Optionen</value>
+	</message>
+	<message>
+		<name>urls_forum</name>
+		<value>Forum URLs</value>
+	</message>
+	<message>
+		<name>urls_ann</name>
+		<value>Ankündigungen URLs</value>
+	</message>
+	<message>
+		<name>urls_thread</name>
+		<value>Themen URLs</value>
+	</message>
+	<message>
+		<name>urls_prnthread</name>
+		<value>Druckfreundliche Themen URLs</value>
+	</message>
+	<message>
+		<name>urls_post</name>
+		<value>Showpost URLs</value>
+	</message>
+	<message>
+		<name>urls_polls</name>
+		<value>Umfrage URLs</value>
+	</message>
+	<message>
+		<name>urls_member</name>
+		<value>Mitgliederprofil URLs</value>
+	</message>
+	<message>
+		<name>urls_mlist</name>
+		<value>Mitgliederliste URLs</value>
+	</message>
+	<message>
+		<name>urls_avatar</name>
+		<value>Benutzereigene Avatar URLs</value>
+	</message>
+	<message>
+		<name>urls_navbul</name>
+		<value>Navigationicons</value>
+	</message>
+	<message>
+		<name>urls_attach</name>
+		<value>Anhang URLs</value>
+	</message>
+	<message>
+		<name>crrs</name>
+		<value>Benutzerdefinierte Rewrite Regeln</value>
+	</message>
+	<message>
+		<name>seo_func</name>
+		<value>SEO Funktionen</value>
+	</message>
+	<message>
+		<name>dyn_metas</name>
+		<value>Dynamische META TAGS</value>
+	</message>
+	<message>
+		<name>dir_links</name>
+		<value>Direkt Links</value>
+	</message>
+	<message>
+		<name>add_ttitle</name>
+		<value>Thementitel hinzufügen</value>
+	</message>
+	<message>
+		<name>add_extttitle</name>
+		<value>Thementitel zu externen Links hinzufügen</value>
+	</message>
+	<message>
+		<name>stopwords</name>
+		<value>Stopwordfilterung</value>
+	</message>
+	<message>
+		<name>acronym</name>
+		<value>Ersetzungsvariablen</value>
+	</message>
+	<message>
+		<name>rel_replacements</name>
+		<value>Relevant Replacements</value>
+	</message>
+	<message>
+		<name>hp_set</name>
+		<value>Homepage Einstellungen</value>
+	</message>
+	<message>
+		<name>int_rel</name>
+		<value>Interne rel=&quot;nofollow&quot;s</value>
+	</message>
+	<message>
+		<name>ext_rel</name>
+		<value>Externe rel=&quot;nofollow&quot;s</value>
+	</message>
+	<message>
+		<name>oth_enh</name>
+		<value>Sonstige Erweiterungen</value>
+	</message>
+	<message>
+		<name>cleanup_html</name>
+		<value>Bereinigter HTML Quelltext</value>
+	</message>
+	<message>
+		<name>remove_prev</name>
+		<value>Entferne Themenvorschau</value>
+	</message>
+	<message>
+		<name>guests_only</name>
+		<value>Guest Only Enhancements</value>
+	</message>
+	<message>
+		<name>img_size</name>
+		<value>Anpassung von Bildgrößen</value>
+	</message>
+	<message>
+		<name>dl_backup</name>
+		<value>Download/Sichern</value>
+	</message>
+	<message>
+		<name>download</name>
+		<value>Download</value>
+	</message>
+	<message>
+		<name>filename</name>
+		<value>Dateiname</value>
+	</message>
+	<message>
+		<name>description</name>
+		<value>Beschreibung</value>
+	</message>
+	<message>
+		<name>backup_all</name>
+		<value>&lt;b&gt;Sichern Sie ALLE vBSEO Einstellungen&lt;/b&gt;&lt;br/&gt;
+            Sichern/Speichern Sie ALLE vBSEO Einstellungen.</value>
+	</message>
+	<message>
+		<name>backup_urls</name>
+		<value>&lt;b&gt;Sichern Sie NUR Ihre 'URL Rewrite Einstellungen'&lt;/b&gt;&lt;br/&gt;
+            Teilen Sie Ihre 'URL Rewrite Settings' mit anderen Kunden.</value>
+	</message>
+	<message>
+		<name>upload_set</name>
+		<value>Laden Sie Ihre eigene, vorher gespeicherte, Konfigurationsdatei (.xml) hoch</value>
+	</message>
+	<message>
+		<name>choose_file</name>
+		<value>Bitte wählen Sie die .xml Datei</value>
+	</message>
+	<message>
+		<name>note_upcrr</name>
+		<value>&lt;b&gt;Hinweis:&lt;/b&gt; Das Hochladen Ihrer 'benutzerdefinierten Rewrite Regeln' XML Datei überschreibt keine anderen Einstellungen oder die SEO Funktionen.</value>
+	</message>
+	<message>
+		<name>upload</name>
+		<value>Hochladen</value>
+	</message>
+	<message>
+		<name>import_set</name>
+		<value>Importiere Einstellungen</value>
+	</message>
+	<message>
+		<name>language_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;vBSEO Kontollzentrum Sprache&lt;br&gt;
+                              &lt;/strong&gt;Wählen Sie eine Sprache für Ihr vBSEO Kontrollzentrum. Die Sprachdatei muss sich vorher im Ordner 'Forum/includes/xml/' befinden.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>activate_desc</name>
+		<value>&lt;b&gt;Aktiviere Plugin?&lt;/b&gt;&lt;br/&gt;
+    Wählen Sie 'Ja', um die statischen vBSEO URLs und andere SEO Einstellungen zu aktivieren.</value>
+	</message>
+	<message>
+		<name>yes</name>
+		<value>Ja</value>
+	</message>
+	<message>
+		<name>no</name>
+		<value>Nein</value>
+	</message>
+	<message>
+		<name>license_desc</name>
+		<value>&lt;b&gt;Ihr vBSEO Lizenzschlüssel&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>key_config</name>
+		<value>Ihr Lizenzschlüssel ändert sich mit 1) einer neuen vBSEO Version oder 2) mit einer Änderung Ihrer Forum URL. Speichern Sie ihren Lizenzschlüssel (angezeigt in rot) in Ihre Konfigurationsdatei. Sobald der Schlüssel eingegeben wurde, wird Ihr Lizenzschlüssel grün, was bedeutet, dass Sie ein lizenziertes Produkt nutzen.</value>
+	</message>
+	<message>
+		<name>current_ver</name>
+		<value>eingesetze Version</value>
+	</message>
+	<message>
+		<name>forums_root</name>
+		<value>Ihre Forum URL</value>
+	</message>
+	<message>
+		<name>current_key</name>
+		<value>Ihr momentaner Key</value>
+	</message>
+	<message>
+		<name>redir_desc</name>
+		<value>&lt;b&gt;301 Weiterleitungen&lt;/b&gt;&lt;br/&gt;
+Aktivieren Sie diese Option, um alle früheren, dynamisch generierten Seiten, zu den neuen statischen Seiten weiterzuleiten. Diese Option sichert Ihren Page Rank, den Sie mit Ihren früheren URLs erreicht haben.</value>
+	</message>
+	<message>
+		<name>domname_desc</name>
+		<value>&lt;b&gt;Domainnamen in URLs?&lt;/b&gt;&lt;br/&gt;
+Suchmaschinen mögen es absoluten URLs zu folgen (www.IhreDomain.de/diese_seite.html). Aktivieren Sie diese Option, um Ihren Domainnamen in Ihren Forumlinks erscheinen zu lassen, um Ihre URL absolut (Gegenteil: relativ) erscheinen zu lassen.</value>
+	</message>
+	<message>
+		<name>noneng_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Ersetze nicht-Englische Ausdrücke in URLs?&lt;/b&gt;&lt;br/&gt;
+Aktivieren Sie diese Option, wenn Ihre Foren nicht in Englisch sind oder irgendwelche nicht-englischen Ausdrücke in Ihren Foren vorkommen (z.B. Caf&amp;eacute;).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>redirext_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Weiterleitung &lt;i&gt;aller&lt;/i&gt; externen URLs, die in privaten Foren erstellt wurden?&lt;/b&gt;&lt;br/&gt;
+Aktivieren Sie diese Option, um alle externen Links einschließlich interne Skripte in privaten Foren weiterzuleiten. Dies verhindert, daß URLs, die in privaten Foren gepostet werden, als Referrer in den Logdateien fremder Server auftauchen.&lt;/p&gt;
+&lt;p&gt;Hinweis: Die URLs werden folgendermaßen dargestellt: 'http://www.IhreDomain.de/forum/redirect-to/?redirect=http://www.externeDomain.de'</value>
+	</message>
+	<message>
+		<name>email_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Schreibe URLs in System E-Mails um?&lt;/b&gt;&lt;br/&gt;
+Wenn Sie diese Option auf 'Ja' setzen, werden alle Benachrichtigungs-E-Mails durch vBSEO automatisch umgeschrieben. &lt;/p&gt;
+&lt;p&gt;Hinweis: Diese Option funktioniert nur ab vB 3.5.x&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>link_desc</name>
+		<value>&lt;b&gt;Link zum vBSEO Kontrollzentrum?&lt;/b&gt;&lt;br/&gt;
+Diese Option setzt einen temporären Link oberhalb jeder vBulletin Forenseite zurück zum Kontrollzentrum. Das bedeutet für Sie eine enorme Zeitersparnis, wenn Sie Ihre statischen URLs anpassen möchten. Hinweis: Dieser Link ist nur für die Administratoren Ihres vBulletin Forums (Benutzergruppe 6) sichtbar.</value>
+	</message>
+	<message>
+		<name>fnf_desc</name>
+		<value>&lt;p&gt;
+                                          &lt;b&gt;Behandlung von '404' Fehlermeldungen&lt;/b&gt;&lt;br/&gt;
+      Wählen Sie, wie mit '404 Fehlermeldungen' verfahren werden soll: &lt;br/&gt;
+      - Weiterleitung zur Startseite &lt;br/&gt;
+      - Sende 404 HTTP Code und zeige 'Seite nicht gefunden' Meldung an&lt;br/&gt;
+      - Füge eigene Fehlerseite ein. Hinweis: Der Dateiname sollte den absoluten Pfad beinhalten. (Beispiel: &lt;i&gt;/home/user/public_html/error.php&lt;/i&gt;)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>redire_hp</name>
+		<value>Weiterleitung zur Startseite</value>
+	</message>
+	<message>
+		<name>send_404</name>
+		<value>Sende 404 HTTP Code</value>
+	</message>
+	<message>
+		<name>inc_custom</name>
+		<value>Füge eigene Fehlerseite ein</value>
+	</message>
+	<message>
+		<name>exclpages_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Ausschließung von Seiten?&lt;/b&gt;&lt;br/&gt;
+Nutzen Sie reguläre Ausdrücke, um zu verhindern, dass vBSEO Skripte und/oder Seiten umschreibt. Auch das Copyright wird auf diesen Seiten bzw. Skripten nicht dargestellt.&lt;/p&gt;
+&lt;p&gt;Beispiele: (trennen Sie mehrere Ausdrücke durch eine Leerzeile)&lt;br/&gt;
+^index\.php\?do=feature&lt;br/&gt;
+VBGooglemap.php&lt;br/&gt;
+geek-gallery-popup.php&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>botact_desc</name>
+		<value>&lt;b&gt;Speichern der Bot-Aktivität in Ihren Foren?&lt;/b&gt;&lt;br/&gt;
+Setzen Sie diese Option auf 'Ja', um die Such - Botaktivität zu speichern. Diese Funktion setzt eine installierte Version des &lt;a href=&quot;http://www.vbulletin.org/forum/showthread.php?t=100435&quot; target=&quot;_blank&quot;&gt;vBSEO Google / Yahoo Sitemap Generator&lt;/a&gt; voraus.&lt;/p&gt;
+&lt;p&gt;Hinweis: Sie können sich die Bot-Aktivität mit Hilfe des Sitemap Report Interface anzeigen lassen. </value>
+	</message>
+	<message>
+		<name>analytics_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Fügen Sie einen Google Analytics Code in Ihren Forenseiten ein?&lt;/b&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um Ihren Google Analystics Code zu Ihren Forenseiten hinzuzufügen.  &lt;a href=&quot;http://www.google.com/analytics/&quot; target=&quot;_blank&quot;&gt;Google Analytics&lt;/a&gt; stellt eine einfache Möglichkeit dar, um Ihren Traffic in Suchergebnissen anzeigen zu lassen..&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_code_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Tragen Sie Ihren Google Analytics Code ein&lt;/b&gt;&lt;br/&gt;
+Tragen Sie Ihren Google Analystic Code im folgendem Format ein: UA-9999-1&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_track_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Füge &quot;Tracking für externe Links&quot; Code ein?&lt;/b&gt; &lt;br/&gt;
+Wählen Sie 'Ja', um den Code zur Verfolgung von externen Links für alle externen Links einzufügen. Diese Funktion erlaubt es Ihnen &lt;a href=&quot;http://www.google.com/support/analytics/bin/answer.py?answer=27246&amp;topic=7305&quot; target=&quot;_blank&quot;&gt;Klicks auf externe Links&lt;/a&gt; durch Ihren Google Analystics Account zu erfassen.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_format_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Wählen Sie das Format für die Erfassung von ausgehenden Links&lt;/b&gt;&lt;br/&gt;
+Tragen Sie das Format für die Erfassung von externen Links ein.&lt;br/&gt;
+Beispiel: /outgoing/&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>funnel_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Aktiviere Google Analystics Trichter (Funnel) für Mitgliederregistrierungen?&lt;/b&gt;&lt;br/&gt;
+Wähle 'Ja', um den Google Analystics Code in alle, für den Registrierungsprozess benötigten, Seiten einzufügen. &lt;/p&gt;
+&lt;p&gt;Hinweis: Sie sollten für Ihr Forum ein neues 'Ziel' in Ihrem Google Analystics Account generieren und folgende Schritte einfügen (die Zahl der Schritte hängt davon ab, ob Sie das COPPA Registrierungssystem nutzen oder nicht): &lt;br/&gt;
+/google-funnel/coppaform.html &lt;i&gt;(wenn verwendbar)&lt;/i&gt; &lt;br/&gt;
+/google-funnel/enter-birthday.html &lt;i&gt;(wenn verwendbar)&lt;/i&gt; &lt;br/&gt;
+/google-funnel/agreement.html &lt;br/&gt;
+/google-funnel/regform-show.html &lt;br/&gt;
+/google-funnel/regform-submit.html &lt;br/&gt;
+/google-funnel/registration-complete.html
+  
+&lt;p&gt;&lt;a href=&quot;https://www.google.com/support/analytics/bin/answer.py?answer=26797&amp;hl=de_DE&quot; target=&quot;_blank&quot;&gt;Was ist ein Trichter (bzw. Funnel)?&lt;/a&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>adsense_desc</name>
+		<value>&lt;P&gt;&lt;B&gt;Aktiviere Google Adsense Relevanzmarkierung? &lt;/B&gt; &lt;SPAN class=beta&gt;BETA&lt;/SPAN&gt;&lt;BR&gt;Wählen Sie 'Ja', um 'Bereichtags' innerhalb von Forumhome, Forumdisplay und Showthread,  zu den relevanten Teilen Ihrer Forumseiten hinzuzufügen.</value>
+	</message>
+	<message>
+		<name>arcopt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&lt;i&gt;Archiv Optionen:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;301 Weiterleitung der vB Archiv Beitragsseiten &lt;/b&gt;&lt;br/&gt;
+'301 Weiterleitungen' sind &quot;Google's sicherer Weg&quot;, um Inhalt zu verschieben. Bitte wählen Sie diese Option, um Ihren Page Rank zu behalten und um Bots (und User) zu den neuen, statischen URLs weiterzuleiten.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Schreibe die vB Archivbeitragseiten um&lt;/b&gt;&lt;br/&gt;
+Diese Option schreibt die URLs so um, dass sie, vom Archiv aus, auf die neuen Contentseiten zeigen. Diese Option stellt eine gute Sitemap dar.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Schreibe + leite (301) Beitragsseiten um&lt;/b&gt;&lt;br/&gt;
+Dies ist eine Kombination aus beiden Funktionen. Diese Option schreibt die URLs um. sodass der Orginalinhalt auf die neuen URLs zeigt und leitet die Archivbeiträge um. Das bedeutet, dass es (a) wie eine Sitemap für die statische Seite arbeitet und (b) alte eingehende Links, welche auf die alten Archivseiten zeigen, zu den neuen statischen Seiten umgeleitet werden.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Behalte die Standardarchiv Einstellungen &lt;/b&gt;&lt;br/&gt;
+Nutzen Sie das orginale vBulletin Archiv.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>sel_one</name>
+		<value>Bitte wählen Sie eine Option aus</value>
+	</message>
+	<message>
+		<name>arc_redir_301</name>
+		<value>301 Weiterleitung des vB Archiv</value>
+	</message>
+	<message>
+		<name>arc_rewr_vbarc</name>
+		<value>Schreibe vB Archiv um</value>
+	</message>
+	<message>
+		<name>arc_redir_rewr</name>
+		<value>Schreibe + leite (301) das vB Archiv um</value>
+	</message>
+	<message>
+		<name>arc_keep</name>
+		<value>Behalte vB Archiveinstellungen</value>
+	</message>
+	<message>
+		<name>arcroot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Schreibe Archivindex um:&lt;br/&gt;
+&lt;/b&gt;Nutzen Sie diese Funktion, um die Standard-URL '/archive/index.php/' durch ein suchmaschinenfreundlicheres Format zu ersetzen.&lt;/p&gt;
+&lt;p&gt;Hinweis: Alte Archivroot URLs werden durch eine 301 Regel auf das neue benutzerdefinierte Format weitergeleitet, um sicherzustellen, dass sowohl User als auch Bots die alten indexierten Archivseiten finden.&lt;/p&gt;
+&lt;p&gt;Beispielphrasen:&lt;br/&gt;
+/hello/google/ oder /sitemap/ oder /archive/ etc. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>custom</name>
+		<value>Benutzerdefiniert</value>
+	</message>
+	<message>
+		<name>save_set</name>
+		<value>Speichere Einstellungen</value>
+	</message>
+	<message>
+		<name>reset</name>
+		<value>Reset</value>
+	</message>
+	<message>
+		<name>url_set_forum</name>
+		<value>vBSEO 'URL Rewrite Settings' Forum</value>
+	</message>
+	<message>
+		<name>sep_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Definiere Platzhalter für URL Bestandteile&lt;/b&gt;&lt;br/&gt;
+Dieses Zeichen trennt individuelle Wörter in umgeschriebenen URLs. Die Nutzung von [ - ] wird empfohlen. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>limurl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Limitiere URL Länge&lt;br/&gt;
+&lt;/b&gt;Einige Benutzer bevorzugen es die Länge der URLs limitieren zu können. Diese Einstellung &quot;bricht&quot; gewisse URL Bestandteile, wie bspw. [forum_title] und [thread_title] zu einer maximalen Anzahl von Keywords.&lt;/p&gt;
+&lt;p&gt;Hinweis: Setzen Sie diesen Parameter zu Null (0) für eine unbegrenzte Länge.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pathbits_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;Definiere Forentitel&lt;/b&gt;&lt;br/&gt;
+Definieren Sie, wie Forentitel-Pfade (innerhalb URLs) erscheinen sollen, wenn die &lt;i&gt;[forum_path]&lt;/i&gt; Variable in den nachfolgenden URL Formaten angezeigt werden sollen.&lt;/p&gt;
+&lt;p&gt;Hinweis: Nutzen Sie [forum_id], [forum_title] oder beides - In dem seltenen Fall, dass Sie zwei Foren mit dem gleichen Namen nutzen, müssen Sie die [forum_id] Variable integrieren, um Konflikte zu vermeiden. &lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+f[forum_id]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_forum_desc</name>
+		<value>&lt;b&gt;Schreibe Forum URLs um?&lt;/b&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um die Forum URLs umzuschreiben.</value>
+	</message>
+	<message>
+		<name>forum_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Forum URL Format&lt;/b&gt;&lt;br/&gt;
+Erstellen Sie einen virtuellen multi-Level Forumpfad, mittels der [forum_path] Phrase oder zeigen Sie nur den Forumnamen (oder ID), mittels der Variablen [forum_title] oder [forum_id]&lt;/p&gt;
+&lt;p&gt;Hinweis: In dem seltenen Fall, dass Sie zwei Foren mit dem gleichen Namen besitzen, müssen Sie, um Konflikte zu vermeiden, die [forum_id] anhängen. &lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+f[forum_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für Indexseiten des Forums&lt;/b&gt;&lt;br/&gt;
+Definieren Sie, wie die Indexseiten für jedes Forum angezeigt werden sollen.&lt;/p&gt;
+&lt;p&gt;Hinweis: In dem seltenen Fall, dass Sie zwei Foren mit dem gleichen Namen besitzen, müssen Sie, um Konflikte zu vermeiden, die [forum_id] anhängen.&lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+f[forum_id]-[forum_page].html&lt;br/&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_ann_desc</name>
+		<value>&lt;b&gt;Schreibe URLs der Ankündigungen um?&lt;/b&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um die URLs der Ankündigungen umzuschreiben.</value>
+	</message>
+	<message>
+		<name>ann_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Individuelles URL Format für Ankündigungen&lt;/b&gt;&lt;br/&gt;
+Wählen Sie ein URL Format für Ankündigungen oder erstellen Sie selbst Ihr eigenes URL Format, mittels des nachstehenden Feldes.&lt;/p&gt;
+&lt;p&gt;Hinweis: Da Ankündigungen von Administratoren oder Moderatoren veröffentlicht werden, besteht nur noch ein kleines Risiko, dass zwei Ankündigungen mit demselben Titel verfasst wurden. Deshalb ist es oft nicht nötig [announcement_id] in das Format einzufügen.&lt;/p&gt;
+&lt;p&gt;Hinweis: Da Ankündigungen zu den Foren gehören, MÜSSEN Sie einen Forumindikator, wie beispw. [forum_id] oder [forum_title], in das URL Format einfügen. Auch MÜSSEN Sie entweder die [announcement_id] oder die [announcement_title] Variable integrieren. &lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+f[forum_id]-announcement[announcement_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>ann_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für mehrere Ankündigungen&lt;/b&gt;&lt;br/&gt;
+Wähle das URL Format für die 'Zeige alle Ankündigungen' Seite oder erstellen Sie Ihr eigenes URL Format, welches Sie bitte in das nachstehende Feld eintragen.&lt;/p&gt;
+&lt;p&gt;Hinweis: Da Ankündigungen mit Foren verknüpft sind, MÜSSEN Sie einen Forenindikator wie beispielsweise [forum_id] oder [forum_title] einfügen. Fügen Sie die Variablen [announcement_id] oder [announcement_title] NICHT ein. &lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+f[forum_id]-announcements.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_thread_desc</name>
+		<value>&lt;b&gt;Schreibe Themen URLs um?&lt;/b&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um die URLs der Themen umzuschreiben.</value>
+	</message>
+	<message>
+		<name>thread_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Themen URL Format&lt;/b&gt;&lt;br/&gt;
+Wählen Sie das Format für die Themen URLs oder erstellen Sie ein eigenes Format, mittels des nachstehenden Feldes.&lt;/p&gt;
+&lt;p&gt;Hinweis: Sie sollten immer die [thread_id] Variable in Ihr URL Format integrieren, da Themen oft denselben Titel haben können. &lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+t[thread_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für mehrseitige Themen&lt;/b&gt;&lt;br/&gt;
+Definieren Sie wie individuelle Themen mit mehreren Seiten angezeigt werden sollen.&lt;/p&gt;
+&lt;p&gt;Hinweis: Sie sollten immer die [thread_id] Variable in Ihr URL Format integrieren, da Themen oft denselben Titel haben können. &lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+t[thread_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für GARS Artikelanzeige (garpg)&lt;/b&gt;&lt;br/&gt;
+Definieren Sie, wie individuelle &lt;a href=&quot;http://www.thevbgeek.com/&quot;&gt;GARS&lt;/a&gt; Artikel mit mehreren Seiten angezeigt werden sollen..&lt;/p&gt;
+&lt;p&gt;Hinweis: Sie sollten immer die [thread_id] Variable in Ihr URL Format integrieren, da Themen oft dieselben Titel haben können. &lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+t[thread_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_lpformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für 'letzter Beitrag im Thema'&lt;br/&gt;
+&lt;/b&gt;Definieren Sie, wie Links 'zum letzten Beitrag in einem Thema' angezeigt werden sollen.&lt;/p&gt;
+&lt;p&gt;Hinweis: Die vB-eigene Weiterleitungsfunktionalität wird genutzt, um den Benutzer zum zutreffenden Beitrag des Themas weiterzuleiten (z.B. thead_title.html#post-xxxx).&lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+t[thread_id]-last-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gpformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Gehe zu Beitrag in Thema' URL Format&lt;br/&gt;
+&lt;/b&gt;Definieren Sie, wie 'gehe zu Beitrag in Thema' angezeigt werden sollen.&lt;/p&gt;
+&lt;p&gt;Hinweis: Die vB-eigene Weiterleitungsfunktionalität wird genutzt, um den Benutzer zum zutreffenden Beitrag des Themas weiterzuleiten (z.B. thead_title.html#post-xxxx).&lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+t[thread_id]-post[post_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gppformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für mehrseitiges 'Gehe zu Beitrag in Thema'&lt;br/&gt;
+&lt;/b&gt;Definieren Sie, wie Links zu den mehrseitigen 'gehe zu Beitrag in Thema'-Seiten angezeigt werden sollen.&lt;/p&gt;
+&lt;p&gt;Hinweis: Die vB-eigene Weiterleitungsfunktionalität wird genutzt, um den Benutzer zum zutreffenden Beitrag im Thema weiterzuleiten (z.B. thead_title.html#post-xxxx)&lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+t[thread_id]-post[post_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_ptformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für 'vorheriges Thema'&lt;br/&gt;
+&lt;/b&gt;Definieren Sie, wie Links zu 'vorherigen Themen' angezeigt werden sollen. Dies sind die Links, welche am Ende einer Themenseite angezeigt werden.&lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+t[thread_id]-prev-thread.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_ntformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für 'nächstes Thema'&lt;br/&gt;
+&lt;/b&gt;Definieren Sie, wie Links zu den 'nächsten Themen' angezeigt werden sollen. Dies sind die Links, welche am Ende einer Themenseite angezeigt werden.&lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+t[thread_id]-next-thread.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_pthread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Schreibe Printthread URLs um?&lt;/b&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um die URLs der druckerfreundlichen Version (printthread.php) umzuschreiben.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_rel_desc</name>
+		<value>&lt;b&gt;Füge rel=&quot;nofollow&quot; zu den Printthread URLs hinzu?&lt;/b&gt;&lt;br/&gt;
+Aktivieren Sie diese Funktion um zu verhindern, dass Suchmaschinen den Printthread Links folgen  können. Man glaubt, dass druckerfreundliche Versionen von Themen (printthread.php) als sog. 'Double Content' angesehen werden, was zu einer Bestrafung oder Ausschluß aus den Suchergebnissen führen kann.</value>
+	</message>
+	<message>
+		<name>pthread_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für 'Printthread'&lt;br/&gt;
+&lt;/b&gt;Definieren Sie, wie URLs zu den 'druckerfreundlichen Versionen der Themen' angezeigt werden sollen.&lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+t[thread_id]-print.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für mehrseitiges 'Printthread' Themen&lt;/b&gt;&lt;br/&gt;
+Definieren Sie, wie URLs zu mehrseitigen 'druckerfreundlichen Version der Themen' angezeigt werden sollen.&lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+t[thread_id]-print-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_post_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Schreibe Showpost URLs um?&lt;/b&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um die URLs der 'Einzelansicht von Themen' (showpost.php) umzuschreiben.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>post_rel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Füge rel=&quot;nofollow&quot; zu den Showpost URLs hinzu&lt;/b&gt;&lt;br/&gt;
+Aktivieren Sie diese Option um zu verhindern, dass Suchmaschinen den Links zu Einzelansichten von Beiträgen (showpost.php) folgen können. Individuelle Beitragsseiten könnten von Suchmaschinen als 'Double Content' identifiziert werden.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Smart rel=&quot;nofollow&quot; für Showpost Links?&lt;/b&gt;&lt;br/&gt;
+Diese Option verhindert, dass Suchmaschinen, abhängig von der Anzahl der Beiträge in einem Thema, Showpost Links folgen können. Wenn nur ein (1) Beitrag auf einer Seite ist, wird das rel=&quot;nofollow&quot; Attribut zu den showpost Links hinzugefügt(da showpost &amp; showthread virtuell das Gleiche sind). Wenn zwei (2) oder mehr Beiträge auf einer Seite sind, wird das rel=&quot;nofollow&quot; Attribut NICHT gesetzt, d.h. Suchmaschinen können diesen Showpost Links folgen.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>smart</name>
+		<value>Smart</value>
+	</message>
+	<message>
+		<name>post_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für 'Showpost'&lt;br/&gt;
+&lt;/b&gt;Definieren Sie, wie die URLs zu den 'Einzelansichten von Beiträgen innerhalb eines Themas' angezeigt werden sollen.&lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+[post_id]-[post_count]-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_poll</name>
+		<value>URLs für Umfragen</value>
+	</message>
+	<message>
+		<name>rw_poll_desc</name>
+		<value>&lt;b&gt;Schreibe die URLs der Umfragen um?&lt;/b&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um die URLs der Umfragen umzuschreiben.</value>
+	</message>
+	<message>
+		<name>poll_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für Umfragen&lt;/b&gt;&lt;br/&gt;
+Wählen Sie ein URL Format für die Umfragen oder definieren Sie, mittels des nachstehenden Feldes, selbst ein Format.&lt;/p&gt;
+&lt;p&gt;Hinweis: Wir empfehlen die [poll_id] Variable in Ihr URL Format aufzunehmen, da es sein kann, dass Benutzer Umfragen mit dem selben Titel erstellen.&lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+p[poll_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_memb_desc</name>
+		<value>&lt;b&gt;Schreibe die URLs der Mitgliederprofile um?&lt;/b&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um die URLs der Mitgliederprofile umzuschreiben.</value>
+	</message>
+	<message>
+		<name>memb_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für Mitgliederprofile&lt;/b&gt;&lt;br/&gt;
+Wählen Sie ein URL Format für die Mitgliederprofile oder defenieren Sie, mittels des nachstehenden Feldes, selbst ein Format.&lt;/p&gt;
+&lt;p&gt;Hinweis: Da vBulletin keine doppelten Benutzernamen erlaubt, kann auf die Nutzung der [user_id] Variable verzichtet werden.&lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_mlist_desc</name>
+		<value>&lt;b&gt;Schreibe URLs der Mitgliederliste um?&lt;/b&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um die URLs der Indexseiten der Mitgliederliste umzuschreiben.</value>
+	</message>
+	<message>
+		<name>mlist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für die Mitgliederliste&lt;/b&gt;&lt;br/&gt;
+Definieren Sie, wie die Index URL der Mitgliederliste angezeigt werden soll.&lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+users.html&lt;br/&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für Multi-Mitglieder Liste&lt;/b&gt;&lt;br/&gt;
+Definieren Sie, wie die Mitgliederindex URLs mit mehreren Seiten angezeigt werden sollen.&lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+users-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_lformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für buchstabensortierte Mitgliederliste&lt;/b&gt;&lt;br/&gt;
+Definieren Sie, wie individuelle, durch Buchstaben sortierte, Mitgliederindexseiten angezeigt werden sollen.&lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+users-[letter][page].html&lt;br/&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_avatar_desc</name>
+		<value>&lt;b&gt;Schreibe URLs der eigenen Avater um?&lt;/b&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um die URLs der benutzerdefinierten Avatere umzuschreiben.</value>
+	</message>
+	<message>
+		<name>avatar_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für benutzereigene Avater&lt;/b&gt;&lt;br/&gt;
+Definieren Sie, wie die URLs der benutzerdefinierten Avaterbilder angezeigt werden sollen.&lt;/p&gt;
+&lt;p&gt;Hinweis: Der Ordner &lt;b&gt;'avatars/'&lt;/b&gt; wird automatisch zu der URL hinzugefügt, um Konflikte mit den Bildern zu vermeiden.&lt;/p&gt;
+&lt;p&gt;Hinweis: Da vBulletin keine doppelten Benutzernamen duldet, kann auf die [user_id]  Variable verzichtet werden.&lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_navbul_desc</name>
+		<value>&lt;b&gt;Schreibe URLs der Navigationsicon um?&lt;/b&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um &quot;Baum-URLs&quot; umzuschreiben.</value>
+	</message>
+	<message>
+		<name>navbul_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URLs der Navigationsicon für Foren&lt;/b&gt;&lt;br/&gt;
+Definieren Sie, wie Navigationsicon für Foren angezeigt werden sollen.&lt;/p&gt;
+&lt;p&gt;Hinweis: &lt;b&gt;'images/'&lt;/b&gt; wird automatisch zur URL hinzugefügt, um Konflikte mit Bild URLs zu vermeiden.&lt;/p&gt;
+&lt;p&gt;Hinweis: Hier kann auf die [thread_id] Variable verzichtet werden.&lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+f[forum_id].gif&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>navbul_tformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URLs der Navigationsicon für Themen&lt;/b&gt;&lt;br/&gt;
+Definieren Sie, wie Navigationsicon für Themen angezeigt werden sollen.&lt;/p&gt;
+&lt;p&gt;Hinweis: &lt;b&gt;'images/'&lt;/b&gt; wird automatisch zur URL hinzugefügt, um Konflikte mit Bild URLs zu vermeiden.&lt;/p&gt;
+&lt;p&gt;Hinweis: Hier kann auf die [thread_id] Variable verzichtet werden.&lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+t[thread_id].gif&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_attach_desc</name>
+		<value>&lt;b&gt;URLs der Anhänge umschreiben?&lt;/b&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um die URLs von Anhängen umzuschreiben.</value>
+	</message>
+	<message>
+		<name>attach_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für Anhänge&lt;/b&gt;&lt;br/&gt;
+Google und andere Suchmaschinen indexieren Bilder (.gif, .jpg, .png, etc.)  und andere Dateitypen, wie beispw. Word Dokumente (.doc) und Adobe PDF Dokumente (.pdf). Die Variable [original_filename]  wurde speziell dafür entwickelt, die Orginaldateinamen UND die Erweiterungen in den URLs integrieren zu können.&lt;/p&gt;
+&lt;p&gt;Hinweis: Der Ordner &lt;b&gt;'attachments/'&lt;/b&gt; wird automatisch zu den URLs hinzugefügt, um Probleme mit den Bildern zu vermeiden.&lt;/p&gt;
+&lt;p&gt;Hinweis: Wir empfehlen die [attachment_id] Variable in Ihr URL Format aufzunehmen, da es vorkommen kann, dass User Anhänge mit den gleichen 'Originaldateinamen' hochladen.&lt;/p&gt;
+&lt;p&gt;Beispielformat:&lt;br/&gt;
+[attachment_id]-[original_filename]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>crrs_forum</name>
+		<value>vBSEO 'Custom Rewrite Rules' Forum</value>
+	</message>
+	<message>
+		<name>crrs_def</name>
+		<value>&lt;B&gt;Defeniere eigene Rewrite Regeln &lt;/B&gt;&lt;span class=&quot;beta&quot;&gt;BETA&lt;/span&gt;&lt;BR&gt;Sie können URLs die nicht standardmässig durch die vBSEO Funktionen umgeschrieben werden zu vBSEO hinzufügen. Definieren Sie Ihre eigenen Regeln mittels eines regülären Ausdruckformates:</value>
+	</message>
+	<message>
+		<name>crrs_desc</name>
+		<value>Beide Teile (links &amp; rechts) sind reguläre Ausdrücke: Der erste Teil stellt die Orginal &lt;b&gt;URL&lt;/b&gt; dar, während der zweite Teil, die, zum ersten Teil passende, &lt;b&gt;umgeschriebene&lt;/b&gt; URL darstellt 
+&lt;p&gt;Hinweis: Das vBSEO Team bietet keinen &quot;offiziellen&quot; Support für die Ausdrücke, die Sie, bei der Nutzung dieser Funktion, eintragen, an. Bitte nutzen Sie diese Funktion AUSSCHLIEßLICH nur dann, wenn Sie wissen was Sie tun. Für weitere Hilfe besuchen Sie bitte die vBSEO Foren unter &lt;a href=&quot;http://www.vbseo.com&quot; target=&quot;_blank&quot;&gt;http://www.vbseo.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hinweis: Zeilen können durch zwei voranstehende Slashes (//) auskommentiert werden. Wenn eine Regel Probleme/Fehler verursacht, werden diese nach der Speicherung Ihrer Einstellungen automatisch auskommentiert.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Beispiele:&lt;/b&gt;&lt;br/&gt;
+'article\.php\?id=(\d+)'=&gt;'showarticle-$1.html'&lt;br/&gt;
+'browse\.php\?page=(\d+)'=&gt;'listing-$1.htm' &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metakw_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ersetze den 'META KEYWORDS' Inhalt&lt;/b&gt;?&lt;br/&gt;
+Ersetze die 'META KEYWORDS' mit dynamischen relevanten Inhalt, passend zu den Foren, Themen, Beiträgen und Benutzerprofilen.. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bookmark_threadpost</name>
+		<value>Display Icons in Both, Threads and Posts</value>
+	</message>
+	<message>
+		<name>bookmark_thread</name>
+		<value>Display Icons for Threads Only</value>
+	</message>
+	<message>
+		<name>metadesc_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ersetze den 'META DESCRIPTION' Inhalt?&lt;/b&gt;&lt;br/&gt;
+Diese Option ersetzt den Inhalt der 'META DESCRIPTION'  mit den ersten Wörtern des ersten Beitrages auf der Seite bis zu einem Limit, welches Sie in den unteren Optionen setzen können.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metadesc_len_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Definiere die Länge der 'META DESCRIPTION' ?&lt;/b&gt;&lt;br/&gt;
+Der Meta Description Tag besteht normalerweise aus 150 bis 200 Buchstaben oder weniger.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>nextprev_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ersetze 'Vorherige/nächste Themen' Links&lt;/b&gt;?&lt;br/&gt;
+Aktivieren Sie diese Option, um den 'nächstes Thema' &amp; 'vorheriges Thema' Links mit direkten, relevanten Links zu ersetzen. &lt;i&gt;Merke: Diese Funktion fügt 2 Queries hinzu.&lt;/i&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>dir_links_threads_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Direct Links to Threads For Guest Visitors? &lt;/b&gt;&lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+This option replaces links to &quot;First Unread Post in Thread&quot; with direct links to Threads. Giving direct (not redirected) access for guests and spiders to your thread content.&lt;br /&gt;
+It also strips the &quot;New-Post&quot; functionality from RSS feeds, enabling the same effect for guests and spiders reaching your board via RSS and RSS2 feeds.&lt;br /&gt;
+&lt;p&gt;NOTE: This option would reduce functionality for non-members, but could be considered an acceptable tradeoff for SEO.&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Display Social Bookmarking Icons&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Social Bookmarking has evolved as a very effective way of sharing content with others and consequently bringing more traffic to your website. Check the Social Bookmarking Icons to be displayed in your forum pages.
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Social Bookmarking Icons Display Options:&lt;/i&gt;&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Display Icons in Both, Threads and Posts&lt;/b&gt;&lt;br /&gt;
+Select this option to display social bookmarking icons for both, threads and posts within threads. Note that thread bookmarking icons appear within the 'LinkBack' drop-down menu, while post bookmarking icons appear at the bottom-left corner of each post.
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Display Icons in Both, Threads and Posts&lt;/b&gt;&lt;br /&gt;
+Select this option to display social bookmark icons for threads and not for posts individually. Thread bookmarking icons will appear only within the 'LinkBack' drop-down menu.
+&lt;/p&gt;
+
+&lt;p&gt;* Enter &amp;lt;!--VBSEO_BOOKMARKS--&amp;gt; in your postbit (or postbit_legacy) template if you want to specify a different location for the social bookmarking icons. By default, post bookmarking icons will appear at the bottom-left corner of each post.
+&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark_thread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Display Social Bookmarking Icons For Threads&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Select &quot;Yes&quot; to enable Social Bookmarking Icons for Threads.
+&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark_post_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Display Social Bookmarking Icons For Posts&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Select &quot;Yes&quot; to enable Social Bookmarking Icons for Posts.
+&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark</name>
+		<value>Social Bookmarking</value>
+	</message>
+	<message>
+		<name>flinks_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ersetze 'Forum Links' mit direkten Links zu den Ziel-URLs? &lt;/b&gt;&lt;span class=&quot;new&quot;&gt;NEU!&lt;/span&gt;&lt;br/&gt;
+Aktivieren Sie diese Option, um die 'Forum Links' mit direkten Ziel-URLs zu ersetzen.&lt;/p&gt;
+&lt;p&gt;Hinweis: Diese Forum Links sind die, die bei der Eingabe von URLs im Forum Manager im AdminCP zusammen weitergeleitet werden.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>addttl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Füge Thementitel zu den Showthread Ankertext Links hinzu?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEU!&lt;/span&gt;&lt;br/&gt;
+Aktivieren Sie diese Option, um keyword-reiche Links, durch das Hinzufügen von Thementiteln zu den URLs, zu Showthread Seiten hinzuzufügen.&lt;/p&gt;
+&lt;p&gt;Hinweis: Diese Option funktioniert NUR mit vB 3.5.x&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Optionen für das Hinzufügen von Thementiteln:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Füge KEINE Thementitel ein&lt;/b&gt;&lt;br/&gt;
+Beibehaltung der vB Funktionalität. Links, welche in Beiträgen/Themen gepostet werden, werden nicht geändert.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Füge Thementitel als &quot;Popup Text&quot; ein&lt;/b&gt;&lt;br/&gt;
+Diese Funktion fügt den 'Zielthementitel' zum 'title' (Popup) Tag jedes Links ein, der zu einer Showthread Seite verweist.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;FÜGE Thementitel als &quot;Orginal-Text (Thementitel)&quot; ein&lt;/b&gt;&lt;br/&gt;
+Dies stellt eine Kombination aus Option 1 und 2 (oberhalb) dar. Der Orginallink (Text) bleibt unberührt, während der 'Thementiel' (innerhalb von Klammern) direkt dahinter eingefügt wird.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;ERSETZE den orginalen Ankertext&lt;/b&gt;&lt;br/&gt;
+Diese Option ersetzt jeden Link, der auf eine Showthread Seite zeigt, mit dem entsprechenden Thementitel.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;*&lt;/i&gt;&lt;/b&gt;&lt;i&gt;Links welche auf private Foren zeigen, werden NICHT ersetzt, um die Verbreitung von &quot;geheimen&quot; Themen zu vermeiden (beispw. wenn Benutzer auf Themen verweisen, die in privaten Foren münden. Dies kann durch die manuelle Verlinkung von Themen ('showthread.php?t=xxxx') vorkommmen.)&lt;/i&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>addttlext_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Füge Titel von externen Seiten ein?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEU!&lt;/span&gt;&lt;br/&gt;
+Aktivieren Sie diese Option, um keywordreiche Links durch das Hinzufügen der Seitentitel, die zu externen Domains zeigen, zu erstellen. vBSEO wird die externe Seite kontaktieren, sobald neue Links gepostet werden und den Seitentitel auslesen.&lt;/p&gt;&lt;p&gt;Hinweis: Diese Option funktioniert NUR mit vB 3.5.x&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attl_1</name>
+		<value>Füge keine Thementitel ein</value>
+	</message>
+	<message>
+		<name>attl_2</name>
+		<value>Füge Thementitel als &quot;Popup Text&quot; ein</value>
+	</message>
+	<message>
+		<name>attl_3</name>
+		<value>Füge Thementitel als &quot;orginalen Text (Thementitel)&quot; hinzu</value>
+	</message>
+	<message>
+		<name>attl_4</name>
+		<value>Ersetze den orginalen Ankertext</value>
+	</message>
+	<message>
+		<name>addttlp_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Füge Thementitel als Ankertext zu Showpost Links hinzu?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br/&gt;Die gleiche Linkersetzung wie oberhalb, nur für Showpost Links.&lt;/p&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>remstop_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Entferne Stopwords von URLs?&lt;/b&gt;&lt;br/&gt;
+Die Entfernung von sog. 'Stopwords' von Ihren URLs kann zu einer Relevanzsteigerung für einzelne Suchvorgänge führen, da einige Suchmaschinen diese allgemeinen Wörter rausfiltern, wenn jemand sie in seinem Suchbegriff nutzt.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&quot;leichte&quot; Stopwordentfernung von URLs?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br/&gt;
+Wenn diese Option aktiviert ist, werden &lt;b&gt;NUR dann&lt;/b&gt; Stopwords (raus-)gefiltert, wenn Titel länger als die Anzahl von Buchstaben, die in den &lt;a href=&quot;#url_general&quot;&gt;Limitiere URL Länge&lt;/a&gt;' Einstellungen genannte Anzahl von Buchstaben, überschritten werden.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>stopdef_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Definiere Stopwords&lt;/b&gt;&lt;br/&gt;
+Wenn die oben genannte Funktion aktiviert ist, werden die folgenden Wörter aus den URLs gefiltert. &lt;/p&gt;
+&lt;p&gt;TIPP: Für weitere allgemeinen Stopwords besuchen Sie &lt;a href=&quot;http://www.ranks.nl/stopwords/&quot; target=&quot;_blank&quot;&gt;http://www.ranks.nl/stopwords/&lt;/a&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acronym_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ersetzungsvariablen&lt;/b&gt;&lt;br/&gt;
+Diese Funktion steigert die SE Relevanz. Es erlaubt Ihnen, die folgenden Abkürzungen mit echten Phrasen in Ihrem Thema und Thementitel zu ersetzen. Fügen Sie eine (1) Ersetzungsvariable pro Linie ein.&lt;/p&gt;
+&lt;p&gt;Hinweis: Ersetzungsvariablen sind nicht case sensitive.&lt;/p&gt;
+&lt;p&gt;Beispiele:&lt;br/&gt;
+'seo'=&gt;'Search Engine Optimization'&lt;br/&gt;
+'pr'=&gt;'Page Ranking'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_url_desc</name>
+		<value>&lt;b&gt;Füge Ersetzungsvariablen in URLs ein?&lt;/b&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um Keywords in URLs zu ersetzen.</value>
+	</message>
+	<message>
+		<name>acro_text_desc</name>
+		<value>&lt;b&gt;Füge Ersetzungsvariablen jeglichem Text hinzu?&lt;/b&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um Keywords in jeglichen Texten zu ersetzen.</value>
+	</message>
+	<message>
+		<name>will_replace</name>
+		<value>wird ersetzt durch</value>
+	</message>
+	<message>
+		<name>forceroot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Erzwinge den &quot;Forum Root&quot; als Startseite?&lt;/b&gt;&lt;br/&gt;
+Wenn aktiviert, werden alle Links zu Ihrer Forum Startseite zu 'vbroot/' zeigen. Wenn deaktiviert,  werden Links zu Ihrer Forumstartseite zum 'Skriptnamen' (z.B. forum.php), wie in den vBulletin Einstellungen definiert, zeigen.  Das erlaubt Benutzer mit einem hohen PageRank in Google, die 'index.php' als ihrer Standardstartseite zu nutzen.&lt;br/&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>hpalias_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Definiere Homepage Aliases&lt;/b&gt;&lt;br/&gt;
+      Diese Funktion hilft Ihnen Ihrer Forenstartseite einen gemeinsamen PR (Google PageRank) zu sichern. Viele der aktiven Foren haben verschiedene PRs auf Ihrer Forenstartseite (normalerweise bis zu drei), nachfolgend ein Beispiel:&lt;br/&gt;
+      &lt;br/&gt;
+      www.IhreSeite.de/foren/ (PR = A)&lt;br/&gt;
+      www.IhreSeite.de/foren/index.php (PR = B)&lt;br/&gt;
+      www.IhreSeite.de/foren/index.php? (PR = C)
+                                            &lt;p&gt;Dies ist ein typisches &quot;PageRank Leck&quot; Problem und kann dazu führen, dass Suchmaschinen diese Seiten als Double Content identifizieren.
+                                            &lt;p&gt;Die hier eingegebenen Dateinamen, werden mittels eines 301 Redirects auf Ihre, im vBulletin Admin CP festgelegte, Startseite umgeleitet. Geben Sie einen (1) Dateinamen pro Zeile ein.
+                                            &lt;p&gt;Beispiele:&lt;br/&gt;
+      index.php &lt;br/&gt;
+      index.php?&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>intrel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Füge rel=&quot;nofollow&quot; zu &lt;i&gt;ALLEN&lt;/i&gt; sortierten Links hinzu&lt;/b&gt;&lt;br/&gt;
+Aktivieren Sie diese Option, um zu verhindern, dass Suchmaschinen Links folgen, die auf denselben Inhalt zeigen, aber anders sortiert wurden. Diese Seiten könnten als &quot;Double Content&quot; identifiziert werden. Darum empfehlen wir, diese Funktion zu aktivieren.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>reldyn_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Füge rel=&quot;nofollow&quot; zu &lt;i&gt;ALLEN&lt;/i&gt; dynamischen Seiten hinzu&lt;/b&gt;&lt;br/&gt;
+Aktivieren Sie diese Option, um zu verhindern, dass Suchmaschinen ALLEN dynamischen Links folgen. Ein paar Beispiele: 'Antworten' Links, 'zitieren' Links, 'Schnellantwort' und 'Suche' Links. Diese Seiten enthalten nicht-relevanten (oder 'störenden') Inhalt, welcher nicht von Suchmaschinen indexiert wird. Dies führt zu einem besseren SEO Ergebnis &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>relmemb_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Füge rel=&quot;nofollow&quot; zu allen Links hinzu, die &lt;i&gt;AUF&lt;/i&gt; Mitgliederprofilen &lt;i&gt;VON&lt;/i&gt; Postbit zeigen&lt;/b&gt;&lt;br/&gt;
+Aktivieren Sie diese Option, um zu verhindern, dass Suchmaschinen Benutzerprofilen folgen, die Bots in Beiträgen gefunden haben.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>relmemb_home_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Füge rel=&quot;nofollow&quot; zu Links hinzu, &lt;i&gt;DIE VON &lt;/i&gt;Forumhome &lt;i&gt;AUF&lt;/i&gt; Mitgliederprofile zeigen&lt;/b&gt;&lt;br/&gt;
+Aktivieren Sie diese Option um zu verhindern, dass Suchmaschinen Links zu Benutzerprofilen folgen, die sie auf der Forumstartseite gefunden haben.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>extrel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Füge rel=&quot;nofollow&quot; zu &lt;i&gt;ALLEN&lt;/i&gt; externen URLs hinzu&lt;/b&gt;&lt;br/&gt;
+Aktivieren Sie diese Option um zu verhindern, dass Suchmaschinen Links zu externen Seiten (URLs die auf eine andere Domain zeigen) folgen.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>extwhite_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Externe Domain &quot;Whitelist&quot;&lt;/b&gt;&lt;br/&gt;
+Hier können Sie Domains eintragen, für die obige Funktion nicht greift, eintragen. Rel='nofollow' WIRD NICHT zu Links hinzugefügt, die auf die, in der Liste befindlichen, Domains zeigen. Hinweis: Dies kann beispielsweise dazu genutzt werden, um einer Gruppe von Freunden ermöglichen zu können, ihre Signaturen vom rel=&quot;nofollow&quot; Attribut auszuschließen.&lt;/p&gt;
+&lt;p&gt;Beispiele:&lt;br/&gt;
+google.com (es wird kein 'http://www' benötigt) &lt;br/&gt;
+groups.google.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>clean_html_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Bereinigung des HTML Codes?&lt;/b&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um unnötige Leerzeichen und HTML Kommentare in Ihrem Quelltext der Forenseiten zu entfernen. Dies steigert die C2C (Content of Code) Ratio und reduziert die Größe Ihrer Seiten, was zu einer Performancesteigerung und zu einer Bandbreiteneinsparung führt.&lt;/p&gt;
+&lt;p&gt;Hinweis: Wenn Kommentare (oder HTML Tags) innerhalb Ihrer Seiten nicht mit dem dementsprechenden End-Tags geschlossen sind, kann diese Funktion zu einer falschen Darstellung Ihrer Seiten führen. Vergewissern Sie sich, das Ihre Templates fehlerfreie HTML-Tags und Quelltext enthält.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rem_prev_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Entfernung von Themenvorschau für Gäste?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEU!&lt;/span&gt;&lt;br/&gt; Thementitel in &lt;i&gt;forumdisplay&lt;/i&gt; Links enthalten oft often &quot;beisteuernde&quot; Keywords, welche zum Elternforum passen. Die Entfernung dieser Themenvorschau für nicht registrierte Gäste kann zu einer Relevanzsteigerung Ihrer relaven Keyword Ratio für diese Seiten führen.&lt;/p&gt;
+&lt;p&gt;Hinweis: Mit Themenvorschau ist der Text gemeint, welcher erscheint, wenn Sie mit dem Mauszeiger über die Links fahren, die sich in den &lt;i&gt;Forumdisplay&lt;/i&gt; Links befinden.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_size_desc</name>
+		<value>&lt;b&gt;Aktiviere Größenangaben für IMG Tags?&lt;/b&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um feste Größen für Bilder angeben zu können.</value>
+	</message>
+	<message>
+		<name>img_def_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Definiere Größenangaben&lt;/b&gt;&lt;br/&gt;
+Die Standardtemplates des vB  enthalten keine 'width&quot; und &quot;height&quot; Optionen für Bilder. Die Angabe der Bildgrößen für alle Bilder innerhalb Ihres Forums wird die Ladezeiten in den meisten Web Browsern erheblich verringern. Des Weiteren werden die festen Angaben der Bildgrößen dazu führen, dass Suchmaschinen die &quot;Verwandschaft&quot; zwischen den Bildern und dem umliegenden Text besser erkennen können. Dadurch wird die Errechnung der Keywordrelevanz erleichtert.&lt;/p&gt;
+&lt;p&gt;Beispiele:&lt;br/&gt;
+'thread.gif'=&gt;'20x20'&lt;br/&gt;
+'icon12.gif'=&gt;'16x16'&lt;/p&gt;
+&lt;p&gt;Beispiele für Bilder, welche sich in einem Ordner befinden:&lt;br/&gt;
+'buttons/quote.gif' =&gt; '70x22'&lt;br/&gt;
+'editor/quote.gif' =&gt; '21x20'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_note</name>
+		<value>Hinweis: Wenn Sie die Standardbilder Ihres Forums geändert haben, MÜSSEN Sie die Dimensionen anpassen, bevor Sie diese Funktion aktivieren. Andernfalls werden alle nicht-übereinstimmende Bilder falsch dargestellt..</value>
+	</message>
+	<message>
+		<name>max_chars</name>
+		<value>150 bis max. 200 Zeichen empfehlenswert</value>
+	</message>
+	<message>
+		<name>rights_reserved</name>
+		<value>Alle Rechte vorbehalten</value>
+	</message>
+	<message>
+		<name>rr_forumdisplay</name>
+		<value>auf Forumdisplay Seiten</value>
+	</message>
+	<message>
+		<name>rr_showthread</name>
+		<value>auf Showthread Seiten</value>
+	</message>
+	<message>
+		<name>save_key</name>
+		<value>Speichere Lizenzschlüssel</value>
+	</message>
+	<message>
+		<name>rrs_def</name>
+		<value>&lt;b&gt;Definiere Relevant Replacements&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;UPDATE!&lt;/span&gt;&lt;br/&gt;
+Bilde dynamische Phrasen, die durch (bis zu drei) Kommentare in den Forum Templates ersetzt werden können</value>
+	</message>
+	<message>
+		<name>rrs_desc</name>
+		<value>Für jedes Set gilt, dass die erste Phrase NUR in Forumdisplay Seiten und die zweite Phrase NUR in Showthread Seiten angezeigt werden.
+&lt;p&gt;&lt;strong&gt;Sie können folgende Variablen benutzen, um Ihre Phrasen zu erstellen:&lt;/strong&gt;&lt;br&gt;
+&lt;I&gt;[bb_title]&lt;/I&gt; - Ihr Haupt-Forentitel&lt;br&gt;
+&lt;i&gt;[default_keywords]&lt;/i&gt; - Ihre Keywords, die Sie im vBulletin AdminCP definiert haben&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;[forum_title]&lt;/i&gt; - Der momentane Forentitel&lt;BR&gt;
+&lt;I&gt;[forum_description]&lt;/I&gt; - Die momentane Forumbeschreibung&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;[parent_forum_title]&lt;/i&gt; - Der &quot;Elternforen&quot;- Titel&lt;BR&gt;
+&lt;I&gt;[parent_forum_description]&lt;/I&gt; - Die &quot;Elternforen&quot;-Beschreibung&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;[thread_title]&lt;/i&gt; - Der momentane Thementitel (NUR auf Showthread Seiten nutzen)&lt;BR&gt;
+&lt;I&gt;[first_post_X_words]&lt;/I&gt; - Die ersten X Wörter, welche auf der ersten Seite des Themas stehen (NUR auf Showthread Seiten nutzen)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[thread_page]&lt;/em&gt; - Die Seitenzahl des Themas&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beispiele für relevante Phrasen:&lt;/strong&gt;&lt;br&gt;
+[Forum_title] diskutieren Sie unter [parent_forum_title] Forum auf [bb_title] (auf Forumdisplay Seiten)&lt;BR&gt;
+Diskutieren Sie [thread_title] im [forum_title] Forum auf [bb_title]; &amp;lt;em&amp;gt;[first_post_15_words]...&amp;lt;/em&amp;gt; (auf Showthread Seiten)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>catlinks</name>
+		<value>Direkte Kategorielinks</value>
+	</message>
+	<message>
+		<name>catlinks_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Direkte Kategorielinks?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEU!&lt;/span&gt;&lt;br/&gt;
+Wählen Sie 'Ja' um den Ankertyp für Links der Forenkategorien zu nutzen. 
+&lt;br/&gt;&lt;br/&gt;Hinweis: Links zu Kategorien werden aussehen wie: &quot;http://IhrHauptforum.de/#Kaegorie_Titel&quot;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rrs_forum</name>
+		<value>vBSEO 'Relevant Replacements' Forum</value>
+	</message>
+	<message>
+		<name>extblack_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Externe Domains &quot;Blacklist&quot;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEU!&lt;/span&gt;&lt;br/&gt;
+Ohne Beachtung anderer Einstellungen erhalten Links zu folgenden Domains IMMER ein rel='nofollow' in ihren Links.
+&lt;/p&gt;&lt;p&gt;Beispiele:&lt;br/&gt;google.com (kein 'http://www' benötigt)&lt;br/&gt;
+groups.google.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>linkback_black_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;LinkBack  &quot;Blacklist&quot;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+LinkBacks from these domains will ALWAYS be excluded.
+&lt;/p&gt;&lt;p&gt;Examples:&lt;br /&gt;spamsite.com (no 'http://www' required)&lt;br /&gt;
+subdomain.spamsite.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_npformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Format für 'neuester Beitrag im Thema'&lt;br&gt;
+                                            &lt;/b&gt;Definieren Sie, wie Links zu den 'neuesten Beiträgen in Themen' angezeigt werden sollen.&lt;/p&gt;
+                                              &lt;p&gt;Hinweis: Die vB-eigene Weiterleitungsfunktionalität wird genutzt, um den Benutzer zum zutreffenden Beitrag des Themas weiterzuleiten (z.B. thead_title.html#post-xxxx).&lt;/p&gt;
+                                              &lt;p&gt;Beispielformat:&lt;br&gt;
+                                    t[thread_id]-new-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metadesc_members_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Meta Beschreibung für Mitgliederprofile&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;UPDATE!&lt;/span&gt;
+                                            &lt;br&gt;
+Definieren Sie ein freies Format für den Meta Beschreibungstag der Mitgliederprofilseiten. Sie dürfen folgende Ausdrücke für die automatische Ersetzung benutzen:&lt;/p&gt;
+                                          &lt;p&gt;&lt;I&gt;[username]&lt;/I&gt; - Mitgliedsname &lt;br&gt;
+                                            &lt;i&gt;[usertitle]&lt;/i&gt; - Benutzertitel (&amp;quot;Moderator&amp;quot;, &amp;quot;registrierter Benutzer&amp;quot;, etc.)&lt;br&gt;
+                                            &lt;i&gt;[bb_title]&lt;/i&gt; - Ihr Forentitel&lt;br&gt;
+                                            &lt;em&gt;[user_field_1], [user_field_2], etc.&lt;/em&gt; - Frei definierbare Profilfelder, wie Sie sie im vBulletin Kontrollzentrum finden&lt;/p&gt;
+                                          &lt;p&gt;&lt;strong&gt;Beispiel für eine Meta Tag Beschreibungsphrase:&lt;/strong&gt;&lt;br&gt;
+                                          [username] ist ein [usertitle] in den [bb_title]. Zeige [username]'s Profil. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>select_preset</name>
+		<value>Wähle Setup</value>
+	</message>
+	<message>
+		<name>preset_set</name>
+		<value>Lade Setup für das URL Format</value>
+	</message>
+	<message>
+		<name>import_preset</name>
+		<value>Importiere Setup</value>
+	</message>
+	<message>
+		<name>note_preset</name>
+		<value>Hinweis: Das Setup beinhaltet nur die 'URL Rewrite Optionen', Ihre anderen Einstellungen werden durch die Voreinstellung nicht berührt.</value>
+	</message>
+	<message>
+		<name>rw_archive_foot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&lt;i&gt;Optionen für Footer Archiv Links:&lt;/i&gt;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEU!&lt;/span&gt;&lt;/p&gt;
+                                          &lt;p&gt;&lt;b&gt;Füge Links zur Archivstartseite hinzu&lt;/b&gt;&lt;br/&gt;
+                                            Wählen Sie diese Option, um Links zu den Hauptarchivseiten in dem Footer des Forums anzeigen zu lassen.&lt;/p&gt;
+                                          &lt;p&gt;&lt;b&gt;Füge Links zu ALLEN Archivseiten hinzu&lt;/b&gt;&lt;br/&gt;
+                                            Wählen Sie diese Option, um Links zu den Hauptarchivseiten UND den weiteren (tiefereren) Archivseiten in dem Footer des Forums anzeigen zu lassen.&lt;/p&gt;
+                                          &lt;p&gt;&lt;b&gt;Füge keine Links zu den Archivseiten ein&lt;/b&gt;&lt;br/&gt;
+                                            Wählen Sie diese Option, um die Standardeinstellung beizubehalten. &lt;/p&gt;
+                                          &lt;p&gt;Hinweis: Fügen Sie &amp;lt;!--VBSEO_ARCHIVE_LINKS--&amp;gt; in Ihr Footertemplate ein, um die Position der Archivlinks zu bestimmen. Andernfalls werden die Links am Ende des Outputs eingefügt. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>footer_arc</name>
+		<value>Archivlinks im Footer</value>
+	</message>
+	<message>
+		<name>arc_opt1</name>
+		<value>Füge Links zur Archivstartseite hinzu</value>
+	</message>
+	<message>
+		<name>arc_opt2</name>
+		<value>Füge Links zu ALLEN Archivseiten hinzu</value>
+	</message>
+	<message>
+		<name>arc_opt3</name>
+		<value>Füge Links zur Archivstartseite hinzu (nur für Gäste)</value>
+	</message>
+	<message>
+		<name>arc_opt4</name>
+		<value>Füge Links zu ALLEN Archivseiten hinzu (nur für Gäste)</value>
+	</message>
+	<message>
+		<name>arc_opt0</name>
+		<value>Füge keine Links zu den Archivseiten hinzu</value>
+	</message>
+	<message>
+		<name>as_anchors</name>
+		<value>als Anker</value>
+	</message>
+	<message>
+		<name>avail_pro_only</name>
+		<value>&lt;b&gt;Nur in vBSEO Pro Version verfügbar&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>addttl_black_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Füge Seitentitel von externen Domains ein &quot;Blacklist&quot;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEU!&lt;/span&gt;&lt;br/&gt;Fügen Sie eine Domainliste ein, die festlegt, dass Seitentitel NICHT von externen Seiten, die als Anker hinzugefügt werden, empfangen werden sollen.&lt;/p&gt;&lt;p&gt;Beispiele:&lt;br/&gt;
+Beispiel.de&lt;br/&gt;
+Seite.de&lt;br/&gt;
+abc.de&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Aktiviere ausgehende Pingbacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEU!&lt;/span&gt;&lt;br/&gt;
+Wählen Sie &amp;quot;Ja&amp;quot; um ausgehende Pingbacks zu senden, wenn externe Links in Beiträgen genannt wurden.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_notify_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Email Benachrichtigung für eingehende Ping-/Trackbacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEU!&lt;/span&gt;&lt;br/&gt;
+Wählen Sie &amp;quot;Ja&amp;quot; um Beitragverfasser zu benachrichtigen, wenn Ping-/Trackbacks empfangen werden.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>trackback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Aktiviere ausgehende Trackbacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEU!&lt;/span&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um ausgehende Trackbacks für neue Themen zu aktivieren.&lt;/p&gt;&lt;p&gt;Hinweis: Das Trackback-Feld erscheint bei der Erstellung eines neuen Themas.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_trackback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Aktiviere eingehende Trackbacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEU!&lt;/span&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um eingehende Trackbacks für Diskussionen zu aktivieren.&lt;/p&gt;&lt;p&gt;Hinweis: Eingehende Trackbacks können individuell über über Ihr vBulletin Admin CP morderiert werden: &lt;em&gt;Foren &amp; Moderatoren &amp;gt; Foren verwalten &amp;gt; Forum ändern&lt;/em&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_refback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable Incoming Refbacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+Select &quot;Yes&quot; to enable automatic backlinks to referring URLs.&lt;/p&gt;&lt;p&gt;Note: Incoming Refback moderation for individual forums is set via your vBulletin Admin CP in: &lt;br /&gt;&lt;em&gt;Forums and Moderators &amp;gt; Forum Manager &amp;gt; Edit Forum&lt;/em&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Aktiviere eingehende Pingbacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEU!&lt;/span&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um eingehende Pingbacks für Diskussionen/Themen zu aktivieren.&lt;/p&gt;
+&lt;p&gt;Hinweis: Eingehende Pingbacks können individuell über über Ihr vBulletin Admin CP morderiert werden: &lt;em&gt;Foren &amp; Moderatoren &amp;gt; Foren verwalten &amp;gt; Forum ändern&lt;/em&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>postbit_pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Aktiviere 'Permalink'-Indikator in Postbits&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEU!&lt;/span&gt;&lt;br/&gt;
+Permalinks sind grundlegend Links, welche wie ein Anker auf Beiträge innerhalb eines Themas zeigen. Dies erlaubt Benutzern eingehende Pingbacks auf bestimmte Beiträge zu beziehen.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Permalink Optionen: &lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Zeige Permalink im Postbitinhalt&lt;/b&gt;
+&lt;br/&gt;
+Fügt den 'Permalink', oberhalb eines Beitrages, in dem Titelbereich ein.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Zeige Permalink neben Showpost Links&lt;/b&gt;
+&lt;br/&gt;
+Fügt den 'Permalink' rechts, neben die Showpost Links, ein.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Ersetze Beitragsnummerlink mit Permalink&lt;/b&gt;
+&lt;br/&gt;
+Ersetzt individuelle Showpost Links mit dem 'Permalink' Link. Hinweis: Beiträge können nicht mehr einzelnd aufgerufen werden.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Füge den Permalinkindikator nicht in das Postbit Template ein&lt;/b&gt;
+&lt;br/&gt;
+Nicht empfehlenswert, wenn Ping-/Trackbacks in Ihrem Forum aktiviert sind.
+&lt;/p&gt;
+
+&lt;p&gt;* Sie können &amp;lt;!--PINGBACK_INFO--&amp;gt; in das Postbit (oder postbit_legacy) Template einfügen, um den 'Permalink' Link an einen beliebigen Ort einzufügen.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>vbseo_affid</name>
+		<value>&lt;p&gt;&lt;b&gt;Ihre vBSEO Affiliate ID&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;HOT!&lt;/span&gt;&lt;br/&gt;
+Erhalten Sie Ihre Ausgaben für 'Ihr vBSO' und mehr zurück! Fügen Sie Ihre vBSEO Affiliate ID ein, um Ihr Copyright mit einem Link zur Affiliatezielseite auszustatten.&lt;/p&gt;&lt;p&gt;Mehr Informationen: &lt;a href=&quot;http://www.vbseo.com/aff/&quot; target=&quot;_blank&quot;&gt;http://www.vbseo.com/aff/&lt;/a&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>custom301</name>
+		<value>Eigene 301 Weiterleitungen</value>
+	</message>
+	<message>
+		<name>custom301_def</name>
+		<value>&lt;B&gt;Defeniere eigene 301 Weiterleitungen&lt;/B&gt;&lt;span class=&quot;beta&quot;&gt;BETA&lt;/span&gt;&lt;BR&gt;
+Hier können Sie 301 Weiterleitungen erstellen. Dies ist sinnvoll, wenn Sie Dokumente auf Ihrem Server verschoben haben.</value>
+	</message>
+	<message>
+		<name>custom301_desc</name>
+		<value>&lt;p&gt;Hinweis: Für eine bessere Performance sollten Sie die .htaccess Datei nutzen.
+&lt;p&gt;Hinweis: Das vBSEO Team wird keinen 'offiziellen' Support für die regulären Ausdrücke, die Sie bei der Nutzung dieser Funktion benutzen, leisten. Benutzen nutzen Sie diese Funktion nur dann, wenn Sie wissen was Sie machen. &lt;p&gt;Merke: Zeilen können durch zwei vorangestellt Slashes (//) auskommentiert werden. Sollte eine von Ihren Umschreibregeln Fehler beinhalten , werden sie automatisch auskommentiert, sobald Sie auf 'Einstellungen speichern' klicken&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Beispiele:&lt;/b&gt;&lt;br/&gt;
+'article-(\d+)\.html'=&gt;'articles/entry-$1.html'&lt;br/&gt;
+'forum(\d+)\.html'=&gt;'f$1/'&lt;br/&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_attach_alt_desc</name>
+		<value>&lt;b&gt;Schreibe den Alt Tag der Anhänge um&lt;/b&gt;&lt;br/&gt;
+Wählen Sie 'Ja', um die Alt Tags der Anhänge umzuschreiben</value>
+	</message>
+	<message>
+		<name>attach_alt_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Format für die Alt Tags der Anhänge&lt;/b&gt;&lt;br/&gt;
+&lt;p&gt;Beispielphrasen:&lt;br/&gt;
+[thread_title]-[original_filename]&lt;br/&gt;
+[original_filename]
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>supportsystem</name>
+		<value>Support Ticket System</value>
+	</message>
+	<message>
+		<name>affiliates</name>
+		<value>Affiliates</value>
+	</message>
+	<message>
+		<name>contact</name>
+		<value>Kontakt</value>
+	</message>
+	<message>
+		<name>forums</name>
+		<value>Forum</value>
+	</message>
+	<message>
+		<name>ping_postbit_1</name>
+		<value>Zeige Permalink in Postbit Template</value>
+	</message>
+	<message>
+		<name>ping_postbit_3</name>
+		<value>Zeige Permalink neben Showpost Link</value>
+	</message>
+	<message>
+		<name>ping_postbit_2</name>
+		<value>Ersetze Beitragsnummerlink mit Permalink</value>
+	</message>
+	<message>
+		<name>ping_postbit_0</name>
+		<value>Füge keinen Permalinkindikator in das Postbit ein</value>
+	</message>
+	<message>
+		<name>pingback_notify_bcc_desc</name>
+		<value>E-Maile eine Kopie von Ping-/Trackback Bestätigungen an:</value>
+	</message>
+	<message>
+		<name>pingback_notify_bcc_desc2</name>
+		<value>(Trenne mehrere eMail Adressen mit einem Leerzeichen)</value>
+	</message>
+	<message>
+		<name>pingback_service_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Update Service&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEU!&lt;/span&gt; &lt;br/&gt;
+vBSEO kann einen externen Service informieren, wenn in Ihrer Community neue Themen und Beiträge erstellt werden. Dieser Service arbeitet wie Suchmaschinen für die sog. Blogosphere und  der sich bald annährenden Forumsphere.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_stopwords_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Keyword Ignorierliste für eingehende Ping-/Trackback&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEU!&lt;/span&gt;&lt;br/&gt;
+Alle Pingbacks die, die in der Liste befindlichen, Wörter enthalten werden gefiltert (nicht akzeptiert) um Spam zu minimieren.&lt;/p&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_jump_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Remove Forumjump Dropdown For Guest Visitors&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+The forumjump dropdown generates extra non-relevant HTML code, especially on larger, multiple-forum sites. Disable it for guests (and spiders) to lighten the content Search Engines will index. This will increase the content to code ratio which is desirable for SEO purposes.&lt;/p&gt;
+
+&lt;p&gt;NOTE: The Forumjump Dropdown appears at the bottom of your thread and forum pages. There's also an option via the vBulletin admincp to disable it completely.&lt;/p&gt;</value>
+	</message>
+</translations>

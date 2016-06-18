@@ -1,0 +1,1655 @@
+2010-07-02 08:29:35.546	537492	Error	Exception	Unable to process nextAvailableWorkPeriod(2010-07-02 08:20:00 UTC, LOAD, 0, false) for Calendar entity VALSPAR.VALSPAR_CUS: unknown activity
+
+	at sun.reflect.GeneratedConstructorAccessor277.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.business.calendar.WorkPeriodSchedule.nextAvailableWorkPeriod(WorkPeriodSchedule.java:842)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1419)
+	at glog.business.shipment.TShipmentStop.setArrivalTimeWindowUsingLocationCalendar(TShipmentStop.java:656)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentStop(ShipmentBuilder.java:2884)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentStops(ShipmentBuilder.java:2776)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentsOnLegOption(ShipmentBuilder.java:2540)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentsOnLeg(ShipmentBuilder.java:2445)
+	at glog.business.shipment.ShipmentBuilder.makeLegOptionsOnTLeg(ShipmentBuilder.java:1302)
+	at glog.business.shipment.ShipmentBuilder.makeLegOptions(ShipmentBuilder.java:1657)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1390)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1438)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:468)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:318)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:359)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:312)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:192)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.GeneratedMethodAccessor638.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:42)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-21]
+2010-07-02 08:29:35.577	537492	Error	Exception	Unable to process nextAvailableWorkPeriod(2010-07-02 08:20:00 UTC, LOAD, 0, false) for Calendar entity VALSPAR.VALSPAR_CUS: unknown activity
+
+	at sun.reflect.GeneratedConstructorAccessor277.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.business.calendar.WorkPeriodSchedule.nextAvailableWorkPeriod(WorkPeriodSchedule.java:842)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1419)
+	at glog.business.shipment.TShipmentStop.setArrivalTimeWindowUsingLocationCalendar(TShipmentStop.java:656)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentStop(ShipmentBuilder.java:2884)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentStops(ShipmentBuilder.java:2776)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentsOnLegOption(ShipmentBuilder.java:2540)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentsOnLeg(ShipmentBuilder.java:2445)
+	at glog.business.shipment.ShipmentBuilder.makeLegOptionsOnTLeg(ShipmentBuilder.java:1302)
+	at glog.business.shipment.ShipmentBuilder.makeLegOptions(ShipmentBuilder.java:1657)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1390)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1438)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:468)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:318)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:359)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:312)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:192)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.GeneratedMethodAccessor638.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:42)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-21]
+2010-07-02 08:29:35.604	537492	Error	Exception	Unable to process nextAvailableWorkPeriod(2010-07-02 08:20:00 UTC, LOAD, 0, false) for Calendar entity VALSPAR.VALSPAR_CUS: unknown activity
+
+	at sun.reflect.GeneratedConstructorAccessor277.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.business.calendar.WorkPeriodSchedule.nextAvailableWorkPeriod(WorkPeriodSchedule.java:842)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1419)
+	at glog.business.shipment.TShipmentStop.setArrivalTimeWindowUsingLocationCalendar(TShipmentStop.java:656)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentStop(ShipmentBuilder.java:2884)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentStops(ShipmentBuilder.java:2776)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentsOnLegOption(ShipmentBuilder.java:2540)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentsOnLeg(ShipmentBuilder.java:2445)
+	at glog.business.shipment.ShipmentBuilder.makeLegOptionsOnTLeg(ShipmentBuilder.java:1302)
+	at glog.business.shipment.ShipmentBuilder.makeLegOptions(ShipmentBuilder.java:1657)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1390)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1438)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:468)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:318)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:359)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:312)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:192)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.GeneratedMethodAccessor638.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:42)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-21]
+2010-07-02 08:29:35.64	537492	Error	Exception	Unable to process nextAvailableWorkPeriod(2010-07-02 08:20:00 UTC, LOAD, 0, false) for Calendar entity VALSPAR.VALSPAR_CUS: unknown activity
+
+	at sun.reflect.GeneratedConstructorAccessor277.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.business.calendar.WorkPeriodSchedule.nextAvailableWorkPeriod(WorkPeriodSchedule.java:842)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1419)
+	at glog.business.shipment.TShipmentStop.setArrivalTimeWindowUsingLocationCalendar(TShipmentStop.java:656)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentStop(ShipmentBuilder.java:2884)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentStops(ShipmentBuilder.java:2776)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentsOnLegOption(ShipmentBuilder.java:2540)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentsOnLeg(ShipmentBuilder.java:2445)
+	at glog.business.shipment.ShipmentBuilder.makeLegOptionsOnTLeg(ShipmentBuilder.java:1302)
+	at glog.business.shipment.ShipmentBuilder.makeLegOptions(ShipmentBuilder.java:1657)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1390)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1438)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:468)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:318)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:359)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:312)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:192)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.GeneratedMethodAccessor638.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:42)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-21]
+2010-07-02 08:29:35.666	537492	Error	Exception	Unable to process nextAvailableWorkPeriod(2010-07-02 08:20:00 UTC, LOAD, 0, false) for Calendar entity VALSPAR.VALSPAR_CUS: unknown activity
+
+	at sun.reflect.GeneratedConstructorAccessor277.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.business.calendar.WorkPeriodSchedule.nextAvailableWorkPeriod(WorkPeriodSchedule.java:842)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1419)
+	at glog.business.shipment.TShipmentStop.setArrivalTimeWindowUsingLocationCalendar(TShipmentStop.java:656)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentStop(ShipmentBuilder.java:2884)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentStops(ShipmentBuilder.java:2776)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentsOnLegOption(ShipmentBuilder.java:2540)
+	at glog.business.shipment.ShipmentBuilder.makeTShipmentsOnLeg(ShipmentBuilder.java:2445)
+	at glog.business.shipment.ShipmentBuilder.makeLegOptionsOnTLeg(ShipmentBuilder.java:1302)
+	at glog.business.shipment.ShipmentBuilder.makeLegOptions(ShipmentBuilder.java:1657)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1390)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1438)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:468)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:318)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:359)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:312)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:192)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.GeneratedMethodAccessor638.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:42)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-21]
+2010-07-02 08:29:35.922	537492	Warning	Planning	No common rate engine result found for the set of TShipments on the leg opiton. [RMICallHandler-21]
+2010-07-02 08:29:38.86	537492	Warning	Planning	No common rate engine result found for the set of TShipments on the leg opiton. [RMICallHandler-21]
+2010-07-02 08:29:39.106	537492	Warning	Planning	No common rate engine result found for the set of TShipments on the leg opiton. [RMICallHandler-21]
+2010-07-02 08:29:39.131	537492	Error	Exception	Unable to process nextAvailableWorkPeriod(2010-07-02 09:29:39 UTC, LOAD, 0, false) for Calendar entity VALSPAR.VALSPAR_CUS: unknown activity
+
+	at sun.reflect.GeneratedConstructorAccessor277.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.business.calendar.WorkPeriodSchedule.nextAvailableWorkPeriod(WorkPeriodSchedule.java:842)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1419)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1263)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivityWithCapacityCheck(StopServiceTimeCalculator.java:1186)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriod(StopServiceTimeCalculator.java:1159)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTimeForActivity(StopServiceTimeCalculator.java:767)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTime(StopServiceTimeCalculator.java:187)
+	at glog.business.rate.rateservice.RateServiceSession.createServiceTimeResult(RateServiceSession.java:2859)
+	at glog.business.rate.rateservice.RateServiceSession.calculateServiceTime(RateServiceSession.java:1907)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateService(RateServiceSession.java:1450)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateServiceSolutionWindow(RateServiceSession.java:1529)
+	at glog.business.rate.rateservice.RateServiceSession.calculateSinglePathRateServiceSolutionWindow(RateServiceSession.java:1703)
+	at glog.business.shipment.LegOptionOptimizer.calculateServiceTime(LegOptionOptimizer.java:462)
+	at glog.business.shipment.LegOptionOptimizer.getCheapestFeasibleOption(LegOptionOptimizer.java:297)
+	at glog.business.shipment.LegOptionOptimizer.buildItineraryOptionOnBestLegOptions(LegOptionOptimizer.java:109)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1438)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:468)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:318)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:359)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:312)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:192)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.GeneratedMethodAccessor638.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:42)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-21]
+2010-07-02 08:29:39.133	537492	Warning	PlanningDetails	Current Itinerary Option has no rateServiceSolutionWindow, 
+ ItineraryOption: 
+    is feasible: true
+    feasibility code: Feasible 
+    totalCost:   170.5959 USD
+ Leg Option: 192573242
+    expectedCost:          170.5959 USD
+ --> EquipmentGroup: VALSPAR.53FT_DRYVAN(251570355)   contains 1 TSShipUnits. unit: 1 1853126793 created from ShipUnit: VALSPAR.1234
+    tSEquipments:       
+    viaType:               0
+   port of loading:    null
+   port of discharge:  null
+    transportModeGid:      VALSPAR.LTL
+    servprovGid:           VALSPAR.CAR-20885
+    rateOfferingGid:       VALSPAR.SEFL_LTL_20090406
+    rateServiceGid:        VALSPAR.SEFL_LTL
+    estimatedStartTime:    2010-07-02 12:20:00 UTC
+    estiamtedEndTime:      null
+    calculateSeriviceTime: true
+    calcuateRate:          true
+    sFeasible:             true
+    sourceOpLocPK:         null
+    destOpLocPK:           null
+ equipmentOption: 2016556698
+ nextLegOptions: 
+. [RMICallHandler-21]
+2010-07-02 08:29:39.142	537492	Error	Exception	Unable to process nextAvailableWorkPeriod(2010-07-02 09:29:39 UTC, LOAD, 0, false) for Calendar entity VALSPAR.VALSPAR_CUS: unknown activity
+
+	at sun.reflect.GeneratedConstructorAccessor277.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.business.calendar.WorkPeriodSchedule.nextAvailableWorkPeriod(WorkPeriodSchedule.java:842)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1419)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1263)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivityWithCapacityCheck(StopServiceTimeCalculator.java:1186)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriod(StopServiceTimeCalculator.java:1159)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTimeForActivity(StopServiceTimeCalculator.java:767)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTime(StopServiceTimeCalculator.java:187)
+	at glog.business.rate.rateservice.RateServiceSession.createServiceTimeResult(RateServiceSession.java:2859)
+	at glog.business.rate.rateservice.RateServiceSession.calculateServiceTime(RateServiceSession.java:1907)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateService(RateServiceSession.java:1450)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateServiceSolutionWindow(RateServiceSession.java:1529)
+	at glog.business.rate.rateservice.RateServiceSession.calculateSinglePathRateServiceSolutionWindow(RateServiceSession.java:1703)
+	at glog.business.shipment.LegOptionOptimizer.calculateServiceTime(LegOptionOptimizer.java:462)
+	at glog.business.shipment.LegOptionOptimizer.getCheapestFeasibleOption(LegOptionOptimizer.java:297)
+	at glog.business.shipment.LegOptionOptimizer.buildItineraryOptionOnBestLegOptions(LegOptionOptimizer.java:109)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1438)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:468)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:318)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:359)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:312)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:192)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.GeneratedMethodAccessor638.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:42)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-21]
+2010-07-02 08:29:39.144	537492	Warning	PlanningDetails	Current Itinerary Option has no rateServiceSolutionWindow, 
+ ItineraryOption: 
+    is feasible: true
+    feasibility code: Feasible 
+    totalCost:   170.5959 USD
+ Leg Option: 320622265
+    expectedCost:          170.5959 USD
+ --> EquipmentGroup: VALSPAR.53FT_REEFER(800936083)   contains 1 TSShipUnits. unit: 1 1853126793 created from ShipUnit: VALSPAR.1234
+    tSEquipments:       
+    viaType:               0
+   port of loading:    null
+   port of discharge:  null
+    transportModeGid:      VALSPAR.LTL
+    servprovGid:           VALSPAR.CAR-20885
+    rateOfferingGid:       VALSPAR.SEFL_LTL_20090406
+    rateServiceGid:        VALSPAR.SEFL_LTL
+    estimatedStartTime:    2010-07-02 12:20:00 UTC
+    estiamtedEndTime:      null
+    calculateSeriviceTime: true
+    calcuateRate:          true
+    sFeasible:             true
+    sourceOpLocPK:         null
+    destOpLocPK:           null
+ equipmentOption: 1669371009
+ nextLegOptions: 
+. [RMICallHandler-21]
+2010-07-02 08:29:39.159	537492	Error	Exception	Unable to process nextAvailableWorkPeriod(2010-07-02 09:29:39 UTC, LOAD, 0, false) for Calendar entity VALSPAR.VALSPAR_CUS: unknown activity
+
+	at sun.reflect.GeneratedConstructorAccessor277.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.business.calendar.WorkPeriodSchedule.nextAvailableWorkPeriod(WorkPeriodSchedule.java:842)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1419)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1263)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivityWithCapacityCheck(StopServiceTimeCalculator.java:1186)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriod(StopServiceTimeCalculator.java:1159)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTimeForActivity(StopServiceTimeCalculator.java:767)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTime(StopServiceTimeCalculator.java:187)
+	at glog.business.rate.rateservice.RateServiceSession.createServiceTimeResult(RateServiceSession.java:2859)
+	at glog.business.rate.rateservice.RateServiceSession.calculateServiceTime(RateServiceSession.java:1907)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateService(RateServiceSession.java:1450)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateServiceSolutionWindow(RateServiceSession.java:1529)
+	at glog.business.rate.rateservice.RateServiceSession.calculateSinglePathRateServiceSolutionWindow(RateServiceSession.java:1703)
+	at glog.business.shipment.LegOptionOptimizer.calculateServiceTime(LegOptionOptimizer.java:462)
+	at glog.business.shipment.LegOptionOptimizer.getCheapestFeasibleOption(LegOptionOptimizer.java:297)
+	at glog.business.shipment.LegOptionOptimizer.buildItineraryOptionOnBestLegOptions(LegOptionOptimizer.java:109)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1438)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:468)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:318)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:359)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:312)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:192)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.GeneratedMethodAccessor638.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:42)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-21]
+2010-07-02 08:29:39.161	537492	Warning	PlanningDetails	Current Itinerary Option has no rateServiceSolutionWindow, 
+ ItineraryOption: 
+    is feasible: true
+    feasibility code: Feasible 
+    totalCost:   175.2066 USD
+ Leg Option: 661937532
+    expectedCost:          175.2066 USD
+ --> EquipmentGroup: VALSPAR.53FT_DRYVAN(126897219)   contains 1 TSShipUnits. unit: 1 1853126793 created from ShipUnit: VALSPAR.1234
+    tSEquipments:       
+    viaType:               0
+   port of loading:    null
+   port of discharge:  null
+    transportModeGid:      VALSPAR.LTL
+    servprovGid:           VALSPAR.CAR-11198
+    rateOfferingGid:       VALSPAR.SAIA_LTL_20100204
+    rateServiceGid:        VALSPAR.SAIA_LTL
+    estimatedStartTime:    2010-07-02 12:20:00 UTC
+    estiamtedEndTime:      null
+    calculateSeriviceTime: true
+    calcuateRate:          true
+    sFeasible:             true
+    sourceOpLocPK:         null
+    destOpLocPK:           null
+ equipmentOption: 2016556698
+ nextLegOptions: 
+. [RMICallHandler-21]
+2010-07-02 08:29:39.167	537492	Error	Exception	Unable to process nextAvailableWorkPeriod(2010-07-02 09:29:39 UTC, LOAD, 0, false) for Calendar entity VALSPAR.VALSPAR_CUS: unknown activity
+
+	at sun.reflect.GeneratedConstructorAccessor277.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.business.calendar.WorkPeriodSchedule.nextAvailableWorkPeriod(WorkPeriodSchedule.java:842)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1419)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1263)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivityWithCapacityCheck(StopServiceTimeCalculator.java:1186)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriod(StopServiceTimeCalculator.java:1159)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTimeForActivity(StopServiceTimeCalculator.java:767)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTime(StopServiceTimeCalculator.java:187)
+	at glog.business.rate.rateservice.RateServiceSession.createServiceTimeResult(RateServiceSession.java:2859)
+	at glog.business.rate.rateservice.RateServiceSession.calculateServiceTime(RateServiceSession.java:1907)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateService(RateServiceSession.java:1450)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateServiceSolutionWindow(RateServiceSession.java:1529)
+	at glog.business.rate.rateservice.RateServiceSession.calculateSinglePathRateServiceSolutionWindow(RateServiceSession.java:1703)
+	at glog.business.shipment.LegOptionOptimizer.calculateServiceTime(LegOptionOptimizer.java:462)
+	at glog.business.shipment.LegOptionOptimizer.getCheapestFeasibleOption(LegOptionOptimizer.java:297)
+	at glog.business.shipment.LegOptionOptimizer.buildItineraryOptionOnBestLegOptions(LegOptionOptimizer.java:109)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1438)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:468)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:318)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:359)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:312)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:192)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.GeneratedMethodAccessor638.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:42)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-21]
+2010-07-02 08:29:39.17	537492	Warning	PlanningDetails	Current Itinerary Option has no rateServiceSolutionWindow, 
+ ItineraryOption: 
+    is feasible: true
+    feasibility code: Feasible 
+    totalCost:   175.2066 USD
+ Leg Option: 1218808864
+    expectedCost:          175.2066 USD
+ --> EquipmentGroup: VALSPAR.53FT_REEFER(1722005747)   contains 1 TSShipUnits. unit: 1 1853126793 created from ShipUnit: VALSPAR.1234
+    tSEquipments:       
+    viaType:               0
+   port of loading:    null
+   port of discharge:  null
+    transportModeGid:      VALSPAR.LTL
+    servprovGid:           VALSPAR.CAR-11198
+    rateOfferingGid:       VALSPAR.SAIA_LTL_20100204
+    rateServiceGid:        VALSPAR.SAIA_LTL
+    estimatedStartTime:    2010-07-02 12:20:00 UTC
+    estiamtedEndTime:      null
+    calculateSeriviceTime: true
+    calcuateRate:          true
+    sFeasible:             true
+    sourceOpLocPK:         null
+    destOpLocPK:           null
+ equipmentOption: 1669371009
+ nextLegOptions: 
+. [RMICallHandler-21]
+2010-07-02 08:29:39.179	537492	Error	Exception	Unable to process nextAvailableWorkPeriod(2010-07-02 09:29:39 UTC, LOAD, 0, false) for Calendar entity VALSPAR.VALSPAR_CUS: unknown activity
+
+	at sun.reflect.GeneratedConstructorAccessor277.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.business.calendar.WorkPeriodSchedule.nextAvailableWorkPeriod(WorkPeriodSchedule.java:842)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1419)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1263)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivityWithCapacityCheck(StopServiceTimeCalculator.java:1186)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriod(StopServiceTimeCalculator.java:1159)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTimeForActivity(StopServiceTimeCalculator.java:767)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTime(StopServiceTimeCalculator.java:187)
+	at glog.business.rate.rateservice.RateServiceSession.createServiceTimeResult(RateServiceSession.java:2859)
+	at glog.business.rate.rateservice.RateServiceSession.calculateServiceTime(RateServiceSession.java:1907)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateService(RateServiceSession.java:1450)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateServiceSolutionWindow(RateServiceSession.java:1529)
+	at glog.business.rate.rateservice.RateServiceSession.calculateSinglePathRateServiceSolutionWindow(RateServiceSession.java:1703)
+	at glog.business.shipment.LegOptionOptimizer.calculateServiceTime(LegOptionOptimizer.java:462)
+	at glog.business.shipment.LegOptionOptimizer.getCheapestFeasibleOption(LegOptionOptimizer.java:297)
+	at glog.business.shipment.LegOptionOptimizer.buildItineraryOptionOnBestLegOptions(LegOptionOptimizer.java:109)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1438)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:468)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:318)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:359)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:312)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:192)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.GeneratedMethodAccessor638.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:42)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-21]
+2010-07-02 08:29:39.181	537492	Warning	PlanningDetails	Current Itinerary Option has no rateServiceSolutionWindow, 
+ ItineraryOption: 
+    is feasible: true
+    feasibility code: Feasible 
+    totalCost:   184.428 USD
+ Leg Option: 1821552162
+    expectedCost:          184.428 USD
+ --> EquipmentGroup: VALSPAR.53FT_DRYVAN(1092594518)   contains 1 TSShipUnits. unit: 1 1853126793 created from ShipUnit: VALSPAR.1234
+    tSEquipments:       
+    viaType:               0
+   port of loading:    null
+   port of discharge:  null
+    transportModeGid:      VALSPAR.LTL
+    servprovGid:           VALSPAR.CAR-21449
+    rateOfferingGid:       VALSPAR.RLCA_LTL_20090731
+    rateServiceGid:        VALSPAR.LTL
+    estimatedStartTime:    2010-07-02 12:20:00 UTC
+    estiamtedEndTime:      null
+    calculateSeriviceTime: true
+    calcuateRate:          true
+    sFeasible:             true
+    sourceOpLocPK:         null
+    destOpLocPK:           null
+ equipmentOption: 2016556698
+ nextLegOptions: 
+. [RMICallHandler-21]
+2010-07-02 08:29:39.188	537492	Error	Exception	Unable to process nextAvailableWorkPeriod(2010-07-02 09:29:39 UTC, LOAD, 0, false) for Calendar entity VALSPAR.VALSPAR_CUS: unknown activity
+
+	at sun.reflect.GeneratedConstructorAccessor277.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.business.calendar.WorkPeriodSchedule.nextAvailableWorkPeriod(WorkPeriodSchedule.java:842)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1419)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1263)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivityWithCapacityCheck(StopServiceTimeCalculator.java:1186)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriod(StopServiceTimeCalculator.java:1159)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTimeForActivity(StopServiceTimeCalculator.java:767)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTime(StopServiceTimeCalculator.java:187)
+	at glog.business.rate.rateservice.RateServiceSession.createServiceTimeResult(RateServiceSession.java:2859)
+	at glog.business.rate.rateservice.RateServiceSession.calculateServiceTime(RateServiceSession.java:1907)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateService(RateServiceSession.java:1450)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateServiceSolutionWindow(RateServiceSession.java:1529)
+	at glog.business.rate.rateservice.RateServiceSession.calculateSinglePathRateServiceSolutionWindow(RateServiceSession.java:1703)
+	at glog.business.shipment.LegOptionOptimizer.calculateServiceTime(LegOptionOptimizer.java:462)
+	at glog.business.shipment.LegOptionOptimizer.getCheapestFeasibleOption(LegOptionOptimizer.java:297)
+	at glog.business.shipment.LegOptionOptimizer.buildItineraryOptionOnBestLegOptions(LegOptionOptimizer.java:109)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1438)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:468)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:318)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:359)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:312)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:192)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.GeneratedMethodAccessor638.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:42)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-21]
+2010-07-02 08:29:39.19	537492	Warning	PlanningDetails	Current Itinerary Option has no rateServiceSolutionWindow, 
+ ItineraryOption: 
+    is feasible: true
+    feasibility code: Feasible 
+    totalCost:   184.428 USD
+ Leg Option: 300315102
+    expectedCost:          184.428 USD
+ --> EquipmentGroup: VALSPAR.53FT_REEFER(279603934)   contains 1 TSShipUnits. unit: 1 1853126793 created from ShipUnit: VALSPAR.1234
+    tSEquipments:       
+    viaType:               0
+   port of loading:    null
+   port of discharge:  null
+    transportModeGid:      VALSPAR.LTL
+    servprovGid:           VALSPAR.CAR-21449
+    rateOfferingGid:       VALSPAR.RLCA_LTL_20090731
+    rateServiceGid:        VALSPAR.LTL
+    estimatedStartTime:    2010-07-02 12:20:00 UTC
+    estiamtedEndTime:      null
+    calculateSeriviceTime: true
+    calcuateRate:          true
+    sFeasible:             true
+    sourceOpLocPK:         null
+    destOpLocPK:           null
+ equipmentOption: 1669371009
+ nextLegOptions: 
+. [RMICallHandler-21]
+2010-07-02 08:29:39.197	537492	Error	Exception	Unable to process nextAvailableWorkPeriod(2010-07-02 09:29:39 UTC, LOAD, 0, false) for Calendar entity VALSPAR.VALSPAR_CUS: unknown activity
+
+	at sun.reflect.GeneratedConstructorAccessor277.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.business.calendar.WorkPeriodSchedule.nextAvailableWorkPeriod(WorkPeriodSchedule.java:842)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1419)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1263)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivityWithCapacityCheck(StopServiceTimeCalculator.java:1186)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriod(StopServiceTimeCalculator.java:1159)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTimeForActivity(StopServiceTimeCalculator.java:767)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTime(StopServiceTimeCalculator.java:187)
+	at glog.business.rate.rateservice.RateServiceSession.createServiceTimeResult(RateServiceSession.java:2859)
+	at glog.business.rate.rateservice.RateServiceSession.calculateServiceTime(RateServiceSession.java:1907)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateService(RateServiceSession.java:1450)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateServiceSolutionWindow(RateServiceSession.java:1529)
+	at glog.business.rate.rateservice.RateServiceSession.calculateSinglePathRateServiceSolutionWindow(RateServiceSession.java:1703)
+	at glog.business.shipment.LegOptionOptimizer.calculateServiceTime(LegOptionOptimizer.java:462)
+	at glog.business.shipment.LegOptionOptimizer.getCheapestFeasibleOption(LegOptionOptimizer.java:297)
+	at glog.business.shipment.LegOptionOptimizer.buildItineraryOptionOnBestLegOptions(LegOptionOptimizer.java:109)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1438)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:468)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:318)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:359)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:312)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:192)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.GeneratedMethodAccessor638.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:42)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-21]
+2010-07-02 08:29:39.198	537492	Warning	PlanningDetails	Current Itinerary Option has no rateServiceSolutionWindow, 
+ ItineraryOption: 
+    is feasible: true
+    feasibility code: Feasible 
+    totalCost:   189.96084000000002 USD
+ Leg Option: 809348864
+    expectedCost:          189.96084000000002 USD
+ --> EquipmentGroup: VALSPAR.53FT_DRYVAN(504806480)   contains 1 TSShipUnits. unit: 1 1853126793 created from ShipUnit: VALSPAR.1234
+    tSEquipments:       
+    viaType:               0
+   port of loading:    null
+   port of discharge:  null
+    transportModeGid:      VALSPAR.LTL
+    servprovGid:           VALSPAR.CAR-13652
+    rateOfferingGid:       VALSPAR.FXFE_LTL_20100402
+    rateServiceGid:        VALSPAR.FXFE LTL
+    estimatedStartTime:    2010-07-02 12:20:00 UTC
+    estiamtedEndTime:      null
+    calculateSeriviceTime: true
+    calcuateRate:          true
+    sFeasible:             true
+    sourceOpLocPK:         null
+    destOpLocPK:           null
+ equipmentOption: 2016556698
+ nextLegOptions: 
+. [RMICallHandler-21]
+2010-07-02 08:29:39.206	537492	Error	Exception	Unable to process nextAvailableWorkPeriod(2010-07-02 09:29:39 UTC, LOAD, 0, false) for Calendar entity VALSPAR.VALSPAR_CUS: unknown activity
+
+	at sun.reflect.GeneratedConstructorAccessor277.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.business.calendar.WorkPeriodSchedule.nextAvailableWorkPeriod(WorkPeriodSchedule.java:842)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1419)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1263)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivityWithCapacityCheck(StopServiceTimeCalculator.java:1186)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriod(StopServiceTimeCalculator.java:1159)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTimeForActivity(StopServiceTimeCalculator.java:767)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTime(StopServiceTimeCalculator.java:187)
+	at glog.business.rate.rateservice.RateServiceSession.createServiceTimeResult(RateServiceSession.java:2859)
+	at glog.business.rate.rateservice.RateServiceSession.calculateServiceTime(RateServiceSession.java:1907)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateService(RateServiceSession.java:1450)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateServiceSolutionWindow(RateServiceSession.java:1529)
+	at glog.business.rate.rateservice.RateServiceSession.calculateSinglePathRateServiceSolutionWindow(RateServiceSession.java:1703)
+	at glog.business.shipment.LegOptionOptimizer.calculateServiceTime(LegOptionOptimizer.java:462)
+	at glog.business.shipment.LegOptionOptimizer.getCheapestFeasibleOption(LegOptionOptimizer.java:297)
+	at glog.business.shipment.LegOptionOptimizer.buildItineraryOptionOnBestLegOptions(LegOptionOptimizer.java:109)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1438)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:468)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:318)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:359)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:312)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:192)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.GeneratedMethodAccessor638.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:42)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-21]
+2010-07-02 08:29:39.207	537492	Warning	PlanningDetails	Current Itinerary Option has no rateServiceSolutionWindow, 
+ ItineraryOption: 
+    is feasible: true
+    feasibility code: Feasible 
+    totalCost:   189.96084000000002 USD
+ Leg Option: 564937150
+    expectedCost:          189.96084000000002 USD
+ --> EquipmentGroup: VALSPAR.53FT_REEFER(74062065)   contains 1 TSShipUnits. unit: 1 1853126793 created from ShipUnit: VALSPAR.1234
+    tSEquipments:       
+    viaType:               0
+   port of loading:    null
+   port of discharge:  null
+    transportModeGid:      VALSPAR.LTL
+    servprovGid:           VALSPAR.CAR-13652
+    rateOfferingGid:       VALSPAR.FXFE_LTL_20100402
+    rateServiceGid:        VALSPAR.FXFE LTL
+    estimatedStartTime:    2010-07-02 12:20:00 UTC
+    estiamtedEndTime:      null
+    calculateSeriviceTime: true
+    calcuateRate:          true
+    sFeasible:             true
+    sourceOpLocPK:         null
+    destOpLocPK:           null
+ equipmentOption: 1669371009
+ nextLegOptions: 
+. [RMICallHandler-21]
+2010-07-02 08:29:39.216	537492	Error	Exception	Unable to process nextAvailableWorkPeriod(2010-07-02 09:29:39 UTC, LOAD, 0, false) for Calendar entity VALSPAR.VALSPAR_CUS: unknown activity
+
+	at sun.reflect.GeneratedConstructorAccessor277.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.business.calendar.WorkPeriodSchedule.nextAvailableWorkPeriod(WorkPeriodSchedule.java:842)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1419)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1263)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivityWithCapacityCheck(StopServiceTimeCalculator.java:1186)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriod(StopServiceTimeCalculator.java:1159)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTimeForActivity(StopServiceTimeCalculator.java:767)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTime(StopServiceTimeCalculator.java:187)
+	at glog.business.rate.rateservice.RateServiceSession.createServiceTimeResult(RateServiceSession.java:2859)
+	at glog.business.rate.rateservice.RateServiceSession.calculateServiceTime(RateServiceSession.java:1907)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateService(RateServiceSession.java:1450)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateServiceSolutionWindow(RateServiceSession.java:1529)
+	at glog.business.rate.rateservice.RateServiceSession.calculateSinglePathRateServiceSolutionWindow(RateServiceSession.java:1703)
+	at glog.business.shipment.LegOptionOptimizer.calculateServiceTime(LegOptionOptimizer.java:462)
+	at glog.business.shipment.LegOptionOptimizer.getCheapestFeasibleOption(LegOptionOptimizer.java:297)
+	at glog.business.shipment.LegOptionOptimizer.buildItineraryOptionOnBestLegOptions(LegOptionOptimizer.java:109)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1438)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:468)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:318)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:359)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:312)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:192)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.GeneratedMethodAccessor638.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:42)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-21]
+2010-07-02 08:29:39.219	537492	Warning	PlanningDetails	Current Itinerary Option has no rateServiceSolutionWindow, 
+ ItineraryOption: 
+    is feasible: true
+    feasibility code: Feasible 
+    totalCost:   202.87079999999997 USD
+ Leg Option: 873476663
+    expectedCost:          202.87079999999997 USD
+ --> EquipmentGroup: VALSPAR.53FT_DRYVAN(1759943351)   contains 1 TSShipUnits. unit: 1 1853126793 created from ShipUnit: VALSPAR.1234
+    tSEquipments:       
+    viaType:               0
+   port of loading:    null
+   port of discharge:  null
+    transportModeGid:      VALSPAR.LTL
+    servprovGid:           VALSPAR.CAR-11155
+    rateOfferingGid:       VALSPAR.MLXP_LTL_20090118
+    rateServiceGid:        VALSPAR.LTL
+    estimatedStartTime:    2010-07-02 12:20:00 UTC
+    estiamtedEndTime:      null
+    calculateSeriviceTime: true
+    calcuateRate:          true
+    sFeasible:             true
+    sourceOpLocPK:         null
+    destOpLocPK:           null
+ equipmentOption: 2016556698
+ nextLegOptions: 
+. [RMICallHandler-21]
+2010-07-02 08:29:39.225	537492	Error	Exception	Unable to process nextAvailableWorkPeriod(2010-07-02 09:29:39 UTC, LOAD, 0, false) for Calendar entity VALSPAR.VALSPAR_CUS: unknown activity
+
+	at sun.reflect.GeneratedConstructorAccessor277.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.business.calendar.WorkPeriodSchedule.nextAvailableWorkPeriod(WorkPeriodSchedule.java:842)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1419)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1263)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivityWithCapacityCheck(StopServiceTimeCalculator.java:1186)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriod(StopServiceTimeCalculator.java:1159)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTimeForActivity(StopServiceTimeCalculator.java:767)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTime(StopServiceTimeCalculator.java:187)
+	at glog.business.rate.rateservice.RateServiceSession.createServiceTimeResult(RateServiceSession.java:2859)
+	at glog.business.rate.rateservice.RateServiceSession.calculateServiceTime(RateServiceSession.java:1907)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateService(RateServiceSession.java:1450)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateServiceSolutionWindow(RateServiceSession.java:1529)
+	at glog.business.rate.rateservice.RateServiceSession.calculateSinglePathRateServiceSolutionWindow(RateServiceSession.java:1703)
+	at glog.business.shipment.LegOptionOptimizer.calculateServiceTime(LegOptionOptimizer.java:462)
+	at glog.business.shipment.LegOptionOptimizer.getCheapestFeasibleOption(LegOptionOptimizer.java:297)
+	at glog.business.shipment.LegOptionOptimizer.buildItineraryOptionOnBestLegOptions(LegOptionOptimizer.java:109)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1438)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:468)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:318)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:359)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:312)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:192)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.GeneratedMethodAccessor638.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:42)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-21]
+2010-07-02 08:29:39.226	537492	Warning	PlanningDetails	Current Itinerary Option has no rateServiceSolutionWindow, 
+ ItineraryOption: 
+    is feasible: true
+    feasibility code: Feasible 
+    totalCost:   202.87079999999997 USD
+ Leg Option: 324064149
+    expectedCost:          202.87079999999997 USD
+ --> EquipmentGroup: VALSPAR.53FT_DRYVAN(1391165814)   contains 1 TSShipUnits. unit: 1 1853126793 created from ShipUnit: VALSPAR.1234
+    tSEquipments:       
+    viaType:               0
+   port of loading:    null
+   port of discharge:  null
+    transportModeGid:      VALSPAR.LTL
+    servprovGid:           VALSPAR.CAR-103099
+    rateOfferingGid:       VALSPAR.UPGF_LTL_20090406
+    rateServiceGid:        VALSPAR.UPGF_LTL
+    estimatedStartTime:    2010-07-02 12:20:00 UTC
+    estiamtedEndTime:      null
+    calculateSeriviceTime: true
+    calcuateRate:          true
+    sFeasible:             true
+    sourceOpLocPK:         null
+    destOpLocPK:           null
+ equipmentOption: 2016556698
+ nextLegOptions: 
+. [RMICallHandler-21]
+2010-07-02 08:29:39.238	537492	Error	Exception	Unable to process nextAvailableWorkPeriod(2010-07-02 09:29:39 UTC, LOAD, 0, false) for Calendar entity VALSPAR.VALSPAR_CUS: unknown activity
+
+	at sun.reflect.GeneratedConstructorAccessor277.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.business.calendar.WorkPeriodSchedule.nextAvailableWorkPeriod(WorkPeriodSchedule.java:842)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1419)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1263)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivityWithCapacityCheck(StopServiceTimeCalculator.java:1186)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriod(StopServiceTimeCalculator.java:1159)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTimeForActivity(StopServiceTimeCalculator.java:767)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTime(StopServiceTimeCalculator.java:187)
+	at glog.business.rate.rateservice.RateServiceSession.createServiceTimeResult(RateServiceSession.java:2859)
+	at glog.business.rate.rateservice.RateServiceSession.calculateServiceTime(RateServiceSession.java:1907)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateService(RateServiceSession.java:1450)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateServiceSolutionWindow(RateServiceSession.java:1529)
+	at glog.business.rate.rateservice.RateServiceSession.calculateSinglePathRateServiceSolutionWindow(RateServiceSession.java:1703)
+	at glog.business.shipment.LegOptionOptimizer.calculateServiceTime(LegOptionOptimizer.java:462)
+	at glog.business.shipment.LegOptionOptimizer.getCheapestFeasibleOption(LegOptionOptimizer.java:297)
+	at glog.business.shipment.LegOptionOptimizer.buildItineraryOptionOnBestLegOptions(LegOptionOptimizer.java:109)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1438)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:468)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:318)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:359)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:312)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:192)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.GeneratedMethodAccessor638.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:42)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-21]
+2010-07-02 08:29:39.24	537492	Warning	PlanningDetails	Current Itinerary Option has no rateServiceSolutionWindow, 
+ ItineraryOption: 
+    is feasible: true
+    feasibility code: Feasible 
+    totalCost:   202.87079999999997 USD
+ Leg Option: 527623451
+    expectedCost:          202.87079999999997 USD
+ --> EquipmentGroup: VALSPAR.53FT_REEFER(462601065)   contains 1 TSShipUnits. unit: 1 1853126793 created from ShipUnit: VALSPAR.1234
+    tSEquipments:       
+    viaType:               0
+   port of loading:    null
+   port of discharge:  null
+    transportModeGid:      VALSPAR.LTL
+    servprovGid:           VALSPAR.CAR-11155
+    rateOfferingGid:       VALSPAR.MLXP_LTL_20090118
+    rateServiceGid:        VALSPAR.LTL
+    estimatedStartTime:    2010-07-02 12:20:00 UTC
+    estiamtedEndTime:      null
+    calculateSeriviceTime: true
+    calcuateRate:          true
+    sFeasible:             true
+    sourceOpLocPK:         null
+    destOpLocPK:           null
+ equipmentOption: 1669371009
+ nextLegOptions: 
+. [RMICallHandler-21]
+2010-07-02 08:29:39.247	537492	Error	Exception	Unable to process nextAvailableWorkPeriod(2010-07-02 09:29:39 UTC, LOAD, 0, false) for Calendar entity VALSPAR.VALSPAR_CUS: unknown activity
+
+	at sun.reflect.GeneratedConstructorAccessor277.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.business.calendar.WorkPeriodSchedule.nextAvailableWorkPeriod(WorkPeriodSchedule.java:842)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1419)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivity(StopServiceTimeCalculator.java:1263)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriodForActivityWithCapacityCheck(StopServiceTimeCalculator.java:1186)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.getNextWorkPeriod(StopServiceTimeCalculator.java:1159)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTimeForActivity(StopServiceTimeCalculator.java:767)
+	at glog.business.rate.rateservice.StopServiceTimeCalculator.calcAndSetStopServiceTime(StopServiceTimeCalculator.java:187)
+	at glog.business.rate.rateservice.RateServiceSession.createServiceTimeResult(RateServiceSession.java:2859)
+	at glog.business.rate.rateservice.RateServiceSession.calculateServiceTime(RateServiceSession.java:1907)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateService(RateServiceSession.java:1450)
+	at glog.business.rate.rateservice.RateServiceSession.calculateRateServiceSolutionWindow(RateServiceSession.java:1529)
+	at glog.business.rate.rateservice.RateServiceSession.calculateSinglePathRateServiceSolutionWindow(RateServiceSession.java:1703)
+	at glog.business.shipment.LegOptionOptimizer.calculateServiceTime(LegOptionOptimizer.java:462)
+	at glog.business.shipment.LegOptionOptimizer.getCheapestFeasibleOption(LegOptionOptimizer.java:297)
+	at glog.business.shipment.LegOptionOptimizer.buildItineraryOptionOnBestLegOptions(LegOptionOptimizer.java:109)
+	at glog.business.shipment.ShipmentBuilder.buildBestItineraryOption(ShipmentBuilder.java:1410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:1438)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:468)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraphCollection(ShipmentBuilder.java:410)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:318)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:359)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:312)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:192)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.GeneratedMethodAccessor638.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:42)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-21]
+2010-07-02 08:29:39.249	537492	Warning	PlanningDetails	Current Itinerary Option has no rateServiceSolutionWindow, 
+ ItineraryOption: 
+    is feasible: true
+    feasibility code: Feasible 
+    totalCost:   202.87079999999997 USD
+ Leg Option: 807362494
+    expectedCost:          202.87079999999997 USD
+ --> EquipmentGroup: VALSPAR.53FT_REEFER(1895740745)   contains 1 TSShipUnits. unit: 1 1853126793 created from ShipUnit: VALSPAR.1234
+    tSEquipments:       
+    viaType:               0
+   port of loading:    null
+   port of discharge:  null
+    transportModeGid:      VALSPAR.LTL
+    servprovGid:           VALSPAR.CAR-103099
+    rateOfferingGid:       VALSPAR.UPGF_LTL_20090406
+    rateServiceGid:        VALSPAR.UPGF_LTL
+    estimatedStartTime:    2010-07-02 12:20:00 UTC
+    estiamtedEndTime:      null
+    calculateSeriviceTime: true
+    calcuateRate:          true
+    sFeasible:             true
+    sourceOpLocPK:         null
+    destOpLocPK:           null
+ equipmentOption: 1669371009
+ nextLegOptions: 
+. [RMICallHandler-21]
+2010-07-02 08:29:39.25	537492	Warning	Planning	None of the combinations of leg options were feasible for this itinerary. [RMICallHandler-21]
+2010-07-02 08:29:39.25	537492	Warning	Planning	No feasible shipments created for Itinerary: VALSPAR.VALSPAR_LTL. [RMICallHandler-21]
+2010-07-02 08:29:39.251	537492	Error	Exception	No shipments built for order bundle
+
+	at sun.reflect.GeneratedConstructorAccessor277.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+	at glog.util.exception.GLException.factory(GLException.java:413)
+	at glog.util.exception.GLException.factory(GLException.java:390)
+	at glog.util.explanation.Explanations.factory(Explanations.java:418)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:367)
+	at glog.business.shipment.ShipmentBuilder.buildShipmentGraph(ShipmentBuilder.java:285)
+	at glog.business.action.OrderActionExecutor.buildShipmentGraph(OrderActionExecutor.java:359)
+	at glog.business.action.OrderActionExecutor.buildShipments(OrderActionExecutor.java:312)
+	at glog.business.session.OrderActionSessionBean.buildShipments(OrderActionSessionBean.java:192)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.buildShipments(OrderActionSessionServerSideEJBWrapper.java:130)
+	at sun.reflect.GeneratedMethodAccessor638.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at OrderActionSessionHome_RemoteProxy_6iid3ag.buildShipments(Unknown Source)
+	at glog.business.session.gen.OrderActionSessionSkel.buildShipments(OrderActionSessionSkel.java:439)
+	at glog.business.session.gen.OrderActionSessionSkel.exec(OrderActionSessionSkel.java:128)
+	at glog.webserver.wrapper.SkelImpl.execDispatch(SkelImpl.java:15)
+	at glog.server.wrapper.WrapperSessionBean.execDispatch(WrapperSessionBean.java:57)
+	at glog.server.wrapper.WrapperSessionServerSideEJBWrapper.execDispatch(WrapperSessionServerSideEJBWrapper.java:42)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.ejb.interceptor.joinpoint.EJBJoinPointImpl.invoke(EJBJoinPointImpl.java:35)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.TxNotSupportedInterceptor.invoke(TxNotSupportedInterceptor.java:43)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.SecurityRoleInterceptor.invoke(SecurityRoleInterceptor.java:47)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.interceptor.system.DMSInterceptor.invoke(DMSInterceptor.java:52)
+	at com.evermind.server.ejb.interceptor.InvocationContextImpl.proceed(InvocationContextImpl.java:119)
+	at com.evermind.server.ejb.InvocationContextPool.invoke(InvocationContextPool.java:55)
+	at com.evermind.server.ejb.StatelessSessionEJBObject.OC4J_invokeMethod(StatelessSessionEJBObject.java:87)
+	at WrapperSessionHome_RemoteProxy_6c6hndi.execDispatch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.evermind.server.rmi.RmiMethodCall.run(RmiMethodCall.java:53)
+	at com.evermind.util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:534)
+ [RMICallHandler-21]

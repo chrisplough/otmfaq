@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<dataTemplate name="SKU_TEST" defaultPackage="SKU_TEST" version="1.0">
+  <properties>
+    <property name="xml_tag_case" value="upper"/>
+    <property name="debug_mode" value="on"/>
+  </properties>
+ <dataQuery>
+    <sqlStatement name="Q_1">
+    <![CDATA[	
+	     SELECT 
+ S.SKU_XID,
+ S.SKU_OBJECT_GID,
+ S.WAREHOUSE_LOCATION_GID,
+ SS1.STATUS_VALUE_GID AS SKU_LEVEL,
+ SS2.STATUS_VALUE_GID AS REORDER,
+ SQ.SKU_QUANTITY_VALUE AS ON_HAND_LVL,
+ SL1.SKU_LEVEL_VALUE AS MIN_LVL,
+ SL2.SKU_LEVEL_VALUE AS MAX_LVL,
+ SL3.SKU_LEVEL_VALUE AS REORDER_LVL
+FROM 
+ SKU S,
+ SKU_STATUS SS1, 
+ SKU_STATUS SS2,
+ SKU_QUANTITY SQ,
+ SKU_LEVEL SL1,
+ SKU_LEVEL SL2,
+ SKU_LEVEL SL3
+WHERE 
+ S.SKU_GID = SS1.SKU_GID
+AND S.SKU_GID = SS2.SKU_GID
+AND S.SKU_GID = SQ.SKU_GID
+AND S.SKU_GID = SL1.SKU_GID
+AND S.SKU_GID = SL2.SKU_GID
+AND S.SKU_GID = SL3.SKU_GID
+AND SS1.STATUS_TYPE_GID = 'PXCN.SKU_LEVEL'
+AND SS2.STATUS_TYPE_GID = 'PXCN.SKU_REORDER'
+AND SL1.SKU_LEVEL_TYPE_GID = 'MINIMUM'
+AND SL2.SKU_LEVEL_TYPE_GID = 'MAXIMUM'
+AND SL3.SKU_LEVEL_TYPE_GID = 'REORDER'
+    
+
+    ]]>
+         </sqlStatement>
+
+
+  </dataQuery>
+  <dataTrigger name="afterParameterFormTrigger" source="SKU_TEST.beforereport"/>
+  <dataStructure>
+    
+	 <group name="G_1" dataType="varchar2" source="Q_1">
+    
+    <element name="SKU_XID" dataType="varchar2" value="SKU_XID"/>
+	<element name="SKU_OBJECT_GID" dataType="varchar2" value="SKU_OBJECT_GID"/>
+	<element name="WAREHOUSE_LOCATION_GID" dataType="varchar2" value="WAREHOUSE_LOCATION_GID"/>
+	<element name="SKU_LEVEL" dataType="varchar2" value="SKU_LEVEL"/>
+	<element name="REORDER" dataType="varchar2" value="REORDER"/>
+	<element name="ON_HAND_LVL" dataType="varchar2" value="ON_HAND_LVL"/>
+	<element name="MIN_LVL" dataType="varchar2" value="MIN_LVL"/>
+	<element name="MAX_LVL" dataType="varchar2" value="MAX_LVL"/>
+	<element name="REORDER_LVL" dataType="varchar2" value="REORDER_LVL"/>
+	
+	 </group>
+    
+  </dataStructure>
+</dataTemplate>

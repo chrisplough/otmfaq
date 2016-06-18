@@ -1,0 +1,45 @@
+INFO | 2015/01/30 09:22:05 | [INFO ][memory ] [YC#48] 750371.559-750384.172: YC 996884KB->432442KB (1572864KB), 12.612 s, sum of pauses 12596.927 ms, longest pause 12596.927 ms.
+INFO | 2015/01/30 10:46:16 | Jan 30, 2015 10:46:16 AM org.apache.catalina.core.ApplicationContext log
+INFO | 2015/01/30 10:46:16 | INFO: Marking servlet glog.webserver.servlet.umt.Login as unavailable
+INFO | 2015/01/30 10:46:16 | Jan 30, 2015 10:46:16 AM org.apache.catalina.core.StandardWrapperValve invoke
+INFO | 2015/01/30 10:46:16 | SEVERE: Allocate exception for servlet glog.webserver.servlet.umt.Login
+INFO | 2015/01/30 10:46:16 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO | 2015/01/30 10:46:16 | 	at glog.webserver.util.NTierServlet.init(NTierServlet.java:34)
+INFO | 2015/01/30 10:46:16 | 	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+INFO | 2015/01/30 10:46:16 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+INFO | 2015/01/30 10:46:16 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:865)
+INFO | 2015/01/30 10:46:16 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:136)
+INFO | 2015/01/30 10:46:16 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:124)
+INFO | 2015/01/30 10:46:16 | 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:503)
+INFO | 2015/01/30 10:46:16 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+INFO | 2015/01/30 10:46:16 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+INFO | 2015/01/30 10:46:16 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:120)
+INFO | 2015/01/30 10:46:16 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+INFO | 2015/01/30 10:46:16 | 	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+INFO | 2015/01/30 10:46:16 | 	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+INFO | 2015/01/30 10:46:16 | 	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+INFO | 2015/01/30 10:46:16 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+INFO | 2015/01/30 10:46:16 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:919)
+INFO | 2015/01/30 10:46:16 | 	at java.lang.Thread.run(Thread.java:680)
+INFO | 2015/01/30 10:48:14 | Jan 30, 2015 10:48:14 AM org.apache.catalina.core.ApplicationContext log
+INFO | 2015/01/30 10:48:14 | INFO: Marking servlet glog.webserver.servlet.umt.Login as unavailable
+INFO | 2015/01/30 10:48:14 | Jan 30, 2015 10:48:14 AM org.apache.catalina.core.StandardWrapperValve invoke
+INFO | 2015/01/30 10:48:14 | SEVERE: Allocate exception for servlet glog.webserver.servlet.umt.Login
+INFO | 2015/01/30 10:48:14 | javax.servlet.UnavailableException: The OTM Application Server is not available.
+INFO | 2015/01/30 10:48:14 | 	at glog.webserver.util.NTierServlet.init(NTierServlet.java:34)
+INFO | 2015/01/30 10:48:14 | 	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+INFO | 2015/01/30 10:48:14 | 	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+INFO | 2015/01/30 10:48:14 | 	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:865)
+INFO | 2015/01/30 10:48:14 | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:136)
+INFO | 2015/01/30 10:48:14 | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:124)
+INFO | 2015/01/30 10:48:14 | 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:503)
+INFO | 2015/01/30 10:48:14 | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+INFO | 2015/01/30 10:48:14 | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+INFO | 2015/01/30 10:48:14 | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:120)
+INFO | 2015/01/30 10:48:14 | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+INFO | 2015/01/30 10:48:14 | 	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+INFO | 2015/01/30 10:48:14 | 	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+INFO | 2015/01/30 10:48:14 | 	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+INFO | 2015/01/30 10:48:14 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+INFO | 2015/01/30 10:48:14 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:919)
+INFO | 2015/01/30 10:48:14 | 	at java.lang.Thread.run(Thread.java:680)

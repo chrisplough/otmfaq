@@ -1,0 +1,93 @@
+2015-09-04 16:36:29.091	2901	Debug	Workflow	Starting workflow New XML Transmission (1037176530) in response to NewXmlTopic: transmission=202658 [integrationMediate - 1]
+2015-09-04 16:36:29.113	2901	Debug	Workflow	Publishing topic Transaction Processor: transactionNo=203418 [ActualShipment ] on queue publishWait, group null [integrationMediate - 1]
+2015-09-04 16:36:29.114	2901	Debug	Workflow	Completing workflow New XML Transmission (1037176530) [integrationMediate - 1]
+2015-09-04 16:36:29.115	2901	Debug	Workflow	Starting workflow Simple Workflow (1034213246) in response to Transaction Processor: transactionNo=203418 [ActualShipment ] [publishWait - 3]
+2015-09-04 16:36:29.309	2901	Debug	Planning	 addTSEquipments: GSK/COS/C01.28 with sEquipmentIndex: null [publishWait - 3]
+2015-09-04 16:36:29.314	2901	Debug	Planning	Sql text: SELECT permanent_om_gid FROM om_shipment_join WHERE  (shipment_gid = ?)  [publishWait - 3]
+2015-09-04 16:36:29.321	2901	Debug	Planning	DatabaseLoader is loading ShipmentData (criteria = (top_t.shipment_gid=?)) ... [publishWait - 3]
+2015-09-04 16:36:29.427	2901	Debug	Planning	Creating TShipment for shipmentPK: GSK/COS/C01.C01-001017 [publishWait - 3]
+2015-09-04 16:36:29.432	2901	Debug	Planning	Business process pid is 148656 [publishWait - 3]
+2015-09-04 16:36:29.432	2901	Debug	Planning	DatabaseLoader is loading OrderMovementData (criteria = (top_t.order_movement_gid=?)) ... [publishWait - 3]
+2015-09-04 16:36:29.452	2901	Debug	Planning	Business process pid is 148656 [publishWait - 3]
+2015-09-04 16:36:29.453	2901	Debug	Planning	Business process pid is 148656 [publishWait - 3]
+2015-09-04 16:36:29.453	2901	Debug	Planning	DatabaseLoader is loading OrderMovementData (criteria = (top_t.order_movement_gid=?)) ... [publishWait - 3]
+2015-09-04 16:36:29.465	2901	Debug	Planning	Business process pid is 148656 [publishWait - 3]
+2015-09-04 16:36:29.48	2901	Debug	Planning	Business process pid is 148656 [publishWait - 3]
+2015-09-04 16:36:29.493	2901	Debug	Planning	Business process pid is 148656 [publishWait - 3]
+2015-09-04 16:36:29.539	2901	Debug	Planning	Load TItinerary for itineraryPK: GSK.XD MAZATLAN [publishWait - 3]
+2015-09-04 16:36:29.562	2901	Debug	Planning	Creating Shipment Order Bundle for shipmentPK:GSK/COS/C01.C01-001017 [publishWait - 3]
+2015-09-04 16:36:29.566	2901	Debug	Planning	Business process pid is 148656 [publishWait - 3]
+2015-09-04 16:36:29.572	2901	Debug	Planning	Business process pid is 148656 [publishWait - 3]
+2015-09-04 16:36:29.597	2901	Debug	Planning	Created TShipment for shipmentPK:GSK/COS/C01.C01-001017 [publishWait - 3]
+2015-09-04 16:36:29.598	2901	Debug	Planning	DatabaseLoader is loading SEquipmentData (criteria = se.s_equipment_gid in (select ssej.s_equipment_gid from shipment_s_equipment_join ssej where ssej.shipment_gid = ?)) ... [publishWait - 3]
+2015-09-04 16:36:29.669	2901	Debug	Planning	DatabaseLoader is loading SShipUnitData (criteria = top_t.s_ship_unit_gid IN (?,?)) ... [publishWait - 3]
+2015-09-04 16:36:29.732	2901	Debug	Planning	Load TItinerary for itineraryPK: GSK.XD MAZATLAN [publishWait - 3]
+2015-09-04 16:36:29.751	2901	Debug	Planning	 setTSEquipments: [Lglog.business.shipment.TSEquipment;@3e2e8af9 [publishWait - 3]
+2015-09-04 16:36:29.751	2901	Debug	Planning	     each tSEquipment: SEquipmentGid: GSK/COS/C01.28, EquipmentGroup: GSK.CAMIONETA SEC 1 1/5(1043577108)   contains 0 TSShipUnits. [publishWait - 3]
+2015-09-04 16:36:29.766	2901	Debug	Planning	DatabaseLoader is loading ShipmentData (criteria = top_t.shipment_gid IN (?,?)) ... [publishWait - 3]
+2015-09-04 16:36:29.873	2901	Debug	Planning	DatabaseLoader is loading SEquipmentData (criteria = se.s_equipment_gid in (select ssej.s_equipment_gid from shipment_s_equipment_join ssej where shipment_gid = ?)) ... [publishWait - 3]
+2015-09-04 16:36:29.893	2901	Debug	Planning	DatabaseLoader is loading SShipUnitData (criteria = top_t.s_ship_unit_gid IN (?,?)) ... [publishWait - 3]
+2015-09-04 16:36:29.956	2901	Debug	Planning	DatabaseLoader is loading OrderMovementData (criteria = top_t.order_movement_gid IN (?,?)) ... [publishWait - 3]
+2015-09-04 16:36:29.974	2901	Debug	Planning	Business process pid is 148656 [publishWait - 3]
+2015-09-04 16:36:29.983	2901	Debug	Planning	Business process pid is 148656 [publishWait - 3]
+2015-09-04 16:36:29.983	2901	Debug	Planning	DatabaseLoader is loading SShipUnitData (criteria = top_t.s_ship_unit_gid IN (?,?)) ... [publishWait - 3]
+2015-09-04 16:36:30.047	2901	Debug	Planning	DatabaseLoader is loading ShipUnitData (criteria = (top_t.ship_unit_gid=?)) ... [publishWait - 3]
+2015-09-04 16:36:30.068	2901	Debug	Planning	DatabaseLoader is loading ShipUnitData (criteria = (top_t.ship_unit_gid=?)) ... [publishWait - 3]
+2015-09-04 16:36:30.089	2901	Debug	Planning	 setTSEquipments: [Lglog.business.shipment.TSEquipment;@3e21acf9 [publishWait - 3]
+2015-09-04 16:36:30.09	2901	Debug	Planning	     each tSEquipment: SEquipmentGid: GSK/COS/C01.28, EquipmentGroup: GSK.CAMIONETA SEC 1 1/5(1043004534)   contains 0 TSShipUnits. [publishWait - 3]
+2015-09-04 16:36:30.09	2901	Debug	Planning	 setTSEquipments: [Lglog.business.shipment.TSEquipment;@3e21b4dc [publishWait - 3]
+2015-09-04 16:36:30.09	2901	Debug	Planning	     each tSEquipment: SEquipmentGid: GSK/COS/C01.28, EquipmentGroup: GSK.CAMIONETA SEC 1 1/5(1043004534)   contains 0 TSShipUnits. [publishWait - 3]
+2015-09-04 16:36:30.09	2901	Debug	Workflow	Publishing topic ShipmentActualTopic on queue execution, waiting ... [publishWait - 3]
+2015-09-04 16:36:30.093	2901	Debug	Workflow	Starting workflow Simple Workflow (1038551209) in response to ShipmentActualTopic [execution - 1]
+2015-09-04 16:36:30.103	2901	Debug	Planning	DatabaseLoader is loading ShipmentData (criteria = top_t.shipment_gid IN (?,?)) ... [execution - 1]
+2015-09-04 16:36:30.153	2901	Debug	Planning	DatabaseLoader is loading SEquipmentData (criteria = se.s_equipment_gid in (select ssej.s_equipment_gid from shipment_s_equipment_join ssej where shipment_gid = ?)) ... [execution - 1]
+2015-09-04 16:36:30.161	2901	Debug	Planning	DatabaseLoader is loading SShipUnitData (criteria = top_t.s_ship_unit_gid IN (?,?)) ... [execution - 1]
+2015-09-04 16:36:30.201	2901	Debug	Planning	DatabaseLoader is loading OrderMovementData (criteria = top_t.order_movement_gid IN (?,?)) ... [execution - 1]
+2015-09-04 16:36:30.211	2901	Debug	Planning	Business process pid is null [execution - 1]
+2015-09-04 16:36:30.213	2901	Debug	Planning	Business process pid is null [execution - 1]
+2015-09-04 16:36:30.213	2901	Debug	Planning	DatabaseLoader is loading SShipUnitData (criteria = top_t.s_ship_unit_gid IN (?,?)) ... [execution - 1]
+2015-09-04 16:36:30.25	2901	Debug	Planning	DatabaseLoader is loading ShipUnitData (criteria = (top_t.ship_unit_gid=?)) ... [execution - 1]
+2015-09-04 16:36:30.261	2901	Debug	Planning	DatabaseLoader is loading ShipUnitData (criteria = (top_t.ship_unit_gid=?)) ... [execution - 1]
+2015-09-04 16:36:30.269	2901	Debug	Planning	 setTSEquipments: [Lglog.business.shipment.TSEquipment;@3e1c2d79 [execution - 1]
+2015-09-04 16:36:30.269	2901	Debug	Planning	     each tSEquipment: SEquipmentGid: GSK/COS/C01.28, EquipmentGroup: GSK.CAMIONETA SEC 1 1/5(1042101659)   contains 0 TSShipUnits. [execution - 1]
+2015-09-04 16:36:30.269	2901	Debug	Planning	 setTSEquipments: [Lglog.business.shipment.TSEquipment;@3e1c3555 [execution - 1]
+2015-09-04 16:36:30.269	2901	Debug	Planning	     each tSEquipment: SEquipmentGid: GSK/COS/C01.28, EquipmentGroup: GSK.CAMIONETA SEC 1 1/5(1042101659)   contains 0 TSShipUnits. [execution - 1]
+2015-09-04 16:36:30.271	2901	Error	Exception	java.lang.NullPointerException
+
+java.lang.NullPointerException
+	at glog.business.shipment.TSShipUnit$1TSShipUnitLineComparator.compare(TSShipUnit.java:4044)
+	at java.util.Arrays.mergeSort(Arrays.java:1270)
+	at java.util.Arrays.sort(Arrays.java:1210)
+	at java.util.Collections.sort(Collections.java:157)
+	at glog.business.shipment.TSShipUnit.hasSameLines(TSShipUnit.java:4064)
+	at glog.business.shipment.TSShipUnit.exactlyOverlaps(TSShipUnit.java:4169)
+	at glog.business.shipment.TShipment.getPickOrDropStop(TShipment.java:2757)
+	at glog.business.shipment.TShipment.getPickupStop(TShipment.java:2782)
+	at glog.business.shipmentactual.InsertPropagator.applyInsert(InsertPropagator.java:140)
+	at glog.business.shipmentactual.SShipUnitModifier.applySShipUnitMod(SShipUnitModifier.java:125)
+	at glog.business.shipmentactual.ShipmentActualExecutor.executeShipmentActual(ShipmentActualExecutor.java:573)
+	at glog.business.shipmentactual.ShipmentActualExecutor.executeShipmentActual(ShipmentActualExecutor.java:493)
+	at glog.business.shipmentactual.ShipmentActualTopic.execute(ShipmentActualTopic.java:74)
+	at glog.server.workflow.SimpleWorkflow.execute(SimpleWorkflow.java:23)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:64)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(WorkflowSessionServerSideEJBWrapper.java:40)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.execute(Unknown Source)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:356)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:145)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:100)
+	at glog.util.event.EventThread.run(EventThread.java:86)
+	at java.lang.Thread.run(Thread.java:680)
+ [execution - 1]
+2015-09-04 16:36:30.271	2901	Debug	Workflow	Completing workflow Simple Workflow (1038551209) [execution - 1]
+2015-09-04 16:36:30.273	2901	Debug	Planning	Business process pid is 148647 [publishWait - 3]
+2015-09-04 16:36:30.273	2901	Debug	Planning	Business process pid is 148647 [publishWait - 3]
+2015-09-04 16:36:30.273	2901	Debug	Planning	Business process pid is 148647 [publishWait - 3]
+2015-09-04 16:36:30.273	2901	Debug	Planning	Business process pid is null [publishWait - 3]
+2015-09-04 16:36:30.273	2901	Debug	Planning	Business process pid is 148647 [publishWait - 3]
+2015-09-04 16:36:30.342	2901	Debug	Workflow	Completing workflow Simple Workflow (1034213246) [publishWait - 3]
+2015-09-04 16:36:30.343	2901	Debug	Workflow	Publishing topic PostTransmission: user=GSK.PCASANOVA, transmissionId=202658 on queue integrationOutbound, group null [publishWait - 3]
+2015-09-04 16:36:30.346	2901	Debug	Workflow	Starting workflow Simple Workflow (1034500933) in response to PostTransmission: user=GSK.PCASANOVA, transmissionId=202658 [integrationOutbound - 1]
+2015-09-04 16:36:30.394	2901	Debug	Workflow	Completing workflow Simple Workflow (1034500933) [integrationOutbound - 1]

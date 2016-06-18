@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<navgroups product="crawlability_sitemap">
+	<navgroup phrase="vbseo_vbseo" displayorder="3">
+
+		<navoption link="../{$vbulletin->config[Misc][admincpdir]}/options.php?do=options&amp;dogroup=vbseo_sitemap" displayorder="20">
+			<phrase>vbseo_sm_settings</phrase>
+		</navoption>
+		<navoption displayorder="30">
+			<phrase>vbseo_sm_reports</phrase>
+			<link>../vbseo_sitemap/index.php?rlist=true</link>
+		</navoption>
+
+	</navgroup>
+</navgroups>

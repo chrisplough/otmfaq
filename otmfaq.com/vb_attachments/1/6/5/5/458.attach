@@ -1,0 +1,1328 @@
+  <?xml version="1.0" encoding="UTF-8" ?> 
+  <wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://ws.otmadaptador.mutua.mapfre.com" xmlns:intf="http://ws.otmadaptador.mutua.mapfre.com" xmlns:tns1="http://otm.apps.xmlns.oracle.com" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ws.otmadaptador.mutua.mapfre.com">
+  <!-- 
+WSDL created by Apache Axis version: 1.3
+Built on Oct 05, 2005 (05:23:37 EDT)
+
+  --> 
+  <wsdl:types>
+  <schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://ws.otmadaptador.mutua.mapfre.com">
+  <import namespace="http://otm.apps.xmlns.oracle.com" /> 
+  <element name="actualizaEstadoOrden">
+  <complexType>
+  <sequence>
+  <element name="inBean" type="tns1:Transmission" /> 
+  </sequence>
+  </complexType>
+  </element>
+  <complexType name="ArrayOf_xsd_string">
+  <sequence>
+  <element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ArrayOf_tns1_Location">
+  <sequence>
+  <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Location" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ArrayOf_tns1_GLogXMLElement">
+  <sequence>
+  <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:GLogXMLElement" /> 
+  </sequence>
+  </complexType>
+  <element name="actualizaEstadoOrdenResponse">
+  <complexType>
+  <sequence>
+  <element name="actualizaEstadoOrdenReturn" type="tns1:TransmissionAck" /> 
+  </sequence>
+  </complexType>
+  </element>
+  </schema>
+  <schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://otm.apps.xmlns.oracle.com">
+  <import namespace="http://ws.otmadaptador.mutua.mapfre.com" /> 
+  <complexType name="Gid">
+  <sequence>
+  <element name="domainName" nillable="true" type="xsd:string" /> 
+  <element name="xid" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="RegionGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="GeoHierarchyGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="LocationGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="CountryCode3Gid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="MileageAddress">
+  <sequence>
+  <element name="city" nillable="true" type="xsd:string" /> 
+  <element name="zone1" nillable="true" type="xsd:string" /> 
+  <element name="zone2" nillable="true" type="xsd:string" /> 
+  <element name="zone3" nillable="true" type="xsd:string" /> 
+  <element name="geoHierarchyGid" nillable="true" type="tns1:GeoHierarchyGid" /> 
+  <element name="countyQualifier" nillable="true" type="xsd:string" /> 
+  <element name="provinceCode" nillable="true" type="xsd:string" /> 
+  <element name="zone4" nillable="true" type="xsd:string" /> 
+  <element name="locationGid" nillable="true" type="tns1:LocationGid" /> 
+  <element name="postalCode" nillable="true" type="xsd:string" /> 
+  <element name="countryCode3Gid" nillable="true" type="tns1:CountryCode3Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="HnameComponentGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="PostalCodeRange">
+  <sequence>
+  <element name="hnameComponentGid" nillable="true" type="tns1:HnameComponentGid" /> 
+  <element name="lowRangeValue" nillable="true" type="xsd:string" /> 
+  <element name="highRangeValue" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="RegionComponent">
+  <sequence>
+  <element name="mileageAddress" nillable="true" type="tns1:MileageAddress" /> 
+  <element name="postalCodeRange" nillable="true" type="tns1:PostalCodeRange" /> 
+  </sequence>
+  </complexType>
+  <complexType name="RegionHeader">
+  <sequence>
+  <element name="regionGid" nillable="true" type="tns1:RegionGid" /> 
+  <element name="regionDesc" nillable="true" type="xsd:string" /> 
+  <element maxOccurs="unbounded" name="regionComponent" nillable="true" type="tns1:RegionComponent" /> 
+  </sequence>
+  </complexType>
+  <complexType name="RegionRef">
+  <sequence>
+  <element name="regionHeader" nillable="true" type="tns1:RegionHeader" /> 
+  <element name="regionGid" nillable="true" type="tns1:RegionGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="RailStationCodeGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="SubstituteLocationGid">
+  <sequence>
+  <element name="locationGid" nillable="true" type="tns1:LocationGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="TimeZoneGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="AddressLines">
+  <sequence>
+  <element name="sequenceNumber" nillable="true" type="xsd:string" /> 
+  <element name="addressLine" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="Address">
+  <sequence>
+  <element name="timeZoneGid" nillable="true" type="tns1:TimeZoneGid" /> 
+  <element name="latitude" nillable="true" type="xsd:string" /> 
+  <element name="longitude" nillable="true" type="xsd:string" /> 
+  <element name="province" nillable="true" type="xsd:string" /> 
+  <element name="countyQualifier" nillable="true" type="xsd:string" /> 
+  <element name="postalCode" nillable="true" type="xsd:string" /> 
+  <element name="countryCode3Gid" nillable="true" type="tns1:CountryCode3Gid" /> 
+  <element name="city" nillable="true" type="xsd:string" /> 
+  <element name="addressLine1" nillable="true" type="xsd:string" /> 
+  <element name="addressLine2" nillable="true" type="xsd:string" /> 
+  <element name="zone1" nillable="true" type="xsd:string" /> 
+  <element name="zone2" nillable="true" type="xsd:string" /> 
+  <element name="zone3" nillable="true" type="xsd:string" /> 
+  <element maxOccurs="unbounded" name="addressLines" nillable="true" type="tns1:AddressLines" /> 
+  <element name="zone4" nillable="true" type="xsd:string" /> 
+  <element name="provinceCode" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="DropoffRoutingSeqGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="PickupRoutingSeqGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="AccessorialCodeGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="RateClassificationGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="EquipmentGroupProfileGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="RailSPLCGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="DurationUOMGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="Duration">
+  <sequence>
+  <element name="durationValue" nillable="true" type="xsd:string" /> 
+  <element name="durationUOMGid" nillable="true" type="tns1:DurationUOMGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="MaxFreightIdleTime">
+  <sequence>
+  <element name="duration" nillable="true" type="tns1:Duration" /> 
+  </sequence>
+  </complexType>
+  <complexType name="LocationRoleGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="VariableStopTime">
+  <sequence>
+  <element name="duration" nillable="true" type="tns1:Duration" /> 
+  </sequence>
+  </complexType>
+  <complexType name="CalendarGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="WeightUOMGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="Weight">
+  <sequence>
+  <element name="weightUOMGid" nillable="true" type="tns1:WeightUOMGid" /> 
+  <element name="weightValue" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="VarHandlingWeight">
+  <sequence>
+  <element name="weight" nillable="true" type="tns1:Weight" /> 
+  </sequence>
+  </complexType>
+  <complexType name="VarHandlingTime">
+  <sequence>
+  <element name="duration" nillable="true" type="tns1:Duration" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ShipUnitSpecProfileGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="FixedStopTime">
+  <sequence>
+  <element name="duration" nillable="true" type="tns1:Duration" /> 
+  </sequence>
+  </complexType>
+  <complexType name="FlexCommodityProfileGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="VolumeUOMGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="Volume">
+  <sequence>
+  <element name="volumeValue" nillable="true" type="xsd:string" /> 
+  <element name="volumeUOMGid" nillable="true" type="tns1:VolumeUOMGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="VarStopWeightVolume">
+  <sequence>
+  <element name="weight" nillable="true" type="tns1:Weight" /> 
+  <element name="volume" nillable="true" type="tns1:Volume" /> 
+  </sequence>
+  </complexType>
+  <complexType name="LocationActivityTime">
+  <sequence>
+  <element name="varStopQuantity" nillable="true" type="xsd:string" /> 
+  <element name="sequenceNumber" nillable="true" type="xsd:string" /> 
+  <element name="shipUnitSpecProfileGid" nillable="true" type="tns1:ShipUnitSpecProfileGid" /> 
+  <element name="variableStopTime" nillable="true" type="tns1:VariableStopTime" /> 
+  <element name="fixedStopTime" nillable="true" type="tns1:FixedStopTime" /> 
+  <element name="flexCommodityProfileGid" nillable="true" type="tns1:FlexCommodityProfileGid" /> 
+  <element name="varStopWeightVolume" nillable="true" type="tns1:VarStopWeightVolume" /> 
+  </sequence>
+  </complexType>
+  <complexType name="FixedHandlingTime">
+  <sequence>
+  <element name="duration" nillable="true" type="tns1:Duration" /> 
+  </sequence>
+  </complexType>
+  <complexType name="LocationRole">
+  <sequence>
+  <element name="createXDockHandlingShipment" nillable="true" type="xsd:string" /> 
+  <element name="varStopQuantity" nillable="true" type="xsd:string" /> 
+  <element name="maxFreightIdleTime" nillable="true" type="tns1:MaxFreightIdleTime" /> 
+  <element name="locationRoleGid" nillable="true" type="tns1:LocationRoleGid" /> 
+  <element name="variableStopTime" nillable="true" type="tns1:VariableStopTime" /> 
+  <element name="createPoolHandlingShipment" nillable="true" type="xsd:string" /> 
+  <element name="calendarGid" nillable="true" type="tns1:CalendarGid" /> 
+  <element name="varHandlingWeight" nillable="true" type="tns1:VarHandlingWeight" /> 
+  <element name="varHandlingTime" nillable="true" type="tns1:VarHandlingTime" /> 
+  <element name="XDockIsInboundBias" nillable="true" type="xsd:string" /> 
+  <element maxOccurs="unbounded" name="locationActivityTime" nillable="true" type="tns1:LocationActivityTime" /> 
+  <element name="fixedStopTime" nillable="true" type="tns1:FixedStopTime" /> 
+  <element name="fixedHandlingTime" nillable="true" type="tns1:FixedHandlingTime" /> 
+  <element name="varStopWeightVolume" nillable="true" type="tns1:VarStopWeightVolume" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ERPCGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ComMethodGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ExpectedResponseTime">
+  <sequence>
+  <element name="duration" nillable="true" type="tns1:Duration" /> 
+  </sequence>
+  </complexType>
+  <complexType name="CommunicationMethod">
+  <sequence>
+  <element name="comMethodRank" nillable="true" type="xsd:string" /> 
+  <element name="calendarGid" nillable="true" type="tns1:CalendarGid" /> 
+  <element name="comMethodGid" nillable="true" type="tns1:ComMethodGid" /> 
+  <element name="expectedResponseTime" nillable="true" type="tns1:ExpectedResponseTime" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ExternalSystemGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ExternalSystem">
+  <sequence>
+  <element name="password" nillable="true" type="xsd:string" /> 
+  <element name="URL" nillable="true" type="xsd:string" /> 
+  <element name="externalSystemGid" nillable="true" type="tns1:ExternalSystemGid" /> 
+  <element name="userName" nillable="true" type="xsd:string" /> 
+  <element name="useGlcredential" nillable="true" type="xsd:string" /> 
+  <element name="maxTransactsPerTransmission" nillable="true" type="xsd:string" /> 
+  <element name="description" nillable="true" type="xsd:string" /> 
+  <element name="intQueueName" nillable="true" type="xsd:string" /> 
+  <element name="maxBytesPerTransmission" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="PreferenceGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="Preference">
+  <sequence>
+  <element name="preferenceGid" nillable="true" type="tns1:PreferenceGid" /> 
+  <element name="value" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="GlUserGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="TimeWindowGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="StylesheetProfileGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ConsolidationProfileGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ConsolidationProfile">
+  <sequence>
+  <element name="transactionCode" nillable="true" type="xsd:string" /> 
+  <element name="timeWindowGid" nillable="true" type="tns1:TimeWindowGid" /> 
+  <element name="stylesheetProfileGid" nillable="true" type="tns1:StylesheetProfileGid" /> 
+  <element name="consolidationProfileGid" nillable="true" type="tns1:ConsolidationProfileGid" /> 
+  <element name="batchSize" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="FromAddrContactGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ContactGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="RemarkQualifierGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="Remark">
+  <sequence>
+  <element name="remarkSequence" nillable="true" type="xsd:string" /> 
+  <element name="remarkText" nillable="true" type="xsd:string" /> 
+  <element name="remarkQualifierGid" nillable="true" type="tns1:RemarkQualifierGid" /> 
+  <element name="remarkLevel" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="CorporationGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ContactCorporation">
+  <sequence>
+  <element name="corporationGid" nillable="true" type="tns1:CorporationGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="Contact">
+  <sequence>
+  <element maxOccurs="unbounded" name="communicationMethod" nillable="true" type="tns1:CommunicationMethod" /> 
+  <element name="externalSystem" nillable="true" type="tns1:ExternalSystem" /> 
+  <element name="externalSystemGid" nillable="true" type="tns1:ExternalSystemGid" /> 
+  <element name="languageSpoken" nillable="true" type="xsd:string" /> 
+  <element maxOccurs="unbounded" name="preference" nillable="true" type="tns1:Preference" /> 
+  <element name="isPrimaryContact" nillable="true" type="xsd:string" /> 
+  <element name="emailAddress" nillable="true" type="xsd:string" /> 
+  <element name="glUserGid" nillable="true" type="tns1:GlUserGid" /> 
+  <element name="locationGid" nillable="true" type="tns1:LocationGid" /> 
+  <element name="replaceChildren" nillable="true" type="impl:ArrayOf_xsd_string" /> 
+  <element name="fax" nillable="true" type="xsd:string" /> 
+  <element name="isFromAddress" nillable="true" type="xsd:string" /> 
+  <element name="isNotificationOn" nillable="true" type="xsd:string" /> 
+  <element name="lastName" nillable="true" type="xsd:string" /> 
+  <element name="consolidationProfile" nillable="true" type="tns1:ConsolidationProfile" /> 
+  <element name="fromAddrContactGid" nillable="true" type="tns1:FromAddrContactGid" /> 
+  <element name="jobTitle" nillable="true" type="xsd:string" /> 
+  <element name="firstName" nillable="true" type="xsd:string" /> 
+  <element name="consolidationProfileGid" nillable="true" type="tns1:ConsolidationProfileGid" /> 
+  <element name="phone1" nillable="true" type="xsd:string" /> 
+  <element name="phone2" nillable="true" type="xsd:string" /> 
+  <element name="contactGid" nillable="true" type="tns1:ContactGid" /> 
+  <element name="consolidatedNotifyOnly" nillable="true" type="xsd:string" /> 
+  <element name="recipientDomainName" nillable="true" type="xsd:string" /> 
+  <element name="remark" nillable="true" type="tns1:Remark" /> 
+  <element name="transactionCode" nillable="true" type="xsd:string" /> 
+  <element maxOccurs="unbounded" name="contactCorporation" nillable="true" type="tns1:ContactCorporation" /> 
+  </sequence>
+  </complexType>
+  <complexType name="CostQualGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="CostReferenceGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="SpecialServiceRef">
+  <sequence>
+  <element name="costQualGid" nillable="true" type="tns1:CostQualGid" /> 
+  <element name="costReferenceGid" nillable="true" type="tns1:CostReferenceGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="SpecialServiceGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="AdjustmentReasonGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="SpecialService">
+  <sequence>
+  <element maxOccurs="unbounded" name="specialServiceRef" nillable="true" type="tns1:SpecialServiceRef" /> 
+  <element name="specialServiceGid" nillable="true" type="tns1:SpecialServiceGid" /> 
+  <element maxOccurs="unbounded" name="remark" nillable="true" type="tns1:Remark" /> 
+  <element name="specialServiceDesc" nillable="true" type="xsd:string" /> 
+  <element name="processAsFlowThru" nillable="true" type="xsd:string" /> 
+  <element name="adjustmentReasonGid" nillable="true" type="tns1:AdjustmentReasonGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ShipUnitSpecGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="TareWeight">
+  <sequence>
+  <element name="weight" nillable="true" type="tns1:Weight" /> 
+  </sequence>
+  </complexType>
+  <complexType name="WidthUOMGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="Width">
+  <sequence>
+  <element name="widthUOMGid" nillable="true" type="tns1:WidthUOMGid" /> 
+  <element name="widthValue" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="HeightUOMGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="Height">
+  <sequence>
+  <element name="heightUOMGid" nillable="true" type="tns1:HeightUOMGid" /> 
+  <element name="heightValue" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="MaxStackingHeight">
+  <sequence>
+  <element name="height" nillable="true" type="tns1:Height" /> 
+  </sequence>
+  </complexType>
+  <complexType name="UOMGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="Diameter">
+  <sequence>
+  <element name="UOMGid" nillable="true" type="tns1:UOMGid" /> 
+  <element name="diameterValue" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="NestingVolume">
+  <sequence>
+  <element name="volume" nillable="true" type="tns1:Volume" /> 
+  </sequence>
+  </complexType>
+  <complexType name="PackagingFormCodeGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="LengthUOMGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="Length">
+  <sequence>
+  <element name="lengthUOMGid" nillable="true" type="tns1:LengthUOMGid" /> 
+  <element name="lengthValue" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="RefnumQualifierGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="Refnum">
+  <sequence>
+  <element name="refnumQualifierGid" nillable="true" type="tns1:RefnumQualifierGid" /> 
+  <element name="refnumValue" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="MaxVolume">
+  <sequence>
+  <element name="volume" nillable="true" type="tns1:Volume" /> 
+  </sequence>
+  </complexType>
+  <complexType name="LoadingPatternGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="MaxWeight">
+  <sequence>
+  <element name="weight" nillable="true" type="tns1:Weight" /> 
+  </sequence>
+  </complexType>
+  <complexType name="StackBelowProfileGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="MaxLengthOverhang">
+  <sequence>
+  <element name="length" nillable="true" type="tns1:Length" /> 
+  </sequence>
+  </complexType>
+  <complexType name="MaxWidthOverhang">
+  <sequence>
+  <element name="width" nillable="true" type="tns1:Width" /> 
+  </sequence>
+  </complexType>
+  <complexType name="MaxTopWeight">
+  <sequence>
+  <element name="weight" nillable="true" type="tns1:Weight" /> 
+  </sequence>
+  </complexType>
+  <complexType name="OrientationGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ShipUnitSpecOrientation">
+  <sequence>
+  <element name="stackBelowProfileGid" nillable="true" type="tns1:StackBelowProfileGid" /> 
+  <element name="maxLengthOverhang" nillable="true" type="tns1:MaxLengthOverhang" /> 
+  <element name="maxWidthOverhang" nillable="true" type="tns1:MaxWidthOverhang" /> 
+  <element name="maxTopWeight" nillable="true" type="tns1:MaxTopWeight" /> 
+  <element name="orientationGid" nillable="true" type="tns1:OrientationGid" /> 
+  <element name="isPreferred" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="CoreDiameter">
+  <sequence>
+  <element name="diameter" nillable="true" type="tns1:Diameter" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ShipUnitSpec">
+  <sequence>
+  <element name="shipUnitSpecGid" nillable="true" type="tns1:ShipUnitSpecGid" /> 
+  <element name="isStackableBelow" nillable="true" type="xsd:string" /> 
+  <element name="volume" nillable="true" type="tns1:Volume" /> 
+  <element name="shipUnitSpecName" nillable="true" type="xsd:string" /> 
+  <element name="maxNestingCount" nillable="true" type="xsd:string" /> 
+  <element name="isNestable" nillable="true" type="xsd:string" /> 
+  <element name="tareWeight" nillable="true" type="tns1:TareWeight" /> 
+  <element name="width" nillable="true" type="tns1:Width" /> 
+  <element name="maxStackingLayers" nillable="true" type="xsd:string" /> 
+  <element name="unitType" nillable="true" type="xsd:string" /> 
+  <element name="maxStackingHeight" nillable="true" type="tns1:MaxStackingHeight" /> 
+  <element name="diameter" nillable="true" type="tns1:Diameter" /> 
+  <element name="nestingVolume" nillable="true" type="tns1:NestingVolume" /> 
+  <element name="isCylindrical" nillable="true" type="xsd:string" /> 
+  <element name="packagingFormCodeGid" nillable="true" type="tns1:PackagingFormCodeGid" /> 
+  <element name="isStackableAbove" nillable="true" type="xsd:string" /> 
+  <element name="length" nillable="true" type="tns1:Length" /> 
+  <element maxOccurs="unbounded" name="refnum" nillable="true" type="tns1:Refnum" /> 
+  <element name="maxVolume" nillable="true" type="tns1:MaxVolume" /> 
+  <element maxOccurs="unbounded" name="loadingPatternGid" nillable="true" type="tns1:LoadingPatternGid" /> 
+  <element name="height" nillable="true" type="tns1:Height" /> 
+  <element name="stackingIndex" nillable="true" type="xsd:string" /> 
+  <element name="maxWeight" nillable="true" type="tns1:MaxWeight" /> 
+  <element name="isInOnMax" nillable="true" type="xsd:string" /> 
+  <element maxOccurs="unbounded" name="shipUnitSpecOrientation" nillable="true" type="tns1:ShipUnitSpecOrientation" /> 
+  <element name="coreDiameter" nillable="true" type="tns1:CoreDiameter" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ShipUnitSpecRef">
+  <sequence>
+  <element name="shipUnitSpec" nillable="true" type="tns1:ShipUnitSpec" /> 
+  <element name="shipUnitSpecGid" nillable="true" type="tns1:ShipUnitSpecGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="MixedFreightTHU">
+  <sequence>
+  <element name="shipUnitSpecRef" nillable="true" type="tns1:ShipUnitSpecRef" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ServiceProviderProfileGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="StatusGroupGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="StatusGroup">
+  <sequence>
+  <element name="statusGroupDescription" nillable="true" type="xsd:string" /> 
+  <element name="statusGroupGid" nillable="true" type="tns1:StatusGroupGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ReasonCodeGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ReasonCode">
+  <sequence>
+  <element name="reasonCodeGid" nillable="true" type="tns1:ReasonCodeGid" /> 
+  <element name="reasonCodeDescription" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ReasonGroupGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ReasonGroup">
+  <sequence>
+  <element name="reasonGroupDescription" nillable="true" type="xsd:string" /> 
+  <element name="reasonGroupGid" nillable="true" type="tns1:ReasonGroupGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="QuickCodeGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ResponsiblePartyGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="StatusCodeGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="StatusCode">
+  <sequence>
+  <element name="statusCodeDescription" nillable="true" type="xsd:string" /> 
+  <element name="statusCodeGid" nillable="true" type="tns1:StatusCodeGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="EventReason">
+  <sequence>
+  <element name="statusGroup" nillable="true" type="tns1:StatusGroup" /> 
+  <element name="reasonCode" nillable="true" type="tns1:ReasonCode" /> 
+  <element name="reasonGroup" nillable="true" type="tns1:ReasonGroup" /> 
+  <element name="quickCodeGid" nillable="true" type="tns1:QuickCodeGid" /> 
+  <element name="reasonComment" nillable="true" type="xsd:string" /> 
+  <element name="responsiblePartyGid" nillable="true" type="tns1:ResponsiblePartyGid" /> 
+  <element name="statusCode" nillable="true" type="tns1:StatusCode" /> 
+  </sequence>
+  </complexType>
+  <complexType name="SendReasonGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="SendReason">
+  <sequence>
+  <element maxOccurs="unbounded" name="remark" nillable="true" type="tns1:Remark" /> 
+  <element name="eventReason" nillable="true" type="tns1:EventReason" /> 
+  <element name="objectType" nillable="true" type="xsd:string" /> 
+  <element name="processControlRequestID" nillable="true" type="xsd:string" /> 
+  <element name="sendReasonGid" nillable="true" type="tns1:SendReasonGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="PostalSPLCGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ModeProfileGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ContactProfileGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="LocationResourceGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="IntSavedQueryGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="IntSavedQueryArg">
+  <sequence>
+  <element name="argValue" nillable="true" type="xsd:string" /> 
+  <element name="argName" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="IntSavedQuery">
+  <sequence>
+  <element name="intSavedQueryGid" nillable="true" type="tns1:IntSavedQueryGid" /> 
+  <element name="maximumMatch" nillable="true" type="xsd:string" /> 
+  <element name="isMultiMatch" nillable="true" type="xsd:string" /> 
+  <element maxOccurs="unbounded" name="intSavedQueryArg" nillable="true" type="tns1:IntSavedQueryArg" /> 
+  <element name="noDataFoundAction" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="LocationResource">
+  <sequence>
+  <element name="calendarGid" nillable="true" type="tns1:CalendarGid" /> 
+  <element name="modeProfileGid" nillable="true" type="tns1:ModeProfileGid" /> 
+  <element name="contactProfileGid" nillable="true" type="tns1:ContactProfileGid" /> 
+  <element name="locationResourceName" nillable="true" type="xsd:string" /> 
+  <element name="locationResourceGid" nillable="true" type="tns1:LocationResourceGid" /> 
+  <element name="description" nillable="true" type="xsd:string" /> 
+  <element name="equipmentGroupProfileGid" nillable="true" type="tns1:EquipmentGroupProfileGid" /> 
+  <element name="serviceProviderProfileGid" nillable="true" type="tns1:ServiceProviderProfileGid" /> 
+  <element name="flexCommodityCheckOption" nillable="true" type="xsd:string" /> 
+  <element name="flexCommodityProfileGid" nillable="true" type="tns1:FlexCommodityProfileGid" /> 
+  <element name="intSavedQuery" nillable="true" type="tns1:IntSavedQuery" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ResourceTypeGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="LocationResourceType">
+  <sequence>
+  <element name="calendarGid" nillable="true" type="tns1:CalendarGid" /> 
+  <element maxOccurs="unbounded" name="locationResource" nillable="true" type="tns1:LocationResource" /> 
+  <element name="constraintAppt" nillable="true" type="xsd:string" /> 
+  <element name="description" nillable="true" type="xsd:string" /> 
+  <element name="autoScheduleAppt" nillable="true" type="xsd:string" /> 
+  <element name="resourceTypeGid" nillable="true" type="tns1:ResourceTypeGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="LocationRefnumQualifierGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="LocationRefnum">
+  <sequence>
+  <element name="locationRefnumValue" nillable="true" type="xsd:string" /> 
+  <element name="locationRefnumQualifierGid" nillable="true" type="tns1:LocationRefnumQualifierGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="RailJunctionCodeGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="SlotTimeInterval">
+  <sequence>
+  <element name="duration" nillable="true" type="tns1:Duration" /> 
+  </sequence>
+  </complexType>
+  <complexType name="PlanFromLocationGid">
+  <sequence>
+  <element name="locationGid" nillable="true" type="tns1:LocationGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="StatusTypeGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="StatusValueGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="Status">
+  <sequence>
+  <element name="statusTypeGid" nillable="true" type="tns1:StatusTypeGid" /> 
+  <element name="statusValueGid" nillable="true" type="tns1:StatusValueGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="LocationCapacityGroupGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="EffectiveDate">
+  <sequence>
+  <element name="GLogDate" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ExpirationDate">
+  <sequence>
+  <element name="GLogDate" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="LocationCapacityGroupInfo">
+  <sequence>
+  <element name="locationCapacityGroupGid" nillable="true" type="tns1:LocationCapacityGroupGid" /> 
+  <element name="effectiveDate" nillable="true" type="tns1:EffectiveDate" /> 
+  <element name="expirationDate" nillable="true" type="tns1:ExpirationDate" /> 
+  </sequence>
+  </complexType>
+  <complexType name="AppointDisplayDuration">
+  <sequence>
+  <element name="duration" nillable="true" type="tns1:Duration" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ServiceProviderAliasQualifierGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ServiceProviderAlias">
+  <sequence>
+  <element name="serviceProviderAliasValue" nillable="true" type="xsd:string" /> 
+  <element name="serviceProviderAliasQualifierGid" nillable="true" type="tns1:ServiceProviderAliasQualifierGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="AutoApproveRuleProfileGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="OutXmlProfileGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="MatchRuleProfileGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="RateServiceGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="AllocationRuleProfileGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ScacGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="LineApproveTolProfileGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ServprovService">
+  <sequence>
+  <element name="locationGid" nillable="true" type="tns1:LocationGid" /> 
+  <element name="rateServiceGid" nillable="true" type="tns1:RateServiceGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="TenderResponseTime">
+  <sequence>
+  <element name="duration" nillable="true" type="tns1:Duration" /> 
+  </sequence>
+  </complexType>
+  <complexType name="EquipMarkGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="EquipMarkListGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="EquipMarkList">
+  <sequence>
+  <element name="description" nillable="true" type="xsd:string" /> 
+  <element maxOccurs="unbounded" name="equipMarkGid" nillable="true" type="tns1:EquipMarkGid" /> 
+  <element name="equipMarkListGid" nillable="true" type="tns1:EquipMarkListGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="IncludeContact">
+  <sequence>
+  <element maxOccurs="unbounded" name="contactGid" nillable="true" type="tns1:ContactGid" /> 
+  <element maxOccurs="unbounded" name="contact" nillable="true" type="tns1:Contact" /> 
+  </sequence>
+  </complexType>
+  <complexType name="GroupSavedQueryGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ContactGroup">
+  <sequence>
+  <element maxOccurs="unbounded" name="communicationMethod" nillable="true" type="tns1:CommunicationMethod" /> 
+  <element name="contactGid" nillable="true" type="tns1:ContactGid" /> 
+  <element name="languageSpoken" nillable="true" type="xsd:string" /> 
+  <element name="replaceChildren" nillable="true" type="impl:ArrayOf_xsd_string" /> 
+  <element name="transactionCode" nillable="true" type="xsd:string" /> 
+  <element maxOccurs="unbounded" name="preference" nillable="true" type="tns1:Preference" /> 
+  <element name="isBroadcast" nillable="true" type="xsd:string" /> 
+  <element name="includeContact" nillable="true" type="tns1:IncludeContact" /> 
+  <element name="groupSavedQueryGid" nillable="true" type="tns1:GroupSavedQueryGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ContactRef">
+  <sequence>
+  <element name="contact" nillable="true" type="tns1:Contact" /> 
+  <element name="contactGroup" nillable="true" type="tns1:ContactGroup" /> 
+  <element name="contactGid" nillable="true" type="tns1:ContactGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="BroadcastSpotContact">
+  <sequence>
+  <element name="contactRef" nillable="true" type="tns1:ContactRef" /> 
+  </sequence>
+  </complexType>
+  <complexType name="FinancialAmount">
+  <sequence>
+  <element name="monetaryAmount" nillable="true" type="xsd:string" /> 
+  <element name="rateToBase" nillable="true" type="xsd:string" /> 
+  <element name="globalCurrencyCode" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="CoverageAmount">
+  <sequence>
+  <element name="financialAmount" nillable="true" type="tns1:FinancialAmount" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ServprovPolicy">
+  <sequence>
+  <element name="policyType" nillable="true" type="xsd:string" /> 
+  <element name="sequenceNumber" nillable="true" type="xsd:string" /> 
+  <element name="effectiveDate" nillable="true" type="tns1:EffectiveDate" /> 
+  <element name="policyNumber" nillable="true" type="xsd:string" /> 
+  <element name="issuer" nillable="true" type="xsd:string" /> 
+  <element name="expirationDate" nillable="true" type="tns1:ExpirationDate" /> 
+  <element name="coverageAmount" nillable="true" type="tns1:CoverageAmount" /> 
+  </sequence>
+  </complexType>
+  <complexType name="MatchValidRuleProfileGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="TransportModeGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="EquipmentGroupGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ServprovModeInfo">
+  <sequence>
+  <element name="transportModeGid" nillable="true" type="tns1:TransportModeGid" /> 
+  <element maxOccurs="unbounded" name="equipmentGroupGid" nillable="true" type="tns1:EquipmentGroupGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ServiceProvider">
+  <sequence>
+  <element name="isAllowTender" nillable="true" type="xsd:string" /> 
+  <element maxOccurs="unbounded" name="serviceProviderAlias" nillable="true" type="tns1:ServiceProviderAlias" /> 
+  <element name="isAcceptSpotBids" nillable="true" type="xsd:string" /> 
+  <element name="isAcceptBroadcastTenders" nillable="true" type="xsd:string" /> 
+  <element name="autoApproveRuleProfileGid" nillable="true" type="tns1:AutoApproveRuleProfileGid" /> 
+  <element name="outXmlProfileGid" nillable="true" type="tns1:OutXmlProfileGid" /> 
+  <element name="matchRuleProfileGid" nillable="true" type="tns1:MatchRuleProfileGid" /> 
+  <element name="rateServiceGid" nillable="true" type="tns1:RateServiceGid" /> 
+  <element name="autoPaymentFlag" nillable="true" type="xsd:string" /> 
+  <element name="NVOCCDomainName" nillable="true" type="xsd:string" /> 
+  <element name="allocationRuleProfileGid" nillable="true" type="tns1:AllocationRuleProfileGid" /> 
+  <element name="isInternalNVOCC" nillable="true" type="xsd:string" /> 
+  <element name="invoicingProcess" nillable="true" type="xsd:string" /> 
+  <element name="isLocalizeBroadcastSpotContact" nillable="true" type="xsd:string" /> 
+  <element name="scacGid" nillable="true" type="tns1:ScacGid" /> 
+  <element name="spotRateAdjustmentFactor" nillable="true" type="xsd:string" /> 
+  <element name="lineApproveTolProfileGid" nillable="true" type="tns1:LineApproveTolProfileGid" /> 
+  <element name="modeProfileGid" nillable="true" type="tns1:ModeProfileGid" /> 
+  <element maxOccurs="unbounded" name="servprovService" nillable="true" type="tns1:ServprovService" /> 
+  <element name="tenderResponseTime" nillable="true" type="tns1:TenderResponseTime" /> 
+  <element name="isCopyInvDeltaToShipment" nillable="true" type="xsd:string" /> 
+  <element name="equipMarkList" nillable="true" type="tns1:EquipMarkList" /> 
+  <element name="isAcceptByShipUnit" nillable="true" type="xsd:string" /> 
+  <element name="broadcastSpotContact" nillable="true" type="tns1:BroadcastSpotContact" /> 
+  <element maxOccurs="unbounded" name="servprovPolicy" nillable="true" type="tns1:ServprovPolicy" /> 
+  <element name="isDispatchByRegion" nillable="true" type="xsd:string" /> 
+  <element name="matchValidRuleProfileGid" nillable="true" type="tns1:MatchValidRuleProfileGid" /> 
+  <element name="isAcceptCondBooking" nillable="true" type="xsd:string" /> 
+  <element maxOccurs="unbounded" name="servprovModeInfo" nillable="true" type="tns1:ServprovModeInfo" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ServiceProviderGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="PriLegServProv">
+  <sequence>
+  <element name="serviceProviderAlias" nillable="true" type="tns1:ServiceProviderAlias" /> 
+  <element name="serviceProviderGid" nillable="true" type="tns1:ServiceProviderGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="InclusionRegionGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="LocationProfileGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="PriLegLocProfileGid">
+  <sequence>
+  <element name="locationProfileGid" nillable="true" type="tns1:LocationProfileGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ExclusionRegionGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="OperLocDetail">
+  <sequence>
+  <element name="sequenceNumber" nillable="true" type="xsd:string" /> 
+  <element name="priLegServProv" nillable="true" type="tns1:PriLegServProv" /> 
+  <element name="importExportType" nillable="true" type="xsd:string" /> 
+  <element name="inclusionRegionGid" nillable="true" type="tns1:InclusionRegionGid" /> 
+  <element name="priLegLocProfileGid" nillable="true" type="tns1:PriLegLocProfileGid" /> 
+  <element name="exclusionRegionGid" nillable="true" type="tns1:ExclusionRegionGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ParentLocationGid">
+  <sequence>
+  <element name="locationGid" nillable="true" type="tns1:LocationGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="OperationalLocation">
+  <sequence>
+  <element maxOccurs="unbounded" name="operLocDetail" nillable="true" type="tns1:OperLocDetail" /> 
+  <element name="parentLocationGid" nillable="true" type="tns1:ParentLocationGid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="VatRegistrationGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="CustVatRegCountryCode3Gid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="DefaultIntraEUVatCodeGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="VatRegistration">
+  <sequence>
+  <element name="vatRegistrationGid" nillable="true" type="tns1:VatRegistrationGid" /> 
+  <element name="custVatRegCountryCode3Gid" nillable="true" type="tns1:CustVatRegCountryCode3Gid" /> 
+  <element name="defaultIntraEUVatCodeGid" nillable="true" type="tns1:DefaultIntraEUVatCodeGid" /> 
+  <element name="isPrimaryRegistration" nillable="true" type="xsd:string" /> 
+  <element name="countryCode3Gid" nillable="true" type="tns1:CountryCode3Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="VatProvincialRegGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="VatProvincialRegistration">
+  <sequence>
+  <element name="provinceCode" nillable="true" type="xsd:string" /> 
+  <element name="vatProvincialRegGid" nillable="true" type="tns1:VatProvincialRegGid" /> 
+  <element name="countryCode3Gid" nillable="true" type="tns1:CountryCode3Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="Corporation">
+  <sequence>
+  <element name="corporationName" nillable="true" type="xsd:string" /> 
+  <element maxOccurs="unbounded" name="vatRegistration" nillable="true" type="tns1:VatRegistration" /> 
+  <element name="pickupRoutingSeqGid" nillable="true" type="tns1:PickupRoutingSeqGid" /> 
+  <element name="dropoffRoutingSeqGid" nillable="true" type="tns1:DropoffRoutingSeqGid" /> 
+  <element maxOccurs="unbounded" name="vatProvincialRegistration" nillable="true" type="tns1:VatProvincialRegistration" /> 
+  </sequence>
+  </complexType>
+  <complexType name="LocationGroupGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="ServingServprovProfileGid">
+  <sequence>
+  <element name="gid" nillable="true" type="tns1:Gid" /> 
+  </sequence>
+  </complexType>
+  <complexType name="LocationRef">
+  <sequence>
+  <element name="locationGid" nillable="true" type="tns1:LocationGid" /> 
+  <element name="location" nillable="true" type="tns1:Location" /> 
+  </sequence>
+  </complexType>
+  <complexType name="SubstituteLocation">
+  <sequence>
+  <element name="locationRef" nillable="true" type="tns1:LocationRef" /> 
+  </sequence>
+  </complexType>
+  <complexType name="LoadUnloadPoint">
+  <sequence>
+  <element name="loadUnloadPointName" nillable="true" type="xsd:string" /> 
+  <element name="isLoad" nillable="true" type="xsd:string" /> 
+  <element name="isUnload" nillable="true" type="xsd:string" /> 
+  <element name="description" nillable="true" type="xsd:string" /> 
+  <element name="equipmentGroupProfileGid" nillable="true" type="tns1:EquipmentGroupProfileGid" /> 
+  <element name="unloadSequence" nillable="true" type="xsd:string" /> 
+  <element name="loadSequence" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="Location">
+  <sequence>
+  <element name="appointDisplayStartTime" nillable="true" type="xsd:string" /> 
+  <element name="regionRef" nillable="true" type="tns1:RegionRef" /> 
+  <element name="isTemplate" nillable="true" type="xsd:string" /> 
+  <element name="railStationCodeGid" nillable="true" type="tns1:RailStationCodeGid" /> 
+  <element name="substituteLocationGid" nillable="true" type="tns1:SubstituteLocationGid" /> 
+  <element name="address" nillable="true" type="tns1:Address" /> 
+  <element name="dropoffRoutingSeqGid" nillable="true" type="tns1:DropoffRoutingSeqGid" /> 
+  <element name="numSlotsPerRowInYard" nillable="true" type="xsd:string" /> 
+  <element name="pickupRoutingSeqGid" nillable="true" type="tns1:PickupRoutingSeqGid" /> 
+  <element name="standingApptCutoffWindow" nillable="true" type="xsd:string" /> 
+  <element name="useApptPriority" nillable="true" type="xsd:string" /> 
+  <element maxOccurs="unbounded" name="accessorialCodeGid" nillable="true" type="tns1:AccessorialCodeGid" /> 
+  <element name="locationGid" nillable="true" type="tns1:LocationGid" /> 
+  <element name="replaceChildren" nillable="true" type="impl:ArrayOf_xsd_string" /> 
+  <element name="isLTLSplitable" nillable="true" type="xsd:string" /> 
+  <element name="childOperationalLocations" nillable="true" type="impl:ArrayOf_tns1_Location" /> 
+  <element name="isTemporary" nillable="true" type="xsd:string" /> 
+  <element name="schedInfeasibleAppt" nillable="true" type="xsd:string" /> 
+  <element name="excludeFromRouteExec" nillable="true" type="xsd:string" /> 
+  <element name="rateClassificationGid" nillable="true" type="tns1:RateClassificationGid" /> 
+  <element name="isMakeAppointmentBeforePlan" nillable="true" type="xsd:string" /> 
+  <element name="equipmentGroupProfileGid" nillable="true" type="tns1:EquipmentGroupProfileGid" /> 
+  <element name="railSPLCGid" nillable="true" type="tns1:RailSPLCGid" /> 
+  <element maxOccurs="unbounded" name="locationRole" nillable="true" type="tns1:LocationRole" /> 
+  <element name="ERPCGid" nillable="true" type="tns1:ERPCGid" /> 
+  <element maxOccurs="unbounded" name="contact" nillable="true" type="tns1:Contact" /> 
+  <element maxOccurs="unbounded" name="specialService" nillable="true" type="tns1:SpecialService" /> 
+  <element name="mixedFreightTHU" nillable="true" type="tns1:MixedFreightTHU" /> 
+  <element name="transactionCode" nillable="true" type="xsd:string" /> 
+  <element name="serviceProviderProfileGid" nillable="true" type="tns1:ServiceProviderProfileGid" /> 
+  <element name="isShipperKnown" nillable="true" type="xsd:string" /> 
+  <element name="isAddressValid" nillable="true" type="xsd:string" /> 
+  <element name="enforceTimeWindowAppt" nillable="true" type="xsd:string" /> 
+  <element name="sendReason" nillable="true" type="tns1:SendReason" /> 
+  <element name="schedLowPriorityAppt" nillable="true" type="xsd:string" /> 
+  <element name="postalSPLCGid" nillable="true" type="tns1:PostalSPLCGid" /> 
+  <element maxOccurs="unbounded" name="locationResourceType" nillable="true" type="tns1:LocationResourceType" /> 
+  <element maxOccurs="unbounded" name="locationRefnum" nillable="true" type="tns1:LocationRefnum" /> 
+  <element name="railJunctionCodeGid" nillable="true" type="tns1:RailJunctionCodeGid" /> 
+  <element name="slotTimeInterval" nillable="true" type="tns1:SlotTimeInterval" /> 
+  <element name="planFromLocationGid" nillable="true" type="tns1:PlanFromLocationGid" /> 
+  <element maxOccurs="unbounded" name="status" nillable="true" type="tns1:Status" /> 
+  <element name="isMixedFreightTHUAllowed" nillable="true" type="xsd:string" /> 
+  <element maxOccurs="unbounded" name="locationCapacityGroupInfo" nillable="true" type="tns1:LocationCapacityGroupInfo" /> 
+  <element name="appointDisplayDuration" nillable="true" type="tns1:AppointDisplayDuration" /> 
+  <element name="serviceProvider" nillable="true" type="tns1:ServiceProvider" /> 
+  <element name="operationalLocation" nillable="true" type="tns1:OperationalLocation" /> 
+  <element name="numRowsInYard" nillable="true" type="xsd:string" /> 
+  <element name="parentLocationGid" nillable="true" type="tns1:ParentLocationGid" /> 
+  <element name="description" nillable="true" type="xsd:string" /> 
+  <element name="isHandleApptsForShipGroup" nillable="true" type="xsd:string" /> 
+  <element name="corporation" nillable="true" type="tns1:Corporation" /> 
+  <element name="locationName" nillable="true" type="xsd:string" /> 
+  <element maxOccurs="unbounded" name="contactGid" nillable="true" type="tns1:ContactGid" /> 
+  <element name="locationGroupGid" nillable="true" type="tns1:LocationGroupGid" /> 
+  <element maxOccurs="unbounded" name="remark" nillable="true" type="tns1:Remark" /> 
+  <element name="servingServprovProfileGid" nillable="true" type="tns1:ServingServprovProfileGid" /> 
+  <element name="substituteLocation" nillable="true" type="tns1:SubstituteLocation" /> 
+  <element name="intSavedQuery" nillable="true" type="tns1:IntSavedQuery" /> 
+  <element maxOccurs="unbounded" name="loadUnloadPoint" nillable="true" type="tns1:LoadUnloadPoint" /> 
+  </sequence>
+  </complexType>
+  <complexType name="GLogXMLElement">
+  <sequence>
+  <element name="location" nillable="true" type="tns1:Location" /> 
+  </sequence>
+  </complexType>
+  <complexType name="TransmissionHeader">
+  <sequence>
+  <element name="userName" nillable="true" type="xsd:string" /> 
+  <element name="password" nillable="true" type="xsd:string" /> 
+  </sequence>
+  </complexType>
+  <complexType name="Transmission">
+  <sequence>
+  <element name="transmissionBody" nillable="true" type="impl:ArrayOf_tns1_GLogXMLElement" /> 
+  <element name="transmissionHeader" nillable="true" type="tns1:TransmissionHeader" /> 
+  </sequence>
+  </complexType>
+  <complexType name="EchoedTransmissionHeader">
+  <sequence>
+  <element name="transmissionHeader" nillable="true" type="tns1:TransmissionHeader" /> 
+  </sequence>
+  </complexType>
+  <complexType name="TransmissionAck">
+  <sequence>
+  <element name="stackTrace" nillable="true" type="xsd:string" /> 
+  <element name="transmissionAckReason" nillable="true" type="xsd:string" /> 
+  <element name="queryResultInfo" nillable="true" type="impl:ArrayOf_tns1_GLogXMLElement" /> 
+  <element maxOccurs="unbounded" name="refnum" nillable="true" type="tns1:Refnum" /> 
+  <element name="transmissionText" nillable="true" type="xsd:string" /> 
+  <element name="transmissionAckStatus" nillable="true" type="xsd:string" /> 
+  <element name="echoedTransmissionHeader" nillable="true" type="tns1:EchoedTransmissionHeader" /> 
+  </sequence>
+  </complexType>
+  </schema>
+  </wsdl:types>
+  <wsdl:message name="actualizaEstadoOrdenResponse">
+  <wsdl:part element="intf:actualizaEstadoOrdenResponse" name="parameters" /> 
+  </wsdl:message>
+  <wsdl:message name="actualizaEstadoOrdenRequest">
+  <wsdl:part element="intf:actualizaEstadoOrden" name="parameters" /> 
+  </wsdl:message>
+  <wsdl:portType name="AsistenciaWS">
+  <wsdl:operation name="actualizaEstadoOrden">
+  <wsdl:input message="intf:actualizaEstadoOrdenRequest" name="actualizaEstadoOrdenRequest" /> 
+  <wsdl:output message="intf:actualizaEstadoOrdenResponse" name="actualizaEstadoOrdenResponse" /> 
+  </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AsistenciaWSSoapBinding" type="intf:AsistenciaWS">
+  <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" /> 
+  <wsdl:operation name="actualizaEstadoOrden">
+  <wsdlsoap:operation soapAction="" /> 
+  <wsdl:input name="actualizaEstadoOrdenRequest">
+  <wsdlsoap:body use="literal" /> 
+  </wsdl:input>
+  <wsdl:output name="actualizaEstadoOrdenResponse">
+  <wsdlsoap:body use="literal" /> 
+  </wsdl:output>
+  </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AsistenciaWSService">
+  <wsdl:port binding="intf:AsistenciaWSSoapBinding" name="AsistenciaWS">
+  <wsdlsoap:address location="http://10.252.228.79:9085/OTMADAPTADOR/services/AsistenciaWS" /> 
+  </wsdl:port>
+  </wsdl:service>
+  </wsdl:definitions>

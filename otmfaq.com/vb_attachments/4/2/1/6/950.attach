@@ -1,0 +1,57 @@
+2012-04-09 14:41:44.596	106455	Debug	Workflow	Starting workflow Simple Workflow (148979618) in response to SchedulePurgeTopic: service=seeddataXDB [batch - 1]
+2012-04-09 14:41:44.624	106455	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[DBA.501932243, DBA.ADMIN, null, STATIC] [batch - 1]
+2012-04-09 14:41:44.631	106455	Debug	Sql	{call
+2012-04-09 14:41:44.651	106455	Debug	Sql	{call vpd.set_user_r(?,?,?,?)}; inParams=[DBA.501932243, DBA.ADMIN, null, STATIC] [batch - 1]
+2012-04-09 14:41:44.662	106455	Debug	Sql	select error_translation_gid, solution_translation_gid from oracle_error where error_code=? and constraint_id=?; [27486, NULL] [batch - 1]
+2012-04-09 14:41:44.73	106455	Error	Exception	{call
+    java.sql.SQLException: ORA-27486: insufficient privileges
+ORA-06512: at "SYS.DBMS_ISCHED", line 410
+ORA-06512: at "SYS.DBMS_SCHEDULER", line 820
+ORA-06512: at "GLOGOWNER.PKG_PURGE", line 1213
+ORA-06512: at "GLOGOWNER.PKG_PURGE", line 1230
+ORA-06512: at "GLOGOWNER.PKG_PURGE", line 1302
+ORA-06512: at line 1
+
+
+java.sql.SQLException: ORA-27486: insufficient privileges
+ORA-06512: at "SYS.DBMS_ISCHED", line 410
+ORA-06512: at "SYS.DBMS_SCHEDULER", line 820
+ORA-06512: at "GLOGOWNER.PKG_PURGE", line 1213
+ORA-06512: at "GLOGOWNER.PKG_PURGE", line 1230
+ORA-06512: at "GLOGOWNER.PKG_PURGE", line 1302
+ORA-06512: at line 1
+
+	at oracle.jdbc.driver.SQLStateMapping.newSQLException(SQLStateMapping.java:70)
+	at oracle.jdbc.driver.DatabaseError.newSQLException(DatabaseError.java:133)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:206)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:455)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:413)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:1034)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:191)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:950)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1223)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3386)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3487)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:3858)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1374)
+	at weblogic.jdbc.wrapper.PreparedStatement.execute(PreparedStatement.java:98)
+	at glog.util.jdbc.SqlCall.execute(SqlCall.java:67)
+	at glog.util.jdbc.SqlCall.executeOut(SqlCall.java:123)
+	at glog.util.jdbc.SqlCall.execute(SqlCall.java:111)
+	at glog.util.jdbc.SqlCall.execute(SqlCall.java:117)
+	at glog.database.purge.PurgeSessionBean.startPurgeJob(PurgeSessionBean.java:327)
+	at glog.database.purge.PurgeSessionServerSideEJBWrapper.startPurgeJob(PurgeSessionServerSideEJBWrapper.java:192)
+	at glog.database.purge.PurgeSessionHome_dqcjgl_EOImpl.startPurgeJob(PurgeSessionHome_dqcjgl_EOImpl.java:70)
+	at glog.server.workflow.utility.SchedulePurgeTopic.execute(SchedulePurgeTopic.java:62)
+	at glog.server.workflow.SimpleWorkflow.execute(SimpleWorkflow.java:23)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:64)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(WorkflowSessionServerSideEJBWrapper.java:38)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.execute(WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.java:353)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:353)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:141)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:96)
+	at glog.util.event.EventThread.run(EventThread.java:82)
+	at java.lang.Thread.run(Thread.java:619)
+ [batch - 1]
+2012-04-09 14:41:44.822	106455	Debug	Workflow	Completing workflow Simple Workflow (148979618) [batch - 1]

@@ -1,0 +1,451 @@
+2015-05-04 09:09:19.193	775919	Debug	Workflow	Publishing topic BuildShipmentsBuyRequest: bulkPlanXid=null, savedQuery=(pks), planningParamSetGid=null, description=null, scenarioGroup=null, shipmentsSuppressed=false, usePartition=false, partitionProfile=null on queue batch, group null [[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)']
+2015-05-04 09:09:19.195	775919	Debug	Workflow	Starting workflow Build Shipments (345266241) in response to BuildShipmentsBuyRequest: bulkPlanXid=null, savedQuery=(pks), planningParamSetGid=null, description=null, scenarioGroup=null, shipmentsSuppressed=false, usePartition=false, partitionProfile=null [batch - 2]
+2015-05-04 09:09:19.22	775919	Debug	Workflow	Publishing topic BulkPlan: PK=DBA.20150504-0004 on queue batch, group null [batch - 2]
+2015-05-04 09:09:19.22	775919	Debug	Workflow	Completing workflow Build Shipments (345266241) [batch - 2]
+2015-05-04 09:09:19.222	775919	Debug	Workflow	Starting workflow Simple Workflow (333402533) in response to BulkPlan: PK=DBA.20150504-0004 [batch - 1]
+2015-05-04 09:09:19.222	775919	Debug	Planning	Sql text: SELECT order_release_gid, otm_version FROM order_release WHERE  (order_release_gid = ?)  AND (otm_version IS NULL OR (otm_version <> ?))  [batch - 1]
+2015-05-04 09:09:19.227	775919	Debug	Planning	Property glog.business.consolidation.bulkplan.batchCommitBulkPlanResult:  false [batch - 1]
+2015-05-04 09:09:19.252	775919	Debug	Planning	Sql text:  select order_release_gid from order_release  where (is_template = 'N' or is_template = 'n' )       and  (order_release_gid = ?)  [batch - 1]
+2015-05-04 09:09:19.284	775919	Debug	Planning	Sql text: SELECT order_release_gid, otm_version FROM order_release WHERE  (order_release_gid = ?)  AND (otm_version IS NULL OR (otm_version <> ?))  [batch - 1]
+2015-05-04 09:09:19.301	775919	Debug	Planning	Status of Order Release: GSK/COS/C01.383001_348  prevents function : GC3_APPL_OR_UNASSIGN_ORDER_BULKPLAN from executing. [batch - 1]
+2015-05-04 09:09:19.301	775919	Debug	Planning	Total 0 orders ready for unassigned.. [batch - 1]
+2015-05-04 09:09:19.313	775919	Debug	Planning	Total Total 1 orders ready for bulk planning. TBulkPlanResult:<BulkPlanResult bulk Plan Gid = DBA.20150504-0004
+<-- Order Release Statistics -->
+ Num Of Order Releases Selected = 1
+ Num Of Order Releases Unassigned = 0
+ Num Of Order Releases Planned = 0
+ Num Of Order Releases Failed To Plan = 0
+<-- Order Movement Statistics -->
+ Num Of Order Movements Selected = 0
+ Num Of Order Movements Unassigned = 0
+ Num Of Order Movements Planned = 0
+ Num Of Order Movements Failed To Plan = 0
+<-- Shipment Statistics -->
+ Num Of Shipments Built = 0
+ Start Time = 2015-05-04 09:09:19 America/Mexico_City
+ End Time = null > [batch - 1]
+2015-05-04 09:09:19.313	775919	Debug	Planning	Planning parameter: Max Num of Replan:0; num of replan allowed:0 [batch - 1]
+2015-05-04 09:09:19.313	775919	Debug	Planning	Start to plan unassigned orders for bulk plan: DBA.20150504-0004. [batch - 1]
+2015-05-04 09:09:19.313	775919	Debug	Planning	.. checking order releases locations...  [batch - 1]
+2015-05-04 09:09:19.313	775919	Debug	Planning	Begin order release location status check in OrderActionHelper::getOrderReleasePKsWithInactiveLocation. [batch - 1]
+2015-05-04 09:09:19.313	775919	Debug	Planning	Sql text: SELECT O.ORDER_RELEASE_GID FROM ORDER_RELEASE O, LOCATION L WHERE (O.PLAN_FROM_LOCATION_GID = L.LOCATION_GID OR O.PLAN_TO_LOCATION_GID = L.LOCATION_GID OR (O.PLAN_FROM_LOCATION_GID IS NULL AND O.SOURCE_LOCATION_GID = L.LOCATION_GID) OR (O.PLAN_TO_LOCATION_GID IS NULL AND O.DEST_LOCATION_GID = L.LOCATION_GID)) AND L.IS_ACTIVE ='N' AND  (O.ORDER_RELEASE_GID  = ?)  [batch - 1]
+2015-05-04 09:09:19.345	775919	Debug	Planning	End order release location status check in OrderActionHelper::getOrderReleasePKsWithInactiveLocation. [batch - 1]
+2015-05-04 09:09:19.345	775919	Debug	Planning	Bulk plan run #1 [batch - 1]
+2015-05-04 09:09:19.345	775919	Debug	Planning	Begin computeLocCapPlanningWindow... [batch - 1]
+2015-05-04 09:09:19.345	775919	Debug	Planning	End computeLocCapPlanningWindow... [batch - 1]
+2015-05-04 09:09:19.345	775919	Debug	Planning	DatabaseLoader is loading OrderReleaseData (criteria = (top_t.order_release_gid=?)) ... [batch - 1]
+2015-05-04 09:09:19.458	775919	Debug	Planning	Find all itineries for order bundle: |GSK/COS/C01.383001_348| with prespective: B [batch - 1]
+2015-05-04 09:09:19.458	775919	Debug	Planning	From source location: GSK.C01 to dest location: GSK.7969_11119 [batch - 1]
+2015-05-04 09:09:19.458	775919	Debug	Planning	Find Itinerary SQL: select all i.itinerary_gid from itinerary i, lane l, hname_set_member hsms, hname_set_member hsmd where hsms.hname in ('COUNTRY\MEX\', 'ZONE1\ALL\', 'CITY/COUNTRY\DF\MEX\', 'LOCATION\GSK.C01\') and hsmd.hname in ('COUNTRY\MEX\', 'ZONE1\ALL\', 'CITY/COUNTRY\MEXICO\MEX\', 'POSTAL_CODE\01460\', 'LOCATION\GSK.7969_11119\') and l.source_hname_set_gid = hsms.hname_set_gid and l.dest_hname_set_gid = hsmd.hname_set_gid and i.x_lane_gid = l.x_lane_gid and (i.perspective = ? or i.perspective = ?); [A, B], {1} [batch - 1]
+2015-05-04 09:09:19.485	775919	Debug	Planning	Detailed Find Itinerary SQL: select all i.itinerary_gid from itinerary i, lane l, hname_set_member hsms, hname_set_member hsmd where hsms.hname in ('COUNTRY\MEX\', 'ZONE1\ALL\', 'CITY/COUNTRY\DF\MEX\', 'LOCATION\GSK.C01\') and hsmd.hname in ('COUNTRY\MEX\', 'ZONE1\ALL\', 'CITY/COUNTRY\MEXICO\MEX\', 'POSTAL_CODE\01460\', 'LOCATION\GSK.7969_11119\') and l.source_hname_set_gid = hsms.hname_set_gid and l.dest_hname_set_gid = hsmd.hname_set_gid and i.x_lane_gid = l.x_lane_gid and (i.perspective = ? or i.perspective = ?); [A, B], database_vpd_user: {2} [batch - 1]
+2015-05-04 09:09:19.49	775919	Debug	Planning	Number of itineraries found: 3 [batch - 1]
+2015-05-04 09:09:19.49	775919	Debug	Planning	********************************************************************* [batch - 1]
+2015-05-04 09:09:19.49	775919	Debug	Planning	Rule Manager begin evaluating 1  entities [batch - 1]
+2015-05-04 09:09:19.498	775919	Debug	Planning	Item will fit into the qualifer set: COMMOD [batch - 1]
+2015-05-04 09:09:19.498	775919	Debug	Planning	Adding commodity code (unclassified) to the COMMOD set [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Creating new hashSet for: COMMOD [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Item will fit into the qualifer set: HTS [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Adding commodity code (unclassified) to the HTS set [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Creating new hashSet for: HTS [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Item will fit into the qualifer set: NMFC_CLASS [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Adding commodity code (unclassified) to the NMFC_CLASS set [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Creating new hashSet for: NMFC_CLASS [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Item will fit into the qualifer set: SITC [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Adding commodity code (unclassified) to the SITC set [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Creating new hashSet for: SITC [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Item will fit into the qualifer set: STCC [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Adding commodity code (unclassified) to the STCC set [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Creating new hashSet for: STCC [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Item will fit into the qualifer set: USER_DEFINED_COMMODITY [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Adding commodity code (unclassified) to the USER_DEFINED_COMMODITY set [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Creating new hashSet for: USER_DEFINED_COMMODITY [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Item will fit into the qualifer set: COMMOD [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Adding commodity code (unclassified) to the COMMOD set [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Found existing hashSet: COMMOD [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Item will fit into the qualifer set: HTS [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Adding commodity code (unclassified) to the HTS set [batch - 1]
+2015-05-04 09:09:19.499	775919	Debug	Planning	Found existing hashSet: HTS [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Item will fit into the qualifer set: NMFC_CLASS [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Adding commodity code (unclassified) to the NMFC_CLASS set [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Found existing hashSet: NMFC_CLASS [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Item will fit into the qualifer set: SITC [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Adding commodity code (unclassified) to the SITC set [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Found existing hashSet: SITC [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Item will fit into the qualifer set: STCC [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Adding commodity code (unclassified) to the STCC set [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Found existing hashSet: STCC [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Item will fit into the qualifer set: USER_DEFINED_COMMODITY [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Adding commodity code (unclassified) to the USER_DEFINED_COMMODITY set [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Found existing hashSet: USER_DEFINED_COMMODITY [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Item will fit into the qualifer set: COMMOD [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Adding commodity code (unclassified) to the COMMOD set [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Found existing hashSet: COMMOD [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Item will fit into the qualifer set: HTS [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Adding commodity code (unclassified) to the HTS set [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Found existing hashSet: HTS [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Item will fit into the qualifer set: NMFC_CLASS [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Adding commodity code (unclassified) to the NMFC_CLASS set [batch - 1]
+2015-05-04 09:09:19.5	775919	Debug	Planning	Found existing hashSet: NMFC_CLASS [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Item will fit into the qualifer set: SITC [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Adding commodity code (unclassified) to the SITC set [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Found existing hashSet: SITC [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Item will fit into the qualifer set: STCC [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Adding commodity code (unclassified) to the STCC set [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Found existing hashSet: STCC [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Item will fit into the qualifer set: USER_DEFINED_COMMODITY [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Adding commodity code (unclassified) to the USER_DEFINED_COMMODITY set [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Found existing hashSet: USER_DEFINED_COMMODITY [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Item will fit into the qualifer set: COMMOD [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Adding commodity code (unclassified) to the COMMOD set [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Found existing hashSet: COMMOD [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Item will fit into the qualifer set: HTS [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Adding commodity code (unclassified) to the HTS set [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Found existing hashSet: HTS [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Item will fit into the qualifer set: NMFC_CLASS [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Adding commodity code (unclassified) to the NMFC_CLASS set [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Found existing hashSet: NMFC_CLASS [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Item will fit into the qualifer set: SITC [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Adding commodity code (unclassified) to the SITC set [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Found existing hashSet: SITC [batch - 1]
+2015-05-04 09:09:19.501	775919	Debug	Planning	Item will fit into the qualifer set: STCC [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Adding commodity code (unclassified) to the STCC set [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Found existing hashSet: STCC [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Item will fit into the qualifer set: USER_DEFINED_COMMODITY [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Adding commodity code (unclassified) to the USER_DEFINED_COMMODITY set [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Found existing hashSet: USER_DEFINED_COMMODITY [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Item will fit into the qualifer set: COMMOD [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Adding commodity code (unclassified) to the COMMOD set [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Found existing hashSet: COMMOD [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Item will fit into the qualifer set: HTS [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Adding commodity code (unclassified) to the HTS set [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Found existing hashSet: HTS [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Item will fit into the qualifer set: NMFC_CLASS [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Adding commodity code (unclassified) to the NMFC_CLASS set [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Found existing hashSet: NMFC_CLASS [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Item will fit into the qualifer set: SITC [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Adding commodity code (unclassified) to the SITC set [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Found existing hashSet: SITC [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Item will fit into the qualifer set: STCC [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Adding commodity code (unclassified) to the STCC set [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Found existing hashSet: STCC [batch - 1]
+2015-05-04 09:09:19.502	775919	Debug	Planning	Item will fit into the qualifer set: USER_DEFINED_COMMODITY [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Adding commodity code (unclassified) to the USER_DEFINED_COMMODITY set [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Found existing hashSet: USER_DEFINED_COMMODITY [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Item will fit into the qualifer set: COMMOD [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Adding commodity code (unclassified) to the COMMOD set [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Found existing hashSet: COMMOD [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Item will fit into the qualifer set: HTS [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Adding commodity code (unclassified) to the HTS set [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Found existing hashSet: HTS [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Item will fit into the qualifer set: NMFC_CLASS [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Adding commodity code (unclassified) to the NMFC_CLASS set [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Found existing hashSet: NMFC_CLASS [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Item will fit into the qualifer set: SITC [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Adding commodity code (unclassified) to the SITC set [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Found existing hashSet: SITC [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Item will fit into the qualifer set: STCC [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Adding commodity code (unclassified) to the STCC set [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Found existing hashSet: STCC [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Item will fit into the qualifer set: USER_DEFINED_COMMODITY [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Adding commodity code (unclassified) to the USER_DEFINED_COMMODITY set [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Found existing hashSet: USER_DEFINED_COMMODITY [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Item will fit into the qualifer set: COMMOD [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Adding commodity code (unclassified) to the COMMOD set [batch - 1]
+2015-05-04 09:09:19.503	775919	Debug	Planning	Found existing hashSet: COMMOD [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Item will fit into the qualifer set: HTS [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Adding commodity code (unclassified) to the HTS set [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Found existing hashSet: HTS [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Item will fit into the qualifer set: NMFC_CLASS [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Adding commodity code (unclassified) to the NMFC_CLASS set [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Found existing hashSet: NMFC_CLASS [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Item will fit into the qualifer set: SITC [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Adding commodity code (unclassified) to the SITC set [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Found existing hashSet: SITC [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Item will fit into the qualifer set: STCC [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Adding commodity code (unclassified) to the STCC set [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Found existing hashSet: STCC [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Item will fit into the qualifer set: USER_DEFINED_COMMODITY [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Adding commodity code (unclassified) to the USER_DEFINED_COMMODITY set [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Found existing hashSet: USER_DEFINED_COMMODITY [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Item will fit into the qualifer set: COMMOD [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Adding commodity code (unclassified) to the COMMOD set [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Found existing hashSet: COMMOD [batch - 1]
+2015-05-04 09:09:19.504	775919	Debug	Planning	Item will fit into the qualifer set: HTS [batch - 1]
+2015-05-04 09:09:19.505	775919	Debug	Planning	Adding commodity code (unclassified) to the HTS set [batch - 1]
+2015-05-04 09:09:19.505	775919	Debug	Planning	Found existing hashSet: HTS [batch - 1]
+2015-05-04 09:09:19.505	775919	Debug	Planning	Item will fit into the qualifer set: NMFC_CLASS [batch - 1]
+2015-05-04 09:09:19.505	775919	Debug	Planning	Adding commodity code (unclassified) to the NMFC_CLASS set [batch - 1]
+2015-05-04 09:09:19.505	775919	Debug	Planning	Found existing hashSet: NMFC_CLASS [batch - 1]
+2015-05-04 09:09:19.505	775919	Debug	Planning	Item will fit into the qualifer set: SITC [batch - 1]
+2015-05-04 09:09:19.505	775919	Debug	Planning	Adding commodity code (unclassified) to the SITC set [batch - 1]
+2015-05-04 09:09:19.505	775919	Debug	Planning	Found existing hashSet: SITC [batch - 1]
+2015-05-04 09:09:19.505	775919	Debug	Planning	Item will fit into the qualifer set: STCC [batch - 1]
+2015-05-04 09:09:19.505	775919	Debug	Planning	Adding commodity code (unclassified) to the STCC set [batch - 1]
+2015-05-04 09:09:19.505	775919	Debug	Planning	Found existing hashSet: STCC [batch - 1]
+2015-05-04 09:09:19.505	775919	Debug	Planning	Item will fit into the qualifer set: USER_DEFINED_COMMODITY [batch - 1]
+2015-05-04 09:09:19.505	775919	Debug	Planning	Adding commodity code (unclassified) to the USER_DEFINED_COMMODITY set [batch - 1]
+2015-05-04 09:09:19.505	775919	Debug	Planning	Found existing hashSet: USER_DEFINED_COMMODITY [batch - 1]
+2015-05-04 09:09:19.514	775919	Debug	Planning	Entity: GSK.AME3  passed [batch - 1]
+2015-05-04 09:09:19.515	775919	Debug	Planning	Rule Manager returning with 1 entities [batch - 1]
+2015-05-04 09:09:19.515	775919	Debug	Planning	Load TItinerary for itineraryPK: GSK.AME3 [batch - 1]
+2015-05-04 09:09:19.529	775919	Debug	Planning	begin getMostFavorableItinerary... [batch - 1]
+2015-05-04 09:09:19.529	775919	Debug	Planning	# itineraries not empty: 1 [batch - 1]
+2015-05-04 09:09:19.529	775919	Debug	Planning	bestItinerary: GSK.AME3 [batch - 1]
+2015-05-04 09:09:19.529	775919	Debug	Planning	is multistop: true [batch - 1]
+2015-05-04 09:09:19.529	775919	Debug	Planning	# of order in this itinerary: 1 [batch - 1]
+2015-05-04 09:09:19.529	775919	Debug	Planning	total weight: 46.870276475999994 LB [batch - 1]
+2015-05-04 09:09:19.529	775919	Debug	Planning	total volume: 29.466557894479998 CUFT [batch - 1]
+2015-05-04 09:09:19.529	775919	Debug	Planning	Planning parameters for this bulkplan:  [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	     rate distance gid: ESTIMATE [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	     preferXDockThanDirectShipmentsFlag: false [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	     minBundlingTimeWindowOverlapForXDockPool: 1.0 D [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	     optimizePoolByNumOfOrders: false [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	     planningGroupRunXDockPostLTLSplitConsolidate: Runs XDock Post LTL split cons [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	     allowSmallDirectOrderToBeSplittable: false [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	     buildDirectShipmentOption: 3 [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	     planThruPoolBeforeXDock: true [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	     performPoolSwapping: true [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	     computeShipmentTimeWindow: false [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	     minInboundUnloadTimeAtXDock: 0.0 H [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	     multistopFavorSameDownstreamShipment: false [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	     multistopPoolLinehaulShipmentWithDirect: false [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	     multistopPoolLinehaulWithDirectAllAtOnce: false [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	     multistopXDockInboundShipmentWithDirect: false [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	     performCostBasedPoolXDockSelection: false [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	     logisticsGuidePK: NO LOGISTICS GUIDE EXISTS [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	# order bundles to be planned in this itinerary is: 1 [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	Number of orderBundles: 1 [batch - 1]
+2015-05-04 09:09:19.53	775919	Debug	Planning	   Order releases on one bundle: |GSK/COS/C01.383001_348| [batch - 1]
+2015-05-04 09:09:19.531	775919	Debug	Planning	   tOrderBundle early pickup: 2015-04-30 23:17:00 UTC [batch - 1]
+2015-05-04 09:09:19.531	775919	Debug	Planning	   tOrderBundle late pickup: 2015-04-30 23:17:00 UTC [batch - 1]
+2015-05-04 09:09:19.531	775919	Debug	Planning	   tOrderBundle early delivery: 2015-04-28 23:17:00 UTC [batch - 1]
+2015-05-04 09:09:19.531	775919	Debug	Planning	   tOrderBundle late delivery: 2015-04-30 23:17:00 UTC [batch - 1]
+2015-05-04 09:09:19.531	775919	Debug	Planning	Number of orderBundles must ship thru xdock: 0 [batch - 1]
+2015-05-04 09:09:19.531	775919	Debug	Planning	Number of orderBundles must ship thru xdock but no xdock specified: 0 [batch - 1]
+2015-05-04 09:09:19.531	775919	Debug	Planning	Number of orderBundles must ship thru pool: 0 [batch - 1]
+2015-05-04 09:09:19.531	775919	Debug	Planning	allowSmallDirectOrderToBeSplittable: false [batch - 1]
+2015-05-04 09:09:19.531	775919	Debug	Planning	Check equipment capacity in equipment reference units: false [batch - 1]
+2015-05-04 09:09:19.532	775919	Debug	Planning	
+ There were 0 order bundle need to be splited [batch - 1]
+2015-05-04 09:09:19.532	775919	Debug	Planning	Begin makeDirectShipmentsForLargeBundles... [batch - 1]
+2015-05-04 09:09:19.532	775919	Debug	Planning	# of tShipments in splitOrderTShipmentCollection: 0 [batch - 1]
+2015-05-04 09:09:19.532	775919	Debug	Planning	End makeDirectShipmentsForLargeBundles. [batch - 1]
+2015-05-04 09:09:19.532	775919	Debug	Planning	Begin makeDirectShipmentsForSmallOrders... [batch - 1]
+2015-05-04 09:09:19.534	775919	Debug	Planning	Construct TShipment from TOrderBundle: |GSK/COS/C01.383001_348| [batch - 1]
+2015-05-04 09:09:19.534	775919	Debug	Planning	                               weight: 46.870276475999994 LB [batch - 1]
+2015-05-04 09:09:19.534	775919	Debug	Planning	                               volume: 29.466557894479998 CUFT [batch - 1]
+2015-05-04 09:09:19.534	775919	Debug	Planning	                    using leg: GSK.62 [batch - 1]
+2015-05-04 09:09:19.535	775919	Debug	Planning	tShipment weight: 21.259999999999998 KG [batch - 1]
+2015-05-04 09:09:19.535	775919	Debug	Planning	tShipment volume: 0.0 CUFT [batch - 1]
+2015-05-04 09:09:19.535	775919	Debug	Planning	tShipment first stop pickup weight: 21.259999999999998 KG [batch - 1]
+2015-05-04 09:09:19.535	775919	Debug	Planning	tShipment first stop pickup volume: 0.0 CUFT [batch - 1]
+2015-05-04 09:09:19.535	775919	Debug	Planning	tShipment first stop dropoff weight: 0.0 LB [batch - 1]
+2015-05-04 09:09:19.536	775919	Debug	Planning	tShipment first stop dropoff volume: 0.0 CUFT [batch - 1]
+2015-05-04 09:09:19.536	775919	Debug	Planning	SQL Find LegInterimPoints by LegPK: select distinct lip.leg_gid, lip.seq_no from leg_interim_point lip where lip.leg_gid = ? order by lip.seq_no. [batch - 1]
+2015-05-04 09:09:19.539	775919	Debug	Planning	MiniShipmentBuilder::constructTShipment  [batch - 1]
+2015-05-04 09:09:19.539	775919	Debug	Planning	  orders: |GSK/COS/C01.383001_348| [batch - 1]
+2015-05-04 09:09:19.539	775919	Debug	Planning	  ignoreConsolidateEarlyPickup: false [batch - 1]
+2015-05-04 09:09:19.539	775919	Debug	Planning	  ignoreConsolidateLatePickup: false [batch - 1]
+2015-05-04 09:09:19.539	775919	Debug	Planning	  ignoreConsolidateEarlyDelivery: false [batch - 1]
+2015-05-04 09:09:19.539	775919	Debug	Planning	  ignoreConsolidateLateDelivery: false [batch - 1]
+2015-05-04 09:09:19.539	775919	Debug	Planning	  first stop order bundle, location: GSK.C01 [batch - 1]
+2015-05-04 09:09:19.539	775919	Debug	Planning	                           early arrival time: 2015-04-30 23:17:00 UTC [batch - 1]
+2015-05-04 09:09:19.539	775919	Debug	Planning	                           late arrival time: 2015-04-30 23:17:00 UTC [batch - 1]
+2015-05-04 09:09:19.539	775919	Debug	Planning	  second stop order bundle, location: GSK.7969_11119 [batch - 1]
+2015-05-04 09:09:19.539	775919	Debug	Planning	                           early arrival time: 2015-04-28 23:17:00 UTC [batch - 1]
+2015-05-04 09:09:19.539	775919	Debug	Planning	                           late arrival time: 2015-04-30 23:17:00 UTC [batch - 1]
+2015-05-04 09:09:19.539	775919	Debug	Planning	tShipment second stop pickup weight: 0.0 LB [batch - 1]
+2015-05-04 09:09:19.539	775919	Debug	Planning	tShipment second stop pickup volume: 0.0 CUFT [batch - 1]
+2015-05-04 09:09:19.539	775919	Debug	Planning	tShipment second stop dropoff weight: 21.259999999999998 KG [batch - 1]
+2015-05-04 09:09:19.539	775919	Debug	Planning	tShipment second stop dropoff volume: 0.0 CUFT [batch - 1]
+2015-05-04 09:09:19.54	775919	Debug	Planning	No dest VIA locations on leg GSK.62 [batch - 1]
+2015-05-04 09:09:19.54	775919	Debug	Planning	No source VIA locations on leg GSK.62 [batch - 1]
+2015-05-04 09:09:19.54	775919	Debug	Planning	RateGeoFinderSession.findTRateGeosByAddresses() [batch - 1]
+2015-05-04 09:09:19.54	775919	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates : <true> [batch - 1]
+2015-05-04 09:09:19.54	775919	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Use Preferred Rates Only : <false> [batch - 1]
+2015-05-04 09:09:19.54	775919	Debug	Planning	RateGeoFinderSession.findByLane(): Find RateGeo By Lane SQL: select all rg.rate_geo_seq, ro.rate_offering_seq, ro.transport_mode_gid, ghs.rank, ghd.rank, rg.effective_date, rg.expiration_date, rv.effective_date, rv.expiration_date, ro.rate_offering_type_gid, rg.is_quote from rate_offering ro, rate_geo rg, rate_version rv, lane l, geo_hierarchy ghd, geo_hierarchy ghs, hname_set_member hsms, hname_set_member hsmd where hsms.hname in ('COUNTRY\MEX\', 'ZONE1\ALL\', 'CITY/COUNTRY\DF\MEX\', 'LOCATION\GSK.C01\') and hsmd.hname in ('COUNTRY\MEX\', 'ZONE1\ALL\', 'CITY/COUNTRY\MEXICO\MEX\', 'POSTAL_CODE\01460\', 'LOCATION\GSK.7969_11119\') and l.source_hname_set_gid = hsms.hname_set_gid and l.dest_hname_set_gid = hsmd.hname_set_gid and rg.x_lane_gid = l.x_lane_gid and rg.is_active = 'Y' and ro.rate_offering_gid = rg.rate_offering_gid and ro.is_active = 'Y' and ro.is_sourcing_rate = 'N' and ro.is_template = 'N' and (ro.perspective = ? or ro.perspective = ?) and rv.rate_version_gid = ro.rate_version_gid and ghs.geo_hierarchy_gid = hsms.geo_hierarchy_gid and ghd.geo_hierarchy_gid = hsmd.geo_hierarchy_gid [batch - 1]
+2015-05-04 09:09:19.597	775919	Debug	Planning	RateGeoFinderSession.findByZone(): Zone table is empty, skipping query [batch - 1]
+2015-05-04 09:09:19.6	775919	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): Begin looking for preferred rates... [batch - 1]
+2015-05-04 09:09:19.6	775919	Debug	Planning	RateGeoFinderSession.findPreferredByLane(): Find Preferred By Lane SQL: select all ro.rate_offering_seq, ro.transport_mode_gid, ghs.rank, ghd.rank, rp.effective_date, rp.expiration_date, ro.servprov_gid from rate_offering ro, rate_preference rp, rate_preference_detail rpd, lane l, geo_hierarchy ghd, geo_hierarchy ghs, hname_set_member hsms, hname_set_member hsmd where hsms.hname in ('COUNTRY\MEX\', 'ZONE1\ALL\', 'CITY/COUNTRY\DF\MEX\', 'LOCATION\GSK.C01\') and hsmd.hname in ('COUNTRY\MEX\', 'ZONE1\ALL\', 'CITY/COUNTRY\MEXICO\MEX\', 'POSTAL_CODE\01460\', 'LOCATION\GSK.7969_11119\') and l.source_hname_set_gid = hsms.hname_set_gid and l.dest_hname_set_gid = hsmd.hname_set_gid and rp.x_lane_gid = l.x_lane_gid and rpd.rate_preference_gid = rp.rate_preference_gid and ro.rate_offering_gid = rpd.rate_offering_gid and (ro.perspective = ? or ro.perspective = ?) and ro.is_active = 'Y' and ro.is_sourcing_rate = 'N' and ro.is_template = 'N' and ghs.geo_hierarchy_gid = hsms.geo_hierarchy_gid and ghd.geo_hierarchy_gid = hsmd.geo_hierarchy_gid [batch - 1]
+2015-05-04 09:09:19.643	775919	Debug	Planning	RateGeoFinderSession.findPreferredByZone(): Zone table is empty, skipping query [batch - 1]
+2015-05-04 09:09:19.643	775919	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): No preferred rates are found. [batch - 1]
+2015-05-04 09:09:19.643	775919	Debug	Planning	RateGeoFinderSession.findCompositeRateGeoPKs(): End looking for preferred rates. [batch - 1]
+2015-05-04 09:09:19.647	775919	Debug	Planning	No Capacity Override are defined for Leg: GSK.62 [batch - 1]
+2015-05-04 09:09:19.648	775919	Debug	Planning	Check if SEquipments: GSK.CAMIONETA REF 1 1/5 with total remaining weight capacity = 1500.0000000045359 KG with total remaining volume capacity = 4.960000000283168 CUMTR max dimensions  = ( Width: 5.249343840000001, Length: 6.5616798, Height: 5.085301845, Diameter: 0.0 ) [batch - 1]
+2015-05-04 09:09:19.648	775919	Debug	Planning	    can hold weight: 21.259999999999998 KG, volume: 0.0 CUFT,  dimensions: ( Width: 0.0, Length: 0.0, Height: 0.0, Diameter: 0.0 ) ERUs: null [batch - 1]
+2015-05-04 09:09:19.648	775919	Debug	Planning	Capacities in weight, volume and dimensions fit. [batch - 1]
+2015-05-04 09:09:19.649	775919	Debug	Planning	Check equipment capacity in equipment reference units: false [batch - 1]
+2015-05-04 09:09:19.649	775919	Debug	Planning	Capacities in weight, volume, dimensions and equipment reference units fit!! [batch - 1]
+2015-05-04 09:09:19.649	775919	Debug	Planning	End isTSEquipmentFit [batch - 1]
+2015-05-04 09:09:19.649	775919	Error	Exception	java.lang.ArithmeticException: / by zero
+
+java.lang.ArithmeticException: / by zero
+	at glog.business.shipment.TSShipUnit.getTotalNestingVolume(TSShipUnit.java:1764)
+	at glog.business.shipment.TSShipUnit.getTotalNestingVolume(TSShipUnit.java:1783)
+	at glog.business.shipment.TSShipUnit.getTotalVolume(TSShipUnit.java:1790)
+	at glog.business.shipment.TSEquipment.addTSShipUnits(TSEquipment.java:1088)
+	at glog.business.equipment.EquipmentPacker.allocateTSShipUnitsToTSEquipment(EquipmentPacker.java:744)
+	at glog.business.equipment.EquipmentAssigner.allocateTSShipUnitsToBestUtilizedTSEquipment(EquipmentAssigner.java:941)
+	at glog.business.equipment.EquipmentAssigner.makeBestUtilizedTShipments(EquipmentAssigner.java:871)
+	at glog.business.equipment.EquipmentAssigner.makeBestUtilizedTShipments(EquipmentAssigner.java:720)
+	at glog.business.equipment.EquipmentAssigner.makeBestUtilizedTShipments(EquipmentAssigner.java:693)
+	at glog.business.equipment.EquipmentAssigner.assignBestEquipmentGroupFromCompatibleSets(EquipmentAssigner.java:639)
+	at glog.business.equipment.EquipmentAssigner.assignBestEquipmentGroup(EquipmentAssigner.java:602)
+	at glog.business.equipment.EquipmentAssigner.assignEquipmentGroupInternal(EquipmentAssigner.java:180)
+	at glog.business.equipment.EquipmentAssigner.assignEquipmentGroup(EquipmentAssigner.java:85)
+	at glog.business.shipment.MiniShipmentBuilder.constructTShipment(MiniShipmentBuilder.java:667)
+	at glog.business.shipment.MiniShipmentBuilder.buildTShipment(MiniShipmentBuilder.java:106)
+	at glog.business.consolidation.bulkplan.BuildShipmentTask.executePlanning(BuildShipmentTask.java:36)
+	at glog.business.util.PlanningTask.execute(PlanningTask.java:14)
+	at glog.server.workflow.tasklist.Task.perform(Task.java:51)
+	at glog.server.workflow.tasklist.TaskList.executeInCallerThread(TaskList.java:117)
+	at glog.business.util.PlanningTaskList.executeInCallerThread(PlanningTaskList.java:83)
+	at glog.server.workflow.tasklist.TaskList.execute(TaskList.java:97)
+	at glog.server.workflow.tasklist.TaskList.execute(TaskList.java:158)
+	at glog.business.consolidation.bulkplan.PoolXDockPlanner.buildDirectShipmentsUsingMiniShipmentBuilder(PoolXDockPlanner.java:12333)
+	at glog.business.consolidation.bulkplan.PoolXDockPlanner.makeDirectShipmentsForSmallBundles(PoolXDockPlanner.java:12260)
+	at glog.business.consolidation.bulkplan.PoolXDockPlanner.makeDirectTShipments(PoolXDockPlanner.java:1086)
+	at glog.business.consolidation.bulkplan.PoolXDockPlanner.bulkPlan(PoolXDockPlanner.java:537)
+	at glog.business.consolidation.bulkplan.OrderPlanner.bulkPlan(OrderPlanner.java:417)
+	at glog.business.action.order.OrderActions.planUnassignedOrders(OrderActions.java:961)
+	at glog.business.action.order.BulkPlanActionExecutor.planOrders(BulkPlanActionExecutor.java:366)
+	at glog.business.action.order.BulkPlanActionExecutor.planOrders(BulkPlanActionExecutor.java:170)
+	at glog.business.session.OrderActionSessionBean.planOrders(OrderActionSessionBean.java:1346)
+	at glog.business.session.OrderActionSessionServerSideEJBWrapper.planOrders(OrderActionSessionServerSideEJBWrapper.java:1305)
+	at glog.business.session.OrderActionSessionHome_likuwd_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at glog.business.session.OrderActionSessionHome_likuwd_EOImpl.planOrders(Unknown Source)
+	at glog.server.workflow.adhoc.BulkPlan.executeOrder(BulkPlan.java:70)
+	at glog.server.workflow.adhoc.BulkPlan.execute(BulkPlan.java:54)
+	at glog.server.workflow.SimpleWorkflow.execute(SimpleWorkflow.java:23)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:64)
+	at glog.server.workflow.WorkflowSessionNonTransServerSideEJBWrapper.execute(WorkflowSessionNonTransServerSideEJBWrapper.java:40)
+	at glog.server.workflow.WorkflowSessionNonTransServerSideEJBWrapper_t6tuwu_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at glog.server.workflow.WorkflowSessionNonTransServerSideEJBWrapper_t6tuwu_EOImpl.execute(Unknown Source)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:356)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:145)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:100)
+	at glog.util.event.EventThread.run(EventThread.java:86)
+	at java.lang.Thread.run(Thread.java:680)
+ [batch - 1]
+2015-05-04 09:09:19.65	775919	Debug	Planning	Number of orderBundleToShipmentGraphCollection Objects returns: 0 (filter = 1) [batch - 1]
+2015-05-04 09:09:19.65	775919	Debug	Planning	# of bundles that will be unbundled: 0 [batch - 1]
+2015-05-04 09:09:19.65	775919	Debug	Planning	# of single order bundles: 0 [batch - 1]
+2015-05-04 09:09:19.65	775919	Debug	Planning	Number of orderBundleToShipmentGraphCollection Objects returns: 0 (filter = 3) [batch - 1]
+2015-05-04 09:09:19.65	775919	Debug	Planning	# of bundles in remainingTOrderBundleList: 1 [batch - 1]
+2015-05-04 09:09:19.65	775919	Debug	Planning	Complete makeDirectShipmentsForSmallOrders. [batch - 1]
+2015-05-04 09:09:19.65	775919	Debug	Planning	begin filterOutSmallDirectShipments [batch - 1]
+2015-05-04 09:09:19.65	775919	Debug	Planning	# small bundles filtered: 0 [batch - 1]
+2015-05-04 09:09:19.65	775919	Debug	Planning	end filterOutSmallDirectShipments [batch - 1]
+2015-05-04 09:09:19.65	775919	Debug	Planning	isDirectMultistopShipmentCandidate return true for tOrderBundle: |GSK/COS/C01.383001_348| [batch - 1]
+2015-05-04 09:09:19.65	775919	Debug	Planning	# of shipments that will pass to mulistop shipment builder is : 0 [batch - 1]
+2015-05-04 09:09:19.65	775919	Debug	Planning	# of bundles in remainingTOrderBundleList: 1 [batch - 1]
+2015-05-04 09:09:19.65	775919	Debug	Planning	  tOrderBundle: 347945901 [batch - 1]
+2015-05-04 09:09:19.65	775919	Debug	Planning	# tOrderBundle in remainingTOrderBundleList: 1 [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	There are 0 Direct Multi Stop Shipment Made  [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	Begin splitUnplannedLargeBundlesAndReplaceWithSplitBundles [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	Begin splitUnplannedLargeBundlesAndReplaceWithSplitBundles... [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	# of bundles in largeBundleToBeSplitByOrderBundleSplitter before split: 0 [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	# of bundles in mustShipThruPoolTOrderBundleList before split: 0 [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	# of bundles in mustShipThruXDockTOrderBundleList before split: 0 [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	# of bundles in remainingTOrderBundleList before split:: 1 [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	begin splitLargeBundles.. [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	end splitLargeBundles.. [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	begin splitLargeBundles.. [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	end splitLargeBundles.. [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	begin splitLargeBundles.. [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	end splitLargeBundles.. [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	# of bundles in largeBundleToBeSplitByOrderBundleSplitter after split: 0 [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	# of bundles in mustShipThruPoolTOrderBundleList after split: 0 [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	# of bundles in mustShipThruXDockTOrderBundleList after split: 0 [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	End splitUnplannedLargeBundlesAndReplaceWithSplitBundles [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	Parameter: MinimizeWaitTimeAtDeconsolPools set to true [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	Begin minimizeWaitTimeAtDeconsolidationPools for direct pool linehaul shipments [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	End minimizeWaitTimeAtDeconsolidationPools for direct pool linehaul shipments [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	Begin minimizeWaitTimeAtDeconsolidationPools for pool linehaul shipments from xdock [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	End minimizeWaitTimeAtDeconsolidationPools for pool linehaul shipments from xdock [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	# of directShipmentGraphCollectionFellFromPool is : 0 [batch - 1]
+2015-05-04 09:09:19.651	775919	Debug	Planning	# of directShipmentGraphCollectionFellFromXDock is : 0 [batch - 1]
+2015-05-04 09:09:19.652	775919	Debug	Planning	# of errorFallbackDirectShipmentGraphCollection is : 0 [batch - 1]
+2015-05-04 09:09:19.652	775919	Debug	Planning	# of shipments that will pass to mulistop shipment builder is : 0 [batch - 1]
+2015-05-04 09:09:19.652	775919	Debug	Planning	Total number shipment graphs build from PoolXDockPlanner is: 0 [batch - 1]
+2015-05-04 09:09:19.652	775919	Debug	Planning	Number of direct multistop shipments: 0 [batch - 1]
+2015-05-04 09:09:19.652	775919	Debug	Planning	Number of direct shipments fell from pool: 0 [batch - 1]
+2015-05-04 09:09:19.652	775919	Debug	Planning	Number of deconsol pool shipment graphs: 0 [batch - 1]
+2015-05-04 09:09:19.652	775919	Debug	Planning	Number of consol pool shipment graphs: 0 [batch - 1]
+2015-05-04 09:09:19.652	775919	Debug	Planning	Number of direct shipments fell from xdock: 0 [batch - 1]
+2015-05-04 09:09:19.652	775919	Debug	Planning	Number of xdock shipment graphs: 0 [batch - 1]
+2015-05-04 09:09:19.652	775919	Debug	Planning	Number of shipment graphs origin at xdock: 0 [batch - 1]
+2015-05-04 09:09:19.652	775919	Debug	Planning	Number of direct shipments from remainingDirectShipmentGraphCollection: 0 [batch - 1]
+2015-05-04 09:09:19.652	775919	Debug	Planning	Number of direct shipment graphs of split orders: 0 [batch - 1]
+2015-05-04 09:09:19.652	775919	Debug	Planning	Number of small direct shipment graphs 0 [batch - 1]
+2015-05-04 09:09:19.652	775919	Debug	Planning	Planning Parameter CONNECT_SHIPMENT_GRAPHS_FOR_SPLIT_ORDERS set to true [batch - 1]
+2015-05-04 09:09:19.652	775919	Debug	Planning	Total number shipment graphs finally build: 0 [batch - 1]
+2015-05-04 09:09:19.652	775919	Debug	Planning	
+ There were 0 order bundle not planned [batch - 1]
+2015-05-04 09:09:19.652	775919	Debug	Planning	Begin PlanningSolutionImprovement ... [batch - 1]
+2015-05-04 09:09:19.652	775919	Debug	Planning	None of the improvement steps is selected or number of iterations is 0. [batch - 1]
+2015-05-04 09:09:19.653	775919	Debug	Planning	Begin consolidateShipmentGraphs [batch - 1]
+2015-05-04 09:09:19.653	775919	Debug	Planning	Begin groupIntoSameItineraryShipmentGraphCollections [batch - 1]
+2015-05-04 09:09:19.653	775919	Debug	Planning	End groupIntoSameItineraryShipmentGraphCollections [batch - 1]
+2015-05-04 09:09:19.653	775919	Debug	Planning	End consolidateShipmentGraphs [batch - 1]
+2015-05-04 09:09:19.653	775919	Debug	Planning	TrailerBuild - Begin createTShipmentGroups [batch - 1]
+2015-05-04 09:09:19.656	775919	Debug	Planning	No Trailer Build Shipment Group Rules found [batch - 1]
+2015-05-04 09:09:19.656	775919	Debug	Planning	Begin carrier capacity optimization for 0 ShipmentGraphCollection [batch - 1]
+2015-05-04 09:09:19.656	775919	Debug	Planning	End carrier capacity optimization... [batch - 1]
+2015-05-04 09:09:19.657	775919	Debug	Planning	Begin service provider engine... [batch - 1]
+2015-05-04 09:09:19.657	775919	Debug	Planning	End service provider engine... [batch - 1]
+2015-05-04 09:09:19.657	775919	Debug	Planning	Begin location capacity optimization... [batch - 1]
+2015-05-04 09:09:19.657	775919	Debug	Planning	End location capacity optimization... [batch - 1]
+2015-05-04 09:09:19.657	775919	Debug	Planning	Begin Post processing and Saving Shipments to Database ... [batch - 1]
+2015-05-04 09:09:19.657	775919	Debug	Planning	# of shipment graphs created from this bulk plan run: 0 [batch - 1]
+2015-05-04 09:09:19.66	775919	Debug	Planning	Complete Saving Shipments to Database ... [batch - 1]
+2015-05-04 09:09:19.66	775919	Debug	Planning	Begin Saving Trailler build Shipment Groups to Database ... [batch - 1]
+2015-05-04 09:09:19.66	775919	Debug	Planning	End   Saving Shipment Groups to Database ... [batch - 1]
+2015-05-04 09:09:19.66	775919	Debug	Planning	End Saving Trailler build Shipment Groups to Database ... [batch - 1]
+2015-05-04 09:09:19.66	775919	Debug	Planning	Begin Saving Continuous Move refnums to Database ... [batch - 1]
+2015-05-04 09:09:19.66	775919	Debug	Planning	End Saving Continuous Move refnums to Database ... [batch - 1]
+2015-05-04 09:09:19.66	775919	Debug	Planning	End   Bulk plan run #1 [batch - 1]
+2015-05-04 09:09:19.707	775919	Debug	Planning	Attempting to set Status of OrderRelease: GSK/COS/C01.383001_348 to PLANNED - FAILED [batch - 1]
+2015-05-04 09:09:19.714	775919	Debug	Planning	Successfully set Status of OrderRelease: GSK/COS/C01.383001_348 to PLANNED - FAILED. [batch - 1]
+2015-05-04 09:09:19.715	775919	Debug	Planning	Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ?  src:GSK.C01/changed:false  dest:GSK.7969_11119/changed:false [batch - 1]
+2015-05-04 09:09:19.769	775919	Debug	Planning	Updating bulk plan result:<BulkPlanResult bulk Plan Gid = DBA.20150504-0004
+<-- Order Release Statistics -->
+ Num Of Order Releases Selected = 1
+ Num Of Order Releases Unassigned = 0
+ Num Of Order Releases Planned = 0
+ Num Of Order Releases Failed To Plan = 1
+<-- Order Movement Statistics -->
+ Num Of Order Movements Selected = 0
+ Num Of Order Movements Unassigned = 0
+ Num Of Order Movements Planned = 0
+ Num Of Order Movements Failed To Plan = 0
+<-- Shipment Statistics -->
+ Num Of Shipments Built = 0
+ Start Time = 2015-05-04 14:09:19 UTC
+ End Time = 2015-05-04 09:09:19 America/Mexico_City > ... [batch - 1]
+2015-05-04 09:09:19.779	775919	Debug	Planning	Updated bulk plan result:<BulkPlanResult bulk Plan Gid = DBA.20150504-0004
+<-- Order Release Statistics -->
+ Num Of Order Releases Selected = 1
+ Num Of Order Releases Unassigned = 0
+ Num Of Order Releases Planned = 0
+ Num Of Order Releases Failed To Plan = 1
+<-- Order Movement Statistics -->
+ Num Of Order Movements Selected = 0
+ Num Of Order Movements Unassigned = 0
+ Num Of Order Movements Planned = 0
+ Num Of Order Movements Failed To Plan = 0
+<-- Shipment Statistics -->
+ Num Of Shipments Built = 0
+ Start Time = 2015-05-04 14:09:19 UTC
+ End Time = 2015-05-04 09:09:19 America/Mexico_City > has been committed. [batch - 1]
+2015-05-04 09:09:19.779	775919	Debug	Planning	Business process pid is 1771012 [batch - 1]
+2015-05-04 09:09:19.779	775919	Debug	Planning	Business process pid is 1771012 [batch - 1]
+2015-05-04 09:09:19.779	775919	Debug	Planning	Business process pid is 1771012 [batch - 1]
+2015-05-04 09:09:19.779	775919	Debug	Planning	Business process pid is null [batch - 1]
+2015-05-04 09:09:19.779	775919	Debug	Planning	Business process pid is 1771012 [batch - 1]
+2015-05-04 09:09:19.779	775919	Debug	Workflow	Completing workflow Simple Workflow (333402533) [batch - 1]
+2015-05-04 09:09:19.787	775919	Debug	Planning	OrderActionHelper.setExchangeRateInfo DBA.20150504-0004 [txComplete - 1]
+2015-05-04 09:09:19.787	775919	Debug	Planning	OrderActionHelper.getExchangeRateFromShipment select sh.exchange_rate_gid from shipment sh where sh.bulk_plan_gid = ? and rownum=1 ; [DBA.20150504-0004] [txComplete - 1]

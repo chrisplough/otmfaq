@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bitfields product="crawlability_vbseo">
+	<bitfielddefs>
+		<group name="misc">
+			<group name="moderatorpermissions">
+				<bitfield name="vbseo_linkbacks">33554432</bitfield>
+			</group>
+		</group>
+	</bitfielddefs>
+</bitfields>

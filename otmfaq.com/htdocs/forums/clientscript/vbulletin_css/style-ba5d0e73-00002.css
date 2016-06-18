@@ -1,0 +1,335 @@
+/* vBulletin 3 CSS For Style 'OTMFAQ Default' (styleid: 2) */
+body
+{
+	background: #ffffff;
+	color: #788aa6;
+	font: 10pt tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+a:link, body_alink
+{
+	color: #35455F;
+}
+a:visited, body_avisited
+{
+	color: #35455F;
+}
+a:hover, a:active, body_ahover
+{
+	color: #647798;
+}
+.page
+{
+	background: #FFFFFF;
+	color: #2C3A4F;
+	font-family: tahoma;
+}
+td, th, p, li
+{
+	font: 10pt tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.tborder
+{
+	background: #8e9fba;
+	color: #000000;
+}
+.tcat
+{
+	background: #5C7099 url(../../images/ad/misc/thead_repeat.gif) repeat-x top left;
+	color: #FFFFFF;
+	font: bold 10pt tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	height:33px;
+	padding:0px;
+	vertical-align:middle;
+	text-align:center;
+}
+.tcat a:link, .tcat_alink
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+.tcat a:visited, .tcat_avisited
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+.tcat a:hover, .tcat a:active, .tcat_ahover
+{
+	color: #D5DFED;
+	text-decoration: underline;
+}
+.thead
+{
+	background: #AF3B3C url(../../images/ad/misc/tabl.gif) repeat-x top left;
+	color: #FFFFFF;
+	font: bold 9px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	height:17px;
+	padding:0px;
+	vertical-align:middle;
+	
+}
+.thead a:link, .thead_alink
+{
+	color: #FFFFFF;
+}
+.thead a:visited, .thead_avisited
+{
+	color: #FFFFFF;
+}
+.thead a:hover, .thead a:active, .thead_ahover
+{
+	color: #FFCFD0;
+}
+.tfoot
+{
+	background: #213454;
+	color: #E0E0F6;
+}
+.tfoot a:link, .tfoot_alink
+{
+	color: #E0E0F6;
+}
+.tfoot a:visited, .tfoot_avisited
+{
+	color: #E0E0F6;
+}
+.tfoot a:hover, .tfoot a:active, .tfoot_ahover
+{
+	color: #D5DFED;
+}
+.alt1, .alt1Active
+{
+	background: #ced5e4;
+	color: #000000;
+	border-right:1px solid #EFF6FF;
+	border-left:1px solid #8e9fba;
+	border-top:1px solid #EFF6FF;
+	border-bottom:1px solid #8e9fba;
+	padding:4px;
+	background-image: url(../../images/ad/misc/alt_bg.gif);
+	background-repeat:repeat-y;
+}
+.alt1 a:link, .alt1_alink, .alt1Active a:link, .alt1Active_alink
+{
+	text-decoration: none;
+}
+.alt1 a:visited, .alt1_avisited, .alt1Active a:visited, .alt1Active_avisited
+{
+	text-decoration: none;
+}
+.alt1 a:hover, .alt1 a:active, .alt1_ahover, .alt1Active a:hover, .alt1Active a:active, .alt1Active_ahover
+{
+	text-decoration: underline;
+}
+.alt2, .alt2Active
+{
+	background: #d5dfed;
+	color: #000000;
+	border-right:1px solid #EFF6FF;
+	border-left:1px solid #8e9fba;
+	border-top:1px solid #EFF6FF;
+	border-bottom:1px solid #8e9fba;
+	padding:4px;
+}
+td.inlinemod
+{
+	background: #FFFFCC;
+	color: #000000;
+}
+.wysiwyg
+{
+	background: #F5F5FF;
+	color: #000000;
+	font: 10pt tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+textarea, .bginput
+{
+	font: 10pt tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.button
+{
+	font: 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+select
+{
+	font: 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+option, optgroup
+{
+	font-size: 11px;
+	font-family: tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.smallfont
+{
+	color: #647798;
+	font: 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.time
+{
+	color: #666686;
+}
+.navbar
+{
+	font: 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.highlight
+{
+	color: #FF0000;
+	font-weight: bold;
+}
+.fjsel
+{
+	background: #3E5C92;
+	color: #E0E0F6;
+}
+.fjdpth0
+{
+	background: #F7F7F7;
+	color: #000000;
+}
+.panel
+{
+	background: #E4E7F5 url(../../images/gradients/gradient_panel.gif) repeat-x top left;
+	color: #000000;
+	padding: 10px;
+	border: 1px solid #8E9FBA;
+}
+.panelsurround
+{
+	background: #D1D4E0 url(../../images/gradients/gradient_panelsurround.gif) repeat-x top left;
+	color: #000000;
+}
+legend
+{
+	color: #22229C;
+	font: 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.vbmenu_control
+{
+	background: #9F2729;
+	color: #FFFFFF;
+	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	padding: 3px 6px 3px 6px;
+	white-space: nowrap;
+}
+.vbmenu_control a:link, .vbmenu_control_alink
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:visited, .vbmenu_control_avisited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:hover, .vbmenu_control a:active, .vbmenu_control_ahover
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.vbmenu_popup
+{
+	background: #FFFFFF;
+	color: #000000;
+	border: 1px solid #0B198C;
+}
+.vbmenu_option
+{
+	background: #d5dfed;
+	color: #000000;
+	font: 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_option a:link, .vbmenu_option_alink
+{
+	color: #35455F;
+	text-decoration: none;
+}
+.vbmenu_option a:visited, .vbmenu_option_avisited
+{
+	color: #35455F;
+	text-decoration: none;
+}
+.vbmenu_option a:hover, .vbmenu_option a:active, .vbmenu_option_ahover
+{
+	color: #788aa6;
+	text-decoration: none;
+}
+.vbmenu_hilite
+{
+	background: #ced5e4;
+	color: #000000;
+	font: 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+	background-image: url(../../images/ad/misc/alt_bg.gif);
+	background-repeat:repeat-y;
+}
+.vbmenu_hilite a:link, .vbmenu_hilite_alink
+{
+	color: #35455F;
+	text-decoration: none;
+}
+.vbmenu_hilite a:visited, .vbmenu_hilite_avisited
+{
+	color: #35455F;
+	text-decoration: none;
+}
+.vbmenu_hilite a:hover, .vbmenu_hilite a:active, .vbmenu_hilite_ahover
+{
+	color: #35455F;
+	text-decoration: none;
+}
+/* ***** styling for 'big' usernames on postbit etc. ***** */
+.bigusername { font-size: 14pt; }
+
+/* ***** small padding on 'thead' elements ***** */
+td.thead, div.thead { padding: 0px;padding-left:3px;padding-right:3px; }
+
+/* ***** basic styles for multi-page nav elements */
+.pagenav a { text-decoration: none; }
+.pagenav td { padding: 2px 4px 2px 4px; }
+
+/* ***** define margin and font-size for elements inside panels ***** */
+.fieldset { margin-bottom: 6px; }
+.fieldset, .fieldset td, .fieldset p, .fieldset li { font-size: 11px; }
+
+/* ***** don't change the following ***** */
+form { display: inline; }
+label { cursor: default; }
+.normal { font-weight: normal; }
+.inlineimg { vertical-align: middle; }
+
+.h1navbar
+{
+ font-family:verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;  
+ margin:0;
+ font-size: 14px;
+ font-weight: bold;    
+ display: inline;
+}
+
+.navbar2 
+{ 
+font-family:verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif; margin-bottom:5pt; margin-top:5px; font-size:8pt;
+}
+img {
+border:0px;
+}
+td {
+vertical-align:top;
+}
+div.bubble {
+border: 1px solid #b7c4da;
+background-color: #c0d0e6;
+margin-bottom:10px;
+padding:2px;
+font-weight: bold;
+vertical-align: middle;
+text-align:center;
+}
+a.bubble{
+text-decoration: none;
+}

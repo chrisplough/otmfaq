@@ -1,0 +1,3386 @@
+update_content_otm_20071009_0650.log 
+ECHO is off.
+ECHO is off.
+Parameters: 
+Properties directory: C:\otm\glog\config 
+Connection ID for GLOGOWNER: dbaglogowner 
+Connection ID for REPORTOWNER: dbareportowner 
+Version: V55P 
+ECHO is off.
+csv_update_glogowner.cmd 
+ECHO is off.
+Parameters: 
+Properties directory: C:\otm\glog\config 
+Connection ID for GLOGOWNER: dbaglogowner 
+Version: V55P 
+ECHO is off.
+ECHO is off.
+V55P_PARTITION_KEY_FORMULA 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_PARTITION_KEY_FORMULA.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>PARTITION_KEY_FORMULA</TableName>
+<ColumnList>TABLE_NAME,PARTITION_DURATION,PARTITION_DURATION_UOM_CODE,PARTITION_DURATION_BASE</ColumnList>
+<sqlString>insert into PARTITION_KEY_FORMULA ( TABLE_NAME,PARTITION_DURATION,PARTITION_DURATION_UOM_CODE,PARTITION_DURATION_BASE) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_BN_CONTEXT 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_BN_CONTEXT.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>BN_CONTEXT</TableName>
+<ColumnList>BN_CONTEXT_GID,BN_CONTEXT_XID,BN_CONTEXT_CLASS,DOMAIN_NAME</ColumnList>
+<sqlString>insert into BN_CONTEXT ( BN_CONTEXT_GID,BN_CONTEXT_XID,BN_CONTEXT_CLASS,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_BN_TYPE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_BN_TYPE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>BN_TYPE</TableName>
+<ColumnList>BN_TYPE_GID,BN_TYPE_XID,BN_CONTEXT_GID,DOMAIN_NAME</ColumnList>
+<sqlString>insert into BN_TYPE ( BN_TYPE_GID,BN_TYPE_XID,BN_CONTEXT_GID,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>8</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_SHIPMENT_REFNUM_QUAL 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_SHIPMENT_REFNUM_QUAL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>SHIPMENT_REFNUM_QUAL</TableName>
+<ColumnList>SHIPMENT_REFNUM_QUAL_GID,SHIPMENT_REFNUM_QUAL_XID,SHIPMENT_REFNUM_QUAL_DESC,IS_REMOVE_ON_SERVPROV_CHANGE,DEFAULT_REFNUM_BN_TYPE_GID,DOMAIN_NAME</ColumnList>
+<sqlString>insert into SHIPMENT_REFNUM_QUAL ( SHIPMENT_REFNUM_QUAL_GID,SHIPMENT_REFNUM_QUAL_XID,SHIPMENT_REFNUM_QUAL_DESC,IS_REMOVE_ON_SERVPROV_CHANGE,DEFAULT_REFNUM_BN_TYPE_GID,DOMAIN_NAME) values (?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_LOCATION_REFNUM_QUAL 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_LOCATION_REFNUM_QUAL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>LOCATION_REFNUM_QUAL</TableName>
+<ColumnList>LOCATION_REFNUM_QUAL_GID,LOCATION_REFNUM_QUAL_XID,LOCATION_REFNUM_QUAL_DESC,DOMAIN_NAME</ColumnList>
+<sqlString>insert into LOCATION_REFNUM_QUAL ( LOCATION_REFNUM_QUAL_GID,LOCATION_REFNUM_QUAL_XID,LOCATION_REFNUM_QUAL_DESC,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_REMARK_QUAL 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_REMARK_QUAL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>REMARK_QUAL</TableName>
+<ColumnList>REMARK_QUAL_GID,REMARK_QUAL_XID,REMARK_QUAL_DESC,REMARK_LEVEL,IS_VISIBLE_IF_MASTER_CARR,DOMAIN_NAME</ColumnList>
+<sqlString>insert into REMARK_QUAL ( REMARK_QUAL_GID,REMARK_QUAL_XID,REMARK_QUAL_DESC,REMARK_LEVEL,IS_VISIBLE_IF_MASTER_CARR,DOMAIN_NAME) values (?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_INVOICE_REFNUM_QUAL 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_INVOICE_REFNUM_QUAL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>INVOICE_REFNUM_QUAL</TableName>
+<ColumnList>INVOICE_REFNUM_QUAL_GID,INVOICE_REFNUM_QUAL_XID,INVOICE_REFNUM_DESC,DOMAIN_NAME</ColumnList>
+<sqlString>insert into INVOICE_REFNUM_QUAL ( INVOICE_REFNUM_QUAL_GID,INVOICE_REFNUM_QUAL_XID,INVOICE_REFNUM_DESC,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>2</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_NOTIFY_FUNCTION 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_NOTIFY_FUNCTION.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>NOTIFY_FUNCTION</TableName>
+<ColumnList>NOTIFY_FUNCTION_GID,NOTIFY_FUNCTION_XID,DOMAIN_NAME</ColumnList>
+<sqlString>insert into NOTIFY_FUNCTION ( NOTIFY_FUNCTION_GID,NOTIFY_FUNCTION_XID,DOMAIN_NAME) values (?,?,?) /* DBA */</sqlString>
+<ProcessCount>6</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_NOTIFY_SUBJECT 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_NOTIFY_SUBJECT.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>NOTIFY_SUBJECT</TableName>
+<ColumnList>NOTIFY_SUBJECT_GID,NOTIFY_SUBJECT_XID,NOTIFY_FUNCTION_GID,NOTIFY_SUBJECT_TEXT,SUPPORTS_INVOLVED_PARTIES,SUPPORTS_SERVICE_PROVIDER,SUPPORTS_DOCUMENTS,SUPPORTS_EXTERNAL_NOTIFICATION,DOMAIN_NAME</ColumnList>
+<sqlString>insert into NOTIFY_SUBJECT ( NOTIFY_SUBJECT_GID,NOTIFY_SUBJECT_XID,NOTIFY_FUNCTION_GID,NOTIFY_SUBJECT_TEXT,SUPPORTS_INVOLVED_PARTIES,SUPPORTS_SERVICE_PROVIDER,SUPPORTS_DOCUMENTS,SUPPORTS_EXTERNAL_NOTIFICATION,DOMAIN_NAME) values (?,?,?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>190</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>3</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_XML_BUILDER 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_XML_BUILDER.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>XML_BUILDER</TableName>
+<ColumnList>XML_BUILDER_GID,XML_BUILDER_XID,JAVA_CLASS_NAME,DOMAIN_NAME</ColumnList>
+<sqlString>insert into XML_BUILDER ( XML_BUILDER_GID,XML_BUILDER_XID,JAVA_CLASS_NAME,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>18</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>268</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_OUT_XML_PROFILE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_OUT_XML_PROFILE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>OUT_XML_PROFILE</TableName>
+<ColumnList>OUT_XML_PROFILE_GID,OUT_XML_PROFILE_XID,DOMAIN_NAME,DEFAULT_MODE,SHOULD_VALIDATE</ColumnList>
+<sqlString>insert into OUT_XML_PROFILE ( OUT_XML_PROFILE_GID,OUT_XML_PROFILE_XID,DOMAIN_NAME,DEFAULT_MODE,SHOULD_VALIDATE) values (?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>2</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>1</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+OUT_XML_PROFILE_CHILD 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>OUT_XML_PROFILE_CHILD.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>OUT_XML_PROFILE_CHILD</TableName>
+<ColumnList>OUT_XML_PROFILE_GID,CHILD_OUT_XML_PROFILE_GID,DOMAIN_NAME</ColumnList>
+<sqlString>insert into OUT_XML_PROFILE_CHILD ( OUT_XML_PROFILE_GID,CHILD_OUT_XML_PROFILE_GID,DOMAIN_NAME) values (?,?,?) /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_STYLESHEET_PROFILE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_STYLESHEET_PROFILE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>STYLESHEET_PROFILE</TableName>
+<ColumnList>STYLESHEET_PROFILE_GID,STYLESHEET_PROFILE_XID,TEMPLATE_NAME,RAW_XML,FORMAT,SUBJECT_PROPKEY,OUT_XML_PROFILE_GID,DATA_GENERATOR_PLUGIN_GID,DOMAIN_NAME</ColumnList>
+<sqlString>insert into STYLESHEET_PROFILE ( STYLESHEET_PROFILE_GID,STYLESHEET_PROFILE_XID,TEMPLATE_NAME,RAW_XML,FORMAT,SUBJECT_PROPKEY,OUT_XML_PROFILE_GID,DATA_GENERATOR_PLUGIN_GID,DOMAIN_NAME) values (?,?,?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>30</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>7</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_ALLOC_METRIC 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_ALLOC_METRIC.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>ALLOC_METRIC</TableName>
+<ColumnList>ALLOC_METRIC_GID,ALLOC_METRIC_XID,ALLOCATION_BASIS,CLASS_NAME,SINGLE_ORIGIN_ONLY,SINGLE_DESTINATION_ONLY,SINGLE_ORDER_ONLY,DOMAIN_NAME</ColumnList>
+<sqlString>insert into ALLOC_METRIC ( ALLOC_METRIC_GID,ALLOC_METRIC_XID,ALLOCATION_BASIS,CLASS_NAME,SINGLE_ORIGIN_ONLY,SINGLE_DESTINATION_ONLY,SINGLE_ORDER_ONLY,DOMAIN_NAME) values (?,?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>4</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_DATA_QUERY_TYPE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_DATA_QUERY_TYPE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>DATA_QUERY_TYPE</TableName>
+<ColumnList>DATA_QUERY_TYPE_GID,DATA_QUERY_TYPE_XID,JAVA_CLASS,SUPPORT_INTEGRATION,SUPPORT_TRANSACTIONAL_EVENTS,SUPPORT_AGENT,SUPPORT_TEXT,DOMAIN_NAME</ColumnList>
+<sqlString>insert into DATA_QUERY_TYPE ( DATA_QUERY_TYPE_GID,DATA_QUERY_TYPE_XID,JAVA_CLASS,SUPPORT_INTEGRATION,SUPPORT_TRANSACTIONAL_EVENTS,SUPPORT_AGENT,SUPPORT_TEXT,DOMAIN_NAME) values (?,?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>4</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>3</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_APP_ACTION 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_APP_ACTION.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>APP_ACTION</TableName>
+<ColumnList>APP_ACTION_GID,APP_ACTION_XID,APP_ACTION_TYPE,ALLOW_SAVED_CONDITION_GID,ALLOW_PLUGIN_GID,ALLOW_CAUSE_MSG_GID,ALLOW_SOLUTION_MSG_GID,IS_SUPPORT_POST,DOMAIN_NAME,OBJECT_LOCK_TIMEOUT,OBJECT_LOCK_TIMEOUT_UOM_CODE,OBJECT_LOCK_TIMEOUT_BASE,IS_POWER_ACTION,APPLICATION_NAME,DATA_QUERY_TYPE_GID,POWER_ACTION_NAME</ColumnList>
+<sqlString>insert into APP_ACTION ( APP_ACTION_GID,APP_ACTION_XID,APP_ACTION_TYPE,ALLOW_SAVED_CONDITION_GID,ALLOW_PLUGIN_GID,ALLOW_CAUSE_MSG_GID,ALLOW_SOLUTION_MSG_GID,IS_SUPPORT_POST,DOMAIN_NAME,OBJECT_LOCK_TIMEOUT,OBJECT_LOCK_TIMEOUT_UOM_CODE,OBJECT_LOCK_TIMEOUT_BASE,IS_POWER_ACTION,APPLICATION_NAME,DATA_QUERY_TYPE_GID,POWER_ACTION_NAME) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>190</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>776</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_APP_ACTION_RESP_PARTY_P 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_APP_ACTION_RESP_PARTY_P.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>APP_ACTION_RESP_PARTY_P</TableName>
+<ColumnList>APP_ACTION_GID,BS_RESP_PARTY_PROFILE_GID,IS_EXCLUDED,DOMAIN_NAME</ColumnList>
+<sqlString>insert into APP_ACTION_RESP_PARTY_P ( APP_ACTION_GID,BS_RESP_PARTY_PROFILE_GID,IS_EXCLUDED,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>172</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>1</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_COUNTRY_CODE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_COUNTRY_CODE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>COUNTRY_CODE</TableName>
+<ColumnList>COUNTRY_CODE3_GID,COUNTRY_CODE3_XID,COUNTRY_CODE2,COUNTRY_CODE_FIPS,CAR_REGISTRATION_CODE,COUNTRY_NAME,COUNTRY_NUMBER,COUNTRY_ZONE_GID,GEO_POSTAL_CODE_LENGTH,IATA_REGION,DOMAIN_NAME</ColumnList>
+<sqlString>insert into COUNTRY_CODE ( COUNTRY_CODE3_GID,COUNTRY_CODE3_XID,COUNTRY_CODE2,COUNTRY_CODE_FIPS,CAR_REGISTRATION_CODE,COUNTRY_NAME,COUNTRY_NUMBER,COUNTRY_ZONE_GID,GEO_POSTAL_CODE_LENGTH,IATA_REGION,DOMAIN_NAME) values (?,?,?,?,?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>130</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_CURRENCY 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_CURRENCY.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>CURRENCY</TableName>
+<ColumnList>CURRENCY_GID,CURRENCY_XID,CURRENCY_NAME,COUNTRY_CODE3_GID,DOMAIN_NAME</ColumnList>
+<sqlString>insert into CURRENCY ( CURRENCY_GID,CURRENCY_XID,CURRENCY_NAME,COUNTRY_CODE3_GID,DOMAIN_NAME) values (?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>6</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_PREFERENCE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_PREFERENCE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>PREFERENCE</TableName>
+<ColumnList>PREFERENCE_GID,PREFERENCE_XID,DESCRIPTION,DOMAIN_NAME</ColumnList>
+<sqlString>insert into PREFERENCE ( PREFERENCE_GID,PREFERENCE_XID,DESCRIPTION,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_QUERY_TABLE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_QUERY_TABLE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>QUERY_TABLE</TableName>
+<ColumnList>QUERY_TABLE_GID,QUERY_TABLE_XID,DESCRIPTION,QUERY_NAME,DOMAIN_NAME</ColumnList>
+<sqlString>insert into QUERY_TABLE ( QUERY_TABLE_GID,QUERY_TABLE_XID,DESCRIPTION,QUERY_NAME,DOMAIN_NAME) values (?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>36</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>37</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_RATE_ATTRIBUTE_JOIN 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_RATE_ATTRIBUTE_JOIN.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>RATE_ATTRIBUTE_JOIN</TableName>
+<ColumnList>RATE_OFFERING_TYPE_GID,RATE_ATTRIBUTE_GID,DOMAIN_NAME</ColumnList>
+<sqlString>insert into RATE_ATTRIBUTE_JOIN ( RATE_OFFERING_TYPE_GID,RATE_ATTRIBUTE_GID,DOMAIN_NAME) values (?,?,?) /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>12</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_RULE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_RULE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>RULE</TableName>
+<ColumnList>RULE_GID,RULE_XID,RULE_NAME,JAVA_CLASS,DOMAIN_NAME</ColumnList>
+<sqlString>insert into RULE ( RULE_GID,RULE_XID,RULE_NAME,JAVA_CLASS,DOMAIN_NAME) values (?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_RULE_SET_JOIN 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_RULE_SET_JOIN.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>RULE_SET_JOIN</TableName>
+<ColumnList>RULE_SET_GID,RULE_GID,SEQUENCE,DOMAIN_NAME</ColumnList>
+<sqlString>insert into RULE_SET_JOIN ( RULE_SET_GID,RULE_GID,SEQUENCE,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_RATE_GEO_COST_OPERAND 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_RATE_GEO_COST_OPERAND.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>RATE_GEO_COST_OPERAND</TableName>
+<ColumnList>RATE_GEO_COST_OPERAND_GID,GUI_ENABLED,DESCRIPTION,RATE_GEO_COST_OPERAND_XID,FUNCTION_CODE,RATABLE_JAVA_CLASS,RATE_GEO_COST_OPERAND_SEQ,RATABLE_OPERATOR_GID,DATA_TYPE,UOM_TYPE,GID_QUERY_CLASS,PROFILE_TABLE_NAME,PROFILE_DETAIL_TABLE_NAME,PROFILE_GID_COLUMN_NAME,PROFILE_TARGET_COLUMN_NAME,DATA_TYPE_HIGH,UOM_TYPE_HIGH,GID_QUERY_CLASS_HIGH,DOMAIN_NAME</ColumnList>
+<sqlString>insert into RATE_GEO_COST_OPERAND ( RATE_GEO_COST_OPERAND_GID,GUI_ENABLED,DESCRIPTION,RATE_GEO_COST_OPERAND_XID,FUNCTION_CODE,RATABLE_JAVA_CLASS,RATE_GEO_COST_OPERAND_SEQ,RATABLE_OPERATOR_GID,DATA_TYPE,UOM_TYPE,GID_QUERY_CLASS,PROFILE_TABLE_NAME,PROFILE_DETAIL_TABLE_NAME,PROFILE_GID_COLUMN_NAME,PROFILE_TARGET_COLUMN_NAME,DATA_TYPE_HIGH,UOM_TYPE_HIGH,GID_QUERY_CLASS_HIGH,DOMAIN_NAME) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>19</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>12</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_RATE_GEO_COST_OP_OWNER 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_RATE_GEO_COST_OP_OWNER.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>RATE_GEO_COST_OP_OWNER</TableName>
+<ColumnList>RATE_GEO_COST_OPERAND_GID,OWNER_RATE_GEO_COST_OP_GID,DOMAIN_NAME</ColumnList>
+<sqlString>insert into RATE_GEO_COST_OP_OWNER ( RATE_GEO_COST_OPERAND_GID,OWNER_RATE_GEO_COST_OP_GID,DOMAIN_NAME) values (?,?,?) /* DBA */</sqlString>
+<ProcessCount>15</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_PLANNING_PARAMETER_QUALIFIER 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_PLANNING_PARAMETER_QUALIFIER.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>PLANNING_PARAMETER_QUALIFIER</TableName>
+<ColumnList>PLANNING_PARAM_QUAL_GID,PLANNING_PARAM_QUAL_XID,PLANNING_PARAM_QUAL_DESC,DATA_TYPE,TYPE,GID_QUERY_CLASS,DOMAIN_NAME</ColumnList>
+<sqlString>insert into PLANNING_PARAMETER_QUALIFIER ( PLANNING_PARAM_QUAL_GID,PLANNING_PARAM_QUAL_XID,PLANNING_PARAM_QUAL_DESC,DATA_TYPE,TYPE,GID_QUERY_CLASS,DOMAIN_NAME) values (?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>37</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>2</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_DATA_TYPE_ASSOCIATION 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_DATA_TYPE_ASSOCIATION.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>DATA_TYPE_ASSOCIATION</TableName>
+<ColumnList>DATA_TYPE_ASSOCIATION_GID,DATA_TYPE_ASSOCIATION_XID,IS_PRIMARY,FROM_DATA_QUERY_TYPE_GID,TO_DATA_QUERY_TYPE_GID,ASSOCIATION_QUERY,DOMAIN_NAME</ColumnList>
+<sqlString>insert into DATA_TYPE_ASSOCIATION ( DATA_TYPE_ASSOCIATION_GID,DATA_TYPE_ASSOCIATION_XID,IS_PRIMARY,FROM_DATA_QUERY_TYPE_GID,TO_DATA_QUERY_TYPE_GID,ASSOCIATION_QUERY,DOMAIN_NAME) values (?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>11</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>3</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_SAVED_QUERY 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_SAVED_QUERY.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>SAVED_QUERY</TableName>
+<ColumnList>SAVED_QUERY_GID,SAVED_QUERY_XID,QUERY_NAME,USER_QUERY_NAME,SQL_FIND_ALL,SQL_CHECK_ONE,USE_IN_FINDER,DOMAIN_NAME</ColumnList>
+<sqlString>insert into SAVED_QUERY ( SAVED_QUERY_GID,SAVED_QUERY_XID,QUERY_NAME,USER_QUERY_NAME,SQL_FIND_ALL,SQL_CHECK_ONE,USE_IN_FINDER,DOMAIN_NAME) values (?,?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>0</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>2</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_AGENT_EVENT 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_AGENT_EVENT.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>AGENT_EVENT</TableName>
+<ColumnList>AGENT_EVENT_GID,AGENT_EVENT_XID,DATA_QUERY_TYPE_GID,NOTIFY_SUBJECT_GID,STATUS_TYPE_GID,STATUS_VALUE_GID,AGENT_EVENT_PARENT,EVENT_TOPIC_CLASS,IS_CUSTOM,IS_LIFETIME_MOD,DOMAIN_NAME</ColumnList>
+<sqlString>insert into AGENT_EVENT ( AGENT_EVENT_GID,AGENT_EVENT_XID,DATA_QUERY_TYPE_GID,NOTIFY_SUBJECT_GID,STATUS_TYPE_GID,STATUS_VALUE_GID,AGENT_EVENT_PARENT,EVENT_TOPIC_CLASS,IS_CUSTOM,IS_LIFETIME_MOD,DOMAIN_NAME) values (?,?,?,?,?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>227</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>1</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+AGENT_ACTION 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>AGENT_ACTION.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>AGENT_ACTION</TableName>
+<ColumnList>AGENT_ACTION_GID,AGENT_ACTION_XID,ACTION_TOPIC_CLASS,DATA_QUERY_TYPE_GID,IS_FOR_RELATED_OBJECTS,APP_ACTION_GID,DOMAIN_NAME,HELP_DESCRIPTION</ColumnList>
+<sqlString>insert into AGENT_ACTION ( AGENT_ACTION_GID,AGENT_ACTION_XID,ACTION_TOPIC_CLASS,DATA_QUERY_TYPE_GID,IS_FOR_RELATED_OBJECTS,APP_ACTION_GID,DOMAIN_NAME,HELP_DESCRIPTION ) values ( ?,?,?,?,?,?,?,empty_clob()) /* DBA */</sqlString>
+<ProcessCount>47</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>550</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_AGENT 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_AGENT.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>AGENT</TableName>
+<ColumnList>AGENT_GID,AGENT_XID,DATA_QUERY_TYPE_GID,SAVED_CONDITION_GID,REENTRANCY_LEVEL,IS_ACTIVE,DOMAIN_NAME</ColumnList>
+<sqlString>insert into AGENT ( AGENT_GID,AGENT_XID,DATA_QUERY_TYPE_GID,SAVED_CONDITION_GID,REENTRANCY_LEVEL,IS_ACTIVE,DOMAIN_NAME) values (?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_AGENT_ACTION_DETAILS 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_AGENT_ACTION_DETAILS.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>AGENT_ACTION_DETAILS</TableName>
+<ColumnList>AGENT_GID,AGENT_ACTION_GID,ACTION_FLOW,ACTION_SEQUENCE,ACTION_PARAMETERS,DATA_TYPE_ASSOCIATION_GID,DOMAIN_NAME</ColumnList>
+<sqlString>insert into AGENT_ACTION_DETAILS ( AGENT_GID,AGENT_ACTION_GID,ACTION_FLOW,ACTION_SEQUENCE,ACTION_PARAMETERS,DATA_TYPE_ASSOCIATION_GID,DOMAIN_NAME) values (?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>8</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>17</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_AGENT_EVENT_DETAILS 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_AGENT_EVENT_DETAILS.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>AGENT_EVENT_DETAILS</TableName>
+<ColumnList>AGENT_GID,AGENT_EVENT_GID,AGENT_EVENT_PARAMETERS,DOMAIN_NAME</ColumnList>
+<sqlString>insert into AGENT_EVENT_DETAILS ( AGENT_GID,AGENT_EVENT_GID,AGENT_EVENT_PARAMETERS,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>2</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_USER_MENU 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_USER_MENU.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>USER_MENU</TableName>
+<ColumnList>USER_MENU_GID,USER_MENU_XID,USER_MENU_NAME,URL,EXPAND_BY_DEFAULT,EXPANDABLE,PARENT_MENU_GID,CATEGORY_LABLE,MENU_LEVEL,DOMAIN_NAME</ColumnList>
+<sqlString>insert into USER_MENU ( USER_MENU_GID,USER_MENU_XID,USER_MENU_NAME,URL,EXPAND_BY_DEFAULT,EXPANDABLE,PARENT_MENU_GID,CATEGORY_LABLE,MENU_LEVEL,DOMAIN_NAME) values (?,?,?,?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>6</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>4</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+USER_MENU_LAYOUT 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>USER_MENU_LAYOUT.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>USER_MENU_LAYOUT</TableName>
+<ColumnList>USER_MENU_LAYOUT_GID,USER_MENU_LAYOUT_XID,DOMAIN_NAME,USER_MENU_LAYOUT_XML</ColumnList>
+<sqlString>insert into USER_MENU_LAYOUT ( USER_MENU_LAYOUT_GID,USER_MENU_LAYOUT_XID,DOMAIN_NAME,USER_MENU_LAYOUT_XML ) values ( ?,?,?,empty_clob()) /* DBA */</sqlString>
+<ProcessCount>0</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>8</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_DISTANCE_EXTERNAL_ENGINE_PARMS 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_DISTANCE_EXTERNAL_ENGINE_PARMS.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>DISTANCE_EXTERNAL_ENGINE_PARMS</TableName>
+<ColumnList>DISTANCE_EXTERNAL_ENGINE_GID,PARM,VALUE,COUNTRY_CODE3_GID,DOMAIN_NAME</ColumnList>
+<sqlString>insert into DISTANCE_EXTERNAL_ENGINE_PARMS ( DISTANCE_EXTERNAL_ENGINE_GID,PARM,VALUE,COUNTRY_CODE3_GID,DOMAIN_NAME) values (?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>26</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>3</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_INT_GLOG_XML_ELEMENT 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_INT_GLOG_XML_ELEMENT.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>INT_GLOG_XML_ELEMENT</TableName>
+<ColumnList>GLOG_XML_ELEMENT_GID,GLOG_XML_ELEMENT_XID,DESCRIPTION,DOMAIN_NAME,OUT_XML_PROFILE_GID,ELEMENT_TYPE</ColumnList>
+<sqlString>insert into INT_GLOG_XML_ELEMENT ( GLOG_XML_ELEMENT_GID,GLOG_XML_ELEMENT_XID,DESCRIPTION,DOMAIN_NAME,OUT_XML_PROFILE_GID,ELEMENT_TYPE) values (?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>4</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>66</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+INT_MANAGED_CHILDREN_MAP 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>INT_MANAGED_CHILDREN_MAP.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>INT_MANAGED_CHILDREN_MAP</TableName>
+<ColumnList>GLOG_XML_ELEMENT_GID,CHILD_ELEMENT_ALIAS,TABLE_NAME,CHILD_ELEMENT_PATH,DOMAIN_NAME</ColumnList>
+<sqlString>insert into INT_MANAGED_CHILDREN_MAP ( GLOG_XML_ELEMENT_GID,CHILD_ELEMENT_ALIAS,TABLE_NAME,CHILD_ELEMENT_PATH,DOMAIN_NAME) values (?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>232</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_LOGFILE_DETAIL 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_LOGFILE_DETAIL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>LOGFILE_DETAIL</TableName>
+<ColumnList>LOGFILE_GID,DETAIL_ID,OFF,DOMAIN_NAME</ColumnList>
+<sqlString>insert into LOGFILE_DETAIL ( LOGFILE_GID,DETAIL_ID,OFF,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>10</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>9</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_S_SUL_REFNUM_QUAL 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_S_SUL_REFNUM_QUAL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>S_SUL_REFNUM_QUAL</TableName>
+<ColumnList>S_SUL_REFNUM_QUAL_GID,S_SUL_REFNUM_QUAL_XID,DESCRIPTION,DOMAIN_NAME</ColumnList>
+<sqlString>insert into S_SUL_REFNUM_QUAL ( S_SUL_REFNUM_QUAL_GID,S_SUL_REFNUM_QUAL_XID,DESCRIPTION,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+FINDER_SET 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>FINDER_SET.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>FINDER_SET</TableName>
+<ColumnList>FINDER_SET_GID,FINDER_SET_XID,FINDER_SET_NAME,QUERY_TABLE_GID,DOMAIN_NAME,FINDER_SET_XML</ColumnList>
+<sqlString>insert into FINDER_SET ( FINDER_SET_GID,FINDER_SET_XID,FINDER_SET_NAME,QUERY_TABLE_GID,DOMAIN_NAME,FINDER_SET_XML ) values ( ?,?,?,?,?,empty_clob()) /* DBA */</sqlString>
+<ProcessCount>33</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>621</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION</TableName>
+<ColumnList>TRANSLATION_GID,TRANSLATION_XID,TRANSLATION_TYPE,DOMAIN_NAME</ColumnList>
+<sqlString>insert into TRANSLATION ( TRANSLATION_GID,TRANSLATION_XID,TRANSLATION_TYPE,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>1049</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>1</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION_NOT 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION_NOT.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION</TableName>
+<ColumnList>TRANSLATION_GID,TRANSLATION_XID,TRANSLATION_TYPE,DOMAIN_NAME</ColumnList>
+<sqlString>insert into TRANSLATION ( TRANSLATION_GID,TRANSLATION_XID,TRANSLATION_TYPE,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>229</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>1</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION_QUERY 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION_QUERY.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION</TableName>
+<ColumnList>TRANSLATION_GID,TRANSLATION_XID,TRANSLATION_TYPE,DOMAIN_NAME</ColumnList>
+<sqlString>insert into TRANSLATION ( TRANSLATION_GID,TRANSLATION_XID,TRANSLATION_TYPE,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>699</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>9420</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION_EXPL 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION_EXPL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION</TableName>
+<ColumnList>TRANSLATION_GID,TRANSLATION_XID,TRANSLATION_TYPE,DOMAIN_NAME</ColumnList>
+<sqlString>insert into TRANSLATION ( TRANSLATION_GID,TRANSLATION_XID,TRANSLATION_TYPE,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>17</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>15</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION_ERR 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION_ERR.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION</TableName>
+<ColumnList>TRANSLATION_GID,TRANSLATION_XID,TRANSLATION_TYPE,DOMAIN_NAME</ColumnList>
+<sqlString>insert into TRANSLATION ( TRANSLATION_GID,TRANSLATION_XID,TRANSLATION_TYPE,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>281</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION_D_en 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION_D_en.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION_D</TableName>
+<ColumnList>TRANSLATION_GID,LANG,COUNTRY,VARIANT,TEXT,DOMAIN_NAME</ColumnList>
+<sqlString>insert into TRANSLATION_D ( TRANSLATION_GID,LANG,COUNTRY,VARIANT,TEXT,DOMAIN_NAME) values (?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>1048</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>682</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION_D_NOT_en 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION_D_NOT_en.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION_D</TableName>
+<ColumnList>TRANSLATION_GID,LANG,COUNTRY,VARIANT,TEXT,DOMAIN_NAME</ColumnList>
+<sqlString>insert into TRANSLATION_D ( TRANSLATION_GID,LANG,COUNTRY,VARIANT,TEXT,DOMAIN_NAME) values (?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>229</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>2</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION_D_QUERY_en 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION_D_QUERY_en.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION_D</TableName>
+<ColumnList>TRANSLATION_GID,LANG,COUNTRY,VARIANT,TEXT,DOMAIN_NAME</ColumnList>
+<sqlString>insert into TRANSLATION_D ( TRANSLATION_GID,LANG,COUNTRY,VARIANT,TEXT,DOMAIN_NAME) values (?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>699</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>9427</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION_D_EXPL_en 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION_D_EXPL_en.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION_D</TableName>
+<ColumnList>TRANSLATION_GID,LANG,COUNTRY,VARIANT,TEXT,DOMAIN_NAME</ColumnList>
+<sqlString>insert into TRANSLATION_D ( TRANSLATION_GID,LANG,COUNTRY,VARIANT,TEXT,DOMAIN_NAME) values (?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>17</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>5</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION_D_ERR_en 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION_D_ERR_en.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION_D</TableName>
+<ColumnList>TRANSLATION_GID,LANG,COUNTRY,VARIANT,TEXT,DOMAIN_NAME</ColumnList>
+<sqlString>insert into TRANSLATION_D ( TRANSLATION_GID,LANG,COUNTRY,VARIANT,TEXT,DOMAIN_NAME) values (?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>265</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>197</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_ACTION_DEF 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_ACTION_DEF.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>ACTION_DEF</TableName>
+<ColumnList>ACTION_DEF_GID,ACTION_DEF_XID,QUERY_TABLE_GID,IS_ASSIGNABLE,SUPPORT_IGNORE_CRITERIA,DOMAIN_NAME</ColumnList>
+<sqlString>insert into ACTION_DEF ( ACTION_DEF_GID,ACTION_DEF_XID,QUERY_TABLE_GID,IS_ASSIGNABLE,SUPPORT_IGNORE_CRITERIA,DOMAIN_NAME) values (?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>96</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>18</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_ACTION_DEF_STATE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_ACTION_DEF_STATE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>ACTION_DEF_STATE</TableName>
+<ColumnList>ACTION_DEF_GID,STATE,ACTION_CLASS,IS_DEFAULT,DOMAIN_NAME,IS_SELECTION_DEFAULT</ColumnList>
+<sqlString>insert into ACTION_DEF_STATE ( ACTION_DEF_GID,STATE,ACTION_CLASS,IS_DEFAULT,DOMAIN_NAME,IS_SELECTION_DEFAULT) values (?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>213</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>10</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_ACTION 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_ACTION.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>ACTION</TableName>
+<ColumnList>ACTION_GID,ACTION_XID,ACTION_DEF_GID,LABEL_KEY,APP_ACTION_GID,DOMAIN_NAME</ColumnList>
+<sqlString>insert into ACTION ( ACTION_GID,ACTION_XID,ACTION_DEF_GID,LABEL_KEY,APP_ACTION_GID,DOMAIN_NAME) values (?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>79</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>70</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_ACTION_ARG 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_ACTION_ARG.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>ACTION_ARG</TableName>
+<ColumnList>ACTION_GID,ARG_NAME,ARG_VALUE,DOMAIN_NAME</ColumnList>
+<sqlString>insert into ACTION_ARG ( ACTION_GID,ARG_NAME,ARG_VALUE,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>21</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>9</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_MONITOR_OPERAND 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_MONITOR_OPERAND.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>MONITOR_OPERAND</TableName>
+<ColumnList>MONITOR_OPERAND_GID,MONITOR_OPERAND_XID,MONITOR_OPERAND_NAME,DOMAIN_NAME</ColumnList>
+<sqlString>insert into MONITOR_OPERAND ( MONITOR_OPERAND_GID,MONITOR_OPERAND_XID,MONITOR_OPERAND_NAME,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>4</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>1</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_MONITOR_OPERAND_D 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_MONITOR_OPERAND_D.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>MONITOR_OPERAND_D</TableName>
+<ColumnList>MONITOR_OPERAND_GID,DATA_QUERY_TYPE_GID,IS_OPERAND,IS_TIME_DETAIL,DOMAIN_NAME</ColumnList>
+<sqlString>insert into MONITOR_OPERAND_D ( MONITOR_OPERAND_GID,DATA_QUERY_TYPE_GID,IS_OPERAND,IS_TIME_DETAIL,DOMAIN_NAME) values (?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>4</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TABLE_SET 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TABLE_SET.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TABLE_SET</TableName>
+<ColumnList>TABLE_SET</ColumnList>
+<sqlString>insert into TABLE_SET ( TABLE_SET) values (?) /* DBA */</sqlString>
+<ProcessCount>4</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>1</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TABLE_SET_DETAIL 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TABLE_SET_DETAIL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TABLE_SET_DETAIL</TableName>
+<ColumnList>TABLE_SET,TABLE_NAME</ColumnList>
+<sqlString>insert into TABLE_SET_DETAIL ( TABLE_SET,TABLE_NAME) values (?,?) /* DBA */</sqlString>
+<ProcessCount>35</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>1</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_PLANNING_PARAMETER 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_PLANNING_PARAMETER.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>PLANNING_PARAMETER</TableName>
+<ColumnList>PLANNING_PARAM_QUALIFIER_GID,PLANNING_PARAM_VALUE,PLANNING_PARAM_UOM_CODE,PLANNING_PARAMETER_SET_GID,DOMAIN_NAME</ColumnList>
+<sqlString>insert into PLANNING_PARAMETER ( PLANNING_PARAM_QUALIFIER_GID,PLANNING_PARAM_VALUE,PLANNING_PARAM_UOM_CODE,PLANNING_PARAMETER_SET_GID,DOMAIN_NAME) values (?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>36</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>1</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_BN_RULE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_BN_RULE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>BN_RULE</TableName>
+<ColumnList>BN_RULE_GID,BN_RULE_XID,BN_TYPE_GID,BN_GENERATOR_GID,RULE_DEFINITION,IS_DEFAULT,DOMAIN_NAME</ColumnList>
+<sqlString>insert into BN_RULE ( BN_RULE_GID,BN_RULE_XID,BN_TYPE_GID,BN_GENERATOR_GID,RULE_DEFINITION,IS_DEFAULT,DOMAIN_NAME) values (?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>9</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>3</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_NOTIFY_SUBJECT_STYLESHEET 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_NOTIFY_SUBJECT_STYLESHEET.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>NOTIFY_SUBJECT_STYLESHEET</TableName>
+<ColumnList>NOTIFY_SUBJECT_GID,COM_METHOD_GID,STYLESHEET_PROFILE_GID,IS_DEFAULT,DOMAIN_NAME</ColumnList>
+<sqlString>insert into NOTIFY_SUBJECT_STYLESHEET ( NOTIFY_SUBJECT_GID,COM_METHOD_GID,STYLESHEET_PROFILE_GID,IS_DEFAULT,DOMAIN_NAME) values (?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>703</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>1</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_STATUS_FUNCTOR 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_STATUS_FUNCTOR.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>STATUS_FUNCTOR</TableName>
+<ColumnList>OBJECT_TYPE,STATUS_FUNCTION,FUNCTOR_CLASS,SAVED_CONDITION_GID,SAVED_CONDITION_ADDITIVE,DOMAIN_NAME</ColumnList>
+<sqlString>insert into STATUS_FUNCTOR ( OBJECT_TYPE,STATUS_FUNCTION,FUNCTOR_CLASS,SAVED_CONDITION_GID,SAVED_CONDITION_ADDITIVE,DOMAIN_NAME) values (?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>4</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_WORKFLOW_PARAM 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_WORKFLOW_PARAM.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>WORKFLOW_PARAM</TableName>
+<ColumnList>WORKFLOW_INFO_GID,PARAMETER,VALUE,DOMAIN_NAME</ColumnList>
+<sqlString>insert into WORKFLOW_PARAM ( WORKFLOW_INFO_GID,PARAMETER,VALUE,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_STATUS_TYPE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_STATUS_TYPE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>STATUS_TYPE</TableName>
+<ColumnList>STATUS_TYPE_GID,STATUS_TYPE_XID,OBJECT_TYPE,DESCRIPTION,SEQUENCE,IS_EXTERNAL,DOMAIN_NAME</ColumnList>
+<sqlString>insert into STATUS_TYPE ( STATUS_TYPE_GID,STATUS_TYPE_XID,OBJECT_TYPE,DESCRIPTION,SEQUENCE,IS_EXTERNAL,DOMAIN_NAME) values (?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>1</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_STATUS_VALUE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_STATUS_VALUE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>STATUS_VALUE</TableName>
+<ColumnList>STATUS_TYPE_GID,STATUS_VALUE_GID,STATUS_VALUE_XID,OBJECT_TYPE,DESCRIPTION,SEQUENCE,INITIAL_VALUE,DOMAIN_NAME</ColumnList>
+<sqlString>insert into STATUS_VALUE ( STATUS_TYPE_GID,STATUS_VALUE_GID,STATUS_VALUE_XID,OBJECT_TYPE,DESCRIPTION,SEQUENCE,INITIAL_VALUE,DOMAIN_NAME) values (?,?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>9</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>2</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_APP_FUNCTION 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_APP_FUNCTION.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>APP_FUNCTION</TableName>
+<ColumnList>APP_FUNCTION_GID,APP_FUNCTION_XID,SECURITY_FUNCTION,DOMAIN_NAME</ColumnList>
+<sqlString>insert into APP_FUNCTION ( APP_FUNCTION_GID,APP_FUNCTION_XID,SECURITY_FUNCTION,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>235</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+PLANNING_TASK 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>PLANNING_TASK.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>PLANNING_TASK</TableName>
+<ColumnList>PLANNING_TASK_ID,APP_FUNCTION_GID,SOLVER_TIMEOUT,SOLVER_TIMEOUT_UOM_CODE,SOLVER_TIMEOUT_BASE,SOLVER_MAX_SIZE,SOLVER_PERCENT_OPTIMAL,DOMAIN_NAME</ColumnList>
+<sqlString>insert into PLANNING_TASK ( PLANNING_TASK_ID,APP_FUNCTION_GID,SOLVER_TIMEOUT,SOLVER_TIMEOUT_UOM_CODE,SOLVER_TIMEOUT_BASE,SOLVER_MAX_SIZE,SOLVER_PERCENT_OPTIMAL,DOMAIN_NAME) values (?,?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>13</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_FINDER_LINK 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_FINDER_LINK.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>FINDER_LINK</TableName>
+<ColumnList>FINDER_LINK_GID,FINDER_LINK_XID,FINDER_LINK_NAME,LINK_CLASS,QUERY_TABLE_GID,DOMAIN_NAME</ColumnList>
+<sqlString>insert into FINDER_LINK ( FINDER_LINK_GID,FINDER_LINK_XID,FINDER_LINK_NAME,LINK_CLASS,QUERY_TABLE_GID,DOMAIN_NAME) values (?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>8</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+WORKSPACE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>WORKSPACE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>WORKSPACE</TableName>
+<ColumnList>WORKSPACE_GID, WORKSPACE_XID, WORKSPACE_NAME, DOMAIN_NAME,WORKSPACE_XML</ColumnList>
+<sqlString>insert into WORKSPACE ( WORKSPACE_GID, WORKSPACE_XID, WORKSPACE_NAME, DOMAIN_NAME,WORKSPACE_XML ) values ( ?,?,?,?,empty_clob()) /* DBA */</sqlString>
+<ProcessCount>0</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>9</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_AUTO_ASSIGN_TYPE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_AUTO_ASSIGN_TYPE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>AUTO_ASSIGN_TYPE</TableName>
+<ColumnList>AUTO_ASSIGN_TYPE_GID,AUTO_ASSIGN_TYPE_XID,VALUE1_DATA_TYPE,VALUE1_GID_QUERY_CLASS,VALUE1_VALID_VALUE_TYPE_GID,VALUE1_TRANSLATION_GID,VALUE2_DATA_TYPE,VALUE2_GID_QUERY_CLASS,VALUE2_VALID_VALUE_TYPE_GID,VALUE2_TRANSLATION_GID,VALUE3_DATA_TYPE,VALUE3_GID_QUERY_CLASS,VALUE3_VALID_VALUE_TYPE_GID,VALUE3_TRANSLATION_GID,ASSIGNER_CLASS,DOMAIN_NAME</ColumnList>
+<sqlString>insert into AUTO_ASSIGN_TYPE ( AUTO_ASSIGN_TYPE_GID,AUTO_ASSIGN_TYPE_XID,VALUE1_DATA_TYPE,VALUE1_GID_QUERY_CLASS,VALUE1_VALID_VALUE_TYPE_GID,VALUE1_TRANSLATION_GID,VALUE2_DATA_TYPE,VALUE2_GID_QUERY_CLASS,VALUE2_VALID_VALUE_TYPE_GID,VALUE2_TRANSLATION_GID,VALUE3_DATA_TYPE,VALUE3_GID_QUERY_CLASS,VALUE3_VALID_VALUE_TYPE_GID,VALUE3_TRANSLATION_GID,ASSIGNER_CLASS,DOMAIN_NAME) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>6</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>1</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_AUTO_ASSIGN_CRITERIA 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_AUTO_ASSIGN_CRITERIA.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>AUTO_ASSIGN_CRITERIA</TableName>
+<ColumnList>AUTO_ASSIGN_CRITERIA_GID,AUTO_ASSIGN_CRITERIA_XID,CRITERIA_TRANSLATION_GID,DATA_TYPE1,GID_QUERY_CLASS1,VALID_VALUE_TYPE1_GID,UOM_TYPE1,DATA_TYPE2,GID_QUERY_CLASS2,VALID_VALUE_TYPE2_GID,UOM_TYPE2,DATA_FIELD1,DATA_FIELD2,JAVA_CLASS,RESULT_HANDLER_CLASS,DOMAIN_NAME</ColumnList>
+<sqlString>insert into AUTO_ASSIGN_CRITERIA ( AUTO_ASSIGN_CRITERIA_GID,AUTO_ASSIGN_CRITERIA_XID,CRITERIA_TRANSLATION_GID,DATA_TYPE1,GID_QUERY_CLASS1,VALID_VALUE_TYPE1_GID,UOM_TYPE1,DATA_TYPE2,GID_QUERY_CLASS2,VALID_VALUE_TYPE2_GID,UOM_TYPE2,DATA_FIELD1,DATA_FIELD2,JAVA_CLASS,RESULT_HANDLER_CLASS,DOMAIN_NAME) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>10</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_AUTO_ASSIGN_TYPE_CRIT_MAP 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_AUTO_ASSIGN_TYPE_CRIT_MAP.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>AUTO_ASSIGN_TYPE_CRIT_MAP</TableName>
+<ColumnList>AUTO_ASSIGN_TYPE_GID,AUTO_ASSIGN_CRITERIA_GID,DOMAIN_NAME</ColumnList>
+<sqlString>insert into AUTO_ASSIGN_TYPE_CRIT_MAP ( AUTO_ASSIGN_TYPE_GID,AUTO_ASSIGN_CRITERIA_GID,DOMAIN_NAME) values (?,?,?) /* DBA */</sqlString>
+<ProcessCount>47</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>1</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_BN_CHECKSUM_ALGORITHM 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_BN_CHECKSUM_ALGORITHM.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>BN_CHECKSUM_ALGORITHM</TableName>
+<ColumnList>BN_CHECKSUM_ALGORITHM_GID,BN_CHECKSUM_ALGORITHM_XID,ALGORITHM_SUMMARY,ALGORITHM_DESCRIPTION,ALGORITHM_CLASS,ALGORITHM_CLASS_PARAMETERS,DOMAIN_NAME</ColumnList>
+<sqlString>insert into BN_CHECKSUM_ALGORITHM ( BN_CHECKSUM_ALGORITHM_GID,BN_CHECKSUM_ALGORITHM_XID,ALGORITHM_SUMMARY,ALGORITHM_DESCRIPTION,ALGORITHM_CLASS,ALGORITHM_CLASS_PARAMETERS,DOMAIN_NAME) values (?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>2</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_RELEASE_METHOD 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_RELEASE_METHOD.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>RELEASE_METHOD</TableName>
+<ColumnList>RELEASE_METHOD_GID,RELEASE_METHOD_XID,DESCRIPTION,RELEASING_LOGIC,IS_INDIVIDUAL_THU_FORCED,IS_SPLITABLE,IS_MIXED_FREIGHT_THU_ALLOWED,MIXED_FRT_VOL_TARGET_PCT_FULL,MIXED_FRT_VOL_PADDING_PERCENT,IS_SMALL_QTY_PALLET_ALLOWED,SML_QTY_PLT_ITEM_QTY_THRESHOLD,SML_QTY_PLT_NUM_SHIP_UNITS,DOMAIN_NAME</ColumnList>
+<sqlString>insert into RELEASE_METHOD ( RELEASE_METHOD_GID,RELEASE_METHOD_XID,DESCRIPTION,RELEASING_LOGIC,IS_INDIVIDUAL_THU_FORCED,IS_SPLITABLE,IS_MIXED_FREIGHT_THU_ALLOWED,MIXED_FRT_VOL_TARGET_PCT_FULL,MIXED_FRT_VOL_PADDING_PERCENT,IS_SMALL_QTY_PALLET_ALLOWED,SML_QTY_PLT_ITEM_QTY_THRESHOLD,SML_QTY_PLT_NUM_SHIP_UNITS,DOMAIN_NAME) values (?,?,?,?,?,?,?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>1</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_AUDIT_OBJECT_TYPE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_AUDIT_OBJECT_TYPE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>AUDIT_OBJECT_TYPE</TableName>
+<ColumnList>AUDIT_OBJECT_TYPE_GID,AUDIT_OBJECT_TYPE_XID,DATA_QUERY_TYPE_GID,DOMAIN_NAME</ColumnList>
+<sqlString>insert into AUDIT_OBJECT_TYPE ( AUDIT_OBJECT_TYPE_GID,AUDIT_OBJECT_TYPE_XID,DATA_QUERY_TYPE_GID,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>4</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>1</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_INVOICE_LINEITEM_REFNUM_QUAL 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_INVOICE_LINEITEM_REFNUM_QUAL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>INVOICE_LINEITEM_REFNUM_QUAL</TableName>
+<ColumnList>INVOICE_LI_REFNUM_QUAL_GID,INVOICE_LI_REFNUM_QUAL_XID,INVOICE_LI_REFNUM_DESC,DOMAIN_NAME</ColumnList>
+<sqlString>insert into INVOICE_LINEITEM_REFNUM_QUAL ( INVOICE_LI_REFNUM_QUAL_GID,INVOICE_LI_REFNUM_QUAL_XID,INVOICE_LI_REFNUM_DESC,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>2</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+BI_ROLE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>BI_ROLE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>BI_ROLE</TableName>
+<ColumnList>BI_ROLE_GID,BI_ROLE_XID,DOMAIN_NAME</ColumnList>
+<sqlString>insert into BI_ROLE ( BI_ROLE_GID,BI_ROLE_XID,DOMAIN_NAME) values (?,?,?) /* DBA */</sqlString>
+<ProcessCount>6</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_AD_TIME 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_AD_TIME.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>AD_TIME</TableName>
+<ColumnList>DW_DATE,YEAR,QUARTER_ID,MONTH_ID,WEEK_ID,DAY_OF_WEEK_ID,DAY_OF_MONTH,DAY_OF_YEAR,MONTH,DAY_OF_WEEK,QUARTER,WEEK,WEEKDAY,HOLIDAY,FISCAL_PERIOD,SEASON,EVENT,DOMAIN_NAME</ColumnList>
+<sqlString>insert into AD_TIME ( DW_DATE,YEAR,QUARTER_ID,MONTH_ID,WEEK_ID,DAY_OF_WEEK_ID,DAY_OF_MONTH,DAY_OF_YEAR,MONTH,DAY_OF_WEEK,QUARTER,WEEK,WEEKDAY,HOLIDAY,FISCAL_PERIOD,SEASON,EVENT,DOMAIN_NAME) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>9861</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>5113</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+E_KPI 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>E_KPI.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>E_KPI</TableName>
+<ColumnList>KPI_GID,KPI_XID,DOMAIN_NAME</ColumnList>
+<sqlString>insert into E_KPI ( KPI_GID,KPI_XID,DOMAIN_NAME) values (?,?,?) /* DBA */</sqlString>
+<ProcessCount>29</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+E_TARGET_TYPE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>E_TARGET_TYPE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>E_TARGET_TYPE</TableName>
+<ColumnList>DOMAIN_NAME,TARGET_TYPE_GID,TARGET_TYPE_XID</ColumnList>
+<sqlString>insert into E_TARGET_TYPE ( DOMAIN_NAME,TARGET_TYPE_GID,TARGET_TYPE_XID) values (?,?,?) /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+E_TARGET_VALUE_TYPE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>E_TARGET_VALUE_TYPE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>E_TARGET_VALUE_TYPE</TableName>
+<ColumnList>DOMAIN_NAME,TARGET_VALUE_TYPE_GID,TARGET_VALUE_TYPE_XID</ColumnList>
+<sqlString>insert into E_TARGET_VALUE_TYPE ( DOMAIN_NAME,TARGET_VALUE_TYPE_GID,TARGET_VALUE_TYPE_XID) values (?,?,?) /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+E_KPI_TARGET_VALUE_TYPE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>E_KPI_TARGET_VALUE_TYPE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>E_KPI_TARGET_VALUE_TYPE</TableName>
+<ColumnList>DOMAIN_NAME,KPI_GID,TARGET_TYPE_GID,TARGET_VALUE_TYPE_GID,TARGET_VALUE</ColumnList>
+<sqlString>insert into E_KPI_TARGET_VALUE_TYPE ( DOMAIN_NAME,KPI_GID,TARGET_TYPE_GID,TARGET_VALUE_TYPE_GID,TARGET_VALUE) values (?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>87</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+MANAGER_LAYOUT 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>MANAGER_LAYOUT.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>MANAGER_LAYOUT</TableName>
+<ColumnList>MANAGER_LAYOUT_GID,MANAGER_LAYOUT_XID,MANAGER_LAYOUT_NAME,ENTITY_NAME,POST_SAVE_NAV,TRANSLATION_GID,MANAGER_LAYOUT_TYPE,TOTAL_STEPS,IS_TEMPLATE,DOMAIN_NAME,MANAGER_LAYOUT_XML,DIRECTORY_NAME,FOLDER_NAME</ColumnList>
+<sqlString>insert into MANAGER_LAYOUT ( MANAGER_LAYOUT_GID,MANAGER_LAYOUT_XID,MANAGER_LAYOUT_NAME,ENTITY_NAME,POST_SAVE_NAV,TRANSLATION_GID,MANAGER_LAYOUT_TYPE,TOTAL_STEPS,IS_TEMPLATE,DOMAIN_NAME,MANAGER_LAYOUT_XML,DIRECTORY_NAME,FOLDER_NAME ) values ( ?,?,?,?,?,?,?,?,?,?,empty_clob(),?,?) /* DBA */</sqlString>
+<ProcessCount>29</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>21</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_LOAD_CONFIG_ENGINE_TYPE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_LOAD_CONFIG_ENGINE_TYPE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>LOAD_CONFIG_ENGINE_TYPE</TableName>
+<ColumnList>LOAD_CONFIG_ENGINE_TYPE_GID,LOAD_CONFIG_ENGINE_TYPE_XID,DESCRIPTION,DOMAIN_NAME</ColumnList>
+<sqlString>insert into LOAD_CONFIG_ENGINE_TYPE ( LOAD_CONFIG_ENGINE_TYPE_GID,LOAD_CONFIG_ENGINE_TYPE_XID,DESCRIPTION,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+FEASIBILITY_CODE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>FEASIBILITY_CODE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>FEASIBILITY_CODE</TableName>
+<ColumnList>FEASIBILITY_CODE_GID,FEASIBILITY_CODE_XID,DESCRIPTION,DOMAIN_NAME</ColumnList>
+<sqlString>insert into FEASIBILITY_CODE ( FEASIBILITY_CODE_GID,FEASIBILITY_CODE_XID,DESCRIPTION,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>8</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>6</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+ACTION_DRAG 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>ACTION_DRAG.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>ACTION_DRAG</TableName>
+<ColumnList>ACTION_DRAG_GID,ACTION_DRAG_XID,FROM_QUERY_TABLE_GID,TO_QUERY_TABLE_GID,ACTION_GID,STATE,DOMAIN_NAME</ColumnList>
+<sqlString>insert into ACTION_DRAG ( ACTION_DRAG_GID,ACTION_DRAG_XID,FROM_QUERY_TABLE_GID,TO_QUERY_TABLE_GID,ACTION_GID,STATE,DOMAIN_NAME) values (?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>6</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+OUT_XML_PROFILE_XPATH 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>OUT_XML_PROFILE_XPATH.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>OUT_XML_PROFILE_XPATH</TableName>
+<ColumnList>OUT_XML_PROFILE_GID,SEQUENCE_NO,XML_PATH,DOMAIN_NAME</ColumnList>
+<sqlString>insert into OUT_XML_PROFILE_XPATH ( OUT_XML_PROFILE_GID,SEQUENCE_NO,XML_PATH,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>163</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+APPOINTMENT_PRIORITY 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>APPOINTMENT_PRIORITY.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>APPOINTMENT_PRIORITY</TableName>
+<ColumnList>APPOINTMENT_PRIORITY_GID,APPOINTMENT_PRIORITY_XID,PRIORITY_RANKING,DESCRIPTION,DOMAIN_NAME</ColumnList>
+<sqlString>insert into APPOINTMENT_PRIORITY ( APPOINTMENT_PRIORITY_GID,APPOINTMENT_PRIORITY_XID,PRIORITY_RANKING,DESCRIPTION,DOMAIN_NAME) values (?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+PLANNING_MILESTONE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>PLANNING_MILESTONE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>PLANNING_MILESTONE</TableName>
+<ColumnList>PLANNING_MILESTONE_GID,PLANNING_MILESTONE_XID,DOMAIN_NAME</ColumnList>
+<sqlString>insert into PLANNING_MILESTONE ( PLANNING_MILESTONE_GID,PLANNING_MILESTONE_XID,DOMAIN_NAME) values (?,?,?) /* DBA */</sqlString>
+<ProcessCount>26</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+ROUTING_SEQUENCE 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>ROUTING_SEQUENCE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>ROUTING_SEQUENCE</TableName>
+<ColumnList>ROUTING_SEQUENCE_GID,ROUTING_SEQUENCE_XID,DESCRIPTION,SEQUENCE_PRIORITY,ALLOW_MULTIPLE,DOMAIN_NAME</ColumnList>
+<sqlString>insert into ROUTING_SEQUENCE ( ROUTING_SEQUENCE_GID,ROUTING_SEQUENCE_XID,DESCRIPTION,SEQUENCE_PRIORITY,ALLOW_MULTIPLE,DOMAIN_NAME) values (?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>0</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>4</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+CR_ROUTE_REFNUM_QUAL 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>CR_ROUTE_REFNUM_QUAL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>CR_ROUTE_REFNUM_QUAL</TableName>
+<ColumnList>CR_ROUTE_REFNUM_QUAL_GID,CR_ROUTE_REFNUM_QUAL_XID, CR_ROUTE_REFNUM_QUAL_DESC,DOMAIN_NAME</ColumnList>
+<sqlString>insert into CR_ROUTE_REFNUM_QUAL ( CR_ROUTE_REFNUM_QUAL_GID,CR_ROUTE_REFNUM_QUAL_XID, CR_ROUTE_REFNUM_QUAL_DESC,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>2</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+CONTAINER_OPT_ALGORITHM 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>CONTAINER_OPT_ALGORITHM.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>CONTAINER_OPT_ALGORITHM</TableName>
+<ColumnList>CONTAINER_OPT_ALG_GID,CONTAINER_OPT_ALG_XID,DESCRIPTION,DOMAIN_NAME</ColumnList>
+<sqlString>insert into CONTAINER_OPT_ALGORITHM ( CONTAINER_OPT_ALG_GID,CONTAINER_OPT_ALG_XID,DESCRIPTION,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>5</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_PARTITION_KEY_FORMULA 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_PARTITION_KEY_FORMULA.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>PARTITION_KEY_FORMULA</TableName>
+<ColumnList>TABLE_NAME,PARTITION_DURATION,PARTITION_DURATION_UOM_CODE,PARTITION_DURATION_BASE</ColumnList>
+<sqlString>update PARTITION_KEY_FORMULA set TABLE_NAME = ?,PARTITION_DURATION = ?,PARTITION_DURATION_UOM_CODE = ?,PARTITION_DURATION_BASE = ? where TABLE_NAME = ?  /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_BN_CONTEXT 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_BN_CONTEXT.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>BN_CONTEXT</TableName>
+<ColumnList>BN_CONTEXT_GID,BN_CONTEXT_XID,BN_CONTEXT_CLASS,DOMAIN_NAME</ColumnList>
+<sqlString>update BN_CONTEXT set BN_CONTEXT_GID = ?,BN_CONTEXT_XID = ?,BN_CONTEXT_CLASS = ?,DOMAIN_NAME = ? where BN_CONTEXT_GID = ?  /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_BN_TYPE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_BN_TYPE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>BN_TYPE</TableName>
+<ColumnList>BN_TYPE_GID,BN_TYPE_XID,BN_CONTEXT_GID,DOMAIN_NAME</ColumnList>
+<sqlString>update BN_TYPE set BN_TYPE_GID = ?,BN_TYPE_XID = ?,BN_CONTEXT_GID = ?,DOMAIN_NAME = ? where BN_TYPE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>8</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_SHIPMENT_REFNUM_QUAL 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_SHIPMENT_REFNUM_QUAL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>SHIPMENT_REFNUM_QUAL</TableName>
+<ColumnList>SHIPMENT_REFNUM_QUAL_GID,SHIPMENT_REFNUM_QUAL_XID,SHIPMENT_REFNUM_QUAL_DESC,IS_REMOVE_ON_SERVPROV_CHANGE,DEFAULT_REFNUM_BN_TYPE_GID,DOMAIN_NAME</ColumnList>
+<sqlString>update SHIPMENT_REFNUM_QUAL set SHIPMENT_REFNUM_QUAL_GID = ?,SHIPMENT_REFNUM_QUAL_XID = ?,SHIPMENT_REFNUM_QUAL_DESC = ?,IS_REMOVE_ON_SERVPROV_CHANGE = ?,DEFAULT_REFNUM_BN_TYPE_GID = ?,DOMAIN_NAME = ? where SHIPMENT_REFNUM_QUAL_GID = ?  /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_LOCATION_REFNUM_QUAL 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_LOCATION_REFNUM_QUAL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>LOCATION_REFNUM_QUAL</TableName>
+<ColumnList>LOCATION_REFNUM_QUAL_GID,LOCATION_REFNUM_QUAL_XID,LOCATION_REFNUM_QUAL_DESC,DOMAIN_NAME</ColumnList>
+<sqlString>update LOCATION_REFNUM_QUAL set LOCATION_REFNUM_QUAL_GID = ?,LOCATION_REFNUM_QUAL_XID = ?,LOCATION_REFNUM_QUAL_DESC = ?,DOMAIN_NAME = ? where LOCATION_REFNUM_QUAL_GID = ?  /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_REMARK_QUAL 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_REMARK_QUAL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>REMARK_QUAL</TableName>
+<ColumnList>REMARK_QUAL_GID,REMARK_QUAL_XID,REMARK_QUAL_DESC,REMARK_LEVEL,IS_VISIBLE_IF_MASTER_CARR,DOMAIN_NAME</ColumnList>
+<sqlString>update REMARK_QUAL set REMARK_QUAL_GID = ?,REMARK_QUAL_XID = ?,REMARK_QUAL_DESC = ?,REMARK_LEVEL = ?,IS_VISIBLE_IF_MASTER_CARR = ?,DOMAIN_NAME = ? where REMARK_QUAL_GID = ?  /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_INVOICE_REFNUM_QUAL 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_INVOICE_REFNUM_QUAL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>INVOICE_REFNUM_QUAL</TableName>
+<ColumnList>INVOICE_REFNUM_QUAL_GID,INVOICE_REFNUM_QUAL_XID,INVOICE_REFNUM_DESC,DOMAIN_NAME</ColumnList>
+<sqlString>update INVOICE_REFNUM_QUAL set INVOICE_REFNUM_QUAL_GID = ?,INVOICE_REFNUM_QUAL_XID = ?,INVOICE_REFNUM_DESC = ?,DOMAIN_NAME = ? where INVOICE_REFNUM_QUAL_GID = ?  /* DBA */</sqlString>
+<ProcessCount>2</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_NOTIFY_FUNCTION 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_NOTIFY_FUNCTION.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>NOTIFY_FUNCTION</TableName>
+<ColumnList>NOTIFY_FUNCTION_GID,NOTIFY_FUNCTION_XID,DOMAIN_NAME</ColumnList>
+<sqlString>update NOTIFY_FUNCTION set NOTIFY_FUNCTION_GID = ?,NOTIFY_FUNCTION_XID = ?,DOMAIN_NAME = ? where NOTIFY_FUNCTION_GID = ?  /* DBA */</sqlString>
+<ProcessCount>6</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_NOTIFY_SUBJECT 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_NOTIFY_SUBJECT.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>NOTIFY_SUBJECT</TableName>
+<ColumnList>NOTIFY_SUBJECT_GID,NOTIFY_SUBJECT_XID,NOTIFY_FUNCTION_GID,NOTIFY_SUBJECT_TEXT,SUPPORTS_INVOLVED_PARTIES,SUPPORTS_SERVICE_PROVIDER,SUPPORTS_DOCUMENTS,SUPPORTS_EXTERNAL_NOTIFICATION,DOMAIN_NAME</ColumnList>
+<sqlString>update NOTIFY_SUBJECT set NOTIFY_SUBJECT_GID = ?,NOTIFY_SUBJECT_XID = ?,NOTIFY_FUNCTION_GID = ?,NOTIFY_SUBJECT_TEXT = ?,SUPPORTS_INVOLVED_PARTIES = ?,SUPPORTS_SERVICE_PROVIDER = ?,SUPPORTS_DOCUMENTS = ?,SUPPORTS_EXTERNAL_NOTIFICATION = ?,DOMAIN_NAME = ? where NOTIFY_SUBJECT_GID = ?  /* DBA */</sqlString>
+<ProcessCount>193</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_XML_BUILDER 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_XML_BUILDER.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>XML_BUILDER</TableName>
+<ColumnList>XML_BUILDER_GID,XML_BUILDER_XID,JAVA_CLASS_NAME,DOMAIN_NAME</ColumnList>
+<sqlString>update XML_BUILDER set XML_BUILDER_GID = ?,XML_BUILDER_XID = ?,JAVA_CLASS_NAME = ?,DOMAIN_NAME = ? where XML_BUILDER_GID = ?  /* DBA */</sqlString>
+<ProcessCount>286</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_OUT_XML_PROFILE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_OUT_XML_PROFILE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>OUT_XML_PROFILE</TableName>
+<ColumnList>OUT_XML_PROFILE_GID,OUT_XML_PROFILE_XID,DOMAIN_NAME,DEFAULT_MODE,SHOULD_VALIDATE</ColumnList>
+<sqlString>update OUT_XML_PROFILE set OUT_XML_PROFILE_GID = ?,OUT_XML_PROFILE_XID = ?,DOMAIN_NAME = ?,DEFAULT_MODE = ?,SHOULD_VALIDATE = ? where OUT_XML_PROFILE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+OUT_XML_PROFILE_CHILD 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>OUT_XML_PROFILE_CHILD.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>OUT_XML_PROFILE_CHILD</TableName>
+<ColumnList>OUT_XML_PROFILE_GID,CHILD_OUT_XML_PROFILE_GID,DOMAIN_NAME</ColumnList>
+<sqlString>update OUT_XML_PROFILE_CHILD set OUT_XML_PROFILE_GID = ?,CHILD_OUT_XML_PROFILE_GID = ?,DOMAIN_NAME = ? where CHILD_OUT_XML_PROFILE_GID = ?  and OUT_XML_PROFILE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_STYLESHEET_PROFILE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_STYLESHEET_PROFILE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>STYLESHEET_PROFILE</TableName>
+<ColumnList>STYLESHEET_PROFILE_GID,STYLESHEET_PROFILE_XID,TEMPLATE_NAME,RAW_XML,FORMAT,SUBJECT_PROPKEY,OUT_XML_PROFILE_GID,DATA_GENERATOR_PLUGIN_GID,DOMAIN_NAME</ColumnList>
+<sqlString>update STYLESHEET_PROFILE set STYLESHEET_PROFILE_GID = ?,STYLESHEET_PROFILE_XID = ?,TEMPLATE_NAME = ?,RAW_XML = ?,FORMAT = ?,SUBJECT_PROPKEY = ?,OUT_XML_PROFILE_GID = ?,DATA_GENERATOR_PLUGIN_GID = ?,DOMAIN_NAME = ? where STYLESHEET_PROFILE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>37</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_ALLOC_METRIC 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_ALLOC_METRIC.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>ALLOC_METRIC</TableName>
+<ColumnList>ALLOC_METRIC_GID,ALLOC_METRIC_XID,ALLOCATION_BASIS,CLASS_NAME,SINGLE_ORIGIN_ONLY,SINGLE_DESTINATION_ONLY,SINGLE_ORDER_ONLY,DOMAIN_NAME</ColumnList>
+<sqlString>update ALLOC_METRIC set ALLOC_METRIC_GID = ?,ALLOC_METRIC_XID = ?,ALLOCATION_BASIS = ?,CLASS_NAME = ?,SINGLE_ORIGIN_ONLY = ?,SINGLE_DESTINATION_ONLY = ?,SINGLE_ORDER_ONLY = ?,DOMAIN_NAME = ? where ALLOCATION_BASIS = ?  and ALLOC_METRIC_GID = ?  /* DBA */</sqlString>
+<ProcessCount>4</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_DATA_QUERY_TYPE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_DATA_QUERY_TYPE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>DATA_QUERY_TYPE</TableName>
+<ColumnList>DATA_QUERY_TYPE_GID,DATA_QUERY_TYPE_XID,JAVA_CLASS,SUPPORT_INTEGRATION,SUPPORT_TRANSACTIONAL_EVENTS,SUPPORT_AGENT,SUPPORT_TEXT,DOMAIN_NAME</ColumnList>
+<sqlString>update DATA_QUERY_TYPE set DATA_QUERY_TYPE_GID = ?,DATA_QUERY_TYPE_XID = ?,JAVA_CLASS = ?,SUPPORT_INTEGRATION = ?,SUPPORT_TRANSACTIONAL_EVENTS = ?,SUPPORT_AGENT = ?,SUPPORT_TEXT = ?,DOMAIN_NAME = ? where DATA_QUERY_TYPE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>7</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_APP_ACTION 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_APP_ACTION.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>APP_ACTION</TableName>
+<ColumnList>APP_ACTION_GID,APP_ACTION_XID,APP_ACTION_TYPE,ALLOW_SAVED_CONDITION_GID,ALLOW_PLUGIN_GID,ALLOW_CAUSE_MSG_GID,ALLOW_SOLUTION_MSG_GID,IS_SUPPORT_POST,DOMAIN_NAME,OBJECT_LOCK_TIMEOUT,OBJECT_LOCK_TIMEOUT_UOM_CODE,OBJECT_LOCK_TIMEOUT_BASE,IS_POWER_ACTION,APPLICATION_NAME,DATA_QUERY_TYPE_GID,POWER_ACTION_NAME</ColumnList>
+<sqlString>update APP_ACTION set APP_ACTION_GID = ?,APP_ACTION_XID = ?,APP_ACTION_TYPE = ?,ALLOW_SAVED_CONDITION_GID = ?,ALLOW_PLUGIN_GID = ?,ALLOW_CAUSE_MSG_GID = ?,ALLOW_SOLUTION_MSG_GID = ?,IS_SUPPORT_POST = ?,DOMAIN_NAME = ?,OBJECT_LOCK_TIMEOUT = ?,OBJECT_LOCK_TIMEOUT_UOM_CODE = ?,OBJECT_LOCK_TIMEOUT_BASE = ?,IS_POWER_ACTION = ?,APPLICATION_NAME = ?,DATA_QUERY_TYPE_GID = ?,POWER_ACTION_NAME = ? where APP_ACTION_GID = ?  /* DBA */</sqlString>
+<ProcessCount>966</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_APP_ACTION_RESP_PARTY_P 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_APP_ACTION_RESP_PARTY_P.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>APP_ACTION_RESP_PARTY_P</TableName>
+<ColumnList>APP_ACTION_GID,BS_RESP_PARTY_PROFILE_GID,IS_EXCLUDED,DOMAIN_NAME</ColumnList>
+<sqlString>update APP_ACTION_RESP_PARTY_P set APP_ACTION_GID = ?,BS_RESP_PARTY_PROFILE_GID = ?,IS_EXCLUDED = ?,DOMAIN_NAME = ? where APP_ACTION_GID = ?  and BS_RESP_PARTY_PROFILE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>173</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_COUNTRY_CODE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_COUNTRY_CODE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>COUNTRY_CODE</TableName>
+<ColumnList>COUNTRY_CODE3_GID,COUNTRY_CODE3_XID,COUNTRY_CODE2,COUNTRY_CODE_FIPS,CAR_REGISTRATION_CODE,COUNTRY_NAME,COUNTRY_NUMBER,COUNTRY_ZONE_GID,GEO_POSTAL_CODE_LENGTH,IATA_REGION,DOMAIN_NAME</ColumnList>
+<sqlString>update COUNTRY_CODE set COUNTRY_CODE3_GID = ?,COUNTRY_CODE3_XID = ?,COUNTRY_CODE2 = ?,COUNTRY_CODE_FIPS = ?,CAR_REGISTRATION_CODE = ?,COUNTRY_NAME = ?,COUNTRY_NUMBER = ?,COUNTRY_ZONE_GID = ?,GEO_POSTAL_CODE_LENGTH = ?,IATA_REGION = ?,DOMAIN_NAME = ? where COUNTRY_CODE3_GID = ?  /* DBA */</sqlString>
+<ProcessCount>133</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_CURRENCY 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_CURRENCY.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>CURRENCY</TableName>
+<ColumnList>CURRENCY_GID,CURRENCY_XID,CURRENCY_NAME,COUNTRY_CODE3_GID,DOMAIN_NAME</ColumnList>
+<sqlString>update CURRENCY set CURRENCY_GID = ?,CURRENCY_XID = ?,CURRENCY_NAME = ?,COUNTRY_CODE3_GID = ?,DOMAIN_NAME = ? where CURRENCY_GID = ?  /* DBA */</sqlString>
+<ProcessCount>6</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_PREFERENCE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_PREFERENCE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>PREFERENCE</TableName>
+<ColumnList>PREFERENCE_GID,PREFERENCE_XID,DESCRIPTION,DOMAIN_NAME</ColumnList>
+<sqlString>update PREFERENCE set PREFERENCE_GID = ?,PREFERENCE_XID = ?,DESCRIPTION = ?,DOMAIN_NAME = ? where PREFERENCE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_QUERY_TABLE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_QUERY_TABLE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>QUERY_TABLE</TableName>
+<ColumnList>QUERY_TABLE_GID,QUERY_TABLE_XID,DESCRIPTION,QUERY_NAME,DOMAIN_NAME</ColumnList>
+<sqlString>update QUERY_TABLE set QUERY_TABLE_GID = ?,QUERY_TABLE_XID = ?,DESCRIPTION = ?,QUERY_NAME = ?,DOMAIN_NAME = ? where QUERY_TABLE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>73</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_RATE_ATTRIBUTE_JOIN 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_RATE_ATTRIBUTE_JOIN.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>RATE_ATTRIBUTE_JOIN</TableName>
+<ColumnList>RATE_OFFERING_TYPE_GID,RATE_ATTRIBUTE_GID,DOMAIN_NAME</ColumnList>
+<sqlString>update RATE_ATTRIBUTE_JOIN set RATE_OFFERING_TYPE_GID = ?,RATE_ATTRIBUTE_GID = ?,DOMAIN_NAME = ? where RATE_ATTRIBUTE_GID = ?  and RATE_OFFERING_TYPE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>13</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_RULE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_RULE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>RULE</TableName>
+<ColumnList>RULE_GID,RULE_XID,RULE_NAME,JAVA_CLASS,DOMAIN_NAME</ColumnList>
+<sqlString>update RULE set RULE_GID = ?,RULE_XID = ?,RULE_NAME = ?,JAVA_CLASS = ?,DOMAIN_NAME = ? where RULE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_RULE_SET_JOIN 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_RULE_SET_JOIN.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>RULE_SET_JOIN</TableName>
+<ColumnList>RULE_SET_GID,RULE_GID,SEQUENCE,DOMAIN_NAME</ColumnList>
+<sqlString>update RULE_SET_JOIN set RULE_SET_GID = ?,RULE_GID = ?,SEQUENCE = ?,DOMAIN_NAME = ? where RULE_GID = ?  and RULE_SET_GID = ?  /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_RATE_GEO_COST_OPERAND 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_RATE_GEO_COST_OPERAND.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>RATE_GEO_COST_OPERAND</TableName>
+<ColumnList>RATE_GEO_COST_OPERAND_GID,GUI_ENABLED,DESCRIPTION,RATE_GEO_COST_OPERAND_XID,FUNCTION_CODE,RATABLE_JAVA_CLASS,RATE_GEO_COST_OPERAND_SEQ,RATABLE_OPERATOR_GID,DATA_TYPE,UOM_TYPE,GID_QUERY_CLASS,PROFILE_TABLE_NAME,PROFILE_DETAIL_TABLE_NAME,PROFILE_GID_COLUMN_NAME,PROFILE_TARGET_COLUMN_NAME,DATA_TYPE_HIGH,UOM_TYPE_HIGH,GID_QUERY_CLASS_HIGH,DOMAIN_NAME</ColumnList>
+<sqlString>update RATE_GEO_COST_OPERAND set RATE_GEO_COST_OPERAND_GID = ?,GUI_ENABLED = ?,DESCRIPTION = ?,RATE_GEO_COST_OPERAND_XID = ?,FUNCTION_CODE = ?,RATABLE_JAVA_CLASS = ?,RATE_GEO_COST_OPERAND_SEQ = ?,RATABLE_OPERATOR_GID = ?,DATA_TYPE = ?,UOM_TYPE = ?,GID_QUERY_CLASS = ?,PROFILE_TABLE_NAME = ?,PROFILE_DETAIL_TABLE_NAME = ?,PROFILE_GID_COLUMN_NAME = ?,PROFILE_TARGET_COLUMN_NAME = ?,DATA_TYPE_HIGH = ?,UOM_TYPE_HIGH = ?,GID_QUERY_CLASS_HIGH = ?,DOMAIN_NAME = ? where RATE_GEO_COST_OPERAND_GID = ?  and RATE_GEO_COST_OPERAND_SEQ = ?  /* DBA */</sqlString>
+<ProcessCount>31</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_RATE_GEO_COST_OP_OWNER 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_RATE_GEO_COST_OP_OWNER.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>RATE_GEO_COST_OP_OWNER</TableName>
+<ColumnList>RATE_GEO_COST_OPERAND_GID,OWNER_RATE_GEO_COST_OP_GID,DOMAIN_NAME</ColumnList>
+<sqlString>update RATE_GEO_COST_OP_OWNER set RATE_GEO_COST_OPERAND_GID = ?,OWNER_RATE_GEO_COST_OP_GID = ?,DOMAIN_NAME = ? where OWNER_RATE_GEO_COST_OP_GID = ?  and RATE_GEO_COST_OPERAND_GID = ?  /* DBA */</sqlString>
+<ProcessCount>15</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_PLANNING_PARAMETER_QUALIFIER 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_PLANNING_PARAMETER_QUALIFIER.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>PLANNING_PARAMETER_QUALIFIER</TableName>
+<ColumnList>PLANNING_PARAM_QUAL_GID,PLANNING_PARAM_QUAL_XID,PLANNING_PARAM_QUAL_DESC,DATA_TYPE,TYPE,GID_QUERY_CLASS,DOMAIN_NAME</ColumnList>
+<sqlString>update PLANNING_PARAMETER_QUALIFIER set PLANNING_PARAM_QUAL_GID = ?,PLANNING_PARAM_QUAL_XID = ?,PLANNING_PARAM_QUAL_DESC = ?,DATA_TYPE = ?,TYPE = ?,GID_QUERY_CLASS = ?,DOMAIN_NAME = ? where PLANNING_PARAM_QUAL_GID = ?  /* DBA */</sqlString>
+<ProcessCount>39</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_DATA_TYPE_ASSOCIATION 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_DATA_TYPE_ASSOCIATION.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>DATA_TYPE_ASSOCIATION</TableName>
+<ColumnList>DATA_TYPE_ASSOCIATION_GID,DATA_TYPE_ASSOCIATION_XID,IS_PRIMARY,FROM_DATA_QUERY_TYPE_GID,TO_DATA_QUERY_TYPE_GID,ASSOCIATION_QUERY,DOMAIN_NAME</ColumnList>
+<sqlString>update DATA_TYPE_ASSOCIATION set DATA_TYPE_ASSOCIATION_GID = ?,DATA_TYPE_ASSOCIATION_XID = ?,IS_PRIMARY = ?,FROM_DATA_QUERY_TYPE_GID = ?,TO_DATA_QUERY_TYPE_GID = ?,ASSOCIATION_QUERY = ?,DOMAIN_NAME = ? where DATA_TYPE_ASSOCIATION_GID = ?  /* DBA */</sqlString>
+<ProcessCount>14</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+AGENT_ACTION 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>AGENT_ACTION.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>AGENT_ACTION</TableName>
+<ColumnList>AGENT_ACTION_GID,AGENT_ACTION_XID,ACTION_TOPIC_CLASS,DATA_QUERY_TYPE_GID,IS_FOR_RELATED_OBJECTS,APP_ACTION_GID,DOMAIN_NAME,HELP_DESCRIPTION</ColumnList>
+<sqlString>update AGENT_ACTION set AGENT_ACTION_GID = ?,AGENT_ACTION_XID = ?,ACTION_TOPIC_CLASS = ?,DATA_QUERY_TYPE_GID = ?,IS_FOR_RELATED_OBJECTS = ?,APP_ACTION_GID = ?,DOMAIN_NAME = ? where AGENT_ACTION_GID = ?  /* DBA */</sqlString>
+<ProcessCount>597</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_USER_MENU 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_USER_MENU.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>USER_MENU</TableName>
+<ColumnList>USER_MENU_GID,USER_MENU_XID,USER_MENU_NAME,URL,EXPAND_BY_DEFAULT,EXPANDABLE,PARENT_MENU_GID,CATEGORY_LABLE,MENU_LEVEL,DOMAIN_NAME</ColumnList>
+<sqlString>update USER_MENU set USER_MENU_GID = ?,USER_MENU_XID = ?,USER_MENU_NAME = ?,URL = ?,EXPAND_BY_DEFAULT = ?,EXPANDABLE = ?,PARENT_MENU_GID = ?,CATEGORY_LABLE = ?,MENU_LEVEL = ?,DOMAIN_NAME = ? where USER_MENU_GID = ?  /* DBA */</sqlString>
+<ProcessCount>10</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+USER_MENU_LAYOUT 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>USER_MENU_LAYOUT.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>USER_MENU_LAYOUT</TableName>
+<ColumnList>USER_MENU_LAYOUT_GID,USER_MENU_LAYOUT_XID,DOMAIN_NAME,USER_MENU_LAYOUT_XML</ColumnList>
+<sqlString>update USER_MENU_LAYOUT set USER_MENU_LAYOUT_GID = ?,USER_MENU_LAYOUT_XID = ?,DOMAIN_NAME = ? where USER_MENU_LAYOUT_GID = ?  /* DBA */</sqlString>
+<ProcessCount>8</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_DISTANCE_EXTERNAL_ENGINE_PARMS 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_DISTANCE_EXTERNAL_ENGINE_PARMS.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>DISTANCE_EXTERNAL_ENGINE_PARMS</TableName>
+<ColumnList>DISTANCE_EXTERNAL_ENGINE_GID,PARM,VALUE,COUNTRY_CODE3_GID,DOMAIN_NAME</ColumnList>
+<sqlString>update DISTANCE_EXTERNAL_ENGINE_PARMS set DISTANCE_EXTERNAL_ENGINE_GID = ?,PARM = ?,VALUE = ?,COUNTRY_CODE3_GID = ?,DOMAIN_NAME = ? where COUNTRY_CODE3_GID = ?  and DISTANCE_EXTERNAL_ENGINE_GID = ?  and PARM = ?  /* DBA */</sqlString>
+<ProcessCount>29</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_INT_GLOG_XML_ELEMENT 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_INT_GLOG_XML_ELEMENT.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>INT_GLOG_XML_ELEMENT</TableName>
+<ColumnList>GLOG_XML_ELEMENT_GID,GLOG_XML_ELEMENT_XID,DESCRIPTION,DOMAIN_NAME,OUT_XML_PROFILE_GID,ELEMENT_TYPE</ColumnList>
+<sqlString>update INT_GLOG_XML_ELEMENT set GLOG_XML_ELEMENT_GID = ?,GLOG_XML_ELEMENT_XID = ?,DESCRIPTION = ?,DOMAIN_NAME = ?,OUT_XML_PROFILE_GID = ?,ELEMENT_TYPE = ? where GLOG_XML_ELEMENT_GID = ?  /* DBA */</sqlString>
+<ProcessCount>70</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+INT_MANAGED_CHILDREN_MAP 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>INT_MANAGED_CHILDREN_MAP.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>INT_MANAGED_CHILDREN_MAP</TableName>
+<ColumnList>GLOG_XML_ELEMENT_GID,CHILD_ELEMENT_ALIAS,TABLE_NAME,CHILD_ELEMENT_PATH,DOMAIN_NAME</ColumnList>
+<sqlString>update INT_MANAGED_CHILDREN_MAP set GLOG_XML_ELEMENT_GID = ?,CHILD_ELEMENT_ALIAS = ?,TABLE_NAME = ?,CHILD_ELEMENT_PATH = ?,DOMAIN_NAME = ? where CHILD_ELEMENT_ALIAS = ?  and GLOG_XML_ELEMENT_GID = ?  /* DBA */</sqlString>
+<ProcessCount>232</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_LOGFILE_DETAIL 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_LOGFILE_DETAIL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>LOGFILE_DETAIL</TableName>
+<ColumnList>LOGFILE_GID,DETAIL_ID,OFF,DOMAIN_NAME</ColumnList>
+<sqlString>update LOGFILE_DETAIL set LOGFILE_GID = ?,DETAIL_ID = ?,OFF = ?,DOMAIN_NAME = ? where DETAIL_ID = ?  and LOGFILE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>19</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_S_SUL_REFNUM_QUAL 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_S_SUL_REFNUM_QUAL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>S_SUL_REFNUM_QUAL</TableName>
+<ColumnList>S_SUL_REFNUM_QUAL_GID,S_SUL_REFNUM_QUAL_XID,DESCRIPTION,DOMAIN_NAME</ColumnList>
+<sqlString>update S_SUL_REFNUM_QUAL set S_SUL_REFNUM_QUAL_GID = ?,S_SUL_REFNUM_QUAL_XID = ?,DESCRIPTION = ?,DOMAIN_NAME = ? where S_SUL_REFNUM_QUAL_GID = ?  /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+FINDER_SET 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>FINDER_SET.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>FINDER_SET</TableName>
+<ColumnList>FINDER_SET_GID,FINDER_SET_XID,FINDER_SET_NAME,QUERY_TABLE_GID,DOMAIN_NAME,FINDER_SET_XML</ColumnList>
+<sqlString>update FINDER_SET set FINDER_SET_GID = ?,FINDER_SET_XID = ?,FINDER_SET_NAME = ?,QUERY_TABLE_GID = ?,DOMAIN_NAME = ? where FINDER_SET_GID = ?  /* DBA */</sqlString>
+<ProcessCount>654</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION</TableName>
+<ColumnList>TRANSLATION_GID,TRANSLATION_XID,TRANSLATION_TYPE,DOMAIN_NAME</ColumnList>
+<sqlString>update TRANSLATION set TRANSLATION_GID = ?,TRANSLATION_XID = ?,TRANSLATION_TYPE = ?,DOMAIN_NAME = ? where TRANSLATION_GID = ?  /* DBA */</sqlString>
+<ProcessCount>1050</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION_NOT 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION_NOT.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION</TableName>
+<ColumnList>TRANSLATION_GID,TRANSLATION_XID,TRANSLATION_TYPE,DOMAIN_NAME</ColumnList>
+<sqlString>update TRANSLATION set TRANSLATION_GID = ?,TRANSLATION_XID = ?,TRANSLATION_TYPE = ?,DOMAIN_NAME = ? where TRANSLATION_GID = ?  /* DBA */</sqlString>
+<ProcessCount>230</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION_QUERY 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION_QUERY.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION</TableName>
+<ColumnList>TRANSLATION_GID,TRANSLATION_XID,TRANSLATION_TYPE,DOMAIN_NAME</ColumnList>
+<sqlString>update TRANSLATION set TRANSLATION_GID = ?,TRANSLATION_XID = ?,TRANSLATION_TYPE = ?,DOMAIN_NAME = ? where TRANSLATION_GID = ?  /* DBA */</sqlString>
+<ProcessCount>10119</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION_EXPL 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION_EXPL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION</TableName>
+<ColumnList>TRANSLATION_GID,TRANSLATION_XID,TRANSLATION_TYPE,DOMAIN_NAME</ColumnList>
+<sqlString>update TRANSLATION set TRANSLATION_GID = ?,TRANSLATION_XID = ?,TRANSLATION_TYPE = ?,DOMAIN_NAME = ? where TRANSLATION_GID = ?  /* DBA */</sqlString>
+<ProcessCount>32</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION_ERR 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION_ERR.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION</TableName>
+<ColumnList>TRANSLATION_GID,TRANSLATION_XID,TRANSLATION_TYPE,DOMAIN_NAME</ColumnList>
+<sqlString>update TRANSLATION set TRANSLATION_GID = ?,TRANSLATION_XID = ?,TRANSLATION_TYPE = ?,DOMAIN_NAME = ? where TRANSLATION_GID = ?  /* DBA */</sqlString>
+<ProcessCount>281</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION_D_en 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION_D_en.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION_D</TableName>
+<ColumnList>TRANSLATION_GID,LANG,COUNTRY,VARIANT,TEXT,DOMAIN_NAME</ColumnList>
+<sqlString>update TRANSLATION_D set TRANSLATION_GID = ?,LANG = ?,COUNTRY = ?,VARIANT = ?,TEXT = ?,DOMAIN_NAME = ? where COUNTRY = ?  and LANG = ?  and TRANSLATION_GID = ?  and VARIANT = ?  /* DBA */</sqlString>
+<ProcessCount>1730</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION_D_NOT_en 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION_D_NOT_en.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION_D</TableName>
+<ColumnList>TRANSLATION_GID,LANG,COUNTRY,VARIANT,TEXT,DOMAIN_NAME</ColumnList>
+<sqlString>update TRANSLATION_D set TRANSLATION_GID = ?,LANG = ?,COUNTRY = ?,VARIANT = ?,TEXT = ?,DOMAIN_NAME = ? where COUNTRY = ?  and LANG = ?  and TRANSLATION_GID = ?  and VARIANT = ?  /* DBA */</sqlString>
+<ProcessCount>231</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION_D_QUERY_en 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION_D_QUERY_en.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION_D</TableName>
+<ColumnList>TRANSLATION_GID,LANG,COUNTRY,VARIANT,TEXT,DOMAIN_NAME</ColumnList>
+<sqlString>update TRANSLATION_D set TRANSLATION_GID = ?,LANG = ?,COUNTRY = ?,VARIANT = ?,TEXT = ?,DOMAIN_NAME = ? where COUNTRY = ?  and LANG = ?  and TRANSLATION_GID = ?  and VARIANT = ?  /* DBA */</sqlString>
+<ProcessCount>10126</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION_D_EXPL_en 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION_D_EXPL_en.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION_D</TableName>
+<ColumnList>TRANSLATION_GID,LANG,COUNTRY,VARIANT,TEXT,DOMAIN_NAME</ColumnList>
+<sqlString>update TRANSLATION_D set TRANSLATION_GID = ?,LANG = ?,COUNTRY = ?,VARIANT = ?,TEXT = ?,DOMAIN_NAME = ? where COUNTRY = ?  and LANG = ?  and TRANSLATION_GID = ?  and VARIANT = ?  /* DBA */</sqlString>
+<ProcessCount>22</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TRANSLATION_D_ERR_en 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TRANSLATION_D_ERR_en.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TRANSLATION_D</TableName>
+<ColumnList>TRANSLATION_GID,LANG,COUNTRY,VARIANT,TEXT,DOMAIN_NAME</ColumnList>
+<sqlString>update TRANSLATION_D set TRANSLATION_GID = ?,LANG = ?,COUNTRY = ?,VARIANT = ?,TEXT = ?,DOMAIN_NAME = ? where COUNTRY = ?  and LANG = ?  and TRANSLATION_GID = ?  and VARIANT = ?  /* DBA */</sqlString>
+<ProcessCount>462</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_ACTION_DEF 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_ACTION_DEF.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>ACTION_DEF</TableName>
+<ColumnList>ACTION_DEF_GID,ACTION_DEF_XID,QUERY_TABLE_GID,IS_ASSIGNABLE,SUPPORT_IGNORE_CRITERIA,DOMAIN_NAME</ColumnList>
+<sqlString>update ACTION_DEF set ACTION_DEF_GID = ?,ACTION_DEF_XID = ?,QUERY_TABLE_GID = ?,IS_ASSIGNABLE = ?,SUPPORT_IGNORE_CRITERIA = ?,DOMAIN_NAME = ? where ACTION_DEF_GID = ?  /* DBA */</sqlString>
+<ProcessCount>114</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_ACTION_DEF_STATE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_ACTION_DEF_STATE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>ACTION_DEF_STATE</TableName>
+<ColumnList>ACTION_DEF_GID,STATE,ACTION_CLASS,IS_DEFAULT,DOMAIN_NAME,IS_SELECTION_DEFAULT</ColumnList>
+<sqlString>update ACTION_DEF_STATE set ACTION_DEF_GID = ?,STATE = ?,ACTION_CLASS = ?,IS_DEFAULT = ?,DOMAIN_NAME = ?,IS_SELECTION_DEFAULT = ? where ACTION_DEF_GID = ?  and STATE = ?  /* DBA */</sqlString>
+<ProcessCount>223</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_ACTION 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_ACTION.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>ACTION</TableName>
+<ColumnList>ACTION_GID,ACTION_XID,ACTION_DEF_GID,LABEL_KEY,APP_ACTION_GID,DOMAIN_NAME</ColumnList>
+<sqlString>update ACTION set ACTION_GID = ?,ACTION_XID = ?,ACTION_DEF_GID = ?,LABEL_KEY = ?,APP_ACTION_GID = ?,DOMAIN_NAME = ? where ACTION_GID = ?  /* DBA */</sqlString>
+<ProcessCount>149</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_ACTION_ARG 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_ACTION_ARG.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>ACTION_ARG</TableName>
+<ColumnList>ACTION_GID,ARG_NAME,ARG_VALUE,DOMAIN_NAME</ColumnList>
+<sqlString>update ACTION_ARG set ACTION_GID = ?,ARG_NAME = ?,ARG_VALUE = ?,DOMAIN_NAME = ? where ACTION_GID = ?  and ARG_NAME = ?  /* DBA */</sqlString>
+<ProcessCount>30</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_MONITOR_OPERAND 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_MONITOR_OPERAND.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>MONITOR_OPERAND</TableName>
+<ColumnList>MONITOR_OPERAND_GID,MONITOR_OPERAND_XID,MONITOR_OPERAND_NAME,DOMAIN_NAME</ColumnList>
+<sqlString>update MONITOR_OPERAND set MONITOR_OPERAND_GID = ?,MONITOR_OPERAND_XID = ?,MONITOR_OPERAND_NAME = ?,DOMAIN_NAME = ? where MONITOR_OPERAND_GID = ?  /* DBA */</sqlString>
+<ProcessCount>5</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_MONITOR_OPERAND_D 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_MONITOR_OPERAND_D.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>MONITOR_OPERAND_D</TableName>
+<ColumnList>MONITOR_OPERAND_GID,DATA_QUERY_TYPE_GID,IS_OPERAND,IS_TIME_DETAIL,DOMAIN_NAME</ColumnList>
+<sqlString>update MONITOR_OPERAND_D set MONITOR_OPERAND_GID = ?,DATA_QUERY_TYPE_GID = ?,IS_OPERAND = ?,IS_TIME_DETAIL = ?,DOMAIN_NAME = ? where DATA_QUERY_TYPE_GID = ?  and MONITOR_OPERAND_GID = ?  /* DBA */</sqlString>
+<ProcessCount>4</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TABLE_SET 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TABLE_SET.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TABLE_SET</TableName>
+<ColumnList>TABLE_SET</ColumnList>
+<sqlString>update TABLE_SET set TABLE_SET = ? where TABLE_SET = ?  /* DBA */</sqlString>
+<ProcessCount>5</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_TABLE_SET_DETAIL 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_TABLE_SET_DETAIL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>TABLE_SET_DETAIL</TableName>
+<ColumnList>TABLE_SET,TABLE_NAME</ColumnList>
+<sqlString>update TABLE_SET_DETAIL set TABLE_SET = ?,TABLE_NAME = ? where TABLE_NAME = ?  and TABLE_SET = ?  /* DBA */</sqlString>
+<ProcessCount>36</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_PLANNING_PARAMETER 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_PLANNING_PARAMETER.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>PLANNING_PARAMETER</TableName>
+<ColumnList>PLANNING_PARAM_QUALIFIER_GID,PLANNING_PARAM_VALUE,PLANNING_PARAM_UOM_CODE,PLANNING_PARAMETER_SET_GID,DOMAIN_NAME</ColumnList>
+<sqlString>update PLANNING_PARAMETER set PLANNING_PARAM_QUALIFIER_GID = ?,PLANNING_PARAM_VALUE = ?,PLANNING_PARAM_UOM_CODE = ?,PLANNING_PARAMETER_SET_GID = ?,DOMAIN_NAME = ? where PLANNING_PARAMETER_SET_GID = ?  and PLANNING_PARAM_QUALIFIER_GID = ?  /* DBA */</sqlString>
+<ProcessCount>37</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_BN_RULE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_BN_RULE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>BN_RULE</TableName>
+<ColumnList>BN_RULE_GID,BN_RULE_XID,BN_TYPE_GID,BN_GENERATOR_GID,RULE_DEFINITION,IS_DEFAULT,DOMAIN_NAME</ColumnList>
+<sqlString>update BN_RULE set BN_RULE_GID = ?,BN_RULE_XID = ?,BN_TYPE_GID = ?,BN_GENERATOR_GID = ?,RULE_DEFINITION = ?,IS_DEFAULT = ?,DOMAIN_NAME = ? where BN_RULE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>12</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_NOTIFY_SUBJECT_STYLESHEET 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_NOTIFY_SUBJECT_STYLESHEET.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>NOTIFY_SUBJECT_STYLESHEET</TableName>
+<ColumnList>NOTIFY_SUBJECT_GID,COM_METHOD_GID,STYLESHEET_PROFILE_GID,IS_DEFAULT,DOMAIN_NAME</ColumnList>
+<sqlString>update NOTIFY_SUBJECT_STYLESHEET set NOTIFY_SUBJECT_GID = ?,COM_METHOD_GID = ?,STYLESHEET_PROFILE_GID = ?,IS_DEFAULT = ?,DOMAIN_NAME = ? where COM_METHOD_GID = ?  and DOMAIN_NAME = ?  and NOTIFY_SUBJECT_GID = ?  and STYLESHEET_PROFILE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>704</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_STATUS_FUNCTOR 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_STATUS_FUNCTOR.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>STATUS_FUNCTOR</TableName>
+<ColumnList>OBJECT_TYPE,STATUS_FUNCTION,FUNCTOR_CLASS,SAVED_CONDITION_GID,SAVED_CONDITION_ADDITIVE,DOMAIN_NAME</ColumnList>
+<sqlString>update STATUS_FUNCTOR set OBJECT_TYPE = ?,STATUS_FUNCTION = ?,FUNCTOR_CLASS = ?,SAVED_CONDITION_GID = ?,SAVED_CONDITION_ADDITIVE = ?,DOMAIN_NAME = ? where DOMAIN_NAME = ?  and OBJECT_TYPE = ?  and STATUS_FUNCTION = ?  /* DBA */</sqlString>
+<ProcessCount>4</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_WORKFLOW_PARAM 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_WORKFLOW_PARAM.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>WORKFLOW_PARAM</TableName>
+<ColumnList>WORKFLOW_INFO_GID,PARAMETER,VALUE,DOMAIN_NAME</ColumnList>
+<sqlString>update WORKFLOW_PARAM set WORKFLOW_INFO_GID = ?,PARAMETER = ?,VALUE = ?,DOMAIN_NAME = ? where PARAMETER = ?  and WORKFLOW_INFO_GID = ?  /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_STATUS_TYPE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_STATUS_TYPE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>STATUS_TYPE</TableName>
+<ColumnList>STATUS_TYPE_GID,STATUS_TYPE_XID,OBJECT_TYPE,DESCRIPTION,SEQUENCE,IS_EXTERNAL,DOMAIN_NAME</ColumnList>
+<sqlString>update STATUS_TYPE set STATUS_TYPE_GID = ?,STATUS_TYPE_XID = ?,OBJECT_TYPE = ?,DESCRIPTION = ?,SEQUENCE = ?,IS_EXTERNAL = ?,DOMAIN_NAME = ? where STATUS_TYPE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>4</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_STATUS_VALUE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_STATUS_VALUE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>STATUS_VALUE</TableName>
+<ColumnList>STATUS_TYPE_GID,STATUS_VALUE_GID,STATUS_VALUE_XID,OBJECT_TYPE,DESCRIPTION,SEQUENCE,INITIAL_VALUE,DOMAIN_NAME</ColumnList>
+<sqlString>update STATUS_VALUE set STATUS_TYPE_GID = ?,STATUS_VALUE_GID = ?,STATUS_VALUE_XID = ?,OBJECT_TYPE = ?,DESCRIPTION = ?,SEQUENCE = ?,INITIAL_VALUE = ?,DOMAIN_NAME = ? where STATUS_TYPE_GID = ?  and STATUS_VALUE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>11</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_APP_FUNCTION 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_APP_FUNCTION.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>APP_FUNCTION</TableName>
+<ColumnList>APP_FUNCTION_GID,APP_FUNCTION_XID,SECURITY_FUNCTION,DOMAIN_NAME</ColumnList>
+<sqlString>update APP_FUNCTION set APP_FUNCTION_GID = ?,APP_FUNCTION_XID = ?,SECURITY_FUNCTION = ?,DOMAIN_NAME = ? where APP_FUNCTION_GID = ?  /* DBA */</sqlString>
+<ProcessCount>235</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+PLANNING_TASK 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>PLANNING_TASK.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>PLANNING_TASK</TableName>
+<ColumnList>PLANNING_TASK_ID,APP_FUNCTION_GID,SOLVER_TIMEOUT,SOLVER_TIMEOUT_UOM_CODE,SOLVER_TIMEOUT_BASE,SOLVER_MAX_SIZE,SOLVER_PERCENT_OPTIMAL,DOMAIN_NAME</ColumnList>
+<sqlString>update PLANNING_TASK set PLANNING_TASK_ID = ?,APP_FUNCTION_GID = ?,SOLVER_TIMEOUT = ?,SOLVER_TIMEOUT_UOM_CODE = ?,SOLVER_TIMEOUT_BASE = ?,SOLVER_MAX_SIZE = ?,SOLVER_PERCENT_OPTIMAL = ?,DOMAIN_NAME = ? where PLANNING_TASK_ID = ?  /* DBA */</sqlString>
+<ProcessCount>13</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_FINDER_LINK 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_FINDER_LINK.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>FINDER_LINK</TableName>
+<ColumnList>FINDER_LINK_GID,FINDER_LINK_XID,FINDER_LINK_NAME,LINK_CLASS,QUERY_TABLE_GID,DOMAIN_NAME</ColumnList>
+<sqlString>update FINDER_LINK set FINDER_LINK_GID = ?,FINDER_LINK_XID = ?,FINDER_LINK_NAME = ?,LINK_CLASS = ?,QUERY_TABLE_GID = ?,DOMAIN_NAME = ? where FINDER_LINK_GID = ?  /* DBA */</sqlString>
+<ProcessCount>8</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+WORKSPACE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>WORKSPACE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>WORKSPACE</TableName>
+<ColumnList>WORKSPACE_GID, WORKSPACE_XID, WORKSPACE_NAME, DOMAIN_NAME,WORKSPACE_XML</ColumnList>
+<sqlString>update WORKSPACE set WORKSPACE_GID = ?, WORKSPACE_XID = ?, WORKSPACE_NAME = ?, DOMAIN_NAME = ? where WORKSPACE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>9</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_AUTO_ASSIGN_TYPE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_AUTO_ASSIGN_TYPE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>AUTO_ASSIGN_TYPE</TableName>
+<ColumnList>AUTO_ASSIGN_TYPE_GID,AUTO_ASSIGN_TYPE_XID,VALUE1_DATA_TYPE,VALUE1_GID_QUERY_CLASS,VALUE1_VALID_VALUE_TYPE_GID,VALUE1_TRANSLATION_GID,VALUE2_DATA_TYPE,VALUE2_GID_QUERY_CLASS,VALUE2_VALID_VALUE_TYPE_GID,VALUE2_TRANSLATION_GID,VALUE3_DATA_TYPE,VALUE3_GID_QUERY_CLASS,VALUE3_VALID_VALUE_TYPE_GID,VALUE3_TRANSLATION_GID,ASSIGNER_CLASS,DOMAIN_NAME</ColumnList>
+<sqlString>update AUTO_ASSIGN_TYPE set AUTO_ASSIGN_TYPE_GID = ?,AUTO_ASSIGN_TYPE_XID = ?,VALUE1_DATA_TYPE = ?,VALUE1_GID_QUERY_CLASS = ?,VALUE1_VALID_VALUE_TYPE_GID = ?,VALUE1_TRANSLATION_GID = ?,VALUE2_DATA_TYPE = ?,VALUE2_GID_QUERY_CLASS = ?,VALUE2_VALID_VALUE_TYPE_GID = ?,VALUE2_TRANSLATION_GID = ?,VALUE3_DATA_TYPE = ?,VALUE3_GID_QUERY_CLASS = ?,VALUE3_VALID_VALUE_TYPE_GID = ?,VALUE3_TRANSLATION_GID = ?,ASSIGNER_CLASS = ?,DOMAIN_NAME = ? where AUTO_ASSIGN_TYPE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>7</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_AUTO_ASSIGN_CRITERIA 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_AUTO_ASSIGN_CRITERIA.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>AUTO_ASSIGN_CRITERIA</TableName>
+<ColumnList>AUTO_ASSIGN_CRITERIA_GID,AUTO_ASSIGN_CRITERIA_XID,CRITERIA_TRANSLATION_GID,DATA_TYPE1,GID_QUERY_CLASS1,VALID_VALUE_TYPE1_GID,UOM_TYPE1,DATA_TYPE2,GID_QUERY_CLASS2,VALID_VALUE_TYPE2_GID,UOM_TYPE2,DATA_FIELD1,DATA_FIELD2,JAVA_CLASS,RESULT_HANDLER_CLASS,DOMAIN_NAME</ColumnList>
+<sqlString>update AUTO_ASSIGN_CRITERIA set AUTO_ASSIGN_CRITERIA_GID = ?,AUTO_ASSIGN_CRITERIA_XID = ?,CRITERIA_TRANSLATION_GID = ?,DATA_TYPE1 = ?,GID_QUERY_CLASS1 = ?,VALID_VALUE_TYPE1_GID = ?,UOM_TYPE1 = ?,DATA_TYPE2 = ?,GID_QUERY_CLASS2 = ?,VALID_VALUE_TYPE2_GID = ?,UOM_TYPE2 = ?,DATA_FIELD1 = ?,DATA_FIELD2 = ?,JAVA_CLASS = ?,RESULT_HANDLER_CLASS = ?,DOMAIN_NAME = ? where AUTO_ASSIGN_CRITERIA_GID = ?  /* DBA */</sqlString>
+<ProcessCount>10</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_AUTO_ASSIGN_TYPE_CRIT_MAP 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_AUTO_ASSIGN_TYPE_CRIT_MAP.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>AUTO_ASSIGN_TYPE_CRIT_MAP</TableName>
+<ColumnList>AUTO_ASSIGN_TYPE_GID,AUTO_ASSIGN_CRITERIA_GID,DOMAIN_NAME</ColumnList>
+<sqlString>update AUTO_ASSIGN_TYPE_CRIT_MAP set AUTO_ASSIGN_TYPE_GID = ?,AUTO_ASSIGN_CRITERIA_GID = ?,DOMAIN_NAME = ? where AUTO_ASSIGN_CRITERIA_GID = ?  and AUTO_ASSIGN_TYPE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>48</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_BN_CHECKSUM_ALGORITHM 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_BN_CHECKSUM_ALGORITHM.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>BN_CHECKSUM_ALGORITHM</TableName>
+<ColumnList>BN_CHECKSUM_ALGORITHM_GID,BN_CHECKSUM_ALGORITHM_XID,ALGORITHM_SUMMARY,ALGORITHM_DESCRIPTION,ALGORITHM_CLASS,ALGORITHM_CLASS_PARAMETERS,DOMAIN_NAME</ColumnList>
+<sqlString>update BN_CHECKSUM_ALGORITHM set BN_CHECKSUM_ALGORITHM_GID = ?,BN_CHECKSUM_ALGORITHM_XID = ?,ALGORITHM_SUMMARY = ?,ALGORITHM_DESCRIPTION = ?,ALGORITHM_CLASS = ?,ALGORITHM_CLASS_PARAMETERS = ?,DOMAIN_NAME = ? where BN_CHECKSUM_ALGORITHM_GID = ?  /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_RELEASE_METHOD 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_RELEASE_METHOD.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>RELEASE_METHOD</TableName>
+<ColumnList>RELEASE_METHOD_GID,RELEASE_METHOD_XID,DESCRIPTION,RELEASING_LOGIC,IS_INDIVIDUAL_THU_FORCED,IS_SPLITABLE,IS_MIXED_FREIGHT_THU_ALLOWED,MIXED_FRT_VOL_TARGET_PCT_FULL,MIXED_FRT_VOL_PADDING_PERCENT,IS_SMALL_QTY_PALLET_ALLOWED,SML_QTY_PLT_ITEM_QTY_THRESHOLD,SML_QTY_PLT_NUM_SHIP_UNITS,DOMAIN_NAME</ColumnList>
+<sqlString>update RELEASE_METHOD set RELEASE_METHOD_GID = ?,RELEASE_METHOD_XID = ?,DESCRIPTION = ?,RELEASING_LOGIC = ?,IS_INDIVIDUAL_THU_FORCED = ?,IS_SPLITABLE = ?,IS_MIXED_FREIGHT_THU_ALLOWED = ?,MIXED_FRT_VOL_TARGET_PCT_FULL = ?,MIXED_FRT_VOL_PADDING_PERCENT = ?,IS_SMALL_QTY_PALLET_ALLOWED = ?,SML_QTY_PLT_ITEM_QTY_THRESHOLD = ?,SML_QTY_PLT_NUM_SHIP_UNITS = ?,DOMAIN_NAME = ? where RELEASE_METHOD_GID = ?  /* DBA */</sqlString>
+<ProcessCount>2</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_AUDIT_OBJECT_TYPE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_AUDIT_OBJECT_TYPE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>AUDIT_OBJECT_TYPE</TableName>
+<ColumnList>AUDIT_OBJECT_TYPE_GID,AUDIT_OBJECT_TYPE_XID,DATA_QUERY_TYPE_GID,DOMAIN_NAME</ColumnList>
+<sqlString>update AUDIT_OBJECT_TYPE set AUDIT_OBJECT_TYPE_GID = ?,AUDIT_OBJECT_TYPE_XID = ?,DATA_QUERY_TYPE_GID = ?,DOMAIN_NAME = ? where AUDIT_OBJECT_TYPE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>5</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_INVOICE_LINEITEM_REFNUM_QUAL 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_INVOICE_LINEITEM_REFNUM_QUAL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>INVOICE_LINEITEM_REFNUM_QUAL</TableName>
+<ColumnList>INVOICE_LI_REFNUM_QUAL_GID,INVOICE_LI_REFNUM_QUAL_XID,INVOICE_LI_REFNUM_DESC,DOMAIN_NAME</ColumnList>
+<sqlString>update INVOICE_LINEITEM_REFNUM_QUAL set INVOICE_LI_REFNUM_QUAL_GID = ?,INVOICE_LI_REFNUM_QUAL_XID = ?,INVOICE_LI_REFNUM_DESC = ?,DOMAIN_NAME = ? where INVOICE_LI_REFNUM_QUAL_GID = ?  /* DBA */</sqlString>
+<ProcessCount>2</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+BI_ROLE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>BI_ROLE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>BI_ROLE</TableName>
+<ColumnList>BI_ROLE_GID,BI_ROLE_XID,DOMAIN_NAME</ColumnList>
+<sqlString>update BI_ROLE set BI_ROLE_GID = ?,BI_ROLE_XID = ?,DOMAIN_NAME = ? where BI_ROLE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>6</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_AD_TIME 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_AD_TIME.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>AD_TIME</TableName>
+<ColumnList>DW_DATE,YEAR,QUARTER_ID,MONTH_ID,WEEK_ID,DAY_OF_WEEK_ID,DAY_OF_MONTH,DAY_OF_YEAR,MONTH,DAY_OF_WEEK,QUARTER,WEEK,WEEKDAY,HOLIDAY,FISCAL_PERIOD,SEASON,EVENT,DOMAIN_NAME</ColumnList>
+<sqlString>update AD_TIME set DW_DATE = ?,YEAR = ?,QUARTER_ID = ?,MONTH_ID = ?,WEEK_ID = ?,DAY_OF_WEEK_ID = ?,DAY_OF_MONTH = ?,DAY_OF_YEAR = ?,MONTH = ?,DAY_OF_WEEK = ?,QUARTER = ?,WEEK = ?,WEEKDAY = ?,HOLIDAY = ?,FISCAL_PERIOD = ?,SEASON = ?,EVENT = ?,DOMAIN_NAME = ? where DW_DATE = ?  /* DBA */</sqlString>
+<ProcessCount>14974</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+E_KPI 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>E_KPI.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>E_KPI</TableName>
+<ColumnList>KPI_GID,KPI_XID,DOMAIN_NAME</ColumnList>
+<sqlString>update E_KPI set KPI_GID = ?,KPI_XID = ?,DOMAIN_NAME = ? where KPI_GID = ?  /* DBA */</sqlString>
+<ProcessCount>29</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+E_TARGET_TYPE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>E_TARGET_TYPE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>E_TARGET_TYPE</TableName>
+<ColumnList>DOMAIN_NAME,TARGET_TYPE_GID,TARGET_TYPE_XID</ColumnList>
+<sqlString>update E_TARGET_TYPE set DOMAIN_NAME = ?,TARGET_TYPE_GID = ?,TARGET_TYPE_XID = ? where TARGET_TYPE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+E_TARGET_VALUE_TYPE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>E_TARGET_VALUE_TYPE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>E_TARGET_VALUE_TYPE</TableName>
+<ColumnList>DOMAIN_NAME,TARGET_VALUE_TYPE_GID,TARGET_VALUE_TYPE_XID</ColumnList>
+<sqlString>update E_TARGET_VALUE_TYPE set DOMAIN_NAME = ?,TARGET_VALUE_TYPE_GID = ?,TARGET_VALUE_TYPE_XID = ? where TARGET_VALUE_TYPE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+E_KPI_TARGET_VALUE_TYPE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>E_KPI_TARGET_VALUE_TYPE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>E_KPI_TARGET_VALUE_TYPE</TableName>
+<ColumnList>DOMAIN_NAME,KPI_GID,TARGET_TYPE_GID,TARGET_VALUE_TYPE_GID,TARGET_VALUE</ColumnList>
+<sqlString>update E_KPI_TARGET_VALUE_TYPE set DOMAIN_NAME = ?,KPI_GID = ?,TARGET_TYPE_GID = ?,TARGET_VALUE_TYPE_GID = ?,TARGET_VALUE = ? where KPI_GID = ?  and TARGET_TYPE_GID = ?  and TARGET_VALUE_TYPE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>87</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+MANAGER_LAYOUT 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>MANAGER_LAYOUT.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>MANAGER_LAYOUT</TableName>
+<ColumnList>MANAGER_LAYOUT_GID,MANAGER_LAYOUT_XID,MANAGER_LAYOUT_NAME,ENTITY_NAME,POST_SAVE_NAV,TRANSLATION_GID,MANAGER_LAYOUT_TYPE,TOTAL_STEPS,IS_TEMPLATE,DOMAIN_NAME,MANAGER_LAYOUT_XML,DIRECTORY_NAME,FOLDER_NAME</ColumnList>
+<sqlString>update MANAGER_LAYOUT set MANAGER_LAYOUT_GID = ?,MANAGER_LAYOUT_XID = ?,MANAGER_LAYOUT_NAME = ?,ENTITY_NAME = ?,POST_SAVE_NAV = ?,TRANSLATION_GID = ?,MANAGER_LAYOUT_TYPE = ?,TOTAL_STEPS = ?,IS_TEMPLATE = ?,DOMAIN_NAME = ?,DIRECTORY_NAME = ?,FOLDER_NAME = ? where MANAGER_LAYOUT_GID = ?  /* DBA */</sqlString>
+<ProcessCount>50</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+V55P_LOAD_CONFIG_ENGINE_TYPE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>V55P_LOAD_CONFIG_ENGINE_TYPE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>LOAD_CONFIG_ENGINE_TYPE</TableName>
+<ColumnList>LOAD_CONFIG_ENGINE_TYPE_GID,LOAD_CONFIG_ENGINE_TYPE_XID,DESCRIPTION,DOMAIN_NAME</ColumnList>
+<sqlString>update LOAD_CONFIG_ENGINE_TYPE set LOAD_CONFIG_ENGINE_TYPE_GID = ?,LOAD_CONFIG_ENGINE_TYPE_XID = ?,DESCRIPTION = ?,DOMAIN_NAME = ? where LOAD_CONFIG_ENGINE_TYPE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+FEASIBILITY_CODE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>FEASIBILITY_CODE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>FEASIBILITY_CODE</TableName>
+<ColumnList>FEASIBILITY_CODE_GID,FEASIBILITY_CODE_XID,DESCRIPTION,DOMAIN_NAME</ColumnList>
+<sqlString>update FEASIBILITY_CODE set FEASIBILITY_CODE_GID = ?,FEASIBILITY_CODE_XID = ?,DESCRIPTION = ?,DOMAIN_NAME = ? where FEASIBILITY_CODE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>14</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+ACTION_DRAG 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>ACTION_DRAG.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>ACTION_DRAG</TableName>
+<ColumnList>ACTION_DRAG_GID,ACTION_DRAG_XID,FROM_QUERY_TABLE_GID,TO_QUERY_TABLE_GID,ACTION_GID,STATE,DOMAIN_NAME</ColumnList>
+<sqlString>update ACTION_DRAG set ACTION_DRAG_GID = ?,ACTION_DRAG_XID = ?,FROM_QUERY_TABLE_GID = ?,TO_QUERY_TABLE_GID = ?,ACTION_GID = ?,STATE = ?,DOMAIN_NAME = ? where ACTION_DRAG_GID = ?  /* DBA */</sqlString>
+<ProcessCount>6</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+OUT_XML_PROFILE_XPATH 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>OUT_XML_PROFILE_XPATH.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>OUT_XML_PROFILE_XPATH</TableName>
+<ColumnList>OUT_XML_PROFILE_GID,SEQUENCE_NO,XML_PATH,DOMAIN_NAME</ColumnList>
+<sqlString>update OUT_XML_PROFILE_XPATH set OUT_XML_PROFILE_GID = ?,SEQUENCE_NO = ?,XML_PATH = ?,DOMAIN_NAME = ? where OUT_XML_PROFILE_GID = ?  and SEQUENCE_NO = ?  /* DBA */</sqlString>
+<ProcessCount>163</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+APPOINTMENT_PRIORITY 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>APPOINTMENT_PRIORITY.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>APPOINTMENT_PRIORITY</TableName>
+<ColumnList>APPOINTMENT_PRIORITY_GID,APPOINTMENT_PRIORITY_XID,PRIORITY_RANKING,DESCRIPTION,DOMAIN_NAME</ColumnList>
+<sqlString>update APPOINTMENT_PRIORITY set APPOINTMENT_PRIORITY_GID = ?,APPOINTMENT_PRIORITY_XID = ?,PRIORITY_RANKING = ?,DESCRIPTION = ?,DOMAIN_NAME = ? where APPOINTMENT_PRIORITY_GID = ?  /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+PLANNING_MILESTONE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>PLANNING_MILESTONE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>PLANNING_MILESTONE</TableName>
+<ColumnList>PLANNING_MILESTONE_GID,PLANNING_MILESTONE_XID,DOMAIN_NAME</ColumnList>
+<sqlString>update PLANNING_MILESTONE set PLANNING_MILESTONE_GID = ?,PLANNING_MILESTONE_XID = ?,DOMAIN_NAME = ? where PLANNING_MILESTONE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>26</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+ROUTING_SEQUENCE 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>ROUTING_SEQUENCE.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>ROUTING_SEQUENCE</TableName>
+<ColumnList>ROUTING_SEQUENCE_GID,ROUTING_SEQUENCE_XID,DESCRIPTION,SEQUENCE_PRIORITY,ALLOW_MULTIPLE,DOMAIN_NAME</ColumnList>
+<sqlString>update ROUTING_SEQUENCE set ROUTING_SEQUENCE_GID = ?,ROUTING_SEQUENCE_XID = ?,DESCRIPTION = ?,SEQUENCE_PRIORITY = ?,ALLOW_MULTIPLE = ?,DOMAIN_NAME = ? where ROUTING_SEQUENCE_GID = ?  /* DBA */</sqlString>
+<ProcessCount>4</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+CR_ROUTE_REFNUM_QUAL 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>CR_ROUTE_REFNUM_QUAL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>CR_ROUTE_REFNUM_QUAL</TableName>
+<ColumnList>CR_ROUTE_REFNUM_QUAL_GID,CR_ROUTE_REFNUM_QUAL_XID, CR_ROUTE_REFNUM_QUAL_DESC,DOMAIN_NAME</ColumnList>
+<sqlString>update CR_ROUTE_REFNUM_QUAL set CR_ROUTE_REFNUM_QUAL_GID = ?,CR_ROUTE_REFNUM_QUAL_XID = ?, CR_ROUTE_REFNUM_QUAL_DESC = ?,DOMAIN_NAME = ? where CR_ROUTE_REFNUM_QUAL_GID = ?  /* DBA */</sqlString>
+<ProcessCount>2</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+CONTAINER_OPT_ALGORITHM 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_glogowner\</DataDir>
+<DataFileName>CONTAINER_OPT_ALGORITHM.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>CONTAINER_OPT_ALGORITHM</TableName>
+<ColumnList>CONTAINER_OPT_ALG_GID,CONTAINER_OPT_ALG_XID,DESCRIPTION,DOMAIN_NAME</ColumnList>
+<sqlString>update CONTAINER_OPT_ALGORITHM set CONTAINER_OPT_ALG_GID = ?,CONTAINER_OPT_ALG_XID = ?,DESCRIPTION = ?,DOMAIN_NAME = ? where CONTAINER_OPT_ALG_GID = ?  /* DBA */</sqlString>
+<ProcessCount>5</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+csv_update_reportowner.cmd 
+ECHO is off.
+Parameters: 
+Properties directory: C:\otm\glog\config 
+Connection ID for REPORTOWNER: dbareportowner 
+Version: V55P 
+ECHO is off.
+ECHO is off.
+REPORT_GROUP 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_report\</DataDir>
+<DataFileName>REPORT_GROUP.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>REPORT_GROUP</TableName>
+<ColumnList>REPORT_GROUP_GID,REPORT_GROUP_XID,REPORT_GROUP_NAME,DOMAIN_NAME</ColumnList>
+<sqlString>insert into REPORT_GROUP ( REPORT_GROUP_GID,REPORT_GROUP_XID,REPORT_GROUP_NAME,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>1</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>13</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+REPORT 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_report\</DataDir>
+<DataFileName>REPORT.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>REPORT</TableName>
+<ColumnList>REPORT_GID,REPORT_DESC,REPORT_GROUP_GID,DOMAIN_NAME,REPORT_XID,REPORT_DISPLAY_NAME,REPORT_PHYSICAL_NAME,SELECT_VIA_UI,ADDITIONAL_URL_ARGUMENTS,REPORT_TYPE,SECURITY_LEVEL,IS_RPT_MGR_DISPLAY,CAN_AUTO_GENERATE,USE_HTML_PARAMFORM,DEFAULT_DESFORMAT</ColumnList>
+<sqlString>insert into REPORT ( REPORT_GID,REPORT_DESC,REPORT_GROUP_GID,DOMAIN_NAME,REPORT_XID,REPORT_DISPLAY_NAME,REPORT_PHYSICAL_NAME,SELECT_VIA_UI,ADDITIONAL_URL_ARGUMENTS,REPORT_TYPE,SECURITY_LEVEL,IS_RPT_MGR_DISPLAY,CAN_AUTO_GENERATE,USE_HTML_PARAMFORM,DEFAULT_DESFORMAT) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>10</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>64</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+REPORT_CONTROL 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_report\</DataDir>
+<DataFileName>REPORT_CONTROL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>REPORT_CONTROL</TableName>
+<ColumnList>REPORT_GID,LANGUAGE_ID,CONTROL_NAME,CONTROL_TEXT,CONTROL_HELP_TEXT,DOMAIN_NAME</ColumnList>
+<sqlString>insert into REPORT_CONTROL ( REPORT_GID,LANGUAGE_ID,CONTROL_NAME,CONTROL_TEXT,CONTROL_HELP_TEXT,DOMAIN_NAME) values (?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>211</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>827</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+REPORT_PARAMETER 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_report\</DataDir>
+<DataFileName>REPORT_PARAMETER.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>REPORT_PARAMETER</TableName>
+<ColumnList>REPORT_GID,SEQUENCE_NUMBER,REPORT_PARAMETER_NAME,REPORT_PARAMETER_DISPLAY_NAME,REPORT_PARAMETER_TYPE,QUERY_TABLE_GID,GID_QUERY,IS_MANDATORY,FIXED_VALUES,DEFAULT_VALUE,DOMAIN_NAME</ColumnList>
+<sqlString>insert into REPORT_PARAMETER ( REPORT_GID,SEQUENCE_NUMBER,REPORT_PARAMETER_NAME,REPORT_PARAMETER_DISPLAY_NAME,REPORT_PARAMETER_TYPE,QUERY_TABLE_GID,GID_QUERY,IS_MANDATORY,FIXED_VALUES,DEFAULT_VALUE,DOMAIN_NAME) values (?,?,?,?,?,?,?,?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>26</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>143</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+REPORT_COMMON_PROPERTIES 
+<CSVUtil>
+<Command>ii</Command>
+<DataDir>.\content_report\</DataDir>
+<DataFileName>REPORT_COMMON_PROPERTIES.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<xvalidate>true</xvalidate>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>REPORT_COMMON_PROPERTIES</TableName>
+<ColumnList>REPORT_COMMON_PROPERTY_GID,REPORT_COMMON_PROPERTY_XID,REPORT_COMMON_PROPERTY_VALUE,DOMAIN_NAME</ColumnList>
+<sqlString>insert into REPORT_COMMON_PROPERTIES ( REPORT_COMMON_PROPERTY_GID,REPORT_COMMON_PROPERTY_XID,REPORT_COMMON_PROPERTY_VALUE,DOMAIN_NAME) values (?,?,?,?) /* DBA */</sqlString>
+<ProcessCount>3</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+REPORT_GROUP 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_report\</DataDir>
+<DataFileName>REPORT_GROUP.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>REPORT_GROUP</TableName>
+<ColumnList>REPORT_GROUP_GID,REPORT_GROUP_XID,REPORT_GROUP_NAME,DOMAIN_NAME</ColumnList>
+<sqlString>update REPORT_GROUP set REPORT_GROUP_GID = ?,REPORT_GROUP_XID = ?,REPORT_GROUP_NAME = ?,DOMAIN_NAME = ? where REPORT_GROUP_GID = ?  /* DBA */</sqlString>
+<ProcessCount>14</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+REPORT 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_report\</DataDir>
+<DataFileName>REPORT.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>REPORT</TableName>
+<ColumnList>REPORT_GID,REPORT_DESC,REPORT_GROUP_GID,DOMAIN_NAME,REPORT_XID,REPORT_DISPLAY_NAME,REPORT_PHYSICAL_NAME,SELECT_VIA_UI,ADDITIONAL_URL_ARGUMENTS,REPORT_TYPE,SECURITY_LEVEL,IS_RPT_MGR_DISPLAY,CAN_AUTO_GENERATE,USE_HTML_PARAMFORM,DEFAULT_DESFORMAT</ColumnList>
+<sqlString>update REPORT set REPORT_GID = ?,REPORT_DESC = ?,REPORT_GROUP_GID = ?,DOMAIN_NAME = ?,REPORT_XID = ?,REPORT_DISPLAY_NAME = ?,REPORT_PHYSICAL_NAME = ?,SELECT_VIA_UI = ?,ADDITIONAL_URL_ARGUMENTS = ?,REPORT_TYPE = ?,SECURITY_LEVEL = ?,IS_RPT_MGR_DISPLAY = ?,CAN_AUTO_GENERATE = ?,USE_HTML_PARAMFORM = ?,DEFAULT_DESFORMAT = ? where REPORT_GID = ?  /* DBA */</sqlString>
+<ProcessCount>74</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+REPORT_CONTROL 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_report\</DataDir>
+<DataFileName>REPORT_CONTROL.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>REPORT_CONTROL</TableName>
+<ColumnList>REPORT_GID,LANGUAGE_ID,CONTROL_NAME,CONTROL_TEXT,CONTROL_HELP_TEXT,DOMAIN_NAME</ColumnList>
+<sqlString>update REPORT_CONTROL set REPORT_GID = ?,LANGUAGE_ID = ?,CONTROL_NAME = ?,CONTROL_TEXT = ?,CONTROL_HELP_TEXT = ?,DOMAIN_NAME = ? where CONTROL_NAME = ?  and DOMAIN_NAME = ?  and LANGUAGE_ID = ?  and REPORT_GID = ?  /* DBA */</sqlString>
+<ProcessCount>1038</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>
+ECHO is off.
+REPORT_PARAMETER 
+<CSVUtil>
+<Command>uu</Command>
+<DataDir>.\content_report\</DataDir>
+<DataFileName>REPORT_PARAMETER.csv</DataFileName>
+<ExcludePublic>true</ExcludePublic>
+<ProcessCSV>
+<DatabaseGlobalName>OTM.COEKC.COM</DatabaseGlobalName>
+<TableName>REPORT_PARAMETER</TableName>
+<ColumnList>REPORT_GID,SEQUENCE_NUMBER,REPORT_PARAMETER_NAME,REPORT_PARAMETER_DISPLAY_NAME,REPORT_PARAMETER_TYPE,QUERY_TABLE_GID,GID_QUERY,IS_MANDATORY,FIXED_VALUES,DEFAULT_VALUE,DOMAIN_NAME</ColumnList>
+<sqlString>update REPORT_PARAMETER set REPORT_GID = ?,SEQUENCE_NUMBER = ?,REPORT_PARAMETER_NAME = ?,REPORT_PARAMETER_DISPLAY_NAME = ?,REPORT_PARAMETER_TYPE = ?,QUERY_TABLE_GID = ?,GID_QUERY = ?,IS_MANDATORY = ?,FIXED_VALUES = ?,DEFAULT_VALUE = ?,DOMAIN_NAME = ? where REPORT_GID = ?  and REPORT_PARAMETER_NAME = ?  /* DBA */</sqlString>
+<ProcessCount>169</ProcessCount>
+<ErrorCount>0</ErrorCount>
+<SkipCount>0</SkipCount>
+</ProcessCSV>
+</CSVUtil>

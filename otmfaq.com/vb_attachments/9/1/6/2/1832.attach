@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:otm="http://xmlns.oracle.com/apps/otm" xmlns:gtm="http://xmlns.oracle.com/apps/gtm" version="1.0" exclude-result-prefixes="otm gtm">
+   <!--  <xsl:output method="xml" indent="yes" encoding="utf-8" omit-xml-declaration="yes"/> -->
+   <xsl:template match="/">
+      <xsl:apply-templates select="/otm:Transmission"/>
+      <xsl:apply-templates select="/Transmission"/>
+   </xsl:template>
+
+   <xsl:template match="otm:Transmission">
+      <Transmission>
+         <TransmissionHeader/>
+         <TransmissionBody>
+            <GLogXMLElement>
+               <OBLine>
+                  <TransOrderLine>
+                        <TransOrderLineGid>
+                           <Gid>
+                              <DomainName>MXAUTO/VW</DomainName>
+                              <Xid>
+                                 <xsl:value-of select="//otm:GLogXMLElement/otm:OBLine/otm:TransOrderLine/otm:TransOrderLineGid/otm:Gid/otm:Xid"/>
+                              </Xid>
+                           </Gid>
+                        </TransOrderLineGid>
+                        <TransactionCode>U</TransactionCode>                    
+                  </TransOrderLine>
+				  <ItemQuantity>
+					 <IsShippable>
+						<xsl:for-each select="//otm:GLogXMLElement/otm:OBLine/otm:ItemQuantity/otm:IsShippable">
+                           <xsl:call-template name="otm:Shippable"/>
+					 </IsShippable>
+				  </ItemQuantity>	
+               </OBLine>
+            </GLogXMLElement>
+         </TransmissionBody>
+      </Transmission>
+   </xsl:template>    
+   
+   <xsl:template name="otm:Shippable">
+      <ItemQuantity>
+         <AssignedVal>
+            <xsl:value-of select="otm:AssignedVal"/>
+         </AssignedVal>
+         <IsShippable>
+            <xsl:for-each select="otm:IsShippable">
+               <xsl:if test="otm:IsShippable = 'Y'">
+			   </xsl:if>
+            </xsl:for-each>
+		 </IsShippable>	
+	 </ItemQuantity>
+   </xsl:template>
+
+</xsl:stylesheet>

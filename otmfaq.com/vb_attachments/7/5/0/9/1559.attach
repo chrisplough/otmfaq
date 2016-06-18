@@ -1,0 +1,54 @@
+#!/bin/bash
+. /users/glog/.profile
+
+
+
+OTM_PATH=/usr/local/mts/gc3app1v50
+JAVA_PATH=$OTM_PATH/jdk/bin
+# CONFIG_PATH=$OTM_PATH/glog/config/otm_jaas.config
+CONFIG_PATH=$OTM_PATH/glog/config/gc3_jaas.config    # for OTM 5.x
+USER=DBA.ADMIN
+PASSWORD=d25jtB9S
+LOGS_PATH=$OTM_PATH/logs
+EVENT_TMP_PATH=$LOGS_PATH/event
+THREAD_TMP_PATH=$LOGS_PATH/thread
+EVENT_7_FILENAME=event_log.last7days.csv
+EVENT_365_FILENAME=event_log.last365days.csv
+
+
+
+# create temporary event data
+cd $EVENT_TMP_PATH
+$JAVA_PATH/java -Duser.home=$OTM_PATH -Djava.security.auth.login.config=$CONFIG_PATH glog.server.event.EventDiagCommandLine -user $USER -password $PASSWORD -file !BYDATE -events
+
+
+
+# create temporary thread data
+cd $THREAD_TMP_PATH
+$JAVA_PATH/java -Duser.home=$OTM_PATH -Djava.security.auth.login.config=$CONFIG_PATH glog.server.event.EventDiagCommandLine -user $USER -password $PASSWORD -file !BYDATE -threads
+
+
+
+# build event log for last 7 days
+cd ~
+rm -f $EVENT_7_FILENAME
+echo '"SERVER_TIME","LAST_RESET","QUEUE","CURRENT_QUEUE_SIZE","TOTAL_THROUGHPUT","AVG_QUEUE_SIZE","MAX_QUEUE_SIZE","AVG_WAIT_TIME","MAX_WAIT_TIME","AVG_PROCESSING_TIME","MAX_PROCESSING_TIME","MAX_PROCESSING_EVENT"' > $EVENT_7_FILENAME
+FILES=$(find $EVENT_TMP_PATH -name 'eq*.txt' -mtime -7)
+for f in $FILES
+do
+
+    awk 'NR==1 {st=substr($0, 13, 19)} NR==3 {lr=substr($0, 13, 19)} /\tQueue:/ {qi++; q[qi]=substr($0, 9);} /\t\tCurrent Queue Size:/ {cqsi++; cqs[cqsi]=substr($0, 23);} /\t\tTotal Throughput:/ {tti++; tt[tti]=substr($0, 21);} /\t\tQueue Size:/ {qsi++; qs[qsi]=substr($0, 15);} /\t\tWait Time:/ {wti++; wt[wti]=substr($0, 14);} /\t\tProcessing Time:/ {pti++; pt[pti]=substr($0, 20);} /\t\tMax Processing Event:/ {mpei++; mpe[mpei]=substr($0, 25);} END {for (i=1; i<=qi; i++) print "\"" st "\",\"" lr "\",\"" q[i] "\",\"" cqs[i] "\",\"" tt[i] "\",\"" substr(qs[i], 2, index(qs[i], ",") - 2) "\",\"" substr(qs[i], index(qs[i], ",") + 1, index(qs[i], ")") - index(qs[i], ",") - 1) "\",\"" substr(wt[i], 2, index(wt[i], ",") - 2) "\",\"" substr(wt[i], index(wt[i], ",") + 1, index(wt[i], ")") - index(wt[i], ",") - 1) "\",\"" substr(pt[i], 2, index(pt[i], ",") - 2) "\",\"" substr(pt[i], index(pt[i], ",") + 1, index(pt[i], ")") - index(pt[i], ",") - 1) "\",\"" mpe[i] "\""}' $f >> $EVENT_7_FILENAME
+
+done
+
+cp $EVENT_7_FILENAME $LOGS_PATH    # replace any existing file
+rm -f $EVENT_7_FILENAME
+
+
+
+# build event log for last 365 days
+
+
+
+# reset event diagnostics
+$JAVA_PATH/java -Duser.home=$OTM_PATH -Djava.security.auth.login.config=$CONFIG_PATH glog.server.event.EventDiagCommandLine -user $USER -password $PASSWORD -reset

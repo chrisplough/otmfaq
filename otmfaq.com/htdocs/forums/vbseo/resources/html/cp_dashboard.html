@@ -1,0 +1,103 @@
+
+
+			{var:livestats}
+
+			<div class="content-box">
+				<div class="content-box-header">
+					<h3>{lang:cp_dashboard_header}</h3>
+					<ul class="content-box-tabs">
+						<li><a href="#tab1" class="default-tab">{lang:cp_licinfo}</a></li>
+						<li><a href="#tab2">{lang:cp_backup_restore}</a></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div class="content-box-body">
+					<div class="tab-content default-tab" id="tab1">
+						<div class="column-body">
+							<div class="single-column last">
+								<p>{lang:current_ver}: <b>vBSEO {var:version}</b></p>
+								<p>{lang:forums_root}: <b>{var:bburl}</b></p>
+								<p>{lang:cp_validkey}: <span class="{var:valid_class}"><b id="c_validkey">{var:valid_code_msg}</b></span></p>
+								<p>{lang:key_config}</p>
+								<form action="" method="post">
+									<fieldset>
+										<p>
+											<label>{lang:current_key}</label>
+											<input name="setting[VBSEO_LICENSE_CODE]" type="text" class="text-input medium-input" value="{var:lic_code}" /> 
+											<span class="input-notification {var:keyclass} png_bg">{var:keycheck}</span>
+											<br /><small>{lang:cp_mustmatch}</small>
+										</p>
+										<p>
+											<input class="button" type="submit" value="{lang:cp_save}" onclick="return vbseocp.submit_form()" />
+										</p>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>	
+					<div class="tab-content" id="tab2">
+						<div class="column-body">
+							<div class="single-column">
+								<div class="xml-download">
+									<strong>{lang:download}</strong>
+								</div>
+								<div class="file-name">
+									<strong>{lang:filename}</strong>
+								</div>
+								<div class="xml-description">
+									<strong>{lang:description}</strong>
+								</div>
+							</div>
+						</div>
+						<div class="column-body">
+							<div class="single-column">
+								<div class="xml-download">
+									<span><a href="{var:cpscript}?getsettings=true&amp;get=all">XML</a></span>
+								</div>
+								<div class="file-name">
+									<span>vbseo_all.xml</span>
+								</div>
+								<div class="xml-description">
+									<span class="desc">{lang:backup_all}</span>
+								</div>
+							</div>
+						</div>
+						<div class="column-body">
+							<div class="single-column">
+								<div class="xml-download">
+									<span><a href="{var:cpscript}?getsettings=true&amp;get=urw">XML</a></span>
+								</div>
+								<div class="file-name">
+									<span>vbseo_urls.xml</span>
+								</div>
+								<div class="xml-description">
+									<span class="desc">{lang:backup_urls}</span>
+								</div>
+							</div>
+						</div>
+						<form action="{var:cpscript}" method="POST"
+						enctype="multipart/form-data" onSubmit="
+el=this.elements['file'];
+if(el.value.indexOf('.xml')<0)
+{
+    alert('{lang:choose_file}');
+    el.focus();
+    return false;
+}">
+						<input type="hidden" name="putsettings" value="1" />
+						<div class="column-body">
+							<div class="header"><h4>{lang:upload_set}</h4></div>
+						</div>
+						<div class="column-body">
+							<div class="single-column last">
+								<p>{lang:note_upcrr}</p>
+								<p>{lang:upload}: <input class="medium-input" name="file" id="button" size="34" type="file" /> <input id="button" class="button" name="Submit" value="{lang:import_set}" type="submit" />
+							</div>
+						</div>
+						</form>
+						
+                    
+					</div> 
+					
+				</div> 
+			</div> 

@@ -1,0 +1,117 @@
+2014-08-10 09:14:26.215	662620	Debug	Planning	Verified Src Address: locationGid=CORP.12684 city=HOUSTON provinceCode=BC postalCode=V0J 1Z0 countryCode3Gid=CAN countyQualifier=null zone1=null zone2=null zone3=null zone4=null timeZoneId=null GPoint = null addressValid =null railSplcGid = CORP.097218 railStationCodeGid = CORP.BCHOUSTON  [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-10 09:14:26.215	662620	Debug	Planning	Verified Dest Address: locationGid=CORP.12594 city=BOUCHERVILLE provinceCode=QC postalCode=J4B 5H2 countryCode3Gid=CAN countyQualifier=null zone1=null zone2=null zone3=null zone4=null timeZoneId=null GPoint = null addressValid =null railSplcGid = CORP.030000 railStationCodeGid = CORP.PQBOUCHERVILLE  [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-10 09:14:26.215	662620	Debug	Planning	start CalendarWorkPeriodManager.workPeriodRanges [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-10 09:14:26.215	662620	Debug	Planning	startTime: 2014-08-10 09:14:26 America/Vancouver [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-10 09:14:26.215	662620	Debug	Planning	endTime: 2014-11-18 08:14:26 America/Vancouver [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-10 09:14:26.215	662620	Debug	Planning	calendarGid: CORP.GENERIC_CALY [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-10 09:14:26.215	662620	Debug	Planning	activity: PICKUP [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-10 09:14:26.216	662620	Debug	Planning	end CalendarWorkPeriodManager.workPeriodRanges [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-10 09:14:26.247	662620	Error	Exception	Error in PCMilerRail result (pcMilerResult=Invalid place name (station/state or geocode not found).)
+
+	at sun.reflect.GeneratedConstructorAccessor1128.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at glog.util.exception.GLException.factory(GLException.java:460)
+	at glog.util.exception.GLException.factory(GLException.java:436)
+	at glog.util.exception.GLException.factory(GLException.java:432)
+	at glog.util.exception.GLException.factory(GLException.java:428)
+	at glog.business.rate.ratedistance.external.PCMilerRailEngine.validateReadInput(PCMilerRailEngine.java:517)
+	at glog.business.rate.ratedistance.external.PCMilerRailEngine.calcRailDistance(PCMilerRailEngine.java:232)
+	at glog.business.rate.ratedistance.external.PCMilerRailEngine.lookupDistance(PCMilerRailEngine.java:153)
+	at glog.business.rate.ratedistance.RateDistanceSession.lookupExternalDistance(RateDistanceSession.java:1374)
+	at glog.business.rate.ratedistance.RateDistanceSession.calcDistance(RateDistanceSession.java:358)
+	at glog.business.rate.ratedistance.RateDistanceSession.calculateDistance(RateDistanceSession.java:256)
+	at glog.business.rateservicescheduling.RateServiceHelper.getDistance(RateServiceHelper.java:1092)
+	at glog.business.rateservicescheduling.RateServiceDriveEngine.prepStopData(RateServiceDriveEngine.java:926)
+	at glog.business.rateservicescheduling.NonScheduleRateServiceEngine.prepStopData(NonScheduleRateServiceEngine.java:103)
+	at glog.business.rateservicescheduling.RateServiceDriveEngine.prepData(RateServiceDriveEngine.java:520)
+	at glog.business.rateservicescheduling.RateServiceDriveEngine.drive(RateServiceDriveEngine.java:181)
+	at glog.business.rateservicescheduling.RateServiceEngine.calculateServiceTime(RateServiceEngine.java:366)
+	at glog.business.action.RateActionExecutor.calcRateServiceTime(RateActionExecutor.java:267)
+	at glog.business.session.RateActionSessionBean.calcRateServiceTime(RateActionSessionBean.java:298)
+	at glog.business.session.RateActionSessionServerSideEJBWrapper.calcRateServiceTime(RateActionSessionServerSideEJBWrapper.java:373)
+	at glog.business.session.RateActionSessionHome_a6s4b5_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at glog.business.session.RateActionSessionHome_a6s4b5_EOImpl.calcRateServiceTime(Unknown Source)
+	at glog.business.session.RateActionSessionHome_a6s4b5_EOImpl_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:667)
+	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:230)
+	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:522)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:518)
+	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+ [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-10 09:14:26.249	662620	Error	Exception	glog.externalapi.distanceengine.ExtEngineException: Error in PCMilerRail result (pcMilerResult=Invalid place name (station/state or geocode not found).)
+
+
+glog.externalapi.distanceengine.ExtEngineException: Error in PCMilerRail result (pcMilerResult=Invalid place name (station/state or geocode not found).)
+
+	at glog.business.rate.ratedistance.external.PCMilerRailEngine.lookupDistance(PCMilerRailEngine.java:171)
+	at glog.business.rate.ratedistance.RateDistanceSession.lookupExternalDistance(RateDistanceSession.java:1374)
+	at glog.business.rate.ratedistance.RateDistanceSession.calcDistance(RateDistanceSession.java:358)
+	at glog.business.rate.ratedistance.RateDistanceSession.calculateDistance(RateDistanceSession.java:256)
+	at glog.business.rateservicescheduling.RateServiceHelper.getDistance(RateServiceHelper.java:1097)
+	at glog.business.rateservicescheduling.RateServiceDriveEngine.prepStopData(RateServiceDriveEngine.java:926)
+	at glog.business.rateservicescheduling.NonScheduleRateServiceEngine.prepStopData(NonScheduleRateServiceEngine.java:103)
+	at glog.business.rateservicescheduling.RateServiceDriveEngine.prepData(RateServiceDriveEngine.java:520)
+	at glog.business.rateservicescheduling.RateServiceDriveEngine.drive(RateServiceDriveEngine.java:181)
+	at glog.business.rateservicescheduling.RateServiceEngine.calculateServiceTime(RateServiceEngine.java:366)
+	at glog.business.action.RateActionExecutor.calcRateServiceTime(RateActionExecutor.java:267)
+	at glog.business.session.RateActionSessionBean.calcRateServiceTime(RateActionSessionBean.java:298)
+	at glog.business.session.RateActionSessionServerSideEJBWrapper.calcRateServiceTime(RateActionSessionServerSideEJBWrapper.java:373)
+	at glog.business.session.RateActionSessionHome_a6s4b5_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at glog.business.session.RateActionSessionHome_a6s4b5_EOImpl.calcRateServiceTime(Unknown Source)
+	at glog.business.session.RateActionSessionHome_a6s4b5_EOImpl_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:668)
+	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:232)
+	at weblogic.rmi.internal.wls.WLSExecuteRequest.run(WLSExecuteRequest.java:118)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: Error in PCMilerRail result (pcMilerResult=Invalid place name (station/state or geocode not found).)
+
+	at sun.reflect.GeneratedConstructorAccessor1128.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at glog.util.exception.GLException.factory(GLException.java:460)
+	at glog.util.exception.GLException.factory(GLException.java:436)
+	at glog.util.exception.GLException.factory(GLException.java:432)
+	at glog.util.exception.GLException.factory(GLException.java:428)
+	at glog.business.rate.ratedistance.external.PCMilerRailEngine.validateReadInput(PCMilerRailEngine.java:517)
+	at glog.business.rate.ratedistance.external.PCMilerRailEngine.calcRailDistance(PCMilerRailEngine.java:232)
+	at glog.business.rate.ratedistance.external.PCMilerRailEngine.lookupDistance(PCMilerRailEngine.java:153)
+	at glog.business.rate.ratedistance.RateDistanceSession.lookupExternalDistance(RateDistanceSession.java:1374)
+	at glog.business.rate.ratedistance.RateDistanceSession.calcDistance(RateDistanceSession.java:358)
+	at glog.business.rate.ratedistance.RateDistanceSession.calculateDistance(RateDistanceSession.java:256)
+	at glog.business.rateservicescheduling.RateServiceHelper.getDistance(RateServiceHelper.java:1092)
+	at glog.business.rateservicescheduling.RateServiceDriveEngine.prepStopData(RateServiceDriveEngine.java:926)
+	at glog.business.rateservicescheduling.NonScheduleRateServiceEngine.prepStopData(NonScheduleRateServiceEngine.java:103)
+	at glog.business.rateservicescheduling.RateServiceDriveEngine.prepData(RateServiceDriveEngine.java:520)
+	at glog.business.rateservicescheduling.RateServiceDriveEngine.drive(RateServiceDriveEngine.java:181)
+	at glog.business.rateservicescheduling.RateServiceEngine.calculateServiceTime(RateServiceEngine.java:366)
+	at glog.business.action.RateActionExecutor.calcRateServiceTime(RateActionExecutor.java:267)
+	at glog.business.session.RateActionSessionBean.calcRateServiceTime(RateActionSessionBean.java:298)
+	at glog.business.session.RateActionSessionServerSideEJBWrapper.calcRateServiceTime(RateActionSessionServerSideEJBWrapper.java:373)
+	at glog.business.session.RateActionSessionHome_a6s4b5_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at glog.business.session.RateActionSessionHome_a6s4b5_EOImpl.calcRateServiceTime(Unknown Source)
+	at glog.business.session.RateActionSessionHome_a6s4b5_EOImpl_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:667)
+	at weblogic.rmi.cluster.ClusterableServerRef.invoke(ClusterableServerRef.java:230)
+	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:522)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:518)
+	... 3 more
+ [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-10 09:14:26.256	662620	Warning	Exception	Unable to determine LAT/LON for location:CORP.12684 [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-10 09:14:26.256	662620	Warning	Exception	Unable to determine LAT/LON for location:CORP.12594 [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-10 09:14:26.256	662620	Debug	Planning	start CalendarWorkPeriodManager.workPeriodRanges [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-10 09:14:26.256	662620	Debug	Planning	startTime: 2014-07-13 09:14:26 America/Vancouver [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-10 09:14:26.256	662620	Debug	Planning	endTime: 2014-11-18 08:14:26 America/Vancouver [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-10 09:14:26.256	662620	Debug	Planning	calendarGid: CORP.GENERIC_CALY [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-10 09:14:26.256	662620	Debug	Planning	activity: RECEIVE [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-08-10 09:14:26.256	662620	Debug	Planning	end CalendarWorkPeriodManager.workPeriodRanges [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)']

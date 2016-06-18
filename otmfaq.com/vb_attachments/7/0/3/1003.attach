@@ -1,0 +1,143 @@
+
+Oracle Transportation Management Core Functionality
+• Articulate OTM's Functional capabilities Learner 
+• Articulate Domain Architecture and standard models Learner 
+• Configure Domain Security Practitioner 
+• Articulate the primary User Interface (UI) conventions Learner 
+• Configure Users, User Roles, and User Preferences Practitioner 
+• Configure Locations, Calendars, and Contacts Practitioner 
+• Describe Locations, Calendars, and Contacts Learner 
+• Configure Service Providers and Rates components Practitioner 
+• Describe Service Providers and Rates components Learner 
+• Configure Itineraries, Items, and Equipment Practitioner 
+• Describe Itineraries, Items, and Equipment Learner 
+• Configure Order Bases and Order Releases Practitioner 
+• Describe Order Bases and Order Releases Learner 
+• Execute Order Management tasks Practitioner 
+• Describe Shipment Planning parameters and settings Learner 
+• Execute Shipment Planning ("Create Buy Shipment" Options) Practitioner 
+• Describe Shipment Planning ("Create Buy Shipment" Options) Learner 
+• Execute Shipments, Tenders and Shipment Events Practitioner 
+• Describe Shipments, Tenders and Shipment Events Learner 
+• Articulate Fleet Management capabilities Learner 
+
+
+
+Fleet Management
+• Articulate Fleet Management and New Business Objects Learner 
+• Configure Advanced Layouts Practitioner 
+• Describe Advanced Layouts Learner 
+• Configure the Dispatch Board Practitioner 
+• Configure Fleet Actions Practitioner 
+• Describe Location Asset Inventory Learner 
+• Configure Logic Configuration Practitioner 
+• Describe Logic Configuration Learner 
+• Configure Drivers, Teams and HOS Practitioner 
+• Configure Power Units and Equipment Practitioner 
+• Configure a Dispatch Board Practitioner 
+• Create Fleet Logic Configuration Practitioner 
+• Describe Fleet Logic Configuration Learner 
+
+
+
+
+
+
+
+Freight Payment
+
+
+• Articulate Financial Management Components Learner 
+• Configure Freight Payment and Matching Rules Practitioner 
+• Describe Freight Payment and Matching Rules Learner 
+• Configure Approval Rules Practitioner 
+• Describe Approval Rules Learner 
+• Configure Line Approval Tolerance Rules Practitioner 
+• Configure Match Validation Rules Practitioner 
+• Create and Assign Rules to the Service Provider Practitioner 
+• Describe Service Provider Rule Assignments Learner 
+• Configure User Signing Authority Practitioner 
+• Create Invoices Manually and Automatically Practitioner 
+• Describe Manual and Automatic Invoice Creation Methods Learner 
+• Adjust Shipment Costs and Invoice Amounts Practitioner 
+• Describe Shipment Costs and Invoice Amounts Learner 
+• Configure the Auto Pay Process Practitioner 
+• Describe the Auto Pay Process Learner 
+• Configure Allocation Rules Practitioner 
+• Describe Allocation Rules Learner 
+• Configure General Ledger Key Components Practitioner 
+• Configure General Ledger Codes Practitioner 
+
+
+
+Data Management
+
+
+• Articulate Data Management Techniques Learner 
+• Articulate the OTM Data Dictionary Learner 
+• Articulate OTM Table Structures Learner 
+• Execute a CSV Export File Practitioner 
+• Describe a CSV Export File Learner 
+• Format a CSV File for Import Practitioner 
+• Describe the format of a CSV File for Import Learner 
+• Execute a CSV Import File and Validate the Results Practitioner 
+• Execute CSV Import using the CSVUTIL utility Practitioner 
+
+
+
+
+
+
+
+Agents and Workflow
+
+
+• Articulate WorkFlow Agents and Milestones Learner 
+• Configure the Agent Header Parameters Practitioner 
+• Describe the Agent Header Parameters Learner 
+• Configure the Agent Actions Parameters Practitioner 
+• Describe the Agent Actions Parameters Learner 
+• Configure the Agent Error Handler Parameters Practitioner 
+• Describe the Agent Error Handler Parameters Learner 
+• Create and Test Automation Agents Practitioner 
+
+
+
+Multi-Stop Business Scenario
+
+
+• Configure Service Provider Regions Practitioner 
+• Configure Ship Units and Items Practitioner 
+• Configure a Fleet Service Provider Practitioner 
+• Configure a Multi-Stop Itinerary Practitioner 
+• Describe a Multi-Stop Itinerary Learner 
+• Configure Rate Preferences Practitioner 
+• Configure new Planning Parameters Practitioner 
+• Describe new Planning Parameters Learner 
+• Execute and Validate a Bulk Plan Practitioner 
+• Describe a Bulk Plan Learner 
+• Execute Tender Accept (as a Service Provider) Practitioner 
+• Create Shipment Events (as a Service Provider) Practitioner 
+• Review Shipment Status Changes/Implications Practitioner 
+• Review Shipment Visibility/Track and Trace Practitioner 
+
+
+
+
+
+
+
+
+Multi-Leg Business Scenario
+
+
+• Create an Ocean Vessel Equipment, Group and Profile Practitioner 
+• Describe an Ocean Vessel Equipment, Group and Profile Learner 
+• Create Air and Voyage Ground Schedules Practitioner 
+• Describe Air and Voyage Ground Schedules Learner 
+• Create Multi-Leg Itineraries for Air and Ocean Practitioner 
+• Describe Multi-Leg Itineraries for Air and Ocean Learner 
+• Configure Parameters (e.g. Deconsolidation Pool) Practitioner 
+• Describe Parameters (e.g. Deconsolidation Pool) Learner 
+• Configure Scheduled jobs for Automated Bulk Plan runs Practitioner 
+

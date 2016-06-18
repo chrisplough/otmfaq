@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<dataTemplate name="sample_package" defaultPackage="sample_package" version="1.0">
+  <properties>
+    <property name="xml_tag_case" value="upper" />
+  </properties>
+  <parameters>
+    <parameter name="P_GL_USER" dataType="character" defaultValue="DBA.ADMIN" />
+    <parameter name="P_ROLE_ID" dataType="character" defaultValue="ADMIN" />   
+	<parameter name="P_L_SHIPMENT_ID" dataType = "character" defaultValue="1=1"></parameter>	
+  </parameters>
+  <lexicals></lexicals>
+  <dataQuery>
+    <sqlStatement name="Q_1"> <![CDATA[
+    declare
+    	v_output varchar2(2);
+    	begin
+	glogowner.ship_validation(in_ship_id,v_output);
+	end;
+	]]></sqlStatement>	
+ 
+  </dataQuery>
+  <dataTrigger name="afterParameterFormTrigger" source="sample_package.AfterPForm" />
+  <dataTrigger name="beforeReportTrigger" source="sample_package.BeforePForm" />
+  <dataStructure>
+  <element name="P_L_SHIPMENT_ID_PARAM" dataType="varchar2" value="sample_package.P_L_SHIPMENT_ID_PARAM"/>	      
+    <group name="G_SHIP" dataType="varchar2" source="Q_1">
+          <element name="V_OUTPUT" dataType="varchar2" value="SHIP_VALIDATION.V_OUTPUT" />
+    </group>
+  </dataStructure>
+  <dataTrigger name="afterReportTrigger" source="sample_package.AfterReport()" />
+</dataTemplate>

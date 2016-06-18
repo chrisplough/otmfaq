@@ -1,0 +1,173 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<dataTemplate name="budgetreport" defaultPackage="REPORTOWNER.pk_budgetreport" version="1.0">
+    <properties>
+        <property name="xml_tag_case" value="upper"/>
+    </properties>
+    <parameters>
+        <parameter name="P_GL_USER" defaultValue="DBA.ADMIN" dataType="character"/>
+	<parameter name="P_KEY_ID" dataType = "character" defaultValue="1=1"></parameter>
+	<parameter name="P_CITY_FROM" dataType = "character" defaultValue="1=1"></parameter>
+	<parameter name="P_CITY_FRM_ISO_CNTY_CDE" dataType = "character" defaultValue="1=1"></parameter>
+	<parameter name="P_CITY_DESTINATION" dataType = "character" defaultValue="1=1"></parameter>
+	<parameter name="P_CITY_DEST_ISO_CNTY_CDE" dataType = "character" defaultValue="1=1"></parameter>
+	<parameter name="P_BUDGET_VERSION" dataType = "character" defaultValue="1=1"></parameter>
+	<parameter name="P_MODE_OF_TRANSPORT" dataType = "character" defaultValue="1=1"></parameter>
+    </parameters>
+    <lexicals></lexicals>
+    <dataQuery>
+        <sqlStatement name="Q_1">
+            <![CDATA[
+			SELECT CITY_FROM
+					,CITY_FROM_ISO_COUNTRY_CODE
+					,HFM_REGION
+					,HFM_ZONE
+					,PRODUCT_FAMILY
+					,GMID
+					,INCOTERM_GROUP
+					,INCOTERM
+					,SAP_FLOW_ID
+					,KEY_ID
+					,KEY_MODE
+					,CITY_DEST_ISO_CNTRY_CODE
+					,CUSTOMER_TYPE
+					,CITY_DESTINATION
+					,BUDGET_VERSION
+					,COLD_T
+					,TOTAL_UNITS
+					,TOTAL_PALLETS
+					,TOTAL_GROSS_WEIGHT
+					,PALLET_TYPE
+					,MODE_OF_TRANSPORT
+					,LOGISTICAL_SUPPORT
+					,DISPLAY_LOGISTICAL_SUPPORT
+					,INCOTERM_ALLOCATION
+					,MODE_OF_TRANSPORT_ALLOCATION
+					,LOGISTICAL_SUPPORT_ALLOCATION
+					,FINAL_ALLOCATION
+					,PRICE_MODE
+					,BUDGET_PRICE
+					,STANDARD_COST
+					,ALLOCATED_PALLET_NUMBERS
+					,ALLOCATED_GROSS_WEIGHT
+					,ALLOCATED_UNIT_NUMBERS
+					,NUMBER_OF_PALLETS
+					,TOR_COR
+					,NUMBER_OF_DISPATCHES
+					,NUMBER_OF_SHIPMENT
+					,ESTMD_NUM_OF_LOGSTCL_SUPPORT
+					,BUDGET_PRICE_PALLET
+					,BUDGET_COST
+					,TOTAL_COST
+					,TOTAL_COST_BY_MODE
+			    FROM (SELECT CITY_FROM
+						,CITY_FROM_ISO_COUNTRY_CODE
+						,HFM_REGION
+						,HFM_ZONE
+						,PRODUCT_FAMILY
+						,GMID
+						,INCOTERM_GROUP
+						,INCOTERM
+						,SAP_FLOW_ID
+						,KEY KEY_ID
+						,KEY_MODE
+						,CITY_DEST_ISO_CNTRY_CODE
+						,CUSTOMER_TYPE
+						,CITY_DESTINATION
+						,BUDGET_VERSION
+						,COLD_T
+						,TOTAL_UNITS
+						,TOTAL_PALLETS
+						,TOTAL_GROSS_WEIGHT
+						,PALLET_TYPE
+						,MODE_OF_TRANSPORT
+						,LOGISTICAL_SUPPORT
+						,DISPLAY_LOGISTICAL_SUPPORT
+						,INCOTERM_ALLOCATION
+						,MODE_OF_TRANSPORT_ALLOCATION
+						,LOGISTICAL_SUPPORT_ALLOCATION
+						,FINAL_ALLOCATION
+						,PRICE_MODE
+						,BUDGET_PRICE
+						,STANDARD_COST
+						,ALLOCATED_PALLET_NUMBERS
+						,ALLOCATED_GROSS_WEIGHT
+						,ALLOCATED_UNIT_NUMBERS
+						,NUMBER_OF_PALLETS
+						,TOR_COR
+						,NUMBER_OF_DISPATCHES
+						,NUMBER_OF_SHIPMENT
+						,ESTMD_NUM_OF_LOGSTCL_SUPPORT
+						,BUDGET_PRICE_PALLET
+						,BUDGET_COST
+						,TOTAL_COST
+						,TOTAL_COST_BY_MODE
+				FROM BUDGET
+			     )
+			     where 1=1 AND
+			     &P_KEY_PARAM AND
+			     &P_CITY_FROM_PARAM AND
+			     &P_CITY_FRM_ISO_CNTY_CDE_PARAM AND
+			     &P_CITY_DESTINATION_PARAM AND
+			     &P_CITY_DEST_ISO_CNTY_CDE_PARAM AND
+			     &P_BUDGET_VERSION_PARAM AND
+			     &P_MODE_OF_TRANSPORT_PARAM
+            ]]>
+        </sqlStatement>
+    </dataQuery>
+    <dataTrigger name="afterParameterFormTrigger" source="REPORTOWNER.pk_budgetreport.AfterPForm"/>
+    <dataTrigger name="beforeReportTrigger" source="REPORTOWNER.pk_budgetreport.BeforePForm"/>
+    <dataStructure>
+    	<element name="P_KEY_ID_PARAM" dataType="varchar2" value="REPORTOWNER.pk_budgetreport.P_KEY_ID_PARAM"/>
+    	<element name="P_CITY_FROM_PARAM" dataType="varchar2" value="REPORTOWNER.pk_budgetreport.P_CITY_FROM_PARAM"/>
+    	<element name="P_CITY_FRM_ISO_CNTY_CDE_PARAM" dataType="varchar2" value="REPORTOWNER.pk_budgetreport.P_CITY_FRM_ISO_CNTY_CDE_PARAM"/>
+    	<element name="P_CITY_DESTINATION_PARAM" dataType="varchar2" value="REPORTOWNER.pk_budgetreport.P_CITY_DESTINATION_PARAM"/>
+		<element name="P_CITY_DEST_ISO_CNTY_CDE_PARAM" dataType="varchar2" value="REPORTOWNER.pk_budgetreport.P_CITY_DEST_ISO_CNTY_CDE_PARAM"/>
+    	<element name="P_BUDGET_VERSION_PARAM" dataType="varchar2" value="REPORTOWNER.pk_budgetreport.P_BUDGET_VERSION_PARAM"/>
+    	<element name="P_MODE_OF_TRANSPORT_PARAM" dataType="varchar2" value="REPORTOWNER.pk_budgetreport.P_MODE_OF_TRANSPORT_PARAM"/>
+        <group name="GC" dataType="varchar2" source="Q_1">
+            <element name="CITY_FROM" value="CITY_FROM" dataType="varchar2"/>
+            <element name="CITY_FROM_ISO_COUNTRY_CODE" value="CITY_FROM_ISO_COUNTRY_CODE" dataType="varchar2"/>
+            <element name="HFM_REGION" value="HFM_REGION" dataType="varchar2"/>
+            <element name="HFM_ZONE" value="HFM_ZONE" dataType="varchar2"/>
+            <element name="PRODUCT_FAMILY" value="PRODUCT_FAMILY" dataType="varchar2"/>
+            <element name="GMID" value="GMID" dataType="varchar2"/>
+            <element name="INCOTERM_GROUP" value="INCOTERM_GROUP" dataType="varchar2"/>
+            <element name="INCOTERM" value="INCOTERM" dataType="varchar2"/>
+            <element name="SAP_FLOW_ID" value="SAP_FLOW_ID" dataType="varchar2"/>
+            <element name="KEY_ID" value="KEY_ID" dataType="varchar2"/>
+            <element name="KEY_MODE" value="KEY_MODE" dataType="varchar2"/>
+            <element name="CITY_DEST_ISO_CNTRY_CODE" value="CITY_DEST_ISO_CNTRY_CODE" dataType="varchar2"/>
+            <element name="CUSTOMER_TYPE" value="CUSTOMER_TYPE" dataType="varchar2"/>
+            <element name="CITY_DESTINATION" value="CITY_DESTINATION" dataType="varchar2"/>
+            <element name="BUDGET_VERSION" value="BUDGET_VERSION" dataType="varchar2"/>
+            <element name="COLD_T" value="COLD_T" dataType="varchar2"/>
+            <element name="TOTAL_UNITS" value="TOTAL_UNITS" dataType="varchar2"/>
+            <element name="TOTAL_PALLETS" value="TOTAL_PALLETS" dataType="varchar2"/>
+            <element name="TOTAL_GROSS_WEIGHT" value="TOTAL_GROSS_WEIGHT" dataType="varchar2"/>
+            <element name="PALLET_TYPE" value="PALLET_TYPE" dataType="varchar2"/>
+            <element name="MODE_OF_TRANSPORT" value="MODE_OF_TRANSPORT" dataType="varchar2"/>
+            <element name="LOGISTICAL_SUPPORT" value="LOGISTICAL_SUPPORT" dataType="varchar2"/>
+            <element name="DISPLAY_LOGISTICAL_SUPPORT" value="DISPLAY_LOGISTICAL_SUPPORT" dataType="varchar2"/>
+            <element name="INCOTERM_ALLOCATION" value="INCOTERM_ALLOCATION" dataType="varchar2"/>
+            <element name="MODE_OF_TRANSPORT_ALLOCATION" value="MODE_OF_TRANSPORT_ALLOCATION" dataType="varchar2"/>
+            <element name="LOGISTICAL_SUPPORT_ALLOCATION" value="LOGISTICAL_SUPPORT_ALLOCATION" dataType="varchar2"/>
+            <element name="FINAL_ALLOCATION" value="FINAL_ALLOCATION" dataType="varchar2"/>
+			<element name="PRICE_MODE" value="PRICE_MODE" dataType="varchar2"/>
+            <element name="BUDGET_PRICE" value="BUDGET_PRICE" dataType="varchar2"/>
+            <element name="STANDARD_COST" value="STANDARD_COST" dataType="varchar2"/>
+            <element name="ALLOCATED_PALLET_NUMBERS" value="ALLOCATED_PALLET_NUMBERS" dataType="varchar2"/>
+            <element name="ALLOCATED_GROSS_WEIGHT" value="ALLOCATED_GROSS_WEIGHT" dataType="varchar2"/>
+            <element name="ALLOCATED_UNIT_NUMBERS" value="ALLOCATED_UNIT_NUMBERS" dataType="varchar2"/>
+            <element name="NUMBER_OF_PALLETS" value="NUMBER_OF_PALLETS" dataType="varchar2"/>
+            <element name="TOR_COR" value="TOR_COR" dataType="varchar2"/>
+            <element name="NUMBER_OF_DISPATCHES" value="NUMBER_OF_DISPATCHES" dataType="varchar2"/>
+            <element name="NUMBER_OF_SHIPMENT" value="NUMBER_OF_SHIPMENT" dataType="varchar2"/>
+            <element name="ESTMD_NUM_OF_LOGSTCL_SUPPORT" value="ESTMD_NUM_OF_LOGSTCL_SUPPORT" dataType="varchar2"/>
+            <element name="BUDGET_PRICE_PALLET" value="BUDGET_PRICE_PALLET" dataType="varchar2"/>
+            <element name="BUDGET_COST" value="BUDGET_COST" dataType="varchar2"/>
+            <element name="TOTAL_COST" value="TOTAL_COST" dataType="varchar2"/>
+            <element name="TOTAL_COST_BY_MODE" value="TOTAL_COST_BY_MODE" dataType="varchar2"/>
+        </group>
+    </dataStructure>
+    <dataTrigger name="afterReportTrigger" source="REPORTOWNER.pk_budgetreport.AfterReport()"/>
+</dataTemplate>

@@ -1,0 +1,605 @@
+2014-06-16 17:45:41.227	58118	Debug	Workflow	Starting workflow New XML Transmission (688328668) in response to NewXmlTopic: transmission=723041 [integrationMediate - 1]
+2014-06-16 17:45:41.236	58118	Debug	Workflow	Publishing topic Transaction Processor: transactionNo=979521 [Release ] on queue publishWait, group null [integrationMediate - 1]
+2014-06-16 17:45:41.239	58118	Debug	Workflow	Completing workflow New XML Transmission (688328668) [integrationMediate - 1]
+2014-06-16 17:45:41.24	58118	Debug	Workflow	Starting workflow Simple Workflow (563382982) in response to Transaction Processor: transactionNo=979521 [Release ] [publishWait - 3]
+2014-06-16 17:45:41.408	58118	Debug	Agent	Starting agent MM.MM ORDER RELEASE MOD (540374749) in response to OrderReleaseModAnyChange: release=MM.46162648, dataSource=INTEGRATION, beforePersist=true, children=ORDER - QUANTITIES MODIFIED,ORDER - LINE ADDED OR REMOVED (as null) [lifetimePre - 1]
+2014-06-16 17:45:41.409	58118	Debug	Agent	Performing action If: complexExpression=null, attributerule=null, savedCondition=OR ON SHIPMENT, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM ORDER RELEASE MOD) as MM (540374749); was If: complexExpression=null, attributerule=null, savedCondition=OR ON SHIPMENT, threshold=null, expression=null, javaPlugin=null, forceTrue=false [agentUtility - 1]
+2014-06-16 17:45:41.414	58118	Debug	Agent	Saved condition OR ON SHIPMENT is true [agentUtility - 1]
+2014-06-16 17:45:41.416	58118	Debug	Agent	Action If returns true [agentUtility - 1]
+2014-06-16 17:45:41.417	58118	Debug	Agent	Performing action ORModEditShipment: recalculateServiceTime=false, retenderShipment=false (MM ORDER RELEASE MOD) as MM (540374749); was ORModEditShipment: recalculateServiceTime=false, retenderShipment=false [ORMD - 6]
+2014-06-16 17:45:41.417	58118	Debug	Workflow	ORModEditShipment start. order release: MM.46162648 [ORMD - 6]
+2014-06-16 17:45:41.418	58118	Debug	Planning	Sql text: SELECT order_release_gid, otm_version FROM order_release WHERE  (order_release_gid = ?)  AND (otm_version IS NULL OR (otm_version <> ?))  [ORMD - 6]
+2014-06-16 17:45:41.43	58118	Debug	Planning	DatabaseLoader is loading ShipmentData (criteria = (top_t.shipment_gid=?)) ... [ORMD - 6]
+2014-06-16 17:45:41.489	58118	Debug	Planning	DatabaseLoader is loading SEquipmentData (criteria = se.s_equipment_gid in (select ssej.s_equipment_gid from shipment_s_equipment_join ssej where shipment_gid = ?)) ... [ORMD - 6]
+2014-06-16 17:45:41.5	58118	Debug	Planning	DatabaseLoader is loading SShipUnitData (criteria = top_t.s_ship_unit_gid IN (?,?,?)) ... [ORMD - 6]
+2014-06-16 17:45:41.532	58118	Debug	Planning	DatabaseLoader is loading OrderMovementData (criteria = (top_t.order_movement_gid=?)) ... [ORMD - 6]
+2014-06-16 17:45:41.538	58118	Debug	Planning	DatabaseLoader is loading OrderReleaseData (criteria = (top_t.order_release_gid=?)) ... [ORMD - 6]
+2014-06-16 17:45:41.558	58118	Debug	Planning	Business process pid is 132471 [ORMD - 6]
+2014-06-16 17:45:41.558	58118	Debug	Planning	DatabaseLoader is loading SShipUnitData (criteria = (top_t.s_ship_unit_gid=?)) ... [ORMD - 6]
+2014-06-16 17:45:41.587	58118	Debug	Planning	DatabaseLoader is loading ShipUnitData (criteria = (top_t.ship_unit_gid=?)) ... [ORMD - 6]
+2014-06-16 17:45:41.598	58118	Debug	Planning	DatabaseLoader is loading ShipUnitData (criteria = (top_t.ship_unit_gid=?)) ... [ORMD - 6]
+2014-06-16 17:45:41.61	58118	Debug	Planning	DatabaseLoader is loading ShipUnitData (criteria = (top_t.ship_unit_gid=?)) ... [ORMD - 6]
+2014-06-16 17:45:41.622	58118	Debug	Planning	DatabaseLoader is loading OrderReleaseData (criteria = top_t.order_release_gid IN (?,?,?)) ... [ORMD - 6]
+2014-06-16 17:45:41.673	58118	Debug	Planning	 setTSEquipments: [Lglog.business.shipment.TSEquipment;@29bf96a4 [ORMD - 6]
+2014-06-16 17:45:41.673	58118	Debug	Planning	     each tSEquipment: SEquipmentGid: MM.142190, EquipmentGroup: MM.TRUCK_TRAILER_MOFFET_58000(701650176)   contains 0 TSShipUnits. [ORMD - 6]
+2014-06-16 17:45:41.676	58118	Debug	Planning	addTSShipUnitIfFit into SEquipment: MM.142190 [ORMD - 6]
+2014-06-16 17:45:41.676	58118	Debug	Planning	New weight is 47816.01 LB [ORMD - 6]
+2014-06-16 17:45:41.676	58118	Debug	Planning	New weight:47816.01 LB and new volume:0.0 CF [ORMD - 6]
+2014-06-16 17:45:41.676	58118	Debug	Planning	Effective weight:58000.0 LB and effective volume:2592.0 CF [ORMD - 6]
+2014-06-16 17:45:41.676	58118	Debug	Planning	Current weight:3186.55 LB and current volume:0.0 CUFT [ORMD - 6]
+2014-06-16 17:45:41.681	58118	Debug	Planning	SQL Find LegInterimPoints by LegPK: select distinct lip.leg_gid, lip.seq_no from leg_interim_point lip where lip.leg_gid = ? order by lip.seq_no. [ORMD - 6]
+2014-06-16 17:45:41.727	58118	Debug	Planning	Recalculate cost for shipment: MM.S033070 with rateGeoGid: MM.MLMC_TL_FLEET_OREGON_TO_OREGON [ORMD - 6]
+2014-06-16 17:45:41.735	58118	Debug	Planning	TShipment.InitAccessorials(): Shipment accessorial map is {} [ORMD - 6]
+2014-06-16 17:45:41.758	58118	Debug	Planning	RateFinder.findShipmentCosts(): Total 1 rate engine result(s) returned from RateEngine. [ORMD - 6]
+2014-06-16 17:45:41.821	58118	Debug	Planning	Start build shipment postProcessing... with the following shipments:  [ORMD - 6]
+2014-06-16 17:45:41.821	58118	Debug	Planning	---> tShipment: MM.S033070 [ORMD - 6]
+2014-06-16 17:45:41.821	58118	Debug	Planning	Start setStopTypes for tShipment: MM.S033070  [ORMD - 6]
+2014-06-16 17:45:41.821	58118	Debug	Planning	End setStopTypes for tShipment: MM.S033070  [ORMD - 6]
+2014-06-16 17:45:41.821	58118	Debug	Planning	Start makeShipmentInvolvedParties... [ORMD - 6]
+2014-06-16 17:45:41.821	58118	Debug	Planning	Start removeMajorInvolvedParties... [ORMD - 6]
+2014-06-16 17:45:41.821	58118	Debug	Planning	End removeMajorInvolvedParties... [ORMD - 6]
+2014-06-16 17:45:41.821	58118	Debug	Planning	Start appendIntermediaryInvolvedPartyDatasToTShipments... [ORMD - 6]
+2014-06-16 17:45:41.821	58118	Debug	Planning	Start appendServProvInvolvedPartyDatasToTShipments... [ORMD - 6]
+2014-06-16 17:45:41.825	58118	Debug	Planning	No involved parties found for serv prov, BILL_FROM [ORMD - 6]
+2014-06-16 17:45:41.827	58118	Debug	Planning	No involved parties found for serv prov, REMIT_TO [ORMD - 6]
+2014-06-16 17:45:41.827	58118	Debug	Planning	End appendServProvInvolvedPartyDatasToTShipments. [ORMD - 6]
+2014-06-16 17:45:41.827	58118	Debug	Planning	Start appendMasterCorporationInvolvedPartyDatasToTShipments... [ORMD - 6]
+2014-06-16 17:45:41.831	58118	Debug	Planning	Start appendOrderReleaseInvPartyDatasToTShipment... [ORMD - 6]
+2014-06-16 17:45:41.842	58118	Debug	Planning	End appendOrderReleaseInvPartyDatasToTShipment. [ORMD - 6]
+2014-06-16 17:45:41.842	58118	Debug	Planning	Start appendLegInvolvedPartyDatasToTShipments... [ORMD - 6]
+2014-06-16 17:45:41.844	58118	Debug	Planning	End appendLegInvolvedPartyDatasToTShipments. [ORMD - 6]
+2014-06-16 17:45:41.844	58118	Debug	Planning	End makeShipmentInvolvedParties. [ORMD - 6]
+2014-06-16 17:45:41.857	58118	Debug	Planning	Looking for preferred rates... [ORMD - 6]
+2014-06-16 17:45:41.857	58118	Debug	Planning	RateGeoFinderSession.findPreferredByLane(): Find Preferred By Lane SQL: select all ro.rate_offering_seq, ro.transport_mode_gid, ghs.rank, ghd.rank, rp.effective_date, rp.expiration_date, ro.servprov_gid from rate_offering ro, rate_preference rp, rate_preference_detail rpd, lane l, geo_hierarchy ghd, geo_hierarchy ghs, hname_set_member hsms, hname_set_member hsmd where hsms.hname in ('COUNTRY\USA\', 'STATE/PROVINCE\OR\', 'USZIP3\970\', 'CITY\CLACKAMAS\OR\USA\', 'CITY/COUNTRY\CLACKAMAS\USA\', 'USZIP5\97015\', 'POSTAL_CODE\97015\', 'LOCATION\MM.EMD\') and hsmd.hname in ('COUNTRY\USA\', 'STATE/PROVINCE\OR\', 'USZIP3\970\', 'CITY\THE DALLES\OR\USA\', 'CITY/COUNTRY\THE DALLES\USA\', 'USZIP5\97058\', 'POSTAL_CODE\97058\', 'LOCATION\MM.51845:3600 W. 6TH STREET-THE DALLES-OR-97058-US\') and l.source_hname_set_gid = hsms.hname_set_gid and l.dest_hname_set_gid = hsmd.hname_set_gid and rp.x_lane_gid = l.x_lane_gid and rpd.rate_preference_gid = rp.rate_preference_gid and ro.rate_offering_gid = rpd.rate_offering_gid and (ro.perspective = ? or ro.perspective = ?) and ro.is_active = 'Y' and ro.is_sourcing_rate = 'N' and ro.is_template = 'N' and ghs.geo_hierarchy_gid = hsms.geo_hierarchy_gid and ghd.geo_hierarchy_gid = hsmd.geo_hierarchy_gid [ORMD - 6]
+2014-06-16 17:45:41.861	58118	Debug	Planning	RateGeoFinderSession.findPreferredByZone(): Find Preferred By Zone SQL: select all ro.rate_offering_seq, ro.transport_mode_gid, ghs.rank, ghd.rank, rp.effective_date, rp.expiration_date, ro.servprov_gid from rate_offering ro, rate_preference rp, rate_preference_detail rpd, lane l, rate_zone_profile_d rzpd, geo_hierarchy ghd, geo_hierarchy ghs, hname_set_member hsms, hname_set_member hsmd where hsms.hname in ('COUNTRY\USA\', 'STATE/PROVINCE\OR\', 'USZIP3\970\', 'CITY\CLACKAMAS\OR\USA\', 'CITY/COUNTRY\CLACKAMAS\USA\', 'USZIP5\97015\', 'POSTAL_CODE\97015\', 'LOCATION\MM.EMD\') and hsmd.hname in ('COUNTRY\USA\', 'STATE/PROVINCE\OR\', 'USZIP3\970\', 'CITY\THE DALLES\OR\USA\', 'CITY/COUNTRY\THE DALLES\USA\', 'USZIP5\97058\', 'POSTAL_CODE\97058\', 'LOCATION\MM.51845:3600 W. 6TH STREET-THE DALLES-OR-97058-US\') and l.source_hname_set_gid = hsms.hname_set_gid and l.dest_hname_set_gid = hsmd.hname_set_gid and rzpd.x_lane_gid = l.x_lane_gid and rp.rate_zone_profile_gid = rzpd.rate_zone_profile_gid and rpd.rate_preference_gid = rp.rate_preference_gid and ro.rate_offering_gid = rpd.rate_offering_gid and (ro.perspective = ? or ro.perspective = ?) and ro.is_active = 'Y' and ro.is_sourcing_rate = 'N' and ro.is_template = 'N' and ghs.geo_hierarchy_gid = hsms.geo_hierarchy_gid and ghd.geo_hierarchy_gid = hsmd.geo_hierarchy_gid [ORMD - 6]
+2014-06-16 17:45:41.868	58118	Debug	Planning	RateGeoFinderSession.filterPreferredRateOfferings(): compositeRateGeoPKList = <[CompositeRateGeoPK: key = <TL|16|0|0|0>, hashCode = <320769541>, rgSeq = <0>, rgGid = <null>, roSeq = <16>, roGid = <MM.MLMC_TL_FLEET>, rank = <16>, transportModeGid = <TL>, effDate = <1970-01-01 00:00:00 UTC>, expDate = <1970-01-01 00:00:00 UTC>, servprovGid = <MM.MLMC>, CompositeRateGeoPK: key = <TL|17|0|0|0>, hashCode = <1208273222>, rgSeq = <0>, rgGid = <null>, roSeq = <17>, roGid = <MM.MLMC_TL_FLEET_48000LBS>, rank = <16>, transportModeGid = <TL>, effDate = <1970-01-01 00:00:00 UTC>, expDate = <1970-01-01 00:00:00 UTC>, servprovGid = <MM.MLMC>]> [ORMD - 6]
+2014-06-16 17:45:41.869	58118	Debug	Planning	RateGeoFinderSession.filterPreferredRateOfferings(): servprovGid = <MM.MLMC> [ORMD - 6]
+2014-06-16 17:45:41.869	58118	Debug	Planning	RateGeoFinderSession.filterPreferredRateOfferings(): allowDupsFlag = <0> [ORMD - 6]
+2014-06-16 17:45:41.869	58118	Debug	Planning	RateGeoFinderSession.filterPreferredRateOfferings(): startTime = <2014-06-16 18:00:00 America/Los_Angeles> [ORMD - 6]
+2014-06-16 17:45:41.869	58118	Debug	Planning	RateGeoFinderSession.filterPreferredRateOfferings(): Testing compositeRateGeoPK: <CompositeRateGeoPK: key = <TL|16|0|0|0>, hashCode = <320769541>, rgSeq = <0>, rgGid = <null>, roSeq = <16>, roGid = <MM.MLMC_TL_FLEET>, rank = <16>, transportModeGid = <TL>, effDate = <1970-01-01 00:00:00 UTC>, expDate = <1970-01-01 00:00:00 UTC>, servprovGid = <MM.MLMC>> [ORMD - 6]
+2014-06-16 17:45:41.869	58118	Debug	Planning	RateGeoFinderSession.filterPreferredRateOfferings(): Searching for arraylist for mode <TL> [ORMD - 6]
+2014-06-16 17:45:41.869	58118	Debug	Planning	RateGeoFinderSession.filterPreferredRateOfferings(): Found <null> [ORMD - 6]
+2014-06-16 17:45:41.869	58118	Debug	Planning	RateGeoFinderSession.filterPreferredRateOfferings(): Creating new arraylist [ORMD - 6]
+2014-06-16 17:45:41.869	58118	Debug	Planning	RateGeoFinderSession.filterPreferredRateOfferings(): Map is now <{TL=[CompositeRateGeoPK: key = <TL|16|0|0|0>, hashCode = <320769541>, rgSeq = <0>, rgGid = <null>, roSeq = <16>, roGid = <MM.MLMC_TL_FLEET>, rank = <16>, transportModeGid = <TL>, effDate = <1970-01-01 00:00:00 UTC>, expDate = <1970-01-01 00:00:00 UTC>, servprovGid = <MM.MLMC>]}> [ORMD - 6]
+2014-06-16 17:45:41.869	58118	Debug	Planning	RateGeoFinderSession.filterPreferredRateOfferings(): Testing compositeRateGeoPK: <CompositeRateGeoPK: key = <TL|17|0|0|0>, hashCode = <1208273222>, rgSeq = <0>, rgGid = <null>, roSeq = <17>, roGid = <MM.MLMC_TL_FLEET_48000LBS>, rank = <16>, transportModeGid = <TL>, effDate = <1970-01-01 00:00:00 UTC>, expDate = <1970-01-01 00:00:00 UTC>, servprovGid = <MM.MLMC>> [ORMD - 6]
+2014-06-16 17:45:41.869	58118	Debug	Planning	RateGeoFinderSession.filterPreferredRateOfferings(): Searching for arraylist for mode <TL> [ORMD - 6]
+2014-06-16 17:45:41.869	58118	Debug	Planning	RateGeoFinderSession.filterPreferredRateOfferings(): Found <[CompositeRateGeoPK: key = <TL|16|0|0|0>, hashCode = <320769541>, rgSeq = <0>, rgGid = <null>, roSeq = <16>, roGid = <MM.MLMC_TL_FLEET>, rank = <16>, transportModeGid = <TL>, effDate = <1970-01-01 00:00:00 UTC>, expDate = <1970-01-01 00:00:00 UTC>, servprovGid = <MM.MLMC>]> [ORMD - 6]
+2014-06-16 17:45:41.869	58118	Debug	Planning	RateGeoFinderSession.filterPreferredRateOfferings(): Checking rank against rank of first stored PK <CompositeRateGeoPK: key = <TL|16|0|0|0>, hashCode = <320769541>, rgSeq = <0>, rgGid = <null>, roSeq = <16>, roGid = <MM.MLMC_TL_FLEET>, rank = <16>, transportModeGid = <TL>, effDate = <1970-01-01 00:00:00 UTC>, expDate = <1970-01-01 00:00:00 UTC>, servprovGid = <MM.MLMC>> [ORMD - 6]
+2014-06-16 17:45:41.869	58118	Debug	Planning	RateGeoFinderSession.filterPreferredRateOfferings(): Map is now <{TL=[CompositeRateGeoPK: key = <TL|16|0|0|0>, hashCode = <320769541>, rgSeq = <0>, rgGid = <null>, roSeq = <16>, roGid = <MM.MLMC_TL_FLEET>, rank = <16>, transportModeGid = <TL>, effDate = <1970-01-01 00:00:00 UTC>, expDate = <1970-01-01 00:00:00 UTC>, servprovGid = <MM.MLMC>, CompositeRateGeoPK: key = <TL|17|0|0|0>, hashCode = <1208273222>, rgSeq = <0>, rgGid = <null>, roSeq = <17>, roGid = <MM.MLMC_TL_FLEET_48000LBS>, rank = <16>, transportModeGid = <TL>, effDate = <1970-01-01 00:00:00 UTC>, expDate = <1970-01-01 00:00:00 UTC>, servprovGid = <MM.MLMC>]}> [ORMD - 6]
+2014-06-16 17:45:41.87	58118	Debug	Planning	RateGeoFinderSession.filterPreferredRateOfferings(): Returning <[CompositeRateGeoPK: key = <TL|16|0|0|0>, hashCode = <320769541>, rgSeq = <0>, rgGid = <null>, roSeq = <16>, roGid = <MM.MLMC_TL_FLEET>, rank = <16>, transportModeGid = <TL>, effDate = <1970-01-01 00:00:00 UTC>, expDate = <1970-01-01 00:00:00 UTC>, servprovGid = <MM.MLMC>, CompositeRateGeoPK: key = <TL|17|0|0|0>, hashCode = <1208273222>, rgSeq = <0>, rgGid = <null>, roSeq = <17>, roGid = <MM.MLMC_TL_FLEET_48000LBS>, rank = <16>, transportModeGid = <TL>, effDate = <1970-01-01 00:00:00 UTC>, expDate = <1970-01-01 00:00:00 UTC>, servprovGid = <MM.MLMC>] [ORMD - 6]
+2014-06-16 17:45:41.87	58118	Debug	Planning	End looking for preferred rates. [ORMD - 6]
+2014-06-16 17:45:41.87	58118	Debug	Planning	Propagating shipment remarks
+ [ORMD - 6]
+2014-06-16 17:45:41.87	58118	Debug	Planning	Done propagating shipment remarks for 0 costs
+ [ORMD - 6]
+2014-06-16 17:45:41.87	58118	Debug	Planning	Assigning shipment ports [ORMD - 6]
+2014-06-16 17:45:41.87	58118	Debug	Planning	Done assigning shipment ports [ORMD - 6]
+2014-06-16 17:45:41.876	58118	Debug	Planning	Start makeShipmentRefnums... [ORMD - 6]
+2014-06-16 17:45:41.876	58118	Debug	Planning	End makeShipmentRefnums... [ORMD - 6]
+2014-06-16 17:45:41.876	58118	Debug	Planning	Start calculation of utilizations (weight, volume, equipment ref units) for TShipment: MM.S033070 [ORMD - 6]
+2014-06-16 17:45:41.876	58118	Debug	Planning	Calculate equiment reference unit utilizaiton. [ORMD - 6]
+2014-06-16 17:45:41.878	58118	Debug	Planning	End build shipment postProcessing. [ORMD - 6]
+2014-06-16 17:45:41.878	58118	Debug	Planning	Begin postProcessingCarrierCommitments.. [ORMD - 6]
+2014-06-16 17:45:41.878	58118	Debug	Planning	End  postProcessingCarrierCommitments.. [ORMD - 6]
+2014-06-16 17:45:41.884	58118	Debug	Planning	Commit Order Modification Changes for Order Release: MM.46162648 [ORMD - 6]
+2014-06-16 17:45:41.891	58118	Debug	Planning	DatabaseLoader is loading ShipmentData (criteria = top.shipment_gid = ?) ... [ORMD - 6]
+2014-06-16 17:45:41.922	58118	Debug	Planning	DatabaseLoader is loading OrderMovementData (criteria = top.order_movement_gid IN (?,?,?)) ... [ORMD - 6]
+2014-06-16 17:45:41.93	58118	Debug	Planning	DatabaseLoader is loading SEquipmentData (criteria = top.s_equipment_gid = ?) ... [ORMD - 6]
+2014-06-16 17:45:41.934	58118	Debug	Planning	DatabaseLoader is loading SShipUnitData (criteria = top.s_ship_unit_gid IN (?,?,?)) ... [ORMD - 6]
+2014-06-16 17:45:41.956	58118	Debug	Planning	Remove To Be Removed Graph Components:  [ORMD - 6]
+2014-06-16 17:45:41.956	58118	Debug	Planning	ToBeRemovedComponents: 
+# of to be removed SHIPMENTs: 0
+# of to be removed S_EQUIPMENTs: 0
+# of to be removed S_EQUIPMENT_S_SHIP_UNIT_JOINs: 0
+# of to be removed SHIPMENT_S_EQUIPMENT_JOINs: 0
+# of to be removed S_SHIP_UNITs: 1 
+   --> MM.46162648-001
+# of to be removed S_SHIP_UNIT LINEs: 0 
+# of to be removed S_SHIP_UNIT_PIECEs: 0 
+# of to be removed ORDER_MOVEMENTs: 0
+# of to be removed ORDER_MOVEMENT_Ds: 0
+# of to be removed JOB_ORDER_RELEASE_JOINs: 0
+# of to be removed JOB_ORDER_MOVEMENT_JOINs: 0
+ [ORMD - 6]
+2014-06-16 17:45:41.957	58118	Debug	Planning	Persistence is deleting SShipUnitData in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.155	58118	Debug	Planning	Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ?  src:MM.GRD/changed:false  dest:MM.51845:3600 W. 6TH STREET-THE DALLES-OR-97058-US/changed:false [ORMD - 6]
+2014-06-16 17:45:42.228	58118	Debug	Planning	DatabaseLoader is loading ShipmentData (criteria = top.shipment_gid = ?) ... [ORMD - 6]
+2014-06-16 17:45:42.258	58118	Debug	Planning	DatabaseLoader is loading OrderMovementData (criteria = top.order_movement_gid IN (?,?,?)) ... [ORMD - 6]
+2014-06-16 17:45:42.265	58118	Debug	Planning	DatabaseLoader is loading SEquipmentData (criteria = top.s_equipment_gid = ?) ... [ORMD - 6]
+2014-06-16 17:45:42.269	58118	Debug	Planning	DatabaseLoader is loading SShipUnitData (criteria = top.s_ship_unit_gid IN (?,?,?)) ... [ORMD - 6]
+2014-06-16 17:45:42.28	58118	Debug	Planning	Remove To Be Removed Graph Components:  [ORMD - 6]
+2014-06-16 17:45:42.28	58118	Debug	Planning	Nothing to remove, return. [ORMD - 6]
+2014-06-16 17:45:42.28	58118	Debug	Planning	Persistence is inserting or updating SShipUnitData (parentPk = null) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.28	58118	Debug	Planning	Some SShipUnitData being passed are new.  Inserting ... [ORMD - 6]
+2014-06-16 17:45:42.286	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineData (parentPk = MM.46162648-002) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.286	58118	Debug	Planning	Some SShipUnitLineData being passed are new.  Inserting ... [ORMD - 6]
+2014-06-16 17:45:42.296	58118	Debug	Workflow	Registering Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [MM.46162648-002] [ORMD - 6]
+2014-06-16 17:45:42.297	58118	Debug	Workflow	Registering Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [MM.46162648-002] [ORMD - 6]
+2014-06-16 17:45:42.298	58118	Debug	Workflow	Registering Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [MM.46162648-002] [ORMD - 6]
+2014-06-16 17:45:42.299	58118	Debug	Workflow	Registering Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [MM.46162648-002] [ORMD - 6]
+2014-06-16 17:45:42.3	58118	Debug	Workflow	Registering Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [MM.46162648-002] [ORMD - 6]
+2014-06-16 17:45:42.301	58118	Debug	Workflow	Registering Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [MM.46162648-002] [ORMD - 6]
+2014-06-16 17:45:42.302	58118	Debug	Workflow	Registering Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [MM.46162648-002] [ORMD - 6]
+2014-06-16 17:45:42.303	58118	Debug	Workflow	Registering Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [MM.46162648-002] [ORMD - 6]
+2014-06-16 17:45:42.304	58118	Debug	Workflow	Registering Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [MM.46162648-002] [ORMD - 6]
+2014-06-16 17:45:42.305	58118	Debug	Workflow	Registering Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [MM.46162648-002] [ORMD - 6]
+2014-06-16 17:45:42.307	58118	Debug	Workflow	Registering Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [MM.46162648-002] [ORMD - 6]
+2014-06-16 17:45:42.308	58118	Debug	Workflow	Registering Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [MM.46162648-002] [ORMD - 6]
+2014-06-16 17:45:42.309	58118	Debug	Workflow	Registering Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [MM.46162648-002] [ORMD - 6]
+2014-06-16 17:45:42.309	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = MM.46162648-002 1) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.309	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = MM.46162648-002 1) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.309	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = MM.46162648-002 2) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.309	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = MM.46162648-002 2) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.309	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = MM.46162648-002 3) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.309	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = MM.46162648-002 3) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.309	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = MM.46162648-002 4) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.309	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = MM.46162648-002 4) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.309	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = MM.46162648-002 5) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.309	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = MM.46162648-002 5) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.309	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = MM.46162648-002 6) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.309	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = MM.46162648-002 6) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.309	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = MM.46162648-002 7) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.309	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = MM.46162648-002 7) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.309	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = MM.46162648-002 8) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = MM.46162648-002 8) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = MM.46162648-002 9) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = MM.46162648-002 9) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = MM.46162648-002 10) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = MM.46162648-002 10) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = MM.46162648-002 11) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = MM.46162648-002 11) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = MM.46162648-002 12) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = MM.46162648-002 12) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = MM.46162648-002 13) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = MM.46162648-002 13) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitRefnumData (parentPk = MM.46162648-002) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitRemarkData (parentPk = MM.46162648-002) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitSealData (parentPk = MM.46162648-002) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineData (parentPk = MM.46162649-001) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = MM.46162649-001 1) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = MM.46162649-001 1) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = MM.46162649-001 2) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = MM.46162649-001 2) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitRefnumData (parentPk = MM.46162649-001) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.31	58118	Debug	Planning	Persistence is inserting or updating SShipUnitRemarkData (parentPk = MM.46162649-001) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.311	58118	Debug	Planning	Persistence is inserting or updating SShipUnitSealData (parentPk = MM.46162649-001) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.311	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineData (parentPk = MM.46162768-001) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.311	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = MM.46162768-001 1) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.311	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = MM.46162768-001 1) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.311	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRefnumData (parentPk = MM.46162768-001 2) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.311	58118	Debug	Planning	Persistence is inserting or updating SShipUnitLineRemarkData (parentPk = MM.46162768-001 2) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.311	58118	Debug	Planning	Persistence is inserting or updating SShipUnitRefnumData (parentPk = MM.46162768-001) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.311	58118	Debug	Planning	Persistence is inserting or updating SShipUnitRemarkData (parentPk = MM.46162768-001) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.311	58118	Debug	Planning	Persistence is inserting or updating SShipUnitSealData (parentPk = MM.46162768-001) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.311	58118	Debug	Planning	Persistence is inserting or updating SEquipmentData (parentPk = null) ... [ORMD - 6]
+2014-06-16 17:45:42.311	58118	Debug	Planning	SEquipmentData being passed has not been changed.  Nothing to update. [ORMD - 6]
+2014-06-16 17:45:42.311	58118	Debug	Planning	Creating SEquipmentSShipUnitJoinDatas for SEquipment:MM.142190 and SShipUnit: MM.46162648-002 [ORMD - 6]
+2014-06-16 17:45:42.311	58118	Debug	Planning	Creating SEquipmentSShipUnitJoinDatas for SEquipment:MM.142190 and SShipUnit: MM.46162649-001 [ORMD - 6]
+2014-06-16 17:45:42.311	58118	Debug	Planning	Creating SEquipmentSShipUnitJoinDatas for SEquipment:MM.142190 and SShipUnit: MM.46162768-001 [ORMD - 6]
+2014-06-16 17:45:42.311	58118	Debug	Planning	Persistence is inserting or updating SEquipmentSShipUnitJoinData (parentPk = MM.142190) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.311	58118	Debug	Planning	Some SEquipmentSShipUnitJoinData being passed are new.  Inserting ... [ORMD - 6]
+2014-06-16 17:45:42.313	58118	Debug	Planning	Persistence is inserting or updating SShipUnitPieceData (parentPk = null) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.314	58118	Debug	Planning	Persistence is deleting OrderMovementDData in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.314	58118	Debug	Planning	No OrderMovementDData are being passed.  Nothing to delete. [ORMD - 6]
+2014-06-16 17:45:42.314	58118	Debug	Planning	Persistence is inserting or updating OrderMovementData (parentPk = null) ... [ORMD - 6]
+2014-06-16 17:45:42.314	58118	Debug	Planning	OrderMovementData being passed has not been changed.  Nothing to update. [ORMD - 6]
+2014-06-16 17:45:42.314	58118	Debug	Planning	Persistence is inserting or updating OrderMovementDData (parentPk = MM.46162648-001) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.314	58118	Debug	Planning	Some OrderMovementDData being passed are new.  Inserting ... [ORMD - 6]
+2014-06-16 17:45:42.318	58118	Debug	Planning	Remove to_be_removed shipment components ... [ORMD - 6]
+2014-06-16 17:45:42.322	58118	Debug	Planning	Persistence is deleting ShipmentSpecialServiceData in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.334	58118	Debug	Planning	Persistence is deleting ShipmentCostData in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.346	58118	Debug	Planning	Begin removeShipmentCostDetails from ShipmentCostBean - removing shipment_cost_detail for shipment cost: 825193 [ORMD - 6]
+2014-06-16 17:45:42.349	58118	Debug	Planning	Begin removeShipmentCostRefs from ShipmentCostBean - removing shipment_cost_refs for shipment cost: 825193 [ORMD - 6]
+2014-06-16 17:45:42.35	58118	Debug	Planning	Begin removeShipmentCostRemarks from ShipmentCostBean - removing shipment_cost_remarks for shipment cost: 825193 [ORMD - 6]
+2014-06-16 17:45:42.351	58118	Debug	Planning	Begin removeShipmentCostDetails from ShipmentCostBean - removing shipment_cost_detail for shipment cost: 825194 [ORMD - 6]
+2014-06-16 17:45:42.356	58118	Debug	Planning	Begin removeShipmentCostRefs from ShipmentCostBean - removing shipment_cost_refs for shipment cost: 825194 [ORMD - 6]
+2014-06-16 17:45:42.376	58118	Debug	Planning	Begin removeShipmentCostRemarks from ShipmentCostBean - removing shipment_cost_remarks for shipment cost: 825194 [ORMD - 6]
+2014-06-16 17:45:42.379	58118	Debug	Planning	Persistence is inserting or updating ShipmentData (parentPk = null) ... [ORMD - 6]
+2014-06-16 17:45:42.379	58118	Debug	Planning	ShipmentData being passed has been changed.  Updating ... [ORMD - 6]
+2014-06-16 17:45:42.391	58118	Debug	Planning	Shipment modified/created: MM.S033070 [ORMD - 6]
+2014-06-16 17:45:42.391	58118	Debug	Planning	Persistence is inserting or updating ShipmentStopData (parentPk = MM.S033070) ... [ORMD - 6]
+2014-06-16 17:45:42.391	58118	Debug	Planning	ShipmentStopData being passed has not been changed.  Nothing to update. [ORMD - 6]
+2014-06-16 17:45:42.391	58118	Debug	Planning	Persistence is inserting or updating ShipmentStopDData (parentPk = MM.S033070 1) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.391	58118	Debug	Planning	Persistence is inserting or updating ShipmentStopInvPartyData (parentPk = MM.S033070 1) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.391	58118	Debug	Planning	Persistence is inserting or updating ShipmentStopRefnumData (parentPk = MM.S033070 1) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.391	58118	Debug	Planning	Persistence is inserting or updating ShipmentStopRemarkData (parentPk = MM.S033070 1) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.391	58118	Debug	Planning	Persistence is inserting or updating ShipmentStopData (parentPk = MM.S033070) ... [ORMD - 6]
+2014-06-16 17:45:42.391	58118	Debug	Planning	ShipmentStopData being passed has not been changed.  Nothing to update. [ORMD - 6]
+2014-06-16 17:45:42.393	58118	Debug	Planning	Persistence is inserting or updating ShipmentStopDData (parentPk = MM.S033070 2) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.394	58118	Debug	Planning	Some ShipmentStopDData being passed are new.  Inserting ... [ORMD - 6]
+2014-06-16 17:45:42.395	58118	Debug	Planning	Persistence is inserting or updating ShipmentStopInvPartyData (parentPk = MM.S033070 2) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.395	58118	Debug	Planning	Persistence is inserting or updating ShipmentStopRefnumData (parentPk = MM.S033070 2) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.395	58118	Debug	Planning	Persistence is inserting or updating ShipmentStopRemarkData (parentPk = MM.S033070 2) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.395	58118	Debug	Planning	Persistence is inserting or updating ShipmentStopData (parentPk = MM.S033070) ... [ORMD - 6]
+2014-06-16 17:45:42.395	58118	Debug	Planning	ShipmentStopData being passed has not been changed.  Nothing to update. [ORMD - 6]
+2014-06-16 17:45:42.397	58118	Debug	Planning	Persistence is inserting or updating ShipmentStopDData (parentPk = MM.S033070 3) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.398	58118	Debug	Planning	Some ShipmentStopDData being passed are new.  Inserting ... [ORMD - 6]
+2014-06-16 17:45:42.399	58118	Debug	Planning	Persistence is inserting or updating ShipmentStopInvPartyData (parentPk = MM.S033070 3) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.399	58118	Debug	Planning	Persistence is inserting or updating ShipmentStopRefnumData (parentPk = MM.S033070 3) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.399	58118	Debug	Planning	Persistence is inserting or updating ShipmentStopRemarkData (parentPk = MM.S033070 3) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.399	58118	Debug	Planning	Persistence is inserting or updating ShipmentSpecialServiceData (parentPk = MM.S033070) ... [ORMD - 6]
+2014-06-16 17:45:42.399	58118	Debug	Planning	ShipmentSpecialServiceData being passed is new.  Inserting ... [ORMD - 6]
+2014-06-16 17:45:42.401	58118	Debug	Planning	Persistence is inserting or updating ShipmentSpecialServiceData (parentPk = MM.S033070) ... [ORMD - 6]
+2014-06-16 17:45:42.401	58118	Debug	Planning	ShipmentSpecialServiceData being passed is new.  Inserting ... [ORMD - 6]
+2014-06-16 17:45:42.403	58118	Debug	Planning	Persistence is inserting or updating ShipmentSEquipmentJoinData (parentPk = MM.S033070) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.403	58118	Debug	Planning	Persistence is inserting or updating ShipmentRefnumData (parentPk = MM.S033070) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.451	58118	Debug	Planning	There are 0 shipment inf cost records [ORMD - 6]
+2014-06-16 17:45:42.451	58118	Debug	Planning	after commiting shipment inf costs [ORMD - 6]
+2014-06-16 17:45:42.451	58118	Debug	Planning	before makeShipmentRefnums [ORMD - 6]
+2014-06-16 17:45:42.451	58118	Debug	Planning	after makeShipmentRefnums [ORMD - 6]
+2014-06-16 17:45:42.451	58118	Debug	Planning	before commitShipmentInvolvedParties [ORMD - 6]
+2014-06-16 17:45:42.451	58118	Debug	Planning	Persistence is inserting or updating ShipmentInvolvedPartyData (parentPk = MM.S033070) in bulk ... [ORMD - 6]
+2014-06-16 17:45:42.451	58118	Debug	Planning	after commitShipmentInvolvedParties [ORMD - 6]
+2014-06-16 17:45:42.451	58118	Debug	Planning	after commitShipmentInvolvedPartyAddresses [ORMD - 6]
+2014-06-16 17:45:42.451	58118	Debug	Planning	before committing shipment transactional event contacts [ORMD - 6]
+2014-06-16 17:45:42.451	58118	Debug	Planning	after committing shipment transactional event contacts [ORMD - 6]
+2014-06-16 17:45:42.451	58118	Debug	Planning	before commiting shipment texts [ORMD - 6]
+2014-06-16 17:45:42.451	58118	Debug	Planning	after commiting shipment texts [ORMD - 6]
+2014-06-16 17:45:42.462	58118	Debug	Planning	before commiting ship_commit_alloc_joins [ORMD - 6]
+2014-06-16 17:45:42.462	58118	Debug	Planning	After commiting ship_commit_alloc_joins [ORMD - 6]
+2014-06-16 17:45:42.462	58118	Debug	Planning	before commiting ship_commit_count_joins [ORMD - 6]
+2014-06-16 17:45:42.462	58118	Debug	Planning	After commiting ship_commit_count_joins [ORMD - 6]
+2014-06-16 17:45:42.462	58118	Debug	Planning	Performed the following recalculations: [ShipmentStopFieldsSync, ShipmentCalculatedEquipmentFieldsSync, ShipmentCalculatedOrderReleaseFieldsSync, ShipmentCalculatedCostFieldsSync, ShipmentCalculatedFieldsSync, ShipmentCalculatedEquipmentRefUnitFieldsSync, ShipmentCalculatedUtilFieldsSync] for shipmentPK: MM.S033070 [ORMD - 6]
+2014-06-16 17:45:42.469	58118	Debug	Workflow	Executing Cumulative Recalc: Recalculate Shipment Totals from SShipUnit: [MM.46162648-002] [ORMD - 6]
+2014-06-16 17:45:42.475	58118	Debug	Workflow	Executing topic Recalculate Order Release Totals: pk=MM.46162648 [ORMD - 6]
+2014-06-16 17:45:42.476	58118	Debug	Workflow	Starting workflow Simple Workflow (712135093) in response to Recalculate Order Release Totals: pk=MM.46162648 [ORMD - 6]
+2014-06-16 17:45:42.487	58118	Debug	Planning	Find Substitute Locations SQL:SELECT LOCATION_GID, SUBSTITUTE_LOCATION_GID FROM LOCATION_SUBSTITUTE WHERE LOCATION_GID = ? OR LOCATION_GID = ?  src:MM.GRD/changed:false  dest:MM.51845:3600 W. 6TH STREET-THE DALLES-OR-97058-US/changed:false [ORMD - 6]
+2014-06-16 17:45:42.491	58118	Debug	Workflow	Completing workflow Simple Workflow (712135093) [ORMD - 6]
+2014-06-16 17:45:42.492	58118	Debug	Workflow	Executing topic Recalculate Order Release Line Totals: pk=MM.49665480 [ORMD - 6]
+2014-06-16 17:45:42.493	58118	Debug	Workflow	Starting workflow Simple Workflow (711801212) in response to Recalculate Order Release Line Totals: pk=MM.49665480 [ORMD - 6]
+2014-06-16 17:45:42.496	58118	Debug	Planning	DatabaseLoader is loading OrderReleaseData (criteria = (top_t.order_release_gid=?)) ... [ORMD - 6]
+2014-06-16 17:45:42.499	58118	Debug	Workflow	Completing workflow Simple Workflow (711801212) [ORMD - 6]
+2014-06-16 17:45:42.499	58118	Debug	Workflow	Executing topic Recalculate Order Release Line Totals: pk=MM.49665481 [ORMD - 6]
+2014-06-16 17:45:42.5	58118	Debug	Workflow	Starting workflow Simple Workflow (711899282) in response to Recalculate Order Release Line Totals: pk=MM.49665481 [ORMD - 6]
+2014-06-16 17:45:42.503	58118	Debug	Workflow	Completing workflow Simple Workflow (711899282) [ORMD - 6]
+2014-06-16 17:45:42.503	58118	Debug	Workflow	Executing topic Recalculate Order Release Line Totals: pk=MM.49665482 [ORMD - 6]
+2014-06-16 17:45:42.504	58118	Debug	Workflow	Starting workflow Simple Workflow (711943523) in response to Recalculate Order Release Line Totals: pk=MM.49665482 [ORMD - 6]
+2014-06-16 17:45:42.506	58118	Debug	Workflow	Completing workflow Simple Workflow (711943523) [ORMD - 6]
+2014-06-16 17:45:42.507	58118	Debug	Workflow	Executing topic Recalculate Order Release Line Totals: pk=MM.49665483 [ORMD - 6]
+2014-06-16 17:45:42.508	58118	Debug	Workflow	Starting workflow Simple Workflow (711715414) in response to Recalculate Order Release Line Totals: pk=MM.49665483 [ORMD - 6]
+2014-06-16 17:45:42.51	58118	Debug	Workflow	Completing workflow Simple Workflow (711715414) [ORMD - 6]
+2014-06-16 17:45:42.51	58118	Debug	Workflow	Executing topic Recalculate Order Release Line Totals: pk=MM.49665484 [ORMD - 6]
+2014-06-16 17:45:42.511	58118	Debug	Workflow	Starting workflow Simple Workflow (711534062) in response to Recalculate Order Release Line Totals: pk=MM.49665484 [ORMD - 6]
+2014-06-16 17:45:42.514	58118	Debug	Workflow	Completing workflow Simple Workflow (711534062) [ORMD - 6]
+2014-06-16 17:45:42.514	58118	Debug	Workflow	Executing topic Recalculate Order Release Line Totals: pk=MM.49665485 [ORMD - 6]
+2014-06-16 17:45:42.515	58118	Debug	Workflow	Starting workflow Simple Workflow (711582912) in response to Recalculate Order Release Line Totals: pk=MM.49665485 [ORMD - 6]
+2014-06-16 17:45:42.517	58118	Debug	Workflow	Completing workflow Simple Workflow (711582912) [ORMD - 6]
+2014-06-16 17:45:42.518	58118	Debug	Workflow	Executing topic Recalculate Order Release Line Totals: pk=MM.49665486 [ORMD - 6]
+2014-06-16 17:45:42.519	58118	Debug	Workflow	Starting workflow Simple Workflow (711632027) in response to Recalculate Order Release Line Totals: pk=MM.49665486 [ORMD - 6]
+2014-06-16 17:45:42.521	58118	Debug	Workflow	Completing workflow Simple Workflow (711632027) [ORMD - 6]
+2014-06-16 17:45:42.521	58118	Debug	Workflow	Executing topic Recalculate Order Release Line Totals: pk=MM.49665487 [ORMD - 6]
+2014-06-16 17:45:42.522	58118	Debug	Workflow	Starting workflow Simple Workflow (711680872) in response to Recalculate Order Release Line Totals: pk=MM.49665487 [ORMD - 6]
+2014-06-16 17:45:42.525	58118	Debug	Workflow	Completing workflow Simple Workflow (711680872) [ORMD - 6]
+2014-06-16 17:45:42.525	58118	Debug	Workflow	Executing topic Recalculate Order Release Line Totals: pk=MM.49665488 [ORMD - 6]
+2014-06-16 17:45:42.526	58118	Debug	Workflow	Starting workflow Simple Workflow (711227994) in response to Recalculate Order Release Line Totals: pk=MM.49665488 [ORMD - 6]
+2014-06-16 17:45:42.528	58118	Debug	Workflow	Completing workflow Simple Workflow (711227994) [ORMD - 6]
+2014-06-16 17:45:42.529	58118	Debug	Workflow	Executing topic Recalculate Order Release Line Totals: pk=MM.49665489 [ORMD - 6]
+2014-06-16 17:45:42.53	58118	Debug	Workflow	Starting workflow Simple Workflow (711277200) in response to Recalculate Order Release Line Totals: pk=MM.49665489 [ORMD - 6]
+2014-06-16 17:45:42.532	58118	Debug	Workflow	Completing workflow Simple Workflow (711277200) [ORMD - 6]
+2014-06-16 17:45:42.533	58118	Debug	Workflow	Executing topic Recalculate Order Release Line Totals: pk=MM.49665490 [ORMD - 6]
+2014-06-16 17:45:42.534	58118	Debug	Workflow	Starting workflow Simple Workflow (711326399) in response to Recalculate Order Release Line Totals: pk=MM.49665490 [ORMD - 6]
+2014-06-16 17:45:42.536	58118	Debug	Workflow	Completing workflow Simple Workflow (711326399) [ORMD - 6]
+2014-06-16 17:45:42.536	58118	Debug	Workflow	Executing topic Recalculate Order Release Line Totals: pk=MM.49667281 [ORMD - 6]
+2014-06-16 17:45:42.537	58118	Debug	Workflow	Starting workflow Simple Workflow (711377067) in response to Recalculate Order Release Line Totals: pk=MM.49667281 [ORMD - 6]
+2014-06-16 17:45:42.54	58118	Debug	Workflow	Completing workflow Simple Workflow (711377067) [ORMD - 6]
+2014-06-16 17:45:42.54	58118	Debug	Workflow	Executing topic Recalculate Order Release Line Totals: pk=MM.49667341 [ORMD - 6]
+2014-06-16 17:45:42.541	58118	Debug	Workflow	Starting workflow Simple Workflow (711445467) in response to Recalculate Order Release Line Totals: pk=MM.49667341 [ORMD - 6]
+2014-06-16 17:45:42.543	58118	Debug	Workflow	Completing workflow Simple Workflow (711445467) [ORMD - 6]
+2014-06-16 17:45:42.544	58118	Debug	Workflow	Executing topic Recalculate Order Movement Totals: pk=MM.46162648-001 [ORMD - 6]
+2014-06-16 17:45:42.544	58118	Debug	Workflow	Starting workflow Simple Workflow (711172121) in response to Recalculate Order Movement Totals: pk=MM.46162648-001 [ORMD - 6]
+2014-06-16 17:45:42.55	58118	Debug	Workflow	Completing workflow Simple Workflow (711172121) [ORMD - 6]
+2014-06-16 17:45:42.556	58118	Debug	Planning	Business process pid is 132470 [ORMD - 6]
+2014-06-16 17:45:42.556	58118	Debug	Planning	Business process pid is 132470 [ORMD - 6]
+2014-06-16 17:45:42.556	58118	Debug	Planning	Business process pid is 132470 [ORMD - 6]
+2014-06-16 17:45:42.556	58118	Debug	Planning	Business process pid is null [ORMD - 6]
+2014-06-16 17:45:42.556	58118	Debug	Planning	Business process pid is 132470 [ORMD - 6]
+2014-06-16 17:45:42.556	58118	Debug	Workflow	Publish wait interrupted on topic: OrderReleaseModAnyChange: release=MM.46162648, dataSource=INTEGRATION, beforePersist=true, children=ORDER - QUANTITIES MODIFIED,ORDER - LINE ADDED OR REMOVED  [ORMD - 6]
+2014-06-16 17:45:42.557	58118	Debug	Planning	Sql text: SELECT UNIQUE ssd.shipment_gid, su.order_release_gid, orl.otm_version FROM shipment_stop_d ssd, s_ship_unit ssu, ship_unit su, order_release orl  WHERE ssd.s_ship_unit_gid = ssu.s_ship_unit_gid  AND ssu.ship_unit_gid = su.ship_unit_gid  AND su.order_release_gid = orl.order_release_gid AND  (ssd.shipment_gid = ?)  AND (orl.otm_version IS NULL OR (orl.otm_version <> ?))  [ORMD - 6]
+2014-06-16 17:45:42.563	58118	Debug	Planning	Business process pid is 132470 [ORMD - 6]
+2014-06-16 17:45:42.563	58118	Debug	Planning	Business process pid is 132470 [ORMD - 6]
+2014-06-16 17:45:42.563	58118	Debug	Planning	Business process pid is 132470 [ORMD - 6]
+2014-06-16 17:45:42.563	58118	Debug	Planning	Business process pid is null [ORMD - 6]
+2014-06-16 17:45:42.563	58118	Debug	Planning	Business process pid is 132470 [ORMD - 6]
+2014-06-16 17:45:42.564	58118	Debug	Planning	Sql text: SELECT UNIQUE ssd.shipment_gid, su.order_release_gid, orl.otm_version FROM shipment_stop_d ssd, s_ship_unit ssu, ship_unit su, order_release orl  WHERE ssd.s_ship_unit_gid = ssu.s_ship_unit_gid  AND ssu.ship_unit_gid = su.ship_unit_gid  AND su.order_release_gid = orl.order_release_gid AND  (ssd.shipment_gid = ?)  AND (orl.otm_version IS NULL OR (orl.otm_version <> ?))  [ORMD - 6]
+2014-06-16 17:45:42.57	58118	Debug	Planning	Business process pid is 132470 [ORMD - 6]
+2014-06-16 17:45:42.57	58118	Debug	Planning	Business process pid is 132470 [ORMD - 6]
+2014-06-16 17:45:42.57	58118	Debug	Planning	Business process pid is 132470 [ORMD - 6]
+2014-06-16 17:45:42.57	58118	Debug	Planning	Business process pid is null [ORMD - 6]
+2014-06-16 17:45:42.57	58118	Debug	Planning	Business process pid is 132470 [ORMD - 6]
+2014-06-16 17:45:42.57	58118	Debug	Workflow	ORModEditShipment end. [ORMD - 6]
+2014-06-16 17:45:42.571	58118	Debug	Workflow	Completing workflow Simple Workflow (563382982) [publishWait - 3]
+2014-06-16 17:45:42.589	58118	Debug	Agent	Starting agent MM.MM SHIPMENT - MODIFIED (692270005) in response to ShipmentModAnyChange: shipment=MM.S033070, dataSource=INTEGRATION, beforePersist=false, children=SHIPMENT - COST MODIFIED,SHIPMENT - QUANTITIES MODIFIED,SHIPMENT - ACTUAL MODIFIED,SHIPMENT - FEASIBILITY CODE MODIFIED (as null) [lifetime - 9]
+2014-06-16 17:45:42.59	58118	Debug	Agent	Performing action If: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_RELAY, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) as MM (692270005); was If: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_RELAY, threshold=null, expression=null, javaPlugin=null, forceTrue=false [agentUtility - 5]
+2014-06-16 17:45:42.593	58118	Debug	Agent	Saved condition MM.SHIPMENT_IS_RELAY is false [agentUtility - 5]
+2014-06-16 17:45:42.593	58118	Debug	Agent	Action If returns false [agentUtility - 5]
+2014-06-16 17:45:42.593	58118	Debug	Agent	Complete action If: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_RELAY, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) (692270005) [agentUtility - 5]
+2014-06-16 17:45:42.594	58118	Debug	Agent	Publishing topic ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_CC_TO_HIRE_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) on queue agentUtility, group null [agentUtility - 5]
+2014-06-16 17:45:42.595	58118	Debug	Agent	Performing action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_CC_TO_HIRE_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) as MM (692270005); was ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_CC_TO_HIRE_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false [agentUtility - 5]
+2014-06-16 17:45:42.597	58118	Debug	Agent	Saved condition MM.SHIPMENT_IS_CC_TO_HIRE_CONDITION is false [agentUtility - 5]
+2014-06-16 17:45:42.597	58118	Debug	Agent	Action ElseIf returns false [agentUtility - 5]
+2014-06-16 17:45:42.598	58118	Debug	Agent	Complete action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_CC_TO_HIRE_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) (692270005) [agentUtility - 5]
+2014-06-16 17:45:42.598	58118	Debug	Agent	Publishing topic ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_MLMC_AND_WITHDRAWN_TENDER_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) on queue agentUtility, group null [agentUtility - 5]
+2014-06-16 17:45:42.599	58118	Debug	Agent	Performing action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_MLMC_AND_WITHDRAWN_TENDER_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) as MM (692270005); was ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_MLMC_AND_WITHDRAWN_TENDER_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false [agentUtility - 2]
+2014-06-16 17:45:42.603	58118	Debug	Agent	Saved condition MM.SHIPMENT_IS_MLMC_AND_WITHDRAWN_TENDER_CONDITION is false [agentUtility - 2]
+2014-06-16 17:45:42.603	58118	Debug	Agent	Action ElseIf returns false [agentUtility - 2]
+2014-06-16 17:45:42.603	58118	Debug	Agent	Complete action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_MLMC_AND_WITHDRAWN_TENDER_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) (692270005) [agentUtility - 2]
+2014-06-16 17:45:42.603	58118	Debug	Agent	Publishing topic ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_SPECIAL_REQUIREMENTS_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) on queue agentUtility, group null [agentUtility - 2]
+2014-06-16 17:45:42.605	58118	Debug	Agent	Performing action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_SPECIAL_REQUIREMENTS_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) as MM (692270005); was ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_SPECIAL_REQUIREMENTS_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false [agentUtility - 3]
+2014-06-16 17:45:42.607	58118	Debug	Agent	Saved condition MM.SHIPMENT_IS_SPECIAL_REQUIREMENTS_CONDITION is false [agentUtility - 3]
+2014-06-16 17:45:42.608	58118	Debug	Agent	Action ElseIf returns false [agentUtility - 3]
+2014-06-16 17:45:42.608	58118	Debug	Agent	Complete action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_SPECIAL_REQUIREMENTS_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) (692270005) [agentUtility - 3]
+2014-06-16 17:45:42.608	58118	Debug	Agent	Publishing topic ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_NORTHBOUND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) on queue agentUtility, group null [agentUtility - 3]
+2014-06-16 17:45:42.609	58118	Debug	Agent	Performing action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_NORTHBOUND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) as MM (692270005); was ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_NORTHBOUND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false [agentUtility - 3]
+2014-06-16 17:45:42.612	58118	Debug	Agent	Saved condition MM.SHIPMENT_SRC_DEST_IS_NORTHBOUND_CONDITION is false [agentUtility - 3]
+2014-06-16 17:45:42.612	58118	Debug	Agent	Action ElseIf returns false [agentUtility - 3]
+2014-06-16 17:45:42.613	58118	Debug	Agent	Complete action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_NORTHBOUND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) (692270005) [agentUtility - 3]
+2014-06-16 17:45:42.613	58118	Debug	Agent	Publishing topic ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_SOUTHBOUND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) on queue agentUtility, group null [agentUtility - 3]
+2014-06-16 17:45:42.614	58118	Debug	Agent	Performing action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_SOUTHBOUND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) as MM (692270005); was ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_SOUTHBOUND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false [agentUtility - 1]
+2014-06-16 17:45:42.617	58118	Debug	Agent	Saved condition MM.SHIPMENT_SRC_DEST_IS_SOUTHBOUND_CONDITION is false [agentUtility - 1]
+2014-06-16 17:45:42.617	58118	Debug	Agent	Action ElseIf returns false [agentUtility - 1]
+2014-06-16 17:45:42.618	58118	Debug	Agent	Complete action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_SOUTHBOUND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) (692270005) [agentUtility - 1]
+2014-06-16 17:45:42.618	58118	Debug	Agent	Publishing topic ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_WESTBOUND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) on queue agentUtility, group null [agentUtility - 1]
+2014-06-16 17:45:42.619	58118	Debug	Agent	Performing action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_WESTBOUND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) as MM (692270005); was ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_WESTBOUND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false [agentUtility - 1]
+2014-06-16 17:45:42.621	58118	Debug	Agent	Saved condition MM.SHIPMENT_SRC_DEST_IS_WESTBOUND_CONDITION is false [agentUtility - 1]
+2014-06-16 17:45:42.621	58118	Debug	Agent	Action ElseIf returns false [agentUtility - 1]
+2014-06-16 17:45:42.621	58118	Debug	Agent	Complete action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_WESTBOUND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) (692270005) [agentUtility - 1]
+2014-06-16 17:45:42.621	58118	Debug	Agent	Publishing topic ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_EASTBOUND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) on queue agentUtility, group null [agentUtility - 1]
+2014-06-16 17:45:42.623	58118	Debug	Agent	Performing action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_EASTBOUND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) as MM (692270005); was ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_EASTBOUND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false [agentUtility - 5]
+2014-06-16 17:45:42.625	58118	Debug	Agent	Saved condition MM.SHIPMENT_SRC_DEST_IS_EASTBOUND_CONDITION is false [agentUtility - 5]
+2014-06-16 17:45:42.625	58118	Debug	Agent	Action ElseIf returns false [agentUtility - 5]
+2014-06-16 17:45:42.625	58118	Debug	Agent	Complete action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_EASTBOUND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) (692270005) [agentUtility - 5]
+2014-06-16 17:45:42.626	58118	Debug	Agent	Publishing topic ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_PS_ISLAND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) on queue agentUtility, group null [agentUtility - 5]
+2014-06-16 17:45:42.627	58118	Debug	Agent	Performing action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_PS_ISLAND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) as MM (692270005); was ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_PS_ISLAND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false [agentUtility - 2]
+2014-06-16 17:45:42.629	58118	Debug	Agent	Saved condition MM.SHIPMENT_SRC_DEST_IS_PS_ISLAND_CONDITION is false [agentUtility - 2]
+2014-06-16 17:45:42.629	58118	Debug	Agent	Action ElseIf returns false [agentUtility - 2]
+2014-06-16 17:45:42.63	58118	Debug	Agent	Complete action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_PS_ISLAND_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) (692270005) [agentUtility - 2]
+2014-06-16 17:45:42.63	58118	Debug	Agent	Publishing topic ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_CROSS_REGION_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) on queue agentUtility, group null [agentUtility - 2]
+2014-06-16 17:45:42.631	58118	Debug	Agent	Performing action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_CROSS_REGION_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) as MM (692270005); was ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_CROSS_REGION_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false [agentUtility - 2]
+2014-06-16 17:45:42.633	58118	Debug	Agent	Saved condition MM.SHIPMENT_SRC_DEST_IS_CROSS_REGION_CONDITION is false [agentUtility - 2]
+2014-06-16 17:45:42.633	58118	Debug	Agent	Action ElseIf returns false [agentUtility - 2]
+2014-06-16 17:45:42.634	58118	Debug	Agent	Complete action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_SRC_DEST_IS_CROSS_REGION_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) (692270005) [agentUtility - 2]
+2014-06-16 17:45:42.634	58118	Debug	Agent	Publishing topic Else (MM SHIPMENT - MODIFIED) on queue agentUtility, group null [agentUtility - 2]
+2014-06-16 17:45:42.635	58118	Debug	Agent	Performing action Else (MM SHIPMENT - MODIFIED) as MM (692270005); was Else [agentUtility - 3]
+2014-06-16 17:45:42.635	58118	Debug	Agent	Action Else returns true [agentUtility - 3]
+2014-06-16 17:45:42.647	58118	Debug	Agent	Performing action SetUserDefinedImage: icon1=null, removeIcon1=false, icon2=null, removeIcon2=false, icon3=null, removeIcon3=false, icon4=null, removeIcon4=true, icon5=null, removeIcon5=false (MM SHIPMENT - MODIFIED) as MM (692270005); was SetUserDefinedImage: icon1=null, removeIcon1=false, icon2=null, removeIcon2=false, icon3=null, removeIcon3=false, icon4=null, removeIcon4=true, icon5=null, removeIcon5=false [agentUtility - 4]
+2014-06-16 17:45:42.661	58118	Debug	Agent	Complete action SetUserDefinedImage: icon1=null, removeIcon1=false, icon2=null, removeIcon2=false, icon3=null, removeIcon3=false, icon4=null, removeIcon4=true, icon5=null, removeIcon5=false (MM SHIPMENT - MODIFIED) (692270005) [agentUtility - 4]
+2014-06-16 17:45:42.663	58118	Debug	Agent	Complete action Else (MM SHIPMENT - MODIFIED) (692270005) [agentUtility - 4]
+2014-06-16 17:45:42.663	58118	Debug	Agent	Publishing topic If: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_HAZARDOUS, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) on queue agentUtility, group null [agentUtility - 4]
+2014-06-16 17:45:42.664	58118	Debug	Agent	Performing action If: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_HAZARDOUS, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) as MM (692270005); was If: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_HAZARDOUS, threshold=null, expression=null, javaPlugin=null, forceTrue=false [agentUtility - 4]
+2014-06-16 17:45:42.667	58118	Debug	Agent	Saved condition MM.SHIPMENT_IS_HAZARDOUS is false [agentUtility - 4]
+2014-06-16 17:45:42.667	58118	Debug	Agent	Action If returns false [agentUtility - 4]
+2014-06-16 17:45:42.667	58118	Debug	Agent	Complete action If: complexExpression=null, attributerule=null, savedCondition=MM.SHIPMENT_IS_HAZARDOUS, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) (692270005) [agentUtility - 4]
+2014-06-16 17:45:42.668	58118	Debug	Agent	Publishing topic ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.HOME_DEPOT_SHIPMENT_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) on queue agentUtility, group null [agentUtility - 4]
+2014-06-16 17:45:42.669	58118	Debug	Agent	Performing action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.HOME_DEPOT_SHIPMENT_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) as MM (692270005); was ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.HOME_DEPOT_SHIPMENT_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false [agentUtility - 5]
+2014-06-16 17:45:42.671	58118	Debug	Agent	Saved condition MM.HOME_DEPOT_SHIPMENT_CONDITION is true [agentUtility - 5]
+2014-06-16 17:45:42.671	58118	Debug	Agent	Action ElseIf returns true [agentUtility - 5]
+2014-06-16 17:45:42.675	58118	Debug	Agent	Performing action SetUserDefinedImage: icon1=null, removeIcon1=false, icon2=null, removeIcon2=false, icon3=MM.HOME_DEPOT, removeIcon3=false, icon4=null, removeIcon4=false, icon5=null, removeIcon5=false (MM SHIPMENT - MODIFIED) as MM (692270005); was SetUserDefinedImage: icon1=null, removeIcon1=false, icon2=null, removeIcon2=false, icon3=MM.HOME_DEPOT, removeIcon3=false, icon4=null, removeIcon4=false, icon5=null, removeIcon5=false [agentUtility - 6]
+2014-06-16 17:45:42.689	58118	Debug	Agent	Complete action SetUserDefinedImage: icon1=null, removeIcon1=false, icon2=null, removeIcon2=false, icon3=MM.HOME_DEPOT, removeIcon3=false, icon4=null, removeIcon4=false, icon5=null, removeIcon5=false (MM SHIPMENT - MODIFIED) (692270005) [agentUtility - 6]
+2014-06-16 17:45:42.691	58118	Debug	Agent	Complete action ElseIf: complexExpression=null, attributerule=null, savedCondition=MM.HOME_DEPOT_SHIPMENT_CONDITION, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) (692270005) [agentUtility - 6]
+2014-06-16 17:45:42.692	58118	Debug	Agent	Publishing topic If: complexExpression=null, attributerule=null, savedCondition=null, threshold=null, expression=SHIPMENT - LOCATION MODIFIED IN SHIPMENT - COST MODIFIED,SHIPMENT - QUANTITIES MODIFIED,SHIPMENT - ACTUAL MODIFIED,SHIPMENT - FEASIBILITY CODE MODIFIED, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) on queue agentUtility, group null [agentUtility - 6]
+2014-06-16 17:45:42.693	58118	Debug	Agent	Performing action If: complexExpression=null, attributerule=null, savedCondition=null, threshold=null, expression=SHIPMENT - LOCATION MODIFIED IN SHIPMENT - COST MODIFIED,SHIPMENT - QUANTITIES MODIFIED,SHIPMENT - ACTUAL MODIFIED,SHIPMENT - FEASIBILITY CODE MODIFIED, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) as MM (692270005); was If: complexExpression=null, attributerule=null, savedCondition=null, threshold=null, expression=SHIPMENT - LOCATION MODIFIED IN $CHILD_EVENT_GIDS, javaPlugin=null, forceTrue=false [agentUtility - 6]
+2014-06-16 17:45:42.693	58118	Debug	Agent	Action If returns false [agentUtility - 6]
+2014-06-16 17:45:42.693	58118	Debug	Agent	Complete action If: complexExpression=null, attributerule=null, savedCondition=null, threshold=null, expression=SHIPMENT - LOCATION MODIFIED IN SHIPMENT - COST MODIFIED,SHIPMENT - QUANTITIES MODIFIED,SHIPMENT - ACTUAL MODIFIED,SHIPMENT - FEASIBILITY CODE MODIFIED, javaPlugin=null, forceTrue=false (MM SHIPMENT - MODIFIED) (692270005) [agentUtility - 6]
+2014-06-16 17:45:42.693	58118	Debug	Agent	Publishing topic EndIf (MM SHIPMENT - MODIFIED) on queue agentUtility, group null [agentUtility - 6]
+2014-06-16 17:45:42.694	58118	Debug	Agent	Performing action EndIf (MM SHIPMENT - MODIFIED) as MM (692270005); was EndIf [agentUtility - 6]
+2014-06-16 17:45:42.694	58118	Debug	Agent	Complete action EndIf (MM SHIPMENT - MODIFIED) (692270005) [agentUtility - 6]
+2014-06-16 17:45:42.694	58118	Debug	Agent	Publishing topic AllocateShipment (MM SHIPMENT - MODIFIED) on queue agentPlanning, group null [agentUtility - 6]
+2014-06-16 17:45:42.698	58118	Debug	Agent	Performing action AllocateShipment (MM SHIPMENT - MODIFIED) as MM (692270005); was AllocateShipment [agentPlanning - 3]
+2014-06-16 17:45:42.704	58118	Debug	Allocation	Allocation - Planning Parameter Value - ALLOCATION GENERATES ACCRUALS (0 - False) : 0 [agentPlanning - 3]
+2014-06-16 17:45:42.704	58118	Debug	Allocation	Allocation - Planning Parameter Value - SETTLEMENT REVERSES ACCRUALS (0 - False) : 0 [agentPlanning - 3]
+2014-06-16 17:45:42.704	58118	Debug	Allocation	AllocationActionExecutor.allocateShipmentCosts:: start. [agentPlanning - 3]
+2014-06-16 17:45:42.72	58118	Debug	Planning	AllocationBaseBean::preRemove - Removing AllocOrderReleaseD [agentPlanning - 3]
+2014-06-16 17:45:42.722	58118	Debug	Planning	AllocationBaseBean::preRemove - Removing AllocOrderReleaseD - 328065, MM.46162768 [agentPlanning - 3]
+2014-06-16 17:45:42.724	58118	Debug	Planning	AllocationBaseBean::preRemove - Removing AllocOrderReleaseD - 328065, MM.46162649 [agentPlanning - 3]
+2014-06-16 17:45:42.725	58118	Debug	Planning	AllocationBaseBean::preRemove - Removing AllocOrderReleaseD - 328065, MM.46162648 [agentPlanning - 3]
+2014-06-16 17:45:42.727	58118	Debug	Planning	AllocationBaseBean::preRemove - Removing AllocOrderReleaseD - 328065, MM.46162649 [agentPlanning - 3]
+2014-06-16 17:45:42.729	58118	Debug	Planning	AllocationBaseBean::preRemove - Removing AllocOrderReleaseD - 328065, MM.46162648 [agentPlanning - 3]
+2014-06-16 17:45:42.731	58118	Debug	Planning	AllocationBaseBean::preRemove - Removing AllocOrderReleaseD - 328065, MM.46162768 [agentPlanning - 3]
+2014-06-16 17:45:42.732	58118	Debug	Planning	AllocationBaseBean::preRemove - Removing AllocOrLineD [agentPlanning - 3]
+2014-06-16 17:45:42.733	58118	Debug	Planning	AllocationBaseBean::preRemove - Removing AllocationD -  [agentPlanning - 3]
+2014-06-16 17:45:42.734	58118	Debug	Planning	AllocationBaseBean::preRemove - Removing Allocation -  [agentPlanning - 3]
+2014-06-16 17:45:42.735	58118	Debug	Planning	AllocationBaseBean::preRemove - Removing Allocation - 328065, MM.46162648 [agentPlanning - 3]
+2014-06-16 17:45:42.738	58118	Debug	Planning	AllocationBaseBean::preRemove - Removing Allocation - 328065, MM.46162649 [agentPlanning - 3]
+2014-06-16 17:45:42.74	58118	Debug	Planning	AllocationBaseBean::preRemove - Removing Allocation - 328065, MM.46162768 [agentPlanning - 3]
+2014-06-16 17:45:42.742	58118	Debug	Planning	Allocation base change for shipment: MM.S033070. [agentPlanning - 3]
+2014-06-16 17:45:42.751	58118	Debug	Workflow	Executing topic Recalculate Shipment Transport Costs: pk=MM.S033070 [agentPlanning - 3]
+2014-06-16 17:45:42.752	58118	Debug	Workflow	Starting workflow Simple Workflow (708876586) in response to Recalculate Shipment Transport Costs: pk=MM.S033070 [agentPlanning - 3]
+2014-06-16 17:45:42.757	58118	Debug	Planning	calculating transport costs for shipment MM.S033070 [agentPlanning - 3]
+2014-06-16 17:45:42.757	58118	Debug	Planning	  shipment MM.S033070 total transport cost: 0.0 USD [agentPlanning - 3]
+2014-06-16 17:45:42.762	58118	Debug	Workflow	Completing workflow Simple Workflow (708876586) [agentPlanning - 3]
+2014-06-16 17:45:42.763	58118	Debug	Allocation	AllocationActionExecutor.allocateShipmentCosts:: allocating buy shipments. [agentPlanning - 3]
+2014-06-16 17:45:42.763	58118	Debug	Allocation	AllocationActionExecutor.allocateShipmentCosts:: allocating buy shipment: MM.S033070 [agentPlanning - 3]
+2014-06-16 17:45:42.763	58118	Debug	Allocation	AllocationManager.performAllocation()-> Start of Perform Allocation Method [agentPlanning - 3]
+2014-06-16 17:45:42.763	58118	Debug	Allocation	AllocationManager.performAllocation()-> Determine Allocation Source Root Class for allocation type: PLANNING [agentPlanning - 3]
+2014-06-16 17:45:42.763	58118	Debug	Allocation	AllocationManager.performAllocation()-> Using Allocation Source Root Class: class glog.business.advancedallocation.engine.source.AllocationShipment for allocation type: PLANNING [agentPlanning - 3]
+2014-06-16 17:45:42.763	58118	Debug	Allocation	AllocationShipment.createAllocationSourceRoots()-> Start. [agentPlanning - 3]
+2014-06-16 17:45:42.763	58118	Debug	Allocation	AllocationShipment.getAllocationShipmentInstance()-> Start. [agentPlanning - 3]
+2014-06-16 17:45:42.769	58118	Debug	Allocation	AllocationShipment.loadTSShipUnitLines()-> loading Shipment Ship Units and Shipment ship unit lines for the shipment: MM.S033070. [agentPlanning - 3]
+2014-06-16 17:45:42.835	58118	Debug	Allocation	AllocationShipment.loadTSShipUnitLines()-> loaded Shipment Ship Units (size:3) and Shipment ship unit lines (size:17) for the shipment: MM.S033070. [agentPlanning - 3]
+2014-06-16 17:45:42.835	58118	Debug	Allocation	AllocationShipment.loadTOrderReleases()-> loading order releases and order release lines for the shipment: MM.S033070. [agentPlanning - 3]
+2014-06-16 17:45:43.015	58118	Debug	Allocation	AllocationShipment.loadTOrderReleases()-> loaded order releases (size:3) and order release lines (size:17) for the shipment: MM.S033070. [agentPlanning - 3]
+2014-06-16 17:45:43.018	58118	Debug	Allocation	AllocationShipment.getAllocationShipmentInstance()-> AllocationShipment created for shipment: MM.S033070 with source location: MM.EMD and transport mode: TL [agentPlanning - 3]
+2014-06-16 17:45:43.018	58118	Debug	Allocation	AllocationManager.performAllocation()-> Performing Allocation for Pk: MM.S033070 [agentPlanning - 3]
+2014-06-16 17:45:43.018	58118	Debug	Allocation	AllocationManager.performAllocation()-> Determine Allocation Rule Profile Pk [agentPlanning - 3]
+2014-06-16 17:45:43.018	58118	Debug	Allocation	AllocationShipment.getAllocationRuleProfilePK()-> Getting Allocation Rule profile of the service provider on the shipment: MM.S033070 [agentPlanning - 3]
+2014-06-16 17:45:43.022	58118	Debug	Allocation	AllocationManager.performAllocation()-> Using Allocation Rule Profile Pk: MM.DEFAULT [agentPlanning - 3]
+2014-06-16 17:45:43.024	58118	Debug	Allocation	AllocationShipment.loadAllocationSources()-> Start. [agentPlanning - 3]
+2014-06-16 17:45:43.026	58118	Debug	Allocation	AllocationShipment.loadAllocationSources()-> AllocationSource (costline) object created for the shipment cost line: 827784 with costType: B and cost 146.125 USD [agentPlanning - 3]
+2014-06-16 17:45:43.026	58118	Debug	Allocation	AllocationShipment.loadAllocationSources()-> AllocationSource (costline) object created for the shipment cost line: 827785 with costType: B and cost 130.0 USD [agentPlanning - 3]
+2014-06-16 17:45:43.026	58118	Debug	Allocation	AllocationShipment.loadAllocationSources()-> loading of cost lines for shipment: MM.S033070 is completed. [agentPlanning - 3]
+2014-06-16 17:45:43.027	58118	Debug	Allocation	AllocationManager.performAllocation()-> Determine Allocation Rule Pk. [agentPlanning - 3]
+2014-06-16 17:45:43.027	58118	Debug	Allocation	AllocationSourceRoot.getCompatibleAllocationRulePK()-> Get the compatible allocation rule. [agentPlanning - 3]
+2014-06-16 17:45:43.027	58118	Debug	Allocation	AllocationShipment.isCompatibleWithAllocationRule()-> compatibility check with allocation rule. [agentPlanning - 3]
+2014-06-16 17:45:43.027	58118	Debug	Allocation	AllocationManager.performAllocation()-> Using Allocation Rule Pk: MM.WEIGHT CARRIED DISTANCE [agentPlanning - 3]
+2014-06-16 17:45:43.028	58118	Debug	Allocation	AllocationSourceRoot.loadAllocationRuleDetailAllocMethodMap()-> Allocation Rule: MM.WEIGHT CARRIED DISTANCE, Allocation Details Seq: 1, basis: ORDER, Cost Type: , Accesorial Code: , Allocation Method: MM.WEIGHT CARRIED DISTANCE. [agentPlanning - 3]
+2014-06-16 17:45:43.028	58118	Debug	Allocation	AllocationSourceRoot.getCompatibleAllocationMethodPKs()-> Get the compatible allocation method for the AllocationSource (cost line). [agentPlanning - 3]
+2014-06-16 17:45:43.029	58118	Debug	Allocation	AllocationSourceRoot.getCompatibleAllocationMethodPKs()-> Get the compatible allocation method for the AllocationSource (cost line) for the basis (allocate to order/order line): ORDER. [agentPlanning - 3]
+2014-06-16 17:45:43.029	58118	Debug	Allocation	AllocationSourceRoot.getCompatibleAllocationMethodPKs()-> AllocationMethod: MM.WEIGHT CARRIED DISTANCE defined for basis: ORDER. [agentPlanning - 3]
+2014-06-16 17:45:43.03	58118	Debug	Allocation	AllocationManager.performAllocation()-> Determine Allocation Target Class for the method: MM.WEIGHT CARRIED DISTANCE [agentPlanning - 3]
+2014-06-16 17:45:43.032	58118	Debug	Allocation	AllocationManager.performAllocation()-> Using Allocation Target Class: class glog.business.advancedallocation.engine.target.AllocationTargetOrderRelease [agentPlanning - 3]
+2014-06-16 17:45:43.032	58118	Debug	Allocation	AllocationTargetOrderRelease.loadPlanningAllocationTargets()-> load the applicable order releases for the cost line: 827785. [agentPlanning - 3]
+2014-06-16 17:45:43.037	58118	Debug	Allocation	AllocationTargetOrderRelease.loadPlanningAllocationTargets()-> Order Release: MM.46162648 [agentPlanning - 3]
+2014-06-16 17:45:43.039	58118	Debug	Allocation	AllocationShipment.getAllocationShipmentInstance()-> Start. [agentPlanning - 3]
+2014-06-16 17:45:43.039	58118	Debug	Allocation	AllocationShipment.getAllocationShipmentInstance()-> Got the AllocationShipment instance from cache for shipment: MM.S033070 [agentPlanning - 3]
+2014-06-16 17:45:43.042	58118	Debug	Allocation	OrderCarriedDistance.getRateDistancePK()-> The rate distance: MM_PCMILER_LOOKUP in the rate offering: MM_PCMILER_LOOKUP of the shipment: MM.S033070 is used. [agentPlanning - 3]
+2014-06-16 17:45:43.042	58118	Debug	Allocation	AllocationShipment.getAllocationShipmentInstance()-> Start. [agentPlanning - 3]
+2014-06-16 17:45:43.042	58118	Debug	Allocation	AllocationShipment.getAllocationShipmentInstance()-> Got the AllocationShipment instance from cache for shipment: MM.S033070 [agentPlanning - 3]
+2014-06-16 17:45:43.163	58118	Debug	Planning	DatabaseLoader is loading ShipUnitData (criteria = (top_t.ship_unit_gid=?)) ... [agentPlanning - 3]
+2014-06-16 17:45:43.176	58118	Debug	Allocation	OrderCarriedDistance.getTotalOrderMiles()-> The order is picked at stop: MM.GRD with stop num: 1 of the shipment: MM.S033070 [agentPlanning - 3]
+2014-06-16 17:45:43.286	58118	Debug	Planning	DatabaseLoader is loading ShipUnitData (criteria = (top_t.ship_unit_gid=?)) ... [agentPlanning - 3]
+2014-06-16 17:45:43.298	58118	Debug	Allocation	OrderCarriedDistance.getTotalOrderMiles()-> The order is dropped at stop: MM.51845:3600 W. 6TH STREET-THE DALLES-OR-97058-US wih stop num: 2 of the shipment: MM.S033070 [agentPlanning - 3]
+2014-06-16 17:45:43.298	58118	Debug	Allocation	OrderCarriedDistance.getTotalOrderMiles()-> The distance travelled by the order release: MM.46162648 between the stops MM.GRD and MM.51845:3600 W. 6TH STREET-THE DALLES-OR-97058-US on the shipment: MM.S033070 is: 83.5 MI [agentPlanning - 3]
+2014-06-16 17:45:43.298	58118	Debug	Allocation	WeightCarriedDistance.getOrderWeightMiles()-> The carried distance of the order release: MM.46162648 is: 83.5 MI [agentPlanning - 3]
+2014-06-16 17:45:43.299	58118	Debug	Allocation	AllocationShipment.getAllocationShipmentInstance()-> Start. [agentPlanning - 3]
+2014-06-16 17:45:43.299	58118	Debug	Allocation	AllocationShipment.getAllocationShipmentInstance()-> Got the AllocationShipment instance from cache for shipment: MM.S033070 [agentPlanning - 3]
+2014-06-16 17:45:43.299	58118	Debug	Allocation	AllocationShipment.getOrderWeightOnShipment()-> The weight of order release id: MM.46162648 on the shipment: MM.S033070 using the Ship Unit lines weight is: 47816.009999999995 LB [agentPlanning - 3]
+2014-06-16 17:45:43.299	58118	Debug	Allocation	WeightCarriedDistance.getOrderWeightMiles()-> The weight miles of the order release: MM.46162648 on the shipment: MM.S033070 is: 3992636.8349999995 LB [agentPlanning - 3]
+2014-06-16 17:45:43.299	58118	Debug	Allocation	WeightCarriedDistance.getAllocationMetricValue()-> The weight carried distance of the order release: MM.46162648 is: 3992636.8349999995 LB [agentPlanning - 3]
+2014-06-16 17:45:43.332	58118	Debug	Allocation	AllocationTargetOrderRelease.loadPlanningAllocationTargets()-> Order Release: MM.46162649 [agentPlanning - 3]
+2014-06-16 17:45:43.334	58118	Debug	Allocation	AllocationShipment.getAllocationShipmentInstance()-> Start. [agentPlanning - 3]
+2014-06-16 17:45:43.334	58118	Debug	Allocation	AllocationShipment.getAllocationShipmentInstance()-> Got the AllocationShipment instance from cache for shipment: MM.S033070 [agentPlanning - 3]
+2014-06-16 17:45:43.336	58118	Debug	Allocation	OrderCarriedDistance.getRateDistancePK()-> The rate distance: MM_PCMILER_LOOKUP in the rate offering: MM_PCMILER_LOOKUP of the shipment: MM.S033070 is used. [agentPlanning - 3]
+2014-06-16 17:45:43.336	58118	Debug	Allocation	AllocationShipment.getAllocationShipmentInstance()-> Start. [agentPlanning - 3]
+2014-06-16 17:45:43.336	58118	Debug	Allocation	AllocationShipment.getAllocationShipmentInstance()-> Got the AllocationShipment instance from cache for shipment: MM.S033070 [agentPlanning - 3]
+2014-06-16 17:45:43.419	58118	Error	Exception	java.lang.NullPointerException
+
+java.lang.NullPointerException
+	at glog.business.shipment.TSShipUnit.getSShipUnitGid(TSShipUnit.java:2667)
+	at glog.business.shipment.TSShipUnit.loadLines(TSShipUnit.java:832)
+	at glog.business.shipment.TSShipUnit.load(TSShipUnit.java:972)
+	at glog.business.shipment.TSShipUnit.load(TSShipUnit.java:992)
+	at glog.business.shipment.TShipmentStop.loadTSShipUnits(TShipmentStop.java:736)
+	at glog.business.advancedallocation.engine.metric.OrderCarriedDistance.getTotalOrderMiles(OrderCarriedDistance.java:119)
+	at glog.business.advancedallocation.engine.metric.WeightCarriedDistance.getOrderWeightMiles(WeightCarriedDistance.java:86)
+	at glog.business.advancedallocation.engine.metric.WeightCarriedDistance.getAllocationMetricValue(WeightCarriedDistance.java:50)
+	at glog.business.advancedallocation.engine.metric.AllocationMetric.getAllocationMetricValueFromCache(AllocationMetric.java:161)
+	at glog.business.advancedallocation.engine.target.AllocationTarget.loadAllocationTargetMetricValues(AllocationTarget.java:193)
+	at glog.business.advancedallocation.engine.target.AllocationTargetOrderRelease.loadPlanningAllocationTargets(AllocationTargetOrderRelease.java:107)
+	at glog.business.advancedallocation.engine.target.AllocationTargetOrderRelease.loadAllocationTargets(AllocationTargetOrderRelease.java:56)
+	at glog.business.advancedallocation.engine.AllocationManager.performAllocation(AllocationManager.java:331)
+	at glog.business.advancedallocation.AllocationActionExecutor.allocateShipmentCosts(AllocationActionExecutor.java:305)
+	at glog.business.advancedallocation.AllocationSessionBean.allocateShipment(AllocationSessionBean.java:38)
+	at glog.business.advancedallocation.AllocationSessionServerSideEJBWrapper.allocateShipment(AllocationSessionServerSideEJBWrapper.java:42)
+	at glog.business.advancedallocation.AllocationSessionHome_af67ov_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at glog.business.advancedallocation.AllocationSessionHome_af67ov_EOImpl.allocateShipment(Unknown Source)
+	at glog.server.agent.business.shipment.AllocateShipment.execute(AllocateShipment.java:48)
+	at glog.server.agent.ActionWorkflow.execute(ActionWorkflow.java:49)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:64)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(WorkflowSessionServerSideEJBWrapper.java:40)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.execute(Unknown Source)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:352)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:145)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:100)
+	at glog.util.event.EventThread.run(EventThread.java:86)
+	at java.lang.Thread.run(Thread.java:680)
+ [agentPlanning - 3]
+2014-06-16 17:45:43.419	58118	Error	Allocation	AllocationActionExecutor.allocateShipmentCosts:: Exception while allocating the buy shipment: MM.S033070 [agentPlanning - 3]
+2014-06-16 17:45:43.419	58118	Error	Exception	java.lang.NullPointerException
+
+java.lang.NullPointerException
+	at glog.business.shipment.TSShipUnit.getSShipUnitGid(TSShipUnit.java:2667)
+	at glog.business.shipment.TSShipUnit.loadLines(TSShipUnit.java:832)
+	at glog.business.shipment.TSShipUnit.load(TSShipUnit.java:972)
+	at glog.business.shipment.TSShipUnit.load(TSShipUnit.java:992)
+	at glog.business.shipment.TShipmentStop.loadTSShipUnits(TShipmentStop.java:736)
+	at glog.business.advancedallocation.engine.metric.OrderCarriedDistance.getTotalOrderMiles(OrderCarriedDistance.java:119)
+	at glog.business.advancedallocation.engine.metric.WeightCarriedDistance.getOrderWeightMiles(WeightCarriedDistance.java:86)
+	at glog.business.advancedallocation.engine.metric.WeightCarriedDistance.getAllocationMetricValue(WeightCarriedDistance.java:50)
+	at glog.business.advancedallocation.engine.metric.AllocationMetric.getAllocationMetricValueFromCache(AllocationMetric.java:161)
+	at glog.business.advancedallocation.engine.target.AllocationTarget.loadAllocationTargetMetricValues(AllocationTarget.java:193)
+	at glog.business.advancedallocation.engine.target.AllocationTargetOrderRelease.loadPlanningAllocationTargets(AllocationTargetOrderRelease.java:107)
+	at glog.business.advancedallocation.engine.target.AllocationTargetOrderRelease.loadAllocationTargets(AllocationTargetOrderRelease.java:56)
+	at glog.business.advancedallocation.engine.AllocationManager.performAllocation(AllocationManager.java:331)
+	at glog.business.advancedallocation.AllocationActionExecutor.allocateShipmentCosts(AllocationActionExecutor.java:305)
+	at glog.business.advancedallocation.AllocationSessionBean.allocateShipment(AllocationSessionBean.java:38)
+	at glog.business.advancedallocation.AllocationSessionServerSideEJBWrapper.allocateShipment(AllocationSessionServerSideEJBWrapper.java:42)
+	at glog.business.advancedallocation.AllocationSessionHome_af67ov_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at glog.business.advancedallocation.AllocationSessionHome_af67ov_EOImpl.allocateShipment(Unknown Source)
+	at glog.server.agent.business.shipment.AllocateShipment.execute(AllocateShipment.java:48)
+	at glog.server.agent.ActionWorkflow.execute(ActionWorkflow.java:49)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:64)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(WorkflowSessionServerSideEJBWrapper.java:40)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.execute(Unknown Source)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:352)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:145)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:100)
+	at glog.util.event.EventThread.run(EventThread.java:86)
+	at java.lang.Thread.run(Thread.java:680)
+ [agentPlanning - 3]
+2014-06-16 17:45:43.421	58118	Debug	Planning	Business process pid is 132812 [agentPlanning - 3]
+2014-06-16 17:45:43.421	58118	Debug	Planning	Business process pid is 132812 [agentPlanning - 3]
+2014-06-16 17:45:43.421	58118	Debug	Planning	Business process pid is 132812 [agentPlanning - 3]
+2014-06-16 17:45:43.421	58118	Debug	Planning	Business process pid is null [agentPlanning - 3]
+2014-06-16 17:45:43.421	58118	Debug	Planning	Business process pid is 132812 [agentPlanning - 3]
+2014-06-16 17:45:43.425	58118	Debug	Agent	Agent MM.MM SHIPMENT - MODIFIED (692270005) received error 132703/CLOSE/Process Agent:
+java.lang.NullPointerException
+
+java.lang.NullPointerException
+	at glog.business.shipment.TSShipUnit.getSShipUnitGid(TSShipUnit.java:2667)
+	at glog.business.shipment.TSShipUnit.loadLines(TSShipUnit.java:832)
+	at glog.business.shipment.TSShipUnit.load(TSShipUnit.java:972)
+	at glog.business.shipment.TSShipUnit.load(TSShipUnit.java:992)
+	at glog.business.shipment.TShipmentStop.loadTSShipUnits(TShipmentStop.java:736)
+	at glog.business.advancedallocation.engine.metric.OrderCarriedDistance.getTotalOrderMiles(OrderCarriedDistance.java:119)
+	at glog.business.advancedallocation.engine.metric.WeightCarriedDistance.getOrderWeightMiles(WeightCarriedDistance.java:86)
+	at glog.business.advancedallocation.engine.metric.WeightCarriedDistance.getAllocationMetricValue(WeightCarriedDistance.java:50)
+	at glog.business.advancedallocation.engine.metric.AllocationMetric.getAllocationMetricValueFromCache(AllocationMetric.java:161)
+	at glog.business.advancedallocation.engine.target.AllocationTarget.loadAllocationTargetMetricValues(AllocationTarget.java:193)
+	at glog.business.advancedallocation.engine.target.AllocationTargetOrderRelease.loadPlanningAllocationTargets(AllocationTargetOrderRelease.java:107)
+	at glog.business.advancedallocation.engine.target.AllocationTargetOrderRelease.loadAllocationTargets(AllocationTargetOrderRelease.java:56)
+	at glog.business.advancedallocation.engine.AllocationManager.performAllocation(AllocationManager.java:331)
+	at glog.business.advancedallocation.AllocationActionExecutor.allocateShipmentCosts(AllocationActionExecutor.java:305)
+	at glog.business.advancedallocation.AllocationSessionBean.allocateShipment(AllocationSessionBean.java:38)
+	at glog.business.advancedallocation.AllocationSessionServerSideEJBWrapper.allocateShipment(AllocationSessionServerSideEJBWrapper.java:42)
+	at glog.business.advancedallocation.AllocationSessionHome_af67ov_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at glog.business.advancedallocation.AllocationSessionHome_af67ov_EOImpl.allocateShipment(Unknown Source)
+	at glog.server.agent.business.shipment.AllocateShipment.execute(AllocateShipment.java:48)
+	at glog.server.agent.ActionWorkflow.execute(ActionWorkflow.java:49)
+	at glog.server.workflow.WorkflowSessionBean.execute(WorkflowSessionBean.java:64)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper.execute(WorkflowSessionServerSideEJBWrapper.java:40)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at glog.server.workflow.WorkflowSessionServerSideEJBWrapper_61kh96_EOImpl.execute(Unknown Source)
+	at glog.server.workflow.WorkflowManager.execute(WorkflowManager.java:352)
+	at glog.server.workflow.Trigger.trigger(Trigger.java:122)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:145)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:100)
+	at glog.util.event.EventThread.run(EventThread.java:86)
+	at java.lang.Thread.run(Thread.java:680)
+ [agentPlanning - 3]
+2014-06-16 17:45:43.425	58118	Error	Exception	Agent MM.MM SHIPMENT - MODIFIED failed
+ [agentPlanning - 3]
+2014-06-16 17:45:43.425	58118	Debug	Agent	Publishing topic NotifyContact: contact=MM.MMOTMSUPPORT, comMethod=EMAIL, subject=MM SHIPMENT - MODIFIED AGENT FAILED, stylesheet=null (MM SHIPMENT - MODIFIED) on queue agentUtility, group null [agentPlanning - 3]
+2014-06-16 17:45:43.429	58118	Debug	Agent	Performing action NotifyContact: contact=MM.MMOTMSUPPORT, comMethod=EMAIL, subject=MM SHIPMENT - MODIFIED AGENT FAILED, stylesheet=null (MM SHIPMENT - MODIFIED) as MM (692270005); was NotifyContact: contact=MM.MMOTMSUPPORT, comMethod=EMAIL, subject=MM SHIPMENT - MODIFIED AGENT FAILED, stylesheet=null [agentUtility - 1]
+2014-06-16 17:45:43.6	58118	Debug	Workflow	Starting workflow Simple Workflow (542985981) in response to MailTopic: from=dispatch@mutualmaterials.com=Mutual Materials Dispatch , to=dbritton@mutualmaterials.com=DAVID BRITTON , html=true, subject=Shipment MM.S033070 - MM SHIPMENT - MODIFIED AGENT FAILED [utility - 3]
+2014-06-16 17:45:43.6	58118	Debug	Workflow	Completing workflow Simple Workflow (542985981) [utility - 3]
+2014-06-16 17:45:43.601	58118	Debug	Workflow	Starting workflow Simple Workflow (702729035) in response to MailTopic: from=dispatch@mutualmaterials.com=Mutual Materials Dispatch , to=dkline@mutualmaterials.com=DONNA KLINE , html=true, subject=Shipment MM.S033070 - MM SHIPMENT - MODIFIED AGENT FAILED [utility - 1]
+2014-06-16 17:45:43.601	58118	Debug	Workflow	Starting workflow Simple Workflow (613084663) in response to MailTopic: from=dispatch@mutualmaterials.com=Mutual Materials Dispatch , to=byasutake@mutualmaterials.com=BRETT YASUTAKE , html=true, subject=Shipment MM.S033070 - MM SHIPMENT - MODIFIED AGENT FAILED [utility - 4]
+2014-06-16 17:45:43.601	58118	Debug	Workflow	Completing workflow Simple Workflow (702729035) [utility - 1]
+2014-06-16 17:45:43.602	58118	Debug	Workflow	Completing workflow Simple Workflow (613084663) [utility - 4]
+2014-06-16 17:45:43.602	58118	Debug	Workflow	Starting workflow Simple Workflow (720016441) in response to MailTopic: from=dispatch@mutualmaterials.com=Mutual Materials Dispatch , to=gdeflorio@mutualmaterials.com=GUY DEFLORIO , html=true, subject=Shipment MM.S033070 - MM SHIPMENT - MODIFIED AGENT FAILED [utility - 2]
+2014-06-16 17:45:43.602	58118	Debug	Workflow	Completing workflow Simple Workflow (720016441) [utility - 2]
+2014-06-16 17:45:43.603	58118	Debug	Agent	Complete action NotifyContact: contact=MM.MMOTMSUPPORT, comMethod=EMAIL, subject=MM SHIPMENT - MODIFIED AGENT FAILED, stylesheet=null (MM SHIPMENT - MODIFIED) (692270005) [utility - 2]
+2014-06-16 17:45:43.605	58118	Debug	Agent	Agent MM.MM SHIPMENT - MODIFIED (692270005) on error completed [utility - 2]
+2014-06-16 17:45:43.605	58118	Debug	Agent	Complete action ORModEditShipment: recalculateServiceTime=false, retenderShipment=false (MM ORDER RELEASE MOD) (540374749) [utility - 2]
+2014-06-16 17:45:43.605	58118	Debug	Agent	Publishing topic If: complexExpression=null, attributerule=null, savedCondition=null, threshold=MM.MM_OR_WEIGHT_CHANGE_2500, expression=null, javaPlugin=null, forceTrue=false (MM ORDER RELEASE MOD) on queue agentUtility, group null [utility - 2]
+2014-06-16 17:45:43.606	58118	Debug	Agent	Performing action If: complexExpression=null, attributerule=null, savedCondition=null, threshold=MM.MM_OR_WEIGHT_CHANGE_2500, expression=null, javaPlugin=null, forceTrue=false (MM ORDER RELEASE MOD) as MM (540374749); was If: complexExpression=null, attributerule=null, savedCondition=null, threshold=MM.MM_OR_WEIGHT_CHANGE_2500, expression=null, javaPlugin=null, forceTrue=false [agentUtility - 4]
+2014-06-16 17:45:43.607	58118	Debug	Agent	Action If returns false [agentUtility - 4]
+2014-06-16 17:45:43.607	58118	Debug	Agent	Complete action If: complexExpression=null, attributerule=null, savedCondition=null, threshold=MM.MM_OR_WEIGHT_CHANGE_2500, expression=null, javaPlugin=null, forceTrue=false (MM ORDER RELEASE MOD) (540374749) [agentUtility - 4]
+2014-06-16 17:45:43.607	58118	Debug	Agent	Publishing topic EndIf (MM ORDER RELEASE MOD) on queue agentUtility, group null [agentUtility - 4]
+2014-06-16 17:45:43.608	58118	Debug	Agent	Performing action EndIf (MM ORDER RELEASE MOD) as MM (540374749); was EndIf [agentUtility - 4]
+2014-06-16 17:45:43.608	58118	Debug	Agent	Complete action EndIf (MM ORDER RELEASE MOD) (540374749) [agentUtility - 4]
+2014-06-16 17:45:43.608	58118	Debug	Agent	Complete action If: complexExpression=null, attributerule=null, savedCondition=OR ON SHIPMENT, threshold=null, expression=null, javaPlugin=null, forceTrue=false (MM ORDER RELEASE MOD) (540374749) [agentUtility - 4]
+2014-06-16 17:45:43.609	58118	Debug	Agent	Completing agent MM.MM ORDER RELEASE MOD (540374749) [agentUtility - 4]
+2014-06-16 17:45:43.61	58118	Debug	Workflow	Publishing topic PostTransmission: user=MM.INTEGRATION, transmissionId=723041 on queue integrationOutbound, group null [agentUtility - 4]
+2014-06-16 17:45:43.611	58118	Debug	Workflow	Starting workflow Simple Workflow (702748820) in response to PostTransmission: user=MM.INTEGRATION, transmissionId=723041 [integrationOutbound - 1]
+2014-06-16 17:45:43.616	58118	Debug	Workflow	Completing workflow Simple Workflow (702748820) [integrationOutbound - 1]

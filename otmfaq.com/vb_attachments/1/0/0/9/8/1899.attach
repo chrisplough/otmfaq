@@ -1,0 +1,62 @@
+--------------------------------------------------
+Start Running the startOHS.py script
+Command executed /U01/OTM/Oracle/Middleware/Oracle_Home/ohs/common/bin/wlst.sh /U01/OTM/OTM64/install/webserver/startOHS.py
+Wed Mar 16 14:57:56 IST 2016
+
+Initializing WebLogic Scripting Tool (WLST) ...
+
+Welcome to WebLogic Server Administration Scripting Shell
+
+Type help() for help on available commands
+
+Connecting to Node Manager ...
+<Mar 16, 2016 2:58:33 PM IST> <Info> <Security> <BEA-090905> <Disabling the CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true.> 
+<Mar 16, 2016 2:58:34 PM IST> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG128 to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true.> 
+<Mar 16, 2016 2:58:34 PM IST> <Info> <Security> <BEA-090909> <Using the configured custom SSL Hostname Verifier implementation: weblogic.security.utils.SSLWLSHostnameVerifier$NullHostnameVerifier.> 
+Successfully Connected to Node Manager.
+Starting server otm641 ...
+Error Starting server otm641: weblogic.nodemanager.NMException: Received error message from Node Manager Server: [Server start command for OHS server 'otm641' failed due to: [Failed to start the server otm641
+Check log file /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/system_components/OHS/ohs_nm.log
+Check log file /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/servers/otm641/logs/otm641.log]. Please check Node Manager log and/or server 'otm641' log for detailed information.]. Please check Node Manager log for details.
+startOHS.py script completed
+--------------------------------------------------
+Start Running the stopOHS.py script
+Command executed /U01/OTM/Oracle/Middleware/Oracle_Home/ohs/common/bin/wlst.sh /U01/OTM/OTM64/install/webserver/stopOHS.py
+Wed Mar 16 14:58:36 IST 2016
+
+Initializing WebLogic Scripting Tool (WLST) ...
+
+Welcome to WebLogic Server Administration Scripting Shell
+
+Type help() for help on available commands
+
+Connecting to Node Manager ...
+<Mar 16, 2016 2:59:05 PM IST> <Info> <Security> <BEA-090905> <Disabling the CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true.> 
+<Mar 16, 2016 2:59:05 PM IST> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG128 to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true.> 
+<Mar 16, 2016 2:59:05 PM IST> <Info> <Security> <BEA-090909> <Using the configured custom SSL Hostname Verifier implementation: weblogic.security.utils.SSLWLSHostnameVerifier$NullHostnameVerifier.> 
+Successfully Connected to Node Manager.
+Killing server otm641 ...
+This Exception occurred at Wed Mar 16 14:59:07 IST 2016.
+weblogic.nodemanager.NMException: Received error message from Node Manager Server: [OHS Server 'otm641' is not currently running]. Please check Node Manager log for details.
+stopOHS.py script completed
+--------------------------------------------------
+Start Running the startOHS.py script
+Command executed /U01/OTM/Oracle/Middleware/Oracle_Home/ohs/common/bin/wlst.sh /U01/OTM/OTM64/install/webserver/startOHS.py
+Wed Mar 16 15:26:02 IST 2016
+
+Initializing WebLogic Scripting Tool (WLST) ...
+
+Welcome to WebLogic Server Administration Scripting Shell
+
+Type help() for help on available commands
+
+Connecting to Node Manager ...
+<Mar 16, 2016 3:26:29 PM IST> <Info> <Security> <BEA-090905> <Disabling the CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true.> 
+<Mar 16, 2016 3:26:29 PM IST> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG128 to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true.> 
+<Mar 16, 2016 3:26:29 PM IST> <Info> <Security> <BEA-090909> <Using the configured custom SSL Hostname Verifier implementation: weblogic.security.utils.SSLWLSHostnameVerifier$NullHostnameVerifier.> 
+Successfully Connected to Node Manager.
+Starting server otm641 ...
+Error Starting server otm641: weblogic.nodemanager.NMException: Received error message from Node Manager Server: [Server start command for OHS server 'otm641' failed due to: [Failed to start the server otm641
+Check log file /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/system_components/OHS/ohs_nm.log
+Check log file /U01/OTM/Oracle/Middleware/Oracle_Home/user_projects/domains/otmweb/servers/otm641/logs/otm641.log]. Please check Node Manager log and/or server 'otm641' log for detailed information.]. Please check Node Manager log for details.
+startOHS.py script completed

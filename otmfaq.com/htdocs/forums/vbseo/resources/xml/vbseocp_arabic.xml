@@ -1,0 +1,2695 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<translations>
+	<message>
+		<name>adm_cp</name>
+		<value>لوحة تحكم المشرف العام</value>
+	</message>
+	<message>
+		<name>cphome</name>
+		<value>رئيسية لوحة تحكم vBSEO</value>
+	</message>
+	<message>
+		<name>back_to</name>
+		<value>الرجوع الى المنتدى</value>
+	</message>
+	<message>
+		<name>logout</name>
+		<value>خروج</value>
+	</message>
+	<message>
+		<name>linkbacks</name>
+		<value>LinkBacks (Ping/Track/Refbacks)</value>
+	</message>
+	<message>
+		<name>in_linkbacks</name>
+		<value>Incoming LinkBacks</value>
+	</message>
+	<message>
+		<name>out_linkbacks</name>
+		<value>Outgoing LinkBacks</value>
+	</message>
+	<message>
+		<name>permalinks</name>
+		<value>روابط ثابتة &quot;Permalinks&quot;</value>
+	</message>
+	<message>
+		<name>patent_pending</name>
+		<value>Patent Pending</value>
+	</message>
+	<message>
+		<name>cookies_cleared</name>
+		<value>تم حذف كل الكوكيز.</value>
+	</message>
+	<message>
+		<name>click_redirect</name>
+		<value>اضغط هنا ان لم يقم المتصفح بنقلك تلقائيا.</value>
+	</message>
+	<message>
+		<name>error</name>
+		<value>خطأ</value>
+	</message>
+	<message>
+		<name>pass_notsame</name>
+		<value>كلمات المرور المدخلة غير متطابقة</value>
+	</message>
+	<message>
+		<name>pass_empty</name>
+		<value>لا يمكن ترك حقل كلمة المرور فارغا</value>
+	</message>
+	<message>
+		<name>pass_defined</name>
+		<value>كلمة المرور تم تحديدها مسبقا</value>
+	</message>
+	<message>
+		<name>config_readonly</name>
+		<value>ملف الـ Config غير قابل للكتابة</value>
+	</message>
+	<message>
+		<name>config_writable</name>
+		<value>ملف config.xml لديك قابل للكتابة , لا تنسى بتغيير التصريح له بعد الانتهاء من عمليه الاعداد لدواعي امنية</value>
+	</message>
+	<message>
+		<name>pass_select</name>
+		<value>من فضلك اختر كلمة مرور</value>
+	</message>
+	<message>
+		<name>password</name>
+		<value>كلمة المرور</value>
+	</message>
+	<message>
+		<name>confirm</name>
+		<value>تأكيد</value>
+	</message>
+	<message>
+		<name>login</name>
+		<value>تسجيل دخول</value>
+	</message>
+	<message>
+		<name>note_config</name>
+		<value>&lt;strong&gt;ملحوظة:&lt;/strong&gt; ملف /includes/config_vbseo.php يجب ان يكون قابل للكتابة, قم باعطائه التصاريح اللازمة.</value>
+	</message>
+	<message>
+		<name>login_failed</name>
+		<value>فشل في تسجيل الدخول</value>
+	</message>
+	<message>
+		<name>area_protected</name>
+		<value>هذه المنطقة محمية بكلمة مرور.</value>
+	</message>
+	<message>
+		<name>warn_readonly</name>
+		<value>تحذير: ملف config_vbseo.php الخاص بك غير قابل للكتابة, لن يتم حفظ الاعدادات.</value>
+	</message>
+	<message>
+		<name>saved_ok</name>
+		<value>تم حفظ الاعدادات بنجاح</value>
+	</message>
+	<message>
+		<name>quick_jump</name>
+		<value>انتقال سريع</value>
+	</message>
+	<message>
+		<name>gen_set</name>
+		<value>اعدادات عامة</value>
+	</message>
+	<message>
+		<name>vbseo_opt</name>
+		<value>خيارات vBSEO</value>
+	</message>
+	<message>
+		<name>log_opt</name>
+		<value>خيارات السجل و التتبع</value>
+	</message>
+	<message>
+		<name>arc_opt</name>
+		<value>خيارات الأرشيف</value>
+	</message>
+	<message>
+		<name>url_opt</name>
+		<value>اعدادات اعادة صياغة الروابط</value>
+	</message>
+	<message>
+		<name>gen_opt</name>
+		<value>خيارات عامة</value>
+	</message>
+	<message>
+		<name>gen_opt_description</name>
+		<value>&lt;b&gt;اختر الشكل العام لروابط المنتدى&lt;/b&gt;&lt;br /&gt;
+اعادة صياغة الروابط ليست فقط تضيف كلمات ذات علاقة في الروابط و لكنها ايضا تدعم جعل الروابط المتعددة (المختلفة) في رابط واحد لكل مصدر فريد من نوعه (سيكون لكل موضوع رابط واحد فقط يشير اليه). هذه الفائدة الثانية تعمل على تحسين نظام الربط الداخلي للمنتدى بعمل شبكة من الروابط الثابتة التى تسمح لمحركات البحث ان تجد و تؤرشف موقعك على انه محتوى فريد من نوعه بشكل صحيح. نظام الروابط الثابتة هو ايضا للتأكد من ان الروابط التي تشير الى موقعك دائما &quot;ذات فائدة&quot; لاشارتها الى المحتوى الاصلي و ابتعادها تماما من الاشاره الى محتوى ثانوي او مكرر, و ذلك لزياده أهمية المحتوى الاصلي مع كل رابط خارجي. 
+&lt;p style=&quot;color:#f00&quot;&gt;&lt;b&gt;هام:&lt;/b&gt;هذه الخيارات هى  &lt;em&gt;قم باعدادها ثم نسيانها!&lt;/em&gt;. بعد اختيارك لشكل الروابط هنا.فينصح بشدة عدم تغيير الاعدادات مرة اخرى. سيكون له تأثير واضح فى خسارة قيمة روابط المنتدى و الروابط الخارجية و مراكز الصفحات فى نتائج محركات البحث.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;b&gt;تعليمات:&lt;/b&gt;&lt;br /&gt;
+قم باختيار اعدادات جاهزة لشكل الروابط من القائمة في الأسفل و اضغط على &quot;Load Preset&quot;. يمكنك ايضا عمل اعداداتك الخاصة بالضغط على &quot;+&quot; و استعراض الاعدادات المتقدمة.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_forum</name>
+		<value>روابط المنتدى</value>
+	</message>
+	<message>
+		<name>urls_ann</name>
+		<value>روابط الاعلانات</value>
+	</message>
+	<message>
+		<name>urls_thread</name>
+		<value>روابط المواضيع</value>
+	</message>
+	<message>
+		<name>urls_prnthread</name>
+		<value>روابط صفحات نسخة الطباعة</value>
+	</message>
+	<message>
+		<name>urls_post</name>
+		<value>روابط الردود</value>
+	</message>
+	<message>
+		<name>urls_polls</name>
+		<value>روابط التصويت</value>
+	</message>
+	<message>
+		<name>urls_member</name>
+		<value>روابط الملف الشخصي للأعضاء</value>
+	</message>
+	<message>
+		<name>urls_mlist</name>
+		<value>روابط قائمة الأعضاء</value>
+	</message>
+	<message>
+		<name>urls_avatar</name>
+		<value>روابط الصور الرمزية الخاصة</value>
+	</message>
+	<message>
+		<name>urls_navbul</name>
+		<value>روابط صور الناف بار (الصور التي على شكل شجرة)</value>
+	</message>
+	<message>
+		<name>urls_attach</name>
+		<value>روابط المرفقات</value>
+	</message>
+	<message>
+		<name>crrs</name>
+		<value>Custom Rewrite Rules</value>
+	</message>
+	<message>
+		<name>seo_func</name>
+		<value>تحسينات للـ SEO</value>
+	</message>
+	<message>
+		<name>dyn_metas</name>
+		<value>META TAGS متغيرة</value>
+	</message>
+	<message>
+		<name>dir_links</name>
+		<value>روابط مباشرة</value>
+	</message>
+	<message>
+		<name>add_ttitle</name>
+		<value>اضافة Titels المواضيع</value>
+	</message>
+	<message>
+		<name>add_extttitle</name>
+		<value>اضافة الـ Titles الى الروابط الخارجية</value>
+	</message>
+	<message>
+		<name>stopwords</name>
+		<value>فلتر ايقاف الكلمات</value>
+	</message>
+	<message>
+		<name>acronym</name>
+		<value>تحويل الاختصارات</value>
+	</message>
+	<message>
+		<name>rel_replacements</name>
+		<value>بدائل ذات علاقة</value>
+	</message>
+	<message>
+		<name>hp_set</name>
+		<value>اعدادات الصفحة الرئيسية</value>
+	</message>
+	<message>
+		<name>int_rel</name>
+		<value>rel=&quot;nofollow للروابط الداخلية</value>
+	</message>
+	<message>
+		<name>ext_rel</name>
+		<value>rel=&quot;nofollow للروابط الخارجية</value>
+	</message>
+	<message>
+		<name>oth_enh</name>
+		<value>تحسينات اخرى</value>
+	</message>
+	<message>
+		<name>cleanup_html</name>
+		<value>تنظيف كود الـ HTML</value>
+	</message>
+	<message>
+		<name>remove_prev</name>
+		<value>حذف نص عرض الموضوع</value>
+	</message>
+	<message>
+		<name>guests_only</name>
+		<value>تحسينات للزوار فقط</value>
+	</message>
+	<message>
+		<name>img_size</name>
+		<value>صفات حجم الصورة</value>
+	</message>
+	<message>
+		<name>dl_backup</name>
+		<value>تنزيل/نسخة احتياطية للاعدادات الحالية الخاصة بك</value>
+	</message>
+	<message>
+		<name>download</name>
+		<value>تنزيل</value>
+	</message>
+	<message>
+		<name>filename</name>
+		<value>اسم الملف</value>
+	</message>
+	<message>
+		<name>description</name>
+		<value>الوصف</value>
+	</message>
+	<message>
+		<name>backup_all</name>
+		<value>&lt;b&gt;نسخة احتياطية لكل اعدادات vBSEO الحالية&lt;/b&gt;&lt;br /&gt;
+           الاحتفاظ بنسخة احتياطية لكل اعدادات vBSEO.</value>
+	</message>
+	<message>
+		<name>save_set_all</name>
+		<value>حفظ كل الاعدادات</value>
+	</message>
+	<message>
+		<name>backup_urls</name>
+		<value>&lt;b&gt;نسخة احتياطية لاعدادات صياغة الروابط فقط&lt;/b&gt;&lt;br /&gt;
+            للمشاركة باعداداتك الخاصة مع المستخدمين الأخرين.</value>
+	</message>
+	<message>
+		<name>upload_set</name>
+		<value>رفع الاعدادات &quot;ملف (.xml)&quot;</value>
+	</message>
+	<message>
+		<name>choose_file</name>
+		<value>من فضلك قم باختيار ملف xml!</value>
+	</message>
+	<message>
+		<name>note_upcrr</name>
+		<value>&lt;b&gt;ملحوظة:&lt;/b&gt; رفع ملف xml &quot;اعدادات صياغة الروابط&quot;(vbseo_urls.xml) لن يستبدل باقي الاعدادات مثل تحسينات للـ SEO.</value>
+	</message>
+	<message>
+		<name>upload</name>
+		<value>رفع</value>
+	</message>
+	<message>
+		<name>import_set</name>
+		<value>استيراد الاعدادات</value>
+	</message>
+	<message>
+		<name>language_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;لغة واجهة لوحة تحكم vBSEO&lt;br&gt;
+                              &lt;/strong&gt;اختر لغة لوحة التحكم لـ vBSEO.ملف اللغة يجب ان يكون موجود مسبقا فى فولدر 'forums/includes/xml/'.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>activate_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تفعيل vBSEO؟&lt;/b&gt;&lt;br /&gt;
+    اختر نعم لتفعيل vBSEO و تحويل الروابط من ديناميكية الى html و باقي مميزات الـ SEO الاخرى.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>yes</name>
+		<value>نعم</value>
+	</message>
+	<message>
+		<name>no</name>
+		<value>لا</value>
+	</message>
+	<message>
+		<name>license_desc</name>
+		<value>&lt;b&gt;رقم ترخيص vBSEO الخاص بك &lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>key_config</name>
+		<value>سيتم تغيير رقم ترخيص vBSEO الخاص بك عند 1) صدور نسخة vBSEO جديدة 2) تغيير فى رابط المنتدى. قم بنسخ رقم النسخة و الذي يظهر باللون الأحمر و ادخله فى الخانة بالاسفل و اضغط Save Key. بعد ادخاله سيتم تحويله الى اللون الأخضر مشيرا الى نسخة مرخصة</value>
+	</message>
+	<message>
+		<name>current_ver</name>
+		<value>النسخة الحالية</value>
+	</message>
+	<message>
+		<name>forums_root</name>
+		<value>رابط المنتدى المرخص</value>
+	</message>
+	<message>
+		<name>current_key</name>
+		<value>رقم النسخة الحالي</value>
+	</message>
+	<message>
+		<name>contact_license</name>
+		<value>قم بمراسلة &lt;a href&quot;mailto:licenses@crawlability.com&quot;&gt;licenses@crawlability.com&lt;/a&gt;</value>
+	</message>
+	<message>
+		<name>cannot_retrieve_license</name>
+		<value>لايمكن التواصل مع سيرفر تراخيص الشركة هذا ربما بسبب احد مشاكل الاتصال لديك بالسيرفر او انك لا تستعمل نسخة مرخصة لدينا حيث vBSEO ليست منتج مجانى ,, من فضلك قم بفتح تذكره دعم فنى عبر هذا الرابط http://www.vbseo.com/support/</value>
+	</message>
+	<message>
+		<name>unauth_upgrade</name>
+		<value>يبدو ان هذا الموقع غير مرخص لـvBSEO فليس له الحق فى تركيب او ترقية vBSEO او اذا كنت مرخص وترخيصك منتهى فلا يحق لك استعمال اخر نسخة متوفره لدينا من فضلك قم بتجديد الترخيص اولاً</value>
+	</message>
+	<message>
+		<name>redir_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تحويل 301 للروابط الأصلية؟&lt;/b&gt;&lt;br /&gt;
+&quot;التحويل 301&quot; هو &quot;التحويل الامن لجوجل&quot; لنقل صفحات المنتدى.قم بتفعيل هذا الخيار لتحويل روابط المنتدى السابقة&quot;الديناميكية&quot; للروابط الجديدة&quot;html&quot;.هذا الخيار يقوم بحفظ البيج رانك المكتسب للروابط القديمة و تحويلها للجديدة.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>domname_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اضافة www الى الروابط دائما؟&lt;/b&gt;&lt;br /&gt;
+محركات البحث تفضل تتبع الروابط التي تحتوي على الرابط تماما (www.yourdomain.com/this_page.html).قم بتفعيل هذا الخيار لكي تحتوي الروابط على دومين موقعك بالكامل (مع www)و ستظهر الروابط دائما على هذا النمط.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>noneng_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;استبدال الحروف الغير انجليزية في الروابط؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لاستبدال الحروف الغير انجليزية بنظيرتها الانجليزية.قم بتفعيل هذا الخيار لاستبدال الحروف العربية بنظيرتها الانجليزية فى روابط المنتدى (مثال: &quot;موضوع&quot; سيتم استبدالها بـ &quot;aaeoaeu&quot; ).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>redirext_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;تحويل &lt;i&gt;كل&lt;/i&gt; الروابط الخارجية الموجودة فى المنتديات الخاصة/المخفية؟&lt;/b&gt;&lt;br /&gt;
+تفعيل هذا الخيار سيقوم بتحويل كل الروابط الخارجية الموجودة فى المنتديات الخاصة &quot;كمنتدى المراقبين&quot; عن طريق سكربت داخلى.بذلك سيتم اخفاء روابط المنتديات الخاصة من الظهور فى ملفات اللوج الخاصة بهذه المواقع الخارجية.و ذلك ليتم الحفاظ على خصوصية هذه الاقسام.&lt;/p&gt;
+&lt;p&gt;ملحوظة: ستكون الروابط على هذا الشكل 'http://www.yourdormain.com/forums/redirect-to/?redirect=http://www.externaldomain.com'
+</value>
+	</message>
+	<message>
+		<name>email_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;اعادة صياغة الروابط في الايميلات؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لاعادة صياغة الروابط المرسلة فى الايميلات. &lt;/p&gt;
+&lt;p&gt;ملحوظة: هذا الخيار يعمل فقط على النسخ vB 3.6.x او أعلى.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>link_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اضافة رابط للوحة تحكم vbseo؟&lt;/b&gt;&lt;br /&gt;
+هذه الميزه ستقوم بوضع رابط مؤقت للوحة تحكم vbseo فى أعلى المنتدى. ستكون رائعة للحفاظ على بعض الوقت اثناء اعدادك لصيغة الروابط.ملحوظة: هذ الرابط سوف يكون ظاهر فقط للمشرف العام&quot;الادمن&quot; &quot;Usergroup 6&quot;.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>fnf_desc</name>
+		<value>&lt;p&gt;
+                                          &lt;b&gt;التحكم فى الصفحات الغير موجودة &quot;File not found؟&lt;/b&gt;&lt;br /&gt;
+      اختر الطريقة التي تريدها ان تظهر عند طلب صفحة غير موجودة:  &lt;br /&gt;
+      - التحويل الى الصفحة الرئيسية  &lt;br /&gt;
+      - ارسال كود 404 و اظهار رسالة الصفحة غير موجودة  &lt;br /&gt;
+      - اظهار صفحة خطأ خاصة. ملحوظة: يجب ان تكتب المسار كامل للصفحة المطلوب اظهارها.
+(مثال: &lt;i&gt;/home/user/public_html/error.php&lt;/i&gt;)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>redire_hp</name>
+		<value>التحويل للصفحة الرئيسية</value>
+	</message>
+	<message>
+		<name>send_404</name>
+		<value>ارسال كود خطأ 404</value>
+	</message>
+	<message>
+		<name>inc_custom</name>
+		<value>اظهار صفحة خطأ خاصة</value>
+	</message>
+	<message>
+		<name>exclpages_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;استثناء صفحات؟&lt;/b&gt;&lt;br /&gt;
+يمكنك من هنا استثناء بعض الاسكربتات او الصفحات من التغيرات التى تحدثها vBSEO. بذلك سيتم منع اعادة صياغة روابطها.&lt;/p&gt;
+&lt;p&gt;أمثلة:(افصل كل منهما بسطر جديد)&lt;br /&gt;
+^index\.php\?do=feature&lt;br /&gt;
+VBGooglemap.php&lt;br /&gt;
+geek-gallery-popup.php&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>botact_desc</name>
+		<value>&lt;b&gt;ظهور تقرير عن نشاط عناكب البحث فى المنتدى؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لظهور تقرير عن نشاط عناكب البحث للمنتدى. هذا الخيار &lt;b&gt;يتطلب تنصيب&lt;/b&gt; &lt;a href=&quot;http://www.vbulletin.org/forum/showthread.php?t=184573&quot; target=&quot;_blank&quot;&gt;vBSEO Google / Yahoo Sitemap Generator&lt;/a&gt; installed.&lt;/p&gt;
+ملحوظة: يتم مشاهده تقرير نشاط عناكب البحث عن طريق التقارير فى واجهة اداة السايت ماب</value>
+	</message>
+	<message>
+		<name>analytics_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;اضافة كود احصائيات جوجل فى صفحات فى صفحات المنتدى؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لاضافة كود احصائيات جوجل فى جميع صفحات المنتدى. &lt;a href=&quot;http://www.google.com/analytics/&quot; target=&quot;_blank&quot;&gt;احصائيات جوجل&lt;/a&gt; هى طريقة سهلة لمتابعة زوار موقعك و تحويلات جوجل سواء المجانية او المدفوعة.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_code_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;ادخل كود احصائيات جوجل الخاص بك&lt;/b&gt;&lt;br /&gt;
+ادخل كود احصائيات جوجل الخاص بك على الشكل التالي: UA-9999-1&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_track_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;اضافة كود احصائيات جوجل &quot;لتتبع ضغطات الروابط الخارجية&quot;؟&lt;/b&gt; &lt;br /&gt;
+اختر &quot;نعم&quot; لاضافة كود جوجل لتتبع الروابط الخارجية الموجودة فى منتداك.
+هذه الميزة تسمح لك &lt;a href=&quot;http://www.google.com/support/analytics/bin/answer.py?hl=en&amp;answer=55594&quot; target=&quot;_blank&quot;&gt;بتتبع الضغطات على الروابط الخارجية الموجوده فى المنتدى&lt;/a&gt; عن طريق حسابك فى احصائيات جوجل.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_anon_desc</name>
+		<value>&lt;p&gt; &lt;b&gt;اضف كود Google Analytics &quot;Anonimize&quot;?&lt;/b&gt; &lt;br /&gt; اختر نعم لاضافة Google Analytics IP Anonimze كود : &lt;a href=&quot;http://code.google.com/apis/analytics/docs/gaJS/gaJSApi_gat.html#_gat._anonymizeIp&quot; target=&quot;_blank&quot;&gt;لمزيد من المعلومات عن analytics anonimze اضغط هنا&lt;/a&gt;.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_format_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;ادخل شكل التتبع للروابط الخارجية فى احصائيات جوجل&lt;/b&gt;&lt;br /&gt;
+ادخل الشكل الخاص بك لتتبع الروابط الخارجية فى احصائيات جوجل.&lt;br /&gt;
+مثال: /outgoing/&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>funnel_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;تفعيل Google Analytics Funnel لتسجيل الاعضاء؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لاضافة كود احصائيات جوجل الى كل الصفحات مع عملية تسجيل الأعضاء.  &lt;/p&gt;
+&lt;p&gt;ملحوظة: يجب ان تقوم بعمل &quot;Goal&quot; جديد فى حساب احصائيات جوجل الخاص بك بموقع المنتدى و تتبع هذه الخطوات(عدد الخطوات يعتمد على تفعيلك لنظام &quot;Use COPPA Registration System&quot; او لا:  &lt;br /&gt;
+/google-funnel/coppaform.html &lt;i&gt;(if applicable)&lt;/i&gt; &lt;br /&gt;
+/google-funnel/enter-birthday.html &lt;i&gt;(if applicable)&lt;/i&gt; &lt;br /&gt;
+/google-funnel/agreement.html &lt;br /&gt;
+/google-funnel/regform-show.html &lt;br /&gt;
+/google-funnel/regform-submit.html &lt;br /&gt;
+/google-funnel/registration-complete.html
+  
+&lt;p&gt;&lt;a href=&quot;https://www.google.com/support/analytics/bin/answer.py?answer=26797&amp;hl=en_US&quot; target=&quot;_blank&quot;&gt;ما هو الـ Funnel؟&lt;/a&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>adsense_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تفعيل قسم الاستهداف لجوجل ادسنس؟  &lt;/b&gt; &lt;span class=beta&gt;BETA&lt;/span&gt;&lt;br&gt;اختر &quot;نعم&quot; لاضافة قسم كلمات جوجل ادسنس باجزاء ذات علاقة بصفحات منتداك من رئيسية المنتدى و الاقسام و المواضيع.  &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>arcopt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&lt;i&gt;خيارات الأرشيف:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;تحويل 301 لصفحات  الارشيف &lt;/b&gt;&lt;br /&gt;
+التحويل 301&quot; هو &quot;التحويل الامن لجوجل&quot; لنقل صفحات المنتدى.قم باختياره للاحتفاظ بالبيج رانك المكتسب للصفحات و لتحويل عناكب البحث و الزوار للصفحات الجديدة.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;اعادة صياغة صفحات مواضيع الارشيف &lt;/b&gt;&lt;br /&gt;
+هذا الخيار يقوم باعادة صياغة روابط الارشيف. و بذلك سيكون هناك روابط للمواضيع الاصلية فى صفحات الارشيف لتحصل على خريطة ممتازة لمنتداك.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;اعاده صياغة + تحويل صفحات مواضيع الارشيف&lt;/b&gt;&lt;br /&gt;
+هذا الخيار هو دمج للخيارين الأول و الثاني في الأعلى. سيتم اعادة صياغة الروابط و من ثم سيحتوي الارشيف على روابط المواضيع الاصلية, بالاضافة الى تحويل 301 لصفحات مواضيع الارشيف. مما يعني 1) سوف تعمل كخريطة موقع 2) للتأكيد على تحويل الروابط الخارجية الموجهه لصفحات الارشيف القديمة الى الصفحات الجديدة.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;الاحتفاظ بالاعدادات الافتراضية للارشيف &lt;/b&gt;&lt;br /&gt;
+الاحتفاظ باعدادات vBulletin الافتراضية لصفحات الارشيف.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>sel_one</name>
+		<value>اختر احد الخيارات</value>
+	</message>
+	<message>
+		<name>arc_redir_301</name>
+		<value>تحويل 301 لصفحات الأرشيف</value>
+	</message>
+	<message>
+		<name>arc_rewr_vbarc</name>
+		<value>اعادة صياغة روابط الأرشيف</value>
+	</message>
+	<message>
+		<name>arc_redir_rewr</name>
+		<value>اعاده صياغة + تحويل صفحات  الارشيف</value>
+	</message>
+	<message>
+		<name>arc_keep</name>
+		<value>الاحتفاظ بالاعدادات الافتراضية للارشيف</value>
+	</message>
+	<message>
+		<name>arcroot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة اسم فولدر الأرشيف:&lt;br /&gt;
+&lt;/b&gt;استعمل هذه الميزه لاستبدال '/archive/index.php/' الافتراضية لفولدر الأرشيف لنسخة محببة أكثر لمحركات البحث.&lt;/p&gt;
+&lt;p&gt;ملحوظة: الرابط القديم لفولدر الارشيف سيتم تحويله بالتحويل 301 الى الرابط الجديد, و كذلك روابط مواضيع الارشيف مما يمكن محركات البحث و الزوار الوصول اليها عن طريق الروابط القديمة.&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+/hello/google/ أو /sitemap/ أو /archive/ etc. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>custom</name>
+		<value>اعداد خاص</value>
+	</message>
+	<message>
+		<name>save_set</name>
+		<value>حفظ الاعدادات</value>
+	</message>
+	<message>
+		<name>reset</name>
+		<value>استرجاع</value>
+	</message>
+	<message>
+		<name>url_set_forum</name>
+		<value>vBSEO 'خيارات اعادة صياغة الروابط' للمنتدى</value>
+	</message>
+	<message>
+		<name>sep_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تحديد الفاصل لاجزاء الروابط&lt;/b&gt;&lt;br /&gt;
+هذا الحرف سيكون الفاصل لكل الكلمات فى الروابط المعاد صياغتها. ينصح باستخدام [ - ]. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>limurl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تحديد طول الرابط&lt;br /&gt;
+&lt;/b&gt;بعض الأعضاء يفضلون تحديد طول الروابط الخاص بهم. هذا الخيار يقوم باختصار اجزاء الرابط. مثال [forum_title] و [thread_title] سيتم تحديدهم بعدد اقصى للحروف.&lt;/p&gt;
+&lt;p&gt;ملحوظة: قم بوضع 0 لعدم تحديد طول الرابط.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pathbits_desc</name>
+		<value>&lt;p&gt;
+&lt;b&gt;تحديد متغير Forum Path&lt;/b&gt;&lt;br /&gt;
+يمكنك من هنا تحديد متغيرات معينة و سيكون اسمها [forum_path] يمكنك استعمال هذا المتغير بشكل مباشر فى باقي الاعدادات بالاسفل.&lt;/p&gt;
+&lt;p&gt;ملحوظة: قم باستعمال [forum_id] او [forum_title] او الخيارين معا, يتوجب عليك اضافة [forum_id] اذا كنت تملك قسمين بنفس الاسم لمنع التداخل بينهما.  &lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+f[forum_id]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_forum_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط المنتدى؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لاعادة صياغة روابط المنتدى.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل رابط اقسام المنتدى&lt;/b&gt;&lt;br /&gt;
+يمكنك عمل مستويات متعددة وهمية لشكل الرابط باستعمال [forum_path], او استعمل فقط اسم القسم او رقمه مستخدما متغيرات [forum_title] او [forum_id]&lt;/p&gt;
+&lt;p&gt;ملحوظة: اذا كنت تملك قسمين بنفس الاسم يجب عليك اضافة متغير [forum_id] لمنع التداخل. &lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+f[forum_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل روابط الصفحات المتعددة لاقسام المنتدى&lt;/b&gt;&lt;br /&gt;
+قم بتحديد كيفية ظهور روابط الصفحات المتعددة لاقسام المنتدى.&lt;/p&gt;
+&lt;p&gt;ملحوظة: اذا كنت تملك قسمين بنفس الاسم يجب عليك اضافة متغير [forum_id] لمنع التداخل.&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+f[forum_id]-[forum_page].html&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_ann_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط الاعلانات؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لاعادة صياغة روابط الاعلانات Announcement.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>ann_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل رابط الصفحة المنفردة للاعلان&lt;/b&gt;&lt;br /&gt;
+اختر الشكل الخاص برابط الاعلان او قم بعمل شكل خاص فى الحقل المزود لذلك.&lt;/p&gt;
+&lt;p&gt;ملحوظة: عند كتابة اعلان عن طريق المشرف العام او المراقبين هناك خطر قليل لتواجد اعلانين بنفس الاسم. لذا ليس من المفضل استخدام [announcement_id] فى هذا الاعداد.&lt;/p&gt;
+&lt;p&gt;ملحوظة: بما ان الاعلانات مرتبطة بالاقسام. &quot;يجب&quot; ان تتضمن تعريف القسم مثل [forum_id] او [forum_title]. يجب عليك ايضا ان تتضمن متغير [announcement_id] او [announcement_title]. &lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+f[forum_id]-announcement[announcement_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>ann_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل الروابط المتعددة للاعلانات&lt;/b&gt;&lt;br /&gt;
+اختر شكل رابط صفحة &quot;عرض كل الاعلانات&quot; او قم بعمل اعدادك الخاصة فى الحقل المزود لذلك.&lt;/p&gt;
+&lt;p&gt;ملحوظة: لان الاعلانات مرتبطة باقسام المنتدى. يجب عليك ان تتضمن تعريف القسم مثل [forum_id] او [forum_title]. لا تقم بتضمين متغيرات [announcement_id] او [announcement_title].&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+f[forum_id]-announcements.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_thread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط المواضيع؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لاعادة صياغة روابط المواضيع.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل روابط المواضيع&lt;/b&gt;&lt;br /&gt;
+اختر شكل رابط الموضوع او قم بعمل اعدادك الخاص فى الحقل المزود لذلك.&lt;/p&gt;
+&lt;p&gt;ملحوظة: يجب عليك دائما ان تتضمن [thread_id] فى رابط المواضيع بسبب احتمال وجود مواضيع بنفس الاسم.  &lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+t[thread_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل الروابط المتعددة للمواضيع&lt;/b&gt;&lt;br /&gt;
+قم بتحديد كيفية ظهور الصفحات المتعددة للمواضيع.&lt;/p&gt;
+&lt;p&gt;ملحوظة: يجب عليك دائما ان تتضمن [thread_id] فى الرابط لاحتمالية وجود مواضيع بنفس الاسم. &lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+t[thread_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل رابط عرض مقالة GARS (garpg)&lt;/b&gt;&lt;br /&gt;
+قم بتحديد كيفية ظهور روابط الصفحات المتعددة لعرض مقالة&lt;a href=&quot;http://www.thevbgeek.com/&quot;&gt;GARS&lt;/a&gt; .&lt;/p&gt;
+&lt;p&gt;ملحوظة: يجب عليك دائما ان تتضمن [thread_id] فى رابط المواضيع بسبب احتمال وجود مواضيع بنفس الاسم. &lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+t[thread_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_lpformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل تحويل رابط &quot;اخر مشاركة&quot;&lt;br /&gt;
+&lt;/b&gt;قم بتحديد كيفية ظهور روابط &quot;اخر المشاركات فى المواضيع&quot;.&lt;/p&gt;
+&lt;p&gt;ملحوظة: وظيفة استخدام التحويل البديل هي لتحويل العضو الى نص المشاركة في الموضوع (مثال thead_title.html#post-xxxx)&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+t[thread_id]-last-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gpformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل تحويل رابط &quot;الذهاب الى مشاركة فى الموضوع&quot;&lt;br /&gt;
+&lt;/b&gt;قم بتحديد كيفية ظهور روابط &quot;الذهاب الى مشاركات فى المواضيع&quot;.&lt;/p&gt;
+&lt;p&gt;ملحوظة: وظيفة استخدام التحويل البديل هو لتحويل العضو الى نص المشاركة في الموضوع (مثالthead_title.html#post-xxxx)&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+t[thread_id]-post[post_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gppformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل تحويل روابط الصفحات المتعددة الى &quot;الذهاب الى مشاركة فى الموضوع&quot;&lt;br /&gt;
+&lt;/b&gt;قم بتحديد كيفية ظهور الروابط للصفحات المتعددة الى &quot;الذهاب الى مشاركات فى المواضيع&quot;.&lt;/p&gt;
+&lt;p&gt;ملحوظة: وظيفة استخدام التحويل البديل هو لتحويل العضو الى نص المشاركة في الموضوع (مثال thead_title.html#post-xxxx)&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+t[thread_id]-post[post_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_ptformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل تحويل رابط &quot;الموضوع السابق&quot;&lt;br /&gt;
+&lt;/b&gt;قم بتحديد كيفية ظهور شكل روابط &quot;الموضوع السابق&quot;. و هى الروابط التى توجد فى اسفل المواضيع.&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+t[thread_id]-prev-thread.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_ntformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل تحويل رابط &quot;الموضوع اللاحق&quot;&lt;br /&gt;
+&lt;/b&gt;قم بتحديد كيفية ظهور شكل روابط &quot;الموضوع اللاحق&quot;. و هى الروابط التى توجد فى اسفل المواضيع.&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+t[thread_id]-next-thread.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_pthread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة صفحات نسخة الطباعة؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لاعادة صياغة روابط صفحات نسخة الطباعة (printthread.php).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_rel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اضافة rel=&quot;nofollow&quot; الى روابط صفحات نسخة الطباعة؟&lt;/b&gt;&lt;br /&gt;
+قم بتفعيل هذا الخيار لمنع محركات البحث من ارشفه صفحات نسخة الطباعة. قد يتم اعتبار صفحات نسخة الطباعة محتوى مكرر لمحركات البحث مما قد يؤدى الى العقاب.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل رابط صفحات نسخة الطباعة&lt;br /&gt;
+&lt;/b&gt;قم بتحديد كيفية ظهور روابط &quot; صفحات نسخة طباعة المواضيع&quot;.&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+t[thread_id]-print.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل الروابط المتعددة لصفحات نسخة الطباعة&lt;/b&gt;&lt;br /&gt;
+قم يتحديد كيفية ظهور الروابط المتعددة لصفحات نسخة الطباعة.&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+t[thread_id]-print-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_post_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط الردود؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; للحصول على صفحات منفردة معاد صياغتها لروابط الردود (showpost.php).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>post_rel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اضافة rel=&quot;nofollow&quot; لروابط الردود؟&lt;/b&gt;&lt;br /&gt;
+قم بتفعيل هذا الخيار لمنع محركات البحث من ارشفة الصفحات المنفردة للردود (showpost.php). قد يتم اعتبار هذه الصفحات محتوى مكرر من قبل محركات البحث.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Smart rel=&quot;nofollow&quot; لروابط الردود؟&lt;/b&gt;&lt;br /&gt;
+هذا الخيار يقوم بمنع محركات البحث من تتبع و ارشفة روابط الردود طبقا لكمية الردود فى الموضوع. اذا كان هناك مشاركة واحدة فى الصفحة سيتم تطبيق rel=&quot;nofollow&quot; للمشاركة ( بسبب ان الموضوع و المشاركة سيكونوا نفس المحتوى). اذا كان هناك مشاركتين او أكثر لن يتم اضافة و تطبيق rel=&quot;nofollow&quot; و سيتم السماح لمحركات البحث بتتبع روابط الردود.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>smart</name>
+		<value>ذكى</value>
+	</message>
+	<message>
+		<name>post_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل روابط الردود &quot;Showpost&quot;&lt;br /&gt;
+&lt;/b&gt;قم بتحديد كيفية ظهور روابط &quot;الصفحات المنفردة للردود&quot;.&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+[post_id]-[post_count]-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_poll</name>
+		<value>روابط التصويت</value>
+	</message>
+	<message>
+		<name>rw_poll_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط التصويت؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لاعادة صياغة روابط التصويت.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>poll_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل رابط التصويت&lt;/b&gt;&lt;br /&gt;
+اختر شكل رابط التصويت او قم بعمل شكل خاص فى الحقل المزود لذلك.&lt;/p&gt;
+&lt;p&gt;ملحوظة: نحن ننصح باستعمال [poll_id] مع الرابط بسبب احتمالية وجود اعضاء سيقوموا بعمل تصويتات بنفس الاسم.&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+p[poll_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_memb_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط الملف الشخصي للأعضاء؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لاعادة صياغة روابط الملفات الشخصية للأعضاء.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل رابط الملف الشخصي للأعضاء&lt;/b&gt;&lt;br /&gt;
+قم باختيار شكل رابط الملف الشخصي للاعضاء او قم بعمل اعداد خاص فى الحقل المزود لذلك.&lt;/p&gt;
+&lt;p&gt;ملحوظة: لان الـ vBulletin لا تسمح بتكرار اسم العضو, فلا يوجد مشكلة في عدم استعمال متغير [user_id].&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_mlist_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط قائمة الأعضاء؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لاعادة صياغة روابط صفحات قائمة الأعضاء.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل رابط قائمة الأعضاء&lt;/b&gt;&lt;br /&gt;
+قم بتحديد الرابط الذي سوف يظهر لرئيسية قائمة الأعضاء.&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+users.html&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل روابط الصفحات المتعددة لقائمة الأعضاء&lt;/b&gt;&lt;br /&gt;
+قم بتحديد الشكل الذي سوف يظهر لروابط الصفحات في قائمة الأعضاء.&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+users-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_lformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل روابط قائمة الأعضاء ( المرتبة على حسب الحروف)&lt;/b&gt;&lt;br /&gt;
+قم بتحديد الشكل الذي سوف يظهر عليه روابط صفحات قائمة الاعضاء على حسب الحروف.&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+users-[letter][page].html&lt;br /&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_avatar_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط الصور الرمزية &quot; Avarar&quot;؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لاعادة صياغة روابط الصور الرمزية.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>avatar_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل روابط الصور الرمزية&lt;/b&gt;&lt;br /&gt;
+قم بتحديد الشكل الذي سوف يظهر عليه روابط الصور الرمزية الخاصة.&lt;/p&gt;
+&lt;p&gt;ملحوظة: 'avatars/' سيتم اضافتها تلقائيا للعنوان لمنع اى تداخل لروابط الصور.&lt;/p&gt;
+&lt;p&gt;ملحوظة: لان الـ vBulletin لا تسمح بتكرار اسم العضو, فلا يوجد مشكلة في عدم استعمال متغير [user_id].&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_navbul_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط صور الناف بار (الصور التي على شكل شجرة)؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لاعادة صياغة روابط صور شجرة الناف بار.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>navbul_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل روابط صور الناف بار في اقسام المنتدى&lt;/b&gt;&lt;br /&gt;
+قم بتحديد شكل ظهور روابط الناف بار التي سوف تظهر فى اقسام المنتدى.&lt;/p&gt;
+&lt;p&gt;ملحوظة: 'images/'سيتم اضافتها تلقائيا للعنوان لمنع اى تداخل لروابط الصور.&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+f[forum_id].gif&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>navbul_tformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل روابط صور الناف بار في المواضيع&lt;/b&gt;&lt;br /&gt;
+قم بتحديد كيفية ظهور روابط صور الناف بار فى المواضيع.&lt;/p&gt;
+&lt;p&gt;ملحوظة: 'images/' سيتم اضافتها تلقائيا للعنوان لمنع اى تداخل لروابط الصور.&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+t[thread_id].gif&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_attach_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط المرفقات؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لاعادة صياغة روابط المرفقات.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attach_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل روابط المرفقات&lt;/b&gt;&lt;br /&gt;
+جوجل و باقي محركات البحث يقوم بأرشفه الصور (.gif, .jpg, .png, الخ.) و انواع الملفات الاخرى مثل الورد Word documents (.doc) و ملفات الـ PDF(.pdf). تم عمل متغير خاص [original_filename] لذلك سيتم الاحتفاظ باسم الملف الأصلي و امتداده فى الرابط.&lt;/p&gt;
+&lt;p&gt;ملحوظة: &lt;b&gt;'attachments/'&lt;/b&gt; سيتم اضافتها تلقائيا للعنوان لمنع اى تداخل لروابط الصور.&lt;/p&gt;
+&lt;p&gt;ملحوظة: نحن ننصح باستعمال [attachment_id] مع الرابط بسبب وجود احتمالية وجود مرفقات تحمل نفس اسم الملف.&lt;/p&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+[attachment_id]-[original_filename]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>crrs_forum</name>
+		<value>vBSEO 'Custom Rewrite Rules' Forums</value>
+	</message>
+	<message>
+		<name>crrs_def</name>
+		<value>&lt;b&gt;Define Custom Rewrite Rules &lt;/b&gt;&lt;span class=&quot;beta&quot;&gt;BETA&lt;/span&gt;&lt;br&gt;يمكنك اعادة صياغة روابط معينة لا يتم تعديلها بالاعدادات الافتراضية, قم بتحديد التعديلات الخاصة بك على نفس الشكل التالي:</value>
+	</message>
+	<message>
+		<name>crrs_desc</name>
+		<value>Both parts (left &amp; right) are regular expressions: the first part is the original &lt;b&gt;URL&lt;/b&gt;, while the second one is the &lt;b&gt;rewritten&lt;/b&gt; URL using the matched pattern of the first part. 
+&lt;p&gt;ملحوظة: فريق vBSEO لن يقم &quot;رسميا&quot; بتقديم الدعم لهذه التعديلات, من فضلك استعملها فقط اذا تعرف ماذا تفعل. للمساعدة من فضلك قم بزيارة منتدى vBSEO  &lt;a href=&quot;http://www.vbseo.com&quot; target=&quot;_blank&quot;&gt;http://www.vbseo.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;NOTE: يمكن عدم تفعيل السطور باضافة 2 سلاش (//)  في بدايتهم. اذا كان هناك خطأ في أى من  rewrite rules التي قمت بعملها سيتم عدم تفعيلها تلقائيا عند الضغط على 'Save Settings'.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;أمثلة:&lt;/b&gt;&lt;br /&gt;
+'article\.php\?id=(\d+)'=&gt;'showarticle-$1.html'&lt;br /&gt;
+'browse\.php\?page=(\d+)'=&gt;'listing-$1.htm' &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metakw_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;استبدال محتوى كلمات البحث 'META KEYWORDS' ؟&lt;/b&gt;&lt;br /&gt;
+استبدال 'META KEYWORDS' بمحتوى ذو علاقة بصفحات المنتدى.هذا الخيار يتم تطبيقه على اقسام المنتدى و المواضيع و المشاركات و الملف الشخصي للأعضاء. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bookmark_threadpost</name>
+		<value>اظهار الايقونات فى المواضيع و الردود</value>
+	</message>
+	<message>
+		<name>bookmark_custom</name>
+		<value>اضافة خاصة</value>
+	</message>
+	<message>
+		<name>bookmark_services_desc</name>
+		<value>&lt;p&gt;ادخل خدمة Bookmarking اضافية فى الاسفل على هذا الشكل:&lt;br /&gt;
+&lt;i&gt;Bookmark URL,Icon URL,&quot;Bookmark Thread&quot; Text,&quot;Bookmark Post&quot; Text&lt;/i&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bookmark_none</name>
+		<value>لا تظهر الايقونات</value>
+	</message>
+	<message>
+		<name>bookmark_thread</name>
+		<value>اظهار الايقونات فى المواضيع فقط</value>
+	</message>
+	<message>
+		<name>metadesc_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;استبدال محتوى 'META DESCRIPTION'؟&lt;/b&gt;&lt;br /&gt;
+يقوم هذا الخيار باستبدال محتوى 'META DESCRIPTION' بالكلمات الاولى من الموضوع.لتحديد طول الحروف استخدم الخيار فى الاسفل.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metadesc_len_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تحديد طول 'META DESCRIPTION'؟&lt;/b&gt;&lt;br /&gt;
+يحتوي الـ meta description عادة ما بين الـ 150 الى الـ 200 حرف.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>nextprev_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;استبدال &quot;الموضوع السابق/اللاحق&quot; بروابط مباشرة؟&lt;/b&gt;&lt;br /&gt;
+قم بتفعيل هذا الخيار لاستبدال &quot;الموضوع السابق و الموضوع اللاحق&quot; بروابط مباشرة, روابط ذات علاقة بالمحتوى. ملحوظة: هذا الخيار يقوم باضافة استعلاميين (2 queries). &lt;/i&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>dir_links_threads_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;روابط مباشرة للمواضيع للزوار فقط؟ &lt;/b&gt;&lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;
+يقوم هذا الخيار باستبدال روابط &quot;أول مشاركة غير مقروءه&quot; بروابط مباشرة للمواضيع. ليظهر روابط مباشرة للزوار و عناكب البحث للمحتوى الاصلي للموضوع.&lt;br /&gt;
+ستقوم بالتأثير ايضا على روابط &quot;New-Post&quot; في RSS feeds, تفعيلها سيكون له نفس التأثير على محركات البحث و الزوار الذين يصلوا الى المنتدى عن طريق RSS and RSS2 feeds.&lt;br /&gt;
+&lt;p&gt;ملحوظة: هذا الخيار قد يكون مزعج لغير الأعضاء, و لكن يتم اعتباره كتضحية مقبولة للـ SEO.&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اظهار ايقونات Social Bookmarking&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;
+الـ Social Bookmarking هي طريقة رائعة لتبادل المعلومات و المواضيع بين الاخرين و التى تؤثر بشكل فعال فى زيادة زوار موقعك. قم باختيار ايقونات الـ Social Bookmarking التي تريدها ان تظهر في صفحات المنتدى.
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;خيارات اظهار ايقونات الـ Social Bookmarking.&lt;/i&gt;&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;اظهار الايقونات في المواضيع و الردود&lt;/b&gt;&lt;br /&gt;
+يقوم هذا الخيار على اظهار الايقونات فى المواضيع و الردود. ملحوظة: ستظهر ايقونات bookmarking للمواضيع في قائمة 'LinkBack', بينما ستظهر للردود على الجانب الايسر من اسفل كل رد.
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;اظهار الايقونات في المواضيع فقط&lt;/b&gt;&lt;br /&gt;
+يقوم هذا الخيار على اظهار ايقونة الـ social bookmark للمواضيع فقط و لن يظهر للردود. ستظهر ايقونة social bookmark فى قائمة 'LinkBack' فقط.
+&lt;/p&gt;
+
+&lt;p&gt;* اضف &amp;lt;!--VBSEO_BOOKMARKS--&amp;gt; فى قالب postbit (او postbit_legacy) اذا كنت تريد وضع الأيقونات فى مكان مختلف. ستظهر تلقائيا في الركن الايسر في أسفل كل مشاركة.
+&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark_thread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اظهار ايقونات Social Bookmarking للمواضيع&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لتفعيل ايقونات Social Bookmarking للمواضيع.
+&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark_post_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اظهار ايقونات Social Bookmarking فى الردود&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لتفعيل ايقونات Social Bookmarking في الردود.
+&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>bookmark</name>
+		<value>مواقع النشر (المفضلة)</value>
+	</message>
+	<message>
+		<name>flinks_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;استبدال &quot;روابط اقسام المنتدى&quot; التى تشير الى روابط خارجية بروابط مباشرة؟&lt;/b&gt;&lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;
+قم بتقعيل هذا الخيار لاستبدال روابط اقسام المنتدى بالروابط الخارجية التى تشير اليها. &lt;/p&gt;
+&lt;p&gt;ملحوظة: روابط هذه الاقسام هى التي يتم تحويلها لروابط اخرى من خلال  Forum Manager فى لوحة تحكم المنتدى.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>addttl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اضافة اسم الموضوع كنص لروابط المواضيع؟&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;
+قم بتفعيل هذا الخيار لتقوية اسماء المواضيع باضافتها كنص لروابطها الموجودة في صفحات مواضيع المنتدى.&lt;/p&gt;
+&lt;p&gt;ملحوظة: هذا الخيار يعمل على النسخة 3.5.x أو أعلى&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;خيارات اضافة اسم الموضوع:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;عدم اضافة اسم الموضوع&lt;/b&gt;&lt;br /&gt;
+الاحتفاظ بالاعدادات الافتراضية. لن يتم التعديل على الروابط الموجودة في المواضيع/الردود.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;اضافة اسم الموضوع كشرح للرابط &lt;/b&gt;&lt;br /&gt;
+هذا الخيار يقوم باضافة اسم الموضوع كشرح للرابط (popup) عند مرور الماوس عليه لكل الروابط التي تشير صفحات المواضيع.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;اضافة اسم الموضوع على شكل &quot;رابط الموضوع - اسم الموضوع&quot;&lt;/b&gt;&lt;br /&gt;
+هذا الخيار هو دمج للخيارين فى الأعلى, سيظهر رابط الموضوع على الايسر و بجانبه اسم الموضوع..&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;استبدال الرابط باسم الموضوع&lt;/b&gt;&lt;br /&gt;
+يعمل هذا الخيار على استبدال روابط المواضيع الموجودة فى صفحات المنتدى باسمائها.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;*&lt;/i&gt;&lt;/b&gt;&lt;i&gt;الروابط الموجودة في الأقسام الخاصة لن يتم استبدالها منعا لامور الخصوصية (مثلا يقوم بعض الاشخاص بتحديد اسم المواضيع المكتوبة فى الاقسام الخاصة بكتابة روابط عشؤائية لها 'showthread.php?t=xxxx' فى المنتدى)&lt;/i&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>addttlext_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اضافة اسماء الصفحات كنص للروابط الخارجية؟&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;قم بتفعيل هذا الخيار لتقوية اسماء الصفحات الخارجية باضافة الـ Title الخاص بها في صفحات المنتدى. vBSEO ستقوم بالاتصال بالمواقع الخارجية و استخراج الـ Titles الخاص بها عند كتابتها في المنتدى.&lt;/p&gt;&lt;p&gt;ملحوظة: هذا الخيار يعمل فقط على النسخة 3.5.x أو أعلى&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attl_1</name>
+		<value>عدم اضافة اسم الموضوع</value>
+	</message>
+	<message>
+		<name>attl_2</name>
+		<value>اضافة اسم الموضوع كشرح للرابط </value>
+	</message>
+	<message>
+		<name>attl_3</name>
+		<value>اضافة اسم الموضوع على شكل &quot;رابط الموضوع - اسم الموضوع&quot;</value>
+	</message>
+	<message>
+		<name>attl_4</name>
+		<value>استبدال الرابط باسم الموضوع</value>
+	</message>
+	<message>
+		<name>addttlp_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اضافة اسم الموضوع كنص لروابط الردود؟&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;نفس استبدالات الروابط في الأعلى و لكن للردود.&lt;/p&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>remstop_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;حذف ايقاف الكلمات من الروابط؟&lt;/b&gt;&lt;br /&gt;
+حذف هذه الكلمات من الروابط سيزيد اهمية الكلمات الاخرى مما يعطى لها اهمية أكبر في محركات البحث, و ذلك لان بعض محركات البحث قد تفلتر الكلمات الشائعة التي يتم استخدامها..&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Smart لحذف الكلمات من الروابط؟&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;
+تفعيل هذا الخيار سيعمل على حذف الكلمات من الروابط  &lt;b&gt;فقط&lt;/b&gt; عندما يكون طول الرابط أكبر من الطول المحدد في خيار '&lt;a href=&quot;#url_general&quot;&gt;تحديد طول الرابط&lt;/a&gt;'.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>stopdef_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تحديد الكلمات المراد حذفها&lt;/b&gt;&lt;br /&gt;
+اذا تم تفعيل الخيار في الأعلى, سيتم حذف هذه الكلمات من الروابط.&lt;/p&gt;
+&lt;p&gt;TIP: يمكنك البحث عن الكلمات الشائعة للغات الأخرى في &lt;a href=&quot;http://www.ranks.nl/resources/stopwords.html&quot; target=&quot;_blank&quot;&gt;http://www.ranks.nl/stopwords/&lt;/a&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acronym_def_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تحديد الاختصارات&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;محدث!&lt;/span&gt; &lt;br /&gt; ادخل الاستبدال المختصر(كل اختصار في سطر). سيتم تطبيق الاختصارات للكلمات التي تم تحديدها في الخيار بالأعلى. &lt;p&gt;أمثلة:&lt;br /&gt; 'seo'=&gt;'Search Engine Optimization'&lt;br /&gt; 'pr'=&gt;'Page Ranking'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acronym_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تحويل الاختصارات&lt;/b&gt;&lt;br /&gt;
+هذه الميزة رائعة لمحركات البحث. ستعمل على استبدال الاختصارات الشائعة بكلماتها الأصلية في صفحات المواضيع و الـ Titles لزيادة اهمية هذه الكلمات. أضف استبدال واحد (1) في كل سطر.&lt;/p&gt;
+&lt;p&gt;أمثلة:&lt;br /&gt;
+'seo'=&gt;'Search Engine Optimization'&lt;br /&gt;
+'pr'=&gt;'Page Ranking'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_opt1</name>
+		<value>عدم اضافة الاختصارات</value>
+	</message>
+	<message>
+		<name>acro_opt2</name>
+		<value>استبدال الاختصارات كنص</value>
+	</message>
+	<message>
+		<name>acro_opt3</name>
+		<value>اضافة 'acronym' html tag الى الاختصارات</value>
+	</message>
+	<message>
+		<name>acro_opt4</name>
+		<value>اضافة 'abbr' html tag الى الاختصارات</value>
+	</message>
+	<message>
+		<name>acro_url_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تفعيل تحويل الاختصارات فى الروابط؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; اذا تريد استبدال الكلمات فى الروابط.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_content_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تطبيق الاختصارات في مناطق المحتوى فقط؟?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; باختيار &quot;نعم&quot; سيتم تطبيق الاختصارات في ردود المواضيع, المدونة و تعليقاتها فقط. غير ذلك, فلن يتم تطبيق الاختصارات في اى مكان اخر: تايتل المواضيع, قوائم المواضيع ,الخ.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_guests_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تفعيل تحويل الاختصارات &quot;للزوار&quot; فقط؟&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر &quot;نعم&quot; لاستبدال الكلمات للزوار الغير مسجلين فقط. غير ذلك فالكلمات سيتم استبدالها لجميع الزوار.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_text_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تفعيل تحويل الاختصارات في الكلمات&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لتحويل الاختصارات للكلمات الموجوده فى المنتدى.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>will_replace</name>
+		<value>سيتم استبدالها بـ</value>
+	</message>
+	<message>
+		<name>forceroot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تحديد فولدر المنتدى كرئيسية المنتدى؟&lt;/b&gt;&lt;br /&gt;
+عند تفعيل هذا الخيار سيتم تحويل كل الروابط التي تشير الى رئيسية المنتدى الى &quot;فولدر المنتدى&quot; 'vbroot/'. اذا لم يتم تفعيله ستظل روابط الرئيسية كما تم تحديدها من اعدادات الـ vBulletin (مثلا forum.php). مما يسمح لاصحاب المنتديات اللذين لهم بيج رانك عالي لصفحة 'index.php' بالاحتفاظ بها.&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>hpalias_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تحديد الصفحات المراد تحويلها لرئيسية المنتدى&lt;/b&gt;&lt;br /&gt;
+      يساعد هذا الخيار بتركيز البيج رانك على رئيسية المنتدى. كثير من المنتديات يكون لها بيج رانك مختلف لصفحات مختلفة كرئيسية للمنتدى (عادة ثلاثة), مثلا:&lt;br /&gt;
+      &lt;br /&gt;
+      www.yoursite.com/forums/ (PR = A)&lt;br /&gt;
+      www.yoursite.com/forums/index.php (PR = B)&lt;br /&gt;
+      www.yoursite.com/forums/index.php? (PR = C)
+                                            &lt;p&gt;تقوم هذه الصفحات &quot;بتشتيت&quot; البيج رانك للرئيسية و التى من الممكن ايضا ان يتم اعتبارها محتوى مكرر من محركات البحث.
+                                            &lt;p&gt;اسماء الصفحات المدخلة سيتم تحويلها &quot;بالتحويل 301&quot; الى رئيسية المنتدى و التي يتم تحديدها من لوحة تحكم المنتدى. ادخل اسم ملف واحد (1) لكل سطر.
+                                            &lt;p&gt;أمثلة:&lt;br /&gt;
+      index.php &lt;br /&gt;
+      index.php?&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>intrel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اضافة rel=&quot;nofollow&quot; الى&lt;i&gt; كل&lt;/i&gt; روابط الترتيب المختلف&lt;/b&gt;&lt;br /&gt;
+تفعيل هذا الخيار سيقوم بمنع محركات البحث من تتبع روابط الترتيب المختلف &quot;الترتيب على حسب الردود, المشاركات&quot; و التي تحتوى على نفس المحتوى و لكن بترتيب مختلف. هذه الصفحات قد يتم اعتبارها محتوى مكرر من محركات البحث لذلك ننصح بتفعيل هذا الخيار.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>reldyn_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اضافة rel=&quot;nofollow&quot; الى &lt;i&gt;كل&lt;/i&gt; الروابط الديناميكية&lt;/b&gt;&lt;br /&gt;
+قم بتفعيل هذا الخيار لمنع محركات البحث من تتبع &quot;كل&quot; الروابط الديناميكية. بعض الأمثلة مثل: روابط &quot;اضف رد&quot; و &quot;اقتباس&quot; و &quot;رد سريع&quot; و روابط &quot;البحث&quot;.هذه الصفحات غير مرتبطة بمحتوى الموقع (او مزعجة) و يجب عدم ارشفتها للحصول على نتائج أفضل. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>relmemb_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اضافة rel=&quot;nofollow&quot; الى الروابط التى تشير &lt;i&gt;الى&lt;/i&gt; الملف الشخصي للأعضاء&lt;i&gt; في&lt;/i&gt; المشاركات&lt;/b&gt;&lt;br /&gt;
+قم بتفعيل هذا الخيار لمنع محركات البحث من اتباع روابط الملفات الشخصية للأعضاء الموجودة فى المشاركات.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>relmemb_home_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اضافة rel=&quot;nofollow&quot; الى الروابط التي تشير&lt;i&gt;الى&lt;/i&gt; الملف الشخصي للأعضاء &lt;i&gt;في&lt;/i&gt; رئيسية المنتدى&lt;/b&gt;&lt;br /&gt;
+قم بتفعيل هذا الخيار لمنع محركات البحث من اتباع روابط الملفات الشخصية للأعضاء الموجودة فى رئيسية المنتدى.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>extrel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اضافة rel=&quot;nofollow&quot; الى &lt;i&gt;كل&lt;/i&gt; الروابط الخارجية&lt;/b&gt;&lt;br /&gt;
+قم بتفعيل هذا الخيار لمنع محركات البحث من اتباع كل الروابط للمواقع الخارجية ( الروابط التى تشير الى نطاقات  اخرى).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>extwhite_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;الروابط الخارجية المسموح بها &quot;Whitelist&quot;&lt;/b&gt;&lt;br /&gt;
+ادخل النطاقات التى تريد استثنائها من الاختيار فى الأعلى. لن يتم اضافة rel=&quot;nofollow&quot; الى النطاقات الموجودة فى هذه القائمة. يمكن استعمال ذلك لافادة مجموعة من الاصدقاء بعدم اضافة rel=&quot;nofollow&quot; فى تواقيعهم.&lt;/p&gt;
+&lt;p&gt;أمثلة:&lt;br /&gt;
+google.com ('http://www' غير مطلوب) &lt;br /&gt;
+groups.google.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>clean_html_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تنظيف كود الـ HTML&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لحذف الأسطر الفارغة و أكواد تعليقات HTML من كود مصدر الصفحة &quot;Source&quot; لصفحات المنتدى. يعمل هذا الأمر على زيادة معدل (المحتوى مقارنة بالكود) و يقوم بتقليل حجم الصفحات مما يؤدي الى سرعة التصفح و يقلل من الباندويث المطلوب.&lt;/p&gt;
+&lt;p&gt;ملحوظة: اذا كانت التعليقات او اكواد الـ HTML في صفحات المنتدى غير مغلقة بشكل صحيح, قد يؤدى هذا الخيار الى عدم ظهور الصفحات بشكل صحيح. تأكد ان التمبلات الخاصة بك تحتوي على error free HTML و الاكواد مغلقة بشكل صحيح.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rem_prev_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;حذف نص عرض الموضوع من الزوار؟&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;اسماء روابط المواضيع الموجودة في &lt;i&gt;أقسام المنتدى&lt;/i&gt; &quot;تساهم&quot; في زيادة تقوية اسم الموضوع. حذف نص عرض الموضوع من الزوار قد يساعد في زيادة معدل الكلمات ذات العلاقة بهذه الصفحات.&lt;/p&gt;
+&lt;p&gt;ملحوظة: نص عرض الموضوع هو الذي يظهر عند مرور الماوس على روابط المواضيع الموجودة في &lt;i&gt;أقسام المنتدى&lt;/i&gt; .&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_size_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تحديد ابعاد الصفات لـ tags الصور؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لتفعيل ميزه حجم صفات الصور.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_def_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تحديد ابعاد الصفات&lt;/b&gt;&lt;br /&gt;
+قوالب vB الافتراضية لا تشمل &quot;العرض&quot; و &quot;الطول&quot; لابعاد الصور. عند اعداد ابعاد لكل صور المنتدى سيعمل ذلك على سرعة التصفح في معظم برامج التصفح. اعداد ابعاد للصور ايضا سيكون أفضل لمحركات البحث لتحديد علاقة بين الصور و النص المحيط بها عند حساب صلة الكلمات في صفحات المنتدى .&lt;/p&gt;
+&lt;p&gt;أمثلة:&lt;br /&gt;
+'thread.gif'=&gt;'20x20'&lt;br /&gt;
+'icon12.gif'=&gt;'16x16'&lt;/p&gt;
+&lt;p&gt;Examples (including folders to distinguish images with the same name):&lt;br /&gt;
+'buttons/quote.gif' =&gt; '70x22'&lt;br /&gt;
+'editor/quote.gif' =&gt; '21x20'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_note</name>
+		<value>ملحوظة: اذا قمت بتغيير حجم الصور الافتراضي للمنتدى, يجب عليك تحديث ابعاد الصور قبل تفعيل هذا الخيار, غير ذلك ستظهر هذه الصور بشكل غير صحيح.</value>
+	</message>
+	<message>
+		<name>max_chars</name>
+		<value>ينصح بتحديد من 150-200 حرف كحد أقصى</value>
+	</message>
+	<message>
+		<name>rights_reserved</name>
+		<value>جميع الحقوق محفوظة</value>
+	</message>
+	<message>
+		<name>rr_forumdisplay</name>
+		<value>فى صفحات أقسام المنتدى (و)</value>
+	</message>
+	<message>
+		<name>rr_showthread</name>
+		<value>فى صفحات المواضيع.</value>
+	</message>
+	<message>
+		<name>rr_cms</name>
+		<value>فى صفحات CMS</value>
+	</message>
+	<message>
+		<name>rr_blog</name>
+		<value>في صفحات المدونة</value>
+	</message>
+	<message>
+		<name>save_key</name>
+		<value>حفظ المفتاح</value>
+	</message>
+	<message>
+		<name>rrs_def</name>
+		<value>&lt;b&gt;تحديد استبدالات ذات علاقة&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;محدث!&lt;/span&gt;&lt;br /&gt;
+قم بعمل متغيرات ديناميكية يتم تغييرها على حسب صفحات المنتدى يتم استبدالها بتعليقات بسيطة (حتى ثلاثة) في قوالب المنتدى templates.</value>
+	</message>
+	<message>
+		<name>rrs_desc</name>
+		<value>لكل اختيار, سيتم اضافة المتغير الأول فقط في صفحات اقسام المنتدى و المتغير الثاني فقط في صفحات المواضيع.
+&lt;p&gt;&lt;strong&gt;يمكنك استعمال اى المتغيرات التالية في بناء جمل خاصة:&lt;/strong&gt;&lt;br&gt;
+&lt;i&gt;[bb_title]&lt;/i&gt; - اسم المنتدى&lt;br&gt;
+&lt;i&gt;[default_keywords]&lt;/i&gt; - الـ  keywords التي تم تحديدها من لوحة تحكم المنتدى&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;[forum_title]&lt;/i&gt; - اسم القسم&lt;br&gt;
+&lt;i&gt;[forum_description]&lt;/i&gt; - description الخاص بالقسم&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;[parent_forum_title]&lt;/i&gt; - The parent forum's title&lt;br&gt;
+&lt;i&gt;[parent_forum_description]&lt;/i&gt; - The parent forum's description&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;[thread_title]&lt;/i&gt; - اسم الموضوع الحالي (يتم استعمالها فقط في صفحات المواضيع)&lt;br&gt;
+&lt;I&gt;[first_post_X_words]&lt;/I&gt; - أول X كلمات موجودة في أول مشاركة (يتم استخدامها فقط في صفحات المواضيع)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[thread_page]&lt;/em&gt; - رقم صفحة الموضوع&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;مثال:&lt;/strong&gt;&lt;br&gt;
+[Forum_title] discussions within the [parent_forum_title] at the [bb_title] (on forumdisplay pages)&lt;br&gt;
+Discuss [thread_title] at the [forum_title] within the [bb_title]; &amp;lt;em&amp;gt;[first_post_15_words]...&amp;lt;/em&amp;gt; (on showthread pages)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>catlinks</name>
+		<value>روابط مباشرة لأقسام المنتدى</value>
+	</message>
+	<message>
+		<name>catlinks_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;روابط مباشرة لأقسام المنتدى؟&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لتفعيل نظام النص لروابط اقسام المنتدى. 
+&lt;br /&gt;&lt;br /&gt;ملحوظة: روابط الأقسام ستكون على هذا الشكل &quot;http://yourforumsroot/#category_title&quot;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rrs_forum</name>
+		<value>vBSEO 'استبدالات ذات علاقة' للمنتدى</value>
+	</message>
+	<message>
+		<name>extblack_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;الروابط الخارجية الغير مسموح بها Blacklist&quot;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;
+النطاقات المدخلة سيتم دائما عمل لها rel='nofollow' بغض النظر عن الخيارات الاخرى.
+&lt;/p&gt;&lt;p&gt;أمثلة:&lt;br /&gt;google.com ('http://www' غير مطلوب)&lt;br /&gt;
+groups.google.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>linkback_black_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;LinkBack  &quot;Blacklist&quot;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;
+سيتم دائما استثناء هذه النطاقات من LinkBacks.
+&lt;/p&gt;&lt;p&gt;أمثلة:&lt;br /&gt;spamsite.com ('http://www' غير مطلوب)&lt;br /&gt;
+subdomain.spamsite.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_npformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل رابط تحويل &quot;اجدد مشاركة فى الموضوع&quot;&lt;br&gt;
+                                            &lt;/b&gt;قم بتحديد كيفية ظهور روابط &quot;اجدد مشاركة فى الموضوع&quot;.&lt;/p&gt;
+                                              &lt;p&gt;ملحوظة: وظيفة استخدام التحويل البديل هو لتحويل العضو الى نص المشاركة في الموضوع (مثال thead_title.html#post-xxxx)&lt;/p&gt;
+                                              &lt;p&gt;مثال لاعداد خاص:&lt;br&gt;
+                                    t[thread_id]-new-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metadesc_members_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Meta Description للملف الشخصي للأعضاء&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;UPDATED!&lt;/span&gt;
+                                            &lt;br&gt;
+قم بتحديد محتوى meta description tag الذي سيظهر لروابط الملفات الشخصية للأعضاء. يمكنك استعمال المتغيرات فى الأسفل لاستبدالات تلقائية:&lt;/p&gt;
+                                          &lt;p&gt;&lt;I&gt;[username]&lt;/I&gt; - اسم العضو  &lt;br&gt;
+                                            &lt;i&gt;[usertitle]&lt;/i&gt; - لقب العضو (&amp;quot;مراقب&amp;quot;, &amp;quot;عضو مسجل&amp;quot;, الخ.)&lt;br&gt;
+                                            &lt;i&gt;[bb_title]&lt;/i&gt; - اسم المنتدى&lt;br&gt;
+                                            &lt;em&gt;[user_field_1], [user_field_2], الخ.&lt;/em&gt; - حقول خاصة يتم تحديدها من لوحة تحكم المنتدى&lt;/p&gt;
+                                          &lt;p&gt;&lt;strong&gt;مثال لـ Meta Description:&lt;/strong&gt;&lt;br&gt;
+                                          [username] is a [usertitle] in the [bb_title]. View [username]'s profile. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>select_preset</name>
+		<value>اختيار الحالي</value>
+	</message>
+	<message>
+		<name>current_preset</name>
+		<value>الاعدادات الحالية</value>
+	</message>
+	<message>
+		<name>preset_set</name>
+		<value>حفظ صيغة الروابط الحالية</value>
+	</message>
+	<message>
+		<name>custom_settings</name>
+		<value>اعدادات خاصة</value>
+	</message>
+	<message>
+		<name>load_preset</name>
+		<value>حفظ الحالي</value>
+	</message>
+	<message>
+		<name>load_preset_warn</name>
+		<value>فيما عدا انك تقوم باعدادات صياغة الروابط لأول مرة, فينصح بشدة عدم تغيير شكل الروابط. اضغط 'OK' للتكملة او 'Cancel' لالغاء الأمر.</value>
+	</message>
+	<message>
+		<name>adv_settings</name>
+		<value>اعدادات متقدمة</value>
+	</message>
+	<message>
+		<name>adv_settings_warn</name>
+		<value>ينصح باستعمال الاعدادات الجاهزة لاعادة صياغة الروابط من القائمة عن اعدادها يدويا. و التي من الممكن ان تقوم بالتضارب مع اعدادات اخرى و يكون لها تأثير سيء مع محركات البحث.</value>
+	</message>
+	<message>
+		<name>note_preset</name>
+		<value>ملحوظة: الاعدادات الجاهزة تشمل &quot;اعدادات صياغة الروابط&quot; فقط و ليس لها تأثير على باقي الخيارات الأخرى.</value>
+	</message>
+	<message>
+		<name>rw_archive_foot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&lt;i&gt;خيارات روابط الأرشيف في الفوتر:&lt;/i&gt;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;/p&gt;
+                                          &lt;p&gt;&lt;b&gt;اضافة روابط الصفحات الرئيسية للأرشيف&lt;/b&gt;&lt;br /&gt;
+                                            يقوم هذا الخيار باضافة روابط لصفحات الأرشيف الرئيسية فى فوتر صفحات المنتدى.&lt;/p&gt;
+                                          &lt;p&gt;&lt;b&gt;اضافة روابط لكل صفحات الارشيف&lt;/b&gt;&lt;br /&gt;
+                                            يقوم هذا الخيار باضافة روابط لكل صفحات الأرشيف (روابط الأرشيف الرئيسية و الروابط المتعددة) فى فوتر صفحات المنتدى.&lt;/p&gt;
+                                          &lt;p&gt;&lt;b&gt;عدم اضافة روابط صفحات الأرشيف&lt;/b&gt;&lt;br /&gt;
+                                            يقوم هذا الخيار بالاحتفاظ بالاعدادات الرئيسية للمنتدى. &lt;/p&gt;
+                                          &lt;p&gt;ملحوظة: قم باضافة &amp;lt;!--VBSEO_ARCHIVE_LINKS--&amp;gt; فى قالب الفوتر لتحديد مكان روابط الأرشيف, غير ذلك سيتم اضافتها فى اسفل الفوتر. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>footer_arc</name>
+		<value>روابط الأرشيف في الفوتر</value>
+	</message>
+	<message>
+		<name>arc_opt1</name>
+		<value>اضافة روابط الصفحات الرئيسية للأرشيف</value>
+	</message>
+	<message>
+		<name>arc_opt2</name>
+		<value>اضافة روابط لكل صفحات الارشيف</value>
+	</message>
+	<message>
+		<name>arc_opt3</name>
+		<value>اضافة روابط الصفحات الرئيسية للأرشيف (للزوار فقط)</value>
+	</message>
+	<message>
+		<name>arc_opt4</name>
+		<value>اضافة روابط لكل صفحات الارشيف (للزوار فقط)</value>
+	</message>
+	<message>
+		<name>arc_opt0</name>
+		<value>عدم اضافة روابط صفحات الأرشيف</value>
+	</message>
+	<message>
+		<name>as_anchors</name>
+		<value>على شكل نصوص</value>
+	</message>
+	<message>
+		<name>avail_pro_only</name>
+		<value>&lt;b&gt;موجودة فى نسخة vBSEO Pro فقط&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>addttl_black_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;قائمة الروابط الخارجية الممنوعة من اضافة الـ Titles لها &quot;Blacklist&quot;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;النطاقات المدخلة لن يتم اضافة Titles لروابطها كنص عند كتابتها فى المنتدى.&lt;/p&gt;&lt;p&gt;أمثلة:&lt;br /&gt;
+example.com&lt;br /&gt;
+site.com&lt;br /&gt;
+abc.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable Outgoing Pingbacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;
+اختر &amp;quot;نعم&amp;quot; لارسال pingbacks للروابط الخارجية عندما يتم كتابتها في المشاركات.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_notify_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Email Notifications on Incoming LinkBacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;
+اختر &amp;quot;نعم&amp;quot; لارسال تنبيه بريدي لصاحب المشاركة بـ incoming LinkBacks (Ping/Track/Refbacks) .&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>trackback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable Outgoing Trackbacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لتفعيل outgoing trackbacks للمواضيع الجديدة.&lt;/p&gt;&lt;p&gt;ملحوظة: سيظهر حقل trackback عند انشاء موضوع او رد جديد.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_trackback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable Incoming Trackbacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لتفعيل مناقشة incoming trackbacks.&lt;/p&gt;&lt;p&gt;ملحوظة: ادارة Incoming trackback لاقسام المنتدى ستكون عن طريق لوحة تحكم المنتدى في: &lt;em&gt;Forums and Moderators &amp;gt; Forum Manager &amp;gt; Edit Forum&lt;/em&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_refback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable Incoming Refbacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لوضع روابط تلقائية للمواقع التي وضعت رابط لموضوع.&lt;/p&gt;&lt;p&gt;ملحوظة: ادارة Refback لاقسام المنتدى ستكون عن طريق لوحة تحكم المنتدى في: &lt;br /&gt;&lt;em&gt;Forums and Moderators &amp;gt; Forum Manager &amp;gt; Edit Forum&lt;/em&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable Incoming Pingbacks&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لتفعيل مناقشة pingbacks.&lt;/p&gt;
+&lt;p&gt;Note: ملحوظة: ادارة Incoming pingback لاقسام المنتدى ستكون عن طريق لوحة تحكم المنتدى في:: &lt;em&gt;Forums and Moderators &amp;gt; Forum Manager &amp;gt; Edit Forum&lt;/em&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>postbit_pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تفعيل مؤشرات الروابط الثابتة &quot;Permalink&quot; في المشاركات&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;
+الروابط الثابتة Permalinks بشكل عام هي الروابط التي تشير الى المشاركة كنص فى المواضيع, و التي تسمح للأعضاء بالرجوع ليها مباشرة كمرجع لمشاركات محددة.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;خيارات الرابط الثابت: &lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;اظهار الرابط الثابت في محتوى المشاركات&lt;/b&gt;
+&lt;br /&gt;
+سيتم اضافة الرابط الثابت &quot;Permalink&quot; فوق محتوى المشاركات مباشرة.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;اظهار الرابط الثابت بجانب رابط الرد&lt;/b&gt;
+&lt;br /&gt;
+سيتم اضافة الروابط الثابتة بجانب روابط الردود .&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;استبدال رقم المشاركة بالرابط الثابت&lt;/b&gt;
+&lt;br /&gt;
+سيتم استبدال روابط الردود المنفردة بالروابط الثابتة. ملحوظة: لن يظهر روابط منفردة للردود..&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;عدم اضافة الرابط الثابت للمشاركات&lt;/b&gt;
+&lt;br /&gt;
+لا ينصح به اذا كان LinkBacks مفعل في المنتدى.
+&lt;/p&gt;
+
+&lt;p&gt;* يمكنك اضافة &amp;lt;!--PERMALINK_INFO--&amp;gt; في تمبلت postbit (او posbit_legacy) لتحديد مكان معين تظهر به الروابط الثابتة.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>vbseo_affid</name>
+		<value>&lt;p&gt;&lt;b&gt;رقم vBSEO Affiliate &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;ساخن!&lt;/span&gt;&lt;br /&gt;
+قم بربح ثمن &quot;vBSEO&quot; و أكثر!, ادخل رقم vBSEO affiliate هنا لجعل رابط الفوتر يشير الى صفحة affiliate الخاصة بك.&lt;/p&gt;&lt;p&gt;معلومات أكثر: &lt;a href=&quot;http://www.vbseo.com/aff/&quot; target=&quot;_blank&quot;&gt;http://www.vbseo.com/aff/&lt;/a&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>custom301</name>
+		<value>تحويلات مخصصة (301)</value>
+	</message>
+	<message>
+		<name>custom301_def</name>
+		<value>&lt;b&gt;تحديد تحويلات 301 خاصة &lt;/b&gt;&lt;span class=&quot;beta&quot;&gt;BETA&lt;/span&gt;&lt;br&gt;
+يمكنك هنا عمل تحويلات 301 خاصة بك. ستكون مفيدة اذا قمت بنقل مستندات معينة على سيرفرك.</value>
+	</message>
+	<message>
+		<name>custom301_desc</name>
+		<value>Both parts (left &amp; right) are regular expressions: the first part is the original &lt;b&gt;URL&lt;/b&gt;, while the second one is the &lt;b&gt;redirected&lt;/b&gt; URL using the matched pattern of the first part. 
+&lt;p&gt;ملحوظة: فريق vBSEO لن يقم &quot;رسميا&quot; بتقديم الدعم لهذه التعديلات, من فضلك استعملها فقط اذا تعرف ماذا تفعل. &lt;/p&gt;&lt;p&gt;يمكن عدم تفعيل السطور باضافة 2 سلاش (//)  في بدايتهم. اذا كان هناك خطأ في أى من  rewrite rules التي قمت بعملها سيتم عدم تفعيلها تلقائيا عند الضغط على 'Save Settings'.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;أمثلة:&lt;/b&gt;&lt;br /&gt;
+'article-(\d+)\.html'=&gt;'articles/entry-$1.html'&lt;br /&gt;
+'forum(\d+)\.html'=&gt;'f$1/'&lt;br /&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_attach_alt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة Alt Tag للمرفقات؟&lt;/b&gt;&lt;br /&gt;
+اختر &quot;نعم&quot; لاعادة صياغة Alt Tag للمرفقات&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attach_alt_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;شكل الـ Alt Tag للمرفقات&lt;/b&gt;&lt;br /&gt;
+&lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;
+[thread_title]-[original_filename]&lt;br /&gt;
+[original_filename]
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>supportsystem</name>
+		<value>نظام تذاكر الدعم الفني</value>
+	</message>
+	<message>
+		<name>affiliates</name>
+		<value>Affiliates</value>
+	</message>
+	<message>
+		<name>contact</name>
+		<value>الاتصال بنا</value>
+	</message>
+	<message>
+		<name>forums</name>
+		<value>المنتدى</value>
+	</message>
+	<message>
+		<name>ping_postbit_1</name>
+		<value>اظهار الرابط الثابت في محتوى المشاركات</value>
+	</message>
+	<message>
+		<name>ping_postbit_3</name>
+		<value>اظهار الرابط الثابت بجانب رابط الرد</value>
+	</message>
+	<message>
+		<name>ping_postbit_2</name>
+		<value>استبدال رقم المشاركة بالرابط الثابت</value>
+	</message>
+	<message>
+		<name>ping_postbit_0</name>
+		<value>عدم اضافة الرابط الثابت للمشاركات</value>
+	</message>
+	<message>
+		<name>pingback_notify_bcc_desc</name>
+		<value>نسخة الايميل لتنبيهات الـ LinkBack:</value>
+	</message>
+	<message>
+		<name>pingback_notify_bcc_desc2</name>
+		<value>افصل الايميلات المختلفة بمسافة</value>
+	</message>
+	<message>
+		<name>pingback_service_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تحديث الخدمات&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt;
+vBSEO يمكنها تنبيه خدمات خارجية عند نشر مواضيع او ردود جديدة في منتداك. هذه الخدمات تعمل كمحركات البحث لمجال المدونات و مجال المنتديات.
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_stopwords_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Incoming LinkBack Keyword Ignore List&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt;
+الـ LinkBacks التي تحتوي على هذه الكلمات سوف يتم تجاهلها (عدم قبولها) لتقليل الـ Spam.&lt;/p&gt;
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_jump_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;حذف قائمة الانتقال السريع من الزوار&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt;
+قائمة الانتقال السريع تقوم بعمل كود HTML اضافي غير مرتبط بمحتوى الموقع خاصة للمنتديات الكبيرة. قم بايقافها للزوار (و عناكب البحث) للحصول على أفضل محتوى يتم ارشفته فى محركات البحث.&lt;/p&gt;
+
+&lt;p&gt;ملحوظة: قائمة الانتقال السريع هى التى تظهر كأزرار فى صفحات المنتدى (مثل &quot;البحث&quot;). يوجد ايضا اختيار لايقافها نهائيا من خلال لوحة تحكم المنتدى.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>htmlcharset</name>
+		<value>UTF-8</value>
+	</message>
+	<message>
+		<name>lang_dir</name>
+		<value>rtl</value>
+	</message>
+	<message>
+		<name>preset_1</name>
+		<value>Hierarchic .html type URLs with content relevant forums and threads (Default Settings)</value>
+	</message>
+	<message>
+		<name>preset_2</name>
+		<value>Hierarchic directory type URLs with content relevant threads (used at www.vBSEO.com)</value>
+	</message>
+	<message>
+		<name>preset_3</name>
+		<value>ierarchic .htm type URLs with content relevant forums (used at www.WebmasterWorld.com)</value>
+	</message>
+	<message>
+		<name>preset_4</name>
+		<value>Non-hierarchic .html type URLs using IDs (used at www.DaniWeb.com)</value>
+	</message>
+	<message>
+		<name>preset_5</name>
+		<value>Non-hierarchic directory type URLs using IDs (used at www.MustangEvolution.com)</value>
+	</message>
+	<message>
+		<name>arcorder_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;عكس طريقة عرض مواضيع الارشيف:&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; بشكل افتراضي, يظهر الارشيف روابط مواضيع المنتدى من الأقدم للأحدث. بتفعيل هذا الخيار سيعمل على عكس ترتيب الروابط (ستظهر من الأحدث للأقدم), لعمل شكل مرتب للروابط للمحتوى الحالي و الذي هو بطبيعة الحال أهم محتوى في منتداك&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_links</name>
+		<value>حذف روابط اخر مشاركة للزوار الغير مسجلين</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_column</name>
+		<value>حذف جدول اخر مشاركة للزوار الغير مسجلين</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_none</name>
+		<value>الاحتفاظ بالاعدادات الافتراضية لاخر مشاركة</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_desc</name>
+		<value>&lt;p&gt;&lt;em&gt;&lt;strong&gt;خيارات حذف روابط أخر مشاركة:&lt;/strong&gt;&lt;/em&gt; &lt;span class=&quot;updated&quot;&gt;محدث!&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;حذف روابط أخر مشاركة للزوار الغير مسجلين&lt;/strong&gt;&lt;br /&gt; يعمل هذا الخيار على حذف روابط اخر مشاركة من &lt;em&gt;صفحة المنتدى الرئيسية&lt;/em&gt; للأعضاء الغير مسجلين. تحتوى هذه الروابط على بعض التحويلات و الذي يفضل البعض الى تقليلها.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;حذف جدول أخر مشاركة للزوار الغير مسجلين&lt;/strong&gt;&lt;br /&gt; يعمل هذا الخيار على حذف جدول اخر مشاركة بشكل كامل في &lt;em&gt;صفحة المنتدى الرئيسية&lt;/em&gt;. بالاضافة الى حذف روابط اخر مشاركة ( الخيار بالأعلى), يعمل هذا الخيار على زيادة المحتوى نسبيا الى الكود مع تقليل الباندويث المستهلك لرئيسية المنتدى. &lt;/p&gt; &lt;p&gt;&lt;strong&gt;الاحتفاظ بالاعدادات الافتراضية لأخر مشاركة&lt;/strong&gt;&lt;br /&gt; يعمل هذا الخيار على الاحتفاظ بالاعدادات الافتراضية لأخر مشاركة.&lt;/p&gt; &lt;p&gt;ملحوظة: هذا الخيار قد يكون مزعج لغير الأعضاء, و لكن يتم اعتباره كتضحية مقبولة للـ SEO.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rem_member_dropdown_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;حذف نافذة DHTML للملفات الشخصية للأعضاء التي تظهر في المشاركات للزوار الغير مسجلين؟&lt;/strong&gt;&lt;br /&gt; يعمل هذا الخيار على حذف نافذة DHTML للملفات الشخصية للأعضاء التي تظهر في المشاركات للأعضاء الغير مسجلين. حيث يعمل على حذف محتوى غير مرتبط بالموضوع للزوار (و عناكب و البحث) , لزيادة نسبة المحتوى الى الكود مع تقليل الباندويث المستهلك في صفحات المواضيع&lt;/p&gt; &lt;p&gt;ملحوظة: هذا الخيار قد يكون مزعج لغير الأعضاء, و لكن يتم اعتباره كتضحية مقبولة للـ SEO.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog</name>
+		<value>روابط المدونة</value>
+	</message>
+	<message>
+		<name>rw_blog_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط المدونة&lt;/b&gt;&lt;br /&gt; ضع &quot;نعم&quot; لهذا الخيار لاعادة صياغة روابط المدونة.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogind_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;مواضيع المدونة&lt;/b&gt;&lt;br /&gt; اختر صيغة روابط مواضيع المدونة او قم بعمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يجب دائما ان تضع  [blog_id]  في صيغة روابط مواضيع المدونة لاحتمالية وجود مواضيع بنفس الاسم. &lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/b[blog_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloguser_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعضاء المدونة&lt;/b&gt;&lt;br /&gt; اختر صيغة روابط الاعضاء في المدونة او  قم باعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: حيث ان المنتدى لا يسمح بوجود اسمين متشابهين, فلا يوجد مشكلة من عدم وجود [user_id] في صيغة الروابط و استخدام [user_name] .&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogcat_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;اقسام المدونة&lt;/strong&gt;&lt;br /&gt; اختر صيغة روابط اقسام المدونة او اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: تكرار اسم القسم لنفس العضو هو أمر غير وارد, لذلك يمكنك عدم استخدام متغير [category_id] لهذا الخيار للحصول على &amp;quot;الأفضل URL&amp;quot;.&lt;/p&gt; &lt;p&gt;ملحوظة: حيث ان الاقسام ترتبط بالعضو, يجب وجود المتغيرات  [user_id] او [user_name]. يجب ايضا وجود المتغير [category_id] او [category_title] في صيغة الروابط. &lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/u[user_id]-c[category_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogglobcat_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;قسم المدونة العام&lt;/strong&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; اختر رابط قسم المدونة العام او قم بعمل اعداد خاص مستخدما الحقل المزود. &lt;br /&gt;&lt;br /&gt; ملاحظة: لن يتواجد اقسام بنفس الاسم حيث انه يتم اعدادها من قبل الادمن, لذلك فيمكنك عدم استخدام المتغير [category_id] لهذا الخيار لرابط &quot;اوضح&quot;. &lt;br /&gt;&lt;br /&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/c[category_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;مواضيع المدونة الحالية&amp;quot; قائمة&lt;/b&gt;&lt;br /&gt;  قم بتحديد كيف ستكون قائمة  &amp;quot;مواضيع المدونة الحالية&amp;quot; في الظهور.&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;  blogs/recent-entries.html&lt;br /&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blognext_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;موضوع المدونة اللاحقة&amp;quot; تحويل&lt;/b&gt;&lt;br /&gt; لتحديد كيفية ظهور روابط مواضيع المدونة &quot;اللاحقة&quot;. هذه هي الروابط التي تظهر في اعلى صفحات موضوع المدونة.&lt;/p&gt; &lt;p&gt;ملحوظة: يجب دائما وجود المتغير [blog_id] في صيغة روابط المواضيع لاحتمالية وجود مواضيع بنفس الاسم. &lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/b[blog_id]-next.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogprev_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;موضوع المدونة السابقة&amp;quot; تحويل&lt;/b&gt;&lt;br /&gt; لتحديد كيفية ظهور روابط مواضيع المدونة &quot;السابقة&quot;. هذه هي الروابط التي تظهر في اعلى صفحات موضوع المدونة.&lt;/p&gt; &lt;p&gt;ملحوظة: يجب دائما وجود المتغير [blog_id] في صيغة روابط المواضيع لاحتمالية وجود مواضيع بنفس الاسم. &lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/b[blog_id]-prev.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogfeed_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;المدونة Feed (عام)&lt;/b&gt;&lt;br /&gt;  اختر صيغة روابط  RSS feed العامة او اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;  blogs/feed.rss&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogfeeduser_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;المدونة Feed (لكل عضو)&lt;/b&gt;&lt;br /&gt;  اختر صيغة روابط RSS Feed لكل عضو او اعداد خاص مستخدما الحقل المزود .&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;  blogs/feed[user_id].rss&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogmonth_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;المدونات لكل شهر&amp;quot; قائمة (عام)&lt;/b&gt;&lt;br /&gt;  اختر كيفية ظهور قائمة  &amp;quot;كل مواضيع المدونة&amp;quot; .&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;  blogs/[year]-[month].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogday_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;المدونات باليوم&amp;quot; قائمة (عام)&lt;/b&gt;&lt;br /&gt; اختر كيفية ظهور قائمة &amp;quot;المدونات باليوم&amp;quot; .&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/[year]-[month]-[day].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogatt_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;مرفقات المدونة&lt;/b&gt;&lt;br /&gt; جوجل و باقي محركات البحث تقوم بارشفة املفات (.gif, .jpg, .png, etc.) و انواع الملفات الأخرى مثل Word documents (.doc) و Adobe PDF documents (.pdf). تم عمل متغير خاص [original_filename] للاحتفاظ باسماء المرفقات الأصلية و وجودها في الرابط.&lt;/p&gt; &lt;p&gt;ملحوظة: نحن ننصح باستخدام [attachment_id] في صيغة روابط المرفقات حيث ان هناك احتمال لمشاركة الأعضاء بمرفقات تحمل نفس الاسم.&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/[attachment_id]-[original_filename]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestentry_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;مرفقات المدونة&lt;/b&gt;&lt;br /&gt; جوجل و باقي محركات البحث تعمل على ارشفة الصور  (.gif, .jpg, .png, etc.) و امتدادات الملفات الاخرى مثل ملفات الورد  (.doc) و مستندات ادوبي PDF  (.pdf). تم انشاء متغير خاص [original_filename]  للاحتفاظ بالاسماء الاصلية للملفات في الروابط.&lt;/p&gt; &lt;p&gt;ملحوظة: ننصح باستخدام [attachment_id] في صيغة الروابط لاحتمالية ارفاق الأعضاء لملفات بنفس الاسم.&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/[attachment_id]-[original_filename]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestblogs_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;أفضل المدونات&amp;quot; قائمة&lt;/b&gt;&lt;br /&gt;  اختر كيفية ظهور قائمة  &amp;quot;أفضل المدونات&amp;quot; .&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;  blogs/best-blogs.html&lt;br /&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>noneng_repl</name>
+		<value>استبدال الحروف الغير انجليزية في الروابط</value>
+	</message>
+	<message>
+		<name>noneng_rem</name>
+		<value>حذف الحروف الغير انجليزية في الروابط</value>
+	</message>
+	<message>
+		<name>noneng_keep</name>
+		<value>الاحتفاظ بالحروف الغير انجليزية في الروابط</value>
+	</message>
+	<message>
+		<name>blogblist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;كل مواضيع المدونة&amp;quot; قائمة&lt;/b&gt;&lt;br /&gt; اختر كيفية ظهور قائمة  &amp;quot;كل مواضيع المدونة&amp;quot; .&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/all.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogblistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;كل مواضيع المدونة&amp;quot; قائمة تقسيم&lt;/b&gt;&lt;br /&gt; اختر كيفية ظهور الصفحات المتعددة لـ &amp;quot;كل مواضيع المدونة&amp;quot; .&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/all.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloguday_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;المدونات باليوم&amp;quot; قائمة (لكل عضو)&lt;/b&gt;&lt;br /&gt;  اختر كيفية ظهور قائمة  &amp;quot;المدونات اليوم&amp;quot; لكل عضو.&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;  blogs/u[user_id]-[year]-[month]-[day].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogumonth_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;المدونات بالشهر&amp;quot; List (لكل عضو)&lt;/b&gt;&lt;br /&gt;  اختر كيفية ظهور قائمة &amp;quot;كل مواضيع المدونة&amp;quot; .&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;  blogs/u[user_id]-[year]-[month].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cache_opt</name>
+		<value>خيارات التخزين المؤقت Cache</value>
+	</message>
+	<message>
+		<name>cdn_opt</name>
+		<value>دمج CDN</value>
+	</message>
+	<message>
+		<name>like_opt</name>
+		<value>نظام اعجبني</value>
+	</message>
+	<message>
+		<name>blogclist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;تعليقات المدونة&amp;quot; List&lt;/b&gt;&lt;br /&gt; اختر كيفية ظهور قائمة &amp;quot;تعليقات المدونة&amp;quot; .&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;  blogs/comments.html&lt;br /&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogclistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;تعليقات المدونة&amp;quot; قائمة تقسيم&lt;/b&gt;&lt;br /&gt; اختر كيفية ظهور قائمة &amp;quot;تعليقات المدونة&amp;quot; للصفحات المتعددة .&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/comments-[page].html&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>bloglistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;مواضيع المدونة الحالية&amp;quot; قائمة تقسيم&lt;/b&gt;&lt;br /&gt;  اختر كيفية ظهور قائمة &amp;quot;مواضيع المدونة الحالية&amp;quot; للصفحات المتعددة.&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/recent-entries-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestentpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;افضل مواضيع المدونة&amp;quot; قائمة تقسيم&lt;/b&gt;&lt;br /&gt;  اختر كيفية ظهور قائمة &amp;quot;افضل مواضيع المدونة&amp;quot; للصفحات المتعددة.&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;  blogs/best-entries-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestblogspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;أفضل المدونات&amp;quot; قائمة تقسيم&lt;/b&gt;&lt;br /&gt;  اختر كيفية ظهور قائمة &amp;quot;افض المدونات&amp;quot; للصفحات المتعددة.&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt;  blogs/best-blogs-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cachetype_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Cache نوع الـ&lt;/b&gt; &lt;span class=beta&gt;تجريبي&lt;/span&gt;&lt;br /&gt; قم باختيار نوع الكاش المستخدم من القائمة بالاسفل. تأكد من ان سيرفرك يدعم النوع المختار.&lt;/p&gt; &lt;p&gt; &lt;em&gt;memcached&lt;/em&gt;&lt;br /&gt; &lt;em&gt;APC Cache&lt;/em&gt;&lt;br /&gt; &lt;em&gt;XCache&lt;/em&gt;&lt;br /&gt; &lt;em&gt;eAccelerator&lt;/em&gt;&lt;br /&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>none</name>
+		<value>لا يوجد</value>
+	</message>
+	<message>
+		<name>supported</name>
+		<value>&lt;b style=&quot;color:green&quot;&gt;مدعم&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>unsupported</name>
+		<value>&lt;b style=&quot;color:red&quot;&gt;غير مدعم&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>memcacheopt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Memcached Connection Parameters&lt;/b&gt; &lt;span class=beta&gt;BETA&lt;/span&gt;&lt;br /&gt; Define memcached parameters:&lt;br /&gt; &lt;ul&gt; &lt;li&gt;Server list in the format 'host:port,weight'&lt;br /&gt; &lt;b&gt;Examples:&lt;/b&gt;&lt;br /&gt; localhost:11211,5&lt;br /&gt; 196.1.12.2:11211,2&lt;br /&gt;&lt;/li&gt; &lt;li&gt;&quot;time to live&quot; for stored data&lt;/li&gt; &lt;li&gt;Persistent Connections&lt;/li&gt; &lt;li&gt;Timeout (in seconds)&lt;/li&gt; &lt;li&gt;Retry Interval (in seconds)&lt;/li&gt; &lt;li&gt;Automatic Compression of Large Objects&lt;/li&gt; &lt;/ul&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mc_ttl</name>
+		<value>&quot;Time to live&quot;</value>
+	</message>
+	<message>
+		<name>mc_retry</name>
+		<value>المده الزمنية لاعاده المحاولة</value>
+	</message>
+	<message>
+		<name>mc_compress</name>
+		<value>الحد الادنى لضغط الحجم</value>
+	</message>
+	<message>
+		<name>mc_hosts</name>
+		<value>قائمة السيرفرات</value>
+	</message>
+	<message>
+		<name>mc_timeout</name>
+		<value>غير قادر على الاتصال</value>
+	</message>
+	<message>
+		<name>mc_pers</name>
+		<value>استخدام الاتصالات الثابتة</value>
+	</message>
+	<message>
+		<name>mc_vbulletin</name>
+		<value>خيارات المنتدى</value>
+	</message>
+	<message>
+		<name>blogdaypage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;المدونات باليوم&amp;quot; قائمة (عام, تقسيم)&lt;/b&gt;&lt;br /&gt; اختر كيفية ظهور قائمة الصفحات المتعددة لـ &amp;quot;المدونات باليوم&amp;quot; .&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/[year]-[month]-[day]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogmonthpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;المدونات بالشهر&amp;quot; List (عام, تقسيم)&lt;/b&gt;&lt;br /&gt; اختر كيفية ظهور قائمة  &amp;quot;المدونات بالشهر&amp;quot; .&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/[year]-[month]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_bookm_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اظهار ايقونات Social Bookmarking لمواضيع المدونة&lt;/b&gt;&lt;br /&gt; نفس ايقونات bookmarking بالأعلى و لكن لـ لمدونات vBulletin. &lt;/p&gt; &lt;p&gt;&lt;b&gt;&lt;i&gt;Blog Social Bookmarking Icons خيارات اظهار:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;اظهار الايقونات بداخل مشاركات مواضيع المدونة&lt;/b&gt; &lt;br /&gt; يعمل هذا الخيار على اظهار ايقونات bookmarking في اعلى يمين مشاركة المدونة. &lt;/p&gt; &lt;p&gt;&lt;b&gt;اظهار الايقونات أسفل مشاركات مواضيع المدونة&lt;/b&gt; &lt;br/&gt; يعمل هذا الخيار على اظهار الايقونات أسفل كل مدونة entry post. &lt;/p&gt; &lt;p&gt;* ادخل &amp;lt;!--VBSEO_BOOKMARKS--&amp;gt; in في تمبلت &quot;blog_show_entry&quot; لتحديد الايقونات في مكان مختلف. بشكل افتراضي, ستظهر الايقونات في اسفل يسار الصفحة لكل مشاركة مدونة. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cms_bookm_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;عرض &lt;span lang=&quot;en-us&quot;&gt;Social Bookmarking &lt;/span&gt;كما بالاعلى ولكن فى صفحات
+&lt;span lang=&quot;en-us&quot;&gt;CMS &lt;/span&gt;&lt;/b&gt;&lt;br /&gt; الخاصية كما بالخواص الاعلي ولكن لصفحات CMS. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogcatpage_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;تقسيم اقسام المدونة&lt;/strong&gt;&lt;br /&gt; اختر صيغة الروابط المتعددة لاقسام المدونة او اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة:  تكرار اسم القسم لنفس العضو هو أمر غير وارد, لذلك يمكنك عدم استخدام المتغير  [category_id] للحصول على  &amp;quot;الافضل URL&amp;quot;.&lt;/p&gt; &lt;p&gt;ملحوظة: حيث ان الاقسام ترتبط بالعضو, يجب وجود المتغير [user_id] او [user_name]. يجب ايضا وجود المتغير [category_id] او [category_title] في صيغة الروابط. &lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/u[user_id]-c[category_id]-p[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogglobcatpage_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;تقسيم اقسام المدونة العامة&lt;/strong&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; اختر تقسيم اقسام المدونة العامة او قم بعمل اعداد خاص مستخدما الحقل المزود. &lt;br /&gt;&lt;br /&gt;ملاحظة:  لن يتواجد اقسام بنفس الاسم حيث انه يتم اعدادها من قبل الادمن, لذلك فيمكنك عدم استخدام المتغير [category_id] لهذا الخيار لرابط &quot;اوضح&quot;. &lt;br /&gt;&lt;br /&gt; مثال لاعداد خاص:&lt;br /&gt; blogs/c[category_id]-page[page].html&lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>blogbmark_topright</name>
+		<value>اظهار الايقونات بداخل مشاركات مواضيع المدونة</value>
+	</message>
+	<message>
+		<name>blogbmark_bottom</name>
+		<value>اظهار الايقونات أسفل مشاركات مواضيع المدونة</value>
+	</message>
+	<message>
+		<name>blogbmark_none</name>
+		<value>عدم اظهار الايقونات</value>
+	</message>
+	<message>
+		<name>blogdom_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تحديد رابط خاص للمدونة؟&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; &lt;/p&gt; &lt;p&gt; قم بترك هذا الخيار فارغا للاحتفاظ بالاعدادات الافتراضية. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogindpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تقسيم موضوع المدونة&lt;/b&gt;&lt;br /&gt; اختر صيغة روابط موضوع المدونة او اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يجب دائما وجود [blog_id] في صيغة روابط مواضيع المدونة لاحتمالية وجود مواضيع بنفس الاسم. &lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/b[blog_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloguserpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تقسيم المدونة&lt;/b&gt;&lt;br /&gt; اختر كيفية ظهور الروابط المتعددة للمدونة او اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: حيث يمنع المنتدى وجود أكثر من عضو بنفس الاسم, فلا يوجد مشكلة من عدم استخدام [user_id] مع متغير [user_name] .&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/u[user_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogindredir_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تحويل تعليق موضوع المدونة&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; اختر كيفية ظهور روابط تحويل التعليقات لمواضيع المدونة.&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs/comment[comment_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_groups</name>
+		<value>روابط Social Group</value>
+	</message>
+	<message>
+		<name>rw_groups_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط الـ Social Group؟&lt;/b&gt; &lt;br /&gt; ضع هذا الخيار على &quot;نعم&quot; لاعادة صياغة روابط Social Group.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ 3.7 او أعلى&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groups_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group&lt;/b&gt; &lt;br /&gt; قم باختيار صيغة رابط Social Group او عمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ 3.7 او أعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; groups/[group_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group تقسيم&lt;/b&gt; &lt;br /&gt; اختر صيغة روابط تقسيم social group او اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; groups/[group_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupmembers_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group أعضاء&lt;/b&gt; &lt;br /&gt; قم باختيار رابط اعضاء Social Group او عمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ 3.7 او أعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; groups/[group_id]-users.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupmemberspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group تقسيم اعضاء&lt;/b&gt; &lt;br /&gt; اختر صيغة روابط تقسيم اعضاء  social group او اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; groups/[group_id]-users-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppic_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group صور&lt;/b&gt; &lt;br /&gt; قم باختيار رابط صور Social Group او عمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ 3.7 او أعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; groups/[group_id]-pics.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppicpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group تقسيم صور&lt;/b&gt; &lt;br /&gt; اختر صيغة روابط تقسيم صور social group او اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; groups/[group_id]-pics-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>url_gen</name>
+		<value>خيارات عامة</value>
+	</message>
+	<message>
+		<name>url_forum</name>
+		<value>روابط المنتدى</value>
+	</message>
+	<message>
+		<name>url_cms</name>
+		<value>روابط الـ CMS</value>
+	</message>
+	<message>
+		<name>url_groups</name>
+		<value>روابط المجموعات الاجتماعية</value>
+	</message>
+	<message>
+		<name>url_member</name>
+		<value>روابط ملفات الشخصية للاعضاء</value>
+	</message>
+	<message>
+		<name>cmsdom_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تحديد دومين خاص لـ CMS ؟&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; &lt;/p&gt; &lt;p&gt; قم بترك هذا الخيار فارغا للابقاء على الوضع الافتراضي. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cms_opt_description</name>
+		<value>&lt;h4&gt;اختر صيغة الروابط العامة لـ CMS &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;/h4&gt; &lt;p&gt;اختر صيغة اعدادات جاهزة من خلال القائمة بالاسفل و من ثم اضغط على زر &quot;Load Preset&quot;.&lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>rw_cms_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط CMS?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; قم بوضع هذا الخيار على &quot;نعم&quot; لاعادة صياغة روابط CMS.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmscat_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS قسم&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر صيفة روابط قسم الـ CMS و قم بعمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملاحظة: يعمل هذا الخيار فقط على النسخ vB 4.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; cmscat-[category_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmscatpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS تقسيم قسم&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جدسد!&lt;/span&gt; &lt;br /&gt;  اختر صيفة روابط تقسيم قسم الـ CMS و قم بعمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملاحظة: يعمل هذا الخيار فقط على النسخ vB 4.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; cmscat-[category_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmssec_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS اجزاء&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر صيفة روابط اجزاء الـ CMS و قم بعمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ vB 4.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; cmssection-[section_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsseclist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;قسم قائمة مواضيع CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر صيغة رابط قسم قائمة مواضيع الـ CMS او قم بعمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;Note: يعمل هذا الخيار فقط على النسخ vB 4.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; cmssection-[section_id]-list.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsseclistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تقسيم قسم قائمة مواضيع CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر صيغة روابط تقسيم قسم قائمة المواضيع او قم بعمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملاحظة: يعمل هذا الخيار فقط على النسخ vB 4.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; cmssection-[section_id]-list[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsauthor_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS كاتب&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر صيغة رابط كاتب CMS او قم بعمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملاحظة: يعمل هذا الخيار فقط على النسخ vB 4.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; cmsauth-[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsauthorpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS تقسيم صفحة كاتب&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر صيغة رابط تقسيم صفحة كاتب CMS او قم بعمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملاحظة: يعمل هذا الخيار فقط على النسخ vB 4.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; cmsauth-[user_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsentry_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS مواضيع&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر صيغة روابط مواضيع CMS او قم بعمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملاحظة: يعمل هذا الخيار فقط على النسخ vB 4.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; cmsentry-[entry_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsentrypage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تقسيم مواضيع CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر صيغة روابط تقسيم مواضيع CMS او قم بعمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملاحظة: يعمل هذا الخيار فقط على النسخ vB 4.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; cmsentry-[entry_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsentrycompage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تقسيم تعليقات مواضيع CMS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر صيغة روابط تقسيم تعليقات مواضيع CMS او قم بعمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملاحظة: يعمل هذا الخيار فقط على النسخ vB 4.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; cmsentry-[entry_id]-comments[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsattach_format_desc</name>
+		<value>p&gt;&lt;b&gt;مرفقات المجلة&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر شكل روابط مرفقات المجلة او قم بعمل جديد فى المربع بالاسفل.&lt;/p&gt; &lt;p&gt;ملحوظة: هذا الخيار يعمل فقط مع نسخ الجيل الرابع للمنتديات فقط vB4.X&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; content/[attachment_id]-[original_filename]&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>cmshome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS رئيسية&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر صيغة رابط رئيسية CMS او قم بعمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملاحظة: يعمل هذا الخيار فقط على النسخ vB 4.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; content.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>url_blog</name>
+		<value>روابط المدونة</value>
+	</message>
+	<message>
+		<name>forum_opt_description</name>
+		<value>&lt;b&gt;اختر صيغة الروابط العامة للمنتدى&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;محدث!&lt;/span&gt;&lt;br /&gt; &lt;p&gt; اختر صيغة الروابط من خلال القائمة المنسدلة بالاسفل ثم اضغط &quot;حفظ الحالي&quot;. يمكنك ايضا اعداد تفضيلاتك الخاصة باستعراض الاعدادات (اضغط على '+'). &lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>path_opt</name>
+		<value>باث المنتدى</value>
+	</message>
+	<message>
+		<name>blog_opt_description</name>
+		<value>&lt;b&gt;اختيار الاعدادات العامة لروابط المدونة&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;محدث!&lt;/span&gt;&lt;br /&gt; &lt;p&gt; قم باختيار صيغة الروابط من القائمة بالاسفل و من ثم اضغط على زر &quot;Load Preset&quot;. يمكنك ايضا عمل اعداداتك الخاصة من الخيارات المتقدمة (اضغط على رابط '+' ). &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groups_opt_description</name>
+		<value>&lt;h4&gt;اختر شكل روابط المجموعات الاجتماعية&lt;/h4&gt; &lt;p&gt;اختر شكل الروابط من القائمة المنسدلة بالاسفل.&lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>member_opt_description</name>
+		<value>&lt;h4&gt;اختر شكل روابط ملفات الاعضاء الشخصية&lt;/h4&gt; &lt;p&gt;اختر شكل روابط ملفات الاعضاء الشخصية من القائمة المنسدلة بالاسفل.&lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>memb_msg_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تقسيم مراسلة الزائر&lt;/b&gt; &lt;br /&gt; اختر صيغة روابط تقسيم مراسلة الزائر او اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط مع vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; u[user_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_friends_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تقسيم قائمة الاصدقاء&lt;/b&gt; &lt;br /&gt; اختر صيغة روابط تقسيم قائمة الاصدقاء او اعداد خاص متسخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; u[user_id]-friends[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_albums_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;قائمة الالبومات&lt;/b&gt; &lt;br /&gt; قم باختيار صيغة قائمة الالبومات او عمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ 3.7 او أعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; u[user_id]-albums.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_albumspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تقسيم قائمة الالبومات&lt;/b&gt; &lt;br /&gt; اختر صيغة رابط قائمة الالبومات او استخدم الحقل المزود لاعداد خاص.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط مع النسخ vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; u[user_id]-albums-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_album_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;الالبومات&lt;/b&gt; &lt;br /&gt; قم باختيار صيغة رابط البومات العضو او عمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ 3.7 او أعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; u[user_id]-albums-[album_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_albumpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تقسيم الالبومات&lt;/b&gt; &lt;br /&gt; اختر صيغة تقسيم رابط اعضاء الالبوم او استخدام الحقل المزود لاعداد خاص.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; u[user_id]-albums-[album_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_pic_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;صفحة الصورة&lt;/b&gt; &lt;br /&gt; قم باختيار صيغة رابط صورة العضو او عمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ 3.7 او أعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; u[user_id]-pic[picture_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_entry</name>
+		<value>روابط مواضيع المدونة</value>
+	</message>
+	<message>
+		<name>rw_blogent_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط مواضيع المدونة؟&lt;/b&gt;&lt;br /&gt; اختر &quot;نعم&quot; لاعادة صياغة روابط مواضيع المدونة.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_cat</name>
+		<value>روابط اقسام المدونة</value>
+	</message>
+	<message>
+		<name>rw_blogcat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط اقسام المدونة؟&lt;/b&gt;&lt;br /&gt; قم باختيار &quot;نعم&quot; لاعادة صياغة روابط اقسام المدونة.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_att</name>
+		<value>روابط مرفقات المدونة</value>
+	</message>
+	<message>
+		<name>rw_blogatt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط اقسام المدونة؟&lt;/b&gt;&lt;br /&gt; قم باختيار &quot;نعم&quot; لاعادة صياغة روابط مرفقات المدونة.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_feed</name>
+		<value>روابط مغذيات المدونة</value>
+	</message>
+	<message>
+		<name>rw_blogfeed_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط مغذيات المدونة؟&lt;/b&gt;&lt;br /&gt; قم باختيار &quot;نعم&quot; لاعادة صياغة روابط مغذيات المدونة.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_list</name>
+		<value>روابط قوائم المدونة</value>
+	</message>
+	<message>
+		<name>rw_bloglist_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط قوائم المنتدى؟&lt;/b&gt;&lt;br /&gt; قم باختيار &quot;نعم&quot; لاعادة صياغة روابط قوائم المنتدى.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_forum</name>
+		<value>Permalinks المنتدى</value>
+	</message>
+	<message>
+		<name>permalink_profile</name>
+		<value>Permalinks الملفات الشخصية للأعضاء</value>
+	</message>
+	<message>
+		<name>permalink_blog</name>
+		<value>Permalinks المدونة</value>
+	</message>
+	<message>
+		<name>permalink_cms</name>
+		<value>الروابط الثابتة Permalinks لـ CMS</value>
+	</message>
+	<message>
+		<name>permalink_profile_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تفعيل &quot;Permalink&quot; لعضوية رسائل الزائر&lt;/b&gt; &lt;br /&gt; Permalinks لعضوية لرسائل الزائر هي الروابط التي تشير الى رسائل العضو كنص في صفحة العضوية, تسمح للأعضاء باضافة تعليقات محددة.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink خيارات:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt; اظهار Permalink بجانب التاريخ/الوقت &lt;/b&gt; &lt;br /&gt; تعمل على اضافة رابط &quot;Permalink&quot; على يمين كل رسالة التاريخ/الوقت. &lt;p&gt;&lt;b&gt; تاريخ رابط الرسالة كـ Permalink&lt;/b&gt; &lt;br /&gt; تعمل على استبدال رسالة التاريخ/الوقت برابط &quot;Permalink&quot;.&lt;/p&gt; &lt;p&gt;&lt;b&gt; عدم اضافة Permalink لرسالة الزائر &lt;/b&gt; &lt;br /&gt; عدم تفعيل روابط &quot;Permalink&quot; لرسائل الزائر. &lt;/p&gt; &lt;p&gt;* يمكنك اضافة &amp;lt;!--PERMALINK_INFO--&amp;gt; الى تمبلت &lt;em&gt;memberinfo_visitormessage&lt;/em&gt; لتحديد مكان رابط &quot;Permalink&quot; في مكان معين. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_blog_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تفعيل &quot;Permalink&quot; لتعليقات المدونة&lt;/b&gt; &lt;br /&gt; Permalinks لتعليقات المدونة هي الروابط التي تشير لتعليقات المدونة كنص, تسمح للأعضاء باضافة تعليقات محددة.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink خيارات:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt; اظهار Permalink (صورة نصية) في اسفل يمين تعليق المدونة &lt;/b&gt; &lt;br /&gt; تعمل على اظهار رابط صورة &quot;Permalink&quot; في اسفل يمين كل تعليق. &lt;p&gt;&lt;b&gt; عدم اظهار Permalink في تعليقات المدونة &lt;/b&gt; &lt;br /&gt; عدم تفعيل روابط &quot;Permalink&quot; في تعليقات المدونة.&lt;/p&gt; &lt;p&gt;* يمكنك اضافة &amp;lt;!--PERMALINK_INFO--&amp;gt; الى تمبلت &lt;em&gt;blog_comment&lt;/em&gt; لتحديد مكان رابط &quot;Permalink&quot; في مكان معين. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_cms_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تفعيل &quot;Permalink&quot; لتعليقات المواضيع&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; Permalinks لتعليقات المواضيع هي روابط تشير للتعليقات على المواضيع بشكل منفرد كانكور, تسمح للزوار بامكانية استخدام رابط للتعليق لاستخدامه في اى مكان اخر.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ vB 4.0.x او اعلى&lt;/p&gt; &lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink خيارات:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt; اظهار Permalink (نص للصورة) في اسفل يمين كل تعليق للمدونة &lt;/b&gt; &lt;br /&gt; يعمل على اضافة صورة للـ &quot;Permalink&quot; باسفل يمين كل تعليق. &lt;p&gt;&lt;b&gt; رابط تاريخ التعليق كرابط ثابت &lt;/b&gt; &lt;br /&gt; يعمل على استبدال تاريخ التعليقات برابط &quot;Permalink&quot;. &lt;p&gt;&lt;b&gt; عدم اظهار Permalink في تعليقات المدونة &lt;/b&gt; &lt;br /&gt; عدم تفعيل الروابط الثابتة &quot;Permalink&quot; لتعليقات المدونة.&lt;/p&gt; &lt;p&gt;* يمكنك اضافة &amp;lt;!--PERMALINK_INFO--&amp;gt; الى تمبلت &lt;em&gt;cms_postbit&lt;/em&gt; لتحديد مكان خاص للرابط الثابت&quot;Permalink&quot; لديك. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pl_blog_1</name>
+		<value>اظهار Permalink (نص للصورة) في اسفل يمين كل تعليق للمدونة</value>
+	</message>
+	<message>
+		<name>pl_blog_2</name>
+		<value>رابط تاريخ التعليق كرابط ثابت</value>
+	</message>
+	<message>
+		<name>pl_blog_0</name>
+		<value>عدم اظهار Permalink في تعليقات المدونة</value>
+	</message>
+	<message>
+		<name>pl_cms_1</name>
+		<value>اظهار الروابط الثابتة (صورة قابلة للضغط) في اسفل يمين كل تعليق </value>
+	</message>
+	<message>
+		<name>pl_cms_2</name>
+		<value>رابط الرد لرابط ثابت Permalink</value>
+	</message>
+	<message>
+		<name>pl_cms_0</name>
+		<value>عدم اضافة الروابط الثابتة في تعليقات المواضيع</value>
+	</message>
+	<message>
+		<name>pl_profile_0</name>
+		<value>عدم اظهار Permalink في رسائل الزائر</value>
+	</message>
+	<message>
+		<name>pl_profile_1</name>
+		<value>اظهار Permalink بجانب رسالة التاريخ/الوقت</value>
+	</message>
+	<message>
+		<name>pl_profile_2</name>
+		<value>اظهار رابط تاريخ الرسالة كـ Permalink</value>
+	</message>
+	<message>
+		<name>permalink_groups_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تفعيل &quot;Permalink&quot; لرسائل Social Group &lt;/b&gt; &lt;br /&gt; Permalinks لرسائل Social Group هي الروابط التي تشير الى رسائل العضو كنص في صفحة  Social Group , تسمح للزوار باضافة تعليقات محددة.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink خيارات:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;اظهار Permalink بجانب رسالة التاريخ/الوقت&lt;/b&gt; &lt;br /&gt; تعمل على اضافة رابط &quot;Permalink&quot; على يمين كل رسالة التاريخ/الوقت. &lt;p&gt;&lt;b&gt;رابط الرسالة كـ Permalink&lt;/b&gt; &lt;br /&gt;&quot;Permalink&quot; تعمل على استبدال رابط رسالة العضو كـ . &lt;p&gt;&lt;b&gt;عدم اضافة Permalink في رسائل الزائر&lt;/b&gt; &lt;br /&gt; عدم تفعيل روابط &quot;Permalink&quot; لرسائل الزائر. &lt;/p&gt; &lt;p&gt;* يمكنك اضافة &amp;lt;!--PERMALINK_INFO--&amp;gt; الى تمبلت &lt;em&gt;socialgroups_message&lt;/em&gt; لتحديد مكان رابط &quot;Permalink&quot; في مكان معين. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_groupspic_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تفعيل &quot;Permalink&quot;  الى صور تعليقات Social Group &lt;/b&gt; &lt;br /&gt; Permalink  الى صور تعليقات Social Group هي روابط تشير الى صور التعليقات منفردة كأنكور لكل صورة, تسمح للزوار بالرجوع الى صور التعلقات في مكان أخر. &lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;&lt;em&gt;&lt;b&gt;خيارات الروابط الثابتة:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;اظهار Permalink بجانب رسالة التاريخ/الوقت&lt;/b&gt; &lt;br /&gt; تعمل على اضافة رابط &quot;Permalink&quot; على يميل كل رسالة التاريخ/الوقت. &lt;p&gt;&lt;b&gt;رابط تاريخ الرسالة كـ Permalink&lt;/b&gt; &lt;br /&gt; تعمل على استبدال رسالة التاريخ المنفردة برابط ثابت. &lt;p&gt;&lt;b&gt;عدم اظهار Permalink في رسائل الزائر&lt;/b&gt; &lt;br /&gt; عدم تفعيل الروابط الثابتى لصور تعليقات الـ social group . &lt;/p&gt; &lt;p&gt;* يمكنك اضافة &amp;lt;!--PERMALINK_INFO--&amp;gt; الى تمبلت &lt;em&gt;picturecomment_message&lt;/em&gt; لديك لتحديد مكان معين للروابط الثابتة. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_groups</name>
+		<value>روابط ثابتة للمجموعات الاجتماعية</value>
+	</message>
+	<message>
+		<name>permalink_groupspic</name>
+		<value>الروابط الثابتة لصور تعليقات Social Group</value>
+	</message>
+	<message>
+		<name>pl_groups_1</name>
+		<value>اظهار Permalink بجانب رسالة التاريخ/الوقت</value>
+	</message>
+	<message>
+		<name>pl_groups_2</name>
+		<value>رابط تاريخ الرسالة كـ Permalink</value>
+	</message>
+	<message>
+		<name>pl_groups_0</name>
+		<value>عدم اظهار Permalink في رسائل الزائر</value>
+	</message>
+	<message>
+		<name>memb_picimg_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;ملف الصورة&lt;/b&gt; &lt;br /&gt; اختر صيغة روابط ملف الصور او اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; u[user_id]-pic[picture_id].[original_ext]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_picpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تقسيم صفحة الصور&lt;/b&gt; &lt;br /&gt; اختر صيغة روابط تقسيم صور الاعضاء او اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; u[user_id]-pic[picture_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_pic_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تفعيل &quot;Permalink&quot; لالبومات العضو&lt;/b&gt; &lt;br /&gt; Permalinks لالبومات العضو هي الروابط التي تشير الى صورة التعليقات كنص في صفحة الالبوم, تسمح للأعضاء باضافة تعليقات محددة.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا فقط على النسخ vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink خيارات:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;اظهار Permalink بجانب التاريخ/الوقت&lt;/b&gt; &lt;br /&gt; تعمل على اضافة رابط &quot;Permalink&quot; على يمين كل رسالة التاريخ/الوقت. &lt;p&gt;&lt;b&gt;رابط رسالة التاريخ كـ Permalink&lt;/b&gt; &lt;br /&gt; &quot;Permalink&quot; تعمل على استبدال رابط رسالة التاريخ كـ. &lt;p&gt;&lt;b&gt;عدم اضافة Permalink لرسائل الزائر&lt;/b&gt; &lt;br /&gt; عدم تفعيل روابط &quot;Permalink&quot; لرسائل الزائر. &lt;/p&gt; &lt;p&gt;* يمكنك اضافة &amp;lt;!--PERMALINK_INFO--&amp;gt; الى تمبلت &lt;em&gt;picturecomment_message&lt;/em&gt; لتحديد مكان رابط &quot;Permalink&quot; في مكان معين. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_album</name>
+		<value>Permalinks البوم العضو</value>
+	</message>
+	<message>
+		<name>memb_convpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تقسيم صفحة محادثة الزائر&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; اختر صيغة روابط تقسيم صفحة محادثة الزائر او اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; conv-[user_id]-[visitor_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_conv_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;محادثة الزائر&lt;/b&gt; &lt;br /&gt; قم باختيار صيغة رابط محادثة الزائر او اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ 3.7 او أعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; conv-[user_id]-[visitor_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>ignore_linkback_dupe_desc</name>
+		<value>&lt;p&gt; &lt;b&gt;تجاهل Linkbacks من الروابط المكررة؟&lt;/b&gt; &lt;br /&gt; قم باختيار &quot;نعم&quot; لتجاهل vBSEO للـ LinkBack للروابط المكررة.&lt;/p&gt; &lt;p&gt;باستخدام لوغارتمية خاصة, سيحاول vBSEO بتحديد ان كان الرابط مكرر بشكل سابق, و لكنه يأتي من رابط مختلف. مصدر هذه LinkBack المكررة يأتي عادة من المنتديات التي تكرر المحتوى و يظهر نفس المحتوى في روابط متعددة مختلفة.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>preset_6</name>
+		<value>Hierarchic .html type URLs with content relevant threads (used at www.vBulletinSetup.com)</value>
+	</message>
+	<message>
+		<name>grouppicture_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;صفحة صورة المجموعات&lt;/b&gt; &lt;br /&gt; قم باختيار رابط صفحة صور المجموعات او اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ 3.7 او أعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; groups-[group_name]-pic[picture_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppicturepage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تقسيم صفحات صور المجموعات&lt;/b&gt; &lt;br /&gt; اختر صيغة روابط تقسيم صفحات صور المجموعات او اعداد خاص من خلال الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; groups-[group_name]-pic[picture_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppictureimg_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;ملف صور المجموعات&lt;/b&gt; &lt;br /&gt; قم باختيار رابط ملفات الصور او اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ 3.7 او أعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; groups-[group_name]-pic[picture_id].[original_ext]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupshome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Groups رئيسية&lt;/b&gt; &lt;br /&gt; قم باختيار صيغة روابط Social Group او اعدد خاص من خلال الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ 3.7 او أعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; groups.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupsallpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&quot;كل Social Groups&quot; قائمة تقسيم&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;محدث!&lt;/span&gt; &lt;br /&gt; اختر صيغة رابط قائمة كل المجموعات او اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; groups-all-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupsall_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&quot;كل Social Groups&quot; قائمة&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;محدث!&lt;/span&gt; &lt;br /&gt; اختر صيغة رابط قائمة كل المجموعات او اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; groups-all.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloghome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;رئيسية المدونات&lt;/b&gt; &lt;br /&gt; قم باختيار رابط رئيسية المنتدى او اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ 3.7 او أعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; blogs.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>tagshome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;رئيسية الـ Tags&lt;/b&gt; &lt;br /&gt; اختر صيغة رابط الصفحة الرئيسية للـ Tags او قم باعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط في نسخ المنتدى 3.7.x او أعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; tags.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>tags_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Tags&lt;/b&gt; &lt;br /&gt; اختر صيغة روابط الـ tags او قم باعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط في نسخ المنتدى 3.7.x او أعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; tags-[tag].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>tagspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Tags تقسيم الـ&lt;/b&gt; &lt;br /&gt; اختر رابط تقسيم صفحات الكلمات الدليلة او استخدام الحقل المزود لاعداد خاص.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط مع النسخ vB 3.7.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; tags-[tag]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_tags</name>
+		<value>روابط الـ Tags</value>
+	</message>
+	<message>
+		<name>rw_tags_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط الـ Tags?&lt;/b&gt;&lt;br /&gt; ضع هذا الخيار على &quot;نعم&quot; لاعادة صياغة روابط الـ tags&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_hits_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اظهار الضغطات من Linkbacks?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; اظهار عدد زوار كل لنك باك (سيظهر عمود اضافي في جدول اللينك باك). ادخل واحد او أكثر من ارقام المجوعات IDs لمن سيظهر لهم البيانات. &lt;br /&gt;&lt;br /&gt; تلميح: ارقام المجموعات الافتراضية الى الغير مسجلين, الأعضاء, المشرفين العاميين و المراقبين هي 1, 2, 6 و 7 بالترتيب. &lt;br /&gt;&lt;br /&gt; مثال:&lt;br /&gt; 1 2 6 7 &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_hits_top</name>
+		<value>اظهار عدد الضغطات لكل باك لنك</value>
+	</message>
+	<message>
+		<name>pingback_hits_right</name>
+		<value>(افصل مجموعات الاعضاء المختلفة بمسافة)</value>
+	</message>
+	<message>
+		<name>urls_blog_tag_search</name>
+		<value>بحث التاج للمدونة</value>
+	</message>
+	<message>
+		<name>rw_blog_tag_search_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة رابط بحث التاج للمدونة؟&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; اختر &quot;نعم&quot; لاعادة صياغة رابط بحث التاج للمدونة في المنتدى.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اختر صيغة رابط بحث التاج للمدونة &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر صيغة رابط روابط بحث التاج للمدونة.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_home_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;الصفحة الرئيسية لـ Tags المدونة&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; اختر صيغة رابط رئيسية Tag المدونات او قم بعمل اعداد خاص مستخدما الحقل المزود.&lt;br /&gt;&lt;br /&gt;Note: يعمل هذا الخيار فقط مع vBulletin Blog 2.0.x او اعلى&lt;br /&gt;&lt;br /&gt; مثال لاعداد خاص:&lt;br /&gt; blogs/tags.html &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_cst_page</name>
+		<value>صفحات المدونة الخاصة</value>
+	</message>
+	<message>
+		<name>rw_blog_cst_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة المدونة الخاصةRL &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt;اختر &quot;نعم&quot; لاعادة صياغة روابط المدونة الخاصة.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_cst_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اختر صيغة رابط  &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر صيغة رابط صفحة المدونة الخاصة.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_tags</name>
+		<value>تاجس المدونة</value>
+	</message>
+	<message>
+		<name>rw_blog_tags_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة رابط تاج المدونة&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر &quot;نعم&quot; لاعادة صياغة روابط بلوج المدونة.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_desc_page</name>
+		<value>&lt;p&gt;&lt;b&gt;اختر صيغة رابط تقسيم الكلمات الدليلية للمدونة &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر صيغة روابط تقسيم الصفحات المختلفة للكلمات الدليلية للمدونة.&lt;br /&gt; مطلوب للنسخة vBulletin Blog 2.0.x &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglatestentries_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt; صيغة روابط اخر مواضيع المدونة خلال 24 ساعة&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر صيغة روابط اخر مواضيع المدونة خلال 24 ساعة.&lt;br /&gt; مطلوب للنسخة vBulletin Blog 2.0.x &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglatestentriespage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;صيغة روابط تقسيم اخر مواضيع المدونة خلال 24 ساعة &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر صيغة روابط تقسيم الصفحات المتعددة لروابط اخر مواضيع المدونة خلال 24 ساعة.&lt;br /&gt; مطلوب للنسخة vBulletin Blog 2.0.x &lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>blog_tags_search_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;صيغة رابط بحث الكلمات الدليلية للمدونة &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; اختر صيغة رابط بحث الكلمات الدليلية للمدونة.&lt;br /&gt; مطلوب للنسخة vBulletin Blog 2.0.x &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_user_tags_serch_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;صيغة رابط بحث الكلمات الدليلية للعضو للمدونة &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; اختر صيغة رابط بحث الكلمات الدليلية للعضو للمدونة.&lt;br /&gt; مطلوب للنسخة vBulletin Blog 2.0.x &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>virt_html</name>
+		<value>اظهار HTML افتراضي</value>
+	</message>
+	<message>
+		<name>virt_html_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تطبيق Virtual HTML Display الى تعليقات المنتدى&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt;
+
+ قم بتحسين علاقة بداية النصوص بكل صفحة, زيادة نسبةC2C (المحتوى الى الكود),  و ازالة العناصر الغير مرتبطة من نصوص و روابط vBSEO لاعادة تقديم تعليقات المنتدى (في بداية الصفحات) مستخدما Javascript.&lt;br /&gt;&lt;br /&gt;
+
+يعمل هذا الأمر على ازالة تعليقات المنتدى من سورس الصفحة HTML, و زيادة ارتباط الباقي بمحتوى الصفحة, بينما يبقى الصفحة بشكل غير متغير للزوار و الأعضاء.&lt;br /&gt;&lt;br /&gt;
+
+بالاضافة الى, ان اى كود يتم اضافته بين الكودين بالاسفل سيتم تقديمه الى  Javascript و حذفه, للسماح بمرونه استبدال اى جزء من الصفحة  (الجودة الاقل من النصوص و الروابط) بنسخة JS version لتقليل اثرها للـ SEO .&lt;br /&gt;&lt;br /&gt;
+&amp;lt;!--VBSEO_VIRTUAL_HTML--&amp;gt;&lt;br /&gt;
+الكود هنا&lt;br /&gt;
+&amp;lt;!--/VBSEO_VIRTUAL_HTML--&amp;gt;
+&lt;br /&gt;
+&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>canonical_link</name>
+		<value>تنقية الروابط</value>
+	</message>
+	<message>
+		<name>canonical_link_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تفعيل تنقية الروابط&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt;تنقية الرابط هو الرابط &quot;المفضل&quot; لاي صفحة. بعض الصفحات لديها روابط مختلفة للدخول اليها, تؤدي الى مشكلة المحتوى المكرر. جوجل و محركات البحث الان تنظر الى بارامتر META rel=&quot;canonical&quot;, و تستعمله كتلميح لتحديد اى الروابط الاصح لاضهاره بالارشفة, على سبيل المثال النسخة المفضلة.&lt;br /&gt;&lt;br /&gt;
+
+vBSEO تعمل على تنقية الروابط للتأكد من ان كل الصفحات في المنتدى منتقاة للبداية بها, للسماح برابط واحد فقط للمحتوى. vBSEO لتنقية الروابط يعمل على التزويد بالمميزات مشتملة على تأثير رائع على الارشفة, تحسين الروابط الخارجة, اقصى قيمة ممكنة للرابط. ذلك ليس من خلال بارامتر rel=&quot;canonical&quot; فقط. توافق تطبيق مستوى vBSEO للرابط مطلوب لهذه المميزات.&lt;br /&gt;&lt;br /&gt;
+
+على كل, التلميحات المنتقاة لجوجل تساعد على عمل نسخة احتياطية من الروابط مثل صفحات custom sorted. هذا المستوى من التقليص يعمل على التأكد من ان محركات البحث سوف تكتشف الصفحات المفرزة , سوف يتم تقديمها من خلال رابط الصفحة الصحيح للتوافق مع أول مرة لارشفة الصفحة. امثلة تشمل نسخ custom sorted من الاقسام, social group نقاشات, قوائم المدونات و الأعضاء, الخ.&lt;br /&gt;
+&lt;/p&gt;
+        </value>
+	</message>
+	<message>
+		<name>group_search_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;صيغة رابط بحث مجموعات الـ Social Group &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; اختر صيغة رابط بحث مجموعات الـ Social Group.&lt;br /&gt; يتطلب النسخة vBulletin 3.8.x &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>group_subscrb_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;صيغة رابط اشتراك الـ Social Group &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; اختر صيغة رابط الاشتراك بـ Social Group.&lt;br /&gt; يتطلب vBulletin 3.8.x &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_group_category_header</name>
+		<value>اعادة صياغة اقسام Social Group</value>
+	</message>
+	<message>
+		<name>rw_group_category_urls</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Social Group Category Urls?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt; &lt;br /&gt; Set this option to &quot;Yes&quot; to have Social Group Category Urls rewritten.&lt;br /&gt; Note: This option works ONLY with vB 3.8.x or higher&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>group_category_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة روابط اقسام Social Group ؟&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر &quot;نعم&quot; لاعادة صياغة روابط اقسام  Social Group.&lt;br /&gt; يتطلب vBulletin 3.8.x &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>group_category_list_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;صيغة رابط قائمة اقسام Social Group &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; اختر صيغة رابط قائمة اقسام Social Group.&lt;br /&gt; يتطلب vBulletin 3.8.x &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>group_category_list_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;صيغة رابط تقسيم قائمة اقسام Social Group &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;NEW!&lt;/span&gt;&lt;br /&gt; اختر صيغة رابط تقسيم قائمة اقسام Social Group.&lt;br /&gt; يتطلب vBulletin 3.8.x &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_group_discussion_header</name>
+		<value>اعادة صياغة مناقشة الـ Social Group</value>
+	</message>
+	<message>
+		<name>group_discussion_desc</name>
+		<value>&lt;p&gt;&lt;b&gt; Social Group صيغة رابط مناقشة &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; اختر صيغة رابط مناقشة الـ Social Group&lt;br /&gt; يتطلب vBulletin 3.8.x .&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>group_discussion_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;صيغة رابط تقسيم مناقشة الـ Social Group &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; اختر صيغة رابط تقسيم مناقشة الـ Social Group.&lt;br /&gt; يتطلب vBulletin 3.8.x &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>group_discussion_message_desc</name>
+		<value>&lt;p&gt;&lt;b&gt; صيغة رابط صفحة الرسالة المنفردة لمناقشة الـ Social Group &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; اختر صيغة رابط صفحة الرسالة المنفردة لمناقشة الـ Social Group.&lt;br /&gt; يتطلب vBulletin 3.8.x &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_albums_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة الصفحة الرئيسية للالبوم؟&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر &quot;نعم&quot; لاعادة صياغة رابط الصفحة الرئيسية للالبوم.&lt;br /&gt; يتطلب vBulletin 3.8.x &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>url_albums</name>
+		<value>روابط الألبوم</value>
+	</message>
+	<message>
+		<name>memb_albums_home_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;صيغة رابط الصفحة الرئيسية للالبوم &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; اختر صيغة رابط الصفحة الرئيسية للالبوم.&lt;br /&gt; يتطلب vBulletin 3.8.x &lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>memb_albums_home_page_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تقسيم الصفحة الرئيسية للالبومات&lt;/b&gt; &lt;br /&gt; قم باختيار صيغة رابط تقسيم الصفحة الرئيسية للالبومات.&lt;br /&gt;&lt;br /&gt; ملحوظة: يعمل هذا الخيار فقط مع النسخ 3.8.x او اعلى&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>group_category_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group تقسيم اقسام &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; اختر صيغة رابط القسم للـ Social Group .&lt;br /&gt;&lt;br /&gt; يتطلب vBulletin 3.8.x &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>group_discussion_last_post_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Social Group اخر مشاركة مناقشة &lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt;&lt;br /&gt; Select Social اختر صيغة رابط اخر مشاركة مناقشة.&lt;br /&gt;&lt;br /&gt; يتطلب vBulletin 3.8.x &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pl_groupspic_1</name>
+		<value>اظهار الروابط الثابتة بجانب رسالة التاريخ/الوقت</value>
+	</message>
+	<message>
+		<name>pl_groupspic_2</name>
+		<value>رابط تاربخ المشاركة كرابط ثابت</value>
+	</message>
+	<message>
+		<name>pl_groupspic_0</name>
+		<value>عدم اضافة الروابط الثابتة في تعليقات صور الـ Social Group</value>
+	</message>
+	<message>
+		<name>segmentation_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تعقب جوجل المحسن المجزء  (لكل مجموعة)&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt;تتكامل هذه الميزة مع احصائيات جوجل, و التي تعمل على اعطاء الادمن القابلية لفصل احصائيات الزوار لكل مجموعة.&lt;br /&gt;&lt;br /&gt;
+
+مستخدما خيار &quot;الاساسية&quot;,  الزوار لموقعك سيتم تعقبهم و تجزئتهم الى مجموعتين&quot;الزوار&quot; و &quot;الأعضاء&quot;. و الذي يسمح لك بمقارنة الفرق بين كل مجموعة.&lt;br /&gt;&lt;br /&gt;
+
+مستخدما خيار متقدم أكثر &quot;المحسن&quot; , يمكنك تعقب و تجزئة الترافيك لكل مجموعة متوفرة بالمنتدى. رؤية الاحصائيات بشكل خاص للزوار, الأعضاء, المراقبين, العملاء, و اى مجموعة رئيسية اخرى.
+&lt;/p&gt;
+        </value>
+	</message>
+	<message>
+		<name>segmentation_1</name>
+		<value>النسخة الاساسية</value>
+	</message>
+	<message>
+		<name>segmentation_2</name>
+		<value>النسخة المتقدمة</value>
+	</message>
+	<message>
+		<name>segmentation_0</name>
+		<value> لا يوجد</value>
+	</message>
+	<message>
+		<name>vhtml_opt0</name>
+		<value>تعطيل Virtual HTML Display</value>
+	</message>
+	<message>
+		<name>vhtml_opt1</name>
+		<value>تفعيل Virtual HTML Display</value>
+	</message>
+	<message>
+		<name>vhtml_opt2</name>
+		<value>تفعيل Virtual HTML Display (للاعضاء فقط)</value>
+	</message>
+	<message>
+		<name>twitter_user</name>
+		<value>اسم مستخدم Twitter الخاص بك</value>
+	</message>
+	<message>
+		<name>tb_opt</name>
+		<value>خيارات Tweetboard</value>
+	</message>
+	<message>
+		<name>vbseo_tweetboard</name>
+		<value>&lt;p&gt;&lt;b&gt;Tweetboard دمج&lt;/b&gt; &lt;br /&gt; Tweetboard يعمل على اظهار منتدى مصغر بموقعك معتمدا على Twitter.&lt;br /&gt; &lt;/p&gt; &lt;p&gt;فهي طريقة رائعة للتواصل مع القراء و تشجيعهم على المشاركة في حين انها تعمل على ارجاعهم الى الموقع مجددا.&lt;br /&gt; &lt;/p&gt; &lt;p&gt;تفعيل Tweetboard من خلال vBSEO هو سهل و سلس للغاية. فقط ادخل اسم المستخدم لحساب Twitter هنا, و vBSEO سيعمل على الاهتمام بالباقي.&lt;br /&gt; &lt;/p&gt; &lt;p&gt;اذا لم يكن لديك حساب Twitter بعد, فيمكنك انشاء حساب من خلال &lt;a href=&quot;http://twitter.com&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;br /&gt; &lt;/p&gt; &lt;p&gt; مزيد من المعلومات: &lt;a href=&quot;http://tweetboard.com&quot; target=&quot;_blank&quot;&gt;http://tweetboard.com&lt;/a&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_feeds_url</name>
+		<value>روابط Feed المنتدى</value>
+	</message>
+	<message>
+		<name>rw_forum_feeds_url_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;اعادة صياغة رابط Feed المنتدى?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر &quot;نعم&quot; لاعادة صياغة روابط Feed المنتدى.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_feeds_url_general</name>
+		<value>&lt;p&gt;&lt;b&gt;روابط الـ Feed العامة للمنتدى&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر الرابط العام للـ Feed بالمنتدى او قم بعمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملاحظة: يعمل هذا الخيار فقط على النسخ vB 4.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; rss.xml&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_feeds_url_forum</name>
+		<value>&lt;p&gt;&lt;b&gt;صيغة رابط Feed المنتدى&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر صيغة رابط Feed المنتدى او قم بعمل اعداد خاص مستخدما الحقل المزود.&lt;/p&gt; &lt;p&gt;ملحوظة: يعمل هذا الخيار فقط على النسخ vB 4.x او اعلى&lt;/p&gt; &lt;p&gt;مثال لاعداد خاص:&lt;br /&gt; rss-{forum_title].xml&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cp_dashboard</name>
+		<value>اللوحة العامة</value>
+	</message>
+	<message>
+		<name>cp_dashboard_desc</name>
+		<value>تفعيل vBSEO لأداء الموقع و خيارات التحكم الرئيسية</value>
+	</message>
+	<message>
+		<name>cp_licinfo</name>
+		<value>معلومات الترخيص</value>
+	</message>
+	<message>
+		<name>cp_backup_restore</name>
+		<value>النسخة الاحتياطية &amp; استعادتها</value>
+	</message>
+	<message>
+		<name>cp_dashboard_header</name>
+		<value>رقم الترخيص &amp; النسخة الاحتياطية</value>
+	</message>
+	<message>
+		<name>cp_validkey</name>
+		<value>رقم صحيح</value>
+	</message>
+	<message>
+		<name>cp_mustmatch</name>
+		<value>هذا الرقم يجب ان يطابق الرقم الصحيح بالأعلى</value>
+	</message>
+	<message>
+		<name>cp_invalidkey</name>
+		<value>رقم غير صحيح</value>
+	</message>
+	<message>
+		<name>cp_copy</name>
+		<value>نسخ</value>
+	</message>
+	<message>
+		<name>cp_save</name>
+		<value>حفظ</value>
+	</message>
+	<message>
+		<name>cp_gen_vbseo</name>
+		<value>اعدادات عامة</value>
+	</message>
+	<message>
+		<name>cp_gen_vbseo_desc</name>
+		<value>اعدادات خاصة لخيارات الهاك العامة</value>
+	</message>
+	<message>
+		<name>view_site</name>
+		<value>استعراض الموقع</value>
+	</message>
+	<message>
+		<name>dashboard</name>
+		<value>اللوحة العامة</value>
+	</message>
+	<message>
+		<name>cp_login</name>
+		<value>دخول</value>
+	</message>
+	<message>
+		<name>cp_setpass</name>
+		<value>قم بتحديد كلمة سر</value>
+	</message>
+	<message>
+		<name>url_opt_desc</name>
+		<value>قم بتحديد صيغة اعدادات الروابط لموقعك</value>
+	</message>
+	<message>
+		<name>basic_settings</name>
+		<value>الاعدادات الرئيسية</value>
+	</message>
+	<message>
+		<name>thecrrs</name>
+		<value>صيغة اعدادات خاصة</value>
+	</message>
+	<message>
+		<name>thec301</name>
+		<value>تحويلات خاصة</value>
+	</message>
+	<message>
+		<name>existing_files</name>
+		<value>الملفات التالية لم يعد هناك حاجة اليها و يجب حذفها:</value>
+	</message>
+	<message>
+		<name>empty_formats</name>
+		<value>اعدادات صياغة الروابط التالية فارغة حاليا و يجب تصحيحها:</value>
+	</message>
+	<message>
+		<name>char_opt</name>
+		<value>استبدال الحروف</value>
+	</message>
+	<message>
+		<name>utf8_desc</name>
+		<value>&lt;p&gt; &lt;b&gt;تفعيل دعم UTF-8 ؟&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر 'نعم' لاستخدام حروف UTF-8 لوظائف vBSEO.&lt;br /&gt;&lt;br /&gt;لا تقم بتفعيل هذا الخيار ان لم تكن تستخدم منتدى بانكودنج UTF-8  &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>morechars_desc</name>
+		<value>&lt;p&gt; &lt;b&gt;تفعيل حروف خاصة لروابط الملفات الشخصية للاعضاء ?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر 'نعم' لاضافة الحروف غير الانجليزية لروابط الملفات الشخصية للأعضاء.&lt;br /&gt;&lt;br /&gt;يعمل هذا الخيار على التأثير ايضا لروابط الالبوم. لا تقم بتفعيل هذا الخيار من غير ان يتم طلب ذلك منك من خلال أحد اعضاء فريق الدعم الفني للهاك. &lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>cp_charset</name>
+		<value>&lt;p&gt; &lt;b&gt;استخدام حرف خاص للوحة تحكم الهاك؟&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; استخدم اسم خاص لهذه الخيارات مستبدلا الوضع الافتراضي. &lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>settings_saved</name>
+		<value>تم حفظ الاعدادات</value>
+	</message>
+	<message>
+		<name>settings_saved_warning</name>
+		<value>اذهب للاعلى لمعرفة الخطأ</value>
+	</message>
+	<message>
+		<name>tagfilter_desc</name>
+		<value>&lt;p&gt; &lt;b&gt;تفعيل فلترة روابط الـ Tags؟&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر 'نعم' لحذف الحروف الخاصة من روابط الـ Tags. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>nourlenc_desc</name>
+		<value>&lt;p&gt; &lt;b&gt;عدم تفعيل&quot;urlencoding&quot; للروابط؟&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر 'نعم' لاغلاق urlencoding (%XX) للحروف الخاصة للروابط الخاصة بك.&lt;br /&gt;&lt;br /&gt;لا تقم بتفعيل هذا الخيار بدون ان يتم طلب ذلك منك من خلال احد اعضاء فريق الدعم الفني للهاك. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>utf8convert_desc</name>
+		<value>&lt;p&gt; &lt;b&gt;تحويل الروابط الى UTF-8 ?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; اختر نعم لتحويل الروابط الى الترميز UTF-8 لا ينصح بأستخدامها الا تحت اشراف عضو فريق الشركة. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>char_repl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;تحديد استبدلات خاصة للحروف&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; ادخل استبدال للحروف (1 بكل سطر). تحتاج الى استخدام Ascii Html value للحروف &lt;/p&gt; &lt;p&gt;أمثلة:&lt;br /&gt; '&amp;# 268;'=&gt;'c'&lt;br /&gt; '&amp;# 351;'=&gt;'s'&lt;br /&gt;&lt;br /&gt; الحروف التي قيمتها اقل من 256 يجب ان يتم استخدام هذه الصيغة لها ( الحرف الحقيقي ) &lt;br /&gt; �=&gt;'u'&lt;br /&gt; �=&gt;'o'&lt;br /&gt;&lt;br /&gt; ملحوظة: حروف Ascii تحتوي على مسافة بين # و القيمة. لا يجب عليك استخدام هذه المسافة. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>vbseo_cache_var_defin</name>
+		<value>&lt;p&gt; &lt;b&gt;تحديد الـ Cache Prefix&lt;/b&gt; &lt;br /&gt; اذا تستعمل عدة نسخ للهاك على سيرفرك, فتحتاج الى تحديد cache prefix منفصل لكل منهم.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>copyright_position_desc</name>
+		<value>&lt;p&gt; &lt;b&gt;اختر حقوق vBSEO&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; من فضلك قم باختيار صيغة حقوق الهاك التي تريد اظهارها.&lt;br /&gt;&lt;br /&gt; لحذف حقوق الهاك تحتاج الى شراء خيار حذف الهاك حيث يمكنك الاطلاع على الرابط: https://www.vbseo.com/branding-removal-option.html لمزيد من المعلومات. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>copyright_sel_0</name>
+		<value>اختيار تلقائي لحقوق الهاك لديك </value>
+	</message>
+	<message>
+		<name>copyright_sel_1</name>
+		<value>برابط - Search Engine Friendly URLs by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_2</name>
+		<value>برابط - Content Relevant URLs by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_3</name>
+		<value>برابط - Search Engine Optimization by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_4</name>
+		<value>برابط - SEO by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_5</name>
+		<value>بدون رابط - Search Engine Friendly URLs by vBSEO 3.6.0 � 2009, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_6</name>
+		<value>بدون رابط - Content Relevant URLs by vBSEO 3.6.0 � 2009, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_7</name>
+		<value>بدون رابط - Search Engine Optimization by vBSEO 3.6.0 � 2009, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_8</name>
+		<value>بدون رابط - SEO by vBSEO 3.6.0 � 2009, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_9</name>
+		<value>برابط - LinkBacks Enabled by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_10</name>
+		<value>بدون رابط - LinkBacks Enabled by vBSEO 3.6.0 � 2009, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>vbseo_noversion_desc</name>
+		<value>&lt;p&gt; &lt;b&gt;اخفاء رقم نسخة vBSEO بحقووق الهاك&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; هل تريد اخفاء رقم نسخة الهاك من الحقوق. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_auto_link_desc</name>
+		<value>&lt;p&gt; &lt;b&gt;صيغة رابط تلقائي للاختصارات&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; قم بتحديد صيغة الرابط التلقائي للاختصارات من هنا. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>loading_error</name>
+		<value>خطأ في التحميل</value>
+	</message>
+	<message>
+		<name>please_wait</name>
+		<value>انتظر من فضلك</value>
+	</message>
+	<message>
+		<name>invalidkey_notice</name>
+		<value>رقم الترخيص الحالي لا يتطابق مع رقمك الصحيح, من فضلك قم بتصحيح الأمر من خلال حفظ الرقم الصحيح بخانة رقم الترخيص الحالي الخاص بك</value>
+	</message>
+	<message>
+		<name>vbseo_last_modified_header_desc</name>
+		<value>&lt;b&gt;تفعيل اخر هيدر معدل؟&lt;/b&gt; &lt;span class=&quot;beta&quot;&gt;تجريبي!&lt;/span&gt; &lt;br /&gt; هل تريد تفعيل خيار اخر هيدر معدل؟</value>
+	</message>
+	<message>
+		<name>vbseo_gars_support</name>
+		<value>&lt;b&gt;تفعيل دعم GARS&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;جديد!&lt;/span&gt; &lt;br /&gt; هل تريد تفعيل دعم &lt;a href=&quot;http://www.thevbgeek.com/geekmart.php?do=displayproduct&amp;id=3&quot;&gt;Gars&lt;/a&gt; لصفحات Gars المتعددة؟</value>
+	</message>
+	<message>
+		<name>vbseo_vbulletin_php_extension</name>
+		<value>&lt;b&gt;تحديد صيغة لامتداد vBulletin&lt;/b&gt; &lt;br /&gt; اذا تستخدم اى امتدادات اخرى غير php ثم .php, قم بتحديد امتداد php الخاص بك هنا</value>
+	</message>
+	<message>
+		<name>vbseo_vbulletin_config_php</name>
+		<value>&lt;b&gt;تحديد ملف كونفج المنتدى&lt;/b&gt; &lt;br /&gt; اذا لديك ملف معدل من config.php من فضلك قم بتحديد مساره من هنا</value>
+	</message>
+	<message>
+		<name>vbseo_custom_doc_root</name>
+		<value>&lt;b&gt;خاص Doc Root&lt;/b&gt; &lt;br /&gt; قم بتحديد مسار document root المعدل الخاص بك من هنا</value>
+	</message>
+	<message>
+		<name>vbseo_custom_doc_relative</name>
+		<value>&lt;b&gt;تحديد Doc Root خاص المتعلق بـ vBSEO&lt;/b&gt; &lt;br /&gt; قم بتحديد المسار الخاص المتعلق بالهاك للمنتدى الخاص بك</value>
+	</message>
+	<message>
+		<name>vbseo_forum_slugs</name>
+		<value>&lt;b&gt;تحديد vBSEO Slugs للمنتدى&lt;/b&gt; &lt;br /&gt; قم بتحديد slugs المنتدى الخاصة بك هنا</value>
+	</message>
+	<message>
+		<name>vbseo_applyto_forums</name>
+		<value>&lt;b&gt;تحويل الروابط لاقسام محدده فقط &lt;/b&gt; &lt;br /&gt; افصل بين ارقام الاقسام بمسافات. اترك الخيار فارغ للتحويل على جميع الاقسام.</value>
+	</message>
+	<message>
+		<name>vbseo_avatar_prefix</name>
+		<value>&lt;b&gt;تحديد Prefix الصور الرمزية&lt;/b&gt; &lt;br /&gt; قم بتحديد prefix الصور الرمزية هنا</value>
+	</message>
+	<message>
+		<name>vbseo_atttachment_prefix</name>
+		<value>&lt;b&gt;تحديد Prefix المرفقات&lt;/b&gt; &lt;br /&gt; قم بتحديد prefix اعادة صياغة المرفقات</value>
+	</message>
+	<message>
+		<name>vbseo_icon_prefix</name>
+		<value>&lt;b&gt;تحديد Prefix الايقونات&lt;/b&gt; &lt;br /&gt; قم بتحديد اعادة صياغة prefix الايقونات</value>
+	</message>
+	<message>
+		<name>vbseo_thread_prefix_desc</name>
+		<value>&lt;b&gt;اضافة Prefix الموضوع&lt;/b&gt; &lt;br /&gt; هل تريد اضافة Prefix الموضوع لاعدادات صياغة الروابط الخاصة بك</value>
+	</message>
+	<message>
+		<name>vbseo_thread_prefix_name_desc</name>
+		<value>&lt;b&gt;اضافة Perfix اسم الموضوع&lt;/b&gt; &lt;br /&gt; هل تريد اضافة Perfix اسماء المواضيع باعدادات صياغة الروابط</value>
+	</message>
+	<message>
+		<name>vbseo_copyright_header</name>
+		<value>خيارات الحقوق</value>
+	</message>
+	<message>
+		<name>vbseo_image_prefix_header</name>
+		<value>خيارات الصور</value>
+	</message>
+	<message>
+		<name>vbseo_advanced_custom_header</name>
+		<value>اعداد متقدم للخيارات</value>
+	</message>
+	<message>
+		<name>vbseo_blog_prefix_header</name>
+		<value>خيارات المدونة المتقدمة</value>
+	</message>
+	<message>
+		<name>vbseo_blog_cat_prefix_desc</name>
+		<value>&lt;b&gt;تحديد المدونة الغير معرفة الاقسام&lt;/b&gt; &lt;br /&gt; تحديد صياغة شكل بادئة اقسام مدونتك غير المعرفة
+</value>
+	</message>
+	<message>
+		<name>replace_tag_title</name>
+		<value>استبدال تاج عنوان الصفحة</value>
+	</message>
+	<message>
+		<name>replace_tag_title_desc</name>
+		<value>&lt;p&gt;هل تريد vbseo يقوم بالاستبدال التلقائي لعناوين صفحات التاج واضافة اسم التاج الى اسم الصفحة ؟&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>crr_creator_link</name>
+		<value>مولد CRR عبر موقع vBSEO.com</value>
+	</message>
+	<message>
+		<name>rr_div</name>
+		<value>اضافة vBSEO Relevant Replacement لعناوين الصفحات فى المنتديات و اسماء المواضيع ؟ (هذا الخيار يعمل على vB4.X فقط)</value>
+	</message>
+	<message>
+		<name>cdnopt_desc</name>
+		<value>&lt;h4&gt;MaxCDN دمج&lt;/h4&gt; &lt;p&gt;المقصود بأختصارها هو Content Delivery Network و هى تقوم بأستضافة الملفات لديك كالصور وملفات بى اتش بى وغيرها من الامتدادات وايضاً الجافاسكربت وملفات CSS وهذه الخدمة تزيد من سرعة منتداك وتقوم بتقليل اللود لديك معلومات عن توفير 1 تيرا بايت من خدمة MAXCDN سوف تتوفر فى الموضوع الرسمي للاعلان عن النسخة 3.6.&lt;br /&gt;&lt;br /&gt;
+الخيارات المتقدمة - ادخل المجلدات المضافة فى الخدمة فى كل سطر مثل:&lt;br /&gt;'images/' =&gt; 'http://images.yourcdn.com/'&lt;br /&gt;'files/' =&gt; 'http://files.yourcdn.com/'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cdn_defzone</name>
+		<value>اضف رابط CDN الخاص بك (سوف تحتاج لاضافة CNAME او رابط MAXCDN Pullzone متضمنا الرابط بـhttp:// ) يجب عليك ان تضيف / بأخر الرابط</value>
+	</message>
+	<message>
+		<name>cdn_custfolder</name>
+		<value>مجلدات مخصصة</value>
+	</message>
+	<message>
+		<name>cdn_def_custfolder</name>
+		<value>اضف المجلدات المخصصة (اختياري)</value>
+	</message>
+	<message>
+		<name>cdn_def_adv_zone</name>
+		<value>اختر الملفات التى تريد استضافتها عبر CDN واضف رابط Pull Zone (CNAME) لكل امتداد ملف</value>
+	</message>
+	<message>
+		<name>cdn_single_zone</name>
+		<value>استعمل Pull zone واحد لكل شئ لديك</value>
+	</message>
+	<message>
+		<name>imgdim_toolarge</name>
+		<value>رقم ابعاد الصور الذى قمت بأضافته كبير جداً , اكبر قيمة ننصح بها :</value>
+	</message>
+	<message>
+		<name>likesys_forum</name>
+		<value>&lt;p&gt;&lt;b&gt;تفعيل نظام اعجبني للمنتدى?&lt;/b&gt;&lt;br /&gt; تفعيل نظام اعجبنى للمواضيع والمشاركات ؟.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>likesys_blog</name>
+		<value>&lt;p&gt;&lt;b&gt;تفعيل نظام اعجبني للمدونات?&lt;/b&gt;&lt;br /&gt; تفعيل نظام اعجبنى لمشاركات المدونات ?&lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>likesys_cms</name>
+		<value>	&lt;p&gt;&lt;b&gt;تفعيل نظام اعجبنى فى CMS ?&lt;/b&gt;&lt;br /&gt; تفعيل نظام اعجبنى فى المقالات والمشاركات فى CMS?&lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>likesys_vislink</name>
+		<value>&lt;p&gt;&lt;b&gt;رابط اعجبنى ظاهر دائماً?&lt;/b&gt;&lt;br /&gt; اظهر رابط اعجبنى دائماً (اختر لا لاظهاره عند مرور الماوس على المشاركة فقط)?&lt;/p&gt; </value>
+	</message>
+</translations>

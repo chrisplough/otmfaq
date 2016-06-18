@@ -1,0 +1,2296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Domain ConfigurationVersion="8.1.4.0" Name="gc3domain">
+    <Server IIOPEnabled="false"
+        JDBCLogFileName="E:/OTM55/logs/weblogic/jdbc.log"
+        JDBCLoggingEnabled="false" ListenAddress="ipAddress"
+        ListenPort="7001" Name="gc3-hydhtc137458d"
+        NativeIOEnabled="true" ServerVersion="8.1.4.0"
+        StdoutSeverityLevel="16" TunnelingEnabled="true">
+        <COM Name="gc3-hydhtc137458d"/>
+        <ExecuteQueue Name="default" ThreadCount="50"/>
+        <IIOP Name="gc3-hydhtc137458d"/>
+        <JTAMigratableTarget Cluster="" Name="gc3-hydhtc137458d" UserPreferredServer="gc3-hydhtc137458d"/>
+        <JTARecoveryService Name="gc3-hydhtc137458d"/>
+        <KernelDebug Name="gc3-hydhtc137458d"/>
+        <Log FileCount="10" FileMinSize="10240"
+            FileName="E:/OTM55/logs/weblogic/weblogic.log"
+            Name="gc3-hydhtc137458d" NumberOfFilesLimited="true" RotationType="bySize"/>
+        <SSL Enabled="false" IdentityAndTrustLocations="KeyStores"
+            ListenPort="7002" Name="gc3-hydhtc137458d"
+            ServerCertificateChainFileName="./ca.pem"
+            ServerCertificateFileName="./democert.pem" ServerKeyFileName="./demokey.pem"/>
+        <ServerDebug Name="gc3-hydhtc137458d"/>
+        <ServerStart Name="gc3-hydhtc137458d"/>
+        <WebServer DefaultWebApp="DefaultWebApp_gc3"
+            LogFileBufferKBytes="1024"
+            LogFileName="E:/OTM55/logs/weblogic/access.log"
+            LoggingEnabled="false" Name="gc3-hydhtc137458d"/>
+    </Server>
+    <!-- Commented out: in 5.0 all connection pools are dynamically managed. If you need a connection pool for test programs, add this back in
+	    <JDBCConnectionPool CapacityIncrement="2"
+	        DriverName="oracle.jdbc.driver.OracleDriver"
+	        InitialCapacity="10" MaxCapacity="150" Name="dbaPool"
+	        Properties="user=glogdba;password=glogdba;dll=ocijdbc9;protocol=thin"
+	        RefreshMinutes="1" Targets="gc3-hydhtc137458d" TestConnectionsOnReserve="false"
+	        TestTableName="dual" URL="jdbc:oracle:thin:@ipAddress:1521:GLOGDEMO"/>
+    <JDBCDataSource JNDIName="dbaPool" Name="dbaPool" PoolName="dbaPool" Targets="gc3-hydhtc137458d"/>
+    -->
+    <JMSConnectionFactory AllowCloseInOnMessage="true"
+        DefaultDeliveryMode="Persistent" DefaultPriority="4"
+        DefaultTimeToLive="0"
+        JNDIName="weblogic.jndi.jms.ConnectionFactory"
+        MessagesMaximum="100" Name="GC3JMSConnectionFactory"
+        OverrunPolicy="KeepOld" Targets="gc3-hydhtc137458d"/>
+    <JMSServer Name="GC3JMSServer" Targets="gc3-hydhtc137458d">
+        <JMSTopic JNDIName="weblogic.jndi.jms.gc3ActivateServerTopic"
+            Name="GC3ActivateServerTopic" StoreEnabled="false"/>
+        <JMSTopic JNDIName="weblogic.jndi.jms.gc3BeanUpdateTopic"
+            Name="GC3BeanUpdateTopic" StoreEnabled="false"/>
+        <JMSTopic JNDIName="weblogic.jndi.jms.gc3CacheRefreshTopic"
+            Name="GC3CacheRefreshTopic" StoreEnabled="false"/>
+        <JMSTopic JNDIName="weblogic.jndi.jms.gc3QueryUpdateTopic"
+            Name="GC3QueryUpdateTopic" StoreEnabled="false"/>
+        <JMSTopic JNDIName="weblogic.jndi.jms.gc3ProfileTopic"
+            Name="GC3ProfileTopic" StoreEnabled="false"/>
+        <JMSTopic
+            JNDIName="weblogic.jndi.jms.gc3ObjectLockAvailableTopic"
+            Name="GC3ObjectLockAvailableTopic" StoreEnabled="false"/>
+        <JMSTopic JNDIName="weblogic.jndi.jms.gc3ManagerLayoutTopic"
+            Name="GC3ManagerLayoutTopic" StoreEnabled="false"/>
+    </JMSServer>
+    <JTA Name="gc3domain"/>
+    <Log FileCount="10" FileMinSize="10240"
+        FileName="E:/OTM55/logs/weblogic/wl-domain.log" Name="gc3domain"
+        NumberOfFilesLimited="true" RotationType="bySize"/>
+    <SNMPAgent CommunityPrefix="readonly" DebugLevel="0" Enabled="true"
+        Name="gc3domain" SNMPPort="7161" TargetedTrapDestinations=""/>
+    <EmbeddedLDAP
+        CredentialEncrypted="{3DES}MKLGXF+HUQhL7MNbP+1cSAhHjsD0fiZMByBAI6Hofoo=" Name="gc3domain"/>
+    <JMSFileStore Directory="rmfilestore" Name="FileStore"/>
+    <WSReliableDeliveryPolicy DefaultRetryCount="10"
+        DefaultTimeToLive="60000" Name="RMDefaultPolicy" Store="FileStore"/>
+    <Security Name="gc3domain"
+        PasswordPolicy="wl_default_password_policy"
+        Realm="wl_default_realm" RealmSetup="true">
+        <weblogic.security.providers.authorization.DefaultRoleMapper
+            Name="Security:Name=gc3realmDefaultRoleMapper" Realm="Security:Name=gc3realm"/>
+        <weblogic.security.providers.authorization.DefaultAuthorizer
+            Name="Security:Name=gc3realmDefaultAuthorizer" Realm="Security:Name=gc3realm"/>
+        <weblogic.security.providers.authorization.DefaultAdjudicator
+            Name="Security:Name=gc3realmDefaultAdjudicator" Realm="Security:Name=gc3realm"/>
+        <weblogic.security.providers.credentials.DefaultCredentialMapper
+            Name="Security:Name=gc3realmDefaultCredentialMapper" Realm="Security:Name=gc3realm"/>
+        <weblogic.management.security.authentication.UserLockoutManager
+            Name="Security:Name=gc3realmUserLockoutManager" Realm="Security:Name=gc3realm"/>
+        <weblogic.management.security.Realm
+            Adjudicator="Security:Name=gc3realmDefaultAdjudicator"
+            AuthenticationProviders="Security:Name=gc3realmGC3AuthenticationProvider"
+            Authorizers="Security:Name=gc3realmGC3AuthorizationProvider"
+            CredentialMappers="Security:Name=gc3realmDefaultCredentialMapper"
+            DefaultRealm="true" DisplayName="gc3realm"
+            Name="Security:Name=gc3realm"
+            RoleMappers="Security:Name=gc3realmDefaultRoleMapper" UserLockoutManager="Security:Name=gc3realmUserLockoutManager"/>
+        <weblogic.security.providers.authentication.DefaultAuthenticator
+            Name="Security:Name=gc3realmDefaultAuthenticator" Realm="Security:Name=gc3realm"/>
+        <glog.util.j2ee.jaas.GC3AuthenticationProvider
+            Name="Security:Name=gc3realmGC3AuthenticationProvider" Realm="Security:Name=gc3realm"/>
+        <glog.util.j2ee.jaas.GC3AuthorizationProvider
+            Name="Security:Name=gc3realmGC3AuthorizationProvider" Realm="Security:Name=gc3realm"/>
+    </Security>
+    <SecurityConfiguration
+        CredentialEncrypted="{3DES}RRVpReH5befozmUKC2sPZFOZOHlT3LbxqI9KXAaTsbps5bCCtKM1KZkaJnwM5xaJVyulHdElZ9FAAgig8PJpPqFoH6RAO+o5"
+        Name="gc3domain" RealmBootStrapVersion="1"/>
+    <Realm FileRealm="wl_default_file_realm" Name="wl_default_realm"/>
+    <FileRealm Name="wl_default_file_realm"/>
+    <PasswordPolicy Name="wl_default_password_policy"/>
+    <ShutdownClass ClassName="glog.util.GC3StartupShutdownManager"
+        Name="gc3Shutdown" Targets="gc3-hydhtc137458d"/>
+    <StartupClass ClassName="glog.util.GC3StartupShutdownManager"
+        FailureIsFatal="false" Name="gc3Startup" Targets="gc3-hydhtc137458d"/>
+    <ApplicationManager Name="gc3domain"/>
+    <Application Deployed="true" Name="DefaultWebApp_gc3"
+        Path=".\applications" StagedTargets="" StagingMode="nostage" TwoPhase="false">
+        <WebAppComponent Name="DefaultWebApp_gc3"
+            Targets="gc3-hydhtc137458d" URI="DefaultWebApp_gc3"/>
+    </Application>
+    <Application Deployed="true" DeploymentType="EAR" Name="GC3App"
+        Path=".\applications\GC3App.ear" StagedTargets=""
+        StagingMode="nostage" TwoPhase="false">
+        <EJBComponent Name="QuoteCostOption" Targets="gc3-hydhtc137458d" URI="QuoteCostOption.jar"/>
+        <EJBComponent Name="DocumentDefProfile"
+            Targets="gc3-hydhtc137458d" URI="DocumentDefProfile.jar"/>
+        <EJBComponent Name="FinderSet" Targets="gc3-hydhtc137458d" URI="FinderSet.jar"/>
+        <EJBComponent Name="DocumentParam" Targets="gc3-hydhtc137458d" URI="DocumentParam.jar"/>
+        <EJBComponent Name="ObLegConstraint" Targets="gc3-hydhtc137458d" URI="ObLegConstraint.jar"/>
+        <EJBComponent Name="RouteTmpltLegShipCompat"
+            Targets="gc3-hydhtc137458d" URI="RouteTmpltLegShipCompat.jar"/>
+        <EJBComponent Name="SavedQuery" Targets="gc3-hydhtc137458d" URI="SavedQuery.jar"/>
+        <EJBComponent Name="ItlExportLicenseRequestD"
+            Targets="gc3-hydhtc137458d" URI="ItlExportLicenseRequestD.jar"/>
+        <EJBComponent Name="LogicParameterQualifier"
+            Targets="gc3-hydhtc137458d" URI="LogicParameterQualifier.jar"/>
+        <EJBComponent Name="LaneSummary" Targets="gc3-hydhtc137458d" URI="LaneSummary.jar"/>
+        <EJBComponent Name="Curve" Targets="gc3-hydhtc137458d" URI="Curve.jar"/>
+        <EJBComponent Name="RatePreference" Targets="gc3-hydhtc137458d" URI="RatePreference.jar"/>
+        <EJBComponent Name="OmShipmentJoin" Targets="gc3-hydhtc137458d" URI="OmShipmentJoin.jar"/>
+        <EJBComponent Name="OrderReleaseLineLoadConfig"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseLineLoadConfig.jar"/>
+        <EJBComponent Name="RoutingRuleRefnum"
+            Targets="gc3-hydhtc137458d" URI="RoutingRuleRefnum.jar"/>
+        <EJBComponent Name="IeMarks" Targets="gc3-hydhtc137458d" URI="IeMarks.jar"/>
+        <EJBComponent Name="ShipmentType" Targets="gc3-hydhtc137458d" URI="ShipmentType.jar"/>
+        <EJBComponent Name="BulkPlanMilestoneError"
+            Targets="gc3-hydhtc137458d" URI="BulkPlanMilestoneError.jar"/>
+        <EJBComponent Name="AccountSession" Targets="gc3-hydhtc137458d" URI="AccountSession.jar"/>
+        <EJBComponent Name="ObRemark" Targets="gc3-hydhtc137458d" URI="ObRemark.jar"/>
+        <EJBComponent Name="AccessorialCostUnitBreak"
+            Targets="gc3-hydhtc137458d" URI="AccessorialCostUnitBreak.jar"/>
+        <EJBComponent Name="PackagedItemProfileD"
+            Targets="gc3-hydhtc137458d" URI="PackagedItemProfileD.jar"/>
+        <EJBComponent Name="ContactProfile" Targets="gc3-hydhtc137458d" URI="ContactProfile.jar"/>
+        <EJBComponent Name="WorkflowSession" Targets="gc3-hydhtc137458d" URI="WorkflowSession.jar"/>
+        <EJBComponent Name="DataQueuePoller" Targets="gc3-hydhtc137458d" URI="DataQueuePoller.jar"/>
+        <EJBComponent Name="EquipmentGroupCompartment"
+            Targets="gc3-hydhtc137458d" URI="EquipmentGroupCompartment.jar"/>
+        <EJBComponent Name="CommitUsage" Targets="gc3-hydhtc137458d" URI="CommitUsage.jar"/>
+        <EJBComponent Name="Hts" Targets="gc3-hydhtc137458d" URI="Hts.jar"/>
+        <EJBComponent Name="OrderReleaseRefnum"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseRefnum.jar"/>
+        <EJBComponent Name="VatConfiguration"
+            Targets="gc3-hydhtc137458d" URI="VatConfiguration.jar"/>
+        <EJBComponent Name="SShipUnitPiece" Targets="gc3-hydhtc137458d" URI="SShipUnitPiece.jar"/>
+        <EJBComponent Name="AllocationD" Targets="gc3-hydhtc137458d" URI="AllocationD.jar"/>
+        <EJBComponent Name="WorkflowTimeWindow"
+            Targets="gc3-hydhtc137458d" URI="WorkflowTimeWindow.jar"/>
+        <EJBComponent Name="TranslationD" Targets="gc3-hydhtc137458d" URI="TranslationD.jar"/>
+        <EJBComponent Name="SkuEventQuantity"
+            Targets="gc3-hydhtc137458d" URI="SkuEventQuantity.jar"/>
+        <EJBComponent Name="ITransactionRefnum"
+            Targets="gc3-hydhtc137458d" URI="ITransactionRefnum.jar"/>
+        <EJBComponent Name="ShipmentAccessorialRemark"
+            Targets="gc3-hydhtc137458d" URI="ShipmentAccessorialRemark.jar"/>
+        <EJBComponent Name="TimeZoneLocale" Targets="gc3-hydhtc137458d" URI="TimeZoneLocale.jar"/>
+        <EJBComponent Name="RouteInstanceStatus"
+            Targets="gc3-hydhtc137458d" URI="RouteInstanceStatus.jar"/>
+        <EJBComponent Name="LgQuantityBreak" Targets="gc3-hydhtc137458d" URI="LgQuantityBreak.jar"/>
+        <EJBComponent Name="DamageNature" Targets="gc3-hydhtc137458d" URI="DamageNature.jar"/>
+        <EJBComponent Name="CommercialInvChargeCode"
+            Targets="gc3-hydhtc137458d" URI="CommercialInvChargeCode.jar"/>
+        <EJBComponent Name="VoucherRefnum" Targets="gc3-hydhtc137458d" URI="VoucherRefnum.jar"/>
+        <EJBComponent Name="ConsolUpdateSession"
+            Targets="gc3-hydhtc137458d" URI="ConsolUpdateSession.jar"/>
+        <EJBComponent Name="OrderReleaseService"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseService.jar"/>
+        <EJBComponent Name="SkuTransactionDescriptor"
+            Targets="gc3-hydhtc137458d" URI="SkuTransactionDescriptor.jar"/>
+        <EJBComponent Name="Schedule" Targets="gc3-hydhtc137458d" URI="Schedule.jar"/>
+        <EJBComponent Name="LocationOverride"
+            Targets="gc3-hydhtc137458d" URI="LocationOverride.jar"/>
+        <EJBComponent Name="LocationRemark" Targets="gc3-hydhtc137458d" URI="LocationRemark.jar"/>
+        <EJBComponent Name="MessageSession" Targets="gc3-hydhtc137458d" URI="MessageSession.jar"/>
+        <EJBComponent Name="LocationCapacityGroupD"
+            Targets="gc3-hydhtc137458d" URI="LocationCapacityGroupD.jar"/>
+        <EJBComponent Name="IeShipmentRefnum"
+            Targets="gc3-hydhtc137458d" URI="IeShipmentRefnum.jar"/>
+        <EJBComponent Name="DocumentParty" Targets="gc3-hydhtc137458d" URI="DocumentParty.jar"/>
+        <EJBComponent Name="Translation" Targets="gc3-hydhtc137458d" URI="Translation.jar"/>
+        <EJBComponent Name="ShipmentOrderReleaseJoin"
+            Targets="gc3-hydhtc137458d" URI="ShipmentOrderReleaseJoin.jar"/>
+        <EJBComponent Name="ShipmentActions" Targets="gc3-hydhtc137458d" URI="ShipmentActions.jar"/>
+        <EJBComponent Name="ShipmentLink" Targets="gc3-hydhtc137458d" URI="ShipmentLink.jar"/>
+        <EJBComponent Name="DamageNotifyPoint"
+            Targets="gc3-hydhtc137458d" URI="DamageNotifyPoint.jar"/>
+        <EJBComponent Name="InvoiceLineitemCostRef"
+            Targets="gc3-hydhtc137458d" URI="InvoiceLineitemCostRef.jar"/>
+        <EJBComponent Name="ShipmentTrEventContact"
+            Targets="gc3-hydhtc137458d" URI="ShipmentTrEventContact.jar"/>
+        <EJBComponent Name="CharterVoyageActionSession"
+            Targets="gc3-hydhtc137458d" URI="CharterVoyageActionSession.jar"/>
+        <EJBComponent Name="RouteRefnumQual" Targets="gc3-hydhtc137458d" URI="RouteRefnumQual.jar"/>
+        <EJBComponent Name="LocationCorporation"
+            Targets="gc3-hydhtc137458d" URI="LocationCorporation.jar"/>
+        <EJBComponent Name="EquipmentMarkListDetail"
+            Targets="gc3-hydhtc137458d" URI="EquipmentMarkListDetail.jar"/>
+        <EJBComponent Name="ShipUnitRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="ShipUnitRefnumQual.jar"/>
+        <EJBComponent Name="NonConfReasonCode"
+            Targets="gc3-hydhtc137458d" URI="NonConfReasonCode.jar"/>
+        <EJBComponent Name="ServiceTemplate" Targets="gc3-hydhtc137458d" URI="ServiceTemplate.jar"/>
+        <EJBComponent Name="Problem" Targets="gc3-hydhtc137458d" URI="Problem.jar"/>
+        <EJBComponent Name="PaymentDetailQual"
+            Targets="gc3-hydhtc137458d" URI="PaymentDetailQual.jar"/>
+        <EJBComponent Name="RouteTemplateRefnum"
+            Targets="gc3-hydhtc137458d" URI="RouteTemplateRefnum.jar"/>
+        <EJBComponent Name="BnNamedRangeEvent"
+            Targets="gc3-hydhtc137458d" URI="BnNamedRangeEvent.jar"/>
+        <EJBComponent Name="LocationRoleProfile"
+            Targets="gc3-hydhtc137458d" URI="LocationRoleProfile.jar"/>
+        <EJBComponent Name="ContactGroup" Targets="gc3-hydhtc137458d" URI="ContactGroup.jar"/>
+        <EJBComponent Name="AppMachineFailover"
+            Targets="gc3-hydhtc137458d" URI="AppMachineFailover.jar"/>
+        <EJBComponent Name="DeclineReasonCode"
+            Targets="gc3-hydhtc137458d" URI="DeclineReasonCode.jar"/>
+        <EJBComponent Name="EquipmentGroupProfile"
+            Targets="gc3-hydhtc137458d" URI="EquipmentGroupProfile.jar"/>
+        <EJBComponent Name="LineAppTolInvoiceRefnum"
+            Targets="gc3-hydhtc137458d" URI="LineAppTolInvoiceRefnum.jar"/>
+        <EJBComponent Name="Icon" Targets="gc3-hydhtc137458d" URI="Icon.jar"/>
+        <EJBComponent Name="DamageCause" Targets="gc3-hydhtc137458d" URI="DamageCause.jar"/>
+        <EJBComponent Name="LogisticsGuideDetail"
+            Targets="gc3-hydhtc137458d" URI="LogisticsGuideDetail.jar"/>
+        <EJBComponent Name="BsReasonGroup" Targets="gc3-hydhtc137458d" URI="BsReasonGroup.jar"/>
+        <EJBComponent Name="LogisticsGuideActionSession"
+            Targets="gc3-hydhtc137458d" URI="LogisticsGuideActionSession.jar"/>
+        <EJBComponent Name="InvoiceStop" Targets="gc3-hydhtc137458d" URI="InvoiceStop.jar"/>
+        <EJBComponent Name="RatePreferenceDetail"
+            Targets="gc3-hydhtc137458d" URI="RatePreferenceDetail.jar"/>
+        <EJBComponent Name="ObShipUnitSeal" Targets="gc3-hydhtc137458d" URI="ObShipUnitSeal.jar"/>
+        <EJBComponent Name="ShipmentGroupStatusSession"
+            Targets="gc3-hydhtc137458d" URI="ShipmentGroupStatusSession.jar"/>
+        <EJBComponent Name="CrRouteInfeasibility"
+            Targets="gc3-hydhtc137458d" URI="CrRouteInfeasibility.jar"/>
+        <EJBComponent Name="StowageModePreference"
+            Targets="gc3-hydhtc137458d" URI="StowageModePreference.jar"/>
+        <EJBComponent Name="InterimFlightInstance"
+            Targets="gc3-hydhtc137458d" URI="InterimFlightInstance.jar"/>
+        <EJBComponent Name="EquipAxleLoadingWeight"
+            Targets="gc3-hydhtc137458d" URI="EquipAxleLoadingWeight.jar"/>
+        <EJBComponent Name="CorporationProfile"
+            Targets="gc3-hydhtc137458d" URI="CorporationProfile.jar"/>
+        <EJBComponent Name="OrderMovementD" Targets="gc3-hydhtc137458d" URI="OrderMovementD.jar"/>
+        <EJBComponent Name="NotifySubjectInvparty"
+            Targets="gc3-hydhtc137458d" URI="NotifySubjectInvparty.jar"/>
+        <EJBComponent Name="ObInvolvedParty" Targets="gc3-hydhtc137458d" URI="ObInvolvedParty.jar"/>
+        <EJBComponent Name="EquipGroupProfileSetD"
+            Targets="gc3-hydhtc137458d" URI="EquipGroupProfileSetD.jar"/>
+        <EJBComponent Name="RepetitionScheduleStop"
+            Targets="gc3-hydhtc137458d" URI="RepetitionScheduleStop.jar"/>
+        <EJBComponent Name="ITransmission" Targets="gc3-hydhtc137458d" URI="ITransmission.jar"/>
+        <EJBComponent Name="HazmatTransportMessage"
+            Targets="gc3-hydhtc137458d" URI="HazmatTransportMessage.jar"/>
+        <EJBComponent Name="DomainSetting" Targets="gc3-hydhtc137458d" URI="DomainSetting.jar"/>
+        <EJBComponent Name="ReportEmail" Targets="gc3-hydhtc137458d" URI="ReportEmail.jar"/>
+        <EJBComponent Name="JobStatus" Targets="gc3-hydhtc137458d" URI="JobStatus.jar"/>
+        <EJBComponent Name="MatchValidationRuleShipment"
+            Targets="gc3-hydhtc137458d" URI="MatchValidationRuleShipment.jar"/>
+        <WebServiceComponent Name="EchoXmlService"
+            Targets="gc3-hydhtc137458d" URI="EchoXmlService.war"/>
+        <EJBComponent Name="UserMenuAccess" Targets="gc3-hydhtc137458d" URI="UserMenuAccess.jar"/>
+        <EJBComponent Name="QuoteTrEventContact"
+            Targets="gc3-hydhtc137458d" URI="QuoteTrEventContact.jar"/>
+        <EJBComponent Name="RouteExecutionActionSession"
+            Targets="gc3-hydhtc137458d" URI="RouteExecutionActionSession.jar"/>
+        <EJBComponent Name="Location" Targets="gc3-hydhtc137458d" URI="Location.jar"/>
+        <EJBComponent Name="PBid" Targets="gc3-hydhtc137458d" URI="PBid.jar"/>
+        <EJBComponent Name="AccessorialCode" Targets="gc3-hydhtc137458d" URI="AccessorialCode.jar"/>
+        <EJBComponent Name="Item" Targets="gc3-hydhtc137458d" URI="Item.jar"/>
+        <EJBComponent Name="NfrcRule" Targets="gc3-hydhtc137458d" URI="NfrcRule.jar"/>
+        <EJBComponent Name="ClaimLineItemRefnum"
+            Targets="gc3-hydhtc137458d" URI="ClaimLineItemRefnum.jar"/>
+        <EJBComponent Name="Currency" Targets="gc3-hydhtc137458d" URI="Currency.jar"/>
+        <EJBComponent Name="QuoteInvolvedParty"
+            Targets="gc3-hydhtc137458d" URI="QuoteInvolvedParty.jar"/>
+        <EJBComponent Name="IntManagedChildrenMap"
+            Targets="gc3-hydhtc137458d" URI="IntManagedChildrenMap.jar"/>
+        <EJBComponent Name="AllocationOrLineD"
+            Targets="gc3-hydhtc137458d" URI="AllocationOrLineD.jar"/>
+        <EJBComponent Name="PackagingReferenceUnit"
+            Targets="gc3-hydhtc137458d" URI="PackagingReferenceUnit.jar"/>
+        <EJBComponent Name="PackagingRefUnitPu"
+            Targets="gc3-hydhtc137458d" URI="PackagingRefUnitPu.jar"/>
+        <EJBComponent Name="BidServiceSession"
+            Targets="gc3-hydhtc137458d" URI="BidServiceSession.jar"/>
+        <EJBComponent Name="LaneSummaryCellD"
+            Targets="gc3-hydhtc137458d" URI="LaneSummaryCellD.jar"/>
+        <EJBComponent Name="LocationRefnum" Targets="gc3-hydhtc137458d" URI="LocationRefnum.jar"/>
+        <EJBComponent Name="DocumentDefDocDefJoin"
+            Targets="gc3-hydhtc137458d" URI="DocumentDefDocDefJoin.jar"/>
+        <EJBComponent Name="GlLookupKeyD" Targets="gc3-hydhtc137458d" URI="GlLookupKeyD.jar"/>
+        <EJBComponent Name="RedoCalcFieldsSession"
+            Targets="gc3-hydhtc137458d" URI="RedoCalcFieldsSession.jar"/>
+        <EJBComponent Name="RateFactorSource"
+            Targets="gc3-hydhtc137458d" URI="RateFactorSource.jar"/>
+        <EJBComponent Name="TenderSession" Targets="gc3-hydhtc137458d" URI="TenderSession.jar"/>
+        <EJBComponent Name="BulkPlanByMode" Targets="gc3-hydhtc137458d" URI="BulkPlanByMode.jar"/>
+        <EJBComponent Name="WebServiceSession"
+            Targets="gc3-hydhtc137458d" URI="WebServiceSession.jar"/>
+        <EJBComponent Name="InvSupplyProvinceVatReg"
+            Targets="gc3-hydhtc137458d" URI="InvSupplyProvinceVatReg.jar"/>
+        <EJBComponent Name="SecurityFixupSession"
+            Targets="gc3-hydhtc137458d" URI="SecurityFixupSession.jar"/>
+        <EJBComponent Name="InvoiceSummaryDetail"
+            Targets="gc3-hydhtc137458d" URI="InvoiceSummaryDetail.jar"/>
+        <EJBComponent Name="DistanceExternalEngine"
+            Targets="gc3-hydhtc137458d" URI="DistanceExternalEngine.jar"/>
+        <EJBComponent Name="DataFunction" Targets="gc3-hydhtc137458d" URI="DataFunction.jar"/>
+        <EJBComponent Name="LaneTenderInfo" Targets="gc3-hydhtc137458d" URI="LaneTenderInfo.jar"/>
+        <EJBComponent Name="VatAnalysis" Targets="gc3-hydhtc137458d" URI="VatAnalysis.jar"/>
+        <EJBComponent Name="OrderReleaseDataGeneratorSession"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseDataGeneratorSession.jar"/>
+        <EJBComponent Name="ReportSet" Targets="gc3-hydhtc137458d" URI="ReportSet.jar"/>
+        <EJBComponent Name="RoutingRuleRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="RoutingRuleRefnumQual.jar"/>
+        <EJBComponent Name="ObsStatusHistorySu"
+            Targets="gc3-hydhtc137458d" URI="ObsStatusHistorySu.jar"/>
+        <EJBComponent Name="Equipment" Targets="gc3-hydhtc137458d" URI="Equipment.jar"/>
+        <EJBComponent Name="BnRangeCount" Targets="gc3-hydhtc137458d" URI="BnRangeCount.jar"/>
+        <EJBComponent Name="ManageBidPackageSession"
+            Targets="gc3-hydhtc137458d" URI="ManageBidPackageSession.jar"/>
+        <EJBComponent Name="DataSourceProfileD"
+            Targets="gc3-hydhtc137458d" URI="DataSourceProfileD.jar"/>
+        <EJBComponent Name="RegionGroupD" Targets="gc3-hydhtc137458d" URI="RegionGroupD.jar"/>
+        <EJBComponent Name="DocumentDef" Targets="gc3-hydhtc137458d" URI="DocumentDef.jar"/>
+        <EJBComponent Name="ShipmentBill" Targets="gc3-hydhtc137458d" URI="ShipmentBill.jar"/>
+        <EJBComponent Name="SEquipment" Targets="gc3-hydhtc137458d" URI="SEquipment.jar"/>
+        <EJBComponent Name="MatchRuleProfileD"
+            Targets="gc3-hydhtc137458d" URI="MatchRuleProfileD.jar"/>
+        <EJBComponent Name="AppServerFunction"
+            Targets="gc3-hydhtc137458d" URI="AppServerFunction.jar"/>
+        <EJBComponent Name="VoyageSession" Targets="gc3-hydhtc137458d" URI="VoyageSession.jar"/>
+        <EJBComponent Name="ShipGroupRemark" Targets="gc3-hydhtc137458d" URI="ShipGroupRemark.jar"/>
+        <EJBComponent Name="DiagSession" Targets="gc3-hydhtc137458d" URI="DiagSession.jar"/>
+        <EJBComponent Name="ItemAccessorial" Targets="gc3-hydhtc137458d" URI="ItemAccessorial.jar"/>
+        <EJBComponent Name="DocumentUseProfile"
+            Targets="gc3-hydhtc137458d" URI="DocumentUseProfile.jar"/>
+        <EJBComponent Name="AutoSecResProfile"
+            Targets="gc3-hydhtc137458d" URI="AutoSecResProfile.jar"/>
+        <EJBComponent Name="ObRefnumQual" Targets="gc3-hydhtc137458d" URI="ObRefnumQual.jar"/>
+        <EJBComponent Name="ShippingAgent" Targets="gc3-hydhtc137458d" URI="ShippingAgent.jar"/>
+        <EJBComponent Name="LegFlexCommodPlist"
+            Targets="gc3-hydhtc137458d" URI="LegFlexCommodPlist.jar"/>
+        <EJBComponent Name="EParameterType" Targets="gc3-hydhtc137458d" URI="EParameterType.jar"/>
+        <EJBComponent Name="InvoiceEquipmentDetail"
+            Targets="gc3-hydhtc137458d" URI="InvoiceEquipmentDetail.jar"/>
+        <EJBComponent Name="HazmatApprovalExemption"
+            Targets="gc3-hydhtc137458d" URI="HazmatApprovalExemption.jar"/>
+        <EJBComponent Name="LocationResourceType"
+            Targets="gc3-hydhtc137458d" URI="LocationResourceType.jar"/>
+        <EJBComponent Name="VatCodeOrderedSetD"
+            Targets="gc3-hydhtc137458d" URI="VatCodeOrderedSetD.jar"/>
+        <EJBComponent Name="CapacityUsage" Targets="gc3-hydhtc137458d" URI="CapacityUsage.jar"/>
+        <EJBComponent Name="InvolvedPartyQual"
+            Targets="gc3-hydhtc137458d" URI="InvolvedPartyQual.jar"/>
+        <EJBComponent Name="TemperatureControl"
+            Targets="gc3-hydhtc137458d" URI="TemperatureControl.jar"/>
+        <EJBComponent Name="SystemLogSession"
+            Targets="gc3-hydhtc137458d" URI="SystemLogSession.jar"/>
+        <EJBComponent Name="RateZoneProfileD"
+            Targets="gc3-hydhtc137458d" URI="RateZoneProfileD.jar"/>
+        <EJBComponent Name="ListRetriever" Targets="gc3-hydhtc137458d" URI="ListRetriever.jar"/>
+        <EJBComponent Name="ContainerGroup" Targets="gc3-hydhtc137458d" URI="ContainerGroup.jar"/>
+        <EJBComponent Name="OrderReleaseLineRefnum"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseLineRefnum.jar"/>
+        <EJBComponent Name="BulkPlanPartitionServprov"
+            Targets="gc3-hydhtc137458d" URI="BulkPlanPartitionServprov.jar"/>
+        <EJBComponent Name="InvoiceLineitem" Targets="gc3-hydhtc137458d" URI="InvoiceLineitem.jar"/>
+        <EJBComponent Name="ShipmentSpecialService"
+            Targets="gc3-hydhtc137458d" URI="ShipmentSpecialService.jar"/>
+        <EJBComponent Name="RateUnitBreak" Targets="gc3-hydhtc137458d" URI="RateUnitBreak.jar"/>
+        <EJBComponent Name="AutoApproveRuleDetail"
+            Targets="gc3-hydhtc137458d" URI="AutoApproveRuleDetail.jar"/>
+        <EJBComponent Name="VehicleTypeEqpGrpComp"
+            Targets="gc3-hydhtc137458d" URI="VehicleTypeEqpGrpComp.jar"/>
+        <EJBComponent Name="ProcessingCode" Targets="gc3-hydhtc137458d" URI="ProcessingCode.jar"/>
+        <EJBComponent Name="ObOrderBaseStatus"
+            Targets="gc3-hydhtc137458d" URI="ObOrderBaseStatus.jar"/>
+        <EJBComponent Name="ProjectServiceSession"
+            Targets="gc3-hydhtc137458d" URI="ProjectServiceSession.jar"/>
+        <EJBComponent Name="LtlSplitConfig" Targets="gc3-hydhtc137458d" URI="LtlSplitConfig.jar"/>
+        <EJBComponent Name="InvoiceSummaryRemark"
+            Targets="gc3-hydhtc137458d" URI="InvoiceSummaryRemark.jar"/>
+        <EJBComponent Name="InvoiceStatus" Targets="gc3-hydhtc137458d" URI="InvoiceStatus.jar"/>
+        <EJBComponent Name="ConsolRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="ConsolRefnumQual.jar"/>
+        <EJBComponent Name="AutoAssignRule" Targets="gc3-hydhtc137458d" URI="AutoAssignRule.jar"/>
+        <EJBComponent Name="SkuCost" Targets="gc3-hydhtc137458d" URI="SkuCost.jar"/>
+        <EJBComponent Name="AutoAssignTypeCritMap"
+            Targets="gc3-hydhtc137458d" URI="AutoAssignTypeCritMap.jar"/>
+        <EJBComponent Name="ClaimCostType" Targets="gc3-hydhtc137458d" URI="ClaimCostType.jar"/>
+        <EJBComponent Name="DocumentDefProfileD"
+            Targets="gc3-hydhtc137458d" URI="DocumentDefProfileD.jar"/>
+        <EJBComponent Name="ReportCommonProperties"
+            Targets="gc3-hydhtc137458d" URI="ReportCommonProperties.jar"/>
+        <EJBComponent Name="EquipmentRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="EquipmentRefnumQual.jar"/>
+        <EJBComponent Name="VoucherVatAnalysis"
+            Targets="gc3-hydhtc137458d" URI="VoucherVatAnalysis.jar"/>
+        <EJBComponent Name="DomainRemark" Targets="gc3-hydhtc137458d" URI="DomainRemark.jar"/>
+        <EJBComponent Name="InvoiceProtectiveService"
+            Targets="gc3-hydhtc137458d" URI="InvoiceProtectiveService.jar"/>
+        <EJBComponent Name="AppServerDataQueueDef"
+            Targets="gc3-hydhtc137458d" URI="AppServerDataQueueDef.jar"/>
+        <EJBComponent Name="ObAccessorial" Targets="gc3-hydhtc137458d" URI="ObAccessorial.jar"/>
+        <EJBComponent Name="LocationCapacityOverride"
+            Targets="gc3-hydhtc137458d" URI="LocationCapacityOverride.jar"/>
+        <EJBComponent Name="ServiceExternalEngine"
+            Targets="gc3-hydhtc137458d" URI="ServiceExternalEngine.jar"/>
+        <EJBComponent Name="UdcClassificationList"
+            Targets="gc3-hydhtc137458d" URI="UdcClassificationList.jar"/>
+        <EJBComponent Name="DocumentStatus" Targets="gc3-hydhtc137458d" URI="DocumentStatus.jar"/>
+        <EJBComponent Name="RateAttribute" Targets="gc3-hydhtc137458d" URI="RateAttribute.jar"/>
+        <EJBComponent Name="MatchRuleProfile"
+            Targets="gc3-hydhtc137458d" URI="MatchRuleProfile.jar"/>
+        <EJBComponent Name="ItemRemark" Targets="gc3-hydhtc137458d" URI="ItemRemark.jar"/>
+        <EJBComponent Name="LocationSubstitute"
+            Targets="gc3-hydhtc137458d" URI="LocationSubstitute.jar"/>
+        <EJBComponent Name="Servprov" Targets="gc3-hydhtc137458d" URI="Servprov.jar"/>
+        <EJBComponent Name="SavedConditionQuery"
+            Targets="gc3-hydhtc137458d" URI="SavedConditionQuery.jar"/>
+        <EJBComponent Name="CommodityProtectiveService"
+            Targets="gc3-hydhtc137458d" URI="CommodityProtectiveService.jar"/>
+        <EJBComponent Name="ObSuContentAttribute"
+            Targets="gc3-hydhtc137458d" URI="ObSuContentAttribute.jar"/>
+        <EJBComponent Name="VatProvincialRegistration"
+            Targets="gc3-hydhtc137458d" URI="VatProvincialRegistration.jar"/>
+        <EJBComponent Name="RateAttributeJoin"
+            Targets="gc3-hydhtc137458d" URI="RateAttributeJoin.jar"/>
+        <EJBComponent Name="StatusTypeFilterAccess"
+            Targets="gc3-hydhtc137458d" URI="StatusTypeFilterAccess.jar"/>
+        <EJBComponent Name="GeoHierarchyDetail"
+            Targets="gc3-hydhtc137458d" URI="GeoHierarchyDetail.jar"/>
+        <EJBComponent Name="IeSsRemark" Targets="gc3-hydhtc137458d" URI="IeSsRemark.jar"/>
+        <EJBComponent Name="PackagedItem" Targets="gc3-hydhtc137458d" URI="PackagedItem.jar"/>
+        <EJBComponent Name="LegClassification"
+            Targets="gc3-hydhtc137458d" URI="LegClassification.jar"/>
+        <EJBComponent Name="InvoiceRefnum" Targets="gc3-hydhtc137458d" URI="InvoiceRefnum.jar"/>
+        <EJBComponent Name="LogicConfig" Targets="gc3-hydhtc137458d" URI="LogicConfig.jar"/>
+        <EJBComponent Name="ShippingAgentTypeD"
+            Targets="gc3-hydhtc137458d" URI="ShippingAgentTypeD.jar"/>
+        <EJBComponent Name="SShipUnitLineRemark"
+            Targets="gc3-hydhtc137458d" URI="SShipUnitLineRemark.jar"/>
+        <EJBComponent Name="AllocationRuleDetail"
+            Targets="gc3-hydhtc137458d" URI="AllocationRuleDetail.jar"/>
+        <EJBComponent Name="BatchGridDetail" Targets="gc3-hydhtc137458d" URI="BatchGridDetail.jar"/>
+        <EJBComponent Name="ShipUnitText" Targets="gc3-hydhtc137458d" URI="ShipUnitText.jar"/>
+        <EJBComponent Name="VisibilityEvent" Targets="gc3-hydhtc137458d" URI="VisibilityEvent.jar"/>
+        <EJBComponent Name="Producer" Targets="gc3-hydhtc137458d" URI="Producer.jar"/>
+        <WebServiceComponent Name="IntXmlService"
+            Targets="gc3-hydhtc137458d" URI="IntXmlService.war"/>
+        <EJBComponent Name="ShipmentStatusSession"
+            Targets="gc3-hydhtc137458d" URI="ShipmentStatusSession.jar"/>
+        <EJBComponent Name="RouteTemplateLegRefnum"
+            Targets="gc3-hydhtc137458d" URI="RouteTemplateLegRefnum.jar"/>
+        <EJBComponent Name="BulkRatingResultSession"
+            Targets="gc3-hydhtc137458d" URI="BulkRatingResultSession.jar"/>
+        <EJBComponent Name="OrderMovement" Targets="gc3-hydhtc137458d" URI="OrderMovement.jar"/>
+        <EJBComponent Name="AppointmentSession"
+            Targets="gc3-hydhtc137458d" URI="AppointmentSession.jar"/>
+        <EJBComponent Name="RateGroup" Targets="gc3-hydhtc137458d" URI="RateGroup.jar"/>
+        <EJBComponent Name="LocationActivityTime"
+            Targets="gc3-hydhtc137458d" URI="LocationActivityTime.jar"/>
+        <EJBComponent Name="EquipmentReferenceUnit"
+            Targets="gc3-hydhtc137458d" URI="EquipmentReferenceUnit.jar"/>
+        <EJBComponent Name="CrForecastSession"
+            Targets="gc3-hydhtc137458d" URI="CrForecastSession.jar"/>
+        <EJBComponent Name="WeightBreak" Targets="gc3-hydhtc137458d" URI="WeightBreak.jar"/>
+        <EJBComponent Name="OrderType" Targets="gc3-hydhtc137458d" URI="OrderType.jar"/>
+        <EJBComponent Name="AUDSession" Targets="gc3-hydhtc137458d" URI="AUDSession.jar"/>
+        <EJBComponent Name="Holiday" Targets="gc3-hydhtc137458d" URI="Holiday.jar"/>
+        <EJBComponent Name="ILogSession" Targets="gc3-hydhtc137458d" URI="ILogSession.jar"/>
+        <EJBComponent Name="XmlBuilder" Targets="gc3-hydhtc137458d" URI="XmlBuilder.jar"/>
+        <EJBComponent Name="FinderSetAccess" Targets="gc3-hydhtc137458d" URI="FinderSetAccess.jar"/>
+        <EJBComponent Name="JobRefnumQual" Targets="gc3-hydhtc137458d" URI="JobRefnumQual.jar"/>
+        <EJBComponent Name="IntExtSysTranslation"
+            Targets="gc3-hydhtc137458d" URI="IntExtSysTranslation.jar"/>
+        <EJBComponent Name="OutXmlProfile" Targets="gc3-hydhtc137458d" URI="OutXmlProfile.jar"/>
+        <EJBComponent Name="InvoiceNote" Targets="gc3-hydhtc137458d" URI="InvoiceNote.jar"/>
+        <EJBComponent Name="EquipmentGroup" Targets="gc3-hydhtc137458d" URI="EquipmentGroup.jar"/>
+        <EJBComponent Name="Document" Targets="gc3-hydhtc137458d" URI="Document.jar"/>
+        <EJBComponent Name="ITransactionAck" Targets="gc3-hydhtc137458d" URI="ITransactionAck.jar"/>
+        <EJBComponent Name="AutoAssignRuleCriteria"
+            Targets="gc3-hydhtc137458d" URI="AutoAssignRuleCriteria.jar"/>
+        <EJBComponent Name="ObSuReleaseInstruction"
+            Targets="gc3-hydhtc137458d" URI="ObSuReleaseInstruction.jar"/>
+        <EJBComponent Name="ITLSession" Targets="gc3-hydhtc137458d" URI="ITLSession.jar"/>
+        <EJBComponent Name="SEquipmentSShipUnitJoin"
+            Targets="gc3-hydhtc137458d" URI="SEquipmentSShipUnitJoin.jar"/>
+        <EJBComponent Name="RateZoneServiceTime"
+            Targets="gc3-hydhtc137458d" URI="RateZoneServiceTime.jar"/>
+        <EJBComponent Name="DataSource" Targets="gc3-hydhtc137458d" URI="DataSource.jar"/>
+        <EJBComponent Name="ClaimLineItemRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="ClaimLineItemRefnumQual.jar"/>
+        <EJBComponent Name="InvoiceStopRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="InvoiceStopRefnumQual.jar"/>
+        <EJBComponent Name="TenderCollabSsu" Targets="gc3-hydhtc137458d" URI="TenderCollabSsu.jar"/>
+        <EJBComponent Name="BulkCmResultSession"
+            Targets="gc3-hydhtc137458d" URI="BulkCmResultSession.jar"/>
+        <EJBComponent Name="CharterVoyageRefnum"
+            Targets="gc3-hydhtc137458d" URI="CharterVoyageRefnum.jar"/>
+        <EJBComponent Name="ITransaction" Targets="gc3-hydhtc137458d" URI="ITransaction.jar"/>
+        <EJBComponent Name="ItlExportLicenseRequest"
+            Targets="gc3-hydhtc137458d" URI="ItlExportLicenseRequest.jar"/>
+        <EJBComponent Name="RateRulesAndTerms"
+            Targets="gc3-hydhtc137458d" URI="RateRulesAndTerms.jar"/>
+        <EJBComponent Name="AllocMetric" Targets="gc3-hydhtc137458d" URI="AllocMetric.jar"/>
+        <EJBComponent Name="TextTemplate" Targets="gc3-hydhtc137458d" URI="TextTemplate.jar"/>
+        <EJBComponent Name="RateGeoCost" Targets="gc3-hydhtc137458d" URI="RateGeoCost.jar"/>
+        <EJBComponent Name="ReportRestrictFromLevel"
+            Targets="gc3-hydhtc137458d" URI="ReportRestrictFromLevel.jar"/>
+        <EJBComponent Name="GlAccountPolicy" Targets="gc3-hydhtc137458d" URI="GlAccountPolicy.jar"/>
+        <EJBComponent Name="EquipmentMarkList"
+            Targets="gc3-hydhtc137458d" URI="EquipmentMarkList.jar"/>
+        <EJBComponent Name="BNSession" Targets="gc3-hydhtc137458d" URI="BNSession.jar"/>
+        <EJBComponent Name="NotifySession" Targets="gc3-hydhtc137458d" URI="NotifySession.jar"/>
+        <EJBComponent Name="UserExitSession" Targets="gc3-hydhtc137458d" URI="UserExitSession.jar"/>
+        <EJBComponent Name="Voyage" Targets="gc3-hydhtc137458d" URI="Voyage.jar"/>
+        <EJBComponent Name="ShipmentStopActivity"
+            Targets="gc3-hydhtc137458d" URI="ShipmentStopActivity.jar"/>
+        <EJBComponent Name="BulkRating" Targets="gc3-hydhtc137458d" URI="BulkRating.jar"/>
+        <EJBComponent Name="AllocationRuleProfileDetail"
+            Targets="gc3-hydhtc137458d" URI="AllocationRuleProfileDetail.jar"/>
+        <EJBComponent Name="SuSpecPackagedItemJoin"
+            Targets="gc3-hydhtc137458d" URI="SuSpecPackagedItemJoin.jar"/>
+        <EJBComponent Name="ContactProfileDetail"
+            Targets="gc3-hydhtc137458d" URI="ContactProfileDetail.jar"/>
+        <EJBComponent Name="RateFactor" Targets="gc3-hydhtc137458d" URI="RateFactor.jar"/>
+        <EJBComponent Name="StowageMode" Targets="gc3-hydhtc137458d" URI="StowageMode.jar"/>
+        <EJBComponent Name="RegionDetail" Targets="gc3-hydhtc137458d" URI="RegionDetail.jar"/>
+        <EJBComponent Name="OrderReleaseLine"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseLine.jar"/>
+        <EJBComponent Name="RateQuality" Targets="gc3-hydhtc137458d" URI="RateQuality.jar"/>
+        <EJBComponent Name="EventReasonSession"
+            Targets="gc3-hydhtc137458d" URI="EventReasonSession.jar"/>
+        <EJBComponent Name="IeSShipUnitLine" Targets="gc3-hydhtc137458d" URI="IeSShipUnitLine.jar"/>
+        <EJBComponent Name="SensorServiceEventSubtype"
+            Targets="gc3-hydhtc137458d" URI="SensorServiceEventSubtype.jar"/>
+        <EJBComponent Name="ObSuSpecialService"
+            Targets="gc3-hydhtc137458d" URI="ObSuSpecialService.jar"/>
+        <EJBComponent Name="LogisticsGuideGeography"
+            Targets="gc3-hydhtc137458d" URI="LogisticsGuideGeography.jar"/>
+        <EJBComponent Name="ExternalSystemOutXml"
+            Targets="gc3-hydhtc137458d" URI="ExternalSystemOutXml.jar"/>
+        <EJBComponent Name="IncoTermProfile" Targets="gc3-hydhtc137458d" URI="IncoTermProfile.jar"/>
+        <EJBComponent Name="ConsolRetrievingSession"
+            Targets="gc3-hydhtc137458d" URI="ConsolRetrievingSession.jar"/>
+        <EJBComponent Name="RateDistance" Targets="gc3-hydhtc137458d" URI="RateDistance.jar"/>
+        <EJBComponent Name="UserAccessSession"
+            Targets="gc3-hydhtc137458d" URI="UserAccessSession.jar"/>
+        <EJBComponent Name="ITransmissionAck"
+            Targets="gc3-hydhtc137458d" URI="ITransmissionAck.jar"/>
+        <EJBComponent Name="DocumentDefParam"
+            Targets="gc3-hydhtc137458d" URI="DocumentDefParam.jar"/>
+        <EJBComponent Name="LocationRole" Targets="gc3-hydhtc137458d" URI="LocationRole.jar"/>
+        <EJBComponent Name="SkuDescriptor" Targets="gc3-hydhtc137458d" URI="SkuDescriptor.jar"/>
+        <EJBComponent Name="BsStatusGroupProfileD"
+            Targets="gc3-hydhtc137458d" URI="BsStatusGroupProfileD.jar"/>
+        <EJBComponent Name="DistanceExternalEngineParms"
+            Targets="gc3-hydhtc137458d" URI="DistanceExternalEngineParms.jar"/>
+        <EJBComponent Name="HazClassProfile" Targets="gc3-hydhtc137458d" URI="HazClassProfile.jar"/>
+        <EJBComponent Name="VoucherStatus" Targets="gc3-hydhtc137458d" URI="VoucherStatus.jar"/>
+        <EJBComponent Name="GeoPostalPoint" Targets="gc3-hydhtc137458d" URI="GeoPostalPoint.jar"/>
+        <EJBComponent Name="IntGlogXmlElement"
+            Targets="gc3-hydhtc137458d" URI="IntGlogXmlElement.jar"/>
+        <EJBComponent Name="FFordHelperSession"
+            Targets="gc3-hydhtc137458d" URI="FFordHelperSession.jar"/>
+        <EJBComponent Name="VatCode" Targets="gc3-hydhtc137458d" URI="VatCode.jar"/>
+        <EJBComponent Name="QuoteText" Targets="gc3-hydhtc137458d" URI="QuoteText.jar"/>
+        <EJBComponent Name="BsQuickCode" Targets="gc3-hydhtc137458d" URI="BsQuickCode.jar"/>
+        <EJBComponent Name="DimRateFactor" Targets="gc3-hydhtc137458d" URI="DimRateFactor.jar"/>
+        <EJBComponent Name="BulkTrailerBuildResultSession"
+            Targets="gc3-hydhtc137458d" URI="BulkTrailerBuildResultSession.jar"/>
+        <EJBComponent Name="RateGeoCostOpOwner"
+            Targets="gc3-hydhtc137458d" URI="RateGeoCostOpOwner.jar"/>
+        <EJBComponent Name="ContainerGroupD" Targets="gc3-hydhtc137458d" URI="ContainerGroupD.jar"/>
+        <EJBComponent Name="LocationProfile" Targets="gc3-hydhtc137458d" URI="LocationProfile.jar"/>
+        <EJBComponent Name="MonitorAgentLink"
+            Targets="gc3-hydhtc137458d" URI="MonitorAgentLink.jar"/>
+        <EJBComponent Name="AutoApproveRuleProfile"
+            Targets="gc3-hydhtc137458d" URI="AutoApproveRuleProfile.jar"/>
+        <EJBComponent Name="SensorServiceSession"
+            Targets="gc3-hydhtc137458d" URI="SensorServiceSession.jar"/>
+        <EJBComponent Name="CrScenarioFleet" Targets="gc3-hydhtc137458d" URI="CrScenarioFleet.jar"/>
+        <EJBComponent Name="RateOfferingStops"
+            Targets="gc3-hydhtc137458d" URI="RateOfferingStops.jar"/>
+        <EJBComponent Name="CorporationProfileDetail"
+            Targets="gc3-hydhtc137458d" URI="CorporationProfileDetail.jar"/>
+        <EJBComponent Name="ConditionalBookingProfile"
+            Targets="gc3-hydhtc137458d" URI="ConditionalBookingProfile.jar"/>
+        <EJBComponent Name="OperationalLocation"
+            Targets="gc3-hydhtc137458d" URI="OperationalLocation.jar"/>
+        <EJBComponent Name="RouteTemplate" Targets="gc3-hydhtc137458d" URI="RouteTemplate.jar"/>
+        <EJBComponent Name="FinderSetSession"
+            Targets="gc3-hydhtc137458d" URI="FinderSetSession.jar"/>
+        <EJBComponent Name="ServprovAliasQual"
+            Targets="gc3-hydhtc137458d" URI="ServprovAliasQual.jar"/>
+        <EJBComponent Name="ServprovProfile" Targets="gc3-hydhtc137458d" URI="ServprovProfile.jar"/>
+        <EJBComponent Name="DeniedPartyMatch"
+            Targets="gc3-hydhtc137458d" URI="DeniedPartyMatch.jar"/>
+        <EJBComponent Name="CrForecast" Targets="gc3-hydhtc137458d" URI="CrForecast.jar"/>
+        <EJBComponent Name="ActivityTime" Targets="gc3-hydhtc137458d" URI="ActivityTime.jar"/>
+        <EJBComponent Name="YardSession" Targets="gc3-hydhtc137458d" URI="YardSession.jar"/>
+        <EJBComponent Name="QuoteRefnumQual" Targets="gc3-hydhtc137458d" URI="QuoteRefnumQual.jar"/>
+        <EJBComponent Name="EquipGroupProfileSet"
+            Targets="gc3-hydhtc137458d" URI="EquipGroupProfileSet.jar"/>
+        <EJBComponent Name="PackagedItemProfile"
+            Targets="gc3-hydhtc137458d" URI="PackagedItemProfile.jar"/>
+        <EJBComponent Name="Threshold" Targets="gc3-hydhtc137458d" URI="Threshold.jar"/>
+        <EJBComponent Name="LaneAttribute" Targets="gc3-hydhtc137458d" URI="LaneAttribute.jar"/>
+        <EJBComponent Name="AllocationRuleProfile"
+            Targets="gc3-hydhtc137458d" URI="AllocationRuleProfile.jar"/>
+        <EJBComponent Name="RouteTemplateLegInvParty"
+            Targets="gc3-hydhtc137458d" URI="RouteTemplateLegInvParty.jar"/>
+        <EJBComponent Name="SavedQuerySortOrder"
+            Targets="gc3-hydhtc137458d" URI="SavedQuerySortOrder.jar"/>
+        <EJBComponent Name="NfrcRuleInvParty"
+            Targets="gc3-hydhtc137458d" URI="NfrcRuleInvParty.jar"/>
+        <EJBComponent Name="RoTimePeriodDef" Targets="gc3-hydhtc137458d" URI="RoTimePeriodDef.jar"/>
+        <EJBComponent Name="BnNamedRangeInvParty"
+            Targets="gc3-hydhtc137458d" URI="BnNamedRangeInvParty.jar"/>
+        <EJBComponent Name="ShipmentCostRemark"
+            Targets="gc3-hydhtc137458d" URI="ShipmentCostRemark.jar"/>
+        <EJBComponent Name="VisibilityEventType"
+            Targets="gc3-hydhtc137458d" URI="VisibilityEventType.jar"/>
+        <EJBComponent Name="ItlService" Targets="gc3-hydhtc137458d" URI="ItlService.jar"/>
+        <EJBComponent Name="Yard" Targets="gc3-hydhtc137458d" URI="Yard.jar"/>
+        <EJBComponent Name="FlexCommodityProfileD"
+            Targets="gc3-hydhtc137458d" URI="FlexCommodityProfileD.jar"/>
+        <EJBComponent Name="PartitionProfileD"
+            Targets="gc3-hydhtc137458d" URI="PartitionProfileD.jar"/>
+        <EJBComponent Name="RateGeoStops" Targets="gc3-hydhtc137458d" URI="RateGeoStops.jar"/>
+        <EJBComponent Name="ExchangeRate" Targets="gc3-hydhtc137458d" URI="ExchangeRate.jar"/>
+        <EJBComponent Name="ObReleaseInstruction"
+            Targets="gc3-hydhtc137458d" URI="ObReleaseInstruction.jar"/>
+        <EJBComponent Name="EquipmentRemark" Targets="gc3-hydhtc137458d" URI="EquipmentRemark.jar"/>
+        <EJBComponent Name="ClaimStatus" Targets="gc3-hydhtc137458d" URI="ClaimStatus.jar"/>
+        <EJBComponent Name="OmRefnumQual" Targets="gc3-hydhtc137458d" URI="OmRefnumQual.jar"/>
+        <EJBComponent Name="SensorServiceEventType"
+            Targets="gc3-hydhtc137458d" URI="SensorServiceEventType.jar"/>
+        <EJBComponent Name="JobInvolvedParty"
+            Targets="gc3-hydhtc137458d" URI="JobInvolvedParty.jar"/>
+        <EJBComponent Name="MonitorAgentEventSession"
+            Targets="gc3-hydhtc137458d" URI="MonitorAgentEventSession.jar"/>
+        <EJBComponent Name="MonitorBusinessFunction"
+            Targets="gc3-hydhtc137458d" URI="MonitorBusinessFunction.jar"/>
+        <EJBComponent Name="QuoteRefnum" Targets="gc3-hydhtc137458d" URI="QuoteRefnum.jar"/>
+        <EJBComponent Name="CrOutlierRuleType"
+            Targets="gc3-hydhtc137458d" URI="CrOutlierRuleType.jar"/>
+        <EJBComponent Name="ExchangeRateByDate"
+            Targets="gc3-hydhtc137458d" URI="ExchangeRateByDate.jar"/>
+        <EJBComponent Name="BulkPlanPartition"
+            Targets="gc3-hydhtc137458d" URI="BulkPlanPartition.jar"/>
+        <EJBComponent Name="InvoiceSummary" Targets="gc3-hydhtc137458d" URI="InvoiceSummary.jar"/>
+        <EJBComponent Name="ItemText" Targets="gc3-hydhtc137458d" URI="ItemText.jar"/>
+        <EJBComponent Name="OrEquipment" Targets="gc3-hydhtc137458d" URI="OrEquipment.jar"/>
+        <EJBComponent Name="MatchValidRuleProfileD"
+            Targets="gc3-hydhtc137458d" URI="MatchValidRuleProfileD.jar"/>
+        <EJBComponent Name="QuoteShipUnit" Targets="gc3-hydhtc137458d" URI="QuoteShipUnit.jar"/>
+        <EJBComponent Name="Buyer" Targets="gc3-hydhtc137458d" URI="Buyer.jar"/>
+        <EJBComponent Name="RouteTmpltLegLocIncompat"
+            Targets="gc3-hydhtc137458d" URI="RouteTmpltLegLocIncompat.jar"/>
+        <EJBComponent Name="RateGeoProfile" Targets="gc3-hydhtc137458d" URI="RateGeoProfile.jar"/>
+        <EJBComponent Name="LaneAttributeDefD"
+            Targets="gc3-hydhtc137458d" URI="LaneAttributeDefD.jar"/>
+        <EJBComponent Name="VisibilityShipment"
+            Targets="gc3-hydhtc137458d" URI="VisibilityShipment.jar"/>
+        <EJBComponent Name="GlKeyComponentTypeParam"
+            Targets="gc3-hydhtc137458d" URI="GlKeyComponentTypeParam.jar"/>
+        <EJBComponent Name="GlKeyComponentParam"
+            Targets="gc3-hydhtc137458d" URI="GlKeyComponentParam.jar"/>
+        <EJBComponent Name="OmrDLineStatus" Targets="gc3-hydhtc137458d" URI="OmrDLineStatus.jar"/>
+        <EJBComponent Name="ComMethod" Targets="gc3-hydhtc137458d" URI="ComMethod.jar"/>
+        <EJBComponent Name="SgEventGroup" Targets="gc3-hydhtc137458d" URI="SgEventGroup.jar"/>
+        <EJBComponent Name="RegionGroup" Targets="gc3-hydhtc137458d" URI="RegionGroup.jar"/>
+        <EJBComponent Name="AppServer" Targets="gc3-hydhtc137458d" URI="AppServer.jar"/>
+        <EJBComponent Name="ContactCorporation"
+            Targets="gc3-hydhtc137458d" URI="ContactCorporation.jar"/>
+        <EJBComponent Name="OrderReleaseInvParty"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseInvParty.jar"/>
+        <EJBComponent Name="MonitorProfileSession"
+            Targets="gc3-hydhtc137458d" URI="MonitorProfileSession.jar"/>
+        <EJBComponent Name="CrAggregatorSession"
+            Targets="gc3-hydhtc137458d" URI="CrAggregatorSession.jar"/>
+        <EJBComponent Name="CharterVoyageStowage"
+            Targets="gc3-hydhtc137458d" URI="CharterVoyageStowage.jar"/>
+        <EJBComponent Name="ResourceRetriever"
+            Targets="gc3-hydhtc137458d" URI="ResourceRetriever.jar"/>
+        <EJBComponent Name="DefaultFinderSetAccess"
+            Targets="gc3-hydhtc137458d" URI="DefaultFinderSetAccess.jar"/>
+        <EJBComponent Name="InvoicePort" Targets="gc3-hydhtc137458d" URI="InvoicePort.jar"/>
+        <EJBComponent Name="PSolutionD" Targets="gc3-hydhtc137458d" URI="PSolutionD.jar"/>
+        <EJBComponent Name="CapacityCommitmentAlloc"
+            Targets="gc3-hydhtc137458d" URI="CapacityCommitmentAlloc.jar"/>
+        <EJBComponent Name="Customer" Targets="gc3-hydhtc137458d" URI="Customer.jar"/>
+        <EJBComponent Name="DocumentDocContentJoin"
+            Targets="gc3-hydhtc137458d" URI="DocumentDocContentJoin.jar"/>
+        <EJBComponent Name="StylesheetProfile"
+            Targets="gc3-hydhtc137458d" URI="StylesheetProfile.jar"/>
+        <EJBComponent Name="ShipUnitSpecProfileD"
+            Targets="gc3-hydhtc137458d" URI="ShipUnitSpecProfileD.jar"/>
+        <EJBComponent Name="UserAssociation" Targets="gc3-hydhtc137458d" URI="UserAssociation.jar"/>
+        <EJBComponent Name="TimePeriodType" Targets="gc3-hydhtc137458d" URI="TimePeriodType.jar"/>
+        <EJBComponent Name="ReportLog" Targets="gc3-hydhtc137458d" URI="ReportLog.jar"/>
+        <EJBComponent Name="ObShipUnitContent"
+            Targets="gc3-hydhtc137458d" URI="ObShipUnitContent.jar"/>
+        <EJBComponent Name="JunctionCode" Targets="gc3-hydhtc137458d" URI="JunctionCode.jar"/>
+        <EJBComponent Name="EquipmentAttributeQual"
+            Targets="gc3-hydhtc137458d" URI="EquipmentAttributeQual.jar"/>
+        <EJBComponent Name="UserPreferenceD" Targets="gc3-hydhtc137458d" URI="UserPreferenceD.jar"/>
+        <EJBComponent Name="ServprovAlias" Targets="gc3-hydhtc137458d" URI="ServprovAlias.jar"/>
+        <EJBComponent Name="NotifySubjectServprov"
+            Targets="gc3-hydhtc137458d" URI="NotifySubjectServprov.jar"/>
+        <EJBComponent Name="PackagingFormCodeRefnum"
+            Targets="gc3-hydhtc137458d" URI="PackagingFormCodeRefnum.jar"/>
+        <EJBComponent Name="CrLvAggregateCategory"
+            Targets="gc3-hydhtc137458d" URI="CrLvAggregateCategory.jar"/>
+        <EJBComponent Name="XMLUpdateActionSession"
+            Targets="gc3-hydhtc137458d" URI="XMLUpdateActionSession.jar"/>
+        <EJBComponent Name="BillableTransaction"
+            Targets="gc3-hydhtc137458d" URI="BillableTransaction.jar"/>
+        <EJBComponent Name="UtilActionSession"
+            Targets="gc3-hydhtc137458d" URI="UtilActionSession.jar"/>
+        <EJBComponent Name="ExternalRatingEngine"
+            Targets="gc3-hydhtc137458d" URI="ExternalRatingEngine.jar"/>
+        <EJBComponent Name="OrderReleaseLegConstraint"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseLegConstraint.jar"/>
+        <EJBComponent Name="RgSpecialServiceAccessorial"
+            Targets="gc3-hydhtc137458d" URI="RgSpecialServiceAccessorial.jar"/>
+        <EJBComponent Name="VoucherRemark" Targets="gc3-hydhtc137458d" URI="VoucherRemark.jar"/>
+        <EJBComponent Name="OrInvolvedPartyAddress"
+            Targets="gc3-hydhtc137458d" URI="OrInvolvedPartyAddress.jar"/>
+        <EJBComponent Name="RepetitionScheduleStopD"
+            Targets="gc3-hydhtc137458d" URI="RepetitionScheduleStopD.jar"/>
+        <EJBComponent Name="JobRemark" Targets="gc3-hydhtc137458d" URI="JobRemark.jar"/>
+        <EJBComponent Name="LocationCapacityGroup"
+            Targets="gc3-hydhtc137458d" URI="LocationCapacityGroup.jar"/>
+        <EJBComponent Name="RateGeoProfileD" Targets="gc3-hydhtc137458d" URI="RateGeoProfileD.jar"/>
+        <EJBComponent Name="Shipment" Targets="gc3-hydhtc137458d" URI="Shipment.jar"/>
+        <EJBComponent Name="ClaimLineItemPackageStatus"
+            Targets="gc3-hydhtc137458d" URI="ClaimLineItemPackageStatus.jar"/>
+        <EJBComponent Name="ShipmentText" Targets="gc3-hydhtc137458d" URI="ShipmentText.jar"/>
+        <EJBComponent Name="ScCopyRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="ScCopyRefnumQual.jar"/>
+        <EJBComponent Name="LocationAccessorial"
+            Targets="gc3-hydhtc137458d" URI="LocationAccessorial.jar"/>
+        <EJBComponent Name="MiscellaneousUpdateSession"
+            Targets="gc3-hydhtc137458d" URI="MiscellaneousUpdateSession.jar"/>
+        <EJBComponent Name="ConsolidationTypeProf"
+            Targets="gc3-hydhtc137458d" URI="ConsolidationTypeProf.jar"/>
+        <EJBComponent Name="InvoiceLineitemVat"
+            Targets="gc3-hydhtc137458d" URI="InvoiceLineitemVat.jar"/>
+        <EJBComponent Name="EquipGroupEquipRefUnit"
+            Targets="gc3-hydhtc137458d" URI="EquipGroupEquipRefUnit.jar"/>
+        <EJBComponent Name="EParameter" Targets="gc3-hydhtc137458d" URI="EParameter.jar"/>
+        <EJBComponent Name="CrScenarioSummary"
+            Targets="gc3-hydhtc137458d" URI="CrScenarioSummary.jar"/>
+        <EJBComponent Name="OrderBaseShipmentLinkSession"
+            Targets="gc3-hydhtc137458d" URI="OrderBaseShipmentLinkSession.jar"/>
+        <EJBComponent Name="ShipGroupInvolvedParty"
+            Targets="gc3-hydhtc137458d" URI="ShipGroupInvolvedParty.jar"/>
+        <EJBComponent Name="InvoiceServerActionSession"
+            Targets="gc3-hydhtc137458d" URI="InvoiceServerActionSession.jar"/>
+        <EJBComponent Name="RepSchedServiceMap"
+            Targets="gc3-hydhtc137458d" URI="RepSchedServiceMap.jar"/>
+        <EJBComponent Name="ShipmentStatus" Targets="gc3-hydhtc137458d" URI="ShipmentStatus.jar"/>
+        <EJBComponent Name="ItemSpecialService"
+            Targets="gc3-hydhtc137458d" URI="ItemSpecialService.jar"/>
+        <EJBComponent Name="NotifySubjectContact"
+            Targets="gc3-hydhtc137458d" URI="NotifySubjectContact.jar"/>
+        <EJBComponent Name="CustomerServerActionSession"
+            Targets="gc3-hydhtc137458d" URI="CustomerServerActionSession.jar"/>
+        <EJBComponent Name="OrderBaseUpdateSession"
+            Targets="gc3-hydhtc137458d" URI="OrderBaseUpdateSession.jar"/>
+        <EJBComponent Name="OrderValidationSession"
+            Targets="gc3-hydhtc137458d" URI="OrderValidationSession.jar"/>
+        <EJBComponent Name="ObTrEventContact"
+            Targets="gc3-hydhtc137458d" URI="ObTrEventContact.jar"/>
+        <EJBComponent Name="ClaimNote" Targets="gc3-hydhtc137458d" URI="ClaimNote.jar"/>
+        <EJBComponent Name="BuyerTemplate" Targets="gc3-hydhtc137458d" URI="BuyerTemplate.jar"/>
+        <EJBComponent Name="OrEquipmentSeal" Targets="gc3-hydhtc137458d" URI="OrEquipmentSeal.jar"/>
+        <EJBComponent Name="ITransmissionRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="ITransmissionRefnumQual.jar"/>
+        <EJBComponent Name="ShipmentCalcSession"
+            Targets="gc3-hydhtc137458d" URI="ShipmentCalcSession.jar"/>
+        <EJBComponent Name="SShipUnitRemark" Targets="gc3-hydhtc137458d" URI="SShipUnitRemark.jar"/>
+        <EJBComponent Name="AllocationBase" Targets="gc3-hydhtc137458d" URI="AllocationBase.jar"/>
+        <EJBComponent Name="FlexCommodityProfile"
+            Targets="gc3-hydhtc137458d" URI="FlexCommodityProfile.jar"/>
+        <EJBComponent Name="SkuEventRemark" Targets="gc3-hydhtc137458d" URI="SkuEventRemark.jar"/>
+        <EJBComponent Name="CrForecastRefnum"
+            Targets="gc3-hydhtc137458d" URI="CrForecastRefnum.jar"/>
+        <EJBComponent Name="NfrcRuleJobInvParty"
+            Targets="gc3-hydhtc137458d" URI="NfrcRuleJobInvParty.jar"/>
+        <EJBComponent Name="CrAggregation" Targets="gc3-hydhtc137458d" URI="CrAggregation.jar"/>
+        <EJBComponent Name="UserMenu" Targets="gc3-hydhtc137458d" URI="UserMenu.jar"/>
+        <EJBComponent Name="WorkflowActionParam"
+            Targets="gc3-hydhtc137458d" URI="WorkflowActionParam.jar"/>
+        <EJBComponent Name="ShipmentStopD" Targets="gc3-hydhtc137458d" URI="ShipmentStopD.jar"/>
+        <EJBComponent Name="AnalyzeRequestSession"
+            Targets="gc3-hydhtc137458d" URI="AnalyzeRequestSession.jar"/>
+        <EJBComponent Name="AutoSecResCriterion"
+            Targets="gc3-hydhtc137458d" URI="AutoSecResCriterion.jar"/>
+        <EJBComponent Name="PBidStatus" Targets="gc3-hydhtc137458d" URI="PBidStatus.jar"/>
+        <EJBComponent Name="VesselRefnum" Targets="gc3-hydhtc137458d" URI="VesselRefnum.jar"/>
+        <EJBComponent Name="RateOfferingComment"
+            Targets="gc3-hydhtc137458d" URI="RateOfferingComment.jar"/>
+        <EJBComponent Name="IeSsSEquipmentSeal"
+            Targets="gc3-hydhtc137458d" URI="IeSsSEquipmentSeal.jar"/>
+        <EJBComponent Name="VatProvincialCnfgPerspD"
+            Targets="gc3-hydhtc137458d" URI="VatProvincialCnfgPerspD.jar"/>
+        <EJBComponent Name="VatConfigurationPerspD"
+            Targets="gc3-hydhtc137458d" URI="VatConfigurationPerspD.jar"/>
+        <EJBComponent Name="ShipmentRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="ShipmentRefnumQual.jar"/>
+        <EJBComponent Name="LineApproveTolProfileD"
+            Targets="gc3-hydhtc137458d" URI="LineApproveTolProfileD.jar"/>
+        <EJBComponent Name="FfTextProfileQual"
+            Targets="gc3-hydhtc137458d" URI="FfTextProfileQual.jar"/>
+        <EJBComponent Name="ConditionalBookingProfD"
+            Targets="gc3-hydhtc137458d" URI="ConditionalBookingProfD.jar"/>
+        <EJBComponent Name="AgentEventsInvalidAction"
+            Targets="gc3-hydhtc137458d" URI="AgentEventsInvalidAction.jar"/>
+        <EJBComponent Name="DataQDefRelatedQDef"
+            Targets="gc3-hydhtc137458d" URI="DataQDefRelatedQDef.jar"/>
+        <EJBComponent Name="PackagedItemRefnum"
+            Targets="gc3-hydhtc137458d" URI="PackagedItemRefnum.jar"/>
+        <EJBComponent Name="RateServiceProfileD"
+            Targets="gc3-hydhtc137458d" URI="RateServiceProfileD.jar"/>
+        <EJBComponent Name="ContainerOptConfig"
+            Targets="gc3-hydhtc137458d" URI="ContainerOptConfig.jar"/>
+        <EJBComponent Name="CapacityGroup" Targets="gc3-hydhtc137458d" URI="CapacityGroup.jar"/>
+        <EJBComponent Name="ConnectionPoolProperty"
+            Targets="gc3-hydhtc137458d" URI="ConnectionPoolProperty.jar"/>
+        <EJBComponent Name="ShipUnitSpecLoadingPattern"
+            Targets="gc3-hydhtc137458d" URI="ShipUnitSpecLoadingPattern.jar"/>
+        <EJBComponent Name="RepSchedService" Targets="gc3-hydhtc137458d" URI="RepSchedService.jar"/>
+        <EJBComponent Name="IeShipmentstatus"
+            Targets="gc3-hydhtc137458d" URI="IeShipmentstatus.jar"/>
+        <EJBComponent Name="RateOffering" Targets="gc3-hydhtc137458d" URI="RateOffering.jar"/>
+        <EJBComponent Name="VisibilityPiece" Targets="gc3-hydhtc137458d" URI="VisibilityPiece.jar"/>
+        <EJBComponent Name="LogicScenario" Targets="gc3-hydhtc137458d" URI="LogicScenario.jar"/>
+        <EJBComponent Name="Voyloc" Targets="gc3-hydhtc137458d" URI="Voyloc.jar"/>
+        <EJBComponent Name="OmrD" Targets="gc3-hydhtc137458d" URI="OmrD.jar"/>
+        <EJBComponent Name="ThresholdProfile"
+            Targets="gc3-hydhtc137458d" URI="ThresholdProfile.jar"/>
+        <EJBComponent Name="WeightBreakProfile"
+            Targets="gc3-hydhtc137458d" URI="WeightBreakProfile.jar"/>
+        <EJBComponent Name="VolvoHelperSession"
+            Targets="gc3-hydhtc137458d" URI="VolvoHelperSession.jar"/>
+        <EJBComponent Name="CrForecastRule" Targets="gc3-hydhtc137458d" URI="CrForecastRule.jar"/>
+        <EJBComponent Name="IncoTermProfileD"
+            Targets="gc3-hydhtc137458d" URI="IncoTermProfileD.jar"/>
+        <EJBComponent Name="EquipmentRefnum" Targets="gc3-hydhtc137458d" URI="EquipmentRefnum.jar"/>
+        <EJBComponent Name="ShipmentAgentRsp"
+            Targets="gc3-hydhtc137458d" URI="ShipmentAgentRsp.jar"/>
+        <EJBComponent Name="ProvinceCodeProfile"
+            Targets="gc3-hydhtc137458d" URI="ProvinceCodeProfile.jar"/>
+        <EJBComponent Name="ObsStatusHistoryEventGroup"
+            Targets="gc3-hydhtc137458d" URI="ObsStatusHistoryEventGroup.jar"/>
+        <EJBComponent Name="AllocationRule" Targets="gc3-hydhtc137458d" URI="AllocationRule.jar"/>
+        <EJBComponent Name="RouteInstance" Targets="gc3-hydhtc137458d" URI="RouteInstance.jar"/>
+        <EJBComponent Name="PlanningTask" Targets="gc3-hydhtc137458d" URI="PlanningTask.jar"/>
+        <EJBComponent Name="AllocationUpdateSession"
+            Targets="gc3-hydhtc137458d" URI="AllocationUpdateSession.jar"/>
+        <EJBComponent Name="LocationUpdateSession"
+            Targets="gc3-hydhtc137458d" URI="LocationUpdateSession.jar"/>
+        <EJBComponent Name="ConsolRemark" Targets="gc3-hydhtc137458d" URI="ConsolRemark.jar"/>
+        <EJBComponent Name="LocationFixedBatchAssign"
+            Targets="gc3-hydhtc137458d" URI="LocationFixedBatchAssign.jar"/>
+        <EJBComponent Name="MonitorAgentLinkSession"
+            Targets="gc3-hydhtc137458d" URI="MonitorAgentLinkSession.jar"/>
+        <EJBComponent Name="ShipmentPlanningActionSession"
+            Targets="gc3-hydhtc137458d" URI="ShipmentPlanningActionSession.jar"/>
+        <EJBComponent Name="CrLvAggregateSession"
+            Targets="gc3-hydhtc137458d" URI="CrLvAggregateSession.jar"/>
+        <EJBComponent Name="Preference" Targets="gc3-hydhtc137458d" URI="Preference.jar"/>
+        <EJBComponent Name="ShipmentSpecServiceRemark"
+            Targets="gc3-hydhtc137458d" URI="ShipmentSpecServiceRemark.jar"/>
+        <EJBComponent Name="UOMSession" Targets="gc3-hydhtc137458d" URI="UOMSession.jar"/>
+        <EJBComponent Name="VatProvincialCnfgPersp"
+            Targets="gc3-hydhtc137458d" URI="VatProvincialCnfgPersp.jar"/>
+        <EJBComponent Name="SShipUnit" Targets="gc3-hydhtc137458d" URI="SShipUnit.jar"/>
+        <EJBComponent Name="ItemRelationship"
+            Targets="gc3-hydhtc137458d" URI="ItemRelationship.jar"/>
+        <EJBComponent Name="Omr" Targets="gc3-hydhtc137458d" URI="Omr.jar"/>
+        <EJBComponent Name="InvoiceLiCommercialData"
+            Targets="gc3-hydhtc137458d" URI="InvoiceLiCommercialData.jar"/>
+        <EJBComponent Name="UserWsReportAccess"
+            Targets="gc3-hydhtc137458d" URI="UserWsReportAccess.jar"/>
+        <EJBComponent Name="ActionSession" Targets="gc3-hydhtc137458d" URI="ActionSession.jar"/>
+        <EJBComponent Name="ItlProfileDetail"
+            Targets="gc3-hydhtc137458d" URI="ItlProfileDetail.jar"/>
+        <EJBComponent Name="PlanningRateOffering"
+            Targets="gc3-hydhtc137458d" URI="PlanningRateOffering.jar"/>
+        <EJBComponent Name="NmfcClass" Targets="gc3-hydhtc137458d" URI="NmfcClass.jar"/>
+        <EJBComponent Name="LaneSummaryShipSetJoin"
+            Targets="gc3-hydhtc137458d" URI="LaneSummaryShipSetJoin.jar"/>
+        <EJBComponent Name="HnameSet" Targets="gc3-hydhtc137458d" URI="HnameSet.jar"/>
+        <EJBComponent Name="OrderReleaseStatus"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseStatus.jar"/>
+        <EJBComponent Name="BulkPlanResultSession"
+            Targets="gc3-hydhtc137458d" URI="BulkPlanResultSession.jar"/>
+        <EJBComponent Name="ConsolRefnum" Targets="gc3-hydhtc137458d" URI="ConsolRefnum.jar"/>
+        <EJBComponent Name="ShippingAgentType"
+            Targets="gc3-hydhtc137458d" URI="ShippingAgentType.jar"/>
+        <EJBComponent Name="AdhocNotify" Targets="gc3-hydhtc137458d" URI="AdhocNotify.jar"/>
+        <EJBComponent Name="JobRefnum" Targets="gc3-hydhtc137458d" URI="JobRefnum.jar"/>
+        <EJBComponent Name="RateCostingSequence"
+            Targets="gc3-hydhtc137458d" URI="RateCostingSequence.jar"/>
+        <EJBComponent Name="ModeProfileDetail"
+            Targets="gc3-hydhtc137458d" URI="ModeProfileDetail.jar"/>
+        <EJBComponent Name="UdcClassificationListD"
+            Targets="gc3-hydhtc137458d" URI="UdcClassificationListD.jar"/>
+        <EJBComponent Name="InterimFlight" Targets="gc3-hydhtc137458d" URI="InterimFlight.jar"/>
+        <EJBComponent Name="OmrDLine" Targets="gc3-hydhtc137458d" URI="OmrDLine.jar"/>
+        <EJBComponent Name="ContactComMethod"
+            Targets="gc3-hydhtc137458d" URI="ContactComMethod.jar"/>
+        <EJBComponent Name="CrFleet" Targets="gc3-hydhtc137458d" URI="CrFleet.jar"/>
+        <EJBComponent Name="ObLine" Targets="gc3-hydhtc137458d" URI="ObLine.jar"/>
+        <EJBComponent Name="BsStatusGroup" Targets="gc3-hydhtc137458d" URI="BsStatusGroup.jar"/>
+        <EJBComponent Name="ObSuAccessorial" Targets="gc3-hydhtc137458d" URI="ObSuAccessorial.jar"/>
+        <EJBComponent Name="OrsStatusHistoryLine"
+            Targets="gc3-hydhtc137458d" URI="OrsStatusHistoryLine.jar"/>
+        <EJBComponent Name="IeInrouteServprov"
+            Targets="gc3-hydhtc137458d" URI="IeInrouteServprov.jar"/>
+        <EJBComponent Name="InvoiceLineitemVatCostRef"
+            Targets="gc3-hydhtc137458d" URI="InvoiceLineitemVatCostRef.jar"/>
+        <EJBComponent Name="RoNmfcCodeSubst" Targets="gc3-hydhtc137458d" URI="RoNmfcCodeSubst.jar"/>
+        <EJBComponent Name="NotifyException" Targets="gc3-hydhtc137458d" URI="NotifyException.jar"/>
+        <EJBComponent Name="ItineraryProfileD"
+            Targets="gc3-hydhtc137458d" URI="ItineraryProfileD.jar"/>
+        <EJBComponent Name="CrScenario" Targets="gc3-hydhtc137458d" URI="CrScenario.jar"/>
+        <EJBComponent Name="CapacityOverrideLine"
+            Targets="gc3-hydhtc137458d" URI="CapacityOverrideLine.jar"/>
+        <EJBComponent Name="AutoApproveRuleProfileD"
+            Targets="gc3-hydhtc137458d" URI="AutoApproveRuleProfileD.jar"/>
+        <EJBComponent Name="EquipmentActionSession"
+            Targets="gc3-hydhtc137458d" URI="EquipmentActionSession.jar"/>
+        <EJBComponent Name="AutoAssignRuleDefDList"
+            Targets="gc3-hydhtc137458d" URI="AutoAssignRuleDefDList.jar"/>
+        <EJBComponent Name="AppActionCheckAccess"
+            Targets="gc3-hydhtc137458d" URI="AppActionCheckAccess.jar"/>
+        <EJBComponent Name="SavedCondition" Targets="gc3-hydhtc137458d" URI="SavedCondition.jar"/>
+        <EJBComponent Name="TransactionalEventSubject"
+            Targets="gc3-hydhtc137458d" URI="TransactionalEventSubject.jar"/>
+        <EJBComponent Name="ObSuContentRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="ObSuContentRefnumQual.jar"/>
+        <EJBComponent Name="UtilitySession" Targets="gc3-hydhtc137458d" URI="UtilitySession.jar"/>
+        <EJBComponent Name="InvoiceSigningAuthority"
+            Targets="gc3-hydhtc137458d" URI="InvoiceSigningAuthority.jar"/>
+        <EJBComponent Name="InvoiceRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="InvoiceRefnumQual.jar"/>
+        <EJBComponent Name="CurrencyExchangeRate"
+            Targets="gc3-hydhtc137458d" URI="CurrencyExchangeRate.jar"/>
+        <EJBComponent Name="AppAction" Targets="gc3-hydhtc137458d" URI="AppAction.jar"/>
+        <EJBComponent Name="EKpiTargetValueStage"
+            Targets="gc3-hydhtc137458d" URI="EKpiTargetValueStage.jar"/>
+        <EJBComponent Name="PaymentMethodProfile"
+            Targets="gc3-hydhtc137458d" URI="PaymentMethodProfile.jar"/>
+        <EJBComponent Name="ItemFeatureQual" Targets="gc3-hydhtc137458d" URI="ItemFeatureQual.jar"/>
+        <EJBComponent Name="SShipUnitAccessorial"
+            Targets="gc3-hydhtc137458d" URI="SShipUnitAccessorial.jar"/>
+        <EJBComponent Name="GenericContainerUtilSession"
+            Targets="gc3-hydhtc137458d" URI="GenericContainerUtilSession.jar"/>
+        <EJBComponent Name="BsEventGroupClassify"
+            Targets="gc3-hydhtc137458d" URI="BsEventGroupClassify.jar"/>
+        <EJBComponent Name="AgentEventDetails"
+            Targets="gc3-hydhtc137458d" URI="AgentEventDetails.jar"/>
+        <EJBComponent Name="StationCode" Targets="gc3-hydhtc137458d" URI="StationCode.jar"/>
+        <EJBComponent Name="BTASession" Targets="gc3-hydhtc137458d" URI="BTASession.jar"/>
+        <EJBComponent Name="AppFunction" Targets="gc3-hydhtc137458d" URI="AppFunction.jar"/>
+        <EJBComponent Name="ClaimLineItemCost"
+            Targets="gc3-hydhtc137458d" URI="ClaimLineItemCost.jar"/>
+        <EJBComponent Name="RouteInstanceInvParty"
+            Targets="gc3-hydhtc137458d" URI="RouteInstanceInvParty.jar"/>
+        <EJBComponent Name="WorkingListDetail"
+            Targets="gc3-hydhtc137458d" URI="WorkingListDetail.jar"/>
+        <EJBComponent Name="TenderCollabCbField"
+            Targets="gc3-hydhtc137458d" URI="TenderCollabCbField.jar"/>
+        <EJBComponent Name="ItineraryProfile"
+            Targets="gc3-hydhtc137458d" URI="ItineraryProfile.jar"/>
+        <EJBComponent Name="DomainSession" Targets="gc3-hydhtc137458d" URI="DomainSession.jar"/>
+        <EJBComponent Name="UserPreferenceAccess"
+            Targets="gc3-hydhtc137458d" URI="UserPreferenceAccess.jar"/>
+        <EJBComponent Name="ShipCommitAllocJoin"
+            Targets="gc3-hydhtc137458d" URI="ShipCommitAllocJoin.jar"/>
+        <EJBComponent Name="QualityFactorProfile"
+            Targets="gc3-hydhtc137458d" URI="QualityFactorProfile.jar"/>
+        <EJBComponent Name="DiagPerformanceSchedCap"
+            Targets="gc3-hydhtc137458d" URI="DiagPerformanceSchedCap.jar"/>
+        <EJBComponent Name="ShipmentStopSuInvParty"
+            Targets="gc3-hydhtc137458d" URI="ShipmentStopSuInvParty.jar"/>
+        <EJBComponent Name="IntegrationLogSession"
+            Targets="gc3-hydhtc137458d" URI="IntegrationLogSession.jar"/>
+        <EJBComponent Name="RateOfferingType"
+            Targets="gc3-hydhtc137458d" URI="RateOfferingType.jar"/>
+        <EJBComponent Name="CPDiagSession" Targets="gc3-hydhtc137458d" URI="CPDiagSession.jar"/>
+        <EJBComponent Name="DistanceExternalGeo"
+            Targets="gc3-hydhtc137458d" URI="DistanceExternalGeo.jar"/>
+        <EJBComponent Name="ExternalSystemService"
+            Targets="gc3-hydhtc137458d" URI="ExternalSystemService.jar"/>
+        <EJBComponent Name="RateClassification"
+            Targets="gc3-hydhtc137458d" URI="RateClassification.jar"/>
+        <EJBComponent Name="ObText" Targets="gc3-hydhtc137458d" URI="ObText.jar"/>
+        <EJBComponent Name="AppActionReasonAccess"
+            Targets="gc3-hydhtc137458d" URI="AppActionReasonAccess.jar"/>
+        <EJBComponent Name="ThresholdProfileD"
+            Targets="gc3-hydhtc137458d" URI="ThresholdProfileD.jar"/>
+        <EJBComponent Name="BsRespPartyProfile"
+            Targets="gc3-hydhtc137458d" URI="BsRespPartyProfile.jar"/>
+        <EJBComponent Name="LogicParameter" Targets="gc3-hydhtc137458d" URI="LogicParameter.jar"/>
+        <EJBComponent Name="SavedQuerySession"
+            Targets="gc3-hydhtc137458d" URI="SavedQuerySession.jar"/>
+        <EJBComponent Name="PlanningParameterSet"
+            Targets="gc3-hydhtc137458d" URI="PlanningParameterSet.jar"/>
+        <EJBComponent Name="SShipUnitLineRefnum"
+            Targets="gc3-hydhtc137458d" URI="SShipUnitLineRefnum.jar"/>
+        <EJBComponent Name="DataQueuePollerIndex"
+            Targets="gc3-hydhtc137458d" URI="DataQueuePollerIndex.jar"/>
+        <EJBComponent Name="ContainerOptAlgorithm"
+            Targets="gc3-hydhtc137458d" URI="ContainerOptAlgorithm.jar"/>
+        <EJBComponent Name="LocationStatus" Targets="gc3-hydhtc137458d" URI="LocationStatus.jar"/>
+        <EJBComponent Name="MovePerspective" Targets="gc3-hydhtc137458d" URI="MovePerspective.jar"/>
+        <EJBComponent Name="DomainProfile" Targets="gc3-hydhtc137458d" URI="DomainProfile.jar"/>
+        <EJBComponent Name="AutoAssignRulePreQualList"
+            Targets="gc3-hydhtc137458d" URI="AutoAssignRulePreQualList.jar"/>
+        <EJBComponent Name="OmrStatus" Targets="gc3-hydhtc137458d" URI="OmrStatus.jar"/>
+        <EJBComponent Name="SEquipmentSeal" Targets="gc3-hydhtc137458d" URI="SEquipmentSeal.jar"/>
+        <EJBComponent Name="Flight" Targets="gc3-hydhtc137458d" URI="Flight.jar"/>
+        <EJBComponent Name="BsReasonGroupProfile"
+            Targets="gc3-hydhtc137458d" URI="BsReasonGroupProfile.jar"/>
+        <EJBComponent Name="VatCodeOrderedSet"
+            Targets="gc3-hydhtc137458d" URI="VatCodeOrderedSet.jar"/>
+        <EJBComponent Name="AuditObjectType" Targets="gc3-hydhtc137458d" URI="AuditObjectType.jar"/>
+        <EJBComponent Name="SSulRefnumQual" Targets="gc3-hydhtc137458d" URI="SSulRefnumQual.jar"/>
+        <EJBComponent Name="LineAppTolShipmentRefnum"
+            Targets="gc3-hydhtc137458d" URI="LineAppTolShipmentRefnum.jar"/>
+        <EJBComponent Name="ReportSetDetail" Targets="gc3-hydhtc137458d" URI="ReportSetDetail.jar"/>
+        <EJBComponent Name="RateFactorRuleJoin"
+            Targets="gc3-hydhtc137458d" URI="RateFactorRuleJoin.jar"/>
+        <EJBComponent Name="NmfcArticleClassMap"
+            Targets="gc3-hydhtc137458d" URI="NmfcArticleClassMap.jar"/>
+        <EJBComponent Name="AccountUserAssociation"
+            Targets="gc3-hydhtc137458d" URI="AccountUserAssociation.jar"/>
+        <EJBComponent Name="DiagPerformanceSchedule"
+            Targets="gc3-hydhtc137458d" URI="DiagPerformanceSchedule.jar"/>
+        <EJBComponent Name="LegInvolvedParty"
+            Targets="gc3-hydhtc137458d" URI="LegInvolvedParty.jar"/>
+        <EJBComponent Name="BnRangeNumber" Targets="gc3-hydhtc137458d" URI="BnRangeNumber.jar"/>
+        <EJBComponent Name="OrderActionSession"
+            Targets="gc3-hydhtc137458d" URI="OrderActionSession.jar"/>
+        <EJBComponent Name="BsReasonGroupProfileD"
+            Targets="gc3-hydhtc137458d" URI="BsReasonGroupProfileD.jar"/>
+        <EJBComponent Name="Rule" Targets="gc3-hydhtc137458d" URI="Rule.jar"/>
+        <EJBComponent Name="ItemFeature" Targets="gc3-hydhtc137458d" URI="ItemFeature.jar"/>
+        <EJBComponent Name="ObLinkSession" Targets="gc3-hydhtc137458d" URI="ObLinkSession.jar"/>
+        <EJBComponent Name="ObLineRemark" Targets="gc3-hydhtc137458d" URI="ObLineRemark.jar"/>
+        <EJBComponent Name="Action" Targets="gc3-hydhtc137458d" URI="Action.jar"/>
+        <EJBComponent Name="ObSpecialService"
+            Targets="gc3-hydhtc137458d" URI="ObSpecialService.jar"/>
+        <EJBComponent Name="RouteCode" Targets="gc3-hydhtc137458d" URI="RouteCode.jar"/>
+        <EJBComponent Name="MonitorAgentToleranceSession"
+            Targets="gc3-hydhtc137458d" URI="MonitorAgentToleranceSession.jar"/>
+        <EJBComponent Name="DistanceByAddresses"
+            Targets="gc3-hydhtc137458d" URI="DistanceByAddresses.jar"/>
+        <EJBComponent Name="OrderMovementActionSession"
+            Targets="gc3-hydhtc137458d" URI="OrderMovementActionSession.jar"/>
+        <EJBComponent Name="CrSolverSession" Targets="gc3-hydhtc137458d" URI="CrSolverSession.jar"/>
+        <EJBComponent Name="CrProject" Targets="gc3-hydhtc137458d" URI="CrProject.jar"/>
+        <EJBComponent Name="AutoAssignCriteria"
+            Targets="gc3-hydhtc137458d" URI="AutoAssignCriteria.jar"/>
+        <EJBComponent Name="CrRouteRemark" Targets="gc3-hydhtc137458d" URI="CrRouteRemark.jar"/>
+        <EJBComponent Name="ReleaseMethod" Targets="gc3-hydhtc137458d" URI="ReleaseMethod.jar"/>
+        <EJBComponent Name="ContainerActionSession"
+            Targets="gc3-hydhtc137458d" URI="ContainerActionSession.jar"/>
+        <EJBComponent Name="Consol" Targets="gc3-hydhtc137458d" URI="Consol.jar"/>
+        <EJBComponent Name="ProcessControlSession"
+            Targets="gc3-hydhtc137458d" URI="ProcessControlSession.jar"/>
+        <EJBComponent Name="BsReasonCodeProfileD"
+            Targets="gc3-hydhtc137458d" URI="BsReasonCodeProfileD.jar"/>
+        <EJBComponent Name="UserRole" Targets="gc3-hydhtc137458d" URI="UserRole.jar"/>
+        <EJBComponent Name="LogisticsGuideOrderTemplate"
+            Targets="gc3-hydhtc137458d" URI="LogisticsGuideOrderTemplate.jar"/>
+        <EJBComponent Name="JobText" Targets="gc3-hydhtc137458d" URI="JobText.jar"/>
+        <EJBComponent Name="LocationAddress" Targets="gc3-hydhtc137458d" URI="LocationAddress.jar"/>
+        <EJBComponent Name="BusinessMonitorAccess"
+            Targets="gc3-hydhtc137458d" URI="BusinessMonitorAccess.jar"/>
+        <EJBComponent Name="RailInterModalPlan"
+            Targets="gc3-hydhtc137458d" URI="RailInterModalPlan.jar"/>
+        <EJBComponent Name="ShipUnitSpecRefnum"
+            Targets="gc3-hydhtc137458d" URI="ShipUnitSpecRefnum.jar"/>
+        <EJBComponent Name="ObShipUnitRefnum"
+            Targets="gc3-hydhtc137458d" URI="ObShipUnitRefnum.jar"/>
+        <EJBComponent Name="LocationProfileDetail"
+            Targets="gc3-hydhtc137458d" URI="LocationProfileDetail.jar"/>
+        <EJBComponent Name="ConsolidationTypeProfD"
+            Targets="gc3-hydhtc137458d" URI="ConsolidationTypeProfD.jar"/>
+        <EJBComponent Name="WorkflowState" Targets="gc3-hydhtc137458d" URI="WorkflowState.jar"/>
+        <EJBComponent Name="ShipGroupTrEventContact"
+            Targets="gc3-hydhtc137458d" URI="ShipGroupTrEventContact.jar"/>
+        <EJBComponent Name="JobOrderReleaseJoin"
+            Targets="gc3-hydhtc137458d" URI="JobOrderReleaseJoin.jar"/>
+        <EJBComponent Name="CrAggregationSession"
+            Targets="gc3-hydhtc137458d" URI="CrAggregationSession.jar"/>
+        <EJBComponent Name="ReportSession" Targets="gc3-hydhtc137458d" URI="ReportSession.jar"/>
+        <EJBComponent Name="LgExchangeRateJoin"
+            Targets="gc3-hydhtc137458d" URI="LgExchangeRateJoin.jar"/>
+        <EJBComponent Name="OmrDLineRemark" Targets="gc3-hydhtc137458d" URI="OmrDLineRemark.jar"/>
+        <EJBComponent Name="ObsStatusHistoryRemark"
+            Targets="gc3-hydhtc137458d" URI="ObsStatusHistoryRemark.jar"/>
+        <EJBComponent Name="CmRule" Targets="gc3-hydhtc137458d" URI="CmRule.jar"/>
+        <EJBComponent Name="ShipUnitRemark" Targets="gc3-hydhtc137458d" URI="ShipUnitRemark.jar"/>
+        <EJBComponent Name="RateServiceAccessorialTime"
+            Targets="gc3-hydhtc137458d" URI="RateServiceAccessorialTime.jar"/>
+        <EJBComponent Name="GeneralLedgerCode"
+            Targets="gc3-hydhtc137458d" URI="GeneralLedgerCode.jar"/>
+        <EJBComponent Name="PBidRemark" Targets="gc3-hydhtc137458d" URI="PBidRemark.jar"/>
+        <EJBComponent Name="Leg" Targets="gc3-hydhtc137458d" URI="Leg.jar"/>
+        <EJBComponent Name="AdjustmentReason"
+            Targets="gc3-hydhtc137458d" URI="AdjustmentReason.jar"/>
+        <EJBComponent Name="BsRespPartyProfileD"
+            Targets="gc3-hydhtc137458d" URI="BsRespPartyProfileD.jar"/>
+        <EJBComponent Name="OrderMovementRemark"
+            Targets="gc3-hydhtc137458d" URI="OrderMovementRemark.jar"/>
+        <EJBComponent Name="CrRouteRefnum" Targets="gc3-hydhtc137458d" URI="CrRouteRefnum.jar"/>
+        <EJBComponent Name="ActionArg" Targets="gc3-hydhtc137458d" URI="ActionArg.jar"/>
+        <EJBComponent Name="JobOrderMovementJoin"
+            Targets="gc3-hydhtc137458d" URI="JobOrderMovementJoin.jar"/>
+        <EJBComponent Name="TransactionalEvent"
+            Targets="gc3-hydhtc137458d" URI="TransactionalEvent.jar"/>
+        <EJBComponent Name="BsRespPartyStatusGroupP"
+            Targets="gc3-hydhtc137458d" URI="BsRespPartyStatusGroupP.jar"/>
+        <EJBComponent Name="ActivityCalendarOverride"
+            Targets="gc3-hydhtc137458d" URI="ActivityCalendarOverride.jar"/>
+        <EJBComponent Name="RateServiceProfile"
+            Targets="gc3-hydhtc137458d" URI="RateServiceProfile.jar"/>
+        <EJBComponent Name="HazmatPackageType"
+            Targets="gc3-hydhtc137458d" URI="HazmatPackageType.jar"/>
+        <EJBComponent Name="ObOrderBase" Targets="gc3-hydhtc137458d" URI="ObOrderBase.jar"/>
+        <EJBComponent Name="PlanningParameterQualifier"
+            Targets="gc3-hydhtc137458d" URI="PlanningParameterQualifier.jar"/>
+        <EJBComponent Name="OmrDLineRefnum" Targets="gc3-hydhtc137458d" URI="OmrDLineRefnum.jar"/>
+        <EJBComponent Name="SkuEvent" Targets="gc3-hydhtc137458d" URI="SkuEvent.jar"/>
+        <EJBComponent Name="ExchangeRateInterfaceSession"
+            Targets="gc3-hydhtc137458d" URI="ExchangeRateInterfaceSession.jar"/>
+        <EJBComponent Name="DistanceLookup" Targets="gc3-hydhtc137458d" URI="DistanceLookup.jar"/>
+        <EJBComponent Name="ServprovProfileDetail"
+            Targets="gc3-hydhtc137458d" URI="ServprovProfileDetail.jar"/>
+        <EJBComponent Name="WorkflowGranularity"
+            Targets="gc3-hydhtc137458d" URI="WorkflowGranularity.jar"/>
+        <EJBComponent Name="ShipGroupScDef" Targets="gc3-hydhtc137458d" URI="ShipGroupScDef.jar"/>
+        <EJBComponent Name="Commodity" Targets="gc3-hydhtc137458d" URI="Commodity.jar"/>
+        <EJBComponent Name="ShipUnitSeal" Targets="gc3-hydhtc137458d" URI="ShipUnitSeal.jar"/>
+        <EJBComponent Name="InvoiceTrEventContact"
+            Targets="gc3-hydhtc137458d" URI="InvoiceTrEventContact.jar"/>
+        <EJBComponent Name="DataTypeAssociation"
+            Targets="gc3-hydhtc137458d" URI="DataTypeAssociation.jar"/>
+        <EJBComponent Name="SecondaryChargeActionSession"
+            Targets="gc3-hydhtc137458d" URI="SecondaryChargeActionSession.jar"/>
+        <EJBComponent Name="DependencyService"
+            Targets="gc3-hydhtc137458d" URI="DependencyService.jar"/>
+        <EJBComponent Name="IntSavedQuery" Targets="gc3-hydhtc137458d" URI="IntSavedQuery.jar"/>
+        <EJBComponent Name="DomainProfileD" Targets="gc3-hydhtc137458d" URI="DomainProfileD.jar"/>
+        <EJBComponent Name="OrderReleaseSpecialService"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseSpecialService.jar"/>
+        <EJBComponent Name="InvoiceLineitemRemark"
+            Targets="gc3-hydhtc137458d" URI="InvoiceLineitemRemark.jar"/>
+        <EJBComponent Name="AppPowerActionAccess"
+            Targets="gc3-hydhtc137458d" URI="AppPowerActionAccess.jar"/>
+        <EJBComponent Name="RateGeoRemark" Targets="gc3-hydhtc137458d" URI="RateGeoRemark.jar"/>
+        <EJBComponent Name="NotifySubjectContactPoint"
+            Targets="gc3-hydhtc137458d" URI="NotifySubjectContactPoint.jar"/>
+        <EJBComponent Name="LineApproveTolProfile"
+            Targets="gc3-hydhtc137458d" URI="LineApproveTolProfile.jar"/>
+        <EJBComponent Name="PackagingRefUnitThu"
+            Targets="gc3-hydhtc137458d" URI="PackagingRefUnitThu.jar"/>
+        <EJBComponent Name="ClaimUpdateSession"
+            Targets="gc3-hydhtc137458d" URI="ClaimUpdateSession.jar"/>
+        <WebServiceComponent Name="ExternalSystemService"
+            Targets="gc3-hydhtc137458d" URI="ExternalSystemService.war"/>
+        <EJBComponent Name="DataQueryType" Targets="gc3-hydhtc137458d" URI="DataQueryType.jar"/>
+        <EJBComponent Name="SShipUnitRefnum" Targets="gc3-hydhtc137458d" URI="SShipUnitRefnum.jar"/>
+        <EJBComponent Name="LocationServprovPrefD"
+            Targets="gc3-hydhtc137458d" URI="LocationServprovPrefD.jar"/>
+        <EJBComponent Name="TransportMode" Targets="gc3-hydhtc137458d" URI="TransportMode.jar"/>
+        <EJBComponent Name="SShipUnitSeal" Targets="gc3-hydhtc137458d" URI="SShipUnitSeal.jar"/>
+        <EJBComponent Name="BsStatusCodeProfileD"
+            Targets="gc3-hydhtc137458d" URI="BsStatusCodeProfileD.jar"/>
+        <EJBComponent Name="SavedQueryValues"
+            Targets="gc3-hydhtc137458d" URI="SavedQueryValues.jar"/>
+        <EJBComponent Name="DocumentDefDqt" Targets="gc3-hydhtc137458d" URI="DocumentDefDqt.jar"/>
+        <EJBComponent Name="AuditControl" Targets="gc3-hydhtc137458d" URI="AuditControl.jar"/>
+        <EJBComponent Name="OracleError" Targets="gc3-hydhtc137458d" URI="OracleError.jar"/>
+        <EJBComponent Name="ItineraryActionSession"
+            Targets="gc3-hydhtc137458d" URI="ItineraryActionSession.jar"/>
+        <EJBComponent Name="UserMenuLayout" Targets="gc3-hydhtc137458d" URI="UserMenuLayout.jar"/>
+        <EJBComponent Name="ThuEquipRefUnit" Targets="gc3-hydhtc137458d" URI="ThuEquipRefUnit.jar"/>
+        <EJBComponent Name="QuoteRemark" Targets="gc3-hydhtc137458d" URI="QuoteRemark.jar"/>
+        <EJBComponent Name="DataAccessSession"
+            Targets="gc3-hydhtc137458d" URI="DataAccessSession.jar"/>
+        <EJBComponent Name="LegCapacityOverride"
+            Targets="gc3-hydhtc137458d" URI="LegCapacityOverride.jar"/>
+        <EJBComponent Name="SkuQuantity" Targets="gc3-hydhtc137458d" URI="SkuQuantity.jar"/>
+        <EJBComponent Name="RateGeoRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="RateGeoRefnumQual.jar"/>
+        <EJBComponent Name="SqlSession" Targets="gc3-hydhtc137458d" URI="SqlSession.jar"/>
+        <EJBComponent Name="WorkingList" Targets="gc3-hydhtc137458d" URI="WorkingList.jar"/>
+        <EJBComponent Name="SkuAction" Targets="gc3-hydhtc137458d" URI="SkuAction.jar"/>
+        <EJBComponent Name="UserFavoriteTable"
+            Targets="gc3-hydhtc137458d" URI="UserFavoriteTable.jar"/>
+        <EJBComponent Name="RateBaseDef" Targets="gc3-hydhtc137458d" URI="RateBaseDef.jar"/>
+        <EJBComponent Name="LoadConfig" Targets="gc3-hydhtc137458d" URI="LoadConfig.jar"/>
+        <EJBComponent Name="PShipmentSetSession"
+            Targets="gc3-hydhtc137458d" URI="PShipmentSetSession.jar"/>
+        <EJBComponent Name="OrderMovementDataGeneratorSession"
+            Targets="gc3-hydhtc137458d" URI="OrderMovementDataGeneratorSession.jar"/>
+        <EJBComponent Name="CapacityCommitment"
+            Targets="gc3-hydhtc137458d" URI="CapacityCommitment.jar"/>
+        <EJBComponent Name="BusinessMonitor" Targets="gc3-hydhtc137458d" URI="BusinessMonitor.jar"/>
+        <EJBComponent Name="Corporation" Targets="gc3-hydhtc137458d" URI="Corporation.jar"/>
+        <EJBComponent Name="BsStatusGroupProfile"
+            Targets="gc3-hydhtc137458d" URI="BsStatusGroupProfile.jar"/>
+        <EJBComponent Name="ShipmentRegionSession"
+            Targets="gc3-hydhtc137458d" URI="ShipmentRegionSession.jar"/>
+        <EJBComponent Name="ClaimRefnumQual" Targets="gc3-hydhtc137458d" URI="ClaimRefnumQual.jar"/>
+        <EJBComponent Name="ValidValue" Targets="gc3-hydhtc137458d" URI="ValidValue.jar"/>
+        <EJBComponent Name="RouteTemplateRemark"
+            Targets="gc3-hydhtc137458d" URI="RouteTemplateRemark.jar"/>
+        <EJBComponent Name="ConstraintSet" Targets="gc3-hydhtc137458d" URI="ConstraintSet.jar"/>
+        <EJBComponent Name="PSolution" Targets="gc3-hydhtc137458d" URI="PSolution.jar"/>
+        <EJBComponent Name="LineApproveToleranceDetail"
+            Targets="gc3-hydhtc137458d" URI="LineApproveToleranceDetail.jar"/>
+        <EJBComponent Name="OrderSchedule" Targets="gc3-hydhtc137458d" URI="OrderSchedule.jar"/>
+        <EJBComponent Name="AppServerMachine"
+            Targets="gc3-hydhtc137458d" URI="AppServerMachine.jar"/>
+        <EJBComponent Name="CrForecastCategory"
+            Targets="gc3-hydhtc137458d" URI="CrForecastCategory.jar"/>
+        <EJBComponent Name="LoadConfigProfileD"
+            Targets="gc3-hydhtc137458d" URI="LoadConfigProfileD.jar"/>
+        <EJBComponent Name="UserAccess" Targets="gc3-hydhtc137458d" URI="UserAccess.jar"/>
+        <EJBComponent Name="NotifySubject" Targets="gc3-hydhtc137458d" URI="NotifySubject.jar"/>
+        <EJBComponent Name="AppServerQueue" Targets="gc3-hydhtc137458d" URI="AppServerQueue.jar"/>
+        <EJBComponent Name="ShipUnitLine" Targets="gc3-hydhtc137458d" URI="ShipUnitLine.jar"/>
+        <EJBComponent Name="SmcDiscount" Targets="gc3-hydhtc137458d" URI="SmcDiscount.jar"/>
+        <EJBComponent Name="ShipmentStopRefnum"
+            Targets="gc3-hydhtc137458d" URI="ShipmentStopRefnum.jar"/>
+        <EJBComponent Name="RateActionSession"
+            Targets="gc3-hydhtc137458d" URI="RateActionSession.jar"/>
+        <EJBComponent Name="Batch" Targets="gc3-hydhtc137458d" URI="Batch.jar"/>
+        <EJBComponent Name="MatchValidRuleProfile"
+            Targets="gc3-hydhtc137458d" URI="MatchValidRuleProfile.jar"/>
+        <EJBComponent Name="ThresholdValue" Targets="gc3-hydhtc137458d" URI="ThresholdValue.jar"/>
+        <EJBComponent Name="InvoiceShipment" Targets="gc3-hydhtc137458d" URI="InvoiceShipment.jar"/>
+        <EJBComponent Name="OrderRoutingRule"
+            Targets="gc3-hydhtc137458d" URI="OrderRoutingRule.jar"/>
+        <EJBComponent Name="OrderReleaseStatusHistory"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseStatusHistory.jar"/>
+        <EJBComponent Name="UserFavorite" Targets="gc3-hydhtc137458d" URI="UserFavorite.jar"/>
+        <EJBComponent Name="VatRegistration" Targets="gc3-hydhtc137458d" URI="VatRegistration.jar"/>
+        <EJBComponent Name="ShipmentSEquipmentJoin"
+            Targets="gc3-hydhtc137458d" URI="ShipmentSEquipmentJoin.jar"/>
+        <EJBComponent Name="RouteInstanceLegStatus"
+            Targets="gc3-hydhtc137458d" URI="RouteInstanceLegStatus.jar"/>
+        <EJBComponent Name="LgAddress" Targets="gc3-hydhtc137458d" URI="LgAddress.jar"/>
+        <EJBComponent Name="StowageModePrefRule"
+            Targets="gc3-hydhtc137458d" URI="StowageModePrefRule.jar"/>
+        <EJBComponent Name="ShipUnitSpecProfile"
+            Targets="gc3-hydhtc137458d" URI="ShipUnitSpecProfile.jar"/>
+        <WebServiceComponent Name="WMService"
+            Targets="gc3-hydhtc137458d" URI="WMService.war"/>
+        <EJBComponent Name="PlanPartition" Targets="gc3-hydhtc137458d" URI="PlanPartition.jar"/>
+        <EJBComponent Name="ClaimServerActionSession"
+            Targets="gc3-hydhtc137458d" URI="ClaimServerActionSession.jar"/>
+        <EJBComponent Name="CrLaneCommitment"
+            Targets="gc3-hydhtc137458d" URI="CrLaneCommitment.jar"/>
+        <EJBComponent Name="BnRule" Targets="gc3-hydhtc137458d" URI="BnRule.jar"/>
+        <EJBComponent Name="ShipUnitLineRefnum"
+            Targets="gc3-hydhtc137458d" URI="ShipUnitLineRefnum.jar"/>
+        <EJBComponent Name="EKpiTargetValueStageD"
+            Targets="gc3-hydhtc137458d" URI="EKpiTargetValueStageD.jar"/>
+        <EJBComponent Name="OrderMovementStatus"
+            Targets="gc3-hydhtc137458d" URI="OrderMovementStatus.jar"/>
+        <EJBComponent Name="AgentEvent" Targets="gc3-hydhtc137458d" URI="AgentEvent.jar"/>
+        <EJBComponent Name="BsEventGroup" Targets="gc3-hydhtc137458d" URI="BsEventGroup.jar"/>
+        <EJBComponent Name="RouteTmpltLegOrderCompat"
+            Targets="gc3-hydhtc137458d" URI="RouteTmpltLegOrderCompat.jar"/>
+        <EJBComponent Name="RateZoneProfile" Targets="gc3-hydhtc137458d" URI="RateZoneProfile.jar"/>
+        <EJBComponent Name="SavedQueryAccess"
+            Targets="gc3-hydhtc137458d" URI="SavedQueryAccess.jar"/>
+        <EJBComponent Name="BiRole" Targets="gc3-hydhtc137458d" URI="BiRole.jar"/>
+        <EJBComponent Name="CutoffRecoveryTime"
+            Targets="gc3-hydhtc137458d" URI="CutoffRecoveryTime.jar"/>
+        <EJBComponent Name="JobUpdateSession"
+            Targets="gc3-hydhtc137458d" URI="JobUpdateSession.jar"/>
+        <EJBComponent Name="GlAccountPwRule" Targets="gc3-hydhtc137458d" URI="GlAccountPwRule.jar"/>
+        <EJBComponent Name="DataQueueTable" Targets="gc3-hydhtc137458d" URI="DataQueueTable.jar"/>
+        <EJBComponent Name="ScInvolvedParty" Targets="gc3-hydhtc137458d" URI="ScInvolvedParty.jar"/>
+        <EJBComponent Name="MonitorAgentType"
+            Targets="gc3-hydhtc137458d" URI="MonitorAgentType.jar"/>
+        <EJBComponent Name="MatchValidationRuleOrder"
+            Targets="gc3-hydhtc137458d" URI="MatchValidationRuleOrder.jar"/>
+        <EJBComponent Name="CrForecastRemark"
+            Targets="gc3-hydhtc137458d" URI="CrForecastRemark.jar"/>
+        <EJBComponent Name="GlUser" Targets="gc3-hydhtc137458d" URI="GlUser.jar"/>
+        <EJBComponent Name="XLane" Targets="gc3-hydhtc137458d" URI="XLane.jar"/>
+        <EJBComponent Name="ShipUnitSpecRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="ShipUnitSpecRefnumQual.jar"/>
+        <EJBComponent Name="ShipDocPrintLog" Targets="gc3-hydhtc137458d" URI="ShipDocPrintLog.jar"/>
+        <EJBComponent Name="ReportTextTemplate"
+            Targets="gc3-hydhtc137458d" URI="ReportTextTemplate.jar"/>
+        <EJBComponent Name="InvoiceText" Targets="gc3-hydhtc137458d" URI="InvoiceText.jar"/>
+        <EJBComponent Name="OrderReleaseType"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseType.jar"/>
+        <EJBComponent Name="BsResponsibleParty"
+            Targets="gc3-hydhtc137458d" URI="BsResponsibleParty.jar"/>
+        <EJBComponent Name="LoadConfigProfile"
+            Targets="gc3-hydhtc137458d" URI="LoadConfigProfile.jar"/>
+        <EJBComponent Name="ServprovTenderRefnum"
+            Targets="gc3-hydhtc137458d" URI="ServprovTenderRefnum.jar"/>
+        <EJBComponent Name="GlKeyComponentType"
+            Targets="gc3-hydhtc137458d" URI="GlKeyComponentType.jar"/>
+        <EJBComponent Name="ItemRefnum" Targets="gc3-hydhtc137458d" URI="ItemRefnum.jar"/>
+        <EJBComponent Name="DiagPerformanceCapture"
+            Targets="gc3-hydhtc137458d" URI="DiagPerformanceCapture.jar"/>
+        <EJBComponent Name="DiagStaticCapture"
+            Targets="gc3-hydhtc137458d" URI="DiagStaticCapture.jar"/>
+        <EJBComponent Name="EquipmentType" Targets="gc3-hydhtc137458d" URI="EquipmentType.jar"/>
+        <EJBComponent Name="OrderReleaseLineAttribute"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseLineAttribute.jar"/>
+        <EJBComponent Name="CrLvAggregate" Targets="gc3-hydhtc137458d" URI="CrLvAggregate.jar"/>
+        <EJBComponent Name="RoutingSequence" Targets="gc3-hydhtc137458d" URI="RoutingSequence.jar"/>
+        <EJBComponent Name="CrRouteLeg" Targets="gc3-hydhtc137458d" URI="CrRouteLeg.jar"/>
+        <EJBComponent Name="BusinessObjectTemplate"
+            Targets="gc3-hydhtc137458d" URI="BusinessObjectTemplate.jar"/>
+        <EJBComponent Name="RateGeoTimePeriod"
+            Targets="gc3-hydhtc137458d" URI="RateGeoTimePeriod.jar"/>
+        <EJBComponent Name="WebService" Targets="gc3-hydhtc137458d" URI="WebService.jar"/>
+        <EJBComponent Name="ExternalSystem" Targets="gc3-hydhtc137458d" URI="ExternalSystem.jar"/>
+        <EJBComponent Name="ObShipUnitRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="ObShipUnitRefnumQual.jar"/>
+        <EJBComponent Name="VatRate" Targets="gc3-hydhtc137458d" URI="VatRate.jar"/>
+        <EJBComponent Name="PBidRound" Targets="gc3-hydhtc137458d" URI="PBidRound.jar"/>
+        <EJBComponent Name="PShipmentSet" Targets="gc3-hydhtc137458d" URI="PShipmentSet.jar"/>
+        <EJBComponent Name="NotifySubjectStylesheet"
+            Targets="gc3-hydhtc137458d" URI="NotifySubjectStylesheet.jar"/>
+        <EJBComponent Name="ShipUnitSpecOrientation"
+            Targets="gc3-hydhtc137458d" URI="ShipUnitSpecOrientation.jar"/>
+        <EJBComponent Name="JavaPlugin" Targets="gc3-hydhtc137458d" URI="JavaPlugin.jar"/>
+        <EJBComponent Name="ITransmissionRefnum"
+            Targets="gc3-hydhtc137458d" URI="ITransmissionRefnum.jar"/>
+        <EJBComponent Name="ManagerLayout" Targets="gc3-hydhtc137458d" URI="ManagerLayout.jar"/>
+        <EJBComponent Name="CrRoute" Targets="gc3-hydhtc137458d" URI="CrRoute.jar"/>
+        <EJBComponent Name="WorkflowTopicParam"
+            Targets="gc3-hydhtc137458d" URI="WorkflowTopicParam.jar"/>
+        <EJBComponent Name="SsStatusHistory" Targets="gc3-hydhtc137458d" URI="SsStatusHistory.jar"/>
+        <EJBComponent Name="TenderCollaboration"
+            Targets="gc3-hydhtc137458d" URI="TenderCollaboration.jar"/>
+        <EJBComponent Name="ShipGroupD" Targets="gc3-hydhtc137458d" URI="ShipGroupD.jar"/>
+        <EJBComponent Name="RgSpecialService"
+            Targets="gc3-hydhtc137458d" URI="RgSpecialService.jar"/>
+        <EJBComponent Name="CONoptSession" Targets="gc3-hydhtc137458d" URI="CONoptSession.jar"/>
+        <EJBComponent Name="Invoice" Targets="gc3-hydhtc137458d" URI="Invoice.jar"/>
+        <EJBComponent Name="CapacityActionSession"
+            Targets="gc3-hydhtc137458d" URI="CapacityActionSession.jar"/>
+        <EJBComponent Name="CountryCode" Targets="gc3-hydhtc137458d" URI="CountryCode.jar"/>
+        <EJBComponent Name="ShippingAgentText"
+            Targets="gc3-hydhtc137458d" URI="ShippingAgentText.jar"/>
+        <EJBComponent Name="SkuDescriptorRemark"
+            Targets="gc3-hydhtc137458d" URI="SkuDescriptorRemark.jar"/>
+        <EJBComponent Name="PlanningGroup" Targets="gc3-hydhtc137458d" URI="PlanningGroup.jar"/>
+        <EJBComponent Name="PShipment" Targets="gc3-hydhtc137458d" URI="PShipment.jar"/>
+        <EJBComponent Name="VoyageServiceMap"
+            Targets="gc3-hydhtc137458d" URI="VoyageServiceMap.jar"/>
+        <EJBComponent Name="FlightInstance" Targets="gc3-hydhtc137458d" URI="FlightInstance.jar"/>
+        <EJBComponent Name="TopicPublishSession"
+            Targets="gc3-hydhtc137458d" URI="TopicPublishSession.jar"/>
+        <EJBComponent Name="CommitmentCountSession"
+            Targets="gc3-hydhtc137458d" URI="CommitmentCountSession.jar"/>
+        <EJBComponent Name="ShipGroup" Targets="gc3-hydhtc137458d" URI="ShipGroup.jar"/>
+        <EJBComponent Name="StatusTypeFilterD"
+            Targets="gc3-hydhtc137458d" URI="StatusTypeFilterD.jar"/>
+        <EJBComponent Name="Sku" Targets="gc3-hydhtc137458d" URI="Sku.jar"/>
+        <EJBComponent Name="AppointmentRemark"
+            Targets="gc3-hydhtc137458d" URI="AppointmentRemark.jar"/>
+        <EJBComponent Name="OrderReleaseAccessorial"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseAccessorial.jar"/>
+        <EJBComponent Name="PaymentMethodCode"
+            Targets="gc3-hydhtc137458d" URI="PaymentMethodCode.jar"/>
+        <EJBComponent Name="InvoiceStopReason"
+            Targets="gc3-hydhtc137458d" URI="InvoiceStopReason.jar"/>
+        <EJBComponent Name="NfrcRuleInvPartyCriteria"
+            Targets="gc3-hydhtc137458d" URI="NfrcRuleInvPartyCriteria.jar"/>
+        <EJBComponent Name="CountryZone" Targets="gc3-hydhtc137458d" URI="CountryZone.jar"/>
+        <EJBComponent Name="ExplanationSession"
+            Targets="gc3-hydhtc137458d" URI="ExplanationSession.jar"/>
+        <EJBComponent Name="RateServiceSpeed"
+            Targets="gc3-hydhtc137458d" URI="RateServiceSpeed.jar"/>
+        <EJBComponent Name="ResourceType" Targets="gc3-hydhtc137458d" URI="ResourceType.jar"/>
+        <EJBComponent Name="CmEndingExclusionRegion"
+            Targets="gc3-hydhtc137458d" URI="CmEndingExclusionRegion.jar"/>
+        <EJBComponent Name="ShipmentInfCostRemark"
+            Targets="gc3-hydhtc137458d" URI="ShipmentInfCostRemark.jar"/>
+        <EJBComponent Name="CalendarParent" Targets="gc3-hydhtc137458d" URI="CalendarParent.jar"/>
+        <EJBComponent Name="ActionDrag" Targets="gc3-hydhtc137458d" URI="ActionDrag.jar"/>
+        <EJBComponent Name="DocumentSession" Targets="gc3-hydhtc137458d" URI="DocumentSession.jar"/>
+        <EJBComponent Name="LocationCapacity"
+            Targets="gc3-hydhtc137458d" URI="LocationCapacity.jar"/>
+        <EJBComponent Name="OrsStatusHistorySu"
+            Targets="gc3-hydhtc137458d" URI="OrsStatusHistorySu.jar"/>
+        <EJBComponent Name="LocationGroupCompatibility"
+            Targets="gc3-hydhtc137458d" URI="LocationGroupCompatibility.jar"/>
+        <EJBComponent Name="CharterVoyageInvolvedParty"
+            Targets="gc3-hydhtc137458d" URI="CharterVoyageInvolvedParty.jar"/>
+        <EJBComponent Name="SEquipmentAttribute"
+            Targets="gc3-hydhtc137458d" URI="SEquipmentAttribute.jar"/>
+        <EJBComponent Name="QuoteEquipmentGroup"
+            Targets="gc3-hydhtc137458d" URI="QuoteEquipmentGroup.jar"/>
+        <EJBComponent Name="CurveHeight" Targets="gc3-hydhtc137458d" URI="CurveHeight.jar"/>
+        <EJBComponent Name="VatOutcome" Targets="gc3-hydhtc137458d" URI="VatOutcome.jar"/>
+        <EJBComponent Name="TimeWindowWeeklyD"
+            Targets="gc3-hydhtc137458d" URI="TimeWindowWeeklyD.jar"/>
+        <EJBComponent Name="PartitionProfile"
+            Targets="gc3-hydhtc137458d" URI="PartitionProfile.jar"/>
+        <EJBComponent Name="ActionDefArg" Targets="gc3-hydhtc137458d" URI="ActionDefArg.jar"/>
+        <EJBComponent Name="SuSpecOrientProfileD"
+            Targets="gc3-hydhtc137458d" URI="SuSpecOrientProfileD.jar"/>
+        <EJBComponent Name="InvoiceRemark" Targets="gc3-hydhtc137458d" URI="InvoiceRemark.jar"/>
+        <EJBComponent Name="ContainerGroupActionSession"
+            Targets="gc3-hydhtc137458d" URI="ContainerGroupActionSession.jar"/>
+        <EJBComponent Name="LogicConfigGroup"
+            Targets="gc3-hydhtc137458d" URI="LogicConfigGroup.jar"/>
+        <EJBComponent Name="CapacityLimit" Targets="gc3-hydhtc137458d" URI="CapacityLimit.jar"/>
+        <EJBComponent Name="SkuTransactionDRemark"
+            Targets="gc3-hydhtc137458d" URI="SkuTransactionDRemark.jar"/>
+        <EJBComponent Name="ObShipUnitLoadConfig"
+            Targets="gc3-hydhtc137458d" URI="ObShipUnitLoadConfig.jar"/>
+        <EJBComponent Name="InvoiceEquipmentSeal"
+            Targets="gc3-hydhtc137458d" URI="InvoiceEquipmentSeal.jar"/>
+        <EJBComponent Name="HazmatItem" Targets="gc3-hydhtc137458d" URI="HazmatItem.jar"/>
+        <EJBComponent Name="PProject" Targets="gc3-hydhtc137458d" URI="PProject.jar"/>
+        <EJBComponent Name="HazClassProfileD"
+            Targets="gc3-hydhtc137458d" URI="HazClassProfileD.jar"/>
+        <EJBComponent Name="DeliveryWindowProfile"
+            Targets="gc3-hydhtc137458d" URI="DeliveryWindowProfile.jar"/>
+        <EJBComponent Name="CorporationVatRegJoin"
+            Targets="gc3-hydhtc137458d" URI="CorporationVatRegJoin.jar"/>
+        <EJBComponent Name="SensorService" Targets="gc3-hydhtc137458d" URI="SensorService.jar"/>
+        <EJBComponent Name="AuditDataInfo" Targets="gc3-hydhtc137458d" URI="AuditDataInfo.jar"/>
+        <EJBComponent Name="ObRefnum" Targets="gc3-hydhtc137458d" URI="ObRefnum.jar"/>
+        <EJBComponent Name="RateGeoCostUnitBreak"
+            Targets="gc3-hydhtc137458d" URI="RateGeoCostUnitBreak.jar"/>
+        <EJBComponent Name="ObSuContentInvParty"
+            Targets="gc3-hydhtc137458d" URI="ObSuContentInvParty.jar"/>
+        <EJBComponent Name="ReportGroup" Targets="gc3-hydhtc137458d" URI="ReportGroup.jar"/>
+        <EJBComponent Name="ShipUnitSpec" Targets="gc3-hydhtc137458d" URI="ShipUnitSpec.jar"/>
+        <EJBComponent Name="ConnectionPool" Targets="gc3-hydhtc137458d" URI="ConnectionPool.jar"/>
+        <EJBComponent Name="CommitmentUpdateSession"
+            Targets="gc3-hydhtc137458d" URI="CommitmentUpdateSession.jar"/>
+        <EJBComponent Name="BsReasonCodeProfile"
+            Targets="gc3-hydhtc137458d" URI="BsReasonCodeProfile.jar"/>
+        <EJBComponent Name="CrProjectPShipmentSet"
+            Targets="gc3-hydhtc137458d" URI="CrProjectPShipmentSet.jar"/>
+        <EJBComponent Name="MonitorAgentSession"
+            Targets="gc3-hydhtc137458d" URI="MonitorAgentSession.jar"/>
+        <EJBComponent Name="UserDefinedCommodity"
+            Targets="gc3-hydhtc137458d" URI="UserDefinedCommodity.jar"/>
+        <EJBComponent Name="MonitorOperand" Targets="gc3-hydhtc137458d" URI="MonitorOperand.jar"/>
+        <EJBComponent Name="SkuCostType" Targets="gc3-hydhtc137458d" URI="SkuCostType.jar"/>
+        <EJBComponent Name="DataQueueExecutor"
+            Targets="gc3-hydhtc137458d" URI="DataQueueExecutor.jar"/>
+        <EJBComponent Name="TranslationSession"
+            Targets="gc3-hydhtc137458d" URI="TranslationSession.jar"/>
+        <EJBComponent Name="BusinessMonitorD"
+            Targets="gc3-hydhtc137458d" URI="BusinessMonitorD.jar"/>
+        <EJBComponent Name="OrLineIntlClassification"
+            Targets="gc3-hydhtc137458d" URI="OrLineIntlClassification.jar"/>
+        <EJBComponent Name="ClaimLineItem" Targets="gc3-hydhtc137458d" URI="ClaimLineItem.jar"/>
+        <EJBComponent Name="RuleSet" Targets="gc3-hydhtc137458d" URI="RuleSet.jar"/>
+        <EJBComponent Name="ObLineStatus" Targets="gc3-hydhtc137458d" URI="ObLineStatus.jar"/>
+        <EJBComponent Name="ShipGroupGeoDef" Targets="gc3-hydhtc137458d" URI="ShipGroupGeoDef.jar"/>
+        <EJBComponent Name="UnitizationRule" Targets="gc3-hydhtc137458d" URI="UnitizationRule.jar"/>
+        <EJBComponent Name="SShipUnitLine" Targets="gc3-hydhtc137458d" URI="SShipUnitLine.jar"/>
+        <EJBComponent Name="OutXmlProfileD" Targets="gc3-hydhtc137458d" URI="OutXmlProfileD.jar"/>
+        <EJBComponent Name="ShipmentStopRemark"
+            Targets="gc3-hydhtc137458d" URI="ShipmentStopRemark.jar"/>
+        <EJBComponent Name="ConsolActionSession"
+            Targets="gc3-hydhtc137458d" URI="ConsolActionSession.jar"/>
+        <EJBComponent Name="CommitmentAllocSession"
+            Targets="gc3-hydhtc137458d" URI="CommitmentAllocSession.jar"/>
+        <EJBComponent Name="PaymentMethodProfileD"
+            Targets="gc3-hydhtc137458d" URI="PaymentMethodProfileD.jar"/>
+        <EJBComponent Name="ShipGroupRuleInvParty"
+            Targets="gc3-hydhtc137458d" URI="ShipGroupRuleInvParty.jar"/>
+        <EJBComponent Name="ProvinceCodeProfileD"
+            Targets="gc3-hydhtc137458d" URI="ProvinceCodeProfileD.jar"/>
+        <EJBComponent Name="ClaimInvolvedParty"
+            Targets="gc3-hydhtc137458d" URI="ClaimInvolvedParty.jar"/>
+        <EJBComponent Name="CommitAllocUsageD"
+            Targets="gc3-hydhtc137458d" URI="CommitAllocUsageD.jar"/>
+        <EJBComponent Name="GlUserShpAgntContactJoin"
+            Targets="gc3-hydhtc137458d" URI="GlUserShpAgntContactJoin.jar"/>
+        <EJBComponent Name="RateOfferingAccessorial"
+            Targets="gc3-hydhtc137458d" URI="RateOfferingAccessorial.jar"/>
+        <EJBComponent Name="XmlTemplate" Targets="gc3-hydhtc137458d" URI="XmlTemplate.jar"/>
+        <EJBComponent Name="RouteCodeD" Targets="gc3-hydhtc137458d" URI="RouteCodeD.jar"/>
+        <EJBComponent Name="DataSourceProfile"
+            Targets="gc3-hydhtc137458d" URI="DataSourceProfile.jar"/>
+        <EJBComponent Name="StatusTypeFilter"
+            Targets="gc3-hydhtc137458d" URI="StatusTypeFilter.jar"/>
+        <EJBComponent Name="MatchRule" Targets="gc3-hydhtc137458d" URI="MatchRule.jar"/>
+        <EJBComponent Name="Splc" Targets="gc3-hydhtc137458d" URI="Splc.jar"/>
+        <EJBComponent Name="RouteInstanceRefnum"
+            Targets="gc3-hydhtc137458d" URI="RouteInstanceRefnum.jar"/>
+        <EJBComponent Name="CharterVoyageRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="CharterVoyageRefnumQual.jar"/>
+        <EJBComponent Name="CrDeleteSession" Targets="gc3-hydhtc137458d" URI="CrDeleteSession.jar"/>
+        <WebServiceComponent Name="TestService"
+            Targets="gc3-hydhtc137458d" URI="TestService.war"/>
+        <EJBComponent Name="ActionDef" Targets="gc3-hydhtc137458d" URI="ActionDef.jar"/>
+        <EJBComponent Name="RateGeo" Targets="gc3-hydhtc137458d" URI="RateGeo.jar"/>
+        <EJBComponent Name="ShipGroupStatus" Targets="gc3-hydhtc137458d" URI="ShipGroupStatus.jar"/>
+        <EJBComponent Name="DocumentText" Targets="gc3-hydhtc137458d" URI="DocumentText.jar"/>
+        <EJBComponent Name="GlLoginHistory" Targets="gc3-hydhtc137458d" URI="GlLoginHistory.jar"/>
+        <EJBComponent Name="DepotProfileD" Targets="gc3-hydhtc137458d" URI="DepotProfileD.jar"/>
+        <EJBComponent Name="ScreenLayout" Targets="gc3-hydhtc137458d" URI="ScreenLayout.jar"/>
+        <EJBComponent Name="Report" Targets="gc3-hydhtc137458d" URI="Report.jar"/>
+        <EJBComponent Name="SkuInvolvedParty"
+            Targets="gc3-hydhtc137458d" URI="SkuInvolvedParty.jar"/>
+        <EJBComponent Name="UserRoleGrant" Targets="gc3-hydhtc137458d" URI="UserRoleGrant.jar"/>
+        <EJBComponent Name="QuickEvent" Targets="gc3-hydhtc137458d" URI="QuickEvent.jar"/>
+        <EJBComponent Name="ShippingAgentContact"
+            Targets="gc3-hydhtc137458d" URI="ShippingAgentContact.jar"/>
+        <EJBComponent Name="ItemIntlClassification"
+            Targets="gc3-hydhtc137458d" URI="ItemIntlClassification.jar"/>
+        <EJBComponent Name="SecondaryChargeRule"
+            Targets="gc3-hydhtc137458d" URI="SecondaryChargeRule.jar"/>
+        <EJBComponent Name="ShipmentCostRef" Targets="gc3-hydhtc137458d" URI="ShipmentCostRef.jar"/>
+        <EJBComponent Name="PackagedItemRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="PackagedItemRefnumQual.jar"/>
+        <EJBComponent Name="VoyageServiceType"
+            Targets="gc3-hydhtc137458d" URI="VoyageServiceType.jar"/>
+        <EJBComponent Name="BatchBalanceActionSession"
+            Targets="gc3-hydhtc137458d" URI="BatchBalanceActionSession.jar"/>
+        <EJBComponent Name="QuoteCostOptionEquipment"
+            Targets="gc3-hydhtc137458d" URI="QuoteCostOptionEquipment.jar"/>
+        <EJBComponent Name="StatusType" Targets="gc3-hydhtc137458d" URI="StatusType.jar"/>
+        <EJBComponent Name="OperationalLocationD"
+            Targets="gc3-hydhtc137458d" URI="OperationalLocationD.jar"/>
+        <EJBComponent Name="BatchGridUpdateSession"
+            Targets="gc3-hydhtc137458d" URI="BatchGridUpdateSession.jar"/>
+        <EJBComponent Name="ShipmentAccessorial"
+            Targets="gc3-hydhtc137458d" URI="ShipmentAccessorial.jar"/>
+        <EJBComponent Name="ShipGroupRule" Targets="gc3-hydhtc137458d" URI="ShipGroupRule.jar"/>
+        <EJBComponent Name="MonitorAgentEvent"
+            Targets="gc3-hydhtc137458d" URI="MonitorAgentEvent.jar"/>
+        <EJBComponent Name="ShipmentStopStatus"
+            Targets="gc3-hydhtc137458d" URI="ShipmentStopStatus.jar"/>
+        <EJBComponent Name="Itinerary" Targets="gc3-hydhtc137458d" URI="Itinerary.jar"/>
+        <EJBComponent Name="InvoiceStopRefnum"
+            Targets="gc3-hydhtc137458d" URI="InvoiceStopRefnum.jar"/>
+        <EJBComponent Name="ServprovService" Targets="gc3-hydhtc137458d" URI="ServprovService.jar"/>
+        <EJBComponent Name="RoleRoleGrant" Targets="gc3-hydhtc137458d" URI="RoleRoleGrant.jar"/>
+        <EJBComponent Name="Stcc" Targets="gc3-hydhtc137458d" URI="Stcc.jar"/>
+        <EJBComponent Name="LineApproveTolerance"
+            Targets="gc3-hydhtc137458d" URI="LineApproveTolerance.jar"/>
+        <EJBComponent Name="TransportNetwork"
+            Targets="gc3-hydhtc137458d" URI="TransportNetwork.jar"/>
+        <EJBComponent Name="TransportNetworkSchedule"
+            Targets="gc3-hydhtc137458d" URI="TransportNetworkSchedule.jar"/>
+        <EJBComponent Name="IncoTerm" Targets="gc3-hydhtc137458d" URI="IncoTerm.jar"/>
+        <EJBComponent Name="OrderScheduleD" Targets="gc3-hydhtc137458d" URI="OrderScheduleD.jar"/>
+        <EJBComponent Name="ETargetType" Targets="gc3-hydhtc137458d" URI="ETargetType.jar"/>
+        <EJBComponent Name="RateFactorRuleDetail"
+            Targets="gc3-hydhtc137458d" URI="RateFactorRuleDetail.jar"/>
+        <EJBComponent Name="MiscellaneousActionSession"
+            Targets="gc3-hydhtc137458d" URI="MiscellaneousActionSession.jar"/>
+        <EJBComponent Name="ItlServiceSession"
+            Targets="gc3-hydhtc137458d" URI="ItlServiceSession.jar"/>
+        <EJBComponent Name="ShipmentCostDetail"
+            Targets="gc3-hydhtc137458d" URI="ShipmentCostDetail.jar"/>
+        <EJBComponent Name="WorkflowSessionNonTrans"
+            Targets="gc3-hydhtc137458d" URI="WorkflowSessionNonTrans.jar"/>
+        <EJBComponent Name="LaneSummaryCell" Targets="gc3-hydhtc137458d" URI="LaneSummaryCell.jar"/>
+        <EJBComponent Name="ETargetValueType"
+            Targets="gc3-hydhtc137458d" URI="ETargetValueType.jar"/>
+        <EJBComponent Name="CommodityIncompatibility"
+            Targets="gc3-hydhtc137458d" URI="CommodityIncompatibility.jar"/>
+        <EJBComponent Name="ValidationSession"
+            Targets="gc3-hydhtc137458d" URI="ValidationSession.jar"/>
+        <EJBComponent Name="Logfile" Targets="gc3-hydhtc137458d" URI="Logfile.jar"/>
+        <EJBComponent Name="ObSuContentRefnum"
+            Targets="gc3-hydhtc137458d" URI="ObSuContentRefnum.jar"/>
+        <EJBComponent Name="InstrumentationSession"
+            Targets="gc3-hydhtc137458d" URI="InstrumentationSession.jar"/>
+        <EJBComponent Name="RuntimeDeploymentSession"
+            Targets="gc3-hydhtc137458d" URI="RuntimeDeploymentSession.jar"/>
+        <EJBComponent Name="FfTextProfileD" Targets="gc3-hydhtc137458d" URI="FfTextProfileD.jar"/>
+        <EJBComponent Name="AutoSecResProfileD"
+            Targets="gc3-hydhtc137458d" URI="AutoSecResProfileD.jar"/>
+        <EJBComponent Name="SkuLevelType" Targets="gc3-hydhtc137458d" URI="SkuLevelType.jar"/>
+        <EJBComponent Name="ORProcessorSession"
+            Targets="gc3-hydhtc137458d" URI="ORProcessorSession.jar"/>
+        <EJBComponent Name="AutoAssignRuleDefinition"
+            Targets="gc3-hydhtc137458d" URI="AutoAssignRuleDefinition.jar"/>
+        <EJBComponent Name="DepotProfile" Targets="gc3-hydhtc137458d" URI="DepotProfile.jar"/>
+        <EJBComponent Name="EquipmentGroupProfileD"
+            Targets="gc3-hydhtc137458d" URI="EquipmentGroupProfileD.jar"/>
+        <EJBComponent Name="DPServiceSession"
+            Targets="gc3-hydhtc137458d" URI="DPServiceSession.jar"/>
+        <EJBComponent Name="UserAppdata" Targets="gc3-hydhtc137458d" URI="UserAppdata.jar"/>
+        <EJBComponent Name="ShipmentCostQual"
+            Targets="gc3-hydhtc137458d" URI="ShipmentCostQual.jar"/>
+        <EJBComponent Name="ItlProfile" Targets="gc3-hydhtc137458d" URI="ItlProfile.jar"/>
+        <EJBComponent Name="UIDataContainerUpdateSession"
+            Targets="gc3-hydhtc137458d" URI="UIDataContainerUpdateSession.jar"/>
+        <EJBComponent Name="CrConstraintsDef"
+            Targets="gc3-hydhtc137458d" URI="CrConstraintsDef.jar"/>
+        <EJBComponent Name="RepSchedActivity"
+            Targets="gc3-hydhtc137458d" URI="RepSchedActivity.jar"/>
+        <EJBComponent Name="LocationCompatibility"
+            Targets="gc3-hydhtc137458d" URI="LocationCompatibility.jar"/>
+        <EJBComponent Name="TransactionalEventInvparty"
+            Targets="gc3-hydhtc137458d" URI="TransactionalEventInvparty.jar"/>
+        <EJBComponent Name="InvoiceLineitemRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="InvoiceLineitemRefnumQual.jar"/>
+        <EJBComponent Name="RouteTemplateLeg"
+            Targets="gc3-hydhtc137458d" URI="RouteTemplateLeg.jar"/>
+        <EJBComponent Name="OrderReleaseRemark"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseRemark.jar"/>
+        <EJBComponent Name="MapDataSession" Targets="gc3-hydhtc137458d" URI="MapDataSession.jar"/>
+        <EJBComponent Name="OrderMovementRefnum"
+            Targets="gc3-hydhtc137458d" URI="OrderMovementRefnum.jar"/>
+        <EJBComponent Name="LocationServprovPref"
+            Targets="gc3-hydhtc137458d" URI="LocationServprovPref.jar"/>
+        <EJBComponent Name="CommercialInvoiceCharge"
+            Targets="gc3-hydhtc137458d" URI="CommercialInvoiceCharge.jar"/>
+        <EJBComponent Name="RouteTemplateStatus"
+            Targets="gc3-hydhtc137458d" URI="RouteTemplateStatus.jar"/>
+        <EJBComponent Name="VatConfigurationPerspective"
+            Targets="gc3-hydhtc137458d" URI="VatConfigurationPerspective.jar"/>
+        <EJBComponent Name="ClaimRefnum" Targets="gc3-hydhtc137458d" URI="ClaimRefnum.jar"/>
+        <EJBComponent Name="ShippingAgentRule"
+            Targets="gc3-hydhtc137458d" URI="ShippingAgentRule.jar"/>
+        <EJBComponent Name="CommitDowOverride"
+            Targets="gc3-hydhtc137458d" URI="CommitDowOverride.jar"/>
+        <EJBComponent Name="BatchGridShipmentActionSession"
+            Targets="gc3-hydhtc137458d" URI="BatchGridShipmentActionSession.jar"/>
+        <EJBComponent Name="IeSsStop" Targets="gc3-hydhtc137458d" URI="IeSsStop.jar"/>
+        <EJBComponent Name="Voucher" Targets="gc3-hydhtc137458d" URI="Voucher.jar"/>
+        <EJBComponent Name="CrSolutionSession"
+            Targets="gc3-hydhtc137458d" URI="CrSolutionSession.jar"/>
+        <EJBComponent Name="TimeWindow" Targets="gc3-hydhtc137458d" URI="TimeWindow.jar"/>
+        <EJBComponent Name="OmrTransactionSession"
+            Targets="gc3-hydhtc137458d" URI="OmrTransactionSession.jar"/>
+        <EJBComponent Name="ManualAgentTrigger"
+            Targets="gc3-hydhtc137458d" URI="ManualAgentTrigger.jar"/>
+        <EJBComponent Name="BnRange" Targets="gc3-hydhtc137458d" URI="BnRange.jar"/>
+        <EJBComponent Name="OrderScheduleOverride"
+            Targets="gc3-hydhtc137458d" URI="OrderScheduleOverride.jar"/>
+        <EJBComponent Name="VpdContext" Targets="gc3-hydhtc137458d" URI="VpdContext.jar"/>
+        <EJBComponent Name="WorkingListAction"
+            Targets="gc3-hydhtc137458d" URI="WorkingListAction.jar"/>
+        <EJBComponent Name="Contact" Targets="gc3-hydhtc137458d" URI="Contact.jar"/>
+        <EJBComponent Name="ShipUnitRefnum" Targets="gc3-hydhtc137458d" URI="ShipUnitRefnum.jar"/>
+        <EJBComponent Name="OrderTransactionSession"
+            Targets="gc3-hydhtc137458d" URI="OrderTransactionSession.jar"/>
+        <EJBComponent Name="DataLoaderSession"
+            Targets="gc3-hydhtc137458d" URI="DataLoaderSession.jar"/>
+        <EJBComponent Name="SsEquipmentStatusHistory"
+            Targets="gc3-hydhtc137458d" URI="SsEquipmentStatusHistory.jar"/>
+        <EJBComponent Name="TransactionalEventContact"
+            Targets="gc3-hydhtc137458d" URI="TransactionalEventContact.jar"/>
+        <EJBComponent Name="FinderLink" Targets="gc3-hydhtc137458d" URI="FinderLink.jar"/>
+        <EJBComponent Name="RouteInstanceLegRefnum"
+            Targets="gc3-hydhtc137458d" URI="RouteInstanceLegRefnum.jar"/>
+        <EJBComponent Name="NmfcArticle" Targets="gc3-hydhtc137458d" URI="NmfcArticle.jar"/>
+        <EJBComponent Name="QuoteCostOptionShipment"
+            Targets="gc3-hydhtc137458d" URI="QuoteCostOptionShipment.jar"/>
+        <EJBComponent Name="RouteCodeCombination"
+            Targets="gc3-hydhtc137458d" URI="RouteCodeCombination.jar"/>
+        <EJBComponent Name="CrLvAggregatePShipment"
+            Targets="gc3-hydhtc137458d" URI="CrLvAggregatePShipment.jar"/>
+        <EJBComponent Name="JobBillJoin" Targets="gc3-hydhtc137458d" URI="JobBillJoin.jar"/>
+        <EJBComponent Name="DocumentDistribution"
+            Targets="gc3-hydhtc137458d" URI="DocumentDistribution.jar"/>
+        <EJBComponent Name="ITransactionRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="ITransactionRefnumQual.jar"/>
+        <EJBComponent Name="AuditObjectControl"
+            Targets="gc3-hydhtc137458d" URI="AuditObjectControl.jar"/>
+        <EJBComponent Name="LoadConfigEngineType"
+            Targets="gc3-hydhtc137458d" URI="LoadConfigEngineType.jar"/>
+        <EJBComponent Name="Region" Targets="gc3-hydhtc137458d" URI="Region.jar"/>
+        <EJBComponent Name="ShipGroupTransControlSession"
+            Targets="gc3-hydhtc137458d" URI="ShipGroupTransControlSession.jar"/>
+        <EJBComponent Name="MonitorAgent" Targets="gc3-hydhtc137458d" URI="MonitorAgent.jar"/>
+        <EJBComponent Name="XlaneSession" Targets="gc3-hydhtc137458d" URI="XlaneSession.jar"/>
+        <EJBComponent Name="CharterVoyage" Targets="gc3-hydhtc137458d" URI="CharterVoyage.jar"/>
+        <EJBComponent Name="SampleGenerationSession"
+            Targets="gc3-hydhtc137458d" URI="SampleGenerationSession.jar"/>
+        <EJBComponent Name="ServprovPolicy" Targets="gc3-hydhtc137458d" URI="ServprovPolicy.jar"/>
+        <EJBComponent Name="BulkPlan" Targets="gc3-hydhtc137458d" URI="BulkPlan.jar"/>
+        <EJBComponent Name="ObProcessorSession"
+            Targets="gc3-hydhtc137458d" URI="ObProcessorSession.jar"/>
+        <EJBComponent Name="DistanceServiceTime"
+            Targets="gc3-hydhtc137458d" URI="DistanceServiceTime.jar"/>
+        <EJBComponent Name="ConoptConfigAlgJoin"
+            Targets="gc3-hydhtc137458d" URI="ConoptConfigAlgJoin.jar"/>
+        <EJBComponent Name="QuoteCostOptionShipCost"
+            Targets="gc3-hydhtc137458d" URI="QuoteCostOptionShipCost.jar"/>
+        <EJBComponent Name="LocationOverrideAddress"
+            Targets="gc3-hydhtc137458d" URI="LocationOverrideAddress.jar"/>
+        <EJBComponent Name="IeShipGroupRefnum"
+            Targets="gc3-hydhtc137458d" URI="IeShipGroupRefnum.jar"/>
+        <EJBComponent Name="QuoteCostOptionRemark"
+            Targets="gc3-hydhtc137458d" URI="QuoteCostOptionRemark.jar"/>
+        <EJBComponent Name="RateVersion" Targets="gc3-hydhtc137458d" URI="RateVersion.jar"/>
+        <EJBComponent Name="CorporationInvolvedParty"
+            Targets="gc3-hydhtc137458d" URI="CorporationInvolvedParty.jar"/>
+        <EJBComponent Name="FfTextProfile" Targets="gc3-hydhtc137458d" URI="FfTextProfile.jar"/>
+        <EJBComponent Name="SkuStatus" Targets="gc3-hydhtc137458d" URI="SkuStatus.jar"/>
+        <EJBComponent Name="ObShipUnitRemark"
+            Targets="gc3-hydhtc137458d" URI="ObShipUnitRemark.jar"/>
+        <EJBComponent Name="Vessel" Targets="gc3-hydhtc137458d" URI="Vessel.jar"/>
+        <EJBComponent Name="DataQueueIndexCol"
+            Targets="gc3-hydhtc137458d" URI="DataQueueIndexCol.jar"/>
+        <EJBComponent Name="Erpc" Targets="gc3-hydhtc137458d" URI="Erpc.jar"/>
+        <EJBComponent Name="CrRouteSession" Targets="gc3-hydhtc137458d" URI="CrRouteSession.jar"/>
+        <EJBComponent Name="ShipmentInvolvedParty"
+            Targets="gc3-hydhtc137458d" URI="ShipmentInvolvedParty.jar"/>
+        <EJBComponent Name="ConsolidationProfile"
+            Targets="gc3-hydhtc137458d" URI="ConsolidationProfile.jar"/>
+        <EJBComponent Name="RateService" Targets="gc3-hydhtc137458d" URI="RateService.jar"/>
+        <EJBComponent Name="AutoAssignRuleDefD"
+            Targets="gc3-hydhtc137458d" URI="AutoAssignRuleDefD.jar"/>
+        <EJBComponent Name="HolidayProfileDetail"
+            Targets="gc3-hydhtc137458d" URI="HolidayProfileDetail.jar"/>
+        <EJBComponent Name="ConsolStatus" Targets="gc3-hydhtc137458d" URI="ConsolStatus.jar"/>
+        <EJBComponent Name="SkuQuantityType" Targets="gc3-hydhtc137458d" URI="SkuQuantityType.jar"/>
+        <EJBComponent Name="ItlClassificationReqD"
+            Targets="gc3-hydhtc137458d" URI="ItlClassificationReqD.jar"/>
+        <EJBComponent Name="PostalCodeValidate"
+            Targets="gc3-hydhtc137458d" URI="PostalCodeValidate.jar"/>
+        <EJBComponent Name="OrStatusHistoryEventGroup"
+            Targets="gc3-hydhtc137458d" URI="OrStatusHistoryEventGroup.jar"/>
+        <EJBComponent Name="XPlanSession" Targets="gc3-hydhtc137458d" URI="XPlanSession.jar"/>
+        <EJBComponent Name="FeasibilityCode" Targets="gc3-hydhtc137458d" URI="FeasibilityCode.jar"/>
+        <EJBComponent Name="ShipmentStopDebrief"
+            Targets="gc3-hydhtc137458d" URI="ShipmentStopDebrief.jar"/>
+        <EJBComponent Name="LocationResource"
+            Targets="gc3-hydhtc137458d" URI="LocationResource.jar"/>
+        <EJBComponent Name="QuoteUpdateSession"
+            Targets="gc3-hydhtc137458d" URI="QuoteUpdateSession.jar"/>
+        <EJBComponent Name="RouteCodeProfile"
+            Targets="gc3-hydhtc137458d" URI="RouteCodeProfile.jar"/>
+        <EJBComponent Name="SsStatusHistoryEventGroup"
+            Targets="gc3-hydhtc137458d" URI="SsStatusHistoryEventGroup.jar"/>
+        <EJBComponent Name="OrderReleaseLineText"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseLineText.jar"/>
+        <EJBComponent Name="ItineraryDetail" Targets="gc3-hydhtc137458d" URI="ItineraryDetail.jar"/>
+        <EJBComponent Name="VehicleType" Targets="gc3-hydhtc137458d" URI="VehicleType.jar"/>
+        <EJBComponent Name="CycleDefinition" Targets="gc3-hydhtc137458d" URI="CycleDefinition.jar"/>
+        <EJBComponent Name="RateGeoAccessorial"
+            Targets="gc3-hydhtc137458d" URI="RateGeoAccessorial.jar"/>
+        <EJBComponent Name="ITransmissionSession"
+            Targets="gc3-hydhtc137458d" URI="ITransmissionSession.jar"/>
+        <EJBComponent Name="ShipmentStopInvParty"
+            Targets="gc3-hydhtc137458d" URI="ShipmentStopInvParty.jar"/>
+        <EJBComponent Name="DataInfo" Targets="gc3-hydhtc137458d" URI="DataInfo.jar"/>
+        <EJBComponent Name="VisibilityEventException"
+            Targets="gc3-hydhtc137458d" URI="VisibilityEventException.jar"/>
+        <EJBComponent Name="AccessorialCost" Targets="gc3-hydhtc137458d" URI="AccessorialCost.jar"/>
+        <EJBComponent Name="RouteCodeCombinationD"
+            Targets="gc3-hydhtc137458d" URI="RouteCodeCombinationD.jar"/>
+        <EJBComponent Name="Scac" Targets="gc3-hydhtc137458d" URI="Scac.jar"/>
+        <EJBComponent Name="QueryTable" Targets="gc3-hydhtc137458d" URI="QueryTable.jar"/>
+        <EJBComponent Name="OrderRoutingRuleD"
+            Targets="gc3-hydhtc137458d" URI="OrderRoutingRuleD.jar"/>
+        <EJBComponent Name="WebServiceEndpoint"
+            Targets="gc3-hydhtc137458d" URI="WebServiceEndpoint.jar"/>
+        <EJBComponent Name="BatchGrid" Targets="gc3-hydhtc137458d" URI="BatchGrid.jar"/>
+        <EJBComponent Name="MonitorProfile" Targets="gc3-hydhtc137458d" URI="MonitorProfile.jar"/>
+        <EJBComponent Name="CrOutlierRule" Targets="gc3-hydhtc137458d" URI="CrOutlierRule.jar"/>
+        <EJBComponent Name="InvoiceLineitemRefnum"
+            Targets="gc3-hydhtc137458d" URI="InvoiceLineitemRefnum.jar"/>
+        <EJBComponent Name="DataQueueSession"
+            Targets="gc3-hydhtc137458d" URI="DataQueueSession.jar"/>
+        <EJBComponent Name="PackagingFrmRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="PackagingFrmRefnumQual.jar"/>
+        <EJBComponent Name="TimeWindowEmphasis"
+            Targets="gc3-hydhtc137458d" URI="TimeWindowEmphasis.jar"/>
+        <EJBComponent Name="ModeProfile" Targets="gc3-hydhtc137458d" URI="ModeProfile.jar"/>
+        <EJBComponent Name="RemoteSolverSession"
+            Targets="gc3-hydhtc137458d" URI="RemoteSolverSession.jar"/>
+        <EJBComponent Name="AppActionMorgAccess"
+            Targets="gc3-hydhtc137458d" URI="AppActionMorgAccess.jar"/>
+        <EJBComponent Name="AppActionRespPartyP"
+            Targets="gc3-hydhtc137458d" URI="AppActionRespPartyP.jar"/>
+        <EJBComponent Name="ObSuContentRemark"
+            Targets="gc3-hydhtc137458d" URI="ObSuContentRemark.jar"/>
+        <EJBComponent Name="Sitc" Targets="gc3-hydhtc137458d" URI="Sitc.jar"/>
+        <EJBComponent Name="TransportNetworkInvParty"
+            Targets="gc3-hydhtc137458d" URI="TransportNetworkInvParty.jar"/>
+        <EJBComponent Name="LocationGroup" Targets="gc3-hydhtc137458d" URI="LocationGroup.jar"/>
+        <EJBComponent Name="ItlClassificationRequest"
+            Targets="gc3-hydhtc137458d" URI="ItlClassificationRequest.jar"/>
+        <EJBComponent Name="AuditTrail" Targets="gc3-hydhtc137458d" URI="AuditTrail.jar"/>
+        <EJBComponent Name="XMLUpdateSession"
+            Targets="gc3-hydhtc137458d" URI="XMLUpdateSession.jar"/>
+        <EJBComponent Name="VpdContextVariable"
+            Targets="gc3-hydhtc137458d" URI="VpdContextVariable.jar"/>
+        <EJBComponent Name="OutXmlProfileChild"
+            Targets="gc3-hydhtc137458d" URI="OutXmlProfileChild.jar"/>
+        <EJBComponent Name="ObjectLockSession"
+            Targets="gc3-hydhtc137458d" URI="ObjectLockSession.jar"/>
+        <EJBComponent Name="BsStatusGroupReasonGroupP"
+            Targets="gc3-hydhtc137458d" URI="BsStatusGroupReasonGroupP.jar"/>
+        <EJBComponent Name="EKpi" Targets="gc3-hydhtc137458d" URI="EKpi.jar"/>
+        <EJBComponent Name="PlanningParameter"
+            Targets="gc3-hydhtc137458d" URI="PlanningParameter.jar"/>
+        <EJBComponent Name="PropertiesSession"
+            Targets="gc3-hydhtc137458d" URI="PropertiesSession.jar"/>
+        <EJBComponent Name="ShipmentActualActionSession"
+            Targets="gc3-hydhtc137458d" URI="ShipmentActualActionSession.jar"/>
+        <EJBComponent Name="OutXmlProfileXpath"
+            Targets="gc3-hydhtc137458d" URI="OutXmlProfileXpath.jar"/>
+        <EJBComponent Name="BulkTrailerBuild"
+            Targets="gc3-hydhtc137458d" URI="BulkTrailerBuild.jar"/>
+        <EJBComponent Name="Quote" Targets="gc3-hydhtc137458d" URI="Quote.jar"/>
+        <EJBComponent Name="StatusFunctor" Targets="gc3-hydhtc137458d" URI="StatusFunctor.jar"/>
+        <EJBComponent Name="ObsStatusHistory"
+            Targets="gc3-hydhtc137458d" URI="ObsStatusHistory.jar"/>
+        <EJBComponent Name="ConsolidationType"
+            Targets="gc3-hydhtc137458d" URI="ConsolidationType.jar"/>
+        <EJBComponent Name="EParameterValueType"
+            Targets="gc3-hydhtc137458d" URI="EParameterValueType.jar"/>
+        <EJBComponent Name="RepetitionSchedule"
+            Targets="gc3-hydhtc137458d" URI="RepetitionSchedule.jar"/>
+        <EJBComponent Name="RoSpecialServiceAccessorial"
+            Targets="gc3-hydhtc137458d" URI="RoSpecialServiceAccessorial.jar"/>
+        <EJBComponent Name="ProcurementSolverSession"
+            Targets="gc3-hydhtc137458d" URI="ProcurementSolverSession.jar"/>
+        <EJBComponent Name="GlKeyComponent" Targets="gc3-hydhtc137458d" URI="GlKeyComponent.jar"/>
+        <EJBComponent Name="CommercialInvoice"
+            Targets="gc3-hydhtc137458d" URI="CommercialInvoice.jar"/>
+        <EJBComponent Name="IeSsSEquipment" Targets="gc3-hydhtc137458d" URI="IeSsSEquipment.jar"/>
+        <EJBComponent Name="LogisticsGuideAggregateData"
+            Targets="gc3-hydhtc137458d" URI="LogisticsGuideAggregateData.jar"/>
+        <EJBComponent Name="SolutionImproveConfig"
+            Targets="gc3-hydhtc137458d" URI="SolutionImproveConfig.jar"/>
+        <EJBComponent Name="QueueSession" Targets="gc3-hydhtc137458d" URI="QueueSession.jar"/>
+        <EJBComponent Name="ShipmentCost" Targets="gc3-hydhtc137458d" URI="ShipmentCost.jar"/>
+        <EJBComponent Name="InvoiceUpdateSession"
+            Targets="gc3-hydhtc137458d" URI="InvoiceUpdateSession.jar"/>
+        <EJBComponent Name="RouteInstanceLegRemark"
+            Targets="gc3-hydhtc137458d" URI="RouteInstanceLegRemark.jar"/>
+        <EJBComponent Name="OMDProcessorSession"
+            Targets="gc3-hydhtc137458d" URI="OMDProcessorSession.jar"/>
+        <EJBComponent Name="CapacityUpdateSession"
+            Targets="gc3-hydhtc137458d" URI="CapacityUpdateSession.jar"/>
+        <EJBComponent Name="GeoHierarchyProfile"
+            Targets="gc3-hydhtc137458d" URI="GeoHierarchyProfile.jar"/>
+        <EJBComponent Name="LaneSummaryStat" Targets="gc3-hydhtc137458d" URI="LaneSummaryStat.jar"/>
+        <EJBComponent Name="ShipUnitLineRemark"
+            Targets="gc3-hydhtc137458d" URI="ShipUnitLineRemark.jar"/>
+        <EJBComponent Name="ContainerGroupStatus"
+            Targets="gc3-hydhtc137458d" URI="ContainerGroupStatus.jar"/>
+        <EJBComponent Name="ServiceExternalEngineParm"
+            Targets="gc3-hydhtc137458d" URI="ServiceExternalEngineParm.jar"/>
+        <EJBComponent Name="ReportLogParameter"
+            Targets="gc3-hydhtc137458d" URI="ReportLogParameter.jar"/>
+        <EJBComponent Name="ItemBom" Targets="gc3-hydhtc137458d" URI="ItemBom.jar"/>
+        <EJBComponent Name="RateGeoCostGroup"
+            Targets="gc3-hydhtc137458d" URI="RateGeoCostGroup.jar"/>
+        <EJBComponent Name="AgentSession" Targets="gc3-hydhtc137458d" URI="AgentSession.jar"/>
+        <EJBComponent Name="Job" Targets="gc3-hydhtc137458d" URI="Job.jar"/>
+        <EJBComponent Name="BulkPlanByServprov"
+            Targets="gc3-hydhtc137458d" URI="BulkPlanByServprov.jar"/>
+        <EJBComponent Name="HazmatGeneric" Targets="gc3-hydhtc137458d" URI="HazmatGeneric.jar"/>
+        <EJBComponent Name="JobTrEventContact"
+            Targets="gc3-hydhtc137458d" URI="JobTrEventContact.jar"/>
+        <EJBComponent Name="OrderMovementReplacementActionSession"
+            Targets="gc3-hydhtc137458d" URI="OrderMovementReplacementActionSession.jar"/>
+        <EJBComponent Name="RotRateOperandVisibility"
+            Targets="gc3-hydhtc137458d" URI="RotRateOperandVisibility.jar"/>
+        <EJBComponent Name="ShipmentGroupActionSession"
+            Targets="gc3-hydhtc137458d" URI="ShipmentGroupActionSession.jar"/>
+        <EJBComponent Name="BulkCm" Targets="gc3-hydhtc137458d" URI="BulkCm.jar"/>
+        <EJBComponent Name="OrderBaseActionSession"
+            Targets="gc3-hydhtc137458d" URI="OrderBaseActionSession.jar"/>
+        <EJBComponent Name="WebServiceOperation"
+            Targets="gc3-hydhtc137458d" URI="WebServiceOperation.jar"/>
+        <EJBComponent Name="QuoteStatus" Targets="gc3-hydhtc137458d" URI="QuoteStatus.jar"/>
+        <EJBComponent Name="ObLineRefnum" Targets="gc3-hydhtc137458d" URI="ObLineRefnum.jar"/>
+        <EJBComponent Name="Domain" Targets="gc3-hydhtc137458d" URI="Domain.jar"/>
+        <EJBComponent Name="BulkPlanPartitionByMode"
+            Targets="gc3-hydhtc137458d" URI="BulkPlanPartitionByMode.jar"/>
+        <EJBComponent Name="BnType" Targets="gc3-hydhtc137458d" URI="BnType.jar"/>
+        <EJBComponent Name="OrderReleaseRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseRefnumQual.jar"/>
+        <EJBComponent Name="BsReasonGroupReasonCodeP"
+            Targets="gc3-hydhtc137458d" URI="BsReasonGroupReasonCodeP.jar"/>
+        <EJBComponent Name="UcXref" Targets="gc3-hydhtc137458d" URI="UcXref.jar"/>
+        <EJBComponent Name="SgStatusHistory" Targets="gc3-hydhtc137458d" URI="SgStatusHistory.jar"/>
+        <EJBComponent Name="SpecialService" Targets="gc3-hydhtc137458d" URI="SpecialService.jar"/>
+        <EJBComponent Name="WorkflowParam" Targets="gc3-hydhtc137458d" URI="WorkflowParam.jar"/>
+        <EJBComponent Name="ActivityCalendar"
+            Targets="gc3-hydhtc137458d" URI="ActivityCalendar.jar"/>
+        <EJBComponent Name="CommitAllocUsage"
+            Targets="gc3-hydhtc137458d" URI="CommitAllocUsage.jar"/>
+        <EJBComponent Name="IeSsEquipment" Targets="gc3-hydhtc137458d" URI="IeSsEquipment.jar"/>
+        <EJBComponent Name="ShipmentStop" Targets="gc3-hydhtc137458d" URI="ShipmentStop.jar"/>
+        <EJBComponent Name="HazmatAPI" Targets="gc3-hydhtc137458d" URI="HazmatAPI.jar"/>
+        <EJBComponent Name="OrderReleaseAccrual"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseAccrual.jar"/>
+        <EJBComponent Name="UserMenuLayoutSession"
+            Targets="gc3-hydhtc137458d" URI="UserMenuLayoutSession.jar"/>
+        <EJBComponent Name="RouteInstanceRemark"
+            Targets="gc3-hydhtc137458d" URI="RouteInstanceRemark.jar"/>
+        <EJBComponent Name="ShipUnitLoadConfig"
+            Targets="gc3-hydhtc137458d" URI="ShipUnitLoadConfig.jar"/>
+        <EJBComponent Name="ShipmentRefnum" Targets="gc3-hydhtc137458d" URI="ShipmentRefnum.jar"/>
+        <EJBComponent Name="SelectList" Targets="gc3-hydhtc137458d" URI="SelectList.jar"/>
+        <EJBComponent Name="ScheduleStatus" Targets="gc3-hydhtc137458d" URI="ScheduleStatus.jar"/>
+        <EJBComponent Name="RateGeoRefnum" Targets="gc3-hydhtc137458d" URI="RateGeoRefnum.jar"/>
+        <EJBComponent Name="DocumentPartyStatus"
+            Targets="gc3-hydhtc137458d" URI="DocumentPartyStatus.jar"/>
+        <EJBComponent Name="BnGenerator" Targets="gc3-hydhtc137458d" URI="BnGenerator.jar"/>
+        <EJBComponent Name="EKpiTargetValueType"
+            Targets="gc3-hydhtc137458d" URI="EKpiTargetValueType.jar"/>
+        <EJBComponent Name="ItemRefnumQual" Targets="gc3-hydhtc137458d" URI="ItemRefnumQual.jar"/>
+        <EJBComponent Name="MatchValRuleInvoiceRefnum"
+            Targets="gc3-hydhtc137458d" URI="MatchValRuleInvoiceRefnum.jar"/>
+        <EJBComponent Name="DeclaredValueQual"
+            Targets="gc3-hydhtc137458d" URI="DeclaredValueQual.jar"/>
+        <EJBComponent Name="ContactPreference"
+            Targets="gc3-hydhtc137458d" URI="ContactPreference.jar"/>
+        <EJBComponent Name="LocationLoadUnloadPoint"
+            Targets="gc3-hydhtc137458d" URI="LocationLoadUnloadPoint.jar"/>
+        <EJBComponent Name="ObsStatusHistoryLine"
+            Targets="gc3-hydhtc137458d" URI="ObsStatusHistoryLine.jar"/>
+        <EJBComponent Name="AgentActionDetails"
+            Targets="gc3-hydhtc137458d" URI="AgentActionDetails.jar"/>
+        <EJBComponent Name="ObLineInvolvedParty"
+            Targets="gc3-hydhtc137458d" URI="ObLineInvolvedParty.jar"/>
+        <EJBComponent Name="ShipmentUpdateSession"
+            Targets="gc3-hydhtc137458d" URI="ShipmentUpdateSession.jar"/>
+        <EJBComponent Name="ShipGroupType" Targets="gc3-hydhtc137458d" URI="ShipGroupType.jar"/>
+        <EJBComponent Name="LocationSpecialService"
+            Targets="gc3-hydhtc137458d" URI="LocationSpecialService.jar"/>
+        <EJBComponent Name="ObLink" Targets="gc3-hydhtc137458d" URI="ObLink.jar"/>
+        <EJBComponent Name="LegInterimPoint" Targets="gc3-hydhtc137458d" URI="LegInterimPoint.jar"/>
+        <EJBComponent Name="Allocation" Targets="gc3-hydhtc137458d" URI="Allocation.jar"/>
+        <EJBComponent Name="InvoiceServiceCode"
+            Targets="gc3-hydhtc137458d" URI="InvoiceServiceCode.jar"/>
+        <EJBComponent Name="DataQueueIndex" Targets="gc3-hydhtc137458d" URI="DataQueueIndex.jar"/>
+        <EJBComponent Name="Appointment" Targets="gc3-hydhtc137458d" URI="Appointment.jar"/>
+        <EJBComponent Name="WrapperSession" Targets="gc3-hydhtc137458d" URI="WrapperSession.jar"/>
+        <EJBComponent Name="BnNamedRange" Targets="gc3-hydhtc137458d" URI="BnNamedRange.jar"/>
+        <EJBComponent Name="ObSuInvolvedParty"
+            Targets="gc3-hydhtc137458d" URI="ObSuInvolvedParty.jar"/>
+        <EJBComponent Name="ObShipUnit" Targets="gc3-hydhtc137458d" URI="ObShipUnit.jar"/>
+        <EJBComponent Name="RatableOperator" Targets="gc3-hydhtc137458d" URI="RatableOperator.jar"/>
+        <EJBComponent Name="Activity" Targets="gc3-hydhtc137458d" URI="Activity.jar"/>
+        <EJBComponent Name="PrintManager" Targets="gc3-hydhtc137458d" URI="PrintManager.jar"/>
+        <EJBComponent Name="ConditionalBookingField"
+            Targets="gc3-hydhtc137458d" URI="ConditionalBookingField.jar"/>
+        <EJBComponent Name="CacheSession" Targets="gc3-hydhtc137458d" URI="CacheSession.jar"/>
+        <EJBComponent Name="BusinessActionSession"
+            Targets="gc3-hydhtc137458d" URI="BusinessActionSession.jar"/>
+        <EJBComponent Name="LaneCalendar" Targets="gc3-hydhtc137458d" URI="LaneCalendar.jar"/>
+        <EJBComponent Name="TenderCollabServprov"
+            Targets="gc3-hydhtc137458d" URI="TenderCollabServprov.jar"/>
+        <EJBComponent Name="ScheduleDoor" Targets="gc3-hydhtc137458d" URI="ScheduleDoor.jar"/>
+        <EJBComponent Name="XmlTemplateSession"
+            Targets="gc3-hydhtc137458d" URI="XmlTemplateSession.jar"/>
+        <EJBComponent Name="QLifetimeEvent" Targets="gc3-hydhtc137458d" URI="QLifetimeEvent.jar"/>
+        <EJBComponent Name="AutoAssignType" Targets="gc3-hydhtc137458d" URI="AutoAssignType.jar"/>
+        <EJBComponent Name="SecuritySession" Targets="gc3-hydhtc137458d" URI="SecuritySession.jar"/>
+        <EJBComponent Name="CrForecastRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="CrForecastRefnumQual.jar"/>
+        <EJBComponent Name="SkuServiceSession"
+            Targets="gc3-hydhtc137458d" URI="SkuServiceSession.jar"/>
+        <EJBComponent Name="AppointmentPriority"
+            Targets="gc3-hydhtc137458d" URI="AppointmentPriority.jar"/>
+        <EJBComponent Name="CustomerService" Targets="gc3-hydhtc137458d" URI="CustomerService.jar"/>
+        <EJBComponent Name="RoLaneSpecialService"
+            Targets="gc3-hydhtc137458d" URI="RoLaneSpecialService.jar"/>
+        <EJBComponent Name="RouteInstanceLeg"
+            Targets="gc3-hydhtc137458d" URI="RouteInstanceLeg.jar"/>
+        <EJBComponent Name="ScreenLayoutDef" Targets="gc3-hydhtc137458d" URI="ScreenLayoutDef.jar"/>
+        <EJBComponent Name="MediatorSession" Targets="gc3-hydhtc137458d" URI="MediatorSession.jar"/>
+        <EJBComponent Name="ShipmentExecutionActionSession"
+            Targets="gc3-hydhtc137458d" URI="ShipmentExecutionActionSession.jar"/>
+        <EJBComponent Name="BnChecksumAlgorithm"
+            Targets="gc3-hydhtc137458d" URI="BnChecksumAlgorithm.jar"/>
+        <EJBComponent Name="ValidValueType" Targets="gc3-hydhtc137458d" URI="ValidValueType.jar"/>
+        <EJBComponent Name="ClaimRemark" Targets="gc3-hydhtc137458d" URI="ClaimRemark.jar"/>
+        <EJBComponent Name="ProfileSession" Targets="gc3-hydhtc137458d" URI="ProfileSession.jar"/>
+        <EJBComponent Name="VoucherInvoiceLineitemJoin"
+            Targets="gc3-hydhtc137458d" URI="VoucherInvoiceLineitemJoin.jar"/>
+        <EJBComponent Name="LaneAttributeDef"
+            Targets="gc3-hydhtc137458d" URI="LaneAttributeDef.jar"/>
+        <EJBComponent Name="IataScrCode" Targets="gc3-hydhtc137458d" URI="IataScrCode.jar"/>
+        <EJBComponent Name="CommandLineSession"
+            Targets="gc3-hydhtc137458d" URI="CommandLineSession.jar"/>
+        <EJBComponent Name="RateServiceType" Targets="gc3-hydhtc137458d" URI="RateServiceType.jar"/>
+        <EJBComponent Name="JobType" Targets="gc3-hydhtc137458d" URI="JobType.jar"/>
+        <EJBComponent Name="ObLineRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="ObLineRefnumQual.jar"/>
+        <EJBComponent Name="BsStatusCode" Targets="gc3-hydhtc137458d" URI="BsStatusCode.jar"/>
+        <EJBComponent Name="DataInfoDetail" Targets="gc3-hydhtc137458d" URI="DataInfoDetail.jar"/>
+        <EJBComponent Name="LocationRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="LocationRefnumQual.jar"/>
+        <EJBComponent Name="GlCodeMap" Targets="gc3-hydhtc137458d" URI="GlCodeMap.jar"/>
+        <EJBComponent Name="ActionDefSelParam"
+            Targets="gc3-hydhtc137458d" URI="ActionDefSelParam.jar"/>
+        <EJBComponent Name="VesselRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="VesselRefnumQual.jar"/>
+        <EJBComponent Name="AppMachine" Targets="gc3-hydhtc137458d" URI="AppMachine.jar"/>
+        <EJBComponent Name="MonitoredSolverSession"
+            Targets="gc3-hydhtc137458d" URI="MonitoredSolverSession.jar"/>
+        <EJBComponent Name="LaneRemark" Targets="gc3-hydhtc137458d" URI="LaneRemark.jar"/>
+        <EJBComponent Name="ShipmentAccessorialRef"
+            Targets="gc3-hydhtc137458d" URI="ShipmentAccessorialRef.jar"/>
+        <EJBComponent Name="BsEventGroupAttribute"
+            Targets="gc3-hydhtc137458d" URI="BsEventGroupAttribute.jar"/>
+        <EJBComponent Name="RouteTemplateLegRemark"
+            Targets="gc3-hydhtc137458d" URI="RouteTemplateLegRemark.jar"/>
+        <EJBComponent Name="ShipmentActionQual"
+            Targets="gc3-hydhtc137458d" URI="ShipmentActionQual.jar"/>
+        <EJBComponent Name="BulkPlanMilestone"
+            Targets="gc3-hydhtc137458d" URI="BulkPlanMilestone.jar"/>
+        <EJBComponent Name="ServprovTenderEquipment"
+            Targets="gc3-hydhtc137458d" URI="ServprovTenderEquipment.jar"/>
+        <EJBComponent Name="ShippingAgentContactProfit"
+            Targets="gc3-hydhtc137458d" URI="ShippingAgentContactProfit.jar"/>
+        <EJBComponent Name="ServprovTenderComment"
+            Targets="gc3-hydhtc137458d" URI="ServprovTenderComment.jar"/>
+        <EJBComponent Name="ShippingAgentContactNote"
+            Targets="gc3-hydhtc137458d" URI="ShippingAgentContactNote.jar"/>
+        <EJBComponent Name="Deadline" Targets="gc3-hydhtc137458d" URI="Deadline.jar"/>
+        <EJBComponent Name="ShipGroupRefnum" Targets="gc3-hydhtc137458d" URI="ShipGroupRefnum.jar"/>
+        <EJBComponent Name="ParameterGroup" Targets="gc3-hydhtc137458d" URI="ParameterGroup.jar"/>
+        <EJBComponent Name="AutoApproveRule" Targets="gc3-hydhtc137458d" URI="AutoApproveRule.jar"/>
+        <EJBComponent Name="AllocationSession"
+            Targets="gc3-hydhtc137458d" URI="AllocationSession.jar"/>
+        <EJBComponent Name="ShipmentInfCost" Targets="gc3-hydhtc137458d" URI="ShipmentInfCost.jar"/>
+        <EJBComponent Name="Calendar" Targets="gc3-hydhtc137458d" URI="Calendar.jar"/>
+        <EJBComponent Name="ITransmissionReport"
+            Targets="gc3-hydhtc137458d" URI="ITransmissionReport.jar"/>
+        <EJBComponent Name="MatchValidationRule"
+            Targets="gc3-hydhtc137458d" URI="MatchValidationRule.jar"/>
+        <EJBComponent Name="BsStatusCodeProfile"
+            Targets="gc3-hydhtc137458d" URI="BsStatusCodeProfile.jar"/>
+        <EJBComponent Name="PerfTestActionSession"
+            Targets="gc3-hydhtc137458d" URI="PerfTestActionSession.jar"/>
+        <EJBComponent Name="RouteTemplateInvParty"
+            Targets="gc3-hydhtc137458d" URI="RouteTemplateInvParty.jar"/>
+        <EJBComponent Name="RateFactorRule" Targets="gc3-hydhtc137458d" URI="RateFactorRule.jar"/>
+        <EJBComponent Name="LogisticsGuide" Targets="gc3-hydhtc137458d" URI="LogisticsGuide.jar"/>
+        <EJBComponent Name="OrderReleaseLineRemark"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseLineRemark.jar"/>
+        <EJBComponent Name="WorkflowTriggerParam"
+            Targets="gc3-hydhtc137458d" URI="WorkflowTriggerParam.jar"/>
+        <EJBComponent Name="OrderMovementTransactionSession"
+            Targets="gc3-hydhtc137458d" URI="OrderMovementTransactionSession.jar"/>
+        <EJBComponent Name="TimeZone" Targets="gc3-hydhtc137458d" URI="TimeZone.jar"/>
+        <EJBComponent Name="LeakDetectionSession"
+            Targets="gc3-hydhtc137458d" URI="LeakDetectionSession.jar"/>
+        <EJBComponent Name="Door" Targets="gc3-hydhtc137458d" URI="Door.jar"/>
+        <EJBComponent Name="RouteInstanceLegInvParty"
+            Targets="gc3-hydhtc137458d" URI="RouteInstanceLegInvParty.jar"/>
+        <EJBComponent Name="CrProjectOutlierRule"
+            Targets="gc3-hydhtc137458d" URI="CrProjectOutlierRule.jar"/>
+        <EJBComponent Name="ScreenLayoutSession"
+            Targets="gc3-hydhtc137458d" URI="ScreenLayoutSession.jar"/>
+        <EJBComponent Name="DataDatabase" Targets="gc3-hydhtc137458d" URI="DataDatabase.jar"/>
+        <EJBComponent Name="BsStatusGroupStatusCodeP"
+            Targets="gc3-hydhtc137458d" URI="BsStatusGroupStatusCodeP.jar"/>
+        <EJBComponent Name="RuleSetJoin" Targets="gc3-hydhtc137458d" URI="RuleSetJoin.jar"/>
+        <EJBComponent Name="AppServerDomain" Targets="gc3-hydhtc137458d" URI="AppServerDomain.jar"/>
+        <EJBComponent Name="SShipUnitRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="SShipUnitRefnumQual.jar"/>
+        <EJBComponent Name="EquipmentConversion"
+            Targets="gc3-hydhtc137458d" URI="EquipmentConversion.jar"/>
+        <EJBComponent Name="LogisticsGuideTransactionSession"
+            Targets="gc3-hydhtc137458d" URI="LogisticsGuideTransactionSession.jar"/>
+        <EJBComponent Name="OrderReleaseTrEventContact"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseTrEventContact.jar"/>
+        <EJBComponent Name="GlLookupKey" Targets="gc3-hydhtc137458d" URI="GlLookupKey.jar"/>
+        <EJBComponent Name="AgentAction" Targets="gc3-hydhtc137458d" URI="AgentAction.jar"/>
+        <EJBComponent Name="ShipGroupContentDef"
+            Targets="gc3-hydhtc137458d" URI="ShipGroupContentDef.jar"/>
+        <EJBComponent Name="GeoHierarchyProfileD"
+            Targets="gc3-hydhtc137458d" URI="GeoHierarchyProfileD.jar"/>
+        <EJBComponent Name="DamageType" Targets="gc3-hydhtc137458d" URI="DamageType.jar"/>
+        <EJBComponent Name="Orientation" Targets="gc3-hydhtc137458d" URI="Orientation.jar"/>
+        <EJBComponent Name="CrRouteRefnumQual"
+            Targets="gc3-hydhtc137458d" URI="CrRouteRefnumQual.jar"/>
+        <EJBComponent Name="IeSShipUnit" Targets="gc3-hydhtc137458d" URI="IeSShipUnit.jar"/>
+        <EJBComponent Name="PShipmentSetD" Targets="gc3-hydhtc137458d" URI="PShipmentSetD.jar"/>
+        <EJBComponent Name="ReportParameter" Targets="gc3-hydhtc137458d" URI="ReportParameter.jar"/>
+        <EJBComponent Name="HazmatTechnicalName"
+            Targets="gc3-hydhtc137458d" URI="HazmatTechnicalName.jar"/>
+        <EJBComponent Name="ITransactionDetail"
+            Targets="gc3-hydhtc137458d" URI="ITransactionDetail.jar"/>
+        <EJBComponent Name="RemarkQual" Targets="gc3-hydhtc137458d" URI="RemarkQual.jar"/>
+        <EJBComponent Name="AllocTypeQual" Targets="gc3-hydhtc137458d" URI="AllocTypeQual.jar"/>
+        <EJBComponent Name="NotifyRequest" Targets="gc3-hydhtc137458d" URI="NotifyRequest.jar"/>
+        <EJBComponent Name="QuoteServerActionSession"
+            Targets="gc3-hydhtc137458d" URI="QuoteServerActionSession.jar"/>
+        <EJBComponent Name="ProcessControlRequest"
+            Targets="gc3-hydhtc137458d" URI="ProcessControlRequest.jar"/>
+        <EJBComponent Name="RateGeoCostOperand"
+            Targets="gc3-hydhtc137458d" URI="RateGeoCostOperand.jar"/>
+        <EJBComponent Name="OrderReleaseText"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseText.jar"/>
+        <EJBComponent Name="ShipmentInvPartyAddress"
+            Targets="gc3-hydhtc137458d" URI="ShipmentInvPartyAddress.jar"/>
+        <EJBComponent Name="ManagerLayoutSession"
+            Targets="gc3-hydhtc137458d" URI="ManagerLayoutSession.jar"/>
+        <EJBComponent Name="EquipmentMark" Targets="gc3-hydhtc137458d" URI="EquipmentMark.jar"/>
+        <EJBComponent Name="HazardousClassification"
+            Targets="gc3-hydhtc137458d" URI="HazardousClassification.jar"/>
+        <EJBComponent Name="LogisticsGuideTemplate"
+            Targets="gc3-hydhtc137458d" URI="LogisticsGuideTemplate.jar"/>
+        <EJBComponent Name="FlexCommodityQual"
+            Targets="gc3-hydhtc137458d" URI="FlexCommodityQual.jar"/>
+        <EJBComponent Name="OrderReleaseLineInvParty"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseLineInvParty.jar"/>
+        <EJBComponent Name="InvoiceInvolvedParty"
+            Targets="gc3-hydhtc137458d" URI="InvoiceInvolvedParty.jar"/>
+        <EJBComponent Name="AccessorialDefault"
+            Targets="gc3-hydhtc137458d" URI="AccessorialDefault.jar"/>
+        <EJBComponent Name="PProjectStatus" Targets="gc3-hydhtc137458d" URI="PProjectStatus.jar"/>
+        <EJBComponent Name="LoadingPattern" Targets="gc3-hydhtc137458d" URI="LoadingPattern.jar"/>
+        <EJBComponent Name="LocationCapacityGroupJoin"
+            Targets="gc3-hydhtc137458d" URI="LocationCapacityGroupJoin.jar"/>
+        <EJBComponent Name="OrderRelease" Targets="gc3-hydhtc137458d" URI="OrderRelease.jar"/>
+        <EJBComponent Name="UserMenuPermission"
+            Targets="gc3-hydhtc137458d" URI="UserMenuPermission.jar"/>
+        <EJBComponent Name="WebSvcOperationParam"
+            Targets="gc3-hydhtc137458d" URI="WebSvcOperationParam.jar"/>
+        <EJBComponent Name="HolidayProfile" Targets="gc3-hydhtc137458d" URI="HolidayProfile.jar"/>
+        <EJBComponent Name="VpdProfile" Targets="gc3-hydhtc137458d" URI="VpdProfile.jar"/>
+        <EJBComponent Name="ManualAgentSession"
+            Targets="gc3-hydhtc137458d" URI="ManualAgentSession.jar"/>
+        <EJBComponent Name="RouteCodeProfileD"
+            Targets="gc3-hydhtc137458d" URI="RouteCodeProfileD.jar"/>
+        <EJBComponent Name="GeoCityprovPoint"
+            Targets="gc3-hydhtc137458d" URI="GeoCityprovPoint.jar"/>
+        <EJBComponent Name="SuSpecOrientProfile"
+            Targets="gc3-hydhtc137458d" URI="SuSpecOrientProfile.jar"/>
+        <EJBComponent Name="AllocationOrderReleaseD"
+            Targets="gc3-hydhtc137458d" URI="AllocationOrderReleaseD.jar"/>
+        <EJBComponent Name="AutoSecResProfileLaneJoin"
+            Targets="gc3-hydhtc137458d" URI="AutoSecResProfileLaneJoin.jar"/>
+        <EJBComponent Name="OrLineExportLicense"
+            Targets="gc3-hydhtc137458d" URI="OrLineExportLicense.jar"/>
+        <EJBComponent Name="VisibilityInvolvedParty"
+            Targets="gc3-hydhtc137458d" URI="VisibilityInvolvedParty.jar"/>
+        <EJBComponent Name="BeanDataSession" Targets="gc3-hydhtc137458d" URI="BeanDataSession.jar"/>
+        <EJBComponent Name="LocationActionSession"
+            Targets="gc3-hydhtc137458d" URI="LocationActionSession.jar"/>
+        <EJBComponent Name="ServiceTime" Targets="gc3-hydhtc137458d" URI="ServiceTime.jar"/>
+        <EJBComponent Name="Claim" Targets="gc3-hydhtc137458d" URI="Claim.jar"/>
+        <EJBComponent Name="LogfileDetail" Targets="gc3-hydhtc137458d" URI="LogfileDetail.jar"/>
+        <EJBComponent Name="OrderMovementJoin"
+            Targets="gc3-hydhtc137458d" URI="OrderMovementJoin.jar"/>
+        <EJBComponent Name="NsContactPointOverride"
+            Targets="gc3-hydhtc137458d" URI="NsContactPointOverride.jar"/>
+        <EJBComponent Name="ShipCommitCountJoin"
+            Targets="gc3-hydhtc137458d" URI="ShipCommitCountJoin.jar"/>
+        <EJBComponent Name="Lane" Targets="gc3-hydhtc137458d" URI="Lane.jar"/>
+        <EJBComponent Name="DocumentDefText" Targets="gc3-hydhtc137458d" URI="DocumentDefText.jar"/>
+        <EJBComponent Name="OrStatusHistoryRemark"
+            Targets="gc3-hydhtc137458d" URI="OrStatusHistoryRemark.jar"/>
+        <EJBComponent Name="UserManagerSession"
+            Targets="gc3-hydhtc137458d" URI="UserManagerSession.jar"/>
+        <EJBComponent Name="OrderScheduleOverrideD"
+            Targets="gc3-hydhtc137458d" URI="OrderScheduleOverrideD.jar"/>
+        <EJBComponent Name="MonitorProfileDeleted"
+            Targets="gc3-hydhtc137458d" URI="MonitorProfileDeleted.jar"/>
+        <EJBComponent Name="PlanningMilestone"
+            Targets="gc3-hydhtc137458d" URI="PlanningMilestone.jar"/>
+        <EJBComponent Name="DataQueueDef" Targets="gc3-hydhtc137458d" URI="DataQueueDef.jar"/>
+        <EJBComponent Name="InvoiceRoute" Targets="gc3-hydhtc137458d" URI="InvoiceRoute.jar"/>
+        <EJBComponent Name="RateOfferingInvParty"
+            Targets="gc3-hydhtc137458d" URI="RateOfferingInvParty.jar"/>
+        <EJBComponent Name="MonitorToleranceRule"
+            Targets="gc3-hydhtc137458d" URI="MonitorToleranceRule.jar"/>
+        <EJBComponent Name="DocPartyDistribution"
+            Targets="gc3-hydhtc137458d" URI="DocPartyDistribution.jar"/>
+        <EJBComponent Name="ObLineAttribute" Targets="gc3-hydhtc137458d" URI="ObLineAttribute.jar"/>
+        <EJBComponent Name="ObShipUnitStatus"
+            Targets="gc3-hydhtc137458d" URI="ObShipUnitStatus.jar"/>
+        <EJBComponent Name="ProblemSession" Targets="gc3-hydhtc137458d" URI="ProblemSession.jar"/>
+        <EJBComponent Name="SkuLevel" Targets="gc3-hydhtc137458d" URI="SkuLevel.jar"/>
+        <EJBComponent Name="StatusValue" Targets="gc3-hydhtc137458d" URI="StatusValue.jar"/>
+        <EJBComponent Name="AppSharedItem" Targets="gc3-hydhtc137458d" URI="AppSharedItem.jar"/>
+        <EJBComponent Name="PBidPackage" Targets="gc3-hydhtc137458d" URI="PBidPackage.jar"/>
+        <EJBComponent Name="ShipUnit" Targets="gc3-hydhtc137458d" URI="ShipUnit.jar"/>
+        <EJBComponent Name="SkuTransaction" Targets="gc3-hydhtc137458d" URI="SkuTransaction.jar"/>
+        <EJBComponent Name="BsReasonCode" Targets="gc3-hydhtc137458d" URI="BsReasonCode.jar"/>
+        <EJBComponent Name="DocumentDocumentJoin"
+            Targets="gc3-hydhtc137458d" URI="DocumentDocumentJoin.jar"/>
+        <EJBComponent Name="CapacityCommitmentAllocD"
+            Targets="gc3-hydhtc137458d" URI="CapacityCommitmentAllocD.jar"/>
+        <EJBComponent Name="GeoHierarchy" Targets="gc3-hydhtc137458d" URI="GeoHierarchy.jar"/>
+        <EJBComponent Name="RoSpecialService"
+            Targets="gc3-hydhtc137458d" URI="RoSpecialService.jar"/>
+        <EJBComponent Name="AppServerSession"
+            Targets="gc3-hydhtc137458d" URI="AppServerSession.jar"/>
+        <EJBComponent Name="MonitorOperator" Targets="gc3-hydhtc137458d" URI="MonitorOperator.jar"/>
+        <EJBComponent Name="BnContext" Targets="gc3-hydhtc137458d" URI="BnContext.jar"/>
+        <EJBComponent Name="ShipmentRemark" Targets="gc3-hydhtc137458d" URI="ShipmentRemark.jar"/>
+        <EJBComponent Name="HnameComponent" Targets="gc3-hydhtc137458d" URI="HnameComponent.jar"/>
+        <EJBComponent Name="UserPreference" Targets="gc3-hydhtc137458d" URI="UserPreference.jar"/>
+        <EJBComponent Name="InvoiceStopSeal" Targets="gc3-hydhtc137458d" URI="InvoiceStopSeal.jar"/>
+        <EJBComponent Name="OrderBaseStatusSession"
+            Targets="gc3-hydhtc137458d" URI="OrderBaseStatusSession.jar"/>
+        <EJBComponent Name="OsXref" Targets="gc3-hydhtc137458d" URI="OsXref.jar"/>
+        <EJBComponent Name="RateUnitBreakProfile"
+            Targets="gc3-hydhtc137458d" URI="RateUnitBreakProfile.jar"/>
+        <EJBComponent Name="OrderReleaseBill"
+            Targets="gc3-hydhtc137458d" URI="OrderReleaseBill.jar"/>
+        <EJBComponent Name="ClaimCost" Targets="gc3-hydhtc137458d" URI="ClaimCost.jar"/>
+        <EJBComponent Name="ItlDeniedParty" Targets="gc3-hydhtc137458d" URI="ItlDeniedParty.jar"/>
+        <EJBComponent Name="ShipUnitSpecEquipGrpComp"
+            Targets="gc3-hydhtc137458d" URI="ShipUnitSpecEquipGrpComp.jar"/>
+        <EJBComponent Name="RateGeoCostWeightBreak"
+            Targets="gc3-hydhtc137458d" URI="RateGeoCostWeightBreak.jar"/>
+        <EJBComponent Name="PackagingFormCode"
+            Targets="gc3-hydhtc137458d" URI="PackagingFormCode.jar"/>
+        <EJBComponent Name="ContactPoint" Targets="gc3-hydhtc137458d" URI="ContactPoint.jar"/>
+        <EJBComponent Name="RepetitionScheduleInvParty"
+            Targets="gc3-hydhtc137458d" URI="RepetitionScheduleInvParty.jar"/>
+        <EJBComponent Name="TransactionalEventServprov"
+            Targets="gc3-hydhtc137458d" URI="TransactionalEventServprov.jar"/>
+        <EJBComponent Name="ActionDefState" Targets="gc3-hydhtc137458d" URI="ActionDefState.jar"/>
+        <EJBComponent Name="LegSchedule" Targets="gc3-hydhtc137458d" URI="LegSchedule.jar"/>
+        <EJBComponent Name="ServerUtilSession"
+            Targets="gc3-hydhtc137458d" URI="ServerUtilSession.jar"/>
+        <EJBComponent Name="CustomerTemplate"
+            Targets="gc3-hydhtc137458d" URI="CustomerTemplate.jar"/>
+        <EJBComponent Name="Workspace" Targets="gc3-hydhtc137458d" URI="Workspace.jar"/>
+        <EJBComponent Name="SShipUnitSpecialService"
+            Targets="gc3-hydhtc137458d" URI="SShipUnitSpecialService.jar"/>
+        <EJBComponent Name="RateGeoTimePeriodD"
+            Targets="gc3-hydhtc137458d" URI="RateGeoTimePeriodD.jar"/>
+        <EJBComponent Name="JobInvPartyAddress"
+            Targets="gc3-hydhtc137458d" URI="JobInvPartyAddress.jar"/>
+        <EJBComponent Name="PreferenceValue" Targets="gc3-hydhtc137458d" URI="PreferenceValue.jar"/>
+        <EJBComponent Name="CrSolution" Targets="gc3-hydhtc137458d" URI="CrSolution.jar"/>
+        <EJBComponent Name="EventSession" Targets="gc3-hydhtc137458d" URI="EventSession.jar"/>
+        <EJBComponent Name="BatchBalanceOrderType"
+            Targets="gc3-hydhtc137458d" URI="BatchBalanceOrderType.jar"/>
+        <EJBComponent Name="RateFactorRuleValueBreak"
+            Targets="gc3-hydhtc137458d" URI="RateFactorRuleValueBreak.jar"/>
+        <EJBComponent Name="ShipmentSpecialServiceRef"
+            Targets="gc3-hydhtc137458d" URI="ShipmentSpecialServiceRef.jar"/>
+        <EJBComponent Name="VolvoCalendarSession"
+            Targets="gc3-hydhtc137458d" URI="VolvoCalendarSession.jar"/>
+        <EJBComponent Name="JobServerActionSession"
+            Targets="gc3-hydhtc137458d" URI="JobServerActionSession.jar"/>
+        <EJBComponent Name="ItemExportLicense"
+            Targets="gc3-hydhtc137458d" URI="ItemExportLicense.jar"/>
+        <EJBComponent Name="DocumentContent" Targets="gc3-hydhtc137458d" URI="DocumentContent.jar"/>
+        <EJBComponent Name="CapacityOverride"
+            Targets="gc3-hydhtc137458d" URI="CapacityOverride.jar"/>
+        <EJBComponent Name="LocationCapacityD"
+            Targets="gc3-hydhtc137458d" URI="LocationCapacityD.jar"/>
+        <EJBComponent Name="ShipmentInfCostD"
+            Targets="gc3-hydhtc137458d" URI="ShipmentInfCostD.jar"/>
+        <EJBComponent Name="EquipmentTypeJoin"
+            Targets="gc3-hydhtc137458d" URI="EquipmentTypeJoin.jar"/>
+    </Application>
+</Domain>

@@ -1,0 +1,543 @@
+2014-12-18 14:17:36.006	33600	Debug	ProcessEvent	15409/CREATE/process.util.changeExternalStatus_Object/Process Object Created [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.006	33600	Debug	ProcessEvent	15409/OPEN/process.util.changeExternalStatus_Object/event=Created [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.033	33600	Debug	ProcessEvent	15410/CREATE/OrderReleaseModStatusChange/Process Object Created [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.033	33600	Debug	WorkflowDetails	Topic OrderReleaseModStatusChange: release=RONA.90990_3465675-005, dataSource=INTERNAL, beforePersist=false, children=null, statusValue=READY FOR PLANNING_NO queued for commit [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.969	33600	Debug	ProcessEvent	15411/CREATE/OrderReleaseModStatusChange/Process Object Created [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.969	33600	Debug	ProcessEvent	15411/OPEN/OrderReleaseModStatusChange/event=Created [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.969	33600	Debug	ProcessEvent	15408.15409.15411/OrderReleaseModStatusChange - RONA.90990_3465675-005/state=Running/children=[]/event=Set ResultFilter/[] [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.969	33600	Debug	ProcessEvent	15408.15409.15411/OrderReleaseModStatusChange - RONA.90990_3465675-005/state=Running/children=[]/event=Terminated [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.969	33600	Debug	ProcessEvent	15408.15409.15411/OrderReleaseModStatusChange - RONA.90990_3465675-005/state=Completed/children=[]/event=Completed [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.969	33600	Debug	ProcessEvent	15408.15409/process.util.changeExternalStatus_Object/state=Running/children=[15411/Completed]/event=Child Completed/15411/CLOSE/OrderReleaseModStatusChange/{} [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.969	33600	Debug	ProcessEvent	15410/OPEN/OrderReleaseModStatusChange/event=Created [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.969	33600	Debug	ProcessEvent	15408.15409.15410/OrderReleaseModStatusChange - RONA.90990_3465675-005/state=Running/children=[]/event=Set ResultFilter/[] [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.97	33600	Debug	ProcessEvent	15408.15409/process.util.changeExternalStatus_Object/state=Running/children=[15411/Completed, 15410/Running]/event=Terminated [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.97	33600	Debug	ProcessEvent	15412/CREATE/OrderReleaseActionTopic/Process Object Created [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.97	33600	Debug	ProcessEvent	15412/OPEN/OrderReleaseActionTopic/event=Created [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.97	33600	Debug	ProcessEvent	15408.15412/OrderReleaseActionTopic - RONA.90990_3465675-005/state=Running/children=[]/event=Set ResultFilter/[] [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.97	33600	Debug	ProcessEvent	15408.15412/OrderReleaseActionTopic - RONA.90990_3465675-005/state=Running/children=[]/event=Terminated [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.97	33600	Debug	ProcessEvent	15408.15412/OrderReleaseActionTopic - RONA.90990_3465675-005/state=Completed/children=[]/event=Completed [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.97	33600	Debug	ProcessEvent	15408/ORDER RELEASE CHANGE EXTERNAL STATUS: [RONA.90990_3465675-005]/state=Running/children=[15409/Waiting, 15412/Completed]/event=Child Completed/15412/CLOSE/OrderReleaseActionTopic/{} [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.97	33600	Debug	ProcessEvent	15413/CREATE/OrderReleaseActionTopic/Process Object Created [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.97	33600	Debug	ProcessEvent	15413/OPEN/OrderReleaseActionTopic/event=Created [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.97	33600	Debug	ProcessEvent	15408.15413/OrderReleaseActionTopic - RONA.90990_3465675-005/state=Running/children=[]/event=Set ResultFilter/[] [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.97	33600	Debug	ProcessEvent	15408.15413/OrderReleaseActionTopic - RONA.90990_3465675-005/state=Running/children=[]/event=Terminated [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.97	33600	Debug	ProcessEvent	15408.15413/OrderReleaseActionTopic - RONA.90990_3465675-005/state=Completed/children=[]/event=Completed [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.97	33600	Debug	ProcessEvent	15408/ORDER RELEASE CHANGE EXTERNAL STATUS: [RONA.90990_3465675-005]/state=Running/children=[15409/Waiting, 15412/Completed, 15413/Completed]/event=Child Completed/15413/CLOSE/OrderReleaseActionTopic/{} [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.971	0	Debug	ProcessEvent	15408/ORDER RELEASE CHANGE EXTERNAL STATUS: [RONA.90990_3465675-005]/state=Running/children=[15409/Waiting, 15412/Completed, 15413/Completed]/event=Terminated [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)']
+2014-12-18 14:17:36.972	0	Debug	WorkflowDetails	Triggering <ORDER - STATUS CHANGED/LifeTime:(domain=PUBLIC)/-dataSource INTERNAL,USER -beforePersist false -statusValue {READY FOR PLANNING_CANCELED,READY FOR PLANNING_NO,READY FOR PLANNING_YES}> with topic <OrderReleaseModStatusChange: release=RONA.90990_3465675-005, dataSource=INTERNAL, beforePersist=false, children=null, statusValue=READY FOR PLANNING_NO> [lifetime - 1]
+2014-12-18 14:17:36.973	0	Debug	ProcessEvent	15414/CREATE/Lifetime Event Notify/Process Object Created [lifetime - 1]
+2014-12-18 14:17:36.973	33600	Debug	ProcessEvent	15414/OPEN/Lifetime Event Notify/event=Created [lifetime - 1]
+2014-12-18 14:17:36.973	33600	Debug	ProcessEvent	15408.15409.15410.15414/Lifetime Event Notify/state=Running/children=[]/event=Set ResultFilter/[] [lifetime - 1]
+2014-12-18 14:17:36.973	33600	Debug	WorkflowDetails	Starting workflow Lifetime Event Notify (325103641) in response to OrderReleaseModStatusChange: release=RONA.90990_3465675-005, dataSource=INTERNAL, beforePersist=false, children=null, statusValue=READY FOR PLANNING_NO [lifetime - 1]
+2014-12-18 14:17:36.973	33600	Debug	WorkflowDetails	Sending lifetime event notification for ORDER - STATUS CHANGED/LifeTime:(domain=PUBLIC)/-dataSource INTERNAL,USER -beforePersist false -statusValue {READY FOR PLANNING_CANCELED,READY FOR PLANNING_NO,READY FOR PLANNING_YES} [lifetime - 1]
+2014-12-18 14:17:36.973	33600	Debug	WorkflowDetails	Retrieving notification recipients for ORDER_EVENT - STATUS CHANGED - {1}... [lifetime - 1]
+2014-12-18 14:17:36.974	0	Debug	WorkflowDetails	Triggering <RONA.OR RELEASE READY FOR PLANNING_NO/context=/agent=RONA.OR RELEASE READY FOR PLANNING_NO/event=(class=glog.server.workflow.lifetime.order.OrderReleaseModStatusChange/param=StatusLifetime:(domain=RONA,dataSource=INTEGRATION,INTERNAL,USER,beforePersist=false,value=READY FOR PLANNING_NO)/queue=null)> with topic <OrderReleaseModStatusChange: release=RONA.90990_3465675-005, dataSource=INTERNAL, beforePersist=false, children=null, statusValue=READY FOR PLANNING_NO> [lifetime - 2]
+2014-12-18 14:17:36.975	0	Debug	ProcessEvent	15415/CREATE/Process Agent/Process Object Created [lifetime - 2]
+2014-12-18 14:17:36.975	33600	Debug	ProcessEvent	15415/OPEN/Process Agent/event=Created [lifetime - 2]
+2014-12-18 14:17:36.975	33600	Debug	ProcessEvent	15408.15409.15410.15415/Process Agent/state=Running/children=[]/event=Set ResultFilter/[] [lifetime - 2]
+2014-12-18 14:17:36.975	33600	Debug	WorkflowDetails	Starting workflow Process Agent (311043372) in response to OrderReleaseModStatusChange: release=RONA.90990_3465675-005, dataSource=INTERNAL, beforePersist=false, children=null, statusValue=READY FOR PLANNING_NO [lifetime - 2]
+2014-12-18 14:17:36.975	33600	Debug	ProcessEvent	15408.15409.15410.15415/Process Agent/state=Running/children=[]/event=Set Callbacks/glog.server.agent.AgentWorkflow$AgentCallbacks@128c4fc1 [lifetime - 2]
+2014-12-18 14:17:36.975	33600	Debug	Agent	Starting agent RONA.OR RELEASE READY FOR PLANNING_NO (311043372) in response to OrderReleaseModStatusChange: release=RONA.90990_3465675-005, dataSource=INTERNAL, beforePersist=false, children=null, statusValue=READY FOR PLANNING_NO (as null) [lifetime - 2]
+2014-12-18 14:17:36.975	33600	Debug	ProcessEvent	15416/CREATE/RONA.OR RELEASE READY FOR PLANNING_NO Body Block/Process Object Created [lifetime - 2]
+2014-12-18 14:17:36.975	33600	Debug	ProcessEvent	15416/OPEN/RONA.OR RELEASE READY FOR PLANNING_NO Body Block/event=Created [lifetime - 2]
+2014-12-18 14:17:36.975	33600	Debug	ProcessEvent	15408.15409.15410.15415.15416/RONA.OR RELEASE READY FOR PLANNING_NO Body Block/state=Running/children=[]/event=Set ResultFilter/[] [lifetime - 2]
+2014-12-18 14:17:36.975	33600	Debug	WorkflowDetails	Agent Variables {EVENT_GID=ORDER - STATUS CHANGED, CHILD_EVENT_GIDS=null, GID=RONA.90990_3465675-005} [lifetime - 2]
+2014-12-18 14:17:36.976	33600	Debug	ProcessEvent	15417/CREATE/If/Process Object Created [lifetime - 2]
+2014-12-18 14:17:36.976	33600	Debug	WorkflowDetails	Topic If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS READY_PLANNING_DATE, threshold=null, expression=null, javaPlugin=null, forceTrue=false (OR RELEASE READY FOR PLANNING_NO) queued for commit [lifetime - 2]
+2014-12-18 14:17:36.976	33600	Debug	WorkflowDetails	Completing workflow Process Agent (311043372) [lifetime - 2]
+2014-12-18 14:17:36.976	0	Debug	Agent	Publishing topic If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS READY_PLANNING_DATE, threshold=null, expression=null, javaPlugin=null, forceTrue=false (OR RELEASE READY FOR PLANNING_NO) on queue agentUtility, group null [lifetime - 2]
+2014-12-18 14:17:36.976	0	Debug	ProcessEvent	15417/OPEN/If/event=Created [lifetime - 2]
+2014-12-18 14:17:36.976	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417/If/state=Running/children=[]/event=Set ResultFilter/[] [lifetime - 2]
+2014-12-18 14:17:36.976	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417/If/state=Running/children=[]/event=Set Callbacks/glog.server.agent.ActionBlockProcessor$ActionCallbacks@128da77d [lifetime - 2]
+2014-12-18 14:17:36.976	0	Debug	ProcessEvent	15408.15409.15410.15415/Process Agent/state=Running/children=[15416/Running]/event=Terminated [lifetime - 2]
+2014-12-18 14:17:36.976	0	Debug	WorkflowDetails	Triggering <Trigger for Agent Action> with topic <If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS READY_PLANNING_DATE, threshold=null, expression=null, javaPlugin=null, forceTrue=false (OR RELEASE READY FOR PLANNING_NO)> [agentUtility - 4]
+2014-12-18 14:17:36.977	0	Debug	ProcessEvent	15418/CREATE/Action/Process Object Created [agentUtility - 4]
+2014-12-18 14:17:36.977	33600	Debug	ProcessEvent	15418/OPEN/Action/event=Created [agentUtility - 4]
+2014-12-18 14:17:36.977	33600	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418/Action/state=Running/children=[]/event=Set ResultFilter/[] [agentUtility - 4]
+2014-12-18 14:17:36.977	33600	Debug	WorkflowDetails	Starting workflow Action (327746494) in response to If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS READY_PLANNING_DATE, threshold=null, expression=null, javaPlugin=null, forceTrue=false (OR RELEASE READY FOR PLANNING_NO) [agentUtility - 4]
+2014-12-18 14:17:36.977	33600	Debug	Agent	Performing action If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS READY_PLANNING_DATE, threshold=null, expression=null, javaPlugin=null, forceTrue=false (OR RELEASE READY FOR PLANNING_NO) as RONA (311043372); was If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS READY_PLANNING_DATE, threshold=null, expression=null, javaPlugin=null, forceTrue=false [agentUtility - 4]
+2014-12-18 14:17:36.977	33600	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418/Action/state=Running/children=[]/event=Set Callbacks/glog.server.agent.ActionWorkflow$AgentActionCallbacks@13891f7f [agentUtility - 4]
+2014-12-18 14:17:36.977	33600	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418/Action/state=Running/children=[]/event=Set ResultFilter/[15418] [agentUtility - 4]
+2014-12-18 14:17:37.006	33600	Debug	Agent	Saved condition RONA.OR RELEASE HAS READY_PLANNING_DATE is true [agentUtility - 4]
+2014-12-18 14:17:37.007	33600	Debug	ProcessEvent	15419/CREATE/If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS READY_PLANNING_DATE, threshold=null, expression=null, javaPlugin=null, forceTrue=false Body Block/Process Object Created [agentUtility - 4]
+2014-12-18 14:17:37.007	33600	Debug	ProcessEvent	15419/OPEN/If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS READY_PLANNING_DATE, threshold=null, expression=null, javaPlugin=null, forceTrue=false Body Block/event=Created [agentUtility - 4]
+2014-12-18 14:17:37.007	33600	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419/If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS READY_PLANNING_DATE, threshold=null, expression=null, javaPlugin=null, forceTrue=false Body Block/state=Running/children=[]/event=Set ResultFilter/[] [agentUtility - 4]
+2014-12-18 14:17:37.007	33600	Debug	WorkflowDetails	Agent Variables {EVENT_GID=ORDER - STATUS CHANGED, CHILD_EVENT_GIDS=null, GID=RONA.90990_3465675-005} [agentUtility - 4]
+2014-12-18 14:17:37.007	33600	Debug	ProcessEvent	15420/CREATE/If/Process Object Created [agentUtility - 4]
+2014-12-18 14:17:37.007	33600	Debug	WorkflowDetails	Topic If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS VALID SUPPLIER_PO, threshold=null, expression=null, javaPlugin=null, forceTrue=false (OR RELEASE READY FOR PLANNING_NO) queued for commit [agentUtility - 4]
+2014-12-18 14:17:37.007	33600	Debug	Agent	Action If returns true [agentUtility - 4]
+2014-12-18 14:17:37.007	33600	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418/Action/state=Running/children=[15419/Running]/event=Set Result/[interest=15418,value=true] [agentUtility - 4]
+2014-12-18 14:17:37.007	33600	Debug	WorkflowDetails	Completing workflow Action (327746494) [agentUtility - 4]
+2014-12-18 14:17:37.008	0	Debug	Agent	Publishing topic If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS VALID SUPPLIER_PO, threshold=null, expression=null, javaPlugin=null, forceTrue=false (OR RELEASE READY FOR PLANNING_NO) on queue agentUtility, group null [agentUtility - 4]
+2014-12-18 14:17:37.008	0	Debug	ProcessEvent	15420/OPEN/If/event=Created [agentUtility - 4]
+2014-12-18 14:17:37.008	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420/If/state=Running/children=[]/event=Set ResultFilter/[] [agentUtility - 4]
+2014-12-18 14:17:37.008	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420/If/state=Running/children=[]/event=Set Callbacks/glog.server.agent.ActionBlockProcessor$ActionCallbacks@1389b769 [agentUtility - 4]
+2014-12-18 14:17:37.008	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418/Action/state=Running/children=[15419/Running]/event=Terminated [agentUtility - 4]
+2014-12-18 14:17:37.008	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417/If/state=Running/children=[15418/Waiting]/event=Terminated [agentUtility - 4]
+2014-12-18 14:17:37.008	0	Debug	WorkflowDetails	Triggering <Trigger for Agent Action> with topic <If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS VALID SUPPLIER_PO, threshold=null, expression=null, javaPlugin=null, forceTrue=false (OR RELEASE READY FOR PLANNING_NO)> [agentUtility - 4]
+2014-12-18 14:17:37.009	0	Debug	ProcessEvent	15421/CREATE/Action/Process Object Created [agentUtility - 4]
+2014-12-18 14:17:37.009	33600	Debug	ProcessEvent	15421/OPEN/Action/event=Created [agentUtility - 4]
+2014-12-18 14:17:37.009	33600	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421/Action/state=Running/children=[]/event=Set ResultFilter/[] [agentUtility - 4]
+2014-12-18 14:17:37.009	33600	Debug	WorkflowDetails	Starting workflow Action (327531622) in response to If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS VALID SUPPLIER_PO, threshold=null, expression=null, javaPlugin=null, forceTrue=false (OR RELEASE READY FOR PLANNING_NO) [agentUtility - 4]
+2014-12-18 14:17:37.009	33600	Debug	Agent	Performing action If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS VALID SUPPLIER_PO, threshold=null, expression=null, javaPlugin=null, forceTrue=false (OR RELEASE READY FOR PLANNING_NO) as RONA (311043372); was If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS VALID SUPPLIER_PO, threshold=null, expression=null, javaPlugin=null, forceTrue=false [agentUtility - 4]
+2014-12-18 14:17:37.009	33600	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421/Action/state=Running/children=[]/event=Set Callbacks/glog.server.agent.ActionWorkflow$AgentActionCallbacks@1385d827 [agentUtility - 4]
+2014-12-18 14:17:37.009	33600	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421/Action/state=Running/children=[]/event=Set ResultFilter/[15421] [agentUtility - 4]
+2014-12-18 14:17:37.024	33600	Debug	Agent	Saved condition RONA.OR RELEASE HAS VALID SUPPLIER_PO is true [agentUtility - 4]
+2014-12-18 14:17:37.025	33600	Debug	ProcessEvent	15422/CREATE/If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS VALID SUPPLIER_PO, threshold=null, expression=null, javaPlugin=null, forceTrue=false Body Block/Process Object Created [agentUtility - 4]
+2014-12-18 14:17:37.025	33600	Debug	ProcessEvent	15422/OPEN/If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS VALID SUPPLIER_PO, threshold=null, expression=null, javaPlugin=null, forceTrue=false Body Block/event=Created [agentUtility - 4]
+2014-12-18 14:17:37.025	33600	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422/If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS VALID SUPPLIER_PO, threshold=null, expression=null, javaPlugin=null, forceTrue=false Body Block/state=Running/children=[]/event=Set ResultFilter/[] [agentUtility - 4]
+2014-12-18 14:17:37.025	33600	Debug	WorkflowDetails	Agent Variables {EVENT_GID=ORDER - STATUS CHANGED, CHILD_EVENT_GIDS=null, GID=RONA.90990_3465675-005} [agentUtility - 4]
+2014-12-18 14:17:37.025	33600	Debug	ProcessEvent	15423/CREATE/SendIntegration/Process Object Created [agentUtility - 4]
+2014-12-18 14:17:37.025	33600	Debug	WorkflowDetails	Topic SendIntegration: notifyType=HTTPPOST, externalSystem=RONA.TIBCO01, transactionCode= , referenceObjectTransactionCode=NP, remark=null, sendIDOnly=false (OR RELEASE READY FOR PLANNING_NO) queued for commit [agentUtility - 4]
+2014-12-18 14:17:37.025	33600	Debug	Agent	Action If returns true [agentUtility - 4]
+2014-12-18 14:17:37.025	33600	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421/Action/state=Running/children=[15422/Running]/event=Set Result/[interest=15421,value=true] [agentUtility - 4]
+2014-12-18 14:17:37.025	33600	Debug	WorkflowDetails	Completing workflow Action (327531622) [agentUtility - 4]
+2014-12-18 14:17:37.026	0	Debug	Agent	Publishing topic SendIntegration: notifyType=HTTPPOST, externalSystem=RONA.TIBCO01, transactionCode= , referenceObjectTransactionCode=NP, remark=null, sendIDOnly=false (OR RELEASE READY FOR PLANNING_NO) on queue agentIntegration, group null [agentUtility - 4]
+2014-12-18 14:17:37.026	0	Debug	ProcessEvent	15423/OPEN/SendIntegration/event=Created [agentUtility - 4]
+2014-12-18 14:17:37.026	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423/SendIntegration/state=Running/children=[]/event=Set ResultFilter/[] [agentUtility - 4]
+2014-12-18 14:17:37.026	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423/SendIntegration/state=Running/children=[]/event=Set Callbacks/glog.server.agent.ActionBlockProcessor$ActionCallbacks@1385f2e9 [agentUtility - 4]
+2014-12-18 14:17:37.026	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423/SendIntegration/state=Running/children=[]/event=Set Callbacks/Remove topic from the mediator [agentUtility - 4]
+2014-12-18 14:17:37.026	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421/Action/state=Running/children=[15422/Running]/event=Terminated [agentUtility - 4]
+2014-12-18 14:17:37.027	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420/If/state=Running/children=[15421/Waiting]/event=Terminated [agentUtility - 4]
+2014-12-18 14:17:37.027	0	Debug	WorkflowDetails	Triggering <Trigger for Agent Action> with topic <SendIntegration: notifyType=HTTPPOST, externalSystem=RONA.TIBCO01, transactionCode= , referenceObjectTransactionCode=NP, remark=null, sendIDOnly=false (OR RELEASE READY FOR PLANNING_NO)> [agentIntegration - 1]
+2014-12-18 14:17:37.029	0	Debug	ProcessEvent	15424/CREATE/Action/Process Object Created [agentIntegration - 1]
+2014-12-18 14:17:37.029	33600	Debug	ProcessEvent	15424/OPEN/Action/event=Created [agentIntegration - 1]
+2014-12-18 14:17:37.029	33600	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424/Action/state=Running/children=[]/event=Set ResultFilter/[] [agentIntegration - 1]
+2014-12-18 14:17:37.029	33600	Debug	WorkflowDetails	Starting workflow Action (312793732) in response to SendIntegration: notifyType=HTTPPOST, externalSystem=RONA.TIBCO01, transactionCode= , referenceObjectTransactionCode=NP, remark=null, sendIDOnly=false (OR RELEASE READY FOR PLANNING_NO) [agentIntegration - 1]
+2014-12-18 14:17:37.029	33600	Debug	Agent	Performing action SendIntegration: notifyType=HTTPPOST, externalSystem=RONA.TIBCO01, transactionCode= , referenceObjectTransactionCode=NP, remark=null, sendIDOnly=false (OR RELEASE READY FOR PLANNING_NO) as RONA (311043372); was SendIntegration: notifyType=HTTPPOST, externalSystem=RONA.TIBCO01, transactionCode= , referenceObjectTransactionCode=NP, remark=null, sendIDOnly=false [agentIntegration - 1]
+2014-12-18 14:17:37.029	33600	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424/Action/state=Running/children=[]/event=Set Callbacks/glog.server.agent.ActionWorkflow$AgentActionCallbacks@12a6377c [agentIntegration - 1]
+2014-12-18 14:17:37.036	33600	Debug	WorkflowDetails	Retrieving notification recipients for ORDER_EVENT - STATUS CHANGED - {1}... [agentIntegration - 1]
+2014-12-18 14:17:37.089	33600	Warning	WorkflowDetails	No ORDER_EVENT communication method data found for RONA.TIBCO01 by HTTPPOST - using default [agentIntegration - 1]
+2014-12-18 14:17:37.089	33600	Debug	WorkflowDetails	Found 1 parties [agentIntegration - 1]
+2014-12-18 14:17:37.089	33600	Debug	Notify	Sending notification ORDER - STATUS CHANGED for RONA.90990_3465675-005 to RONA.TIBCO01 via HTTPPOST [agentIntegration - 1]
+2014-12-18 14:17:37.089	33600	Debug	ProcessEvent	15425/CREATE/HTTPPOSTTopic/Process Object Created [agentIntegration - 1]
+2014-12-18 14:17:37.089	33600	Debug	WorkflowDetails	Topic HTTPPOSTTopic: persistXML=true, guaranteedDelivery=false, externalSystem=RONA.TIBCO01, iMessageGid=null queued for commit [agentIntegration - 1]
+2014-12-18 14:17:37.089	33600	Debug	WorkflowDetails	HTTPPOST topic is published, receiving external system is RONA.TIBCO01 [agentIntegration - 1]
+2014-12-18 14:17:37.09	33600	Debug	ProcessEvent	15426/CREATE/OrderReleaseActionTopic/Process Object Created [agentIntegration - 1]
+2014-12-18 14:17:37.09	33600	Debug	WorkflowDetails	Topic OrderReleaseActionTopic: release=RONA.90990_3465675-005, appAction=SEND INTEGRATION (AGENT) queued for commit [agentIntegration - 1]
+2014-12-18 14:17:37.09	33600	Debug	WorkflowDetails	Completing workflow Action (312793732) [agentIntegration - 1]
+2014-12-18 14:17:37.09	0	Debug	Workflow	Publishing topic HTTPPOSTTopic: persistXML=true, guaranteedDelivery=false, externalSystem=RONA.TIBCO01, iMessageGid=null on queue http, group null [agentIntegration - 1]
+2014-12-18 14:17:37.09	0	Debug	ProcessEvent	15425/OPEN/HTTPPOSTTopic/event=Created [agentIntegration - 1]
+2014-12-18 14:17:37.09	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425/HTTPPOSTTopic/state=Running/children=[]/event=Set ResultFilter/[] [agentIntegration - 1]
+2014-12-18 14:17:37.09	0	Debug	ProcessEvent	15427/CREATE/OrderReleaseActionTopic/Process Object Created [agentIntegration - 1]
+2014-12-18 14:17:37.09	0	Debug	ProcessEvent	15427/OPEN/OrderReleaseActionTopic/event=Created [agentIntegration - 1]
+2014-12-18 14:17:37.09	0	Debug	ProcessEvent	15427/OrderReleaseActionTopic - RONA.90990_3465675-005/state=Running/children=[]/event=Set ResultFilter/[] [agentIntegration - 1]
+2014-12-18 14:17:37.091	0	Debug	ProcessEvent	15427/OrderReleaseActionTopic - RONA.90990_3465675-005/state=Running/children=[]/event=Terminated [agentIntegration - 1]
+2014-12-18 14:17:37.091	0	Debug	ProcessEvent	15427/OrderReleaseActionTopic - RONA.90990_3465675-005/state=Completed/children=[]/event=Completed [agentIntegration - 1]
+2014-12-18 14:17:37.091	0	Debug	ProcessEvent	15427/OrderReleaseActionTopic - RONA.90990_3465675-005/state=Completed/children=[]/event=Clean Up [agentIntegration - 1]
+2014-12-18 14:17:37.091	0	Debug	ProcessEvent	15426/OPEN/OrderReleaseActionTopic/event=Created [agentIntegration - 1]
+2014-12-18 14:17:37.091	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15426/OrderReleaseActionTopic - RONA.90990_3465675-005/state=Running/children=[]/event=Set ResultFilter/[] [agentIntegration - 1]
+2014-12-18 14:17:37.091	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15426/OrderReleaseActionTopic - RONA.90990_3465675-005/state=Running/children=[]/event=Terminated [agentIntegration - 1]
+2014-12-18 14:17:37.091	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15426/OrderReleaseActionTopic - RONA.90990_3465675-005/state=Completed/children=[]/event=Completed [agentIntegration - 1]
+2014-12-18 14:17:37.091	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424/Action/state=Running/children=[15425/Running, 15426/Completed]/event=Child Completed/15426/CLOSE/OrderReleaseActionTopic/{} [agentIntegration - 1]
+2014-12-18 14:17:37.091	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424/Action/state=Running/children=[15425/Running, 15426/Completed]/event=Terminated [agentIntegration - 1]
+2014-12-18 14:17:37.091	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423/SendIntegration/state=Running/children=[15424/Waiting]/event=Terminated [agentIntegration - 1]
+2014-12-18 14:17:37.091	0	Debug	WorkflowDetails	Triggering <HttpPost Notify> with topic <HTTPPOSTTopic: persistXML=true, guaranteedDelivery=false, externalSystem=RONA.TIBCO01, iMessageGid=null> [http - 2]
+2014-12-18 14:17:37.092	0	Debug	ProcessEvent	15428/CREATE/HttpPost Notify/Process Object Created [http - 2]
+2014-12-18 14:17:37.092	33600	Debug	ProcessEvent	15428/OPEN/HttpPost Notify/event=Created [http - 2]
+2014-12-18 14:17:37.092	33600	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428/HttpPost Notify/state=Running/children=[]/event=Set ResultFilter/[] [http - 2]
+2014-12-18 14:17:37.092	33600	Debug	Workflow	Starting workflow HttpPost Notify (330755285) in response to HTTPPOSTTopic: persistXML=true, guaranteedDelivery=false, externalSystem=RONA.TIBCO01, iMessageGid=null [http - 2]
+2014-12-18 14:17:37.102	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ReleaseBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.102	33600	Debug	IntegrationOutbound	Top XmlBaseBuilder class : class glog.integration.application.release.ReleaseBuilder [http - 2]
+2014-12-18 14:17:37.106	33600	Debug	IntegrationOutbound	Found Out XML profile ID ==RONA.RONA_RELEASE [http - 2]
+2014-12-18 14:17:37.136	33600	Debug	IntegrationOutboundDetail	XmlBaseBuilder - query - select r.order_release_gid, r.order_release_type_gid, r.order_base_gid,  r.source_location_gid, r.dest_location_gid, r.early_pickup_date,  r.late_pickup_date, r.early_delivery_date, r.late_delivery_date,  r.pickup_is_appt, r.delivery_is_appt, r.fixed_itinerary_gid,  r.assigned_itinerary_gid, r.fixed_sell_itinerary_gid, r.bulk_plan_gid,  r.best_direct_cost_buy, r.best_direct_cost_sell, r.best_direct_rateoffer_gid_buy,  r.best_direct_rateoffer_gid_sell, r.buy_general_ledger_gid, r.sell_general_ledger_gid,  r.total_net_weight, r.total_net_volume, r.plan_from_location_gid, r.plan_to_location_gid,  r.sell_bulk_plan_gid, r.TOTAL_ITEM_PACKAGE_COUNT, r.TOTAL_WEIGHT,  r.TOTAL_VOLUME, r.TOTAL_PACKAGING_UNIT_COUNT,r.PRIMARY_LEG_SOURCE_LOC_GID,r.PRIM_LEG_SRC_LOC_OVERRIDE_GID,  r.PORT_OF_LOAD_LOCATION_GID, r.PORT_OF_LOAD_LOC_OVERRIDE_GID, r.PORT_OF_DIS_LOCATION_GID ,  r.PORT_OF_DIS_LOC_OVERRIDE_GID,r.LOAD_POINT,r.UNLOAD_POINT,r.PLAN_FROM_LOAD_POINT,r.PLAN_TO_UNLOAD_POINT,  r.PRIMARY_LEG_DEST_LOC_GID, r.PRIM_LEG_DEST_OVERRIDE_LOC_GID, r.SRC_LOCATION_OVERRIDE_GID, r.DEST_LOCATION_OVERRIDE_GID ,  r.PLAN_FROM_LOC_OVERRIDE_GID, r.PLAN_TO_LOC_OVERRIDE_GID, r.PARTITION_GID, r.latest_est_delivery_date,r.priority ,  r.order_release_name, r.is_template, r.external_system_id, r.payment_method_code_gid,  r.inco_term_gid, r.term_location_text, r.planning_group_gid, r.time_window_emphasis_gid,  r.batch_balance_order_type_gid, r.schedule_gid, r.is_known_shipper, r.dim_rate_factor_gid,  r.release_method_gid, r.rate_service_profile_gid,  r.servprov_gid, r.servprov_profile_gid, r.sell_servprov_gid, r.sell_servprov_profile_gid, r.transport_mode_gid, r.mode_profile_gid, r.equipment_group_gid, r.equipment_group_profile_gid,  r.rate_offering_gid, r.rate_geo_gid, r.sell_rate_offering_gid, r.sell_rate_geo_gid,  r.must_ship_direct, r.must_ship_thru_x_dock, r.must_ship_thru_pool,  r.ship_with_group, r.FINAL_INCO_TERM,r.FINAL_TEXT_LOCATION,r.INSPECTION_NUMBER, r.INSPECTION_SCHEDULE_DATE, r.INSPECTION_DATE, r.SURVEY_LAY_CAN_DATE,r.LOC_NUMBER,r.LOC_ISSUE_DATE, r.IS_LOC_REQUIRED, r.INSPECTION_REQUIRED,  r.LOC_RECEIVED_DATE, r.LOC_LATEST_SHIPPING_DATE, r.LOC_NEGOTIATED_DAYS,r.LOC_AMOUNT,r.LOC_AMOUNT_CURRENCY_GID,  r.LOC_AMOUNT_BASE, r.LOC_ADVISING_NUMBER, r.LOC_CONFIRMING_NUMBER, r.LOC_EXPIRATION_DATE, r.stuff_location_gid, r.destuff_location_gid, r.default_stowage_mode, r.em_phone_number,   r.unitization_condition_name, r.customer_unitization_request, is_ignore_location_calendar,PICKUP_ROUTING_SEQUENCE_GID,DROPOFF_ROUTING_SEQUENCE_GID,  r.IMPORT_LICENSE_REQUIRED, r.IMPORT_LICENSE_ISSUE_DATE, r.IMPORT_LICENSE_RECEIVE_DATE, r.BUY_ITINERARY_PROFILE_GID, r.SELL_ITINERARY_PROFILE_GID,  r.IMPORT_LICENSE_EXPIRATION_DATE, r.IMPORT_LICENSE_NUMBER, r.template_type, r.QUOTE_GID, r.MOVE_PERSPECTIVE_GID, r.COMMERCIAL_PAYMENT_CODE_GID, r.ULT_DEST_COUNTRY_CODE3_GID, r.IS_LOC_STALE, r.BUNDLING_TYPE, r.IS_CONSOLIDATE_OR_EQUIPMENT, r.DUTY_PAID, r.buffer_type, r.RATE_SERVICE_GID,r.ON_RT_EXECUTION, r.IS_SPLITTABLE, r.EQUIPMENT_TYPE_GID, r.pickup_rail_carrier, r.delivery_rail_carrier, r.rail_route_code_gid, r.best_dircost_buy_currency_gid, r.best_dircost_sell_currency_gid, r.total_net_weight_uom_code, r.total_net_volume_uom_code, r.total_weight_uom_code, r.total_volume_uom_code, r.loc_amount_currency_gid, (select sl.time_zone_gid from location sl where sl.location_gid=r.source_location_gid), (select sl.time_zone_gid from location sl where sl.location_gid=r.source_location_gid), (select dl.time_zone_gid from location dl where dl.location_gid=r.dest_location_gid), (select dl.time_zone_gid from location dl where dl.location_gid=r.dest_location_gid), (select dl.time_zone_gid from location dl where dl.location_gid=r.dest_location_gid)  from order_release r where r.order_release_gid = ?; [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.136	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ReleaseAccessorialCodeGidBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.136	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.ReleaseAccessorialCodeGidBuilder [http - 2]
+2014-12-18 14:17:37.136	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ReleaseSpclServiceBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.136	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.ReleaseSpclServiceBuilder [http - 2]
+2014-12-18 14:17:37.136	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ReleaseLegConstraintBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.136	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.ReleaseLegConstraintBuilder [http - 2]
+2014-12-18 14:17:37.137	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ReleaseLineBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.146	33600	Debug	IntegrationOutboundDetail	XmlBaseBuilder - query - select packaged_item_gid, order_release_line_gid, null, null, buy_general_ledger_gid, sell_general_ledger_gid,  INITIAL_ITEM_GID, PACKAGING_UNIT_GID, PACKAGING_UNIT_COUNT,  num_layers_per_ship_unit, quantity_per_layer, transport_handling_unit_gid,  COMMERCIAL_INVOICE_GID,COMMERCIAL_INVOICE_DESCRIPTION,SECONDARY_WEIGHT,SECONDARY_VOLUME,  IS_HAZARDOUS,HAZ_HAZMAT_GENERIC_GID,HAZ_HAZMAT_ITEM_GID,HAZ_IDENTIFICATION_NUMBER,HAZ_PROPER_SHIPPING_NAME, HAZ_ERG, HAZ_ERG_AIR, HAZ_EMS,  HAZ_PACKAGING_GROUP,HAZ_FLASH_POINT,HAZ_EMERGENCY_TEMP,HAZ_CONTROL_TEMP, HAZARDOUS_CLASSIFICATION_GID,   HAZ_SUBSIDIARY_HAZARD,HAZ_INHALATION_HAZARD_ZONE,HAZ_EMERGENCY_RESPONSE_INFO,HAZ_NOS_TECHNICAL_NAME,  HAZ_NET_EXPLOSV_CONTENT_WEIGHT,HAZ_MP_TECHNICAL_NAME,HAZ_IS_LIMITED_QUANTITY,HAZ_PSA_SINGAPORE_GROUP, HAZ_IS_NOS, HAZ_IS_MARINE_POLLUTANT,  HAZ_HAZARDOUS_DESCRIPTION,HAZ_IS_REPORTABLE_QUANTITY,HAZ_RQ_TECHNICAL_NAME,HAZ_ACTIVITY,HAZ_IS_TOXIC_INHALATION,  HAZ_IS_PASSENGER_AIRCRAFT_FORB,HAZ_IS_COMMERCIAL_AIRCRAFT_FOR,HAZ_IS_OIL_CONTAINED,BILLED_QUANTITY, BILLED_QUANTITY_UOM_CODE, BILLED_QUANTITY_UOM_TYPE,  PRICE_PER_UNIT,PRICE_PER_UNIT_UOM_CODE, TOTAL_BILLED_AMT,FREE_ALONG_SIDE, BRAND_NAME, HAZ_ALL_PACKED, HAZ_AUTHORIZATION, HAZ_CHEMICAL_FORMULA, HAZ_CONCENTRATION_PERCENT, HAZ_CRIT_SAFETY_INDEX, HAZ_APPROVAL_EXEMPTION_GID, HAZ_IDG_ADD_DESC_INFO, HAZ_MAX_QUANTITY, HAZ_OUTER_PACKAGING_TYPE, HAZ_OUTER_PACKING_COUNT, HAZ_IS_OVERPACK, HAZ_PACKAGE_TYPE, HAZ_PACKING_COUNT, HAZ_PACKING_INSTRUCTIONS, HAZ_PHYSICAL_FORM, HAZ_Q_VALUE, HAZ_QUANTITY, HAZ_SUBSTANCE_NUMBER, HAZ_RADIOACTIVE_LABEL, HAZ_RAD_PACKAGING, HAZ_RADIOACTIVITY, HAZ_RADIOACTIVITY_UNITS, HAZ_RADIONUCLIDE, HAZ_SPECIAL_PROVISIONS, HAZ_SURFACE_READING, HAZ_TRANSPORT_INDEX, HAZ_TYPE, HAZ_UNITS, HAZ_EXT_CODE,  HAZ_NOS_TECHNICAL_NAME_2,HAZ_RQ_TECHNICAL_NAME_2,HAZ_MP_TECHNICAL_NAME_2, MANUFACTURED_COUNTRY_CODE_GID, IS_DRAWBACK, HAZ_COMPATIBILITY_GROUP,PACKAGE_LENGTH,PACKAGE_WIDTH,PACKAGE_HEIGHT,PACKAGE_DIAMETER,PACKAGE_CORE_DIAMETER,    ORDER_BASE_GID, OB_LINE_GID, secondary_weight_uom_code, secondary_volume_uom_code, haz_flash_point_uom_code, haz_emergency_temp_uom_code, haz_control_temp_uom_code, haz_net_expl_cntnt_wt_uom_code, price_per_unit_currency_gid, total_billed_amt_currency_gid, free_along_side_currency_gid, package_length_uom_code, package_width_uom_code, package_height_uom_code, package_diameter_uom_code, package_core_diameter_uom_code    from order_release_line where order_release_gid = ?; [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.146	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ReleaseLineItemQuantityBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.149	33600	Debug	IntegrationOutboundDetail	XmlBaseBuilder - query - select tag1, tag2, tag3, tag4, null, null, weight, volume, item_package_count, declared_value, weight_uom_code, volume_uom_code, declared_value_currency_gid from order_release_line where order_release_line_gid = ?; [RONA.90990_3465675-005-001] [http - 2]
+2014-12-18 14:17:37.149	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ItemAttributesBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.149	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.ItemAttributesBuilder [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ItemAttributesBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.ItemAttributesBuilder [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ReleaseLineRefnumBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.ReleaseLineRefnumBuilder [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ReleaseLineRemarkBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.ReleaseLineRemarkBuilder [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.OrLineSpecialServiceBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.OrLineSpecialServiceBuilder [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ReleaseLineInvolvedPartyBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.ReleaseLineInvolvedPartyBuilder [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ReleaseLineLoadConfigBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.ReleaseLineLoadConfigBuilder [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.OrLineEquipRefunitBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.OrLineEquipRefunitBuilder [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ReleaseLineAllocShipmentBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.ReleaseLineAllocShipmentBuilder [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ShipUnitBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.ShipUnitBuilder [http - 2]
+2014-12-18 14:17:37.15	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ReleaseStatusBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.153	33600	Debug	IntegrationOutboundDetail	XmlBaseBuilder - query - select status_type_gid, status_value_gid from order_release_status where order_release_gid = ?; [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.154	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.OrderReleaseRemarkBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.154	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.OrderReleaseRemarkBuilder [http - 2]
+2014-12-18 14:17:37.154	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ReleaseRefnumBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.157	33600	Debug	IntegrationOutboundDetail	XmlBaseBuilder - query - select order_release_refnum_qual_gid, order_release_refnum_value  from order_release_refnum where order_release_gid = ?; [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.158	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.REquipmentBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.158	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.REquipmentBuilder [http - 2]
+2014-12-18 14:17:37.158	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ReleaseInvolvedPartyBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.158	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.ReleaseInvolvedPartyBuilder [http - 2]
+2014-12-18 14:17:37.158	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.CommercialInvoiceBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.158	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.CommercialInvoiceBuilder [http - 2]
+2014-12-18 14:17:37.158	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ReleaseTransOrderBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.164	33600	Debug	IntegrationOutboundDetail	XmlBaseBuilder - query - select order_base_gid from order_release where order_release_gid = ?; [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.164	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.TransOrderBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.169	33600	Debug	IntegrationOutboundDetail	XmlBaseBuilder - query - select order_base_gid,priority from ob_order_base where order_base_gid = ?; [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.169	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.OrderTransOrderHeaderBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.174	33600	Debug	IntegrationOutboundDetail	XmlBaseBuilder - query - select order_base_gid, external_system_id, processing_code_gid,  payment_method_code_gid, inco_term_gid, term_location_text,  planning_group_gid, fixed_itinerary_gid, order_type_gid,  time_window_emphasis_gid, rate_service_profile_gid,  servprov_gid, servprov_profile_gid, sell_servprov_gid, sell_servprov_profile_gid, transport_mode_gid, mode_profile_gid,  equipment_group_gid, equipment_group_profile_gid,  ship_with_group, fixed_sell_itinerary_gid, batch_balance_order_type_gid,  schedule_gid, must_ship_direct, must_ship_thru_x_dock, must_ship_thru_pool,  is_known_shipper, TOTAL_NET_WEIGHT, TOTAL_NET_VOLUME,  effective_date, expiration_date, rate_offering_gid, rate_geo_gid,  sell_rate_offering_gid, sell_rate_geo_gid, dim_rate_factor_gid,PICKUP_ROUTING_SEQUENCE_GID,DROPOFF_ROUTING_SEQUENCE_GID,  stuff_location_gid, destuff_location_gid, default_stowage_mode_gid,  unitization_condition_name, customer_unitization_request, is_ignore_location_calendar, PRIORITY,  RELEASE_METHOD_GID, BUNDLING_TYPE,RATE_SERVICE_GID, SHIP_WITH_GROUP, total_net_weight_uom_code, total_net_volume_uom_code from ob_order_base where order_base_gid = ?; [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.174	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.OrderInvolvedPartyBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.174	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.order.OrderInvolvedPartyBuilder [http - 2]
+2014-12-18 14:17:37.174	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.OrderRefnumBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.174	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.order.OrderRefnumBuilder [http - 2]
+2014-12-18 14:17:37.174	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.OrderRemarkBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.174	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.order.OrderRemarkBuilder [http - 2]
+2014-12-18 14:17:37.174	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.ObSpecialServiceBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.174	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.order.ObSpecialServiceBuilder [http - 2]
+2014-12-18 14:17:37.174	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.OrderAccessorialCodeGidBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.174	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.order.OrderAccessorialCodeGidBuilder [http - 2]
+2014-12-18 14:17:37.174	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.OrderLegConstraintBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.174	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.order.OrderLegConstraintBuilder [http - 2]
+2014-12-18 14:17:37.175	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.OrderShipUnitBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.177	33600	Debug	WorkflowDetails	Found 1 parties [lifetime - 1]
+2014-12-18 14:17:37.178	33600	Debug	Notify	Sending notification null for RONA.90990_3465675-005 to RONA.RONA AUDIT via AUD [lifetime - 1]
+2014-12-18 14:17:37.205	33600	Debug	IntegrationOutboundDetail	XmlBaseBuilder - query - select ob_ship_unit_gid, TRANSPORT_HANDLING_UNIT_GID, ship_unit_count,  source_location_gid, dest_location_gid, early_pickup_date, late_pickup_date,  early_delivery_date, late_delivery_date, pickup_is_appt, delivery_is_appt,  weight, volume, length, width, height, declared_value, declared_value_currency_gid,  flex_commodity_code, flex_commodity_qual_gid, is_shippable, net_weight, net_volume,  released_count, plan_from_location_gid, plan_to_location_gid,TAG_1,TAG_2,TAG_3,TAG_4,   LOAD_POINT,UNLOAD_POINT,PLAN_FROM_LOAD_POINT,PLAN_TO_UNLOAD_POINT,DIAMETER,CORE_DIAMETER, buffer_location_gid, weight_uom_code, volume_uom_code, length_uom_code, width_uom_code, height_uom_code, net_weight_uom_code, net_volume_uom_code, diameter_uom_code, core_diameter_uom_code, sl.time_zone_gid, dl.time_zone_gid  from ob_ship_unit , location sl, location dl where (ob_ship_unit.source_location_gid=sl.location_gid) and (ob_ship_unit.dest_location_gid=dl.location_gid) and  order_base_gid = ?; [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.205	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.TransOrderLineBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.228	33600	Debug	IntegrationOutboundDetail	XmlBaseBuilder - query - select ob_line_gid, packaged_item_gid, source_location_gid, dest_location_gid,  early_pickup_date, late_pickup_date, early_delivery_date, late_delivery_date,  pickup_is_appt, delivery_is_appt,  released_count, num_layers_per_ship_unit, quantity_per_layer, released_weight,  released_volume, plan_from_location_gid, plan_to_location_gid,INITIAL_ITEM_GID,  ROUNDING_INSTRUCTION,ROUND_TO,PACKAGING_UNIT_GID,PACKAGING_UNIT_COUNT,  TRANSPORT_HANDLING_UNIT_GID,LOAD_POINT,UNLOAD_POINT,PLAN_FROM_LOAD_POINT,  PLAN_TO_UNLOAD_POINT, buffer_location_gid, released_weight_uom_code, released_volume_uom_code, sl.time_zone_gid, dl.time_zone_gid from ob_line , location sl, location dl where (ob_line.source_location_gid=sl.location_gid) and (ob_line.dest_location_gid=dl.location_gid) and  order_base_gid = ?; [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.228	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.TransOrderLineItemQuantityBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.228	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.order.TransOrderLineItemQuantityBuilder [http - 2]
+2014-12-18 14:17:37.228	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.OrderLineRefnumBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.228	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.order.OrderLineRefnumBuilder [http - 2]
+2014-12-18 14:17:37.228	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.OrderLineRemarkBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.228	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.order.OrderLineRemarkBuilder [http - 2]
+2014-12-18 14:17:37.228	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.ItemAttributesBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.228	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.order.ItemAttributesBuilder [http - 2]
+2014-12-18 14:17:37.228	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.ObLineInvolvedPartyBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.228	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.order.ObLineInvolvedPartyBuilder [http - 2]
+2014-12-18 14:17:37.228	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.ObLineEquipRefunitBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.228	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.order.ObLineEquipRefunitBuilder [http - 2]
+2014-12-18 14:17:37.229	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.OrderLocationBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.229	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.order.OrderLocationBuilder [http - 2]
+2014-12-18 14:17:37.229	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.OrderPackagedItemBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.229	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.order.OrderPackagedItemBuilder [http - 2]
+2014-12-18 14:17:37.229	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.OrderLocationBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.229	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.order.OrderLocationBuilder [http - 2]
+2014-12-18 14:17:37.229	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.order.OrderPackagedItemBuilder pk: [RONA.90990_3465675] [http - 2]
+2014-12-18 14:17:37.229	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.order.OrderPackagedItemBuilder [http - 2]
+2014-12-18 14:17:37.229	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ReleaseOrderMovementBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.401	33600	Debug	IntegrationOutboundDetail	XmlBaseBuilder - query - select order_movement_gid from order_movement om where om.order_release_gid=?; [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.401	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.ReleaseAllocShipmentBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.401	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.ReleaseAllocShipmentBuilder [http - 2]
+2014-12-18 14:17:37.401	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.OrderReleaseServiceBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.401	33600	Debug	IntegrationOutboundDetail	Exclude XML builder class: glog.integration.application.release.OrderReleaseServiceBuilder [http - 2]
+2014-12-18 14:17:37.401	33600	Debug	IntegrationOutboundDetail	Start XmlBaseBuilder : glog.integration.application.release.OrStopBuilder pk: [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.406	33600	Debug	IntegrationOutboundDetail	XmlBaseBuilder - query - select r.or_stop_gid, r.OR_STOP_SEQ, r.LOCATION_GID, r.EARLY_ARRIVAL_TIME, r.LATE_ARRIVAL_TIME, r.IS_APPT, r.IS_APPT_REQUIRED, r.IS_APPT_CONFIRM_REQUIRED, r.IS_APPT_CONFIRMED, r.LEG_POSITION, orstpl.time_zone_gid from OR_STOP r, location orstpl where (r.location_gid=orstpl.location_gid) and  r.ORDER_RELEASE_GID = ?; [RONA.90990_3465675-005] [http - 2]
+2014-12-18 14:17:37.413	33600	Debug	IntegrationOutbound	Generate outbound XML through new collection string buffer [http - 2]
+2014-12-18 14:17:37.414	33600	Debug	IntegrationOutbound	Found Out XML profile ID ==RONA.RONA_RELEASE [http - 2]
+2014-12-18 14:17:37.414	33600	Debug	IntegrationOutbound	Top XmlBaseBuilder class : class glog.integration.xmlbasebuilder.PseudoBuilder [http - 2]
+2014-12-18 14:17:37.415	33600	Debug	IntegrationOutbound	Found Out XML profile ID ==RONA.RONA_RELEASE [http - 2]
+2014-12-18 14:17:37.416	33600	Debug	IntegrationOutbound	Found Out XML profile ID ==RONA.RONA_RELEASE [http - 2]
+2014-12-18 14:17:37.417	33600	Debug	IntegrationOutbound	Generate outbound XML through new collection string buffer [http - 2]
+2014-12-18 14:17:37.563	33600	Debug	ProcessEvent	15429/CREATE/TransmissionOutStaged/Process Object Created [http - 2]
+2014-12-18 14:17:37.563	33600	Debug	WorkflowDetails	Topic TransmissionOutStaged: transmission=8091990 queued for commit [http - 2]
+2014-12-18 14:17:37.563	33600	Debug	IntegrationOutbound	Generate outbound XML through new collection string buffer [http - 2]
+2014-12-18 14:17:37.715	33600	Debug	ProcessEvent	15430/CREATE/TransactionOutStaged/Process Object Created [http - 2]
+2014-12-18 14:17:37.715	33600	Debug	WorkflowDetails	Topic TransactionOutStaged: transaction=32873934 queued for commit [http - 2]
+2014-12-18 14:17:37.813	33600	Debug	ProcessEvent	15431/CREATE/HTTP Post Transport/Process Object Created [http - 2]
+2014-12-18 14:17:37.813	33600	Debug	WorkflowDetails	Topic HTTP Post Transport: transmissionNumber=8091990, domainName=null queued for commit [http - 2]
+2014-12-18 14:17:37.814	33600	Debug	Workflow	Completing workflow HttpPost Notify (330755285) [http - 2]
+2014-12-18 14:17:37.815	0	Debug	ProcessEvent	15432/CREATE/TransmissionOutStaged/Process Object Created [http - 2]
+2014-12-18 14:17:37.815	0	Debug	ProcessEvent	15432/OPEN/TransmissionOutStaged/event=Created [http - 2]
+2014-12-18 14:17:37.815	0	Debug	ProcessEvent	15432/TransmissionOutStaged - 8091990/state=Running/children=[]/event=Set ResultFilter/[] [http - 2]
+2014-12-18 14:17:37.815	0	Debug	ProcessEvent	15432/TransmissionOutStaged - 8091990/state=Running/children=[]/event=Terminated [http - 2]
+2014-12-18 14:17:37.815	0	Debug	ProcessEvent	15432/TransmissionOutStaged - 8091990/state=Completed/children=[]/event=Completed [http - 2]
+2014-12-18 14:17:37.815	0	Debug	ProcessEvent	15432/TransmissionOutStaged - 8091990/state=Completed/children=[]/event=Clean Up [http - 2]
+2014-12-18 14:17:37.815	0	Debug	ProcessEvent	15429/OPEN/TransmissionOutStaged/event=Created [http - 2]
+2014-12-18 14:17:37.816	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428.15429/TransmissionOutStaged - 8091990/state=Running/children=[]/event=Set ResultFilter/[] [http - 2]
+2014-12-18 14:17:37.816	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428.15429/TransmissionOutStaged - 8091990/state=Running/children=[]/event=Terminated [http - 2]
+2014-12-18 14:17:37.816	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428.15429/TransmissionOutStaged - 8091990/state=Completed/children=[]/event=Completed [http - 2]
+2014-12-18 14:17:37.816	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428/HttpPost Notify/state=Running/children=[15429/Completed]/event=Child Completed/15429/CLOSE/TransmissionOutStaged/{} [http - 2]
+2014-12-18 14:17:37.816	0	Debug	ProcessEvent	15433/CREATE/TransactionOutStaged/Process Object Created [http - 2]
+2014-12-18 14:17:37.816	0	Debug	ProcessEvent	15433/OPEN/TransactionOutStaged/event=Created [http - 2]
+2014-12-18 14:17:37.816	0	Debug	ProcessEvent	15433/TransactionOutStaged - 32873934/state=Running/children=[]/event=Set ResultFilter/[] [http - 2]
+2014-12-18 14:17:37.816	0	Debug	ProcessEvent	15433/TransactionOutStaged - 32873934/state=Running/children=[]/event=Terminated [http - 2]
+2014-12-18 14:17:37.816	0	Debug	ProcessEvent	15433/TransactionOutStaged - 32873934/state=Completed/children=[]/event=Completed [http - 2]
+2014-12-18 14:17:37.816	0	Debug	ProcessEvent	15433/TransactionOutStaged - 32873934/state=Completed/children=[]/event=Clean Up [http - 2]
+2014-12-18 14:17:37.816	0	Debug	ProcessEvent	15430/OPEN/TransactionOutStaged/event=Created [http - 2]
+2014-12-18 14:17:37.816	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428.15430/TransactionOutStaged - 32873934/state=Running/children=[]/event=Set ResultFilter/[] [http - 2]
+2014-12-18 14:17:37.816	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428.15430/TransactionOutStaged - 32873934/state=Running/children=[]/event=Terminated [http - 2]
+2014-12-18 14:17:37.816	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428.15430/TransactionOutStaged - 32873934/state=Completed/children=[]/event=Completed [http - 2]
+2014-12-18 14:17:37.816	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428/HttpPost Notify/state=Running/children=[15429/Completed, 15430/Completed]/event=Child Completed/15430/CLOSE/TransactionOutStaged/{} [http - 2]
+2014-12-18 14:17:37.816	0	Debug	Workflow	Publishing topic HTTP Post Transport: transmissionNumber=8091990, domainName=null on queue http, group null [http - 2]
+2014-12-18 14:17:37.816	0	Debug	ProcessEvent	15431/OPEN/HTTP Post Transport/event=Created [http - 2]
+2014-12-18 14:17:37.816	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428.15431/HTTP Post Transport/state=Running/children=[]/event=Set ResultFilter/[] [http - 2]
+2014-12-18 14:17:37.816	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428/HttpPost Notify/state=Running/children=[15429/Completed, 15430/Completed, 15431/Running]/event=Terminated [http - 2]
+2014-12-18 14:17:37.817	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425/HTTPPOSTTopic/state=Running/children=[15428/Waiting]/event=Terminated [http - 2]
+2014-12-18 14:17:37.817	0	Debug	WorkflowDetails	Triggering <Trigger for Simple Workflow> with topic <HTTP Post Transport: transmissionNumber=8091990, domainName=null> [http - 2]
+2014-12-18 14:17:37.819	0	Debug	ProcessEvent	15434/CREATE/Simple Workflow/Process Object Created [http - 2]
+2014-12-18 14:17:37.819	33600	Debug	ProcessEvent	15434/OPEN/Simple Workflow/event=Created [http - 2]
+2014-12-18 14:17:37.819	33600	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428.15431.15434/Simple Workflow/state=Running/children=[]/event=Set ResultFilter/[] [http - 2]
+2014-12-18 14:17:37.82	33600	Debug	Workflow	Starting workflow Simple Workflow (330656239) in response to HTTP Post Transport: transmissionNumber=8091990, domainName=null [http - 2]
+2014-12-18 14:17:37.826	33600	Debug	Workflow	Completing workflow Simple Workflow (330656239) [http - 2]
+2014-12-18 14:17:37.829	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428.15431.15434/Simple Workflow/state=Running/children=[]/event=Terminated [http - 2]
+2014-12-18 14:17:37.829	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428.15431.15434/Simple Workflow/state=Completed/children=[]/event=Completed [http - 2]
+2014-12-18 14:17:37.83	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428.15431/HTTP Post Transport/state=Running/children=[15434/Completed]/event=Child Completed/15434/CLOSE/Simple Workflow/{} [http - 2]
+2014-12-18 14:17:37.83	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428.15431/HTTP Post Transport/state=Running/children=[15434/Completed]/event=Terminated [http - 2]
+2014-12-18 14:17:37.83	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428.15431/HTTP Post Transport/state=Completed/children=[15434/Completed]/event=Completed [http - 2]
+2014-12-18 14:17:37.83	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428/HttpPost Notify/state=Waiting/children=[15429/Completed, 15430/Completed, 15431/Completed]/event=Child Completed/15431/CLOSE/HTTP Post Transport/{} [http - 2]
+2014-12-18 14:17:37.83	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425.15428/HttpPost Notify/state=Completed/children=[15429/Completed, 15430/Completed, 15431/Completed]/event=Completed [http - 2]
+2014-12-18 14:17:37.83	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425/HTTPPOSTTopic/state=Waiting/children=[15428/Completed]/event=Child Completed/15428/CLOSE/HttpPost Notify/{} [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424.15425/HTTPPOSTTopic/state=Completed/children=[15428/Completed]/event=Completed [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424/Action/state=Waiting/children=[15425/Completed, 15426/Completed]/event=Child Completed/15425/CLOSE/HTTPPOSTTopic/{} [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15435/CREATE/On-Completion Callback 1 of 15424/Process Object Created [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15435/CREATE/On-Completion Callback 1 of 15424/event=Created [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15435/On-Completion Callback 1 of 15424/state=Running/children=[]/event=Set ResultFilter/[] [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424/Action/state=Completed/children=[15425/Completed, 15426/Completed]/event=CompletionCallback/glog.server.agent.ActionWorkflow$AgentActionCallbacks@12a6377c [http - 2]
+2014-12-18 14:17:37.831	33600	Debug	Agent	Complete action SendIntegration: notifyType=HTTPPOST, externalSystem=RONA.TIBCO01, transactionCode= , referenceObjectTransactionCode=NP, remark=null, sendIDOnly=false (OR RELEASE READY FOR PLANNING_NO) (311043372) [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15435/On-Completion Callback 1 of 15424/state=Running/children=[]/event=Terminated [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15435/On-Completion Callback 1 of 15424/state=Completed/children=[]/event=Completed [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423/SendIntegration/state=Waiting/children=[15424/Completed, 15435/Completed]/event=Child Completed/15435/CLOSE/On-Completion Callback 1 of 15424/{} [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423.15424/Action/state=Completed/children=[15425/Completed, 15426/Completed]/event=Completed [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423/SendIntegration/state=Waiting/children=[15424/Completed, 15435/Completed]/event=Child Completed/15424/CLOSE/Action/{} [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15436/CREATE/On-Completion Callback 1 of 15423/Process Object Created [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15436/CREATE/On-Completion Callback 1 of 15423/event=Created [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15436/On-Completion Callback 1 of 15423/state=Running/children=[]/event=Set ResultFilter/[] [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423/SendIntegration/state=Completed/children=[15424/Completed, 15435/Completed]/event=CompletionCallback/glog.server.agent.ActionBlockProcessor$ActionCallbacks@1385f2e9 [http - 2]
+2014-12-18 14:17:37.831	33600	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422/If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS VALID SUPPLIER_PO, threshold=null, expression=null, javaPlugin=null, forceTrue=false Body Block/state=Running/children=[15423/Completed, 15436/Running]/event=Terminated [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15436/On-Completion Callback 1 of 15423/state=Running/children=[]/event=Terminated [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15436/On-Completion Callback 1 of 15423/state=Completed/children=[]/event=Completed [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422/If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS VALID SUPPLIER_PO, threshold=null, expression=null, javaPlugin=null, forceTrue=false Body Block/state=Waiting/children=[15423/Completed, 15436/Completed]/event=Child Completed/15436/CLOSE/On-Completion Callback 1 of 15423/{} [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15437/CREATE/On-Completion Callback 2 of 15423/Process Object Created [http - 2]
+2014-12-18 14:17:37.831	0	Debug	ProcessEvent	15437/CREATE/On-Completion Callback 2 of 15423/event=Created [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15437/On-Completion Callback 2 of 15423/state=Running/children=[]/event=Set ResultFilter/[] [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423/SendIntegration/state=Completed/children=[15424/Completed, 15435/Completed]/event=CompletionCallback/Remove topic from the mediator [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15437/On-Completion Callback 2 of 15423/state=Running/children=[]/event=Terminated [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15437/On-Completion Callback 2 of 15423/state=Completed/children=[]/event=Completed [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422/If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS VALID SUPPLIER_PO, threshold=null, expression=null, javaPlugin=null, forceTrue=false Body Block/state=Waiting/children=[15423/Completed, 15436/Completed, 15437/Completed]/event=Child Completed/15437/CLOSE/On-Completion Callback 2 of 15423/{} [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422.15423/SendIntegration/state=Completed/children=[15424/Completed, 15435/Completed]/event=Completed [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422/If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS VALID SUPPLIER_PO, threshold=null, expression=null, javaPlugin=null, forceTrue=false Body Block/state=Waiting/children=[15423/Completed, 15436/Completed, 15437/Completed]/event=Child Completed/15423/CLOSE/SendIntegration/{} [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421.15422/If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS VALID SUPPLIER_PO, threshold=null, expression=null, javaPlugin=null, forceTrue=false Body Block/state=Completed/children=[15423/Completed, 15436/Completed, 15437/Completed]/event=Completed [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421/Action/state=Waiting/children=[15422/Completed]/event=Child Completed/15422/CLOSE/If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS VALID SUPPLIER_PO, threshold=null, expression=null, javaPlugin=null, forceTrue=false Body Block/{} [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15438/CREATE/On-Completion Callback 1 of 15421/Process Object Created [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15438/CREATE/On-Completion Callback 1 of 15421/event=Created [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15438/On-Completion Callback 1 of 15421/state=Running/children=[]/event=Set ResultFilter/[] [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421/Action/state=Completed/children=[15422/Completed]/event=CompletionCallback/glog.server.agent.ActionWorkflow$AgentActionCallbacks@1385d827 [http - 2]
+2014-12-18 14:17:37.832	33600	Debug	Agent	Complete action If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS VALID SUPPLIER_PO, threshold=null, expression=null, javaPlugin=null, forceTrue=false (OR RELEASE READY FOR PLANNING_NO) (311043372) [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15438/On-Completion Callback 1 of 15421/state=Running/children=[]/event=Terminated [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15438/On-Completion Callback 1 of 15421/state=Completed/children=[]/event=Completed [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420/If/state=Waiting/children=[15421/Completed, 15438/Completed]/event=Child Completed/15438/CLOSE/On-Completion Callback 1 of 15421/{} [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420.15421/Action/state=Completed/children=[15422/Completed]/event=Completed [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420/If/state=Waiting/children=[15421/Completed, 15438/Completed]/event=Child Completed/15421/CLOSE/Action/{15421=[interest=15421,value=true]} [http - 2]
+2014-12-18 14:17:37.832	0	Debug	ProcessEvent	15439/CREATE/On-Completion Callback 1 of 15420/Process Object Created [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15439/CREATE/On-Completion Callback 1 of 15420/event=Created [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15439/On-Completion Callback 1 of 15420/state=Running/children=[]/event=Set ResultFilter/[] [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420/If/state=Completed/children=[15421/Completed, 15438/Completed]/event=CompletionCallback/glog.server.agent.ActionBlockProcessor$ActionCallbacks@1389b769 [http - 2]
+2014-12-18 14:17:37.833	33600	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419/If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS READY_PLANNING_DATE, threshold=null, expression=null, javaPlugin=null, forceTrue=false Body Block/state=Running/children=[15420/Completed, 15439/Running]/event=Terminated [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15439/On-Completion Callback 1 of 15420/state=Running/children=[]/event=Terminated [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15439/On-Completion Callback 1 of 15420/state=Completed/children=[]/event=Completed [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419/If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS READY_PLANNING_DATE, threshold=null, expression=null, javaPlugin=null, forceTrue=false Body Block/state=Waiting/children=[15420/Completed, 15439/Completed]/event=Child Completed/15439/CLOSE/On-Completion Callback 1 of 15420/{} [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419.15420/If/state=Completed/children=[15421/Completed, 15438/Completed]/event=Completed [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419/If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS READY_PLANNING_DATE, threshold=null, expression=null, javaPlugin=null, forceTrue=false Body Block/state=Waiting/children=[15420/Completed, 15439/Completed]/event=Child Completed/15420/CLOSE/If/{15421=[interest=15421,value=true]} [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418.15419/If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS READY_PLANNING_DATE, threshold=null, expression=null, javaPlugin=null, forceTrue=false Body Block/state=Completed/children=[15420/Completed, 15439/Completed]/event=Completed [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418/Action/state=Waiting/children=[15419/Completed]/event=Child Completed/15419/CLOSE/If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS READY_PLANNING_DATE, threshold=null, expression=null, javaPlugin=null, forceTrue=false Body Block/{15421=[interest=15421,value=true]} [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15440/CREATE/On-Completion Callback 1 of 15418/Process Object Created [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15440/CREATE/On-Completion Callback 1 of 15418/event=Created [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15440/On-Completion Callback 1 of 15418/state=Running/children=[]/event=Set ResultFilter/[] [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418/Action/state=Completed/children=[15419/Completed]/event=CompletionCallback/glog.server.agent.ActionWorkflow$AgentActionCallbacks@13891f7f [http - 2]
+2014-12-18 14:17:37.833	33600	Debug	Agent	Complete action If: complexExpression=null, attributerule=null, savedCondition=RONA.OR RELEASE HAS READY_PLANNING_DATE, threshold=null, expression=null, javaPlugin=null, forceTrue=false (OR RELEASE READY FOR PLANNING_NO) (311043372) [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15440/On-Completion Callback 1 of 15418/state=Running/children=[]/event=Terminated [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15440/On-Completion Callback 1 of 15418/state=Completed/children=[]/event=Completed [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417/If/state=Waiting/children=[15418/Completed, 15440/Completed]/event=Child Completed/15440/CLOSE/On-Completion Callback 1 of 15418/{} [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417.15418/Action/state=Completed/children=[15419/Completed]/event=Completed [http - 2]
+2014-12-18 14:17:37.833	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417/If/state=Waiting/children=[15418/Completed, 15440/Completed]/event=Child Completed/15418/CLOSE/Action/{15418=[interest=15418,value=true], 15421=[interest=15421,value=true]} [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15441/CREATE/On-Completion Callback 1 of 15417/Process Object Created [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15441/CREATE/On-Completion Callback 1 of 15417/event=Created [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15441/On-Completion Callback 1 of 15417/state=Running/children=[]/event=Set ResultFilter/[] [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417/If/state=Completed/children=[15418/Completed, 15440/Completed]/event=CompletionCallback/glog.server.agent.ActionBlockProcessor$ActionCallbacks@128da77d [http - 2]
+2014-12-18 14:17:37.834	33600	Debug	ProcessEvent	15408.15409.15410.15415.15416/RONA.OR RELEASE READY FOR PLANNING_NO Body Block/state=Running/children=[15417/Completed, 15441/Running]/event=Terminated [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15441/On-Completion Callback 1 of 15417/state=Running/children=[]/event=Terminated [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15441/On-Completion Callback 1 of 15417/state=Completed/children=[]/event=Completed [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15408.15409.15410.15415.15416/RONA.OR RELEASE READY FOR PLANNING_NO Body Block/state=Waiting/children=[15417/Completed, 15441/Completed]/event=Child Completed/15441/CLOSE/On-Completion Callback 1 of 15417/{} [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15408.15409.15410.15415.15416.15417/If/state=Completed/children=[15418/Completed, 15440/Completed]/event=Completed [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15408.15409.15410.15415.15416/RONA.OR RELEASE READY FOR PLANNING_NO Body Block/state=Waiting/children=[15417/Completed, 15441/Completed]/event=Child Completed/15417/CLOSE/If/{15418=[interest=15418,value=true], 15421=[interest=15421,value=true]} [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15408.15409.15410.15415.15416/RONA.OR RELEASE READY FOR PLANNING_NO Body Block/state=Completed/children=[15417/Completed, 15441/Completed]/event=Completed [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15408.15409.15410.15415/Process Agent/state=Waiting/children=[15416/Completed]/event=Child Completed/15416/CLOSE/RONA.OR RELEASE READY FOR PLANNING_NO Body Block/{15418=[interest=15418,value=true], 15421=[interest=15421,value=true]} [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15442/CREATE/On-Completion Callback 1 of 15415/Process Object Created [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15442/CREATE/On-Completion Callback 1 of 15415/event=Created [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15408.15409.15410.15442/On-Completion Callback 1 of 15415/state=Running/children=[]/event=Set ResultFilter/[] [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15408.15409.15410.15415/Process Agent/state=Completed/children=[15416/Completed]/event=CompletionCallback/glog.server.agent.AgentWorkflow$AgentCallbacks@128c4fc1 [http - 2]
+2014-12-18 14:17:37.834	33600	Debug	Agent	Completing agent RONA.OR RELEASE READY FOR PLANNING_NO (311043372) [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15408.15409.15410.15442/On-Completion Callback 1 of 15415/state=Running/children=[]/event=Terminated [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15408.15409.15410.15442/On-Completion Callback 1 of 15415/state=Completed/children=[]/event=Completed [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15408.15409.15410/OrderReleaseModStatusChange - RONA.90990_3465675-005/state=Running/children=[15414/Running, 15415/Completed, 15442/Completed]/event=Child Completed/15442/CLOSE/On-Completion Callback 1 of 15415/{} [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15408.15409.15410.15415/Process Agent/state=Completed/children=[15416/Completed]/event=Completed [http - 2]
+2014-12-18 14:17:37.834	0	Debug	ProcessEvent	15408.15409.15410/OrderReleaseModStatusChange - RONA.90990_3465675-005/state=Running/children=[15414/Running, 15415/Completed, 15442/Completed]/event=Child Completed/15415/CLOSE/Process Agent/{15418=[interest=15418,value=true], 15421=[interest=15421,value=true]} [http - 2]
+2014-12-18 14:17:37.847	0	Error	Exception	Generic_Remote_Exception
+    java.rmi.AccessException: [EJB:010160]Security Violation: User: 'RONA.ADMIN' has insufficient permission to access EJB: type=<ejb>, application=GC3App, module=ILogSession.jar, ejb=ILogSessionHome, method=log, methodInterface=Remote, signature={long,long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[],java.lang.String[]=null}.
+
+java.rmi.AccessException: [EJB:010160]Security Violation: User: 'RONA.ADMIN' has insufficient permission to access EJB: type=<ejb>, application=GC3App, module=ILogSession.jar, ejb=ILogSessionHome, method=log, methodInterface=Remote, signature={long,long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[],java.lang.String[]}.
+	at weblogic.ejb.container.internal.MethodDescriptor.checkMethodPermissionsRemote(MethodDescriptor.java:555)
+	at weblogic.ejb.container.internal.BaseRemoteObject.checkMethodPermissions(BaseRemoteObject.java:115)
+	at weblogic.ejb.container.internal.BaseRemoteObject.preInvoke(BaseRemoteObject.java:275)
+	at weblogic.ejb.container.internal.StatelessRemoteObject.__WL_preInvoke(StatelessRemoteObject.java:43)
+	at glog.integration.tools.ilog.ILogSessionHome_2uksa9_EOImpl.log(ILogSessionHome_2uksa9_EOImpl.java:186)
+	at glog.integration.tools.ILogMan.logViaSession(ILogMan.java:963)
+	at glog.integration.tools.ILogMan.logViaSession(ILogMan.java:951)
+	at glog.integration.tools.ILogMan.logTransmissionOutDebug(ILogMan.java:945)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logDebugMsg(XMLTransmissionHelper.java:512)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logDebugMsg(XMLTransmissionHelper.java:503)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logDebugMsg(XMLTransmissionHelper.java:499)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logHelperDetails(XMLTransmissionHelper.java:485)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logStartDetails(XMLTransmissionHelper.java:483)
+	at glog.util.httppost.HttpPostTransmission$Listener.beforePost(HttpPostTransmission.java:148)
+	at glog.util.httppost.HttpPostEvent$Listener.trigger(HttpPostEvent.java:240)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:146)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:98)
+	at glog.util.event.EventThread.run(EventThread.java:87)
+	at java.lang.Thread.run(Thread.java:619)
+ [transport - HTTP - 1]
+2014-12-18 14:17:37.847	0	Error	Exception	Generic_Remote_Exception
+    java.rmi.AccessException: [EJB:010160]Security Violation: User: 'RONA.ADMIN' has insufficient permission to access EJB: type=<ejb>, application=GC3App, module=ILogSession.jar, ejb=ILogSessionHome, method=log, methodInterface=Remote, signature={long,long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[],java.lang.String[]=null}.
+
+java.rmi.AccessException: [EJB:010160]Security Violation: User: 'RONA.ADMIN' has insufficient permission to access EJB: type=<ejb>, application=GC3App, module=ILogSession.jar, ejb=ILogSessionHome, method=log, methodInterface=Remote, signature={long,long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[],java.lang.String[]}.
+	at weblogic.ejb.container.internal.MethodDescriptor.checkMethodPermissionsRemote(MethodDescriptor.java:555)
+	at weblogic.ejb.container.internal.BaseRemoteObject.checkMethodPermissions(BaseRemoteObject.java:115)
+	at weblogic.ejb.container.internal.BaseRemoteObject.preInvoke(BaseRemoteObject.java:275)
+	at weblogic.ejb.container.internal.StatelessRemoteObject.__WL_preInvoke(StatelessRemoteObject.java:43)
+	at glog.integration.tools.ilog.ILogSessionHome_2uksa9_EOImpl.log(ILogSessionHome_2uksa9_EOImpl.java:186)
+	at glog.integration.tools.ILogMan.logViaSession(ILogMan.java:963)
+	at glog.integration.tools.ILogMan.logViaSession(ILogMan.java:951)
+	at glog.integration.tools.ILogMan.logTransmissionOutDebug(ILogMan.java:945)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logDebugMsg(XMLTransmissionHelper.java:512)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logDebugMsg(XMLTransmissionHelper.java:503)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logDebugMsg(XMLTransmissionHelper.java:499)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logHelperDetails(XMLTransmissionHelper.java:485)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logStartDetails(XMLTransmissionHelper.java:483)
+	at glog.util.httppost.HttpPostTransmission$Listener.beforePost(HttpPostTransmission.java:148)
+	at glog.util.httppost.HttpPostEvent$Listener.trigger(HttpPostEvent.java:240)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:146)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:98)
+	at glog.util.event.EventThread.run(EventThread.java:87)
+	at java.lang.Thread.run(Thread.java:619)
+ [transport - HTTP - 1]
+2014-12-18 14:17:37.848	0	Error	Exception	java.rmi.AccessException: [EJB:010160]Security Violation: User: 'RONA.ADMIN' has insufficient permission to access EJB: type=<ejb>, application=GC3App, module=ILogSession.jar, ejb=ILogSessionHome, method=log, methodInterface=Remote, signature={long,long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[],java.lang.String[]}.
+	at weblogic.ejb.container.internal.MethodDescriptor.checkMethodPermissionsRemote(MethodDescriptor.java:555)
+	at weblogic.ejb.container.internal.BaseRemoteObject.checkMethodPermissions(BaseRemoteObject.java:115)
+	at weblogic.ejb.container.internal.BaseRemoteObject.preInvoke(BaseRemoteObject.java:275)
+	at weblogic.ejb.container.internal.StatelessRemoteObject.__WL_preInvoke(StatelessRemoteObject.java:43)
+	at glog.integration.tools.ilog.ILogSessionHome_2uksa9_EOImpl.log(ILogSessionHome_2uksa9_EOImpl.java:186)
+	at glog.integration.tools.ILogMan.logViaSession(ILogMan.java:963)
+	at glog.integration.tools.ILogMan.logViaSession(ILogMan.java:951)
+	at glog.integration.tools.ILogMan.logTransmissionOutDebug(ILogMan.java:945)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logDebugMsg(XMLTransmissionHelper.java:512)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logDebugMsg(XMLTransmissionHelper.java:503)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logDebugMsg(XMLTransmissionHelper.java:499)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logHelperDetails(XMLTransmissionHelper.java:485)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logStartDetails(XMLTransmissionHelper.java:483)
+	at glog.util.httppost.HttpPostTransmission$Listener.beforePost(HttpPostTransmission.java:148)
+	at glog.util.httppost.HttpPostEvent$Listener.trigger(HttpPostEvent.java:240)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:146)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:98)
+	at glog.util.event.EventThread.run(EventThread.java:87)
+	at java.lang.Thread.run(Thread.java:619)
+ [transport - HTTP - 1]
+2014-12-18 14:17:37.849	0	Error	Exception	Generic_Remote_Exception
+    java.rmi.AccessException: [EJB:010160]Security Violation: User: 'RONA.ADMIN' has insufficient permission to access EJB: type=<ejb>, application=GC3App, module=ILogSession.jar, ejb=ILogSessionHome, method=log, methodInterface=Remote, signature={long,long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[],java.lang.String[]=null}.
+
+java.rmi.AccessException: [EJB:010160]Security Violation: User: 'RONA.ADMIN' has insufficient permission to access EJB: type=<ejb>, application=GC3App, module=ILogSession.jar, ejb=ILogSessionHome, method=log, methodInterface=Remote, signature={long,long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[],java.lang.String[]}.
+	at weblogic.ejb.container.internal.MethodDescriptor.checkMethodPermissionsRemote(MethodDescriptor.java:555)
+	at weblogic.ejb.container.internal.BaseRemoteObject.checkMethodPermissions(BaseRemoteObject.java:115)
+	at weblogic.ejb.container.internal.BaseRemoteObject.preInvoke(BaseRemoteObject.java:275)
+	at weblogic.ejb.container.internal.StatelessRemoteObject.__WL_preInvoke(StatelessRemoteObject.java:43)
+	at glog.integration.tools.ilog.ILogSessionHome_2uksa9_EOImpl.log(ILogSessionHome_2uksa9_EOImpl.java:186)
+	at glog.integration.tools.ILogMan.logViaSession(ILogMan.java:963)
+	at glog.integration.tools.ILogMan.logViaSession(ILogMan.java:951)
+	at glog.integration.tools.ILogMan.logTransmissionOutDebug(ILogMan.java:945)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logDebugMsg(XMLTransmissionHelper.java:512)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logDebugMsg(XMLTransmissionHelper.java:503)
+	at glog.server.workflow.notify.XMLTransmissionHelper.handleErrorAndNotify(XMLTransmissionHelper.java:695)
+	at glog.server.workflow.notify.XMLTransmissionHelper.handleErrorAndNotify(XMLTransmissionHelper.java:654)
+	at glog.util.httppost.HttpPostTransmission$Listener.afterPostFailure(HttpPostTransmission.java:182)
+	at glog.util.httppost.HttpPostEvent$Listener.trigger(HttpPostEvent.java:247)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:146)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:98)
+	at glog.util.event.EventThread.run(EventThread.java:87)
+	at java.lang.Thread.run(Thread.java:619)
+ [transport - HTTP - 1]
+2014-12-18 14:17:37.849	0	Error	Exception	Generic_Remote_Exception
+    java.rmi.AccessException: [EJB:010160]Security Violation: User: 'RONA.ADMIN' has insufficient permission to access EJB: type=<ejb>, application=GC3App, module=ILogSession.jar, ejb=ILogSessionHome, method=log, methodInterface=Remote, signature={long,long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[],java.lang.String[]=null}.
+
+java.rmi.AccessException: [EJB:010160]Security Violation: User: 'RONA.ADMIN' has insufficient permission to access EJB: type=<ejb>, application=GC3App, module=ILogSession.jar, ejb=ILogSessionHome, method=log, methodInterface=Remote, signature={long,long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[],java.lang.String[]}.
+	at weblogic.ejb.container.internal.MethodDescriptor.checkMethodPermissionsRemote(MethodDescriptor.java:555)
+	at weblogic.ejb.container.internal.BaseRemoteObject.checkMethodPermissions(BaseRemoteObject.java:115)
+	at weblogic.ejb.container.internal.BaseRemoteObject.preInvoke(BaseRemoteObject.java:275)
+	at weblogic.ejb.container.internal.StatelessRemoteObject.__WL_preInvoke(StatelessRemoteObject.java:43)
+	at glog.integration.tools.ilog.ILogSessionHome_2uksa9_EOImpl.log(ILogSessionHome_2uksa9_EOImpl.java:186)
+	at glog.integration.tools.ILogMan.logViaSession(ILogMan.java:963)
+	at glog.integration.tools.ILogMan.logViaSession(ILogMan.java:951)
+	at glog.integration.tools.ILogMan.logTransmissionOutDebug(ILogMan.java:945)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logDebugMsg(XMLTransmissionHelper.java:512)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logDebugMsg(XMLTransmissionHelper.java:503)
+	at glog.server.workflow.notify.XMLTransmissionHelper.handleErrorAndNotify(XMLTransmissionHelper.java:695)
+	at glog.server.workflow.notify.XMLTransmissionHelper.handleErrorAndNotify(XMLTransmissionHelper.java:654)
+	at glog.util.httppost.HttpPostTransmission$Listener.afterPostFailure(HttpPostTransmission.java:182)
+	at glog.util.httppost.HttpPostEvent$Listener.trigger(HttpPostEvent.java:247)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:146)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:98)
+	at glog.util.event.EventThread.run(EventThread.java:87)
+	at java.lang.Thread.run(Thread.java:619)
+ [transport - HTTP - 1]
+2014-12-18 14:17:37.849	0	Error	Exception	java.rmi.AccessException: [EJB:010160]Security Violation: User: 'RONA.ADMIN' has insufficient permission to access EJB: type=<ejb>, application=GC3App, module=ILogSession.jar, ejb=ILogSessionHome, method=log, methodInterface=Remote, signature={long,long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[],java.lang.String[]}.
+	at weblogic.ejb.container.internal.MethodDescriptor.checkMethodPermissionsRemote(MethodDescriptor.java:555)
+	at weblogic.ejb.container.internal.BaseRemoteObject.checkMethodPermissions(BaseRemoteObject.java:115)
+	at weblogic.ejb.container.internal.BaseRemoteObject.preInvoke(BaseRemoteObject.java:275)
+	at weblogic.ejb.container.internal.StatelessRemoteObject.__WL_preInvoke(StatelessRemoteObject.java:43)
+	at glog.integration.tools.ilog.ILogSessionHome_2uksa9_EOImpl.log(ILogSessionHome_2uksa9_EOImpl.java:186)
+	at glog.integration.tools.ILogMan.logViaSession(ILogMan.java:963)
+	at glog.integration.tools.ILogMan.logViaSession(ILogMan.java:951)
+	at glog.integration.tools.ILogMan.logTransmissionOutDebug(ILogMan.java:945)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logDebugMsg(XMLTransmissionHelper.java:512)
+	at glog.server.workflow.notify.XMLTransmissionHelper.logDebugMsg(XMLTransmissionHelper.java:503)
+	at glog.server.workflow.notify.XMLTransmissionHelper.handleErrorAndNotify(XMLTransmissionHelper.java:695)
+	at glog.server.workflow.notify.XMLTransmissionHelper.handleErrorAndNotify(XMLTransmissionHelper.java:654)
+	at glog.util.httppost.HttpPostTransmission$Listener.afterPostFailure(HttpPostTransmission.java:182)
+	at glog.util.httppost.HttpPostEvent$Listener.trigger(HttpPostEvent.java:247)
+	at glog.util.event.MemoryEventQueueRunnable.processEvent(MemoryEventQueueRunnable.java:146)
+	at glog.util.event.MemoryEventQueueRunnable.run(MemoryEventQueueRunnable.java:98)
+	at glog.util.event.EventThread.run(EventThread.java:87)
+	at java.lang.Thread.run(Thread.java:619)
+ [transport - HTTP - 1]
+2014-12-18 14:17:37.849	0	Debug	Process	Listener <glog.util.httppost.HttpPostTransmission$Listener@1237addd> failure on <HTTPTransport: url=http://lqc90990esbdvp02.rona.ca:8282, blocking=true, transmissionId=8091990>: [transport - HTTP - 1]
+2014-12-18 14:17:37.929	33600	Debug	ProcessEvent	15443/CREATE/TxCompleteTopic/Process Object Created [lifetime - 1]
+2014-12-18 14:17:37.929	33600	Debug	WorkflowDetails	Completing workflow Lifetime Event Notify (325103641) [lifetime - 1]
+2014-12-18 14:17:37.995	0	Debug	ProcessEvent	Publishing topic TxCompleteTopic on queue txComplete, group null [lifetime - 1]
+2014-12-18 14:17:37.995	0	Debug	ProcessEvent	15443/OPEN/TxCompleteTopic/event=Created [lifetime - 1]
+2014-12-18 14:17:37.996	0	Debug	ProcessEvent	15408.15409.15410.15414.15443/TxCompleteTopic/state=Running/children=[]/event=Set ResultFilter/[] [lifetime - 1]
+2014-12-18 14:17:37.996	0	Debug	ProcessEvent	15408.15409.15410.15414/Lifetime Event Notify/state=Running/children=[15443/Running]/event=Terminated [lifetime - 1]
+2014-12-18 14:17:37.996	0	Debug	ProcessEvent	15408.15409.15410/OrderReleaseModStatusChange - RONA.90990_3465675-005/state=Running/children=[15414/Waiting, 15415/Completed, 15442/Completed]/event=Terminated [lifetime - 1]
+2014-12-18 14:17:37.996	0	Debug	WorkflowDetails	Triggering <Trigger for TxComplete> with topic <TxCompleteTopic> [txComplete - 1]
+2014-12-18 14:17:37.997	0	Debug	ProcessEvent	15444/CREATE/TxComplete/Process Object Created [txComplete - 1]
+2014-12-18 14:17:37.998	33600	Debug	ProcessEvent	15444/OPEN/TxComplete/event=Created [txComplete - 1]
+2014-12-18 14:17:37.998	33600	Debug	ProcessEvent	15408.15409.15410.15414.15443.15444/TxComplete/state=Running/children=[]/event=Set ResultFilter/[] [txComplete - 1]
+2014-12-18 14:17:37.998	33600	Debug	ProcessEvent	Starting workflow TxComplete (331433781) in response to TxCompleteTopic [txComplete - 1]
+2014-12-18 14:17:37.999	33600	Debug	ProcessEvent	Completing workflow TxComplete (331433781) [txComplete - 1]
+2014-12-18 14:17:37.999	0	Debug	ProcessEvent	15408.15409.15410.15414.15443.15444/TxComplete/state=Running/children=[]/event=Terminated [txComplete - 1]
+2014-12-18 14:17:37.999	0	Debug	ProcessEvent	15408.15409.15410.15414.15443.15444/TxComplete/state=Completed/children=[]/event=Completed [txComplete - 1]
+2014-12-18 14:17:37.999	0	Debug	ProcessEvent	15408.15409.15410.15414.15443/TxCompleteTopic/state=Running/children=[15444/Completed]/event=Child Completed/15444/CLOSE/TxComplete/{} [txComplete - 1]
+2014-12-18 14:17:37.999	0	Debug	ProcessEvent	15408.15409.15410.15414.15443/TxCompleteTopic/state=Running/children=[15444/Completed]/event=Terminated [txComplete - 1]
+2014-12-18 14:17:37.999	0	Debug	ProcessEvent	15408.15409.15410.15414.15443/TxCompleteTopic/state=Completed/children=[15444/Completed]/event=Completed [txComplete - 1]
+2014-12-18 14:17:38.0	0	Debug	ProcessEvent	15408.15409.15410.15414/Lifetime Event Notify/state=Waiting/children=[15443/Completed]/event=Child Completed/15443/CLOSE/TxCompleteTopic/{} [txComplete - 1]
+2014-12-18 14:17:38.0	0	Debug	ProcessEvent	15408.15409.15410.15414/Lifetime Event Notify/state=Completed/children=[15443/Completed]/event=Completed [txComplete - 1]
+2014-12-18 14:17:38.0	0	Debug	ProcessEvent	15408.15409.15410/OrderReleaseModStatusChange - RONA.90990_3465675-005/state=Waiting/children=[15414/Completed, 15415/Completed, 15442/Completed]/event=Child Completed/15414/CLOSE/Lifetime Event Notify/{} [txComplete - 1]
+2014-12-18 14:17:38.0	0	Debug	ProcessEvent	15408.15409.15410/OrderReleaseModStatusChange - RONA.90990_3465675-005/state=Completed/children=[15414/Completed, 15415/Completed, 15442/Completed]/event=Completed [txComplete - 1]
+2014-12-18 14:17:38.0	0	Debug	ProcessEvent	15408.15409/process.util.changeExternalStatus_Object/state=Waiting/children=[15411/Completed, 15410/Completed]/event=Child Completed/15410/CLOSE/OrderReleaseModStatusChange/{15418=[interest=15418,value=true], 15421=[interest=15421,value=true]} [txComplete - 1]
+2014-12-18 14:17:38.0	0	Debug	ProcessEvent	15408.15409/process.util.changeExternalStatus_Object/state=Completed/children=[15411/Completed, 15410/Completed]/event=Completed [txComplete - 1]
+2014-12-18 14:17:38.0	0	Debug	ProcessEvent	15408/ORDER RELEASE CHANGE EXTERNAL STATUS: [RONA.90990_3465675-005]/state=Waiting/children=[15409/Completed, 15412/Completed, 15413/Completed]/event=Child Completed/15409/CLOSE/process.util.changeExternalStatus_Object/{15418=[interest=15418,value=true], 15421=[interest=15421,value=true]} [txComplete - 1]
+2014-12-18 14:17:38.0	0	Debug	ProcessEvent	15408/ORDER RELEASE CHANGE EXTERNAL STATUS: [RONA.90990_3465675-005]/state=Completed/children=[15409/Completed, 15412/Completed, 15413/Completed]/event=Completed [txComplete - 1]
+2014-12-18 14:17:38.0	0	Debug	ProcessEvent	15408/ORDER RELEASE CHANGE EXTERNAL STATUS: [RONA.90990_3465675-005]/state=Completed/children=[15409/Completed, 15412/Completed, 15413/Completed]/event=Clean Up [txComplete - 1]
+2014-12-18 14:18:07.022	0	Debug	WorkflowDetails	Triggering <Process Control Timer> with topic <10s: 2014-12-18 19:18:07 America/Montreal> [timer - 1]
+2014-12-18 14:18:07.023	0	Debug	Workflow	Starting workflow Process Control (332317622) in response to 10s: 2014-12-18 19:18:07 America/Montreal [timer - 1]
+2014-12-18 14:18:07.025	0	Debug	Workflow	Completing workflow Process Control (332317622) [timer - 1]

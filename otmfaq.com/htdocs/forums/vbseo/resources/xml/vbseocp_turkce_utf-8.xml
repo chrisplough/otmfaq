@@ -1,0 +1,3647 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<translations>
+	<message>
+		<name>adm_cp</name>
+		<value>Admin Kontrol Paneli</value>
+	</message>
+	<message>
+		<name>cphome</name>
+		<value>vBSEO Kontrol Paneli</value>
+	</message>
+	<message>
+		<name>back_to</name>
+		<value>Forumlara D&#246;n</value>
+	</message>
+	<message>
+		<name>logout</name>
+		<value>&#199;&#305;k&#305;&#351;</value>
+	</message>
+	<message>
+		<name>linkbacks</name>
+		<value>LinkBackler</value>
+	</message>
+	<message>
+		<name>in_linkbacks</name>
+		<value>Gelen LinkBackler</value>
+	</message>
+	<message>
+		<name>out_linkbacks</name>
+		<value>Giden LinkBackler</value>
+	</message>
+	<message>
+		<name>permalinks</name>
+		<value>Permalinkler</value>
+	</message>
+	<message>
+		<name>patent_pending</name>
+		<value>Patent Beklemede</value>
+	</message>
+	<message>
+		<name>cookies_cleared</name>
+		<value>T&#252;m &#199;erezler Silindi</value>
+	</message>
+	<message>
+		<name>click_redirect</name>
+		<value>Taray&#305;c&#305;n&#305;z otomatik y&#246;nlendirmezse buraya t&#305;klay&#305;n&#305;z.</value>
+	</message>
+	<message>
+		<name>error</name>
+		<value>Hata</value>
+	</message>
+	<message>
+		<name>pass_notsame</name>
+		<value>Girmi&#351; oldu&#287;unuz &#351;ifreler birbirini tutmuyor.</value>
+	</message>
+	<message>
+		<name>pass_empty</name>
+		<value>&#350;ifreyi Bo&#351; b&#305;rakamazs&#305;n&#305;z.</value>
+	</message>
+	<message>
+		<name>pass_defined</name>
+		<value>Admin &#350;ifresi zaten belirlendi.</value>
+	</message>
+	<message>
+		<name>config_readonly</name>
+		<value>Config dosyas&#305; yaz&#305;labilir de&#287;il</value>
+	</message>
+	<message>
+		<name>pass_select</name>
+		<value>L&#252;tfen bir &#351;ifre se&#231;iniz.</value>
+	</message>
+	<message>
+		<name>password</name>
+		<value>&#350;ifre</value>
+	</message>
+	<message>
+		<name>confirm</name>
+		<value>Onayla</value>
+	</message>
+	<message>
+		<name>login</name>
+		<value>Giri&#351; Yap</value>
+	</message>
+	<message>
+		<name>note_config</name>
+		<value>&lt;strong&gt;NOT:&lt;/strong&gt; vB-root/vbseo/resources/xml/config.xml dosyas&#305; yaz&#305;labilir de&#287;il. Dosya izinlerini de&#287;i&#351;tirip tekrar deneyiniz.</value>
+	</message>
+	<message>
+		<name>login_failed</name>
+		<value>Giri&#351; Ba&#351;ar&#305;s&#305;z</value>
+	</message>
+	<message>
+		<name>area_protected</name>
+		<value>Bu b&#246;lge &#351;ifre korumal&#305;d&#305;r.</value>
+	</message>
+	<message>
+		<name>warn_readonly</name>
+		<value>UYARI: vB-root/vbseo/resources/xml/config.xml dosyas&#305; yaz&#305;labilir de&#287;il. Ayarlar kay&#305;t olmayacakt&#305;r.</value>
+	</message>
+	<message>
+		<name>saved_ok</name>
+		<value>Ayarlar&#305;n&#305;z ba&#351;ar&#305;yla kaydedildi.</value>
+	</message>
+	<message>
+		<name>quick_jump</name>
+		<value>&#199;abuk Z&#305;pla</value>
+	</message>
+	<message>
+		<name>gen_set</name>
+		<value>Genel Ayarlar</value>
+	</message>
+	<message>
+		<name>vbseo_opt</name>
+		<value>vBSEO Ayarlar&#305;</value>
+	</message>
+	<message>
+		<name>log_opt</name>
+		<value>Log ve Izleme Ayarlar&#305;</value>
+	</message>
+	<message>
+		<name>arc_opt</name>
+		<value>vB'nin Ar&#351;iv Ayarlar&#305;</value>
+	</message>
+	<message>
+		<name>url_opt</name>
+		<value>URL Rewrite Ayarlar&#305;</value>
+	</message>
+	<message>
+		<name>gen_opt</name>
+		<value>Genel Se&#231;enekler</value>
+	</message>
+	<message>
+		<name>gen_opt_description</name>
+		<value>&lt;b&gt;Forumunuz i&#231;in Global Url Yazma Ayarlar&#305;n&#305; Se&#231;in&lt;/b&gt;&lt;br /&gt;
+
+
+
+URL Rewrite'&#305;n amac&#305; sadece anahtar kelimeleri adrese eklemek de&#287;il ayn&#305; zamanda birden &#231;ok ayn&#305; adrese y&#246;nlenen url'yi tek &#231;at&#305; alt&#305;nda toplamakt&#305;r. Bu ikinci kazan&#231; sitenizin i&#231; link de&#287;erlerini artt&#305;r&#305;p arama motorlar&#305;n&#305;n sitenizi daha d&#252;zg&#252;n indexlemesini sa&#287;lamaktad&#305;r. Sabit bir link olu&#351;umu siteniz i&#231;in her zaman de&#287;er te&#351;kil edecek ve sitenize gelen linklerin ana mesaja y&#246;nlenmesini sa&#287;layarak anahtar kelime uyumlulu&#287;unu artt&#305;racakt&#305;r.
+
+
+
+&lt;p style=&quot;color:#f00&quot;&gt;&lt;b&gt;&#214;NEML&#304;:&lt;/b&gt; Bu &#246;zellik &lt;em&gt;AYARLA ve UNUT&lt;/em&gt; &#351;eklindedir. Bir kere bu ayarlar&#305; belirledikten sonra bir daha de&#287;i&#351;tirmeyiniz. De&#287;i&#351;tirmeniz her&#351;eye s&#305;f&#305;rdan ba&#351;laman&#305;z&#305; gerektirecektir.&lt;/p&gt;
+
+
+
+&lt;p&gt;
+
+&lt;b&gt;Kullan&#305;m:&lt;/b&gt;&lt;br /&gt;
+
+A&#351;a&#287;&#305;daki menuden bir URL format&#305; belirleyin ve &quot;De&#287;erleri Y&#252;kle&quot; butonuna t&#305;klay&#305;n. Ki&#351;isel tercihinize g&#246;re bir URL format&#305; belirlemek i&#231;in ( '+' adresine t&#305;klay&#305;n&#305;z).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_forum</name>
+		<value>Forum URL'leri</value>
+	</message>
+	<message>
+		<name>urls_ann</name>
+		<value>Duyuru URL'leri</value>
+	</message>
+	<message>
+		<name>urls_thread</name>
+		<value>Konu URL'leri</value>
+	</message>
+	<message>
+		<name>urls_prnthread</name>
+		<value>Konu Yazd&#305;rma URL'leri</value>
+	</message>
+	<message>
+		<name>urls_post</name>
+		<value>Mesaj G&#246;r&#252;nt&#252;leme URL'leri</value>
+	</message>
+	<message>
+		<name>urls_polls</name>
+		<value>Anket URL'leri</value>
+	</message>
+	<message>
+		<name>urls_member</name>
+		<value>&#220;ye Profil URL'leri</value>
+	</message>
+	<message>
+		<name>urls_mlist</name>
+		<value>&#220;ye Liste URL'leri</value>
+	</message>
+	<message>
+		<name>urls_avatar</name>
+		<value>Ki&#351;isel Avatar Resim URL'leri</value>
+	</message>
+	<message>
+		<name>urls_navbul</name>
+		<value>Nav Bullet (A&#287;a&#231; Ikon) Resim URL'leri</value>
+	</message>
+	<message>
+		<name>urls_attach</name>
+		<value>Eklenti URL'leri</value>
+	</message>
+	<message>
+		<name>crrs</name>
+		<value>&#214;zel Rewrite Kurallar&#305;</value>
+	</message>
+	<message>
+		<name>seo_func</name>
+		<value>SEO De&#287;erleri</value>
+	</message>
+	<message>
+		<name>dyn_metas</name>
+		<value>Dinamik META Etiketleri</value>
+	</message>
+	<message>
+		<name>dir_links</name>
+		<value>Direk Linkler</value>
+	</message>
+	<message>
+		<name>add_ttitle</name>
+		<value>Konu Ba&#351;l&#305;klar&#305;n&#305; Ekle</value>
+	</message>
+	<message>
+		<name>add_extttitle</name>
+		<value>D&#305;&#351;ar&#305;ya Giden Linklere Konu Ba&#351;l&#305;klar&#305;n&#305; Ekle</value>
+	</message>
+	<message>
+		<name>stopwords</name>
+		<value>Stopword Belirleme</value>
+	</message>
+	<message>
+		<name>acronym</name>
+		<value>Acronym Ayarlar&#305;</value>
+	</message>
+	<message>
+		<name>rel_replacements</name>
+		<value>Belirlenmi&#351; De&#287;i&#351;kenler</value>
+	</message>
+	<message>
+		<name>hp_set</name>
+		<value>Anasayfa Ayarlar&#305;</value>
+	</message>
+	<message>
+		<name>int_rel</name>
+		<value>Dahili rel=&quot;nofollow&quot;lar</value>
+	</message>
+	<message>
+		<name>ext_rel</name>
+		<value>Harici rel=&quot;nofollow&quot;lar</value>
+	</message>
+	<message>
+		<name>oth_enh</name>
+		<value>Di&#287;er Geli&#351;tirmeler</value>
+	</message>
+	<message>
+		<name>cleanup_html</name>
+		<value>HTML Kodu Temizle</value>
+	</message>
+	<message>
+		<name>remove_prev</name>
+		<value>Konu &#246;nizleme mesaj&#305;n&#305; temizle</value>
+	</message>
+	<message>
+		<name>guests_only</name>
+		<value>Misafirlere &#246;zel geli&#351;tirmeler</value>
+	</message>
+	<message>
+		<name>img_size</name>
+		<value>Resim Boyut Belirlemek</value>
+	</message>
+	<message>
+		<name>dl_backup</name>
+		<value>Var olan Ayarlar&#305; Indirmek/Geri Y&#252;klemek</value>
+	</message>
+	<message>
+		<name>download</name>
+		<value>Indir</value>
+	</message>
+	<message>
+		<name>filename</name>
+		<value>Dosya Ad&#305;</value>
+	</message>
+	<message>
+		<name>description</name>
+		<value>A&#231;&#305;klama</value>
+	</message>
+	<message>
+		<name>backup_all</name>
+		<value>&lt;b&gt;T&#252;m vBSEO Ayarlar&#305;n&#305;z yedeklendi&lt;/b&gt;&lt;br /&gt;
+
+           T&#252;m vBSEO Ayarlar&#305;n&#305;z yedeklendi/kaydedildi.</value>
+	</message>
+	<message>
+		<name>save_set_all</name>
+		<value>T&#252;m Ayarlar&#305; Kaydet</value>
+	</message>
+	<message>
+		<name>backup_urls</name>
+		<value>&lt;b&gt;Sadece URL Rewrite Ayarlar&#305;n&#305; yedekle&lt;/b&gt;&lt;br /&gt;
+
+            URL Rewrite ayarlar&#305;n&#305;z&#305; ba&#351;ka kullan&#305;c&#305;larla payla&#351;.</value>
+	</message>
+	<message>
+		<name>upload_set</name>
+		<value>Yedeklenmi&#351; bir (.xml) ayar dosyas&#305;n&#305; geri y&#252;kle</value>
+	</message>
+	<message>
+		<name>choose_file</name>
+		<value>L&#252;tfen xml dosyas&#305;n&#305; se&#231;iniz</value>
+	</message>
+	<message>
+		<name>note_upcrr</name>
+		<value>&lt;b&gt;Not:&lt;/b&gt; Yedeklenmi&#351; bir 'URL Rewrite Ayarlar&#305;' dosyas&#305;n&#305; geri y&#252;klemek (vbseo_urls.xml) di&#287;er ayarlar&#305;n&#305;z Genel Ayarlar ve SEO Ayarlar&#305;n&#305; de&#287;i&#351;tirmeyecektir. </value>
+	</message>
+	<message>
+		<name>upload</name>
+		<value>Geri Y&#252;kle</value>
+	</message>
+	<message>
+		<name>import_set</name>
+		<value>Ayarlar&#305; I&#231;e Al</value>
+	</message>
+	<message>
+		<name>language_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;vBSEO CP Dil Se&#231;ene&#287;i&lt;br&gt;
+
+                              &lt;/strong&gt;vBSEO Kontrol Paneliniz i&#231;in bir lisan se&#231;iniz. Dil dosyan&#305;z  vB-root/vbseo/resources/xml/ klas&#246;r&#252;nde bulunmal&#305;d&#305;r.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>activate_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Plugin'i &#199;al&#305;&#351;t&#305;r?&lt;/b&gt;&lt;br /&gt;
+
+    vBSEO ve ayarlar&#305;n&#305; aktif hale getirmek i&#231;in EVET se&#231;iniz.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>yes</name>
+		<value>Evet</value>
+	</message>
+	<message>
+		<name>no</name>
+		<value>Hay&#305;r</value>
+	</message>
+	<message>
+		<name>license_desc</name>
+		<value>&lt;b&gt;vBSEO Lisans Numaran&#305;z&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>key_config</name>
+		<value>Lisans Numaran&#305;z 1) yeni vBSEO s&#252;r&#252;m&#252; veya 2) lisans sahibi domain adresinin yenilenmesiyle de&#287;i&#351;ebilir. K&#305;rm&#305;z&#305; ile yaz&#305;lm&#305;&#351; Lisans Numaran&#305;z&#305; yukar&#305; yap&#305;&#351;t&#305;rarak kaydedin. Kaydedildikten sonra lisans numaran&#305;z ye&#351;ile d&#246;necektir.</value>
+	</message>
+	<message>
+		<name>current_ver</name>
+		<value>Y&#252;kl&#252; versiyon</value>
+	</message>
+	<message>
+		<name>forums_root</name>
+		<value>Forum Adresiniz</value>
+	</message>
+	<message>
+		<name>current_key</name>
+		<value>Kay&#305;tl&#305; Lisans Numaran&#305;z</value>
+	</message>
+	<message>
+		<name>redir_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Original I&#231;eri&#287;i 301 ile Y&#246;nlendir&lt;/b&gt;&lt;br /&gt;
+
+'301' y&#246;nlendirme ile eski url'lerinizi yeni statik urllerinize y&#246;nlendirebilirsiniz. Bu &#351;ekilde eskiden crawl edilmi&#351; url'lerin yenileriyle de&#287;i&#351;mesini ve Page Rank alm&#305;&#351; urllerinizn Page Rankleri koruman&#305;za yard&#305;mc&#305; olur.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>domname_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Domain Ismi URL'lerde Yer Als&#305;n m&#305; ?&lt;/b&gt;&lt;br /&gt;
+
+Arama motorlar&#305; ba&#287;lant&#305;lar&#305; tam URL ler ile takip etmek i&#231;in d&#252;&#351;&#252;n&#252;lm&#252;&#351;t&#252;r (www.domaininiz.com/bu_sayfa.html). Domain ad&#305;n&#305;z&#305; forum linklerinize ba&#287;lamak i&#231;in bu se&#231;ene&#287;i aktif edin. B&#246;ylece URLniz tam olarak g&#246;r&#252;nt&#252;lenir (ilgili olan ile).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>noneng_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;URLdeki &#304;ngilizce olmayan karakterleri de&#287;i&#351;tirme?&lt;/b&gt;&lt;br /&gt;
+
+&#304;ngilizce olmayan karakterleri, &#304;ngilizce kar&#351;&#305;l&#305;klar&#305; ile de&#287;i&#351;tirmek i&#231;in 'Evet' se&#231;ene&#287;ini se&#231;iniz. E&#287;er forumlar&#305;n&#305;z &#304;ngilizce de&#287;ilse ya da &#304;ngilizce olmayan karakterler yer al&#305;yorsa bu se&#231;ene&#287;i aktif ediniz. (E.g. Caf&amp;eacute;)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>redirext_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;Y&#246;nlendir &lt;i&gt;ALL&lt;/i&gt; &#214;zel Forumlarda D&#305;&#351; URL ler&lt;/b&gt;&lt;br /&gt;
+
+&#214;zel forumlardaki d&#305;&#351; ba&#287;lant&#305;lar&#305; bir i&#231; script &#252;zerinden y&#246;nlendirmek i&#231;in bu se&#231;ene&#287;i aktif ediniz. Bu &#246;zellik &#246;zel forumlar&#305;n&#305;zdaki URL leri, d&#305;&#351; sitenin sunucu kay&#305;tlar&#305;na girmemesini sa&#287;layacak, b&#246;ylece gizlili&#287;iniz korunmu&#351; olacakt&#305;r.&lt;/p&gt;
+
+&lt;p&gt;Note: URL ler &#351;u &#351;ekilde olacakt&#305;r 'http://www.domaininiz.com/forum/yonlendir/?yonlendir=http://www.disdomain.com'</value>
+	</message>
+	<message>
+		<name>email_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;Sistem E-maillerinde URL Rewrite Aktif Et&lt;/b&gt;&lt;br /&gt;
+
+Bu opsiyonu evet se&#231;erseniz vBulletin taraf&#305;ndan g&#246;nderilen e-maillerdeki urller rewrite &#246;zelli&#287;i ile yeniden yaz&#305;l&#305;r. &lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.5.x ve daha yeni versiyonlar ile &#231;al&#305;&#351;&#305;r.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>link_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;vBSEO Kontrol Panele Link Ekle?&lt;/b&gt;&lt;br /&gt;
+
+Bu &#246;zellik forumunuzda her sayfan&#305;n tepesinde vBSEO Kontrol Panele sadece Adminlerin g&#246;rebilece&#287;i bir link ekler ve size zaman kazand&#305;r&#305;r. (Usergroup 6).&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>fnf_desc</name>
+		<value>&lt;p&gt;
+
+                                          &lt;b&gt;'Dosya Bulunamad&#305;' Opsiyonlar&#305;?&lt;/b&gt;&lt;br /&gt;
+
+      Dosya Bulunamad&#305; Opsiyonlar&#305;n&#305; Ayarlay&#305;n &lt;br /&gt;
+
+      - RAnasayfaya y&#246;nlendir &lt;br /&gt;
+
+      - 404 HTTP hata kodu g&#246;nder ve Sayfa Bulunamad&#305; uyar&#305;s&#305; g&#246;ster &lt;br /&gt;
+
+      - &#214;zelle&#351;tirilmi&#351; hata sayfas&#305;na y&#246;nlendir. NOT: T&#252;m adresin girilmesi gerekmektedir. (&#246;rnek: &lt;i&gt;/home/user/public_html/error.php&lt;/i&gt;)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>redire_hp</name>
+		<value>Ana sayfaya y&#246;nlendir</value>
+	</message>
+	<message>
+		<name>send_404</name>
+		<value>404 HTTP hata kodu g&#246;nder</value>
+	</message>
+	<message>
+		<name>inc_custom</name>
+		<value>&#214;zel Sayfa Girin</value>
+	</message>
+	<message>
+		<name>exclpages_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;Sayfalar&#305; &#199;&#305;kar?&lt;/b&gt;&lt;br /&gt;
+
+vBSEO taraf&#305;ndan &#231;al&#305;&#351;t&#305;r&#305;lmas&#305;n&#305; istemedi&#287;iniz dosya isimlerini buraya yaz&#305;n. Bu copyright bilgilerinin eklenmesinin &#246;n&#252;nede ge&#231;ecektir .&lt;/p&gt;
+
+&lt;p&gt;&#214;rnekler:(birden fazla dosyay&#305; sat&#305;r bo&#351;lu&#287;u ile ay&#305;r&#305;n)&lt;br /&gt;
+
+^index\.php\?do=feature&lt;br /&gt;
+
+VBGooglemap.php&lt;br /&gt;
+
+geek-gallery-popup.php&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>botact_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Forumunuzdaki &#214;r&#252;mcek Aktivitesini kaydedin?&lt;/b&gt;&lt;br /&gt;
+
+Bu opsiyonu 'Evet' yaparak Arama Botlar&#305;n&#305;n forumunuzdaki aktivitelerini kaydedebilirsiniz. Bu opsiyon &lt;a href=&quot;http://www.vbulletin.org/forum/showthread.php?t=184573&quot; target=&quot;_blank&quot;&gt;vBSEO Google / Yahoo Sitemap Generator&lt;/a&gt; modifikasyonunun &lt;b&gt;Kurulu&lt;/b&gt; olmas&#305;n&#305; gerektirir.&lt;br /&gt;&lt;br /&gt;
+
+Not : Arama Botlar&#305; Loguna sitemap raporlar&#305;ndan ula&#351;abilirsiniz.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;Google Analytics Kodunu Forum Sayfalar&#305;na Ekle&lt;/b&gt;&lt;br /&gt;
+
+'Evet' se&#231;erseniz t&#252;m forum sayfalar&#305;na eklenecektir. &lt;a href=&quot;http://www.google.com/analytics/&quot; target=&quot;_blank&quot;&gt;Google Analytics&lt;/a&gt; site trafi&#287;inizi kolayca takip etmenizi sa&#287;layan bir istatistik program&#305;d&#305;r.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_code_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;Google Analytics kodunu giriniz&lt;/b&gt;&lt;br /&gt;
+
+Yandaki formatta Google Analytics kodunuzu giriniz: UA-9999-1&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_track_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;Google Analytics 'D&#305;&#351; Linkleri Izlemek' kodunu ekle?&lt;/b&gt; &lt;br /&gt;
+
+'Evet' se&#231;erseniz  Google Analytics 'D&#305;&#351; Linkleri Izlemek' kodu t&#252;m d&#305;&#351; linklere eklenecektir.
+
+Bu &#246;zellik &lt;a href=&quot;http://www.google.com/support/analytics/bin/answer.py?hl=en&amp;answer=55594&quot; target=&quot;_blank&quot;&gt; d&#305;&#351; linklere giden t&#305;klamalar&#305;&lt;/a&gt; Google Analytics hesab&#305;n&#305;zda g&#246;rmenizi sa&#287;lar.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>analytics_format_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;Google Analytics 'D&#305;&#351; Linkleri Izlemek' kod format&#305;&lt;/b&gt;&lt;br /&gt;
+
+Google Analytics 'D&#305;&#351; Linkleri Izlemek' kod format&#305;&lt;br /&gt;
+
+&#214;rnek: /outgoing/&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>funnel_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;Uye Kay&#305;tlar&#305; i&#231;in Google Analytics Funnel'i Aktif Et?&lt;/b&gt;&lt;br /&gt;
+
+'Evet' se&#231;erseniz &#252;ye kay&#305;tlar&#305; i&#231;in Google Analytics Funnel'i aktif edersiniz. &lt;/p&gt;
+
+&lt;p&gt;NOT: Google Analytics hesab&#305;n&#305;zda yeni bir GOAL yaratarak &#252;yelik ad&#305;mlar&#305;n&#305;z&#305;n say&#305;s&#305; kadar yeni sat&#305;r eklemelisiniz &lt;br /&gt;
+
+/google-funnel/coppaform.html &lt;i&gt;(kullan&#305;yorsan&#305;z)&lt;/i&gt; &lt;br /&gt;
+
+/google-funnel/enter-birthday.html &lt;i&gt;(kullan&#305;yorsan&#305;z)&lt;/i&gt; &lt;br /&gt;
+
+/google-funnel/agreement.html &lt;br /&gt;
+
+/google-funnel/regform-show.html &lt;br /&gt;
+
+/google-funnel/regform-submit.html &lt;br /&gt;
+
+/google-funnel/registration-complete.html
+
+
+
+&lt;p&gt;&lt;a href=&quot;http://www.google.com/support/analytics/bin/answer.py?hl=en&amp;answer=55515&quot; target=&quot;_blank&quot;&gt;Funnel Nedir&lt;/a&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>adsense_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Adsense Kelime Hedeflemesi? &lt;/b&gt; &lt;br&gt;'Evet' se&#231;erseniz forumhome , forumdisplay , showthread gibi b&#246;l&#252;mlerde kelimelere hedeflenmesini sa&#287;lar. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>arcopt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&lt;i&gt;Ar&#351;iv Se&#231;enekleri:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;vB'nin Ar&#351;ivini 301 Y&#246;nlendirme ile konulara y&#246;nlendir &lt;/b&gt;&lt;br /&gt;
+
+301 y&#246;nlendirme Google'&#305;n g&#252;venli i&#231;erik ta&#351;&#305;ma y&#246;ntemidir. Bu opsiyonu se&#231;erseniz Page Rank'inizi korurken sitenize gelen &#246;r&#252;mcek ve botlar&#305; yeni statik sayfalar&#305;n&#305;za y&#246;nlendirirsiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;vB'nin Ar&#351;iv konular&#305;n&#305; Yeniden Yaz &lt;/b&gt;&lt;br /&gt;
+
+Bu opsiyon ar&#351;iv urllerinizi yeniden yazarak siteniz i&#231;in m&#252;kemmel bir site haritas&#305; olu&#351;turman&#305;z&#305; sa&#287;lar.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Yeniden yaz ve 301 ile y&#246;nlendir&lt;/b&gt;&lt;br /&gt;
+
+Bu opsiyon 1 ve 2. &#351;&#305;klar&#305;n birle&#351;imidir. Bu opsiyonile URL'leri yeniden yazarken ayn&#305; zamanda ar&#351;ivden 301 y&#246;nlendirme ile ar&#351;iv konular&#305;n&#305; ger&#231;ek konulara y&#246;nlendirirsiniz. Bu &#351;ekilde (a) hem statik sayfalar&#305;n&#305;z i&#231;in site haritas&#305; olur (b) eski konular&#305;n&#305;za gelen linkleri yeni statik sayfalar&#305;n&#305;za y&#246;nlendirir.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;vB'nin ar&#351;iv ayarlar&#305;n&#305; kullan &lt;/b&gt;&lt;br /&gt;
+
+vBulletin'in ar&#351;iv ayarlar&#305;n&#305; kullan&#305;n.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>sel_one</name>
+		<value>Birini se&#231;in</value>
+	</message>
+	<message>
+		<name>arc_redir_301</name>
+		<value>vB'nin Ar&#351;ivini 301 Y&#246;nlendirme ile konulara y&#246;nlendir</value>
+	</message>
+	<message>
+		<name>arc_rewr_vbarc</name>
+		<value>vB'nin Ar&#351;iv konular&#305;n&#305; Yeniden Yaz</value>
+	</message>
+	<message>
+		<name>arc_redir_rewr</name>
+		<value>Yeniden yaz ve 301 ile y&#246;nlendir</value>
+	</message>
+	<message>
+		<name>arc_keep</name>
+		<value>vB'nin ar&#351;iv ayarlar&#305;n&#305; kullan</value>
+	</message>
+	<message>
+		<name>arcroot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ar&#351;iv Ana Sayfas&#305;n&#305; Yeniden Yaz:&lt;br /&gt;
+
+&lt;/b&gt;Bu se&#231;enekle var olan '/archive/index.php/' adresini daha seo format&#305;na &#231;evirin.&lt;/p&gt;
+
+&lt;p&gt;NOT: Eski ar&#351;iv urlleri yenilerine 301 ile y&#246;nlenecektir. Bundan dolay&#305; eski ar&#351;iv urllerine &#246;r&#252;mcekler ve misafirler ula&#351;abilecektir.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Se&#231;enekler:&lt;br /&gt;
+
+/hello/google/ veya /sitemap/ veya /archive/ vs. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>custom</name>
+		<value>&#214;zel</value>
+	</message>
+	<message>
+		<name>save_set</name>
+		<value>Ayarlar&#305; Kaydet</value>
+	</message>
+	<message>
+		<name>reset</name>
+		<value>S&#305;f&#305;rla</value>
+	</message>
+	<message>
+		<name>url_set_forum</name>
+		<value>vBSEO 'URL &#220;st&#252;ne Yazma Ayarlar&#305;' Forumlar&#305;</value>
+	</message>
+	<message>
+		<name>sep_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL K&#305;s&#305;m Ayra&#231;lar&#305;n&#305; Belirtme&lt;/b&gt;&lt;br /&gt;
+
+Bu karakter &#252;st&#252;ne yaz&#305;lan URL lerdeki tek kelimeleri ay&#305;racakt&#305;r. [ - ] kullan&#305;m&#305; &#246;nerilir.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>limurl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URL Uzunlu&#287;unu S&#305;n&#305;rlama&lt;br /&gt;
+
+&lt;/b&gt;Baz&#305; kullan&#305;c&#305;lar URL lerinin uzunlu&#287;unu s&#305;n&#305;rlamay&#305; tercih eder. Bu ayar &#246;rne&#287;in [forum_title] ve [forum_title] gibi URL par&#231;alar&#305;n&#305; maksimum anahtar kelime say&#305;s&#305;na g&#246;re k&#305;rpar.&lt;/p&gt;
+
+&lt;p&gt;NOT: Limitsiz uzunluk i&#231;in bu parametreyi s&#305;f&#305;ra (0) ayarlay&#305;n.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pathbits_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;Forum Yolu Ba&#351;l&#305;k Par&#231;alar&#305;n&#305; Belirleme&lt;/b&gt;&lt;br /&gt;
+
+URL'^ler i&#231;erisinde forum b&#246;l&#252;mlerinin &lt;i&gt;[forum_path]&lt;/i&gt; nas&#305;l g&#246;r&#252;nece&#287;ini belirleyin.&lt;/p&gt;
+
+&lt;p&gt;NOT: [forum_id] veya [forum_title] veya ikisi birden - E&#287;er ayn&#305; isimde iki tane forum isminiz varsa [forum_id] ekleyerek olas&#305; &#231;ak&#305;&#351;malar&#305;n &#246;n&#252;ne ge&#231;ersiniz. &lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+f[forum_id]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_forum_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Forum URL'lerini Yeniden Yaz?&lt;/b&gt;&lt;br /&gt;
+
+Evet se&#231;erseniz forum url'leri yeniden yaz&#305;lacakt&#305;r.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Forum Url Format&#305;&lt;/b&gt;&lt;br /&gt; Birden fazla virtuel [forum_path] veya sadece forum ismi (veya id) kullanarak [forum_title] veya [forum_id] yaratarak&lt;/p&gt; &lt;p&gt;NOT: E&#287;er ayn&#305; isimde iki forumunuz varsa [forum_id] kullanarak olas&#305; &#231;ak&#305;&#351;malar&#305;n &#246;n&#252;ne ge&#231;ersiniz. &lt;/p&gt; &lt;p&gt; &#214;rnek:&lt;br /&gt; f[forum_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Forum Indeks Sayfas&#305; URL Format&#305;&lt;/b&gt;&lt;br /&gt;
+
+&#304;ndeks UrRLlerinin herbir forum i&#231;in , &#231;e&#351;itli sayfalarda nas&#305;l g&#246;r&#252;nece&#287;ini belirleyiniz &lt;/p&gt;
+
+&lt;p&gt;NOT: e&#287;er ayn&#305; isimde 2 forumunuz var ise  [forum_id] kullanarak olas&#305; &#231;ak&#305;&#351;malar&#305;n &#246;n&#252;ne ge&#231;ersiniz&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+f[forum_id]-[forum_page].html&lt;br /&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_ann_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Duyuru URL'lerini Yeniden Yaz?&lt;/b&gt;&lt;br /&gt;
+
+Evet'i se&#231;erseniz duyuru url'leri yeniden yaz&#305;lacakt&#305;r.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>ann_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&#214;zel Duyuru Format&#305;&lt;/b&gt;&lt;br /&gt;
+
+Bir duyuru url format&#305; se&#231;in veya tan&#305;mlanm&#305;&#351; &#231;al&#305;&#351;ma alan&#305; i&#231;erisinde yeni bir yap&#305; yarat&#305;n&lt;/p&gt;
+
+&lt;p&gt;NOT: Duyurular adminler veya moderat&#246;rler taraf&#305;ndan girildikten sonra, ayn&#305; ba&#351;l&#305;&#287;a sahip 2 duyuru olmas&#305; gibi bir risk az da olsa vard&#305;r. Buy&#252;zden, genellikle ayarlarda [announcement_id] kullanmamak g&#252;venlidir.&lt;/p&gt;
+
+&lt;p&gt;NOT:Duyurular forumla ili&#351;kilendirildikten sonra, [forum_id] veya [forum_title] &#351;eklinde bir forum tan&#305;mlay&#305;c&#305; eklemek ZORUNDAs&#305;n&#305;z. ayn&#305; zamanda [announcement_id] veya [announcement_title] de&#287;i&#351;kenlerinden herbirini eklemek ZORUNDAs&#305;n&#305;z &lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+f[forum_id]-announcement[announcement_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>ann_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&#199;e&#351;itli Duyurular URL Format&#305;&lt;/b&gt;&lt;br /&gt;
+
+'B&#252;t&#252;n Duyurular' sayfa URL format&#305;n&#305; se&#231;in veya tan&#305;mlanm&#305;&#351; &#231;al&#305;&#351;ma alan&#305; i&#231;erisinde yeni bir yap&#305; yarat&#305;n&lt;/p&gt;
+
+&lt;p&gt;NOT: Duyurular forumla ili&#351;kilendirildikten sonra , [forum_id] veya [forum_title] &#351;eklinde bir forum tan&#305;mlay&#305;c&#305; eklemek ZORUNDAs&#305;n&#305;z. [announcement_id]veya[announcement_title] de&#287;i&#351;kenini ekleMEyiniz. &lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+f[forum_id]-announcements.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_thread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Konu URL'lerini Yeniden Yaz?&lt;/b&gt;&lt;br /&gt;
+
+Evet'i se&#231;erseniz Konu url'leri yeniden yaz&#305;lacakt&#305;r.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Konu URL Format&#305;&lt;/b&gt;&lt;br /&gt;
+
+Bir konu url format&#305; se&#231;in veya tan&#305;mlanm&#305;&#351; &#231;al&#305;&#351;ma alan&#305; i&#231;erisinde yeni bir yap&#305; yarat&#305;n&lt;/p&gt;
+
+&lt;p&gt;NOT: Konular ayn&#305; ba&#351;l&#305;klara sahip olabilecekken URL format&#305;n&#305;z&#305;n i&#231;ine daima [thread_id]  eklemelisiniz&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+t[thread_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Birden Fazla Sayfal&#305; Konu Format&#305;&lt;/b&gt;&lt;br /&gt;
+
+Birden fazla sayfaya sahip konular&#305;n url format&#305;&lt;/p&gt;
+
+&lt;p&gt;NOT: Her zaman [thread_id] Urllerinizin i&#231;inde yer almak zorundad&#305;r. &#199;&#252;nk&#252; konular birden fazla defa ayn&#305; isme sahip olabilir. &lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+t[thread_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;GARS Makale G&#246;r&#252;nt&#252;leme Format&#305; (garpg)&lt;/b&gt;&lt;br /&gt;
+
+&lt;a href=&quot;http://www.thevbgeek.com/&quot;&gt;GARS&lt;/a&gt; Makalelerinde birden fazla sahip makalelerin sayfas&#305;n&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;NOT: Her zaman [thread_id] Urllerinizin i&#231;inde yer almak zorundad&#305;r. &#199;&#252;nk&#252; konular birden fazla defa ayn&#305; isme sahip olabilir. &lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+t[thread_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_lpformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Konudaki Son Mesaj' URL Format&#305;&lt;br /&gt;
+
+&lt;/b&gt;Konulardaki son mesaja linklerin format&#305;n&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;NOT: Kullan&#305;c&#305;y&#305; gitmek istedi&#287;i mesaja anchor format&#305;yla y&#246;nlendirmektir (i.e. thead_title.html#post-xxxx)&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+t[thread_id]-last-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gpformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Belirli Posta Gidin' Url Format&#305;&lt;br /&gt;
+
+&lt;/b&gt;'Belirli Posta Gidin' url format&#305;n&#305;n nas&#305;l g&#246;r&#252;nece&#287;ini belirleyin.&lt;/p&gt;
+
+&lt;p&gt;NOT: Kullan&#305;c&#305;y&#305; gitmek istedi&#287;i mesaja anchor format&#305;yla y&#246;nlendirmektir (i.e. thead_title.html#post-xxxx)&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+t[thread_id]-post[post_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_gppformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&#199;oklu Sayfalarda Posta Git Url Format&#305;&lt;br /&gt;
+
+&lt;/b&gt;&#199;oklu Sayfalarda Posta Git Url Format&#305;n&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;NOT: Kullan&#305;c&#305;y&#305; ghitmek istedi&#287;i mesaja anchor format&#305;yla y&#246;nlendirmektir (i.e. thead_title.html#post-xxxx)&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+t[thread_id]-post[post_id]-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_ptformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'&#214;nceki Konu' URL Format&#305;&lt;br /&gt;
+
+&lt;/b&gt;&#214;nceki konular&#305;n URL Format&#305;n&#305; belirleyin. Bunlar sayfan&#305;n alt&#305;nda yer al&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+t[thread_id]-prev-thread.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_ntformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Sonraki Konu' URL Format&#305;&lt;br /&gt;
+
+&lt;/b&gt;Sonraki konular&#305;n URL Format&#305;n&#305; belirleyin. Bunlar sayfan&#305;n alt&#305;nda yer al&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+t[thread_id]-next-thread.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_pthread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Yazd&#305;r&#305;labilir Sayfa URL'leri?&lt;/b&gt;&lt;br /&gt;
+
+Yaz&#305;d&#305;rabilir (printthread.php) konu URL'lerinin yaz&#305;lmas&#305;n&#305; istiyorsan&#305;z Evet se&#231;in.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_rel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Yazd&#305;r&#305;labilir konulara rel=&quot;nofollow&quot; ekle?&lt;/b&gt;&lt;br /&gt;
+
+Bu opsiyonu a&#231;arak konular&#305;n yazd&#305;r&#305;labilir halinin arama motorlar&#305; taraf&#305;ndan indexlenmesinin &#246;n&#252;ne ge&#231;ersiniz. Bu &#351;ekilde ayn&#305; i&#231;eri&#287;e fazla urlden ula&#351;&#305;m&#305; engeller ve muhtemel cezalar&#305;n &#246;n&#252;ne ge&#231;ersiniz.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Yazd&#305;r&#305;labilir' URL Format&#305;&lt;br /&gt;
+
+&lt;/b&gt;Yazd&#305;r&#305;labilir URL Format&#305;n&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+t[thread_id]-print.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pthread_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&#199;oklu Sayfa Yazd&#305;r&#305;labilir Url Format&#305;&lt;/b&gt;&lt;br /&gt;
+
+&#199;oklu Sayfa Yazd&#305;r&#305;labilir URL Format&#305;n&#305; belirleyin&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+t[thread_id]-print-[thread_page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_post_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Showpost URLlerini Yeniden Yaz?&lt;/b&gt;&lt;br /&gt;
+
+Bu opsiyonu a&#231;arak konu url'lerinin yeniden yaz&#305;lmas&#305;n&#305; sa&#287;layabilirsiniz.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>post_rel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Showpost linklerine rel=&quot;nofollow&quot; ekle?&lt;/b&gt;&lt;br /&gt;
+
+Bu opsiyonu a&#231;arak konular&#305;n yazd&#305;r&#305;labilir halinin arama motorlar&#305; taraf&#305;ndan indexlenmesinin &#246;n&#252;ne ge&#231;ersiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Ak&#305;ll&#305; rel=&quot;nofollow&quot;?&lt;/b&gt;&lt;br /&gt;
+
+Bu opsiyon arama motorlar&#305;n&#305; showpost linklerinde opsiyonlar yaratarak indexlenmesinin &#246;n&#252;ne ge&#231;er. E&#287;er sayfada (1) post varsa, rel=&quot;nofollow&quot; eklenecektir (hem showpost &amp; showthread ayn&#305; i&#231;eri&#287;e sahip oldu&#287;u i&#231;in). E&#287;er iki (2) veya daha &#231;ok mesaj, rel=&quot;nofollow&quot; eklenmeyecektir, buda arama motorlar&#305;n&#305;n showpost linklerini takip etmesine sebep olacakt&#305;r.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>smart</name>
+		<value>Ak&#305;ll&#305;</value>
+	</message>
+	<message>
+		<name>post_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Showpost' URL Format&#305;&lt;br /&gt;
+
+&lt;/b&gt;Showpost URL Format&#305;n&#305; Belirleyin.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+[post_id]-[post_count]-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_poll</name>
+		<value>Anket URLleri</value>
+	</message>
+	<message>
+		<name>rw_poll_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Anket URL'lerini yaz?&lt;/b&gt;&lt;br /&gt;
+
+Evet se&#231;erek Anket URL'lerini yeniden yazabilirsiniz..&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>poll_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Anket URL Format&#305;&lt;/b&gt;&lt;br /&gt;
+
+Anket Url Format&#305;n&#305;z&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;NOT: [poll_id]'yi urllerinizin i&#231;inde bulundurman&#305;z&#305; tavsiye ederiz.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+p[poll_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_memb_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Kullan&#305;c&#305; Profil Url'lerini Yeniden Yaz?&lt;/b&gt;&lt;br /&gt;
+
+Evet se&#231;erek Kullan&#305;c&#305; Profil Url'lerini Yeniden Yazars&#305;n&#305;z.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Kullan&#305;c&#305; Profil Url Format&#305;&lt;/b&gt;&lt;br /&gt;
+
+Kullan&#305;c&#305; Profil Url'lerini Belirleyin&lt;/p&gt;
+
+&lt;p&gt;NOT: vBulletin ayn&#305; kullan&#305;c&#305; ismine m&#252;sade etmedi&#287;inden dolay&#305; [user_id] kullanma zorunlulu&#287;unuz yoktur.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_mlist_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&#220;ye Listesi URL'lerini Yeniden Yaz?&lt;/b&gt;&lt;br /&gt;
+
+Evet se&#231;erseniz &#220;ye Listesi URL'lerini Yeniden Yazabilirsiniz.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&#220;ye Listesi URL&lt;/b&gt; &lt;b&gt;Format&#305;&lt;/b&gt;&lt;br /&gt;
+
+&#220;ye Listesi Urllerinin nas&#305;l yazaca&#287;&#305;n&#305;z&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+users.html&lt;br /&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_pformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&#199;oklu Sayfa &#220;ye Listesi Url Format&#305;&lt;/b&gt;&lt;br /&gt;
+
+&#199;oklu Sayfa &#220;ye Listesi Url'lerini nas&#305;l yazaca&#287;&#305;n&#305;z&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+users-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mlist_lformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&#220;ye Listesi Ba&#351;harfe G&#246;re Format&#305;&lt;/b&gt;&lt;br /&gt;
+
+&#220;ye Listesi Ba&#351;harfe G&#246;re Url'lerini Belirleyin&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+users-[letter][page].html&lt;br /&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_avatar_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Avatar Url'lerini Yeniden Yaz?&lt;/b&gt;&lt;br /&gt;
+
+Evet Se&#231;erseniz Avatar Url'lerini Yeniden Yazabilirsiniz.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>avatar_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&#214;zel Avatar URL Format&#305;&lt;/b&gt;&lt;br /&gt;
+
+&#214;zel Avatar URL'lerinin &#351;eklini belirleyin.&lt;/p&gt;
+
+&lt;p&gt;NOT: &lt;b&gt;'avatars/'&lt;/b&gt; images klas&#246;r&#252;yle &#231;ak&#305;&#351;mamas&#305; i&#231;in adrese otomatik olarak eklenecektir.&lt;/p&gt;
+
+&lt;p&gt;NOT: vBulletin ayn&#305; kullan&#305;c&#305; ismine m&#252;sade etmedi&#287;inden dolay&#305; [user_id] kullanma zorunlulu&#287;unuz yoktur.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_navbul_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Nav Bullet Image URL'lerini yeniden yaz?&lt;/b&gt;&lt;br /&gt;
+
+Evet se&#231;erseniz Nav Bullet Image URL'lerini yeniden yazabilirsiniz.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>navbul_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Forum Nav Bullet Resim URL'leri &lt;/b&gt;&lt;br /&gt;
+
+Forum Nav Bullet Resim URL'lerin nas&#305;l g&#246;r&#252;nece&#287;ini belirleyin.&lt;/p&gt;
+
+&lt;p&gt;NOT: &lt;b&gt;'images/'&lt;/b&gt; images klas&#246;r&#252;yle &#231;ak&#305;&#351;mamas&#305; i&#231;in adrese otomatik olarak eklenecektir.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+f[forum_id].gif&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>navbul_tformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Konu Nav Bullet Resim URL'leri &lt;/b&gt;&lt;br /&gt;
+
+Konu Nav Bullet Resim URL'lerinin nas&#305;l g&#246;r&#252;nece&#287;ini belirleyin&lt;/p&gt;
+
+&lt;p&gt;NOT: &lt;b&gt;'images/'&lt;/b&gt;  images klas&#246;r&#252;yle &#231;ak&#305;&#351;mamas&#305; i&#231;in adrese otomatik olarak eklenecektir.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+t[thread_id].gif&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_attach_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Eklenti URL'lerini Yeniden Yaz?&lt;/b&gt;&lt;br /&gt;
+
+Evet se&#231;erseniz Eklenti URL'lerini Yeniden Yazabilirsiniz.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attach_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Eklenti URL Format&#305; &lt;/b&gt;&lt;br /&gt;
+
+Google ve di&#287;er arama motorlar&#305; resim dosyalar&#305;n&#305; (.gif, .jpg, .png, etc.) ve Word d&#246;k&#252;manlar&#305; (.doc) and Adobe PDF d&#246;k&#252;manlar&#305; (.pdf) gibi dosyalar&#305; indexler. &#214;zel bir y&#246;ntemle yeni bir de&#287;er yarat&#305;larak [original_filename] eklentilerin orijinal ismi ve uzant&#305;lar&#305; url adresinin i&#231;ine ekleniyor.&lt;/p&gt;
+
+&lt;p&gt;NOT: &lt;b&gt;'attachments/'&lt;/b&gt;  images klas&#246;r&#252;yle &#231;ak&#305;&#351;mamas&#305; i&#231;in adrese otomatik olarak eklenecektir..&lt;/p&gt;
+
+&lt;p&gt;NOT: Kullan&#305;c&#305;lar&#305;n ayn&#305; isimli dosya g&#246;nderme ihtimali oldu&#287;undan dolay&#305; [attachment_id] URL i&#231;erisinde bulundurman&#305;z&#305; tavsiye ederiz.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+[attachment_id]-[original_filename]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>crrs_forum</name>
+		<value>vBSEO '&#214;zel Y&#246;nlendirme Forumlar&#305;</value>
+	</message>
+	<message>
+		<name>crrs_def</name>
+		<value>&lt;b&gt;&#214;zel Y&#246;nlendirme Forumlar&#305;&lt;/b&gt;&lt;span class=&quot;beta&quot;&gt;BETA&lt;/span&gt;&lt;br /&gt;
+Kulland&#305;&#287;&#305;n&#305;z &#246;zel modifikasyonlar i&#231;in &#246;zel yeniden yazma format&#305; belirleyebilirsiniz :</value>
+	</message>
+	<message>
+		<name>crrs_desc</name>
+		<value>Her iki taraf (sa&#287; ve sol) s&#305;radan ayarlard&#305;r. Ilk b&#246;l&#252;m orijinal &lt;b&gt;URL&lt;/b&gt;'yi i&#231;erir , buna kar&#351;&#305;n ikinci b&#246;l&#252;m &lt;b&gt;yeniden yaz&#305;lan&lt;/b&gt; URL'yi i&#231;erir.
+
+&lt;p&gt;NOT: vBSEO Tak&#305;m&#305; bu &#246;zellik i&#231;in destek VERMEYECEKT&#304;R. Bu b&#246;l&#252;m&#252; ger&#231;ekten ne yapt&#305;&#287;&#305;n&#305;z&#305; biliyorsan&#305;z kullan&#305;n. Daha fazla bilgi i&#231;in vBSEO Forumlar&#305;n&#305; ziyaret ediniz. &lt;a href=&quot;http://www.vbseo.com&quot; target=&quot;_blank&quot;&gt;http://www.vbseo.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;NOT: Sat&#305;rlar&#305;n ba&#351;&#305;na iki slash (//) koyarak sat&#305;r&#305; deaktif edebilirsiniz . Ayarlar&#305; kaydetti&#287;inizde yazd&#305;&#287;&#305;n&#305;z kurallarda herhangi bir hata varsa otomatik deaktif olacakt&#305;r.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&#214;rnekler:&lt;/b&gt;&lt;br /&gt;
+'article\.php\?id=(\d+)'=&gt;'showarticle-$1.html'&lt;br /&gt;
+'browse\.php\?page=(\d+)'=&gt;'listing-$1.htm' &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metakw_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'META KEYWORDS' leri i&#231;erikle de&#287;i&#351;tir&lt;/b&gt;?&lt;br /&gt;
+
+'META KEYWORDS' leri i&#231;erikle de&#287;i&#351;tirebilirsiniz. forum , konu , post ve kullan&#305;c&#305; profillerini etkiler. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bookmark_threadpost</name>
+		<value>Ikonlar&#305; hem konularda hem mesajlarda g&#246;ster</value>
+	</message>
+	<message>
+		<name>bookmark_custom</name>
+		<value>&#246;zel ekle</value>
+	</message>
+	<message>
+		<name>bookmark_services_desc</name>
+		<value>&lt;p&gt;Di&#287;er Sosyal Link Payla&#351;&#305;m Servislerini a&#351;a&#287;&#305;dan belirleyin:&lt;br /&gt;
+
+&lt;i&gt;Link Payla&#351;&#305;m URL,Ikon URL,&quot;Link Payla&#351;&#305;m Konu&quot; Text,&quot;Link Payla&#351;&#305;m Mesaj&quot; Text&lt;/i&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bookmark_none</name>
+		<value>Ikonlar&#305; g&#246;sterme</value>
+	</message>
+	<message>
+		<name>bookmark_thread</name>
+		<value>Ikonlar&#305; sadece Konularda g&#246;ster</value>
+	</message>
+	<message>
+		<name>metadesc_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'META DESCRIPTION' I&#231;eri&#287;ini De&#287;i&#351;tir?&lt;/b&gt;&lt;br /&gt;
+
+'META DESCRIPTION' I&#231;eri&#287;ini konunun ilk kelimeleri ile de&#287;i&#351;tirir.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metadesc_len_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'META DESCRIPTION' I&#231;eri&#287;ini De&#287;i&#351;tirme Uzunlu&#287;u&lt;/b&gt;&lt;br /&gt;
+
+Normalde 150 ~ 200 karakter aras&#305; bir uzunluk i&#231;erir.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>nextprev_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'&#214;nceki/Sonraki' konu adreslerini de&#287;i&#351;tir?&lt;/b&gt;&lt;br /&gt;
+
+&#214;nceki/Sonraki konu adreslerini konu isimleri ile de&#287;i&#351;tirir. &lt;i&gt;Not: Bu opsiyon 2 query ekler.&lt;/i&gt; &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>dir_links_threads_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Misafirlere Direk Konu Linkleri? &lt;/b&gt;&lt;br /&gt;
+
+Bu opsiyon okunmam&#305;&#351; ilk mesaj linkini misafirler i&#231;in de&#287;i&#351;tirerek direk konu linkiyle de&#287;i&#351;tirir.&lt;br /&gt;
+
+Bu ayn&#305; zmanda Rss ve Rss2 yay&#305;n&#305;n&#305;zdaki Yeni Konu &#246;zelli&#287;inide siler.&lt;br /&gt;
+
+&lt;p&gt;NOT: Bu &#246;zellik misafirler i&#231;in baz&#305; &#246;zellikleri deaktif eder ancak bu SEO a&#231;&#305;s&#305;ndan g&#246;ze al&#305;nmas&#305; gereken bir risktir.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bookmark_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Link Payla&#351;&#305;m ikonlar&#305;n&#305; g&#246;ster&lt;/b&gt;&lt;br /&gt;
+
+Sosyal Link Payla&#351;&#305;m &#231;ok geli&#351;mi&#351; bir i&#231;erik payla&#351;ma sistemidir. Bu sistem sayesinde i&#231;eri&#287;inizi ba&#351;ka siteler ile payla&#351;arak sitenize gelen trafi&#287;i y&#252;ksek bir oranda artt&#305;rabilirsiniz. Forum sayfalar&#305;n&#305;zda Sosyal Link Payla&#351;&#305;m ikonlar&#305;n&#305; g&#246;stermek istiyorsan&#305;z aktif ediniz.
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Sosyal Link Payla&#351;&#305;m &#304;kon G&#246;sterme Ayarlar&#305;:&lt;/i&gt;&lt;/b&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&#304;konlar&#305; hem mesajlarda hem de konularda g&#246;ster&lt;/b&gt;&lt;br /&gt;
+
+&#304;konlar&#305; her iki taraftada g&#246;stermek i&#231;in bu &#246;zelli&#287;i se&#231;iniz. Unutmay&#305;n konular i&#231;in sosyal link payla&#351;&#305;m ikonlar&#305; &#252;st taraftaki Linkback a&#231;&#305;l&#305;r men&#252;s&#252;nde, mesajlarda ise her mesaj&#305;n sol alt k&#246;&#351;esinde g&#246;z&#252;kecektir.
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Sadece konularda ikonlar&#305; g&#246;ster&lt;/b&gt;&lt;br /&gt;
+
+E&#287;er sadece konular&#305;n sosyal link payla&#351;&#305;m sitelerinde payla&#351;&#305;lmas&#305;na izin vermek istiyorsan&#305;z bu &#246;zelli&#287;i se&#231;iniz. Konular i&#231;in sosyal link payla&#351;&#305;m ikonlar&#305; &#252;st taraftaki Linkback a&#231;&#305;l&#305;r men&#252;s&#252;nde g&#246;z&#252;k&#252;r
+
+&lt;/p&gt;
+
+
+
+&lt;p&gt;* &amp;lt;!--VBSEO_BOOKMARKS--&amp;gt; kodunu postbit (veya postbit_legacy) temalar&#305;nda istedi&#287;iniz bir yere ekleyerek ikonlar&#305;n kendi istedi&#287;iniz yerde g&#246;z&#252;kmesini sa&#287;layabilirsiniz. Normalde, mesajlar i&#231;in sosyal link payla&#351;&#305;m ikonlar&#305; mesajlar&#305;n sol alt k&#305;sm&#305;nda g&#246;z&#252;k&#252;r.
+
+&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>bookmark_thread_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Link Payla&#351;&#305;m ikonlar&#305;n&#305; konularda g&#246;ster&lt;/b&gt;&lt;br /&gt;
+
+Konularda sosyal link payla&#351;&#305;m ikonlar&#305;n&#305; g&#246;stermek i&#231;in &quot;evet&quot; &#351;&#305;kk&#305;n&#305; se&#231;iniz.
+
+&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>bookmark_post_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Link Payla&#351;&#305;m ikonlar&#305;n&#305; mesajlarda g&#246;ster&lt;/b&gt;&lt;br /&gt;
+
+Mesajlarda sosyal link payla&#351;&#305;m ikonlar&#305;n&#305; g&#246;stermek i&#231;in &quot;evet&quot; &#351;&#305;kk&#305;n&#305; se&#231;iniz.
+
+&lt;/p&gt;
+
+		</value>
+	</message>
+	<message>
+		<name>bookmark</name>
+		<value>Sosyal Link Payla&#351;&#305;m&#305;</value>
+	</message>
+	<message>
+		<name>flinks_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Forum Ba&#287;lant&#305;lar&#305;n&#305;' hedef URL'lere giden direkt ba&#287;lant&#305;lar ile de&#287;i&#351;tir? &lt;/b&gt;&lt;br /&gt;
+
+'Forum Ba&#287;lant&#305;lar&#305;n&#305;z&#305;' direkt hedef URL'leri ile de&#287;i&#351;tirmek i&#231;in bu &#246;zelli&#287;i aktif ediniz. &lt;/p&gt;
+
+&lt;p&gt;NOT: Bu Forum Ba&#287;lant&#305;lar&#305; Admin Panelinde Forum Y&#246;netim k&#305;sm&#305;nda hedef URL olarak girdi&#287;iniz ve genellikle redirect edilen ba&#287;lant&#305;lard&#305;r.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>addttl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Konu ba&#351;l&#305;klar&#305;n&#305; Showthread Ba&#287;lant&#305; Anchor Text'lerine ekle?&lt;/b&gt; &lt;br /&gt;
+
+Bu &#246;zelli&#287;i URL'lerinize konu ba&#351;l&#305;klar&#305;n&#305; ekleyerek, anahtar s&#246;zc&#252;k zenginli&#287;i yaratmak i&#231;in aktif ediniz.&lt;/p&gt;
+
+&lt;p&gt;NOT: Bu &#246;zellik sadece vB 3.5.x veya &#252;st&#252; s&#252;r&#252;mlerde &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Konu Ba&#351;l&#305;klar&#305; Ekleme Ayarlar&#305;:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Konu ba&#351;l&#305;klar&#305;n&#305; ekleme&lt;/b&gt;&lt;br /&gt;
+
+vB'nin orjinal i&#351;levselli&#287;ini koru. Mesajlardaki veya konulardaki ba&#287;lant&#305;lar d&#252;zenlenmeyecek.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Konu ba&#351;l&#305;klar&#305;n&#305; &quot;a&#231;&#305;l&#305;r metin&quot; olarak ekle&lt;/b&gt;&lt;br /&gt;
+
+This option adds the target thread title to the 'title' (popup) tag of every link that points to a showthread page.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Konu ba&#351;l&#305;klar&#305;n&#305; &quot;orijinal link ve konu ismi&quot; olarak ekle&lt;/b&gt;&lt;br /&gt;
+
+1 ve 2 nolu opsiyonlar&#305;n birle&#351;imidir. Hem orijinal linki b&#305;rak&#305;r hemde konu ba&#351;l&#305;&#287;&#305;n&#305; ekler&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Konu Ba&#351;l&#305;&#287;&#305;n&#305; Anchor ile De&#287;i&#351;tir&lt;/b&gt;&lt;br /&gt;
+
+Herhangi bir showthread sayfas&#305;na y&#246;nlenmi&#351; her linki konu ismiyle de&#287;i&#351;tirir&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;i&gt;*&lt;/i&gt;&lt;/b&gt;&lt;i&gt;Gizli forumlara olan linkler gizlili&#287;i korumak ad&#305;na orijinal vBulletin url 'showthread.php?t=xxxx' format&#305;nda kal&#305;cakt&#305;r&lt;/i&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>addttlext_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sayfa Ba&#351;l&#305;klar&#305;n&#305; D&#305;&#351; Ba&#287;lant&#305; Anchor Text'lerine ekle?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YENI!&lt;/span&gt;&lt;br /&gt;D&#305;&#351; domainlere ba&#287;lant&#305; sa&#287;layan URL'lere sayfa ba&#351;l&#305;klar&#305;n&#305; ekleyerek anahtar kelime bak&#305;m&#305;ndan zengin libkler yaratmak i&#231;in bu se&#231;ene&#287;i aktif ediniz. Yeni linkler postland&#305;&#287;&#305;nda ve sayfa ba&#351;l&#305;klar&#305; bu linklerden a&#231;&#305;ld&#305;&#287;&#305;nda vBSEO d&#305;&#351; sitelere ba&#287;lanacakt&#305;r.&lt;/p&gt;&lt;p&gt;Not: Bu se&#231;enek sadece vB 3.5.x veya &#252;st&#252; ile &#231;al&#305;&#351;&#305;r.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attl_1</name>
+		<value>Konu isimlerini EKLEME</value>
+	</message>
+	<message>
+		<name>attl_2</name>
+		<value>Konu ba&#351;l&#305;klar&#305;n&#305; &quot;a&#231;&#305;l&#305;r metin&quot; olarak ekle</value>
+	</message>
+	<message>
+		<name>attl_3</name>
+		<value>Konu ba&#351;l&#305;klar&#305;n&#305; &quot;orjinal-metin (konu ba&#351;l&#305;&#287;&#305;)&quot; olarak ekle</value>
+	</message>
+	<message>
+		<name>attl_4</name>
+		<value>Orjinal Anchor text ile de&#287;i&#351;tir</value>
+	</message>
+	<message>
+		<name>addttlp_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Konu ba&#351;l&#305;klar&#305;n&#305; Showpost Ba&#287;lant&#305; Anchor Text'lerine ekle?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt;&lt;br /&gt;Yukardaki ba&#287;lant&#305; de&#287;i&#351;tirmeler ile ayn&#305;; fakat bu &#246;zellik showpost ba&#287;lant&#305;lar&#305; i&#231;in ge&#231;erli.&lt;/p&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>remstop_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Stopword'leri URL'lerden kald&#305;r&lt;/b&gt;&lt;br /&gt;
+
+URL'lerden &quot;Stopwordleri&quot; kald&#305;rmak, insanlar aramalar&#305;nda genel kelimeler kulland&#305;&#287;&#305;nda baz&#305; arama motorlar&#305;n&#305;n filtrelemesiyle &#246;zel aramalara ilgiyi artt&#305;racakt&#305;r.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;URL'lerden Ak&#305;ll&#305; Stopword Kald&#305;rma?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YENI!&lt;/span&gt;&lt;br /&gt;
+
+Bu se&#231;ene&#287;i aktif etmek URL'lerdeki stopwordleri filtreler &lt;b&gt;ONLY&lt;/b&gt; ba&#351;l&#305;klar belirlenmi&#351; uzunluktan fazla oldu&#287;u zaman '&lt;a href=&quot;#url_general&quot;&gt;URL Uzunlu&#287;unu K&#305;s&#305;tla&lt;/a&gt;' setting.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>stopdef_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Stopword'leri tan&#305;mla&lt;/b&gt;&lt;br /&gt;
+
+Yukardaki &#246;zellik aktif edildi&#287;inde, burada belirleyece&#287;iniz kelimeler URL'lere dahil edilmeyecektir&lt;/p&gt;
+
+&lt;p&gt;P&#220;F: &lt;a href=&quot;http://www.ranks.nl/stopwords/turkish.html&quot; target=&quot;_blank&quot;&gt;http://www.ranks.nl/stopwords/&lt;/a&gt; adresinden &#231;e&#351;itli diller i&#231;in haz&#305;rlanm&#305;&#351; genel stopword kelimelerini bulabilirsiniz.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acronym_def_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Akronimleri Belirle&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;G&#220;NCELLEND&#304;!&lt;/span&gt; &lt;br /&gt;
+
+Her sat&#305;rda bir tane olmak &#252;zere Akronimleri belirleyin.Akronimler yukar&#305;da belirledi&#287;iniz &#351;ekilde g&#246;z&#252;kecektir
+
+&lt;p&gt;NOT: Acronymler b&#252;y&#252;k k&#252;&#231;&#252;k harfe duyarl&#305; de&#287;ildir.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnekler:&lt;br /&gt;
+
+'seo'=&gt;'Search Engine Optimization'&lt;br /&gt;
+
+'pr'=&gt;'Page Ranking'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acronym_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;K&#305;saltma(Akronim) Geni&#351;lemesi&lt;/b&gt;&lt;br /&gt;
+
+Bu &#246;zellik Arama Motorlar&#305; i&#231;in uyumlulu&#287;u artt&#305;r&#305;r. Sitenizde &#231;ok kullan&#305;lan kelimeleri acronimlere &#231;evirir. &lt;/p&gt;
+
+&lt;p&gt;D&#252;zg&#252;ncene belirlenmi&#351; akronimler sitenizin kullan&#305;m&#305;n&#305; artt&#305;racakt&#305;r. Ayr&#305;ca sitenizin anahtar kelime uyumlulu&#287;unu artt&#305;racak ve sitenizin kullan&#305;m&#305;n&#305; kolayla&#351;t&#305;r&#305;rken geli&#351;tirilmi&#351; SEO opsiyonlar&#305; sunacakt&#305;r
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Akronim Ayarlar&#305;:&lt;/i&gt;&lt;/b&gt;&lt;br /&gt;
+
+&lt;p&gt;&lt;b&gt;Geli&#351;tirilmi&#351; Akronim Ekleme&lt;/b&gt;&lt;br /&gt;
+
+Akronim kullan&#305;lmayacakt&#305;r.
+
+&lt;p&gt;&lt;b&gt;Akronimleri belirlenmi&#351; kelime ile de&#287;i&#351;tir&lt;/b&gt;&lt;br /&gt;
+
+Bu ayar a&#351;a&#287;&#305;da belirleyece&#287;iniz kelimeleri belirleyece&#287;iniz kar&#351;&#305;tlar&#305;yla de&#287;i&#351;tirir
+
+&lt;p&gt;&lt;b&gt;Akronimlere 'acronym' html tagi ekle&lt;/b&gt;&lt;br /&gt;
+
+Her akronimin etraf&#305;na &lt;a href=&quot;http://www.w3.org/TR/html401/struct/text.html#edef-ACRONYM&quot; target=&quot;_blank&quot;&gt;'acronym' html tag&lt;/a&gt;'i ekler.
+
+&lt;p&gt;&lt;b&gt;Akronimlere 'abbr' html tagi ekle&lt;/b&gt;&lt;br /&gt;
+
+Her akronimin etraf&#305;na  &lt;a href=&quot;http://www.w3.org/TR/html4/struct/text.html#edef-ABBR&quot; target=&quot;_blank&quot;&gt;'abbr' html tag&lt;/a&gt;'i ekler.</value>
+	</message>
+	<message>
+		<name>acro_opt1</name>
+		<value>Geli&#351;tirilmi&#351; Akronim Ekleme</value>
+	</message>
+	<message>
+		<name>acro_opt2</name>
+		<value>Akronimleri belirlenmi&#351; kelime ile de&#287;i&#351;tir</value>
+	</message>
+	<message>
+		<name>acro_opt3</name>
+		<value>Akronimlere 'acronym' html tagi ekle</value>
+	</message>
+	<message>
+		<name>acro_opt4</name>
+		<value>Akronimlere 'abbr' html tagi ekle</value>
+	</message>
+	<message>
+		<name>acro_url_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Akronim Geli&#351;irmesini URL'lere Ekle?&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;G&#220;NCELLEND&#304;!&lt;/span&gt; &lt;br /&gt;
+
+URL'ler i&#231;erisindeki kelimelerin Akronimlerle de&#287;i&#351;mesini istiyorsan&#305;z eveti se&#231;in.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_content_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Akronim Geli&#351;tirmesini sadece &#304;&#231;erik k&#305;sm&#305;nda kullan?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt;
+
+Evet se&#231;erek sadece i&#231;eri&#287;inizin yer ald&#305;&#287;&#305; yerlerde Akronim geli&#351;tirmesini kullanabilirsiniz. Hay&#305;r se&#231;erseniz sitenizin her yerindeki bu geli&#351;me uygulanacakt&#305;r&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_guests_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Akronimler Sadece Misafirlere G&#246;z&#252;ks&#252;n&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; Akronimlerin sadece misafirlere g&#246;z&#252;kmesini istiyorsan&#305;z Evet se&#231;in&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_text_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Akronim Geli&#351;tirmesini T&#252;m Textlerde Kullan?&lt;/b&gt;&lt;br /&gt;
+
+Evet se&#231;erek Akronim Geli&#351;mesi t&#252;m textlerde kullan&#305;l&#305;r.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>will_replace</name>
+		<value>de&#287;i&#351;ece&#287;i</value>
+	</message>
+	<message>
+		<name>forceroot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Forum Root'unu Anasayfa Olarak Ayarla?&lt;/b&gt;&lt;br /&gt;
+
+Aktif edildi&#287;inde forum anasayfan&#305;za gelen t&#252;m ba&#287;lant&#305;lar 'vbroot/' a y&#246;nlendirilecektir. Aktif edilmezse forum anasayfa ba&#287;lant&#305;lar&#305;n&#305;z  vBulletin konfig&#252;rasyon ayarlar&#305;n&#305;zda belirledi&#287;iniz 'script ad&#305;' na gidecektir. Bu &#246;zellik, 'index.php' si y&#252;ksek SayfaS&#305;ras&#305;' na sahip kullan&#305;c&#305;lar&#305;n, bu sayfay&#305; anasayfa olarak kullanmas&#305;na olanak tan&#305;r.&lt;br /&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>hpalias_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Anasayfan&#305;n &#246;teki adlar&#305;n&#305; belirleyin&lt;/b&gt;&lt;br /&gt;
+
+      Bu &#246;zellik forum anasayfan&#305;zda PR (Google PageRank) de&#287;erinizi peki&#351;tirmek i&#231;indir. &#199;o&#287;u forum sayfas&#305; anasayfalar&#305;nda farkl&#305; bir PR de&#287;erine sahiptir (genellikle 3, &#246;rnek olarak:&lt;br /&gt;
+
+      &lt;br /&gt;
+
+      www.siteniz.com/forums/ (PR = A)&lt;br /&gt;
+
+      www.siteniz.com/forums/index.php (PR = B)&lt;br /&gt;
+
+      www.siteniz.com/forums/index.php? (PR = C)
+
+                                            &lt;p&gt;Bu olaya &quot;PageRank Leakage&quot; denir ve arama motorlar&#305;n&#305; bu sayfalar&#305;n &#231;o&#287;alt&#305;lm&#305;&#351; sayfalar oldu&#287;unu belirtir ve buda bir dezavantajd&#305;r.
+
+                                            &lt;p&gt;Buraya girece&#287;iniz dosya isimleri 301 y&#246;nlendirmesi ile admin panelinde belirledi&#287;iniz forum anasayfas&#305;na y&#246;nlenecektir. Sat&#305;r ba&#351;&#305;na (1) dosya ad&#305; ekleyiniz.
+
+                                            &lt;p&gt;&#214;rnekler:&lt;br /&gt;
+
+      index.php &lt;br /&gt;
+
+      index.php?&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>intrel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;T&#220;M linklere rel=&quot;nofollow&quot; ekle&lt;/b&gt;&lt;br /&gt;
+
+Benzer i&#231;erik olarak adland&#305;r&#305;labilecek her t&#252;rl&#252; i&#231;eri&#287;e rel=&quot;nofollow&quot; ekleyerek olas&#305; cezalar&#305;n &#246;n&#252;ne ge&#231;er. Bu opsiyonu a&#231;man&#305;z&#305; tavsiye ediyoruz.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>reldyn_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;T&#220;M Dinamik linklere rel=&quot;nofollow&quot; ekle&lt;/b&gt;&lt;br /&gt;
+
+Bu Konuya Cevap Yaz , &#199;abuk Cevap gibi dinamik linklere rel&quot;nofollow&quot; ekleyerer. Bu sayfalar&#305;n SEO bak&#305;m&#305;ndan i&#231;eri&#287;i olmad&#305;&#287;&#305; i&#231;in indexlenmemesi gerekmektedir.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>relmemb_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Postbit'te bulunan &#220;ye Profillerine rel=&quot;nofollow&quot; Ekle&lt;/b&gt;&lt;br /&gt;
+
+Postlarda bulunan &#252;ye profillerine rel=&quot;nofollow&quot; ekle.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>relmemb_home_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Forumhome'da bulunan &#220;ye Profillerine rel=&quot;nofollow&quot; Ekle&lt;/b&gt;&lt;br /&gt;
+
+ForumHome bulunan &#252;ye profillerine rel=&quot;nofollow&quot; ekle.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>extrel_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;T&#252;m D&#305;&#351; URL'lere rel=&quot;nofollow&quot; Ekle&lt;/b&gt;&lt;br /&gt;
+
+Ba&#351;ka domainlere giden t&#252;m URL'lere rel=&quot;nofollow&quot; ekle&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>extwhite_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&quot;Izin verilen&quot; D&#305;&#351; Domainler&lt;/b&gt;&lt;br /&gt;
+
+Yukar&#305;daki kurala uymas&#305;n&#305; istemedi&#287;iniz domainleri ekleyin. Bu domainlere giden linklere Rel='nofollow' eklenmeyecektir.&lt;/p&gt;
+
+&lt;p&gt;&#214;rner:&lt;br /&gt;
+
+google.com ('http://www' gerekli de&#287;il) &lt;br /&gt;
+
+groups.google.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>clean_html_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;HTML kodunu temizle&lt;/b&gt;&lt;br /&gt;
+
+Evet se&#231;erseniz html kodu i&#231;erisindeki gereksiz bo&#351;luklar temizlenecektir. Bu sayfa boyutlar&#305;n&#305; azalt&#305;ca&#287;&#305; i&#231;in hem sayfa a&#231;&#305;lma s&#252;resini h&#305;zland&#305;racak hemde bandwith kurtarman&#305;za yard&#305;m edecektir. &lt;/p&gt;
+
+&lt;p&gt;NOT: E&#287;er sayfan&#305;z&#305;n kodunda hata varsa bu &#246;zellik g&#246;r&#252;n&#252;m&#252;n bozulmas&#305;na yol a&#231;abilir&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rem_prev_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Misafirler i&#231;in konu &#246;nizlemeyi kapat?&lt;/b&gt; &lt;br /&gt;&lt;i&gt;Forumdisplay&lt;/i&gt; linkleri i&#231;erisinde linklerin &#252;zerine geldi&#287;inizde g&#246;z&#252;ken konu &#246;nizlemeyi kapat&#305;r. Bu anahtar kelime uyumlulu&#287;unu artt&#305;r&#305;r.&lt;/p&gt;
+
+&lt;p&gt;NOT: Konu &#214;nizleme &lt;i&gt;Forumdisplay&lt;/i&gt; linkleri i&#231;erisinde linklerin &#252;zerine geldi&#287;inizde g&#246;z&#252;k&#252;r.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_size_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;IMG'lar&#305;n boylar&#305;n&#305; belirle?&lt;/b&gt;&lt;br /&gt;
+
+Evet se&#231;erseniz IMG'lar&#305;n boylar&#305;n&#305; belirleyebilirsiniz.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_def_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Resim Boylar&#305; Belirleme&lt;/b&gt;&lt;br /&gt;
+
+vBulletin'in varsay&#305;lan templatelerinde resimler i&#231;in y&#252;kseklik ve geni&#351;lik belirlenmemi&#351;tir. T&#252;m resimlere boyut belirlemek bir&#231;ok browserda sayfa a&#231;&#305;l&#305;m s&#252;resini artt&#305;r&#305;r. Bu ayn&#305; zamanda resimlerin &#231;evresindeki anahtar kelimelerle uyumlulu&#287;u artt&#305;r&#305;r.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnekler:&lt;br /&gt;
+
+'thread.gif'=&gt;'20x20'&lt;br /&gt;
+
+'icon12.gif'=&gt;'16x16'&lt;/p&gt;
+
+&lt;p&gt;&#214;rnekler (ayn&#305; isimde ancak farkl&#305; klas&#246;rde yer alan resimler):&lt;br /&gt;
+
+'buttons/quote.gif' =&gt; '70x22'&lt;br /&gt;
+
+'editor/quote.gif' =&gt; '21x20'&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>img_note</name>
+		<value>Not : E&#287;er forum resimlerinin varsay&#305;lan boyutlar&#305;n&#305; de&#287;i&#351;tirdiyseniz o zaman bu &#246;zelli&#287;i Aktif hale getirmeden &#246;nce yeni boyutlar&#305; belirleyiniz. &#214;b&#252;r t&#252;rl&#252; varsay&#305;lan resimleriniz kalitesizle&#351;ir.</value>
+	</message>
+	<message>
+		<name>max_chars</name>
+		<value>150 - 200 karakter maksimum tavsiye edilir.</value>
+	</message>
+	<message>
+		<name>rights_reserved</name>
+		<value>T&#252;m Haknalar&#305; Sakl&#305;d&#305;r</value>
+	</message>
+	<message>
+		<name>rr_forumdisplay</name>
+		<value>forumdisplay sayfalar&#305;nda (ve)</value>
+	</message>
+	<message>
+		<name>rr_showthread</name>
+		<value>showthread sayfalar&#305;nda</value>
+	</message>
+	<message>
+		<name>rr_blog</name>
+		<value>blog sayfalar&#305;nda</value>
+	</message>
+	<message>
+		<name>save_key</name>
+		<value>Anahtar&#305; Kaydet</value>
+	</message>
+	<message>
+		<name>rrs_def</name>
+		<value>&lt;b&gt;Uyumlu De&#287;i&#351;kenleri Belirle&lt;/b&gt; &lt;br /&gt;
+
+3 taneye kadar dinamik forum de&#287;i&#351;kenleri belirleyin.</value>
+	</message>
+	<message>
+		<name>rrs_desc</name>
+		<value>Her set i&#231;in ilk belirledi&#287;iniz sadece forumdisplay ikinci belirledi&#287;iniz ise sadece showthread sayfalar&#305;nda &#231;&#305;kacakt&#305;r.
+
+&lt;p&gt;&lt;strong&gt;A&#351;a&#287;&#305;da belirtilen herhangi bir de&#287;eri de&#287;i&#351;kenleri olu&#351;turmak i&#231;in kullanabilirsiniz:&lt;/strong&gt;&lt;br /&gt;
+
+&lt;i&gt;[bb_title]&lt;/i&gt; - Forumunuzun Ismi&lt;br /&gt;
+
+&lt;i&gt;[default_keywords]&lt;/i&gt; - Admin Kontrol Panelde belirledi&#287;iniz varsay&#305;lan anahtar kelimeler&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;[forum_title]&lt;/i&gt; - Forumunuzun &#351;imdiki Ba&#351;l&#305;&#287;&#305;&lt;br /&gt;
+
+&lt;i&gt;[forum_description]&lt;/i&gt; - varsay&#305;lan forum b&#246;l&#252;m&#252;n&#252;n a&#231;&#305;klamas&#305;&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;[parent_forum_title]&lt;/i&gt; - Ana forumun ba&#351;l&#305;&#287;&#305;&lt;br /&gt;
+
+&lt;i&gt;[parent_forum_description]&lt;/i&gt; - Ana forum a&#231;&#305;klamas&#305;&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;[thread_title]&lt;/i&gt; - Konu ba&#351;l&#305;&#287;&#305; (Sadece showthread sayfalar&#305;nda kullanabilirsiniz)&lt;br /&gt;
+
+&lt;I&gt;[first_post_X_words]&lt;/I&gt; - Ilk mesaj&#305;n ilk X say&#305;da kelimesi (Sadece showthread sayfalar&#305;nda kullanabilirsiniz)&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;[thread_page]&lt;/em&gt; - Konunun sayfa numaras&#305;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Uyumlu De&#287;i&#351;kenler:&lt;/strong&gt;&lt;br /&gt;
+
+[bb_title] forumlarinda [forum_title] bolumu [forum_title] [forum_description]&lt;br&gt;
+
+[thread_title] &lt;strong&gt;[forum_title]&lt;/strong&gt; icinde &lt;em&gt;[thread_title]&lt;/em&gt; konusu , [first_post_30_words]... (showthread sayfalar&#305;nda)&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>catlinks</name>
+		<value>Direk Kategori Linkleri</value>
+	</message>
+	<message>
+		<name>catlinks_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Direk Kategori Linkleri?&lt;/b&gt; &lt;br /&gt;
+
+Bu opsiyonu a&#231;arsan&#305;z kategorilere anchor eklenir.
+
+&lt;br /&gt;&lt;br /&gt;NOT: Kategoriler &quot;http://yourforumsroot/#category_title&quot; &#351;eklinde g&#246;z&#252;k&#252;r.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rrs_forum</name>
+		<value>vBSEO 'Uyumlu De&#287;i&#351;kenler Forumu</value>
+	</message>
+	<message>
+		<name>extblack_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;D&#305;&#351; domainler &quot;Kara Listesi&quot;&lt;/b&gt; &lt;br /&gt;
+
+Ekleyece&#287;iniz her d&#305;&#351; domaine her zaman rel=&quot;nofollow&quot; eklenecektir.
+
+&lt;/p&gt;&lt;p&gt;&#214;rnek:&lt;br /&gt;google.com ('http://www' gerekli de&#287;ildir)&lt;br /&gt;
+
+groups.google.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>linkback_black_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;LinkBack  &quot;Kara Listesi&quot;&lt;/b&gt; &lt;br /&gt;
+
+Ekleyece&#287;iniz domainlerden gelecek hi&#231;bir linkback kabul edilmeyecektir
+
+&lt;/p&gt;&lt;p&gt;&#214;rnek:&lt;br /&gt;spamsite.com ('http://www' gerekli de&#287;il)&lt;br /&gt;
+
+subdomain.spamsite.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>thread_npformat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;'Konudaki Yeni Mesaj' Y&#246;nlendirme URL Format&#305;&lt;br&gt;
+
+                                            &lt;/b&gt;Konulardaki 'en yeni' mesajlar&#305;n nas&#305;l g&#246;r&#252;nece&#287;ini belirleyin.&lt;/p&gt;
+
+                                              &lt;p&gt;NOT: Bu y&#246;nlendirme fonksiyonu kullan&#305;c&#305;ya anchor la belirlenmi&#351; uygun posta gitmesini sa&#287;lar. (i.e. thead_title.html#post-xxxx)&lt;/p&gt;
+
+                                              &lt;p&gt;&#214;rnek:&lt;br&gt;
+
+                                    t[thread_id]-new-post.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>metadesc_members_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&#220;ye Profilleri i&#231;in META a&#231;&#305;klamas&#305;&lt;/b&gt;
+
+                                            &lt;br&gt;
+
+&#220;ye profil sayfalar&#305;n&#305;z i&#231;in &#246;zel bir meta a&#231;&#305;klamas&#305; belirleyiniz. A&#351;a&#287;&#305;daki &#246;rnekleri kullanabilirsiniz:&lt;/p&gt;
+
+                                          &lt;p&gt;&lt;I&gt;[username]&lt;/I&gt; - Kullan&#305;c&#305; Ad&#305; &lt;br&gt;
+
+                                            &lt;i&gt;[usertitle]&lt;/i&gt; - Kullan&#305;c&#305; Ba&#351;l&#305;&#287;&#305; (&amp;quot;Yetkili&amp;quot;, &amp;quot;Kay&#305;tl&#305; &#220;ye&amp;quot;, etc.)&lt;br&gt;
+
+                                            &lt;i&gt;[bb_title]&lt;/i&gt; - Forumunuzun ana ba&#351;l&#305;&#287;&#305;&lt;br&gt;
+
+                                            &lt;em&gt;[user_field_1], [user_field_2], etc.&lt;/em&gt; - Admin panelinden ayarlanm&#305;&#351; &#246;zel kullan&#305;c&#305; profil alanlar&#305;&lt;/p&gt;
+
+                                          &lt;p&gt;&lt;strong&gt;&#214;rnek META a&#231;&#305;klama format&#305;:&lt;/strong&gt;&lt;br&gt;
+
+                                          [usertitle] ba&#351;l&#305;kl&#305;  [username] kullan&#305;c&#305;s&#305; [bb_title] sitesinin bir &#252;yesidir. [username] kullan&#305;c&#305;s&#305;n&#305;n profilini g&#246;ster. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>select_preset</name>
+		<value>Ayar Se&#231;</value>
+	</message>
+	<message>
+		<name>current_preset</name>
+		<value>Y&#252;kl&#252; Ayarlar</value>
+	</message>
+	<message>
+		<name>preset_set</name>
+		<value>Url Format ayar&#305; se&#231;</value>
+	</message>
+	<message>
+		<name>custom_settings</name>
+		<value>Varsay&#305;lan Ayarlar</value>
+	</message>
+	<message>
+		<name>load_preset</name>
+		<value>Ayarlar&#305; Y&#252;kle</value>
+	</message>
+	<message>
+		<name>load_preset_warn</name>
+		<value>vBSEO' yu ilk kez ayarl&#305;yor olmad&#305;k&#231;a URL yap&#305;s&#305;n&#305; de&#287;i&#351;tirmemeniz &#246;nerilir. Devam etmek i&#231;in 'TAMAM' a bas&#305;n ya da bu i&#351;lemi '&#304;ptal' edin.</value>
+	</message>
+	<message>
+		<name>adv_settings</name>
+		<value>Geli&#351;mi&#351; Ayarlar</value>
+	</message>
+	<message>
+		<name>adv_settings_warn</name>
+		<value>URL'lerinizi kendinizin ayarlamas&#305; yerine a&#231;&#305;l&#305;r men&#252;deki &#246;nceden haz&#305;rlanm&#305;&#351; URL rewrite ayarlar&#305;ni se&#231;erek kullanman&#305;z &#351;iddetle tavsiye edilir. Bu &#351;ekilde arama motoru optimasyonunuzu b&#252;y&#252;k bir &#246;l&#231;&#252;de geli&#351;tirmi&#351; olursunuz.</value>
+	</message>
+	<message>
+		<name>note_preset</name>
+		<value>Not: Sadece 'URL &#220;st&#252;ne Yazma Ayarlar&#305;' n&#305; ayarlar, di&#287;er ayarlar&#305;n&#305;z&#305; etkilemez.</value>
+	</message>
+	<message>
+		<name>rw_archive_foot_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&lt;i&gt;Footer Ar&#351;iv Link Ayarlar&#305;:&lt;/i&gt;&lt;/b&gt; &lt;/p&gt;
+
+                                          &lt;p&gt;&lt;b&gt;Linkleri Ar&#351;iv Ana Sayfalar&#305;na Ekle&lt;/b&gt;&lt;br /&gt;
+
+                                            Linkleri forum sayfalar&#305;n&#305;n footer'lar&#305;ndaki sitemap ar&#351;ivlerine eklemek i&#231;in bu se&#231;ene&#287;i aktif ediniz.&lt;/p&gt;
+
+                                          &lt;p&gt;&lt;b&gt;Linkleri T&#252;m Ar&#351;iv Sayfalar&#305;na Ekle&lt;/b&gt;&lt;br /&gt;
+
+                                            Linkleri ana ar&#351;iv sitemap'lerine ve forum sayfalar&#305;n&#305;n footer'lar&#305;na eklemek i&#231;in bu se&#231;ene&#287;i aktif ediniz.&lt;/p&gt;
+
+                                          &lt;p&gt;&lt;b&gt;Linkleri Ar&#351;iv Sayfalar&#305;na Ekleme&lt;/b&gt;&lt;br /&gt;
+
+                                            Varsay&#305;la ayar&#305; korumak i&#231;in bu se&#231;ene&#287;i aktif ediniz. &lt;/p&gt;
+
+                                          &lt;p&gt;Not: Ar&#351;iv linklerini belirlemek i&#231;in &amp;lt;!--VBSEO_ARCHIVE_LINKS--&amp;gt; '&#305; footer template' ine giriniz, aksi takdirde bu sayfan&#305;n &#231;ok a&#351;a&#287;&#305;lar&#305;na eklenecektir. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>footer_arc</name>
+		<value>Footer Ar&#351;iv Linkleri</value>
+	</message>
+	<message>
+		<name>arc_opt1</name>
+		<value>Ar&#351;iv Anasayfas&#305;na Link Ekle</value>
+	</message>
+	<message>
+		<name>arc_opt2</name>
+		<value>Ar&#351;ivdeki T&#252;m Sayfalara Link Ekle</value>
+	</message>
+	<message>
+		<name>arc_opt3</name>
+		<value>Ar&#351;iv Anasayfas&#305;na Link Ekle (Sadece Misafirler &#304;&#231;in)</value>
+	</message>
+	<message>
+		<name>arc_opt4</name>
+		<value>Ar&#351;ivdeki T&#252;m Sayfalara Link Ekle (Sadece Misafirler &#304;&#231;in)</value>
+	</message>
+	<message>
+		<name>arc_opt0</name>
+		<value>Ar&#351;iv Sayfalar&#305;na Link Ekleme</value>
+	</message>
+	<message>
+		<name>as_anchors</name>
+		<value>anchor olarak</value>
+	</message>
+	<message>
+		<name>avail_pro_only</name>
+		<value>&lt;b&gt;Sadece vBSEO Pro S&#252;r&#252;m&#252;nde Mevcuttur&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>addttl_black_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sayfa ba&#351;l&#305;klar&#305;n&#305; harici domainlerin &quot;Blacklist&quot;ine ekle&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt;&lt;br /&gt;Ba&#351;l&#305;klar&#305; &#231;ekilmeyecek ve anchor metni olarak eklenmeyecek domain listesini haz&#305;rlay&#305;n&#305;z.&lt;/p&gt;&lt;p&gt;&#214;rnekler:&lt;br /&gt;
+
+deneme.com&lt;br /&gt;
+
+site.com&lt;br /&gt;
+
+abc.com&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Giden Pingback'leri aktif et&lt;/b&gt; &lt;br /&gt;
+
+&amp;quot;Evet&amp;quot; &#351;&#305;kk&#305;n&#305; se&#231;erek e&#287;er mesajlar d&#305;&#351; linkler i&#231;eriyorsa giden pingbackleri yollamak i&#231;in kullanabilirsiniz.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_notify_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Gelen Linkbackler i&#231;in email bildirisi&lt;/b&gt;&lt;br /&gt;
+
+&amp;quot;Evet&amp;quot; &#351;&#305;kk&#305;n&#305; se&#231;erek konu sahiplerine gelen linkbackleri email vas&#305;tas&#305;yla (Ping/Track/Refbacks) bildirebilirsiniz.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>trackback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Giden Trackback'leri aktif et&lt;/b&gt; &lt;br /&gt;
+
+Yeni konular i&#231;in Giden Trackback'leri aktif etmek i&#231;in &quot;evet&quot; &#351;&#305;kk&#305;n&#305; se&#231;iniz.&lt;/p&gt;&lt;p&gt;Not: Trackback alan&#305;n&#305; yeni bir konu yarat&#305;rken veya bir konuya geli&#351;mi&#351; cevap ile cevap verirken g&#246;rebilirsiniz.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_trackback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Gelen Trackback'leri aktif et&lt;/b&gt; &lt;br /&gt;
+
+Konularda gelen trackbackleri aktif etmek i&#231;in &quot;evet&quot; &#351;&#305;kk&#305;n&#305; se&#231;in.&lt;/p&gt;&lt;p&gt;Not: Forumlar&#305;n&#305;z i&#231;in gelen trackback y&#246;netimini admin panelinizde: &lt;br /&gt;&lt;em&gt;Forums and Moderators &amp;gt; Forum Manager &amp;gt; Edit Forum&lt;/em&gt; b&#246;l&#252;m&#252;nde bulabilirsiniz&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_refback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Gelen Refback'leri aktif et&lt;/b&gt; &lt;br /&gt;
+
+Referring URL'ler i&#231;in Gelen Refbackleri aktif etmek i&#231;in &quot;evet&quot; &#351;&#305;kk&#305;n&#305; se&#231;iniz.&lt;/p&gt;&lt;p&gt;Not:  Forumlar&#305;n&#305;z i&#231;in gelen refback y&#246;netimini admin panelinizde: &lt;br /&gt;&lt;em&gt;Forums and Moderators &amp;gt; Forum Manager &amp;gt; Edit Forum&lt;/em&gt; b&#246;l&#252;m&#252;nde bulabilirsiniz&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>in_pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Gelen Pingback'leri aktif et&lt;/b&gt; &lt;br /&gt;
+
+Konularda gelen pingbackleri aktif etmek i&#231;in &quot;evet&quot; &#351;&#305;kk&#305;n&#305; se&#231;in.&lt;/p&gt;
+
+&lt;p&gt;Not: Forumlar&#305;n&#305;z i&#231;in gelen pingback y&#246;netimini admin panelinizde: &lt;em&gt;Forums and Moderators &amp;gt; Forum Manager &amp;gt; Edit Forum&lt;/em&gt; b&#246;l&#252;m&#252;nde bulabilirsiniz&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>postbit_pingback_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Mesajlarda &quot;Permalink&quot; g&#246;stergesini aktif et&lt;/b&gt; &lt;br /&gt;
+
+Permalinkler bir konudaki belli mesajlara giden ba&#287;lant&#305;lard&#305;r. Kullan&#305;c&#305;lar&#305;n gelen linkbackler i&#231;in belirli mesajlar&#305; referans g&#246;stermesini sa&#287;larlar.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt;Permalink ayarlar&#305;: &lt;/b&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt;Permalinkleri mesaj i&#231;erinde g&#246;ster&lt;/b&gt;
+
+&lt;br /&gt;
+
+&quot;Permalink&quot; ba&#287;lant&#305;lar&#305;n&#305; mesaj&#305;n&#305;z&#305;n &#252;st&#252;ne, ba&#351;l&#305;k k&#305;sm&#305;na ekler.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt;Showpost ba&#287;lant&#305;s&#305; yerine Permalink g&#246;ster &lt;/b&gt;
+
+&lt;br /&gt;
+
+&quot;Permalink&quot; ba&#287;lant&#305;s&#305;n&#305; Showpost ba&#287;lant&#305;s&#305;n&#305;n sa&#287;&#305;na ekler.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt;Mesaj say&#305;s&#305; ba&#287;lant&#305;s&#305;n yerine Permalink ba&#287;lant&#305;s&#305; g&#246;ster&lt;/b&gt;
+
+&lt;br /&gt;
+
+Showpost ba&#287;lant&#305;lar&#305;n&#305; &quot;Permalink&quot; ba&#287;lant&#305;s&#305; ile de&#287;i&#351;tirir. Not: Mesajlara ayr&#305; ayr&#305; ula&#351;&#305;m engellenir.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt;Mesajlarda Permalink g&#246;stergesini iptal et&lt;/b&gt;
+
+&lt;br /&gt;
+
+E&#287;er forumunuzda Linkback aktif ise bu &#246;zellik tavsiye edilmez.
+
+&lt;/p&gt;
+
+
+
+&lt;p&gt;* Ayn&#305; zamanda &amp;lt;!--PERMALINK_INFO--&amp;gt; kodunuz postbit (veya posbit_legacy) temalar&#305;na ekleyerek Permalink ba&#287;lant&#305;s&#305;n&#305; kendi istedi&#287;iniz bir yerde g&#246;sterebilirsiniz.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>vbseo_affid</name>
+		<value>&lt;p&gt;&lt;b&gt;vBSEO Ortakl&#305;k Numaran&#305;z&lt;/b&gt; &lt;br /&gt;
+
+vBSEO &#252;r&#252;n harcamalar&#305;n&#305;z&#305; geri kazan&#305;n! vBSEO ortakl&#305;k numaran&#305;z&#305; buraya girerek, sitenizin alt k&#305;sm&#305;ndaki (footer) vBSEO telif haklar&#305; ba&#287;lant&#305;s&#305;na kendi ortakl&#305;k kodunuzu yerle&#351;tirmi&#351; olursunuz. B&#246;ylece sitenizin alt&#305;ndaki vbseo.com ba&#287;lant&#305;s&#305;ndan, vbseo sitesine ula&#351;anlara siz arac&#305; olmu&#351; olursunuz. Bu arac&#305;l&#305;k i&#351;lemi ziyaret&#231;inin vbseo sat&#305;n almas&#305;yla sonlan&#305;rsa, siz de bu i&#351;lemden belli bir miktar &#252;cret al&#305;rs&#305;n&#305;z.&lt;/p&gt;&lt;p&gt;Daha fazla bilgi i&#231;in: &lt;a href=&quot;http://www.vbseo.com/aff/&quot; target=&quot;_blank&quot;&gt;http://www.vbseo.com/aff/&lt;/a&gt;&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>custom301</name>
+		<value>&#214;zel Y&#246;nlendirmeler</value>
+	</message>
+	<message>
+		<name>custom301_def</name>
+		<value>&lt;b&gt;&#214;zel 301 y&#246;nlendirmesi belirle &lt;/b&gt;&lt;span class=&quot;beta&quot;&gt;BETA&lt;/span&gt;&lt;br&gt;
+
+301 y&#246;nlendirme kurallar&#305;n&#305; buradan belirleyebilirsiniz. Bu &#246;zellik, sitenizde birden &#231;ok d&#246;k&#252;man&#305; bir yerden ba&#351;ka bir yere ta&#351;&#305;d&#305;&#287;&#305;n&#305;zda kullan&#305;labilir.</value>
+	</message>
+	<message>
+		<name>custom301_desc</name>
+		<value>Her iki taraf (sa&#287; ve sol) s&#305;radan ayarlard&#305;r. Ilk b&#246;l&#252;m orijinal &lt;b&gt;URL&lt;/b&gt;'yi i&#231;erir , buna kar&#351;&#305;n ikinci b&#246;l&#252;m &lt;b&gt;yeniden yaz&#305;lan&lt;/b&gt; URL'yi i&#231;erir.
+
+&lt;p&gt;NOT: vBSEO Tak&#305;m&#305; bu &#246;zellik i&#231;in destek VERMEYECEKT&#304;R. Bu b&#246;l&#252;m&#252; ger&#231;ekten ne yapt&#305;&#287;&#305;n&#305;z&#305; biliyorsan&#305;z kullan&#305;n. Daha fazla bilgi i&#231;in vBSEO Forumlar&#305;n&#305; ziyaret ediniz. &lt;a href=&quot;http://www.vbseo.com&quot; target=&quot;_blank&quot;&gt;http://www.vbseo.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;NOT: Sat&#305;rlar&#305;n ba&#351;&#305;na iki slash (//) koyarak sat&#305;r&#305; deaktif edebilirsiniz . Ayarlar&#305; kaydetti&#287;inizde yazd&#305;&#287;&#305;n&#305;z kurallarda herhangi bir hata varsa otomatik deaktif olacakt&#305;r.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&#214;rnekler:&lt;/b&gt;&lt;br /&gt;
+
+'article-(\d+)\.html'=&gt;'articles/entry-$1.html'&lt;br /&gt; 'forum(\d+)\.html'=&gt;'f$1/'&lt;br /&gt;  &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_attach_alt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Dosya eki Alt tak&#305;s&#305;n&#305; statikle&#351;tir?&lt;/b&gt;&lt;br /&gt;
+
+Dosya eki Alt tak&#305;lar&#305;n&#305; statik yapmak i&#231;in bu &#246;zelli&#287;i &quot;Evet&quot; yap&#305;n.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>attach_alt_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Dosya eki Alt tak&#305;s&#305; statik url format&#305; &lt;/b&gt;&lt;br /&gt;
+
+&lt;p&gt;&#214;rnek d&#252;zenleme:&lt;br /&gt;
+
+[thread_title]-[original_filename]&lt;br /&gt;
+
+[original_filename]
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>supportsystem</name>
+		<value>Destek Sistemi</value>
+	</message>
+	<message>
+		<name>affiliates</name>
+		<value>Ortakl&#305;k Sistemi</value>
+	</message>
+	<message>
+		<name>contact</name>
+		<value>&#304;leti&#351;im</value>
+	</message>
+	<message>
+		<name>forums</name>
+		<value>Forumlar</value>
+	</message>
+	<message>
+		<name>ping_postbit_1</name>
+		<value>Postbit i&#231;inde Permalink bilgisini g&#246;ster</value>
+	</message>
+	<message>
+		<name>ping_postbit_3</name>
+		<value>Showpost ba&#287;lant&#305;s&#305; yerine Permalink g&#246;ster</value>
+	</message>
+	<message>
+		<name>ping_postbit_2</name>
+		<value>Post numaras&#305;n&#305; Permalink bilgisiyle de&#287;i&#351;tir</value>
+	</message>
+	<message>
+		<name>ping_postbit_0</name>
+		<value>Postbit'e Permalink Bilgisi Ekleme </value>
+	</message>
+	<message>
+		<name>pingback_notify_bcc_desc</name>
+		<value>Linkback bilgilerini E-posta ile Uyar:</value>
+	</message>
+	<message>
+		<name>pingback_notify_bcc_desc2</name>
+		<value>(Birden fazla e-post adresini bo&#351;lukla ay&#305;r&#305;n)</value>
+	</message>
+	<message>
+		<name>pingback_service_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Servisleri Haberdar Et&lt;/b&gt; &lt;br /&gt;
+
+vbseo bu yeni &#246;zelli&#287;i sayesinde forumunuzdaki mesajlar&#305;, konular&#305; d&#305;&#351; kaynaklara (link payla&#351;&#305;m siteleri) haberdar edebiliyor. Bu servislerin amac&#305;; a&#231;&#305;lan konular&#305;n, at&#305;lan mesajlar&#305;n birden &#231;ok kaynakta payla&#351;&#305;larak arama motorlar&#305; taraf&#305;ndan indexlenmenizi kolayla&#351;t&#305;rmakt&#305;r.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_stopwords_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Gelen Linkback'ler i&#231;in Anahtar S&#246;zc&#252;k &#304;hmal Listesi&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt;&lt;br /&gt;
+
+Bu kelimeleri i&#231;eren linkback'ler filtreden ge&#231;ecek ve (kabul edilmeyecek) SPAM giri&#351;imlerini en aza indirecek.&lt;/p&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_jump_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ziyaret&#231;iler ve Misafirler i&#231;in Forum Atlama Men&#252;s&#252;n&#252; &#304;ptal Et&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;Yeni!&lt;/span&gt;&lt;br /&gt;
+
+Forum atlama a&#231;&#305;lan men&#252;leri ekstradan kayna&#287;&#305;n&#305;zda i&#351;e yaramayan html kodlar&#305; &#252;retir, &#246;zellikle forum say&#305;s&#305; y&#252;ksek sitelerde. Bu &#246;zelli&#287;i ziyaret&#231;ilere (spider) kapatarak arama motoru optimasyonu i&#231;in kaynak kodunuzu hafifletmi&#351; olursunuz. Bu sayede arama motoru botlar&#305; sitenizi daha iyi bir &#351;ekilde indekslerler.&lt;/p&gt;
+
+
+
+&lt;p&gt;NOT: Forum atlama a&#231;&#305;lan men&#252;leri, konular&#305;n&#305;z ve forum sayfalar&#305;n&#305;z&#305;n en alt&#305;nda sa&#287; tarafta bulunurlar. Bu &#246;zelli&#287;i tamamiyle kapatmak i&#231;in ayr&#305;ca vBulletin'in kendi ayarlar&#305;nda se&#231;enek bulunmaktad&#305;r.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>htmlcharset</name>
+		<value>ISO-8859-9</value>
+	</message>
+	<message>
+		<name>lang_dir</name>
+		<value>turc</value>
+	</message>
+	<message>
+		<name>preset_1</name>
+		<value>Hiyera&#351;ik .html &#351;eklinde konu ve forum URL'leri (Varsay&#305;lan Ayarlar)</value>
+	</message>
+	<message>
+		<name>preset_2</name>
+		<value>Hiyera&#351;ik directory format&#305;nda URL'ler ( www.vBSEO.com'da kullan&#305;lan )</value>
+	</message>
+	<message>
+		<name>preset_3</name>
+		<value>Hiyera&#351;ik .htm tarz&#305;nda URL'ler (www.WebmasterWorld.com'da kullan&#305;lan)</value>
+	</message>
+	<message>
+		<name>preset_4</name>
+		<value>Hiyera&#351;ik olmayan id sadece id kullan&#305;lan .html URL'leri (www.DaniWeb.com'da kullan&#305;lan)</value>
+	</message>
+	<message>
+		<name>preset_5</name>
+		<value>Hiyera&#351;ik olmayan id sadece id kullan&#305;lan  URL'leri (www.MustangEvolution.com'da kullan&#305;lan)</value>
+	</message>
+	<message>
+		<name>arcorder_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Ar&#351;iv G&#246;sterim S&#305;ralamas&#305;n&#305; Tersine &#231;evir:&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt;&lt;br /&gt;
+
+Varsay&#305;lan formatta vBulletin ar&#351;ivi eskiden yeniye do&#287;ru konular&#305; g&#246;stermektedir. Bu ayar&#305; aktif hale getirmek bu ayar&#305; tersine &#231;evirecek ve yeni konular&#305;n ilk g&#246;sterilmesini sa&#287;layarak , forumunuzda g&#252;ncel konular&#305;n &#246;nde &#231;&#305;kmas&#305;n&#305; sa&#287;layacakt&#305;r.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_links</name>
+		<value>Son Mesaj linklerini Misafirler i&#231;in kald&#305;r</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_column</name>
+		<value>Son Mesaj kolomunu Misafirler i&#231;in kald&#305;r</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_none</name>
+		<value>Varsay&#305;lan Son Mesaj ayarlar&#305;n&#305; Kullan</value>
+	</message>
+	<message>
+		<name>cleanup_lastpost_desc</name>
+		<value>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Son Mesaj Kald&#305;rma Ayarlar&#305;:&lt;/strong&gt;&lt;/em&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Son Mesaj linklerini Misafirler i&#231;in kald&#305;r&lt;/strong&gt;&lt;br /&gt;
+
+Bu ayar &lt;em&gt;forumhome&lt;/em&gt; ve &lt;em&gt;forumdisplay&lt;/em&gt; i&#231;erisinde son mesaj linklerini kald&#305;rarak maksimum d&#252;zeyde seo optimasyonu sa&#287;lamaktad&#305;r.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Son Mesaj kolomunu Misafirler i&#231;in kald&#305;r&lt;/strong&gt;&lt;br /&gt;
+
+Bu ayar&#305; aktif etmek &lt;em&gt;forumhome&lt;/em&gt; ve &lt;em&gt;forumdisplay&lt;/em&gt; sayfalar&#305;nda son mesaj kolomunu kald&#305;rarak sayfa bandwith'ini d&#252;&#351;&#252;rmek ve botlar&#305;n direk konu adreslerine y&#246;nlenmesini sa&#287;lamaktad&#305;r. &lt;b&gt;Bu &#246;zellik &#246;zelle&#351;tirilmi&#351; stillerde &#231;al&#305;&#351;mayabilir&lt;/b&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Varsay&#305;lan Son Mesaj ayarlar&#305;n&#305; Kullan&lt;/strong&gt;&lt;br /&gt;
+
+Bu ayar varsay&#305;lan ayarlar&#305;n&#305;z&#305;n oldu&#287;u gibi kalmas&#305;n&#305; sa&#287;lar.&lt;/p&gt;
+
+&lt;p&gt;NOT: Bu &#246;zellik &#252;ye olmayan ki&#351;iler i&#231;in forum &#246;zelliklerini s&#305;n&#305;rland&#305;rsada SEO a&#231;&#305;s&#305;ndan &#246;nem te&#351;kil etmektedir.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rem_member_dropdown_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;&#220;ye DHTML Popup Menulerini Misafirlere G&#246;sterme?&lt;/strong&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt;&lt;br /&gt;
+
+Bu &#246;zellik &#252;ye isimlerine t&#305;kland&#305;&#287;&#305;nda a&#231;&#305;lan DHTML men&#252;yi misafirlere kald&#305;rarak botlar&#305;n alakas&#305;z i&#231;eri&#287;i takip etmesinin &#246;n&#252;ne ge&#231;er ve sayfa bandwith oran&#305;n&#305; d&#252;&#351;&#252;r&#252;r. &lt;/p&gt;
+
+&lt;p&gt;NOT: Bu &#246;zellik &#252;ye olmayan ki&#351;iler i&#231;in forum &#246;zelliklerini s&#305;n&#305;rland&#305;rsada SEO a&#231;&#305;s&#305;ndan &#246;nem te&#351;kil etmektedir.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog</name>
+		<value>vBulletin Blog URL'leri</value>
+	</message>
+	<message>
+		<name>rw_blog_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog URL'lerini Yaz?&lt;/b&gt;&lt;br /&gt;
+
+Bu opsiyonu &quot;Evet&quot; se&#231;erek vBulletin Blog url'lerini yeniden yazabilirsiniz.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogind_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Ba&#351;l&#305;k URL Format&#305;&lt;/b&gt;&lt;br /&gt;
+
+Istedi&#287;iniz bir URL format&#305; se&#231;iniz veya varsay&#305;lan format&#305; kullan&#305;n&#305;z.&lt;/p&gt;
+
+&lt;p&gt;NOT: Ba&#351;l&#305;klar ayn&#305; isimlere sahip olabilece&#287;inden Her zaman [blog_id] url format&#305; i&#231;erisinde bulunmal&#305;d&#305;r. &lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+blogs/b[blog_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloguser_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog URL Format&#305;&lt;/b&gt;&lt;br /&gt;
+
+Istedi&#287;iniz bir URL format&#305; se&#231;iniz veya varsay&#305;lan format&#305; kullan&#305;n&#305;z.&lt;/p&gt;
+
+&lt;p&gt;NOT: vBulletin ayn&#305; kullan&#305;c&#305; ismine izin vermedi&#287;inden url format&#305;nda [user_id] kullanma zorunlulu&#287;u yoktur.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+blogs/u[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogcat_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;Blog Kategori URL Format&#305;&lt;/strong&gt;&lt;br /&gt;
+
+Blog kategori url format&#305;n&#305; iste&#287;inize g&#246;re belirleyin veya varsay&#305;lan ayarlardan birini kullan&#305;n.&lt;/p&gt;
+
+&lt;p&gt;NOT: Bir kullan&#305;c&#305; i&#231;in ayn&#305; isimde kategori imkans&#305;z oldu&#287;undan [category_id] kullanman&#305;za gerek yoktur.&lt;/p&gt;
+
+&lt;p&gt;NOT: Kategoriler kullan&#305;c&#305;lara g&#246;re ayarland&#305;&#287;&#305;ndan dolay&#305; kullan&#305;c&#305;y&#305; belirleyecek [user_id] veya [user_name] kullanman&#305;z gerekmektedir. &lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+blogs/u[user_id]-c[category_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogglobcat_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;Global Blog Kategori URL Format&#305;&lt;/strong&gt;&lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt;&lt;br /&gt;
+
+Global Blog kategori url format&#305;n&#305; iste&#287;inize g&#246;re belirleyin veya varsay&#305;lan ayarlardan birini kullan&#305;n.&lt;/p&gt;
+
+&lt;p&gt;NOT: Global kategoriler adminler taraf&#305;ndan belirlendi&#287;inden id kullanma zorunlulu&#287;unuz bulunmuyor.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+blogs/c[category_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;G&#252;ncel Blog Ba&#351;l&#305;klar&#305;&amp;quot; URL listeleme Format&#305; (Index Sayfas&#305;)&lt;/b&gt;&lt;br /&gt;
+
+  &amp;quot;G&#252;ncel Blog Ba&#351;l&#305;klar&#305;&amp;quot;n&#305;n index sayfas&#305;nda nas&#305;l g&#246;r&#252;nece&#287;ini belirleyin.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+  blogs/recent-entries.html&lt;br /&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blognext_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Sonraki Blog Ba&#351;l&#305;&#287;&#305;&amp;quot; URL Format&#305;&lt;/b&gt;&lt;br /&gt;
+
+Sonraki Blog Ba&#351;l&#305;&#287;&#305; url format&#305;n&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;NOT: Ba&#351;l&#305;klar ayn&#305; isimlere sahip olabilece&#287;inden Her zaman [blog_id] url format&#305; i&#231;erisinde bulunmal&#305;d&#305;r. &lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+blogs/b[blog_id]-next.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogprev_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;&#214;nceki Blog Ba&#351;l&#305;&#287;&#305;&amp;quot; URL Format&#305;&lt;/b&gt;&lt;br /&gt;
+
+&#214;nceki Blog Ba&#351;l&#305;&#287;&#305; url format&#305;n&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;NOT: Ba&#351;l&#305;klar ayn&#305; isimlere sahip olabilece&#287;inden Her zaman [blog_id] url format&#305; i&#231;erisinde bulunmal&#305;d&#305;r. &lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+/b[blog_id]-prev.htm&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogfeed_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Feed URL Format&#305; (Global)&lt;/b&gt;&lt;br /&gt;
+
+  Global Blog feed url format&#305;n&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+  blogs/feed.rss&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogfeeduser_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Feed URL Format&#305; (Kullan&#305;c&#305;lara &#214;zel)&lt;/b&gt;&lt;br /&gt;
+
+  Her ki&#351;isel blog i&#231;in Blog feed url format&#305;n&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+  blogs/feed[user_id].rss&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogmonth_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Aylara G&#246;re Blog&amp;quot; Url Format&#305; (Global)&lt;/b&gt;&lt;br /&gt;
+
+   &amp;quot;Aylara G&#246;re Blog Ba&#351;l&#305;klar&#305;n&#305;n&amp;quot; indexte nas&#305;l listelenece&#287;i url format&#305;n&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+  blogs/[year]-[month].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogday_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;G&#252;ne g&#246;re Blog&amp;quot; URL Format&#305; (Global)&lt;/b&gt;&lt;br /&gt;
+
+&amp;quot;G&#252;ne g&#246;re Blog ba&#351;l&#305;klar&#305;n&#305;n&amp;quot; listelenme url format&#305;n&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+blogs/[year]-[month]-[day].html&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>blogatt_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Eklenti URL Format&lt;/b&gt;&lt;br /&gt;
+
+Google ve di&#287;er arama motorlar&#305; resimleri (.gif, .jpg, .png, vs.) ve di&#287;er formattaki dosyalar&#305; word dok&#252;manlar&#305; (.doc) ve Adobe PDF  documents (.pdf) indexlemektedir. &#214;zel bir  [original_filename]  de&#287;eri yarat&#305;lm&#305;&#351;t&#305;r bu &#351;ekilde dosya ismi ve uzant&#305;s&#305; eklenti format&#305; i&#231;erisinde yer almaktad&#305;r.&lt;/p&gt;
+
+&lt;p&gt;NOT: Kullan&#305;c&#305;lar ayn&#305; isimli eklenti g&#246;nderebilece&#287;inden [attachment_id] de&#287;erini url format&#305; i&#231;inde kullanman&#305;z&#305; tavsiye ediyoruz.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+  blogs/[attachment_id]-[original_filename]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestentry_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;En Iyi Blog Ba&#351;l&#305;klar&#305;&amp;quot; URL Format&#305; (Index Sayfas&#305;)&lt;/b&gt;&lt;br /&gt;
+
+  Index sayfas&#305;nda &amp;quot;En Iyi Blog Ba&#351;l&#305;klar&#305;&amp;quot; url format&#305;n&#305; belirleyin&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+  blogs/best-entries.html
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestblogs_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;En Iyi Blog&amp;quot; URL Format&#305; (Index Sayfa)&lt;/b&gt;&lt;br /&gt;
+
+  Index sayfas&#305;nda &amp;quot;En Iyi Blog&amp;quot; url format&#305;n&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+  blogs/best-blogs.html&lt;br /&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>noneng_repl</name>
+		<value>URL'ler i&#231;erisinde Ingilizce Olmayan Karakterleri De&#287;i&#351;tirin</value>
+	</message>
+	<message>
+		<name>noneng_rem</name>
+		<value>URL'ler i&#231;erisinde Ingilizce Olmayan Karakterleri Kald&#305;r&#305;n</value>
+	</message>
+	<message>
+		<name>noneng_keep</name>
+		<value>URL'ler i&#231;erisinde Ingilizce Olmayan Karakterleri oldu&#287;u gibi b&#305;rak&#305;n</value>
+	</message>
+	<message>
+		<name>blogblist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;B&#252;t&#252;n Blog Ba&#351;l&#305;klar&#305;&amp;quot; URL Format&#305; (Index Sayfas&#305;)&lt;/b&gt;&lt;br /&gt;
+
+Index Sayfas&#305;nda &amp;quot;B&#252;t&#252;n Blog Ba&#351;l&#305;klar&#305;&amp;quot; URL Format&#305;n&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+blogs/all.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogblistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;B&#252;t&#252;n Blog Ba&#351;l&#305;klar&#305;&amp;quot; URL Format&#305; (Sayfaland&#305;rma)&lt;/b&gt;&lt;br /&gt;
+
+Index Sayfas&#305;nda &amp;quot;B&#252;t&#252;n Blog Ba&#351;l&#305;klar&#305;&amp;quot; birden fazla sayfa URL Format&#305;n&#305; belirleyin&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+blogs/all.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloguday_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&gt;&amp;quot;G&#252;ne g&#246;re Blog&amp;quot; URL Format&#305; (Kullan&#305;c&#305;ya G&#246;re)&lt;/b&gt;&lt;br /&gt;
+
+  &amp;quot;G&#252;ne g&#246;re Blog ba&#351;l&#305;klar&#305;n&#305;n&amp;quot; listelenme url format&#305;n&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+  blogs/u[user_id]-[year]-[month]-[day].html&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>blogumonth_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Aylara G&#246;re Blog&amp;quot; Url Format&#305; (Kullan&#305;c&#305;ya G&#246;re)&lt;/b&gt;&lt;br /&gt;
+
+  &amp;quot;Aylara G&#246;re Blog Ba&#351;l&#305;klar&#305;n&#305;n&amp;quot; indexte nas&#305;l listelenece&#287;i url format&#305;n&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+  blogs/u[user_id]-[year]-[month].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cache_opt</name>
+		<value>Cache Opsiyonlar&#305;</value>
+	</message>
+	<message>
+		<name>blogclist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Blog Yorumlar&#305;&amp;quot; URL Format&#305; (Index Sayfas&#305;)&lt;/b&gt;&lt;br /&gt;
+
+Index Sayfas&#305;nda &amp;quot;Blog Yorumlar&#305;&amp;quot; URL Format&#305;n&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+  blogs/comments.html&lt;br /&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogclistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Blog Yorumlar&#305;&amp;quot; URL Format&#305; (Sayfaland&#305;rma)&lt;/b&gt;&lt;br /&gt;
+
+Index Sayfas&#305;nda &amp;quot;Blog Yorumlar&#305;&amp;quot; URL Format&#305;n&#305; belirleyin.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+blogs/comments-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;G&#252;ncel Blog Ba&#351;l&#305;klar&#305;&amp;quot; URL Format&#305; (Sayfaland&#305;rma)&lt;/b&gt;&lt;br /&gt;
+
+&amp;quot;G&#252;ncel Blog Ba&#351;l&#305;klar&#305;&amp;quot; URL Format&#305;n&#305; (Sayfaland&#305;rma) belirleyin&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+blogs/recent-entries-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestentpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;En Iyi Blog Ba&#351;l&#305;klar&#305;&amp;quot; URL Format&#305; (Sayfaland&#305;rma)&lt;/b&gt;&lt;br /&gt;
+
+ &amp;quot;En Iyi Blog Ba&#351;l&#305;klar&#305;&amp;quot; URL Format&#305;n&#305; (Sayfaland&#305;rma) belirleyin&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+  blogs/best-entries-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbestblogspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;En Iyi Blog&amp;quot; URL Format&#305; (Sayfaland&#305;rma)&lt;/b&gt;&lt;br /&gt;
+
+  &amp;quot;En Iyi Blog&amp;quot; URL Format&#305; (Sayfaland&#305;rma) belirleyin&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+  blogs/best-blogs-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cachetype_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Cache Tipi&lt;/b&gt; &lt;br /&gt;
+
+A&#351;a&#287;&#305;dan sisteminizde &#231;al&#305;&#351;an cache tipini se&#231;in. Server&#305;n&#305;z&#305;n cache tarz&#305;n&#305; destekledi&#287;inden emin olun.&lt;/p&gt;
+
+&lt;p&gt;
+
+&lt;em&gt;memcached&lt;/em&gt;&lt;br /&gt;
+
+&lt;em&gt;APC Cache&lt;/em&gt;&lt;br /&gt;
+
+&lt;em&gt;XCache&lt;/em&gt;&lt;br /&gt;
+
+&lt;em&gt;eAccelerator&lt;/em&gt;&lt;br /&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>none</name>
+		<value>Hi&#231;biri</value>
+	</message>
+	<message>
+		<name>supported</name>
+		<value>&lt;b style=&quot;color:green&quot;&gt;Destekleniyor&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>unsupported</name>
+		<value>&lt;b style=&quot;color:red&quot;&gt;Desteklenmiyor&lt;/b&gt;</value>
+	</message>
+	<message>
+		<name>memcacheopt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Memcached Ba&#287;lant&#305; Ayarlar&#305;&lt;/b&gt; &lt;br /&gt;
+
+memcached ba&#287;lant&#305; ayarlar&#305;n&#305; belirleyin:&lt;br /&gt;
+
+&lt;ul&gt;
+
+&lt;li&gt;Server listesi format&#305; 'host:port,weight'&lt;br /&gt;
+
+&lt;b&gt;&#214;rnekler:&lt;/b&gt;&lt;br /&gt;
+
+localhost:11211,5&lt;br /&gt;
+
+196.1.12.2:11211,2&lt;br /&gt;&lt;/li&gt;
+
+&lt;li&gt;&quot;time to live&quot; for stored data&lt;/li&gt;
+
+&lt;li&gt;Devaml&#305; Ba&#287;lant&#305; Kullan&#305;n&lt;/li&gt;
+
+&lt;li&gt;Timeout (saniye ile)&lt;/li&gt;
+
+&lt;li&gt;Retry Interval (saniye ile)&lt;/li&gt;
+
+&lt;li&gt;Automatic Compression of Large Objects&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>mc_ttl</name>
+		<value>&quot;Ya&#351;ayaca&#287;&#305; Zaman&quot;</value>
+	</message>
+	<message>
+		<name>mc_retry</name>
+		<value>Tekrar Zaman&#305;</value>
+	</message>
+	<message>
+		<name>mc_compress</name>
+		<value>En d&#252;&#351;&#252;k kompres edilecek object boyutu</value>
+	</message>
+	<message>
+		<name>mc_hosts</name>
+		<value>Serverlar&#305;n List</value>
+	</message>
+	<message>
+		<name>mc_timeout</name>
+		<value>Ba&#287;lant&#305; Kopmas&#305;</value>
+	</message>
+	<message>
+		<name>mc_pers</name>
+		<value>Devaml&#305; Ba&#287;lant&#305; Kullan&#305;n</value>
+	</message>
+	<message>
+		<name>mc_vbulletin</name>
+		<value>vBulletin'in Ayarlar&#305;</value>
+	</message>
+	<message>
+		<name>blogdaypage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;G&#252;ne g&#246;re Blog&amp;quot; URL Format&#305; (Global, Sayfaland&#305;rma)&lt;/b&gt;&lt;br /&gt;
+
+&amp;quot;G&#252;ne g&#246;re Blog&amp;quot; URL Format&#305; (Global, Sayfaland&#305;rma) belirleyin.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+blogs/[year]-[month]-[day]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogmonthpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&amp;quot;Aylara G&#246;re Blog&amp;quot; URL Format&#305; (Global, Sayfaland&#305;rma)&lt;/b&gt;&lt;br /&gt;
+
+&amp;quot;Aylara G&#246;re Blog&amp;quot; URL Format&#305; (Global, Sayfaland&#305;rma) belirleyin.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek Format:&lt;br /&gt;
+
+blogs/[year]-[month]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_bookm_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Bookmark ikonlar&#305;n&#305; Blog ba&#351;l&#305;klar&#305;nda g&#246;ster?&lt;/b&gt;&lt;br /&gt;
+
+Blog ba&#351;l&#305;klar&#305; i&#231;in bookmark ikonlar&#305;.
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Blog ba&#351;l&#305;klar&#305;nda Sosyal Bookmark se&#231;enekleri:&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Blog Ba&#351;l&#305;klar&#305;n&#305;n i&#231;inde g&#246;ster &lt;/b&gt;
+
+&lt;br /&gt;
+
+Blog ba&#351;l&#305;klar&#305;n&#305;n sa&#287; &#252;st k&#246;&#351;esinde g&#246;stermek i&#231;in bu opsiyonu se&#231;in
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Blog Ba&#351;l&#305;klar&#305;n&#305;n alt&#305;nda g&#246;ster &lt;/b&gt;
+
+&lt;br/&gt;
+
+Blog ba&#351;l&#305;klar&#305;n&#305;n alt k&#305;sm&#305;nda g&#246;stermek i&#231;in bu opsiyonu se&#231;in
+
+&lt;/p&gt;
+
+&lt;p&gt;* &amp;lt;!--VBSEO_BOOKMARKS--&amp;gt; kodunu &quot;blog_show_entry&quot; temas&#305;nda istedi&#287;iniz bir yere ekleyerek ikonlar&#305;n kendi istedi&#287;iniz yerde g&#246;z&#252;kmesini sa&#287;layabilirsiniz.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogcatpage_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;Global Blog Kategori URL Format&#305;&lt;/strong&gt;&lt;br /&gt;
+
+Global Blog Kategori  URL format&#305;n&#305; a&#351;a&#287;&#305;dan belirleyin.&lt;/p&gt;
+
+&lt;p&gt;NOT: Bir ki&#351;i i&#231;in birden fazla ayn&#305; kategori belirlemek imkans&#305;z oldu&#287;undan [category_id] de&#287;erini &amp;quot;temiz URL&amp;quot; i&#231;in eklemek zorunda de&#287;ilsiniz.&lt;/p&gt;
+
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+blogs/u[user_id]-c[category_id]-p[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogglobcatpage_format_desc</name>
+		<value>&lt;p&gt;&lt;strong&gt;Global Blog Kategori  Sayfaland&#305;rmas&#305;&lt;/strong&gt;&lt;br /&gt;
+
+Global Blog Kategori  Sayfaland&#305;rma URL format&#305;n&#305; a&#351;a&#287;&#305;dan belirleyin.&lt;/p&gt;
+
+&lt;p&gt;NOT: Bir ki&#351;i i&#231;in birden fazla ayn&#305; kategori belirlemek imkans&#305;z oldu&#287;undan [category_id] de&#287;erini &amp;quot;temiz URL&amp;quot; i&#231;in eklemek zorunda de&#287;ilsiniz.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+blogs/c[category_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogbmark_topright</name>
+		<value>Blog Ba&#351;l&#305;klar&#305;n&#305;n i&#231;inde g&#246;ster </value>
+	</message>
+	<message>
+		<name>blogbmark_bottom</name>
+		<value>Blog Ba&#351;l&#305;klar&#305;n&#305;n alt&#305;nda g&#246;ster </value>
+	</message>
+	<message>
+		<name>blogbmark_none</name>
+		<value>Ikonlar&#305; G&#246;sterme</value>
+	</message>
+	<message>
+		<name>blogdom_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&#214;zel Blog Adresi Belirleyin?&lt;/b&gt;
+
+&lt;span class=&quot;new&quot;&gt;YENI!&lt;/span&gt;&lt;br /&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;
+
+Varsay&#305;lan ayarlar&#305; se&#231;mek i&#231;in bo&#351; b&#305;rak&#305;n
+
+&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>blogindpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Ba&#351;l&#305;k Sayfaland&#305;rmas&#305;&lt;/b&gt;&lt;br /&gt;
+
+Blog Ba&#351;l&#305;k Sayfaland&#305;rmas&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;NOT: Herzaman  [blog_id] de&#287;erini ayn&#305; ba&#351;l&#305;k olma ihtimaline kar&#351;&#305; url ayar&#305; i&#231;ide kullanmal&#305;s&#305;n&#305;z. &lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+blogs/b[blog_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloguserpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Sayfaland&#305;rmas&#305;&lt;/b&gt;&lt;br /&gt;
+
+Blog Sayfaland&#305;rmas&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;NOT: vBulletin ayn&#305; kullan&#305;c&#305; ismine izin vermedi&#287;inden url format&#305;nda [user_id] kullanma zorunlulu&#287;u yoktur.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+blogs/u[user_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blogindredir_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Ba&#351;l&#305;k Yorum Y&#246;nlendirmesi&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YENI!&lt;/span&gt;&lt;br /&gt;
+
+Blog Ba&#351;l&#305;k Yorum Y&#246;nlendirmesi URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+blogs/comment[comment_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_groups</name>
+		<value>Sosyal Grup URLleri</value>
+	</message>
+	<message>
+		<name>rw_groups_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Rewrite Social Group URLleri?&lt;/b&gt; &lt;br /&gt;
+
+Evet se&#231;erek Sosyal Grup Urllerini yeniden yaz&#305;n.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groups_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Grup&lt;/b&gt; &lt;br /&gt;
+
+Sosyal Grup URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+groups/[group_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Grup Sayfaland&#305;rmas&#305;&lt;/b&gt; &lt;br /&gt;
+
+Sosyal Grup Sayfaland&#305;rmas&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+groups/[group_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupmembers_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Grup &#220;ye&lt;/b&gt; &lt;br /&gt;
+
+Sosyal Grup &#220;ye URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+groups/[group_id]-users.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupmemberspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Grup &#220;ye Sayfaland&#305;rmas&#305;&lt;/b&gt; &lt;br /&gt;
+
+Sosyal Grup &#220;ye Sayfaland&#305;rmas&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+groups/[group_id]-users-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppic_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Grup Resimleri&lt;/b&gt; &lt;br /&gt;
+
+Sosyal Grup Resimleri URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+groups/[group_id]-pics.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppicpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Grup Resimleri Sayfaland&#305;rmas&#305;&lt;/b&gt; &lt;br /&gt;
+
+Sosyal Grup Resimleri Sayfaland&#305;rmas&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+groups/[group_id]-pics-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>url_gen</name>
+		<value>Genel Opsiyonlar</value>
+	</message>
+	<message>
+		<name>url_forum</name>
+		<value>Forum URLleri</value>
+	</message>
+	<message>
+		<name>url_cms</name>
+		<value>CMS URLleri</value>
+	</message>
+	<message>
+		<name>cmsdom_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&#214;zel CMS Adresi Belirle?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt;&lt;br /&gt; &lt;/p&gt; &lt;p&gt; Default ayarlar i&#231;in bo&#351; b&#305;rak&#305;n&#305;z &lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>cms_opt_description</name>
+		<value>&lt;h4&gt;CMS URL Format&#305;n&#305;z&#305; Se&#231;in &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;/h4&gt; &lt;p&gt;L&#252;tfen listeden bir url format&#305; se&#231;iniz.&lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>rw_cms_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS URLlerini Yeniden Yaz?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; CMS URLlerini yeniden yazmak istiyorsan&#305;z Evet se&#231;iniz&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmscat_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Kategori&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; CMS Kategorileri i&#231;in bir URL yeniden yazma modeli belirleyin.&lt;/p&gt; &lt;p&gt;Not: Bu opsiyon vB 4.x ve daha sonraki versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt; &lt;p&gt;&#214;rnek:&lt;br /&gt; cmscat-[category_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmscatpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Kategori Sayfaland&#305;rmas&#305;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; CMS Kategorileri i&#231;in bir URL yeniden yazma modeli belirleyin.&lt;/p&gt; &lt;p&gt;Not: Bu opsiyon vB 4.x ve daha sonraki versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt; &lt;p&gt;&#214;rnek:&lt;br /&gt; cmscat-[category_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmssec_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS B&#246;l&#252;m&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; CMS B&#246;l&#252;mleri i&#231;in bir URL yeniden yazma modeli belirleyin.&lt;/p&gt; &lt;p&gt;Not: Bu opsiyon vB 4.x ve daha sonraki versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt; &lt;p&gt;&#214;rnek:&lt;br /&gt; cmssection-[section_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsseclist_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS B&#246;l&#252;m Listesi&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; CMS B&#246;l&#252;m Listeleri i&#231;in bir URL yeniden yazma modeli belirleyin.&lt;/p&gt; &lt;p&gt;Not: Bu opsiyon vB 4.x ve daha sonraki versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt; &lt;p&gt;&#214;rnek:&lt;br /&gt; cmssection-[section_id]-list.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsseclistpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS B&#246;l&#252;m Liste Sayfaland&#305;rmas&#305;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; CMS B&#246;l&#252;m Liste Sayfaland&#305;rmas&#305; i&#231;in bir URL yeniden yazma modeli belirleyin.&lt;/p&gt; &lt;p&gt;Not: Bu opsiyon vB 4.x ve daha sonraki versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt; &lt;p&gt;&#214;rnek:&lt;br /&gt; cmssection-[section_id]-list.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsauthor_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Yazar&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; CMS yazarlar&#305; i&#231;in bir URL yeniden yazma modeli belirleyin.&lt;/p&gt; &lt;p&gt;Not: Bu opsiyon vB 4.x ve daha sonraki versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt; &lt;p&gt;&#214;rnek:&lt;br /&gt; cmsauth-[user_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsauthorpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Yazar Sayfaland&#305;rmas&#305;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; CMS yazarlar&#305; i&#231;in bir URL yeniden yazma modeli belirleyin.&lt;/p&gt; &lt;p&gt;Not: Bu opsiyon vB 4.x ve daha sonraki versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt; &lt;p&gt;&#214;rnek:&lt;br /&gt; cmsauth-[user_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsentry_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Ba&#351;l&#305;k&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; CMS ba&#351;l&#305;klar&#305; i&#231;in bir URL yeniden yazma modeli belirleyin.&lt;/p&gt; &lt;p&gt;Not: Bu opsiyon vB 4.x ve daha sonraki versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt; &lt;p&gt;&#214;rnek:&lt;br /&gt; cmsentry-[entry_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsentrypage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Ba&#351;l&#305;k Sayfaland&#305;rmas&#305;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; CMS ba&#351;l&#305;k sayfaland&#305;rmas&#305; i&#231;in bir URL yeniden yazma modeli belirleyin.&lt;/p&gt; &lt;p&gt;Not: Bu opsiyon vB 4.x ve daha sonraki versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt; &lt;p&gt;&#214;rnek:&lt;br /&gt; cmsentry-[entry_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmsentrycompage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Ba&#351;l&#305;k Yorum Sayfaland&#305;rmas&#305;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; CMS ba&#351;l&#305;k yorum sayfaland&#305;rmas&#305; i&#231;in bir URL yeniden yazma modeli belirleyin.&lt;/p&gt; &lt;p&gt;Not: Bu opsiyon vB 4.x ve daha sonraki versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt; &lt;p&gt;&#214;rnek:&lt;br /&gt; cmsentry-[entry_id]-comments[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cmshome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Ana Sayfa&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; CMS anasayfas&#305; i&#231;in bir URL yeniden yazma modeli belirleyin.&lt;/p&gt; &lt;p&gt;Not: Bu opsiyon vB 4.x ve daha sonraki versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt; &lt;p&gt;&#214;rnek:&lt;br /&gt; content.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>url_blog</name>
+		<value>Blog URLleri</value>
+	</message>
+	<message>
+		<name>forum_opt_description</name>
+		<value>&lt;h4&gt;Select Your Forum URLleri Global Format&lt;/h4&gt;
+
+&lt;p&gt;Var olan URL listesinden birini se&#231;iniz&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>path_opt</name>
+		<value>Forum Yolu</value>
+	</message>
+	<message>
+		<name>blog_opt_description</name>
+		<value>&lt;h4&gt;Blog Urlleri Yeniden Yazma format&#305;n&#305; se&#231;int&lt;/h4&gt;
+
+&lt;p&gt;Var olan URL listesinden birini se&#231;iniz veya '+' ya t&#305;klayarak geli&#351;mi&#351; ayarlar&#305; a&#231;&#305;n&#305;z&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_msg_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Misafir Mesajlar&#305; Sayfaland&#305;rmas&#305;&lt;/b&gt; &lt;br /&gt;
+
+Misafir Mesajlar&#305; Sayfaland&#305;rmas&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+u[user_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_friends_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Arkada&#351; Listesi Sayfaland&#305;rmas&#305;&lt;/b&gt; &lt;br /&gt;
+
+Arkada&#351; Listesi Sayfaland&#305;rmas&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+u[user_id]-friends[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_albums_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Album Listesi&lt;/b&gt; &lt;br /&gt;
+
+Album Listesi URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+u[user_id]-albums.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_albumspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Albums List Sayfaland&#305;rmas&#305;&lt;/b&gt; &lt;br /&gt; Select an albums list URL format or create a custom layout using the field provided.&lt;/p&gt; &lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt; &lt;p&gt;Sample custom string:&lt;br /&gt; u[user_id]-albums-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_album_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Albums&lt;/b&gt; &lt;br /&gt;
+
+Select a member album's URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+u[user_id]-albums-[album_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_albumpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Album Sayfaland&#305;rmas&#305;&lt;/b&gt; &lt;br /&gt;
+
+Select a member album's URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+u[user_id]-albums-[album_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_pic_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Resim Sayfas&#305;&lt;/b&gt; &lt;br /&gt;
+
+Resim Sayfas&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+u[user_id]-pic[picture_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_entry</name>
+		<value>Blog Ba&#351;l&#305;k URLleri</value>
+	</message>
+	<message>
+		<name>rw_blogent_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Ba&#351;l&#305;k URLlerini yeniden yaz?&lt;/b&gt;&lt;br /&gt;
+
+Blog Ba&#351;l&#305;k URLlerini yeniden yazmak i&#231;in Evet i se&#231;in.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_cat</name>
+		<value>Blog Kategori URLleri</value>
+	</message>
+	<message>
+		<name>rw_blogcat_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Kategori URLlerini yeniden yaz?&lt;/b&gt;&lt;br /&gt;
+
+Blog Kategori URLlerini yeniden yazmak i&#231;in Evet i se&#231;in.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_att</name>
+		<value>Blog Eklenti URLleri</value>
+	</message>
+	<message>
+		<name>rw_blogatt_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Eklenti URLlerini yeniden yaz?&lt;/b&gt;&lt;br /&gt;
+
+Blog Eklenti URLlerini yeniden yazmak i&#231;in Evet i se&#231;in.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_feed</name>
+		<value>Blog Feed URLleri</value>
+	</message>
+	<message>
+		<name>rw_blogfeed_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Feed URLlerini yeniden yaz?&lt;/b&gt;&lt;br /&gt;
+
+Blog Feed URLlerini yeniden yazmak i&#231;in Evet i se&#231;in.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_list</name>
+		<value>Blog Lists URLleri</value>
+	</message>
+	<message>
+		<name>rw_bloglist_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Liste URLlerini yeniden yaz?&lt;/b&gt;&lt;br /&gt;
+
+Blog Liste URLlerini yeniden yazmak i&#231;in Evet i se&#231;in.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_forum</name>
+		<value>Forum Permalinkleri</value>
+	</message>
+	<message>
+		<name>permalink_profile</name>
+		<value>User Profile Permalinkleri</value>
+	</message>
+	<message>
+		<name>permalink_blog</name>
+		<value>Blog Permalinkleri</value>
+	</message>
+	<message>
+		<name>permalink_cms</name>
+		<value>CMS Permalinkleri</value>
+	</message>
+	<message>
+		<name>permalink_profile_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Profile Misafir Mesajlar&#305;nda &quot;Permalink&quot; aktif et&lt;/b&gt; &lt;br /&gt;
+
+Profile Misafir Mesajlar&#305; permalinkleri aktif ederek mesajlara anchor eklenmesini sa&#287;lay&#305;n&#305;z.&lt;/p&gt;
+
+
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink options:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt; Permalink bilgisini tarih/saat'in yan&#305;nda g&#246;ster &lt;/b&gt;
+
+&lt;br /&gt;
+
+Tarih ve saatin sa&#287;&#305;na &quot;Permalink&quot; linkini ekler
+
+
+
+&lt;p&gt;&lt;b&gt; Mesaj tarihini Permalink olarak belirle&lt;/b&gt;
+
+&lt;br /&gt;
+
+Mesaj&#305;n tarihini &quot;Permalink&quot; linkiyle de&#287;i&#351;tirir.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt; Misafir Mesajlar&#305;na Permalink ekleme &lt;/b&gt;
+
+&lt;br /&gt;
+
+Misafir Mesajlar&#305; i&#231;in &quot;Permalink&quot; linklerini kapat. &lt;/p&gt;
+
+
+
+&lt;p&gt;*  &amp;lt;!--PERMALINK_INFO--&amp;gt; kodunu &lt;em&gt;memberinfo_visitormessage&lt;/em&gt; template'inde &quot;Permalink&quot; ler i&#231;in &#246;zel yer belirlemek i&#231;in kullanabilirsiniz.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_blog_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Yorumlar&#305;nda &quot;Permalink&quot; aktif et&lt;/b&gt; &lt;br /&gt;
+
+Blog Yorumlar&#305; permalinkleri aktif ederek mesajlara anchor eklenmesini sa&#287;lay&#305;n&#305;z.&lt;/p&gt;
+
+
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink opsiyonlar&#305;:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt; Permalink Anchor resmini her yorumun sa&#287; alt k&#246;&#351;esinde g&#246;sterin &lt;/b&gt;
+
+&lt;br /&gt;
+
+&quot;Permalink&quot; link resmini her yorumun sa&#287; alt k&#305;sm&#305;na ekler.
+
+
+
+&lt;p&gt;&lt;b&gt; Blog Yorumlar&#305;na Permalink ekleme  &lt;/b&gt;
+
+&lt;br /&gt;
+
+Blog Yorumlar&#305; i&#231;in &quot;Permalink&quot; linklerini kapat..&lt;/p&gt;
+
+
+
+&lt;p&gt;*  &amp;lt;!--PERMALINK_INFO--&amp;gt; kodunu &lt;em&gt;blog_comment&lt;/em&gt; template'inde &quot;Permalink&quot; ler i&#231;in &#246;zel yer belirlemek i&#231;in kullanabilirsiniz.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_cms_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;CMS Ba&#351;l&#305;klar&#305;nda &quot;Permalink&quot; aktif et&lt;/b&gt; &lt;br /&gt;
+
+CMS Ba&#351;l&#305;klar&#305; permalinkleri aktif ederek mesajlara anchor eklenmesini sa&#287;lay&#305;n&#305;z.&lt;/p&gt;
+
+
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 4.x ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink opsiyonlar&#305;:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt; Permalink Anchor resmini her yorumun sa&#287; alt k&#246;&#351;esinde g&#246;sterin &lt;/b&gt;
+
+&lt;br /&gt;
+
+&quot;Permalink&quot; link resmini her yorumun sa&#287; alt k&#305;sm&#305;na ekler.
+
+
+
+&lt;p&gt;&lt;b&gt; CMS Ba&#351;l&#305;klar&#305;na Permalink ekleme  &lt;/b&gt;
+
+&lt;br /&gt;
+
+CMS Ba&#351;l&#305;klar&#305;na i&#231;in &quot;Permalink&quot; linklerini kapat..&lt;/p&gt;
+
+
+
+&lt;p&gt;*  &amp;lt;!--PERMALINK_INFO--&amp;gt; kodunu &lt;em&gt;vbcms_postbit&lt;/em&gt; template'inde &quot;Permalink&quot; ler i&#231;in &#246;zel yer belirlemek i&#231;in kullanabilirsiniz.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pl_blog_1</name>
+		<value>Permalink Anchor resmini her yorumun sa&#287; alt k&#246;&#351;esinde g&#246;sterin</value>
+	</message>
+	<message>
+		<name>pl_blog_2</name>
+		<value>Yorum tarihini Permalink olarak belirle</value>
+	</message>
+	<message>
+		<name>pl_blog_0</name>
+		<value>Blog Yorumlar&#305;na Permalink ekleme</value>
+	</message>
+	<message>
+		<name>pl_cms_1</name>
+		<value>Permalink resini yorumun sa&#287; alt k&#246;&#351;esinde g&#246;ster</value>
+	</message>
+	<message>
+		<name>pl_cms_2</name>
+		<value>Yorum tarihini Permalink olarak belirle</value>
+	</message>
+	<message>
+		<name>pl_cms_0</name>
+		<value>CMS yorumlar&#305;na Permalink Ekleme</value>
+	</message>
+	<message>
+		<name>pl_profile_0</name>
+		<value>Misafir Mesajlar&#305;na Permalink ekleme </value>
+	</message>
+	<message>
+		<name>pl_profile_1</name>
+		<value>Permalink bilgisini tarih/saat'in yan&#305;nda g&#246;ster</value>
+	</message>
+	<message>
+		<name>pl_profile_2</name>
+		<value>Mesaj tarihini Permalink olarak belirle</value>
+	</message>
+	<message>
+		<name>permalink_groups_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Grup Mesajlar&#305;nda &quot;Permalink&quot; aktif et&lt;/b&gt; &lt;br /&gt;
+
+Sosyal Grup Mesajlar&#305;nda permalinkleri aktif ederek mesajlara anchor eklenmesini sa&#287;lay&#305;n&#305;z.&lt;/p&gt;
+
+
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink options:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt;Permalink bilgisini tarih/saat'in yan&#305;nda g&#246;ster&lt;/b&gt;
+
+&lt;br /&gt;
+
+Tarih ve saatin sa&#287;&#305;na &quot;Permalink&quot; linkini ekler
+
+
+
+&lt;p&gt;&lt;b&gt;Mesaj tarihini Permalink olarak belirle&lt;/b&gt;
+
+&lt;br /&gt;
+
+Mesaj&#305;n tarihinin &quot;Permalink&quot; linkiyle de&#287;i&#351;tirir.
+
+
+
+&lt;p&gt;&lt;b&gt;Misafir Mesajlar&#305;na Permalink ekleme &lt;/b&gt;
+
+&lt;br /&gt;
+
+Misafir Mesajlar&#305; i&#231;in &quot;Permalink&quot; linklerini kapat. &lt;/p&gt;
+
+
+
+&lt;p&gt;*  &amp;lt;!--PERMALINK_INFO--&amp;gt; kodunu &lt;em&gt;socialgroups_message&lt;/em&gt; template'inde &quot;Permalink&quot; ler i&#231;in &#246;zel yer belirlemek i&#231;in kullanabilirsiniz.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_groupspic_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Grup Resimlerinde &quot;Permalink&quot; aktif et&lt;/b&gt; &lt;br /&gt;
+
+Sosyal Grup Resimlerinde permalinkleri aktif ederek mesajlara anchor eklenmesini sa&#287;lay&#305;n&#305;z.&lt;/p&gt;
+
+
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink options:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt;Permalink bilgisini tarih/saat'in yan&#305;nda g&#246;ster&lt;/b&gt;
+
+&lt;br /&gt;
+
+Tarih ve saatin sa&#287;&#305;na &quot;Permalink&quot; linkini ekler
+
+
+
+&lt;p&gt;&lt;b&gt;Mesaj tarihini Permalink olarak belirle&lt;/b&gt;
+
+&lt;br /&gt;
+
+Mesaj&#305;n tarihinin &quot;Permalink&quot; linkiyle de&#287;i&#351;tirir.
+
+
+
+&lt;p&gt;&lt;b&gt;Misafir Mesajlar&#305;na Permalink ekleme &lt;/b&gt;
+
+&lt;br /&gt;
+
+Misafir Mesajlar&#305; i&#231;in &quot;Permalink&quot; linklerini kapat. &lt;/p&gt;
+
+
+
+&lt;p&gt;*  &amp;lt;!--PERMALINK_INFO--&amp;gt; kodunu &lt;em&gt;picturecomment_message&lt;/em&gt; template'inde &quot;Permalink&quot; ler i&#231;in &#246;zel yer belirlemek i&#231;in kullanabilirsiniz.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_groups</name>
+		<value>Sosyal Grup Permalinkleri</value>
+	</message>
+	<message>
+		<name>permalink_groupspic</name>
+		<value>Sosyal Grup Resimleri Permalinkleri</value>
+	</message>
+	<message>
+		<name>pl_groups_1</name>
+		<value>Permalink bilgisini tarih/saat'in yan&#305;nda g&#246;ster</value>
+	</message>
+	<message>
+		<name>pl_groups_2</name>
+		<value>Mesaj tarihini Permalink olarak belirle</value>
+	</message>
+	<message>
+		<name>pl_groups_0</name>
+		<value>Permalink ekleme Misafir Mesajlar&#305; </value>
+	</message>
+	<message>
+		<name>memb_picimg_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Resim Dosyas&#305;&lt;/b&gt; &lt;br /&gt;
+
+Resim Dosyas&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+u[user_id]-pic[picture_id].[original_ext]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_picpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Kullan&#305;c&#305; Resim Sayfaland&#305;rmas&#305;&lt;/b&gt; &lt;br /&gt;
+
+Kullan&#305;c&#305; Resim Sayfaland&#305;rmas&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+u[user_id]-pic[picture_id]-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_pic_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Kullan&#305;c&#305; alb&#252;mlerinde &quot;Permalink&quot; aktif et &lt;/b&gt; &lt;br /&gt;
+
+Kullan&#305;c&#305; alb&#252;mlerinde permalinkleri aktif ederek mesajlara anchor eklenmesini sa&#287;lay&#305;n&#305;z.&lt;/p&gt;
+
+
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Permalink options:&lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;b&gt;Permalink bilgisini tarih/saat'in yan&#305;nda g&#246;ster&lt;/b&gt;
+
+&lt;br /&gt;
+
+Tarih ve saatin sa&#287;&#305;na &quot;Permalink&quot; linkini ekler
+
+
+
+&lt;p&gt;&lt;b&gt;Mesaj tarihini Permalink olarak belirle&lt;/b&gt;
+
+&lt;br /&gt;
+
+Mesaj&#305;n tarihinin &quot;Permalink&quot; linkiyle de&#287;i&#351;tirir.
+
+
+
+&lt;p&gt;&lt;b&gt;Misafir Mesajlar&#305;na Permalink ekleme&lt;/b&gt;
+
+&lt;br /&gt;
+
+Misafir Mesajlar&#305; i&#231;in &quot;Permalink&quot; linklerini kapat. &lt;/p&gt;
+
+
+
+&lt;p&gt;*  &amp;lt;!--PERMALINK_INFO--&amp;gt; kodunu &lt;em&gt;picturecomment_message&lt;/em&gt; template'inde &quot;Permalink&quot; ler i&#231;in &#246;zel yer belirlemek i&#231;in kullanabilirsiniz.
+
+&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>permalink_album</name>
+		<value>Kullan&#305;c&#305; Alb&#252;m Permalinkleri</value>
+	</message>
+	<message>
+		<name>memb_convpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Kullan&#305;c&#305; Konu&#351;malar&#305; Sayfaland&#305;rmas&#305;&lt;/b&gt; &lt;br /&gt;
+
+Kullan&#305;c&#305; Konu&#351;malar&#305; Sayfaland&#305;rmas&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+conv-[user_id]-[visitor_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>memb_conv_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Kullan&#305;c&#305; Konu&#351;malar&#305;&lt;/b&gt; &lt;br /&gt;
+
+Kullan&#305;c&#305; Konu&#351;malar&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+conv-[user_id]-[visitor_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>ignore_linkback_dupe_desc</name>
+		<value>&lt;p&gt;
+
+&lt;b&gt;Ayn&#305; adresten benzer URLleri Bloklay&#305;n?&lt;/b&gt; &lt;br /&gt;
+
+Ayn&#305; adresten benzer URLleri Bloklamak i&#231;in &quot;Evet&quot; se&#231;in.&lt;/p&gt;
+
+&lt;p&gt;&#214;zel bir algoritma kullanarak vBSEO daha &#246;nce gelmi&#351; linkbacklerin ayn&#305;s&#305; olup olmad&#305;&#287;&#305;n&#305; kontrol edicek. Bu linkbacklerin kayna&#287;&#305; birden fazla url format&#305;na sahip siteler oldu&#287;undan ayn&#305; adresten gelenleri otomatik olarak silicek..&lt;/p&gt;
+
+</value>
+	</message>
+	<message>
+		<name>preset_6</name>
+		<value>Hiyera&#351;ik .html &#351;eklinde konu ve forum URL'leri (used at www.vBulletinSetup.com)</value>
+	</message>
+	<message>
+		<name>grouppicture_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Grup Resim Sayfas&#305;&lt;/b&gt; &lt;br /&gt;
+
+Grup Resim Sayfas&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+groups-[group_name]-pic[picture_id].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppicturepage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Grup Resim Sayfas&#305; Sayfaland&#305;rmas&#305;&lt;/b&gt;&lt;br /&gt;
+
+Grup Resim Sayfas&#305; Sayfaland&#305;rmas&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+groups-[group_name]-pic[picture_id]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>grouppictureimg_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Grup Resim Dosyas&#305;&lt;/b&gt; &lt;br /&gt;
+
+Select a Grup Resim Dosyas&#305;'s URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+groups-[group_name]-pic[picture_id].[original_ext]&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupshome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Grup Anasayfas&#305;&lt;/b&gt; &lt;br /&gt;
+
+Sosyal Grup Anasayfas&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+groups.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupsallpage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&quot;All Social Groups&quot; List Pagination&lt;/b&gt;  &lt;br /&gt; Select all groups list pagination URL format or create a custom layout using the field provided.&lt;/p&gt; &lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt; &lt;p&gt;Sample custom string:&lt;br /&gt; groups-all-[page].html&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&quot;B&#252;t&#252;n Sosyal Grup&quot; Liste Sayfaland&#305;rmas&#305;&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;G&#220;NCELLEND&#304;!&lt;/span&gt; &lt;br /&gt;&#252;t&#252;n Sosyal Grup&quot; Liste Sayfaland&#305;rmas&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt; &lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt; &lt;p&gt;&#214;rnek:&lt;br /&gt; groups-all-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>groupsall_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&quot;All Social Groups&quot; List Pagination&lt;/b&gt;  &lt;br /&gt; Select all groups list pagination URL format or create a custom layout using the field provided.&lt;/p&gt; &lt;p&gt;Note: This option works ONLY with vB 3.7.x or higher&lt;/p&gt; &lt;p&gt;Sample custom string:&lt;br /&gt; groups-all-[page].html&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&quot;B&#252;t&#252;n Sosyal Grup&quot; Liste Sayfaland&#305;rmas&#305;&lt;/b&gt; &lt;span class=&quot;updated&quot;&gt;G&#220;NCELLEND&#304;!&lt;/span&gt; &lt;br /&gt;&#252;t&#252;n Sosyal Grup&quot; Liste Sayfaland&#305;rmas&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt; &lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt; &lt;p&gt;&#214;rnek:&lt;br /&gt; groups-all-[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloghome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Ana Sayfas&#305;&lt;/b&gt; &lt;br /&gt;
+
+Blog Ana Sayfas&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+blogs.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>tagshome_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Etiket Anasayfas&#305;&lt;/b&gt; &lt;br /&gt;
+
+Etiket Anasayfas&#305; URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+tags.html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>tags_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Etiket'ler&lt;/b&gt;&lt;br /&gt;
+
+Etiket'ler URL format&#305; belirleyin veya var olandan se&#231;iniz.&lt;/p&gt;
+
+&lt;p&gt;Not: Bu &#246;zellik sadece vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;
+
+&lt;p&gt;&#214;rnek:&lt;br /&gt;
+
+tags-[tag].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>tagspage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Etiket Sayfas&#305;&lt;/b&gt; &lt;br /&gt; Etiket sayfas&#305; sayfa format&#305;n&#305; se&#231;in.&lt;/p&gt; &lt;p&gt;Not: Bu sistem vB 3.7 ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r. &lt;/p&gt; &lt;p&gt;&#214;rnek:&lt;br /&gt; tags-[tag]-page[page].html&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_tags</name>
+		<value>Tags URLleri</value>
+	</message>
+	<message>
+		<name>rw_tags_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Etiket URLlerini yeniden yaz?&lt;/b&gt;&lt;br /&gt;
+
+Etiket URLlerini yeniden yazmak i&#231;in Evet'i se&#231;in.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_hits_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Linkbacklerde Hit Say&#305;s&#305;n&#305; G&#246;ster?&lt;/b&gt; &lt;br /&gt; Her linkbacke gelen hit say&#305;s&#305;n&#305; ekstra bir kolumn i&#231;erisinde g&#246;sterir. Bu opsiyonun g&#246;sterilece&#287;i kullan&#305;c&#305; grup id'lerini girin. &lt;br /&gt;&lt;br /&gt; &#304;pucu: Varsay&#305;lan vBulletin grup idleri Misafir , Kullan&#305;c&#305; Admin ve Moderat&#246;rler i&#231;in. &lt;br /&gt;&lt;br /&gt;&#214;rnek:&lt;br /&gt; 1 2 6 7 &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>pingback_hits_top</name>
+		<value>Linkbacklere gelen hit say&#305;s&#305;n&#305; g&#246;ster</value>
+	</message>
+	<message>
+		<name>pingback_hits_right</name>
+		<value>(Kullan&#305;c&#305; gruplar&#305;n&#305; bo&#351;luk ile ay&#305;r&#305;n)</value>
+	</message>
+	<message>
+		<name>urls_blog_tag_search</name>
+		<value>Blog Etiket Arama</value>
+	</message>
+	<message>
+		<name>rw_blog_tag_search_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Etiket Arama Urlsini Yeniden Yaz&lt;/b&gt;&lt;br /&gt; Blog Etiket Arama Urlsini Yeniden Yazmak Istiyor musunuz.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Etiket Url Format&#305;&lt;/b&gt;&lt;br /&gt;Blog Etiket Url Format&#305;n&#305; se&#231;in.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_home_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Etikerleri&lt;/b&gt; &lt;br /&gt; Blog etiketleri i&#231;in bir isim belirleyin.&lt;br /&gt;&lt;br /&gt;Not: Bu opsiyon SADECE vBulletin Blog 2.0.x ve yeni versiyonlar&#305;nda &#231;al&#305;&#351;&#305;r&lt;br /&gt;&lt;br /&gt; &#214;rnek:&lt;br /&gt; blogs/tags.html &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_cst_page</name>
+		<value>Blog &#214;zel Sayfalar&#305;</value>
+	</message>
+	<message>
+		<name>rw_blog_cst_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog &#214;zel Sayfas&#305; Url Yazma&lt;/b&gt;&lt;br /&gt; Blog &#214;zel Sayfas&#305; Url Yazma format&#305;n&#305; belirleyin.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_cst_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog &#214;zel Sayfas&#305; Url Yazma&lt;/b&gt;&lt;br /&gt; Blog &#214;zel Sayfas&#305; Url Yazma format&#305;n&#305; belirleyin.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>urls_blog_tags</name>
+		<value>Blog Etiketleri</value>
+	</message>
+	<message>
+		<name>rw_blog_tags_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Etiket Urllerini Yeniden Yaz?&lt;/b&gt;&lt;br /&gt; Blog Etiket Urllerini yeniden yazmak istiyor musunuz&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_desc_page</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Etiket Url Format&#305;?&lt;/b&gt;&lt;br /&gt;Birden Fazla Sayfal&#305; Blog Etiket Url Format&#305;n&#305; belirleyiniz&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglatestentries_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Son 24 saatin blog ba&#351;l&#305;klar&#305;n&#305; g&#246;sterme ayarlar&#305;&lt;/b&gt; &lt;br /&gt; Son 24 saatin blog ba&#351;l&#305;klar&#305;n&#305; g&#246;sterme ayarlar&#305;n&#305; se&#231;in&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>bloglatestentriespage_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Birden Fazla Sayfal&#305; Son 24 saatin blog ba&#351;l&#305;klar&#305;n&#305; g&#246;sterme ayarlar&#305;&lt;/b&gt; &lt;br /&gt; Birden Fazla Sayfal&#305; Son 24 saatin blog ba&#351;l&#305;klar&#305;n&#305; g&#246;sterme ayarlar&#305;n&#305; s&#231;ein&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_tags_search_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Blog Etiket Url Format&#305;?&lt;/b&gt;&lt;br /&gt; Blog Etiket Url Format&#305;n&#305; belirleyiniz&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>blog_user_tags_serch_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Kullan&#305;c&#305; Blog Tag arama Ayarlar&#305;?&lt;/b&gt; &lt;br /&gt; Kullan&#305;c&#305; Blog Tag arama ayarlar&#305;n&#305; se&#231;in&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>virt_html</name>
+		<value>Virtual HTML G&#246;sterimi</value>
+	</message>
+	<message>
+		<name>virt_html_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Virtual HTML G&#246;sterimi vB Uyar&#305;lar&#305;na Uygula&lt;/b&gt;  &lt;br /&gt; Sayfa &#252;zerinde keyword uyumlulu&#287;unu artt&#305;rmak a&#231;&#305;s&#305;ndan ve Arama botlar&#305;n&#305;n sayfalar&#305;n&#305;zdaki &#246;nemli bilgiler yerine uyar&#305; bilgilerini g&#246;rmesini engellemek i&#231;in vBulletin Uyar&#305;lar&#305;n&#305;n etraf&#305;na Javascript ile &#231;evreleyerek bu konuda &#246;nemli bir avantaj sunmaktad&#305;r.&lt;br /&gt;&lt;br /&gt;
+Ek olarak vBulletin templateleri i&#231;erisinde alttaki kodlar&#305; kullanarak istedi&#287;iniz i&#231;eri&#287;i Virtual Html G&#246;sterimi sayesinde botlar&#305;n g&#246;rmesini engelleyebilirsiniz.&lt;br /&gt;&lt;br /&gt;
+&amp;lt;!--VBSEO_VIRTUAL_HTML--&amp;gt;&lt;br /&gt;
+code here&lt;br /&gt;
+&amp;lt;!--/VBSEO_VIRTUAL_HTML--&amp;gt;
+&lt;br /&gt;
+
+&lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>canonical_link</name>
+		<value>Canonical URL'leri</value>
+	</message>
+	<message>
+		<name>canonical_link_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Enable Canonical URLs&lt;/b&gt;   &lt;br /&gt;
+Canonical URL URL'nin &quot;tercih edilen&quot; versiyonudur. Google ve di&#287;er arama motorlar&#305; sayfan&#305;n &lt;head&gt; i&#231;erisindeki rel=&quot;canonical&quot; de&#287;erini tespit ederek bu sayfan&#305;n tercih edilebilen sayfa oldu&#287;unu belirler.&lt;br /&gt;
+
+vBSEO'nun link uyumlulu&#287;u bir tane tercih edilen URL belirlenmesini sa&#287;lar. Eklenen bu &#246;zellik sayesinde sitenizdeki tercih edilen urller belirlenir ve vBSEO ile birlikte maksimum optimasyon sa&#287;lan&#305;r..&lt;br /&gt;
+
+Ancak bir&#231;ok URL tipi de&#287;i&#351;ik g&#246;sterim format&#305; y&#252;z&#252;nden farkl&#305; URL'ler ile g&#246;sterimi &lt;b&gt;mecburi&lt;/b&gt; k&#305;lmaktad&#305;r. Bunlar genellikle &quot;sayfan&#305;n farkl&#305; g&#246;sterim formatlar&#305;n&#305;&quot; belirleyen URL'lerdir.&lt;br /&gt;
+
+Bu opsiyonu aktif ederseniz vBSEO sizin i&#231;in tercih edilmi&#351; sayfa formatlar&#305;n&#305; belirleyecek ve &quot;farkl&#305; g&#246;sterim formatlar&#305;ndaki&quot;, sorunu ortadan kald&#305;racakt&#305;r. Desteklenen sayfalar: forumdisplay, social group discussions, member ve blog lists.&lt;br /&gt;
+&lt;/p&gt;
+		</value>
+	</message>
+	<message>
+		<name>group_search_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Grup Arama Url Format&#305; &lt;/b&gt; &lt;br /&gt; Sosyal Grup Arama Url Format&#305;n&#305; belirleyin.&lt;br /&gt; vBulletin 3.8.x gerektirir&lt;/p&gt;  </value>
+	</message>
+	<message>
+		<name>group_subscrb_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Grup Abonelikleri Url Format&#305; &lt;/b&gt; &lt;br /&gt; Sosyal Grup Abonelikleri Url Format&#305;n&#305; belirleyin.&lt;br /&gt; vBulletin 3.8.x gerektirir&lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>urls_group_category_header</name>
+		<value>Sosyal Grup Kategori Yeniden Yazma Ayarlar&#305;</value>
+	</message>
+	<message>
+		<name>rw_group_category_urls</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Grup Kategorileri Yeniden Yaz&#305;ls&#305;n m&#305; ?&lt;/b&gt; &lt;br /&gt; Sosyal Grup Kategorilerini yeniden yazmak istiyorsan&#305;z Evet se&#231;in.&lt;br /&gt; vBulletin 3.8.x gerektirir &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>group_category_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Grup Kategorileri Url Format&#305;&lt;/b&gt; &lt;br /&gt; Sosyal Grup Kategorileri Url Format&#305;n&#305; Belirleyin.&lt;br /&gt; vBulletin 3.8.x gerektirir &lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>group_category_list_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Grup Kategori Listeleme Url Format&#305;&lt;/b&gt; &lt;br /&gt; Sosyal Grup Kategori Listeleme Url Format&#305;n&#305; Belirleyin.&lt;br /&gt; vBulletin 3.8.x gerektirir &lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>group_category_list_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Grup Kategori Listeleme &#199;oklu Sayfa Url Format&#305;&lt;/b&gt; &lt;br /&gt; Sosyal Grup Kategori Listeleme &#199;oklu Sayfa  Url Format&#305;n&#305; Belirleyin.&lt;br /&gt; vBulletin 3.8.x gerektirir &lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>urls_group_discussion_header</name>
+		<value>Sosyal Grup Tart&#305;&#351;malar&#305; Yeniden Yazmalar&#305;</value>
+	</message>
+	<message>
+		<name>group_discussion_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Grup Tart&#305;&#351;malar&#305; Yeniden URL format &lt;/b&gt;&lt;br /&gt; Sosyal Grup Tart&#305;&#351;malar&#305; URL format&#305;n&#305; belirleyin&lt;br /&gt; vBulletin 3.8.x gerektirir&lt;/p&gt;   </value>
+	</message>
+	<message>
+		<name>group_discussion_page_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Grup Tart&#305;&#351;malar&#305; &#199;oklu Sayfa Yeniden URL format &lt;/b&gt; &lt;br /&gt; Sosyal Grup Tart&#305;&#351;malar&#305; &#199;oklu Sayfa  URL format&#305;n&#305; belirleyin&lt;br /&gt; vBulletin 3.8.x gerektirir&lt;/p&gt;   </value>
+	</message>
+	<message>
+		<name>group_discussion_message_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Sosyal Grup Tart&#305;&#351;malar&#305; Mesaj Url Format&#305; &lt;/b&gt; &lt;br /&gt; Sosyal Grup Tart&#305;&#351;malar&#305; MesajURL format&#305;n&#305; belirleyin&lt;br /&gt; vBulletin 3.8.x gerektirir &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>rw_albums_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Alb&#252;mler Anasayfas&#305;n&#305; Yeniden Yaz?&lt;/b&gt;  &lt;br /&gt; Bu opsiyonu Evet se&#231;erek Album Anasayfa Urllerini Yeniden Yazabilirsiniz.&lt;br /&gt; vBulletin 3.8.x gerektirir &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>url_albums</name>
+		<value>Alb&#252;m URL'leri</value>
+	</message>
+	<message>
+		<name>memb_albums_home_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Alb&#252;mler Anasayfas&#305; URL format&#305; &lt;/b&gt; &lt;br /&gt; Alb&#252;mler Anasayfas&#305; URL format&#305;n&#305; belirleyin.&lt;br /&gt; vBulletin 3.8.x gerektirir &lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>memb_albums_home_page_format_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Album Abasayfa Sayfaland&#305;rmas&#305;&lt;/b&gt; &lt;br /&gt; Album anasayfa sayfaland&#305;rma format&#305;n&#305; se&#231;in&lt;br /&gt;&lt;br /&gt; Not: Bu opsiyon vBulletin 3.8.x &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>group_category_page_desc</name>
+		<value>	 &lt;p&gt;&lt;b&gt;Sosyal Grup Kategori Sayfaland&#305;rmas&#305; &lt;/b&gt; &lt;br /&gt; Sosyal Grup Kategori Sayfaland&#305;rmas&#305; URL format&#305;n&#305; se&#231;in.&lt;br /&gt;&lt;br /&gt; vBulletin 3.8.x ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;  </value>
+	</message>
+	<message>
+		<name>group_discussion_last_post_desc</name>
+		<value>	 &lt;p&gt;&lt;b&gt;Sosyal Grup Tart&#305;&#351;malar&#305; Son Mesaj &lt;/b&gt;&lt;br /&gt; Sosyal Grup Tart&#305;&#351;malar&#305; Son Mesaj URL format&#305;n&#305; se&#231;in.&lt;br /&gt;&lt;br /&gt; vBulletin 3.8.x ve &#252;zeri versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt;  </value>
+	</message>
+	<message>
+		<name>pl_groupspic_1</name>
+		<value>Permalink bilgisini tarih/saat'in yan&#305;nda g&#246;ster</value>
+	</message>
+	<message>
+		<name>pl_groupspic_2</name>
+		<value>Mesaj tarihini Permalink olarak belirle</value>
+	</message>
+	<message>
+		<name>pl_groupspic_0</name>
+		<value>Sosyal Grup Resim Yorumlar&#305;na Permalink bilgisi ekleme</value>
+	</message>
+	<message>
+		<name>segmentation_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Geli&#351;mi&#351; Google Segmentation Izleme&lt;/b&gt;  &lt;br /&gt;Google Analytics ile entegrasyonu olan bu opsiyon sayesinde adminlere sitelerindeki kullan&#305;c&#305; gruplar&#305;na g&#246;re segmentleri takip etme imkan&#305; vermektedir.&lt;br /&gt;&lt;br /&gt;
+
+Standart versiyonu kulland&#305;&#287;&#305;n&#305;zda forumunuzdaki kullan&#305;c&#305;lar sadece Misafir ve &#220;ye olarak grupland&#305;r&#305;lacakt&#305;r. Bu sayedegruplar&#305;n farkl&#305; aktivitelerini takip edebileceksiniz.&lt;br /&gt;&lt;br /&gt;
+
+Geli&#351;mi&#351; versiyonla birlikte , sitenizde var olan kullan&#305;c&#305;lar&#305;n dahil olduklar&#305; kullan&#305;c&#305; gruplar&#305;na g&#246;re farkl&#305; segment i&#231;erisinde takip etme imkan&#305;na sahip olucaks&#305;n&#305;z. Istatistikleri misafir , &#252;ye , moderator , admin gibi kullan&#305;c&#305; gruplar&#305;nda g&#246;r&#252;nt&#252;leme imkan&#305;n&#305;z olucak.
+&lt;/p&gt;
+        </value>
+	</message>
+	<message>
+		<name>segmentation_1</name>
+		<value>Standart Versiyon</value>
+	</message>
+	<message>
+		<name>segmentation_2</name>
+		<value>Geli&#351;mi&#351; Versiyon</value>
+	</message>
+	<message>
+		<name>segmentation_0</name>
+		<value>Kullanma</value>
+	</message>
+	<message>
+		<name>vhtml_opt0</name>
+		<value>Virtual HTML G&#246;sterimi Ekleme</value>
+	</message>
+	<message>
+		<name>vhtml_opt1</name>
+		<value>Virtual HTML G&#246;sterimi Ekle</value>
+	</message>
+	<message>
+		<name>vhtml_opt2</name>
+		<value>Virtual HTML G&#246;sterimi Ekle (Sadece Misafirlere)</value>
+	</message>
+	<message>
+		<name>twitter_user</name>
+		<value>Twitter Kullan&#305;c&#305; ad&#305;n&#305;z</value>
+	</message>
+	<message>
+		<name>tb_opt</name>
+		<value>Tweetboard Opsiyonlar&#305;</value>
+	</message>
+	<message>
+		<name>vbseo_tweetboard</name>
+		<value>&lt;p&gt;&lt;b&gt;Tweetboard Entegrasyonu&lt;/b&gt; &lt;br /&gt; Tweetboard siteniz i&#231;in anl&#305;k Twitter-powered micro forum yarat&#305;r.&lt;br /&gt; &lt;/p&gt; &lt;p&gt;Site trafi&#287;inizi artt&#305;rmak i&#231;in kullanabilece&#287;iniz basit bir opsiyondur.&lt;br /&gt; &lt;/p&gt; &lt;p&gt;Tweetboard entegrasyonunu aktif etmek &#231;ok basit bir olgudur.  Sadece twitter kullan&#305;c&#305; ad&#305;n&#305;z&#305; girmeniz gerekmektedir.&lt;br /&gt; &lt;/p&gt; &lt;p&gt;E&#287;er hen&#252;z Tweetboard hesab&#305;n&#305;z yoksa &lt;a href=&quot;http://twitter.com&quot; target=&quot;_blank&quot;&gt;buradan&lt;/a&gt; kendinize hesap talep edebilirsiniz..&lt;br /&gt; &lt;/p&gt; &lt;p&gt; Detaylar: &lt;a href=&quot;http://tweetboard.com&quot; target=&quot;_blank&quot;&gt;http://tweetboard.com&lt;/a&gt; &lt;/p&gt; </value>
+	</message>
+	<message>
+		<name>forum_feeds_url</name>
+		<value>Forum Feed URL'leri</value>
+	</message>
+	<message>
+		<name>rw_forum_feeds_url_desc</name>
+		<value>	 &lt;p&gt;&lt;b&gt;Forum Feed URL'lerini yeniden yaz?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; Bu opsiyonu Evet se&#231;erek Forum Feed Urllerini yeniden yazabilirsiniz.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_feeds_url_general</name>
+		<value>&lt;p&gt;&lt;b&gt;Genel Feed Urlleri&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; Genel Feed yay&#305;n&#305; i&#231;in bir URL yeniden yazma modeli belirleyin.&lt;/p&gt; &lt;p&gt;Not: Bu opsiyon vB 4.x ve daha sonraki versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt; &lt;p&gt;&#214;rnek:&lt;br /&gt; rss.xml&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>forum_feeds_url_forum</name>
+		<value>&lt;p&gt;&lt;b&gt;Forum Feed Urlleri&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; Forum Feed yay&#305;n&#305; i&#231;in bir URL yeniden yazma modeli belirleyin.&lt;/p&gt; &lt;p&gt;Not: Bu opsiyon vB 4.x ve daha sonraki versiyonlarda &#231;al&#305;&#351;&#305;r&lt;/p&gt; &lt;p&gt;&#214;rnek:&lt;br /&gt; rss-{forum_title].xml&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>cp_dashboard</name>
+		<value>Dashboard</value>
+	</message>
+	<message>
+		<name>cp_dashboard_desc</name>
+		<value>vBSEO kurulu sitenizin perfonmans ve genel ayarlar&#305;</value>
+	</message>
+	<message>
+		<name>cp_licinfo</name>
+		<value>Lisans bilgileri</value>
+	</message>
+	<message>
+		<name>cp_backup_restore</name>
+		<value>Data Yedekleme &amp; Geri Alma</value>
+	</message>
+	<message>
+		<name>cp_dashboard_header</name>
+		<value>Lisans Numaras&#305; &amp; Data Yedekleme</value>
+	</message>
+	<message>
+		<name>cp_validkey</name>
+		<value>Ge&#231;erli Lisans Numaras&#305;</value>
+	</message>
+	<message>
+		<name>cp_mustmatch</name>
+		<value>Bu numara Ge&#231;erli Lisans Numaran&#305;z ile ayn&#305; olmal&#305;d&#305;r</value>
+	</message>
+	<message>
+		<name>cp_invalidkey</name>
+		<value>Ge&#231;ersiz lisans numaras&#305;</value>
+	</message>
+	<message>
+		<name>cp_copy</name>
+		<value>Kopyala</value>
+	</message>
+	<message>
+		<name>cp_save</name>
+		<value>Kaydet</value>
+	</message>
+	<message>
+		<name>cp_gen_vbseo</name>
+		<value>Genel Ayarlar</value>
+	</message>
+	<message>
+		<name>cp_gen_vbseo_desc</name>
+		<value>vBSEO Opsiyonlar&#305;n&#305; &#246;zelle&#351;tirin</value>
+	</message>
+	<message>
+		<name>view_site</name>
+		<value>Siteyi G&#246;r&#252;nt&#252;le</value>
+	</message>
+	<message>
+		<name>dashboard</name>
+		<value>Dashboard</value>
+	</message>
+	<message>
+		<name>cp_login</name>
+		<value>Giri&#351; Yap</value>
+	</message>
+	<message>
+		<name>cp_setpass</name>
+		<value>&#350;ifre Belirleyin</value>
+	</message>
+	<message>
+		<name>url_opt_desc</name>
+		<value>Sitenizin URL yap&#305;s&#305;n&#305; belirleyin</value>
+	</message>
+	<message>
+		<name>basic_settings</name>
+		<value>Genel Opsiyonlar</value>
+	</message>
+	<message>
+		<name>thecrrs</name>
+		<value>&#214;zel Yeniden Yazma Kurallar&#305;</value>
+	</message>
+	<message>
+		<name>thec301</name>
+		<value>Yeniden Y&#246;nlendirmeler</value>
+	</message>
+	<message>
+		<name>existing_files</name>
+		<value>Server&#305;n&#305;zda eski vBSEO dosyalar&#305; bulunmaktad&#305;r. Bu dosyalar art&#305;k gerekmedi&#287;inden silinebilir.</value>
+	</message>
+	<message>
+		<name>char_opt</name>
+		<value>Karakter De&#287;i&#351;ken Opsiyonlar&#305;</value>
+	</message>
+	<message>
+		<name>utf8_desc</name>
+		<value>&lt;p&gt; &lt;b&gt;UTF-8 Deste&#287;ini Aktif Et ?&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; Evet se&#231;erek sitenizde UTF-8 deste&#287;ini aktif edin. &lt;br /&gt;&lt;br /&gt;Forumunuzda kullanmakta oldu&#287;unuz lisans dili UTF-8 olmadan bu opsiyonu aktif etmeyin. &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>morechars_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;&#220;ye profillerinde &#246;zel karakter kullan&#305;m&#305;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; Evet se&#231;erek &#246;zel karakterlerin profillerde kullan&#305;lmas&#305;na izin verin.&lt;/p&gt; &lt;p&gt;Not: opsiyon Album urllerinide eklemektedir. vBSEO Destek Tak&#305;m&#305;ndan sizden istenmedik&#231;e bu opsiyonu de&#287;i&#351;tirmeyiniz.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>tagfilter_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Etiket Karakter Filtrelemesi&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; Evet se&#231;erek etiketler i&#231;erisinden &#246;zel karakterleri kald&#305;r&#305;n&#305;z.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>nourlenc_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;URLencoding'i Deaktif et&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; Evet se&#231;erek urlencoding'i deaktif et.&lt;/p&gt;&lt;p&gt;Bu opsiyonu sizden vBSEO Destek Tak&#305;m&#305; &#252;yeleri sizden istemedik&#231;e de&#287;i&#351;tirmeyin.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>char_repl_desc</name>
+		<value>&lt;p&gt;&lt;b&gt;Karakter De&#287;i&#351;kenlerini belirleyin&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; Her sat&#305;ra 1 tane olmak &#252;zere de&#287;i&#351;kenleri belirleyin. Belirledi&#287;iniz de&#287;i&#351;kenlerin Ascii html kar&#351;&#305;tlar&#305;n&#305; kullanman&#305;z gerekmektedir. Detaylar i&#231;in l&#252;tfen http://www.vbseo.com/f119/ b&#246;l&#252;m&#252;ne bak&#305;n&#305;z.&lt;/p&gt;&lt;p&gt;&#214;rnek:&lt;br /&gt; '&amp;# 268;'=&gt;'c'&lt;br /&gt; '&amp;# 351;'=&gt;'s'&lt;br /&gt;&lt;br /&gt; Ascii de&#287;eri 256 n&#305;n alt&#305;nda olan karakterler i&#231;in a&#351;a&#287;&#305;daki format&#305; ( ger&#231;ek karakter format&#305; ) kullanmal&#305;s&#305;n&#305;z. &lt;br /&gt; &#252;=&gt;'u'&lt;br /&gt; &#214;=&gt;'o'&lt;br /&gt;&lt;br /&gt; Not: Ascii karakterler d&#252;zg&#252;n &#246;rnekleme a&#231;&#305;s&#305;ndan # ve rakam de&#287;eri aras&#305;nda bo&#351;luk i&#231;ermektedir. Siz bu bo&#351;lu&#287;u kullanmamal&#305;s&#305;n&#305;z.&lt;/p&gt;
+</value>
+	</message>
+	<message>
+		<name>vbseo_cache_var_defin</name>
+		<value>&lt;p&gt; &lt;b&gt;Cache Prefixi Belirleyin&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; Serverda birden fazla vBSEO kurulumu var ve cache opsiyonlar&#305;n&#305; kullan&#305;yorsan&#305;z her kurulumunuzda &#246;zel bir cache prefixi kullanmal&#305;s&#305;n&#305;z.&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>copyright_position_desc</name>
+		<value>	 &lt;p&gt; &lt;b&gt;vBSEO Copyright Format&#305; Belirleyin&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; Kullanmak istedi&#287;iniz Copyright bilgisini belirleyin. &lt;br /&gt;&lt;br /&gt;Sitenizde Copyright Bilgisi g&#246;stermek istemiyorsan&#305;z Marka Kald&#305;rma opsiyonunu kullanabilirsiniz. Detaylar i&#231;in http://www.vbseo.com/f119/marka-kaldyrma-opsiyonu-17997/&lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>copyright_sel_0</name>
+		<value>Default copyright notice</value>
+	</message>
+	<message>
+		<name>copyright_sel_1</name>
+		<value>Linked - Search Engine Friendly URLs by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_2</name>
+		<value>Linked - Content Relevant URLs by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_3</name>
+		<value>Linked - Search Engine Optimization by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_4</name>
+		<value>Linked - SEO by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_5</name>
+		<value>Linked - LinkBacks Enabled by vBSEO 3.6.0</value>
+	</message>
+	<message>
+		<name>copyright_sel_6</name>
+		<value>Not Linked - Search Engine Friendly URLs by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_7</name>
+		<value>Not Linked - Content Relevant URLs by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_8</name>
+		<value>Not Linked - Search Engine Optimization by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_9</name>
+		<value>Not Linked - SEO by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>copyright_sel_10</name>
+		<value>Not Linked - LinkBacks Enabled by vBSEO 3.6.0 © 2011, Crawlability, Inc.</value>
+	</message>
+	<message>
+		<name>vbseo_noversion_desc</name>
+		<value>	 &lt;p&gt; &lt;b&gt;Copyright i&#231;erisinde vBSEO versiyonu&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; Copyright yaz&#305;s&#305; i&#231;erisinde vBSEO versiyon bilgisini g&#246;stersin mi ? &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>acro_auto_link_desc</name>
+		<value>&lt;p&gt; &lt;b&gt;Akronim Otolink Format&#305;&lt;/b&gt; &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt; Akronim otomatik link format&#305;n&#305; belirleyin &lt;/p&gt;</value>
+	</message>
+	<message>
+		<name>loading_error</name>
+		<value>Y&#252;kleme hatas&#305;</value>
+	</message>
+	<message>
+		<name>please_wait</name>
+		<value>L&#252;tfen bekleyin</value>
+	</message>
+	<message>
+		<name>invalidkey_notice</name>
+		<value>Girmi&#351; oldu&#287;unuz lisans anahtar&#305; ge&#231;ersizdir.</value>
+	</message>
+	<message>
+		<name>vbseo_last_modified_header_desc</name>
+		<value>&lt;b&gt;Son G&#252;ncelleme Ba&#351;l&#305;&#287;&#305;&lt;/b&gt;  &lt;span class=&quot;beta&quot;&gt;BETA!&lt;/span&gt; &lt;br /&gt;
+Son G&#252;ncelleme Ba&#351;l&#305;&#287;&#305;n&#305; aktif et ?</value>
+	</message>
+	<message>
+		<name>vbseo_gars_support</name>
+		<value>&lt;b&gt;GARS Deste&#287;ini Aktif Et&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;YEN&#304;!&lt;/span&gt; &lt;br /&gt;
+&lt;a href=&quot;http://www.thevbgeek.com/geekmart.php?do=displayproduct&amp;id=3&quot;&gt;Gars&lt;/a&gt; modifikasyonu i&#231;in &#231;oklu sayfa deste&#287;ini aktif et</value>
+	</message>
+	<message>
+		<name>vbseo_vbulletin_php_extension</name>
+		<value>&lt;b&gt;vBulletin Dosya Uzantisini Belirle&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;GEL&#304;&#350;M&#304;&#350;!&lt;/span&gt; &lt;br /&gt;
+vBulletin dosyalar&#305;n&#305;z .php haricinde bir uzant&#305; kullan&#305;yorsa kulland&#305;&#287;&#305;n&#305;z uzant&#305;y&#305; belirleyin</value>
+	</message>
+	<message>
+		<name>vbseo_vbulletin_config_php</name>
+		<value>&lt;b&gt;vBulletin Config Dosyas&#305;n&#305; Belirle&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;GEL&#304;&#350;M&#304;&#350;!&lt;/span&gt; &lt;br /&gt;
+E&#287;er config.php dosyas&#305;n&#305;n yerine ba&#351;ka bir dosya kullan&#305;yorsan&#305;z pathi ve dosya ismini belirleyin.</value>
+	</message>
+	<message>
+		<name>vbseo_custom_doc_root</name>
+		<value>&lt;b&gt;&#214;zel Doc Root&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;GEL&#304;&#350;M&#304;&#350;!&lt;/span&gt; &lt;br /&gt;
+Sitenizin bulundu&#287;u ana yolu belirleyin. &lt;br /&gt;&#214;rn : /home/isim/public_html</value>
+	</message>
+	<message>
+		<name>vbseo_custom_doc_relative</name>
+		<value>&lt;b&gt;vBSEO Geli&#351;mi&#351; Path&lt;/b&gt;  &lt;span class=&quot;new&quot;&gt;GEL&#304;&#350;M&#304;&#350;!&lt;/span&gt; &lt;br /&gt;
+E&#287;er forumunuz ana path haricinde bir klas&#246;rde bulunuyorsa klas&#246;r ismini belirleyin.&lt;br /&gt;&#214;rn : /forum/</value>
+	</message>
+</translations>

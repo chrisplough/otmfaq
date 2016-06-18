@@ -1,0 +1,1369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jsp:root version="2.0" xmlns="http://www.w3.org/1999/xhtml" xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fn="http://java.sun.com/jsp/jstl/functions" xmlns:gc3="http://www.glog.com/gc3/gc3-taglib" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:nav="urn:jsptagdir:/WEB-INF/tags" xmlns:x="http://java.sun.com/jsp/jstl/xml">
+    <jsp:directive.page contentType="text/html" isELIgnored="false"/>
+    <gc3:manager_layout enteredIn="false" help="/html/help/webhelp/general/view_results.htm" name="shipment" onLoad="preloadOpenedImg();" xpath="shipment">
+        <c:set var="perspective">
+            <x:out select="$mainNode/perspective"/>
+        </c:set>
+        <c:choose>
+            <c:when test="${perspective == 'S'}">
+                <nav:Navigation action_message_required="false" current="detail/Shipment.jspx" finish_href="" is_view="true" label="label.buy_shipment" read_only="false" servlet_link="ShipmentCustManagement?type=S&amp;manager_layout_gid=SELL_SHIPMENT_VIEW" show_actions="true" show_page_nav="true" show_smartlinks="true"/>
+            </c:when>
+            <c:otherwise>
+                <nav:Navigation action_message_required="false" current="detail/Shipment.jspx" finish_href="" is_view="true" label="label.buy_shipment" last_page="true" read_only="false" servlet_link="ShipmentCustManagement?type=B" show_actions="true" show_page_nav="true" show_smartlinks="true"/>
+            </c:otherwise>
+        </c:choose>
+        <gc3:body documentName="generic_document" redirect="ShipmentCustManagement">
+            <gc3:section name="label.Shipments">
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/xid" name="shipment/xid" valueIndicator="shipment/indicator"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/servprov/xid" name="shipment/servprov/xid" queryName="glog.server.query.servprov.ServprovQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/transport_mode_xid" name="shipment/transport_mode_xid" queryName="glog.server.query.powerdata.TransportModeQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/domain_name" name="shipment/domain_name"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:buttons>
+                            <gc3:buttonsRow>
+                                <gc3:buttonsColumn>
+                                    <gc3:buttonStatus managementServlet="ShipmentCustManagement" stylesheet="generic_stylesheet"/>
+                                </gc3:buttonsColumn>
+                            </gc3:buttonsRow>
+                        </gc3:buttons>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row/>
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.NumberOfOrders" name="shipment/num_order_releases"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldCount label="label.NumberOfStops" name="shipment/shipment_stops/shipment_stop"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.driver_id" name="shipment/driver_xid" queryName="glog.server.query.driver.DriverQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.SecondaryDriverID" name="shipment/secondary_driver_xid" queryName="glog.server.query.driver.DriverQuery"/>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.power_unit_id" name="shipment/power_unit_xid" queryName="glog.server.query.powerunit.PowerUnitQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/num_equipment_ordered" name="shipment/num_equipment_ordered"/>
+                    </gc3:column>
+                </gc3:row>
+            </gc3:section>
+            <gc3:section label="button.more" tableId="shipmentDetails" visible="false">
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldBoolean label="field.shipment/is_template" name="shipment/is_template"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldBoolean label="field.shipment/shipment_as_work" name="shipment/shipment_as_work"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldBoolean label="field.shipment/is_hazardous" name="shipment/is_hazardous"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldBoolean label="label.PreferredCarrier" name="shipment/is_preferred_carrier"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldBoolean label="field.shipment/is_service_time_fixed" name="shipment/is_service_time_fixed"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldBoolean label="field.shipment/is_servprov_fixed" name="shipment/is_servprov_fixed"/>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/repetition_schedule/xid" name="shipment/repetition_schedule/xid" queryName="glog.server.query.repetitionschedule.RepetitionScheduleQuery"/>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldDateTime label="field.shipment/start_time" name="shipment/start_time"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldDateTime label="field.shipment/end_time" name="shipment/end_time"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/contact_xid" name="shipment/contact_xid" queryName="glog.server.query.servprov.ContactQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldBoolean label="field.shipment/is_tender_contact_fixed" name="shipment/is_tender_contact_fixed"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.em_phone_number" name="shipment/em_phone_number"/>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row/>
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldBoolean label="label.IsEquipmentFixed" name="shipment/is_equipment_fixed"/>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.AppointmentPriorityID" name="shipment/appointment_priority_xid"/>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.PortOfLoadID" name="shipment/port_of_load_location_xid" queryName="glog.server.query.servprov.LocationQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <x:if select="$mainNode/port_of_load_loc_override_xid != ''">
+                            <gc3:button label="button.view_override">
+                                <jsp:attribute name="href">javascript:void(1);</jsp:attribute>
+                                <jsp:attribute name="onClick">DisplayOpenView('glog.server.query.servprov.LocationOverrideQuery', '${gc3:getTranslatedValue("label.LocationOverride")}', '<x:out select="$mainNode/port_of_load_loc_override_xid/@ID"/>');</jsp:attribute>
+                            </gc3:button>
+                        </x:if>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.PortOfDispatchID" name="shipment/port_of_dis_location_xid" queryName="glog.server.query.servprov.LocationQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <x:if select="$mainNode/port_of_dis_loc_override_xid != ''">
+                            <gc3:button label="button.view_override">
+                                <jsp:attribute name="href">javascript:void(1);</jsp:attribute>
+                                <jsp:attribute name="onClick">DisplayOpenView('glog.server.query.servprov.LocationOverrideQuery', '${gc3:getTranslatedValue("label.LocationOverride")}', '<x:out select="$mainNode/port_of_dis_loc_override_xid/@ID"/>');</jsp:attribute>
+                            </gc3:button>
+                        </x:if>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.ConsolID" name="shipment/consol_xid" queryName="glog.server.query.consol.ConsolQuery"/>
+                    </gc3:column>
+                </gc3:row>
+                <c:if test="$mainNode/voyage_xid != ''">
+                    <gc3:row>
+                        <gc3:column>
+                            <gc3:viewFieldText label="field.shipment/voyage_xid" name="shipment/voyage_xid"/>
+                        </gc3:column>
+                        <gc3:column>
+                            <gc3:viewFieldText label="label.VesselID" name="shipment/vessel_xid"/>
+                        </gc3:column>
+                        <gc3:column>
+                            <gc3:viewFieldText label="field.voyage/voyage_name" name="shipment/voyage/voyage_name"/>
+                        </gc3:column>
+                        <gc3:column>
+                            <gc3:viewFieldText label="field.voyage/dep_region_name" name="shipment/voyage/dep_region_name"/>
+                        </gc3:column>
+                        <gc3:column>
+                            <gc3:viewFieldDateTime label="field.voyage/dep_date" name="shipment/voyage/dep_date"/>
+                        </gc3:column>
+                        <gc3:column>
+                            <gc3:viewFieldText label="field.voyage/arr_region_name" name="shipment/voyage/arr_region_name"/>
+                        </gc3:column>
+                    </gc3:row>
+                </c:if>
+                <gc3:row>
+                    <gc3:column colspan="2">
+                        <gc3:viewFieldText label="label.TermLocation" name="shipment/term_location_text"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldBoolean label="field.shipment/is_temperature_control" name="shipment/is_temperature_control"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldBoolean label="field.shipment/shipment_released" name="shipment/shipment_released"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldBoolean label="field.shipment/rule_7" name="shipment/rule_7"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldBoolean label="field.shipment/check_capacity_constraint" name="shipment/check_capacity_constraint"/>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/weigh_code" name="shipment/weigh_code"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/itinerary_xid" name="shipment/itinerary_xid" queryName="glog.server.query.itinerary.ItineraryQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/parent_leg/xid" name="shipment/parent_leg/xid"/>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/hazmat_mode_xid" name="shipment/hazmat_mode_xid" queryName="glog.server.query.powerdata.TransportModeQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/hazmat_region/xid" name="shipment/hazmat_region/xid" queryName="glog.server.query.powerdata.RegionQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldWeight label="field.shipment/total_net_weight" name="shipment/total_net_weight"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldVolume label="field.shipment/total_net_volume" name="shipment/total_net_volume"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldWeight label="field.shipment/total_weight" name="shipment/total_weight"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldVolume label="field.shipment/total_volume" name="shipment/total_volume"/>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/payment_method_code/xid" name="shipment/payment_method_code/xid" queryName="glog.server.query.powerdata.StandardPaymentMethodCodeQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldWeight label="field.shipment/dim_weight" name="shipment/chargeable_weight"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldWeight label="label.DimWeight" name="shipment/dim_weight"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldVolume label="label.ChargeableVolume" name="shipment/chargeable_volume"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldVolume label="label.DimensionalVolume" name="shipment/dim_volume"/>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/total_ship_unit_count" name="shipment/total_ship_unit_count"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldUtilization label="field.shipment/weight_utilization" name="shipment/weight_utilization" showNumber="true"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldUtilization label="field.shipment/volume_utilization" name="shipment/volume_utilization" showNumber="true"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.EquipmentGroupID" name="shipment/first_equipment_group/xid" queryName="glog.server.query.powerdata.EquipmentGroupQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.CombEquipGrpID" name="shipment/combination_equipment_group_xid" queryName="glog.server.query.powerdata.CombEquipGrpQuery"/>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.TotalItemPackageCount" name="shipment/total_item_package_count"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.TotalItemPackagedSpecCount" name="shipment/total_packaging_unit_count"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldBoolean label="field.shipment/is_primary" name="shipment/is_primary"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/cmpd_location_xid" name="shipment/cmpd_location_xid" queryName="glog.server.query.servprov.LocationQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/cmns_location_xid" name="shipment/cmns_location_xid" queryName="glog.server.query.servprov.LocationQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldUtilization label="field.shipment/equip_ref_unit_utilization" name="shipment/equip_ref_unit_utilization" showNumber="true"/>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldBoolean label="field.shipment/in_trailer_build" name="shipment/in_trailer_build"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldBoolean label="field.shipment/is_permanent" name="shipment/is_permanent"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldBoolean label="label.FixedDistance" name="shipment/is_fixed_distance"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/load_config_engine_type_gid" name="shipment/load_config_engine_type_xid" queryName="glog.server.query.powerdata.LoadConfigEngineTypeQuery"/>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.OrganizationNumber" name="shipment/tariff_organization_number"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.OrganizationName" name="shipment/tariff_organization_name"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.TariffNumber" name="shipment/tariff_number"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.TariffName" name="shipment/tariff_name"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldDateTime label="label.TariffDate" name="shipment/tariff_date"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.SecondaryChargeRule" name="shipment/secondary_charge_rule/xid" queryName="glog.server.query.shipmentgroup.SecondaryChargeRuleQuery"/>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/rail_inter_modal_plan_xid" name="shipment/rail_inter_modal_plan_xid"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/cofc_tofc" name="shipment/cofc_tofc"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/rail_return_location_xid" name="shipment/rail_return_location_xid"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/rail_return_route_xid" name="shipment/rail_return_route_xid"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldConditionalText label="field.shipment/rule_11_indicator" name="shipment/rule_11_indicator" showValues="label.TENDER,label.NO_TENDER,label.NOTRULE11" testValues="TENDER,NO_TENDER,*"/>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.shipment/route_code_combination_xid" name="shipment/route_code_combination_xid"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.DeliveringServiceProvider" name="shipment/delivering_servprov_xid" queryName="glog.server.query.servprov.ServprovQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.OriginatingServiceProvider" name="shipment/originating_servprov_xid" queryName="glog.server.query.servprov.ServprovQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.DutyPaid" name="shipment/duty_paid"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.ParcelZone" name="shipment/parcel_zone"/>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column colspan="100%">
+                        <gc3:gridSection label="label.ShipmentCost" tableId="table_shipment_cost_grid">
+                            <gc3:grid childElementName="shipment_cost" clientGrid="true" edit="false" masterElementName="shipment_costs" name="shipment_cost_grid" queryName="glog.server.query.shipment.ShipmentCostQuery" xpath="shipment/shipment_costs/shipment_cost">
+                                <gc3:gridFields>
+                                    <gc3:gridRow>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldPseudoText defaultName0="remark_qual/xid" defaultValue0="CARRIER_CLAIM_PLANNER" defaultValueID0="ULA/NA.CARRIER_CLAIM_PLANNER" grid="shipment_cost_grid" label="label.Comments" name="shipment_cost_remark/remark_text" viewName="remark_text" viewPath="shipment/shipment_cost_remarks/shipment_cost_remark"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="shipment_cost_grid" label="field.shipment_cost/adjustment_reason/xid" name="adjustment_reason/xid" queryName="glog.server.query.invoice.AdjustmentReasonQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldBoolean grid="shipment_cost_grid" label="field.shipment_cost/process_as_flow_through" name="process_as_flow_through"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldBoolean grid="shipment_cost_grid" label="label.WeightedOnly" name="is_weighted"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="shipment_cost_grid" label="label.SpecialServiceCode" name="special_service/xid" queryName="glog.server.query.powerdata.SpecialServiceQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldNumber grid="shipment_cost_grid" label="label.CostID" name="seqno" prec="0"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="shipment_cost_grid" label="label.trackingNumber" name="tracking_number"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldConditionalText grid="shipment_cost_grid" label="label.CostType" name="cost_type" showValues="label.Base,label.Accessorial,label.Other,label.StopOffCharge,label.Discount,label.CircuityCharge" testValues="B,A,O,S,D,C"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true" type="Currency">
+                                            <gc3:viewFieldCurrency grid="shipment_cost_grid" label="label.Cost" name="cost" viewFnCurrDetail="true"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true" type="Check">
+                                            <gc3:viewFieldBoolean grid="shipment_cost_grid" label="field.shipment_cost/is_cost_fixed" name="is_cost_fixed"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="shipment_cost_grid" label="field.shipment_cost/accessorial_code/xid" name="accessorial_code/xid" queryName="glog.server.query.powerdata.AccessorialCodeQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="shipment_cost_grid" label="label.AccessorialCodeDescription" name="accessorial_code/desc"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="shipment_cost_grid" label="label.AccessorialCodeDescription" name="accessorial_code/desc"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="shipment_cost_grid" label="label.GeneralLedgerCode" name="general_ledger_code/xid" queryName="glog.server.query.invoice.GeneralLedgerCodeQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="shipment_cost_grid" label="label.PayMethodCode" name="payment_method_code/xid" queryName="glog.server.query.powerdata.StandardPaymentMethodCodeQuery"/>
+                                        </gc3:gridColumn>
+                                    </gc3:gridRow>
+                                </gc3:gridFields>
+                            </gc3:grid>
+                        </gc3:gridSection>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column colspan="100%" pad="false">
+                        <gc3:gridSection label="label.CostTypes" tableId="table_shipment_cost_inf_grid">
+                            <gc3:grid childElementName="shipment_inf_cost" clientGrid="false" edit="false" masterElementName="shipment_inf_costs" name="shipment_cost_inf_grid" queryName="glog.server.query.shipment.ShipmentInfCostQuery" xpath="shipment/shipment_inf_costs/shipment_inf_cost">
+                                <gc3:gridFields>
+                                    <gc3:gridRow>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="shipment_cost_inf_grid" label="label.InformationalCostType" name="inf_cost_type">
+                                                <jsp:attribute name="value">
+                                                    <c:if test="${gridPos!=0}">
+                                                        <c:set var="infCostType">
+                                                            <x:out select="$gridNode/inf_cost_type"/>
+                                                        </c:set>
+                                                        <c:choose>
+                                                            <c:when test="${infCostType=='D'}">
+                                                      ${gc3:getTranslatedValue('label.Display')}
+                                                    </c:when>
+                                                            <c:when test="${infCostType=='O'}">
+                                                      ${gc3:getTranslatedValue('label.Original')}
+                                                    </c:when>
+                                                            <c:when test="${infCostType=='W'}">
+                                                      ${gc3:getTranslatedValue('label.WeightedCost')}
+                                                    </c:when>
+                                                            <c:when test="${infCostType=='U'}">
+                                                      ${gc3:getTranslatedValue("label.UserDefined")}
+                                                    </c:when>
+                                                        </c:choose>
+                                                    </c:if>
+                                                </jsp:attribute>
+                                            </gc3:viewFieldText>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true" type="Currency">
+                                            <gc3:viewFieldCurrency grid="shipment_cost_inf_grid" label="label.Cost" name="cost"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="shipment_cost_inf_grid" label="label.Details" name="detail"/>
+                                        </gc3:gridColumn>
+                                    </gc3:gridRow>
+                                </gc3:gridFields>
+                            </gc3:grid>
+                        </gc3:gridSection>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column colspan="100%" pad="false">
+                        <gc3:gridSection label="label.Remarks" tableId="table_remark_grid">
+                            <gc3:grid childElementName="shipment_remark" clientGrid="true" edit="false" masterElementName="shipment_remarks" name="remark_grid" queryName="glog.server.query.shipment.ShipmentRemarkQuery" xpath="shipment/shipment_remarks/shipment_remark">
+                                <gc3:gridFields>
+                                    <gc3:gridRow>
+                                        <gc3:gridColumn body="true" header="true" width="150px">
+                                            <gc3:viewFieldText grid="remark_grid" label="label.remark_sequence_number" name="seq"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="remark_grid" label="label.remark_qualifier_id" name="remark_qual/xid" queryName="glog.server.query.powerdata.RemarkQualQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="remark_grid" label="label.remark_text" name="text">
+                                                <jsp:attribute name="displayAsLink">
+                                                    <c:choose>
+                                                        <c:when test="${gridPos > 0}">
+                                                            <c:set var="qual">
+                                                                <x:out select="$gridNode/remark_qual/xid"/>
+                                                            </c:set>
+                                                            <c:choose>
+                                                                <c:when test="${qual == 'URL'}">true</c:when>
+                                                                <c:otherwise>false</c:otherwise>
+                                                            </c:choose>
+                                                        </c:when>
+                                                        <c:otherwise>false</c:otherwise>
+                                                    </c:choose>
+                                                </jsp:attribute>
+                                            </gc3:viewFieldText>
+                                        </gc3:gridColumn>
+                                    </gc3:gridRow>
+                                </gc3:gridFields>
+                            </gc3:grid>
+                        </gc3:gridSection>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column colspan="100%" pad="false">
+                        <gc3:gridSection label="label.Accessorial" tableId="table_acc_grid">
+                            <gc3:grid childElementName="shipment_accessorial" clientGrid="true" edit="false" masterElementName="shipment_accessorials" name="acc_grid" queryName="glog.server.query.shipment.ShipmentAccessorialQuery" xpath="shipment/shipment_accessorials/shipment_accessorial">
+                                <gc3:gridFields>
+                                    <gc3:gridRow>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="acc_grid" label="field.shipment_accessorial/accessorial/xid" name="accessorial_code/xid" queryName="glog.server.query.powerdata.AccessorialCodeQuery"/>
+                                        </gc3:gridColumn>
+                                    </gc3:gridRow>
+                                </gc3:gridFields>
+                            </gc3:grid>
+                        </gc3:gridSection>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column colspan="100%">
+                        <gc3:gridSection label="label.special_service" tableId="table_ss_grid">
+                            <gc3:grid childElementName="shipment_special_service" clientGrid="true" edit="false" masterElementName="shipment_special_services" name="ss_grid" queryName="glog.server.query.shipment.ShipmentSpecialServiceQuery" xpath="shipment/shipment_special_services/shipment_special_service">
+                                <gc3:gridSortField sortDataType="number" sortField="stop_num"/>
+                                <gc3:gridSortField sortDataType="text" sortField="special_service/xid"/>
+                                <gc3:gridFields>
+                                    <gc3:gridRow>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="ss_grid" label="field.shipment_special_service/special_service/xid" name="special_service/xid" queryName="glog.server.query.powerdata.SpecialServiceQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="ss_grid" label="field.shipment_cost/adjustment_reason/xid" name="shipment_special_service/adjustment_reason_xid" queryName="glog.server.query.invoice.AdjustmentReasonQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="ss_grid" label="label.StopNumber" name="shipment_special_service/stop_num"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <c:set var="stopNum">
+                                                <c:if test="${gridNode != null}">
+                                                    <x:out select="$gridNode/stop_num"/>
+                                                </c:if>
+                                            </c:set>
+                                            <c:set var="stopNumVal"/>
+                                            <x:forEach select="$mainNode/shipment_stops/shipment_stop">
+                                                <x:if select="string(stop_num)=$stopNum">
+                                                    <x:set select="string(location/xid)" var="stopNumVal"/>
+                                                </x:if>
+                                            </x:forEach>
+                                            <gc3:viewFieldText grid="ss_grid" label="label.StopLocationID" name="$stopNumVal" queryName="glog.server.query.servprov.LocationQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="ss_grid" label="label.thirdPartyShipmentId" name="shipment_special_service/ship_spec_svc_sec_charge_joins/ship_spec_svc_sec_charge_join/shipment/xid" queryName="glog.server.query.shipment.ShipmentQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="ss_grid" label="label.completionState" name="shipment_special_service/completion_state"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="ss_grid">
+                                                <jsp:attribute name="label">
+                                                    <c:choose>
+                                                        <c:when test="${perspective == 'B'}">label.payable_indicator</c:when>
+                                                        <c:otherwise>label.billable_indicator</c:otherwise>
+                                                    </c:choose>
+                                                </jsp:attribute>
+                                                <jsp:attribute name="name">
+                                                    <c:choose>
+                                                        <c:when test="${perspective == 'B'}">shipment_special_service/pi/payable_indicator/xid</c:when>
+                                                        <c:otherwise>shipment_special_service/bi/billable_indicator/xid</c:otherwise>
+                                                    </c:choose>
+                                                </jsp:attribute>
+                                            </gc3:viewFieldText>
+                                        </gc3:gridColumn>
+                                    </gc3:gridRow>
+                                </gc3:gridFields>
+                            </gc3:grid>
+                        </gc3:gridSection>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column colspan="100%">
+                        <gc3:gridSection label="label.full_Shipments" tableId="table_sg_grid">
+                            <gc3:grid childElementName="ship_group" clientGrid="true" edit="false" masterElementName="ship_groups" name="sg_grid" queryName="glog.server.query.shipmentgroup.ShipGroupQuery" xpath="shipment/ship_groups/ship_group">
+                                <gc3:gridSortField sortDataType="text" sortField="xid" sortOrder="ascending"/>
+                                <gc3:gridFields>
+                                    <gc3:gridRow>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="sg_grid" label="label.ShipmentGroupID" name="xid" queryName="glog.server.query.shipmentgroup.ShipGroupQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="sg_grid" label="label.TypeID" name="ship_group_type/xid" queryName="glog.server.query.shipmentgroup.ShipGroupTypeQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="sg_grid" label="label.SourceLocationID" name="src_location/xid" queryName="glog.server.query.servprov.LocationQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="sg_grid" label="label.DestinationLocationID" name="dest_location/xid" queryName="glog.server.query.servprov.LocationQuery"/>
+                                        </gc3:gridColumn>
+                                    </gc3:gridRow>
+                                </gc3:gridFields>
+                            </gc3:grid>
+                        </gc3:gridSection>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column colspan="100%">
+                        <gc3:gridSection label="label.partial_order_releases" tableId="table_partial_sg_grid">
+                            <gc3:grid childElementName="ship_group_d_or" clientGrid="true" edit="false" masterElementName="ship_groups" name="partial_sg_grid" queryName="glog.server.query.shipmentgroup.ShipGroupQuery" xpath="shipment/ship_groups/ship_group_d_or">
+                                <gc3:gridSortField sortDataType="text" sortField="ship_group/xid" sortOrder="ascending"/>
+                                <gc3:gridSortField sortDataType="text" sortField="order_release/xid" sortOrder="ascending"/>
+                                <gc3:gridFields>
+                                    <gc3:gridRow>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="partial_sg_grid" label="label.ShipmentGroupID" name="ship_group/xid" queryName="glog.server.query.shipmentgroup.ShipGroupQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="partial_sg_grid" label="label.OrderReleaseID" name="order_release/xid" queryName="glog.server.query.order.OrderReleaseQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="partial_sg_grid" label="label.OrderReleaseLineID" name="order_release_line/xid" queryName="glog.server.query.order.OrderReleaseLineQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="partial_sg_grid" label="label.s_equipment" name="s_equipment/xid" queryName="glog.server.query.shipment.SEquipmentQuery"/>
+                                        </gc3:gridColumn>
+                                    </gc3:gridRow>
+                                </gc3:gridFields>
+                            </gc3:grid>
+                        </gc3:gridSection>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column colspan="100%"/>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column colspan="100%">
+                        <gc3:gridSection label="label.cm_rules" tableId="table_cm_grid">
+                            <gc3:grid childElementName="cm_rule" clientGrid="true" edit="false" masterElementName="cm_rules" name="cm_grid" queryName="glog.server.query.rate.CmRuleQuery" xpath="shipment">
+                                <gc3:gridFields>
+                                    <gc3:gridRow>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="cm_grid" label="label.cm_tour_id" name="cm_name"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="cm_grid" label="label.cm_sequence_num" name="cm_sequence_num"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true" type="Uom">
+                                            <gc3:viewFieldDistance grid="cm_grid" label="label.cm_empty_distance" name="cm_empty_distance"/>
+                                        </gc3:gridColumn>
+                                    </gc3:gridRow>
+                                </gc3:gridFields>
+                            </gc3:grid>
+                        </gc3:gridSection>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column colspan="100%">
+                        <gc3:gridSection label="label.Flights" tableId="table_flight_grid">
+                            <gc3:grid childElementName="interim_flight_instance" clientGrid="true" edit="false" masterElementName="interim_flight_instances" name="flight_grid" queryName="glog.server.query.shipment.InterimFlightInstanceQuery" xpath="shipment/interim_flight_instances/interim_flight_instance">
+                                <gc3:gridFields>
+                                    <gc3:gridRow>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="flight_grid" label="label.FlightNumber" name="flight/xid" queryName="glog.server.query.shipment.FlightQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true" type="Date">
+                                            <gc3:viewFieldDateTime grid="flight_grid" label="label.DepartureTime" name="leave_time_stamp"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true" type="Date">
+                                            <gc3:viewFieldDateTime grid="flight_grid" label="label.ArrivalTime" name="arrival_time_stamp"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="flight_grid" label="label.SourceLocation" name="src_location/xid" queryName="glog.server.query.servprov.LocationQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="flight_grid" label="label.DestinationLocation" name="dest_location/xid" queryName="glog.server.query.servprov.LocationQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="flight_grid" label="label.VehicleType" name="vehicle_type/xid" queryName="glog.server.query.powerdata.VehicleTypeQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true">
+                                            <gc3:viewFieldText grid="flight_grid" label="label.ServiceProvider" name="servprov/xid" queryName="glog.server.query.servprov.ServprovQuery"/>
+                                        </gc3:gridColumn>
+                                        <gc3:gridColumn body="true" header="true" type="Check">
+                                            <gc3:viewFieldBoolean grid="flight_grid" label="label.CargoPassenger" name="is_air_cargo"/>
+                                        </gc3:gridColumn>
+                                    </gc3:gridRow>
+                                </gc3:gridFields>
+                            </gc3:grid>
+                        </gc3:gridSection>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column colspan="100%"/>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column colspan="100%"/>
+                </gc3:row>
+            </gc3:section>
+            <gc3:section label="label.ConditionalBooking" tableId="ConditionalBooking" visible="false">
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.receipt_location" name="shipment/place_receipt_location/xid" queryName="glog.server.query.servprov.LocationQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.delivery_loation" name="shipment/place_deliver_location/xid" queryName="glog.server.query.servprov.LocationQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldDateTime label="label.sail_date" name="shipment/sail_date"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldDateTime label="label.rail_date" name="shipment/rail_date"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldDateTime label="label.sail_cutoff_date" name="shipment/sail_cutoff_date"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldDateTime label="label.port_discharge_eta" name="shipment/port_discharge_eta"/>
+                    </gc3:column>
+                </gc3:row>
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldDateTime label="label.port_of_exit_date" name="shipment/port_of_exit_date"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.port_of_exit_location" name="shipment/port_exit_location/xid" queryName="glog.server.query.servprov.LocationQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.empty_container_return_location" name="shipment/container_delivery_location/xid" queryName="glog.server.query.servprov.LocationQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.empty_container_pickup_location" name="shipment/container_pickup_location/xid" queryName="glog.server.query.servprov.LocationQuery"/>
+                    </gc3:column>
+                </gc3:row>
+            </gc3:section>
+            <gc3:section label="label.RouteExecution" tableId="table_route_execution" visible="false">
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.route_template/xid" name="shipment/route_execution_info/route_instance_leg/route_template/xid" queryName="glog.server.query.routeexecution.RouteTemplateQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.route_instance/xid" name="shipment/route_execution_info/route_instance_leg/route_instance/xid" queryName="glog.server.query.routeexecution.RouteInstanceQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="field.route_instance_leg/xid" name="shipment/route_execution_info/route_instance_leg/xid" queryName="glog.server.query.routeexecution.RouteInstanceLegQuery"/>
+                    </gc3:column>
+                </gc3:row>
+            </gc3:section>
+            <nav:ViewRefNums child_element="shipment_refnum" descriptionField="shipment_refnum_qual/desc" main_element="shipment" master_element="shipment_refnums" orderBy="shipment_refnum_sequence_no;shipment_refnum_qual/xid" orderByDataType="number;text" query_name="glog.server.query.shipment.ShipmentRefnumQuery" refnumQualXid="shipment_refnum_qual/xid" refnumValue="value" refnum_qual_query_name="glog.server.query.powerdata.ShipmentRefnumQualQuery"/>
+            <gc3:gridSection label="label.shipment_infeasibility" tableId="table_shipment_infeasibility_grid">
+                <gc3:grid childElementName="shipment_infeasibility" clientGrid="true" edit="false" masterElementName="shipment_infeasibilitys" name="shipment_infeasibility_grid" queryName="glog.server.query.shipment.ShipmentInfeasibilityQuery" xpath="shipment/shipment_infeasibilitys/shipment_infeasibility">
+                    <gc3:gridFields>
+                        <gc3:gridRow>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="shipment_infeasibility_grid" label="label.FeasibilityCodeID" name="feasibility_code_xid" queryName="glog.server.query.powerdata.FeasibilityCodeQuery"/>
+                            </gc3:gridColumn>
+                        </gc3:gridRow>
+                    </gc3:gridFields>
+                </gc3:grid>
+            </gc3:gridSection>
+            <gc3:gridSection label="label.InvolvedParties" tableId="table_location_ip_grid">
+                <gc3:grid childElementName="shipment_involved_party" clientGrid="true" edit="false" masterElementName="shipment_involved_parties" name="location_ip_grid" queryName="glog.server.query.shipment.ShipmentInvolvedPartyQuery" xpath="shipment/location_shipment_involved_parties/location_shipment_involved_party">
+                    <gc3:gridFields compareXPath="involved_party_qual/xid" dataType="text">
+                        <gc3:gridRow>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="location_ip_grid" label="label.involved_party_location" name="location/xid" queryName="glog.server.query.servprov.LocationQuery"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="location_ip_grid" label="label.communication_method" name="com_method/xid"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="location_ip_grid" label="label.involved_party_qualifier" name="involved_party_qual/xid" queryName="glog.server.query.powerdata.InvolvedPartyQualQuery"/>
+                            </gc3:gridColumn>
+                        </gc3:gridRow>
+                    </gc3:gridFields>
+                </gc3:grid>
+            </gc3:gridSection>
+            <gc3:gridSection label="label.TrEventContacts" tableId="table_tr_event_grid">
+                <gc3:grid childElementName="shipment_tr_event_contact" clientGrid="true" edit="false" masterElementName="shipment_tr_event_contacts" name="tr_event_grid" queryName="glog.server.query.notify.ShipmentTrEventContactQuery" xpath="shipment/shipment_tr_event_contacts/shipment_tr_event_contact">
+                    <gc3:gridFields>
+                        <gc3:gridRow>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="tr_event_grid" label="label.contact" name="contact/xid" queryName="glog.server.query.servprov.ContactQuery"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="tr_event_grid" label="label.transactional_event" name="transactional_event/xid" queryName="glog.server.query.notify.TransactionalEventQuery"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="tr_event_grid" label="label.communication_method" name="com_method/xid"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="tr_event_grid" label="label.stylesheet_profile" name="stylesheet_profile/xid" queryName="glog.server.query.notify.StylesheetProfileQuery"/>
+                            </gc3:gridColumn>
+                        </gc3:gridRow>
+                    </gc3:gridFields>
+                </gc3:grid>
+            </gc3:gridSection>
+            <gc3:gridSection label="label.s_equipment" tableId="table_shipment_equipment_grid">
+                <gc3:grid childElementName="shipment_s_equipment_join" clientGrid="true" edit="false" masterElementName="shipment_s_equipment_joins" name="shipment_equipment_grid" queryName="glog.server.query.shipment.ShipmentSEquipmentJoinQuery" xpath="shipment/shipment_s_equipment_joins/shipment_s_equipment_join">
+                    <gc3:gridSortField sortDataType="number" sortField="s_equipment_index"/>
+                    <gc3:gridSortField sortDataType="number" sortField="pickup_stop_num"/>
+                    <gc3:gridFields repeatHeader="true">
+                        <gc3:gridRow>
+                            <c:set var="mainGridPos">
+                                <x:out select="$gridPos"/>
+                            </c:set>
+                            <gc3:gridColumn body="true" header="true" type="Image" width="20">
+                                <gc3:viewOpenClose grid="shipment_equipment_grid" openCloseId="equipmentDetails"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldQueryBy autoCompleteQueryField="s_equipment/xid" finderSetGid="S_EQUIPMENT" label="label.SEquipmentID" name="s_equipment/xid" queryName="glog.server.query.shipment.SEquipmentQuery"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldNumber grid="shipment_equipment_grid" label="label.EquipmentIndex" name="s_equipment_index" prec="0"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldNumber grid="shipment_equipment_grid" label="label.PickupStopNo" name="pickup_stop_num" prec="0"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldNumber grid="shipment_equipment_grid" label="label.DropOffStopNo" name="dropoff_stop_num" prec="0"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="shipment_equipment_grid" label="label.EquipmentInitialNumber" name="TEMP_equipment_initial">
+                                    <jsp:attribute name="value">
+                                        <c:if test="${gridNode != null}">
+                                            <x:out select="$gridNode/descendant::s_equipment/equipment_initial_number"/>
+                                        </c:if>
+                                    </jsp:attribute>
+                                </gc3:viewFieldText>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="shipment_equipment_grid" label="field.equipment/xid" name="TEMP_equip_xid" queryName="glog.server.query.powerdata.EquipmentQuery">
+                                    <jsp:attribute name="value">
+                                        <c:if test="${gridNode != null}">
+                                            <x:out select="$gridNode/descendant::s_equipment/equipment/xid"/>
+                                        </c:if>
+                                    </jsp:attribute>
+                                </gc3:viewFieldText>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="shipment_equipment_grid" label="field.shipment/s_equipment_join/equipment_group_gid" name="TEMP_eq_group_xid" queryName="glog.server.query.powerdata.EquipmentGroupQuery">
+                                    <jsp:attribute name="value">
+                                        <c:if test="${gridNode != null}">
+                                            <x:out select="$gridNode/descendant::s_equipment/equipment_group/xid"/>
+                                        </c:if>
+                                    </jsp:attribute>
+                                </gc3:viewFieldText>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="shipment_equipment_grid" label="field.shipment/s_equipment_join/equipment_type_gid" name="TEMP_eq_typ_xid" queryName="glog.server.query.powerdata.EquipmentTypeQuery">
+                                    <jsp:attribute name="value">
+                                        <c:if test="${gridNode != null}">
+                                            <x:out select="$gridNode/descendant::s_equipment/equipment_type/xid"/>
+                                        </c:if>
+                                    </jsp:attribute>
+                                </gc3:viewFieldText>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="shipment_equipment_grid" label="field.capacity_usage" name="TEMP_capacity_usage" queryName="glog.server.query.capacity.CapacityUsageQuery">
+                                    <jsp:attribute name="value">
+                                        <c:if test="${gridNode != null}">
+                                            <x:out select="$gridNode/capacity_usage/xid"/>
+                                        </c:if>
+                                    </jsp:attribute>
+                                    <jsp:attribute name="valueID">
+                                        <c:if test="${gridNode != null}">
+                                            <x:out select="$gridNode/capacity_usage/xid/@ID"/>
+                                        </c:if>
+                                    </jsp:attribute>
+                                </gc3:viewFieldText>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true" type="Check" width="100">
+                                <gc3:viewFieldBoolean grid="shipment_s_equipment_join_grid" label="label.is_freight" name="$gridNode/descendant::s_equipment/is_freight"/>
+                            </gc3:gridColumn>
+                        </gc3:gridRow>
+                        <c:if test="${mainGridPos > 0}">
+                            <gc3:gridRow id="equipmentDetails" visible="false">
+                                <gc3:gridColumn body="true" colspan="100%" header="true" type="Detail">
+                                    <gc3:gridSection>
+                                        <gc3:singleRowGrid name="shipment_equipment_det1_grid">
+                                            <gc3:singleRowGridFields>
+                                                <gc3:gridRow>
+                                                    <c:set var="seID">
+                                                        <x:out select="$gridNode/s_equipment/xid/@ID"/>
+                                                    </c:set>
+                                                    <gc3:gridColumn body="true" header="true" width="20"/>
+                                                    <gc3:gridColumn body="true" header="true" type="Uom">
+                                                        <gc3:viewFieldWeight label="label.Total_Weight" name="s_equipments/s_equipment[@ID = '${seID}']/s_equipment_summaries/s_equipment_summary/total_weight"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Uom">
+                                                        <gc3:viewFieldVolume label="label.Total_Volume" name="s_equipments/s_equipment[@ID = '${seID}']/s_equipment_summaries/s_equipment_summary/total_volume"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Number">
+                                                        <gc3:viewFieldNumber label="field.shipment/total_num_reference_units" name="s_equipments/s_equipment[@ID = '${seID}']/s_equipment_summaries/s_equipment_summary/total_equip_ref_units"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true">
+                                                        <gc3:viewFieldText label="label.SubstituteEquipmentGroupID" name="s_equipments/s_equipment/substitute_equipment_group/xid" queryName="glog.server.query.powerdata.EquipmentGroupQuery"/>
+                                                    </gc3:gridColumn>
+                                                </gc3:gridRow>
+                                            </gc3:singleRowGridFields>
+                                        </gc3:singleRowGrid>
+                                    </gc3:gridSection>
+                                    <x:set select="$mainNode//s_equipment_s_ship_unit_joins/s_equipment_s_ship_unit_join[s_equipment/xid/@ID=$seID]" var="ship_unit_xids"/>
+                                    <x:if select="$ship_unit_xids">
+                                        <c:set var="seID">
+                                            <x:out select="$gridNode/s_equipment/xid/@ID"/>
+                                        </c:set>
+                                        <gc3:gridSection>
+                                            <gc3:grid childElementName="s_equipment_s_ship_unit_join" clientGrid="true" edit="false" label="label.s_ship_unit" masterElementName="s_equipment_s_ship_unit_joins" name="ship_unit_grid" queryName="glog.server.query.shipment.SShipUnitLineQuery" xpath="$ship_unit_xids">
+                                                <gc3:gridFields compareXPath="s_ship_unit_xid" removeDuplicates="true">
+                                                    <gc3:gridRow>
+                                                        <gc3:gridColumn body="true" header="true" width="20"/>
+                                                        <gc3:gridColumn body="false" header="true">
+                                                            <gc3:viewFieldLabel label="label.Ship_Unit_ID"/>
+                                                        </gc3:gridColumn>
+                                                        <gc3:gridColumn body="false" header="true">
+                                                            <gc3:viewFieldLabel label="field.equipment_group/compartment_number"/>
+                                                        </gc3:gridColumn>
+                                                        <gc3:gridColumn body="false" header="true">
+                                                            <gc3:viewFieldLabel label="label.ShipUnitCount"/>
+                                                        </gc3:gridColumn>
+                                                        <gc3:gridColumn body="false" header="true">
+                                                            <gc3:viewFieldLabel label="label.UnitWeight"/>
+                                                        </gc3:gridColumn>
+                                                        <gc3:gridColumn body="false" header="true">
+                                                            <gc3:viewFieldLabel label="label.UnitVolume"/>
+                                                        </gc3:gridColumn>
+                                                        <gc3:gridColumn body="false" header="true">
+                                                            <gc3:viewFieldLabel label="label.UnitNetWeight"/>
+                                                        </gc3:gridColumn>
+                                                        <gc3:gridColumn body="false" header="true">
+                                                            <gc3:viewFieldLabel label="label.UnitNetVolume"/>
+                                                        </gc3:gridColumn>
+                                                        <gc3:gridColumn body="true" header="false">
+                                                            <gc3:viewFieldText grid="ship_unit_grid" name="s_ship_unit_xid" queryName="glog.server.query.shipment.SShipUnitQuery"/>
+                                                        </gc3:gridColumn>
+                                                        <gc3:gridColumn body="true" header="false" type="Number">
+                                                            <gc3:viewFieldNumber grid="ship_unit_grid" name="compartment_num" prec="0"/>
+                                                        </gc3:gridColumn>
+                                                        <gc3:gridColumn body="true" header="false" type="Number">
+                                                            <gc3:viewFieldNumber grid="ship_unit_grid" name="ship_unit_count"/>
+                                                        </gc3:gridColumn>
+                                                        <gc3:gridColumn body="true" header="false" type="Uom">
+                                                            <gc3:viewFieldWeight grid="ship_unit_grid" name="unit_weight"/>
+                                                        </gc3:gridColumn>
+                                                        <gc3:gridColumn body="true" header="false" type="Uom">
+                                                            <gc3:viewFieldVolume grid="ship_unit_grid" name="unit_volume"/>
+                                                        </gc3:gridColumn>
+                                                        <gc3:gridColumn body="true" header="false" type="Uom">
+                                                            <gc3:viewFieldWeight grid="ship_unit_grid" name="unit_net_weight"/>
+                                                        </gc3:gridColumn>
+                                                        <gc3:gridColumn body="true" header="false" type="Uom">
+                                                            <gc3:viewFieldVolume grid="ship_unit_grid" name="unit_net_volume"/>
+                                                        </gc3:gridColumn>
+                                                    </gc3:gridRow>
+                                                    <c:if test="${gridPos > 0}">
+                                                        <gc3:gridRow id="shipmentStopLineDetails">
+                                                            <gc3:gridColumn body="true" colspan="100%" header="true" type="Detail">
+                                                                <gc3:gridSection>
+                                                                    <c:set var="ssuID">
+                                                                        <x:out select="$gridNode/s_ship_unit_xid/@ID"/>
+                                                                    </c:set>
+                                                                    <c:set var="shipUnitCount">
+                                                                        <x:out select="$gridNode/ship_unit_count"/>
+                                                                    </c:set>
+                                                                    <x:set select="$mainNode//shipment_s_equipment_joins/shipment_s_equipment_join/s_equipments/s_equipment[@ID = $seID]/s_equipment_summaries/s_equipment_summary/s_ship_units/s_ship_unit[@ID=$ssuID]/equip_ref_unit_gid" var="erf"/>
+                                                                    <x:if select="count(erf)> 0">
+                                                                        <gc3:text error="true">${gc3:getTranslatedValue('label.NoRecordReturned')}</gc3:text>
+                                                                    </x:if>
+                                                                    <gc3:grid childElementName="s_ship_unit" clientGrid="true" edit="false" masterElementName="s_ship_units" name="equip_ref_unit_grid" queryName="glog.server.query.powerdata.EquipmentReferenceUnitQuery" xpath="$erf">
+                                                                        <gc3:gridFields>
+                                                                            <gc3:gridRow>
+                                                                                <gc3:gridColumn body="false" header="true">
+                                                                                    <gc3:viewFieldLabel label="field.equipment_reference_unit_xid"/>
+                                                                                </gc3:gridColumn>
+                                                                                <gc3:gridColumn body="false" header="true">
+                                                                                    <gc3:viewFieldLabel label="field.num_reference_units"/>
+                                                                                </gc3:gridColumn>
+                                                                                <c:set var="equipRefUnitGid">
+                                                                                    <x:out select="$gridNode/."/>
+                                                                                </c:set>
+                                                                                <gc3:gridColumn body="true" header="false">
+                                                                                    <gc3:viewFieldText grid="equip_ref_unit_grid" name="equip_ref_unit_gid" queryName="glog.server.query.powerdata.EquipmentReferenceUnitQuery">
+                                                                                        <jsp:attribute name="value">${gc3:getXidFromGid(equipRefUnitGid)}</jsp:attribute>
+                                                                                    </gc3:viewFieldText>
+                                                                                </gc3:gridColumn>
+                                                                                <gc3:gridColumn body="true" header="false">
+                                                                                    <gc3:viewFieldNumber grid="equip_ref_unit_grid" name="total_equip_ref_units">
+                                                                                        <jsp:attribute name="value">
+                                                                                            <x:out select="$gridNode/@total_equip_ref_units*$shipUnitCount"/>
+                                                                                        </jsp:attribute>
+                                                                                    </gc3:viewFieldNumber>
+                                                                                </gc3:gridColumn>
+                                                                            </gc3:gridRow>
+                                                                        </gc3:gridFields>
+                                                                    </gc3:grid>
+                                                                </gc3:gridSection>
+                                                            </gc3:gridColumn>
+                                                        </gc3:gridRow>
+                                                    </c:if>
+                                                </gc3:gridFields>
+                                            </gc3:grid>
+                                        </gc3:gridSection>
+                                    </x:if>
+                                </gc3:gridColumn>
+                            </gc3:gridRow>
+                        </c:if>
+                    </gc3:gridFields>
+                </gc3:grid>
+                <!-- Stop Logic -->
+            </gc3:gridSection>
+            <gc3:gridSection label="label.ShipmentStops" tableId="table_shipment_stop_grid">
+                <x:if select="$mainNode/shipment_stops/shipment_stop/shipment_stop_ds/@TOTAL_RECORD_COUNT > 0">
+                    <gc3:text error="true">${gc3:getTranslatedValue('label.NoRecordReturned')}</gc3:text>
+                </x:if>
+                <gc3:grid childElementName="shipment_stop" clientGrid="true" edit="false" masterElementName="shipment_stops" name="shipment_stop_grid" queryName="glog.server.query.shipment.ShipmentStopQuery" xpath="shipment/shipment_stops/shipment_stop">
+                    <gc3:gridFields compareXPath="stop_num" dataType="number" repeatHeader="true">
+                        <gc3:gridRow>
+                            <gc3:gridColumn body="true" header="true" type="Image" width="20">
+                                <gc3:viewOpenClose grid="shipment_stop_grid" openCloseId="shipmentStopDetails"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="shipment_stop_grid" label="label.StopNumber" name="stop_num"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="shipment_stop_grid" label="label.StopType" name="stop_type"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText additionalNames="location/name,location/city,location/province_code,location/postal_code" grid="shipment_stop_grid" label="label.Location" name="location/xid" queryName="glog.server.query.servprov.LocationQuery"/>
+                            </gc3:gridColumn>
+                            <!-- 1 new column(s) added below:6160088 -->
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="shipment_stop_grid" label="label.LocationName" name="location/name"/>
+                            </gc3:gridColumn>
+                            <!-- end -->
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="shipment_stop_grid" label="label.ParentLocation" name="parent_location/xid" queryName="glog.server.query.servprov.LocationQuery"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true" type="Date">
+                                <gc3:viewFieldDateTime grid="shipment_stop_grid" label="field.shipment_stop/planned_arrival" name="planned_arrival"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true" type="Date">
+                                <gc3:viewFieldDateTime grid="shipment_stop_grid" label="field.shipment_stop/planned_departure" name="planned_departure"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true" type="Uom">
+                                <gc3:viewFieldDistance grid="shipment_stop_grid" label="field.shipment_stop/dist_from_prev_stop" name="dist_from_prev_stop"/>
+                            </gc3:gridColumn>
+                        </gc3:gridRow>
+                        <c:set var="mainGridPos">
+                            <x:out select="$gridPos"/>
+                        </c:set>
+                        <c:if test="${mainGridPos > 0 and mainGridPos != prevGridPos}">
+                            <gc3:gridRow id="shipmentStopDetails" visible="false">
+                                <gc3:gridColumn body="true" colspan="100%" header="true" type="Detail">
+                                    <gc3:gridSection>
+                                        <gc3:singleRowGrid name="shipment_stop_det1_grid">
+                                            <gc3:singleRowGridFields>
+                                                <gc3:gridRow>
+                                                    <gc3:gridColumn body="true" header="true" type="Duration">
+                                                        <gc3:viewFieldDuration grid="shipment_stop_grid" label="field.shipment_stop/wait_time" name="wait_time"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Duration">
+                                                        <gc3:viewFieldDuration grid="shipment_stop_grid" label="field.shipment_stop/rest_time" name="rest_time"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Duration">
+                                                        <gc3:viewFieldDuration grid="shipment_stop_grid" label="field.shipment_stop/activity_time" name="activity_time"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Duration">
+                                                        <gc3:viewFieldDuration grid="shipment_stop_grid" label="field.shipment_stop/drive_time" name="drive_time"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Duration">
+                                                        <gc3:viewFieldDuration grid="shipment_stop_grid" label="field.shipment_stop/accessorial_time" name="accessorial_time"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Duration">
+                                                        <gc3:viewFieldDuration grid="shipment_stop_grid" label="label.rush_hour_delay" name="rush_hour_time"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="false" type="Buttons">
+                                                        <gc3:buttons type="grid">
+                                                            <gc3:buttonsRow>
+                                                                <gc3:buttonsColumn>
+                                                                    <gc3:button href="javascript:void(0);" label="button.loadUnloadPoints" onClick="" onClickJSFunction="openStatusWindow" paramText="id,stop" paramValues="shipment/@ID,stop_num" url="glog.webserver.shipment.LoadUnloadPointsServlet"/>
+                                                                </gc3:buttonsColumn>
+                                                            </gc3:buttonsRow>
+                                                        </gc3:buttons>
+                                                    </gc3:gridColumn>
+                                                </gc3:gridRow>
+                                            </gc3:singleRowGridFields>
+                                        </gc3:singleRowGrid>
+                                    </gc3:gridSection>
+                                    <gc3:gridSection customizable="false">
+                                        <x:if select="$mainNode/shipment_stops/shipment_stop/shipment_stop_ds/shipment_stop_d/s_ship_units/@TOTAL_RECORD_COUNT > 0">
+                                            <gc3:text error="true">${gc3:getTranslatedValue('label.NoRecordReturned')}</gc3:text>
+                                        </x:if>
+                                        <gc3:grid childElementName="shipment_stop_d" clientGrid="true" edit="false" masterElementName="shipment_stop_ds" name="shipment_stop_d_grid" queryName="glog.server.query.shipment.ShipmentStopDQuery" xpath="shipment_stop_ds/shipment_stop_d">
+                                            <gc3:gridSortField sortDataType="text" sortField="activity"/>
+                                            <gc3:gridFields>
+                                                <gc3:gridRow>
+                                                    <gc3:gridColumn body="true" header="true" type="Image">
+                                                        <gc3:viewOpenClose grid="shipment_stop_d_grid" openCloseId="shipmentStopLineDtls"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true">
+                                                        <gc3:viewFieldText grid="shipment_stop_d_grid" label="label.ShipUnitID" name="s_ship_units/s_ship_unit/s_ship_unit_xid"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true">
+                                                        <gc3:viewFieldText grid="shipment_stop_d_grid" label="label.Activity" name="activity"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Number">
+                                                        <gc3:viewFieldNumber grid="shipment_stop_d_grid" label="label.ShipUnitCount" name="s_ship_units/s_ship_unit/ship_unit_count"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Uom">
+                                                        <gc3:viewFieldWeight grid="shipment_stop_d_grid" label="label.Weight" name="s_ship_units/s_ship_unit/unit_weight"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Uom">
+                                                        <gc3:viewFieldVolume grid="shipment_stop_d_grid" label="label.Volume" name="s_ship_units/s_ship_unit/unit_volume"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Uom">
+                                                        <gc3:viewFieldWeight grid="shipment_stop_d_grid" label="label.NetWeight" name="s_ship_units/s_ship_unit/unit_net_weight"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Uom">
+                                                        <gc3:viewFieldVolume grid="shipment_stop_d_grid" label="label.NetVolume" name="s_ship_units/s_ship_unit/unit_net_volume"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Uom">
+                                                        <gc3:viewFieldLength grid="shipment_stop_d_grid" label="label.Length" name="s_ship_units/s_ship_unit/unit_length"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Uom">
+                                                        <gc3:viewFieldLength grid="shipment_stop_d_grid" label="label.Width" name="s_ship_units/s_ship_unit/unit_width"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Uom">
+                                                        <gc3:viewFieldLength grid="shipment_stop_d_grid" label="label.Height" name="s_ship_units/s_ship_unit/unit_height"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Uom">
+                                                        <gc3:viewFieldLength grid="shipment_stop_d_grid" label="label.Diameter" name="s_ship_units/s_ship_unit/unit_diameter"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Uom">
+                                                        <gc3:viewFieldLength grid="shipment_stop_d_grid" label="label.CoreDiameter" name="s_ship_units/s_ship_unit/core_diameter"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Number">
+                                                        <gc3:viewFieldNumber grid="shipment_stop_d_grid" label="label.RangeStart" name="s_ship_units/s_ship_unit/range_start" prec="0"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Number">
+                                                        <gc3:viewFieldNumber grid="shipment_stop_d_grid" label="label.RangeEnd" name="s_ship_units/s_ship_unit/range_end" prec="0"/>
+                                                    </gc3:gridColumn>
+                                                </gc3:gridRow>
+                                                <c:if test="${gridPos > 0}">
+                                                    <gc3:gridRow id="shipmentStopLineDtls" visible="false">
+                                                        <gc3:gridColumn body="true" colspan="100%" header="true" type="Detail">
+                                                            <gc3:gridSection>
+                                                                <x:if select="$mainNode/shipment_stops/shipment_stop/shipment_stop_ds/shipment_stop_d/s_ship_units/s_ship_unit/s_ship_unit_lines/@TOTAL_RECORD_COUNT > 0">
+                                                                    <gc3:text error="true">${gc3:getTranslatedValue('label.NoRecordReturned')}</gc3:text>
+                                                                </x:if>
+                                                                <gc3:grid childElementName="s_ship_unit_line" clientGrid="true" edit="false" masterElementName="s_ship_unit_lines" name="shipment_stop_d_line_grid" queryName="glog.server.query.shipment.SShipUnitLineQuery" xpath="s_ship_units/s_ship_unit/s_ship_unit_lines/s_ship_unit_line">
+                                                                    <gc3:gridFields>
+                                                                        <gc3:gridRow>
+                                                                            <gc3:gridColumn body="true" header="true">
+                                                                                <gc3:viewFieldText grid="shipment_stop_d_line_grid" label="label.order_release" name="order_release/xid" queryName="glog.server.query.order.OrderReleaseQuery"/>
+                                                                            </gc3:gridColumn>
+                                                                            <gc3:gridColumn body="true" header="true">
+                                                                                <gc3:viewFieldText grid="shipment_stop_d_line_grid" label="label.TotalPackagedCount" name="item_package_count"/>
+                                                                            </gc3:gridColumn>
+                                                                            <gc3:gridColumn body="true" header="true">
+                                                                                <gc3:viewFieldText grid="shipment_stop_d_line_grid" label="label.PackagedItem" name="packaged_item/xid" queryName="glog.server.query.item.PackagedItemQuery"/>
+                                                                            </gc3:gridColumn>
+                                                                            <!-- 2 new column(s) added below:6160088 -->
+                                                                            <gc3:gridColumn body="true" customizable="false" header="true">
+                                                                                <gc3:viewFieldText grid="shipment_stop_d_line_grid" label="field.ob_line/item_xid" name="item/xid" queryName="glog.server.query.item.ItemQuery"/>
+                                                                            </gc3:gridColumn>
+                                                                            <gc3:gridColumn body="true" customizable="false" header="true">
+                                                                                <gc3:viewFieldText grid="shipment_stop_d_line_grid" label="label.ItemDescription" name="item/description"/>
+                                                                            </gc3:gridColumn>
+                                                                            <!-- end -->
+                                                                            <gc3:gridColumn body="true" header="true">
+                                                                                <gc3:viewFieldText grid="shipment_stop_d_line_grid" label="label.PackagingUnitCount" name="packaging_unit_count"/>
+                                                                            </gc3:gridColumn>
+                                                                            <gc3:gridColumn body="true" header="true">
+                                                                                <gc3:viewFieldText grid="shipment_stop_d_line_grid" label="label.PackagingUnit" name="packaging_unit_xid" queryName="glog.server.query.order.ShipUnitSpecQuery"/>
+                                                                            </gc3:gridColumn>
+                                                                            <gc3:gridColumn body="true" header="true">
+                                                                                <gc3:viewFieldText grid="shipment_stop_d_line_grid" label="label.PackagedItemDescription" name="packaged_item/description"/>
+                                                                            </gc3:gridColumn>
+                                                                            <gc3:gridColumn body="true" header="true" type="Uom">
+                                                                                <gc3:viewFieldWeight grid="shipment_stop_d_line_grid" label="label.Weight" name="weight"/>
+                                                                            </gc3:gridColumn>
+                                                                            <gc3:gridColumn body="true" header="true" type="Uom">
+                                                                                <gc3:viewFieldVolume grid="shipment_stop_d_line_grid" label="label.Volume" name="volume"/>
+                                                                            </gc3:gridColumn>
+                                                                        </gc3:gridRow>
+                                                                    </gc3:gridFields>
+                                                                </gc3:grid>
+                                                            </gc3:gridSection>
+                                                        </gc3:gridColumn>
+                                                    </gc3:gridRow>
+                                                </c:if>
+                                            </gc3:gridFields>
+                                        </gc3:grid>
+                                    </gc3:gridSection>
+                                </gc3:gridColumn>
+                            </gc3:gridRow>
+                        </c:if>
+                    </gc3:gridFields>
+                </gc3:grid>
+            </gc3:gridSection>
+            <gc3:section label="label.Tracking" tableId="trackingDetails" visible="false">
+                <gc3:row>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.sighting_loc" name="shipment/sl_location_xid" queryName="glog.server.query.servprov.LocationQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldDateTime label="label.sighting_date" name="shipment/sighting_date"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldText label="label.prev_sighting_loc" name="shipment/psl_location_xid" queryName="glog.server.query.servprov.LocationQuery"/>
+                    </gc3:column>
+                    <gc3:column>
+                        <gc3:viewFieldDateTime label="label.prev_sighting_date" name="shipment/prev_sighting_date"/>
+                    </gc3:column>
+                </gc3:row>
+            </gc3:section>
+            <gc3:gridSection label="label.StandardDocuments" tableId="table_shipment_reqdoc_grid" visible="false">
+                <gc3:grid childElementName="shipment_reqdoc" clientGrid="true" edit="false" masterElementName="shipment_reqdocs" name="shipment_reqdoc_grid" queryName="glog.server.query.shipment.ShipmentReqdocQuery" xpath="shipment/shipment_reqdocs/shipment_reqdoc">
+                    <gc3:gridFields compareXPath="document_def/xid" dataType="text" repeatHeader="true">
+                        <gc3:gridRow>
+                            <gc3:gridColumn body="true" header="true" type="Image" width="20">
+                                <gc3:viewOpenClose grid="shipment_reqdoc_grid" openCloseId="shipmentDocumentDetails"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="shipment_reqdoc_grid" label="label.Document" name="document_def/xid" queryName="glog.server.query.document.DocumentDefQuery"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="shipment_reqdoc_grid" label="label.ReviewStatus" name="review_status"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldNumber grid="shipment_reqdoc_grid" label="label.NumRevisions" name="num_revisions" prec="0"/>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="shipment_reqdoc_grid" label="label.Instructions" name="instructions"/>
+                            </gc3:gridColumn>
+                        </gc3:gridRow>
+                        <c:set var="mainGridPos">
+                            <x:out select="$gridPos"/>
+                        </c:set>
+                        <c:if test="${mainGridPos > 0 and mainGridPos != prevGridPos}">
+                            <gc3:gridRow id="shipmentDocumentDetails" visible="false">
+                                <gc3:gridColumn body="true" colspan="100%" header="true" type="Detail">
+                                    <gc3:gridSection customizable="false">
+                                        <gc3:grid childElementName="shipment_reqdoc_doc" clientGrid="true" edit="false" masterElementName="shipment_reqdoc_docs" name="shipment_reqdoc_doc_grid" queryName="glog.server.query.shipment.ShipmentReqdocDocQuery" xpath="shipment_reqdoc_docs/shipment_reqdoc_doc">
+                                            <gc3:gridSortField sortDataType="number" sortField="document_revision" sortOrder="descending"/>
+                                            <gc3:gridFields>
+                                                <gc3:gridRow>
+                                                    <gc3:gridColumn body="true" header="true" type="Image">
+                                                        <gc3:viewOpenClose grid="shipment_reqdoc_doc_grid" openCloseId="shipmentRevisionDetails"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true">
+                                                        <gc3:viewFieldText grid="shipment_reqdoc_doc_grid" label="label.Revision" name="document/xid" queryName="glog.server.query.document.DocumentQuery"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true">
+                                                        <gc3:viewFieldText grid="shipment_reqdoc_doc_grid" label="label.Review" name="review"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Number">
+                                                        <gc3:viewFieldText grid="shipment_reqdoc_doc_grid" label="label.Annotation" name="annotations"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Uom">
+                                                        <gc3:viewFieldDateTime grid="shipment_stop_d_grid" label="label.GeneratedAt" name="document/generated_at"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true" type="Uom">
+                                                        <gc3:viewFieldDateTime grid="shipment_stop_d_grid" label="label.UploadedAt" name="document/uploaded_at"/>
+                                                    </gc3:gridColumn>
+                                                </gc3:gridRow>
+                                                <c:if test="${gridPos > 0}">
+                                                    <gc3:gridRow id="shipmentRevisionDetails" visible="false">
+                                                        <gc3:gridColumn body="true" colspan="100%" header="true" type="Detail">
+                                                            <gc3:gridSection>
+                                                                <gc3:grid childElementName="shipment_reqdoc_doc_review" clientGrid="true" edit="false" masterElementName="shipment_reqdoc_doc_reviews" name="shipment_reqdoc_doc_review_grid" queryName="glog.server.query.shipment.ShipmentReqdocDocReviewQuery" xpath="shipment_reqdoc_doc_reviews/shipment_reqdoc_doc_review">
+                                                                    <gc3:gridFields>
+                                                                        <gc3:gridRow>
+                                                                            <gc3:gridColumn body="true" header="true">
+                                                                                <gc3:viewFieldText grid="shipment_reqdoc_doc_review_grid" label="label.Reviewer" name="reviewer/xid" queryName="glog.server.query.servprov.ContactQuery"/>
+                                                                            </gc3:gridColumn>
+                                                                            <gc3:gridColumn body="true" header="true">
+                                                                                <gc3:viewFieldText grid="shipment_reqdoc_doc_review_grid" label="label.Response" name="state"/>
+                                                                            </gc3:gridColumn>
+                                                                            <gc3:gridColumn body="true" header="true">
+                                                                                <gc3:viewFieldText grid="shipment_reqdoc_doc_review_grid" label="label.Comments" name="comments"/>
+                                                                            </gc3:gridColumn>
+                                                                        </gc3:gridRow>
+                                                                    </gc3:gridFields>
+                                                                </gc3:grid>
+                                                            </gc3:gridSection>
+                                                        </gc3:gridColumn>
+                                                    </gc3:gridRow>
+                                                </c:if>
+                                            </gc3:gridFields>
+                                        </gc3:grid>
+                                    </gc3:gridSection>
+                                    <gc3:gridSection customizable="false">
+                                        <gc3:grid childElementName="shipment_reqdoc_status" clientGrid="true" edit="false" masterElementName="shipment_reqdoc_statuses" name="shipment_reqdoc_status_grid" queryName="glog.server.query.shipment.ShipmentReqdocStatusQuery" xpath="shipment_reqdoc_statuses/shipment_reqdoc_status">
+                                            <gc3:gridSortField sortDataType="text" sortField="status_type_xid"/>
+                                            <gc3:gridFields>
+                                                <gc3:gridRow>
+                                                    <gc3:gridColumn body="true" header="true">
+                                                        <gc3:viewFieldText grid="shipment_reqdoc_status_grid" label="label.Type" name="status_type_xid"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true">
+                                                        <gc3:viewFieldText grid="shipment_reqdoc_status_grid" label="label.Value" name="status_value_xid"/>
+                                                    </gc3:gridColumn>
+                                                </gc3:gridRow>
+                                            </gc3:gridFields>
+                                        </gc3:grid>
+                                    </gc3:gridSection>
+                                    <gc3:gridSection customizable="false">
+                                        <gc3:grid childElementName="shipment_reqdoc_text" clientGrid="true" edit="false" masterElementName="shipment_reqdoc_texts" name="shipment_reqdoc_text_grid" queryName="glog.server.query.shipment.ShipmentReqdocTextQuery" xpath="shipment_reqdoc_texts/shipment_reqdoc_text">
+                                            <gc3:gridSortField sortDataType="text" sortField="text_template/xid"/>
+                                            <gc3:gridFields>
+                                                <gc3:gridRow>
+                                                    <gc3:gridColumn body="true" header="true">
+                                                        <gc3:viewFieldText grid="shipment_reqdoc_text_grid" label="label.TextTemplate" name="text_template/xid" queryName="glog.server.query.text.TextTemplateQuery"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true">
+                                                        <gc3:viewFieldText grid="shipment_reqdoc_text_grid" label="label.Value" name="text_template/text"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true">
+                                                        <gc3:viewFieldText grid="shipment_reqdoc_text_grid" label="label.ForShipUnit" name="s_ship_unit/xid"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true">
+                                                        <gc3:viewFieldText grid="shipment_reqdoc_text_grid" label="label.ForLine" name="s_ship_unit_line_no"/>
+                                                    </gc3:gridColumn>
+                                                </gc3:gridRow>
+                                            </gc3:gridFields>
+                                        </gc3:grid>
+                                    </gc3:gridSection>
+                                    <gc3:gridSection customizable="false">
+                                        <gc3:grid childElementName="shipment_reqdoc_reviewer" clientGrid="true" edit="false" masterElementName="shipment_reqdoc_reviewers" name="shipment_reqdoc_reviewer_grid" queryName="glog.server.query.shipment.ShipmentReqdocReviewerQuery" xpath="shipment_reqdoc_reviewers/shipment_reqdoc_reviewer">
+                                            <gc3:gridSortField sortDataType="text" sortField="status_type_xid"/>
+                                            <gc3:gridFields>
+                                                <gc3:gridRow>
+                                                    <gc3:gridColumn body="true" header="true">
+                                                        <gc3:viewFieldText grid="shipment_reqdoc_reviewer_grid" label="label.Reviewer" name="reviewer/xid" queryName="glog.server.query.servprov.ContactQuery"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true">
+                                                        <gc3:viewFieldText grid="shipment_reqdoc_reviewer_grid" label="label.AsInvolvedParty" name="as_involved_party_qual/xid"/>
+                                                    </gc3:gridColumn>
+                                                </gc3:gridRow>
+                                            </gc3:gridFields>
+                                        </gc3:grid>
+                                    </gc3:gridSection>
+                                    <gc3:gridSection customizable="false">
+                                        <gc3:grid childElementName="shipment_reqdoc_subscriber" clientGrid="true" edit="false" masterElementName="shipment_reqdoc_subscribers" name="shipment_reqdoc_subscriber_grid" queryName="glog.server.query.shipment.ShipmentReqdocSubscriberQuery" xpath="shipment_reqdoc_subscribers/shipment_reqdoc_subscriber">
+                                            <gc3:gridSortField sortDataType="text" sortField="status_type_xid"/>
+                                            <gc3:gridFields>
+                                                <gc3:gridRow>
+                                                    <gc3:gridColumn body="true" header="true">
+                                                        <gc3:viewFieldText grid="shipment_reqdoc_subscriber_grid" label="label.subscriber" name="subscriber/xid" queryName="glog.server.query.servprov.ContactQuery"/>
+                                                    </gc3:gridColumn>
+                                                    <gc3:gridColumn body="true" header="true">
+                                                        <gc3:viewFieldText grid="shipment_reqdoc_subscriber_grid" label="label.AsInvolvedParty" name="as_involved_party_qual/xid"/>
+                                                    </gc3:gridColumn>
+                                                </gc3:gridRow>
+                                            </gc3:gridFields>
+                                        </gc3:grid>
+                                    </gc3:gridSection>
+                                </gc3:gridColumn>
+                            </gc3:gridRow>
+                        </c:if>
+                    </gc3:gridFields>
+                </gc3:grid>
+            </gc3:gridSection>
+            <gc3:gridSection label="label.AdditionalDocuments" tableId="table_shipment_additional_doc_grid" visible="false">
+                <gc3:grid childElementName="document" clientGrid="true" edit="false" masterElementName="additional_documents" name="shipment_additional_doc_grid" queryName="glog.server.query.shipment.AdditionalShipmentDocumentQuery" xpath="shipment/additional_documents/document">
+                    <gc3:gridFields compareXPath="document/xid" dataType="text" repeatHeader="false">
+                        <gc3:gridRow>
+                            <gc3:gridColumn body="true" header="true">
+                                <c:set var="hasChild">
+                                    <c:if test="${gridNode != null}">
+                                        <x:out select="$gridNode/document_def/xid"/>
+                                    </c:if>
+                                </c:set>
+                                <c:choose>
+                                    <c:when test="${fn:length(hasChild) > 0}">
+                                        <gc3:viewFieldText grid="shipment_additional_doc_grid" label="label.Document" name="document_def/xid" queryName="glog.server.query.document.DocumentDefQuery"/>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <gc3:viewFieldText grid="shipment_additional_doc_grid" label="label.Document" name="document_def/xid" value="AD-HOC"/>
+                                    </c:otherwise>
+                                </c:choose>
+                            </gc3:gridColumn>
+                            <gc3:gridColumn body="true" header="true">
+                                <gc3:viewFieldText grid="shipment_additional_doc_grid" label="label.Revision" name="xid" queryName="glog.server.query.document.DocumentQuery"/>
+                            </gc3:gridColumn>
+                        </gc3:gridRow>
+                    </gc3:gridFields>
+                </gc3:grid>
+            </gc3:gridSection>
+        </gc3:body>
+        <gc3:bodyFooter>
+            <c:set var="pk">
+                <x:out select="$mainNode/@ID"/>
+            </c:set>
+            <c:set var="finder_set_gid">
+                <x:out select="$mainNode/@finder_set_gid"/>
+            </c:set>
+            <nav:FooterButtons finder_set_gid="${finder_set_gid}" pk="${pk}" servletUrl="ShipmentCustManagement"/>
+        </gc3:bodyFooter>
+    </gc3:manager_layout>
+</jsp:root>
