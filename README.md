@@ -44,4 +44,4 @@ You can keep up with me at any of the following:
  - Instagram: https://www.instagram.com/chrisplough/
  - Snapchat: @chrisplough
 
-### Take care and thank you for all the support over the years :)
+### Take care and thank you for all the support over the years. Big Love. :)
